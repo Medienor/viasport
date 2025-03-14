@@ -8,6 +8,9 @@ import Script from 'next/script';
 import Providers from './providers'
 import APITracker from '@/components/APITracker';
 import '@/lib/fetchInterceptor';
+import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
+import ScrollToTop from './components/ScrollToTop';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +30,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ViaSport - Sports Directory",
+  title: "ViaSport - Forball på TV & Streaming",
   description: "Din ultimate destinasjon for sportskalendere og kampinformasjon",
 };
 
@@ -45,16 +48,33 @@ export default function RootLayout({
     return (
       <html lang="nb" className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased flex flex-col min-h-screen`}>
         <head>
+          {/* Move scripts outside of head */}
+        </head>
+        <body className="font-sans">
+          {/* Google Analytics */}
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-Z17J77B571"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-Z17J77B571');
+            `}
+          </Script>
+
           {/* Google AdSense Script */}
           <Script
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9301570336732312"
             crossOrigin="anonymous"
-            strategy="afterInteractive"
+            strategy="lazyOnload"
           />
-        </head>
-        <body className="font-sans">
+
           <Providers>
+            <ScrollToTop />
             <Navbar />
             <main className="flex-grow">{children}</main>
             <Footer />

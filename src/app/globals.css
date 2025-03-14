@@ -7,12 +7,13 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* Remove dark mode media query completely */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 html,
 body {
@@ -21,4 +22,11 @@ body {
   width: 100%;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Force light mode styles regardless of system preferences */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: light;
+  }
 }

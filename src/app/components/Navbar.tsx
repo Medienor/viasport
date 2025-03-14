@@ -1,12 +1,14 @@
 "use client"
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import SearchBar from './SearchBar';
 import NavDropdown from './NavDropdown';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   // Close mobile menu when window is resized to desktop size
   useEffect(() => {
@@ -21,6 +23,11 @@ const Navbar = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, [isMenuOpen]);
+
+  // Close menu on route change
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   // Main football leagues to display in the navbar
   const mainLeagues = [
