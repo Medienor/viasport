@@ -63,14 +63,14 @@ const Navbar = () => {
   }));
 
   return (
-    <nav className="bg-[#061206] text-white">
+    <nav className="bg-[#061206] text-white md:bg-[#061206]">
       {/* Top navigation bar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-0">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-0 bg-gray-100 md:bg-[#061206]">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="text-xl font-bold">
+              <Link href="/" className="text-xl font-bold text-[#142811] md:text-white">
                 ViaSport
               </Link>
             </div>
@@ -82,14 +82,13 @@ const Navbar = () => {
           </div>
           
           <div className="flex items-center">
-            {/* User menu - hide some items on mobile */}
-            <div className="flex items-center">
+            {/* User menu - hide on mobile */}
+            <div className="hidden md:flex items-center">
               <button className="bg-gradient-to-t from-[#061206] to-[#1e3a1e] px-4 py-2 rounded-md text-sm font-medium flex items-center hover:from-[#0a1e0a] hover:to-[#2a4a2a] transition-all duration-300">
                 <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                 </svg>
-                <span className="hidden sm:inline">Logg inn</span>
-                <span className="sm:hidden">Inn</span>
+                <span>Logg inn</span>
               </button>
             </div>
             
@@ -97,7 +96,7 @@ const Navbar = () => {
             <div className="flex md:hidden ml-4">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="bg-[#142811] inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-800 focus:ring-white"
+                className="inline-flex items-center justify-center p-2 rounded-md text-[#142811] hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-[#142811] md:text-white"
                 aria-expanded={isMenuOpen}
               >
                 <span className="sr-only">Åpne meny</span>
@@ -155,7 +154,7 @@ const Navbar = () => {
       
       {/* Mobile menu - improved layout */}
       <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#142811]">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#1e3a1e]">
           {/* Mobile search */}
           <div className="px-2 py-2">
             <div className="relative">
@@ -228,8 +227,9 @@ const Navbar = () => {
             </div>
           </div>
           
-          <div className="pt-4 pb-3 border-t border-[#061206]">
-            <button className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-t from-[#061206] to-[#1e3a1e] hover:from-[#0a1e0a] hover:to-[#2a4a2a] transition-all duration-300">
+          {/* Login button - removed px-3 from container div */}
+          <div className="mt-6">
+            <button className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium bg-gradient-to-t from-[#061206] to-[#1e3a1e] hover:from-[#0a1e0a] hover:to-[#2a4a2a] transition-all duration-300">
               <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
               </svg>

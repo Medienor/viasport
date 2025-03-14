@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-03-14T20:42:01.105Z
+// Last updated: 2025-03-14T22:12:55.984Z
 
 export const calendarData = {
   "2025-03-07": [
@@ -3323,10 +3323,10 @@ export const calendarData = {
           "city": "Hamburg"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 53,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
         }
       },
       "league": {
@@ -3363,8 +3363,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -3385,7 +3385,7 @@ export const calendarData = {
         "timestamp": 1741981500,
         "periods": {
           "first": 1741981500,
-          "second": null
+          "second": 1741985100
         },
         "venue": {
           "id": 905,
@@ -3393,10 +3393,10 @@ export const calendarData = {
           "city": "Genova"
         },
         "status": {
-          "long": "Halftime",
-          "short": "HT",
-          "elapsed": 45,
-          "extra": 3
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
         }
       },
       "league": {
@@ -3425,7 +3425,7 @@ export const calendarData = {
       },
       "goals": {
         "home": 2,
-        "away": 0
+        "away": 1
       },
       "score": {
         "halftime": {
@@ -3433,8 +3433,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -3455,7 +3455,7 @@ export const calendarData = {
         "timestamp": 1741982400,
         "periods": {
           "first": 1741982400,
-          "second": null
+          "second": 1741986000
         },
         "venue": {
           "id": 1481,
@@ -3463,10 +3463,10 @@ export const calendarData = {
           "city": "Las Palmas de Gran Canaria"
         },
         "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 40,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 10
         }
       },
       "league": {
@@ -3484,18 +3484,18 @@ export const calendarData = {
           "id": 534,
           "name": "Las Palmas",
           "logo": "https://media.api-sports.io/football/teams/534.png",
-          "winner": false
+          "winner": null
         },
         "away": {
           "id": 542,
           "name": "Alaves",
           "logo": "https://media.api-sports.io/football/teams/542.png",
-          "winner": true
+          "winner": null
         }
       },
       "goals": {
-        "home": 0,
-        "away": 1
+        "home": 2,
+        "away": 2
       },
       "score": {
         "halftime": {
@@ -3503,8 +3503,8 @@ export const calendarData = {
           "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         },
         "extratime": {
           "home": null,

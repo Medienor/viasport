@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { NextResponse } from 'next/server';
 
 const API_KEY = 'a985a864bd184fcba3f0a89e92aadf08';
