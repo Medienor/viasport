@@ -1,101 +1,183 @@
-import Image from "next/image";
+import { Suspense } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import LeagueStandings from './components/LeagueStandings';
+import LiveNowWrapper from './components/LiveNowWrapper';
+import FixturesSection from './components/FixturesSection';
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  // Popular leagues to display in standings
+  const popularLeagues = [
+    { id: 39, name: "Premier League", season: 2024 },
+    { id: 103, name: "Eliteserien", season: 2025 },
+    { id: 2, name: "UEFA Champions League", season: 2024 }
+  ];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <div className="bg-gray-50">
+      {/* Hero section with background image and overlay */}
+      <div className="relative">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/bg2-img.jpg" 
+            alt="Football stadium" 
+            fill 
+            className="object-cover"
+            priority
+          />
+          {/* Color overlay */}
+          <div className="absolute inset-0 bg-blue-900/70 mix-blend-multiply"></div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40 text-white">
+          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl drop-shadow-lg">
+            Velkommen til ViaSport
+          </h1>
+          <p className="mt-6 text-xl max-w-3xl text-white/90 drop-shadow-md">
+            Din ultimate destinasjon for fotballkalendere, kampinformasjon og lagstatistikk. Følg favorittlagene dine og hold deg oppdatert på alle fotballbegivenheter.
+          </p>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <Link 
+              href="/fotball" 
+              className="px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-800 bg-white hover:bg-gray-100 shadow-lg transition-colors"
+            >
+              Fotball
+            </Link>
+            <Link 
+              href="/fotball/liga" 
+              className="px-8 py-3 border border-white text-base font-medium rounded-md text-white bg-green-800 hover:bg-green-700 shadow-lg transition-colors"
+            >
+              Ligaer
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Live Matches Section - LiveNowWrapper now handles visibility */}
+      <Suspense fallback={<LiveMatchesSkeleton />}>
+        <LiveNowWrapper />
+      </Suspense>
+
+      {/* Fixtures Sections */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <Suspense fallback={<FixturesSkeleton />}>
+          <FixturesSection />
+        </Suspense>
+      </div>
+
+      {/* League Standings Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Ligatabeller</h2>
+        
+        <div className="space-y-8">
+          {popularLeagues.map(league => (
+            <Suspense key={league.id} fallback={<StandingsSkeleton leagueName={league.name} />}>
+              <LeagueStandings 
+                leagueId={league.id} 
+                leagueName={league.name} 
+                season={league.season} 
+              />
+            </Suspense>
+          ))}
+        </div>
+      </div>
+
+      {/* About ViaSport section */}
+      <div className="bg-gray-50 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900">Om ViaSport.no</h2>
+            <div className="mt-2 h-1 w-20 bg-blue-600 mx-auto"></div>
+          </div>
+          
+          <div className="max-w-4xl mx-auto text-gray-700 space-y-6">
+            <p className="text-lg">
+              ViaSport har som mål å være den ultimate guiden for deg som ønsker å følge med på fotballkamper og annen sport på TV og strømmetjenester. Vi gir deg en komplett oversikt over kamptider, kanaler og hvor du kan se dine favorittlag spille.
+            </p>
+            
+            <p>
+              Vår tjeneste gjør det enkelt å finne ut når og hvor kampene sendes, enten det er i dag, i morgen eller lenger fram i tid. Du kan enkelt navigere gjennom vår kalender for å planlegge din sportsopplevelse flere uker og måneder framover.
+            </p>
+            
+            <p>
+              I tillegg til kampinformasjon tilbyr vi også statistikk, tabeller og nyheter om lagene og ligaene du er interessert i. Alt samlet på ett sted for å gi deg den beste opplevelsen som sportsentusiast.
+            </p>
+            
+            <p>
+              For deg som befinner deg utenfor Norge, inkluderer vi også informasjon om internasjonale strømmetjenester hvor kampene kan sees. Vi jobber kontinuerlig med å forbedre tjenesten vår og setter stor pris på tilbakemeldinger fra våre brukere.
+            </p>
+            
+            <div className="mt-10 flex justify-center space-x-6">
+              <Link href="/om-oss" className="text-blue-600 hover:text-blue-800 font-medium">
+                Les mer om oss
+              </Link>
+              <Link href="/kontakt" className="text-blue-600 hover:text-blue-800 font-medium">
+                Kontakt oss
+              </Link>
+              <Link href="/personvern" className="text-blue-600 hover:text-blue-800 font-medium">
+                Personvern
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
+
+// Skeleton loaders for suspense boundaries
+function LiveMatchesSkeleton() {
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
+      <div className="flex justify-between items-center mb-4">
+        <div className="h-8 bg-gray-200 rounded w-64"></div>
+        <div className="h-8 bg-gray-200 rounded w-32"></div>
+      </div>
+      <div className="bg-white shadow rounded-lg p-6">
+        <div className="animate-pulse space-y-4">
+          <div className="h-4 bg-gray-200 rounded w-1/4"></div>
+          <div className="h-10 bg-gray-200 rounded"></div>
+          <div className="h-10 bg-gray-200 rounded"></div>
+          <div className="h-10 bg-gray-200 rounded"></div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FixturesSkeleton() {
+  return (
+    <div className="space-y-8">
+      {[...Array(3)].map((_, i) => (
+        <div key={i} className="bg-white shadow rounded-lg p-6">
+          <div className="animate-pulse space-y-4">
+            <div className="h-6 bg-gray-200 rounded w-1/3"></div>
+            <div className="space-y-2">
+              {[...Array(5)].map((_, j) => (
+                <div key={j} className="h-10 bg-gray-200 rounded"></div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function StandingsSkeleton({ leagueName }: { leagueName: string }) {
+  return (
+    <div className="bg-white shadow rounded-lg p-6">
+      <div className="animate-pulse space-y-4">
+        <div className="h-6 bg-gray-200 rounded w-1/3">{leagueName}</div>
+        <div className="space-y-2">
+          {[...Array(10)].map((_, i) => (
+            <div key={i} className="h-8 bg-gray-200 rounded"></div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
