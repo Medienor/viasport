@@ -40,6 +40,15 @@ function isMatchLive(fixture: any): boolean {
          fixture.fixture.status.short === 'PEN';
 }
 
+// Add this helper function to check if a match is completed
+function isMatchCompleted(fixture: any): boolean {
+  return fixture.fixture.status.short === 'FT' || 
+         fixture.fixture.status.short === 'AET' || 
+         fixture.fixture.status.short === 'PEN' || 
+         fixture.fixture.status.short === 'AWD' || 
+         fixture.fixture.status.short === 'WO';
+}
+
 interface LeaguePageClientProps {
   sport: string;
   leagueData: any;
@@ -459,18 +468,26 @@ export default function LeaguePageClient({
                       <div className="space-y-4">
                         {fixturesByDate[date].map((fixture) => {
                           const live = isMatchLive(fixture);
+                          const completed = isMatchCompleted(fixture);
+                          
                           return (
                             <Link 
                               key={fixture.fixture.id} 
                               href={`/${sport}/kamp/${fixture.fixture.id}`}
                               className={`block rounded-lg transition-colors relative ${
-                                live ? 'bg-yellow-50 hover:bg-yellow-100 border border-yellow-200' : 'hover:bg-gray-50'
+                                live ? 'bg-yellow-50 hover:bg-yellow-100 border border-yellow-200' : 
+                                completed ? 'bg-gray-50 hover:bg-gray-100' : 'hover:bg-gray-50'
                               }`}
                             >
                               {live && (
                                 <div className="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full flex items-center">
                                   <span className="inline-block w-1.5 h-1.5 bg-white bg-opacity-70 rounded-full animate-pulse mr-1"></span>
                                   LIVE
+                                </div>
+                              )}
+                              {completed && (
+                                <div className="absolute top-2 right-2 bg-gray-600 text-white text-xs font-bold px-2 py-1 rounded-full">
+                                  FERDIG
                                 </div>
                               )}
                               <div className="flex items-center justify-between p-2">
@@ -502,6 +519,16 @@ export default function LeaguePageClient({
                                       </span>
                                       <span className="text-xs text-red-500 mt-1 font-medium">
                                         {fixture.fixture.status.elapsed}&apos;
+                                      </span>
+                                    </>
+                                  ) : completed ? (
+                                    <>
+                                      <span className="text-sm font-bold text-gray-800">
+                                        {fixture.goals.home} - {fixture.goals.away}
+                                      </span>
+                                      <span className="text-xs text-gray-500 mt-1">
+                                        {fixture.fixture.status.short === 'AET' ? 'E. omg.' : 
+                                         fixture.fixture.status.short === 'PEN' ? 'Straffer' : 'Fullført'}
                                       </span>
                                     </>
                                   ) : (

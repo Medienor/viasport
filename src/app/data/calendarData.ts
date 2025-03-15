@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-03-15T16:07:47.978Z
+// Last updated: 2025-03-15T20:49:15.208Z
 
 export const calendarData = {
   "2025-03-08": [
@@ -3603,10 +3603,10 @@ export const calendarData = {
           "city": "Bremen"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 78,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
         }
       },
       "league": {
@@ -3635,7 +3635,7 @@ export const calendarData = {
       },
       "goals": {
         "home": 2,
-        "away": 3
+        "away": 4
       },
       "score": {
         "halftime": {
@@ -3643,8 +3643,8 @@ export const calendarData = {
           "away": 2
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 4
         },
         "extratime": {
           "home": null,
@@ -3673,10 +3673,10 @@ export const calendarData = {
           "city": "Augsburg"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 80,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
         }
       },
       "league": {
@@ -3713,8 +3713,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -3743,10 +3743,10 @@ export const calendarData = {
           "city": "Mainz"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 77,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 4
         }
       },
       "league": {
@@ -3764,18 +3764,18 @@ export const calendarData = {
           "id": 164,
           "name": "FSV Mainz 05",
           "logo": "https://media.api-sports.io/football/teams/164.png",
-          "winner": true
+          "winner": null
         },
         "away": {
           "id": 160,
           "name": "SC Freiburg",
           "logo": "https://media.api-sports.io/football/teams/160.png",
-          "winner": false
+          "winner": null
         }
       },
       "goals": {
         "home": 2,
-        "away": 1
+        "away": 2
       },
       "score": {
         "halftime": {
@@ -3783,8 +3783,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         },
         "extratime": {
           "home": null,
@@ -3813,10 +3813,10 @@ export const calendarData = {
           "city": "Berlin"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 80,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
         }
       },
       "league": {
@@ -3834,17 +3834,17 @@ export const calendarData = {
           "id": 182,
           "name": "Union Berlin",
           "logo": "https://media.api-sports.io/football/teams/182.png",
-          "winner": false
+          "winner": null
         },
         "away": {
           "id": 157,
           "name": "Bayern München",
           "logo": "https://media.api-sports.io/football/teams/157.png",
-          "winner": true
+          "winner": null
         }
       },
       "goals": {
-        "home": 0,
+        "home": 1,
         "away": 1
       },
       "score": {
@@ -3853,8 +3853,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -3883,10 +3883,10 @@ export const calendarData = {
           "city": "Liverpool"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 48,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
         }
       },
       "league": {
@@ -3914,8 +3914,8 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": 0,
-        "away": 0
+        "home": 1,
+        "away": 1
       },
       "score": {
         "halftime": {
@@ -3923,8 +3923,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -3953,10 +3953,10 @@ export const calendarData = {
           "city": "Ipswich, Suffolk"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 49,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
         }
       },
       "league": {
@@ -3984,8 +3984,8 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": 0,
-        "away": 3
+        "home": 2,
+        "away": 4
       },
       "score": {
         "halftime": {
@@ -3993,8 +3993,8 @@ export const calendarData = {
           "away": 3
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 4
         },
         "extratime": {
           "home": null,
@@ -4023,10 +4023,10 @@ export const calendarData = {
           "city": "Manchester"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 48,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 4
         }
       },
       "league": {
@@ -4044,18 +4044,18 @@ export const calendarData = {
           "id": 50,
           "name": "Manchester City",
           "logo": "https://media.api-sports.io/football/teams/50.png",
-          "winner": true
+          "winner": null
         },
         "away": {
           "id": 51,
           "name": "Brighton",
           "logo": "https://media.api-sports.io/football/teams/51.png",
-          "winner": false
+          "winner": null
         }
       },
       "goals": {
         "home": 2,
-        "away": 1
+        "away": 2
       },
       "score": {
         "halftime": {
@@ -4063,8 +4063,8 @@ export const calendarData = {
           "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         },
         "extratime": {
           "home": null,
@@ -4093,10 +4093,10 @@ export const calendarData = {
           "city": "Southampton, Hampshire"
         },
         "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 49,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
         }
       },
       "league": {
@@ -4124,7 +4124,7 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": 0,
+        "home": 1,
         "away": 2
       },
       "score": {
@@ -4133,8 +4133,8 @@ export const calendarData = {
           "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "extratime": {
           "home": null,
@@ -4155,7 +4155,7 @@ export const calendarData = {
         "timestamp": 1742051700,
         "periods": {
           "first": 1742051700,
-          "second": null
+          "second": 1742055300
         },
         "venue": {
           "id": 19940,
@@ -4163,10 +4163,10 @@ export const calendarData = {
           "city": "Palma de Mallorca"
         },
         "status": {
-          "long": "Halftime",
-          "short": "HT",
-          "elapsed": 45,
-          "extra": 1
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 13
         }
       },
       "league": {
@@ -4184,12 +4184,362 @@ export const calendarData = {
           "id": 798,
           "name": "Mallorca",
           "logo": "https://media.api-sports.io/football/teams/798.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 540,
           "name": "Espanyol",
           "logo": "https://media.api-sports.io/football/teams/540.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 0
+        },
+        "fulltime": {
+          "home": 2,
+          "away": 1
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1223879,
+        "referee": "Matteo Marchetti, Italy",
+        "timezone": "UTC",
+        "date": "2025-03-15T17:00:00+00:00",
+        "timestamp": 1742058000,
+        "periods": {
+          "first": 1742058000,
+          "second": 1742061600
+        },
+        "venue": {
+          "id": 907,
+          "name": "Stadio Giuseppe Meazza",
+          "city": "Milano"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 9
+        }
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "logo": "https://media.api-sports.io/football/leagues/135.png",
+        "flag": "https://media.api-sports.io/flags/it.svg",
+        "season": 2024,
+        "round": "Regular Season - 29",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 489,
+          "name": "AC Milan",
+          "logo": "https://media.api-sports.io/football/teams/489.png",
+          "winner": true
+        },
+        "away": {
+          "id": 895,
+          "name": "Como",
+          "logo": "https://media.api-sports.io/football/teams/895.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 1
+        },
+        "fulltime": {
+          "home": 2,
+          "away": 1
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1208303,
+        "referee": "Pawson, Craig, England",
+        "timezone": "UTC",
+        "date": "2025-03-15T17:30:00+00:00",
+        "timestamp": 1742059800,
+        "periods": {
+          "first": 1742059800,
+          "second": 1742063400
+        },
+        "venue": {
+          "id": 504,
+          "name": "Vitality Stadium",
+          "city": "Bournemouth, Dorset"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
+        }
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https://media.api-sports.io/football/leagues/39.png",
+        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+        "season": 2024,
+        "round": "Regular Season - 29",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 35,
+          "name": "Bournemouth",
+          "logo": "https://media.api-sports.io/football/teams/35.png",
+          "winner": false
+        },
+        "away": {
+          "id": 55,
+          "name": "Brentford",
+          "logo": "https://media.api-sports.io/football/teams/55.png",
+          "winner": true
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 2
+      },
+      "score": {
+        "halftime": {
+          "home": 1,
+          "away": 1
+        },
+        "fulltime": {
+          "home": 1,
+          "away": 2
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1208744,
+        "referee": "Jesus Gil Manzano, Spain",
+        "timezone": "UTC",
+        "date": "2025-03-15T17:30:00+00:00",
+        "timestamp": 1742059800,
+        "periods": {
+          "first": 1742059800,
+          "second": 1742063400
+        },
+        "venue": {
+          "id": 1498,
+          "name": "Estadio de la Cerámica",
+          "city": "Villarreal"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 3
+        }
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "logo": "https://media.api-sports.io/football/leagues/140.png",
+        "flag": "https://media.api-sports.io/flags/es.svg",
+        "season": 2024,
+        "round": "Regular Season - 28",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 533,
+          "name": "Villarreal",
+          "logo": "https://media.api-sports.io/football/teams/533.png",
+          "winner": false
+        },
+        "away": {
+          "id": 541,
+          "name": "Real Madrid",
+          "logo": "https://media.api-sports.io/football/teams/541.png",
+          "winner": true
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 2
+      },
+      "score": {
+        "halftime": {
+          "home": 1,
+          "away": 2
+        },
+        "fulltime": {
+          "home": 1,
+          "away": 2
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1224201,
+        "referee": "Matthias Jollenbeck, Germany",
+        "timezone": "UTC",
+        "date": "2025-03-15T17:30:00+00:00",
+        "timestamp": 1742059800,
+        "periods": {
+          "first": 1742059800,
+          "second": 1742063400
+        },
+        "venue": {
+          "id": 738,
+          "name": "Red Bull Arena",
+          "city": "Leipzig"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
+        }
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "logo": "https://media.api-sports.io/football/leagues/78.png",
+        "flag": "https://media.api-sports.io/flags/de.svg",
+        "season": 2024,
+        "round": "Regular Season - 26",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 173,
+          "name": "RB Leipzig",
+          "logo": "https://media.api-sports.io/football/teams/173.png",
+          "winner": true
+        },
+        "away": {
+          "id": 165,
+          "name": "Borussia Dortmund",
+          "logo": "https://media.api-sports.io/football/teams/165.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 1,
+          "away": 0
+        },
+        "fulltime": {
+          "home": 2,
+          "away": 0
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1223882,
+        "referee": "Chiffi, Daniele, Italy",
+        "timezone": "UTC",
+        "date": "2025-03-15T19:45:00+00:00",
+        "timestamp": 1742067900,
+        "periods": {
+          "first": 1742067900,
+          "second": null
+        },
+        "venue": {
+          "id": 943,
+          "name": "Stadio Olimpico Grande Torino",
+          "city": "Torino"
+        },
+        "status": {
+          "long": "Halftime",
+          "short": "HT",
+          "elapsed": 45,
+          "extra": 4
+        }
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "logo": "https://media.api-sports.io/football/leagues/135.png",
+        "flag": "https://media.api-sports.io/flags/it.svg",
+        "season": 2024,
+        "round": "Regular Season - 29",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 503,
+          "name": "Torino",
+          "logo": "https://media.api-sports.io/football/teams/503.png",
+          "winner": null
+        },
+        "away": {
+          "id": 511,
+          "name": "Empoli",
+          "logo": "https://media.api-sports.io/football/teams/511.png",
           "winner": null
         }
       },
@@ -4218,363 +4568,13 @@ export const calendarData = {
     },
     {
       "fixture": {
-        "id": 1223879,
-        "referee": "M. Marchetti",
-        "timezone": "UTC",
-        "date": "2025-03-15T17:00:00+00:00",
-        "timestamp": 1742058000,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": 907,
-          "name": "Stadio Giuseppe Meazza",
-          "city": "Milano"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 135,
-        "name": "Serie A",
-        "country": "Italy",
-        "logo": "https://media.api-sports.io/football/leagues/135.png",
-        "flag": "https://media.api-sports.io/flags/it.svg",
-        "season": 2024,
-        "round": "Regular Season - 29",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 489,
-          "name": "AC Milan",
-          "logo": "https://media.api-sports.io/football/teams/489.png",
-          "winner": null
-        },
-        "away": {
-          "id": 895,
-          "name": "Como",
-          "logo": "https://media.api-sports.io/football/teams/895.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1208303,
-        "referee": "C. Pawson",
-        "timezone": "UTC",
-        "date": "2025-03-15T17:30:00+00:00",
-        "timestamp": 1742059800,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": 504,
-          "name": "Vitality Stadium",
-          "city": "Bournemouth, Dorset"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 39,
-        "name": "Premier League",
-        "country": "England",
-        "logo": "https://media.api-sports.io/football/leagues/39.png",
-        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
-        "season": 2024,
-        "round": "Regular Season - 29",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 35,
-          "name": "Bournemouth",
-          "logo": "https://media.api-sports.io/football/teams/35.png",
-          "winner": null
-        },
-        "away": {
-          "id": 55,
-          "name": "Brentford",
-          "logo": "https://media.api-sports.io/football/teams/55.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1208744,
-        "referee": "Gil Manzano",
-        "timezone": "UTC",
-        "date": "2025-03-15T17:30:00+00:00",
-        "timestamp": 1742059800,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": 1498,
-          "name": "Estadio de la Cerámica",
-          "city": "Villarreal"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 140,
-        "name": "La Liga",
-        "country": "Spain",
-        "logo": "https://media.api-sports.io/football/leagues/140.png",
-        "flag": "https://media.api-sports.io/flags/es.svg",
-        "season": 2024,
-        "round": "Regular Season - 28",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 533,
-          "name": "Villarreal",
-          "logo": "https://media.api-sports.io/football/teams/533.png",
-          "winner": null
-        },
-        "away": {
-          "id": 541,
-          "name": "Real Madrid",
-          "logo": "https://media.api-sports.io/football/teams/541.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1224201,
-        "referee": "M. Jöllenbeck",
-        "timezone": "UTC",
-        "date": "2025-03-15T17:30:00+00:00",
-        "timestamp": 1742059800,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": 738,
-          "name": "Red Bull Arena",
-          "city": "Leipzig"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 78,
-        "name": "Bundesliga",
-        "country": "Germany",
-        "logo": "https://media.api-sports.io/football/leagues/78.png",
-        "flag": "https://media.api-sports.io/flags/de.svg",
-        "season": 2024,
-        "round": "Regular Season - 26",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 173,
-          "name": "RB Leipzig",
-          "logo": "https://media.api-sports.io/football/teams/173.png",
-          "winner": null
-        },
-        "away": {
-          "id": 165,
-          "name": "Borussia Dortmund",
-          "logo": "https://media.api-sports.io/football/teams/165.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1223882,
-        "referee": "D. Chiffi",
-        "timezone": "UTC",
-        "date": "2025-03-15T19:45:00+00:00",
-        "timestamp": 1742067900,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": 943,
-          "name": "Stadio Olimpico Grande Torino",
-          "city": "Torino"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 135,
-        "name": "Serie A",
-        "country": "Italy",
-        "logo": "https://media.api-sports.io/football/leagues/135.png",
-        "flag": "https://media.api-sports.io/flags/it.svg",
-        "season": 2024,
-        "round": "Regular Season - 29",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 503,
-          "name": "Torino",
-          "logo": "https://media.api-sports.io/football/teams/503.png",
-          "winner": null
-        },
-        "away": {
-          "id": 511,
-          "name": "Empoli",
-          "logo": "https://media.api-sports.io/football/teams/511.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
         "id": 1208738,
-        "referee": "José Munuera",
+        "referee": "José Luis Munuera Montero, Spain",
         "timezone": "UTC",
         "date": "2025-03-15T20:00:00+00:00",
         "timestamp": 1742068800,
         "periods": {
-          "first": null,
+          "first": 1742068800,
           "second": null
         },
         "venue": {
@@ -4583,10 +4583,10 @@ export const calendarData = {
           "city": "Girona"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Halftime",
+          "short": "HT",
+          "elapsed": 45,
+          "extra": 2
         }
       },
       "league": {
@@ -4614,13 +4614,13 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
           "home": null,
