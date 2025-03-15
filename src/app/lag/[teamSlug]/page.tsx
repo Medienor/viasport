@@ -8,7 +8,7 @@ import TeamContent from './TeamContent';
 import { getTeamIdFromSlug } from '@/lib/utils';
 
 // This enables ISR - pages are cached and revalidated after 3600 seconds (1 hour)
-export const revalidate = 3600;
+export const revalidate = 43200;
 
 // Generate static params for the most popular teams only (optional)
 export async function generateStaticParams() {

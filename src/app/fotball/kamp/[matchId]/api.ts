@@ -44,24 +44,68 @@ interface EnhancedFixture extends Fixture {
   statistics?: MatchStatistics[];
 }
 
+// Helper function to determine cache time based on match status
+function getCacheTimeByStatus(status: string): number {
+  // Live statuses
+  const liveStatuses = ['1H', '2H', 'HT', 'ET', 'BT', 'P', 'SUSP', 'INT', 'LIVE'];
+  
+  // Upcoming statuses
+  const upcomingStatuses = ['NS', 'TBD', 'PST'];
+  
+  // Finished statuses
+  const finishedStatuses = ['FT', 'AET', 'PEN', 'CANC', 'ABD', 'AWD', 'WO'];
+  
+  if (liveStatuses.includes(status)) {
+    return 60; // 1 minute cache for live matches
+  } else if (upcomingStatuses.includes(status)) {
+    return 1800; // 30 minutes cache for upcoming matches
+  } else if (finishedStatuses.includes(status)) {
+    return 86400; // 24 hours cache for finished matches
+  } else {
+    return 3600; // Default: 1 hour cache
+  }
+}
+
 /**
  * Fetch a match by its ID with additional details
  */
 export const fetchMatchById = cache(async (matchId: string) => {
   try {
-    // Fetch match data and all related data in parallel
-    const [matchResponse, lineupResponse, statsResponse, h2hResponse] = await Promise.all([
-      fetch(`${BASE_URL}/fixtures?id=${matchId}`, { headers }),
-      fetch(`${BASE_URL}/fixtures/lineups?fixture=${matchId}`, { headers }),
-      fetch(`${BASE_URL}/fixtures/statistics?fixture=${matchId}`, { headers }),
-      fetch(`${BASE_URL}/fixtures/headtohead?h2h=${matchId}`, { headers })
-    ]);
-
-    const [matchData, lineupData, statsData, h2hData] = await Promise.all([
-      matchResponse.json(),
-      lineupResponse.json(),
-      statsResponse.json(),
-      h2hResponse.json()
+    // First, get basic match data to determine status
+    const basicMatchResponse = await fetch(`${BASE_URL}/fixtures?id=${matchId}`, { 
+      headers,
+      next: { 
+        revalidate: 300 // 5 minute default cache for the initial request
+      }
+    });
+    
+    const basicMatchData = await basicMatchResponse.json();
+    
+    if (!basicMatchData.response || basicMatchData.response.length === 0) {
+      throw new Error('Match not found');
+    }
+    
+    // Get match status to determine cache time
+    const matchStatus = basicMatchData.response[0].fixture.status.short;
+    const cacheTime = getCacheTimeByStatus(matchStatus);
+    
+    console.log(`Match ${matchId} status: ${matchStatus}, cache time: ${cacheTime} seconds`);
+    
+    // Now fetch all the detailed data with appropriate cache time
+    const [matchData, lineupData, statsData, eventsData] = await Promise.all([
+      basicMatchData, // Reuse the data we already have
+      fetch(`${BASE_URL}/fixtures/lineups?fixture=${matchId}`, { 
+        headers,
+        next: { revalidate: cacheTime }
+      }).then(res => res.json()),
+      fetch(`${BASE_URL}/fixtures/statistics?fixture=${matchId}`, { 
+        headers,
+        next: { revalidate: cacheTime }
+      }).then(res => res.json()),
+      fetch(`${BASE_URL}/fixtures/events?fixture=${matchId}`, { 
+        headers,
+        next: { revalidate: cacheTime }
+      }).then(res => res.json())
     ]);
 
     const match = matchData.response[0];
@@ -70,25 +114,34 @@ export const fetchMatchById = cache(async (matchId: string) => {
       const homeTeamId = match.teams.home.id;
       const awayTeamId = match.teams.away.id;
       const season = match.league.season;
-
+      
+      // For team and player data, use longer cache times as they don't change frequently
+      const teamCacheTime = Math.max(cacheTime, 3600); // At least 1 hour for team data
+      
       // Fetch both teams' players in parallel
-      const [homePlayersResponse, awayPlayersResponse] = await Promise.all([
-        fetch(`${BASE_URL}/players?team=${homeTeamId}&season=${season}`, { headers }),
-        fetch(`${BASE_URL}/players?team=${awayTeamId}&season=${season}`, { headers })
-      ]);
-
-      const [homePlayersData, awayPlayersData] = await Promise.all([
-        homePlayersResponse.json(),
-        awayPlayersResponse.json()
+      const [homePlayersResponse, awayPlayersResponse, h2hData] = await Promise.all([
+        fetch(`${BASE_URL}/players?team=${homeTeamId}&season=${season}`, { 
+          headers,
+          next: { revalidate: teamCacheTime }
+        }).then(res => res.json()),
+        fetch(`${BASE_URL}/players?team=${awayTeamId}&season=${season}`, { 
+          headers,
+          next: { revalidate: teamCacheTime }
+        }).then(res => res.json()),
+        fetch(`${BASE_URL}/fixtures/headtohead?h2h=${homeTeamId}-${awayTeamId}`, { 
+          headers,
+          next: { revalidate: teamCacheTime }
+        }).then(res => res.json())
       ]);
 
       // Add all data to the match object
       match.lineups = lineupData.response;
       match.statistics = statsData.response;
+      match.events = eventsData.response;
       match.h2h = h2hData.response;
       match.players = {
-        home: homePlayersData.response || [],
-        away: awayPlayersData.response || []
+        home: homePlayersResponse.response || [],
+        away: awayPlayersResponse.response || []
       };
     }
 
@@ -100,15 +153,15 @@ export const fetchMatchById = cache(async (matchId: string) => {
 });
 
 /**
- * Fetch all matches for static generation
+ * Fetch all matches for static generation with appropriate caching
  */
 export const fetchAllMatches = cache(async () => {
   try {
     const today = new Date();
     const from = new Date(today);
-    from.setDate(today.getDate() - 7); // Last 7 days
+    from.setDate(today.getDate() - 3); // Last 3 days instead of 7
     const to = new Date(today);
-    to.setDate(today.getDate() + 7); // Next 7 days
+    to.setDate(today.getDate() + 3); // Next 3 days instead of 7
 
     const response = await fetch(
       `${BASE_URL}/fixtures?from=${from.toISOString().split('T')[0]}&to=${to.toISOString().split('T')[0]}`,
@@ -127,7 +180,7 @@ export const fetchAllMatches = cache(async () => {
 });
 
 /**
- * Fetch matches by league ID
+ * Fetch matches by league ID with appropriate caching
  */
 export async function fetchMatchesByLeague(leagueId: number) {
   try {
@@ -140,7 +193,8 @@ export async function fetchMatchesByLeague(leagueId: number) {
     
     // Get matches for the league in the current season
     const response = await fetch(`${BASE_URL}/fixtures?league=${leagueId}&season=${seasonYear}`, {
-      headers
+      headers,
+      next: { revalidate: 3600 } // Cache for 1 hour
     });
     
     if (!response.ok) {

@@ -5,6 +5,9 @@ import LeagueStandings from './components/LeagueStandings';
 import LiveNowWrapper from './components/LiveNowWrapper';
 import FixturesSection from './components/FixturesSection';
 
+// Set page-level revalidation time (5 minutes)
+export const revalidate = 300;
+
 export default function Home() {
   // Popular leagues to display in standings
   const popularLeagues = [

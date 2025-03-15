@@ -3,8 +3,7 @@ import MatchCalendar from '@/app/components/MatchCalendar';
 import { BASE_URL, headers } from '@/app/services/sportApi';
 import ClientMatchList from './ClientMatchList';
 
-// Set revalidation time (e.g., every hour)
-export const revalidate = 3600; // seconds
+export const dynamic = 'force-dynamic';
 
 // Define interfaces for the API data
 interface Team {
@@ -84,7 +83,7 @@ export default async function TuesdayPage() {
   try {
     const response = await fetch(`${BASE_URL}/fixtures?date=${formattedDate}`, {
       headers,
-      next: { revalidate }
+      next: { revalidate: 300 }
     });
     
     if (!response.ok) {

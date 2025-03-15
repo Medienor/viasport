@@ -8,8 +8,6 @@ import Script from 'next/script';
 import Providers from './providers'
 import APITracker from '@/components/APITracker';
 import '@/lib/fetchInterceptor';
-import { useEffect } from 'react';
-import { usePathname } from 'next/navigation';
 import ScrollToTop from './components/ScrollToTop';
 
 const geistSans = Geist({

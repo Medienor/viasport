@@ -110,7 +110,8 @@ export default function LeagueStandings({ leagueId, leagueName, season }: League
       
       try {
         const response = await fetch(`${BASE_URL}/standings?league=${leagueId}&season=${season}`, {
-          headers: headers
+          headers,
+          next: { revalidate: 3600 } // 1 hour for standings
         });
         
         if (!response.ok) {

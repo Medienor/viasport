@@ -8,8 +8,10 @@ import CompletedMatchDetails from '@/app/components/CompletedMatchDetails';
 import MatchOddsSlider from '@/app/components/MatchOddsSlider';
 import MatchHighlights from '@/app/components/MatchHighlights';
 import UpcomingMatchDetails from '@/app/components/UpcomingMatchDetails';
+import PreventAutoScroll from '@/app/components/PreventAutoScroll';
 
-export const revalidate = 60; // Revalidate every minute for all match pages
+// Instead, use dynamic rendering with ISR for this page
+export const dynamic = 'force-dynamic';
 
 // Add these type definitions at the top of your file
 interface Team {
@@ -130,6 +132,7 @@ export default async function MatchPage({ params }: { params: { matchId: string 
     
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <PreventAutoScroll />
         <div className="flex flex-col md:flex-row gap-8">
           {/* Right column - Match details (now first on mobile) */}
           <div className="w-full md:w-2/3 order-first md:order-last space-y-6">

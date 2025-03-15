@@ -21,6 +21,16 @@ const POPULAR_LEAGUE_IDS = [
   45   // FA Cup
 ];
 
+// Define a type for the match object
+interface Match {
+  league: {
+    id: number;
+    name: string;
+    logo?: string;
+  };
+  // Add other properties as needed
+}
+
 export default function LiveNowWrapper() {
   const [hasPopularLiveMatches, setHasPopularLiveMatches] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -33,7 +43,8 @@ export default function LiveNowWrapper() {
           headers: {
             'x-rapidapi-key': '1a7dc8ba9cmshff75c6099ce0152p158153jsnac5252d21d90',
             'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
-          }
+          },
+          next: { revalidate: 60 } // 60 seconds for live data
         });
         
         if (!response.ok) {
@@ -43,7 +54,7 @@ export default function LiveNowWrapper() {
         const data = await response.json();
         
         // Check if there are any live matches in popular leagues
-        const popularLeagueMatches = data.response?.filter(match => 
+        const popularLeagueMatches = data.response?.filter((match: Match) => 
           POPULAR_LEAGUE_IDS.includes(match.league?.id)
         );
         

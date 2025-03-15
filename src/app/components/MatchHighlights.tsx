@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon, PlayIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
+import PreventAutoScroll from './PreventAutoScroll';
 
 interface Video {
   id: string;
@@ -57,6 +58,16 @@ export default function MatchHighlights({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const thumbnailsRef = useRef<HTMLDivElement>(null);
+  const componentRef = useRef<HTMLDivElement>(null);
+
+  // Prevent auto-scrolling when iframe loads
+  useEffect(() => {
+    // Disable YouTube iframe auto-focus behavior
+    if (isPlaying) {
+      // Force scroll to top of page
+      window.scrollTo(0, 0);
+    }
+  }, [isPlaying]);
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -191,7 +202,9 @@ export default function MatchHighlights({
   }
 
   return (
-    <div className="bg-white rounded-lg overflow-hidden mb-6">
+    <div ref={componentRef} className="bg-white rounded-lg overflow-hidden mb-6">
+      <PreventAutoScroll />
+      
       <div className="p-4 border-b border-gray-100">
         <h2 className="text-xl font-bold">{getSectionTitle()}</h2>
       </div>
@@ -201,15 +214,22 @@ export default function MatchHighlights({
         <div className="relative aspect-video bg-black">
           {isPlaying ? (
             <iframe 
-              src={`https://www.youtube.com/embed/${videos[currentIndex].id}?autoplay=1`}
+              src={`https://www.youtube.com/embed/${videos[currentIndex].id}?autoplay=1&enablejsapi=1&rel=0`}
               title={videos[currentIndex].title}
               className="w-full h-full"
               allowFullScreen
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              loading="lazy"
+              tabIndex={-1} // Prevent automatic focus
+              id="youtube-player"
             ></iframe>
           ) : (
-            <div className="relative w-full h-full cursor-pointer" onClick={() => setIsPlaying(true)}>
+            <div className="relative w-full h-full cursor-pointer" onClick={() => {
+              // Prevent scrolling when clicking to play
+              window.scrollTo(0, 0);
+              setIsPlaying(true);
+            }}>
               <div className="relative w-full h-full">
                 <Image 
                   src={videos[currentIndex].thumbnail} 
