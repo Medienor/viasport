@@ -6,6 +6,15 @@ export async function GET() {
     const response = await fetch(`${BASE_URL}/fixtures?live=all`, { headers });
     const data = await response.json();
     
+    // Check if data.response exists and is an array
+    if (!data.response || !Array.isArray(data.response)) {
+      console.error('Invalid API response format:', data);
+      return NextResponse.json(
+        { error: 'Invalid API response format', data: data }, 
+        { status: 500 }
+      );
+    }
+    
     return NextResponse.json(data.response);
   } catch (err: unknown) {
     console.error('Error fetching live fixtures:', err); // Log the error

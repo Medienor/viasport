@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-03-15T20:49:15.208Z
+// Last updated: 2025-03-15T22:18:06.607Z
 
 export const calendarData = {
   "2025-03-08": [
@@ -4505,7 +4505,7 @@ export const calendarData = {
         "timestamp": 1742067900,
         "periods": {
           "first": 1742067900,
-          "second": null
+          "second": 1742071500
         },
         "venue": {
           "id": 943,
@@ -4513,10 +4513,10 @@ export const calendarData = {
           "city": "Torino"
         },
         "status": {
-          "long": "Halftime",
-          "short": "HT",
-          "elapsed": 45,
-          "extra": 4
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 8
         }
       },
       "league": {
@@ -4534,17 +4534,17 @@ export const calendarData = {
           "id": 503,
           "name": "Torino",
           "logo": "https://media.api-sports.io/football/teams/503.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 511,
           "name": "Empoli",
           "logo": "https://media.api-sports.io/football/teams/511.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": 0,
+        "home": 1,
         "away": 0
       },
       "score": {
@@ -4553,8 +4553,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -4575,7 +4575,7 @@ export const calendarData = {
         "timestamp": 1742068800,
         "periods": {
           "first": 1742068800,
-          "second": null
+          "second": 1742072400
         },
         "venue": {
           "id": 1478,
@@ -4583,10 +4583,10 @@ export const calendarData = {
           "city": "Girona"
         },
         "status": {
-          "long": "Halftime",
-          "short": "HT",
-          "elapsed": 45,
-          "extra": 2
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 5
         }
       },
       "league": {
@@ -4614,8 +4614,8 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": 0,
-        "away": 0
+        "home": 1,
+        "away": 1
       },
       "score": {
         "halftime": {
@@ -4623,8 +4623,8 @@ export const calendarData = {
           "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "extratime": {
           "home": null,

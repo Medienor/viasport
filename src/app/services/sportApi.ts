@@ -62,43 +62,188 @@ export interface Fixture {
   };
 }
 
+// Add a global cache object to store API responses
+const globalCache: {
+  [key: string]: {
+    data: any;
+    timestamp: number;
+  }
+} = {};
+
+// Cache duration in seconds (1 hour = 3600 seconds)
+const CACHE_DURATION = 3600;
+
+// API call tracking
+interface ApiCallLog {
+  endpoint: string;
+  timestamp: number;
+  cacheKey: string;
+  parameters: Record<string, any>;
+  source: string;
+}
+
+const apiCallLogs: ApiCallLog[] = [];
+let totalApiCalls = 0;
+
+/**
+ * Log an API call
+ * @param endpoint The API endpoint called
+ * @param cacheKey The cache key used
+ * @param parameters Parameters sent to the API
+ * @param source Information about what triggered the call
+ */
+function logApiCall(endpoint: string, cacheKey: string, parameters: Record<string, any>, source: string): void {
+  totalApiCalls++;
+  const log: ApiCallLog = {
+    endpoint,
+    timestamp: Date.now(),
+    cacheKey,
+    parameters,
+    source
+  };
+  
+  apiCallLogs.push(log);
+  
+  // Keep log size manageable by removing older entries if needed
+  if (apiCallLogs.length > 1000) {
+    apiCallLogs.shift();
+  }
+  
+  console.log(`API CALL #${totalApiCalls}: ${endpoint} | Source: ${source} | Cache Key: ${cacheKey} | Time: ${new Date().toISOString()}`);
+}
+
+/**
+ * Get API call statistics
+ * @returns Statistics about API calls
+ */
+export function getApiCallStats() {
+  return {
+    totalCalls: totalApiCalls,
+    recentCalls: apiCallLogs.slice(-20), // Last 20 calls
+    cacheSizeEntries: Object.keys(globalCache).length,
+    cacheSizeEstimate: `~${Math.round(JSON.stringify(globalCache).length / 1024)} KB`
+  };
+}
+
+/**
+ * Remove expired entries from the cache
+ */
+function cleanupCache(): void {
+  const now = Math.floor(Date.now() / 1000);
+  let removedCount = 0;
+  
+  Object.keys(globalCache).forEach(key => {
+    if (now - globalCache[key].timestamp >= CACHE_DURATION) {
+      delete globalCache[key];
+      removedCount++;
+    }
+  });
+  
+  if (removedCount > 0) {
+    console.log(`Cleaned up ${removedCount} expired cache entries. Current cache size: ${Object.keys(globalCache).length}`);
+  }
+}
+
+/**
+ * Clear the entire cache manually if needed
+ */
+export function clearCache(): void {
+  const count = Object.keys(globalCache).length;
+  Object.keys(globalCache).forEach(key => delete globalCache[key]);
+  console.log(`Manually cleared ${count} cache entries`);
+}
+
+/**
+ * Wrapper function to handle caching for API calls
+ * @param cacheKey Unique key for caching the response
+ * @param fetchFunction Function that makes the actual API call
+ * @param endpoint The API endpoint being called
+ * @param parameters Parameters for the API call
+ * @param source Information about what triggered the call
+ * @returns Promise with the data from cache or fresh API call
+ */
+async function cachedFetch<T>(
+  cacheKey: string, 
+  fetchFunction: () => Promise<T>,
+  endpoint: string,
+  parameters: Record<string, any> = {},
+  source: string = 'unknown'
+): Promise<T> {
+  const now = Math.floor(Date.now() / 1000); // Current time in seconds
+  
+  // Clean up expired entries when accessing the cache
+  cleanupCache();
+  
+  // Check if we have a valid cached response
+  if (globalCache[cacheKey] && (now - globalCache[cacheKey].timestamp) < CACHE_DURATION) {
+    console.log(`Using cached data for: ${cacheKey}`);
+    return globalCache[cacheKey].data;
+  }
+  
+  // No valid cache, make the API call
+  console.log(`Fetching fresh data for: ${cacheKey}`);
+  logApiCall(endpoint, cacheKey, parameters, source);
+  
+  const data = await fetchFunction();
+  
+  // Store in cache
+  globalCache[cacheKey] = {
+    data,
+    timestamp: now
+  };
+  
+  return data;
+}
+
+// Set up periodic cache cleanup (every hour)
+if (typeof setInterval !== 'undefined') {
+  setInterval(cleanupCache, CACHE_DURATION * 1000);
+  console.log('Scheduled periodic cache cleanup');
+}
+
 /**
  * Get popular football leagues
  * @returns Array of League objects
  */
-export async function getPopularLeagues(): Promise<League[]> {
-  try {
-    // Get current season (current year)
-    const currentYear = new Date().getFullYear();
-    
-    const response = await trackedFetch(`${BASE_URL}/leagues?season=${currentYear}`, {
-      headers
-    });
-    
-    if (!response.ok) {
-      throw new Error(`API error: ${response.status}`);
-    }
-    
-    const data = await response.json();
-    
-    if (data.errors && Object.keys(data.errors).length > 0) {
-      console.error('API Error:', data.errors);
+export async function getPopularLeagues(source: string = 'unknown'): Promise<League[]> {
+  const cacheKey = 'popular-leagues';
+  const endpoint = `${BASE_URL}/leagues`;
+  const parameters = { season: new Date().getFullYear() };
+  
+  return cachedFetch(cacheKey, async () => {
+    try {
+      // Get current season (current year)
+      const currentYear = new Date().getFullYear();
+      
+      const response = await trackedFetch(`${endpoint}?season=${currentYear}`, {
+        headers
+      });
+      
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      if (data.errors && Object.keys(data.errors).length > 0) {
+        console.error('API Error:', data.errors);
+        return [];
+      }
+      
+      // Popular league IDs
+      const popularLeagueIds = [2, 39, 61, 78, 135, 140];
+      
+      // Filter leagues to only include popular ones
+      const leagues = data.response
+        .filter((item: any) => popularLeagueIds.includes(item.league.id))
+        .map((item: any) => item.league);
+      
+      return leagues;
+    } catch (error) {
+      console.error('Error fetching leagues:', error);
       return [];
     }
-    
-    // Popular league IDs
-    const popularLeagueIds = [2, 39, 61, 78, 135, 140];
-    
-    // Filter leagues to only include popular ones
-    const leagues = data.response
-      .filter((item: any) => popularLeagueIds.includes(item.league.id))
-      .map((item: any) => item.league);
-    
-    return leagues;
-  } catch (error) {
-    console.error('Error fetching leagues:', error);
-    return [];
-  }
+  }, endpoint, parameters, source);
 }
 
 /**
@@ -107,87 +252,99 @@ export async function getPopularLeagues(): Promise<League[]> {
  * @param date Optional date in YYYY-MM-DD format
  * @returns Array of Fixture objects
  */
-export async function getUpcomingFixtures(leagueId?: number, date?: string): Promise<Fixture[]> {
-  try {
-    // Build query parameters
-    let queryParams = '';
-    
-    // Get current season (current year)
-    const currentYear = new Date().getFullYear();
-    queryParams += `season=${currentYear}&`;
-    
-    if (leagueId) {
-      queryParams += `league=${leagueId}&`;
-    }
-    
-    if (date) {
-      queryParams += `date=${date}&`;
-    } else {
-      // If no date provided, get next 10 days
-      const from = new Date();
-      const to = new Date();
-      to.setDate(to.getDate() + 10);
+export async function getUpcomingFixtures(leagueId?: number, date?: string, source: string = 'unknown'): Promise<Fixture[]> {
+  const cacheKey = `upcoming-fixtures-${leagueId || 'all'}-${date || 'next10days'}`;
+  const endpoint = `${BASE_URL}/fixtures`;
+  const parameters = { leagueId, date };
+  
+  return cachedFetch(cacheKey, async () => {
+    try {
+      // Build query parameters
+      let queryParams = '';
       
-      const fromStr = from.toISOString().split('T')[0];
-      const toStr = to.toISOString().split('T')[0];
+      // Get current season (current year)
+      const currentYear = new Date().getFullYear();
+      queryParams += `season=${currentYear}&`;
       
-      queryParams += `from=${fromStr}&to=${toStr}&`;
-    }
-    
-    // Add timezone
-    queryParams += 'timezone=Europe/Oslo';
-    
-    const response = await trackedFetch(`${BASE_URL}/fixtures?${queryParams}`, {
-      headers
-    });
-    
-    if (!response.ok) {
-      throw new Error(`API error: ${response.status}`);
-    }
-    
-    const data = await response.json();
-    
-    if (data.errors && Object.keys(data.errors).length > 0) {
-      console.error('API Error:', data.errors);
+      if (leagueId) {
+        queryParams += `league=${leagueId}&`;
+      }
+      
+      if (date) {
+        queryParams += `date=${date}&`;
+      } else {
+        // If no date provided, get next 10 days
+        const from = new Date();
+        const to = new Date();
+        to.setDate(to.getDate() + 10);
+        
+        const fromStr = from.toISOString().split('T')[0];
+        const toStr = to.toISOString().split('T')[0];
+        
+        queryParams += `from=${fromStr}&to=${toStr}&`;
+      }
+      
+      // Add timezone
+      queryParams += 'timezone=Europe/Oslo';
+      
+      const response = await trackedFetch(`${endpoint}?${queryParams}`, {
+        headers
+      });
+      
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      if (data.errors && Object.keys(data.errors).length > 0) {
+        console.error('API Error:', data.errors);
+        return [];
+      }
+      
+      // Log the response to see what we're getting
+      console.log(`Fixtures for ${leagueId ? `league ${leagueId}` : 'all leagues'}:`, data.response.length);
+      
+      return data.response;
+    } catch (error) {
+      console.error(`Error fetching fixtures for league ${leagueId}:`, error);
       return [];
     }
-    
-    // Log the response to see what we're getting
-    console.log(`Fixtures for ${leagueId ? `league ${leagueId}` : 'all leagues'}:`, data.response.length);
-    
-    return data.response;
-  } catch (error) {
-    console.error(`Error fetching fixtures for league ${leagueId}:`, error);
-    return [];
-  }
+  }, endpoint, parameters, source);
 }
 
 /**
  * Get available countries for leagues
  * @returns Array of country names
  */
-export async function getAvailableCountries(): Promise<string[]> {
-  try {
-    const response = await trackedFetch(`${BASE_URL}/countries`, {
-      headers
-    });
-    
-    if (!response.ok) {
-      throw new Error(`API error: ${response.status}`);
-    }
-    
-    const data = await response.json();
-    
-    if (data.errors && Object.keys(data.errors).length > 0) {
-      console.error('API Error:', data.errors);
+export async function getAvailableCountries(source: string = 'unknown'): Promise<string[]> {
+  const cacheKey = 'available-countries';
+  const endpoint = `${BASE_URL}/countries`;
+  const parameters = {};
+  
+  return cachedFetch(cacheKey, async () => {
+    try {
+      const response = await trackedFetch(`${endpoint}`, {
+        headers
+      });
+      
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      if (data.errors && Object.keys(data.errors).length > 0) {
+        console.error('API Error:', data.errors);
+        return [];
+      }
+      
+      return data.response.map((country: any) => country.name);
+    } catch (error) {
+      console.error('Error fetching countries:', error);
       return [];
     }
-    
-    return data.response.map((country: any) => country.name);
-  } catch (error) {
-    console.error('Error fetching countries:', error);
-    return [];
-  }
+  }, endpoint, parameters, source);
 }
 
 /**
@@ -195,31 +352,37 @@ export async function getAvailableCountries(): Promise<string[]> {
  * @param country Country name
  * @returns Array of League objects
  */
-export async function getLeaguesByCountry(country: string): Promise<League[]> {
-  try {
-    // Get current season (current year)
-    const currentYear = new Date().getFullYear();
-    
-    const response = await trackedFetch(`${BASE_URL}/leagues?country=${country}&season=${currentYear}`, {
-      headers
-    });
-    
-    if (!response.ok) {
-      throw new Error(`API error: ${response.status}`);
-    }
-    
-    const data = await response.json();
-    
-    if (data.errors && Object.keys(data.errors).length > 0) {
-      console.error('API Error:', data.errors);
+export async function getLeaguesByCountry(country: string, source: string = 'unknown'): Promise<League[]> {
+  const cacheKey = `leagues-by-country-${country}`;
+  const endpoint = `${BASE_URL}/leagues`;
+  const parameters = { country, season: new Date().getFullYear() };
+  
+  return cachedFetch(cacheKey, async () => {
+    try {
+      // Get current season (current year)
+      const currentYear = new Date().getFullYear();
+      
+      const response = await trackedFetch(`${endpoint}?country=${country}&season=${currentYear}`, {
+        headers
+      });
+      
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      if (data.errors && Object.keys(data.errors).length > 0) {
+        console.error('API Error:', data.errors);
+        return [];
+      }
+      
+      return data.response.map((item: any) => item.league);
+    } catch (error) {
+      console.error(`Error fetching leagues for country ${country}:`, error);
       return [];
     }
-    
-    return data.response.map((item: any) => item.league);
-  } catch (error) {
-    console.error(`Error fetching leagues for country ${country}:`, error);
-    return [];
-  }
+  }, endpoint, parameters, source);
 }
 
 /**
@@ -244,9 +407,15 @@ export function getTeamLogoUrl(teamId: number): string {
  * Get live matches
  * @returns Array of Fixture objects for live matches
  */
-export async function getLiveMatches(): Promise<Fixture[]> {
+export async function getLiveMatches(source: string = 'unknown'): Promise<Fixture[]> {
+  // Don't cache live matches as they need to be fresh
   try {
-    const response = await trackedFetch(`${BASE_URL}/fixtures?live=all`, {
+    const endpoint = `${BASE_URL}/fixtures`;
+    const parameters = { live: 'all' };
+    
+    logApiCall(endpoint, 'no-cache-live-matches', parameters, source);
+    
+    const response = await trackedFetch(`${endpoint}?live=all`, {
       headers
     });
     
@@ -273,50 +442,56 @@ export async function getLiveMatches(): Promise<Fixture[]> {
  * @param leagueId League ID
  * @returns Array of Fixture objects
  */
-export async function getLeagueUpcomingFixtures(leagueId: number): Promise<Fixture[]> {
-  try {
-    // Get current season and next season
-    const currentDate = new Date();
-    const currentYear = currentDate.getFullYear();
-    
-    // Determine which season to use based on current month
-    // For leagues that run across calendar years (like Premier League), 
-    // we need to use the starting year of the season
-    const seasonYear = currentDate.getMonth() >= 6 ? currentYear : currentYear - 1;
-    
-    // Build query parameters
-    const queryParams = `league=${leagueId}&season=${seasonYear}&status=NS`;
-    
-    console.log(`Fetching fixtures with params: ${queryParams}`);
-    
-    const response = await trackedFetch(`${BASE_URL}/fixtures?${queryParams}`, {
-      headers
-    });
-    
-    if (!response.ok) {
-      throw new Error(`API error: ${response.status}`);
-    }
-    
-    const data = await response.json();
-    
-    if (data.errors && Object.keys(data.errors).length > 0) {
-      console.error(`API Error for league ${leagueId}:`, data.errors);
+export async function getLeagueUpcomingFixtures(leagueId: number, source: string = 'unknown'): Promise<Fixture[]> {
+  const cacheKey = `league-upcoming-fixtures-${leagueId}`;
+  const endpoint = `${BASE_URL}/fixtures`;
+  const parameters = { leagueId, season: new Date().getFullYear() };
+  
+  return cachedFetch(cacheKey, async () => {
+    try {
+      // Get current season and next season
+      const currentDate = new Date();
+      const currentYear = currentDate.getFullYear();
+      
+      // Determine which season to use based on current month
+      // For leagues that run across calendar years (like Premier League), 
+      // we need to use the starting year of the season
+      const seasonYear = currentDate.getMonth() >= 6 ? currentYear : currentYear - 1;
+      
+      // Build query parameters
+      const queryParams = `league=${leagueId}&season=${seasonYear}&status=NS`;
+      
+      console.log(`Fetching fixtures with params: ${queryParams}`);
+      
+      const response = await trackedFetch(`${endpoint}?${queryParams}`, {
+        headers
+      });
+      
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      if (data.errors && Object.keys(data.errors).length > 0) {
+        console.error(`API Error for league ${leagueId}:`, data.errors);
+        return [];
+      }
+      
+      console.log(`Upcoming fixtures for league ${leagueId}:`, data.response.length);
+      
+      // Sort fixtures by date (earliest first)
+      const sortedFixtures = data.response.sort((a: Fixture, b: Fixture) => {
+        return new Date(a.date).getTime() - new Date(b.date).getTime();
+      });
+      
+      // Take only the next 10 fixtures
+      return sortedFixtures.slice(0, 10);
+    } catch (error) {
+      console.error(`Error fetching upcoming fixtures for league ${leagueId}:`, error);
       return [];
     }
-    
-    console.log(`Upcoming fixtures for league ${leagueId}:`, data.response.length);
-    
-    // Sort fixtures by date (earliest first)
-    const sortedFixtures = data.response.sort((a: Fixture, b: Fixture) => {
-      return new Date(a.date).getTime() - new Date(b.date).getTime();
-    });
-    
-    // Take only the next 10 fixtures
-    return sortedFixtures.slice(0, 10);
-  } catch (error) {
-    console.error(`Error fetching upcoming fixtures for league ${leagueId}:`, error);
-    return [];
-  }
+  }, endpoint, parameters, source);
 }
 
 /**
@@ -324,30 +499,36 @@ export async function getLeagueUpcomingFixtures(leagueId: number): Promise<Fixtu
  * @param leagueId League ID
  * @returns Array of season information
  */
-export async function getLeagueSeasons(leagueId: number): Promise<any[]> {
-  try {
-    const response = await trackedFetch(`${BASE_URL}/leagues?id=${leagueId}`, {
-      headers
-    });
-    
-    if (!response.ok) {
-      throw new Error(`API error: ${response.status}`);
-    }
-    
-    const data = await response.json();
-    
-    if (data.errors && Object.keys(data.errors).length > 0) {
-      console.error(`API Error for league ${leagueId}:`, data.errors);
+export async function getLeagueSeasons(leagueId: number, source: string = 'unknown'): Promise<any[]> {
+  const cacheKey = `league-seasons-${leagueId}`;
+  const endpoint = `${BASE_URL}/leagues`;
+  const parameters = { id: leagueId };
+  
+  return cachedFetch(cacheKey, async () => {
+    try {
+      const response = await trackedFetch(`${endpoint}?id=${leagueId}`, {
+        headers
+      });
+      
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      if (data.errors && Object.keys(data.errors).length > 0) {
+        console.error(`API Error for league ${leagueId}:`, data.errors);
+        return [];
+      }
+      
+      console.log(`League info for ${leagueId}:`, data.response);
+      
+      return data.response;
+    } catch (error) {
+      console.error(`Error fetching league info for ${leagueId}:`, error);
       return [];
     }
-    
-    console.log(`League info for ${leagueId}:`, data.response);
-    
-    return data.response;
-  } catch (error) {
-    console.error(`Error fetching league info for ${leagueId}:`, error);
-    return [];
-  }
+  }, endpoint, parameters, source);
 }
 
 /**
@@ -355,33 +536,39 @@ export async function getLeagueSeasons(leagueId: number): Promise<any[]> {
  * @param teamId Team ID
  * @returns Team information
  */
-export async function getTeamInfo(teamId: number): Promise<any> {
-  try {
-    const response = await trackedFetch(`${BASE_URL}/teams?id=${teamId}`, {
-      headers
-    });
-    
-    if (!response.ok) {
-      throw new Error(`API error: ${response.status}`);
-    }
-    
-    const data = await response.json();
-    
-    if (data.errors && Object.keys(data.errors).length > 0) {
-      console.error(`API Error for team ${teamId}:`, data.errors);
+export async function getTeamInfo(teamId: number, source: string = 'unknown'): Promise<any> {
+  const cacheKey = `team-info-${teamId}`;
+  const endpoint = `${BASE_URL}/teams`;
+  const parameters = { id: teamId };
+  
+  return cachedFetch(cacheKey, async () => {
+    try {
+      const response = await trackedFetch(`${endpoint}?id=${teamId}`, {
+        headers
+      });
+      
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      if (data.errors && Object.keys(data.errors).length > 0) {
+        console.error(`API Error for team ${teamId}:`, data.errors);
+        return null;
+      }
+      
+      // The API returns an array, but we only need the first item
+      if (data.response && data.response.length > 0) {
+        return data.response[0].team;
+      }
+      
       return null;
+    } catch (error) {
+      console.error(`Error fetching team info for ${teamId}:`, error);
+      throw error;
     }
-    
-    // The API returns an array, but we only need the first item
-    if (data.response && data.response.length > 0) {
-      return data.response[0].team;
-    }
-    
-    return null;
-  } catch (error) {
-    console.error(`Error fetching team info for ${teamId}:`, error);
-    throw error;
-  }
+  }, endpoint, parameters, source);
 }
 
 /**
