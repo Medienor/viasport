@@ -805,4 +805,56 @@ export async function getTeamsByLeague(leagueId: number): Promise<any[]> {
     console.error(`Error fetching teams for league ${leagueId}:`, error);
     return [];
   }
+}
+
+/**
+ * Get fixtures for a league
+ * @param leagueId League ID
+ * @param days Number of days to fetch fixtures for (default: 30)
+ * @param source Information about what triggered the call
+ * @returns Array of fixtures
+ */
+export async function getFixtures(leagueId: number, days: number = 30, source: string = 'unknown'): Promise<any[]> {
+  const today = new Date();
+  const endDate = new Date();
+  endDate.setDate(today.getDate() + days);
+  
+  const fromDate = today.toISOString().split('T')[0];
+  const toDate = endDate.toISOString().split('T')[0];
+  
+  const cacheKey = `fixtures-league-${leagueId}-from-${fromDate}-to-${toDate}`;
+  const endpoint = `${BASE_URL}/fixtures`;
+  const parameters = { 
+    league: leagueId, 
+    from: fromDate, 
+    to: toDate,
+    season: new Date().getFullYear()
+  };
+  
+  return cachedFetch(cacheKey, async () => {
+    try {
+      const response = await trackedFetch(
+        `${endpoint}?league=${leagueId}&from=${fromDate}&to=${toDate}&season=${new Date().getFullYear()}`, 
+        { headers }
+      );
+      
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      if (data.errors && Object.keys(data.errors).length > 0) {
+        console.error(`API Error for fixtures in league ${leagueId}:`, data.errors);
+        return [];
+      }
+      
+      console.log(`Fixtures for league ${leagueId} (${fromDate} to ${toDate}):`, data.response.length);
+      
+      return data.response;
+    } catch (error) {
+      console.error(`Error fetching fixtures for league ${leagueId}:`, error);
+      return [];
+    }
+  }, endpoint, parameters, source);
 } 

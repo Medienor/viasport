@@ -71,13 +71,13 @@ import { useAPITracking } from './stores/apiTracking';
   }
   
   /**
-   * Fetch team standings
+   * Fetch team standings - optimized version to reduce API calls
    * @param teamId Team ID
-   * @returns Array of standings data
+   * @returns Array of standings data for the most relevant league and season
    */
   export async function fetchTeamStandings(teamId: number) {
     try {
-      console.log(`Fetching standings for team ${teamId}`);
+      console.log(`Fetching standings for team ${teamId} (optimized)`);
       
       // Step 1: Get the leagues the team plays in
       console.log(`Getting leagues for team ${teamId}`);
@@ -91,149 +91,136 @@ import { useAPITracking } from './stores/apiTracking';
       }
       
       const leaguesData = await leaguesResponse.json();
-      console.log(`Leagues data for team ${teamId}:`, JSON.stringify(leaguesData, null, 2));
       
       if (!leaguesData.response || leaguesData.response.length === 0) {
-        console.error(`No leagues found for team ${teamId}`);
+        console.log(`No leagues found for team ${teamId}, trying Premier League as fallback`);
         
-        // Try a direct approach with Premier League
-        console.log(`Trying direct Premier League standings for team ${teamId}`);
-        const directResponse = await fetch(`${BASE_URL}/standings?league=39&season=2023`, {
-          headers
-        });
+        // Try Premier League current season as fallback
+        const currentYear = new Date().getFullYear();
+        const currentSeason = new Date().getMonth() >= 6 ? currentYear : currentYear - 1;
         
-        if (directResponse.ok) {
-          const directData = await directResponse.json();
-          if (directData.response && directData.response.length > 0) {
-            console.log(`Found Premier League standings for 2023`);
-            return directData.response;
-          }
-        }
-        
-        return [];
-      }
-      
-      // Step 2: Try specific seasons for each league
-      const seasons = [2023, 2022, 2021, 2020, 2024];
-      const leaguePromises = [];
-      
-      // Try to get standings for each league the team is in
-      for (const leagueInfo of leaguesData.response) {
-        const league = leagueInfo.league;
-        console.log(`Checking standings for league ${league.id} (${league.name})`);
-        
-        // Try each season for this league
-        for (const season of seasons) {
-          console.log(`Trying season ${season} for league ${league.id}`);
-          
-          leaguePromises.push(
-            fetch(`${BASE_URL}/standings?league=${league.id}&season=${season}`, {
-              headers
-            }).then(async res => {
-              if (res.ok) {
-                const data = await res.json();
-                console.log(`Response for league ${league.id}, season ${season}:`, 
-                  data.response && data.response.length > 0 ? 'Has data' : 'No data');
-                return { data, league, season };
-              }
-              console.log(`Failed to fetch standings for league ${league.id}, season ${season}: ${res.status}`);
-              return null;
-            }).catch(err => {
-              console.error(`Error fetching standings for league ${league.id}, season ${season}:`, err);
-              return null;
-            })
-          );
-        }
-      }
-      
-      // Wait for all league standings requests to complete
-      const leagueResults = await Promise.all(leaguePromises);
-      
-      // Filter out null results and empty responses
-      const validResults = leagueResults.filter(result => 
-        result && result.data && result.data.response && result.data.response.length > 0
-      );
-      
-      if (validResults.length === 0) {
-        console.error(`No valid standings found for any league for team ${teamId}`);
-        
-        // Try Premier League 2023 as a fallback
-        console.log('Trying Premier League 2023 as fallback');
-        const premierLeagueResponse = await fetch(`${BASE_URL}/standings?league=39&season=2023`, {
+        const premierLeagueResponse = await fetch(`${BASE_URL}/standings?league=39&season=${currentSeason}`, {
           headers
         });
         
         if (premierLeagueResponse.ok) {
           const premierLeagueData = await premierLeagueResponse.json();
-          console.log('Premier League 2023 response:', 
-            premierLeagueData.response && premierLeagueData.response.length > 0 ? 'Has data' : 'No data');
-          
           if (premierLeagueData.response && premierLeagueData.response.length > 0) {
             return premierLeagueData.response;
-          }
-        }
-        
-        // Try Premier League 2022 as a last resort
-        console.log('Trying Premier League 2022 as last resort');
-        const premierLeague2022Response = await fetch(`${BASE_URL}/standings?league=39&season=2022`, {
-          headers
-        });
-        
-        if (premierLeague2022Response.ok) {
-          const premierLeague2022Data = await premierLeague2022Response.json();
-          console.log('Premier League 2022 response:', 
-            premierLeague2022Data.response && premierLeague2022Data.response.length > 0 ? 'Has data' : 'No data');
-          
-          if (premierLeague2022Data.response && premierLeague2022Data.response.length > 0) {
-            return premierLeague2022Data.response;
           }
         }
         
         return [];
       }
       
-      // Sort by season (newest first) and return the first valid result
-      validResults.sort((a, b) => b.season - a.season);
-      console.log(`Returning standings for league ${validResults[0].league.id} (${validResults[0].league.name}), season ${validResults[0].season}`);
-      return validResults[0].data.response;
+      // Step 2: Find the most relevant league
+      // Priority: 1. Domestic league (Premier League, La Liga, etc.)
+      //           2. Champions League
+      //           3. Europa League
+      //           4. Any other league
+      
+      // Define priority leagues
+      const priorityLeagueIds = [
+        // Domestic leagues
+        39,  // Premier League
+        140, // La Liga
+        78,  // Bundesliga
+        135, // Serie A
+        61,  // Ligue 1
+        71,  // Eliteserien (Norway)
+        
+        // European competitions
+        2,   // Champions League
+        3,   // Europa League
+        848, // Conference League
+      ];
+      
+      // Sort leagues by priority
+      const sortedLeagues = [...leaguesData.response].sort((a, b) => {
+        const aPriority = priorityLeagueIds.indexOf(a.league.id);
+        const bPriority = priorityLeagueIds.indexOf(b.league.id);
+        
+        // If both leagues are in priority list, sort by their position
+        if (aPriority !== -1 && bPriority !== -1) {
+          return aPriority - bPriority;
+        }
+        
+        // If only one is in priority list, it comes first
+        if (aPriority !== -1) return -1;
+        if (bPriority !== -1) return 1;
+        
+        // Otherwise, sort by league ID (arbitrary but consistent)
+        return a.league.id - b.league.id;
+      });
+      
+      // Get current season
+      const currentDate = new Date();
+      const currentYear = currentDate.getFullYear();
+      const currentSeason = currentDate.getMonth() >= 6 ? currentYear : currentYear - 1;
+      
+      // Try the most relevant league first
+      for (const leagueInfo of sortedLeagues) {
+        const league = leagueInfo.league;
+        console.log(`Trying standings for priority league ${league.id} (${league.name})`);
+        
+        // Try current season first
+        console.log(`Fetching standings for league ${league.id}, season ${currentSeason}`);
+        
+        try {
+          const response = await fetch(`${BASE_URL}/standings?league=${league.id}&season=${currentSeason}`, {
+            headers
+          });
+          
+          if (response.ok) {
+            const data = await response.json();
+            if (data.response && data.response.length > 0) {
+              console.log(`Found standings for league ${league.id} (${league.name}), season ${currentSeason}`);
+              return data.response;
+            }
+          }
+        } catch (error) {
+          console.error(`Error fetching standings for league ${league.id}, season ${currentSeason}:`, error);
+        }
+        
+        // If current season doesn't have data, try previous season
+        const previousSeason = currentSeason - 1;
+        console.log(`Trying previous season ${previousSeason} for league ${league.id}`);
+        
+        try {
+          const response = await fetch(`${BASE_URL}/standings?league=${league.id}&season=${previousSeason}`, {
+            headers
+          });
+          
+          if (response.ok) {
+            const data = await response.json();
+            if (data.response && data.response.length > 0) {
+              console.log(`Found standings for league ${league.id} (${league.name}), season ${previousSeason}`);
+              return data.response;
+            }
+          }
+        } catch (error) {
+          console.error(`Error fetching standings for league ${league.id}, season ${previousSeason}:`, error);
+        }
+      }
+      
+      // If we get here, we couldn't find standings for any league
+      console.log(`No standings found for any league for team ${teamId}, trying Premier League fallback`);
+      
+      // Try Premier League as last resort
+      const premierLeagueResponse = await fetch(`${BASE_URL}/standings?league=39&season=${currentSeason}`, {
+        headers
+      });
+      
+      if (premierLeagueResponse.ok) {
+        const premierLeagueData = await premierLeagueResponse.json();
+        if (premierLeagueData.response && premierLeagueData.response.length > 0) {
+          return premierLeagueData.response;
+        }
+      }
+      
+      return [];
     } catch (error) {
       console.error(`Error fetching standings for team ${teamId}:`, error);
-      
-      // Fallback to hardcoded Premier League standings
-      console.log('Error occurred, using hardcoded Premier League standings');
-      
-      // Try Premier League 2023 as a fallback
-      try {
-        const premierLeagueResponse = await fetch(`${BASE_URL}/standings?league=39&season=2023`, {
-          headers
-        });
-        
-        if (premierLeagueResponse.ok) {
-          const premierLeagueData = await premierLeagueResponse.json();
-          if (premierLeagueData.response && premierLeagueData.response.length > 0) {
-            return premierLeagueData.response;
-          }
-        }
-      } catch (fallbackError) {
-        console.error('Premier League 2023 fallback failed:', fallbackError);
-      }
-      
-      // Try Premier League 2022 as a last resort
-      try {
-        const premierLeague2022Response = await fetch(`${BASE_URL}/standings?league=39&season=2022`, {
-          headers
-        });
-        
-        if (premierLeague2022Response.ok) {
-          const premierLeague2022Data = await premierLeague2022Response.json();
-          if (premierLeague2022Data.response && premierLeague2022Data.response.length > 0) {
-            return premierLeague2022Data.response;
-          }
-        }
-      } catch (fallbackError) {
-        console.error('Premier League 2022 fallback failed:', fallbackError);
-      }
-      
       return [];
     }
   }

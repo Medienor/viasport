@@ -7,13 +7,15 @@ import ClientHead from './ClientHead';
 import TeamContent from './TeamContent';
 import { getTeamIdFromSlug } from '@/lib/utils';
 
-// This enables ISR - pages are cached and revalidated after 3600 seconds (1 hour)
+// Add this to make the page dynamic with ISR caching
+export const dynamic = 'force-dynamic';
+
+// Keep your existing revalidate setting
 export const revalidate = 43200;
 
-// Generate static params for the most popular teams only (optional)
+// Generate static params for the most popular teams only
 export async function generateStaticParams() {
-  // Return params for only the most popular teams (e.g., top 100)
-  // This is optional - you can remove this function if you don't want to pre-render any teams
+  // Return params for only the most popular teams
   const popularTeams = [
     { teamSlug: 'manchester-united-33' },
     { teamSlug: 'liverpool-40' },
@@ -21,6 +23,7 @@ export async function generateStaticParams() {
     { teamSlug: 'manchester-city-50' },
     { teamSlug: 'barcelona-529' },
     { teamSlug: 'real-madrid-541' },
+    { teamSlug: 'chelsea-49' },
     // Add more popular teams as needed
   ];
   
