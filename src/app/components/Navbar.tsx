@@ -46,7 +46,8 @@ const Navbar = () => {
     { name: 'Primeira Liga', country: 'Portugal', id: 94 },
     { name: 'Europa League', country: 'Europa', id: 3 },
     { name: 'Conference League', country: 'Europa', id: 848 },
-    { name: 'OBOS-ligaen', country: 'Norge', id: 79 },
+    { name: 'OBOS-ligaen', country: 'Norge', id: 104 },
+    { name: 'Toppserien', country: 'Norge', id: 725 },
   ];
 
   // Upcoming matches dropdown items
