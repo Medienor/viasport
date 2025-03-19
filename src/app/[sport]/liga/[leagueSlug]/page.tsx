@@ -10,7 +10,7 @@ interface LeagueParams {
 }
 
 // This enables static generation with dynamic paths
-export const dynamic = 'force-static';
+export const dynamic = 'force-dynamic';
 export const revalidate = 3600; // Revalidate every hour
 
 // Generate metadata for SEO
@@ -23,7 +23,8 @@ export async function generateMetadata(
   if (!leagueId) {
     return {
       title: 'Liga ikke funnet | ViaSport',
-      description: 'Beklager, vi kunne ikke finne ligaen du leter etter.'
+      description: 'Beklager, vi kunne ikke finne ligaen du leter etter.',
+      robots: 'noindex'
     };
   }
   
@@ -31,7 +32,7 @@ export async function generateMetadata(
     // Fetch league info for metadata
     const leagueResponse = await fetch(`${BASE_URL}/leagues?id=${leagueId}`, { 
       headers,
-      next: { revalidate: 86400 } // Cache for 24 hours
+      cache: 'no-store' // Change this to force fresh metadata
     });
     
     if (!leagueResponse.ok) {
@@ -43,7 +44,8 @@ export async function generateMetadata(
     if (!leagueData.response || leagueData.response.length === 0) {
       return {
         title: 'Liga ikke funnet | ViaSport',
-        description: 'Beklager, vi kunne ikke finne ligaen du leter etter.'
+        description: 'Beklager, vi kunne ikke finne ligaen du leter etter.',
+        robots: 'noindex'
       };
     }
     
@@ -60,13 +62,17 @@ export async function generateMetadata(
         title: `${league.league.name} ${seasonDisplay} på TV & Live stream i dag - Tid, kanal, tabell`,
         description: `Se alle kamper fra ${league.league.name} ${seasonDisplay} på TV og live stream. Finn kampprogram, tabell, toppscorere og statistikk.`,
         images: [{ url: league.league.logo }]
+      },
+      alternates: {
+        canonical: `https://viasport.no/fotball/liga/${params.leagueSlug}`
       }
     };
   } catch (error) {
     console.error('Error generating metadata:', error);
     return {
       title: 'Liga | ViaSport',
-      description: 'Se ligatabeller, kamper og statistikk.'
+      description: 'Se ligatabeller, kamper og statistikk.',
+      robots: 'noindex'
     };
   }
 }
