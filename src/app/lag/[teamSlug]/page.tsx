@@ -1,14 +1,10 @@
-// Remove "use client" directive if present
-
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { fetchTeamData, fetchTeamLeagues, fetchTeamStandings, fetchTeamMatches, fetchTeamPlayers, fetchTeamTransfers, fetchTeamInjuries } from '@/lib/api';
 import ClientHead from './ClientHead';
 import TeamContent from './TeamContent';
 import { getTeamIdFromSlug } from '@/lib/utils';
-
-// Add this to make the page dynamic with ISR caching
-export const dynamic = 'force-dynamic';
+import { unstable_cache } from 'next/cache';
 
 // Keep your existing revalidate setting
 export const revalidate = 43200;
@@ -29,6 +25,33 @@ export async function generateStaticParams() {
   
   return popularTeams;
 }
+
+const getTeamPageData = unstable_cache(
+  async (teamId: number) => {
+    const [leagues, standings, upcomingMatches, recentMatches, players, transfers, injuries] = 
+      await Promise.all([
+        fetchTeamLeagues(teamId),
+        fetchTeamStandings(teamId),
+        fetchTeamMatches(teamId, 'upcoming'),
+        fetchTeamMatches(teamId, 'past'),
+        fetchTeamPlayers(teamId),
+        fetchTeamTransfers(teamId),
+        fetchTeamInjuries(teamId)
+      ]);
+
+    return {
+      leagues,
+      standings,
+      upcomingMatches,
+      recentMatches,
+      players,
+      transfers,
+      injuries
+    };
+  },
+  ['team-page-data'],
+  { revalidate: 43200 }
+);
 
 // This function runs on the server for each request
 export default async function TeamPage({ params }: { params: { teamSlug: string } }) {
@@ -88,35 +111,21 @@ export default async function TeamPage({ params }: { params: { teamSlug: string 
     console.log(`Starting parallel data fetch for team ID: ${teamId}`);
     
     try {
-      const [leagues, standings, upcomingMatches, recentMatches, players, transfers, injuries] = await Promise.all([
-        fetchTeamLeagues(teamId),
-        fetchTeamStandings(teamId),
-        fetchTeamMatches(teamId, 'upcoming'),
-        fetchTeamMatches(teamId, 'past'),
-        fetchTeamPlayers(teamId),
-        fetchTeamTransfers(teamId),
-        fetchTeamInjuries(teamId)
-      ]);
+      const pageData = await getTeamPageData(teamId);
       
       console.log(`Parallel data fetch complete with results:`);
-      console.log(`- Leagues: ${leagues?.length || 0}`);
-      console.log(`- Standings: ${standings?.length || 0}`);
-      console.log(`- Upcoming matches: ${upcomingMatches?.length || 0}`);
-      console.log(`- Recent matches: ${recentMatches?.length || 0}`);
-      console.log(`- Players: ${players?.length || 0}`);
-      console.log(`- Transfers: ${transfers?.length || 0}`);
-      console.log(`- Injuries: ${injuries?.length || 0}`);
+      console.log(`- Leagues: ${pageData.leagues?.length || 0}`);
+      console.log(`- Standings: ${pageData.standings?.length || 0}`);
+      console.log(`- Upcoming matches: ${pageData.upcomingMatches?.length || 0}`);
+      console.log(`- Recent matches: ${pageData.recentMatches?.length || 0}`);
+      console.log(`- Players: ${pageData.players?.length || 0}`);
+      console.log(`- Transfers: ${pageData.transfers?.length || 0}`);
+      console.log(`- Injuries: ${pageData.injuries?.length || 0}`);
       
       // Format and prepare data for the client component
       const formattedData = {
         team: teamData.team,
-        leagues: leagues || [],
-        standings: standings || [],
-        upcomingMatches: upcomingMatches || [],
-        recentMatches: recentMatches || [],
-        players: players || [],
-        transfers: transfers || [],
-        injuries: injuries || []
+        ...pageData
       };
       
       console.log(`Rendering team page for "${teamData.team.name}"`);
