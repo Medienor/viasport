@@ -1,290 +1,7 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-03-19T12:53:19.564Z
+// Last updated: 2025-03-21T16:18:30.223Z
 
 export const calendarData = {
-  "2025-03-12": [
-    {
-      "fixture": {
-        "id": 1353169,
-        "referee": "S. Schärer",
-        "timezone": "UTC",
-        "date": "2025-03-12T17:45:00+00:00",
-        "timestamp": 1741801500,
-        "periods": {
-          "first": 1741801500,
-          "second": 1741805100
-        },
-        "venue": {
-          "id": null,
-          "name": "Decathlon Arena - Stade Pierre-Mauroy",
-          "city": "Villeneuve d'Ascq"
-        },
-        "status": {
-          "long": "Match Finished",
-          "short": "FT",
-          "elapsed": 90,
-          "extra": 5
-        }
-      },
-      "league": {
-        "id": 2,
-        "name": "UEFA Champions League",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/2.png",
-        "flag": null,
-        "season": 2024,
-        "round": "Round of 16",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 79,
-          "name": "Lille",
-          "logo": "https://media.api-sports.io/football/teams/79.png",
-          "winner": false
-        },
-        "away": {
-          "id": 165,
-          "name": "Borussia Dortmund",
-          "logo": "https://media.api-sports.io/football/teams/165.png",
-          "winner": true
-        }
-      },
-      "goals": {
-        "home": 1,
-        "away": 2
-      },
-      "score": {
-        "halftime": {
-          "home": 1,
-          "away": 0
-        },
-        "fulltime": {
-          "home": 1,
-          "away": 2
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1353167,
-        "referee": "D. Siebert",
-        "timezone": "UTC",
-        "date": "2025-03-12T20:00:00+00:00",
-        "timestamp": 1741809600,
-        "periods": {
-          "first": 1741809600,
-          "second": 1741813200
-        },
-        "venue": {
-          "id": 495,
-          "name": "Villa Park",
-          "city": "Birmingham"
-        },
-        "status": {
-          "long": "Match Finished",
-          "short": "FT",
-          "elapsed": 90,
-          "extra": 1
-        }
-      },
-      "league": {
-        "id": 2,
-        "name": "UEFA Champions League",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/2.png",
-        "flag": null,
-        "season": 2024,
-        "round": "Round of 16",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 66,
-          "name": "Aston Villa",
-          "logo": "https://media.api-sports.io/football/teams/66.png",
-          "winner": true
-        },
-        "away": {
-          "id": 569,
-          "name": "Club Brugge KV",
-          "logo": "https://media.api-sports.io/football/teams/569.png",
-          "winner": false
-        }
-      },
-      "goals": {
-        "home": 3,
-        "away": 0
-      },
-      "score": {
-        "halftime": {
-          "home": 0,
-          "away": 0
-        },
-        "fulltime": {
-          "home": 3,
-          "away": 0
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1353171,
-        "referee": "S. Marciniak",
-        "timezone": "UTC",
-        "date": "2025-03-12T20:00:00+00:00",
-        "timestamp": 1741809600,
-        "periods": {
-          "first": 1741809600,
-          "second": 1741813200
-        },
-        "venue": {
-          "id": null,
-          "name": "Riyadh Air Metropolitano",
-          "city": "Madrid"
-        },
-        "status": {
-          "long": "Match Finished",
-          "short": "PEN",
-          "elapsed": 120,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 2,
-        "name": "UEFA Champions League",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/2.png",
-        "flag": null,
-        "season": 2024,
-        "round": "Round of 16",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 530,
-          "name": "Atletico Madrid",
-          "logo": "https://media.api-sports.io/football/teams/530.png",
-          "winner": false
-        },
-        "away": {
-          "id": 541,
-          "name": "Real Madrid",
-          "logo": "https://media.api-sports.io/football/teams/541.png",
-          "winner": true
-        }
-      },
-      "goals": {
-        "home": 1,
-        "away": 0
-      },
-      "score": {
-        "halftime": {
-          "home": 1,
-          "away": 0
-        },
-        "fulltime": {
-          "home": 1,
-          "away": 0
-        },
-        "extratime": {
-          "home": 0,
-          "away": 0
-        },
-        "penalty": {
-          "home": 2,
-          "away": 4
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1353173,
-        "referee": "R. Obrenović",
-        "timezone": "UTC",
-        "date": "2025-03-12T20:00:00+00:00",
-        "timestamp": 1741809600,
-        "periods": {
-          "first": 1741809600,
-          "second": 1741813200
-        },
-        "venue": {
-          "id": 494,
-          "name": "Emirates Stadium",
-          "city": "London"
-        },
-        "status": {
-          "long": "Match Finished",
-          "short": "FT",
-          "elapsed": 90,
-          "extra": 4
-        }
-      },
-      "league": {
-        "id": 2,
-        "name": "UEFA Champions League",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/2.png",
-        "flag": null,
-        "season": 2024,
-        "round": "Round of 16",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 42,
-          "name": "Arsenal",
-          "logo": "https://media.api-sports.io/football/teams/42.png",
-          "winner": null
-        },
-        "away": {
-          "id": 197,
-          "name": "PSV Eindhoven",
-          "logo": "https://media.api-sports.io/football/teams/197.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": 2,
-        "away": 2
-      },
-      "score": {
-        "halftime": {
-          "home": 2,
-          "away": 1
-        },
-        "fulltime": {
-          "home": 2,
-          "away": 2
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    }
-  ],
-  "2025-03-13": [],
   "2025-03-14": [
     {
       "fixture": {
@@ -2890,5 +2607,149 @@ export const calendarData = {
   "2025-03-23": [],
   "2025-03-24": [],
   "2025-03-25": [],
-  "2025-03-26": []
+  "2025-03-26": [],
+  "2025-03-27": [
+    {
+      "fixture": {
+        "id": 1208729,
+        "referee": "Busquets Ferrer, Mateo, Spain",
+        "timezone": "UTC",
+        "date": "2025-03-27T20:00:00+00:00",
+        "timestamp": 1743105600,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": 19939,
+          "name": "Estadi Olímpic Lluís Companys",
+          "city": "Barcelona"
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "logo": "https://media.api-sports.io/football/leagues/140.png",
+        "flag": "https://media.api-sports.io/flags/es.svg",
+        "season": 2024,
+        "round": "Regular Season - 27",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 529,
+          "name": "Barcelona",
+          "logo": "https://media.api-sports.io/football/teams/529.png",
+          "winner": null
+        },
+        "away": {
+          "id": 727,
+          "name": "Osasuna",
+          "logo": "https://media.api-sports.io/football/teams/727.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    }
+  ],
+  "2025-03-28": [
+    {
+      "fixture": {
+        "id": 1224209,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-03-28T19:30:00+00:00",
+        "timestamp": 1743190200,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": 699,
+          "name": "BayArena",
+          "city": "Leverkusen"
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "logo": "https://media.api-sports.io/football/leagues/78.png",
+        "flag": "https://media.api-sports.io/flags/de.svg",
+        "season": 2024,
+        "round": "Regular Season - 27",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 168,
+          "name": "Bayer Leverkusen",
+          "logo": "https://media.api-sports.io/football/teams/168.png",
+          "winner": null
+        },
+        "away": {
+          "id": 176,
+          "name": "VfL Bochum",
+          "logo": "https://media.api-sports.io/football/teams/176.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    }
+  ]
 };

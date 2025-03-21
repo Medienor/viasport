@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 // Define interfaces for the match object and its nested properties
 interface Time {
@@ -88,7 +88,117 @@ export default function LiveMatchDetails({ match }: LiveMatchDetailsProps) {
   const [matchLineups, setMatchLineups] = useState<Lineup[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('statistics');
+  const lastFetchTime = useRef<{ [key: string]: number }>({});
+  
+  // Different update intervals based on match status
+  const getUpdateInterval = useCallback(() => {
+    const status = match.fixture?.status?.short;
+    if (!status) return 0; // If no status, don't update
+    
+    if (status === 'HT' || status === 'BT') return 120000; // 2 minutes for half-time/break
+    if (status === 'FT' || status === 'AET' || status === 'PEN') return 0; // No updates for finished matches
+    return 60000; // 1 minute for live matches
+  }, [match.fixture?.status?.short]);
 
+  // Fetch data only for the active tab
+  const fetchTabData = useCallback(async (tabName: string, force: boolean = false) => {
+    const now = Date.now();
+    const minInterval = getUpdateInterval();
+    
+    // Skip if match is finished or not enough time has passed
+    if (minInterval === 0 || (!force && now - (lastFetchTime.current[tabName] || 0) < minInterval)) {
+      return;
+    }
+
+    try {
+      let endpoint = '';
+      switch (tabName) {
+        case 'statistics':
+          endpoint = `/api/football/fixtures/statistics?fixture=${match.fixture.id}`;
+          break;
+        case 'events':
+          endpoint = `/api/football/fixtures/events?fixture=${match.fixture.id}`;
+          break;
+        case 'lineups':
+          endpoint = `/api/football/fixtures/lineups?fixture=${match.fixture.id}`;
+          break;
+        default:
+          return;
+      }
+
+      const response = await fetch(endpoint, {
+        cache: 'no-store',
+        headers: { 'Cache-Control': 'no-cache' }
+      });
+
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      const data = await response.json();
+      
+      lastFetchTime.current[tabName] = now;
+
+      switch (tabName) {
+        case 'statistics':
+          setMatchStats(data.response || []);
+          break;
+        case 'events':
+          setMatchEvents(data.response || []);
+          break;
+        case 'lineups':
+          setMatchLineups(data.response || []);
+          break;
+      }
+    } catch (error) {
+      console.error(`Error fetching ${tabName}:`, error);
+    }
+  }, [match.fixture.id, getUpdateInterval]);
+
+  // Effect for handling tab changes and updates
+  useEffect(() => {
+    let intervalId: NodeJS.Timeout | null = null;
+    let isSubscribed = true;
+
+    const updateActiveTab = async (force: boolean = false) => {
+      if (!isSubscribed) return;
+      setLoading(true);
+      await fetchTabData(activeTab, force);
+      if (isSubscribed) setLoading(false);
+    };
+
+    // Handle visibility changes
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        if (intervalId) {
+          clearInterval(intervalId);
+          intervalId = null;
+        }
+      } else {
+        updateActiveTab(true); // Force update when becoming visible
+        startInterval();
+      }
+    };
+
+    const startInterval = () => {
+      const interval = getUpdateInterval();
+      if (interval > 0 && !intervalId) {
+        intervalId = setInterval(() => updateActiveTab(), interval);
+      }
+    };
+
+    // Initial fetch
+    updateActiveTab(true);
+    startInterval();
+
+    // Add visibility change listener
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      isSubscribed = false;
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [activeTab, fetchTabData, getUpdateInterval]);
 
   // Translation map for statistics
   const translateStatType = (statType: string): string => {
@@ -120,50 +230,6 @@ export default function LiveMatchDetails({ match }: LiveMatchDetailsProps) {
   const getPlayerPhotoUrl = (playerId: number) => {
     return `https://media.api-sports.io/football/players/${playerId}.png`;
   };
-
-  // Fetch match details when component mounts
-  useEffect(() => {
-    const fetchMatchDetails = async () => {
-      setLoading(true);
-      try {
-        // Fetch match statistics
-        const statsResponse = await fetch(`/api/football/fixtures/statistics?fixture=${match.fixture.id}`);
-        if (statsResponse.ok) {
-          const statsData = await statsResponse.json();
-          setMatchStats(statsData.response || []);
-        }
-        
-        // Fetch match events if not already available
-        if (!match.events || match.events.length === 0) {
-          const eventsResponse = await fetch(`/api/football/fixtures/events?fixture=${match.fixture.id}`);
-          if (eventsResponse.ok) {
-            const eventsData = await eventsResponse.json();
-            setMatchEvents(eventsData.response || []);
-          }
-        } else {
-          setMatchEvents(match.events);
-        }
-        
-        // Fetch match lineups
-        const lineupsResponse = await fetch(`/api/football/fixtures/lineups?fixture=${match.fixture.id}`);
-        if (lineupsResponse.ok) {
-          const lineupsData = await lineupsResponse.json();
-          setMatchLineups(lineupsData.response || []);
-        }
-      } catch (error) {
-        console.error('Error fetching match details:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    
-    fetchMatchDetails();
-    
-    // Set up polling to refresh match details every minute
-    const intervalId = setInterval(fetchMatchDetails, 60000);
-    
-    return () => clearInterval(intervalId);
-  }, [match]);
 
   // Improved render match statistics function
   const renderMatchStats = () => {

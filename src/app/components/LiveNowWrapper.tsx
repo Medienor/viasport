@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import LiveNow from './LiveNow';
 
@@ -34,17 +34,23 @@ interface Match {
 export default function LiveNowWrapper() {
   const [hasPopularLiveMatches, setHasPopularLiveMatches] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  
+  const lastFetchTime = useRef<number>(0);
+  const MIN_FETCH_INTERVAL = 60000; // 1 minute minimum between checks
+
   useEffect(() => {
-    // Function to check if there are any live matches in popular leagues
-    const checkPopularLiveMatches = async () => {
+    let isSubscribed = true;
+    let timeoutId: NodeJS.Timeout | null = null;
+
+    const checkPopularLiveMatches = async (force: boolean = false) => {
+      const now = Date.now();
+      if (!force && now - lastFetchTime.current < MIN_FETCH_INTERVAL) {
+        return; // Skip if not enough time has passed
+      }
+
       try {
-        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/fixtures?live=all', {
-          headers: {
-            'x-rapidapi-key': '1a7dc8ba9cmshff75c6099ce0152p158153jsnac5252d21d90',
-            'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
-          },
-          next: { revalidate: 60 } // 60 seconds for live data
+        // Use the server endpoint instead of direct API call
+        const response = await fetch('/api/live-matches', {
+          cache: 'no-store'
         });
         
         if (!response.ok) {
@@ -52,22 +58,51 @@ export default function LiveNowWrapper() {
         }
         
         const data = await response.json();
+        lastFetchTime.current = now;
         
         // Check if there are any live matches in popular leagues
-        const popularLeagueMatches = data.response?.filter((match: Match) => 
+        const popularLeagueMatches = data.matches?.filter((match: Match) => 
           POPULAR_LEAGUE_IDS.includes(match.league?.id)
         );
         
-        setHasPopularLiveMatches(popularLeagueMatches && popularLeagueMatches.length > 0);
+        if (isSubscribed) {
+          setHasPopularLiveMatches(popularLeagueMatches && popularLeagueMatches.length > 0);
+          setIsLoading(false);
+        }
       } catch (error) {
         console.error('Error checking live matches:', error);
-        setHasPopularLiveMatches(false);
-      } finally {
-        setIsLoading(false);
+        if (isSubscribed) {
+          setHasPopularLiveMatches(false);
+          setIsLoading(false);
+        }
       }
     };
-    
-    checkPopularLiveMatches();
+
+    // Handle visibility changes
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        if (timeoutId) {
+          clearTimeout(timeoutId);
+          timeoutId = null;
+        }
+      } else {
+        checkPopularLiveMatches(true); // Force check when becoming visible
+      }
+    };
+
+    // Initial check
+    checkPopularLiveMatches(true);
+
+    // Add visibility change listener
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      isSubscribed = false;
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
   }, []);
   
   // If still loading or no popular live matches, don't render anything

@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
@@ -94,109 +94,123 @@ export default function LiveNow({ popularLeaguesOnly = false }: LiveNowProps) {
   const [error, setError] = useState<string | null>(null);
   const [currentMatchIndex, setCurrentMatchIndex] = useState(0);
   const router = useRouter();
-  const [retryCount, setRetryCount] = useState(0);
-  const MAX_RETRIES = 3;
-  const RETRY_DELAY = 2000; // 2 seconds
+  const lastFetchTime = useRef<number>(0);
+  const MIN_FETCH_INTERVAL = 30000; // 30 seconds minimum between fetches
 
-  // Modified fetch function with retry logic and rate limiting
-  const fetchLiveMatches = useCallback(async () => {
-    setIsLoading(true);
+  // Modified fetch function with rate limiting and error handling
+  const fetchLiveMatches = useCallback(async (force: boolean = false) => {
+    const now = Date.now();
+    if (!force && now - lastFetchTime.current < MIN_FETCH_INTERVAL) {
+      return; // Skip if not enough time has passed
+    }
+
     try {
-      const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/fixtures?live=all', {
+      // Use server endpoint instead of direct API call
+      const response = await fetch('/api/live-matches', {
+        cache: 'no-store',
         headers: {
-          'x-rapidapi-key': '1a7dc8ba9cmshff75c6099ce0152p158153jsnac5252d21d90',
-          'x-rapidapi-host': 'api-football-v1.p.rapidapi.com',
-          'cache-control': 'no-cache' // Prevent caching
+          'Cache-Control': 'no-cache'
         }
       });
-      
-      if (response.status === 429) {
-        // Rate limit hit
-        if (retryCount < MAX_RETRIES) {
-          console.log(`Rate limit hit, retrying in ${RETRY_DELAY}ms... (Attempt ${retryCount + 1}/${MAX_RETRIES})`);
-          setRetryCount(prev => prev + 1);
-          await new Promise(resolve => setTimeout(resolve, RETRY_DELAY));
-          return fetchLiveMatches(); // Retry the request
-        } else {
-          throw new Error('Rate limit exceeded after maximum retries');
-        }
-      }
 
       if (!response.ok) {
-        throw new Error(`Failed to fetch live matches: ${response.status}`);
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
-      
+
       const data = await response.json();
-      setRetryCount(0); // Reset retry count on success
-      
-      // Filter matches by popular leagues if requested
-      let matches = data.response || [];
+      lastFetchTime.current = now;
+
+      // Filter and sort matches
+      let matches = data.matches || [];
       if (popularLeaguesOnly) {
         matches = matches.filter((match: Fixture) => 
           POPULAR_LEAGUE_IDS.includes(match.league?.id)
         );
       }
-      
-      // Sort matches by league popularity and then by match time
+
+      // Sort matches by league popularity and match time
       matches.sort((a: Fixture, b: Fixture) => {
-        // First sort by league popularity (lower index = more popular)
         const leagueAIndex = POPULAR_LEAGUE_IDS.indexOf(a.league.id);
         const leagueBIndex = POPULAR_LEAGUE_IDS.indexOf(b.league.id);
         
         if (leagueAIndex !== -1 && leagueBIndex !== -1) {
           return leagueAIndex - leagueBIndex;
         } else if (leagueAIndex !== -1) {
-          return -1; // A is in popular leagues, B is not
+          return -1;
         } else if (leagueBIndex !== -1) {
-          return 1;  // B is in popular leagues, A is not
+          return 1;
         }
         
-        // If neither is in popular leagues or both are equally popular,
-        // sort by match time (later elapsed time first)
         return (b.fixture.status.elapsed ?? 0) - (a.fixture.status.elapsed ?? 0);
       });
-      
+
       setLiveMatches(matches);
+      setError(null);
     } catch (err) {
       console.error('Error fetching live matches:', err);
       setError('Kunne ikke hente direktesendte kamper.');
     } finally {
       setIsLoading(false);
     }
-  }, [popularLeaguesOnly, retryCount]);
+  }, [popularLeaguesOnly]);
 
+  // Optimized useEffect with cleanup and visibility handling
   useEffect(() => {
-    let isMounted = true;
-    const intervalId = setInterval(fetchLiveMatches, 120000); // Changed to const
-    
-    const fetchData = async () => {
-      if (!isMounted) return;
-      await fetchLiveMatches();
+    let intervalId: NodeJS.Timeout | null = null;
+    let isSubscribed = true;
+
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        if (intervalId) {
+          clearInterval(intervalId);
+          intervalId = null;
+        }
+      } else {
+        fetchLiveMatches(true); // Force fetch when becoming visible
+        startInterval();
+      }
     };
-    
-    fetchData();
-    
+
+    const startInterval = () => {
+      if (!intervalId) {
+        intervalId = setInterval(() => {
+          if (isSubscribed) {
+            fetchLiveMatches(false);
+          }
+        }, 120000); // 2 minutes
+      }
+    };
+
+    // Initial fetch
+    fetchLiveMatches(true);
+    startInterval();
+
+    // Add visibility change listener
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
     return () => {
-      isMounted = false;
-      if (intervalId) clearInterval(intervalId);
+      isSubscribed = false;
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
   }, [fetchLiveMatches]);
 
-  const goToPreviousMatch = () => {
+  // Navigation functions
+  const goToPreviousMatch = useCallback(() => {
     if (liveMatches.length === 0) return;
-    
     setCurrentMatchIndex((prevIndex) => 
       prevIndex === 0 ? liveMatches.length - 1 : prevIndex - 1
     );
-  };
-  
-  const goToNextMatch = () => {
+  }, [liveMatches.length]);
+
+  const goToNextMatch = useCallback(() => {
     if (liveMatches.length === 0) return;
-    
     setCurrentMatchIndex((prevIndex) => 
       prevIndex === liveMatches.length - 1 ? 0 : prevIndex + 1
     );
-  };
+  }, [liveMatches.length]);
 
   // Helper function to get match status display
   const getMatchStatusDisplay = (fixture: Fixture) => {

@@ -1,24 +1,31 @@
 import { NextResponse } from 'next/server';
 
+export const runtime = 'edge';
+export const revalidate = 604800; // 7 days
+
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://viasport.no';
   
   console.log('==== LEAGUES SITEMAP GENERATION STARTED ====');
   
   // RapidAPI configuration
-  const rapidApiKey = process.env.RAPIDAPI_KEY || '1a7dc8ba9cmshff75c6099ce0152p158153jsnac5252d21d90';
+  const rapidApiKey = process.env.RAPID_API_KEY;
   const rapidApiHost = 'api-football-v1.p.rapidapi.com';
+  
+  if (!rapidApiKey) {
+    throw new Error('RAPID_API_KEY is not defined');
+  }
   
   try {
     console.log('Making API request to fetch leagues...');
     
     // Fetch leagues directly from the API
     const leaguesResponse = await fetch(`https://${rapidApiHost}/v3/leagues`, {
-      headers: {
+      method: 'GET',
+      headers: new Headers({
         'x-rapidapi-key': rapidApiKey,
         'x-rapidapi-host': rapidApiHost
-      },
-      next: { revalidate: 604800 } // Cache for 1 week (7 days)
+      })
     });
     
     if (!leaguesResponse.ok) {
@@ -65,11 +72,11 @@ export async function GET() {
     
     console.log(`Added ${leagueCount} leagues to sitemap`);
     console.log('==== LEAGUES SITEMAP GENERATION COMPLETED ====');
-    
+
     return new NextResponse(xml, {
       headers: {
         'Content-Type': 'application/xml',
-        'Cache-Control': 'public, max-age=1209600, s-maxage=1209600', // 2 weeks
+        'Cache-Control': 'public, max-age=604800, s-maxage=604800, stale-while-revalidate=86400',
       },
     });
   } catch (error) {

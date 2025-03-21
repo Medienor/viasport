@@ -1,12 +1,10 @@
 import { trackedFetch } from '@/lib/api';
 
-// API key for API-FOOTBALL via RapidAPI
-const API_KEY = '1a7dc8ba9cmshff75c6099ce0152p158153jsnac5252d21d90';
 export const BASE_URL = 'https://api-football-v1.p.rapidapi.com/v3';
 
-// Headers required for API requests
+// Headers with environment variable
 export const headers = {
-  'x-rapidapi-key': API_KEY,
+  'x-rapidapi-key': process.env.RAPID_API_KEY!,
   'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
 };
 
@@ -70,8 +68,21 @@ const globalCache: {
   }
 } = {};
 
-// Cache duration in seconds (1 hour = 3600 seconds)
-const CACHE_DURATION = 3600;
+// Increased cache duration and added rate limiting
+const CACHE_DURATION = 7200; // 2 hours
+const LIVE_CACHE_DURATION = 30; // 30 seconds for live data
+const API_RATE_LIMIT = 1000; // 1 second minimum between calls
+let lastApiCall = 0;
+
+// Rate limiting function
+const checkRateLimit = async () => {
+  const now = Date.now();
+  const timeSinceLastCall = now - lastApiCall;
+  if (timeSinceLastCall < API_RATE_LIMIT) {
+    await new Promise(resolve => setTimeout(resolve, API_RATE_LIMIT - timeSinceLastCall));
+  }
+  lastApiCall = Date.now();
+};
 
 // API call tracking
 interface ApiCallLog {
@@ -254,63 +265,72 @@ export async function getPopularLeagues(source: string = 'unknown'): Promise<Lea
  */
 export async function getUpcomingFixtures(leagueId?: number, date?: string, source: string = 'unknown'): Promise<Fixture[]> {
   const cacheKey = `upcoming-fixtures-${leagueId || 'all'}-${date || 'next10days'}`;
-  const endpoint = `${BASE_URL}/fixtures`;
-  const parameters = { leagueId, date };
-  
-  return cachedFetch(cacheKey, async () => {
-    try {
-      // Build query parameters
-      let queryParams = '';
+  const cached = globalCache[cacheKey];
+  const now = Date.now();
+
+  if (cached && (now - cached.timestamp) < CACHE_DURATION * 1000) {
+    return cached.data;
+  }
+
+  await checkRateLimit();
+
+  try {
+    // Build query parameters
+    let queryParams = '';
+    
+    // Get current season (current year)
+    const currentYear = new Date().getFullYear();
+    queryParams += `season=${currentYear}&`;
+    
+    if (leagueId) {
+      queryParams += `league=${leagueId}&`;
+    }
+    
+    if (date) {
+      queryParams += `date=${date}&`;
+    } else {
+      // If no date provided, get next 10 days
+      const from = new Date();
+      const to = new Date();
+      to.setDate(to.getDate() + 10);
       
-      // Get current season (current year)
-      const currentYear = new Date().getFullYear();
-      queryParams += `season=${currentYear}&`;
+      const fromStr = from.toISOString().split('T')[0];
+      const toStr = to.toISOString().split('T')[0];
       
-      if (leagueId) {
-        queryParams += `league=${leagueId}&`;
-      }
-      
-      if (date) {
-        queryParams += `date=${date}&`;
-      } else {
-        // If no date provided, get next 10 days
-        const from = new Date();
-        const to = new Date();
-        to.setDate(to.getDate() + 10);
-        
-        const fromStr = from.toISOString().split('T')[0];
-        const toStr = to.toISOString().split('T')[0];
-        
-        queryParams += `from=${fromStr}&to=${toStr}&`;
-      }
-      
-      // Add timezone
-      queryParams += 'timezone=Europe/Oslo';
-      
-      const response = await trackedFetch(`${endpoint}?${queryParams}`, {
-        headers
-      });
-      
-      if (!response.ok) {
-        throw new Error(`API error: ${response.status}`);
-      }
-      
-      const data = await response.json();
-      
-      if (data.errors && Object.keys(data.errors).length > 0) {
-        console.error('API Error:', data.errors);
-        return [];
-      }
-      
-      // Log the response to see what we're getting
-      console.log(`Fixtures for ${leagueId ? `league ${leagueId}` : 'all leagues'}:`, data.response.length);
-      
-      return data.response;
-    } catch (error) {
-      console.error(`Error fetching fixtures for league ${leagueId}:`, error);
+      queryParams += `from=${fromStr}&to=${toStr}&`;
+    }
+    
+    // Add timezone
+    queryParams += 'timezone=Europe/Oslo';
+    
+    // Log the API call with source information
+    logApiCall(`${BASE_URL}/fixtures`, cacheKey, { leagueId, date }, source);
+    
+    const response = await trackedFetch(`${BASE_URL}/fixtures?${queryParams}`, {
+      headers
+    });
+    
+    if (!response.ok) {
+      throw new Error(`API error: ${response.status}`);
+    }
+    
+    const data = await response.json();
+    
+    if (data.errors && Object.keys(data.errors).length > 0) {
+      console.error('API Error:', data.errors);
       return [];
     }
-  }, endpoint, parameters, source);
+    
+    globalCache[cacheKey] = {
+      data: data.response,
+      timestamp: now
+    };
+    
+    return data.response;
+  } catch (error) {
+    console.error(`Error fetching fixtures for league ${leagueId}:`, error);
+    return [];
+  }
 }
 
 /**
@@ -408,32 +428,35 @@ export function getTeamLogoUrl(teamId: number): string {
  * @returns Array of Fixture objects for live matches
  */
 export async function getLiveMatches(source: string = 'unknown'): Promise<Fixture[]> {
-  // Don't cache live matches as they need to be fresh
+  const cacheKey = 'live-matches';
+  const cached = globalCache[cacheKey];
+  const now = Date.now();
+
+  if (cached && (now - cached.timestamp) < LIVE_CACHE_DURATION * 1000) {
+    return cached.data;
+  }
+
+  await checkRateLimit();
+
   try {
     const endpoint = `${BASE_URL}/fixtures`;
-    const parameters = { live: 'all' };
+    logApiCall(endpoint, cacheKey, { live: 'all' }, source);
     
-    logApiCall(endpoint, 'no-cache-live-matches', parameters, source);
-    
-    const response = await trackedFetch(`${endpoint}?live=all`, {
-      headers
-    });
-    
-    if (!response.ok) {
-      throw new Error(`API error: ${response.status}`);
-    }
+    const response = await trackedFetch(`${endpoint}?live=all`, { headers });
+    if (!response.ok) throw new Error(`API error: ${response.status}`);
     
     const data = await response.json();
+    if (data.errors) throw new Error(JSON.stringify(data.errors));
     
-    if (data.errors && Object.keys(data.errors).length > 0) {
-      console.error('API Error:', data.errors);
-      return [];
-    }
+    globalCache[cacheKey] = {
+      data: data.response,
+      timestamp: now
+    };
     
     return data.response;
   } catch (error) {
     console.error('Error fetching live matches:', error);
-    return [];
+    return cached?.data || [];
   }
 }
 
@@ -857,4 +880,7 @@ export async function getFixtures(leagueId: number, days: number = 30, source: s
       return [];
     }
   }, endpoint, parameters, source);
-} 
+}
+
+// Add cleanup interval for cache
+setInterval(cleanupCache, CACHE_DURATION * 500); // Run cleanup every half cache duration 

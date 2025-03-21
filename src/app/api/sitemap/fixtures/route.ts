@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+
+// Enable edge runtime and set revalidation period
+export const runtime = 'edge';
+export const revalidate = 604800; // 7 days
 
 // Define popular leagues with their IDs
 const POPULAR_LEAGUES = [
@@ -24,71 +26,70 @@ const POPULAR_LEAGUES = [
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://viasport.no';
   
-  // Create a log file for debugging
-  const logPath = path.join(process.cwd(), 'fixtures-sitemap-debug.log');
-  const logMessage = (msg: string) => {
-    fs.appendFileSync(logPath, `${new Date().toISOString()}: ${msg}\n`);
-  };
-  
-  logMessage('==== FIXTURES SITEMAP GENERATION STARTED ====');
-  
-  // RapidAPI configuration
-  const rapidApiKey = process.env.RAPIDAPI_KEY || '1a7dc8ba9cmshff75c6099ce0152p158153jsnac5252d21d90';
-  const rapidApiHost = 'api-football-v1.p.rapidapi.com';
-  
   try {
-    // Get current season
-    const currentYear = new Date().getFullYear();
-    const currentSeason = currentYear;
+    console.log('==== FIXTURES SITEMAP GENERATION STARTED ====');
+    
+    // RapidAPI configuration
+    const rapidApiKey = process.env.RAPID_API_KEY;
+    const rapidApiHost = 'api-football-v1.p.rapidapi.com';
+    
+    if (!rapidApiKey) {
+      throw new Error('RAPID_API_KEY is not defined');
+    }
     
     let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
     
     let totalFixtureCount = 0;
+    const currentSeason = new Date().getFullYear();
     
     // Fetch fixtures for each league
     for (const league of POPULAR_LEAGUES) {
-      logMessage(`Fetching fixtures for ${league.name} (ID: ${league.id})`);
+      console.log(`Fetching fixtures for ${league.name} (ID: ${league.id})`);
       
-      const response = await fetch(`https://${rapidApiHost}/v3/fixtures?league=${league.id}&season=${currentSeason}`, {
-        method: 'GET',
-        headers: {
-          'x-rapidapi-key': rapidApiKey,
-          'x-rapidapi-host': rapidApiHost
-        },
-        next: {
-          revalidate: 604800 // Cache for 7 days (7 * 24 * 60 * 60 seconds)
+      try {
+        const response = await fetch(`https://${rapidApiHost}/v3/fixtures?league=${league.id}&season=${currentSeason}`, {
+          method: 'GET',
+          headers: {
+            'x-rapidapi-key': rapidApiKey!,
+            'x-rapidapi-host': rapidApiHost
+          },
+          next: {
+            revalidate: 604800 // Cache for 7 days
+          }
+        });
+        
+        if (!response.ok) {
+          console.log(`Error fetching ${league.name}: ${response.status}`);
+          continue; // Skip to next league if this one fails
         }
-      });
-      
-      if (!response.ok) {
-        logMessage(`Error fetching ${league.name}: ${response.status}`);
-        continue; // Skip to next league if this one fails
-      }
-      
-      const data = await response.json();
-      
-      if (!data.response || !Array.isArray(data.response)) {
-        logMessage(`Invalid response structure for ${league.name}`);
-        continue;
-      }
-      
-      const fixtureCount = data.response.length;
-      logMessage(`Found ${fixtureCount} fixtures for ${league.name}`);
-      
-      // Process each fixture
-      for (const fixture of data.response) {
-        if (fixture && fixture.fixture && fixture.fixture.id) {
-          totalFixtureCount++;
-          
-          xml += `
+        
+        const data = await response.json();
+        
+        if (!data.response || !Array.isArray(data.response)) {
+          console.log(`Invalid response structure for ${league.name}`);
+          continue;
+        }
+        
+        const fixtureCount = data.response.length;
+        console.log(`Found ${fixtureCount} fixtures for ${league.name}`);
+        
+        // Process each fixture
+        for (const fixture of data.response) {
+          if (fixture && fixture.fixture && fixture.fixture.id) {
+            totalFixtureCount++;
+            
+            xml += `
   <url>
     <loc>${baseUrl}/fotball/kamp/${fixture.fixture.id}</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <lastmod>${new Date().toISOString()}</lastmod>
   </url>`;
+          }
         }
+      } catch (error) {
+        console.error(`Error processing league ${league.name}:`, error);
       }
       
       // Add a small delay between requests to avoid rate limiting
@@ -98,20 +99,18 @@ export async function GET() {
     xml += `
 </urlset>`;
     
-    logMessage(`Successfully added ${totalFixtureCount} fixtures from ${POPULAR_LEAGUES.length} leagues to sitemap`);
-    logMessage('==== FIXTURES SITEMAP GENERATION COMPLETED ====');
-    
+    console.log(`Successfully added ${totalFixtureCount} fixtures from ${POPULAR_LEAGUES.length} leagues to sitemap`);
+    console.log('==== FIXTURES SITEMAP GENERATION COMPLETED ====');
+
     return new NextResponse(xml, {
       headers: {
         'Content-Type': 'application/xml',
-        'Cache-Control': 'public, max-age=604800, s-maxage=604800, stale-while-revalidate=86400', // 7 days cache with 1 day stale-while-revalidate
+        'Cache-Control': 'public, max-age=604800, s-maxage=604800, stale-while-revalidate=86400',
       },
     });
-    
   } catch (error) {
-    logMessage(`Error: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    console.error(`Error generating fixtures sitemap:`, error);
     
-    // Return an empty sitemap with error comment
     const emptyXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Error fetching fixtures: ${error instanceof Error ? error.message : 'Unknown error'} -->

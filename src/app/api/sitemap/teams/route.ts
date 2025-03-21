@@ -1,5 +1,9 @@
 import { NextResponse } from 'next/server';
 
+// Enable edge runtime and set revalidation period
+export const runtime = 'edge';
+export const revalidate = 604800; // 7 days
+
 // Define a type for team objects
 interface Team {
   id: number;
@@ -14,12 +18,17 @@ interface Team {
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://viasport.no';
   
-  console.log('==== TEAMS SITEMAP GENERATION STARTED ====');
-  
-  // RapidAPI configuration
-  const rapidApiKey = process.env.RAPIDAPI_KEY || '1a7dc8ba9cmshff75c6099ce0152p158153jsnac5252d21d90';
-  
   try {
+    console.log('==== TEAMS SITEMAP GENERATION STARTED ====');
+    
+    // RapidAPI configuration
+    const rapidApiKey = process.env.RAPID_API_KEY;
+    const rapidApiHost = 'api-football-v1.p.rapidapi.com';
+    
+    if (!rapidApiKey) {
+      throw new Error('RAPID_API_KEY is not defined');
+    }
+    
     // Strategy: Get teams from popular leagues with current season
     console.log('Fetching teams from popular leagues...');
     
@@ -60,7 +69,7 @@ export async function GET() {
         const response = await fetch(`https://api-football-v1.p.rapidapi.com/v3/teams?league=${leagueId}&season=${currentSeason}`, {
           headers: {
             'x-rapidapi-key': rapidApiKey,
-            'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
+            'x-rapidapi-host': rapidApiHost
           },
           next: { revalidate: 604800 } // Cache for 1 week
         });
@@ -104,7 +113,7 @@ export async function GET() {
         const response = await fetch(`https://api-football-v1.p.rapidapi.com/v3/teams?league=${leagueId}&season=${previousSeason}`, {
           headers: {
             'x-rapidapi-key': rapidApiKey,
-            'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
+            'x-rapidapi-host': rapidApiHost
           },
           next: { revalidate: 604800 } // Cache for 1 week
         });
@@ -150,17 +159,16 @@ export async function GET() {
     
     console.log(`Added ${allTeams.length} unique teams to sitemap`);
     console.log('==== TEAMS SITEMAP GENERATION COMPLETED ====');
-    
+
     return new NextResponse(xml, {
       headers: {
         'Content-Type': 'application/xml',
-        'Cache-Control': 'public, max-age=1209600, s-maxage=1209600', // 2 weeks
+        'Cache-Control': 'public, max-age=604800, s-maxage=604800, stale-while-revalidate=86400',
       },
     });
   } catch (error) {
     console.error(`Error generating teams sitemap:`, error);
     
-    // Return an empty sitemap in case of error
     const emptyXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Error fetching teams: ${error instanceof Error ? error.message : 'Unknown error'} -->

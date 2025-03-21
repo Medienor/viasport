@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Fixture } from '@/app/services/sportApi';
@@ -153,18 +153,11 @@ interface TopPlayer {
 export default function MatchCalendar({ currentMatchId = "" }) {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState(new Date());
-  const [matches, setMatches] = useState<Fixture[]>([]);
+  const [matchCounts, setMatchCounts] = useState<{ [key: string]: number }>({});
+  const [matches, setMatches] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-  const [matchCounts, setMatchCounts] = useState<{[key: string]: number}>(() => {
-    const counts: {[key: string]: number} = {};
-    
-    // Calculate counts from pre-fetched data
-    for (const dateStr in calendarData) {
-      counts[dateStr] = calendarData[dateStr]?.length || 0;
-    }
-    
-    return counts;
-  });
+  const lastFetchTime = useRef<{ [key: string]: number }>({});
+  const MIN_FETCH_INTERVAL = 300000; // 5 minutes between updates
   const [loadingPlayers, setLoadingPlayers] = useState(true);
   const [expandedLeagues, setExpandedLeagues] = useState<{[key: number]: boolean}>({});
   const [leagueTeams, setLeagueTeams] = useState<{[key: number]: TeamData[]}>(leagueTeamsData);
@@ -216,65 +209,71 @@ export default function MatchCalendar({ currentMatchId = "" }) {
     return daysArray;
   }, [currentDate, selectedDate, matchCounts]);
 
-  // Modify the fetch match counts effect to only fetch missing dates
-  useEffect(() => {
-    const fetchMissingMatchCounts = async () => {
-      const updatedCounts = { ...matchCounts };
-      let needsUpdate = false;
+  // Memoize the fetch function to prevent unnecessary re-renders
+  const fetchMissingMatchCounts = useCallback(async () => {
+    const now = Date.now();
+    const updatedCounts = { ...matchCounts };
+    let needsUpdate = false;
+    
+    for (let i = -2; i < 3; i++) {
+      const date = new Date(currentDate);
+      date.setDate(currentDate.getDate() + i);
+      const dateStr = date.toISOString().split('T')[0];
       
-      for (let i = -2; i < 3; i++) {
-        const date = new Date(currentDate);
-        date.setDate(currentDate.getDate() + i);
-        const dateStr = date.toISOString().split('T')[0];
+      // Only fetch if we don't have data for this date AND enough time has passed
+      if (updatedCounts[dateStr] === undefined && 
+          (!lastFetchTime.current[dateStr] || 
+           now - lastFetchTime.current[dateStr] >= MIN_FETCH_INTERVAL)) {
         
-        // Only fetch if we don't have data for this date
-        if (updatedCounts[dateStr] === undefined) {
-          console.log(`No pre-fetched data for date ${dateStr}, fetching from API...`);
-          try {
-            const response = await fetch(`/api/football/calendar/${dateStr}`);
-            if (response.ok) {
-              const data = await response.json();
-              const fixtures = data.response || [];
-              // Filter for our leagues
-              const filteredFixtures = fixtures.filter((fixture: ApiFixture) => 
-                LEAGUES.some(league => league.id === fixture.league.id)
-              );
-              updatedCounts[dateStr] = filteredFixtures.length;
-              needsUpdate = true;
-            }
-          } catch (error) {
-            console.error(`Error fetching matches for ${dateStr}:`, error);
-            updatedCounts[dateStr] = 0;
+        try {
+          const response = await fetch(`/api/football/calendar/${dateStr}`);
+          if (response.ok) {
+            const data = await response.json();
+            const fixtures = data.response || [];
+            // Filter for our leagues
+            const filteredFixtures = fixtures.filter((fixture: ApiFixture) => 
+              LEAGUES.some(league => league.id === fixture.league.id)
+            );
+            updatedCounts[dateStr] = filteredFixtures.length;
+            lastFetchTime.current[dateStr] = now;
             needsUpdate = true;
           }
-        } else {
-          console.log(`Using pre-fetched match count for date ${dateStr}: ${updatedCounts[dateStr]} matches`);
+        } catch (error) {
+          console.error(`Error fetching matches for ${dateStr}:`, error);
+          updatedCounts[dateStr] = 0;
         }
       }
-      
-      // Only update state if we fetched new data
-      if (needsUpdate) {
-        setMatchCounts(updatedCounts);
-      }
-    };
+    }
+    
+    // Only update state if we fetched new data
+    if (needsUpdate) {
+      setMatchCounts(prev => ({...prev, ...updatedCounts}));
+    }
+  }, [currentDate, matchCounts]); // Include matchCounts in dependencies
 
+  // Effect to trigger the fetch
+  useEffect(() => {
     fetchMissingMatchCounts();
-  }, [currentDate, matchCounts]);
+  }, [fetchMissingMatchCounts]); // Only depend on the memoized fetch function
 
-  // Modify the fetch matches effect to use pre-fetched data
+  // Fetch matches for selected date - with rate limiting
   useEffect(() => {
     const fetchMatchesForSelectedDate = async () => {
+      const dateStr = selectedDate.toISOString().split('T')[0];
+      const now = Date.now();
+
+      // Check if we need to fetch based on time elapsed
+      if (lastFetchTime.current[`matches_${dateStr}`] && 
+          now - lastFetchTime.current[`matches_${dateStr}`] < MIN_FETCH_INTERVAL) {
+        return;
+      }
+
       setLoading(true);
       try {
-        const dateStr = selectedDate.toISOString().split('T')[0];
-        
-        // Check if we have pre-fetched data for this date
+        // Check if we have pre-fetched data
         if (calendarData[dateStr] && calendarData[dateStr].length > 0) {
-          console.log(`Using pre-fetched matches for date ${dateStr}: ${calendarData[dateStr].length} matches`);
           setMatches(calendarData[dateStr]);
         } else {
-          console.log(`No pre-fetched data for date ${dateStr}, fetching from API...`);
-          // Use the calendar-specific API route
           const response = await fetch(`/api/football/calendar/${dateStr}`);
           if (!response.ok) {
             throw new Error(`API responded with status: ${response.status}`);
@@ -288,14 +287,15 @@ export default function MatchCalendar({ currentMatchId = "" }) {
             LEAGUES.some(league => league.id === fixture.league.id)
           );
           
-          console.log(`Fetched ${filteredFixtures.length} matches for date ${dateStr} from API`);
           setMatches(filteredFixtures);
+          lastFetchTime.current[`matches_${dateStr}`] = now;
         }
       } catch (error) {
         console.error('Error fetching matches:', error);
         setMatches([]);
+      } finally {
+        setLoading(false);
       }
-      setLoading(false);
     };
 
     fetchMatchesForSelectedDate();

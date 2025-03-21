@@ -6,9 +6,9 @@ import Footer from './components/Footer';
 import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import Providers from './providers'
-import APITracker from '@/components/APITracker';
 import '@/lib/fetchInterceptor';
 import ScrollToTop from './components/ScrollToTop';
+import ApiMonitor from './components/ApiMonitor';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -76,7 +76,7 @@ export default function RootLayout({
             <Navbar />
             <main className="flex-grow">{children}</main>
             <Footer />
-            <APITracker />
+            {process.env.NODE_ENV === 'development' && <ApiMonitor />}
           </Providers>
         </body>
       </html>
