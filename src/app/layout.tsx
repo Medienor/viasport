@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import Providers from './providers'
-import '@/lib/fetchInterceptor';
 import ScrollToTop from './components/ScrollToTop';
 import ApiMonitor from './components/ApiMonitor';
 

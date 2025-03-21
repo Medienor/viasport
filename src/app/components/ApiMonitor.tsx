@@ -444,6 +444,14 @@ interface ApiStats {
 }
 
 export default function ApiMonitor() {
+  // Check if we're on an excluded page
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : '';
+  const EXCLUDED_PATHS = ['/kontakt', '/about', '/privacy-policy'];
+  
+  if (EXCLUDED_PATHS.some(path => pathname.startsWith(path))) {
+    return null; // Don't render the monitor on excluded pages
+  }
+
   // Initialize state from localStorage if available
   const [apiCalls, setApiCalls] = useState<ApiCall[]>(() => {
     if (typeof window !== 'undefined') {
