@@ -1,13 +1,17 @@
 "use client"
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { fetchTeamLeaguesWithStandings, fetchLeagueStandings } from '@/lib/api';
+import { getTeamStandings } from '@/app/services/sportApi';
 import { getSlugFromTeamId } from '@/lib/utils';
+
+// TEMPORARY API DISABLE FLAG - set to true to disable API calls
+const DISABLE_API_CALLS = true;
 
 interface ClientStandingsProps {
   teamId: number;
+  leagueId: number;
 }
 
 interface League {
@@ -20,9 +24,9 @@ interface League {
   current: boolean;
 }
 
-export default function ClientStandings({ teamId }: ClientStandingsProps) {
-  const [standingsData, setStandingsData] = useState<any[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+export default function ClientStandings({ teamId, leagueId }: ClientStandingsProps) {
+  const [standings, setStandings] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedSeason, setSelectedSeason] = useState<number>(2023);
   const availableSeasons = [2024, 2023, 2022, 2021, 2020];
@@ -30,49 +34,128 @@ export default function ClientStandings({ teamId }: ClientStandingsProps) {
   const [selectedLeague, setSelectedLeague] = useState<number | null>(null);
   const [leagueName, setLeagueName] = useState<string>('');
 
-  // Fetch leagues the team is in
   useEffect(() => {
-    async function loadTeamLeagues() {
+    async function fetchStandings() {
       try {
-        setIsLoading(true);
-        const leaguesData = await fetchTeamLeaguesWithStandings(teamId);
+        setLoading(true);
         
-        if (leaguesData && leaguesData.length > 0) {
-          setLeagues(leaguesData);
+        // Skip API call if disabled
+        if (DISABLE_API_CALLS) {
+          console.log(`[API DISABLED] Would have fetched standings for teamId: ${teamId}, leagueId: ${leagueId}`);
           
-          // Set the first league as selected by default
-          const defaultLeague = leaguesData[0];
-          setSelectedLeague(defaultLeague.id);
-          setSelectedSeason(defaultLeague.season);
+          // Mock standings data
+          const mockStandings = [
+            {
+              rank: 1,
+              team: { id: 50, name: "Manchester City", logo: "https://media.api-sports.io/football/teams/50.png" },
+              points: 89,
+              goalsDiff: 61,
+              group: "Premier League",
+              form: "WWWDW",
+              status: "same",
+              description: "Promotion - Champions League (Group Stage)",
+              all: {
+                played: 38,
+                win: 28,
+                draw: 5,
+                lose: 5,
+                goals: { for: 94, against: 33 }
+              }
+            },
+            {
+              rank: 2,
+              team: { id: 42, name: "Arsenal", logo: "https://media.api-sports.io/football/teams/42.png" },
+              points: 84,
+              goalsDiff: 45,
+              group: "Premier League",
+              form: "WDWWW",
+              status: "same",
+              description: "Promotion - Champions League (Group Stage)",
+              all: {
+                played: 38,
+                win: 26,
+                draw: 6,
+                lose: 6,
+                goals: { for: 88, against: 43 }
+              }
+            },
+            {
+              rank: 3,
+              team: { id: 33, name: "Manchester United", logo: "https://media.api-sports.io/football/teams/33.png" },
+              points: 75,
+              goalsDiff: 15,
+              group: "Premier League",
+              form: "LWWLW",
+              status: "same",
+              description: "Promotion - Champions League (Group Stage)",
+              all: {
+                played: 38,
+                win: 23,
+                draw: 6,
+                lose: 9,
+                goals: { for: 58, against: 43 }
+              }
+            },
+            {
+              rank: 4,
+              team: { id: 40, name: "Liverpool", logo: "https://media.api-sports.io/football/teams/40.png" },
+              points: 67,
+              goalsDiff: 28,
+              group: "Premier League",
+              form: "WWWLW",
+              status: "same",
+              description: "Promotion - Champions League (Group Stage)",
+              all: {
+                played: 38,
+                win: 19,
+                draw: 10,
+                lose: 9,
+                goals: { for: 75, against: 47 }
+              }
+            },
+            {
+              rank: 5,
+              team: { id: 47, name: "Tottenham", logo: "https://media.api-sports.io/football/teams/47.png" },
+              points: 60,
+              goalsDiff: 7,
+              group: "Premier League",
+              form: "LWLLL",
+              status: "same",
+              description: "Promotion - Europa League (Group Stage)",
+              all: {
+                played: 38,
+                win: 18,
+                draw: 6,
+                lose: 14,
+                goals: { for: 70, against: 63 }
+              }
+            }
+          ];
           
-          // Load standings for the default league
-          const standingsData = await fetchLeagueStandings(defaultLeague.id, defaultLeague.season);
-          setStandingsData(standingsData);
-          
-          if (standingsData && standingsData.length > 0 && standingsData[0]?.league?.name) {
-            setLeagueName(standingsData[0].league.name);
-          }
-          
-          setError(null);
-        } else {
-          setLeagues([]);
-          setError('Ingen ligaer funnet for dette laget');
+          setStandings(mockStandings);
+          setLoading(false);
+          return;
         }
+        
+        const data = await getTeamStandings(teamId, leagueId);
+        setStandings(data);
+        setLoading(false);
       } catch (err) {
-        console.error('Error loading team leagues:', err);
-        setError('Kunne ikke laste ligadata. Prøv igjen senere.');
-      } finally {
-        setIsLoading(false);
+        console.error('Error fetching standings:', err);
+        setError('Failed to load standings');
+        setLoading(false);
       }
     }
-    
-    loadTeamLeagues();
-  }, [teamId]);
+
+    if (teamId && leagueId) {
+      fetchStandings();
+    }
+  }, [teamId, leagueId]);
 
   // Function to handle league change
   const handleLeagueChange = async (leagueId: number) => {
     try {
-      setIsLoading(true);
+      setLoading(true);
       setSelectedLeague(leagueId);
       
       // Find the selected league to get its season
@@ -81,10 +164,10 @@ export default function ClientStandings({ teamId }: ClientStandingsProps) {
         setSelectedSeason(league.season);
         
         // Fetch standings for the selected league
-        const data = await fetchLeagueStandings(leagueId, league.season);
+        const data = await getTeamStandings(teamId, leagueId);
         
         if (data && data.length > 0) {
-          setStandingsData(data);
+          setStandings(data);
           
           if (data[0]?.league?.name) {
             setLeagueName(data[0].league.name);
@@ -92,7 +175,7 @@ export default function ClientStandings({ teamId }: ClientStandingsProps) {
           
           setError(null);
         } else {
-          setStandingsData([]);
+          setStandings([]);
           setError(`Ingen tabelldata funnet for ${league.name}`);
         }
       }
@@ -100,7 +183,7 @@ export default function ClientStandings({ teamId }: ClientStandingsProps) {
       console.error(`Error loading standings for league ${leagueId}:`, err);
       setError(`Kunne ikke laste tabelldata for valgt liga`);
     } finally {
-      setIsLoading(false);
+      setLoading(false);
     }
   };
 
@@ -109,14 +192,14 @@ export default function ClientStandings({ teamId }: ClientStandingsProps) {
     if (!selectedLeague) return;
     
     try {
-      setIsLoading(true);
+      setLoading(true);
       setSelectedSeason(season);
       
       // Fetch standings for the selected league and season
-      const data = await fetchLeagueStandings(selectedLeague, season);
+      const data = await getTeamStandings(teamId, selectedLeague);
       
       if (data && data.length > 0) {
-        setStandingsData(data);
+        setStandings(data);
         setError(null);
       } else {
         setError(`Ingen tabelldata funnet for sesongen ${season}`);
@@ -125,12 +208,16 @@ export default function ClientStandings({ teamId }: ClientStandingsProps) {
       console.error(`Error loading standings for season ${season}:`, err);
       setError(`Kunne ikke laste tabelldata for sesongen ${season}`);
     } finally {
-      setIsLoading(false);
+      setLoading(false);
     }
   };
 
   // Format season for display
   const formatSeasonDisplay = (season: number) => `${season}/${season + 1}`;
+
+  if (loading) return <div>Loading standings...</div>;
+  if (error) return <div className="text-red-500">{error}</div>;
+  if (!standings.length) return <div>No standings available</div>;
 
   return (
     <div className="bg-white shadow rounded-lg p-6">
@@ -197,71 +284,56 @@ export default function ClientStandings({ teamId }: ClientStandingsProps) {
         </div>
       </div>
       
-      {isLoading ? (
-        <div className="flex justify-center items-center h-64">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
-        </div>
-      ) : error ? (
-        <div className="text-center py-8">
-          <p className="text-gray-500">{error}</p>
-          <p className="text-sm text-gray-400 mt-2">Prøv en annen liga eller sesong</p>
-        </div>
-      ) : standingsData.length > 0 ? (
-        <div className="overflow-x-auto">
-          <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-gray-50">
-              <tr>
-                <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">#</th>
-                <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Lag</th>
-                <th scope="col" className="px-3 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">K</th>
-                <th scope="col" className="px-3 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">V</th>
-                <th scope="col" className="px-3 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">U</th>
-                <th scope="col" className="px-3 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">T</th>
-                <th scope="col" className="px-3 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">P</th>
-              </tr>
-            </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
-              {standingsData[0]?.league?.standings[0]?.map((team: any) => {
-                // Create a slug for the team
-                const teamSlug = getSlugFromTeamId(team.team.id, team.team.name);
-                
-                return (
-                  <tr key={team.team.id} className={team.team.id === teamId ? 'bg-blue-50' : ''}>
-                    <td className="px-3 py-4 whitespace-nowrap text-sm text-gray-500">{team.rank}</td>
-                    <td className="px-3 py-4 whitespace-nowrap">
-                      <Link href={`/lag/${teamSlug}`} className="flex items-center hover:text-blue-600">
-                        {team.team.logo && (
-                          <div className="flex-shrink-0 h-6 w-6 mr-2">
-                            <Image 
-                              src={team.team.logo} 
-                              alt={team.team.name} 
-                              width={24} 
-                              height={24}
-                              className="h-6 w-6" 
-                            />
-                          </div>
-                        )}
-                        <div className="text-sm font-medium text-gray-900 hover:text-blue-600">
-                          {team.team.name}
+      <div className="overflow-x-auto">
+        <table className="min-w-full divide-y divide-gray-200">
+          <thead className="bg-gray-50">
+            <tr>
+              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">#</th>
+              <th scope="col" className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Lag</th>
+              <th scope="col" className="px-3 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">K</th>
+              <th scope="col" className="px-3 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">V</th>
+              <th scope="col" className="px-3 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">U</th>
+              <th scope="col" className="px-3 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">T</th>
+              <th scope="col" className="px-3 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">P</th>
+            </tr>
+          </thead>
+          <tbody className="bg-white divide-y divide-gray-200">
+            {standings.map((team: any) => {
+              // Create a slug for the team
+              const teamSlug = getSlugFromTeamId(team.team.id, team.team.name);
+              
+              return (
+                <tr key={team.team.id} className={team.team.id === teamId ? 'bg-blue-50' : ''}>
+                  <td className="px-3 py-4 whitespace-nowrap text-sm text-gray-500">{team.rank}</td>
+                  <td className="px-3 py-4 whitespace-nowrap">
+                    <Link href={`/lag/${teamSlug}`} className="flex items-center hover:text-blue-600">
+                      {team.team.logo && (
+                        <div className="flex-shrink-0 h-6 w-6 mr-2">
+                          <Image 
+                            src={team.team.logo} 
+                            alt={team.team.name} 
+                            width={24} 
+                            height={24}
+                            className="h-6 w-6" 
+                          />
                         </div>
-                      </Link>
-                    </td>
-                    <td className="px-3 py-4 whitespace-nowrap text-sm text-center text-gray-500">{team.all.played}</td>
-                    <td className="px-3 py-4 whitespace-nowrap text-sm text-center text-gray-500">{team.all.win}</td>
-                    <td className="px-3 py-4 whitespace-nowrap text-sm text-center text-gray-500">{team.all.draw}</td>
-                    <td className="px-3 py-4 whitespace-nowrap text-sm text-center text-gray-500">{team.all.lose}</td>
-                    <td className="px-3 py-4 whitespace-nowrap text-sm text-center font-medium text-gray-900">{team.points}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-      ) : (
-        <div className="text-center py-8">
-          <p className="text-gray-500">Ingen tabelldata tilgjengelig</p>
-        </div>
-      )}
+                      )}
+                      <div className="text-sm font-medium text-gray-900 hover:text-blue-600">
+                        {team.team.name}
+                      </div>
+                    </Link>
+                  </td>
+                  <td className="px-3 py-4 whitespace-nowrap text-sm text-center text-gray-500">{team.all.played}</td>
+                  <td className="px-3 py-4 whitespace-nowrap text-sm text-center text-gray-500">{team.all.win}</td>
+                  <td className="px-3 py-4 whitespace-nowrap text-sm text-center text-gray-500">{team.all.draw}</td>
+                  <td className="px-3 py-4 whitespace-nowrap text-sm text-center text-gray-500">{team.all.lose}</td>
+                  <td className="px-3 py-4 whitespace-nowrap text-sm text-center font-medium text-gray-900">{team.points}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 } 

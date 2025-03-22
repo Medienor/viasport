@@ -1,12 +1,15 @@
 "use client"
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { getTeamTransfers } from '@/app/services/sportApi';
+
+// TEMPORARY API DISABLE FLAG - set to true to disable API calls
+const DISABLE_API_CALLS = true;
 
 // Define types for the props
 interface TeamTransfersProps {
   teamId: number;
-  transfers: any[]; // Accept transfers as a prop instead of fetching
 }
 
 // Norwegian translations for transfer types
@@ -21,7 +24,30 @@ const transferTypeTranslations: Record<string, string> = {
 // Sort options
 type SortOption = 'recent' | 'fee' | 'loan' | 'free';
 
-export default function TeamTransfers({ teamId, transfers }: TeamTransfersProps) {
+interface Transfer {
+  player: {
+    id: number;
+    name: string;
+  };
+  update: string; // Date of transfer
+  type: 'In' | 'Out';
+  teams: {
+    in: {
+      id: number;
+      name: string;
+      logo: string;
+    };
+    out: {
+      id: number;
+      name: string;
+      logo: string;
+    };
+  };
+}
+
+export default function TeamTransfers({ teamId }: TeamTransfersProps) {
+  const [transfers, setTransfers] = useState<Transfer[]>([]);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [sortBy, setSortBy] = useState<SortOption>('recent');
   const [selectedYear, setSelectedYear] = useState<number>(new Date().getFullYear());
@@ -187,57 +213,69 @@ export default function TeamTransfers({ teamId, transfers }: TeamTransfersProps)
 
   const sortedTransfers = sortTransfers(filteredTransfers);
 
-  if (error) {
-    return (
-      <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded relative" role="alert">
-        <strong className="font-bold">Feil!</strong>
-        <span className="block sm:inline"> {error}</span>
-      </div>
-    );
-  }
-
-  if (transfers.length === 0) {
-    return (
-      <div className="text-center py-10">
-        <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-        </svg>
-        <h3 className="mt-2 text-sm font-medium text-gray-900">Ingen overganger</h3>
-        <p className="mt-1 text-sm text-gray-500">Det er ingen registrerte overganger for dette laget.</p>
-      </div>
-    );
-  }
-
-  if (filteredTransfers.length === 0) {
-    return (
-      <div className="space-y-6">
-        <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-bold text-gray-900">Overganger</h2>
-          
-          {/* Filter by year */}
-          <div className="flex space-x-2">
-            <select 
-              className="bg-white border border-gray-300 rounded-md shadow-sm py-2 px-3 text-sm"
-              value={selectedYear}
-              onChange={(e) => setSelectedYear(parseInt(e.target.value))}
-            >
-              {availableYears.map(year => (
-                <option key={year} value={year}>{year}</option>
-              ))}
-            </select>
-          </div>
-        </div>
+  useEffect(() => {
+    async function fetchTransfers() {
+      try {
+        setLoading(true);
         
-        <div className="text-center py-10">
-          <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-          </svg>
-          <h3 className="mt-2 text-sm font-medium text-gray-900">Ingen overganger i {selectedYear}</h3>
-          <p className="mt-1 text-sm text-gray-500">Det er ingen registrerte overganger for dette laget i {selectedYear}.</p>
-        </div>
-      </div>
-    );
-  }
+        // Skip API call if disabled
+        if (DISABLE_API_CALLS) {
+          console.log(`[API DISABLED] Would have fetched transfers for teamId: ${teamId}`);
+          
+          // Mock transfers data
+          const mockTransfers = [
+            {
+              player: { id: 201, name: "Mason Mount" },
+              update: "2023-07-15",
+              type: "In",
+              teams: {
+                in: { id: teamId, name: "Manchester United", logo: "https://media.api-sports.io/football/teams/33.png" },
+                out: { id: 49, name: "Chelsea", logo: "https://media.api-sports.io/football/teams/49.png" }
+              }
+            },
+            {
+              player: { id: 202, name: "André Onana" },
+              update: "2023-07-20",
+              type: "In",
+              teams: {
+                in: { id: teamId, name: "Manchester United", logo: "https://media.api-sports.io/football/teams/33.png" },
+                out: { id: 505, name: "Inter", logo: "https://media.api-sports.io/football/teams/505.png" }
+              }
+            },
+            {
+              player: { id: 203, name: "David de Gea" },
+              update: "2023-06-30",
+              type: "Out",
+              teams: {
+                in: { id: 0, name: "Free Agent", logo: "https://media.api-sports.io/football/teams/0.png" },
+                out: { id: teamId, name: "Manchester United", logo: "https://media.api-sports.io/football/teams/33.png" }
+              }
+            }
+          ];
+          
+          setTransfers(mockTransfers);
+          setLoading(false);
+          return;
+        }
+        
+        const data = await getTeamTransfers(teamId);
+        setTransfers(data);
+        setLoading(false);
+      } catch (err) {
+        console.error('Error fetching transfers:', err);
+        setError('Failed to load transfers');
+        setLoading(false);
+      }
+    }
+
+    if (teamId) {
+      fetchTransfers();
+    }
+  }, [teamId]);
+
+  if (loading) return <div>Loading transfers...</div>;
+  if (error) return <div className="text-red-500">{error}</div>;
+  if (!transfers.length) return <div>No transfers available</div>;
 
   return (
     <div className="space-y-6">
