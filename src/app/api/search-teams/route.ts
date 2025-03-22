@@ -1,12 +1,38 @@
 import { NextResponse } from 'next/server';
 import { BASE_URL, headers } from '@/app/services/sportApi';
 
+// TEMPORARY API DISABLE FLAG - set to true to disable API calls
+const DISABLE_API_CALLS = true;
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const query = searchParams.get('query');
 
   if (!query) {
     return NextResponse.json({ error: 'Query parameter is required' }, { status: 400 });
+  }
+
+  // Skip API call if disabled
+  if (DISABLE_API_CALLS) {
+    console.log(`[API DISABLED] Search teams API call would have been made with: query=${query}`);
+    
+    // Return mock data
+    return NextResponse.json([
+      {
+        id: 33,
+        name: "Manchester United",
+        type: "team",
+        logo: "https://media.api-sports.io/football/teams/33.png",
+        country: "England"
+      },
+      {
+        id: 40,
+        name: "Liverpool",
+        type: "team",
+        logo: "https://media.api-sports.io/football/teams/40.png",
+        country: "England"
+      }
+    ]);
   }
 
   try {

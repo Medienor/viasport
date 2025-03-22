@@ -1,11 +1,29 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+// TEMPORARY API DISABLE FLAG - set to true to disable API calls
+const DISABLE_API_CALLS = true;
+
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const teamId = searchParams.get('team');
   
   if (!teamId) {
     return NextResponse.json({ error: 'Team ID is required' }, { status: 400 });
+  }
+  
+  // Skip API call if disabled
+  if (DISABLE_API_CALLS) {
+    console.log(`[API DISABLED] Team seasons API call would have been made with: team=${teamId}`);
+    
+    // Return mock data
+    return NextResponse.json({
+      get: "teams/seasons",
+      parameters: { team: teamId },
+      errors: [],
+      results: 5,
+      paging: { current: 1, total: 1 },
+      response: [2023, 2022, 2021, 2020, 2019]
+    });
   }
   
   try {

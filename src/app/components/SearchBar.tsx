@@ -8,6 +8,9 @@ import type { IndexedTeam, IndexedLeague } from '@/lib/searchIndex';
 import { formatTime, createTeamSlug, createLeagueSlug } from '@/lib/utils';
 import { useQuery } from '@tanstack/react-query';
 
+// TEMPORARY API DISABLE FLAG - set to true to disable API calls
+const DISABLE_API_CALLS = true;
+
 // First, install react-query
 // npm install @tanstack/react-query
 
@@ -39,14 +42,18 @@ const SearchBar = () => {
   const searchRef = useRef<HTMLDivElement>(null);
   const fuseRef = useRef<Fuse<SearchIndexItem> | null>(null);
   
-  // Fetch live fixtures using React Query
+  // Fetch live fixtures using React Query - DISABLED
   const { data: liveFixtures } = useQuery({
     queryKey: ['liveFixtures'],
     queryFn: async () => {
+      if (DISABLE_API_CALLS) {
+        console.log('[API DISABLED] Live fixtures API call would have been made');
+        return [];
+      }
       const response = await fetch('/api/live-fixtures');
       return response.json();
     },
-    refetchInterval: 30000 // Refetch every 30 seconds
+    refetchInterval: DISABLE_API_CALLS ? false : 30000 // Only refetch if API calls are enabled
   });
 
   // Initialize Fuse index
@@ -98,8 +105,8 @@ const SearchBar = () => {
       // Set initial results from static index
       setSearchResults(uniqueStaticResults);
 
-      // If we have few results (less than 5), try the API search
-      if (uniqueStaticResults.length < 5) {
+      // If we have few results (less than 5) AND API calls are enabled, try the API search
+      if (uniqueStaticResults.length < 5 && !DISABLE_API_CALLS) {
         try {
           // Parallel API calls for both teams and leagues
           const [teamsResponse, leaguesResponse] = await Promise.all([
@@ -161,6 +168,8 @@ const SearchBar = () => {
           console.error('Error fetching API results:', error);
           // Keep showing static results if API fails
         }
+      } else if (DISABLE_API_CALLS && uniqueStaticResults.length < 5) {
+        console.log('[API DISABLED] Search API calls would have been made for:', searchTerm);
       }
     }, 300);
 
@@ -178,6 +187,11 @@ const SearchBar = () => {
 
   return (
     <div ref={searchRef} className="relative">
+      {DISABLE_API_CALLS && (
+        <div className="absolute -top-6 left-0 right-0 bg-yellow-100 text-yellow-800 text-xs p-1 rounded text-center">
+          API søk deaktivert midlertidig
+        </div>
+      )}
       <div className="relative">
         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
           <svg className="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">

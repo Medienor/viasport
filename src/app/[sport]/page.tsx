@@ -8,38 +8,49 @@ import { getPopularLeagues, getUpcomingFixtures, getAvailableCountries, getLeagu
 import React from 'react';
 import { ChevronRightIcon } from '@heroicons/react/24/outline';
 
-// Add this function to create a URL-friendly slug from a team name
-function createTeamSlug(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/\s+/g, '-')           // Replace spaces with hyphens
-    .replace(/[æøå]/g, match => {   // Handle Norwegian characters
-      if (match === 'æ') return 'ae';
-      if (match === 'ø') return 'o';
-      if (match === 'å') return 'a';
-      return match;
-    })
-    .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
-    .replace(/\-\-+/g, '-')         // Replace multiple hyphens with single hyphen
-    .replace(/^-+/, '')             // Trim hyphens from start
-    .replace(/-+$/, '');            // Trim hyphens from end
+// TEMPORARY API DISABLE FLAG - set to true to disable API calls
+const DISABLE_API_CALLS = true;
+
+// Define types
+interface League {
+  id: number;
+  name: string;
+  country: string;
+  logo: string;
 }
 
-// Add this function to create a URL-friendly slug from a league name
-function createLeagueSlug(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/\s+/g, '-')           // Replace spaces with hyphens
-    .replace(/[æøå]/g, match => {   // Handle Norwegian characters
-      if (match === 'æ') return 'ae';
-      if (match === 'ø') return 'o';
-      if (match === 'å') return 'a';
-      return match;
-    })
-    .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
-    .replace(/\-\-+/g, '-')         // Replace multiple hyphens with single hyphen
-    .replace(/^-+/, '')             // Trim hyphens from start
-    .replace(/-+$/, '');            // Trim hyphens from end
+interface Team {
+  id: number;
+  name: string;
+  logo: string;
+}
+
+interface Fixture {
+  id: number;
+  date: string;
+  status: {
+    short: string;
+    long: string;
+    elapsed: number | null;
+  };
+  league: League;
+  teams: {
+    home: Team;
+    away: Team;
+  };
+  goals: {
+    home: number | null;
+    away: number | null;
+  };
+}
+
+// Helper functions
+function createTeamSlug(teamName: string): string {
+  return teamName.toLowerCase().replace(/\s+/g, '-');
+}
+
+function createLeagueSlug(leagueName: string): string {
+  return leagueName.toLowerCase().replace(/\s+/g, '-');
 }
 
 export default function SportPage() {
@@ -70,10 +81,96 @@ export default function SportPage() {
   ];
   
   useEffect(() => {
-   
     async function fetchData() {
       try {
         setLoading(true);
+        
+        // Skip API calls if disabled
+        if (DISABLE_API_CALLS) {
+          console.log(`[API DISABLED] SportPage would have fetched data for sport: ${sport}`);
+          
+          // Set mock data
+          setCountries([
+            "England", "Spain", "Germany", "Italy", "France", "Europe", "Norway", "Sweden", "Denmark"
+          ]);
+          
+          setLeagues([
+            { id: 39, name: "Premier League", country: "England", logo: "https://media.api-sports.io/football/leagues/39.png" },
+            { id: 140, name: "La Liga", country: "Spain", logo: "https://media.api-sports.io/football/leagues/140.png" },
+            { id: 78, name: "Bundesliga", country: "Germany", logo: "https://media.api-sports.io/football/leagues/78.png" },
+            { id: 135, name: "Serie A", country: "Italy", logo: "https://media.api-sports.io/football/leagues/135.png" },
+            { id: 61, name: "Ligue 1", country: "France", logo: "https://media.api-sports.io/football/leagues/61.png" },
+            { id: 2, name: "Champions League", country: "Europe", logo: "https://media.api-sports.io/football/leagues/2.png" }
+          ]);
+          
+          // Mock today's matches
+          setTodaysMatches([
+            {
+              id: 1001,
+              date: new Date().toISOString(),
+              status: { short: "NS", long: "Not Started", elapsed: null },
+              league: { id: 39, name: "Premier League", country: "England", logo: "https://media.api-sports.io/football/leagues/39.png" },
+              teams: {
+                home: { id: 33, name: "Manchester United", logo: "https://media.api-sports.io/football/teams/33.png" },
+                away: { id: 40, name: "Liverpool", logo: "https://media.api-sports.io/football/teams/40.png" }
+              },
+              goals: { home: null, away: null }
+            },
+            {
+              id: 1002,
+              date: new Date().toISOString(),
+              status: { short: "NS", long: "Not Started", elapsed: null },
+              league: { id: 39, name: "Premier League", country: "England", logo: "https://media.api-sports.io/football/leagues/39.png" },
+              teams: {
+                home: { id: 50, name: "Manchester City", logo: "https://media.api-sports.io/football/teams/50.png" },
+                away: { id: 47, name: "Tottenham", logo: "https://media.api-sports.io/football/teams/47.png" }
+              },
+              goals: { home: null, away: null }
+            }
+          ]);
+          
+          // Mock live matches
+          setLiveMatches([
+            {
+              id: 1003,
+              date: new Date().toISOString(),
+              status: { short: "2H", long: "Second Half", elapsed: 65 },
+              league: { id: 140, name: "La Liga", country: "Spain", logo: "https://media.api-sports.io/football/leagues/140.png" },
+              teams: {
+                home: { id: 529, name: "Barcelona", logo: "https://media.api-sports.io/football/teams/529.png" },
+                away: { id: 541, name: "Real Madrid", logo: "https://media.api-sports.io/football/teams/541.png" }
+              },
+              goals: { home: 1, away: 2 }
+            }
+          ]);
+          
+          // Mock upcoming fixtures for each league
+          const mockFixturesByLeague: Record<number, Fixture[]> = {};
+          
+          topLeagues.forEach(league => {
+            mockFixturesByLeague[league.id] = Array(3).fill(0).map((_, i) => ({
+              id: 2000 + (league.id * 10) + i,
+              date: new Date(Date.now() + (i + 1) * 86400000).toISOString(), // Next few days
+              status: { short: "NS", long: "Not Started", elapsed: null },
+              league: { id: league.id, name: league.name, country: league.country, logo: `https://media.api-sports.io/football/leagues/${league.id}.png` },
+              teams: {
+                home: { id: 100 + i, name: `Home Team ${i + 1}`, logo: `https://media.api-sports.io/football/teams/${100 + i}.png` },
+                away: { id: 200 + i, name: `Away Team ${i + 1}`, logo: `https://media.api-sports.io/football/teams/${200 + i}.png` }
+              },
+              goals: { home: null, away: null }
+            }));
+          });
+          
+          setUpcomingFixtures(mockFixturesByLeague);
+          
+          // Set the first league as active if none is selected
+          if (!activeLeagueId && topLeagues.length > 0) {
+            setActiveLeagueId(topLeagues[0].id);
+          }
+          
+          setLoading(false);
+          return;
+        }
         
         // Only fetch data for football for now
         if (sport.toLowerCase() === 'fotball') {

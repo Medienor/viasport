@@ -2,6 +2,15 @@ import { trackedFetch } from '@/lib/api';
 
 export const BASE_URL = 'https://api-football-v1.p.rapidapi.com/v3';
 
+// TEMPORARY API DISABLE FLAG - set to true to disable API calls
+const DISABLE_API_CALLS = true;
+
+// Helper function to log disabled API calls
+function logDisabledCall(functionName: string, ...args: any[]) {
+  console.log(`[API DISABLED] ${functionName} would have been called with:`, ...args);
+  return [];
+}
+
 // Headers with environment variable
 export const headers = {
   'x-rapidapi-key': process.env.RAPID_API_KEY!,
@@ -164,106 +173,61 @@ export function clearCache(): void {
   console.log(`Manually cleared ${count} cache entries`);
 }
 
-/**
- * Wrapper function to handle caching for API calls
- * @param cacheKey Unique key for caching the response
- * @param fetchFunction Function that makes the actual API call
- * @param endpoint The API endpoint being called
- * @param parameters Parameters for the API call
- * @param source Information about what triggered the call
- * @returns Promise with the data from cache or fresh API call
- */
+// Modified cachedFetch to respect the disable flag
 async function cachedFetch<T>(
-  cacheKey: string, 
-  fetchFunction: () => Promise<T>,
+  cacheKey: string,
+  fetchFn: () => Promise<T>,
   endpoint: string,
-  parameters: Record<string, any> = {},
-  source: string = 'unknown'
+  parameters: Record<string, any>,
+  source: string
 ): Promise<T> {
-  const now = Math.floor(Date.now() / 1000); // Current time in seconds
-  
-  // Clean up expired entries when accessing the cache
-  cleanupCache();
-  
-  // Check if we have a valid cached response
-  if (globalCache[cacheKey] && (now - globalCache[cacheKey].timestamp) < CACHE_DURATION) {
-    console.log(`Using cached data for: ${cacheKey}`);
-    return globalCache[cacheKey].data;
+  // Skip API call if disabled
+  if (DISABLE_API_CALLS) {
+    console.log(`[API DISABLED] cachedFetch would have called ${endpoint} with parameters:`, parameters);
+    return [] as unknown as T;
   }
-  
-  // No valid cache, make the API call
-  console.log(`Fetching fresh data for: ${cacheKey}`);
+
+  const cached = globalCache[cacheKey];
+  const now = Date.now();
+
+  if (cached && (now - cached.timestamp) < CACHE_DURATION * 1000) {
+    return cached.data;
+  }
+
+  await checkRateLimit();
   logApiCall(endpoint, cacheKey, parameters, source);
-  
-  const data = await fetchFunction();
-  
-  // Store in cache
-  globalCache[cacheKey] = {
-    data,
-    timestamp: now
-  };
-  
-  return data;
-}
 
-// Set up periodic cache cleanup (every hour)
-if (typeof setInterval !== 'undefined') {
-  setInterval(cleanupCache, CACHE_DURATION * 1000);
-  console.log('Scheduled periodic cache cleanup');
-}
-
-/**
- * Get popular football leagues
- * @returns Array of League objects
- */
-export async function getPopularLeagues(source: string = 'unknown'): Promise<League[]> {
-  const cacheKey = 'popular-leagues';
-  const endpoint = `${BASE_URL}/leagues`;
-  const parameters = { season: new Date().getFullYear() };
-  
-  return cachedFetch(cacheKey, async () => {
-    try {
-      // Get current season (current year)
-      const currentYear = new Date().getFullYear();
-      
-      const response = await trackedFetch(`${endpoint}?season=${currentYear}`, {
-        headers
-      });
-      
-      if (!response.ok) {
-        throw new Error(`API error: ${response.status}`);
-      }
-      
-      const data = await response.json();
-      
-      if (data.errors && Object.keys(data.errors).length > 0) {
-        console.error('API Error:', data.errors);
-        return [];
-      }
-      
-      // Popular league IDs
-      const popularLeagueIds = [2, 39, 61, 78, 135, 140];
-      
-      // Filter leagues to only include popular ones
-      const leagues = data.response
-        .filter((item: any) => popularLeagueIds.includes(item.league.id))
-        .map((item: any) => item.league);
-      
-      return leagues;
-    } catch (error) {
-      console.error('Error fetching leagues:', error);
-      return [];
+  try {
+    const result = await fetchFn();
+    
+    globalCache[cacheKey] = {
+      data: result,
+      timestamp: now
+    };
+    
+    // Cleanup cache occasionally
+    if (Math.random() < 0.1) { // 10% chance to run cleanup
+      cleanupCache();
     }
-  }, endpoint, parameters, source);
+    
+    return result;
+  } catch (error) {
+    console.error(`Error in cachedFetch for ${cacheKey}:`, error);
+    if (cached) {
+      console.log(`Returning stale cached data for ${cacheKey}`);
+      return cached.data;
+    }
+    throw error;
+  }
 }
 
-/**
- * Get upcoming fixtures for a specific league
- * @param leagueId Optional league ID
- * @param date Optional date in YYYY-MM-DD format
- * @returns Array of Fixture objects
- */
+// Modify all API functions to respect the disable flag
+
 export async function getUpcomingFixtures(leagueId?: number, date?: string, source: string = 'unknown'): Promise<Fixture[]> {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getUpcomingFixtures', { leagueId, date, source }) as Fixture[];
+  }
+
   const cacheKey = `upcoming-fixtures-${leagueId || 'all'}-${date || 'next10days'}`;
   const cached = globalCache[cacheKey];
   const now = Date.now();
@@ -338,6 +302,10 @@ export async function getUpcomingFixtures(leagueId?: number, date?: string, sour
  * @returns Array of country names
  */
 export async function getAvailableCountries(source: string = 'unknown'): Promise<string[]> {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getAvailableCountries', { source }) as string[];
+  }
+
   const cacheKey = 'available-countries';
   const endpoint = `${BASE_URL}/countries`;
   const parameters = {};
@@ -373,6 +341,10 @@ export async function getAvailableCountries(source: string = 'unknown'): Promise
  * @returns Array of League objects
  */
 export async function getLeaguesByCountry(country: string, source: string = 'unknown'): Promise<League[]> {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getLeaguesByCountry', { country, source }) as League[];
+  }
+
   const cacheKey = `leagues-by-country-${country}`;
   const endpoint = `${BASE_URL}/leagues`;
   const parameters = { country, season: new Date().getFullYear() };
@@ -428,6 +400,10 @@ export function getTeamLogoUrl(teamId: number): string {
  * @returns Array of Fixture objects for live matches
  */
 export async function getLiveMatches(source: string = 'unknown'): Promise<Fixture[]> {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getLiveMatches', { source }) as Fixture[];
+  }
+
   const cacheKey = 'live-matches';
   const cached = globalCache[cacheKey];
   const now = Date.now();
@@ -466,6 +442,10 @@ export async function getLiveMatches(source: string = 'unknown'): Promise<Fixtur
  * @returns Array of Fixture objects
  */
 export async function getLeagueUpcomingFixtures(leagueId: number, source: string = 'unknown'): Promise<Fixture[]> {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getLeagueUpcomingFixtures', { leagueId, source }) as Fixture[];
+  }
+
   const cacheKey = `league-upcoming-fixtures-${leagueId}`;
   const endpoint = `${BASE_URL}/fixtures`;
   const parameters = { leagueId, season: new Date().getFullYear() };
@@ -523,6 +503,10 @@ export async function getLeagueUpcomingFixtures(leagueId: number, source: string
  * @returns Array of season information
  */
 export async function getLeagueSeasons(leagueId: number, source: string = 'unknown'): Promise<any[]> {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getLeagueSeasons', { leagueId, source }) as any[];
+  }
+
   const cacheKey = `league-seasons-${leagueId}`;
   const endpoint = `${BASE_URL}/leagues`;
   const parameters = { id: leagueId };
@@ -560,6 +544,10 @@ export async function getLeagueSeasons(leagueId: number, source: string = 'unkno
  * @returns Team information
  */
 export async function getTeamInfo(teamId: number, source: string = 'unknown'): Promise<any> {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getTeamInfo', { teamId, source });
+  }
+
   const cacheKey = `team-info-${teamId}`;
   const endpoint = `${BASE_URL}/teams`;
   const parameters = { id: teamId };
@@ -600,6 +588,10 @@ export async function getTeamInfo(teamId: number, source: string = 'unknown'): P
  * @returns Team squad information
  */
 export async function getTeamSquad(teamId: number): Promise<any[]> {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getTeamSquad', { teamId });
+  }
+
   try {
     const response = await trackedFetch(`${BASE_URL}/players/squads?team=${teamId}`, {
       headers
@@ -635,6 +627,10 @@ export async function getTeamSquad(teamId: number): Promise<any[]> {
  * @returns Array of team matches
  */
 export async function getTeamMatches(teamId: number, status: string = 'NS', limit: number = 10): Promise<any[]> {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getTeamMatches', { teamId, status, limit });
+  }
+
   try {
     // Get current season
     const currentDate = new Date();
@@ -691,6 +687,10 @@ export async function getTeamStatistics(
   season: number,
   date?: string
 ): Promise<any> {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getTeamStatistics', { teamId, leagueId, season, date });
+  }
+
   try {
     let url = `/api/teams/statistics?team=${teamId}&league=${leagueId}&season=${season}`;
     
@@ -725,6 +725,10 @@ export async function getTeamStatistics(
  * @returns Array of top players with their statistics
  */
 export async function getTeamTopPlayers(teamId: number, season: number): Promise<any[]> {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getTeamTopPlayers', { teamId, season });
+  }
+
   try {
     const response = await trackedFetch(`${BASE_URL}/players?team=${teamId}&season=${season}`, {
       headers
@@ -770,6 +774,10 @@ export async function getTeamTopPlayers(teamId: number, season: number): Promise
 }
 
 export async function getHeadToHead(team1Id: number, team2Id: number) {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getHeadToHead', { team1Id, team2Id });
+  }
+
   try {
     const response = await trackedFetch(`${BASE_URL}/fixtures/headtohead?h2h=${team1Id}-${team2Id}&last=5`, {
       headers
@@ -802,6 +810,10 @@ export async function getHeadToHead(team1Id: number, team2Id: number) {
  * @returns Array of team information
  */
 export async function getTeamsByLeague(leagueId: number): Promise<any[]> {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getTeamsByLeague', { leagueId });
+  }
+
   try {
     // Get current season (current year)
     const currentYear = new Date().getFullYear();
@@ -838,6 +850,10 @@ export async function getTeamsByLeague(leagueId: number): Promise<any[]> {
  * @returns Array of fixtures
  */
 export async function getFixtures(leagueId: number, days: number = 30, source: string = 'unknown'): Promise<any[]> {
+  if (DISABLE_API_CALLS) {
+    return logDisabledCall('getFixtures', { leagueId, days, source }) as any[];
+  }
+
   const today = new Date();
   const endDate = new Date();
   endDate.setDate(today.getDate() + days);

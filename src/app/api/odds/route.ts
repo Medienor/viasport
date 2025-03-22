@@ -1,11 +1,70 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+// TEMPORARY API DISABLE FLAG - set to true to disable API calls
+const DISABLE_API_CALLS = true;
+
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const fixture = searchParams.get('fixture');
   
   if (!fixture) {
     return NextResponse.json({ error: 'Fixture ID is required' }, { status: 400 });
+  }
+  
+  // Skip API call if disabled
+  if (DISABLE_API_CALLS) {
+    console.log(`[API DISABLED] Odds API call would have been made with: fixture=${fixture}`);
+    
+    // Return mock data
+    return NextResponse.json({
+      get: "odds",
+      parameters: { fixture },
+      errors: [],
+      results: 1,
+      paging: { current: 1, total: 1 },
+      response: [{
+        league: {
+          id: 39,
+          name: "Premier League",
+          country: "England",
+          logo: "https://media.api-sports.io/football/leagues/39.png",
+          flag: "https://media.api-sports.io/flags/gb.svg",
+          season: 2023
+        },
+        fixture: {
+          id: parseInt(fixture),
+          timezone: "UTC",
+          date: "2023-04-16T13:00:00+00:00",
+          timestamp: 1681650000
+        },
+        bookmakers: [
+          {
+            id: 1,
+            name: "Mock Bookmaker",
+            bets: [
+              {
+                id: 1,
+                name: "Match Winner",
+                values: [
+                  {
+                    value: "Home",
+                    odd: "2.00"
+                  },
+                  {
+                    value: "Draw",
+                    odd: "3.40"
+                  },
+                  {
+                    value: "Away",
+                    odd: "3.60"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }]
+    });
   }
   
   try {

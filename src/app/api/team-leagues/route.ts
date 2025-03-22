@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+// TEMPORARY API DISABLE FLAG - set to true to disable API calls
+const DISABLE_API_CALLS = true;
+
 // Define types for the API responses
 interface Team {
   id: number;
@@ -54,6 +57,39 @@ export async function GET(request: NextRequest) {
   
   if (!teamId) {
     return NextResponse.json({ error: 'Team ID is required' }, { status: 400 });
+  }
+  
+  // Skip API call if disabled
+  if (DISABLE_API_CALLS) {
+    console.log(`[API DISABLED] Team leagues API call would have been made with: team=${teamId}`);
+    
+    // Return mock data
+    const currentYear = new Date().getFullYear();
+    
+    return NextResponse.json({
+      response: [
+        {
+          league: {
+            id: 39,
+            name: "Premier League",
+            type: "League",
+            logo: "https://media.api-sports.io/football/leagues/39.png",
+            country: "England"
+          },
+          seasons: [{ year: currentYear }]
+        },
+        {
+          league: {
+            id: 2,
+            name: "UEFA Champions League",
+            type: "Cup",
+            logo: "https://media.api-sports.io/football/leagues/2.png",
+            country: "World"
+          },
+          seasons: [{ year: currentYear }]
+        }
+      ]
+    });
   }
   
   try {
