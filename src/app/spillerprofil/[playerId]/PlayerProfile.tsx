@@ -13,6 +13,9 @@ interface PlayerProfileProps {
 export default function PlayerProfile({ playerData, playerTeamsData }: PlayerProfileProps) {
   const [activeTab, setActiveTab] = useState<'overview' | 'statistics' | 'transfers' | 'career' | 'teams'>('overview');
   
+  // Check if we're using mock data (API disabled)
+  const isApiDisabled = playerData?.player?.firstname === 'API' && playerData?.player?.lastname === 'Disabled';
+  
   // Debug: Log the full player data to console
   useEffect(() => {
     console.log('Full player data:', JSON.stringify(playerData, null, 2));
@@ -21,6 +24,7 @@ export default function PlayerProfile({ playerData, playerTeamsData }: PlayerPro
     }
   }, [playerData, playerTeamsData]);
   
+  // Extract player data
   const player = playerData.player;
   const statistics = playerData.statistics || [];
   const transfers = playerData.transfers?.[0]?.transfers || [];
@@ -230,6 +234,47 @@ export default function PlayerProfile({ playerData, playerTeamsData }: PlayerPro
     if (!rating) return 'N/A';
     return parseFloat(rating).toFixed(1);
   };
+  
+  // If API is disabled, show a notification banner
+  if (isApiDisabled) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+          <div className="flex">
+            <div className="flex-shrink-0">
+              <svg className="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <div className="ml-3">
+              <p className="text-sm text-yellow-700">
+                API-kall er midlertidig deaktivert for feilsøking. Spillerdata er ikke tilgjengelig.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="bg-white shadow rounded-lg overflow-hidden">
+          <div className="p-6">
+            <div className="flex items-center">
+              <div className="relative w-24 h-24 rounded-full overflow-hidden bg-gray-100">
+                <Image
+                  src="/images/player-placeholder.png"
+                  alt="API Disabled"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="ml-6">
+                <h1 className="text-2xl font-bold text-gray-900">API Disabled</h1>
+                <p className="text-gray-500">Spillerdata er midlertidig utilgjengelig</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
   
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

@@ -8,12 +8,26 @@ import {
   } from '@/app/services/sportApi';
 import { useAPITracking } from './stores/apiTracking';
   
+// TEMPORARY API DISABLE FLAG - set to true to disable API calls
+const DISABLE_API_CALLS = true;
+
+// Helper function to log disabled API calls
+function logDisabledCall(functionName: string, ...args: any[]) {
+  console.log(`[API DISABLED] ${functionName} would have been called with:`, ...args);
+  return null;
+}
+  
   /**
    * Fetch basic team data
    * @param teamId - Team ID
    * @returns Team data including name, logo, country, etc.
    */
   export async function fetchTeamData(teamId: number) {
+    // Skip API call if disabled
+    if (DISABLE_API_CALLS) {
+      return logDisabledCall('fetchTeamData', teamId);
+    }
+
     try {
       console.log(`[fetchTeamData] Starting fetch for team ID: ${teamId}`);
       
@@ -42,6 +56,11 @@ import { useAPITracking } from './stores/apiTracking';
    * @returns Array of leagues with their seasons
    */
   export async function fetchTeamLeagues(teamId: number) {
+    // Skip API call if disabled
+    if (DISABLE_API_CALLS) {
+      return logDisabledCall('fetchTeamLeagues', teamId);
+    }
+
     try {
       // For demo purposes, we'll return a few major leagues
       // In a real implementation, you would determine which leagues the team is in
@@ -76,6 +95,11 @@ import { useAPITracking } from './stores/apiTracking';
    * @returns Array of standings data for the most relevant league and season
    */
   export async function fetchTeamStandings(teamId: number) {
+    // Skip API call if disabled
+    if (DISABLE_API_CALLS) {
+      return logDisabledCall('fetchTeamStandings', teamId);
+    }
+
     try {
       console.log(`Fetching standings for team ${teamId} (optimized)`);
       
@@ -232,6 +256,11 @@ import { useAPITracking } from './stores/apiTracking';
    * @returns Array of match data
    */
   export async function fetchTeamMatches(teamId: number, type: 'upcoming' | 'past') {
+    // Skip API call if disabled
+    if (DISABLE_API_CALLS) {
+      return logDisabledCall('fetchTeamMatches', teamId, type);
+    }
+
     try {
       if (type === 'upcoming') {
         // Use the existing function for upcoming matches
@@ -252,6 +281,11 @@ import { useAPITracking } from './stores/apiTracking';
    * @returns Array of player data
    */
   export async function fetchTeamPlayers(teamId: number) {
+    // Skip API call if disabled
+    if (DISABLE_API_CALLS) {
+      return logDisabledCall('fetchTeamPlayers', teamId);
+    }
+
     try {
       const squad = await getTeamSquad(teamId);
       
@@ -272,6 +306,14 @@ import { useAPITracking } from './stores/apiTracking';
   
   // Export the trackedFetch function
   export const trackedFetch = async (url: string, options?: RequestInit) => {
+    // Skip API call if disabled
+    if (DISABLE_API_CALLS) {
+      console.log(`[API DISABLED] trackedFetch would have been called with URL: ${url}`);
+      return new Response(JSON.stringify({ response: [] }), {
+        headers: { 'content-type': 'application/json' },
+      });
+    }
+
     try {
       // Extract the endpoint path from the URL
       const endpoint = new URL(url).pathname;
@@ -289,6 +331,11 @@ import { useAPITracking } from './stores/apiTracking';
 
   // Remove the duplicate fetchTeamData and update the existing one to use trackedFetch
   export async function fetchTeamTransfers(teamId: number) {
+    // Skip API call if disabled
+    if (DISABLE_API_CALLS) {
+      return logDisabledCall('fetchTeamTransfers', teamId);
+    }
+
     try {
       const response = await trackedFetch(`https://api-football-v1.p.rapidapi.com/v3/transfers?team=${teamId}`, {
         headers: {
@@ -426,6 +473,11 @@ import { useAPITracking } from './stores/apiTracking';
    * @returns Player data including statistics
    */
   export async function fetchPlayerById(playerId: number) {
+    // Skip API call if disabled
+    if (DISABLE_API_CALLS) {
+      return logDisabledCall('fetchPlayerById', playerId);
+    }
+
     try {
       console.log(`[fetchPlayerById] Starting fetch for player ID: ${playerId}`);
       
@@ -553,8 +605,13 @@ import { useAPITracking } from './stores/apiTracking';
 
   // Fetch player teams data
   export async function fetchPlayerTeams(playerId: number) {
+    // Skip API call if disabled
+    if (DISABLE_API_CALLS) {
+      return logDisabledCall('fetchPlayerTeams', playerId);
+    }
+
     try {
-      const response = await fetch(`https://api-football-v1.p.rapidapi.com/v3/players/teams?player=${playerId}`, {
+      const response = await trackedFetch(`https://api-football-v1.p.rapidapi.com/v3/players/teams?player=${playerId}`, {
         headers: {
           'x-rapidapi-key': '1a7dc8ba9cmshff75c6099ce0152p158153jsnac5252d21d90',
           'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
