@@ -34,12 +34,18 @@ export const metadata: Metadata = {
 // Add debugging log
 console.log("Layout module is being evaluated");
 
+// Flag to control verbose logging
+const VERBOSE_LOGGING = false;
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  console.log("RootLayout is rendering");
+  // Only log if verbose logging is enabled
+  if (VERBOSE_LOGGING) {
+    console.log('RootLayout is rendering');
+  }
   
   try {
     return (
