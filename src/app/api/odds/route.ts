@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // TEMPORARY API DISABLE FLAG - set to true to disable API calls
-const DISABLE_API_CALLS = true;
+const DISABLE_API_CALLS = false;
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;

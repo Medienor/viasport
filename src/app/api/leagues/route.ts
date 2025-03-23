@@ -1,23 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { headers, BASE_URL } from '@/app/services/sportApi';
 
-// Remove the API disable flag
-// const DISABLE_API_CALLS = true;
-
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
-  const leagueId = searchParams.get('league');
+  const teamId = searchParams.get('team');
   const season = searchParams.get('season');
   
-  if (!leagueId || !season) {
+  if (!teamId || !season) {
     return NextResponse.json(
-      { error: 'Missing required parameters: league and season' },
+      { error: 'Missing required parameters: team and season' },
       { status: 400 }
     );
   }
   
   try {
-    const response = await fetch(`${BASE_URL}/standings?league=${leagueId}&season=${season}`, {
+    const response = await fetch(`${BASE_URL}/leagues?team=${teamId}&season=${season}`, {
       headers,
       next: { revalidate: 3600 } // Cache for 1 hour
     });
@@ -29,9 +26,9 @@ export async function GET(request: NextRequest) {
     const data = await response.json();
     return NextResponse.json(data);
   } catch (error) {
-    console.error('Error fetching standings:', error);
+    console.error('Error fetching leagues:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch standings data' },
+      { error: 'Failed to fetch leagues data' },
       { status: 500 }
     );
   }

@@ -8,10 +8,10 @@ import {
   } from '@/app/services/sportApi';
 import { useAPITracking } from './stores/apiTracking';
   
-// TEMPORARY API DISABLE FLAG - set to true to disable API calls
-const DISABLE_API_CALLS = true;
+// Remove the API disable flag
+// const DISABLE_API_CALLS = true;
 
-// Helper function to log disabled API calls
+// Helper function to log disabled API calls (keep this for future use)
 function logDisabledCall(functionName: string, ...args: any[]) {
   console.log(`[API DISABLED] ${functionName} would have been called with:`, ...args);
   return null;
@@ -23,11 +23,7 @@ function logDisabledCall(functionName: string, ...args: any[]) {
    * @returns Team data including name, logo, country, etc.
    */
   export async function fetchTeamData(teamId: number) {
-    // Skip API call if disabled
-    if (DISABLE_API_CALLS) {
-      return logDisabledCall('fetchTeamData', teamId);
-    }
-
+    // Remove the API disable check
     try {
       console.log(`[fetchTeamData] Starting fetch for team ID: ${teamId}`);
       
@@ -256,11 +252,7 @@ function logDisabledCall(functionName: string, ...args: any[]) {
    * @returns Array of match data
    */
   export async function fetchTeamMatches(teamId: number, type: 'upcoming' | 'past') {
-    // Skip API call if disabled
-    if (DISABLE_API_CALLS) {
-      return logDisabledCall('fetchTeamMatches', teamId, type);
-    }
-
+    // Remove the API disable check
     try {
       if (type === 'upcoming') {
         // Use the existing function for upcoming matches
@@ -281,11 +273,7 @@ function logDisabledCall(functionName: string, ...args: any[]) {
    * @returns Array of player data
    */
   export async function fetchTeamPlayers(teamId: number) {
-    // Skip API call if disabled
-    if (DISABLE_API_CALLS) {
-      return logDisabledCall('fetchTeamPlayers', teamId);
-    }
-
+    // Remove the API disable check
     try {
       const squad = await getTeamSquad(teamId);
       

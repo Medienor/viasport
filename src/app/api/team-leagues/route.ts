@@ -1,8 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-// TEMPORARY API DISABLE FLAG - set to true to disable API calls
-const DISABLE_API_CALLS = true;
-
 // Define types for the API responses
 interface Team {
   id: number;
@@ -59,39 +56,6 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'Team ID is required' }, { status: 400 });
   }
   
-  // Skip API call if disabled
-  if (DISABLE_API_CALLS) {
-    console.log(`[API DISABLED] Team leagues API call would have been made with: team=${teamId}`);
-    
-    // Return mock data
-    const currentYear = new Date().getFullYear();
-    
-    return NextResponse.json({
-      response: [
-        {
-          league: {
-            id: 39,
-            name: "Premier League",
-            type: "League",
-            logo: "https://media.api-sports.io/football/leagues/39.png",
-            country: "England"
-          },
-          seasons: [{ year: currentYear }]
-        },
-        {
-          league: {
-            id: 2,
-            name: "UEFA Champions League",
-            type: "Cup",
-            logo: "https://media.api-sports.io/football/leagues/2.png",
-            country: "World"
-          },
-          seasons: [{ year: currentYear }]
-        }
-      ]
-    });
-  }
-  
   try {
     // First, get the team details
     await fetch(
@@ -119,12 +83,12 @@ export async function GET(request: NextRequest) {
     );
     
     const fixturesData = await fixturesResponse.json();
-    const fixtures: Fixture[] = fixturesData?.response || [];
+    const fixtures = fixturesData?.response || [];
     
     // Extract unique leagues from fixtures
-    const leagueMap = new Map<number, LeagueData>();
+    const leagueMap = new Map();
     
-    fixtures.forEach((fixture: Fixture) => {
+    fixtures.forEach((fixture) => {
       if (fixture.league && fixture.league.id && !leagueMap.has(fixture.league.id)) {
         leagueMap.set(fixture.league.id, {
           league: fixture.league,
@@ -138,7 +102,6 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({
       response: teamLeagues
     });
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (err) {
     return NextResponse.json({ error: 'Failed to fetch team leagues' }, { status: 500 });
   }

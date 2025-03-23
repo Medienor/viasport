@@ -3,7 +3,7 @@ import { trackedFetch } from '@/lib/api';
 export const BASE_URL = 'https://api-football-v1.p.rapidapi.com/v3';
 
 // TEMPORARY API DISABLE FLAG - set to true to disable API calls
-const DISABLE_API_CALLS = true;
+// const DISABLE_API_CALLS = true;
 
 // Helper function to log disabled API calls
 function logDisabledCall(functionName: string, ...args: any[]) {
@@ -182,10 +182,10 @@ async function cachedFetch<T>(
   source: string
 ): Promise<T> {
   // Skip API call if disabled
-  if (DISABLE_API_CALLS) {
-    console.log(`[API DISABLED] cachedFetch would have called ${endpoint} with parameters:`, parameters);
-    return [] as unknown as T;
-  }
+  // if (DISABLE_API_CALLS) {
+  //   console.log(`[API DISABLED] cachedFetch would have called ${endpoint} with parameters:`, parameters);
+  //   return [] as unknown as T;
+  // }
 
   const cached = globalCache[cacheKey];
   const now = Date.now();
@@ -224,10 +224,7 @@ async function cachedFetch<T>(
 // Modify all API functions to respect the disable flag
 
 export async function getUpcomingFixtures(leagueId?: number, date?: string, source: string = 'unknown'): Promise<Fixture[]> {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getUpcomingFixtures', { leagueId, date, source }) as Fixture[];
-  }
-
+  // Remove the API disable check
   const cacheKey = `upcoming-fixtures-${leagueId || 'all'}-${date || 'next10days'}`;
   const cached = globalCache[cacheKey];
   const now = Date.now();
@@ -302,10 +299,7 @@ export async function getUpcomingFixtures(leagueId?: number, date?: string, sour
  * @returns Array of country names
  */
 export async function getAvailableCountries(source: string = 'unknown'): Promise<string[]> {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getAvailableCountries', { source }) as string[];
-  }
-
+  // Remove the API disable check
   const cacheKey = 'available-countries';
   const endpoint = `${BASE_URL}/countries`;
   const parameters = {};
@@ -341,10 +335,7 @@ export async function getAvailableCountries(source: string = 'unknown'): Promise
  * @returns Array of League objects
  */
 export async function getLeaguesByCountry(country: string, source: string = 'unknown'): Promise<League[]> {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getLeaguesByCountry', { country, source }) as League[];
-  }
-
+  // Remove the API disable check
   const cacheKey = `leagues-by-country-${country}`;
   const endpoint = `${BASE_URL}/leagues`;
   const parameters = { country, season: new Date().getFullYear() };
@@ -400,10 +391,7 @@ export function getTeamLogoUrl(teamId: number): string {
  * @returns Array of Fixture objects for live matches
  */
 export async function getLiveMatches(source: string = 'unknown'): Promise<Fixture[]> {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getLiveMatches', { source }) as Fixture[];
-  }
-
+  // Remove the API disable check
   const cacheKey = 'live-matches';
   const cached = globalCache[cacheKey];
   const now = Date.now();
@@ -442,10 +430,7 @@ export async function getLiveMatches(source: string = 'unknown'): Promise<Fixtur
  * @returns Array of Fixture objects
  */
 export async function getLeagueUpcomingFixtures(leagueId: number, source: string = 'unknown'): Promise<Fixture[]> {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getLeagueUpcomingFixtures', { leagueId, source }) as Fixture[];
-  }
-
+  // Remove the API disable check
   const cacheKey = `league-upcoming-fixtures-${leagueId}`;
   const endpoint = `${BASE_URL}/fixtures`;
   const parameters = { leagueId, season: new Date().getFullYear() };
@@ -503,10 +488,7 @@ export async function getLeagueUpcomingFixtures(leagueId: number, source: string
  * @returns Array of season information
  */
 export async function getLeagueSeasons(leagueId: number, source: string = 'unknown'): Promise<any[]> {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getLeagueSeasons', { leagueId, source }) as any[];
-  }
-
+  // Remove the API disable check
   const cacheKey = `league-seasons-${leagueId}`;
   const endpoint = `${BASE_URL}/leagues`;
   const parameters = { id: leagueId };
@@ -544,10 +526,7 @@ export async function getLeagueSeasons(leagueId: number, source: string = 'unkno
  * @returns Team information
  */
 export async function getTeamInfo(teamId: number, source: string = 'unknown'): Promise<any> {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getTeamInfo', { teamId, source });
-  }
-
+  // Remove the API disable check
   const cacheKey = `team-info-${teamId}`;
   const endpoint = `${BASE_URL}/teams`;
   const parameters = { id: teamId };
@@ -588,10 +567,7 @@ export async function getTeamInfo(teamId: number, source: string = 'unknown'): P
  * @returns Team squad information
  */
 export async function getTeamSquad(teamId: number): Promise<any[]> {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getTeamSquad', { teamId });
-  }
-
+  // Remove the API disable check
   try {
     const response = await trackedFetch(`${BASE_URL}/players/squads?team=${teamId}`, {
       headers
@@ -627,10 +603,7 @@ export async function getTeamSquad(teamId: number): Promise<any[]> {
  * @returns Array of team matches
  */
 export async function getTeamMatches(teamId: number, status: string = 'NS', limit: number = 10): Promise<any[]> {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getTeamMatches', { teamId, status, limit });
-  }
-
+  // Remove the API disable check
   try {
     // Get current season
     const currentDate = new Date();
@@ -687,10 +660,7 @@ export async function getTeamStatistics(
   season: number,
   date?: string
 ): Promise<any> {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getTeamStatistics', { teamId, leagueId, season, date });
-  }
-
+  // Remove the API disable check
   try {
     let url = `/api/teams/statistics?team=${teamId}&league=${leagueId}&season=${season}`;
     
@@ -725,10 +695,7 @@ export async function getTeamStatistics(
  * @returns Array of top players with their statistics
  */
 export async function getTeamTopPlayers(teamId: number, season: number): Promise<any[]> {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getTeamTopPlayers', { teamId, season });
-  }
-
+  // Remove the API disable check
   try {
     const response = await trackedFetch(`${BASE_URL}/players?team=${teamId}&season=${season}`, {
       headers
@@ -774,10 +741,7 @@ export async function getTeamTopPlayers(teamId: number, season: number): Promise
 }
 
 export async function getHeadToHead(team1Id: number, team2Id: number) {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getHeadToHead', { team1Id, team2Id });
-  }
-
+  // Remove the API disable check
   try {
     const response = await trackedFetch(`${BASE_URL}/fixtures/headtohead?h2h=${team1Id}-${team2Id}&last=5`, {
       headers
@@ -810,10 +774,7 @@ export async function getHeadToHead(team1Id: number, team2Id: number) {
  * @returns Array of team information
  */
 export async function getTeamsByLeague(leagueId: number): Promise<any[]> {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getTeamsByLeague', { leagueId });
-  }
-
+  // Remove the API disable check
   try {
     // Get current season (current year)
     const currentYear = new Date().getFullYear();
@@ -850,10 +811,7 @@ export async function getTeamsByLeague(leagueId: number): Promise<any[]> {
  * @returns Array of fixtures
  */
 export async function getFixtures(leagueId: number, days: number = 30, source: string = 'unknown'): Promise<any[]> {
-  if (DISABLE_API_CALLS) {
-    return logDisabledCall('getFixtures', { leagueId, days, source }) as any[];
-  }
-
+  // Remove the API disable check
   const today = new Date();
   const endDate = new Date();
   endDate.setDate(today.getDate() + days);
