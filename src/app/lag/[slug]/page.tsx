@@ -9,6 +9,10 @@ function extractTeamId(slug: string): number | null {
   return match ? parseInt(match[1], 10) : null;
 }
 
+// This enables Incremental Static Regeneration (ISR)
+// Pages will be generated when visited and cached for 24 hours
+export const revalidate = 86400; // 24 hours in seconds
+
 // Generate metadata for the page
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const teamId = extractTeamId(params.slug);
@@ -56,7 +60,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
       : 'http://localhost:3000';
     
     // Fetch team data
-    const teamResponse = await fetch(`${baseUrl}/api/teams?id=${teamId}`, { cache: 'no-store' });
+    const teamResponse = await fetch(`${baseUrl}/api/teams?id=${teamId}`);
     
     if (!teamResponse.ok) {
       throw new Error(`Team API responded with status: ${teamResponse.status}`);
