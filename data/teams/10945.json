@@ -1,0 +1,915 @@
+{
+  "team": {
+    "team": {
+      "id": 10945,
+      "name": "Malaysia U23",
+      "code": "MAL",
+      "country": "Malaysia",
+      "founded": 1933,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/10945.png"
+    },
+    "venue": {
+      "id": 19696,
+      "name": "Bukit Jalil National Stadium",
+      "address": "Jalan Merah Cagar, Bukit Jalil",
+      "city": "Kuala Lumpur",
+      "capacity": 87411,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/19696.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 952,
+        "name": "AFC U23 Asian Cup - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/952.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2023-09-06",
+          "end": "2023-09-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 532,
+        "name": "AFC U23 Asian Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/532.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-04-15",
+          "end": "2024-05-03",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2010,
+    2014,
+    2018,
+    2020,
+    2022,
+    2023,
+    2024
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1144785,
+          "date": "2024-04-23T15:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Al Janoub Stadium",
+            "city": "Al Wakrah"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1713886200
+        },
+        "league": {
+          "id": 532,
+          "name": "AFC U23 Asian Cup",
+          "logo": "https://media.api-sports.io/football/leagues/532.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10940,
+            "name": "Kuwait U23",
+            "logo": "https://media.api-sports.io/football/teams/10940.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10945,
+            "name": "Malaysia U23",
+            "logo": "https://media.api-sports.io/football/teams/10945.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1144777,
+          "date": "2024-04-20T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Khalifa International Stadium",
+            "city": "Ar-Rayyan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1713618000
+        },
+        "league": {
+          "id": 532,
+          "name": "AFC U23 Asian Cup",
+          "logo": "https://media.api-sports.io/football/leagues/532.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10945,
+            "name": "Malaysia U23",
+            "logo": "https://media.api-sports.io/football/teams/10945.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10964,
+            "name": "Vietnam U23",
+            "logo": "https://media.api-sports.io/football/teams/10964.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1144769,
+          "date": "2024-04-17T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Khalifa International Stadium",
+            "city": "Ar-Rayyan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1713358800
+        },
+        "league": {
+          "id": 532,
+          "name": "AFC U23 Asian Cup",
+          "logo": "https://media.api-sports.io/football/leagues/532.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10963,
+            "name": "Uzbekistan U23",
+            "logo": "https://media.api-sports.io/football/teams/10963.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10945,
+            "name": "Malaysia U23",
+            "logo": "https://media.api-sports.io/football/teams/10945.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1189595,
+          "date": "2024-03-25T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711375200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10945,
+            "name": "Malaysia U23",
+            "logo": "https://media.api-sports.io/football/teams/10945.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10935,
+            "name": "India U23",
+            "logo": "https://media.api-sports.io/football/teams/10935.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1189546,
+          "date": "2024-03-22T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711116000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10945,
+            "name": "Malaysia U23",
+            "logo": "https://media.api-sports.io/football/teams/10945.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10935,
+            "name": "India U23",
+            "logo": "https://media.api-sports.io/football/teams/10935.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1028867,
+          "date": "2023-09-12T13:30:00+00:00",
+          "venue": {
+            "id": 19097,
+            "name": "Chonburi UTA Stadium",
+            "city": "Chonburi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1694525400
+        },
+        "league": {
+          "id": 952,
+          "name": "AFC U23 Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/952.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10960,
+            "name": "Thailand U23",
+            "logo": "https://media.api-sports.io/football/teams/10960.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10945,
+            "name": "Malaysia U23",
+            "logo": "https://media.api-sports.io/football/teams/10945.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1028846,
+          "date": "2023-09-09T09:30:00+00:00",
+          "venue": {
+            "id": 19097,
+            "name": "Chonburi UTA Stadium",
+            "city": "Chonburi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1694251800
+        },
+        "league": {
+          "id": 952,
+          "name": "AFC U23 Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/952.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10953,
+            "name": "Philippines U23",
+            "logo": "https://media.api-sports.io/football/teams/10953.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10945,
+            "name": "Malaysia U23",
+            "logo": "https://media.api-sports.io/football/teams/10945.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1028826,
+          "date": "2023-09-06T09:30:00+00:00",
+          "venue": {
+            "id": 19097,
+            "name": "Chonburi UTA Stadium",
+            "city": "Chonburi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1693992600
+        },
+        "league": {
+          "id": 952,
+          "name": "AFC U23 Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/952.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10945,
+            "name": "Malaysia U23",
+            "logo": "https://media.api-sports.io/football/teams/10945.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10929,
+            "name": "Bangladesh U23",
+            "logo": "https://media.api-sports.io/football/teams/10929.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 952,
+      "name": "AFC U23 Asian Cup - Qualification",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/952.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 10945,
+      "name": "Malaysia U23",
+      "logo": "https://media.api-sports.io/football/teams/10945.png"
+    },
+    "form": "WWL",
+    "fixtures": {
+      "played": {
+        "home": 1,
+        "away": 2,
+        "total": 3
+      },
+      "wins": {
+        "home": 1,
+        "away": 1,
+        "total": 2
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 2,
+          "away": 4,
+          "total": 6
+        },
+        "average": {
+          "home": "2.0",
+          "away": "2.0",
+          "total": "2.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": 2,
+            "percentage": "33.33%"
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 1
+          },
+          "1.5": {
+            "over": 2,
+            "under": 1
+          },
+          "2.5": {
+            "over": 1,
+            "under": 2
+          },
+          "3.5": {
+            "over": 1,
+            "under": 2
+          },
+          "4.5": {
+            "over": 0,
+            "under": 3
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 0,
+          "away": 1,
+          "total": 1
+        },
+        "average": {
+          "home": "0.0",
+          "away": "0.5",
+          "total": "0.3"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "100.00%"
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 2
+          },
+          "1.5": {
+            "over": 0,
+            "under": 3
+          },
+          "2.5": {
+            "over": 0,
+            "under": 3
+          },
+          "3.5": {
+            "over": 0,
+            "under": 3
+          },
+          "4.5": {
+            "over": 0,
+            "under": 3
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 2,
+        "draws": 0,
+        "loses": 0
+      },
+      "wins": {
+        "home": "2-0",
+        "away": "0-4"
+      },
+      "loses": {
+        "home": null,
+        "away": "1-0"
+      },
+      "goals": {
+        "for": {
+          "home": 2,
+          "away": 4
+        },
+        "against": {
+          "home": 0,
+          "away": 1
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 1,
+      "away": 1,
+      "total": 2
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 1,
+      "total": 1
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:42:24.801Z"
+}

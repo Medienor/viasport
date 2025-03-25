@@ -1,0 +1,1045 @@
+{
+  "team": {
+    "team": {
+      "id": 2384,
+      "name": "USA",
+      "code": "USA",
+      "country": "USA",
+      "founded": 1913,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/2384.png"
+    },
+    "venue": {
+      "id": 2855,
+      "name": "Robert F. Kennedy Memorial Stadium",
+      "address": "2400 East Capitol Street Southeast",
+      "city": "Washington, District of Columbia",
+      "capacity": 56692,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/2855.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 9,
+        "name": "Copa America",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/9.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-06-21",
+          "end": "2024-07-15",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 536,
+        "name": "CONCACAF Nations League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/536.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-04",
+          "end": "2025-03-24",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2009,
+    2010,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1364768,
+          "date": "2025-03-23T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SoFi Stadium",
+            "city": "Inglewood"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742767200
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5529,
+            "name": "Canada",
+            "logo": "https://media.api-sports.io/football/teams/5529.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2384,
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1316375,
+          "date": "2025-03-20T23:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SoFi Stadium",
+            "city": "Inglewood"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1742511600
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2384,
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png",
+            "winner": false
+          },
+          "away": {
+            "id": 11,
+            "name": "Panama",
+            "logo": "https://media.api-sports.io/football/teams/11.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1312105,
+          "date": "2024-11-19T01:00:00+00:00",
+          "venue": {
+            "id": 19408,
+            "name": "CITYPARK",
+            "city": "St. Louis, Missouri"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1731978000
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2384,
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2385,
+            "name": "Jamaica",
+            "logo": "https://media.api-sports.io/football/teams/2385.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1312104,
+          "date": "2024-11-15T01:00:00+00:00",
+          "venue": {
+            "id": 1976,
+            "name": "Independence Park",
+            "city": "Kingston"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1731632400
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2385,
+            "name": "Jamaica",
+            "logo": "https://media.api-sports.io/football/teams/2385.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2384,
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1293948,
+          "date": "2024-10-16T02:30:00+00:00",
+          "venue": {
+            "id": 1076,
+            "name": "Estadio AKRON",
+            "city": "Zapopan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1729045800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16,
+            "name": "Mexico",
+            "logo": "https://media.api-sports.io/football/teams/16.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2384,
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1215629,
+          "date": "2024-10-13T01:00:00+00:00",
+          "venue": {
+            "id": 11535,
+            "name": "Q2 Stadium",
+            "city": "Austin, Texas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1728781200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2384,
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png",
+            "winner": true
+          },
+          "away": {
+            "id": 11,
+            "name": "Panama",
+            "logo": "https://media.api-sports.io/football/teams/11.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1215628,
+          "date": "2024-09-10T23:00:00+00:00",
+          "venue": {
+            "id": 19229,
+            "name": "TQL Stadium",
+            "city": "Cincinnati, Ohio"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1726009200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2384,
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4673,
+            "name": "New Zealand",
+            "logo": "https://media.api-sports.io/football/teams/4673.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1215627,
+          "date": "2024-09-07T20:00:00+00:00",
+          "venue": {
+            "id": 1615,
+            "name": "Children's Mercy Park",
+            "city": "Kansas City, Kansas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725739200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2384,
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5529,
+            "name": "Canada",
+            "logo": "https://media.api-sports.io/football/teams/5529.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1146317,
+          "date": "2024-07-02T01:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Arrowhead Stadium",
+            "city": "Kansas City, Missouri"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719882000
+        },
+        "league": {
+          "id": 9,
+          "name": "Copa America",
+          "logo": "https://media.api-sports.io/football/leagues/9.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2384,
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png",
+            "winner": false
+          },
+          "away": {
+            "id": 7,
+            "name": "Uruguay",
+            "logo": "https://media.api-sports.io/football/teams/7.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1146310,
+          "date": "2024-06-28T22:00:00+00:00",
+          "venue": {
+            "id": 1898,
+            "name": "Mercedes-Benz Stadium",
+            "city": "Atlanta, Georgia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719612000
+        },
+        "league": {
+          "id": 9,
+          "name": "Copa America",
+          "logo": "https://media.api-sports.io/football/leagues/9.png"
+        },
+        "teams": {
+          "home": {
+            "id": 11,
+            "name": "Panama",
+            "logo": "https://media.api-sports.io/football/teams/11.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2384,
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 9,
+      "name": "Copa America",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/9.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 2384,
+      "name": "USA",
+      "logo": "https://media.api-sports.io/football/teams/2384.png"
+    },
+    "form": "WLL",
+    "fixtures": {
+      "played": {
+        "home": 2,
+        "away": 1,
+        "total": 3
+      },
+      "wins": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 1,
+        "away": 1,
+        "total": 2
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 2,
+          "away": 1,
+          "total": 3
+        },
+        "average": {
+          "home": "1.0",
+          "away": "1.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 1
+          },
+          "1.5": {
+            "over": 1,
+            "under": 2
+          },
+          "2.5": {
+            "over": 0,
+            "under": 3
+          },
+          "3.5": {
+            "over": 0,
+            "under": 3
+          },
+          "4.5": {
+            "over": 0,
+            "under": 3
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 1,
+          "away": 2,
+          "total": 3
+        },
+        "average": {
+          "home": "0.5",
+          "away": "2.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 1
+          },
+          "1.5": {
+            "over": 1,
+            "under": 2
+          },
+          "2.5": {
+            "over": 0,
+            "under": 3
+          },
+          "3.5": {
+            "over": 0,
+            "under": 3
+          },
+          "4.5": {
+            "over": 0,
+            "under": 3
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 1,
+        "draws": 0,
+        "loses": 0
+      },
+      "wins": {
+        "home": "2-0",
+        "away": null
+      },
+      "loses": {
+        "home": "0-1",
+        "away": "2-1"
+      },
+      "goals": {
+        "for": {
+          "home": 2,
+          "away": 1
+        },
+        "against": {
+          "home": 1,
+          "away": 2
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 1,
+      "away": 0,
+      "total": 1
+    },
+    "failed_to_score": {
+      "home": 1,
+      "away": 0,
+      "total": 1
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [
+      {
+        "formation": "4-3-3",
+        "played": 3
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": 1,
+          "percentage": "20.00%"
+        },
+        "31-45": {
+          "total": 2,
+          "percentage": "40.00%"
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "20.00%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": 1,
+          "percentage": "20.00%"
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": 1,
+          "percentage": "100.00%"
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:41:50.186Z"
+}

@@ -1,0 +1,821 @@
+{
+  "team": {
+    "team": {
+      "id": 5165,
+      "name": "Solomon Islands",
+      "code": null,
+      "country": "Solomon-Islands",
+      "founded": 1978,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/5165.png"
+    },
+    "venue": {
+      "id": 3903,
+      "name": "Lawson Tama Stadium",
+      "address": null,
+      "city": "Honiara",
+      "capacity": 22000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/3903.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 806,
+        "name": "OFC Nations Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/806.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-03-20",
+          "end": "2024-06-30",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2022,
+    2023,
+    2024,
+    2026
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1327874,
+          "date": "2024-12-21T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "National Sports Stadium",
+            "city": "Honiara"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1734739200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5165,
+            "name": "Solomon Islands",
+            "logo": "https://media.api-sports.io/football/teams/5165.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5160,
+            "name": "Fiji",
+            "logo": "https://media.api-sports.io/football/teams/5160.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1234549,
+          "date": "2024-09-05T07:00:00+00:00",
+          "venue": {
+            "id": 19498,
+            "name": "HFC Bank Stadium",
+            "city": "Suva"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725519600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5165,
+            "name": "Solomon Islands",
+            "logo": "https://media.api-sports.io/football/teams/5165.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4460,
+            "name": "Hong Kong",
+            "logo": "https://media.api-sports.io/football/teams/4460.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1234548,
+          "date": "2024-09-02T07:00:00+00:00",
+          "venue": {
+            "id": 19498,
+            "name": "HFC Bank Stadium",
+            "city": "Suva"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725260400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5160,
+            "name": "Fiji",
+            "logo": "https://media.api-sports.io/football/teams/5160.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5165,
+            "name": "Solomon Islands",
+            "logo": "https://media.api-sports.io/football/teams/5165.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1171366,
+          "date": "2024-06-18T04:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Fresh Wata Field",
+            "city": "Port Vila"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1718683200
+        },
+        "league": {
+          "id": 806,
+          "name": "OFC Nations Cup",
+          "logo": "https://media.api-sports.io/football/leagues/806.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4673,
+            "name": "New Zealand",
+            "logo": "https://media.api-sports.io/football/teams/4673.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5165,
+            "name": "Solomon Islands",
+            "logo": "https://media.api-sports.io/football/teams/5165.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1171364,
+          "date": "2024-06-15T04:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Fresh Wata Field",
+            "city": "Port Vila"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1718424000
+        },
+        "league": {
+          "id": 806,
+          "name": "OFC Nations Cup",
+          "logo": "https://media.api-sports.io/football/leagues/806.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5165,
+            "name": "Solomon Islands",
+            "logo": "https://media.api-sports.io/football/teams/5165.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5170,
+            "name": "Vanuatu",
+            "logo": "https://media.api-sports.io/football/teams/5170.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1184431,
+          "date": "2024-03-21T02:00:00+00:00",
+          "venue": {
+            "id": 3903,
+            "name": "Lawson Tama Stadium",
+            "city": "Honiara"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1710986400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5165,
+            "name": "Solomon Islands",
+            "logo": "https://media.api-sports.io/football/teams/5165.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5160,
+            "name": "Fiji",
+            "logo": "https://media.api-sports.io/football/teams/5160.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1184430,
+          "date": "2024-03-18T04:00:00+00:00",
+          "venue": {
+            "id": 3903,
+            "name": "Lawson Tama Stadium",
+            "city": "Honiara"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1710734400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5165,
+            "name": "Solomon Islands",
+            "logo": "https://media.api-sports.io/football/teams/5165.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5160,
+            "name": "Fiji",
+            "logo": "https://media.api-sports.io/football/teams/5160.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 5165,
+      "name": "Solomon Islands",
+      "logo": "https://media.api-sports.io/football/teams/5165.png"
+    },
+    "form": "WLLLL",
+    "fixtures": {
+      "played": {
+        "home": 4,
+        "away": 1,
+        "total": 5
+      },
+      "wins": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 3,
+        "away": 1,
+        "total": 4
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 3,
+          "away": 0,
+          "total": 3
+        },
+        "average": {
+          "home": "0.8",
+          "away": "0.0",
+          "total": "0.6"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": 2,
+            "percentage": "100.00%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 3
+          },
+          "1.5": {
+            "over": 1,
+            "under": 4
+          },
+          "2.5": {
+            "over": 0,
+            "under": 5
+          },
+          "3.5": {
+            "over": 0,
+            "under": 5
+          },
+          "4.5": {
+            "over": 0,
+            "under": 5
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 9,
+          "away": 1,
+          "total": 10
+        },
+        "average": {
+          "home": "2.3",
+          "away": "1.0",
+          "total": "2.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 5,
+            "under": 0
+          },
+          "1.5": {
+            "over": 3,
+            "under": 2
+          },
+          "2.5": {
+            "over": 2,
+            "under": 3
+          },
+          "3.5": {
+            "over": 0,
+            "under": 5
+          },
+          "4.5": {
+            "over": 0,
+            "under": 5
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 1,
+        "draws": 0,
+        "loses": 0
+      },
+      "wins": {
+        "home": "2-1",
+        "away": null
+      },
+      "loses": {
+        "home": "0-3",
+        "away": "1-0"
+      },
+      "goals": {
+        "for": {
+          "home": 2,
+          "away": 0
+        },
+        "against": {
+          "home": 3,
+          "away": 1
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 2,
+      "away": 1,
+      "total": 3
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:41:57.767Z"
+}

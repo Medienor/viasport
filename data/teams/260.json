@@ -1,0 +1,1639 @@
+{
+  "team": {
+    "team": {
+      "id": 260,
+      "name": "OH Leuven",
+      "code": "LEU",
+      "country": "Belgium",
+      "founded": 1957,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/260.png"
+    },
+    "venue": {
+      "id": 186,
+      "name": "King Power at Den Dreef Stadion",
+      "address": "Kardinaal Mercierlaan 46",
+      "city": "Heverlee",
+      "capacity": 12500,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/186.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-04",
+          "end": "2024-12-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 144,
+        "name": "Jupiler Pro League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/144.png"
+      },
+      "country": {
+        "name": "Belgium",
+        "code": "BE",
+        "flag": "https://media.api-sports.io/flags/be.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-26",
+          "end": "2025-05-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 147,
+        "name": "Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/147.png"
+      },
+      "country": {
+        "name": "Belgium",
+        "code": "BE",
+        "flag": "https://media.api-sports.io/flags/be.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-26",
+          "end": "2025-05-14",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2011,
+    2012,
+    2013,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1361770,
+          "date": "2025-03-28T19:45:00+00:00",
+          "venue": {
+            "id": 186,
+            "name": "King Power at Den Dreef Stadion",
+            "city": "Heverlee"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743191100
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": null
+          },
+          "away": {
+            "id": 736,
+            "name": "Charleroi",
+            "logo": "https://media.api-sports.io/football/teams/736.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361774,
+          "date": "2025-04-05T16:15:00+00:00",
+          "venue": {
+            "id": 195,
+            "name": "Het Kuipje",
+            "city": "Westerlo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743869700
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 261,
+            "name": "KVC Westerlo",
+            "logo": "https://media.api-sports.io/football/teams/261.png",
+            "winner": null
+          },
+          "away": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361777,
+          "date": "2025-04-13T14:00:00+00:00",
+          "venue": {
+            "id": 20336,
+            "name": "AFAS Stadion",
+            "city": "Malines"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744552800
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 266,
+            "name": "KV Mechelen",
+            "logo": "https://media.api-sports.io/football/teams/266.png",
+            "winner": null
+          },
+          "away": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361779,
+          "date": "2025-04-19T14:00:00+00:00",
+          "venue": {
+            "id": 186,
+            "name": "King Power at Den Dreef Stadion",
+            "city": "Heverlee"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745071200
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": null
+          },
+          "away": {
+            "id": 6215,
+            "name": "Dender",
+            "logo": "https://media.api-sports.io/football/teams/6215.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361782,
+          "date": "2025-04-22T18:30:00+00:00",
+          "venue": {
+            "id": 192,
+            "name": "Stade Maurice Dufrasne",
+            "city": "Luik"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745346600
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 733,
+            "name": "Standard Liege",
+            "logo": "https://media.api-sports.io/football/teams/733.png",
+            "winner": null
+          },
+          "away": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361785,
+          "date": "2025-04-26T14:00:00+00:00",
+          "venue": {
+            "id": 186,
+            "name": "King Power at Den Dreef Stadion",
+            "city": "Heverlee"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745676000
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": null
+          },
+          "away": {
+            "id": 733,
+            "name": "Standard Liege",
+            "logo": "https://media.api-sports.io/football/teams/733.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361789,
+          "date": "2025-05-03T16:15:00+00:00",
+          "venue": {
+            "id": 186,
+            "name": "King Power at Den Dreef Stadion",
+            "city": "Heverlee"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746288900
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": null
+          },
+          "away": {
+            "id": 266,
+            "name": "KV Mechelen",
+            "logo": "https://media.api-sports.io/football/teams/266.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361793,
+          "date": "2025-05-11T17:15:00+00:00",
+          "venue": {
+            "id": 19052,
+            "name": "DENDER Football Complex",
+            "city": "Denderleeuw"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746983700
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6215,
+            "name": "Dender",
+            "logo": "https://media.api-sports.io/football/teams/6215.png",
+            "winner": null
+          },
+          "away": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361794,
+          "date": "2025-05-16T18:45:00+00:00",
+          "venue": {
+            "id": 186,
+            "name": "King Power at Den Dreef Stadion",
+            "city": "Heverlee"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747421100
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": null
+          },
+          "away": {
+            "id": 261,
+            "name": "KVC Westerlo",
+            "logo": "https://media.api-sports.io/football/teams/261.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361797,
+          "date": "2025-05-24T18:00:00+00:00",
+          "venue": {
+            "id": 177,
+            "name": "Stade du Pays de Charleroi",
+            "city": "Charleroi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748109600
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 736,
+            "name": "Charleroi",
+            "logo": "https://media.api-sports.io/football/teams/736.png",
+            "winner": null
+          },
+          "away": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1213439,
+          "date": "2025-03-16T17:30:00+00:00",
+          "venue": {
+            "id": 186,
+            "name": "King Power at Den Dreef Stadion",
+            "city": "Heverlee"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1742146200
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": true
+          },
+          "away": {
+            "id": 735,
+            "name": "St. Truiden",
+            "logo": "https://media.api-sports.io/football/teams/735.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1213427,
+          "date": "2025-03-08T15:00:00+00:00",
+          "venue": {
+            "id": 182,
+            "name": "Guldensporenstadion",
+            "city": "Kortrijk"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1741446000
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 734,
+            "name": "Kortrijk",
+            "logo": "https://media.api-sports.io/football/teams/734.png",
+            "winner": true
+          },
+          "away": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1213422,
+          "date": "2025-03-02T18:15:00+00:00",
+          "venue": {
+            "id": 186,
+            "name": "King Power at Den Dreef Stadion",
+            "city": "Heverlee"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1740939300
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": null
+          },
+          "away": {
+            "id": 261,
+            "name": "KVC Westerlo",
+            "logo": "https://media.api-sports.io/football/teams/261.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1213412,
+          "date": "2025-02-22T19:45:00+00:00",
+          "venue": {
+            "id": 175,
+            "name": "Bosuilstadion",
+            "city": "Deurne"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1740253500
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 740,
+            "name": "Antwerp",
+            "logo": "https://media.api-sports.io/football/teams/740.png",
+            "winner": null
+          },
+          "away": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1213406,
+          "date": "2025-02-15T15:00:00+00:00",
+          "venue": {
+            "id": 186,
+            "name": "King Power at Den Dreef Stadion",
+            "city": "Heverlee"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1739631600
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": true
+          },
+          "away": {
+            "id": 6215,
+            "name": "Dender",
+            "logo": "https://media.api-sports.io/football/teams/6215.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1213393,
+          "date": "2025-02-08T15:00:00+00:00",
+          "venue": {
+            "id": 176,
+            "name": "Jan Breydelstadion",
+            "city": "Brugge"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1739026800
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 569,
+            "name": "Club Brugge KV",
+            "logo": "https://media.api-sports.io/football/teams/569.png",
+            "winner": true
+          },
+          "away": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1213391,
+          "date": "2025-01-31T19:45:00+00:00",
+          "venue": {
+            "id": 186,
+            "name": "King Power at Den Dreef Stadion",
+            "city": "Heverlee"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1738352700
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": true
+          },
+          "away": {
+            "id": 266,
+            "name": "KV Mechelen",
+            "logo": "https://media.api-sports.io/football/teams/266.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1213381,
+          "date": "2025-01-26T18:15:00+00:00",
+          "venue": {
+            "id": 186,
+            "name": "King Power at Den Dreef Stadion",
+            "city": "Heverlee"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1737915300
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": null
+          },
+          "away": {
+            "id": 631,
+            "name": "Gent",
+            "logo": "https://media.api-sports.io/football/teams/631.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1213370,
+          "date": "2025-01-19T15:00:00+00:00",
+          "venue": {
+            "id": 194,
+            "name": "Stade Joseph Mariën",
+            "city": "Brussels"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1737298800
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1393,
+            "name": "Union St. Gilloise",
+            "logo": "https://media.api-sports.io/football/teams/1393.png",
+            "winner": true
+          },
+          "away": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1213362,
+          "date": "2025-01-11T17:15:00+00:00",
+          "venue": {
+            "id": 12455,
+            "name": "Cegeka Arena",
+            "city": "Genk"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1736615700
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 742,
+            "name": "Genk",
+            "logo": "https://media.api-sports.io/football/teams/742.png",
+            "winner": true
+          },
+          "away": {
+            "id": 260,
+            "name": "OH Leuven",
+            "logo": "https://media.api-sports.io/football/teams/260.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 667,
+      "name": "Friendlies Clubs",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 260,
+      "name": "OH Leuven",
+      "logo": "https://media.api-sports.io/football/teams/260.png"
+    },
+    "form": "WWWWL",
+    "fixtures": {
+      "played": {
+        "home": 2,
+        "away": 3,
+        "total": 5
+      },
+      "wins": {
+        "home": 1,
+        "away": 3,
+        "total": 4
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 8,
+          "away": 14,
+          "total": 22
+        },
+        "average": {
+          "home": "4.0",
+          "away": "4.7",
+          "total": "4.4"
+        },
+        "minute": {
+          "0-15": {
+            "total": 2,
+            "percentage": "9.09%"
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "4.55%"
+          },
+          "31-45": {
+            "total": 2,
+            "percentage": "9.09%"
+          },
+          "46-60": {
+            "total": 4,
+            "percentage": "18.18%"
+          },
+          "61-75": {
+            "total": 5,
+            "percentage": "22.73%"
+          },
+          "76-90": {
+            "total": 8,
+            "percentage": "36.36%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 4,
+            "under": 1
+          },
+          "1.5": {
+            "over": 4,
+            "under": 1
+          },
+          "2.5": {
+            "over": 3,
+            "under": 2
+          },
+          "3.5": {
+            "over": 3,
+            "under": 2
+          },
+          "4.5": {
+            "over": 2,
+            "under": 3
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 1,
+          "away": 3,
+          "total": 4
+        },
+        "average": {
+          "home": "0.5",
+          "away": "1.0",
+          "total": "0.8"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": 2,
+            "percentage": "50.00%"
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 3,
+            "under": 2
+          },
+          "1.5": {
+            "over": 1,
+            "under": 4
+          },
+          "2.5": {
+            "over": 0,
+            "under": 5
+          },
+          "3.5": {
+            "over": 0,
+            "under": 5
+          },
+          "4.5": {
+            "over": 0,
+            "under": 5
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 4,
+        "draws": 0,
+        "loses": 0
+      },
+      "wins": {
+        "home": "8-0",
+        "away": "0-8"
+      },
+      "loses": {
+        "home": "0-1",
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 8,
+          "away": 8
+        },
+        "against": {
+          "home": 1,
+          "away": 2
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 1,
+      "away": 1,
+      "total": 2
+    },
+    "failed_to_score": {
+      "home": 1,
+      "away": 0,
+      "total": 1
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [
+      {
+        "formation": "3-4-1-2",
+        "played": 1
+      },
+      {
+        "formation": "4-1-4-1",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "100.00%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:38:29.464Z"
+}

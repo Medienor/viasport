@@ -2,15 +2,54 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import TeamStandings from '@/app/components/TeamStandings';
+import { readFile, readdir } from 'fs/promises';
+import path from 'path';
+
+// Add this constant at the top level
+const DATA_DIR = path.join(process.cwd(), 'data', 'teams');
+
+// Add this function to generate static paths
+export async function generateStaticParams() {
+  try {
+    const files = await readdir(DATA_DIR);
+    return files
+      .filter(file => file.endsWith('.json'))
+      .map(file => {
+        const teamId = file.replace('.json', '');
+        // You'll need to implement this function to get team names from the JSON files
+        return {
+          slug: `team-${teamId}` // This should match your URL structure
+        };
+      });
+  } catch (error) {
+    console.error('Error generating static params:', error);
+    return [];
+  }
+}
 
 // Helper function to extract team ID from slug
 function extractTeamId(slug: string): number | null {
+  console.log('Processing slug:', slug);
   const match = slug.match(/-(\d+)$/);
-  return match ? parseInt(match[1], 10) : null;
+  const id = match ? parseInt(match[1], 10) : null;
+  console.log('Extracted ID:', id);
+  return id;
 }
 
-// This enables Incremental Static Regeneration (ISR)
-// Pages will be generated when visited and cached for 24 hours
+// Helper function to get team data
+async function getTeamData(teamId: number) {
+  try {
+    const filePath = path.join(DATA_DIR, `${teamId}.json`);
+    const rawData = await readFile(filePath, 'utf-8');
+    return JSON.parse(rawData);
+  } catch (error) {
+    console.error('Error reading team data:', error);
+    return null;
+  }
+}
+
+// This enables static generation
+export const dynamic = 'force-static';
 export const revalidate = 86400; // 24 hours in seconds
 
 // Generate metadata for the page
@@ -18,186 +57,89 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const teamId = extractTeamId(params.slug);
   if (!teamId) return { title: 'Lag ikke funnet' };
 
-  try {
-    // Use absolute URL for server components
-    const baseUrl = process.env.VERCEL_URL 
-      ? `https://${process.env.VERCEL_URL}` 
-      : 'http://localhost:3000';
-      
-    const response = await fetch(`${baseUrl}/api/teams?id=${teamId}`, { cache: 'no-store' });
-    const data = await response.json();
-    const team = data.response?.[0];
+  const data = await getTeamData(teamId);
+  if (!data?.team?.team?.name) return { title: 'Lag ikke funnet' };
 
-    if (!team) return { title: 'Lag ikke funnet' };
-
-    return {
-      title: `${team.team.name} på TV & Stream | Kampprogram, tabeller og resultater`,
-      description: `Se når ${team.team.name} spiller på TV og stream. Få full oversikt over kampprogram, tabeller, resultater og statistikk.`,
-      openGraph: {
-        title: `${team.team.name} på TV & Stream | Kampprogram, tabeller og resultater`,
-        description: `Se når ${team.team.name} spiller på TV og stream. Få full oversikt over kampprogram, tabeller, resultater og statistikk.`,
-        images: [{ url: team.team.logo }],
-        type: 'website',
-      },
-    };
-  } catch (error) {
-    console.error('Error fetching team metadata:', error);
-    return { title: 'Lagprofil' };
-  }
+  return {
+    title: `${data.team.team.name} på TV & Stream`,
+    description: `Se når ${data.team.team.name} spiller på TV og stream.`,
+    openGraph: {
+      title: `${data.team.team.name} på TV & Stream`,
+      description: `Se når ${data.team.team.name} spiller på TV og stream.`,
+      images: [{ url: data.team.team.logo || '/images/team-placeholder.png' }],
+    },
+  };
 }
 
 export default async function TeamPage({ params }: { params: { slug: string } }) {
   const teamId = extractTeamId(params.slug);
   
   if (!teamId) {
+    console.error('No team ID found in slug:', params.slug);
     return notFound();
   }
 
-  try {
-    // Use absolute URL for server components
-    const baseUrl = process.env.VERCEL_URL 
-      ? `https://${process.env.VERCEL_URL}` 
-      : 'http://localhost:3000';
-    
-    // Fetch team data
-    const teamResponse = await fetch(`${baseUrl}/api/teams?id=${teamId}`);
-    
-    if (!teamResponse.ok) {
-      throw new Error(`Team API responded with status: ${teamResponse.status}`);
-    }
-    
-    const teamData = await teamResponse.json();
-    const team = teamData.response?.[0]?.team;
+  const data = await getTeamData(teamId);
+  
+  if (!data || !data.team?.team?.name) {
+    console.error('Invalid team data for ID:', teamId);
+    return notFound();
+  }
 
-    if (!team) {
-      return notFound();
-    }
+  const {
+    team,
+    leagues = [],
+    fixtures = { upcoming: [], past: [] },
+    statistics: teamStats = null
+  } = data;
 
-    // Initialize with empty values in case API calls fail
-    let leagues = [];
-    let teamStats = null;
-    let seasons = [];
-    let fixtures = [];
-    let pastFixtures = [];
-    
-    try {
-      // Fetch team leagues
-      const leaguesResponse = await fetch(`${baseUrl}/api/team-leagues?team=${teamId}`, { cache: 'no-store' });
-      if (leaguesResponse.ok) {
-        const leaguesData = await leaguesResponse.json();
-        leagues = leaguesData.response || [];
-      }
-    } catch (error) {
-      console.error('Error fetching team leagues:', error);
-    }
-    
-    // Get the main league (usually the first one)
-    const mainLeague = leagues[0]?.league;
-    const currentYear = new Date().getFullYear();
-    
-    try {
-      // Fetch team statistics for the main league
-      if (mainLeague) {
-        const statsResponse = await fetch(
-          `${baseUrl}/api/teams/statistics?team=${teamId}&league=${mainLeague.id}&season=${currentYear}`,
-          { cache: 'no-store' }
-        );
-        if (statsResponse.ok) {
-          const statsData = await statsResponse.json();
-          teamStats = statsData.response;
-        }
-      }
-    } catch (error) {
-      console.error('Error fetching team statistics:', error);
-    }
-
-    try {
-      // Fetch team seasons
-      const seasonsResponse = await fetch(`${baseUrl}/api/team-seasons?team=${teamId}`, { cache: 'no-store' });
-      if (seasonsResponse.ok) {
-        const seasonsData = await seasonsResponse.json();
-        seasons = seasonsData.response || [];
-      }
-    } catch (error) {
-      console.error('Error fetching team seasons:', error);
-    }
-
-    try {
-      // Fetch upcoming fixtures
-      const fixturesResponse = await fetch(
-        `${baseUrl}/api/fixtures?team=${teamId}&season=${currentYear}&next=5`,
-        { cache: 'no-store' }
-      );
-      if (fixturesResponse.ok) {
-        const fixturesData = await fixturesResponse.json();
-        fixtures = fixturesData.response || [];
-      }
-    } catch (error) {
-      console.error('Error fetching fixtures:', error);
-    }
-
-    try {
-      // Fetch past fixtures
-      const pastFixturesResponse = await fetch(
-        `${baseUrl}/api/fixtures?team=${teamId}&season=${currentYear}&last=5`,
-        { cache: 'no-store' }
-      );
-      if (pastFixturesResponse.ok) {
-        const pastFixturesData = await pastFixturesResponse.json();
-        pastFixtures = pastFixturesData.response || [];
-      }
-    } catch (error) {
-      console.error('Error fetching past fixtures:', error);
-    }
-
-    // Get the team's league ID from the team data
-    const leagueId = teamData?.league?.id || 39; // Default to Premier League if not found
-
-    return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="bg-white rounded-lg shadow-md p-6">
         {/* Team Header */}
-        <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-          <div className="flex items-center">
-            <div className="relative h-24 w-24 mr-6">
-              <Image
-                src={team.logo || '/images/team-placeholder.png'}
-                alt={team.name}
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div>
-              <h1 className="text-3xl font-bold">{team.name}</h1>
-              <p className="text-gray-600">{team.country}</p>
-              {team.founded && <p className="text-sm text-gray-500">Grunnlagt: {team.founded}</p>}
-              {team.venue && <p className="text-sm text-gray-500">Stadion: {team.venue.name}</p>}
-            </div>
+        <div className="flex items-center mb-6">
+          <div className="relative h-16 w-16 mr-4">
+            <Image
+              src={team.team.logo}
+              alt={team.team.name}
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
-          
-          {/* Navigation Tabs - Add right after team info */}
-          <div className="mt-6 border-t pt-4">
-            <div className="flex space-x-1">
+          <div>
+            <h1 className="text-2xl font-bold">{team.team.name}</h1>
+            {team.venue?.name && (
+              <p className="text-gray-500">{team.venue.name}</p>
+            )}
+          </div>
+        </div>
+        
+        {/* Navigation Tabs - Add right after team info */}
+        <div className="mt-6 border-t pt-4">
+          <div className="overflow-x-auto -mx-6 px-6 md:overflow-x-visible md:px-0 md:mx-0">
+            <div className="flex space-x-1 min-w-max md:min-w-0">
               <Link 
                 href={`/lag/${params.slug}`}
-                className="px-4 py-2 text-sm font-medium rounded-t-lg bg-blue-500 text-white hover:bg-blue-600 transition"
+                className="px-4 py-2 text-sm font-medium rounded-t-lg bg-blue-500 text-white hover:bg-blue-600 transition whitespace-nowrap"
               >
                 Oversikt
               </Link>
               <Link 
                 href={`/lag/${params.slug}/spillere`}
-                className="px-4 py-2 text-sm font-medium rounded-t-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
+                className="px-4 py-2 text-sm font-medium rounded-t-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition whitespace-nowrap"
               >
                 Spillere
               </Link>
               <Link 
                 href={`/lag/${params.slug}/overforinger`}
-                className="px-4 py-2 text-sm font-medium rounded-t-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
+                className="px-4 py-2 text-sm font-medium rounded-t-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition whitespace-nowrap"
               >
                 Overføringer
               </Link>
               <Link 
                 href={`/lag/${params.slug}/utilgjengelige`}
-                className="px-4 py-2 text-sm font-medium rounded-t-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
+                className="px-4 py-2 text-sm font-medium rounded-t-lg bg-gray-100 text-gray-700 hover:bg-gray-200 transition whitespace-nowrap"
               >
                 Utilgjengelige spillere
               </Link>
@@ -206,37 +148,36 @@ export default async function TeamPage({ params }: { params: { slug: string } })
         </div>
 
         {/* Team Standings */}
-        {seasons.length > 0 && (
+        {data.seasons.length > 0 && (
           <TeamStandings 
             teamId={teamId} 
-            seasons={seasons} 
+            seasons={data.seasons}
+            teamName={team.team.name}
           />
         )}
 
         {/* Team Leagues */}
         {leagues.length > 0 && (
-          <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-            <h2 className="text-xl font-semibold mb-4">Konkurranser</h2>
+          <div className="mt-8">
+            <h2 className="text-xl font-semibold mb-4">Competitions</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {leagues.map((leagueData: any) => (
-                <Link 
-                  href={`/fotball/liga/${leagueData.league.name.toLowerCase().replace(/\s+/g, '-')}-${leagueData.league.id}`}
-                  key={leagueData.league.id}
-                  className="flex items-center p-3 bg-gray-50 rounded-md hover:bg-gray-100 transition"
-                >
-                  <div className="relative h-10 w-10 mr-3">
-                    <Image
-                      src={leagueData.league.logo || '/images/league-placeholder.png'}
-                      alt={leagueData.league.name}
-                      fill
-                      className="object-contain"
-                    />
+              {leagues.map((league: any) => (
+                <div key={league.league.id} className="p-4 border rounded-lg">
+                  <div className="flex items-center">
+                    <div className="relative h-8 w-8 mr-3">
+                      <Image
+                        src={league.league.logo}
+                        alt={league.league.name}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-medium">{league.league.name}</h3>
+                      <p className="text-sm text-gray-500">{league.country.name}</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-medium">{leagueData.league.name}</p>
-                    <p className="text-xs text-gray-500">{leagueData.league.country}</p>
-                  </div>
-                </Link>
+                </div>
               ))}
             </div>
           </div>
@@ -244,8 +185,8 @@ export default async function TeamPage({ params }: { params: { slug: string } })
 
         {/* Team Statistics */}
         {teamStats && (
-          <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-            <h2 className="text-xl font-semibold mb-4">Lagstatistikk</h2>
+          <div className="mt-8">
+            <h2 className="text-xl font-semibold mb-4">Statistics</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-gray-50 p-4 rounded-md">
                 <h3 className="text-lg font-medium mb-2">Sesongprestasjon</h3>
@@ -317,9 +258,9 @@ export default async function TeamPage({ params }: { params: { slug: string } })
         {/* Fixtures */}
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 className="text-xl font-semibold mb-4">Kommende kamper</h2>
-          {fixtures && fixtures.length > 0 ? (
+          {fixtures.upcoming && fixtures.upcoming.length > 0 ? (
             <div className="space-y-4">
-              {fixtures.map((fixture: any) => (
+              {fixtures.upcoming.map((fixture: any) => (
                 <Link 
                   href={`/fotball/kamp/${fixture.fixture.id}`}
                   key={fixture.fixture.id}
@@ -388,7 +329,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
         {/* Past Matches */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-xl font-semibold mb-4">Siste kamper</h2>
-          {pastFixtures && pastFixtures.length > 0 ? (
+          {fixtures.past && fixtures.past.length > 0 ? (
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
@@ -411,7 +352,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
-                  {pastFixtures.map((fixture: any) => {
+                  {fixtures.past.map((fixture: any) => {
                     // Determine result from team's perspective
                     let resultClass = 'text-yellow-600'; // Draw
                     if (fixture.teams.home.id === teamId) {
@@ -484,17 +425,6 @@ export default async function TeamPage({ params }: { params: { slug: string } })
           )}
         </div>
       </div>
-    );
-  } catch (error) {
-    console.error('Error loading team page:', error);
-    return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="bg-white rounded-lg shadow-md p-6">
-          <h1 className="text-xl font-semibold text-red-600">Feil ved lasting av lagdata</h1>
-          <p className="mt-2">Det oppstod et problem ved lasting av laginformasjonen. Vennligst prøv igjen senere.</p>
-          <p className="mt-2 text-gray-500">Feildetaljer: {(error as Error).message}</p>
-        </div>
-      </div>
-    );
-  }
+    </div>
+  );
 } 

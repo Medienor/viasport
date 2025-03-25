@@ -1,0 +1,895 @@
+{
+  "team": {
+    "team": {
+      "id": 2382,
+      "name": "Ecuador",
+      "code": "ECU",
+      "country": "Ecuador",
+      "founded": 1925,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/2382.png"
+    },
+    "venue": {
+      "id": 465,
+      "name": "Estadio Olímpico Atahualpa",
+      "address": "Avenida 6 de Diciembre y Avenida Naciones Unidas",
+      "city": "Quito",
+      "capacity": 40958,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/465.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 9,
+        "name": "Copa America",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/9.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-06-21",
+          "end": "2024-07-15",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2021,
+    2022,
+    2023,
+    2024,
+    2026
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1146315,
+          "date": "2024-07-01T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "State Farm Stadium",
+            "city": "Glendale, Arizona"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719792000
+        },
+        "league": {
+          "id": 9,
+          "name": "Copa America",
+          "logo": "https://media.api-sports.io/football/leagues/9.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16,
+            "name": "Mexico",
+            "logo": "https://media.api-sports.io/football/teams/16.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2382,
+            "name": "Ecuador",
+            "logo": "https://media.api-sports.io/football/teams/2382.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1146308,
+          "date": "2024-06-27T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Allegiant Stadium",
+            "city": "Las Vegas, Nevada"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719525600
+        },
+        "league": {
+          "id": 9,
+          "name": "Copa America",
+          "logo": "https://media.api-sports.io/football/leagues/9.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2382,
+            "name": "Ecuador",
+            "logo": "https://media.api-sports.io/football/teams/2382.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2385,
+            "name": "Jamaica",
+            "logo": "https://media.api-sports.io/football/teams/2385.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1146302,
+          "date": "2024-06-22T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Levi's Stadium",
+            "city": "Santa Clara, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719093600
+        },
+        "league": {
+          "id": 9,
+          "name": "Copa America",
+          "logo": "https://media.api-sports.io/football/leagues/9.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2382,
+            "name": "Ecuador",
+            "logo": "https://media.api-sports.io/football/teams/2382.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2379,
+            "name": "Venezuela",
+            "logo": "https://media.api-sports.io/football/teams/2379.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1198060,
+          "date": "2024-06-16T19:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Pratt & Whitney Stadium at Rentschler Field",
+            "city": "East Hartford, Connecticut"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1718566200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2382,
+            "name": "Ecuador",
+            "logo": "https://media.api-sports.io/football/teams/2382.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4672,
+            "name": "Honduras",
+            "logo": "https://media.api-sports.io/football/teams/4672.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1198577,
+          "date": "2024-06-13T00:30:00+00:00",
+          "venue": {
+            "id": 1620,
+            "name": "Subaru Park",
+            "city": "Chester, Pennsylvania"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1718238600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2382,
+            "name": "Ecuador",
+            "logo": "https://media.api-sports.io/football/teams/2382.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2381,
+            "name": "Bolivia",
+            "logo": "https://media.api-sports.io/football/teams/2381.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1193462,
+          "date": "2024-06-09T23:00:00+00:00",
+          "venue": {
+            "id": 1609,
+            "name": "Soldier Field",
+            "city": "Chicago, Illinois"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717974000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 26,
+            "name": "Argentina",
+            "logo": "https://media.api-sports.io/football/teams/26.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2382,
+            "name": "Ecuador",
+            "logo": "https://media.api-sports.io/football/teams/2382.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1171089,
+          "date": "2024-03-24T20:00:00+00:00",
+          "venue": {
+            "id": 1619,
+            "name": "Red Bull Arena",
+            "city": "Harrison, New Jersey"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711310400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2382,
+            "name": "Ecuador",
+            "logo": "https://media.api-sports.io/football/teams/2382.png",
+            "winner": false
+          },
+          "away": {
+            "id": 768,
+            "name": "Italy",
+            "logo": "https://media.api-sports.io/football/teams/768.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1171088,
+          "date": "2024-03-22T00:30:00+00:00",
+          "venue": {
+            "id": 1619,
+            "name": "Red Bull Arena",
+            "city": "Harrison, New Jersey"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711067400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2382,
+            "name": "Ecuador",
+            "logo": "https://media.api-sports.io/football/teams/2382.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5161,
+            "name": "Guatemala",
+            "logo": "https://media.api-sports.io/football/teams/5161.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 9,
+      "name": "Copa America",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/9.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 2382,
+      "name": "Ecuador",
+      "logo": "https://media.api-sports.io/football/teams/2382.png"
+    },
+    "form": "LWDD",
+    "fixtures": {
+      "played": {
+        "home": 2,
+        "away": 2,
+        "total": 4
+      },
+      "wins": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "draws": {
+        "home": 0,
+        "away": 2,
+        "total": 2
+      },
+      "loses": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 4,
+          "away": 1,
+          "total": 5
+        },
+        "average": {
+          "home": "2.0",
+          "away": "0.5",
+          "total": "1.3"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
+          "106-120": {
+            "total": 2,
+            "percentage": "28.57%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 3,
+            "under": 1
+          },
+          "1.5": {
+            "over": 1,
+            "under": 3
+          },
+          "2.5": {
+            "over": 1,
+            "under": 3
+          },
+          "3.5": {
+            "over": 0,
+            "under": 4
+          },
+          "4.5": {
+            "over": 0,
+            "under": 4
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 3,
+          "away": 1,
+          "total": 4
+        },
+        "average": {
+          "home": "1.5",
+          "away": "0.5",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "12.50%"
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "12.50%"
+          },
+          "61-75": {
+            "total": 2,
+            "percentage": "25.00%"
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": 4,
+            "percentage": "50.00%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 3,
+            "under": 1
+          },
+          "1.5": {
+            "over": 1,
+            "under": 3
+          },
+          "2.5": {
+            "over": 0,
+            "under": 4
+          },
+          "3.5": {
+            "over": 0,
+            "under": 4
+          },
+          "4.5": {
+            "over": 0,
+            "under": 4
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 1,
+        "draws": 0,
+        "loses": 1
+      },
+      "wins": {
+        "home": "3-1",
+        "away": null
+      },
+      "loses": {
+        "home": "1-2",
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 3,
+          "away": 1
+        },
+        "against": {
+          "home": 2,
+          "away": 1
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 1,
+      "total": 1
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 1,
+      "total": 1
+    },
+    "penalty": {
+      "scored": {
+        "total": 3,
+        "percentage": "60.00%"
+      },
+      "missed": {
+        "total": 2,
+        "percentage": "40.00%"
+      },
+      "total": 5
+    },
+    "lineups": [
+      {
+        "formation": "4-2-3-1",
+        "played": 3
+      },
+      {
+        "formation": "4-2-2-2",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": 2,
+          "percentage": "33.33%"
+        },
+        "31-45": {
+          "total": 1,
+          "percentage": "16.67%"
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "16.67%"
+        },
+        "61-75": {
+          "total": 1,
+          "percentage": "16.67%"
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        },
+        "": {
+          "total": 1,
+          "percentage": "16.67%"
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": 1,
+          "percentage": "100.00%"
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:41:50.179Z"
+}

@@ -1,0 +1,715 @@
+{
+  "team": {
+    "team": {
+      "id": 13,
+      "name": "Senegal",
+      "code": "SEN",
+      "country": "Senegal",
+      "founded": 1960,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/13.png"
+    },
+    "venue": {
+      "id": 1405,
+      "name": "Stade Léopold Sédar Senghor",
+      "address": "Route de l’Aéroport de Yoff",
+      "city": "Dakar",
+      "capacity": 80000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1405.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1163,
+        "name": "African Nations Championship - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1163.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-10-25",
+          "end": "2025-05-09",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1314680,
+          "date": "2024-12-28T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Me Abdoulaye Wade",
+            "city": "Diamniadio"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1735405200
+        },
+        "league": {
+          "id": 1163,
+          "name": "African Nations Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1163.png"
+        },
+        "teams": {
+          "home": {
+            "id": 13,
+            "name": "Senegal",
+            "logo": "https://media.api-sports.io/football/teams/13.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1525,
+            "name": "Liberia",
+            "logo": "https://media.api-sports.io/football/teams/1525.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1314679,
+          "date": "2024-12-22T16:00:00+00:00",
+          "venue": {
+            "id": 20323,
+            "name": "Samuel Kanyon Doe Stadium",
+            "city": "Monrovia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1734883200
+        },
+        "league": {
+          "id": 1163,
+          "name": "African Nations Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1163.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1525,
+            "name": "Liberia",
+            "logo": "https://media.api-sports.io/football/teams/1525.png",
+            "winner": null
+          },
+          "away": {
+            "id": 13,
+            "name": "Senegal",
+            "logo": "https://media.api-sports.io/football/teams/13.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1182075,
+          "date": "2024-03-26T19:30:00+00:00",
+          "venue": {
+            "id": 633,
+            "name": "Stade Crédit Agricole de la Licorne",
+            "city": "Amiens"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711481400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 13,
+            "name": "Senegal",
+            "logo": "https://media.api-sports.io/football/teams/13.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1516,
+            "name": "Benin",
+            "logo": "https://media.api-sports.io/football/teams/1516.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1182073,
+          "date": "2024-03-22T19:30:00+00:00",
+          "venue": {
+            "id": 633,
+            "name": "Stade Crédit Agricole de la Licorne",
+            "city": "Amiens"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711135800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 13,
+            "name": "Senegal",
+            "logo": "https://media.api-sports.io/football/teams/13.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1503,
+            "name": "Gabon",
+            "logo": "https://media.api-sports.io/football/teams/1503.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1155249,
+          "date": "2024-01-08T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Me Abdoulaye Wade",
+            "city": "Diamniadio"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1704736800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 13,
+            "name": "Senegal",
+            "logo": "https://media.api-sports.io/football/teams/13.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1505,
+            "name": "Niger",
+            "logo": "https://media.api-sports.io/football/teams/1505.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 13,
+      "name": "Senegal",
+      "logo": "https://media.api-sports.io/football/teams/13.png"
+    },
+    "form": "WWW",
+    "fixtures": {
+      "played": {
+        "home": 3,
+        "away": 0,
+        "total": 3
+      },
+      "wins": {
+        "home": 3,
+        "away": 0,
+        "total": 3
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 5,
+          "away": 0,
+          "total": 5
+        },
+        "average": {
+          "home": "1.7",
+          "away": "0.0",
+          "total": "1.7"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": 2,
+            "percentage": "50.00%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 3,
+            "under": 0
+          },
+          "1.5": {
+            "over": 1,
+            "under": 2
+          },
+          "2.5": {
+            "over": 1,
+            "under": 2
+          },
+          "3.5": {
+            "over": 0,
+            "under": 3
+          },
+          "4.5": {
+            "over": 0,
+            "under": 3
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 0,
+          "away": 0,
+          "total": 0
+        },
+        "average": {
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "100.00%"
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 0,
+            "under": 3
+          },
+          "1.5": {
+            "over": 0,
+            "under": 3
+          },
+          "2.5": {
+            "over": 0,
+            "under": 3
+          },
+          "3.5": {
+            "over": 0,
+            "under": 3
+          },
+          "4.5": {
+            "over": 0,
+            "under": 3
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 3,
+        "draws": 0,
+        "loses": 0
+      },
+      "wins": {
+        "home": "3-0",
+        "away": null
+      },
+      "loses": {
+        "home": null,
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 3,
+          "away": 0
+        },
+        "against": {
+          "home": 0,
+          "away": 0
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 3,
+      "away": 0,
+      "total": 3
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "penalty": {
+      "scored": {
+        "total": 1,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 1
+    },
+    "lineups": [
+      {
+        "formation": "3-4-3",
+        "played": 1
+      },
+      {
+        "formation": "4-3-3",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": 2,
+          "percentage": "33.33%"
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "16.67%"
+        },
+        "61-75": {
+          "total": 1,
+          "percentage": "16.67%"
+        },
+        "76-90": {
+          "total": 1,
+          "percentage": "16.67%"
+        },
+        "91-105": {
+          "total": 1,
+          "percentage": "16.67%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:41:06.154Z"
+}

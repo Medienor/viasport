@@ -1,0 +1,1280 @@
+{
+  "team": {
+    "team": {
+      "id": 1094,
+      "name": "Armenia",
+      "code": "ARM",
+      "country": "Armenia",
+      "founded": 1992,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/1094.png"
+    },
+    "venue": {
+      "id": 121,
+      "name": "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
+      "address": "ul. Nar-Dos",
+      "city": "Yerevan",
+      "capacity": 14530,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/121.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 5,
+        "name": "UEFA Nations League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/5.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-05",
+          "end": "2026-03-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 32,
+        "name": "World Cup - Qualification Europe",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/32.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2025-03-21",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2017,
+    2018,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1323306,
+          "date": "2025-09-09T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757433600
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": null
+          },
+          "away": {
+            "id": 776,
+            "name": "Rep. Of Ireland",
+            "logo": "https://media.api-sports.io/football/teams/776.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323323,
+          "date": "2025-10-11T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1760198400
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 769,
+            "name": "Hungary",
+            "logo": "https://media.api-sports.io/football/teams/769.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323339,
+          "date": "2025-10-14T18:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1760467500
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 776,
+            "name": "Rep. Of Ireland",
+            "logo": "https://media.api-sports.io/football/teams/776.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323344,
+          "date": "2025-11-13T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1763053200
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": null
+          },
+          "away": {
+            "id": 769,
+            "name": "Hungary",
+            "logo": "https://media.api-sports.io/football/teams/769.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1316566,
+          "date": "2025-03-23T14:00:00+00:00",
+          "venue": {
+            "id": 691,
+            "name": "Boris Paichadze Dinamo Arena",
+            "city": "Tbilisi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1742738400
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1104,
+            "name": "Georgia",
+            "logo": "https://media.api-sports.io/football/teams/1104.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 6,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 5,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 6,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1316565,
+          "date": "2025-03-20T17:00:00+00:00",
+          "venue": {
+            "id": 121,
+            "name": "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
+            "city": "Yerevan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742490000
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1104,
+            "name": "Georgia",
+            "logo": "https://media.api-sports.io/football/teams/1104.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173022,
+          "date": "2024-11-17T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadions Skonto",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1731852000
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1092,
+            "name": "Latvia",
+            "logo": "https://media.api-sports.io/football/teams/1092.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173015,
+          "date": "2024-11-14T17:00:00+00:00",
+          "venue": {
+            "id": 121,
+            "name": "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
+            "city": "Yerevan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1731603600
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1098,
+            "name": "Faroe Islands",
+            "logo": "https://media.api-sports.io/football/teams/1098.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173008,
+          "date": "2024-10-13T16:00:00+00:00",
+          "venue": {
+            "id": 121,
+            "name": "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
+            "city": "Yerevan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1728835200
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1105,
+            "name": "FYR Macedonia",
+            "logo": "https://media.api-sports.io/football/teams/1105.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173001,
+          "date": "2024-10-10T18:45:00+00:00",
+          "venue": {
+            "id": 2609,
+            "name": "Tórsvøllur",
+            "city": "Tórshavn, Streymoy"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1728585900
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1098,
+            "name": "Faroe Islands",
+            "logo": "https://media.api-sports.io/football/teams/1098.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173000,
+          "date": "2024-09-10T18:45:00+00:00",
+          "venue": {
+            "id": 1045,
+            "name": "Toše Proeski Arena",
+            "city": "Skopje"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725993900
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1105,
+            "name": "FYR Macedonia",
+            "logo": "https://media.api-sports.io/football/teams/1105.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172993,
+          "date": "2024-09-07T16:00:00+00:00",
+          "venue": {
+            "id": 121,
+            "name": "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
+            "city": "Yerevan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725724800
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1092,
+            "name": "Latvia",
+            "logo": "https://media.api-sports.io/football/teams/1092.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1171754,
+          "date": "2024-06-07T16:00:00+00:00",
+          "venue": {
+            "id": 121,
+            "name": "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
+            "city": "Yerevan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717776000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1095,
+            "name": "Kazakhstan",
+            "logo": "https://media.api-sports.io/football/teams/1095.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1170220,
+          "date": "2024-06-04T16:00:00+00:00",
+          "venue": {
+            "id": 1442,
+            "name": "Stadion Stožice",
+            "city": "Ljubljana"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717516800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1091,
+            "name": "Slovenia",
+            "logo": "https://media.api-sports.io/football/teams/1091.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1094,
+            "name": "Armenia",
+            "logo": "https://media.api-sports.io/football/teams/1094.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 1094,
+      "name": "Armenia",
+      "logo": "https://media.api-sports.io/football/teams/1094.png"
+    },
+    "form": "LLLW",
+    "fixtures": {
+      "played": {
+        "home": 2,
+        "away": 2,
+        "total": 4
+      },
+      "wins": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 1,
+        "away": 2,
+        "total": 3
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 2,
+          "away": 2,
+          "total": 4
+        },
+        "average": {
+          "home": "1.0",
+          "away": "1.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 2,
+            "percentage": "66.67%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 3,
+            "under": 1
+          },
+          "1.5": {
+            "over": 1,
+            "under": 3
+          },
+          "2.5": {
+            "over": 0,
+            "under": 4
+          },
+          "3.5": {
+            "over": 0,
+            "under": 4
+          },
+          "4.5": {
+            "over": 0,
+            "under": 4
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 2,
+          "away": 4,
+          "total": 6
+        },
+        "average": {
+          "home": "1.0",
+          "away": "2.0",
+          "total": "1.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 4,
+            "under": 0
+          },
+          "1.5": {
+            "over": 2,
+            "under": 2
+          },
+          "2.5": {
+            "over": 0,
+            "under": 4
+          },
+          "3.5": {
+            "over": 0,
+            "under": 4
+          },
+          "4.5": {
+            "over": 0,
+            "under": 4
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 0,
+        "loses": 3
+      },
+      "wins": {
+        "home": "2-1",
+        "away": null
+      },
+      "loses": {
+        "home": "0-1",
+        "away": "2-1"
+      },
+      "goals": {
+        "for": {
+          "home": 2,
+          "away": 1
+        },
+        "against": {
+          "home": 1,
+          "away": 2
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 1,
+      "away": 0,
+      "total": 1
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [
+      {
+        "formation": "4-3-3",
+        "played": 3
+      },
+      {
+        "formation": "5-4-1",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": 1,
+          "percentage": "25.00%"
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": 2,
+          "percentage": "50.00%"
+        },
+        "61-75": {
+          "total": 1,
+          "percentage": "25.00%"
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:40:51.456Z"
+}

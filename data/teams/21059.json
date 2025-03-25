@@ -1,0 +1,697 @@
+{
+  "team": {
+    "team": {
+      "id": 21059,
+      "name": "Syria U20",
+      "code": null,
+      "country": "Syria",
+      "founded": 1936,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/21059.png"
+    },
+    "venue": {
+      "id": 1549,
+      "name": "Aleppo International Stadium",
+      "address": null,
+      "city": "Aleppo",
+      "capacity": 61000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1549.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1153,
+        "name": "AFC U20 Asian Cup - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1153.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-21",
+          "end": "2024-09-29",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1308159,
+          "date": "2024-09-29T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Lạch Tray",
+            "city": "Hai Phong"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1727611200
+        },
+        "league": {
+          "id": 1153,
+          "name": "AFC U20 Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1153.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10315,
+            "name": "Vietnam U20",
+            "logo": "https://media.api-sports.io/football/teams/10315.png",
+            "winner": false
+          },
+          "away": {
+            "id": 21059,
+            "name": "Syria U20",
+            "logo": "https://media.api-sports.io/football/teams/21059.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1308156,
+          "date": "2024-09-27T09:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Lạch Tray",
+            "city": "Hai Phong"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1727427600
+        },
+        "league": {
+          "id": 1153,
+          "name": "AFC U20 Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1153.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21059,
+            "name": "Syria U20",
+            "logo": "https://media.api-sports.io/football/teams/21059.png",
+            "winner": true
+          },
+          "away": {
+            "id": 25095,
+            "name": "Guam U20",
+            "logo": "https://media.api-sports.io/football/teams/25095.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 10,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 5,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 10,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1308154,
+          "date": "2024-09-25T09:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Lạch Tray",
+            "city": "Hai Phong"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1727254800
+        },
+        "league": {
+          "id": 1153,
+          "name": "AFC U20 Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1153.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21059,
+            "name": "Syria U20",
+            "logo": "https://media.api-sports.io/football/teams/21059.png",
+            "winner": true
+          },
+          "away": {
+            "id": 25091,
+            "name": "Bhutan U20",
+            "logo": "https://media.api-sports.io/football/teams/25091.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1308151,
+          "date": "2024-09-21T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Lạch Tray",
+            "city": "Hai Phong"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1726920000
+        },
+        "league": {
+          "id": 1153,
+          "name": "AFC U20 Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1153.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25090,
+            "name": "Bangladesh U20",
+            "logo": "https://media.api-sports.io/football/teams/25090.png",
+            "winner": false
+          },
+          "away": {
+            "id": 21059,
+            "name": "Syria U20",
+            "logo": "https://media.api-sports.io/football/teams/21059.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1189518,
+          "date": "2024-03-19T20:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1710878400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19627,
+            "name": "Jordan U20",
+            "logo": "https://media.api-sports.io/football/teams/19627.png",
+            "winner": true
+          },
+          "away": {
+            "id": 21059,
+            "name": "Syria U20",
+            "logo": "https://media.api-sports.io/football/teams/21059.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 21059,
+      "name": "Syria U20",
+      "logo": "https://media.api-sports.io/football/teams/21059.png"
+    },
+    "form": "L",
+    "fixtures": {
+      "played": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 0,
+          "away": 1,
+          "total": 1
+        },
+        "average": {
+          "home": "0.0",
+          "away": "1.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 0
+          },
+          "1.5": {
+            "over": 0,
+            "under": 1
+          },
+          "2.5": {
+            "over": 0,
+            "under": 1
+          },
+          "3.5": {
+            "over": 0,
+            "under": 1
+          },
+          "4.5": {
+            "over": 0,
+            "under": 1
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 0,
+          "away": 4,
+          "total": 4
+        },
+        "average": {
+          "home": "0.0",
+          "away": "4.0",
+          "total": "4.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 0
+          },
+          "1.5": {
+            "over": 1,
+            "under": 0
+          },
+          "2.5": {
+            "over": 1,
+            "under": 0
+          },
+          "3.5": {
+            "over": 1,
+            "under": 0
+          },
+          "4.5": {
+            "over": 0,
+            "under": 1
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 0,
+        "loses": 1
+      },
+      "wins": {
+        "home": null,
+        "away": null
+      },
+      "loses": {
+        "home": null,
+        "away": "4-1"
+      },
+      "goals": {
+        "for": {
+          "home": 0,
+          "away": 1
+        },
+        "against": {
+          "home": 0,
+          "away": 4
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:42:37.188Z"
+}

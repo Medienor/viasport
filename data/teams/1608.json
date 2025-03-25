@@ -1,0 +1,1105 @@
+{
+  "team": {
+    "team": {
+      "id": 1608,
+      "name": "Atlanta United FC",
+      "code": null,
+      "country": "USA",
+      "founded": 2014,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/1608.png"
+    },
+    "venue": {
+      "id": 1898,
+      "name": "Mercedes-Benz Stadium",
+      "address": "1 AMB Drive North West",
+      "city": "Atlanta, Georgia",
+      "capacity": 73019,
+      "surface": "artificial turf",
+      "image": "https://media.api-sports.io/football/venues/1898.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 253,
+        "name": "Major League Soccer",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/253.png"
+      },
+      "country": {
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-02-22",
+          "end": "2024-12-07",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": true,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-04",
+          "end": "2024-12-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 257,
+        "name": "US Open Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/257.png"
+      },
+      "country": {
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-03-18",
+          "end": "2024-09-26",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 772,
+        "name": "Leagues Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/772.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-27",
+          "end": "2024-08-25",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1315362,
+          "date": "2024-11-24T20:30:00+00:00",
+          "venue": {
+            "id": 20500,
+            "name": "Inter&Co Stadium",
+            "city": "Orlando, Florida"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1732480200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1598,
+            "name": "Orlando City SC",
+            "logo": "https://media.api-sports.io/football/teams/1598.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1312867,
+          "date": "2024-11-10T01:00:00+00:00",
+          "venue": {
+            "id": 20764,
+            "name": "Chase Stadium",
+            "city": "Fort Lauderdale, Florida"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1731200400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9568,
+            "name": "Inter Miami",
+            "logo": "https://media.api-sports.io/football/teams/9568.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1312866,
+          "date": "2024-11-02T23:00:00+00:00",
+          "venue": {
+            "id": 1898,
+            "name": "Mercedes-Benz Stadium",
+            "city": "Atlanta, Georgia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1730588400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": true
+          },
+          "away": {
+            "id": 9568,
+            "name": "Inter Miami",
+            "logo": "https://media.api-sports.io/football/teams/9568.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1312865,
+          "date": "2024-10-26T00:30:00+00:00",
+          "venue": {
+            "id": 20764,
+            "name": "Chase Stadium",
+            "city": "Fort Lauderdale, Florida"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1729902600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9568,
+            "name": "Inter Miami",
+            "logo": "https://media.api-sports.io/football/teams/9568.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151238,
+          "date": "2024-10-20T22:00:00+00:00",
+          "venue": {
+            "id": 20500,
+            "name": "Inter&Co Stadium",
+            "city": "Orlando, Florida"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1729461600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1598,
+            "name": "Orlando City SC",
+            "logo": "https://media.api-sports.io/football/teams/1598.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151220,
+          "date": "2024-10-05T23:30:00+00:00",
+          "venue": {
+            "id": 1898,
+            "name": "Mercedes-Benz Stadium",
+            "city": "Atlanta, Georgia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 14
+          },
+          "timestamp": 1728171000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151205,
+          "date": "2024-10-02T23:30:00+00:00",
+          "venue": {
+            "id": 1898,
+            "name": "Mercedes-Benz Stadium",
+            "city": "Atlanta, Georgia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1727911800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151198,
+          "date": "2024-09-28T23:30:00+00:00",
+          "venue": {
+            "id": 1620,
+            "name": "Subaru Park",
+            "city": "Chester, Pennsylvania"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1727566200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1599,
+            "name": "Philadelphia Union",
+            "logo": "https://media.api-sports.io/football/teams/1599.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151181,
+          "date": "2024-09-21T23:30:00+00:00",
+          "venue": {
+            "id": 1619,
+            "name": "Red Bull Arena",
+            "city": "Harrison, New Jersey"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 12
+          },
+          "timestamp": 1726961400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151164,
+          "date": "2024-09-18T23:30:00+00:00",
+          "venue": {
+            "id": 1898,
+            "name": "Mercedes-Benz Stadium",
+            "city": "Atlanta, Georgia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1726702200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": null
+          },
+          "away": {
+            "id": 9568,
+            "name": "Inter Miami",
+            "logo": "https://media.api-sports.io/football/teams/9568.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 253,
+      "name": "Major League Soccer",
+      "country": "USA",
+      "logo": "https://media.api-sports.io/football/leagues/253.png",
+      "flag": "https://media.api-sports.io/flags/us.svg",
+      "season": 2024
+    },
+    "team": {
+      "id": 1608,
+      "name": "Atlanta United FC",
+      "logo": "https://media.api-sports.io/football/teams/1608.png"
+    },
+    "form": "LWWLWDDLDLLLDLWLDWDWLLLDWLWLDDDLWWDLWWL",
+    "fixtures": {
+      "played": {
+        "home": 18,
+        "away": 21,
+        "total": 39
+      },
+      "wins": {
+        "home": 7,
+        "away": 5,
+        "total": 12
+      },
+      "draws": {
+        "home": 4,
+        "away": 7,
+        "total": 11
+      },
+      "loses": {
+        "home": 7,
+        "away": 9,
+        "total": 16
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 32,
+          "away": 22,
+          "total": 54
+        },
+        "average": {
+          "home": "1.8",
+          "away": "1.0",
+          "total": "1.4"
+        },
+        "minute": {
+          "0-15": {
+            "total": 3,
+            "percentage": "5.08%"
+          },
+          "16-30": {
+            "total": 6,
+            "percentage": "10.17%"
+          },
+          "31-45": {
+            "total": 8,
+            "percentage": "13.56%"
+          },
+          "46-60": {
+            "total": 15,
+            "percentage": "25.42%"
+          },
+          "61-75": {
+            "total": 9,
+            "percentage": "15.25%"
+          },
+          "76-90": {
+            "total": 8,
+            "percentage": "13.56%"
+          },
+          "91-105": {
+            "total": 5,
+            "percentage": "8.47%"
+          },
+          "106-120": {
+            "total": 5,
+            "percentage": "8.47%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 30,
+            "under": 9
+          },
+          "1.5": {
+            "over": 19,
+            "under": 20
+          },
+          "2.5": {
+            "over": 4,
+            "under": 35
+          },
+          "3.5": {
+            "over": 1,
+            "under": 38
+          },
+          "4.5": {
+            "over": 0,
+            "under": 39
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 28,
+          "away": 29,
+          "total": 57
+        },
+        "average": {
+          "home": "1.6",
+          "away": "1.4",
+          "total": "1.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": 6,
+            "percentage": "9.84%"
+          },
+          "16-30": {
+            "total": 4,
+            "percentage": "6.56%"
+          },
+          "31-45": {
+            "total": 11,
+            "percentage": "18.03%"
+          },
+          "46-60": {
+            "total": 11,
+            "percentage": "18.03%"
+          },
+          "61-75": {
+            "total": 12,
+            "percentage": "19.67%"
+          },
+          "76-90": {
+            "total": 11,
+            "percentage": "18.03%"
+          },
+          "91-105": {
+            "total": 2,
+            "percentage": "3.28%"
+          },
+          "106-120": {
+            "total": 4,
+            "percentage": "6.56%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 34,
+            "under": 5
+          },
+          "1.5": {
+            "over": 18,
+            "under": 21
+          },
+          "2.5": {
+            "over": 3,
+            "under": 36
+          },
+          "3.5": {
+            "over": 1,
+            "under": 38
+          },
+          "4.5": {
+            "over": 1,
+            "under": 38
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 2,
+        "draws": 3,
+        "loses": 3
+      },
+      "wins": {
+        "home": "4-1",
+        "away": "1-3"
+      },
+      "loses": {
+        "home": "0-2",
+        "away": "5-2"
+      },
+      "goals": {
+        "for": {
+          "home": 4,
+          "away": 3
+        },
+        "against": {
+          "home": 3,
+          "away": 5
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 2,
+      "away": 3,
+      "total": 5
+    },
+    "failed_to_score": {
+      "home": 2,
+      "away": 7,
+      "total": 9
+    },
+    "penalty": {
+      "scored": {
+        "total": 10,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 10
+    },
+    "lineups": [
+      {
+        "formation": "4-2-3-1",
+        "played": 21
+      },
+      {
+        "formation": "3-4-3",
+        "played": 4
+      },
+      {
+        "formation": "4-3-3",
+        "played": 4
+      },
+      {
+        "formation": "5-3-2",
+        "played": 3
+      },
+      {
+        "formation": "3-5-2",
+        "played": 3
+      },
+      {
+        "formation": "3-4-2-1",
+        "played": 2
+      },
+      {
+        "formation": "4-4-2",
+        "played": 1
+      },
+      {
+        "formation": "3-4-1-2",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 2,
+          "percentage": "3.23%"
+        },
+        "16-30": {
+          "total": 9,
+          "percentage": "14.52%"
+        },
+        "31-45": {
+          "total": 6,
+          "percentage": "9.68%"
+        },
+        "46-60": {
+          "total": 15,
+          "percentage": "24.19%"
+        },
+        "61-75": {
+          "total": 14,
+          "percentage": "22.58%"
+        },
+        "76-90": {
+          "total": 8,
+          "percentage": "12.90%"
+        },
+        "91-105": {
+          "total": 8,
+          "percentage": "12.90%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": 2,
+          "percentage": "100.00%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:44:00.430Z"
+}

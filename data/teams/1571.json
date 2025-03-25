@@ -1,0 +1,891 @@
+{
+  "team": {
+    "team": {
+      "id": 1571,
+      "name": "Indonesia",
+      "code": "IND",
+      "country": "Indonesia",
+      "founded": 1930,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/1571.png"
+    },
+    "venue": {
+      "id": 21414,
+      "name": "Gelora Bung Karno Stadium",
+      "address": "Jalan Stadion Senayan, Senayan",
+      "city": "Jakarta",
+      "capacity": 88083,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/21414.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 24,
+        "name": "AFF Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/24.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-10-08",
+          "end": "2025-01-05",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2014,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2026
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1201035,
+          "date": "2024-12-21T13:00:00+00:00",
+          "venue": {
+            "id": 3239,
+            "name": "Stadion Manahan",
+            "city": "Surakarta"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 14
+          },
+          "timestamp": 1734786000
+        },
+        "league": {
+          "id": 24,
+          "name": "AFF Championship",
+          "logo": "https://media.api-sports.io/football/leagues/24.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1555,
+            "name": "Philippines",
+            "logo": "https://media.api-sports.io/football/teams/1555.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201028,
+          "date": "2024-12-15T13:00:00+00:00",
+          "venue": {
+            "id": 19625,
+            "name": "Sân vận động Việt Trì",
+            "city": "Việt Trì"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1734267600
+        },
+        "league": {
+          "id": 24,
+          "name": "AFF Championship",
+          "logo": "https://media.api-sports.io/football/leagues/24.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1542,
+            "name": "Vietnam",
+            "logo": "https://media.api-sports.io/football/teams/1542.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201024,
+          "date": "2024-12-12T13:00:00+00:00",
+          "venue": {
+            "id": 3239,
+            "name": "Stadion Manahan",
+            "city": "Surakarta"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1734008400
+        },
+        "league": {
+          "id": 24,
+          "name": "AFF Championship",
+          "logo": "https://media.api-sports.io/football/leagues/24.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1558,
+            "name": "Laos",
+            "logo": "https://media.api-sports.io/football/teams/1558.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201021,
+          "date": "2024-12-09T12:30:00+00:00",
+          "venue": {
+            "id": 19697,
+            "name": "Thuwunna Stadium",
+            "city": "Yangon"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1733747400
+        },
+        "league": {
+          "id": 24,
+          "name": "AFF Championship",
+          "logo": "https://media.api-sports.io/football/leagues/24.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1556,
+            "name": "Myanmar",
+            "logo": "https://media.api-sports.io/football/teams/1556.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1200691,
+          "date": "2024-06-02T09:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Madya Gelora Bung Karno",
+            "city": "Jakarta"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717318800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1489,
+            "name": "Tanzania",
+            "logo": "https://media.api-sports.io/football/teams/1489.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1155252,
+          "date": "2024-01-09T17:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Al Rayyan Training Ground",
+            "city": "Ar-Rayyan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1704821400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
+            "winner": false
+          },
+          "away": {
+            "id": 22,
+            "name": "Iran",
+            "logo": "https://media.api-sports.io/football/teams/22.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1155239,
+          "date": "2024-01-05T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Mardan Stadyumu",
+            "city": "Antalya"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1704459600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1526,
+            "name": "Libya",
+            "logo": "https://media.api-sports.io/football/teams/1526.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1155236,
+          "date": "2024-01-02T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Mardan Stadyumu",
+            "city": "Antalya"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1704153600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1526,
+            "name": "Libya",
+            "logo": "https://media.api-sports.io/football/teams/1526.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 1571,
+      "name": "Indonesia",
+      "logo": "https://media.api-sports.io/football/teams/1571.png"
+    },
+    "form": "LLLD",
+    "fixtures": {
+      "played": {
+        "home": 4,
+        "away": 0,
+        "total": 4
+      },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "loses": {
+        "home": 3,
+        "away": 0,
+        "total": 3
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 1,
+          "away": 0,
+          "total": 1
+        },
+        "average": {
+          "home": "0.3",
+          "away": "0.0",
+          "total": "0.3"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "100.00%"
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 3
+          },
+          "1.5": {
+            "over": 0,
+            "under": 4
+          },
+          "2.5": {
+            "over": 0,
+            "under": 4
+          },
+          "3.5": {
+            "over": 0,
+            "under": 4
+          },
+          "4.5": {
+            "over": 0,
+            "under": 4
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 11,
+          "away": 0,
+          "total": 11
+        },
+        "average": {
+          "home": "2.8",
+          "away": "0.0",
+          "total": "2.8"
+        },
+        "minute": {
+          "0-15": {
+            "total": 2,
+            "percentage": "18.18%"
+          },
+          "16-30": {
+            "total": 3,
+            "percentage": "27.27%"
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "9.09%"
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "9.09%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "9.09%"
+          },
+          "76-90": {
+            "total": 2,
+            "percentage": "18.18%"
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "9.09%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 3,
+            "under": 1
+          },
+          "1.5": {
+            "over": 3,
+            "under": 1
+          },
+          "2.5": {
+            "over": 2,
+            "under": 2
+          },
+          "3.5": {
+            "over": 2,
+            "under": 2
+          },
+          "4.5": {
+            "over": 1,
+            "under": 3
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 0,
+        "loses": 3
+      },
+      "wins": {
+        "home": null,
+        "away": null
+      },
+      "loses": {
+        "home": "0-5",
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 1,
+          "away": 0
+        },
+        "against": {
+          "home": 5,
+          "away": 0
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 1,
+      "away": 0,
+      "total": 1
+    },
+    "failed_to_score": {
+      "home": 3,
+      "away": 0,
+      "total": 3
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [
+      {
+        "formation": "4-2-3-1",
+        "played": 1
+      },
+      {
+        "formation": "3-4-3",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": 2,
+          "percentage": "66.67%"
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:41:47.802Z"
+}

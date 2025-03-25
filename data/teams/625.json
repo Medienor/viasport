@@ -1,0 +1,1632 @@
+{
+  "team": {
+    "team": {
+      "id": 625,
+      "name": "Lyngby",
+      "code": "LYN",
+      "country": "Denmark",
+      "founded": 1921,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/625.png"
+    },
+    "venue": {
+      "id": 452,
+      "name": "Lyngby Stadion",
+      "address": "Lundtoftevej 53",
+      "city": "Lyngby",
+      "capacity": 10100,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/452.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-04",
+          "end": "2024-12-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 119,
+        "name": "Superliga",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/119.png"
+      },
+      "country": {
+        "name": "Denmark",
+        "code": "DK",
+        "flag": "https://media.api-sports.io/flags/dk.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-19",
+          "end": "2025-05-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": true,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 121,
+        "name": "DBU Pokalen",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/121.png"
+      },
+      "country": {
+        "name": "Denmark",
+        "code": "DK",
+        "flag": "https://media.api-sports.io/flags/dk.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-08-05",
+          "end": "2025-05-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1362794,
+          "date": "2025-03-30T12:00:00+00:00",
+          "venue": {
+            "id": 452,
+            "name": "Lyngby Stadion",
+            "city": "Lyngby"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743336000
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          },
+          "away": {
+            "id": 395,
+            "name": "Vejle",
+            "logo": "https://media.api-sports.io/football/teams/395.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362796,
+          "date": "2025-04-06T12:00:00+00:00",
+          "venue": {
+            "id": 459,
+            "name": "JYSK park",
+            "city": "Silkeborg"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743940800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2073,
+            "name": "Silkeborg",
+            "logo": "https://media.api-sports.io/football/teams/2073.png",
+            "winner": null
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362798,
+          "date": "2025-04-11T17:00:00+00:00",
+          "venue": {
+            "id": 440,
+            "name": "Aalborg Portland Park",
+            "city": "Aalborg"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744390800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 402,
+            "name": "Aalborg",
+            "logo": "https://media.api-sports.io/football/teams/402.png",
+            "winner": null
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362802,
+          "date": "2025-04-17T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744891200
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          },
+          "away": {
+            "id": 396,
+            "name": "Sonderjyske",
+            "logo": "https://media.api-sports.io/football/teams/396.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362806,
+          "date": "2025-04-21T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745236800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362808,
+          "date": "2025-04-27T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745755200
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2073,
+            "name": "Silkeborg",
+            "logo": "https://media.api-sports.io/football/teams/2073.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362811,
+          "date": "2025-05-04T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746360000
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362815,
+          "date": "2025-05-12T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747069200
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 395,
+            "name": "Vejle",
+            "logo": "https://media.api-sports.io/football/teams/395.png",
+            "winner": null
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362818,
+          "date": "2025-05-18T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747576800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 396,
+            "name": "Sonderjyske",
+            "logo": "https://media.api-sports.io/football/teams/396.png",
+            "winner": null
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362820,
+          "date": "2025-05-24T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748091600
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          },
+          "away": {
+            "id": 402,
+            "name": "Aalborg",
+            "logo": "https://media.api-sports.io/football/teams/402.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1205552,
+          "date": "2025-03-16T16:00:00+00:00",
+          "venue": {
+            "id": 452,
+            "name": "Lyngby Stadion",
+            "city": "Lyngby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742140800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": true
+          },
+          "away": {
+            "id": 398,
+            "name": "FC Nordsjaelland",
+            "logo": "https://media.api-sports.io/football/teams/398.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205549,
+          "date": "2025-03-09T13:00:00+00:00",
+          "venue": {
+            "id": 459,
+            "name": "JYSK park",
+            "city": "Silkeborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1741525200
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2073,
+            "name": "Silkeborg",
+            "logo": "https://media.api-sports.io/football/teams/2073.png",
+            "winner": false
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205538,
+          "date": "2025-03-03T18:00:00+00:00",
+          "venue": {
+            "id": 443,
+            "name": "Brøndby Stadion",
+            "city": "Brøndby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1741024800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 407,
+            "name": "Brondby",
+            "logo": "https://media.api-sports.io/football/teams/407.png",
+            "winner": null
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205534,
+          "date": "2025-02-21T18:00:00+00:00",
+          "venue": {
+            "id": 452,
+            "name": "Lyngby Stadion",
+            "city": "Lyngby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1740160800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          },
+          "away": {
+            "id": 401,
+            "name": "Randers FC",
+            "logo": "https://media.api-sports.io/football/teams/401.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205531,
+          "date": "2025-02-16T17:00:00+00:00",
+          "venue": {
+            "id": 453,
+            "name": "MCH Arena",
+            "city": "Herning"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1739725200
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 397,
+            "name": "FC Midtjylland",
+            "logo": "https://media.api-sports.io/football/teams/397.png",
+            "winner": true
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205521,
+          "date": "2024-12-01T13:00:00+00:00",
+          "venue": {
+            "id": 452,
+            "name": "Lyngby Stadion",
+            "city": "Lyngby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1733058000
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": false
+          },
+          "away": {
+            "id": 396,
+            "name": "Sonderjyske",
+            "logo": "https://media.api-sports.io/football/teams/396.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205514,
+          "date": "2024-11-24T17:00:00+00:00",
+          "venue": {
+            "id": 11600,
+            "name": "Parken",
+            "city": "København"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1732467600
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 400,
+            "name": "FC Copenhagen",
+            "logo": "https://media.api-sports.io/football/teams/400.png",
+            "winner": true
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205513,
+          "date": "2024-11-10T13:00:00+00:00",
+          "venue": {
+            "id": 452,
+            "name": "Lyngby Stadion",
+            "city": "Lyngby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1731243600
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          },
+          "away": {
+            "id": 402,
+            "name": "Aalborg",
+            "logo": "https://media.api-sports.io/football/teams/402.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205502,
+          "date": "2024-11-03T15:00:00+00:00",
+          "venue": {
+            "id": 441,
+            "name": "Ceres Park & Arena",
+            "city": "Århus"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1730646000
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 406,
+            "name": "Aarhus",
+            "logo": "https://media.api-sports.io/football/teams/406.png",
+            "winner": true
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205499,
+          "date": "2024-10-27T12:00:00+00:00",
+          "venue": {
+            "id": 462,
+            "name": "Vejle Stadion",
+            "city": "Vejle"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1730030400
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 395,
+            "name": "Vejle",
+            "logo": "https://media.api-sports.io/football/teams/395.png",
+            "winner": true
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 667,
+      "name": "Friendlies Clubs",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 625,
+      "name": "Lyngby",
+      "logo": "https://media.api-sports.io/football/teams/625.png"
+    },
+    "form": "WWWDLDLLLW",
+    "fixtures": {
+      "played": {
+        "home": 8,
+        "away": 2,
+        "total": 10
+      },
+      "wins": {
+        "home": 3,
+        "away": 1,
+        "total": 4
+      },
+      "draws": {
+        "home": 2,
+        "away": 0,
+        "total": 2
+      },
+      "loses": {
+        "home": 3,
+        "away": 1,
+        "total": 4
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 12,
+          "away": 5,
+          "total": 17
+        },
+        "average": {
+          "home": "1.5",
+          "away": "2.5",
+          "total": "1.7"
+        },
+        "minute": {
+          "0-15": {
+            "total": 3,
+            "percentage": "23.08%"
+          },
+          "16-30": {
+            "total": 2,
+            "percentage": "15.38%"
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "7.69%"
+          },
+          "46-60": {
+            "total": 3,
+            "percentage": "23.08%"
+          },
+          "61-75": {
+            "total": 2,
+            "percentage": "15.38%"
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "7.69%"
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "7.69%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 6,
+            "under": 4
+          },
+          "1.5": {
+            "over": 4,
+            "under": 6
+          },
+          "2.5": {
+            "over": 4,
+            "under": 6
+          },
+          "3.5": {
+            "over": 3,
+            "under": 7
+          },
+          "4.5": {
+            "over": 0,
+            "under": 10
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 12,
+          "away": 4,
+          "total": 16
+        },
+        "average": {
+          "home": "1.5",
+          "away": "2.0",
+          "total": "1.6"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "6.25%"
+          },
+          "16-30": {
+            "total": 3,
+            "percentage": "18.75%"
+          },
+          "31-45": {
+            "total": 3,
+            "percentage": "18.75%"
+          },
+          "46-60": {
+            "total": 4,
+            "percentage": "25.00%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "6.25%"
+          },
+          "76-90": {
+            "total": 3,
+            "percentage": "18.75%"
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "6.25%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 8,
+            "under": 2
+          },
+          "1.5": {
+            "over": 5,
+            "under": 5
+          },
+          "2.5": {
+            "over": 2,
+            "under": 8
+          },
+          "3.5": {
+            "over": 1,
+            "under": 9
+          },
+          "4.5": {
+            "over": 0,
+            "under": 10
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 3,
+        "draws": 1,
+        "loses": 3
+      },
+      "wins": {
+        "home": "4-0",
+        "away": "2-4"
+      },
+      "loses": {
+        "home": "0-4",
+        "away": "2-1"
+      },
+      "goals": {
+        "for": {
+          "home": 4,
+          "away": 4
+        },
+        "against": {
+          "home": 4,
+          "away": 2
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 2,
+      "away": 0,
+      "total": 2
+    },
+    "failed_to_score": {
+      "home": 4,
+      "away": 0,
+      "total": 4
+    },
+    "penalty": {
+      "scored": {
+        "total": 1,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 1
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": 1,
+          "percentage": "14.29%"
+        },
+        "31-45": {
+          "total": 4,
+          "percentage": "57.14%"
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "14.29%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": 1,
+          "percentage": "14.29%"
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:39:13.803Z"
+}

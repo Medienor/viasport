@@ -1,0 +1,1025 @@
+{
+  "team": {
+    "team": {
+      "id": 5686,
+      "name": "Sichuan Jiuniu",
+      "code": null,
+      "country": "China",
+      "founded": 2006,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/5686.png"
+    },
+    "venue": {
+      "id": 19331,
+      "name": "Wuhua Hengpi Football Town",
+      "address": "Henglizhen",
+      "city": "Dongguan",
+      "capacity": 10000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/19331.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 169,
+        "name": "Super League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/169.png"
+      },
+      "country": {
+        "name": "China",
+        "code": "CN",
+        "flag": "https://media.api-sports.io/flags/cn.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-03-01",
+          "end": "2024-11-02",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 171,
+        "name": "FA Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/171.png"
+      },
+      "country": {
+        "name": "China",
+        "code": "CN",
+        "flag": "https://media.api-sports.io/flags/cn.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-03-15",
+          "end": "2024-11-23",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1173276,
+          "date": "2024-11-02T07:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Baoan Sports Centre Stadium",
+            "city": "Shenzhen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1730532600
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2626,
+            "name": "Nantong Zhiyun",
+            "logo": "https://media.api-sports.io/football/teams/2626.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173262,
+          "date": "2024-10-27T07:30:00+00:00",
+          "venue": {
+            "id": 19701,
+            "name": "Shanghai Stadium",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1730014200
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 833,
+            "name": "Shanghai Shenhua",
+            "logo": "https://media.api-sports.io/football/teams/833.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173260,
+          "date": "2024-10-20T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Shenzhen Bao'an Stadium",
+            "city": "Shenzhen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1729424100
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1439,
+            "name": "Meizhou Kejia",
+            "logo": "https://media.api-sports.io/football/teams/1439.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173249,
+          "date": "2024-09-28T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Shenzhen Bao'an Stadium",
+            "city": "Shenzhen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1727524800
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": false
+          },
+          "away": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173242,
+          "date": "2024-09-22T07:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Qingdao West Coast University City Stadium",
+            "city": "Qingdao"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1726990200
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 17265,
+            "name": "Qingdao Youth Island",
+            "logo": "https://media.api-sports.io/football/teams/17265.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173229,
+          "date": "2024-09-13T11:00:00+00:00",
+          "venue": {
+            "id": 19701,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1726225200
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173217,
+          "date": "2024-08-17T11:00:00+00:00",
+          "venue": {
+            "id": 20427,
+            "name": "Qingdao Youth Football Stadium",
+            "city": "Qingdao"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1723892400
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1431,
+            "name": "Qingdao Jonoon",
+            "logo": "https://media.api-sports.io/football/teams/1431.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173206,
+          "date": "2024-08-09T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Shenzhen Bao'an Stadium",
+            "city": "Shenzhen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1723203300
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5648,
+            "name": "Chengdu Better City",
+            "logo": "https://media.api-sports.io/football/teams/5648.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173201,
+          "date": "2024-08-03T12:00:00+00:00",
+          "venue": {
+            "id": 11560,
+            "name": "Wuhan Sports Center Stadium",
+            "city": "Wuhan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1722686400
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5695,
+            "name": "Wuhan Three Towns",
+            "logo": "https://media.api-sports.io/football/teams/5695.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173190,
+          "date": "2024-07-26T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Shenzhen Bao'an Stadium",
+            "city": "Shenzhen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1721995200
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": true
+          },
+          "away": {
+            "id": 830,
+            "name": "Beijing Guoan",
+            "logo": "https://media.api-sports.io/football/teams/830.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 169,
+      "name": "Super League",
+      "country": "China",
+      "logo": "https://media.api-sports.io/football/leagues/169.png",
+      "flag": "https://media.api-sports.io/flags/cn.svg",
+      "season": 2024
+    },
+    "team": {
+      "id": 5686,
+      "name": "Sichuan Jiuniu",
+      "logo": "https://media.api-sports.io/football/teams/5686.png"
+    },
+    "form": "LLDWWDLLDLLLDLWWLDDWWLLLLLLDDW",
+    "fixtures": {
+      "played": {
+        "home": 15,
+        "away": 15,
+        "total": 30
+      },
+      "wins": {
+        "home": 4,
+        "away": 3,
+        "total": 7
+      },
+      "draws": {
+        "home": 4,
+        "away": 4,
+        "total": 8
+      },
+      "loses": {
+        "home": 7,
+        "away": 8,
+        "total": 15
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 14,
+          "away": 15,
+          "total": 29
+        },
+        "average": {
+          "home": "0.9",
+          "away": "1.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": 3,
+            "percentage": "10.00%"
+          },
+          "16-30": {
+            "total": 4,
+            "percentage": "13.33%"
+          },
+          "31-45": {
+            "total": 2,
+            "percentage": "6.67%"
+          },
+          "46-60": {
+            "total": 4,
+            "percentage": "13.33%"
+          },
+          "61-75": {
+            "total": 6,
+            "percentage": "20.00%"
+          },
+          "76-90": {
+            "total": 8,
+            "percentage": "26.67%"
+          },
+          "91-105": {
+            "total": 3,
+            "percentage": "10.00%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 19,
+            "under": 11
+          },
+          "1.5": {
+            "over": 9,
+            "under": 21
+          },
+          "2.5": {
+            "over": 1,
+            "under": 29
+          },
+          "3.5": {
+            "over": 0,
+            "under": 30
+          },
+          "4.5": {
+            "over": 0,
+            "under": 30
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 30,
+          "away": 25,
+          "total": 55
+        },
+        "average": {
+          "home": "2.0",
+          "away": "1.7",
+          "total": "1.8"
+        },
+        "minute": {
+          "0-15": {
+            "total": 9,
+            "percentage": "16.67%"
+          },
+          "16-30": {
+            "total": 13,
+            "percentage": "24.07%"
+          },
+          "31-45": {
+            "total": 4,
+            "percentage": "7.41%"
+          },
+          "46-60": {
+            "total": 12,
+            "percentage": "22.22%"
+          },
+          "61-75": {
+            "total": 5,
+            "percentage": "9.26%"
+          },
+          "76-90": {
+            "total": 6,
+            "percentage": "11.11%"
+          },
+          "91-105": {
+            "total": 5,
+            "percentage": "9.26%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 24,
+            "under": 6
+          },
+          "1.5": {
+            "over": 15,
+            "under": 15
+          },
+          "2.5": {
+            "over": 10,
+            "under": 20
+          },
+          "3.5": {
+            "over": 4,
+            "under": 26
+          },
+          "4.5": {
+            "over": 1,
+            "under": 29
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 2,
+        "draws": 2,
+        "loses": 6
+      },
+      "wins": {
+        "home": "3-2",
+        "away": "0-2"
+      },
+      "loses": {
+        "home": "0-6",
+        "away": "4-1"
+      },
+      "goals": {
+        "for": {
+          "home": 3,
+          "away": 2
+        },
+        "against": {
+          "home": 6,
+          "away": 4
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 3,
+      "away": 3,
+      "total": 6
+    },
+    "failed_to_score": {
+      "home": 6,
+      "away": 5,
+      "total": 11
+    },
+    "penalty": {
+      "scored": {
+        "total": 4,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 4
+    },
+    "lineups": [
+      {
+        "formation": "4-1-4-1",
+        "played": 15
+      },
+      {
+        "formation": "4-2-3-1",
+        "played": 6
+      },
+      {
+        "formation": "5-3-2",
+        "played": 3
+      },
+      {
+        "formation": "4-4-2",
+        "played": 2
+      },
+      {
+        "formation": "5-4-1",
+        "played": 2
+      },
+      {
+        "formation": "4-3-3",
+        "played": 1
+      },
+      {
+        "formation": "3-1-4-2",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 3,
+          "percentage": "4.29%"
+        },
+        "16-30": {
+          "total": 9,
+          "percentage": "12.86%"
+        },
+        "31-45": {
+          "total": 5,
+          "percentage": "7.14%"
+        },
+        "46-60": {
+          "total": 19,
+          "percentage": "27.14%"
+        },
+        "61-75": {
+          "total": 6,
+          "percentage": "8.57%"
+        },
+        "76-90": {
+          "total": 13,
+          "percentage": "18.57%"
+        },
+        "91-105": {
+          "total": 15,
+          "percentage": "21.43%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": 1,
+          "percentage": "20.00%"
+        },
+        "16-30": {
+          "total": 2,
+          "percentage": "40.00%"
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": 2,
+          "percentage": "40.00%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:43:45.944Z"
+}

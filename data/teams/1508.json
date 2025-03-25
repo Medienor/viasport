@@ -1,0 +1,647 @@
+{
+  "team": {
+    "team": {
+      "id": 1508,
+      "name": "Congo DR",
+      "code": "CON",
+      "country": "Congo-DR",
+      "founded": 1919,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/1508.png"
+    },
+    "venue": {
+      "id": 391,
+      "name": "Stade des Martyrs de la Pentecôte",
+      "address": "Boulevard Triomphal, Lingwala",
+      "city": "Kinshasa",
+      "capacity": 100000,
+      "surface": "artificial turf",
+      "image": "https://media.api-sports.io/football/venues/391.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1163,
+        "name": "African Nations Championship - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1163.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-10-25",
+          "end": "2025-05-09",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1313994,
+          "date": "2024-12-28T16:00:00+00:00",
+          "venue": {
+            "id": 391,
+            "name": "Stade des Martyrs de la Pentecôte",
+            "city": "Kinshasa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1735401600
+        },
+        "league": {
+          "id": 1163,
+          "name": "African Nations Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1163.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1508,
+            "name": "Congo DR",
+            "logo": "https://media.api-sports.io/football/teams/1508.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1523,
+            "name": "Chad",
+            "logo": "https://media.api-sports.io/football/teams/1523.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1313993,
+          "date": "2024-12-21T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Olympique Alassane Ouattara",
+            "city": "Abidjan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1734796800
+        },
+        "league": {
+          "id": 1163,
+          "name": "African Nations Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1163.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1523,
+            "name": "Chad",
+            "logo": "https://media.api-sports.io/football/teams/1523.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1508,
+            "name": "Congo DR",
+            "logo": "https://media.api-sports.io/football/teams/1508.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1155297,
+          "date": "2024-01-10T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Baniyas Stadium",
+            "city": "Abu Dhabi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1704895200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1508,
+            "name": "Congo DR",
+            "logo": "https://media.api-sports.io/football/teams/1508.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1502,
+            "name": "Burkina Faso",
+            "logo": "https://media.api-sports.io/football/teams/1502.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1155291,
+          "date": "2024-01-06T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Shabab Al Ahli Stadium",
+            "city": "Dubai"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1704538800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1508,
+            "name": "Congo DR",
+            "logo": "https://media.api-sports.io/football/teams/1508.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1529,
+            "name": "Angola",
+            "logo": "https://media.api-sports.io/football/teams/1529.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 1508,
+      "name": "Congo DR",
+      "logo": "https://media.api-sports.io/football/teams/1508.png"
+    },
+    "form": "DL",
+    "fixtures": {
+      "played": {
+        "home": 2,
+        "away": 0,
+        "total": 2
+      },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "loses": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 1,
+          "away": 0,
+          "total": 1
+        },
+        "average": {
+          "home": "0.5",
+          "away": "0.0",
+          "total": "0.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "100.00%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 1
+          },
+          "1.5": {
+            "over": 0,
+            "under": 2
+          },
+          "2.5": {
+            "over": 0,
+            "under": 2
+          },
+          "3.5": {
+            "over": 0,
+            "under": 2
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 2,
+          "away": 0,
+          "total": 2
+        },
+        "average": {
+          "home": "1.0",
+          "away": "0.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 2,
+            "percentage": "100.00%"
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 1
+          },
+          "1.5": {
+            "over": 1,
+            "under": 1
+          },
+          "2.5": {
+            "over": 0,
+            "under": 2
+          },
+          "3.5": {
+            "over": 0,
+            "under": 2
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 1,
+        "loses": 0
+      },
+      "wins": {
+        "home": null,
+        "away": null
+      },
+      "loses": {
+        "home": "1-2",
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 1,
+          "away": 0
+        },
+        "against": {
+          "home": 2,
+          "away": 0
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 1,
+      "away": 0,
+      "total": 1
+    },
+    "failed_to_score": {
+      "home": 1,
+      "away": 0,
+      "total": 1
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:41:20.811Z"
+}

@@ -1,0 +1,763 @@
+{
+  "team": {
+    "team": {
+      "id": 1520,
+      "name": "Botswana",
+      "code": "BOT",
+      "country": "Botswana",
+      "founded": 1970,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/1520.png"
+    },
+    "venue": {
+      "id": 203,
+      "name": "Botswana National Stadium",
+      "address": "Notwane Road",
+      "city": "Gaborone",
+      "capacity": 22500,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/203.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 859,
+        "name": "COSAFA Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/859.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-06-26",
+          "end": "2024-07-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2014,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1209656,
+          "date": "2024-07-02T13:00:00+00:00",
+          "venue": {
+            "id": 19172,
+            "name": "Wolfson Stadium",
+            "city": "Ibhayi, Kwazakhele"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719925200
+        },
+        "league": {
+          "id": 859,
+          "name": "COSAFA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/859.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1512,
+            "name": "Mozambique",
+            "logo": "https://media.api-sports.io/football/teams/1512.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1520,
+            "name": "Botswana",
+            "logo": "https://media.api-sports.io/football/teams/1520.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1209649,
+          "date": "2024-06-29T13:00:00+00:00",
+          "venue": {
+            "id": 19172,
+            "name": "Wolfson Stadium",
+            "city": "Ibhayi, Kwazakhele"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719666000
+        },
+        "league": {
+          "id": 859,
+          "name": "COSAFA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/859.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1531,
+            "name": "South Africa",
+            "logo": "https://media.api-sports.io/football/teams/1531.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1520,
+            "name": "Botswana",
+            "logo": "https://media.api-sports.io/football/teams/1520.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1209642,
+          "date": "2024-06-26T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Nelson Mandela Bay Stadium",
+            "city": "Gqeberha"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719406800
+        },
+        "league": {
+          "id": 859,
+          "name": "COSAFA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/859.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2995,
+            "name": "Eswatini",
+            "logo": "https://media.api-sports.io/football/teams/2995.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1520,
+            "name": "Botswana",
+            "logo": "https://media.api-sports.io/football/teams/1520.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1182790,
+          "date": "2024-03-25T10:00:00+00:00",
+          "venue": {
+            "id": 20365,
+            "name": "Stade Kianja Barea Mahamasina",
+            "city": "Antananarivo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711360800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1528,
+            "name": "Burundi",
+            "logo": "https://media.api-sports.io/football/teams/1528.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1520,
+            "name": "Botswana",
+            "logo": "https://media.api-sports.io/football/teams/1520.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1182788,
+          "date": "2024-03-22T13:00:00+00:00",
+          "venue": {
+            "id": 20365,
+            "name": "Stade Kianja Barea Mahamasina",
+            "city": "Antananarivo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711112400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1520,
+            "name": "Botswana",
+            "logo": "https://media.api-sports.io/football/teams/1520.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1514,
+            "name": "Rwanda",
+            "logo": "https://media.api-sports.io/football/teams/1514.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1155284,
+          "date": "2024-01-08T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Johannesburg Stadium",
+            "city": "Johannesburg, GA"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1704722400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1520,
+            "name": "Botswana",
+            "logo": "https://media.api-sports.io/football/teams/1520.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1512,
+            "name": "Mozambique",
+            "logo": "https://media.api-sports.io/football/teams/1512.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 1520,
+      "name": "Botswana",
+      "logo": "https://media.api-sports.io/football/teams/1520.png"
+    },
+    "form": "DDD",
+    "fixtures": {
+      "played": {
+        "home": 2,
+        "away": 1,
+        "total": 3
+      },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 2,
+        "away": 1,
+        "total": 3
+      },
+      "loses": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 1,
+          "away": 0,
+          "total": 1
+        },
+        "average": {
+          "home": "0.5",
+          "away": "0.0",
+          "total": "0.3"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "100.00%"
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 2
+          },
+          "1.5": {
+            "over": 0,
+            "under": 3
+          },
+          "2.5": {
+            "over": 0,
+            "under": 3
+          },
+          "3.5": {
+            "over": 0,
+            "under": 3
+          },
+          "4.5": {
+            "over": 0,
+            "under": 3
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 1,
+          "away": 0,
+          "total": 1
+        },
+        "average": {
+          "home": "0.5",
+          "away": "0.0",
+          "total": "0.3"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "100.00%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 2
+          },
+          "1.5": {
+            "over": 0,
+            "under": 3
+          },
+          "2.5": {
+            "over": 0,
+            "under": 3
+          },
+          "3.5": {
+            "over": 0,
+            "under": 3
+          },
+          "4.5": {
+            "over": 0,
+            "under": 3
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 3,
+        "loses": 0
+      },
+      "wins": {
+        "home": null,
+        "away": null
+      },
+      "loses": {
+        "home": null,
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 1,
+          "away": 0
+        },
+        "against": {
+          "home": 1,
+          "away": 0
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 1,
+      "away": 1,
+      "total": 2
+    },
+    "failed_to_score": {
+      "home": 1,
+      "away": 1,
+      "total": 2
+    },
+    "penalty": {
+      "scored": {
+        "total": 1,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 1
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:41:25.636Z"
+}

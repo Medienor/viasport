@@ -1,0 +1,758 @@
+{
+  "team": {
+    "team": {
+      "id": 10287,
+      "name": "France U20",
+      "code": "FRA",
+      "country": "France",
+      "founded": 1919,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/10287.png"
+    },
+    "venue": {
+      "id": 20332,
+      "name": "Stade de France",
+      "address": "Rue Jules Rimet",
+      "city": "Saint-Denis",
+      "capacity": 81338,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/20332.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 914,
+        "name": "Tournoi Maurice Revello",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/914.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-06-03",
+          "end": "2024-06-16",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2017,
+    2019,
+    2022,
+    2023,
+    2024
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1206772,
+          "date": "2024-06-16T12:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Marcel Roustan",
+            "city": "Salon-de-Provence"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1718541000
+        },
+        "league": {
+          "id": 914,
+          "name": "Tournoi Maurice Revello",
+          "logo": "https://media.api-sports.io/football/leagues/914.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8201,
+            "name": "Italy U21",
+            "logo": "https://media.api-sports.io/football/teams/8201.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10287,
+            "name": "France U20",
+            "logo": "https://media.api-sports.io/football/teams/10287.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1196827,
+          "date": "2024-06-09T15:30:00+00:00",
+          "venue": {
+            "id": 6999,
+            "name": "Stade de Lattre de Tassigny",
+            "city": "Aubagne"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717947000
+        },
+        "league": {
+          "id": 914,
+          "name": "Tournoi Maurice Revello",
+          "logo": "https://media.api-sports.io/football/leagues/914.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10287,
+            "name": "France U20",
+            "logo": "https://media.api-sports.io/football/teams/10287.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10955,
+            "name": "Saudi Arabia U23",
+            "logo": "https://media.api-sports.io/football/teams/10955.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1196823,
+          "date": "2024-06-07T15:30:00+00:00",
+          "venue": {
+            "id": 6999,
+            "name": "Stade de Lattre de Tassigny",
+            "city": "Aubagne"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717774200
+        },
+        "league": {
+          "id": 914,
+          "name": "Tournoi Maurice Revello",
+          "logo": "https://media.api-sports.io/football/leagues/914.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10287,
+            "name": "France U20",
+            "logo": "https://media.api-sports.io/football/teams/10287.png",
+            "winner": true
+          },
+          "away": {
+            "id": 23540,
+            "name": "Korea Republic U21",
+            "logo": "https://media.api-sports.io/football/teams/23540.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1196815,
+          "date": "2024-06-03T15:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Jules-Ladoumègue",
+            "city": "Vitrolles"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717428600
+        },
+        "league": {
+          "id": 914,
+          "name": "Tournoi Maurice Revello",
+          "logo": "https://media.api-sports.io/football/leagues/914.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10287,
+            "name": "France U20",
+            "logo": "https://media.api-sports.io/football/teams/10287.png",
+            "winner": false
+          },
+          "away": {
+            "id": 11026,
+            "name": "Côte d'Ivoire U20",
+            "logo": "https://media.api-sports.io/football/teams/11026.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1189594,
+          "date": "2024-03-25T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711375200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10287,
+            "name": "France U20",
+            "logo": "https://media.api-sports.io/football/teams/10287.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10310,
+            "name": "Germany U20",
+            "logo": "https://media.api-sports.io/football/teams/10310.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1189545,
+          "date": "2024-03-22T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711116000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10310,
+            "name": "Germany U20",
+            "logo": "https://media.api-sports.io/football/teams/10310.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10287,
+            "name": "France U20",
+            "logo": "https://media.api-sports.io/football/teams/10287.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 10287,
+      "name": "France U20",
+      "logo": "https://media.api-sports.io/football/teams/10287.png"
+    },
+    "form": "LD",
+    "fixtures": {
+      "played": {
+        "home": 1,
+        "away": 1,
+        "total": 2
+      },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "loses": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 4,
+          "away": 1,
+          "total": 5
+        },
+        "average": {
+          "home": "4.0",
+          "away": "1.0",
+          "total": "2.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 0
+          },
+          "1.5": {
+            "over": 1,
+            "under": 1
+          },
+          "2.5": {
+            "over": 1,
+            "under": 1
+          },
+          "3.5": {
+            "over": 1,
+            "under": 1
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 4,
+          "away": 3,
+          "total": 7
+        },
+        "average": {
+          "home": "4.0",
+          "away": "3.0",
+          "total": "3.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "20.00%"
+          },
+          "61-75": {
+            "total": 2,
+            "percentage": "40.00%"
+          },
+          "76-90": {
+            "total": 2,
+            "percentage": "40.00%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 0
+          },
+          "1.5": {
+            "over": 2,
+            "under": 0
+          },
+          "2.5": {
+            "over": 2,
+            "under": 0
+          },
+          "3.5": {
+            "over": 1,
+            "under": 1
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 0,
+        "loses": 1
+      },
+      "wins": {
+        "home": null,
+        "away": null
+      },
+      "loses": {
+        "home": null,
+        "away": "3-1"
+      },
+      "goals": {
+        "for": {
+          "home": 4,
+          "away": 1
+        },
+        "against": {
+          "home": 4,
+          "away": 3
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:42:17.662Z"
+}

@@ -1,0 +1,1029 @@
+{
+  "team": {
+    "team": {
+      "id": 21057,
+      "name": "Indonesia U20",
+      "code": null,
+      "country": "Indonesia",
+      "founded": null,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/21057.png"
+    },
+    "venue": {
+      "id": null,
+      "name": null,
+      "address": null,
+      "city": null,
+      "capacity": null,
+      "surface": null,
+      "image": null
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 914,
+        "name": "Tournoi Maurice Revello",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/914.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-06-03",
+          "end": "2024-06-16",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1153,
+        "name": "AFC U20 Asian Cup - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1153.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-21",
+          "end": "2024-09-29",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1308125,
+          "date": "2024-09-29T12:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Madya Gelora Bung Karno",
+            "city": "Jakarta"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1727613000
+        },
+        "league": {
+          "id": 1153,
+          "name": "AFC U20 Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1153.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21057,
+            "name": "Indonesia U20",
+            "logo": "https://media.api-sports.io/football/teams/21057.png",
+            "winner": null
+          },
+          "away": {
+            "id": 19633,
+            "name": "Yemen U20",
+            "logo": "https://media.api-sports.io/football/teams/19633.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1308123,
+          "date": "2024-09-27T12:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Madya Gelora Bung Karno",
+            "city": "Jakarta"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1727440200
+        },
+        "league": {
+          "id": 1153,
+          "name": "AFC U20 Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1153.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25111,
+            "name": "Timor-Leste U20",
+            "logo": "https://media.api-sports.io/football/teams/25111.png",
+            "winner": false
+          },
+          "away": {
+            "id": 21057,
+            "name": "Indonesia U20",
+            "logo": "https://media.api-sports.io/football/teams/21057.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1308121,
+          "date": "2024-09-25T12:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Madya Gelora Bung Karno",
+            "city": "Jakarta"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1727267400
+        },
+        "league": {
+          "id": 1153,
+          "name": "AFC U20 Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1153.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21057,
+            "name": "Indonesia U20",
+            "logo": "https://media.api-sports.io/football/teams/21057.png",
+            "winner": true
+          },
+          "away": {
+            "id": 25102,
+            "name": "Maldives U20",
+            "logo": "https://media.api-sports.io/football/teams/25102.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1206769,
+          "date": "2024-06-14T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade René Gimet",
+            "city": "Saint-Chamas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1718366400
+        },
+        "league": {
+          "id": 914,
+          "name": "Tournoi Maurice Revello",
+          "logo": "https://media.api-sports.io/football/leagues/914.png"
+        },
+        "teams": {
+          "home": {
+            "id": 23540,
+            "name": "Korea Republic U21",
+            "logo": "https://media.api-sports.io/football/teams/23540.png",
+            "winner": true
+          },
+          "away": {
+            "id": 21057,
+            "name": "Indonesia U20",
+            "logo": "https://media.api-sports.io/football/teams/21057.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1196833,
+          "date": "2024-06-12T16:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Marcel Roustan",
+            "city": "Salon-de-Provence"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1718208900
+        },
+        "league": {
+          "id": 914,
+          "name": "Tournoi Maurice Revello",
+          "logo": "https://media.api-sports.io/football/leagues/914.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8201,
+            "name": "Italy U21",
+            "logo": "https://media.api-sports.io/football/teams/8201.png",
+            "winner": true
+          },
+          "away": {
+            "id": 21057,
+            "name": "Indonesia U20",
+            "logo": "https://media.api-sports.io/football/teams/21057.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1196824,
+          "date": "2024-06-08T12:00:00+00:00",
+          "venue": {
+            "id": 2132,
+            "name": "Stade Parsemain",
+            "city": "Fos-sur-Mer"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717848000
+        },
+        "league": {
+          "id": 914,
+          "name": "Tournoi Maurice Revello",
+          "logo": "https://media.api-sports.io/football/leagues/914.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18982,
+            "name": "Japan U19",
+            "logo": "https://media.api-sports.io/football/teams/18982.png",
+            "winner": true
+          },
+          "away": {
+            "id": 21057,
+            "name": "Indonesia U20",
+            "logo": "https://media.api-sports.io/football/teams/21057.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1196821,
+          "date": "2024-06-06T16:00:00+00:00",
+          "venue": {
+            "id": 6999,
+            "name": "Stade de Lattre de Tassigny",
+            "city": "Aubagne"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717689600
+        },
+        "league": {
+          "id": 914,
+          "name": "Tournoi Maurice Revello",
+          "logo": "https://media.api-sports.io/football/leagues/914.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21057,
+            "name": "Indonesia U20",
+            "logo": "https://media.api-sports.io/football/teams/21057.png",
+            "winner": false
+          },
+          "away": {
+            "id": 17878,
+            "name": "Panama U23",
+            "logo": "https://media.api-sports.io/football/teams/17878.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1196817,
+          "date": "2024-06-04T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Jules-Ladoumègue",
+            "city": "Vitrolles"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717516800
+        },
+        "league": {
+          "id": 914,
+          "name": "Tournoi Maurice Revello",
+          "logo": "https://media.api-sports.io/football/leagues/914.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21057,
+            "name": "Indonesia U20",
+            "logo": "https://media.api-sports.io/football/teams/21057.png",
+            "winner": false
+          },
+          "away": {
+            "id": 23313,
+            "name": "Ukraine U23",
+            "logo": "https://media.api-sports.io/football/teams/23313.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1189593,
+          "date": "2024-03-25T13:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711373400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21057,
+            "name": "Indonesia U20",
+            "logo": "https://media.api-sports.io/football/teams/21057.png",
+            "winner": null
+          },
+          "away": {
+            "id": 17262,
+            "name": "China PR U20",
+            "logo": "https://media.api-sports.io/football/teams/17262.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1189544,
+          "date": "2024-03-22T13:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711114200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21057,
+            "name": "Indonesia U20",
+            "logo": "https://media.api-sports.io/football/teams/21057.png",
+            "winner": null
+          },
+          "away": {
+            "id": 17262,
+            "name": "China PR U20",
+            "logo": "https://media.api-sports.io/football/teams/17262.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 21057,
+      "name": "Indonesia U20",
+      "logo": "https://media.api-sports.io/football/teams/21057.png"
+    },
+    "form": "DD",
+    "fixtures": {
+      "played": {
+        "home": 2,
+        "away": 0,
+        "total": 2
+      },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 2,
+        "away": 0,
+        "total": 2
+      },
+      "loses": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 2,
+          "away": 0,
+          "total": 2
+        },
+        "average": {
+          "home": "1.0",
+          "away": "0.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "100.00%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 0
+          },
+          "1.5": {
+            "over": 0,
+            "under": 2
+          },
+          "2.5": {
+            "over": 0,
+            "under": 2
+          },
+          "3.5": {
+            "over": 0,
+            "under": 2
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 2,
+          "away": 0,
+          "total": 2
+        },
+        "average": {
+          "home": "1.0",
+          "away": "0.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "100.00%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 0
+          },
+          "1.5": {
+            "over": 0,
+            "under": 2
+          },
+          "2.5": {
+            "over": 0,
+            "under": 2
+          },
+          "3.5": {
+            "over": 0,
+            "under": 2
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 2,
+        "loses": 0
+      },
+      "wins": {
+        "home": null,
+        "away": null
+      },
+      "loses": {
+        "home": null,
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 1,
+          "away": 0
+        },
+        "against": {
+          "home": 1,
+          "away": 0
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:42:37.185Z"
+}

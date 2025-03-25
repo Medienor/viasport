@@ -1,0 +1,883 @@
+{
+  "team": {
+    "team": {
+      "id": 5531,
+      "name": "Dominica",
+      "code": null,
+      "country": "Dominica",
+      "founded": 1970,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/5531.png"
+    },
+    "venue": {
+      "id": 4154,
+      "name": "Windsor Park Stadium",
+      "address": "Bath Road / Valley Road",
+      "city": "Roseau",
+      "capacity": 12000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/4154.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 536,
+        "name": "CONCACAF Nations League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/536.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-04",
+          "end": "2025-03-24",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2010,
+    2012,
+    2014,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2022,
+    2023,
+    2024,
+    2026
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1201326,
+          "date": "2024-11-19T20:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Cibao FC",
+            "city": "Santiago de los Caballeros"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1732046400
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5526,
+            "name": "Antigua and Barbuda",
+            "logo": "https://media.api-sports.io/football/teams/5526.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5531,
+            "name": "Dominica",
+            "logo": "https://media.api-sports.io/football/teams/5531.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201318,
+          "date": "2024-11-16T23:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Cibao FC",
+            "city": "Santiago de los Caballeros"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1731798000
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5531,
+            "name": "Dominica",
+            "logo": "https://media.api-sports.io/football/teams/5531.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5532,
+            "name": "Dominican Republic",
+            "logo": "https://media.api-sports.io/football/teams/5532.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 6
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 6
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201310,
+          "date": "2024-10-16T22:30:00+00:00",
+          "venue": {
+            "id": 20587,
+            "name": "Dame Flora Duffy National Sports Centre",
+            "city": "Hamilton, Devonshire Parish"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1729117800
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5158,
+            "name": "Bermuda",
+            "logo": "https://media.api-sports.io/football/teams/5158.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5531,
+            "name": "Dominica",
+            "logo": "https://media.api-sports.io/football/teams/5531.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201302,
+          "date": "2024-10-12T22:30:00+00:00",
+          "venue": {
+            "id": 20587,
+            "name": "Dame Flora Duffy National Sports Centre",
+            "city": "Hamilton, Devonshire Parish"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1728772200
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5531,
+            "name": "Dominica",
+            "logo": "https://media.api-sports.io/football/teams/5531.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5158,
+            "name": "Bermuda",
+            "logo": "https://media.api-sports.io/football/teams/5158.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 6
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 6
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201293,
+          "date": "2024-09-10T15:00:00+00:00",
+          "venue": {
+            "id": 20404,
+            "name": "ABFA Technical Center",
+            "city": "Piggotts"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725980400
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5532,
+            "name": "Dominican Republic",
+            "logo": "https://media.api-sports.io/football/teams/5532.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5531,
+            "name": "Dominica",
+            "logo": "https://media.api-sports.io/football/teams/5531.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201286,
+          "date": "2024-09-07T20:00:00+00:00",
+          "venue": {
+            "id": 20404,
+            "name": "ABFA Technical Center",
+            "city": "Piggotts"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725739200
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5531,
+            "name": "Dominica",
+            "logo": "https://media.api-sports.io/football/teams/5531.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5526,
+            "name": "Antigua and Barbuda",
+            "logo": "https://media.api-sports.io/football/teams/5526.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1199297,
+          "date": "2024-05-05T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Victoria Park",
+            "city": "Kingstown"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1714867200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5541,
+            "name": "St. Vincent / Grenadines",
+            "logo": "https://media.api-sports.io/football/teams/5541.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5531,
+            "name": "Dominica",
+            "logo": "https://media.api-sports.io/football/teams/5531.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1199296,
+          "date": "2024-05-03T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Victoria Park",
+            "city": "Kingstown"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1714694400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5541,
+            "name": "St. Vincent / Grenadines",
+            "logo": "https://media.api-sports.io/football/teams/5541.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5531,
+            "name": "Dominica",
+            "logo": "https://media.api-sports.io/football/teams/5531.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 5531,
+      "name": "Dominica",
+      "logo": "https://media.api-sports.io/football/teams/5531.png"
+    },
+    "form": "WL",
+    "fixtures": {
+      "played": {
+        "home": 0,
+        "away": 2,
+        "total": 2
+      },
+      "wins": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 0,
+          "away": 3,
+          "total": 3
+        },
+        "average": {
+          "home": "0.0",
+          "away": "1.5",
+          "total": "1.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 1
+          },
+          "1.5": {
+            "over": 1,
+            "under": 1
+          },
+          "2.5": {
+            "over": 1,
+            "under": 1
+          },
+          "3.5": {
+            "over": 0,
+            "under": 2
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 0,
+          "away": 3,
+          "total": 3
+        },
+        "average": {
+          "home": "0.0",
+          "away": "1.5",
+          "total": "1.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 0
+          },
+          "1.5": {
+            "over": 1,
+            "under": 1
+          },
+          "2.5": {
+            "over": 0,
+            "under": 2
+          },
+          "3.5": {
+            "over": 0,
+            "under": 2
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 1,
+        "draws": 0,
+        "loses": 0
+      },
+      "wins": {
+        "home": null,
+        "away": "1-3"
+      },
+      "loses": {
+        "home": null,
+        "away": "2-0"
+      },
+      "goals": {
+        "for": {
+          "home": 0,
+          "away": 3
+        },
+        "against": {
+          "home": 0,
+          "away": 2
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 1,
+      "total": 1
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:42:02.781Z"
+}

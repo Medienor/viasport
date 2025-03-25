@@ -1,0 +1,1049 @@
+{
+  "team": {
+    "team": {
+      "id": 287,
+      "name": "Urawa",
+      "code": "URA",
+      "country": "Japan",
+      "founded": 1950,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/287.png"
+    },
+    "venue": {
+      "id": 980,
+      "name": "Saitama Stadium 2002",
+      "address": "500 Nakanoda, Midori-ku",
+      "city": "Saitama",
+      "capacity": 65000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/980.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 98,
+        "name": "J1 League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/98.png"
+      },
+      "country": {
+        "name": "Japan",
+        "code": "JP",
+        "flag": "https://media.api-sports.io/flags/jp.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-02-23",
+          "end": "2024-12-08",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-04",
+          "end": "2024-12-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 101,
+        "name": "J-League Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/101.png"
+      },
+      "country": {
+        "name": "Japan",
+        "code": "JP",
+        "flag": "https://media.api-sports.io/flags/jp.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-03-06",
+          "end": "2024-11-02",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1166505,
+          "date": "2024-12-08T05:00:00+00:00",
+          "venue": {
+            "id": 980,
+            "name": "Saitama Stadium 2002",
+            "city": "Saitama"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1733634000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 287,
+            "name": "Urawa",
+            "logo": "https://media.api-sports.io/football/teams/287.png",
+            "winner": null
+          },
+          "away": {
+            "id": 311,
+            "name": "Albirex Niigata",
+            "logo": "https://media.api-sports.io/football/teams/311.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1166502,
+          "date": "2024-11-30T05:00:00+00:00",
+          "venue": {
+            "id": 20417,
+            "name": "Best Denki Stadium",
+            "city": "Fukuoka"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1732942800
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 316,
+            "name": "Avispa Fukuoka",
+            "logo": "https://media.api-sports.io/football/teams/316.png",
+            "winner": true
+          },
+          "away": {
+            "id": 287,
+            "name": "Urawa",
+            "logo": "https://media.api-sports.io/football/teams/287.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1166404,
+          "date": "2024-11-22T10:00:00+00:00",
+          "venue": {
+            "id": 980,
+            "name": "Saitama Stadium 2002",
+            "city": "Saitama"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1732269600
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 287,
+            "name": "Urawa",
+            "logo": "https://media.api-sports.io/football/teams/287.png",
+            "winner": null
+          },
+          "away": {
+            "id": 294,
+            "name": "Kawasaki Frontale",
+            "logo": "https://media.api-sports.io/football/teams/294.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1166484,
+          "date": "2024-11-10T06:00:00+00:00",
+          "venue": {
+            "id": 980,
+            "name": "Saitama Stadium 2002",
+            "city": "Saitama"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1731218400
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 287,
+            "name": "Urawa",
+            "logo": "https://media.api-sports.io/football/teams/287.png",
+            "winner": true
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1166476,
+          "date": "2024-10-30T10:00:00+00:00",
+          "venue": {
+            "id": 985,
+            "name": "Nissan Stadium",
+            "city": "Yokohama"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1730282400
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 296,
+            "name": "Yokohama F. Marinos",
+            "logo": "https://media.api-sports.io/football/teams/296.png",
+            "winner": null
+          },
+          "away": {
+            "id": 287,
+            "name": "Urawa",
+            "logo": "https://media.api-sports.io/football/teams/287.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1166381,
+          "date": "2024-10-23T10:30:00+00:00",
+          "venue": {
+            "id": 980,
+            "name": "Saitama Stadium 2002",
+            "city": "Saitama"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1729679400
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 287,
+            "name": "Urawa",
+            "logo": "https://media.api-sports.io/football/teams/287.png",
+            "winner": true
+          },
+          "away": {
+            "id": 281,
+            "name": "Kashiwa Reysol",
+            "logo": "https://media.api-sports.io/football/teams/281.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1166465,
+          "date": "2024-10-19T08:00:00+00:00",
+          "venue": {
+            "id": 960,
+            "name": "Ajinomoto Stadium",
+            "city": "Chōfu"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1729324800
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 306,
+            "name": "Tokyo Verdy",
+            "logo": "https://media.api-sports.io/football/teams/306.png",
+            "winner": true
+          },
+          "away": {
+            "id": 287,
+            "name": "Urawa",
+            "logo": "https://media.api-sports.io/football/teams/287.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1166454,
+          "date": "2024-10-05T07:00:00+00:00",
+          "venue": {
+            "id": 980,
+            "name": "Saitama Stadium 2002",
+            "city": "Saitama"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1728111600
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 287,
+            "name": "Urawa",
+            "logo": "https://media.api-sports.io/football/teams/287.png",
+            "winner": false
+          },
+          "away": {
+            "id": 291,
+            "name": "Cerezo Osaka",
+            "logo": "https://media.api-sports.io/football/teams/291.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1166450,
+          "date": "2024-09-28T10:00:00+00:00",
+          "venue": {
+            "id": 984,
+            "name": "NOEVIR Stadium Kobe",
+            "city": "Kobe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1727517600
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 289,
+            "name": "Vissel Kobe",
+            "logo": "https://media.api-sports.io/football/teams/289.png",
+            "winner": true
+          },
+          "away": {
+            "id": 287,
+            "name": "Urawa",
+            "logo": "https://media.api-sports.io/football/teams/287.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1166434,
+          "date": "2024-09-21T10:00:00+00:00",
+          "venue": {
+            "id": 980,
+            "name": "Saitama Stadium 2002",
+            "city": "Saitama"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1726912800
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 287,
+            "name": "Urawa",
+            "logo": "https://media.api-sports.io/football/teams/287.png",
+            "winner": false
+          },
+          "away": {
+            "id": 292,
+            "name": "FC Tokyo",
+            "logo": "https://media.api-sports.io/football/teams/292.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 98,
+      "name": "J1 League",
+      "country": "Japan",
+      "logo": "https://media.api-sports.io/football/leagues/98.png",
+      "flag": "https://media.api-sports.io/flags/jp.svg",
+      "season": 2024
+    },
+    "team": {
+      "id": 287,
+      "name": "Urawa",
+      "logo": "https://media.api-sports.io/football/teams/287.png"
+    },
+    "form": "LDWDWLWLLWLWWWDLDLDWWLDLDDDWLLLLWDWDLD",
+    "fixtures": {
+      "played": {
+        "home": 19,
+        "away": 19,
+        "total": 38
+      },
+      "wins": {
+        "home": 8,
+        "away": 4,
+        "total": 12
+      },
+      "draws": {
+        "home": 5,
+        "away": 7,
+        "total": 12
+      },
+      "loses": {
+        "home": 6,
+        "away": 8,
+        "total": 14
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 30,
+          "away": 19,
+          "total": 49
+        },
+        "average": {
+          "home": "1.6",
+          "away": "1.0",
+          "total": "1.3"
+        },
+        "minute": {
+          "0-15": {
+            "total": 5,
+            "percentage": "10.00%"
+          },
+          "16-30": {
+            "total": 6,
+            "percentage": "12.00%"
+          },
+          "31-45": {
+            "total": 5,
+            "percentage": "10.00%"
+          },
+          "46-60": {
+            "total": 7,
+            "percentage": "14.00%"
+          },
+          "61-75": {
+            "total": 13,
+            "percentage": "26.00%"
+          },
+          "76-90": {
+            "total": 11,
+            "percentage": "22.00%"
+          },
+          "91-105": {
+            "total": 3,
+            "percentage": "6.00%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 27,
+            "under": 11
+          },
+          "1.5": {
+            "over": 13,
+            "under": 25
+          },
+          "2.5": {
+            "over": 7,
+            "under": 31
+          },
+          "3.5": {
+            "over": 2,
+            "under": 36
+          },
+          "4.5": {
+            "over": 0,
+            "under": 38
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 21,
+          "away": 24,
+          "total": 45
+        },
+        "average": {
+          "home": "1.1",
+          "away": "1.3",
+          "total": "1.2"
+        },
+        "minute": {
+          "0-15": {
+            "total": 2,
+            "percentage": "4.55%"
+          },
+          "16-30": {
+            "total": 6,
+            "percentage": "13.64%"
+          },
+          "31-45": {
+            "total": 8,
+            "percentage": "18.18%"
+          },
+          "46-60": {
+            "total": 13,
+            "percentage": "29.55%"
+          },
+          "61-75": {
+            "total": 4,
+            "percentage": "9.09%"
+          },
+          "76-90": {
+            "total": 6,
+            "percentage": "13.64%"
+          },
+          "91-105": {
+            "total": 5,
+            "percentage": "11.36%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 26,
+            "under": 12
+          },
+          "1.5": {
+            "over": 13,
+            "under": 25
+          },
+          "2.5": {
+            "over": 4,
+            "under": 34
+          },
+          "3.5": {
+            "over": 2,
+            "under": 36
+          },
+          "4.5": {
+            "over": 0,
+            "under": 38
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 3,
+        "draws": 3,
+        "loses": 4
+      },
+      "wins": {
+        "home": "3-0",
+        "away": "2-4"
+      },
+      "loses": {
+        "home": "0-2",
+        "away": "3-1"
+      },
+      "goals": {
+        "for": {
+          "home": 3,
+          "away": 4
+        },
+        "against": {
+          "home": 4,
+          "away": 4
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 6,
+      "away": 6,
+      "total": 12
+    },
+    "failed_to_score": {
+      "home": 4,
+      "away": 7,
+      "total": 11
+    },
+    "penalty": {
+      "scored": {
+        "total": 6,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 6
+    },
+    "lineups": [
+      {
+        "formation": "4-3-3",
+        "played": 21
+      },
+      {
+        "formation": "4-2-3-1",
+        "played": 17
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 3,
+          "percentage": "7.14%"
+        },
+        "16-30": {
+          "total": 8,
+          "percentage": "19.05%"
+        },
+        "31-45": {
+          "total": 9,
+          "percentage": "21.43%"
+        },
+        "46-60": {
+          "total": 5,
+          "percentage": "11.90%"
+        },
+        "61-75": {
+          "total": 5,
+          "percentage": "11.90%"
+        },
+        "76-90": {
+          "total": 10,
+          "percentage": "23.81%"
+        },
+        "91-105": {
+          "total": 2,
+          "percentage": "4.76%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": 1,
+          "percentage": "100.00%"
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:43:48.304Z"
+}

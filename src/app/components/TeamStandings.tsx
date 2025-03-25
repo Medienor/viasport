@@ -7,9 +7,10 @@ import Link from 'next/link';
 interface TeamStandingsProps {
   teamId: number;
   seasons: number[];
+  teamName: string;
 }
 
-export default function TeamStandings({ teamId, seasons }: TeamStandingsProps) {
+export default function TeamStandings({ teamId, seasons, teamName }: TeamStandingsProps) {
   // Initialize with previous year as default since football seasons often span two years
   const currentYear = new Date().getFullYear();
   const defaultSeason = currentYear - 1;
@@ -125,7 +126,7 @@ export default function TeamStandings({ teamId, seasons }: TeamStandingsProps) {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 mb-8">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold">Tabell ({selectedSeason})</h2>
+        <h2 className="text-xl font-semibold">{teamName} Tabell (2025/2026)</h2>
         
         <div className="flex items-center space-x-4">
           {/* League selector - only show if there are multiple leagues */}

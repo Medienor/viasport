@@ -1,0 +1,1073 @@
+{
+  "team": {
+    "team": {
+      "id": 1602,
+      "name": "New York Red Bulls",
+      "code": "YOR",
+      "country": "USA",
+      "founded": 1995,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/1602.png"
+    },
+    "venue": {
+      "id": 21544,
+      "name": "Sports Illustrated Stadium",
+      "address": "Frank Rogers Boulevard South",
+      "city": "Harrison, New Jersey",
+      "capacity": 26765,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/21544.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 253,
+        "name": "Major League Soccer",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/253.png"
+      },
+      "country": {
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-02-22",
+          "end": "2024-12-07",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": true,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-04",
+          "end": "2024-12-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 772,
+        "name": "Leagues Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/772.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-27",
+          "end": "2024-08-25",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1318600,
+          "date": "2024-12-07T21:00:00+00:00",
+          "venue": {
+            "id": 1616,
+            "name": "Dignity Health Sports Park",
+            "city": "Carson, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1733605200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1605,
+            "name": "Los Angeles Galaxy",
+            "logo": "https://media.api-sports.io/football/teams/1605.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1316662,
+          "date": "2024-12-01T00:30:00+00:00",
+          "venue": {
+            "id": 20500,
+            "name": "Inter&Co Stadium",
+            "city": "Orlando, Florida"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1733013000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1598,
+            "name": "Orlando City SC",
+            "logo": "https://media.api-sports.io/football/teams/1598.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1315360,
+          "date": "2024-11-23T22:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Citi Field",
+            "city": "New York, New York"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1732401000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1604,
+            "name": "New York City FC",
+            "logo": "https://media.api-sports.io/football/teams/1604.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1312284,
+          "date": "2024-10-29T22:45:00+00:00",
+          "venue": {
+            "id": 12667,
+            "name": "Lower.com Field",
+            "city": "Columbus, Ohio"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1730241900
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1613,
+            "name": "Columbus Crew",
+            "logo": "https://media.api-sports.io/football/teams/1613.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151237,
+          "date": "2024-10-20T22:00:00+00:00",
+          "venue": {
+            "id": 1619,
+            "name": "Red Bull Arena",
+            "city": "Harrison, New Jersey"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1729461600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1613,
+            "name": "Columbus Crew",
+            "logo": "https://media.api-sports.io/football/teams/1613.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151220,
+          "date": "2024-10-05T23:30:00+00:00",
+          "venue": {
+            "id": 1898,
+            "name": "Mercedes-Benz Stadium",
+            "city": "Atlanta, Georgia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 14
+          },
+          "timestamp": 1728171000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151210,
+          "date": "2024-10-02T23:30:00+00:00",
+          "venue": {
+            "id": 312,
+            "name": "BMO Field",
+            "city": "Toronto, Ontario"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1727911800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1601,
+            "name": "Toronto FC",
+            "logo": "https://media.api-sports.io/football/teams/1601.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151197,
+          "date": "2024-09-28T23:30:00+00:00",
+          "venue": {
+            "id": 1619,
+            "name": "Red Bull Arena",
+            "city": "Harrison, New Jersey"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1727566200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1604,
+            "name": "New York City FC",
+            "logo": "https://media.api-sports.io/football/teams/1604.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 4
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151181,
+          "date": "2024-09-21T23:30:00+00:00",
+          "venue": {
+            "id": 1619,
+            "name": "Red Bull Arena",
+            "city": "Harrison, New Jersey"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 12
+          },
+          "timestamp": 1726961400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151158,
+          "date": "2024-09-15T00:30:00+00:00",
+          "venue": {
+            "id": 1609,
+            "name": "Soldier Field",
+            "city": "Chicago, Illinois"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1726360200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 253,
+      "name": "Major League Soccer",
+      "country": "USA",
+      "logo": "https://media.api-sports.io/football/leagues/253.png",
+      "flag": "https://media.api-sports.io/flags/us.svg",
+      "season": 2024
+    },
+    "team": {
+      "id": 1602,
+      "name": "New York Red Bulls",
+      "logo": "https://media.api-sports.io/football/teams/1602.png"
+    },
+    "form": "DWWLWDWDDDLWWLWWLDDWDDDDWDLDLDLWLLWDWWL",
+    "fixtures": {
+      "played": {
+        "home": 18,
+        "away": 21,
+        "total": 39
+      },
+      "wins": {
+        "home": 7,
+        "away": 7,
+        "total": 14
+      },
+      "draws": {
+        "home": 8,
+        "away": 7,
+        "total": 15
+      },
+      "loses": {
+        "home": 3,
+        "away": 7,
+        "total": 10
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 33,
+          "away": 29,
+          "total": 62
+        },
+        "average": {
+          "home": "1.8",
+          "away": "1.4",
+          "total": "1.6"
+        },
+        "minute": {
+          "0-15": {
+            "total": 3,
+            "percentage": "4.48%"
+          },
+          "16-30": {
+            "total": 13,
+            "percentage": "19.40%"
+          },
+          "31-45": {
+            "total": 5,
+            "percentage": "7.46%"
+          },
+          "46-60": {
+            "total": 16,
+            "percentage": "23.88%"
+          },
+          "61-75": {
+            "total": 8,
+            "percentage": "11.94%"
+          },
+          "76-90": {
+            "total": 12,
+            "percentage": "17.91%"
+          },
+          "91-105": {
+            "total": 5,
+            "percentage": "7.46%"
+          },
+          "106-120": {
+            "total": 5,
+            "percentage": "7.46%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 32,
+            "under": 7
+          },
+          "1.5": {
+            "over": 19,
+            "under": 20
+          },
+          "2.5": {
+            "over": 7,
+            "under": 32
+          },
+          "3.5": {
+            "over": 4,
+            "under": 35
+          },
+          "4.5": {
+            "over": 0,
+            "under": 39
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 25,
+          "away": 29,
+          "total": 54
+        },
+        "average": {
+          "home": "1.4",
+          "away": "1.4",
+          "total": "1.4"
+        },
+        "minute": {
+          "0-15": {
+            "total": 17,
+            "percentage": "29.31%"
+          },
+          "16-30": {
+            "total": 2,
+            "percentage": "3.45%"
+          },
+          "31-45": {
+            "total": 2,
+            "percentage": "3.45%"
+          },
+          "46-60": {
+            "total": 9,
+            "percentage": "15.52%"
+          },
+          "61-75": {
+            "total": 14,
+            "percentage": "24.14%"
+          },
+          "76-90": {
+            "total": 4,
+            "percentage": "6.90%"
+          },
+          "91-105": {
+            "total": 6,
+            "percentage": "10.34%"
+          },
+          "106-120": {
+            "total": 4,
+            "percentage": "6.90%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 29,
+            "under": 10
+          },
+          "1.5": {
+            "over": 16,
+            "under": 23
+          },
+          "2.5": {
+            "over": 4,
+            "under": 35
+          },
+          "3.5": {
+            "over": 2,
+            "under": 37
+          },
+          "4.5": {
+            "over": 2,
+            "under": 37
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 2,
+        "draws": 4,
+        "loses": 2
+      },
+      "wins": {
+        "home": "4-0",
+        "away": "1-4"
+      },
+      "loses": {
+        "home": "1-5",
+        "away": "6-2"
+      },
+      "goals": {
+        "for": {
+          "home": 4,
+          "away": 4
+        },
+        "against": {
+          "home": 5,
+          "away": 6
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 5,
+      "away": 5,
+      "total": 10
+    },
+    "failed_to_score": {
+      "home": 3,
+      "away": 4,
+      "total": 7
+    },
+    "penalty": {
+      "scored": {
+        "total": 14,
+        "percentage": "87.50%"
+      },
+      "missed": {
+        "total": 2,
+        "percentage": "12.50%"
+      },
+      "total": 16
+    },
+    "lineups": [
+      {
+        "formation": "4-4-2",
+        "played": 27
+      },
+      {
+        "formation": "4-2-3-1",
+        "played": 3
+      },
+      {
+        "formation": "3-4-2-1",
+        "played": 3
+      },
+      {
+        "formation": "3-4-1-2",
+        "played": 3
+      },
+      {
+        "formation": "4-2-2-2",
+        "played": 1
+      },
+      {
+        "formation": "3-5-2",
+        "played": 1
+      },
+      {
+        "formation": "4-3-1-2",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 1,
+          "percentage": "1.49%"
+        },
+        "16-30": {
+          "total": 8,
+          "percentage": "11.94%"
+        },
+        "31-45": {
+          "total": 10,
+          "percentage": "14.93%"
+        },
+        "46-60": {
+          "total": 10,
+          "percentage": "14.93%"
+        },
+        "61-75": {
+          "total": 19,
+          "percentage": "28.36%"
+        },
+        "76-90": {
+          "total": 8,
+          "percentage": "11.94%"
+        },
+        "91-105": {
+          "total": 10,
+          "percentage": "14.93%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        },
+        "": {
+          "total": 1,
+          "percentage": "1.49%"
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": 1,
+          "percentage": "16.67%"
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": 2,
+          "percentage": "33.33%"
+        },
+        "76-90": {
+          "total": 1,
+          "percentage": "16.67%"
+        },
+        "91-105": {
+          "total": 2,
+          "percentage": "33.33%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:43:57.936Z"
+}

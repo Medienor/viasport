@@ -1,0 +1,825 @@
+{
+  "team": {
+    "team": {
+      "id": 5533,
+      "name": "Grenada",
+      "code": null,
+      "country": "Grenada",
+      "founded": 1924,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/5533.png"
+    },
+    "venue": {
+      "id": 19759,
+      "name": "Kirani James National Stadium",
+      "address": "Queens&apos; Park Road",
+      "city": "St. George&apos;s",
+      "capacity": 10000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/19759.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 536,
+        "name": "CONCACAF Nations League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/536.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-04",
+          "end": "2025-03-24",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2010,
+    2012,
+    2014,
+    2016,
+    2017,
+    2018,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1201322,
+          "date": "2024-11-18T20:00:00+00:00",
+          "venue": {
+            "id": 19758,
+            "name": "Stadion Ergilio Hato",
+            "city": "Willemstad"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1731960000
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5533,
+            "name": "Grenada",
+            "logo": "https://media.api-sports.io/football/teams/5533.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10984,
+            "name": "Saint Martin",
+            "logo": "https://media.api-sports.io/football/teams/10984.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201313,
+          "date": "2024-11-15T20:00:00+00:00",
+          "venue": {
+            "id": 19758,
+            "name": "Stadion Ergilio Hato",
+            "city": "Willemstad"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1731700800
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5540,
+            "name": "St. Lucia",
+            "logo": "https://media.api-sports.io/football/teams/5540.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5533,
+            "name": "Grenada",
+            "logo": "https://media.api-sports.io/football/teams/5533.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201305,
+          "date": "2024-10-14T20:00:00+00:00",
+          "venue": {
+            "id": 4161,
+            "name": "Darren Sammy Cricket Ground",
+            "city": "Gros Islet"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1728936000
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5530,
+            "name": "Curaçao",
+            "logo": "https://media.api-sports.io/football/teams/5530.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5533,
+            "name": "Grenada",
+            "logo": "https://media.api-sports.io/football/teams/5533.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201297,
+          "date": "2024-10-11T21:00:00+00:00",
+          "venue": {
+            "id": 4161,
+            "name": "Darren Sammy Cricket Ground",
+            "city": "Gros Islet"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1728680400
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5533,
+            "name": "Grenada",
+            "logo": "https://media.api-sports.io/football/teams/5533.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5530,
+            "name": "Curaçao",
+            "logo": "https://media.api-sports.io/football/teams/5530.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201290,
+          "date": "2024-09-10T00:00:00+00:00",
+          "venue": {
+            "id": 19759,
+            "name": "Kirani James National Stadium",
+            "city": "St. George's"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725926400
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5533,
+            "name": "Grenada",
+            "logo": "https://media.api-sports.io/football/teams/5533.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5540,
+            "name": "St. Lucia",
+            "logo": "https://media.api-sports.io/football/teams/5540.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201282,
+          "date": "2024-09-07T00:00:00+00:00",
+          "venue": {
+            "id": 19759,
+            "name": "Kirani James National Stadium",
+            "city": "St. George's"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725667200
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10984,
+            "name": "Saint Martin",
+            "logo": "https://media.api-sports.io/football/teams/10984.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5533,
+            "name": "Grenada",
+            "logo": "https://media.api-sports.io/football/teams/5533.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1200253,
+          "date": "2024-05-26T20:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lauriston Mini Stadium",
+            "city": "Carriacou"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1716753600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5533,
+            "name": "Grenada",
+            "logo": "https://media.api-sports.io/football/teams/5533.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5541,
+            "name": "St. Vincent / Grenadines",
+            "logo": "https://media.api-sports.io/football/teams/5541.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 5533,
+      "name": "Grenada",
+      "logo": "https://media.api-sports.io/football/teams/5533.png"
+    },
+    "form": "L",
+    "fixtures": {
+      "played": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 0,
+          "away": 0,
+          "total": 0
+        },
+        "average": {
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 0,
+            "under": 1
+          },
+          "1.5": {
+            "over": 0,
+            "under": 1
+          },
+          "2.5": {
+            "over": 0,
+            "under": 1
+          },
+          "3.5": {
+            "over": 0,
+            "under": 1
+          },
+          "4.5": {
+            "over": 0,
+            "under": 1
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 3,
+          "away": 0,
+          "total": 3
+        },
+        "average": {
+          "home": "3.0",
+          "away": "0.0",
+          "total": "3.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 0
+          },
+          "1.5": {
+            "over": 1,
+            "under": 0
+          },
+          "2.5": {
+            "over": 1,
+            "under": 0
+          },
+          "3.5": {
+            "over": 0,
+            "under": 1
+          },
+          "4.5": {
+            "over": 0,
+            "under": 1
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 0,
+        "loses": 1
+      },
+      "wins": {
+        "home": null,
+        "away": null
+      },
+      "loses": {
+        "home": "0-3",
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 0,
+          "away": 0
+        },
+        "against": {
+          "home": 3,
+          "away": 0
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 1,
+      "away": 0,
+      "total": 1
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": 1,
+          "percentage": "100.00%"
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:42:02.832Z"
+}

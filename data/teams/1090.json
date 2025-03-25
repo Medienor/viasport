@@ -1,0 +1,1343 @@
+{
+  "team": {
+    "team": {
+      "id": 1090,
+      "name": "Norway",
+      "code": "NOR",
+      "country": "Norway",
+      "founded": 1902,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/1090.png"
+    },
+    "venue": {
+      "id": 11603,
+      "name": "Ullevaal Stadion",
+      "address": "Sognsveien 75",
+      "city": "Oslo",
+      "capacity": 27182,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/11603.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 5,
+        "name": "UEFA Nations League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/5.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-05",
+          "end": "2026-03-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 32,
+        "name": "World Cup - Qualification Europe",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/32.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2025-03-21",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2017,
+    2018,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1323255,
+          "date": "2025-03-25T19:45:00+00:00",
+          "venue": {
+            "id": 795,
+            "name": "Nagyerdei Stadion",
+            "city": "Debrecen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1742931900
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1116,
+            "name": "Israel",
+            "logo": "https://media.api-sports.io/football/teams/1116.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323271,
+          "date": "2025-06-09T18:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749494700
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1101,
+            "name": "Estonia",
+            "logo": "https://media.api-sports.io/football/teams/1101.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323303,
+          "date": "2025-09-09T18:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757443500
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1114,
+            "name": "Moldova",
+            "logo": "https://media.api-sports.io/football/teams/1114.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323324,
+          "date": "2025-10-11T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1760198400
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1116,
+            "name": "Israel",
+            "logo": "https://media.api-sports.io/football/teams/1116.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323345,
+          "date": "2025-11-13T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1763053200
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1101,
+            "name": "Estonia",
+            "logo": "https://media.api-sports.io/football/teams/1101.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1323244,
+          "date": "2025-03-22T17:00:00+00:00",
+          "venue": {
+            "id": 2615,
+            "name": "Stadionul Zimbru",
+            "city": "Chişinău"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1742662800
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1114,
+            "name": "Moldova",
+            "logo": "https://media.api-sports.io/football/teams/1114.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 4
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172934,
+          "date": "2024-11-17T17:00:00+00:00",
+          "venue": {
+            "id": 11603,
+            "name": "Ullevaal Stadion",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1731862800
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1095,
+            "name": "Kazakhstan",
+            "logo": "https://media.api-sports.io/football/teams/1095.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172926,
+          "date": "2024-11-14T19:45:00+00:00",
+          "venue": {
+            "id": 1442,
+            "name": "Stadion Stožice",
+            "city": "Ljubljana"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1731613500
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1091,
+            "name": "Slovenia",
+            "logo": "https://media.api-sports.io/football/teams/1091.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172918,
+          "date": "2024-10-13T18:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Raiffeisen Arena",
+            "city": "Linz"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1728845100
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 775,
+            "name": "Austria",
+            "logo": "https://media.api-sports.io/football/teams/775.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172910,
+          "date": "2024-10-10T18:45:00+00:00",
+          "venue": {
+            "id": 11603,
+            "name": "Ullevaal Stadion",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1728585900
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1091,
+            "name": "Slovenia",
+            "logo": "https://media.api-sports.io/football/teams/1091.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172899,
+          "date": "2024-09-09T18:45:00+00:00",
+          "venue": {
+            "id": 11603,
+            "name": "Ullevaal Stadion",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725907500
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": true
+          },
+          "away": {
+            "id": 775,
+            "name": "Austria",
+            "logo": "https://media.api-sports.io/football/teams/775.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172891,
+          "date": "2024-09-06T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Ortalyq stadıon",
+            "city": "Almaty"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725631200
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1095,
+            "name": "Kazakhstan",
+            "logo": "https://media.api-sports.io/football/teams/1095.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1171722,
+          "date": "2024-06-08T17:30:00+00:00",
+          "venue": {
+            "id": 443,
+            "name": "Brøndby Stadion",
+            "city": "Brøndby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717867800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21,
+            "name": "Denmark",
+            "logo": "https://media.api-sports.io/football/teams/21.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1171752,
+          "date": "2024-06-05T17:00:00+00:00",
+          "venue": {
+            "id": 11603,
+            "name": "Ullevaal Stadion",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717606800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1111,
+            "name": "Kosovo",
+            "logo": "https://media.api-sports.io/football/teams/1111.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1156212,
+          "date": "2024-03-26T18:00:00+00:00",
+          "venue": {
+            "id": 11603,
+            "name": "Ullevaal Stadion",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711476000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1090,
+            "name": "Norway",
+            "logo": "https://media.api-sports.io/football/teams/1090.png",
+            "winner": null
+          },
+          "away": {
+            "id": 773,
+            "name": "Slovakia",
+            "logo": "https://media.api-sports.io/football/teams/773.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 1090,
+      "name": "Norway",
+      "logo": "https://media.api-sports.io/football/teams/1090.png"
+    },
+    "form": "LDWL",
+    "fixtures": {
+      "played": {
+        "home": 3,
+        "away": 1,
+        "total": 4
+      },
+      "wins": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "draws": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "loses": {
+        "home": 1,
+        "away": 1,
+        "total": 2
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 5,
+          "away": 1,
+          "total": 6
+        },
+        "average": {
+          "home": "1.7",
+          "away": "1.0",
+          "total": "1.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "16-30": {
+            "total": 2,
+            "percentage": "33.33%"
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": 3,
+            "percentage": "50.00%"
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 4,
+            "under": 0
+          },
+          "1.5": {
+            "over": 1,
+            "under": 3
+          },
+          "2.5": {
+            "over": 1,
+            "under": 3
+          },
+          "3.5": {
+            "over": 0,
+            "under": 4
+          },
+          "4.5": {
+            "over": 0,
+            "under": 4
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 3,
+          "away": 3,
+          "total": 6
+        },
+        "average": {
+          "home": "1.0",
+          "away": "3.0",
+          "total": "1.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": 3,
+            "percentage": "50.00%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 3,
+            "under": 1
+          },
+          "1.5": {
+            "over": 2,
+            "under": 2
+          },
+          "2.5": {
+            "over": 1,
+            "under": 3
+          },
+          "3.5": {
+            "over": 0,
+            "under": 4
+          },
+          "4.5": {
+            "over": 0,
+            "under": 4
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 1,
+        "draws": 1,
+        "loses": 1
+      },
+      "wins": {
+        "home": "3-0",
+        "away": null
+      },
+      "loses": {
+        "home": "1-2",
+        "away": "3-1"
+      },
+      "goals": {
+        "for": {
+          "home": 3,
+          "away": 1
+        },
+        "against": {
+          "home": 2,
+          "away": 3
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 1,
+      "away": 0,
+      "total": 1
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [
+      {
+        "formation": "4-3-3",
+        "played": 2
+      },
+      {
+        "formation": "4-4-2",
+        "played": 1
+      },
+      {
+        "formation": "4-2-3-1",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": 2,
+          "percentage": "33.33%"
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "16.67%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": 3,
+          "percentage": "50.00%"
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:40:51.501Z"
+}

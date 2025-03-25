@@ -1,0 +1,773 @@
+{
+  "team": {
+    "team": {
+      "id": 5534,
+      "name": "Mongolia",
+      "code": null,
+      "country": "Mongolia",
+      "founded": 1959,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/5534.png"
+    },
+    "venue": {
+      "id": 4156,
+      "name": "National Sports Stadium Mongolia",
+      "address": null,
+      "city": "Ulaanbaatar",
+      "capacity": 20000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/4156.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 35,
+        "name": "Asian Cup - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/35.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-05",
+          "end": "2026-03-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2014,
+    2015,
+    2017,
+    2018,
+    2019,
+    2020,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1200271,
+          "date": "2024-09-10T08:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Football Centre MFF",
+            "city": "Ulaanbaatar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725955200
+        },
+        "league": {
+          "id": 35,
+          "name": "Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/35.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5534,
+            "name": "Mongolia",
+            "logo": "https://media.api-sports.io/football/teams/5534.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5537,
+            "name": "Timor-Leste",
+            "logo": "https://media.api-sports.io/football/teams/5537.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1200270,
+          "date": "2024-09-05T08:30:00+00:00",
+          "venue": {
+            "id": 840,
+            "name": "Stadion Kapten I Wayan Dipta",
+            "city": "Gianyar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725525000
+        },
+        "league": {
+          "id": 35,
+          "name": "Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/35.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5537,
+            "name": "Timor-Leste",
+            "logo": "https://media.api-sports.io/football/teams/5537.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5534,
+            "name": "Mongolia",
+            "logo": "https://media.api-sports.io/football/teams/5534.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1196554,
+          "date": "2024-06-11T09:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Football Centre MFF",
+            "city": "Ulaanbaatar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1718096400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5534,
+            "name": "Mongolia",
+            "logo": "https://media.api-sports.io/football/teams/5534.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1543,
+            "name": "Cambodia",
+            "logo": "https://media.api-sports.io/football/teams/1543.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1194765,
+          "date": "2024-06-07T11:00:00+00:00",
+          "venue": {
+            "id": 20324,
+            "name": "Olympic Stadium",
+            "city": "Phnom Penh"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717758000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1543,
+            "name": "Cambodia",
+            "logo": "https://media.api-sports.io/football/teams/1543.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5534,
+            "name": "Mongolia",
+            "logo": "https://media.api-sports.io/football/teams/5534.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1175043,
+          "date": "2024-03-25T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Liv Bona Dea Arena",
+            "city": "Baku"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711371600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1489,
+            "name": "Tanzania",
+            "logo": "https://media.api-sports.io/football/teams/1489.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5534,
+            "name": "Mongolia",
+            "logo": "https://media.api-sports.io/football/teams/5534.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1175757,
+          "date": "2024-03-22T16:00:00+00:00",
+          "venue": {
+            "id": 5799,
+            "name": "Tofiq Bəhramov adına Respublika stadionu",
+            "city": "Baku"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711123200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1096,
+            "name": "Azerbaijan",
+            "logo": "https://media.api-sports.io/football/teams/1096.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5534,
+            "name": "Mongolia",
+            "logo": "https://media.api-sports.io/football/teams/5534.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 5534,
+      "name": "Mongolia",
+      "logo": "https://media.api-sports.io/football/teams/5534.png"
+    },
+    "form": "LLLW",
+    "fixtures": {
+      "played": {
+        "home": 1,
+        "away": 3,
+        "total": 4
+      },
+      "wins": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 0,
+        "away": 3,
+        "total": 3
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 2,
+          "away": 0,
+          "total": 2
+        },
+        "average": {
+          "home": "2.0",
+          "away": "0.0",
+          "total": "0.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "50.00%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "50.00%"
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 3
+          },
+          "1.5": {
+            "over": 1,
+            "under": 3
+          },
+          "2.5": {
+            "over": 0,
+            "under": 4
+          },
+          "3.5": {
+            "over": 0,
+            "under": 4
+          },
+          "4.5": {
+            "over": 0,
+            "under": 4
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 1,
+          "away": 6,
+          "total": 7
+        },
+        "average": {
+          "home": "1.0",
+          "away": "2.0",
+          "total": "1.8"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": 3,
+            "percentage": "42.86%"
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 4,
+            "under": 0
+          },
+          "1.5": {
+            "over": 2,
+            "under": 2
+          },
+          "2.5": {
+            "over": 1,
+            "under": 3
+          },
+          "3.5": {
+            "over": 0,
+            "under": 4
+          },
+          "4.5": {
+            "over": 0,
+            "under": 4
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 0,
+        "loses": 3
+      },
+      "wins": {
+        "home": "2-1",
+        "away": null
+      },
+      "loses": {
+        "home": null,
+        "away": "3-0"
+      },
+      "goals": {
+        "for": {
+          "home": 2,
+          "away": 0
+        },
+        "against": {
+          "home": 1,
+          "away": 3
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 3,
+      "total": 3
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [
+      {
+        "formation": "5-3-2",
+        "played": 3
+      },
+      {
+        "formation": "3-4-3",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 1,
+          "percentage": "10.00%"
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": 1,
+          "percentage": "10.00%"
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "10.00%"
+        },
+        "61-75": {
+          "total": 4,
+          "percentage": "40.00%"
+        },
+        "76-90": {
+          "total": 2,
+          "percentage": "20.00%"
+        },
+        "91-105": {
+          "total": 1,
+          "percentage": "10.00%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": 1,
+          "percentage": "100.00%"
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:42:02.712Z"
+}

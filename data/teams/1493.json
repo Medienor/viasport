@@ -1,0 +1,859 @@
+{
+  "team": {
+    "team": {
+      "id": 1493,
+      "name": "Namibia",
+      "code": "NAM",
+      "country": "Namibia",
+      "founded": 1990,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/1493.png"
+    },
+    "venue": {
+      "id": 1114,
+      "name": "Independence Stadium",
+      "address": "Olympia",
+      "city": "Windhoek",
+      "capacity": 25000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1114.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 859,
+        "name": "COSAFA Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/859.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-06-26",
+          "end": "2024-07-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1163,
+        "name": "African Nations Championship - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1163.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-10-25",
+          "end": "2025-05-09",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2014,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1314011,
+          "date": "2024-10-26T16:00:00+00:00",
+          "venue": {
+            "id": 21589,
+            "name": "Free State Toyota Stadium",
+            "city": "Bloemfontein, FS"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1729958400
+        },
+        "league": {
+          "id": 1163,
+          "name": "African Nations Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1163.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1518,
+            "name": "Lesotho",
+            "logo": "https://media.api-sports.io/football/teams/1518.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1493,
+            "name": "Namibia",
+            "logo": "https://media.api-sports.io/football/teams/1493.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1227530,
+          "date": "2024-07-07T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Nelson Mandela Bay Stadium",
+            "city": "Gqeberha"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1720357200
+        },
+        "league": {
+          "id": 859,
+          "name": "COSAFA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/859.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1529,
+            "name": "Angola",
+            "logo": "https://media.api-sports.io/football/teams/1529.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1493,
+            "name": "Namibia",
+            "logo": "https://media.api-sports.io/football/teams/1493.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1209658,
+          "date": "2024-07-03T13:00:00+00:00",
+          "venue": {
+            "id": 19172,
+            "name": "Wolfson Stadium",
+            "city": "Ibhayi, Kwazakhele"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1720011600
+        },
+        "league": {
+          "id": 859,
+          "name": "COSAFA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/859.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1493,
+            "name": "Namibia",
+            "logo": "https://media.api-sports.io/football/teams/1493.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1515,
+            "name": "Seychelles",
+            "logo": "https://media.api-sports.io/football/teams/1515.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1209653,
+          "date": "2024-07-01T13:00:00+00:00",
+          "venue": {
+            "id": 19172,
+            "name": "Wolfson Stadium",
+            "city": "Ibhayi, Kwazakhele"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719838800
+        },
+        "league": {
+          "id": 859,
+          "name": "COSAFA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/859.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1493,
+            "name": "Namibia",
+            "logo": "https://media.api-sports.io/football/teams/1493.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1518,
+            "name": "Lesotho",
+            "logo": "https://media.api-sports.io/football/teams/1518.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1209647,
+          "date": "2024-06-28T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Nelson Mandela Bay Stadium",
+            "city": "Gqeberha"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719590400
+        },
+        "league": {
+          "id": 859,
+          "name": "COSAFA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/859.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1529,
+            "name": "Angola",
+            "logo": "https://media.api-sports.io/football/teams/1529.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1493,
+            "name": "Namibia",
+            "logo": "https://media.api-sports.io/football/teams/1493.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1202461,
+          "date": "2024-06-01T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "TBC",
+            "city": "TBC"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717200000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1518,
+            "name": "Lesotho",
+            "logo": "https://media.api-sports.io/football/teams/1518.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1493,
+            "name": "Namibia",
+            "logo": "https://media.api-sports.io/football/teams/1493.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1155250,
+          "date": "2024-01-08T20:00:00+00:00",
+          "venue": {
+            "id": 4727,
+            "name": "Baba Yara Stadium",
+            "city": "Kumasi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1704744000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1504,
+            "name": "Ghana",
+            "logo": "https://media.api-sports.io/football/teams/1504.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1493,
+            "name": "Namibia",
+            "logo": "https://media.api-sports.io/football/teams/1493.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 1493,
+      "name": "Namibia",
+      "logo": "https://media.api-sports.io/football/teams/1493.png"
+    },
+    "form": "DD",
+    "fixtures": {
+      "played": {
+        "home": 0,
+        "away": 2,
+        "total": 2
+      },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 0,
+        "away": 2,
+        "total": 2
+      },
+      "loses": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 0,
+          "away": 1,
+          "total": 1
+        },
+        "average": {
+          "home": "0.0",
+          "away": "0.5",
+          "total": "0.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 1
+          },
+          "1.5": {
+            "over": 0,
+            "under": 2
+          },
+          "2.5": {
+            "over": 0,
+            "under": 2
+          },
+          "3.5": {
+            "over": 0,
+            "under": 2
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 0,
+          "away": 1,
+          "total": 1
+        },
+        "average": {
+          "home": "0.0",
+          "away": "0.5",
+          "total": "0.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 1
+          },
+          "1.5": {
+            "over": 0,
+            "under": 2
+          },
+          "2.5": {
+            "over": 0,
+            "under": 2
+          },
+          "3.5": {
+            "over": 0,
+            "under": 2
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 2,
+        "loses": 0
+      },
+      "wins": {
+        "home": null,
+        "away": null
+      },
+      "loses": {
+        "home": null,
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 0,
+          "away": 1
+        },
+        "against": {
+          "home": 0,
+          "away": 1
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 1,
+      "total": 1
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 1,
+      "total": 1
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:41:13.472Z"
+}

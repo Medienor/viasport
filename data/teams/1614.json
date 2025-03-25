@@ -1,0 +1,1098 @@
+{
+  "team": {
+    "team": {
+      "id": 1614,
+      "name": "CF Montreal",
+      "code": "MON",
+      "country": "Canada",
+      "founded": 2010,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/1614.png"
+    },
+    "venue": {
+      "id": 310,
+      "name": "Stade Saputo",
+      "address": "4750, rue Sherbrooke Est",
+      "city": "Montreal, Quebec",
+      "capacity": 20801,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/310.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 253,
+        "name": "Major League Soccer",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/253.png"
+      },
+      "country": {
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-02-22",
+          "end": "2024-12-07",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": true,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-04",
+          "end": "2024-12-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 259,
+        "name": "Canadian Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/259.png"
+      },
+      "country": {
+        "name": "Canada",
+        "code": "CA",
+        "flag": "https://media.api-sports.io/flags/ca.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-04-24",
+          "end": "2024-09-26",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 772,
+        "name": "Leagues Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/772.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-27",
+          "end": "2024-08-25",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1151236,
+          "date": "2024-10-20T22:00:00+00:00",
+          "venue": {
+            "id": 310,
+            "name": "Stade Saputo",
+            "city": "Montreal, Quebec"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1729461600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1604,
+            "name": "New York City FC",
+            "logo": "https://media.api-sports.io/football/teams/1604.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151221,
+          "date": "2024-10-05T23:30:00+00:00",
+          "venue": {
+            "id": 18659,
+            "name": "Bank of America Stadium",
+            "city": "Charlotte, North Carolina"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1728171000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18310,
+            "name": "Charlotte",
+            "logo": "https://media.api-sports.io/football/teams/18310.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151205,
+          "date": "2024-10-02T23:30:00+00:00",
+          "venue": {
+            "id": 1898,
+            "name": "Mercedes-Benz Stadium",
+            "city": "Atlanta, Georgia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1727911800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151195,
+          "date": "2024-09-28T23:30:00+00:00",
+          "venue": {
+            "id": 310,
+            "name": "Stade Saputo",
+            "city": "Montreal, Quebec"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1727566200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151180,
+          "date": "2024-09-21T23:30:00+00:00",
+          "venue": {
+            "id": 310,
+            "name": "Stade Saputo",
+            "city": "Montreal, Quebec"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1726961400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151165,
+          "date": "2024-09-18T23:30:00+00:00",
+          "venue": {
+            "id": 1618,
+            "name": "Gillette Stadium",
+            "city": "Foxborough, Massachusetts"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1726702200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151155,
+          "date": "2024-09-14T23:30:00+00:00",
+          "venue": {
+            "id": 310,
+            "name": "Stade Saputo",
+            "city": "Montreal, Quebec"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1726356600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": true
+          },
+          "away": {
+            "id": 18310,
+            "name": "Charlotte",
+            "logo": "https://media.api-sports.io/football/teams/18310.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151133,
+          "date": "2024-08-31T23:30:00+00:00",
+          "venue": {
+            "id": 19229,
+            "name": "TQL Stadium",
+            "city": "Cincinnati, Ohio"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725147000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2242,
+            "name": "FC Cincinnati",
+            "logo": "https://media.api-sports.io/football/teams/2242.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151123,
+          "date": "2024-08-24T23:30:00+00:00",
+          "venue": {
+            "id": 310,
+            "name": "Stade Saputo",
+            "city": "Montreal, Quebec"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1724542200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1282130,
+          "date": "2024-08-09T23:30:00+00:00",
+          "venue": {
+            "id": 1620,
+            "name": "Subaru Park",
+            "city": "Chester, Pennsylvania"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1723246200
+        },
+        "league": {
+          "id": 772,
+          "name": "Leagues Cup",
+          "logo": "https://media.api-sports.io/football/leagues/772.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1599,
+            "name": "Philadelphia Union",
+            "logo": "https://media.api-sports.io/football/teams/1599.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 253,
+      "name": "Major League Soccer",
+      "country": "USA",
+      "logo": "https://media.api-sports.io/football/leagues/253.png",
+      "flag": "https://media.api-sports.io/flags/us.svg",
+      "season": 2024
+    },
+    "team": {
+      "id": 1614,
+      "name": "CF Montreal",
+      "logo": "https://media.api-sports.io/football/teams/1614.png"
+    },
+    "form": "DWWLLLWDDLLLLDWDDDLWLDWDLLLWDWWWLWD",
+    "fixtures": {
+      "played": {
+        "home": 18,
+        "away": 17,
+        "total": 35
+      },
+      "wins": {
+        "home": 8,
+        "away": 3,
+        "total": 11
+      },
+      "draws": {
+        "home": 6,
+        "away": 5,
+        "total": 11
+      },
+      "loses": {
+        "home": 4,
+        "away": 9,
+        "total": 13
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 30,
+          "away": 20,
+          "total": 50
+        },
+        "average": {
+          "home": "1.7",
+          "away": "1.2",
+          "total": "1.4"
+        },
+        "minute": {
+          "0-15": {
+            "total": 6,
+            "percentage": "11.32%"
+          },
+          "16-30": {
+            "total": 7,
+            "percentage": "13.21%"
+          },
+          "31-45": {
+            "total": 6,
+            "percentage": "11.32%"
+          },
+          "46-60": {
+            "total": 9,
+            "percentage": "16.98%"
+          },
+          "61-75": {
+            "total": 12,
+            "percentage": "22.64%"
+          },
+          "76-90": {
+            "total": 8,
+            "percentage": "15.09%"
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "1.89%"
+          },
+          "106-120": {
+            "total": 4,
+            "percentage": "7.55%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 25,
+            "under": 10
+          },
+          "1.5": {
+            "over": 18,
+            "under": 17
+          },
+          "2.5": {
+            "over": 5,
+            "under": 30
+          },
+          "3.5": {
+            "over": 2,
+            "under": 33
+          },
+          "4.5": {
+            "over": 0,
+            "under": 35
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 25,
+          "away": 41,
+          "total": 66
+        },
+        "average": {
+          "home": "1.4",
+          "away": "2.4",
+          "total": "1.9"
+        },
+        "minute": {
+          "0-15": {
+            "total": 5,
+            "percentage": "6.94%"
+          },
+          "16-30": {
+            "total": 13,
+            "percentage": "18.06%"
+          },
+          "31-45": {
+            "total": 11,
+            "percentage": "15.28%"
+          },
+          "46-60": {
+            "total": 17,
+            "percentage": "23.61%"
+          },
+          "61-75": {
+            "total": 5,
+            "percentage": "6.94%"
+          },
+          "76-90": {
+            "total": 10,
+            "percentage": "13.89%"
+          },
+          "91-105": {
+            "total": 6,
+            "percentage": "8.33%"
+          },
+          "106-120": {
+            "total": 5,
+            "percentage": "6.94%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 27,
+            "under": 8
+          },
+          "1.5": {
+            "over": 20,
+            "under": 15
+          },
+          "2.5": {
+            "over": 9,
+            "under": 26
+          },
+          "3.5": {
+            "over": 7,
+            "under": 28
+          },
+          "4.5": {
+            "over": 3,
+            "under": 32
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 3,
+        "draws": 3,
+        "loses": 4
+      },
+      "wins": {
+        "home": "3-0",
+        "away": "2-3"
+      },
+      "loses": {
+        "home": "0-5",
+        "away": "5-0"
+      },
+      "goals": {
+        "for": {
+          "home": 4,
+          "away": 3
+        },
+        "against": {
+          "home": 5,
+          "away": 5
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 6,
+      "away": 2,
+      "total": 8
+    },
+    "failed_to_score": {
+      "home": 4,
+      "away": 6,
+      "total": 10
+    },
+    "penalty": {
+      "scored": {
+        "total": 9,
+        "percentage": "90.00%"
+      },
+      "missed": {
+        "total": 1,
+        "percentage": "10.00%"
+      },
+      "total": 10
+    },
+    "lineups": [
+      {
+        "formation": "3-4-2-1",
+        "played": 27
+      },
+      {
+        "formation": "3-4-3",
+        "played": 4
+      },
+      {
+        "formation": "3-1-4-2",
+        "played": 2
+      },
+      {
+        "formation": "3-4-1-2",
+        "played": 2
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 3,
+          "percentage": "4.00%"
+        },
+        "16-30": {
+          "total": 13,
+          "percentage": "17.33%"
+        },
+        "31-45": {
+          "total": 13,
+          "percentage": "17.33%"
+        },
+        "46-60": {
+          "total": 11,
+          "percentage": "14.67%"
+        },
+        "61-75": {
+          "total": 6,
+          "percentage": "8.00%"
+        },
+        "76-90": {
+          "total": 15,
+          "percentage": "20.00%"
+        },
+        "91-105": {
+          "total": 12,
+          "percentage": "16.00%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        },
+        "": {
+          "total": 2,
+          "percentage": "2.67%"
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:44:02.843Z"
+}

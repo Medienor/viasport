@@ -1,0 +1,1447 @@
+{
+  "team": {
+    "team": {
+      "id": 10,
+      "name": "England",
+      "code": "ENG",
+      "country": "England",
+      "founded": 1863,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/10.png"
+    },
+    "venue": {
+      "id": 489,
+      "name": "Wembley Stadium",
+      "address": "Stadium Way, Wembley, Brent",
+      "city": "London",
+      "capacity": 90000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/489.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 4,
+        "name": "Euro Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/4.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-06-14",
+          "end": "2024-07-14",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 5,
+        "name": "UEFA Nations League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/5.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-05",
+          "end": "2026-03-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 32,
+        "name": "World Cup - Qualification Europe",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/32.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2025-03-21",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2010,
+    2012,
+    2014,
+    2016,
+    2017,
+    2018,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1323267,
+          "date": "2025-06-07T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749312000
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1110,
+            "name": "Andorra",
+            "logo": "https://media.api-sports.io/football/teams/1110.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323291,
+          "date": "2025-09-06T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757174400
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1110,
+            "name": "Andorra",
+            "logo": "https://media.api-sports.io/football/teams/1110.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323310,
+          "date": "2025-09-09T18:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757443500
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14,
+            "name": "Serbia",
+            "logo": "https://media.api-sports.io/football/teams/14.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323342,
+          "date": "2025-10-14T18:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1760467500
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1092,
+            "name": "Latvia",
+            "logo": "https://media.api-sports.io/football/teams/1092.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323347,
+          "date": "2025-11-13T19:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1763063100
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": null
+          },
+          "away": {
+            "id": 14,
+            "name": "Serbia",
+            "logo": "https://media.api-sports.io/football/teams/14.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323361,
+          "date": "2025-11-16T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1763312400
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 778,
+            "name": "Albania",
+            "logo": "https://media.api-sports.io/football/teams/778.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1323242,
+          "date": "2025-03-21T19:45:00+00:00",
+          "venue": {
+            "id": 489,
+            "name": "Wembley Stadium",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742586300
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": true
+          },
+          "away": {
+            "id": 778,
+            "name": "Albania",
+            "logo": "https://media.api-sports.io/football/teams/778.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172931,
+          "date": "2024-11-17T17:00:00+00:00",
+          "venue": {
+            "id": 489,
+            "name": "Wembley Stadium",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1731862800
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": true
+          },
+          "away": {
+            "id": 776,
+            "name": "Rep. Of Ireland",
+            "logo": "https://media.api-sports.io/football/teams/776.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172924,
+          "date": "2024-11-14T19:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Olympiako Stadio Spyros Louis",
+            "city": "Athens"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1731613500
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1117,
+            "name": "Greece",
+            "logo": "https://media.api-sports.io/football/teams/1117.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172916,
+          "date": "2024-10-13T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Helsingin olympiastadion",
+            "city": "Helsingfors"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1728835200
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1099,
+            "name": "Finland",
+            "logo": "https://media.api-sports.io/football/teams/1099.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172907,
+          "date": "2024-10-10T18:45:00+00:00",
+          "venue": {
+            "id": 489,
+            "name": "Wembley Stadium",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1728585900
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1117,
+            "name": "Greece",
+            "logo": "https://media.api-sports.io/football/teams/1117.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172905,
+          "date": "2024-09-10T18:45:00+00:00",
+          "venue": {
+            "id": 489,
+            "name": "Wembley Stadium",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725993900
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1099,
+            "name": "Finland",
+            "logo": "https://media.api-sports.io/football/teams/1099.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172896,
+          "date": "2024-09-07T16:00:00+00:00",
+          "venue": {
+            "id": 1970,
+            "name": "Aviva Stadium",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725724800
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 776,
+            "name": "Rep. Of Ireland",
+            "logo": "https://media.api-sports.io/football/teams/776.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232551,
+          "date": "2024-07-14T19:00:00+00:00",
+          "venue": {
+            "id": 694,
+            "name": "Olympiastadion Berlin",
+            "city": "Berlin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1720983600
+        },
+        "league": {
+          "id": 4,
+          "name": "Euro Championship",
+          "logo": "https://media.api-sports.io/football/leagues/4.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1227539,
+          "date": "2024-07-10T19:00:00+00:00",
+          "venue": {
+            "id": 19381,
+            "name": "SIGNAL IDUNA PARK",
+            "city": "Dortmund"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1720638000
+        },
+        "league": {
+          "id": 4,
+          "name": "Euro Championship",
+          "logo": "https://media.api-sports.io/football/leagues/4.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1145531,
+          "date": "2024-06-25T19:00:00+00:00",
+          "venue": {
+            "id": 731,
+            "name": "RheinEnergieSTADION",
+            "city": "Köln"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719342000
+        },
+        "league": {
+          "id": 4,
+          "name": "Euro Championship",
+          "logo": "https://media.api-sports.io/football/leagues/4.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1091,
+            "name": "Slovenia",
+            "logo": "https://media.api-sports.io/football/teams/1091.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 4,
+      "name": "Euro Championship",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/4.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 10,
+      "name": "England",
+      "logo": "https://media.api-sports.io/football/teams/10.png"
+    },
+    "form": "WDDWDWL",
+    "fixtures": {
+      "played": {
+        "home": 3,
+        "away": 4,
+        "total": 7
+      },
+      "wins": {
+        "home": 1,
+        "away": 2,
+        "total": 3
+      },
+      "draws": {
+        "home": 2,
+        "away": 1,
+        "total": 3
+      },
+      "loses": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 3,
+          "away": 5,
+          "total": 8
+        },
+        "average": {
+          "home": "1.0",
+          "away": "1.3",
+          "total": "1.1"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "7.69%"
+          },
+          "16-30": {
+            "total": 2,
+            "percentage": "15.38%"
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "7.69%"
+          },
+          "76-90": {
+            "total": 2,
+            "percentage": "15.38%"
+          },
+          "91-105": {
+            "total": 2,
+            "percentage": "15.38%"
+          },
+          "106-120": {
+            "total": 5,
+            "percentage": "38.46%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 6,
+            "under": 1
+          },
+          "1.5": {
+            "over": 2,
+            "under": 5
+          },
+          "2.5": {
+            "over": 0,
+            "under": 7
+          },
+          "3.5": {
+            "over": 0,
+            "under": 7
+          },
+          "4.5": {
+            "over": 0,
+            "under": 7
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 2,
+          "away": 4,
+          "total": 6
+        },
+        "average": {
+          "home": "0.7",
+          "away": "1.0",
+          "total": "0.9"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "11.11%"
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "11.11%"
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "11.11%"
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "11.11%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "11.11%"
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "11.11%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": 3,
+            "percentage": "33.33%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 5,
+            "under": 2
+          },
+          "1.5": {
+            "over": 1,
+            "under": 6
+          },
+          "2.5": {
+            "over": 0,
+            "under": 7
+          },
+          "3.5": {
+            "over": 0,
+            "under": 7
+          },
+          "4.5": {
+            "over": 0,
+            "under": 7
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 1,
+        "draws": 2,
+        "loses": 0
+      },
+      "wins": {
+        "home": "2-1",
+        "away": "1-2"
+      },
+      "loses": {
+        "home": null,
+        "away": "2-1"
+      },
+      "goals": {
+        "for": {
+          "home": 2,
+          "away": 2
+        },
+        "against": {
+          "home": 1,
+          "away": 2
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 1,
+      "away": 1,
+      "total": 2
+    },
+    "failed_to_score": {
+      "home": 1,
+      "away": 0,
+      "total": 1
+    },
+    "penalty": {
+      "scored": {
+        "total": 6,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 6
+    },
+    "lineups": [
+      {
+        "formation": "4-2-3-1",
+        "played": 4
+      },
+      {
+        "formation": "3-4-2-1",
+        "played": 2
+      },
+      {
+        "formation": "4-3-3",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 2,
+          "percentage": "14.29%"
+        },
+        "16-30": {
+          "total": 3,
+          "percentage": "21.43%"
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "7.14%"
+        },
+        "61-75": {
+          "total": 4,
+          "percentage": "28.57%"
+        },
+        "76-90": {
+          "total": 2,
+          "percentage": "14.29%"
+        },
+        "91-105": {
+          "total": 1,
+          "percentage": "7.14%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        },
+        "": {
+          "total": 1,
+          "percentage": "7.14%"
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:40:39.441Z"
+}

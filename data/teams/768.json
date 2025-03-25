@@ -1,0 +1,1049 @@
+{
+  "team": {
+    "team": {
+      "id": 768,
+      "name": "Italy",
+      "code": "ITA",
+      "country": "Italy",
+      "founded": 1898,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/768.png"
+    },
+    "venue": {
+      "id": 910,
+      "name": "Stadio Olimpico",
+      "address": "Viale dei Gladiatori, 2 / Via del Foro Italico",
+      "city": "Roma",
+      "capacity": 68530,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/910.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 4,
+        "name": "Euro Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/4.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-06-14",
+          "end": "2024-07-14",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 5,
+        "name": "UEFA Nations League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/5.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-05",
+          "end": "2026-03-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2008,
+    2009,
+    2010,
+    2012,
+    2013,
+    2014,
+    2016,
+    2017,
+    2018,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1316552,
+          "date": "2025-03-23T19:45:00+00:00",
+          "venue": {
+            "id": 19381,
+            "name": "SIGNAL IDUNA PARK",
+            "city": "Dortmund"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1742759100
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25,
+            "name": "Germany",
+            "logo": "https://media.api-sports.io/football/teams/25.png",
+            "winner": null
+          },
+          "away": {
+            "id": 768,
+            "name": "Italy",
+            "logo": "https://media.api-sports.io/football/teams/768.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1316551,
+          "date": "2025-03-20T19:45:00+00:00",
+          "venue": {
+            "id": 907,
+            "name": "Stadio Giuseppe Meazza",
+            "city": "Milano"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742499900
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 768,
+            "name": "Italy",
+            "logo": "https://media.api-sports.io/football/teams/768.png",
+            "winner": false
+          },
+          "away": {
+            "id": 25,
+            "name": "Germany",
+            "logo": "https://media.api-sports.io/football/teams/25.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172980,
+          "date": "2024-11-17T19:45:00+00:00",
+          "venue": {
+            "id": 907,
+            "name": "Stadio Giuseppe Meazza",
+            "city": "Milano"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1731872700
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 768,
+            "name": "Italy",
+            "logo": "https://media.api-sports.io/football/teams/768.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172971,
+          "date": "2024-11-14T19:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Roi Baudouin",
+            "city": "Brussel"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1731613500
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1,
+            "name": "Belgium",
+            "logo": "https://media.api-sports.io/football/teams/1.png",
+            "winner": false
+          },
+          "away": {
+            "id": 768,
+            "name": "Italy",
+            "logo": "https://media.api-sports.io/football/teams/768.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172964,
+          "date": "2024-10-14T18:45:00+00:00",
+          "venue": {
+            "id": 20416,
+            "name": "Bluenergy Stadium",
+            "city": "Udine"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1728931500
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 768,
+            "name": "Italy",
+            "logo": "https://media.api-sports.io/football/teams/768.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1116,
+            "name": "Israel",
+            "logo": "https://media.api-sports.io/football/teams/1116.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172956,
+          "date": "2024-10-10T18:45:00+00:00",
+          "venue": {
+            "id": 910,
+            "name": "Stadio Olimpico",
+            "city": "Roma"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1728585900
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 768,
+            "name": "Italy",
+            "logo": "https://media.api-sports.io/football/teams/768.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1,
+            "name": "Belgium",
+            "logo": "https://media.api-sports.io/football/teams/1.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172952,
+          "date": "2024-09-09T18:45:00+00:00",
+          "venue": {
+            "id": 11902,
+            "name": "Bozsik Aréna",
+            "city": "Budapest"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725907500
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1116,
+            "name": "Israel",
+            "logo": "https://media.api-sports.io/football/teams/1116.png",
+            "winner": false
+          },
+          "away": {
+            "id": 768,
+            "name": "Italy",
+            "logo": "https://media.api-sports.io/football/teams/768.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172944,
+          "date": "2024-09-06T18:45:00+00:00",
+          "venue": {
+            "id": 671,
+            "name": "Parc des Princes",
+            "city": "Paris"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725648300
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png",
+            "winner": false
+          },
+          "away": {
+            "id": 768,
+            "name": "Italy",
+            "logo": "https://media.api-sports.io/football/teams/768.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1212958,
+          "date": "2024-06-29T16:00:00+00:00",
+          "venue": {
+            "id": 694,
+            "name": "Olympiastadion Berlin",
+            "city": "Berlin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719676800
+        },
+        "league": {
+          "id": 4,
+          "name": "Euro Championship",
+          "logo": "https://media.api-sports.io/football/leagues/4.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15,
+            "name": "Switzerland",
+            "logo": "https://media.api-sports.io/football/teams/15.png",
+            "winner": true
+          },
+          "away": {
+            "id": 768,
+            "name": "Italy",
+            "logo": "https://media.api-sports.io/football/teams/768.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1145529,
+          "date": "2024-06-24T19:00:00+00:00",
+          "venue": {
+            "id": 738,
+            "name": "Red Bull Arena",
+            "city": "Leipzig"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719255600
+        },
+        "league": {
+          "id": 4,
+          "name": "Euro Championship",
+          "logo": "https://media.api-sports.io/football/leagues/4.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3,
+            "name": "Croatia",
+            "logo": "https://media.api-sports.io/football/teams/3.png",
+            "winner": null
+          },
+          "away": {
+            "id": 768,
+            "name": "Italy",
+            "logo": "https://media.api-sports.io/football/teams/768.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 4,
+      "name": "Euro Championship",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/4.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 768,
+      "name": "Italy",
+      "logo": "https://media.api-sports.io/football/teams/768.png"
+    },
+    "form": "WLDL",
+    "fixtures": {
+      "played": {
+        "home": 1,
+        "away": 3,
+        "total": 4
+      },
+      "wins": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "draws": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      },
+      "loses": {
+        "home": 0,
+        "away": 2,
+        "total": 2
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 2,
+          "away": 1,
+          "total": 3
+        },
+        "average": {
+          "home": "2.0",
+          "away": "0.3",
+          "total": "0.8"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 2
+          },
+          "1.5": {
+            "over": 1,
+            "under": 3
+          },
+          "2.5": {
+            "over": 0,
+            "under": 4
+          },
+          "3.5": {
+            "over": 0,
+            "under": 4
+          },
+          "4.5": {
+            "over": 0,
+            "under": 4
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 1,
+          "away": 4,
+          "total": 5
+        },
+        "average": {
+          "home": "1.0",
+          "away": "1.3",
+          "total": "1.3"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "46-60": {
+            "total": 2,
+            "percentage": "50.00%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 4,
+            "under": 0
+          },
+          "1.5": {
+            "over": 1,
+            "under": 3
+          },
+          "2.5": {
+            "over": 0,
+            "under": 4
+          },
+          "3.5": {
+            "over": 0,
+            "under": 4
+          },
+          "4.5": {
+            "over": 0,
+            "under": 4
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 1,
+        "draws": 1,
+        "loses": 1
+      },
+      "wins": {
+        "home": "2-1",
+        "away": null
+      },
+      "loses": {
+        "home": null,
+        "away": "2-0"
+      },
+      "goals": {
+        "for": {
+          "home": 2,
+          "away": 1
+        },
+        "against": {
+          "home": 1,
+          "away": 2
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 2,
+      "total": 2
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [
+      {
+        "formation": "4-3-3",
+        "played": 3
+      },
+      {
+        "formation": "3-1-4-2",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 1,
+          "percentage": "11.11%"
+        },
+        "16-30": {
+          "total": 1,
+          "percentage": "11.11%"
+        },
+        "31-45": {
+          "total": 2,
+          "percentage": "22.22%"
+        },
+        "46-60": {
+          "total": 3,
+          "percentage": "33.33%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": 2,
+          "percentage": "22.22%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:40:41.870Z"
+}

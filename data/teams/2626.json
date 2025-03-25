@@ -1,0 +1,1045 @@
+{
+  "team": {
+    "team": {
+      "id": 2626,
+      "name": "Nantong Zhiyun",
+      "code": null,
+      "country": "China",
+      "founded": 2014,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2626.png"
+    },
+    "venue": {
+      "id": 1874,
+      "name": "Rugao Olympic Sports Center Stadium",
+      "address": "Huizheng East Road, Chengnan",
+      "city": "Rugao",
+      "capacity": 15000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1874.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 169,
+        "name": "Super League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/169.png"
+      },
+      "country": {
+        "name": "China",
+        "code": "CN",
+        "flag": "https://media.api-sports.io/flags/cn.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-03-01",
+          "end": "2024-11-02",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 171,
+        "name": "FA Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/171.png"
+      },
+      "country": {
+        "name": "China",
+        "code": "CN",
+        "flag": "https://media.api-sports.io/flags/cn.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-03-15",
+          "end": "2024-11-23",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1173276,
+          "date": "2024-11-02T07:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Baoan Sports Centre Stadium",
+            "city": "Shenzhen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1730532600
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2626,
+            "name": "Nantong Zhiyun",
+            "logo": "https://media.api-sports.io/football/teams/2626.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173267,
+          "date": "2024-10-27T07:30:00+00:00",
+          "venue": {
+            "id": 1874,
+            "name": "Rugao Olympic Sports Center Stadium",
+            "city": "Rugao"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1730014200
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2626,
+            "name": "Nantong Zhiyun",
+            "logo": "https://media.api-sports.io/football/teams/2626.png",
+            "winner": false
+          },
+          "away": {
+            "id": 830,
+            "name": "Beijing Guoan",
+            "logo": "https://media.api-sports.io/football/teams/830.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173259,
+          "date": "2024-10-20T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Cangzhou Stadium",
+            "city": "Cangzhou"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1729418400
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 849,
+            "name": "Shijiazhuang Y. J.",
+            "logo": "https://media.api-sports.io/football/teams/849.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2626,
+            "name": "Nantong Zhiyun",
+            "logo": "https://media.api-sports.io/football/teams/2626.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173247,
+          "date": "2024-09-28T11:35:00+00:00",
+          "venue": {
+            "id": 1874,
+            "name": "Rugao Olympic Sports Center Stadium",
+            "city": "Rugao"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 13
+          },
+          "timestamp": 1727523300
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2626,
+            "name": "Nantong Zhiyun",
+            "logo": "https://media.api-sports.io/football/teams/2626.png",
+            "winner": true
+          },
+          "away": {
+            "id": 848,
+            "name": "Hangzhou Greentown",
+            "logo": "https://media.api-sports.io/football/teams/848.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173243,
+          "date": "2024-09-22T11:00:00+00:00",
+          "venue": {
+            "id": 1874,
+            "name": "Rugao Olympic Sports Center Stadium",
+            "city": "Rugao"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 15
+          },
+          "timestamp": 1727002800
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2626,
+            "name": "Nantong Zhiyun",
+            "logo": "https://media.api-sports.io/football/teams/2626.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1431,
+            "name": "Qingdao Jonoon",
+            "logo": "https://media.api-sports.io/football/teams/1431.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173235,
+          "date": "2024-09-14T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Changchun Sports Center Stadium",
+            "city": "Changchun"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1726313700
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 834,
+            "name": "Changchun Yatai",
+            "logo": "https://media.api-sports.io/football/teams/834.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2626,
+            "name": "Nantong Zhiyun",
+            "logo": "https://media.api-sports.io/football/teams/2626.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173215,
+          "date": "2024-08-16T12:00:00+00:00",
+          "venue": {
+            "id": 1874,
+            "name": "Rugao Olympic Sports Center Stadium",
+            "city": "Rugao"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1723809600
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2626,
+            "name": "Nantong Zhiyun",
+            "logo": "https://media.api-sports.io/football/teams/2626.png",
+            "winner": false
+          },
+          "away": {
+            "id": 17265,
+            "name": "Qingdao Youth Island",
+            "logo": "https://media.api-sports.io/football/teams/17265.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173209,
+          "date": "2024-08-10T12:00:00+00:00",
+          "venue": {
+            "id": 19701,
+            "name": "Shanghai Stadium",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1723291200
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 833,
+            "name": "Shanghai Shenhua",
+            "logo": "https://media.api-sports.io/football/teams/833.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2626,
+            "name": "Nantong Zhiyun",
+            "logo": "https://media.api-sports.io/football/teams/2626.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173204,
+          "date": "2024-08-04T12:00:00+00:00",
+          "venue": {
+            "id": 1874,
+            "name": "Rugao Olympic Sports Center Stadium",
+            "city": "Rugao"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1722772800
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2626,
+            "name": "Nantong Zhiyun",
+            "logo": "https://media.api-sports.io/football/teams/2626.png",
+            "winner": null
+          },
+          "away": {
+            "id": 840,
+            "name": "Henan Jianye",
+            "logo": "https://media.api-sports.io/football/teams/840.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173189,
+          "date": "2024-07-26T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1721993700
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2626,
+            "name": "Nantong Zhiyun",
+            "logo": "https://media.api-sports.io/football/teams/2626.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 8,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 4,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 8,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 169,
+      "name": "Super League",
+      "country": "China",
+      "logo": "https://media.api-sports.io/football/leagues/169.png",
+      "flag": "https://media.api-sports.io/flags/cn.svg",
+      "season": 2024
+    },
+    "team": {
+      "id": 2626,
+      "name": "Nantong Zhiyun",
+      "logo": "https://media.api-sports.io/football/teams/2626.png"
+    },
+    "form": "DLLWLDLWLLDLDLLDWLLLLDLLLWWDLL",
+    "fixtures": {
+      "played": {
+        "home": 15,
+        "away": 15,
+        "total": 30
+      },
+      "wins": {
+        "home": 3,
+        "away": 2,
+        "total": 5
+      },
+      "draws": {
+        "home": 3,
+        "away": 4,
+        "total": 7
+      },
+      "loses": {
+        "home": 9,
+        "away": 9,
+        "total": 18
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 13,
+          "away": 19,
+          "total": 32
+        },
+        "average": {
+          "home": "0.9",
+          "away": "1.3",
+          "total": "1.1"
+        },
+        "minute": {
+          "0-15": {
+            "total": 2,
+            "percentage": "5.88%"
+          },
+          "16-30": {
+            "total": 7,
+            "percentage": "20.59%"
+          },
+          "31-45": {
+            "total": 7,
+            "percentage": "20.59%"
+          },
+          "46-60": {
+            "total": 3,
+            "percentage": "8.82%"
+          },
+          "61-75": {
+            "total": 6,
+            "percentage": "17.65%"
+          },
+          "76-90": {
+            "total": 5,
+            "percentage": "14.71%"
+          },
+          "91-105": {
+            "total": 4,
+            "percentage": "11.76%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 22,
+            "under": 8
+          },
+          "1.5": {
+            "over": 9,
+            "under": 21
+          },
+          "2.5": {
+            "over": 1,
+            "under": 29
+          },
+          "3.5": {
+            "over": 0,
+            "under": 30
+          },
+          "4.5": {
+            "over": 0,
+            "under": 30
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 27,
+          "away": 39,
+          "total": 66
+        },
+        "average": {
+          "home": "1.8",
+          "away": "2.6",
+          "total": "2.2"
+        },
+        "minute": {
+          "0-15": {
+            "total": 13,
+            "percentage": "20.31%"
+          },
+          "16-30": {
+            "total": 2,
+            "percentage": "3.13%"
+          },
+          "31-45": {
+            "total": 10,
+            "percentage": "15.63%"
+          },
+          "46-60": {
+            "total": 14,
+            "percentage": "21.88%"
+          },
+          "61-75": {
+            "total": 10,
+            "percentage": "15.63%"
+          },
+          "76-90": {
+            "total": 8,
+            "percentage": "12.50%"
+          },
+          "91-105": {
+            "total": 7,
+            "percentage": "10.94%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 27,
+            "under": 3
+          },
+          "1.5": {
+            "over": 17,
+            "under": 13
+          },
+          "2.5": {
+            "over": 11,
+            "under": 19
+          },
+          "3.5": {
+            "over": 4,
+            "under": 26
+          },
+          "4.5": {
+            "over": 4,
+            "under": 26
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 2,
+        "draws": 1,
+        "loses": 4
+      },
+      "wins": {
+        "home": "3-2",
+        "away": "0-2"
+      },
+      "loses": {
+        "home": "0-3",
+        "away": "8-1"
+      },
+      "goals": {
+        "for": {
+          "home": 3,
+          "away": 2
+        },
+        "against": {
+          "home": 3,
+          "away": 8
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 1,
+      "away": 2,
+      "total": 3
+    },
+    "failed_to_score": {
+      "home": 6,
+      "away": 2,
+      "total": 8
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [
+      {
+        "formation": "4-2-3-1",
+        "played": 7
+      },
+      {
+        "formation": "4-4-2",
+        "played": 5
+      },
+      {
+        "formation": "5-4-1",
+        "played": 5
+      },
+      {
+        "formation": "3-4-2-1",
+        "played": 5
+      },
+      {
+        "formation": "4-3-3",
+        "played": 3
+      },
+      {
+        "formation": "4-4-1-1",
+        "played": 1
+      },
+      {
+        "formation": "3-5-2",
+        "played": 1
+      },
+      {
+        "formation": "3-5-1-1",
+        "played": 1
+      },
+      {
+        "formation": "4-1-4-1",
+        "played": 1
+      },
+      {
+        "formation": "3-4-3",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 4,
+          "percentage": "5.48%"
+        },
+        "16-30": {
+          "total": 12,
+          "percentage": "16.44%"
+        },
+        "31-45": {
+          "total": 6,
+          "percentage": "8.22%"
+        },
+        "46-60": {
+          "total": 13,
+          "percentage": "17.81%"
+        },
+        "61-75": {
+          "total": 9,
+          "percentage": "12.33%"
+        },
+        "76-90": {
+          "total": 12,
+          "percentage": "16.44%"
+        },
+        "91-105": {
+          "total": 13,
+          "percentage": "17.81%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        },
+        "": {
+          "total": 4,
+          "percentage": "5.48%"
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": 2,
+          "percentage": "33.33%"
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "16.67%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": 1,
+          "percentage": "16.67%"
+        },
+        "91-105": {
+          "total": 1,
+          "percentage": "16.67%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        },
+        "": {
+          "total": 1,
+          "percentage": "16.67%"
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:43:43.503Z"
+}

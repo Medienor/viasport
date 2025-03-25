@@ -1,0 +1,1640 @@
+{
+  "team": {
+    "team": {
+      "id": 578,
+      "name": "F91 Dudelange",
+      "code": null,
+      "country": "Luxembourg",
+      "founded": 1991,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/578.png"
+    },
+    "venue": {
+      "id": 1033,
+      "name": "Stade Jos Nosbaum",
+      "address": "Rue de Stade Jos Nosbaum",
+      "city": "Dudelange",
+      "capacity": 2558,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1033.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 848,
+        "name": "UEFA Europa Conference League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/848.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-10",
+          "end": "2025-04-17",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 261,
+        "name": "National Division",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/261.png"
+      },
+      "country": {
+        "name": "Luxembourg",
+        "code": "LU",
+        "flag": "https://media.api-sports.io/flags/lu.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-08-04",
+          "end": "2025-05-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 721,
+        "name": "Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/721.png"
+      },
+      "country": {
+        "name": "Luxembourg",
+        "code": "LU",
+        "flag": "https://media.api-sports.io/flags/lu.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-04",
+          "end": "2025-04-23",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1231226,
+          "date": "2025-03-30T14:00:00+00:00",
+          "venue": {
+            "id": 1036,
+            "name": "Stade Émile Mayrisch",
+            "city": "Esch-sur-Alzette"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743343200
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 626,
+            "name": "Fola Esch",
+            "logo": "https://media.api-sports.io/football/teams/626.png",
+            "winner": null
+          },
+          "away": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231227,
+          "date": "2025-04-06T14:00:00+00:00",
+          "venue": {
+            "id": 1042,
+            "name": "Stade Jos Becker",
+            "city": "Hostert"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743948000
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2040,
+            "name": "US Hostert",
+            "logo": "https://media.api-sports.io/football/teams/2040.png",
+            "winner": null
+          },
+          "away": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231242,
+          "date": "2025-04-13T14:00:00+00:00",
+          "venue": {
+            "id": 1033,
+            "name": "Stade Jos Nosbaum",
+            "city": "Dudelange"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744552800
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2037,
+            "name": "US Mondorf-les-bains",
+            "logo": "https://media.api-sports.io/football/teams/2037.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231244,
+          "date": "2025-04-19T16:00:00+00:00",
+          "venue": {
+            "id": 1039,
+            "name": "Stade Jos Haupert",
+            "city": "Niedercorn"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745078400
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 658,
+            "name": "Progres Niederkorn",
+            "logo": "https://media.api-sports.io/football/teams/658.png",
+            "winner": null
+          },
+          "away": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1365150,
+          "date": "2025-04-23T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745431200
+        },
+        "league": {
+          "id": 721,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/721.png"
+        },
+        "teams": {
+          "home": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2036,
+            "name": "UNA Strassen",
+            "logo": "https://media.api-sports.io/football/teams/2036.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231257,
+          "date": "2025-04-27T14:00:00+00:00",
+          "venue": {
+            "id": 1033,
+            "name": "Stade Jos Nosbaum",
+            "city": "Dudelange"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745762400
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2032,
+            "name": "Union Titus Petange",
+            "logo": "https://media.api-sports.io/football/teams/2032.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231265,
+          "date": "2025-05-04T14:00:00+00:00",
+          "venue": {
+            "id": 7726,
+            "name": "Stade Alphonse Theis",
+            "city": "Hesperange"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746367200
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 11907,
+            "name": "Swift Hesperange",
+            "logo": "https://media.api-sports.io/football/teams/11907.png",
+            "winner": null
+          },
+          "away": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231272,
+          "date": "2025-05-11T14:00:00+00:00",
+          "venue": {
+            "id": 1033,
+            "name": "Stade Jos Nosbaum",
+            "city": "Dudelange"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746972000
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15886,
+            "name": "Mondercange",
+            "logo": "https://media.api-sports.io/football/teams/15886.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231278,
+          "date": "2025-05-18T14:00:00+00:00",
+          "venue": {
+            "id": 1037,
+            "name": "Stade de la Frontière",
+            "city": "Esch-sur-Alzette"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747576800
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2034,
+            "name": "AS Jeunesse Esch",
+            "logo": "https://media.api-sports.io/football/teams/2034.png",
+            "winner": null
+          },
+          "away": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231287,
+          "date": "2025-05-25T14:00:00+00:00",
+          "venue": {
+            "id": 1033,
+            "name": "Stade Jos Nosbaum",
+            "city": "Dudelange"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748181600
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10881,
+            "name": "Bettembourg",
+            "logo": "https://media.api-sports.io/football/teams/10881.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1231212,
+          "date": "2025-03-16T15:00:00+00:00",
+          "venue": {
+            "id": 1033,
+            "name": "Stade Jos Nosbaum",
+            "city": "Dudelange"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742137200
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2036,
+            "name": "UNA Strassen",
+            "logo": "https://media.api-sports.io/football/teams/2036.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1318887,
+          "date": "2025-03-12T19:00:00+00:00",
+          "venue": {
+            "id": 11192,
+            "name": "Stade Millewiss",
+            "city": "Bastendorf"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1741806000
+        },
+        "league": {
+          "id": 721,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/721.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15849,
+            "name": "Bastendorf",
+            "logo": "https://media.api-sports.io/football/teams/15849.png",
+            "winner": false
+          },
+          "away": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231209,
+          "date": "2025-03-08T17:00:00+00:00",
+          "venue": {
+            "id": 11049,
+            "name": "Stade Achille Hammerel",
+            "city": "Luxembourg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1741453200
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2030,
+            "name": "Racing FC Union Luxembourg",
+            "logo": "https://media.api-sports.io/football/teams/2030.png",
+            "winner": null
+          },
+          "away": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231197,
+          "date": "2025-03-02T15:00:00+00:00",
+          "venue": {
+            "id": 1033,
+            "name": "Stade Jos Nosbaum",
+            "city": "Dudelange"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1740927600
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": true
+          },
+          "away": {
+            "id": 11906,
+            "name": "Wiltz",
+            "logo": "https://media.api-sports.io/football/teams/11906.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231192,
+          "date": "2025-02-23T14:00:00+00:00",
+          "venue": {
+            "id": 2778,
+            "name": "Stade Joseph Philippart",
+            "city": "Rodange"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1740319200
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2039,
+            "name": "Rodange 91",
+            "logo": "https://media.api-sports.io/football/teams/2039.png",
+            "winner": false
+          },
+          "away": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231182,
+          "date": "2025-02-15T15:00:00+00:00",
+          "venue": {
+            "id": 1033,
+            "name": "Stade Jos Nosbaum",
+            "city": "Dudelange"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1739631600
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": false
+          },
+          "away": {
+            "id": 684,
+            "name": "FC Differdange 03",
+            "logo": "https://media.api-sports.io/football/teams/684.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231175,
+          "date": "2025-02-09T15:00:00+00:00",
+          "venue": {
+            "id": 1035,
+            "name": "Party-Rent-Arena",
+            "city": "Rosport"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1739113200
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2038,
+            "name": "Victoria Rosport",
+            "logo": "https://media.api-sports.io/football/teams/2038.png",
+            "winner": false
+          },
+          "away": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231166,
+          "date": "2024-12-07T16:00:00+00:00",
+          "venue": {
+            "id": 1033,
+            "name": "Stade Jos Nosbaum",
+            "city": "Dudelange"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1733587200
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2034,
+            "name": "AS Jeunesse Esch",
+            "logo": "https://media.api-sports.io/football/teams/2034.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231160,
+          "date": "2024-11-30T15:00:00+00:00",
+          "venue": {
+            "id": 11215,
+            "name": "Stade Communal",
+            "city": "Mondercange"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1732978800
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15886,
+            "name": "Mondercange",
+            "logo": "https://media.api-sports.io/football/teams/15886.png",
+            "winner": false
+          },
+          "away": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1231153,
+          "date": "2024-11-23T16:00:00+00:00",
+          "venue": {
+            "id": 1033,
+            "name": "Stade Jos Nosbaum",
+            "city": "Dudelange"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1732377600
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": true
+          },
+          "away": {
+            "id": 11907,
+            "name": "Swift Hesperange",
+            "logo": "https://media.api-sports.io/football/teams/11907.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 848,
+      "name": "UEFA Europa Conference League",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/848.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 578,
+      "name": "F91 Dudelange",
+      "logo": "https://media.api-sports.io/football/teams/578.png"
+    },
+    "form": "WWLL",
+    "fixtures": {
+      "played": {
+        "home": 2,
+        "away": 2,
+        "total": 4
+      },
+      "wins": {
+        "home": 1,
+        "away": 1,
+        "total": 2
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 1,
+        "away": 1,
+        "total": 2
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 4,
+          "away": 2,
+          "total": 6
+        },
+        "average": {
+          "home": "2.0",
+          "away": "1.0",
+          "total": "1.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "31-45": {
+            "total": 2,
+            "percentage": "33.33%"
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 4,
+            "under": 0
+          },
+          "1.5": {
+            "over": 2,
+            "under": 2
+          },
+          "2.5": {
+            "over": 0,
+            "under": 4
+          },
+          "3.5": {
+            "over": 0,
+            "under": 4
+          },
+          "4.5": {
+            "over": 0,
+            "under": 4
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 6,
+          "away": 6,
+          "total": 12
+        },
+        "average": {
+          "home": "3.0",
+          "away": "3.0",
+          "total": "3.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "8.33%"
+          },
+          "16-30": {
+            "total": 3,
+            "percentage": "25.00%"
+          },
+          "31-45": {
+            "total": 2,
+            "percentage": "16.67%"
+          },
+          "46-60": {
+            "total": 5,
+            "percentage": "41.67%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "8.33%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 2
+          },
+          "1.5": {
+            "over": 2,
+            "under": 2
+          },
+          "2.5": {
+            "over": 2,
+            "under": 2
+          },
+          "3.5": {
+            "over": 2,
+            "under": 2
+          },
+          "4.5": {
+            "over": 2,
+            "under": 2
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 2,
+        "draws": 0,
+        "loses": 0
+      },
+      "wins": {
+        "home": "2-0",
+        "away": "0-1"
+      },
+      "loses": {
+        "home": "2-6",
+        "away": "6-1"
+      },
+      "goals": {
+        "for": {
+          "home": 2,
+          "away": 1
+        },
+        "against": {
+          "home": 6,
+          "away": 6
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 1,
+      "away": 1,
+      "total": 2
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "penalty": {
+      "scored": {
+        "total": 3,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 3
+    },
+    "lineups": [
+      {
+        "formation": "4-2-3-1",
+        "played": 3
+      },
+      {
+        "formation": "4-3-1-2",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": 2,
+          "percentage": "13.33%"
+        },
+        "31-45": {
+          "total": 5,
+          "percentage": "33.33%"
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": 2,
+          "percentage": "13.33%"
+        },
+        "76-90": {
+          "total": 5,
+          "percentage": "33.33%"
+        },
+        "91-105": {
+          "total": 1,
+          "percentage": "6.67%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": 1,
+          "percentage": "100.00%"
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:39:57.686Z"
+}

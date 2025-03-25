@@ -1,0 +1,806 @@
+{
+  "team": {
+    "team": {
+      "id": 1522,
+      "name": "Zimbabwe",
+      "code": "ZIM",
+      "country": "Zimbabwe",
+      "founded": 1965,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/1522.png"
+    },
+    "venue": {
+      "id": 1689,
+      "name": "National Sports Stadium",
+      "address": "Golden Quarry Road",
+      "city": "Harare",
+      "capacity": 60000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1689.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 859,
+        "name": "COSAFA Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/859.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-06-26",
+          "end": "2024-07-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1163,
+        "name": "African Nations Championship - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1163.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-10-25",
+          "end": "2025-05-09",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2014,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1314016,
+          "date": "2024-11-02T16:00:00+00:00",
+          "venue": {
+            "id": 12715,
+            "name": "Mbombela Stadium",
+            "city": "Nelspruit"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1730563200
+        },
+        "league": {
+          "id": 1163,
+          "name": "African Nations Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1163.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2995,
+            "name": "Eswatini",
+            "logo": "https://media.api-sports.io/football/teams/2995.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1522,
+            "name": "Zimbabwe",
+            "logo": "https://media.api-sports.io/football/teams/1522.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1314015,
+          "date": "2024-10-27T13:00:00+00:00",
+          "venue": {
+            "id": 4183,
+            "name": "Francistown Stadium",
+            "city": "Francistown"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1730034000
+        },
+        "league": {
+          "id": 1163,
+          "name": "African Nations Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1163.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1522,
+            "name": "Zimbabwe",
+            "logo": "https://media.api-sports.io/football/teams/1522.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2995,
+            "name": "Eswatini",
+            "logo": "https://media.api-sports.io/football/teams/2995.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1209654,
+          "date": "2024-07-02T10:00:00+00:00",
+          "venue": {
+            "id": 19172,
+            "name": "Wolfson Stadium",
+            "city": "Ibhayi, Kwazakhele"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719914400
+        },
+        "league": {
+          "id": 859,
+          "name": "COSAFA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/859.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1511,
+            "name": "Kenya",
+            "logo": "https://media.api-sports.io/football/teams/1511.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1522,
+            "name": "Zimbabwe",
+            "logo": "https://media.api-sports.io/football/teams/1522.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1209651,
+          "date": "2024-06-30T13:00:00+00:00",
+          "venue": {
+            "id": 19172,
+            "name": "Wolfson Stadium",
+            "city": "Ibhayi, Kwazakhele"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719752400
+        },
+        "league": {
+          "id": 859,
+          "name": "COSAFA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/859.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1507,
+            "name": "Zambia",
+            "logo": "https://media.api-sports.io/football/teams/1507.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1522,
+            "name": "Zimbabwe",
+            "logo": "https://media.api-sports.io/football/teams/1522.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1209644,
+          "date": "2024-06-27T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Nelson Mandela Bay Stadium",
+            "city": "Gqeberha"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719493200
+        },
+        "league": {
+          "id": 859,
+          "name": "COSAFA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/859.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1524,
+            "name": "Comoros",
+            "logo": "https://media.api-sports.io/football/teams/1524.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1522,
+            "name": "Zimbabwe",
+            "logo": "https://media.api-sports.io/football/teams/1522.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1189992,
+          "date": "2024-03-26T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Bingu National Stadium",
+            "city": "Lilongwe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711411200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1511,
+            "name": "Kenya",
+            "logo": "https://media.api-sports.io/football/teams/1511.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1522,
+            "name": "Zimbabwe",
+            "logo": "https://media.api-sports.io/football/teams/1522.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 1522,
+      "name": "Zimbabwe",
+      "logo": "https://media.api-sports.io/football/teams/1522.png"
+    },
+    "form": "DL",
+    "fixtures": {
+      "played": {
+        "home": 0,
+        "away": 2,
+        "total": 2
+      },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      },
+      "loses": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 0,
+          "away": 3,
+          "total": 3
+        },
+        "average": {
+          "home": "0.0",
+          "away": "1.5",
+          "total": "1.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "12.50%"
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "12.50%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": 6,
+            "percentage": "75.00%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 0
+          },
+          "1.5": {
+            "over": 1,
+            "under": 1
+          },
+          "2.5": {
+            "over": 0,
+            "under": 2
+          },
+          "3.5": {
+            "over": 0,
+            "under": 2
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 0,
+          "away": 5,
+          "total": 5
+        },
+        "average": {
+          "home": "0.0",
+          "away": "2.5",
+          "total": "2.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": 2,
+            "percentage": "18.18%"
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "9.09%"
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "9.09%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "9.09%"
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "9.09%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": 5,
+            "percentage": "45.45%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 0
+          },
+          "1.5": {
+            "over": 2,
+            "under": 0
+          },
+          "2.5": {
+            "over": 1,
+            "under": 1
+          },
+          "3.5": {
+            "over": 0,
+            "under": 2
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 1,
+        "loses": 0
+      },
+      "wins": {
+        "home": null,
+        "away": null
+      },
+      "loses": {
+        "home": null,
+        "away": "3-1"
+      },
+      "goals": {
+        "for": {
+          "home": 0,
+          "away": 2
+        },
+        "against": {
+          "home": 0,
+          "away": 3
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "penalty": {
+      "scored": {
+        "total": 6,
+        "percentage": "75.00%"
+      },
+      "missed": {
+        "total": 2,
+        "percentage": "25.00%"
+      },
+      "total": 8
+    },
+    "lineups": [
+      {
+        "formation": "3-5-2",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:41:25.620Z"
+}

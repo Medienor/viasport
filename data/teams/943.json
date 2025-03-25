@@ -1,0 +1,1513 @@
+{
+  "team": {
+    "team": {
+      "id": 943,
+      "name": "Sydney",
+      "code": "SYD",
+      "country": "Australia",
+      "founded": 2004,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/943.png"
+    },
+    "venue": {
+      "id": 20808,
+      "name": "Allianz Stadium",
+      "address": "Driver Avenue, Paddington",
+      "city": "Sydney",
+      "capacity": 45500,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/20808.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 874,
+        "name": "Australia Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/874.png"
+      },
+      "country": {
+        "name": "Australia",
+        "code": "AU",
+        "flag": "https://media.api-sports.io/flags/au.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-23",
+          "end": "2024-10-05",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 18,
+        "name": "AFC Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/18.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-08-14",
+          "end": "2025-04-16",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 188,
+        "name": "A-League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/188.png"
+      },
+      "country": {
+        "name": "Australia",
+        "code": "AU",
+        "flag": "https://media.api-sports.io/flags/au.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-10-18",
+          "end": "2025-05-04",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": true,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1280804,
+          "date": "2025-03-29T06:00:00+00:00",
+          "venue": {
+            "id": 20808,
+            "name": "Allianz Stadium",
+            "city": "Sydney"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743228000
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": null
+          },
+          "away": {
+            "id": 945,
+            "name": "Melbourne City",
+            "logo": "https://media.api-sports.io/football/teams/945.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1280812,
+          "date": "2025-04-05T08:35:00+00:00",
+          "venue": {
+            "id": 123,
+            "name": "Coopers Stadium",
+            "city": "Adelaide"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743842100
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 948,
+            "name": "Adelaide United",
+            "logo": "https://media.api-sports.io/football/teams/948.png",
+            "winner": null
+          },
+          "away": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361477,
+          "date": "2025-04-09T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jalan Besar Stadium",
+            "city": "Singapore"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744200000
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4204,
+            "name": "Home United",
+            "logo": "https://media.api-sports.io/football/teams/4204.png",
+            "winner": null
+          },
+          "away": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1280816,
+          "date": "2025-04-12T07:00:00+00:00",
+          "venue": {
+            "id": 20808,
+            "name": "Allianz Stadium",
+            "city": "Sydney"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744441200
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": null
+          },
+          "away": {
+            "id": 24608,
+            "name": "Auckland",
+            "logo": "https://media.api-sports.io/football/teams/24608.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361478,
+          "date": "2025-04-16T10:00:00+00:00",
+          "venue": {
+            "id": 20808,
+            "name": "Allianz Stadium",
+            "city": "Sydney"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744797600
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4204,
+            "name": "Home United",
+            "logo": "https://media.api-sports.io/football/teams/4204.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1280824,
+          "date": "2025-04-20T05:00:00+00:00",
+          "venue": {
+            "id": 20808,
+            "name": "Allianz Stadium",
+            "city": "Sydney"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745125200
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": null
+          },
+          "away": {
+            "id": 946,
+            "name": "Newcastle Jets",
+            "logo": "https://media.api-sports.io/football/teams/946.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1280831,
+          "date": "2025-04-27T07:00:00+00:00",
+          "venue": {
+            "id": 21100,
+            "name": "Ironbark Fields",
+            "city": "Melbourne"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745737200
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7573,
+            "name": "Western United",
+            "logo": "https://media.api-sports.io/football/teams/7573.png",
+            "winner": null
+          },
+          "away": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1280834,
+          "date": "2025-05-03T07:00:00+00:00",
+          "venue": {
+            "id": 20807,
+            "name": "AAMI Park",
+            "city": "Melbourne"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746255600
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 945,
+            "name": "Melbourne City",
+            "logo": "https://media.api-sports.io/football/teams/945.png",
+            "winner": null
+          },
+          "away": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1280797,
+          "date": "2025-03-16T08:00:00+00:00",
+          "venue": {
+            "id": 20808,
+            "name": "Allianz Stadium",
+            "city": "Sydney"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742112000
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": null
+          },
+          "away": {
+            "id": 942,
+            "name": "Wellington Phoenix",
+            "logo": "https://media.api-sports.io/football/teams/942.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353185,
+          "date": "2025-03-13T08:00:00+00:00",
+          "venue": {
+            "id": 20808,
+            "name": "Allianz Stadium",
+            "city": "Sydney"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1741852800
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353184,
+          "date": "2025-03-06T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Yongin Mireu Stadium",
+            "city": "Yongin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1741255200
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": false
+          },
+          "away": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1280789,
+          "date": "2025-03-01T08:35:00+00:00",
+          "venue": {
+            "id": 20811,
+            "name": "Campbelltown Sports Stadium",
+            "city": "Sydney"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1740818100
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15550,
+            "name": "Macarthur",
+            "logo": "https://media.api-sports.io/football/teams/15550.png",
+            "winner": false
+          },
+          "away": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1280783,
+          "date": "2025-02-22T10:45:00+00:00",
+          "venue": {
+            "id": 128,
+            "name": "HBF Park",
+            "city": "Perth"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1740221100
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 940,
+            "name": "Perth Glory",
+            "logo": "https://media.api-sports.io/football/teams/940.png",
+            "winner": null
+          },
+          "away": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1322658,
+          "date": "2025-02-12T08:00:00+00:00",
+          "venue": {
+            "id": 20808,
+            "name": "Allianz Stadium",
+            "city": "Sydney"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 14
+          },
+          "timestamp": 1739347200
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2770,
+            "name": "Bangkok United",
+            "logo": "https://media.api-sports.io/football/teams/2770.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1280772,
+          "date": "2025-02-08T08:35:00+00:00",
+          "venue": {
+            "id": 20808,
+            "name": "Allianz Stadium",
+            "city": "Sydney"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1739003700
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": null
+          },
+          "away": {
+            "id": 939,
+            "name": "Western Sydney Wanderers",
+            "logo": "https://media.api-sports.io/football/teams/939.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1280765,
+          "date": "2025-02-01T06:00:00+00:00",
+          "venue": {
+            "id": 20808,
+            "name": "Allianz Stadium",
+            "city": "Sydney"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1738389600
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": true
+          },
+          "away": {
+            "id": 948,
+            "name": "Adelaide United",
+            "logo": "https://media.api-sports.io/football/teams/948.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1280756,
+          "date": "2025-01-24T08:35:00+00:00",
+          "venue": {
+            "id": 20807,
+            "name": "AAMI Park",
+            "city": "Melbourne"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1737707700
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 944,
+            "name": "Melbourne Victory",
+            "logo": "https://media.api-sports.io/football/teams/944.png",
+            "winner": true
+          },
+          "away": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1280752,
+          "date": "2025-01-18T06:00:00+00:00",
+          "venue": {
+            "id": 20808,
+            "name": "Allianz Stadium",
+            "city": "Sydney"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1737180000
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": false
+          },
+          "away": {
+            "id": 947,
+            "name": "Brisbane Roar",
+            "logo": "https://media.api-sports.io/football/teams/947.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 874,
+      "name": "Australia Cup",
+      "country": "Australia",
+      "logo": "https://media.api-sports.io/football/leagues/874.png",
+      "flag": "https://media.api-sports.io/flags/au.svg",
+      "season": 2024
+    },
+    "team": {
+      "id": 943,
+      "name": "Sydney",
+      "logo": "https://media.api-sports.io/football/teams/943.png"
+    },
+    "form": "L",
+    "fixtures": {
+      "played": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 0,
+          "away": 1,
+          "total": 1
+        },
+        "average": {
+          "home": "0.0",
+          "away": "1.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "100.00%"
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 0
+          },
+          "1.5": {
+            "over": 0,
+            "under": 1
+          },
+          "2.5": {
+            "over": 0,
+            "under": 1
+          },
+          "3.5": {
+            "over": 0,
+            "under": 1
+          },
+          "4.5": {
+            "over": 0,
+            "under": 1
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 0,
+          "away": 3,
+          "total": 3
+        },
+        "average": {
+          "home": "0.0",
+          "away": "3.0",
+          "total": "3.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 0
+          },
+          "1.5": {
+            "over": 1,
+            "under": 0
+          },
+          "2.5": {
+            "over": 1,
+            "under": 0
+          },
+          "3.5": {
+            "over": 0,
+            "under": 1
+          },
+          "4.5": {
+            "over": 0,
+            "under": 1
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 0,
+        "loses": 1
+      },
+      "wins": {
+        "home": null,
+        "away": null
+      },
+      "loses": {
+        "home": null,
+        "away": "3-1"
+      },
+      "goals": {
+        "for": {
+          "home": 0,
+          "away": 1
+        },
+        "against": {
+          "home": 0,
+          "away": 3
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "penalty": {
+      "scored": {
+        "total": 1,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 1
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": 1,
+          "percentage": "50.00%"
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "50.00%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:43:07.163Z"
+}

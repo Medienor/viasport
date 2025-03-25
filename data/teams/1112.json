@@ -1,0 +1,1398 @@
+{
+  "team": {
+    "team": {
+      "id": 1112,
+      "name": "Malta",
+      "code": "MAL",
+      "country": "Malta",
+      "founded": 1900,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/1112.png"
+    },
+    "venue": {
+      "id": 2614,
+      "name": "Ta'Qali National Stadium",
+      "address": "Villagg Tas-Snajja&apos;",
+      "city": "Ta&apos;Qali",
+      "capacity": 17797,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/2614.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 5,
+        "name": "UEFA Nations League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/5.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-05",
+          "end": "2026-03-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 32,
+        "name": "World Cup - Qualification Europe",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/32.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2025-03-21",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2017,
+    2018,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1323266,
+          "date": "2025-06-07T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749312000
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1097,
+            "name": "Lithuania",
+            "logo": "https://media.api-sports.io/football/teams/1097.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323282,
+          "date": "2025-09-04T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757001600
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1097,
+            "name": "Lithuania",
+            "logo": "https://media.api-sports.io/football/teams/1097.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323348,
+          "date": "2025-11-14T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1763139600
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1099,
+            "name": "Finland",
+            "logo": "https://media.api-sports.io/football/teams/1099.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323365,
+          "date": "2025-11-17T19:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1763408700
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": null
+          },
+          "away": {
+            "id": 24,
+            "name": "Poland",
+            "logo": "https://media.api-sports.io/football/teams/24.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1316571,
+          "date": "2026-03-26T17:00:00+00:00",
+          "venue": {
+            "id": 2614,
+            "name": "Ta'Qali National Stadium",
+            "city": "Ta'Qali"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1774544400
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1102,
+            "name": "Luxembourg",
+            "logo": "https://media.api-sports.io/football/teams/1102.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1316572,
+          "date": "2026-03-31T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Luxembourg",
+            "city": "Luxembourg"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1774972800
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1102,
+            "name": "Luxembourg",
+            "logo": "https://media.api-sports.io/football/teams/1102.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1323237,
+          "date": "2025-03-21T19:45:00+00:00",
+          "venue": {
+            "id": 2614,
+            "name": "Ta'Qali National Stadium",
+            "city": "Ta'Qali"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742586300
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1099,
+            "name": "Finland",
+            "logo": "https://media.api-sports.io/football/teams/1099.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173036,
+          "date": "2024-11-19T19:45:00+00:00",
+          "venue": {
+            "id": 2614,
+            "name": "Ta'Qali National Stadium",
+            "city": "Ta'Qali"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1732045500
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1110,
+            "name": "Andorra",
+            "logo": "https://media.api-sports.io/football/teams/1110.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1200438,
+          "date": "2024-11-14T18:00:00+00:00",
+          "venue": {
+            "id": 2614,
+            "name": "Ta'Qali National Stadium",
+            "city": "Ta'Qali"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1731607200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1107,
+            "name": "Liechtenstein",
+            "logo": "https://media.api-sports.io/football/teams/1107.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173033,
+          "date": "2024-10-13T16:00:00+00:00",
+          "venue": {
+            "id": 2614,
+            "name": "Ta'Qali National Stadium",
+            "city": "Ta'Qali"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1728835200
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1114,
+            "name": "Moldova",
+            "logo": "https://media.api-sports.io/football/teams/1114.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173031,
+          "date": "2024-09-10T18:45:00+00:00",
+          "venue": {
+            "id": 2618,
+            "name": "Estadi Nacional",
+            "city": "Andorra la Vella"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725993900
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1110,
+            "name": "Andorra",
+            "logo": "https://media.api-sports.io/football/teams/1110.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1173030,
+          "date": "2024-09-07T16:00:00+00:00",
+          "venue": {
+            "id": 2615,
+            "name": "Stadionul Zimbru",
+            "city": "Chişinău"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725724800
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1114,
+            "name": "Moldova",
+            "logo": "https://media.api-sports.io/football/teams/1114.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1200436,
+          "date": "2024-06-11T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "MGG Arena",
+            "city": "Grödig"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1718121600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1117,
+            "name": "Greece",
+            "logo": "https://media.api-sports.io/football/teams/1117.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1192065,
+          "date": "2024-06-07T15:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "MGG Arena",
+            "city": "Grödig"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717774200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 770,
+            "name": "Czech Republic",
+            "logo": "https://media.api-sports.io/football/teams/770.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 7,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 7,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1165958,
+          "date": "2024-03-26T18:00:00+00:00",
+          "venue": {
+            "id": 2614,
+            "name": "Ta'Qali National Stadium",
+            "city": "Ta'Qali"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711476000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1100,
+            "name": "Belarus",
+            "logo": "https://media.api-sports.io/football/teams/1100.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1165953,
+          "date": "2024-03-21T18:00:00+00:00",
+          "venue": {
+            "id": 2614,
+            "name": "Ta'Qali National Stadium",
+            "city": "Ta'Qali"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711044000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1112,
+            "name": "Malta",
+            "logo": "https://media.api-sports.io/football/teams/1112.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1091,
+            "name": "Slovenia",
+            "logo": "https://media.api-sports.io/football/teams/1091.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 1112,
+      "name": "Malta",
+      "logo": "https://media.api-sports.io/football/teams/1112.png"
+    },
+    "form": "DDLLW",
+    "fixtures": {
+      "played": {
+        "home": 4,
+        "away": 1,
+        "total": 5
+      },
+      "wins": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "draws": {
+        "home": 2,
+        "away": 0,
+        "total": 2
+      },
+      "loses": {
+        "home": 1,
+        "away": 1,
+        "total": 2
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 4,
+          "away": 1,
+          "total": 5
+        },
+        "average": {
+          "home": "1.0",
+          "away": "1.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 4,
+            "percentage": "100.00%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 3,
+            "under": 2
+          },
+          "1.5": {
+            "over": 2,
+            "under": 3
+          },
+          "2.5": {
+            "over": 0,
+            "under": 5
+          },
+          "3.5": {
+            "over": 0,
+            "under": 5
+          },
+          "4.5": {
+            "over": 0,
+            "under": 5
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 4,
+          "away": 7,
+          "total": 11
+        },
+        "average": {
+          "home": "1.0",
+          "away": "7.0",
+          "total": "2.2"
+        },
+        "minute": {
+          "0-15": {
+            "total": 3,
+            "percentage": "25.00%"
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "8.33%"
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "8.33%"
+          },
+          "46-60": {
+            "total": 3,
+            "percentage": "25.00%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "8.33%"
+          },
+          "76-90": {
+            "total": 3,
+            "percentage": "25.00%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 3,
+            "under": 2
+          },
+          "1.5": {
+            "over": 3,
+            "under": 2
+          },
+          "2.5": {
+            "over": 1,
+            "under": 4
+          },
+          "3.5": {
+            "over": 1,
+            "under": 4
+          },
+          "4.5": {
+            "over": 1,
+            "under": 4
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 2,
+        "loses": 2
+      },
+      "wins": {
+        "home": "2-0",
+        "away": null
+      },
+      "loses": {
+        "home": "0-2",
+        "away": "7-1"
+      },
+      "goals": {
+        "for": {
+          "home": 2,
+          "away": 1
+        },
+        "against": {
+          "home": 2,
+          "away": 7
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 2,
+      "away": 0,
+      "total": 2
+    },
+    "failed_to_score": {
+      "home": 2,
+      "away": 0,
+      "total": 2
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [
+      {
+        "formation": "3-5-2",
+        "played": 4
+      },
+      {
+        "formation": "3-1-4-2",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": 1,
+          "percentage": "9.09%"
+        },
+        "31-45": {
+          "total": 2,
+          "percentage": "18.18%"
+        },
+        "46-60": {
+          "total": 2,
+          "percentage": "18.18%"
+        },
+        "61-75": {
+          "total": 4,
+          "percentage": "36.36%"
+        },
+        "76-90": {
+          "total": 2,
+          "percentage": "18.18%"
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": 1,
+          "percentage": "100.00%"
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:40:58.825Z"
+}

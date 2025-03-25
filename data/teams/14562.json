@@ -1,0 +1,1564 @@
+{
+  "team": {
+    "team": {
+      "id": 14562,
+      "name": "Motor Lublin",
+      "code": "MOT",
+      "country": "Poland",
+      "founded": 1950,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/14562.png"
+    },
+    "venue": {
+      "id": 11992,
+      "name": "Arena Lublin",
+      "address": "ul. Krochmalna",
+      "city": "Lublin",
+      "capacity": 15500,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/11992.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-04",
+          "end": "2024-12-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 106,
+        "name": "Ekstraklasa",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/106.png"
+      },
+      "country": {
+        "name": "Poland",
+        "code": "PL",
+        "flag": "https://media.api-sports.io/flags/pl.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-20",
+          "end": "2025-05-24",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 108,
+        "name": "Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/108.png"
+      },
+      "country": {
+        "name": "Poland",
+        "code": "PL",
+        "flag": "https://media.api-sports.io/flags/pl.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-08-06",
+          "end": "2025-04-02",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1203181,
+          "date": "2025-03-30T12:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Motor Lublin Arena",
+            "city": "Lublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743338700
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3493,
+            "name": "Stal Mielec",
+            "logo": "https://media.api-sports.io/football/teams/3493.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203192,
+          "date": "2025-04-05T15:30:00+00:00",
+          "venue": {
+            "id": 18628,
+            "name": "Tarczyński Arena",
+            "city": "Wrocław"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743867000
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 337,
+            "name": "Slask Wroclaw",
+            "logo": "https://media.api-sports.io/football/teams/337.png",
+            "winner": null
+          },
+          "away": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203199,
+          "date": "2025-04-13T12:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Motor Lublin Arena",
+            "city": "Lublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744548300
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": null
+          },
+          "away": {
+            "id": 347,
+            "name": "Lech Poznan",
+            "logo": "https://media.api-sports.io/football/teams/347.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203209,
+          "date": "2025-04-19T15:30:00+00:00",
+          "venue": {
+            "id": 5080,
+            "name": "Stadion Miejski Widzewa Łódź",
+            "city": "Łódź"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745076600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6962,
+            "name": "Widzew Łódź",
+            "logo": "https://media.api-sports.io/football/teams/6962.png",
+            "winner": null
+          },
+          "away": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203216,
+          "date": "2025-04-26T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745625600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": null
+          },
+          "away": {
+            "id": 350,
+            "name": "Cracovia Krakow",
+            "logo": "https://media.api-sports.io/football/teams/350.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203225,
+          "date": "2025-05-03T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746230400
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          },
+          "away": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203234,
+          "date": "2025-05-10T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746835200
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": null
+          },
+          "away": {
+            "id": 349,
+            "name": "Piast Gliwice",
+            "logo": "https://media.api-sports.io/football/teams/349.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203241,
+          "date": "2025-05-17T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747440000
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": null
+          },
+          "away": {
+            "id": 345,
+            "name": "Zaglebie Lubin",
+            "logo": "https://media.api-sports.io/football/teams/345.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203254,
+          "date": "2025-05-24T15:30:00+00:00",
+          "venue": {
+            "id": 20753,
+            "name": "Stadion Radomiaka",
+            "city": "Radom"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748100600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4248,
+            "name": "Radomiak Radom",
+            "logo": "https://media.api-sports.io/football/teams/4248.png",
+            "winner": null
+          },
+          "away": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1203166,
+          "date": "2025-03-15T16:30:00+00:00",
+          "venue": {
+            "id": 18625,
+            "name": "Stadion im. Ernesta Pohla",
+            "city": "Zabrze"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1742056200
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 340,
+            "name": "Gornik Zabrze",
+            "logo": "https://media.api-sports.io/football/teams/340.png",
+            "winner": true
+          },
+          "away": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203162,
+          "date": "2025-03-10T18:00:00+00:00",
+          "venue": {
+            "id": 11992,
+            "name": "Motor Lublin Arena",
+            "city": "Lublin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1741629600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": null
+          },
+          "away": {
+            "id": 339,
+            "name": "Legia Warszawa",
+            "logo": "https://media.api-sports.io/football/teams/339.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203153,
+          "date": "2025-03-02T11:15:00+00:00",
+          "venue": {
+            "id": 1247,
+            "name": "Stadion Miejski w Niepołomicach",
+            "city": "Niepołomice"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1740914100
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": false
+          },
+          "away": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203143,
+          "date": "2025-02-24T18:00:00+00:00",
+          "venue": {
+            "id": 11992,
+            "name": "Motor Lublin Arena",
+            "city": "Lublin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1740420000
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3484,
+            "name": "GKS Katowice",
+            "logo": "https://media.api-sports.io/football/teams/3484.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203133,
+          "date": "2025-02-16T16:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Chorten Arena",
+            "city": "Białystok"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1739723400
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 336,
+            "name": "Jagiellonia",
+            "logo": "https://media.api-sports.io/football/teams/336.png",
+            "winner": true
+          },
+          "away": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203121,
+          "date": "2025-02-09T11:15:00+00:00",
+          "venue": {
+            "id": 21189,
+            "name": "Stadion Miejski",
+            "city": "Kielce"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1739099700
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 346,
+            "name": "Korona Kielce",
+            "logo": "https://media.api-sports.io/football/teams/346.png",
+            "winner": true
+          },
+          "away": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203118,
+          "date": "2025-02-01T13:45:00+00:00",
+          "venue": {
+            "id": 11992,
+            "name": "Arena Lublin",
+            "city": "Lublin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1738417500
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": null
+          },
+          "away": {
+            "id": 343,
+            "name": "Lechia Gdansk",
+            "logo": "https://media.api-sports.io/football/teams/343.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203110,
+          "date": "2024-12-07T19:15:00+00:00",
+          "venue": {
+            "id": 18633,
+            "name": "Miejski Stadion Piłkarski Raków",
+            "city": "Częstochowa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1733598900
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3491,
+            "name": "Raków Częstochowa",
+            "logo": "https://media.api-sports.io/football/teams/3491.png",
+            "winner": null
+          },
+          "away": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203097,
+          "date": "2024-12-02T18:00:00+00:00",
+          "venue": {
+            "id": 11992,
+            "name": "Arena Lublin",
+            "city": "Lublin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1733162400
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4248,
+            "name": "Radomiak Radom",
+            "logo": "https://media.api-sports.io/football/teams/4248.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203087,
+          "date": "2024-11-22T17:00:00+00:00",
+          "venue": {
+            "id": 1260,
+            "name": "Stadion Zagłębia Lubin",
+            "city": "Lubin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1732294800
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 345,
+            "name": "Zaglebie Lubin",
+            "logo": "https://media.api-sports.io/football/teams/345.png",
+            "winner": false
+          },
+          "away": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 667,
+      "name": "Friendlies Clubs",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 14562,
+      "name": "Motor Lublin",
+      "logo": "https://media.api-sports.io/football/teams/14562.png"
+    },
+    "form": "DWWDWLWWDWWLDWW",
+    "fixtures": {
+      "played": {
+        "home": 10,
+        "away": 5,
+        "total": 15
+      },
+      "wins": {
+        "home": 8,
+        "away": 1,
+        "total": 9
+      },
+      "draws": {
+        "home": 1,
+        "away": 3,
+        "total": 4
+      },
+      "loses": {
+        "home": 1,
+        "away": 1,
+        "total": 2
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 18,
+          "away": 5,
+          "total": 23
+        },
+        "average": {
+          "home": "1.8",
+          "away": "1.0",
+          "total": "1.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": 6,
+            "percentage": "26.09%"
+          },
+          "31-45": {
+            "total": 2,
+            "percentage": "8.70%"
+          },
+          "46-60": {
+            "total": 3,
+            "percentage": "13.04%"
+          },
+          "61-75": {
+            "total": 4,
+            "percentage": "17.39%"
+          },
+          "76-90": {
+            "total": 6,
+            "percentage": "26.09%"
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "4.35%"
+          },
+          "106-120": {
+            "total": 1,
+            "percentage": "4.35%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 12,
+            "under": 3
+          },
+          "1.5": {
+            "over": 7,
+            "under": 8
+          },
+          "2.5": {
+            "over": 2,
+            "under": 13
+          },
+          "3.5": {
+            "over": 1,
+            "under": 14
+          },
+          "4.5": {
+            "over": 1,
+            "under": 14
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 7,
+          "away": 5,
+          "total": 12
+        },
+        "average": {
+          "home": "0.7",
+          "away": "1.0",
+          "total": "0.8"
+        },
+        "minute": {
+          "0-15": {
+            "total": 2,
+            "percentage": "22.22%"
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "11.11%"
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "11.11%"
+          },
+          "46-60": {
+            "total": 2,
+            "percentage": "22.22%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "11.11%"
+          },
+          "76-90": {
+            "total": 2,
+            "percentage": "22.22%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 8,
+            "under": 7
+          },
+          "1.5": {
+            "over": 3,
+            "under": 12
+          },
+          "2.5": {
+            "over": 1,
+            "under": 14
+          },
+          "3.5": {
+            "over": 0,
+            "under": 15
+          },
+          "4.5": {
+            "over": 0,
+            "under": 15
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 2,
+        "draws": 1,
+        "loses": 1
+      },
+      "wins": {
+        "home": "5-1",
+        "away": "1-2"
+      },
+      "loses": {
+        "home": "0-3",
+        "away": "2-1"
+      },
+      "goals": {
+        "for": {
+          "home": 5,
+          "away": 2
+        },
+        "against": {
+          "home": 3,
+          "away": 2
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 6,
+      "away": 1,
+      "total": 7
+    },
+    "failed_to_score": {
+      "home": 2,
+      "away": 1,
+      "total": 3
+    },
+    "penalty": {
+      "scored": {
+        "total": 2,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 2
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:38:19.711Z"
+}

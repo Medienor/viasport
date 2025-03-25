@@ -1,0 +1,1630 @@
+{
+  "team": {
+    "team": {
+      "id": 3490,
+      "name": "Puszcza Niepołomice",
+      "code": "PUS",
+      "country": "Poland",
+      "founded": 1923,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/3490.png"
+    },
+    "venue": {
+      "id": 1247,
+      "name": "Stadion Cracovii im. Józefa Piłsudskiego",
+      "address": "ul. Józefa Kałuży 1",
+      "city": "Kraków",
+      "capacity": 15016,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1247.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-04",
+          "end": "2024-12-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 106,
+        "name": "Ekstraklasa",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/106.png"
+      },
+      "country": {
+        "name": "Poland",
+        "code": "PL",
+        "flag": "https://media.api-sports.io/flags/pl.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-20",
+          "end": "2025-05-24",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 108,
+        "name": "Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/108.png"
+      },
+      "country": {
+        "name": "Poland",
+        "code": "PL",
+        "flag": "https://media.api-sports.io/flags/pl.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-08-06",
+          "end": "2025-04-02",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1203175,
+          "date": "2025-03-29T13:45:00+00:00",
+          "venue": {
+            "id": 1247,
+            "name": "Stadion Cracovii im. Józefa Piłsudskiego",
+            "city": "Kraków"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743255900
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 350,
+            "name": "Cracovia Krakow",
+            "logo": "https://media.api-sports.io/football/teams/350.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1357112,
+          "date": "2025-04-01T16:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Miejski w Niepołomicach",
+            "city": "Niepołomice"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743525000
+        },
+        "league": {
+          "id": 108,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/108.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          },
+          "away": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203188,
+          "date": "2025-04-07T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Miejski w Niepołomicach",
+            "city": "Niepołomice"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744045200
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3491,
+            "name": "Raków Częstochowa",
+            "logo": "https://media.api-sports.io/football/teams/3491.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203194,
+          "date": "2025-04-12T12:45:00+00:00",
+          "venue": {
+            "id": 2285,
+            "name": "Stadion ul. Bukowa",
+            "city": "Katowice"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744461900
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3484,
+            "name": "GKS Katowice",
+            "logo": "https://media.api-sports.io/football/teams/3484.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203207,
+          "date": "2025-04-21T10:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Miejski w Niepołomicach",
+            "city": "Niepołomice"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745230500
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4248,
+            "name": "Radomiak Radom",
+            "logo": "https://media.api-sports.io/football/teams/4248.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203217,
+          "date": "2025-04-26T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745625600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          },
+          "away": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203223,
+          "date": "2025-05-03T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746230400
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 347,
+            "name": "Lech Poznan",
+            "logo": "https://media.api-sports.io/football/teams/347.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203235,
+          "date": "2025-05-10T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746835200
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3493,
+            "name": "Stal Mielec",
+            "logo": "https://media.api-sports.io/football/teams/3493.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203245,
+          "date": "2025-05-17T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747440000
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6962,
+            "name": "Widzew Łódź",
+            "logo": "https://media.api-sports.io/football/teams/6962.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203253,
+          "date": "2025-05-24T15:30:00+00:00",
+          "venue": {
+            "id": 1247,
+            "name": "Stadion Cracovii im. Józefa Piłsudskiego",
+            "city": "Kraków"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748100600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          },
+          "away": {
+            "id": 337,
+            "name": "Slask Wroclaw",
+            "logo": "https://media.api-sports.io/football/teams/337.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1203170,
+          "date": "2025-03-16T11:15:00+00:00",
+          "venue": {
+            "id": 1247,
+            "name": "Stadion Miejski w Niepołomicach",
+            "city": "Niepołomice"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1742123700
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": true
+          },
+          "away": {
+            "id": 349,
+            "name": "Piast Gliwice",
+            "logo": "https://media.api-sports.io/football/teams/349.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203159,
+          "date": "2025-03-07T17:00:00+00:00",
+          "venue": {
+            "id": 21189,
+            "name": "Stadion Miejski",
+            "city": "Kielce"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1741366800
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 346,
+            "name": "Korona Kielce",
+            "logo": "https://media.api-sports.io/football/teams/346.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203153,
+          "date": "2025-03-02T11:15:00+00:00",
+          "venue": {
+            "id": 1247,
+            "name": "Stadion Miejski w Niepołomicach",
+            "city": "Niepołomice"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1740914100
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": false
+          },
+          "away": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203142,
+          "date": "2025-02-23T11:15:00+00:00",
+          "venue": {
+            "id": 18627,
+            "name": "Polsat Plus Arena Gdańsk",
+            "city": "Gdańsk"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1740309300
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 343,
+            "name": "Lechia Gdansk",
+            "logo": "https://media.api-sports.io/football/teams/343.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203136,
+          "date": "2025-02-15T19:15:00+00:00",
+          "venue": {
+            "id": 1253,
+            "name": "Stadion Miejski Legii Warszawa im. Marszałka Józefa Piłsudskiego",
+            "city": "Warszawa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1739646900
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 339,
+            "name": "Legia Warszawa",
+            "logo": "https://media.api-sports.io/football/teams/339.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203125,
+          "date": "2025-02-10T18:00:00+00:00",
+          "venue": {
+            "id": 1247,
+            "name": "Stadion Cracovii im. Józefa Piłsudskiego",
+            "city": "Kraków"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1739210400
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": false
+          },
+          "away": {
+            "id": 345,
+            "name": "Zaglebie Lubin",
+            "logo": "https://media.api-sports.io/football/teams/345.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203114,
+          "date": "2025-02-02T11:15:00+00:00",
+          "venue": {
+            "id": 18625,
+            "name": "Stadion im. Ernesta Pohla",
+            "city": "Zabrze"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1738494900
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 340,
+            "name": "Gornik Zabrze",
+            "logo": "https://media.api-sports.io/football/teams/340.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203108,
+          "date": "2024-12-08T13:45:00+00:00",
+          "venue": {
+            "id": 1247,
+            "name": "Stadion Cracovii im. Józefa Piłsudskiego",
+            "city": "Kraków"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1733665500
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          },
+          "away": {
+            "id": 336,
+            "name": "Jagiellonia",
+            "logo": "https://media.api-sports.io/football/teams/336.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1315001,
+          "date": "2024-12-03T11:00:00+00:00",
+          "venue": {
+            "id": 2293,
+            "name": "Stadion im. Ojca Władysława Augustynka",
+            "city": "Nowy Sącz"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1733223600
+        },
+        "league": {
+          "id": 108,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/108.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3492,
+            "name": "Sandecja Nowy Sącz",
+            "logo": "https://media.api-sports.io/football/teams/3492.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203102,
+          "date": "2024-11-30T13:45:00+00:00",
+          "venue": {
+            "id": 18628,
+            "name": "Tarczyński Arena",
+            "city": "Wrocław"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1732974300
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 337,
+            "name": "Slask Wroclaw",
+            "logo": "https://media.api-sports.io/football/teams/337.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 667,
+      "name": "Friendlies Clubs",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 3490,
+      "name": "Puszcza Niepołomice",
+      "logo": "https://media.api-sports.io/football/teams/3490.png"
+    },
+    "form": "WDDWWWDDWWDDDDL",
+    "fixtures": {
+      "played": {
+        "home": 7,
+        "away": 8,
+        "total": 15
+      },
+      "wins": {
+        "home": 5,
+        "away": 1,
+        "total": 6
+      },
+      "draws": {
+        "home": 2,
+        "away": 6,
+        "total": 8
+      },
+      "loses": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 14,
+          "away": 7,
+          "total": 21
+        },
+        "average": {
+          "home": "2.0",
+          "away": "0.9",
+          "total": "1.4"
+        },
+        "minute": {
+          "0-15": {
+            "total": 3,
+            "percentage": "18.75%"
+          },
+          "16-30": {
+            "total": 4,
+            "percentage": "25.00%"
+          },
+          "31-45": {
+            "total": 3,
+            "percentage": "18.75%"
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "6.25%"
+          },
+          "61-75": {
+            "total": 4,
+            "percentage": "25.00%"
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "6.25%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 13,
+            "under": 2
+          },
+          "1.5": {
+            "over": 6,
+            "under": 9
+          },
+          "2.5": {
+            "over": 2,
+            "under": 13
+          },
+          "3.5": {
+            "over": 0,
+            "under": 15
+          },
+          "4.5": {
+            "over": 0,
+            "under": 15
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 7,
+          "away": 8,
+          "total": 15
+        },
+        "average": {
+          "home": "1.0",
+          "away": "1.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": 2,
+            "percentage": "20.00%"
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "10.00%"
+          },
+          "46-60": {
+            "total": 3,
+            "percentage": "30.00%"
+          },
+          "61-75": {
+            "total": 2,
+            "percentage": "20.00%"
+          },
+          "76-90": {
+            "total": 2,
+            "percentage": "20.00%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 10,
+            "under": 5
+          },
+          "1.5": {
+            "over": 3,
+            "under": 12
+          },
+          "2.5": {
+            "over": 1,
+            "under": 14
+          },
+          "3.5": {
+            "over": 1,
+            "under": 14
+          },
+          "4.5": {
+            "over": 0,
+            "under": 15
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 3,
+        "draws": 4,
+        "loses": 0
+      },
+      "wins": {
+        "home": "3-0",
+        "away": "0-1"
+      },
+      "loses": {
+        "home": null,
+        "away": "4-2"
+      },
+      "goals": {
+        "for": {
+          "home": 3,
+          "away": 2
+        },
+        "against": {
+          "home": 2,
+          "away": 4
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 2,
+      "away": 3,
+      "total": 5
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 2,
+      "total": 2
+    },
+    "penalty": {
+      "scored": {
+        "total": 1,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 1
+    },
+    "lineups": [
+      {
+        "formation": "5-4-1",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": 2,
+          "percentage": "66.67%"
+        },
+        "76-90": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": 1,
+          "percentage": "100.00%"
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:38:17.168Z"
+}

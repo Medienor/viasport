@@ -1,0 +1,678 @@
+{
+  "team": {
+    "team": {
+      "id": 4,
+      "name": "Russia",
+      "code": "RUS",
+      "country": "Russia",
+      "founded": 1912,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/4.png"
+    },
+    "venue": {
+      "id": 1327,
+      "name": "RZD Arena",
+      "address": "ul. Bol&apos;shaya Cherkizovskaya 125",
+      "city": "Moskva",
+      "capacity": 28800,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1327.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2008,
+    2012,
+    2014,
+    2016,
+    2017,
+    2018,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1313507,
+          "date": "2024-11-19T16:30:00+00:00",
+          "venue": {
+            "id": 1348,
+            "name": "Volgograd Arena",
+            "city": "Volgograd"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1732033800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4,
+            "name": "Russia",
+            "logo": "https://media.api-sports.io/football/teams/4.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1565,
+            "name": "Syria",
+            "logo": "https://media.api-sports.io/football/teams/1565.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1313046,
+          "date": "2024-11-15T16:00:00+00:00",
+          "venue": {
+            "id": 1338,
+            "name": "Stadion FK Krasnodar",
+            "city": "Krasnodar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1731686400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4,
+            "name": "Russia",
+            "logo": "https://media.api-sports.io/football/teams/4.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5538,
+            "name": "Brunei",
+            "logo": "https://media.api-sports.io/football/teams/5538.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 11,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 4,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 11,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1293945,
+          "date": "2024-09-05T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động quốc gia Mỹ Đình",
+            "city": "Hanoi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725541200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1542,
+            "name": "Vietnam",
+            "logo": "https://media.api-sports.io/football/teams/1542.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4,
+            "name": "Russia",
+            "logo": "https://media.api-sports.io/football/teams/4.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1198576,
+          "date": "2024-06-07T17:00:00+00:00",
+          "venue": {
+            "id": 2606,
+            "name": "Stadyen Dynama",
+            "city": "Minsk"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717779600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1100,
+            "name": "Belarus",
+            "logo": "https://media.api-sports.io/football/teams/1100.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4,
+            "name": "Russia",
+            "logo": "https://media.api-sports.io/football/teams/4.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1155264,
+          "date": "2024-03-21T17:00:00+00:00",
+          "venue": {
+            "id": 1334,
+            "name": "VTB Arena",
+            "city": "Moskva"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711040400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4,
+            "name": "Russia",
+            "logo": "https://media.api-sports.io/football/teams/4.png",
+            "winner": true
+          },
+          "away": {
+            "id": 14,
+            "name": "Serbia",
+            "logo": "https://media.api-sports.io/football/teams/14.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 4,
+      "name": "Russia",
+      "logo": "https://media.api-sports.io/football/teams/4.png"
+    },
+    "form": "WWWWW",
+    "fixtures": {
+      "played": {
+        "home": 3,
+        "away": 2,
+        "total": 5
+      },
+      "wins": {
+        "home": 3,
+        "away": 2,
+        "total": 5
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 19,
+          "away": 7,
+          "total": 26
+        },
+        "average": {
+          "home": "6.3",
+          "away": "3.5",
+          "total": "5.2"
+        },
+        "minute": {
+          "0-15": {
+            "total": 3,
+            "percentage": "12.50%"
+          },
+          "16-30": {
+            "total": 4,
+            "percentage": "16.67%"
+          },
+          "31-45": {
+            "total": 2,
+            "percentage": "8.33%"
+          },
+          "46-60": {
+            "total": 4,
+            "percentage": "16.67%"
+          },
+          "61-75": {
+            "total": 6,
+            "percentage": "25.00%"
+          },
+          "76-90": {
+            "total": 4,
+            "percentage": "16.67%"
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "4.17%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 5,
+            "under": 0
+          },
+          "1.5": {
+            "over": 5,
+            "under": 0
+          },
+          "2.5": {
+            "over": 5,
+            "under": 0
+          },
+          "3.5": {
+            "over": 4,
+            "under": 1
+          },
+          "4.5": {
+            "over": 1,
+            "under": 4
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 0,
+          "away": 0,
+          "total": 0
+        },
+        "average": {
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "50.00%"
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "50.00%"
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 0,
+            "under": 5
+          },
+          "1.5": {
+            "over": 0,
+            "under": 5
+          },
+          "2.5": {
+            "over": 0,
+            "under": 5
+          },
+          "3.5": {
+            "over": 0,
+            "under": 5
+          },
+          "4.5": {
+            "over": 0,
+            "under": 5
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 5,
+        "draws": 0,
+        "loses": 0
+      },
+      "wins": {
+        "home": "11-0",
+        "away": "0-4"
+      },
+      "loses": {
+        "home": null,
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 11,
+          "away": 4
+        },
+        "against": {
+          "home": 0,
+          "away": 0
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 3,
+      "away": 2,
+      "total": 5
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "penalty": {
+      "scored": {
+        "total": 2,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 2
+    },
+    "lineups": [
+      {
+        "formation": "4-3-3",
+        "played": 4
+      },
+      {
+        "formation": "4-2-3-1",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "50.00%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": 1,
+          "percentage": "50.00%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:41:03.727Z"
+}

@@ -14,12 +14,15 @@
     "prebuild": "npm run prefetch-teams && npm run prefetch-calendar && npm run prefetch-leagues && npm run prefetch-top-players && npm run generate-search-index",
     "build": "set DEBUG=* && set NEXT_DEBUG_BUILD=true && next build --no-lint --debug",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "update-teams": "tsx src/scripts/manualUpdate.ts"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@supabase/supabase-js": "^2.49.1",
     "@tanstack/react-query": "^5.68.0",
+    "ansi-colors": "^4.1.3",
+    "cli-progress": "^3.12.0",
     "dotenv": "^16.4.7",
     "fuse.js": "^7.1.0",
     "next": "15.1.7",
@@ -32,6 +35,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/cli-progress": "^3.11.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

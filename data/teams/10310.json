@@ -1,0 +1,935 @@
+{
+  "team": {
+    "team": {
+      "id": 10310,
+      "name": "Germany U20",
+      "code": null,
+      "country": "Germany",
+      "founded": 1900,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/10310.png"
+    },
+    "venue": {
+      "id": 694,
+      "name": "Olympiastadion Berlin",
+      "address": "Olympischer Platz 3",
+      "city": "Berlin",
+      "capacity": 74667,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/694.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 890,
+        "name": "U20 Elite League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/890.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-05",
+          "end": "2025-03-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2017,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1300087,
+          "date": "2025-03-24T14:30:00+00:00",
+          "venue": {
+            "id": 2713,
+            "name": "Karl-Liebknecht-Stadion",
+            "city": "Potsdam"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742826600
+        },
+        "league": {
+          "id": 890,
+          "name": "U20 Elite League",
+          "logo": "https://media.api-sports.io/football/leagues/890.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10310,
+            "name": "Germany U20",
+            "logo": "https://media.api-sports.io/football/teams/10310.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10299,
+            "name": "Portugal U20",
+            "logo": "https://media.api-sports.io/football/teams/10299.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1193100,
+          "date": "2025-03-21T16:00:00+00:00",
+          "venue": {
+            "id": 10575,
+            "name": "AGC Aréna Na Stínadlech",
+            "city": "Teplice"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742572800
+        },
+        "league": {
+          "id": 890,
+          "name": "U20 Elite League",
+          "logo": "https://media.api-sports.io/football/leagues/890.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18047,
+            "name": "Czech Republic U20",
+            "logo": "https://media.api-sports.io/football/teams/18047.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10310,
+            "name": "Germany U20",
+            "logo": "https://media.api-sports.io/football/teams/10310.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1268374,
+          "date": "2024-11-19T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "TFF Riva Tesisleri 4 Nolu Saha",
+            "city": "Riva"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1732032000
+        },
+        "league": {
+          "id": 890,
+          "name": "U20 Elite League",
+          "logo": "https://media.api-sports.io/football/leagues/890.png"
+        },
+        "teams": {
+          "home": {
+            "id": 23431,
+            "name": "Türkiye U20",
+            "logo": "https://media.api-sports.io/football/teams/23431.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10310,
+            "name": "Germany U20",
+            "logo": "https://media.api-sports.io/football/teams/10310.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1268373,
+          "date": "2024-11-15T19:00:00+00:00",
+          "venue": {
+            "id": 19924,
+            "name": "SMH Group Stadium",
+            "city": "Chesterfield, Derbyshire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1731697200
+        },
+        "league": {
+          "id": 890,
+          "name": "U20 Elite League",
+          "logo": "https://media.api-sports.io/football/leagues/890.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10309,
+            "name": "England U20",
+            "logo": "https://media.api-sports.io/football/teams/10309.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10310,
+            "name": "Germany U20",
+            "logo": "https://media.api-sports.io/football/teams/10310.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1268370,
+          "date": "2024-10-11T15:30:00+00:00",
+          "venue": {
+            "id": 8188,
+            "name": "Wersestadion",
+            "city": "Ahlen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1728660600
+        },
+        "league": {
+          "id": 890,
+          "name": "U20 Elite League",
+          "logo": "https://media.api-sports.io/football/leagues/890.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10310,
+            "name": "Germany U20",
+            "logo": "https://media.api-sports.io/football/teams/10310.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10298,
+            "name": "Poland U20",
+            "logo": "https://media.api-sports.io/football/teams/10298.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1268367,
+          "date": "2024-09-10T14:00:00+00:00",
+          "venue": {
+            "id": 899,
+            "name": "Stadio Centro d'Italia - Manlio Scopigno",
+            "city": "Rieti"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725976800
+        },
+        "league": {
+          "id": 890,
+          "name": "U20 Elite League",
+          "logo": "https://media.api-sports.io/football/leagues/890.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10289,
+            "name": "Italy U20",
+            "logo": "https://media.api-sports.io/football/teams/10289.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10310,
+            "name": "Germany U20",
+            "logo": "https://media.api-sports.io/football/teams/10310.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1193090,
+          "date": "2024-09-05T16:00:00+00:00",
+          "venue": {
+            "id": 11931,
+            "name": "Stadionul Francisc von Neuman",
+            "city": "Arad"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725552000
+        },
+        "league": {
+          "id": 890,
+          "name": "U20 Elite League",
+          "logo": "https://media.api-sports.io/football/leagues/890.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18180,
+            "name": "Romania U20",
+            "logo": "https://media.api-sports.io/football/teams/18180.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10310,
+            "name": "Germany U20",
+            "logo": "https://media.api-sports.io/football/teams/10310.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1189594,
+          "date": "2024-03-25T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711375200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10287,
+            "name": "France U20",
+            "logo": "https://media.api-sports.io/football/teams/10287.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10310,
+            "name": "Germany U20",
+            "logo": "https://media.api-sports.io/football/teams/10310.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1189545,
+          "date": "2024-03-22T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711116000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10310,
+            "name": "Germany U20",
+            "logo": "https://media.api-sports.io/football/teams/10310.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10287,
+            "name": "France U20",
+            "logo": "https://media.api-sports.io/football/teams/10287.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 10310,
+      "name": "Germany U20",
+      "logo": "https://media.api-sports.io/football/teams/10310.png"
+    },
+    "form": "WD",
+    "fixtures": {
+      "played": {
+        "home": 1,
+        "away": 1,
+        "total": 2
+      },
+      "wins": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "draws": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      },
+      "loses": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 3,
+          "away": 4,
+          "total": 7
+        },
+        "average": {
+          "home": "3.0",
+          "away": "4.0",
+          "total": "3.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "20.00%"
+          },
+          "61-75": {
+            "total": 2,
+            "percentage": "40.00%"
+          },
+          "76-90": {
+            "total": 2,
+            "percentage": "40.00%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 0
+          },
+          "1.5": {
+            "over": 2,
+            "under": 0
+          },
+          "2.5": {
+            "over": 2,
+            "under": 0
+          },
+          "3.5": {
+            "over": 1,
+            "under": 1
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 1,
+          "away": 4,
+          "total": 5
+        },
+        "average": {
+          "home": "1.0",
+          "away": "4.0",
+          "total": "2.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 0
+          },
+          "1.5": {
+            "over": 1,
+            "under": 1
+          },
+          "2.5": {
+            "over": 1,
+            "under": 1
+          },
+          "3.5": {
+            "over": 1,
+            "under": 1
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 1,
+        "draws": 0,
+        "loses": 0
+      },
+      "wins": {
+        "home": "3-1",
+        "away": null
+      },
+      "loses": {
+        "home": null,
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 3,
+          "away": 4
+        },
+        "against": {
+          "home": 1,
+          "away": 4
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "penalty": {
+      "scored": {
+        "total": 1,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 1
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": 1,
+          "percentage": "50.00%"
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "50.00%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:42:20.017Z"
+}

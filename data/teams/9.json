@@ -1,0 +1,1113 @@
+{
+  "team": {
+    "team": {
+      "id": 9,
+      "name": "Spain",
+      "code": "SPA",
+      "country": "Spain",
+      "founded": 1913,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/9.png"
+    },
+    "venue": {
+      "id": 1456,
+      "name": "Estadio Santiago Bernabéu",
+      "address": "Avenida de Concha Espina 1, Chamartín",
+      "city": "Madrid",
+      "capacity": 85454,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1456.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 4,
+        "name": "Euro Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/4.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-06-14",
+          "end": "2024-07-14",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 5,
+        "name": "UEFA Nations League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/5.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-05",
+          "end": "2026-03-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2008,
+    2009,
+    2010,
+    2012,
+    2013,
+    2014,
+    2016,
+    2017,
+    2018,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1366137,
+          "date": "2025-06-05T18:45:00+00:00",
+          "venue": {
+            "id": 20473,
+            "name": "MHPArena",
+            "city": "Stuttgart"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749149100
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1316545,
+          "date": "2025-03-20T19:45:00+00:00",
+          "venue": {
+            "id": 1128,
+            "name": "Stadion Feijenoord",
+            "city": "Rotterdam"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742499900
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png",
+            "winner": null
+          },
+          "away": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172984,
+          "date": "2024-11-18T19:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Heliodoro Rodríguez Lopéz",
+            "city": "Tenerife"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1731959100
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png",
+            "winner": true
+          },
+          "away": {
+            "id": 15,
+            "name": "Switzerland",
+            "logo": "https://media.api-sports.io/football/teams/15.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172975,
+          "date": "2024-11-15T19:45:00+00:00",
+          "venue": {
+            "id": 11600,
+            "name": "Parken",
+            "city": "København"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1731699900
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21,
+            "name": "Denmark",
+            "logo": "https://media.api-sports.io/football/teams/21.png",
+            "winner": false
+          },
+          "away": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172969,
+          "date": "2024-10-15T18:45:00+00:00",
+          "venue": {
+            "id": 1469,
+            "name": "Estadio Nuevo Arcángel",
+            "city": "Córdoba"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1729017900
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png",
+            "winner": true
+          },
+          "away": {
+            "id": 14,
+            "name": "Serbia",
+            "logo": "https://media.api-sports.io/football/teams/14.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172962,
+          "date": "2024-10-12T18:45:00+00:00",
+          "venue": {
+            "id": 3989,
+            "name": "Estadio Enrique Roca de Murcia",
+            "city": "Murcia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1728758700
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png",
+            "winner": true
+          },
+          "away": {
+            "id": 21,
+            "name": "Denmark",
+            "logo": "https://media.api-sports.io/football/teams/21.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172950,
+          "date": "2024-09-08T18:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Genève",
+            "city": "Lancy"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725821100
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15,
+            "name": "Switzerland",
+            "logo": "https://media.api-sports.io/football/teams/15.png",
+            "winner": false
+          },
+          "away": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1172942,
+          "date": "2024-09-05T18:45:00+00:00",
+          "venue": {
+            "id": 1406,
+            "name": "Stadion Rajko Mitić",
+            "city": "Beograd"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725561900
+        },
+        "league": {
+          "id": 5,
+          "name": "UEFA Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/5.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14,
+            "name": "Serbia",
+            "logo": "https://media.api-sports.io/football/teams/14.png",
+            "winner": null
+          },
+          "away": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232551,
+          "date": "2024-07-14T19:00:00+00:00",
+          "venue": {
+            "id": 694,
+            "name": "Olympiastadion Berlin",
+            "city": "Berlin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1720983600
+        },
+        "league": {
+          "id": 4,
+          "name": "Euro Championship",
+          "logo": "https://media.api-sports.io/football/leagues/4.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10,
+            "name": "England",
+            "logo": "https://media.api-sports.io/football/teams/10.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1225853,
+          "date": "2024-07-09T19:00:00+00:00",
+          "venue": {
+            "id": 20732,
+            "name": "Fußball Arena München",
+            "city": "München"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1720551600
+        },
+        "league": {
+          "id": 4,
+          "name": "Euro Championship",
+          "logo": "https://media.api-sports.io/football/leagues/4.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1215075,
+          "date": "2024-06-30T19:00:00+00:00",
+          "venue": {
+            "id": 20736,
+            "name": "Cologne Stadium",
+            "city": "Köln"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1719774000
+        },
+        "league": {
+          "id": 4,
+          "name": "Euro Championship",
+          "logo": "https://media.api-sports.io/football/leagues/4.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1104,
+            "name": "Georgia",
+            "logo": "https://media.api-sports.io/football/teams/1104.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 4,
+      "name": "Euro Championship",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/4.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 9,
+      "name": "Spain",
+      "logo": "https://media.api-sports.io/football/teams/9.png"
+    },
+    "form": "WWWWWWW",
+    "fixtures": {
+      "played": {
+        "home": 6,
+        "away": 1,
+        "total": 7
+      },
+      "wins": {
+        "home": 6,
+        "away": 1,
+        "total": 7
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 14,
+          "away": 1,
+          "total": 15
+        },
+        "average": {
+          "home": "2.3",
+          "away": "1.0",
+          "total": "2.1"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "6.67%"
+          },
+          "16-30": {
+            "total": 4,
+            "percentage": "26.67%"
+          },
+          "31-45": {
+            "total": 2,
+            "percentage": "13.33%"
+          },
+          "46-60": {
+            "total": 4,
+            "percentage": "26.67%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "6.67%"
+          },
+          "76-90": {
+            "total": 2,
+            "percentage": "13.33%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": 1,
+            "percentage": "6.67%"
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 7,
+            "under": 0
+          },
+          "1.5": {
+            "over": 5,
+            "under": 2
+          },
+          "2.5": {
+            "over": 2,
+            "under": 5
+          },
+          "3.5": {
+            "over": 1,
+            "under": 6
+          },
+          "4.5": {
+            "over": 0,
+            "under": 7
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 4,
+          "away": 0,
+          "total": 4
+        },
+        "average": {
+          "home": "0.7",
+          "away": "0.0",
+          "total": "0.6"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 4,
+            "under": 3
+          },
+          "1.5": {
+            "over": 0,
+            "under": 7
+          },
+          "2.5": {
+            "over": 0,
+            "under": 7
+          },
+          "3.5": {
+            "over": 0,
+            "under": 7
+          },
+          "4.5": {
+            "over": 0,
+            "under": 7
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 7,
+        "draws": 0,
+        "loses": 0
+      },
+      "wins": {
+        "home": "4-1",
+        "away": "0-1"
+      },
+      "loses": {
+        "home": null,
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 4,
+          "away": 1
+        },
+        "against": {
+          "home": 1,
+          "away": 0
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 2,
+      "away": 1,
+      "total": 3
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [
+      {
+        "formation": "4-3-3",
+        "played": 5
+      },
+      {
+        "formation": "4-2-3-1",
+        "played": 2
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 1,
+          "percentage": "6.25%"
+        },
+        "16-30": {
+          "total": 1,
+          "percentage": "6.25%"
+        },
+        "31-45": {
+          "total": 2,
+          "percentage": "12.50%"
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "6.25%"
+        },
+        "61-75": {
+          "total": 2,
+          "percentage": "12.50%"
+        },
+        "76-90": {
+          "total": 3,
+          "percentage": "18.75%"
+        },
+        "91-105": {
+          "total": 3,
+          "percentage": "18.75%"
+        },
+        "106-120": {
+          "total": 2,
+          "percentage": "12.50%"
+        },
+        "": {
+          "total": 1,
+          "percentage": "6.25%"
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": 1,
+          "percentage": "100.00%"
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:40:36.834Z"
+}

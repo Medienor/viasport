@@ -1,0 +1,1632 @@
+{
+  "team": {
+    "team": {
+      "id": 2070,
+      "name": "Viborg",
+      "code": "VIB",
+      "country": "Denmark",
+      "founded": 1896,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2070.png"
+    },
+    "venue": {
+      "id": 463,
+      "name": "Energi Viborg Arena",
+      "address": "Stadion Allé 7",
+      "city": "Viborg",
+      "capacity": 9566,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/463.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-04",
+          "end": "2024-12-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 119,
+        "name": "Superliga",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/119.png"
+      },
+      "country": {
+        "name": "Denmark",
+        "code": "DK",
+        "flag": "https://media.api-sports.io/flags/dk.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-19",
+          "end": "2025-05-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": true,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 121,
+        "name": "DBU Pokalen",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/121.png"
+      },
+      "country": {
+        "name": "Denmark",
+        "code": "DK",
+        "flag": "https://media.api-sports.io/flags/dk.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-08-05",
+          "end": "2025-05-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1362792,
+          "date": "2025-03-28T18:00:00+00:00",
+          "venue": {
+            "id": 440,
+            "name": "Aalborg Portland Park",
+            "city": "Aalborg"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743184800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 402,
+            "name": "Aalborg",
+            "logo": "https://media.api-sports.io/football/teams/402.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362795,
+          "date": "2025-04-06T12:00:00+00:00",
+          "venue": {
+            "id": 463,
+            "name": "Energi Viborg Arena",
+            "city": "Viborg"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743940800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          },
+          "away": {
+            "id": 396,
+            "name": "Sonderjyske",
+            "logo": "https://media.api-sports.io/football/teams/396.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362799,
+          "date": "2025-04-13T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744545600
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2073,
+            "name": "Silkeborg",
+            "logo": "https://media.api-sports.io/football/teams/2073.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362803,
+          "date": "2025-04-17T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744891200
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 395,
+            "name": "Vejle",
+            "logo": "https://media.api-sports.io/football/teams/395.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362806,
+          "date": "2025-04-21T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745236800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362807,
+          "date": "2025-04-27T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745755200
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 396,
+            "name": "Sonderjyske",
+            "logo": "https://media.api-sports.io/football/teams/396.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323630,
+          "date": "2025-04-30T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745971200
+        },
+        "league": {
+          "id": 121,
+          "name": "DBU Pokalen",
+          "logo": "https://media.api-sports.io/football/leagues/121.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          },
+          "away": {
+            "id": 400,
+            "name": "FC Copenhagen",
+            "logo": "https://media.api-sports.io/football/teams/400.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362811,
+          "date": "2025-05-04T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746360000
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323631,
+          "date": "2025-05-07T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746576000
+        },
+        "league": {
+          "id": 121,
+          "name": "DBU Pokalen",
+          "logo": "https://media.api-sports.io/football/leagues/121.png"
+        },
+        "teams": {
+          "home": {
+            "id": 400,
+            "name": "FC Copenhagen",
+            "logo": "https://media.api-sports.io/football/teams/400.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362814,
+          "date": "2025-05-11T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746979200
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          },
+          "away": {
+            "id": 402,
+            "name": "Aalborg",
+            "logo": "https://media.api-sports.io/football/teams/402.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1205554,
+          "date": "2025-03-16T16:00:00+00:00",
+          "venue": {
+            "id": 463,
+            "name": "Energi Viborg Arena",
+            "city": "Viborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1742140800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": true
+          },
+          "away": {
+            "id": 400,
+            "name": "FC Copenhagen",
+            "logo": "https://media.api-sports.io/football/teams/400.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205544,
+          "date": "2025-03-09T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Ceres Park Vejlby",
+            "city": "Risskov"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1741532400
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 406,
+            "name": "Aarhus",
+            "logo": "https://media.api-sports.io/football/teams/406.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205543,
+          "date": "2025-03-02T13:00:00+00:00",
+          "venue": {
+            "id": 463,
+            "name": "Energi Viborg Arena",
+            "city": "Viborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1740920400
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": true
+          },
+          "away": {
+            "id": 395,
+            "name": "Vejle",
+            "logo": "https://media.api-sports.io/football/teams/395.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205536,
+          "date": "2025-02-24T18:00:00+00:00",
+          "venue": {
+            "id": 463,
+            "name": "Energi Viborg Arena",
+            "city": "Viborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1740420000
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2073,
+            "name": "Silkeborg",
+            "logo": "https://media.api-sports.io/football/teams/2073.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205526,
+          "date": "2025-02-14T18:00:00+00:00",
+          "venue": {
+            "id": 443,
+            "name": "Brøndby Stadion",
+            "city": "Brøndby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1739556000
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 407,
+            "name": "Brondby",
+            "logo": "https://media.api-sports.io/football/teams/407.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1314527,
+          "date": "2024-12-13T18:00:00+00:00",
+          "venue": {
+            "id": 463,
+            "name": "Energi Viborg Arena",
+            "city": "Viborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1734112800
+        },
+        "league": {
+          "id": 121,
+          "name": "DBU Pokalen",
+          "logo": "https://media.api-sports.io/football/leagues/121.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2071,
+            "name": "Brabrand",
+            "logo": "https://media.api-sports.io/football/teams/2071.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 6,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 6,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1314526,
+          "date": "2024-12-08T12:00:00+00:00",
+          "venue": {
+            "id": 2680,
+            "name": "Brabrand IF's Idrætsanlæg",
+            "city": "Brabrand"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1733659200
+        },
+        "league": {
+          "id": 121,
+          "name": "DBU Pokalen",
+          "logo": "https://media.api-sports.io/football/leagues/121.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2071,
+            "name": "Brabrand",
+            "logo": "https://media.api-sports.io/football/teams/2071.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205524,
+          "date": "2024-12-01T13:00:00+00:00",
+          "venue": {
+            "id": 463,
+            "name": "Energi Viborg Arena",
+            "city": "Viborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1733058000
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": false
+          },
+          "away": {
+            "id": 401,
+            "name": "Randers FC",
+            "logo": "https://media.api-sports.io/football/teams/401.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205517,
+          "date": "2024-11-24T13:00:00+00:00",
+          "venue": {
+            "id": 440,
+            "name": "Aalborg Portland Park",
+            "city": "Aalborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1732453200
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 402,
+            "name": "Aalborg",
+            "logo": "https://media.api-sports.io/football/teams/402.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1205510,
+          "date": "2024-11-10T15:00:00+00:00",
+          "venue": {
+            "id": 463,
+            "name": "Energi Viborg Arena",
+            "city": "Viborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1731250800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": true
+          },
+          "away": {
+            "id": 397,
+            "name": "FC Midtjylland",
+            "logo": "https://media.api-sports.io/football/teams/397.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 667,
+      "name": "Friendlies Clubs",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 2070,
+      "name": "Viborg",
+      "logo": "https://media.api-sports.io/football/teams/2070.png"
+    },
+    "form": "WLWDLWLLLWW",
+    "fixtures": {
+      "played": {
+        "home": 4,
+        "away": 7,
+        "total": 11
+      },
+      "wins": {
+        "home": 3,
+        "away": 2,
+        "total": 5
+      },
+      "draws": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      },
+      "loses": {
+        "home": 1,
+        "away": 4,
+        "total": 5
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 8,
+          "away": 11,
+          "total": 19
+        },
+        "average": {
+          "home": "2.0",
+          "away": "1.6",
+          "total": "1.7"
+        },
+        "minute": {
+          "0-15": {
+            "total": 4,
+            "percentage": "23.53%"
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "5.88%"
+          },
+          "31-45": {
+            "total": 2,
+            "percentage": "11.76%"
+          },
+          "46-60": {
+            "total": 2,
+            "percentage": "11.76%"
+          },
+          "61-75": {
+            "total": 3,
+            "percentage": "17.65%"
+          },
+          "76-90": {
+            "total": 3,
+            "percentage": "17.65%"
+          },
+          "91-105": {
+            "total": 2,
+            "percentage": "11.76%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 9,
+            "under": 2
+          },
+          "1.5": {
+            "over": 6,
+            "under": 5
+          },
+          "2.5": {
+            "over": 2,
+            "under": 9
+          },
+          "3.5": {
+            "over": 2,
+            "under": 9
+          },
+          "4.5": {
+            "over": 0,
+            "under": 11
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 4,
+          "away": 12,
+          "total": 16
+        },
+        "average": {
+          "home": "1.0",
+          "away": "1.7",
+          "total": "1.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "9.09%"
+          },
+          "16-30": {
+            "total": 2,
+            "percentage": "18.18%"
+          },
+          "31-45": {
+            "total": 5,
+            "percentage": "45.45%"
+          },
+          "46-60": {
+            "total": 2,
+            "percentage": "18.18%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "9.09%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 10,
+            "under": 1
+          },
+          "1.5": {
+            "over": 5,
+            "under": 6
+          },
+          "2.5": {
+            "over": 1,
+            "under": 10
+          },
+          "3.5": {
+            "over": 0,
+            "under": 11
+          },
+          "4.5": {
+            "over": 0,
+            "under": 11
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 1,
+        "draws": 1,
+        "loses": 3
+      },
+      "wins": {
+        "home": "4-2",
+        "away": "1-4"
+      },
+      "loses": {
+        "home": "0-1",
+        "away": "3-1"
+      },
+      "goals": {
+        "for": {
+          "home": 4,
+          "away": 4
+        },
+        "against": {
+          "home": 2,
+          "away": 3
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 1,
+      "away": 0,
+      "total": 1
+    },
+    "failed_to_score": {
+      "home": 1,
+      "away": 1,
+      "total": 2
+    },
+    "penalty": {
+      "scored": {
+        "total": 1,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 1
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": 1,
+          "percentage": "100.00%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:39:13.832Z"
+}

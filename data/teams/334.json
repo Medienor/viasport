@@ -1,0 +1,1036 @@
+{
+  "team": {
+    "team": {
+      "id": 334,
+      "name": "Start",
+      "code": "STA",
+      "country": "Norway",
+      "founded": 1905,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/334.png"
+    },
+    "venue": {
+      "id": 1197,
+      "name": "Sparebanken Sør Arena",
+      "address": "Stadionveien 21",
+      "city": "Kristiansand",
+      "capacity": 14563,
+      "surface": "artificial turf",
+      "image": "https://media.api-sports.io/football/venues/1197.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 104,
+        "name": "1. Division",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/104.png"
+      },
+      "country": {
+        "name": "Norway",
+        "code": "NO",
+        "flag": "https://media.api-sports.io/flags/no.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-04-01",
+          "end": "2024-12-01",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-04",
+          "end": "2024-12-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 105,
+        "name": "NM Cupen",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/105.png"
+      },
+      "country": {
+        "name": "Norway",
+        "code": "NO",
+        "flag": "https://media.api-sports.io/flags/no.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-04-09",
+          "end": "2024-12-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1152109,
+          "date": "2024-11-09T15:00:00+00:00",
+          "venue": {
+            "id": 1197,
+            "name": "Sparebanken Sør Arena",
+            "city": "Kristiansand"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1731164400
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2144,
+            "name": "Kongsvinger",
+            "logo": "https://media.api-sports.io/football/teams/2144.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1152103,
+          "date": "2024-11-02T15:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1730559600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1152095,
+          "date": "2024-10-26T14:00:00+00:00",
+          "venue": {
+            "id": 1197,
+            "name": "Sparebanken Sør Arena",
+            "city": "Kristiansand"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1729951200
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1152086,
+          "date": "2024-10-21T17:00:00+00:00",
+          "venue": {
+            "id": 1174,
+            "name": "Color Line Stadion",
+            "city": "Ålesund"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1729530000
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 757,
+            "name": "Aalesund",
+            "logo": "https://media.api-sports.io/football/teams/757.png",
+            "winner": true
+          },
+          "away": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1152074,
+          "date": "2024-10-05T15:00:00+00:00",
+          "venue": {
+            "id": 1197,
+            "name": "Sparebanken Sør Arena",
+            "city": "Kristiansand"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1728140400
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2142,
+            "name": "Bryne",
+            "logo": "https://media.api-sports.io/football/teams/2142.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1152069,
+          "date": "2024-09-28T14:00:00+00:00",
+          "venue": {
+            "id": 12682,
+            "name": "Øster Hus Arena",
+            "city": "Sandnes"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1727532000
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": false
+          },
+          "away": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1152059,
+          "date": "2024-09-25T17:00:00+00:00",
+          "venue": {
+            "id": 1197,
+            "name": "Sparebanken Sør Arena",
+            "city": "Kristiansand"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1727283600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2148,
+            "name": "Asane",
+            "logo": "https://media.api-sports.io/football/teams/2148.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1152055,
+          "date": "2024-09-21T14:00:00+00:00",
+          "venue": {
+            "id": 1196,
+            "name": "Nadderud Stadion",
+            "city": "Bærum"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1726927200
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": false
+          },
+          "away": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1152046,
+          "date": "2024-09-16T17:00:00+00:00",
+          "venue": {
+            "id": 1197,
+            "name": "Sparebanken Sør Arena",
+            "city": "Kristiansand"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1726506000
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2145,
+            "name": "Levanger",
+            "logo": "https://media.api-sports.io/football/teams/2145.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1152039,
+          "date": "2024-09-02T17:00:00+00:00",
+          "venue": {
+            "id": 1188,
+            "name": "EXTRA Arena",
+            "city": "Ranheim"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725296400
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 322,
+            "name": "Ranheim",
+            "logo": "https://media.api-sports.io/football/teams/322.png",
+            "winner": false
+          },
+          "away": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 104,
+      "name": "1. Division",
+      "country": "Norway",
+      "logo": "https://media.api-sports.io/football/leagues/104.png",
+      "flag": "https://media.api-sports.io/flags/no.svg",
+      "season": 2024
+    },
+    "team": {
+      "id": 334,
+      "name": "Start",
+      "logo": "https://media.api-sports.io/football/teams/334.png"
+    },
+    "form": "LLDDLDLWLWDLWLLLWLDLWDWWWWLDDL",
+    "fixtures": {
+      "played": {
+        "home": 15,
+        "away": 15,
+        "total": 30
+      },
+      "wins": {
+        "home": 6,
+        "away": 3,
+        "total": 9
+      },
+      "draws": {
+        "home": 4,
+        "away": 4,
+        "total": 8
+      },
+      "loses": {
+        "home": 5,
+        "away": 8,
+        "total": 13
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 24,
+          "away": 21,
+          "total": 45
+        },
+        "average": {
+          "home": "1.6",
+          "away": "1.4",
+          "total": "1.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": 8,
+            "percentage": "17.78%"
+          },
+          "16-30": {
+            "total": 3,
+            "percentage": "6.67%"
+          },
+          "31-45": {
+            "total": 8,
+            "percentage": "17.78%"
+          },
+          "46-60": {
+            "total": 10,
+            "percentage": "22.22%"
+          },
+          "61-75": {
+            "total": 7,
+            "percentage": "15.56%"
+          },
+          "76-90": {
+            "total": 6,
+            "percentage": "13.33%"
+          },
+          "91-105": {
+            "total": 3,
+            "percentage": "6.67%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 26,
+            "under": 4
+          },
+          "1.5": {
+            "over": 10,
+            "under": 20
+          },
+          "2.5": {
+            "over": 6,
+            "under": 24
+          },
+          "3.5": {
+            "over": 3,
+            "under": 27
+          },
+          "4.5": {
+            "over": 0,
+            "under": 30
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 27,
+          "away": 30,
+          "total": 57
+        },
+        "average": {
+          "home": "1.8",
+          "away": "2.0",
+          "total": "1.9"
+        },
+        "minute": {
+          "0-15": {
+            "total": 5,
+            "percentage": "8.77%"
+          },
+          "16-30": {
+            "total": 10,
+            "percentage": "17.54%"
+          },
+          "31-45": {
+            "total": 8,
+            "percentage": "14.04%"
+          },
+          "46-60": {
+            "total": 16,
+            "percentage": "28.07%"
+          },
+          "61-75": {
+            "total": 6,
+            "percentage": "10.53%"
+          },
+          "76-90": {
+            "total": 7,
+            "percentage": "12.28%"
+          },
+          "91-105": {
+            "total": 5,
+            "percentage": "8.77%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 27,
+            "under": 3
+          },
+          "1.5": {
+            "over": 17,
+            "under": 13
+          },
+          "2.5": {
+            "over": 10,
+            "under": 20
+          },
+          "3.5": {
+            "over": 3,
+            "under": 27
+          },
+          "4.5": {
+            "over": 0,
+            "under": 30
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 4,
+        "draws": 2,
+        "loses": 3
+      },
+      "wins": {
+        "home": "3-1",
+        "away": "0-4"
+      },
+      "loses": {
+        "home": "1-4",
+        "away": "4-0"
+      },
+      "goals": {
+        "for": {
+          "home": 4,
+          "away": 4
+        },
+        "against": {
+          "home": 4,
+          "away": 4
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 2,
+      "away": 1,
+      "total": 3
+    },
+    "failed_to_score": {
+      "home": 1,
+      "away": 3,
+      "total": 4
+    },
+    "penalty": {
+      "scored": {
+        "total": 2,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 2
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 2,
+          "percentage": "3.64%"
+        },
+        "16-30": {
+          "total": 5,
+          "percentage": "9.09%"
+        },
+        "31-45": {
+          "total": 8,
+          "percentage": "14.55%"
+        },
+        "46-60": {
+          "total": 11,
+          "percentage": "20.00%"
+        },
+        "61-75": {
+          "total": 5,
+          "percentage": "9.09%"
+        },
+        "76-90": {
+          "total": 12,
+          "percentage": "21.82%"
+        },
+        "91-105": {
+          "total": 12,
+          "percentage": "21.82%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "76-90": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:37:06.772Z"
+}

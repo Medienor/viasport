@@ -1,0 +1,827 @@
+{
+  "team": {
+    "team": {
+      "id": 2386,
+      "name": "Haiti",
+      "code": "HAI",
+      "country": "Haiti",
+      "founded": 1904,
+      "national": true,
+      "logo": "https://media.api-sports.io/football/teams/2386.png"
+    },
+    "venue": {
+      "id": 2856,
+      "name": "Stade Sylvio Cator",
+      "address": "Rue O. Durand",
+      "city": "Port-au-Prince",
+      "capacity": 15000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/2856.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-01",
+          "end": "2024-12-21",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 536,
+        "name": "CONCACAF Nations League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/536.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-04",
+          "end": "2025-03-24",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2010,
+    2012,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1201323,
+          "date": "2024-11-19T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Centroamericano de Mayagüez",
+            "city": "Mayagüez"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1731974400
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2386,
+            "name": "Haiti",
+            "logo": "https://media.api-sports.io/football/teams/2386.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5539,
+            "name": "Puerto Rico",
+            "logo": "https://media.api-sports.io/football/teams/5539.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201316,
+          "date": "2024-11-15T21:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Centroamericano de Mayaguez",
+            "city": "Mayaguez"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1731704400
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10985,
+            "name": "Sint Maarten",
+            "logo": "https://media.api-sports.io/football/teams/10985.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2386,
+            "name": "Haiti",
+            "logo": "https://media.api-sports.io/football/teams/2386.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 8
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 4
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 8
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201307,
+          "date": "2024-10-15T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Compleho Deportivo Guillermo Prospero Trinidad",
+            "city": "Oranjestad"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1728950400
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2386,
+            "name": "Haiti",
+            "logo": "https://media.api-sports.io/football/teams/2386.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8167,
+            "name": "Aruba",
+            "logo": "https://media.api-sports.io/football/teams/8167.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201299,
+          "date": "2024-10-12T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Compleho Deportivo Guillermo Prospero Trinidad",
+            "city": "Oranjestad"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1728691200
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8167,
+            "name": "Aruba",
+            "logo": "https://media.api-sports.io/football/teams/8167.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2386,
+            "name": "Haiti",
+            "logo": "https://media.api-sports.io/football/teams/2386.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201291,
+          "date": "2024-09-09T21:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Centroamericano de Mayagüez",
+            "city": "Mayagüez"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725915600
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2386,
+            "name": "Haiti",
+            "logo": "https://media.api-sports.io/football/teams/2386.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10985,
+            "name": "Sint Maarten",
+            "logo": "https://media.api-sports.io/football/teams/10985.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 6,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 6,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1201283,
+          "date": "2024-09-07T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Centroamericano de Mayagüez",
+            "city": "Mayagüez"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725667200
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5539,
+            "name": "Puerto Rico",
+            "logo": "https://media.api-sports.io/football/teams/5539.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2386,
+            "name": "Haiti",
+            "logo": "https://media.api-sports.io/football/teams/2386.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1189572,
+          "date": "2024-03-23T20:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711224000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8118,
+            "name": "French Guyana",
+            "logo": "https://media.api-sports.io/football/teams/8118.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2386,
+            "name": "Haiti",
+            "logo": "https://media.api-sports.io/football/teams/2386.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 10,
+      "name": "Friendlies",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 2386,
+      "name": "Haiti",
+      "logo": "https://media.api-sports.io/football/teams/2386.png"
+    },
+    "form": "D",
+    "fixtures": {
+      "played": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      },
+      "loses": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 0,
+          "away": 1,
+          "total": 1
+        },
+        "average": {
+          "home": "0.0",
+          "away": "1.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 0
+          },
+          "1.5": {
+            "over": 0,
+            "under": 1
+          },
+          "2.5": {
+            "over": 0,
+            "under": 1
+          },
+          "3.5": {
+            "over": 0,
+            "under": 1
+          },
+          "4.5": {
+            "over": 0,
+            "under": 1
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 0,
+          "away": 1,
+          "total": 1
+        },
+        "average": {
+          "home": "0.0",
+          "away": "1.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 0
+          },
+          "1.5": {
+            "over": 0,
+            "under": 1
+          },
+          "2.5": {
+            "over": 0,
+            "under": 1
+          },
+          "3.5": {
+            "over": 0,
+            "under": 1
+          },
+          "4.5": {
+            "over": 0,
+            "under": 1
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 1,
+        "loses": 0
+      },
+      "wins": {
+        "home": null,
+        "away": null
+      },
+      "loses": {
+        "home": null,
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 0,
+          "away": 1
+        },
+        "against": {
+          "home": 0,
+          "away": 1
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:41:52.651Z"
+}

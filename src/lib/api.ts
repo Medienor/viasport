@@ -461,11 +461,6 @@ function logDisabledCall(functionName: string, ...args: any[]) {
    * @returns Player data including statistics
    */
   export async function fetchPlayerById(playerId: number) {
-    // Skip API call if disabled
-    if (DISABLE_API_CALLS) {
-      return logDisabledCall('fetchPlayerById', playerId);
-    }
-
     try {
       console.log(`[fetchPlayerById] Starting fetch for player ID: ${playerId}`);
       

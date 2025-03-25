@@ -1,0 +1,1094 @@
+{
+  "team": {
+    "team": {
+      "id": 1611,
+      "name": "Sporting Kansas City",
+      "code": "KAN",
+      "country": "USA",
+      "founded": 1995,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/1611.png"
+    },
+    "venue": {
+      "id": 1615,
+      "name": "Children's Mercy Park",
+      "address": "One Sporting Way",
+      "city": "Kansas City, Kansas",
+      "capacity": 21650,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1615.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 253,
+        "name": "Major League Soccer",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/253.png"
+      },
+      "country": {
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-02-22",
+          "end": "2024-12-07",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": true,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-04",
+          "end": "2024-12-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 257,
+        "name": "US Open Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/257.png"
+      },
+      "country": {
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-03-18",
+          "end": "2024-09-26",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 772,
+        "name": "Leagues Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/772.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-27",
+          "end": "2024-08-25",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1151241,
+          "date": "2024-10-20T01:00:00+00:00",
+          "venue": {
+            "id": 1612,
+            "name": "Toyota Stadium",
+            "city": "Frisco, Texas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1729386000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1597,
+            "name": "FC Dallas",
+            "logo": "https://media.api-sports.io/football/teams/1597.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151227,
+          "date": "2024-10-06T00:30:00+00:00",
+          "venue": {
+            "id": 1615,
+            "name": "Children's Mercy Park",
+            "city": "Kansas City, Kansas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1728174600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151203,
+          "date": "2024-09-29T00:30:00+00:00",
+          "venue": {
+            "id": 19408,
+            "name": "CITYPARK",
+            "city": "St. Louis, Missouri"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1727569800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 20787,
+            "name": "St. Louis City",
+            "logo": "https://media.api-sports.io/football/teams/20787.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151184,
+          "date": "2024-09-22T00:30:00+00:00",
+          "venue": {
+            "id": 1615,
+            "name": "Children's Mercy Park",
+            "city": "Kansas City, Kansas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1726965000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1612,
+            "name": "Minnesota United FC",
+            "logo": "https://media.api-sports.io/football/teams/1612.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151170,
+          "date": "2024-09-19T00:30:00+00:00",
+          "venue": {
+            "id": 1615,
+            "name": "Children's Mercy Park",
+            "city": "Kansas City, Kansas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1726705800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151163,
+          "date": "2024-09-15T23:15:00+00:00",
+          "venue": {
+            "id": 11534,
+            "name": "Lumen Field",
+            "city": "Seattle, Washington"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1726442100
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1595,
+            "name": "Seattle Sounders",
+            "logo": "https://media.api-sports.io/football/teams/1595.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151148,
+          "date": "2024-09-07T23:30:00+00:00",
+          "venue": {
+            "id": 1619,
+            "name": "Red Bull Arena",
+            "city": "Harrison, New Jersey"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725751800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1234544,
+          "date": "2024-08-28T00:00:00+00:00",
+          "venue": {
+            "id": 1615,
+            "name": "Children's Mercy Park",
+            "city": "Kansas City, Kansas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1724803200
+        },
+        "league": {
+          "id": 257,
+          "name": "US Open Cup",
+          "logo": "https://media.api-sports.io/football/leagues/257.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3996,
+            "name": "Indy Eleven",
+            "logo": "https://media.api-sports.io/football/teams/3996.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1151127,
+          "date": "2024-08-25T00:30:00+00:00",
+          "venue": {
+            "id": 1615,
+            "name": "Children's Mercy Park",
+            "city": "Kansas City, Kansas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1724545800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1598,
+            "name": "Orlando City SC",
+            "logo": "https://media.api-sports.io/football/teams/1598.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1282127,
+          "date": "2024-08-09T23:30:00+00:00",
+          "venue": {
+            "id": 12667,
+            "name": "Lower.com Field",
+            "city": "Columbus, Ohio"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1723246200
+        },
+        "league": {
+          "id": 772,
+          "name": "Leagues Cup",
+          "logo": "https://media.api-sports.io/football/leagues/772.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1613,
+            "name": "Columbus Crew",
+            "logo": "https://media.api-sports.io/football/teams/1613.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 253,
+      "name": "Major League Soccer",
+      "country": "USA",
+      "logo": "https://media.api-sports.io/football/leagues/253.png",
+      "flag": "https://media.api-sports.io/flags/us.svg",
+      "season": 2024
+    },
+    "team": {
+      "id": 1611,
+      "name": "Sporting Kansas City",
+      "logo": "https://media.api-sports.io/football/teams/1611.png"
+    },
+    "form": "DDDWLWDLDLLLLLLLWLLLWLWWLDWDLWLLLL",
+    "fixtures": {
+      "played": {
+        "home": 17,
+        "away": 17,
+        "total": 34
+      },
+      "wins": {
+        "home": 6,
+        "away": 2,
+        "total": 8
+      },
+      "draws": {
+        "home": 4,
+        "away": 3,
+        "total": 7
+      },
+      "loses": {
+        "home": 7,
+        "away": 12,
+        "total": 19
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 33,
+          "away": 18,
+          "total": 51
+        },
+        "average": {
+          "home": "1.9",
+          "away": "1.1",
+          "total": "1.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": 4,
+            "percentage": "7.27%"
+          },
+          "16-30": {
+            "total": 10,
+            "percentage": "18.18%"
+          },
+          "31-45": {
+            "total": 6,
+            "percentage": "10.91%"
+          },
+          "46-60": {
+            "total": 10,
+            "percentage": "18.18%"
+          },
+          "61-75": {
+            "total": 13,
+            "percentage": "23.64%"
+          },
+          "76-90": {
+            "total": 9,
+            "percentage": "16.36%"
+          },
+          "91-105": {
+            "total": 3,
+            "percentage": "5.45%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 28,
+            "under": 6
+          },
+          "1.5": {
+            "over": 15,
+            "under": 19
+          },
+          "2.5": {
+            "over": 7,
+            "under": 27
+          },
+          "3.5": {
+            "over": 1,
+            "under": 33
+          },
+          "4.5": {
+            "over": 0,
+            "under": 34
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 32,
+          "away": 34,
+          "total": 66
+        },
+        "average": {
+          "home": "1.9",
+          "away": "2.0",
+          "total": "1.9"
+        },
+        "minute": {
+          "0-15": {
+            "total": 5,
+            "percentage": "8.06%"
+          },
+          "16-30": {
+            "total": 5,
+            "percentage": "8.06%"
+          },
+          "31-45": {
+            "total": 11,
+            "percentage": "17.74%"
+          },
+          "46-60": {
+            "total": 9,
+            "percentage": "14.52%"
+          },
+          "61-75": {
+            "total": 16,
+            "percentage": "25.81%"
+          },
+          "76-90": {
+            "total": 10,
+            "percentage": "16.13%"
+          },
+          "91-105": {
+            "total": 6,
+            "percentage": "9.68%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 31,
+            "under": 3
+          },
+          "1.5": {
+            "over": 21,
+            "under": 13
+          },
+          "2.5": {
+            "over": 11,
+            "under": 23
+          },
+          "3.5": {
+            "over": 3,
+            "under": 31
+          },
+          "4.5": {
+            "over": 0,
+            "under": 34
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 2,
+        "draws": 3,
+        "loses": 7
+      },
+      "wins": {
+        "home": "4-1",
+        "away": "1-3"
+      },
+      "loses": {
+        "home": "0-3",
+        "away": "4-0"
+      },
+      "goals": {
+        "for": {
+          "home": 4,
+          "away": 3
+        },
+        "against": {
+          "home": 4,
+          "away": 4
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 2,
+      "away": 1,
+      "total": 3
+    },
+    "failed_to_score": {
+      "home": 2,
+      "away": 4,
+      "total": 6
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [
+      {
+        "formation": "4-3-3",
+        "played": 19
+      },
+      {
+        "formation": "4-2-3-1",
+        "played": 13
+      },
+      {
+        "formation": "4-2-2-2",
+        "played": 1
+      },
+      {
+        "formation": "3-4-3",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": 1,
+          "percentage": "1.54%"
+        },
+        "16-30": {
+          "total": 5,
+          "percentage": "7.69%"
+        },
+        "31-45": {
+          "total": 12,
+          "percentage": "18.46%"
+        },
+        "46-60": {
+          "total": 13,
+          "percentage": "20.00%"
+        },
+        "61-75": {
+          "total": 9,
+          "percentage": "13.85%"
+        },
+        "76-90": {
+          "total": 11,
+          "percentage": "16.92%"
+        },
+        "91-105": {
+          "total": 14,
+          "percentage": "21.54%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": 1,
+          "percentage": "33.33%"
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": 2,
+          "percentage": "66.67%"
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:44:02.840Z"
+}

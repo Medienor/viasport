@@ -1,0 +1,1625 @@
+{
+  "team": {
+    "team": {
+      "id": 348,
+      "name": "Pogon Szczecin",
+      "code": "POG",
+      "country": "Poland",
+      "founded": 1948,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/348.png"
+    },
+    "venue": {
+      "id": 1256,
+      "name": "Stadion Miejski im. Floriana Krygiera",
+      "address": "Mieczysława Karłowicza 28",
+      "city": "Szczecin",
+      "capacity": 21163,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1256.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-01-04",
+          "end": "2024-12-30",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 106,
+        "name": "Ekstraklasa",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/106.png"
+      },
+      "country": {
+        "name": "Poland",
+        "code": "PL",
+        "flag": "https://media.api-sports.io/flags/pl.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-20",
+          "end": "2025-05-24",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 108,
+        "name": "Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/108.png"
+      },
+      "country": {
+        "name": "Poland",
+        "code": "PL",
+        "flag": "https://media.api-sports.io/flags/pl.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-08-06",
+          "end": "2025-04-02",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1203180,
+          "date": "2025-03-28T19:30:00+00:00",
+          "venue": {
+            "id": 1253,
+            "name": "Stadion Miejski Legii Warszawa im. Marszałka Józefa Piłsudskiego",
+            "city": "Warszawa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743190200
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 339,
+            "name": "Legia Warszawa",
+            "logo": "https://media.api-sports.io/football/teams/339.png",
+            "winner": null
+          },
+          "away": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1357112,
+          "date": "2025-04-01T16:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Miejski w Niepołomicach",
+            "city": "Niepołomice"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743525000
+        },
+        "league": {
+          "id": 108,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/108.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          },
+          "away": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203187,
+          "date": "2025-04-06T15:30:00+00:00",
+          "venue": {
+            "id": 1256,
+            "name": "Stadion Miejski im. Floriana Krygiera",
+            "city": "Szczecin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743953400
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3484,
+            "name": "GKS Katowice",
+            "logo": "https://media.api-sports.io/football/teams/3484.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203200,
+          "date": "2025-04-13T10:15:00+00:00",
+          "venue": {
+            "id": 1255,
+            "name": "Stadion Miejski",
+            "city": "Gliwice"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744539300
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 349,
+            "name": "Piast Gliwice",
+            "logo": "https://media.api-sports.io/football/teams/349.png",
+            "winner": null
+          },
+          "away": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203206,
+          "date": "2025-04-19T18:15:00+00:00",
+          "venue": {
+            "id": 1256,
+            "name": "Stadion Miejski im. Floriana Krygiera",
+            "city": "Szczecin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745086500
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3491,
+            "name": "Raków Częstochowa",
+            "logo": "https://media.api-sports.io/football/teams/3491.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203217,
+          "date": "2025-04-26T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745625600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          },
+          "away": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203225,
+          "date": "2025-05-03T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746230400
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          },
+          "away": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203236,
+          "date": "2025-05-10T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746835200
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4248,
+            "name": "Radomiak Radom",
+            "logo": "https://media.api-sports.io/football/teams/4248.png",
+            "winner": null
+          },
+          "away": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203243,
+          "date": "2025-05-17T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Time to be defined",
+            "short": "TBD",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747440000
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          },
+          "away": {
+            "id": 343,
+            "name": "Lechia Gdansk",
+            "logo": "https://media.api-sports.io/football/teams/343.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203248,
+          "date": "2025-05-24T15:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Chorten Arena",
+            "city": "Białystok"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748100600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 336,
+            "name": "Jagiellonia",
+            "logo": "https://media.api-sports.io/football/teams/336.png",
+            "winner": null
+          },
+          "away": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1203169,
+          "date": "2025-03-14T19:30:00+00:00",
+          "venue": {
+            "id": 1256,
+            "name": "Stadion Miejski im. Floriana Krygiera",
+            "city": "Szczecin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1741980600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": true
+          },
+          "away": {
+            "id": 350,
+            "name": "Cracovia Krakow",
+            "logo": "https://media.api-sports.io/football/teams/350.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203165,
+          "date": "2025-03-07T19:30:00+00:00",
+          "venue": {
+            "id": 18628,
+            "name": "Tarczyński Arena",
+            "city": "Wrocław"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1741375800
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 337,
+            "name": "Slask Wroclaw",
+            "logo": "https://media.api-sports.io/football/teams/337.png",
+            "winner": null
+          },
+          "away": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203152,
+          "date": "2025-03-01T16:30:00+00:00",
+          "venue": {
+            "id": 1256,
+            "name": "Stadion Miejski im. Floriana Krygiera",
+            "city": "Szczecin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1740846600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": false
+          },
+          "away": {
+            "id": 347,
+            "name": "Lech Poznan",
+            "logo": "https://media.api-sports.io/football/teams/347.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203147,
+          "date": "2025-02-22T16:30:00+00:00",
+          "venue": {
+            "id": 5080,
+            "name": "Stadion Miejski Widzewa Łódź",
+            "city": "Łódź"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1740241800
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6962,
+            "name": "Widzew Łódź",
+            "logo": "https://media.api-sports.io/football/teams/6962.png",
+            "winner": false
+          },
+          "away": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203137,
+          "date": "2025-02-16T11:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Miejski im. Grzegorza Lato",
+            "city": "Mielec"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1739704500
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3493,
+            "name": "Stal Mielec",
+            "logo": "https://media.api-sports.io/football/teams/3493.png",
+            "winner": false
+          },
+          "away": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203124,
+          "date": "2025-02-07T19:30:00+00:00",
+          "venue": {
+            "id": 1256,
+            "name": "Stadion Miejski im. Floriana Krygiera",
+            "city": "Szczecin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1738956600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": true
+          },
+          "away": {
+            "id": 340,
+            "name": "Gornik Zabrze",
+            "logo": "https://media.api-sports.io/football/teams/340.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203119,
+          "date": "2025-02-01T19:15:00+00:00",
+          "venue": {
+            "id": 1256,
+            "name": "Stadion Miejski im. Floriana Krygiera",
+            "city": "Szczecin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1738437300
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": true
+          },
+          "away": {
+            "id": 345,
+            "name": "Zaglebie Lubin",
+            "logo": "https://media.api-sports.io/football/teams/345.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203105,
+          "date": "2024-12-09T18:00:00+00:00",
+          "venue": {
+            "id": 21189,
+            "name": "Stadion Miejski",
+            "city": "Kielce"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1733767200
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 346,
+            "name": "Korona Kielce",
+            "logo": "https://media.api-sports.io/football/teams/346.png",
+            "winner": null
+          },
+          "away": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1314999,
+          "date": "2024-12-04T20:00:00+00:00",
+          "venue": {
+            "id": 1256,
+            "name": "Stadion Miejski im. Floriana Krygiera",
+            "city": "Szczecin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1733342400
+        },
+        "league": {
+          "id": 108,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/108.png"
+        },
+        "teams": {
+          "home": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": true
+          },
+          "away": {
+            "id": 345,
+            "name": "Zaglebie Lubin",
+            "logo": "https://media.api-sports.io/football/teams/345.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203099,
+          "date": "2024-12-01T13:45:00+00:00",
+          "venue": {
+            "id": 1256,
+            "name": "Stadion Miejski im. Floriana Krygiera",
+            "city": "Szczecin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1733060700
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          },
+          "away": {
+            "id": 336,
+            "name": "Jagiellonia",
+            "logo": "https://media.api-sports.io/football/teams/336.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 667,
+      "name": "Friendlies Clubs",
+      "country": "World",
+      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "flag": null,
+      "season": 2024
+    },
+    "team": {
+      "id": 348,
+      "name": "Pogon Szczecin",
+      "logo": "https://media.api-sports.io/football/teams/348.png"
+    },
+    "form": "WDWLDLWWD",
+    "fixtures": {
+      "played": {
+        "home": 6,
+        "away": 3,
+        "total": 9
+      },
+      "wins": {
+        "home": 2,
+        "away": 2,
+        "total": 4
+      },
+      "draws": {
+        "home": 3,
+        "away": 0,
+        "total": 3
+      },
+      "loses": {
+        "home": 1,
+        "away": 1,
+        "total": 2
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 9,
+          "away": 8,
+          "total": 17
+        },
+        "average": {
+          "home": "1.5",
+          "away": "2.7",
+          "total": "1.9"
+        },
+        "minute": {
+          "0-15": {
+            "total": 2,
+            "percentage": "14.29%"
+          },
+          "16-30": {
+            "total": 2,
+            "percentage": "14.29%"
+          },
+          "31-45": {
+            "total": 2,
+            "percentage": "14.29%"
+          },
+          "46-60": {
+            "total": 3,
+            "percentage": "21.43%"
+          },
+          "61-75": {
+            "total": 3,
+            "percentage": "21.43%"
+          },
+          "76-90": {
+            "total": 2,
+            "percentage": "14.29%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 7,
+            "under": 2
+          },
+          "1.5": {
+            "over": 4,
+            "under": 5
+          },
+          "2.5": {
+            "over": 3,
+            "under": 6
+          },
+          "3.5": {
+            "over": 1,
+            "under": 8
+          },
+          "4.5": {
+            "over": 1,
+            "under": 8
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 5,
+          "away": 3,
+          "total": 8
+        },
+        "average": {
+          "home": "0.8",
+          "away": "1.0",
+          "total": "0.9"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 7,
+            "under": 2
+          },
+          "1.5": {
+            "over": 1,
+            "under": 8
+          },
+          "2.5": {
+            "over": 0,
+            "under": 9
+          },
+          "3.5": {
+            "over": 0,
+            "under": 9
+          },
+          "4.5": {
+            "over": 0,
+            "under": 9
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 2,
+        "draws": 1,
+        "loses": 1
+      },
+      "wins": {
+        "home": "3-0",
+        "away": "1-6"
+      },
+      "loses": {
+        "home": "0-2",
+        "away": "1-0"
+      },
+      "goals": {
+        "for": {
+          "home": 3,
+          "away": 6
+        },
+        "against": {
+          "home": 2,
+          "away": 1
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 2,
+      "away": 0,
+      "total": 2
+    },
+    "failed_to_score": {
+      "home": 1,
+      "away": 1,
+      "total": 2
+    },
+    "penalty": {
+      "scored": {
+        "total": 1,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 1
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": 2,
+          "percentage": "50.00%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": 2,
+          "percentage": "50.00%"
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:38:14.802Z"
+}

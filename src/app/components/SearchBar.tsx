@@ -14,7 +14,7 @@ const SearchBar = () => {
   const [showResults, setShowResults] = useState(false);
   const searchRef = useRef<HTMLDivElement>(null);
   
-  // Debounced search effect that uses RapidAPI directly
+  // Debounced search effect that uses local data
   useEffect(() => {
     const delayDebounceFn = setTimeout(async () => {
       if (!searchTerm || searchTerm.length < 2) {
@@ -24,56 +24,42 @@ const SearchBar = () => {
 
       try {
         console.log('Searching for:', searchTerm);
+        const response = await fetch(`/api/search/teams?q=${encodeURIComponent(searchTerm)}`);
+        const data = await response.json();
+        console.log('Search response:', data);
         
-        // Parallel API calls for teams and leagues
-        const [teamsResponse, leaguesResponse] = await Promise.all([
-          fetch(`/api/football/search_for_teams?search=${encodeURIComponent(searchTerm)}`),
-          fetch(`/api/football/search_for_leagues?search=${encodeURIComponent(searchTerm)}`)
-        ]);
-        
-        const teamsData = teamsResponse.ok ? await teamsResponse.json() : { response: [] };
-        const leaguesData = leaguesResponse.ok ? await leaguesResponse.json() : { response: [] };
-        
-        console.log('Teams search response:', teamsData);
-        console.log('Leagues search response:', leaguesData);
-        
-        // Transform API results to match our IndexedItem format
-        const teams: SearchIndexItem[] = (teamsData.response || []).map((team: any) => ({
-          id: team.team.id,
-          name: team.team.name,
-          type: 'team',
-          logo: team.team.logo,
-          country: team.team.country
-        }));
+        // Transform team data
+        const teams: SearchIndexItem[] = (data.teams || [])
+          .filter((team: any) => team?.team?.team?.name)
+          .map((team: any) => ({
+            id: team.team.team.id,
+            name: team.team.team.name,
+            type: 'team',
+            logo: team.team.team.logo || '/placeholder-team.png',
+            country: team.team.team.country || 'Unknown'
+          }));
 
-        const leagues: SearchIndexItem[] = (leaguesData.response || []).map((league: any) => ({
-          id: league.league.id,
-          name: league.league.name,
-          type: 'league',
-          logo: league.league.logo,
-          country: league.country.name
-        }));
+        // Transform league data
+        const leagues: SearchIndexItem[] = (data.leagues || [])
+          .filter((league: any) => league?.league?.name)
+          .map((league: any) => ({
+            id: league.league.id,
+            name: league.league.name,
+            type: 'league',
+            logo: league.league.logo || '/placeholder-league.png',
+            country: league.country?.name || 'Unknown'
+          }));
 
-        // Combine and deduplicate results
-        const allResults: SearchIndexItem[] = [];
-        
-        // Add all teams and leagues while avoiding duplicates
-        [...teams, ...leagues].forEach(item => {
-          const exists = allResults.some(
-            existingItem => 
-              existingItem.id === item.id && 
-              existingItem.type === item.type
-          );
-          if (!exists) {
-            allResults.push(item);
-          }
-        });
+        console.log('Processed teams:', teams);
+        console.log('Processed leagues:', leagues);
 
-        // Update state with results
+        // Combine results
+        const allResults = [...teams, ...leagues];
+        console.log('Final results:', allResults);
         setSearchResults(allResults);
         
       } catch (error) {
-        console.error('Error fetching search results:', error);
+        console.error('Error searching:', error);
         setSearchResults([]);
       }
     }, 300);
@@ -114,8 +100,8 @@ const SearchBar = () => {
               {/* Group results by type */}
               {(() => {
                 const grouped = {
-                  teams: searchResults.filter(result => result.type === 'team'),
-                  leagues: searchResults.filter(result => result.type === 'league')
+                  teams: searchResults.filter(result => result?.type === 'team'),
+                  leagues: searchResults.filter(result => result?.type === 'league')
                 };
                 return (
                   <>
@@ -126,18 +112,18 @@ const SearchBar = () => {
                           Lag ({grouped.teams.length})
                         </div>
                         <div className="py-1">
-                          {grouped.teams.map((result) => (
+                          {grouped.teams.map((result) => result && (
                             <Link
                               key={`team-${result.id}`}
-                              href={`/lag/${createTeamSlug(result.name)}-${result.id}`}
+                              href={`/lag/${createTeamSlug(result.name || '')}-${result.id}`}
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               onClick={() => setShowResults(false)}
                             >
                               <div className="flex items-center">
                                 <div className="flex-shrink-0 h-6 w-6 mr-3 relative">
                                   <Image 
-                                    src={result.logo!} 
-                                    alt={result.name}
+                                    src={result.logo || '/placeholder-team.png'}
+                                    alt={result.name || 'Team logo'}
                                     fill
                                     className="object-contain"
                                   />
@@ -145,7 +131,7 @@ const SearchBar = () => {
                                 <div>
                                   <div className="font-medium">{result.name}</div>
                                   <div className="text-xs text-gray-500">
-                                    Lag • {result.country}
+                                    Lag • {result.country || 'Unknown'}
                                   </div>
                                 </div>
                               </div>
@@ -172,8 +158,8 @@ const SearchBar = () => {
                               <div className="flex items-center">
                                 <div className="flex-shrink-0 h-6 w-6 mr-3 relative">
                                   <Image 
-                                    src={result.logo!} 
-                                    alt={result.name}
+                                    src={result.logo || '/placeholder-league.png'}
+                                    alt={result.name || 'League logo'}
                                     fill
                                     className="object-contain"
                                   />
@@ -181,7 +167,7 @@ const SearchBar = () => {
                                 <div>
                                   <div className="font-medium">{result.name}</div>
                                   <div className="text-xs text-gray-500">
-                                    Liga • {result.country}
+                                    Liga • {result.country || 'Unknown'}
                                   </div>
                                 </div>
                               </div>

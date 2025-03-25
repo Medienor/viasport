@@ -1,21 +1,13 @@
 import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import LeagueStandings from './components/LeagueStandings';
 import LiveNowWrapper from './components/LiveNowWrapper';
 import FixturesSection from './components/FixturesSection';
 
-// Set page-level revalidation time (5 minutes)
-export const revalidate = 300;
+// Set page-level revalidation time (24 hours = 86400 seconds)
+export const revalidate = 86400;
 
 export default function Home() {
-  // Popular leagues to display in standings
-  const popularLeagues = [
-    { id: 39, name: "Premier League", season: 2024 },
-    { id: 103, name: "Eliteserien", season: 2025 },
-    { id: 2, name: "UEFA Champions League", season: 2024 }
-  ];
-
   return (
     <div className="bg-gray-50">
       {/* Hero section with background image and overlay */}
@@ -68,23 +60,6 @@ export default function Home() {
         <Suspense fallback={<FixturesSkeleton />}>
           <FixturesSection />
         </Suspense>
-      </div>
-
-      {/* League Standings Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Ligatabeller</h2>
-        
-        <div className="space-y-8">
-          {popularLeagues.map(league => (
-            <Suspense key={league.id} fallback={<StandingsSkeleton leagueName={league.name} />}>
-              <LeagueStandings 
-                leagueId={league.id} 
-                leagueName={league.name} 
-                season={league.season} 
-              />
-            </Suspense>
-          ))}
-        </div>
       </div>
 
       {/* About ViaSport section */}
@@ -165,21 +140,6 @@ function FixturesSkeleton() {
           </div>
         </div>
       ))}
-    </div>
-  );
-}
-
-function StandingsSkeleton({ leagueName }: { leagueName: string }) {
-  return (
-    <div className="bg-white shadow rounded-lg p-6">
-      <div className="animate-pulse space-y-4">
-        <div className="h-6 bg-gray-200 rounded w-1/3">{leagueName}</div>
-        <div className="space-y-2">
-          {[...Array(10)].map((_, i) => (
-            <div key={i} className="h-8 bg-gray-200 rounded"></div>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }

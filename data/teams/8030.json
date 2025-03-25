@@ -1,0 +1,1033 @@
+{
+  "team": {
+    "team": {
+      "id": 8030,
+      "name": "Kaya",
+      "code": null,
+      "country": "Philippines",
+      "founded": 1996,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/8030.png"
+    },
+    "venue": {
+      "id": 5714,
+      "name": "Mckinley Hill Football Field",
+      "address": "Campus Avenue, Bonifacio Global City",
+      "city": "Taguig",
+      "capacity": 4500,
+      "surface": "artificial turf",
+      "image": "https://media.api-sports.io/football/venues/5714.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 765,
+        "name": "PFL",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/765.png"
+      },
+      "country": {
+        "name": "Philippines",
+        "code": "PH",
+        "flag": "https://media.api-sports.io/flags/ph.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-04-06",
+          "end": "2024-07-14",
+          "current": false,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 18,
+        "name": "AFC Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/18.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-08-14",
+          "end": "2025-04-16",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1129,
+        "name": "ASEAN Club Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1129.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-07-17",
+          "end": "2025-04-30",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1262516,
+          "date": "2025-02-06T12:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Biñan Football Stadium",
+            "city": "Biñan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1738845000
+        },
+        "league": {
+          "id": 1129,
+          "name": "ASEAN Club Championship",
+          "logo": "https://media.api-sports.io/football/leagues/1129.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8030,
+            "name": "Kaya",
+            "logo": "https://media.api-sports.io/football/teams/8030.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4204,
+            "name": "Home United",
+            "logo": "https://media.api-sports.io/football/teams/4204.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1262510,
+          "date": "2025-01-23T12:00:00+00:00",
+          "venue": {
+            "id": 840,
+            "name": "Stadion Kapten I Wayan Dipta",
+            "city": "Gianyar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 12
+          },
+          "timestamp": 1737633600
+        },
+        "league": {
+          "id": 1129,
+          "name": "ASEAN Club Championship",
+          "logo": "https://media.api-sports.io/football/leagues/1129.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2442,
+            "name": "Pusamania Borneo",
+            "logo": "https://media.api-sports.io/football/teams/2442.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8030,
+            "name": "Kaya",
+            "logo": "https://media.api-sports.io/football/teams/8030.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1262504,
+          "date": "2025-01-09T11:00:00+00:00",
+          "venue": {
+            "id": 1244,
+            "name": "Rizal Memorial Stadium",
+            "city": "Manila"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1736420400
+        },
+        "league": {
+          "id": 1129,
+          "name": "ASEAN Club Championship",
+          "logo": "https://media.api-sports.io/football/leagues/1129.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8030,
+            "name": "Kaya",
+            "logo": "https://media.api-sports.io/football/teams/8030.png",
+            "winner": false
+          },
+          "away": {
+            "id": 16400,
+            "name": "Công An Nhân Dân",
+            "logo": "https://media.api-sports.io/football/teams/16400.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1289416,
+          "date": "2024-12-05T08:00:00+00:00",
+          "venue": {
+            "id": 129,
+            "name": "Netstrata Jubilee Stadium",
+            "city": "Sydney"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1733385600
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8030,
+            "name": "Kaya",
+            "logo": "https://media.api-sports.io/football/teams/8030.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1289399,
+          "date": "2024-11-28T12:00:00+00:00",
+          "venue": {
+            "id": 1244,
+            "name": "Rizal Memorial Stadium",
+            "city": "Manila"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1732795200
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8030,
+            "name": "Kaya",
+            "logo": "https://media.api-sports.io/football/teams/8030.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1289387,
+          "date": "2024-11-07T12:00:00+00:00",
+          "venue": {
+            "id": 3384,
+            "name": "Mong Kok Stadium",
+            "city": "Hong Kong"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1730980800
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4451,
+            "name": "Eastern",
+            "logo": "https://media.api-sports.io/football/teams/4451.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8030,
+            "name": "Kaya",
+            "logo": "https://media.api-sports.io/football/teams/8030.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1289369,
+          "date": "2024-10-25T12:00:00+00:00",
+          "venue": {
+            "id": 1244,
+            "name": "Rizal Memorial Stadium",
+            "city": "Manila"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1729857600
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8030,
+            "name": "Kaya",
+            "logo": "https://media.api-sports.io/football/teams/8030.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4451,
+            "name": "Eastern",
+            "logo": "https://media.api-sports.io/football/teams/4451.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1289353,
+          "date": "2024-10-03T10:00:00+00:00",
+          "venue": {
+            "id": 1244,
+            "name": "Rizal Memorial Stadium",
+            "city": "Manila"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1727949600
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8030,
+            "name": "Kaya",
+            "logo": "https://media.api-sports.io/football/teams/8030.png",
+            "winner": false
+          },
+          "away": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1262498,
+          "date": "2024-09-26T12:00:00+00:00",
+          "venue": {
+            "id": 1559,
+            "name": "Chang Arena",
+            "city": "Buriram"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1727352000
+        },
+        "league": {
+          "id": 1129,
+          "name": "ASEAN Club Championship",
+          "logo": "https://media.api-sports.io/football/leagues/1129.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2780,
+            "name": "Buriram United",
+            "logo": "https://media.api-sports.io/football/teams/2780.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8030,
+            "name": "Kaya",
+            "logo": "https://media.api-sports.io/football/teams/8030.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 7,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 7,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1289339,
+          "date": "2024-09-19T10:00:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1726740000
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8030,
+            "name": "Kaya",
+            "logo": "https://media.api-sports.io/football/teams/8030.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 765,
+      "name": "PFL",
+      "country": "Philippines",
+      "logo": "https://media.api-sports.io/football/leagues/765.png",
+      "flag": "https://media.api-sports.io/flags/ph.svg",
+      "season": 2024
+    },
+    "team": {
+      "id": 8030,
+      "name": "Kaya",
+      "logo": "https://media.api-sports.io/football/teams/8030.png"
+    },
+    "form": "WWWDWWWWWWWWWW",
+    "fixtures": {
+      "played": {
+        "home": 8,
+        "away": 6,
+        "total": 14
+      },
+      "wins": {
+        "home": 8,
+        "away": 5,
+        "total": 13
+      },
+      "draws": {
+        "home": 0,
+        "away": 1,
+        "total": 1
+      },
+      "loses": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 41,
+          "away": 41,
+          "total": 82
+        },
+        "average": {
+          "home": "5.1",
+          "away": "6.8",
+          "total": "5.9"
+        },
+        "minute": {
+          "0-15": {
+            "total": 10,
+            "percentage": "14.93%"
+          },
+          "16-30": {
+            "total": 17,
+            "percentage": "25.37%"
+          },
+          "31-45": {
+            "total": 6,
+            "percentage": "8.96%"
+          },
+          "46-60": {
+            "total": 12,
+            "percentage": "17.91%"
+          },
+          "61-75": {
+            "total": 10,
+            "percentage": "14.93%"
+          },
+          "76-90": {
+            "total": 9,
+            "percentage": "13.43%"
+          },
+          "91-105": {
+            "total": 3,
+            "percentage": "4.48%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 13,
+            "under": 1
+          },
+          "1.5": {
+            "over": 11,
+            "under": 3
+          },
+          "2.5": {
+            "over": 10,
+            "under": 4
+          },
+          "3.5": {
+            "over": 7,
+            "under": 7
+          },
+          "4.5": {
+            "over": 7,
+            "under": 7
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 4,
+          "away": 1,
+          "total": 5
+        },
+        "average": {
+          "home": "0.5",
+          "away": "0.2",
+          "total": "0.4"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": 3,
+            "percentage": "42.86%"
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 4,
+            "under": 10
+          },
+          "1.5": {
+            "over": 1,
+            "under": 13
+          },
+          "2.5": {
+            "over": 0,
+            "under": 14
+          },
+          "3.5": {
+            "over": 0,
+            "under": 14
+          },
+          "4.5": {
+            "over": 0,
+            "under": 14
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 3,
+        "draws": 1,
+        "loses": 0
+      },
+      "wins": {
+        "home": "9-0",
+        "away": "0-14"
+      },
+      "loses": {
+        "home": null,
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 9,
+          "away": 14
+        },
+        "against": {
+          "home": 2,
+          "away": 1
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 5,
+      "away": 5,
+      "total": 10
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 1,
+      "total": 1
+    },
+    "penalty": {
+      "scored": {
+        "total": 5,
+        "percentage": "100.00%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 5
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": 1,
+          "percentage": "100.00%"
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-03-24T20:43:19.122Z"
+}

@@ -11,7 +11,7 @@ interface LeagueParams {
 
 // This enables static generation with dynamic paths
 export const dynamic = 'force-dynamic';
-export const revalidate = 3600; // Revalidate every hour
+export const revalidate = 86400; // Revalidate every 24 hours (changed from 3600)
 
 // Generate metadata for SEO
 export async function generateMetadata(
