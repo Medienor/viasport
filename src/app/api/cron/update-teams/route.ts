@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { updateAllTeamsData } from '@/scripts/teamDataFetcher';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs'; // Change this line from 'edge' to 'nodejs'
 
 export async function GET(request: Request) {
   // Verify the request is from your cron job
