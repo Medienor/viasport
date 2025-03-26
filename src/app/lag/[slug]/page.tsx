@@ -6,6 +6,9 @@ import { readFile, readdir } from 'fs/promises';
 import path from 'path';
 import TeamStats from '@/app/components/TeamStats';
 import TeamAnalysis from '@/app/components/TeamAnalysis';
+import { extractTeamId } from '@/utils/helpers';
+import { getTeamData } from '@/utils/api';
+import TabNav from '@/app/components/TabNav';
 
 // Add this constant at the top level
 const DATA_DIR = path.join(process.cwd(), 'data', 'teams');
@@ -35,59 +38,9 @@ export async function generateStaticParams() {
   }
 }
 
-// Helper function to extract team ID from slug
-function extractTeamId(slug: string): number | null {
-  console.log('Processing slug:', slug);
-  const match = slug.match(/-(\d+)$/);
-  const id = match ? parseInt(match[1], 10) : null;
-  console.log('Extracted ID:', id);
-  return id;
-}
-
-// Helper function to get team data
-async function getTeamData(teamId: number) {
-  try {
-    const filePath = path.join(DATA_DIR, `${teamId}.json`);
-    const rawData = await readFile(filePath, 'utf-8');
-    return JSON.parse(rawData);
-  } catch (error) {
-    console.error('Error reading team data:', error);
-    return null;
-  }
-}
-
 // This enables static generation
 export const dynamic = 'force-static';
 export const revalidate = 86400; // 24 hours in seconds
-
-// Generate metadata for the page
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const teamId = extractTeamId(params.slug);
-  if (!teamId) return { title: 'Lag ikke funnet' };
-
-  const data = await getTeamData(teamId);
-  if (!data?.team?.team?.name) return { title: 'Lag ikke funnet' };
-
-  const title = `${data.team.team.name} på TV & stream - Kampprogram, kanal og tid`;
-  
-  return {
-    title: title,
-    description: `Se når ${data.team.team.name} spiller på TV og stream. Finn kampprogram, kanaler og tidspunkt for alle ${data.team.team.name} sine kamper.`,
-    openGraph: {
-      title: title,
-      description: `Se når ${data.team.team.name} spiller på TV og stream. Finn kampprogram, kanaler og tidspunkt for alle ${data.team.team.name} sine kamper.`,
-      images: [{ url: data.team.team.logo || '/images/team-placeholder.png' }],
-    },
-  };
-}
-
-// Add interface for the season object
-interface Season {
-  year: number;
-  start: string;
-  end: string;
-  current: boolean;
-}
 
 export default async function TeamPage({ params }: { params: { slug: string } }) {
   const teamId = extractTeamId(params.slug);
@@ -114,11 +67,18 @@ export default async function TeamPage({ params }: { params: { slug: string } })
   // Add proper typing to the map function
   const seasonYears = leagues[0]?.seasons?.map((season: Season) => season.year) || [];
 
+  const tabs = [
+    { name: 'Oversikt', href: `/lag/${params.slug}` },
+    { name: 'Tropp', href: `/lag/${params.slug}/tropp` },
+    { name: 'Resultater', href: `/lag/${params.slug}/resultater` },
+    { name: 'Kamper', href: `/lag/${params.slug}/kamper` },
+    { name: 'Tabell', href: `/lag/${params.slug}/tabell` },
+  ];
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {/* Team Header - Full Width */}
       <div className="mb-8">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mb-6">
           <div className="relative h-16 w-16">
             <Image
               src={team.team.logo || '/images/team-placeholder.png'}
@@ -127,8 +87,9 @@ export default async function TeamPage({ params }: { params: { slug: string } })
               className="object-contain"
             />
           </div>
-          <h1 className="text-2xl font-bold">{team.team.name}</h1>
+          <h1 className="text-2xl font-bold">{team.team.name} på TV og Live Stream</h1>
         </div>
+        <TabNav tabs={tabs} />
       </div>
 
       {/* Main Content - Two Column Layout */}
