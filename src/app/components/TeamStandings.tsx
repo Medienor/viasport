@@ -8,9 +8,10 @@ interface TeamStandingsProps {
   teamId: number;
   seasons: number[];
   teamName: string;
+  hideSeasonSelector?: boolean;
 }
 
-export default function TeamStandings({ teamId, seasons, teamName }: TeamStandingsProps) {
+export default function TeamStandings({ teamId, seasons, teamName, hideSeasonSelector = false }: TeamStandingsProps) {
   // Initialize with previous year as default since football seasons often span two years
   const currentYear = new Date().getFullYear();
   const defaultSeason = currentYear - 1;
@@ -126,7 +127,7 @@ export default function TeamStandings({ teamId, seasons, teamName }: TeamStandin
   return (
     <div className="bg-white rounded-lg shadow-md p-6 mb-8">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold">{teamName} Tabell (2025/2026)</h2>
+        <h2 className="text-lg font-semibold">{teamName} Tabell</h2>
         
         <div className="flex items-center space-x-4">
           {/* League selector - only show if there are multiple leagues */}
@@ -144,18 +145,20 @@ export default function TeamStandings({ teamId, seasons, teamName }: TeamStandin
             </select>
           )}
           
-          {/* Season selector */}
-          <select
-            value={selectedSeason}
-            onChange={(e) => setSelectedSeason(Number(e.target.value))}
-            className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
-          >
-            {sortedSeasons.map((season) => (
-              <option key={season} value={season}>
-                {formatSeasonDisplay(season)}
-              </option>
-            ))}
-          </select>
+          {/* Season selector - only show if hideSeasonSelector is false */}
+          {!hideSeasonSelector && (
+            <select
+              value={selectedSeason}
+              onChange={(e) => setSelectedSeason(Number(e.target.value))}
+              className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
+            >
+              {sortedSeasons.map((season) => (
+                <option key={season} value={season}>
+                  {formatSeasonDisplay(season)}
+                </option>
+              ))}
+            </select>
+          )}
         </div>
       </div>
 
