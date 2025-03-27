@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 130,
-        "name": "Copa Argentina",
+        "id": 483,
+        "name": "Copa de la Superliga",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/130.png"
+        "logo": "https://media.api-sports.io/football/leagues/483.png"
       },
       "country": {
         "name": "Argentina",
@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-25",
-          "end": "2024-12-04",
-          "current": false,
+          "year": 2020,
+          "start": "2020-03-13",
+          "end": "2020-12-23",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -96,22 +96,22 @@
     },
     {
       "league": {
-        "id": 128,
-        "name": "Liga Profesional Argentina",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/128.png"
+        "id": 13,
+        "name": "CONMEBOL Libertadores",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/13.png"
       },
       "country": {
-        "name": "Argentina",
-        "code": "AR",
-        "flag": "https://media.api-sports.io/flags/ar.svg"
+        "name": "World",
+        "code": null,
+        "flag": null
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-05-12",
-          "end": "2024-12-15",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-05",
+          "end": "2025-05-28",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -126,7 +126,118 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 130,
+        "name": "Copa Argentina",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/130.png"
+      },
+      "country": {
+        "name": "Argentina",
+        "code": "AR",
+        "flag": "https://media.api-sports.io/flags/ar.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-23",
+          "end": "2025-06-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 810,
+        "name": "Super Copa",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/810.png"
+      },
+      "country": {
+        "name": "Argentina",
+        "code": "AR",
+        "flag": "https://media.api-sports.io/flags/ar.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-12",
+          "end": "2025-03-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 128,
+        "name": "Liga Profesional Argentina",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/128.png"
+      },
+      "country": {
+        "name": "Argentina",
+        "code": "AR",
+        "flag": "https://media.api-sports.io/flags/ar.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-23",
+          "end": "2025-05-04",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -145,24 +256,23 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1159024,
-          "date": "2024-12-17T00:00:00+00:00",
+          "id": 1334430,
+          "date": "2025-03-29T21:30:00+00:00",
           "venue": {
-            "id": 42,
-            "name": "Estadio Monumental Presidente José Fierro",
-            "city": "San Miguel de Tucumán, Provincia de Tucumán"
+            "id": 2997,
+            "name": "Estadio Alfredo Terrera",
+            "city": "Santiago del Estero, Provincia de Santiago del Est"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1734393600
+          "timestamp": 1743283800
         },
         "league": {
           "id": 128,
@@ -171,30 +281,30 @@
         },
         "teams": {
           "home": {
-            "id": 455,
-            "name": "Atletico Tucuman",
-            "logo": "https://media.api-sports.io/football/teams/455.png",
-            "winner": true
-          },
-          "away": {
             "id": 1065,
             "name": "Central Cordoba de Santiago",
             "logo": "https://media.api-sports.io/football/teams/1065.png",
-            "winner": false
+            "winner": null
+          },
+          "away": {
+            "id": 458,
+            "name": "Argentinos JRS",
+            "logo": "https://media.api-sports.io/football/teams/458.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 2,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 2,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -208,20 +318,553 @@
       },
       {
         "fixture": {
-          "id": 1317938,
-          "date": "2024-12-12T00:10:00+00:00",
+          "id": 1361860,
+          "date": "2025-04-03T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Único Madre de Ciudades",
+            "city": "Santiago del Estero, Prov. de Santiago del Estero"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743717600
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1158,
+            "name": "LDU de Quito",
+            "logo": "https://media.api-sports.io/football/teams/1158.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334444,
+          "date": "2025-04-06T18:30:00+00:00",
           "venue": {
             "id": 1933,
             "name": "Estadio 15 de Abril",
             "city": "Ciudad de Santa Fe, Provincia de Santa Fe"
           },
           "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743964200
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 441,
+            "name": "Union Santa Fe",
+            "logo": "https://media.api-sports.io/football/teams/441.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361877,
+          "date": "2025-04-10T00:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744245000
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334461,
+          "date": "2025-04-14T22:00:00+00:00",
+          "venue": {
+            "id": 2997,
+            "name": "Estadio Alfredo Terrera",
+            "city": "Santiago del Estero, Provincia de Santiago del Est"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744668000
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": null
+          },
+          "away": {
+            "id": 445,
+            "name": "Huracan",
+            "logo": "https://media.api-sports.io/football/teams/445.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334473,
+          "date": "2025-04-18T22:15:00+00:00",
+          "venue": {
+            "id": 99,
+            "name": "Estadio Presidente Juan Domingo Perón",
+            "city": "Avellaneda, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745014500
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 436,
+            "name": "Racing Club",
+            "logo": "https://media.api-sports.io/football/teams/436.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361893,
+          "date": "2025-04-24T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Único Madre de Ciudades",
+            "city": "Santiago del Estero, Prov. de Santiago del Estero"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745532000
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2807,
+            "name": "Deportivo Tachira FC",
+            "logo": "https://media.api-sports.io/football/teams/2807.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334492,
+          "date": "2025-04-29T00:45:00+00:00",
+          "venue": {
+            "id": 2997,
+            "name": "Estadio Alfredo Terrera",
+            "city": "Santiago del Estero, Provincia de Santiago del Est"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745887500
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": null
+          },
+          "away": {
+            "id": 473,
+            "name": "Independ. Rivadavia",
+            "logo": "https://media.api-sports.io/football/teams/473.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361963,
+          "date": "2025-05-08T00:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Único Madre de Ciudades",
+            "city": "Santiago del Estero, Prov. de Santiago del Estero"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746664200
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": null
+          },
+          "away": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361995,
+          "date": "2025-05-29T00:30:00+00:00",
+          "venue": {
+            "id": 471,
+            "name": "Estadio Rodrigo Paz Delgado",
+            "city": "Quito"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748478600
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1158,
+            "name": "LDU de Quito",
+            "logo": "https://media.api-sports.io/football/teams/1158.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1330773,
+          "date": "2025-03-23T00:30:00+00:00",
+          "venue": {
+            "id": 45,
+            "name": "Estadio Julio César Villagra",
+            "city": "Ciudad de Córdoba, Provincia de Córdoba"
+          },
+          "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 9
+            "extra": 7
           },
-          "timestamp": 1733962200
+          "timestamp": 1742689800
         },
         "league": {
           "id": 130,
@@ -230,15 +873,15 @@
         },
         "teams": {
           "home": {
-            "id": 438,
-            "name": "Velez Sarsfield",
-            "logo": "https://media.api-sports.io/football/teams/438.png",
-            "winner": false
-          },
-          "away": {
             "id": 1065,
             "name": "Central Cordoba de Santiago",
             "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": false
+          },
+          "away": {
+            "id": 480,
+            "name": "Quilmes",
+            "logo": "https://media.api-sports.io/football/teams/480.png",
             "winner": true
           }
         },
@@ -267,130 +910,12 @@
       },
       {
         "fixture": {
-          "id": 1159010,
-          "date": "2024-12-08T00:15:00+00:00",
+          "id": 1334424,
+          "date": "2025-03-17T22:00:00+00:00",
           "venue": {
-            "id": 2997,
-            "name": "Estadio Único Madre de Ciudades",
-            "city": "Santiago del Estero, Prov. de Santiago del Estero"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1733616900
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1065,
-            "name": "Central Cordoba de Santiago",
-            "logo": "https://media.api-sports.io/football/teams/1065.png",
-            "winner": true
-          },
-          "away": {
-            "id": 436,
-            "name": "Racing Club",
-            "logo": "https://media.api-sports.io/football/teams/436.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158996,
-          "date": "2024-12-01T20:00:00+00:00",
-          "venue": {
-            "id": 7131,
-            "name": "Estadio Libertadores de América",
-            "city": "Avellaneda, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1733083200
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 453,
-            "name": "Independiente",
-            "logo": "https://media.api-sports.io/football/teams/453.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1065,
-            "name": "Central Cordoba de Santiago",
-            "logo": "https://media.api-sports.io/football/teams/1065.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158982,
-          "date": "2024-11-25T22:00:00+00:00",
-          "venue": {
-            "id": 2997,
-            "name": "Estadio Único Madre de Ciudades",
-            "city": "Santiago del Estero, Prov. de Santiago del Estero"
+            "id": 112,
+            "name": "Estadio José Dellagiovanna",
+            "city": "San Fernando, Provincia de Buenos Aires"
           },
           "status": {
             "long": "Match Finished",
@@ -398,7 +923,7 @@
             "elapsed": 90,
             "extra": 6
           },
-          "timestamp": 1732572000
+          "timestamp": 1742248800
         },
         "league": {
           "id": 128,
@@ -407,21 +932,21 @@
         },
         "teams": {
           "home": {
-            "id": 1065,
-            "name": "Central Cordoba de Santiago",
-            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "id": 452,
+            "name": "Tigre",
+            "logo": "https://media.api-sports.io/football/teams/452.png",
             "winner": false
           },
           "away": {
-            "id": 437,
-            "name": "Rosario Central",
-            "logo": "https://media.api-sports.io/football/teams/437.png",
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
             "winner": true
           }
         },
         "goals": {
-          "home": 0,
-          "away": 1
+          "home": 1,
+          "away": 2
         },
         "score": {
           "halftime": {
@@ -429,8 +954,8 @@
             "away": 0
           },
           "fulltime": {
-            "home": 0,
-            "away": 1
+            "home": 1,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -444,12 +969,12 @@
       },
       {
         "fixture": {
-          "id": 1158968,
-          "date": "2024-11-20T20:00:00+00:00",
+          "id": 1334399,
+          "date": "2025-03-08T00:15:00+00:00",
           "venue": {
-            "id": 93,
-            "name": "Estadio Marcelo Alberto Bielsa",
-            "city": "Rosario, Provincia de Santa Fe"
+            "id": 2997,
+            "name": "Estadio Único Madre de Ciudades",
+            "city": "Santiago del Estero, Prov. de Santiago del Estero"
           },
           "status": {
             "long": "Match Finished",
@@ -457,7 +982,7 @@
             "elapsed": 90,
             "extra": 4
           },
-          "timestamp": 1732132800
+          "timestamp": 1741392900
         },
         "league": {
           "id": 128,
@@ -466,29 +991,29 @@
         },
         "teams": {
           "home": {
-            "id": 457,
-            "name": "Newells Old Boys",
-            "logo": "https://media.api-sports.io/football/teams/457.png",
-            "winner": false
-          },
-          "away": {
             "id": 1065,
             "name": "Central Cordoba de Santiago",
             "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": false
+          },
+          "away": {
+            "id": 451,
+            "name": "Boca Juniors",
+            "logo": "https://media.api-sports.io/football/teams/451.png",
             "winner": true
           }
         },
         "goals": {
-          "home": 2,
+          "home": 0,
           "away": 3
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 1
+            "home": 0,
+            "away": 2
           },
           "fulltime": {
-            "home": 2,
+            "home": 0,
             "away": 3
           },
           "extratime": {
@@ -503,8 +1028,8 @@
       },
       {
         "fixture": {
-          "id": 1158954,
-          "date": "2024-11-10T19:00:00+00:00",
+          "id": 1334383,
+          "date": "2025-03-01T01:15:00+00:00",
           "venue": {
             "id": 2997,
             "name": "Estadio Único Madre de Ciudades",
@@ -514,9 +1039,9 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 5
+            "extra": 11
           },
-          "timestamp": 1731265200
+          "timestamp": 1740791700
         },
         "league": {
           "id": 128,
@@ -531,24 +1056,24 @@
             "winner": null
           },
           "away": {
-            "id": 450,
-            "name": "Estudiantes L.P.",
-            "logo": "https://media.api-sports.io/football/teams/450.png",
+            "id": 476,
+            "name": "Deportivo Riestra",
+            "logo": "https://media.api-sports.io/football/teams/476.png",
             "winner": null
           }
         },
         "goals": {
-          "home": 1,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 1
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": 1,
-            "away": 1
+            "home": 0,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -562,20 +1087,20 @@
       },
       {
         "fixture": {
-          "id": 1158940,
-          "date": "2024-11-05T21:45:00+00:00",
+          "id": 1334368,
+          "date": "2025-02-21T22:15:00+00:00",
           "venue": {
-            "id": 77,
-            "name": "Estadio Juan Carmelo Zerillo",
+            "id": null,
+            "name": "Estadio Jorge Luis Hirschi",
             "city": "La Plata, Provincia de Buenos Aires"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 8
+            "extra": 9
           },
-          "timestamp": 1730843100
+          "timestamp": 1740176100
         },
         "league": {
           "id": 128,
@@ -584,29 +1109,88 @@
         },
         "teams": {
           "home": {
-            "id": 434,
-            "name": "Gimnasia L.P.",
-            "logo": "https://media.api-sports.io/football/teams/434.png",
-            "winner": null
+            "id": 450,
+            "name": "Estudiantes L.P.",
+            "logo": "https://media.api-sports.io/football/teams/450.png",
+            "winner": true
           },
           "away": {
             "id": 1065,
             "name": "Central Cordoba de Santiago",
             "logo": "https://media.api-sports.io/football/teams/1065.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": 0,
-          "away": 0
+          "home": 3,
+          "away": 2
         },
         "score": {
           "halftime": {
             "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334355,
+          "date": "2025-02-15T22:15:00+00:00",
+          "venue": {
+            "id": 2997,
+            "name": "Estadio Único Madre de Ciudades",
+            "city": "Santiago del Estero, Prov. de Santiago del Estero"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1739657700
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": true
+          },
+          "away": {
+            "id": 440,
+            "name": "Belgrano Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/440.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
             "away": 0
           },
           "fulltime": {
-            "home": 0,
+            "home": 4,
             "away": 0
           },
           "extratime": {
@@ -621,8 +1205,67 @@
       },
       {
         "fixture": {
-          "id": 1158926,
-          "date": "2024-11-01T22:00:00+00:00",
+          "id": 1334338,
+          "date": "2025-02-11T20:45:00+00:00",
+          "venue": {
+            "id": 38,
+            "name": "Estadio Julio Humberto Grondona",
+            "city": "Avellaneda, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1739306700
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2432,
+            "name": "Barracas Central",
+            "logo": "https://media.api-sports.io/football/teams/2432.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334325,
+          "date": "2025-02-07T23:00:00+00:00",
           "venue": {
             "id": 2997,
             "name": "Estadio Único Madre de Ciudades",
@@ -634,7 +1277,7 @@
             "elapsed": 90,
             "extra": 8
           },
-          "timestamp": 1730498400
+          "timestamp": 1738969200
         },
         "league": {
           "id": 128,
@@ -646,26 +1289,85 @@
             "id": 1065,
             "name": "Central Cordoba de Santiago",
             "logo": "https://media.api-sports.io/football/teams/1065.png",
-            "winner": false
+            "winner": true
           },
           "away": {
-            "id": 460,
-            "name": "San Lorenzo",
-            "logo": "https://media.api-sports.io/football/teams/460.png",
-            "winner": true
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
+            "winner": false
           }
         },
         "goals": {
-          "home": 0,
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334316,
+          "date": "2025-02-03T20:00:00+00:00",
+          "venue": {
+            "id": 59,
+            "name": "Estadio Norberto Tito Tomaghello",
+            "city": "Florencio Varela, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1738612800
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 442,
+            "name": "Defensa Y Justicia",
+            "logo": "https://media.api-sports.io/football/teams/442.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
           "away": 1
         },
         "score": {
           "halftime": {
             "home": 0,
-            "away": 1
+            "away": 0
           },
           "fulltime": {
-            "home": 0,
+            "home": 2,
             "away": 1
           },
           "extratime": {
@@ -680,20 +1382,20 @@
       },
       {
         "fixture": {
-          "id": 1158912,
-          "date": "2024-10-29T00:00:00+00:00",
+          "id": 1334306,
+          "date": "2025-01-31T00:30:00+00:00",
           "venue": {
-            "id": 82,
-            "name": "Estadio Tomás Adolfo Ducó",
-            "city": "Capital Federal, Ciudad de Buenos Aires"
+            "id": 2997,
+            "name": "Estadio Único Madre de Ciudades",
+            "city": "Santiago del Estero, Prov. de Santiago del Estero"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 10
+            "extra": 4
           },
-          "timestamp": 1730160000
+          "timestamp": 1738283400
         },
         "league": {
           "id": 128,
@@ -702,29 +1404,29 @@
         },
         "teams": {
           "home": {
-            "id": 445,
-            "name": "Huracan",
-            "logo": "https://media.api-sports.io/football/teams/445.png",
-            "winner": null
-          },
-          "away": {
             "id": 1065,
             "name": "Central Cordoba de Santiago",
             "logo": "https://media.api-sports.io/football/teams/1065.png",
-            "winner": null
+            "winner": true
+          },
+          "away": {
+            "id": 455,
+            "name": "Atletico Tucuman",
+            "logo": "https://media.api-sports.io/football/teams/455.png",
+            "winner": false
           }
         },
         "goals": {
-          "home": 0,
+          "home": 2,
           "away": 0
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 0
           },
           "fulltime": {
-            "home": 0,
+            "home": 2,
             "away": 0
           },
           "extratime": {
@@ -741,34 +1443,34 @@
   },
   "statistics": {
     "league": {
-      "id": 130,
-      "name": "Copa Argentina",
-      "country": "Argentina",
-      "logo": "https://media.api-sports.io/football/leagues/130.png",
-      "flag": "https://media.api-sports.io/flags/ar.svg",
-      "season": 2024
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
+      "flag": null,
+      "season": null
     },
     "team": {
       "id": 1065,
       "name": "Central Cordoba de Santiago",
       "logo": "https://media.api-sports.io/football/teams/1065.png"
     },
-    "form": "WWDWWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 3,
-        "away": 3,
-        "total": 6
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 2,
-        "away": 3,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -779,31 +1481,31 @@
     "goals": {
       "for": {
         "total": {
-          "home": 5,
-          "away": 5,
-          "total": 10
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.7",
-          "away": "1.7",
-          "total": "1.7"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 4,
-            "percentage": "30.77%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 4,
-            "percentage": "30.77%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -818,48 +1520,48 @@
             "percentage": null
           },
           "106-120": {
-            "total": 3,
-            "percentage": "23.08%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 5,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 4,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 2,
-          "away": 2,
-          "total": 4
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.7",
-          "away": "0.7",
-          "total": "0.7"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -870,12 +1572,12 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -886,43 +1588,43 @@
             "percentage": null
           },
           "106-120": {
-            "total": 2,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 4,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 1,
+        "wins": 0,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "3-1",
-        "away": "1-2"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
@@ -930,35 +1632,35 @@
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 1
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 3,
-        "percentage": "60.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
-        "total": 2,
-        "percentage": "40.00%"
+        "total": 0,
+        "percentage": "0%"
       },
-      "total": 5
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -972,24 +1674,24 @@
           "percentage": null
         },
         "31-45": {
-          "total": 4,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 3,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 2,
-          "percentage": "16.67%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "8.33%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 2,
-          "percentage": "16.67%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1032,5 +1734,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:08.987Z"
+  "lastUpdated": "2025-03-27T10:37:50.238Z"
 }

@@ -22,80 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 365,
-        "name": "Virsliga",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/365.png"
-      },
-      "country": {
-        "name": "Latvia",
-        "code": "LV",
-        "flag": "https://media.api-sports.io/flags/lv.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-08",
-          "end": "2024-11-09",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 658,
         "name": "Cup",
         "type": "Cup",
@@ -204,6 +130,117 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 365,
+        "name": "Virsliga",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/365.png"
+      },
+      "country": {
+        "name": "Latvia",
+        "code": "LV",
+        "flag": "https://media.api-sports.io/flags/lv.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-05",
+          "end": "2025-11-09",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1176,
+        "name": "Super Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1176.png"
+      },
+      "country": {
+        "name": "Latvia",
+        "code": "LV",
+        "flag": "https://media.api-sports.io/flags/lv.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-01",
+          "end": "2025-03-01",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -223,8 +260,1661 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1350338,
+          "date": "2025-03-29T15:00:00+00:00",
+          "venue": {
+            "id": 21384,
+            "name": "LNK Sporta Parks",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743260400
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          },
+          "away": {
+            "id": 661,
+            "name": "FK Liepaja",
+            "logo": "https://media.api-sports.io/football/teams/661.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350343,
+          "date": "2025-04-04T14:00:00+00:00",
+          "venue": {
+            "id": 3177,
+            "name": "Hanzas vidusskolas laukums",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743775200
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4159,
+            "name": "Metta / LU",
+            "logo": "https://media.api-sports.io/football/teams/4159.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350349,
+          "date": "2025-04-09T16:00:00+00:00",
+          "venue": {
+            "id": 21384,
+            "name": "LNK Sporta Parks",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744214400
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4144,
+            "name": "Tukums",
+            "logo": "https://media.api-sports.io/football/teams/4144.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350355,
+          "date": "2025-04-15T15:00:00+00:00",
+          "venue": {
+            "id": 1820,
+            "name": "Stadions Daugava mākslīgas laukums",
+            "city": "Liepāja"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744729200
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4138,
+            "name": "Grobiņa",
+            "logo": "https://media.api-sports.io/football/teams/4138.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350361,
+          "date": "2025-04-20T14:00:00+00:00",
+          "venue": {
+            "id": 21384,
+            "name": "LNK Sporta Parks 2",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745157600
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4143,
+            "name": "Super Nova",
+            "logo": "https://media.api-sports.io/football/teams/4143.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350366,
+          "date": "2025-04-26T15:00:00+00:00",
+          "venue": {
+            "id": 19577,
+            "name": "LNK Sporta Parks",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745679600
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10124,
+            "name": "Riga",
+            "logo": "https://media.api-sports.io/football/teams/10124.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350370,
+          "date": "2025-05-01T16:00:00+00:00",
+          "venue": {
+            "id": 19577,
+            "name": "LNK Sporta Parks",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746115200
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4135,
+            "name": "Auda",
+            "logo": "https://media.api-sports.io/football/teams/4135.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350373,
+          "date": "2025-05-05T11:00:00+00:00",
+          "venue": {
+            "id": 19582,
+            "name": "Zemgales Olimpiskā centra",
+            "city": "Jelgava"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746442800
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18834,
+            "name": "FS Jelgava",
+            "logo": "https://media.api-sports.io/football/teams/18834.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350377,
+          "date": "2025-05-09T16:00:00+00:00",
+          "venue": {
+            "id": 19577,
+            "name": "LNK Sporta Parks",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746806400
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4149,
+            "name": "BFC Daugavpils",
+            "logo": "https://media.api-sports.io/football/teams/4149.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350383,
+          "date": "2025-05-14T15:00:00+00:00",
+          "venue": {
+            "id": 1820,
+            "name": "Stadions Daugava",
+            "city": "Liepāja"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747234800
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 661,
+            "name": "FK Liepaja",
+            "logo": "https://media.api-sports.io/football/teams/661.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350389,
+          "date": "2025-05-20T17:00:00+00:00",
+          "venue": {
+            "id": 19577,
+            "name": "LNK Sporta Parks",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747760400
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4159,
+            "name": "Metta / LU",
+            "logo": "https://media.api-sports.io/football/teams/4159.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350395,
+          "date": "2025-05-25T15:00:00+00:00",
+          "venue": {
+            "id": 11629,
+            "name": "Tukuma pilsētas stadions",
+            "city": "Tukums"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748185200
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4144,
+            "name": "Tukums",
+            "logo": "https://media.api-sports.io/football/teams/4144.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350400,
+          "date": "2025-05-31T16:00:00+00:00",
+          "venue": {
+            "id": 19577,
+            "name": "LNK Sporta Parks",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748707200
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4138,
+            "name": "Grobiņa",
+            "logo": "https://media.api-sports.io/football/teams/4138.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350406,
+          "date": "2025-06-14T17:00:00+00:00",
+          "venue": {
+            "id": 19577,
+            "name": "LNK Sporta Parks",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749920400
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4143,
+            "name": "Super Nova",
+            "logo": "https://media.api-sports.io/football/teams/4143.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350411,
+          "date": "2025-06-18T17:00:00+00:00",
+          "venue": {
+            "id": 2611,
+            "name": "Stadions Skonto",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750266000
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10124,
+            "name": "Riga",
+            "logo": "https://media.api-sports.io/football/teams/10124.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350416,
+          "date": "2025-06-22T17:00:00+00:00",
+          "venue": {
+            "id": 19577,
+            "name": "LNK Sporta Parks",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750611600
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4135,
+            "name": "Auda",
+            "logo": "https://media.api-sports.io/football/teams/4135.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350419,
+          "date": "2025-06-26T16:00:00+00:00",
+          "venue": {
+            "id": 19582,
+            "name": "Zemgales Olimpiskā centra",
+            "city": "Jelgava"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750953600
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18834,
+            "name": "FS Jelgava",
+            "logo": "https://media.api-sports.io/football/teams/18834.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350422,
+          "date": "2025-06-30T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadionā Esplanāde",
+            "city": "Daugavpils"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751295600
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4149,
+            "name": "BFC Daugavpils",
+            "logo": "https://media.api-sports.io/football/teams/4149.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350427,
+          "date": "2025-07-04T16:00:00+00:00",
+          "venue": {
+            "id": 19577,
+            "name": "LNK Sporta Parks",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751644800
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          },
+          "away": {
+            "id": 661,
+            "name": "FK Liepaja",
+            "logo": "https://media.api-sports.io/football/teams/661.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350433,
+          "date": "2025-07-19T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752937200
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4159,
+            "name": "Metta / LU",
+            "logo": "https://media.api-sports.io/football/teams/4159.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1350333,
+          "date": "2025-03-15T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadionā Esplanāde",
+            "city": "Daugavpils"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742047200
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4149,
+            "name": "BFC Daugavpils",
+            "logo": "https://media.api-sports.io/football/teams/4149.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350329,
+          "date": "2025-03-11T17:00:00+00:00",
+          "venue": {
+            "id": 21384,
+            "name": "LNK Sporta Parks",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1741712400
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": true
+          },
+          "away": {
+            "id": 18834,
+            "name": "FS Jelgava",
+            "logo": "https://media.api-sports.io/football/teams/18834.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350322,
+          "date": "2025-03-05T16:00:00+00:00",
+          "venue": {
+            "id": 19576,
+            "name": "Mežaparks Sports Village",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1741190400
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4135,
+            "name": "Auda",
+            "logo": "https://media.api-sports.io/football/teams/4135.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355658,
+          "date": "2025-03-01T12:00:00+00:00",
+          "venue": {
+            "id": 19577,
+            "name": "LNK Sporta Parks",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1740830400
+        },
+        "league": {
+          "id": 1176,
+          "name": "Super Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1176.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10124,
+            "name": "Riga",
+            "logo": "https://media.api-sports.io/football/teams/10124.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350850,
+          "date": "2025-02-19T12:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "TBC",
+            "city": "TBC"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1739968200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4564,
+            "name": "Atyrau",
+            "logo": "https://media.api-sports.io/football/teams/4564.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346157,
+          "date": "2025-02-16T08:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Gloria Sports Arena",
+            "city": "Belek"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1739694600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": false
+          },
+          "away": {
+            "id": 572,
+            "name": "Dynamo Kyiv",
+            "logo": "https://media.api-sports.io/football/teams/572.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346052,
+          "date": "2025-02-14T09:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "TBC",
+            "city": "TBC"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1739523600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": true
+          },
+          "away": {
+            "id": 6501,
+            "name": "Veres Rivne",
+            "logo": "https://media.api-sports.io/football/teams/6501.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346033,
+          "date": "2025-02-13T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Titanic Sports Center - Field 1",
+            "city": "Belek"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1739455200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": false
+          },
+          "away": {
+            "id": 550,
+            "name": "Shakhtar Donetsk",
+            "logo": "https://media.api-sports.io/football/teams/550.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1299256,
@@ -286,130 +1976,12 @@
       },
       {
         "fixture": {
-          "id": 1299252,
-          "date": "2025-01-23T20:00:00+00:00",
+          "id": 1339602,
+          "date": "2025-01-25T00:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Daugava Stadium",
-            "city": "Riga"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737662400
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4160,
-            "name": "Rīgas FS",
-            "logo": "https://media.api-sports.io/football/teams/4160.png",
-            "winner": true
-          },
-          "away": {
-            "id": 194,
-            "name": "Ajax",
-            "logo": "https://media.api-sports.io/football/teams/194.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1299232,
-          "date": "2024-12-12T20:00:00+00:00",
-          "venue": {
-            "id": 1424,
-            "name": "Stadion Partizana",
-            "city": "Beograd"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 13
-          },
-          "timestamp": 1734033600
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 604,
-            "name": "Maccabi Tel Aviv",
-            "logo": "https://media.api-sports.io/football/teams/604.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4160,
-            "name": "Rīgas FS",
-            "logo": "https://media.api-sports.io/football/teams/4160.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1320374,
-          "date": "2024-12-05T17:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Marbella Football Center - Sur 1",
-            "city": "San Pedro de Alcántara"
+            "name": "EJL Jalgpallihall",
+            "city": "Tallinn"
           },
           "status": {
             "long": "Match Finished",
@@ -417,7 +1989,7 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1733418000
+          "timestamp": 1737763200
         },
         "league": {
           "id": 667,
@@ -426,305 +1998,10 @@
         },
         "teams": {
           "home": {
-            "id": 375,
-            "name": "Malmo FF",
-            "logo": "https://media.api-sports.io/football/teams/375.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4160,
-            "name": "Rīgas FS",
-            "logo": "https://media.api-sports.io/football/teams/4160.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1299206,
-          "date": "2024-11-28T17:45:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Daugava Stadium",
-            "city": "Riga"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1732815900
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4160,
-            "name": "Rīgas FS",
-            "logo": "https://media.api-sports.io/football/teams/4160.png",
-            "winner": false
-          },
-          "away": {
-            "id": 619,
-            "name": "PAOK",
-            "logo": "https://media.api-sports.io/football/teams/619.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1316736,
-          "date": "2024-11-22T16:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1732291200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4160,
-            "name": "Rīgas FS",
-            "logo": "https://media.api-sports.io/football/teams/4160.png",
-            "winner": true
-          },
-          "away": {
             "id": 687,
             "name": "Flora Tallinn",
             "logo": "https://media.api-sports.io/football/teams/687.png",
             "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1179111,
-          "date": "2024-11-10T11:00:00+00:00",
-          "venue": {
-            "id": 19577,
-            "name": "LNK Sporta Parks",
-            "city": "Riga"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1731236400
-        },
-        "league": {
-          "id": 365,
-          "name": "Virsliga",
-          "logo": "https://media.api-sports.io/football/leagues/365.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4160,
-            "name": "Rīgas FS",
-            "logo": "https://media.api-sports.io/football/teams/4160.png",
-            "winner": false
-          },
-          "away": {
-            "id": 10124,
-            "name": "Riga",
-            "logo": "https://media.api-sports.io/football/teams/10124.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1299197,
-          "date": "2024-11-07T20:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Daugava Stadium",
-            "city": "Riga"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1731009600
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4160,
-            "name": "Rīgas FS",
-            "logo": "https://media.api-sports.io/football/teams/4160.png",
-            "winner": null
-          },
-          "away": {
-            "id": 554,
-            "name": "Anderlecht",
-            "logo": "https://media.api-sports.io/football/teams/554.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1179102,
-          "date": "2024-11-03T11:00:00+00:00",
-          "venue": {
-            "id": 1820,
-            "name": "Stadions Daugava mākslīgas laukums",
-            "city": "Liepāja"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1730631600
-        },
-        "league": {
-          "id": 365,
-          "name": "Virsliga",
-          "logo": "https://media.api-sports.io/football/leagues/365.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4138,
-            "name": "Grobiņa",
-            "logo": "https://media.api-sports.io/football/teams/4138.png",
-            "winner": false
           },
           "away": {
             "id": 4160,
@@ -740,69 +2017,10 @@
         "score": {
           "halftime": {
             "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
             "away": 2
           },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1179101,
-          "date": "2024-10-28T16:30:00+00:00",
-          "venue": {
-            "id": 7709,
-            "name": "Daugavas Stadionā",
-            "city": "Riga"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730133000
-        },
-        "league": {
-          "id": 365,
-          "name": "Virsliga",
-          "logo": "https://media.api-sports.io/football/leagues/365.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4159,
-            "name": "Metta / LU",
-            "logo": "https://media.api-sports.io/football/teams/4159.png",
-            "winner": false
-          },
-          "away": {
-            "id": 4160,
-            "name": "Rīgas FS",
-            "logo": "https://media.api-sports.io/football/teams/4160.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
           "fulltime": {
-            "home": 1,
+            "home": 0,
             "away": 2
           },
           "extratime": {
@@ -819,81 +2037,81 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
-      "flag": null,
-      "season": 2024
+      "id": 365,
+      "name": "Virsliga",
+      "country": "Latvia",
+      "logo": "https://media.api-sports.io/football/leagues/365.png",
+      "flag": "https://media.api-sports.io/flags/lv.svg",
+      "season": 2025
     },
     "team": {
       "id": 4160,
       "name": "Rīgas FS",
       "logo": "https://media.api-sports.io/football/teams/4160.png"
     },
-    "form": "WWLLDWWLWL",
+    "form": "WWW",
     "fixtures": {
       "played": {
-        "home": 6,
-        "away": 4,
-        "total": 10
+        "home": 1,
+        "away": 2,
+        "total": 3
       },
       "wins": {
-        "home": 4,
-        "away": 1,
-        "total": 5
+        "home": 1,
+        "away": 2,
+        "total": 3
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
-        "home": 1,
-        "away": 3,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 11,
-          "away": 7,
-          "total": 18
+          "home": 1,
+          "away": 4,
+          "total": 5
         },
         "average": {
-          "home": "1.8",
-          "away": "1.8",
-          "total": "1.8"
+          "home": "1.0",
+          "away": "2.0",
+          "total": "1.7"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "40.00%"
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
+            "total": 2,
+            "percentage": "40.00%"
+          },
+          "46-60": {
             "total": null,
             "percentage": null
           },
-          "46-60": {
-            "total": 1,
-            "percentage": "16.67%"
-          },
           "61-75": {
-            "total": 2,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": 1,
-            "percentage": "16.67%"
+            "percentage": "20.00%"
           },
           "106-120": {
             "total": null,
@@ -902,37 +2120,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 7,
-            "under": 3
+            "over": 3,
+            "under": 0
           },
           "1.5": {
-            "over": 6,
-            "under": 4
+            "over": 2,
+            "under": 1
           },
           "2.5": {
-            "over": 2,
-            "under": 8
+            "over": 0,
+            "under": 3
           },
           "3.5": {
-            "over": 1,
-            "under": 9
+            "over": 0,
+            "under": 3
           },
           "4.5": {
-            "over": 1,
-            "under": 9
+            "over": 0,
+            "under": 3
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
-          "away": 5,
-          "total": 9
+          "home": 0,
+          "away": 2,
+          "total": 2
         },
         "average": {
-          "home": "0.7",
-          "away": "1.3",
-          "total": "0.9"
+          "home": "0.0",
+          "away": "1.0",
+          "total": "0.7"
         },
         "minute": {
           "0-15": {
@@ -940,8 +2158,8 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
@@ -949,15 +2167,15 @@
           },
           "46-60": {
             "total": 1,
-            "percentage": "20.00%"
+            "percentage": "50.00%"
           },
           "61-75": {
             "total": 1,
-            "percentage": "20.00%"
+            "percentage": "50.00%"
           },
           "76-90": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -970,62 +2188,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 7,
-            "under": 3
+            "over": 2,
+            "under": 1
           },
           "1.5": {
-            "over": 2,
-            "under": 8
+            "over": 0,
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 10
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 10
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 10
+            "under": 3
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 1,
-        "loses": 2
+        "wins": 3,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "3-0",
-        "away": "1-6"
+        "home": "1-0",
+        "away": "1-2"
       },
       "loses": {
-        "home": "0-1",
-        "away": "2-1"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 6
+          "home": 1,
+          "away": 2
         },
         "against": {
-          "home": 2,
-          "away": 2
+          "home": 0,
+          "away": 1
         }
       }
     },
     "clean_sheet": {
-      "home": 3,
+      "home": 1,
       "away": 0,
-      "total": 3
+      "total": 1
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 2,
-      "total": 3
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1046,12 +2264,12 @@
           "percentage": null
         },
         "16-30": {
-          "total": 1,
-          "percentage": "50.00%"
-        },
-        "31-45": {
           "total": null,
           "percentage": null
+        },
+        "31-45": {
+          "total": 2,
+          "percentage": "28.57%"
         },
         "46-60": {
           "total": null,
@@ -1059,15 +2277,15 @@
         },
         "61-75": {
           "total": 1,
-          "percentage": "50.00%"
+          "percentage": "14.29%"
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "28.57%"
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "28.57%"
         },
         "106-120": {
           "total": null,
@@ -1076,8 +2294,8 @@
       },
       "red": {
         "0-15": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
           "total": null,
@@ -1110,5 +2328,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:33.343Z"
+  "lastUpdated": "2025-03-27T10:38:15.399Z"
 }

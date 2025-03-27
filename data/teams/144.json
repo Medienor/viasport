@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-17",
-          "end": "2024-04-07",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-15",
+          "end": "2025-03-30",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -52,7 +52,44 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -71,10 +108,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-02-20",
-          "end": "2024-11-10",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-18",
+          "end": "2025-03-14",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -96,10 +133,10 @@
     },
     {
       "league": {
-        "id": 71,
-        "name": "Serie A",
+        "id": 72,
+        "name": "Serie B",
         "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/71.png"
+        "logo": "https://media.api-sports.io/football/leagues/72.png"
       },
       "country": {
         "name": "Brazil",
@@ -108,23 +145,23 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-04-13",
-          "end": "2024-12-08",
-          "current": false,
+          "year": 2025,
+          "start": "2025-04-04",
+          "end": "2025-11-22",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
-            "injuries": true,
+            "injuries": false,
             "predictions": true,
             "odds": false
           }
@@ -151,56 +188,55 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1180727,
-          "date": "2024-12-08T19:00:00+00:00",
+          "id": 1353262,
+          "date": "2025-04-07T22:00:00+00:00",
           "venue": {
-            "id": 216,
-            "name": "Arena Fonte Nova",
-            "city": "Salvador, Bahia"
+            "id": 211,
+            "name": "Estádio Antônio Accioly",
+            "city": "Goiânia, Goiás"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1733684400
+          "timestamp": 1744063200
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
         },
         "teams": {
           "home": {
-            "id": 118,
-            "name": "Bahia",
-            "logo": "https://media.api-sports.io/football/teams/118.png",
-            "winner": true
-          },
-          "away": {
             "id": 144,
             "name": "Atletico Goianiense",
             "logo": "https://media.api-sports.io/football/teams/144.png",
-            "winner": false
+            "winner": null
+          },
+          "away": {
+            "id": 13975,
+            "name": "Athletic Club",
+            "logo": "https://media.api-sports.io/football/teams/13975.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 2,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 2,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -214,8 +250,187 @@
       },
       {
         "fixture": {
-          "id": 1180723,
-          "date": "2024-12-05T00:30:00+00:00",
+          "id": 1353279,
+          "date": "2025-04-13T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Arena NicNet",
+            "city": "Ribeirão Preto, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744581600
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2618,
+            "name": "Botafogo SP",
+            "logo": "https://media.api-sports.io/football/teams/2618.png",
+            "winner": null
+          },
+          "away": {
+            "id": 144,
+            "name": "Atletico Goianiense",
+            "logo": "https://media.api-sports.io/football/teams/144.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353288,
+          "date": "2025-04-18T00:00:00+00:00",
+          "venue": {
+            "id": 5658,
+            "name": "Estádio Doutor Adhemar de Barros",
+            "city": "Araraquara, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744934400
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7826,
+            "name": "Ferroviária",
+            "logo": "https://media.api-sports.io/football/teams/7826.png",
+            "winner": null
+          },
+          "away": {
+            "id": 144,
+            "name": "Atletico Goianiense",
+            "logo": "https://media.api-sports.io/football/teams/144.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1359700,
+          "date": "2025-03-15T20:00:00+00:00",
+          "venue": {
+            "id": 5655,
+            "name": "Estádio Municipal Jonas Duarte",
+            "city": "Anápolis, Goiás"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1742068800
+        },
+        "league": {
+          "id": 628,
+          "name": "Goiano - 1",
+          "logo": "https://media.api-sports.io/football/leagues/628.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7852,
+            "name": "Anápolis",
+            "logo": "https://media.api-sports.io/football/teams/7852.png",
+            "winner": true
+          },
+          "away": {
+            "id": 144,
+            "name": "Atletico Goianiense",
+            "logo": "https://media.api-sports.io/football/teams/144.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355028,
+          "date": "2025-03-13T00:30:00+00:00",
           "venue": {
             "id": 211,
             "name": "Estádio Antônio Accioly",
@@ -225,40 +440,40 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 7
+            "extra": null
           },
-          "timestamp": 1733358600
+          "timestamp": 1741825800
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
         },
         "teams": {
           "home": {
             "id": 144,
             "name": "Atletico Goianiense",
             "logo": "https://media.api-sports.io/football/teams/144.png",
-            "winner": true
+            "winner": null
           },
           "away": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": false
+            "id": 13098,
+            "name": "Retrô",
+            "logo": "https://media.api-sports.io/football/teams/13098.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 3,
+          "home": 1,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 1,
+            "home": 0,
             "away": 1
           },
           "fulltime": {
-            "home": 3,
+            "home": 1,
             "away": 1
           },
           "extratime": {
@@ -273,37 +488,37 @@
       },
       {
         "fixture": {
-          "id": 1180709,
-          "date": "2024-12-01T00:30:00+00:00",
+          "id": 1359699,
+          "date": "2025-03-08T20:00:00+00:00",
           "venue": {
-            "id": 19377,
-            "name": "Estádio São Januário",
-            "city": "Rio de Janeiro, Rio de Janeiro"
+            "id": 211,
+            "name": "Estádio Antônio Accioly",
+            "city": "Goiânia, Goiás"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 8
+            "extra": 12
           },
-          "timestamp": 1733013000
+          "timestamp": 1741464000
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 628,
+          "name": "Goiano - 1",
+          "logo": "https://media.api-sports.io/football/leagues/628.png"
         },
         "teams": {
           "home": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": null
-          },
-          "away": {
             "id": 144,
             "name": "Atletico Goianiense",
             "logo": "https://media.api-sports.io/football/teams/144.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7852,
+            "name": "Anápolis",
+            "logo": "https://media.api-sports.io/football/teams/7852.png",
             "winner": null
           }
         },
@@ -313,8 +528,8 @@
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": 1,
+            "away": 2
           },
           "fulltime": {
             "home": 2,
@@ -332,8 +547,8 @@
       },
       {
         "fixture": {
-          "id": 1180703,
-          "date": "2024-11-23T22:30:00+00:00",
+          "id": 1354241,
+          "date": "2025-03-04T20:00:00+00:00",
           "venue": {
             "id": 211,
             "name": "Estádio Antônio Accioly",
@@ -343,85 +558,26 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 7
+            "extra": 10
           },
-          "timestamp": 1732401000
+          "timestamp": 1741118400
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 628,
+          "name": "Goiano - 1",
+          "logo": "https://media.api-sports.io/football/leagues/628.png"
         },
         "teams": {
           "home": {
             "id": 144,
             "name": "Atletico Goianiense",
             "logo": "https://media.api-sports.io/football/teams/144.png",
-            "winner": false
-          },
-          "away": {
-            "id": 121,
-            "name": "Palmeiras",
-            "logo": "https://media.api-sports.io/football/teams/121.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180692,
-          "date": "2024-11-20T19:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Ligga Arena",
-            "city": "Curitiba, Paraná"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1732131000
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 134,
-            "name": "Atletico Paranaense",
-            "logo": "https://media.api-sports.io/football/teams/134.png",
             "winner": true
           },
           "away": {
-            "id": 144,
-            "name": "Atletico Goianiense",
-            "logo": "https://media.api-sports.io/football/teams/144.png",
+            "id": 20708,
+            "name": "Inhumas",
+            "logo": "https://media.api-sports.io/football/teams/20708.png",
             "winner": false
           }
         },
@@ -450,12 +606,12 @@
       },
       {
         "fixture": {
-          "id": 1180683,
-          "date": "2024-11-09T22:00:00+00:00",
+          "id": 1354240,
+          "date": "2025-03-01T21:30:00+00:00",
           "venue": {
-            "id": 211,
-            "name": "Estádio Antônio Accioly",
-            "city": "Goiânia, Goiás"
+            "id": 20632,
+            "name": "Estádio Zico Brandão",
+            "city": "Inhumas, Goiás"
           },
           "status": {
             "long": "Match Finished",
@@ -463,30 +619,30 @@
             "elapsed": 90,
             "extra": 5
           },
-          "timestamp": 1731189600
+          "timestamp": 1740864600
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 628,
+          "name": "Goiano - 1",
+          "logo": "https://media.api-sports.io/football/leagues/628.png"
         },
         "teams": {
           "home": {
+            "id": 20708,
+            "name": "Inhumas",
+            "logo": "https://media.api-sports.io/football/teams/20708.png",
+            "winner": null
+          },
+          "away": {
             "id": 144,
             "name": "Atletico Goianiense",
             "logo": "https://media.api-sports.io/football/teams/144.png",
             "winner": null
-          },
-          "away": {
-            "id": 794,
-            "name": "RB Bragantino",
-            "logo": "https://media.api-sports.io/football/teams/794.png",
-            "winner": null
           }
         },
         "goals": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         },
         "score": {
           "halftime": {
@@ -494,8 +650,8 @@
             "away": 0
           },
           "fulltime": {
-            "home": 0,
-            "away": 0
+            "home": 1,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -509,37 +665,37 @@
       },
       {
         "fixture": {
-          "id": 1180673,
-          "date": "2024-11-07T00:00:00+00:00",
+          "id": 1318189,
+          "date": "2025-02-23T19:00:00+00:00",
           "venue": {
-            "id": 211,
-            "name": "Estádio Antônio Accioly",
-            "city": "Goiânia, Goiás"
+            "id": 209,
+            "name": "Estádio Annibal Batista de Toledo",
+            "city": "Aparecida de Goiânia, Goiás"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 6
+            "extra": 7
           },
-          "timestamp": 1730937600
+          "timestamp": 1740337200
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 628,
+          "name": "Goiano - 1",
+          "logo": "https://media.api-sports.io/football/leagues/628.png"
         },
         "teams": {
           "home": {
-            "id": 144,
-            "name": "Atletico Goianiense",
-            "logo": "https://media.api-sports.io/football/teams/144.png",
+            "id": 1202,
+            "name": "Aparecidense",
+            "logo": "https://media.api-sports.io/football/teams/1202.png",
             "winner": true
           },
           "away": {
-            "id": 1062,
-            "name": "Atletico-MG",
-            "logo": "https://media.api-sports.io/football/teams/1062.png",
+            "id": 144,
+            "name": "Atletico Goianiense",
+            "logo": "https://media.api-sports.io/football/teams/144.png",
             "winner": false
           }
         },
@@ -549,7 +705,7 @@
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 0
           },
           "fulltime": {
@@ -568,51 +724,51 @@
       },
       {
         "fixture": {
-          "id": 1180655,
-          "date": "2024-10-26T19:30:00+00:00",
+          "id": 1349602,
+          "date": "2025-02-20T00:30:00+00:00",
           "venue": {
-            "id": 241,
-            "name": "Arena do Grêmio",
-            "city": "Porto Alegre, Rio Grande do Sul"
+            "id": 210,
+            "name": "Estádio Municipal Coaracy da Mata Fonseca",
+            "city": "Arapiraca, Alagoas"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 5
+            "extra": null
           },
-          "timestamp": 1729971000
+          "timestamp": 1740011400
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
         },
         "teams": {
           "home": {
-            "id": 130,
-            "name": "Gremio",
-            "logo": "https://media.api-sports.io/football/teams/130.png",
-            "winner": true
+            "id": 1207,
+            "name": "ASA",
+            "logo": "https://media.api-sports.io/football/teams/1207.png",
+            "winner": null
           },
           "away": {
             "id": 144,
             "name": "Atletico Goianiense",
             "logo": "https://media.api-sports.io/football/teams/144.png",
-            "winner": false
+            "winner": null
           }
         },
         "goals": {
-          "home": 3,
+          "home": 1,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 1,
+            "home": 0,
             "away": 1
           },
           "fulltime": {
-            "home": 3,
+            "home": 1,
             "away": 1
           },
           "extratime": {
@@ -627,8 +783,8 @@
       },
       {
         "fixture": {
-          "id": 1180653,
-          "date": "2024-10-18T22:00:00+00:00",
+          "id": 1318185,
+          "date": "2025-02-16T19:00:00+00:00",
           "venue": {
             "id": 211,
             "name": "Estádio Antônio Accioly",
@@ -638,40 +794,40 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 5
+            "extra": 8
           },
-          "timestamp": 1729288800
+          "timestamp": 1739732400
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 628,
+          "name": "Goiano - 1",
+          "logo": "https://media.api-sports.io/football/leagues/628.png"
         },
         "teams": {
           "home": {
             "id": 144,
             "name": "Atletico Goianiense",
             "logo": "https://media.api-sports.io/football/teams/144.png",
-            "winner": null
+            "winner": true
           },
           "away": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": null
+            "id": 7852,
+            "name": "Anápolis",
+            "logo": "https://media.api-sports.io/football/teams/7852.png",
+            "winner": false
           }
         },
         "goals": {
-          "home": 0,
+          "home": 1,
           "away": 0
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 0
           },
           "fulltime": {
-            "home": 0,
+            "home": 1,
             "away": 0
           },
           "extratime": {
@@ -686,52 +842,111 @@
       },
       {
         "fixture": {
-          "id": 1180644,
-          "date": "2024-10-03T22:00:00+00:00",
+          "id": 1318180,
+          "date": "2025-02-12T22:30:00+00:00",
           "venue": {
-            "id": 233,
-            "name": "Estádio Heriberto Hülse",
-            "city": "Criciúma, Santa Catarina"
+            "id": 211,
+            "name": "Estádio Antônio Accioly",
+            "city": "Goiânia, Goiás"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 8
+            "extra": 10
           },
-          "timestamp": 1727992800
+          "timestamp": 1739399400
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 628,
+          "name": "Goiano - 1",
+          "logo": "https://media.api-sports.io/football/leagues/628.png"
         },
         "teams": {
           "home": {
-            "id": 140,
-            "name": "Criciuma",
-            "logo": "https://media.api-sports.io/football/teams/140.png",
-            "winner": true
-          },
-          "away": {
             "id": 144,
             "name": "Atletico Goianiense",
             "logo": "https://media.api-sports.io/football/teams/144.png",
+            "winner": true
+          },
+          "away": {
+            "id": 23306,
+            "name": "ABECAT Ouvidorense",
+            "logo": "https://media.api-sports.io/football/teams/23306.png",
             "winner": false
           }
         },
         "goals": {
           "home": 2,
-          "away": 0
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": 1,
+            "home": 0,
             "away": 0
           },
           "fulltime": {
             "home": 2,
-            "away": 0
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1318173,
+          "date": "2025-02-09T19:00:00+00:00",
+          "venue": {
+            "id": 240,
+            "name": "Estádio de Hailé Pinheiro",
+            "city": "Goiânia, Goiás"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1739127600
+        },
+        "league": {
+          "id": 628,
+          "name": "Goiano - 1",
+          "logo": "https://media.api-sports.io/football/leagues/628.png"
+        },
+        "teams": {
+          "home": {
+            "id": 151,
+            "name": "Goias",
+            "logo": "https://media.api-sports.io/football/teams/151.png",
+            "winner": false
+          },
+          "away": {
+            "id": 144,
+            "name": "Atletico Goianiense",
+            "logo": "https://media.api-sports.io/football/teams/144.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -752,76 +967,76 @@
       "country": "Brazil",
       "logo": "https://media.api-sports.io/football/leagues/628.png",
       "flag": "https://media.api-sports.io/flags/br.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 144,
       "name": "Atletico Goianiense",
       "logo": "https://media.api-sports.io/football/teams/144.png"
     },
-    "form": "WDLLWWWWWWWWWWWWW",
+    "form": "DWDLDWDWWWLDWDL",
     "fixtures": {
       "played": {
-        "home": 9,
-        "away": 8,
-        "total": 17
+        "home": 8,
+        "away": 7,
+        "total": 15
       },
       "wins": {
-        "home": 8,
-        "away": 6,
-        "total": 14
+        "home": 3,
+        "away": 3,
+        "total": 6
       },
       "draws": {
-        "home": 1,
-        "away": 0,
-        "total": 1
+        "home": 4,
+        "away": 2,
+        "total": 6
       },
       "loses": {
-        "home": 0,
+        "home": 1,
         "away": 2,
-        "total": 2
+        "total": 3
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 28,
-          "away": 16,
-          "total": 44
+          "home": 8,
+          "away": 13,
+          "total": 21
         },
         "average": {
-          "home": "3.1",
-          "away": "2.0",
-          "total": "2.6"
+          "home": "1.0",
+          "away": "1.9",
+          "total": "1.4"
         },
         "minute": {
           "0-15": {
-            "total": 5,
-            "percentage": "11.36%"
+            "total": 4,
+            "percentage": "19.05%"
           },
           "16-30": {
-            "total": 7,
-            "percentage": "15.91%"
+            "total": 5,
+            "percentage": "23.81%"
           },
           "31-45": {
-            "total": 4,
-            "percentage": "9.09%"
+            "total": 2,
+            "percentage": "9.52%"
           },
           "46-60": {
-            "total": 9,
-            "percentage": "20.45%"
+            "total": 3,
+            "percentage": "14.29%"
           },
           "61-75": {
-            "total": 11,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 6,
-            "percentage": "13.64%"
+            "total": 3,
+            "percentage": "14.29%"
           },
           "91-105": {
-            "total": 2,
-            "percentage": "4.55%"
+            "total": 4,
+            "percentage": "19.05%"
           },
           "106-120": {
             "total": null,
@@ -830,66 +1045,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 16,
-            "under": 1
+            "over": 11,
+            "under": 4
           },
           "1.5": {
-            "over": 12,
-            "under": 5
+            "over": 8,
+            "under": 7
           },
           "2.5": {
-            "over": 9,
-            "under": 8
+            "over": 1,
+            "under": 14
           },
           "3.5": {
-            "over": 3,
+            "over": 1,
             "under": 14
           },
           "4.5": {
-            "over": 3,
-            "under": 14
+            "over": 0,
+            "under": 15
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
-          "away": 7,
-          "total": 11
+          "home": 6,
+          "away": 8,
+          "total": 14
         },
         "average": {
-          "home": "0.4",
-          "away": "0.9",
-          "total": "0.6"
+          "home": "0.8",
+          "away": "1.1",
+          "total": "0.9"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "18.18%"
+            "total": 4,
+            "percentage": "28.57%"
           },
           "16-30": {
-            "total": 2,
-            "percentage": "18.18%"
+            "total": 3,
+            "percentage": "21.43%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "7.14%"
           },
           "46-60": {
-            "total": 2,
-            "percentage": "18.18%"
+            "total": 1,
+            "percentage": "7.14%"
           },
           "61-75": {
             "total": 3,
-            "percentage": "27.27%"
+            "percentage": "21.43%"
           },
           "76-90": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": 2,
+            "percentage": "14.29%"
           },
           "91-105": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -899,103 +1114,103 @@
         "under_over": {
           "0.5": {
             "over": 8,
-            "under": 9
+            "under": 7
           },
           "1.5": {
-            "over": 3,
-            "under": 14
+            "over": 4,
+            "under": 11
           },
           "2.5": {
-            "over": 0,
-            "under": 17
+            "over": 2,
+            "under": 13
           },
           "3.5": {
             "over": 0,
-            "under": 17
+            "under": 15
           },
           "4.5": {
             "over": 0,
-            "under": 17
+            "under": 15
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 3,
         "draws": 1,
-        "loses": 2
+        "loses": 1
       },
       "wins": {
-        "home": "6-0",
-        "away": "0-3"
+        "home": "2-0",
+        "away": "0-4"
       },
       "loses": {
-        "home": null,
-        "away": "2-1"
+        "home": "1-3",
+        "away": "3-2"
       },
       "goals": {
         "for": {
-          "home": 6,
-          "away": 3
+          "home": 2,
+          "away": 4
         },
         "against": {
-          "home": 1,
-          "away": 2
+          "home": 3,
+          "away": 3
         }
       }
     },
     "clean_sheet": {
       "home": 5,
-      "away": 4,
-      "total": 9
+      "away": 2,
+      "total": 7
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 0,
-      "total": 1
+      "home": 3,
+      "away": 1,
+      "total": 4
     },
     "penalty": {
       "scored": {
-        "total": 4,
+        "total": 2,
         "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 4
+      "total": 2
     },
     "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": null,
-          "percentage": null
+          "total": 3,
+          "percentage": "8.82%"
         },
         "16-30": {
-          "total": 1,
-          "percentage": "4.35%"
+          "total": 3,
+          "percentage": "8.82%"
         },
         "31-45": {
-          "total": 3,
-          "percentage": "13.04%"
+          "total": 6,
+          "percentage": "17.65%"
         },
         "46-60": {
-          "total": 7,
-          "percentage": "30.43%"
+          "total": 10,
+          "percentage": "29.41%"
         },
         "61-75": {
-          "total": 3,
-          "percentage": "13.04%"
+          "total": 6,
+          "percentage": "17.65%"
         },
         "76-90": {
-          "total": 7,
-          "percentage": "30.43%"
+          "total": 2,
+          "percentage": "5.88%"
         },
         "91-105": {
-          "total": 2,
-          "percentage": "8.70%"
+          "total": 4,
+          "percentage": "11.76%"
         },
         "106-120": {
           "total": null,
@@ -1020,8 +1235,8 @@
           "percentage": null
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "66.67%"
         },
         "76-90": {
           "total": null,
@@ -1029,7 +1244,7 @@
         },
         "91-105": {
           "total": 1,
-          "percentage": "100.00%"
+          "percentage": "33.33%"
         },
         "106-120": {
           "total": null,
@@ -1038,5 +1253,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:26.399Z"
+  "lastUpdated": "2025-03-27T10:42:17.219Z"
 }

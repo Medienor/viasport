@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 804,
+        "name": "Caribbean Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/804.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,53 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2016,
+          "start": "2016-03-22",
+          "end": "2017-06-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 808,
+        "name": "CONCACAF Nations League - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/808.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2018,
+          "start": "2018-09-06",
+          "end": "2019-03-25",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -93,6 +130,117 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 858,
+        "name": "CONCACAF Gold Cup - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/858.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-21",
+          "end": "2025-03-26",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 31,
+        "name": "World Cup - Qualification CONCACAF",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/31.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2024-03-22",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -114,6 +262,242 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1351588,
+          "date": "2025-03-26T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sabina Park",
+            "city": "Kingston"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1742947200
+        },
+        "league": {
+          "id": 858,
+          "name": "CONCACAF Gold Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/858.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2385,
+            "name": "Jamaica",
+            "logo": "https://media.api-sports.io/football/teams/2385.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5541,
+            "name": "St. Vincent / Grenadines",
+            "logo": "https://media.api-sports.io/football/teams/5541.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351587,
+          "date": "2025-03-21T23:00:00+00:00",
+          "venue": {
+            "id": 4162,
+            "name": "Arnos Vale Ground",
+            "city": "Kingstown"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1742598000
+        },
+        "league": {
+          "id": 858,
+          "name": "CONCACAF Gold Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/858.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5541,
+            "name": "St. Vincent / Grenadines",
+            "logo": "https://media.api-sports.io/football/teams/5541.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2385,
+            "name": "Jamaica",
+            "logo": "https://media.api-sports.io/football/teams/2385.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355639,
+          "date": "2025-03-09T19:30:00+00:00",
+          "venue": {
+            "id": 4162,
+            "name": "Arnos Vale Ground",
+            "city": "Kingstown"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1741548600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5541,
+            "name": "St. Vincent / Grenadines",
+            "logo": "https://media.api-sports.io/football/teams/5541.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5533,
+            "name": "Grenada",
+            "logo": "https://media.api-sports.io/football/teams/5533.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355638,
+          "date": "2025-03-06T23:00:00+00:00",
+          "venue": {
+            "id": 4162,
+            "name": "Arnos Vale Ground",
+            "city": "Kingstown"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1741302000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5541,
+            "name": "St. Vincent / Grenadines",
+            "logo": "https://media.api-sports.io/football/teams/5541.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5533,
+            "name": "Grenada",
+            "logo": "https://media.api-sports.io/football/teams/5533.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1201320,
@@ -467,211 +851,34 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1200253,
-          "date": "2024-05-26T20:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Lauriston Mini Stadium",
-            "city": "Carriacou"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1716753600
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5533,
-            "name": "Grenada",
-            "logo": "https://media.api-sports.io/football/teams/5533.png",
-            "winner": false
-          },
-          "away": {
-            "id": 5541,
-            "name": "St. Vincent / Grenadines",
-            "logo": "https://media.api-sports.io/football/teams/5541.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1199297,
-          "date": "2024-05-05T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Victoria Park",
-            "city": "Kingstown"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1714867200
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5541,
-            "name": "St. Vincent / Grenadines",
-            "logo": "https://media.api-sports.io/football/teams/5541.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5531,
-            "name": "Dominica",
-            "logo": "https://media.api-sports.io/football/teams/5531.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1199296,
-          "date": "2024-05-03T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Victoria Park",
-            "city": "Kingstown"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1714694400
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5541,
-            "name": "St. Vincent / Grenadines",
-            "logo": "https://media.api-sports.io/football/teams/5541.png",
-            "winner": false
-          },
-          "away": {
-            "id": 5531,
-            "name": "Dominica",
-            "logo": "https://media.api-sports.io/football/teams/5531.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 5541,
       "name": "St. Vincent / Grenadines",
       "logo": "https://media.api-sports.io/football/teams/5541.png"
     },
-    "form": "LWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -679,22 +886,22 @@
         "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 3,
-          "away": 3,
-          "total": 6
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.5",
-          "away": "3.0",
-          "total": "2.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -706,20 +913,20 @@
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -732,37 +939,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 3,
+          "home": 0,
           "away": 0,
-          "total": 3
+          "total": 0
         },
         "average": {
-          "home": "1.5",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -800,24 +1007,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
@@ -826,31 +1033,31 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
-        "home": "2-0",
-        "away": "0-3"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "1-3",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 3
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -859,14 +1066,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -896,8 +1103,8 @@
           "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -940,5 +1147,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:05.199Z"
+  "lastUpdated": "2025-03-27T10:40:53.749Z"
 }

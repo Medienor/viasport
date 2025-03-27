@@ -22,117 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 812,
-        "name": "Super Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/812.png"
-      },
-      "country": {
-        "name": "Belarus",
-        "code": "BY",
-        "flag": "https://media.api-sports.io/flags/by.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-02",
-          "end": "2024-03-02",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": false,
-            "top_scorers": false,
-            "top_assists": false,
-            "top_cards": false,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 116,
-        "name": "Premier League",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/116.png"
-      },
-      "country": {
-        "name": "Belarus",
-        "code": "BY",
-        "flag": "https://media.api-sports.io/flags/by.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-15",
-          "end": "2024-12-07",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 486,
         "name": "Coppa",
         "type": "Cup",
@@ -204,6 +93,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 116,
+        "name": "Premier League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/116.png"
+      },
+      "country": {
+        "name": "Belarus",
+        "code": "BY",
+        "flag": "https://media.api-sports.io/flags/by.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-13",
+          "end": "2025-11-29",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -226,25 +189,25 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360335,
-          "date": "2025-04-15T00:00:00+00:00",
+          "id": 1356819,
+          "date": "2025-03-30T11:45:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 170,
+            "name": "Stadyen Tarpeda",
+            "city": "Zhodino"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744675200
+          "timestamp": 1743335100
         },
         "league": {
-          "id": 486,
-          "name": "Coppa",
-          "logo": "https://media.api-sports.io/football/leagues/486.png"
+          "id": 116,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
         },
         "teams": {
           "home": {
@@ -254,9 +217,9 @@
             "winner": null
           },
           "away": {
-            "id": 7808,
-            "name": "MKK-Dnepr",
-            "logo": "https://media.api-sports.io/football/teams/7808.png",
+            "id": 394,
+            "name": "Dinamo Minsk",
+            "logo": "https://media.api-sports.io/football/teams/394.png",
             "winner": null
           }
         },
@@ -285,31 +248,31 @@
       },
       {
         "fixture": {
-          "id": 1360336,
-          "date": "2025-05-07T00:00:00+00:00",
+          "id": 1356829,
+          "date": "2025-04-04T14:15:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 169,
+            "name": "Stadyen Haradski",
+            "city": "Slutsk"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1746576000
+          "timestamp": 1743776100
         },
         "league": {
-          "id": 486,
-          "name": "Coppa",
-          "logo": "https://media.api-sports.io/football/leagues/486.png"
+          "id": 116,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
         },
         "teams": {
           "home": {
-            "id": 7808,
-            "name": "MKK-Dnepr",
-            "logo": "https://media.api-sports.io/football/teams/7808.png",
+            "id": 379,
+            "name": "FC Slutsk",
+            "logo": "https://media.api-sports.io/football/teams/379.png",
             "winner": null
           },
           "away": {
@@ -344,6 +307,124 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1365975,
+          "date": "2025-03-23T08:30:00+00:00",
+          "venue": {
+            "id": 170,
+            "name": "Stadyen Tarpeda",
+            "city": "Zhodino"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742718600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 385,
+            "name": "Torpedo Zhodino",
+            "logo": "https://media.api-sports.io/football/teams/385.png",
+            "winner": true
+          },
+          "away": {
+            "id": 380,
+            "name": "FC Minsk",
+            "logo": "https://media.api-sports.io/football/teams/380.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356812,
+          "date": "2025-03-15T10:00:00+00:00",
+          "venue": {
+            "id": 162,
+            "name": "Stadyen Lakamatyu",
+            "city": "Gomel"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1742032800
+        },
+        "league": {
+          "id": 116,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
+        },
+        "teams": {
+          "home": {
+            "id": 389,
+            "name": "FC Gomel",
+            "logo": "https://media.api-sports.io/football/teams/389.png",
+            "winner": null
+          },
+          "away": {
+            "id": 385,
+            "name": "Torpedo Zhodino",
+            "logo": "https://media.api-sports.io/football/teams/385.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1347005,
@@ -450,6 +531,242 @@
           },
           "fulltime": {
             "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346195,
+          "date": "2025-02-22T08:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "TBC",
+            "city": "TBC"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1740213000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 385,
+            "name": "Torpedo Zhodino",
+            "logo": "https://media.api-sports.io/football/teams/385.png",
+            "winner": true
+          },
+          "away": {
+            "id": 9419,
+            "name": "Arsenal",
+            "logo": "https://media.api-sports.io/football/teams/9419.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350830,
+          "date": "2025-02-15T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadyen Dynama-Juni",
+            "city": "Minsk"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1739620800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 394,
+            "name": "Dinamo Minsk",
+            "logo": "https://media.api-sports.io/football/teams/394.png",
+            "winner": false
+          },
+          "away": {
+            "id": 385,
+            "name": "Torpedo Zhodino",
+            "logo": "https://media.api-sports.io/football/teams/385.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1344822,
+          "date": "2025-01-31T09:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1738314000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 385,
+            "name": "Torpedo Zhodino",
+            "logo": "https://media.api-sports.io/football/teams/385.png",
+            "winner": false
+          },
+          "away": {
+            "id": 387,
+            "name": "Neman",
+            "logo": "https://media.api-sports.io/football/teams/387.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1344772,
+          "date": "2025-01-27T09:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1737968400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 385,
+            "name": "Torpedo Zhodino",
+            "logo": "https://media.api-sports.io/football/teams/385.png",
+            "winner": true
+          },
+          "away": {
+            "id": 380,
+            "name": "FC Minsk",
+            "logo": "https://media.api-sports.io/football/teams/380.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
             "away": 0
           },
           "extratime": {
@@ -579,388 +896,34 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1179269,
-          "date": "2024-11-22T16:10:00+00:00",
-          "venue": {
-            "id": 170,
-            "name": "Stadyen Tarpeda",
-            "city": "Zhodino"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1732291800
-        },
-        "league": {
-          "id": 116,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
-        },
-        "teams": {
-          "home": {
-            "id": 385,
-            "name": "Torpedo Zhodino",
-            "logo": "https://media.api-sports.io/football/teams/385.png",
-            "winner": null
-          },
-          "away": {
-            "id": 394,
-            "name": "Dinamo Minsk",
-            "logo": "https://media.api-sports.io/football/teams/394.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1179334,
-          "date": "2024-11-10T11:00:00+00:00",
-          "venue": {
-            "id": 1759,
-            "name": "Stadyen Haradski",
-            "city": "Molodechno"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1731236400
-        },
-        "league": {
-          "id": 116,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
-        },
-        "teams": {
-          "home": {
-            "id": 391,
-            "name": "FC Isloch Minsk R.",
-            "logo": "https://media.api-sports.io/football/teams/391.png",
-            "winner": false
-          },
-          "away": {
-            "id": 385,
-            "name": "Torpedo Zhodino",
-            "logo": "https://media.api-sports.io/football/teams/385.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1179321,
-          "date": "2024-11-02T17:30:00+00:00",
-          "venue": {
-            "id": 170,
-            "name": "Stadyen Tarpeda",
-            "city": "Zhodino"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1730568600
-        },
-        "league": {
-          "id": 116,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
-        },
-        "teams": {
-          "home": {
-            "id": 385,
-            "name": "Torpedo Zhodino",
-            "logo": "https://media.api-sports.io/football/teams/385.png",
-            "winner": true
-          },
-          "away": {
-            "id": 382,
-            "name": "FC Vitebsk",
-            "logo": "https://media.api-sports.io/football/teams/382.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1179319,
-          "date": "2024-10-26T18:00:00+00:00",
-          "venue": {
-            "id": 2595,
-            "name": "Stadyen Spartak",
-            "city": "Mogilev"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1729965600
-        },
-        "league": {
-          "id": 116,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
-        },
-        "teams": {
-          "home": {
-            "id": 384,
-            "name": "FC Dnepr Mogilev",
-            "logo": "https://media.api-sports.io/football/teams/384.png",
-            "winner": null
-          },
-          "away": {
-            "id": 385,
-            "name": "Torpedo Zhodino",
-            "logo": "https://media.api-sports.io/football/teams/385.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1179304,
-          "date": "2024-10-20T17:00:00+00:00",
-          "venue": {
-            "id": 170,
-            "name": "Stadyen Tarpeda",
-            "city": "Zhodino"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1729443600
-        },
-        "league": {
-          "id": 116,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
-        },
-        "teams": {
-          "home": {
-            "id": 385,
-            "name": "Torpedo Zhodino",
-            "logo": "https://media.api-sports.io/football/teams/385.png",
-            "winner": true
-          },
-          "away": {
-            "id": 386,
-            "name": "Dinamo Brest",
-            "logo": "https://media.api-sports.io/football/teams/386.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1311217,
-          "date": "2024-10-12T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadion Fakel",
-            "city": "Voronezh"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1728734400
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1993,
-            "name": "Fakel",
-            "logo": "https://media.api-sports.io/football/teams/1993.png",
-            "winner": false
-          },
-          "away": {
-            "id": 385,
-            "name": "Torpedo Zhodino",
-            "logo": "https://media.api-sports.io/football/teams/385.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
-      "flag": null,
-      "season": 2024
+      "id": 116,
+      "name": "Premier League",
+      "country": "Belarus",
+      "logo": "https://media.api-sports.io/football/leagues/116.png",
+      "flag": "https://media.api-sports.io/flags/by.svg",
+      "season": 2025
     },
     "team": {
       "id": 385,
       "name": "Torpedo Zhodino",
       "logo": "https://media.api-sports.io/football/teams/385.png"
     },
-    "form": "WWLWWDLW",
+    "form": "D",
     "fixtures": {
       "played": {
-        "home": 4,
-        "away": 4,
-        "total": 8
+        "home": 0,
+        "away": 1,
+        "total": 1
       },
       "wins": {
-        "home": 2,
-        "away": 3,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -968,47 +931,47 @@
         "total": 1
       },
       "loses": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 3,
-          "away": 11,
-          "total": 14
+          "home": 0,
+          "away": 1,
+          "total": 1
         },
         "average": {
-          "home": "0.8",
-          "away": "2.8",
-          "total": "1.8"
+          "home": "0.0",
+          "away": "1.0",
+          "total": "1.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 3,
-            "percentage": "23.08%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "15.38%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": 1,
-            "percentage": "7.69%"
+            "percentage": "100.00%"
           },
           "76-90": {
-            "total": 5,
-            "percentage": "38.46%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1021,66 +984,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 6,
-            "under": 2
+            "over": 1,
+            "under": 0
           },
           "1.5": {
-            "over": 5,
-            "under": 3
+            "over": 0,
+            "under": 1
           },
           "2.5": {
-            "over": 3,
-            "under": 5
+            "over": 0,
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 8
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 8
+            "under": 1
           }
         }
       },
       "against": {
         "total": {
-          "home": 3,
-          "away": 4,
-          "total": 7
+          "home": 0,
+          "away": 1,
+          "total": 1
         },
         "average": {
-          "home": "0.8",
+          "home": "0.0",
           "away": "1.0",
-          "total": "0.9"
+          "total": "1.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "100.00%"
           },
           "91-105": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -1089,62 +1052,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
-            "under": 3
+            "over": 1,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 6
+            "over": 0,
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 8
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 8
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 8
+            "under": 1
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
+        "wins": 0,
         "draws": 1,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
-        "home": "2-0",
-        "away": "0-3"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "0-2",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 3
+          "home": 0,
+          "away": 1
         },
         "against": {
-          "home": 2,
-          "away": 2
+          "home": 0,
+          "away": 1
         }
       }
     },
     "clean_sheet": {
-      "home": 2,
-      "away": 1,
-      "total": 3
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 2,
+      "home": 0,
       "away": 0,
-      "total": 2
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1169,8 +1132,8 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "20.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
           "total": null,
@@ -1178,15 +1141,15 @@
         },
         "61-75": {
           "total": 1,
-          "percentage": "20.00%"
+          "percentage": "50.00%"
         },
         "76-90": {
-          "total": 3,
-          "percentage": "60.00%"
-        },
-        "91-105": {
           "total": null,
           "percentage": null
+        },
+        "91-105": {
+          "total": 1,
+          "percentage": "50.00%"
         },
         "106-120": {
           "total": null,
@@ -1229,5 +1192,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:52.522Z"
+  "lastUpdated": "2025-03-27T10:38:35.519Z"
 }

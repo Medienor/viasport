@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 2,
         "name": "UEFA Champions League",
         "type": "Cup",
@@ -163,7 +126,44 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -186,70 +186,11 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1316773,
-          "date": "2025-03-26T16:00:00+00:00",
-          "venue": {
-            "id": 1406,
-            "name": "Stadion Rajko Mitić",
-            "city": "Beograd"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743004800
-        },
-        "league": {
-          "id": 732,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/732.png"
-        },
-        "teams": {
-          "home": {
-            "id": 598,
-            "name": "FK Crvena Zvezda",
-            "logo": "https://media.api-sports.io/football/teams/598.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2633,
-            "name": "OFK Beograd",
-            "logo": "https://media.api-sports.io/football/teams/2633.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1214780,
           "date": "2025-03-29T18:00:00+00:00",
           "venue": {
             "id": 1425,
-            "name": "Stadion Karadorde",
+            "name": "Stadion Karađorđe",
             "city": "Novi Sad"
           },
           "status": {
@@ -301,55 +242,57 @@
             "away": null
           }
         }
-      },
+      }
+    ],
+    "past": [
       {
         "fixture": {
-          "id": 1214794,
-          "date": "2025-04-05T00:00:00+00:00",
+          "id": 1316773,
+          "date": "2025-03-26T16:00:00+00:00",
           "venue": {
             "id": 1406,
             "name": "Stadion Rajko Mitić",
             "city": "Beograd"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
           },
-          "timestamp": 1743811200
+          "timestamp": 1743004800
         },
         "league": {
-          "id": 286,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/286.png"
+          "id": 732,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/732.png"
         },
         "teams": {
           "home": {
             "id": 598,
             "name": "FK Crvena Zvezda",
             "logo": "https://media.api-sports.io/football/teams/598.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 2633,
             "name": "OFK Beograd",
             "logo": "https://media.api-sports.io/football/teams/2633.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 5,
+          "away": 3
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 3,
+            "away": 3
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 5,
+            "away": 3
           },
           "extratime": {
             "home": null,
@@ -360,9 +303,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1214777,
@@ -893,93 +834,34 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299098,
-          "date": "2025-01-21T20:00:00+00:00",
-          "venue": {
-            "id": 1406,
-            "name": "Stadion Rajko Mitić",
-            "city": "Beograd"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737489600
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 598,
-            "name": "FK Crvena Zvezda",
-            "logo": "https://media.api-sports.io/football/teams/598.png",
-            "winner": false
-          },
-          "away": {
-            "id": 197,
-            "name": "PSV Eindhoven",
-            "logo": "https://media.api-sports.io/football/teams/197.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 598,
       "name": "FK Crvena Zvezda",
       "logo": "https://media.api-sports.io/football/teams/598.png"
     },
-    "form": "WWWWWWWWWL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 6,
-        "away": 4,
-        "total": 10
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 6,
-        "away": 3,
-        "total": 9
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -988,46 +870,46 @@
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 12,
-          "away": 5,
-          "total": 17
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.0",
-          "away": "1.3",
-          "total": "1.7"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "13.33%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 4,
-            "percentage": "26.67%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 3,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "6.67%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "13.33%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1040,50 +922,50 @@
         },
         "under_over": {
           "0.5": {
-            "over": 9,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 6,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 10
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 10
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
-          "away": 2,
-          "total": 6
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.7",
-          "away": "0.5",
-          "total": "0.6"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 3,
-            "percentage": "60.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -1094,8 +976,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1108,84 +990,75 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 9
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 10
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 10
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 10
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 9,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "3-1",
-        "away": "0-2"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
-        "away": "1-0"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 3,
-      "away": 2,
-      "total": 5
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 2,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 2
+      "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-2-3-1",
-        "played": 2
-      },
-      {
-        "formation": "4-1-4-1",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1201,12 +1074,12 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
@@ -1243,8 +1116,8 @@
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1257,5 +1130,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:21.133Z"
+  "lastUpdated": "2025-03-27T10:38:02.820Z"
 }

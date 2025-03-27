@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 953,
+        "name": "Africa U23 Cup of Nations - Qualification",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/953.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,53 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2022,
+          "start": "2022-09-21",
+          "end": "2023-03-28",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1015,
+        "name": "CAF U23 Cup of Nations",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1015.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-06-24",
+          "end": "2023-07-08",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -434,29 +471,324 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1047015,
+          "date": "2023-07-04T17:00:00+00:00",
+          "venue": {
+            "id": 1106,
+            "name": "Grand Stade de Tanger",
+            "city": "Tanger"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1688490000
+        },
+        "league": {
+          "id": 1015,
+          "name": "CAF U23 Cup of Nations",
+          "logo": "https://media.api-sports.io/football/leagues/1015.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10172,
+            "name": "Egypt U23",
+            "logo": "https://media.api-sports.io/football/teams/10172.png",
+            "winner": true
+          },
+          "away": {
+            "id": 20547,
+            "name": "Guinea U23",
+            "logo": "https://media.api-sports.io/football/teams/20547.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1041113,
+          "date": "2023-06-30T20:00:00+00:00",
+          "venue": {
+            "id": 1106,
+            "name": "Grand Stade de Tanger",
+            "city": "Tanger"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1688155200
+        },
+        "league": {
+          "id": 1015,
+          "name": "CAF U23 Cup of Nations",
+          "logo": "https://media.api-sports.io/football/leagues/1015.png"
+        },
+        "teams": {
+          "home": {
+            "id": 20547,
+            "name": "Guinea U23",
+            "logo": "https://media.api-sports.io/football/teams/20547.png",
+            "winner": null
+          },
+          "away": {
+            "id": 20546,
+            "name": "Ghana U23",
+            "logo": "https://media.api-sports.io/football/teams/20546.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1041108,
+          "date": "2023-06-27T17:00:00+00:00",
+          "venue": {
+            "id": 1103,
+            "name": "Stade Prince Moulay Abdallah",
+            "city": "Rabat"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1687885200
+        },
+        "league": {
+          "id": 1015,
+          "name": "CAF U23 Cup of Nations",
+          "logo": "https://media.api-sports.io/football/leagues/1015.png"
+        },
+        "teams": {
+          "home": {
+            "id": 20543,
+            "name": "Congo U23",
+            "logo": "https://media.api-sports.io/football/teams/20543.png",
+            "winner": false
+          },
+          "away": {
+            "id": 20547,
+            "name": "Guinea U23",
+            "logo": "https://media.api-sports.io/football/teams/20547.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1041104,
+          "date": "2023-06-24T20:00:00+00:00",
+          "venue": {
+            "id": 1103,
+            "name": "Stade Prince Moulay Abdallah",
+            "city": "Rabat"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1687636800
+        },
+        "league": {
+          "id": 1015,
+          "name": "CAF U23 Cup of Nations",
+          "logo": "https://media.api-sports.io/football/leagues/1015.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10179,
+            "name": "Morocco U23",
+            "logo": "https://media.api-sports.io/football/teams/10179.png",
+            "winner": true
+          },
+          "away": {
+            "id": 20547,
+            "name": "Guinea U23",
+            "logo": "https://media.api-sports.io/football/teams/20547.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 969977,
+          "date": "2023-03-28T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1680026400
+        },
+        "league": {
+          "id": 953,
+          "name": "Africa U23 Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/953.png"
+        },
+        "teams": {
+          "home": {
+            "id": 20547,
+            "name": "Guinea U23",
+            "logo": "https://media.api-sports.io/football/teams/20547.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10193,
+            "name": "Nigeria U23",
+            "logo": "https://media.api-sports.io/football/teams/10193.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 20547,
       "name": "Guinea U23",
       "logo": "https://media.api-sports.io/football/teams/20547.png"
     },
-    "form": "L",
+    "form": null,
     "fixtures": {
       "played": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -470,8 +802,8 @@
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
@@ -523,36 +855,36 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 3,
-          "total": 3
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "3.0",
-          "total": "3.0"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -590,24 +922,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       }
@@ -616,7 +948,7 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
         "home": null,
@@ -624,7 +956,7 @@
       },
       "loses": {
         "home": null,
-        "away": "3-0"
+        "away": null
       },
       "goals": {
         "for": {
@@ -633,7 +965,7 @@
         },
         "against": {
           "home": 0,
-          "away": 3
+          "away": 0
         }
       }
     },
@@ -644,8 +976,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -730,5 +1062,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:37.187Z"
+  "lastUpdated": "2025-03-27T10:41:26.780Z"
 }

@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-20",
-          "end": "2024-04-07",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-15",
+          "end": "2025-03-27",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -52,7 +52,44 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 13,
+        "name": "CONMEBOL Libertadores",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/13.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-05",
+          "end": "2025-05-28",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -71,10 +108,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-03-05",
-          "end": "2024-11-23",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-05",
+          "end": "2025-05-28",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -89,44 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 73,
-        "name": "Copa Do Brasil",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/73.png"
-      },
-      "country": {
-        "name": "Brazil",
-        "code": "BR",
-        "flag": "https://media.api-sports.io/flags/br.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-02-20",
-          "end": "2024-11-10",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -145,16 +145,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-04-13",
-          "end": "2024-12-08",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-29",
+          "end": "2025-12-21",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": true,
             "players": true,
@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -188,24 +188,82 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1180725,
-          "date": "2024-12-08T19:00:00+00:00",
+          "id": 1360314,
+          "date": "2025-03-28T00:35:00+00:00",
           "venue": {
-            "id": 241,
-            "name": "Arena do Grêmio",
-            "city": "Porto Alegre, Rio Grande do Sul"
+            "id": 11531,
+            "name": "Neo Química Arena",
+            "city": "São Paulo, São Paulo"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1733684400
+          "timestamp": 1743122100
+        },
+        "league": {
+          "id": 475,
+          "name": "Paulista - A1",
+          "logo": "https://media.api-sports.io/football/leagues/475.png"
+        },
+        "teams": {
+          "home": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          },
+          "away": {
+            "id": 121,
+            "name": "Palmeiras",
+            "logo": "https://media.api-sports.io/football/teams/121.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351050,
+          "date": "2025-03-30T23:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Casa de Apostas Arena Fonte Nova",
+            "city": "Salvador, Bahia"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743375600
         },
         "league": {
           "id": 71,
@@ -214,9 +272,424 @@
         },
         "teams": {
           "home": {
-            "id": 130,
-            "name": "Gremio",
-            "logo": "https://media.api-sports.io/football/teams/130.png",
+            "id": 118,
+            "name": "Bahia",
+            "logo": "https://media.api-sports.io/football/teams/118.png",
+            "winner": null
+          },
+          "away": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362096,
+          "date": "2025-04-02T22:00:00+00:00",
+          "venue": {
+            "id": 11531,
+            "name": "Neo Química Arena",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743631200
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          },
+          "away": {
+            "id": 445,
+            "name": "Huracan",
+            "logo": "https://media.api-sports.io/football/teams/445.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362113,
+          "date": "2025-04-09T00:30:00+00:00",
+          "venue": {
+            "id": 368,
+            "name": "Estadio Olímpico Pascual Guerrero",
+            "city": "Santiago de Cali"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744158600
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1138,
+            "name": "America de Cali",
+            "logo": "https://media.api-sports.io/football/teams/1138.png",
+            "winner": null
+          },
+          "away": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362129,
+          "date": "2025-04-24T22:00:00+00:00",
+          "venue": {
+            "id": 11531,
+            "name": "Neo Química Arena",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745532000
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2359,
+            "name": "Racing Montevideo",
+            "logo": "https://media.api-sports.io/football/teams/2359.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362145,
+          "date": "2025-05-07T00:30:00+00:00",
+          "venue": {
+            "id": 11531,
+            "name": "Neo Química Arena",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746577800
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1138,
+            "name": "America de Cali",
+            "logo": "https://media.api-sports.io/football/teams/1138.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362161,
+          "date": "2025-05-15T22:00:00+00:00",
+          "venue": {
+            "id": 1624,
+            "name": "Estadio Centenario",
+            "city": "Montevideo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747346400
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2359,
+            "name": "Racing Montevideo",
+            "logo": "https://media.api-sports.io/football/teams/2359.png",
+            "winner": null
+          },
+          "away": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362177,
+          "date": "2025-05-28T00:30:00+00:00",
+          "venue": {
+            "id": 82,
+            "name": "Estadio Tomás Adolfo Ducó",
+            "city": "Capital Federal, Ciudad de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748392200
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 445,
+            "name": "Huracan",
+            "logo": "https://media.api-sports.io/football/teams/445.png",
+            "winner": null
+          },
+          "away": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1360313,
+          "date": "2025-03-16T21:30:00+00:00",
+          "venue": {
+            "id": 258,
+            "name": "Allianz Parque",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742160600
+        },
+        "league": {
+          "id": 475,
+          "name": "Paulista - A1",
+          "logo": "https://media.api-sports.io/football/leagues/475.png"
+        },
+        "teams": {
+          "home": {
+            "id": 121,
+            "name": "Palmeiras",
+            "logo": "https://media.api-sports.io/football/teams/121.png",
             "winner": false
           },
           "away": {
@@ -228,192 +701,15 @@
         },
         "goals": {
           "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180720,
-          "date": "2024-12-03T23:00:00+00:00",
-          "venue": {
-            "id": 11531,
-            "name": "Neo Química Arena",
-            "city": "São Paulo, São Paulo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1733266800
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 131,
-            "name": "Corinthians",
-            "logo": "https://media.api-sports.io/football/teams/131.png",
-            "winner": true
-          },
-          "away": {
-            "id": 118,
-            "name": "Bahia",
-            "logo": "https://media.api-sports.io/football/teams/118.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180714,
-          "date": "2024-11-30T22:30:00+00:00",
-          "venue": {
-            "id": 233,
-            "name": "Estádio Heriberto Hülse",
-            "city": "Criciúma, Santa Catarina"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1733005800
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 140,
-            "name": "Criciuma",
-            "logo": "https://media.api-sports.io/football/teams/140.png",
-            "winner": false
-          },
-          "away": {
-            "id": 131,
-            "name": "Corinthians",
-            "logo": "https://media.api-sports.io/football/teams/131.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180700,
-          "date": "2024-11-24T19:00:00+00:00",
-          "venue": {
-            "id": 11531,
-            "name": "Neo Química Arena",
-            "city": "São Paulo, São Paulo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1732474800
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 131,
-            "name": "Corinthians",
-            "logo": "https://media.api-sports.io/football/teams/131.png",
-            "winner": true
-          },
-          "away": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 3,
+            "home": 0,
             "away": 0
           },
           "fulltime": {
-            "home": 3,
+            "home": 0,
             "away": 1
           },
           "extratime": {
@@ -428,8 +724,8 @@
       },
       {
         "fixture": {
-          "id": 1180690,
-          "date": "2024-11-20T14:00:00+00:00",
+          "id": 1355044,
+          "date": "2025-03-13T00:30:00+00:00",
           "venue": {
             "id": 11531,
             "name": "Neo Química Arena",
@@ -441,12 +737,12 @@
             "elapsed": 90,
             "extra": 7
           },
-          "timestamp": 1732111200
+          "timestamp": 1741825800
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
         },
         "teams": {
           "home": {
@@ -456,127 +752,9 @@
             "winner": true
           },
           "away": {
-            "id": 135,
-            "name": "Cruzeiro",
-            "logo": "https://media.api-sports.io/football/teams/135.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180677,
-          "date": "2024-11-09T19:30:00+00:00",
-          "venue": {
-            "id": 281,
-            "name": "Estádio Manoel Barradas",
-            "city": "Salvador, Bahia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1731180600
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": false
-          },
-          "away": {
-            "id": 131,
-            "name": "Corinthians",
-            "logo": "https://media.api-sports.io/football/teams/131.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180670,
-          "date": "2024-11-04T23:00:00+00:00",
-          "venue": {
-            "id": 11531,
-            "name": "Neo Química Arena",
-            "city": "São Paulo, São Paulo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1730761200
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 131,
-            "name": "Corinthians",
-            "logo": "https://media.api-sports.io/football/teams/131.png",
-            "winner": true
-          },
-          "away": {
-            "id": 121,
-            "name": "Palmeiras",
-            "logo": "https://media.api-sports.io/football/teams/121.png",
+            "id": 1152,
+            "name": "Barcelona SC",
+            "logo": "https://media.api-sports.io/football/teams/1152.png",
             "winner": false
           }
         },
@@ -605,71 +783,12 @@
       },
       {
         "fixture": {
-          "id": 1309268,
-          "date": "2024-11-01T00:30:00+00:00",
+          "id": 1357839,
+          "date": "2025-03-09T21:30:00+00:00",
           "venue": {
-            "id": 99,
-            "name": "Estadio Presidente Juan Domingo Perón",
-            "city": "Avellaneda, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730421000
-        },
-        "league": {
-          "id": 11,
-          "name": "CONMEBOL Sudamericana",
-          "logo": "https://media.api-sports.io/football/leagues/11.png"
-        },
-        "teams": {
-          "home": {
-            "id": 436,
-            "name": "Racing Club",
-            "logo": "https://media.api-sports.io/football/teams/436.png",
-            "winner": true
-          },
-          "away": {
-            "id": 131,
-            "name": "Corinthians",
-            "logo": "https://media.api-sports.io/football/teams/131.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180663,
-          "date": "2024-10-28T22:00:00+00:00",
-          "venue": {
-            "id": 235,
-            "name": "Arena Pantanal",
-            "city": "Cuiabá, Mato Grosso"
+            "id": 11531,
+            "name": "Neo Química Arena",
+            "city": "São Paulo, São Paulo"
           },
           "status": {
             "long": "Match Finished",
@@ -677,38 +796,38 @@
             "elapsed": 90,
             "extra": 9
           },
-          "timestamp": 1730152800
+          "timestamp": 1741555800
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 475,
+          "name": "Paulista - A1",
+          "logo": "https://media.api-sports.io/football/leagues/475.png"
         },
         "teams": {
           "home": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": false
-          },
-          "away": {
             "id": 131,
             "name": "Corinthians",
             "logo": "https://media.api-sports.io/football/teams/131.png",
             "winner": true
+          },
+          "away": {
+            "id": 128,
+            "name": "Santos",
+            "logo": "https://media.api-sports.io/football/teams/128.png",
+            "winner": false
           }
         },
         "goals": {
-          "home": 0,
+          "home": 2,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 1
           },
           "fulltime": {
-            "home": 0,
+            "home": 2,
             "away": 1
           },
           "extratime": {
@@ -723,8 +842,362 @@
       },
       {
         "fixture": {
-          "id": 1309266,
-          "date": "2024-10-25T00:30:00+00:00",
+          "id": 1355043,
+          "date": "2025-03-06T00:30:00+00:00",
+          "venue": {
+            "id": 466,
+            "name": "Estadio Monumental Banco Pichincha",
+            "city": "Guayaquil"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1741221000
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1152,
+            "name": "Barcelona SC",
+            "logo": "https://media.api-sports.io/football/teams/1152.png",
+            "winner": true
+          },
+          "away": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1354222,
+          "date": "2025-03-02T21:30:00+00:00",
+          "venue": {
+            "id": 11531,
+            "name": "Neo Química Arena",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1740951000
+        },
+        "league": {
+          "id": 475,
+          "name": "Paulista - A1",
+          "logo": "https://media.api-sports.io/football/leagues/475.png"
+        },
+        "teams": {
+          "home": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": true
+          },
+          "away": {
+            "id": 7848,
+            "name": "Mirassol",
+            "logo": "https://media.api-sports.io/football/teams/7848.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1325644,
+          "date": "2025-02-27T00:30:00+00:00",
+          "venue": {
+            "id": 11531,
+            "name": "Neo Química Arena",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1740616200
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2840,
+            "name": "UCV",
+            "logo": "https://media.api-sports.io/football/teams/2840.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1319845,
+          "date": "2025-02-23T21:30:00+00:00",
+          "venue": {
+            "id": 11531,
+            "name": "Neo Química Arena",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1740346200
+        },
+        "league": {
+          "id": 475,
+          "name": "Paulista - A1",
+          "logo": "https://media.api-sports.io/football/leagues/475.png"
+        },
+        "teams": {
+          "home": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          },
+          "away": {
+            "id": 138,
+            "name": "Guarani Campinas",
+            "logo": "https://media.api-sports.io/football/teams/138.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1325643,
+          "date": "2025-02-20T00:30:00+00:00",
+          "venue": {
+            "id": 1653,
+            "name": "Estadio Olímpico de la UCV",
+            "city": "Caracas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1740011400
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2840,
+            "name": "UCV",
+            "logo": "https://media.api-sports.io/football/teams/2840.png",
+            "winner": null
+          },
+          "away": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1319831,
+          "date": "2025-02-15T21:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Mercado Livre Arena Pacaembu",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1739655000
+        },
+        "league": {
+          "id": 475,
+          "name": "Paulista - A1",
+          "logo": "https://media.api-sports.io/football/leagues/475.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1214,
+            "name": "Portuguesa",
+            "logo": "https://media.api-sports.io/football/teams/1214.png",
+            "winner": null
+          },
+          "away": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1319821,
+          "date": "2025-02-13T00:35:00+00:00",
           "venue": {
             "id": 11531,
             "name": "Neo Química Arena",
@@ -736,39 +1209,39 @@
             "elapsed": 90,
             "extra": 7
           },
-          "timestamp": 1729816200
+          "timestamp": 1739406900
         },
         "league": {
-          "id": 11,
-          "name": "CONMEBOL Sudamericana",
-          "logo": "https://media.api-sports.io/football/leagues/11.png"
+          "id": 475,
+          "name": "Paulista - A1",
+          "logo": "https://media.api-sports.io/football/leagues/475.png"
         },
         "teams": {
           "home": {
             "id": 131,
             "name": "Corinthians",
             "logo": "https://media.api-sports.io/football/teams/131.png",
-            "winner": null
+            "winner": true
           },
           "away": {
-            "id": 436,
-            "name": "Racing Club",
-            "logo": "https://media.api-sports.io/football/teams/436.png",
-            "winner": null
+            "id": 128,
+            "name": "Santos",
+            "logo": "https://media.api-sports.io/football/teams/128.png",
+            "winner": false
           }
         },
         "goals": {
           "home": 2,
-          "away": 2
+          "away": 1
         },
         "score": {
           "halftime": {
             "home": 2,
-            "away": 1
+            "away": 0
           },
           "fulltime": {
             "home": 2,
-            "away": 2
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -789,76 +1262,76 @@
       "country": "Brazil",
       "logo": "https://media.api-sports.io/football/leagues/475.png",
       "flag": "https://media.api-sports.io/flags/br.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 131,
       "name": "Corinthians",
       "logo": "https://media.api-sports.io/football/teams/131.png"
     },
-    "form": "WLLLLLWWDLWD",
+    "form": "WWWLWWWDWWDDWWW",
     "fixtures": {
       "played": {
-        "home": 6,
-        "away": 6,
-        "total": 12
+        "home": 8,
+        "away": 7,
+        "total": 15
       },
       "wins": {
-        "home": 3,
-        "away": 1,
-        "total": 4
+        "home": 7,
+        "away": 4,
+        "total": 11
       },
       "draws": {
-        "home": 0,
+        "home": 1,
         "away": 2,
-        "total": 2
+        "total": 3
       },
       "loses": {
-        "home": 3,
-        "away": 3,
-        "total": 6
+        "home": 0,
+        "away": 1,
+        "total": 1
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 8,
-          "away": 6,
-          "total": 14
+          "home": 16,
+          "away": 9,
+          "total": 25
         },
         "average": {
-          "home": "1.3",
-          "away": "1.0",
-          "total": "1.2"
+          "home": "2.0",
+          "away": "1.3",
+          "total": "1.7"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "7.14%"
+            "total": 2,
+            "percentage": "8.00%"
           },
           "16-30": {
-            "total": 1,
-            "percentage": "7.14%"
+            "total": 5,
+            "percentage": "20.00%"
           },
           "31-45": {
-            "total": 2,
-            "percentage": "14.29%"
+            "total": 3,
+            "percentage": "12.00%"
           },
           "46-60": {
-            "total": 2,
-            "percentage": "14.29%"
+            "total": 4,
+            "percentage": "16.00%"
           },
           "61-75": {
-            "total": 2,
-            "percentage": "14.29%"
+            "total": 7,
+            "percentage": "28.00%"
           },
           "76-90": {
-            "total": 3,
-            "percentage": "21.43%"
+            "total": 2,
+            "percentage": "8.00%"
           },
           "91-105": {
-            "total": 3,
-            "percentage": "21.43%"
+            "total": 2,
+            "percentage": "8.00%"
           },
           "106-120": {
             "total": null,
@@ -867,62 +1340,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 7,
-            "under": 5
+            "over": 15,
+            "under": 0
           },
           "1.5": {
-            "over": 4,
-            "under": 8
+            "over": 10,
+            "under": 5
           },
           "2.5": {
-            "over": 2,
-            "under": 10
+            "over": 0,
+            "under": 15
           },
           "3.5": {
-            "over": 1,
-            "under": 11
+            "over": 0,
+            "under": 15
           },
           "4.5": {
             "over": 0,
-            "under": 12
+            "under": 15
           }
         }
       },
       "against": {
         "total": {
-          "home": 8,
-          "away": 6,
+          "home": 7,
+          "away": 7,
           "total": 14
         },
         "average": {
-          "home": "1.3",
+          "home": "0.9",
           "away": "1.0",
-          "total": "1.2"
+          "total": "0.9"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "7.14%"
-          },
-          "16-30": {
-            "total": 3,
-            "percentage": "21.43%"
-          },
-          "31-45": {
             "total": 2,
             "percentage": "14.29%"
           },
-          "46-60": {
-            "total": 4,
-            "percentage": "28.57%"
-          },
-          "61-75": {
+          "16-30": {
             "total": 1,
             "percentage": "7.14%"
           },
-          "76-90": {
+          "31-45": {
             "total": 3,
             "percentage": "21.43%"
+          },
+          "46-60": {
+            "total": 3,
+            "percentage": "21.43%"
+          },
+          "61-75": {
+            "total": 3,
+            "percentage": "21.43%"
+          },
+          "76-90": {
+            "total": 2,
+            "percentage": "14.29%"
           },
           "91-105": {
             "total": null,
@@ -935,62 +1408,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 9,
-            "under": 3
+            "over": 10,
+            "under": 5
           },
           "1.5": {
-            "over": 4,
-            "under": 8
+            "over": 3,
+            "under": 12
           },
           "2.5": {
             "over": 1,
-            "under": 11
+            "under": 14
           },
           "3.5": {
             "over": 0,
-            "under": 12
+            "under": 15
           },
           "4.5": {
             "over": 0,
-            "under": 12
+            "under": 15
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 1,
-        "loses": 5
+        "wins": 3,
+        "draws": 2,
+        "loses": 1
       },
       "wins": {
         "home": "2-0",
-        "away": "1-4"
+        "away": "1-2"
       },
       "loses": {
-        "home": "1-3",
-        "away": "1-0"
+        "home": null,
+        "away": "3-1"
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 4
+          "home": 2,
+          "away": 2
         },
         "against": {
-          "home": 3,
-          "away": 2
+          "home": 2,
+          "away": 3
         }
       }
     },
     "clean_sheet": {
       "home": 2,
-      "away": 1,
-      "total": 3
+      "away": 3,
+      "total": 5
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 4,
-      "total": 5
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1005,55 +1478,51 @@
     },
     "lineups": [
       {
+        "formation": "4-3-1-2",
+        "played": 10
+      },
+      {
         "formation": "4-3-3",
-        "played": 5
+        "played": 3
+      },
+      {
+        "formation": "4-1-3-2",
+        "played": 1
       },
       {
         "formation": "4-2-3-1",
-        "played": 4
-      },
-      {
-        "formation": "4-1-4-1",
-        "played": 1
-      },
-      {
-        "formation": "3-5-2",
-        "played": 1
-      },
-      {
-        "formation": "3-4-3",
         "played": 1
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 4,
-          "percentage": "12.90%"
+          "total": 3,
+          "percentage": "9.09%"
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 3,
+          "percentage": "9.09%"
         },
         "31-45": {
           "total": 7,
-          "percentage": "22.58%"
+          "percentage": "21.21%"
         },
         "46-60": {
-          "total": 9,
-          "percentage": "29.03%"
+          "total": 1,
+          "percentage": "3.03%"
         },
         "61-75": {
-          "total": 3,
-          "percentage": "9.68%"
+          "total": 9,
+          "percentage": "27.27%"
         },
         "76-90": {
-          "total": 6,
-          "percentage": "19.35%"
+          "total": 5,
+          "percentage": "15.15%"
         },
         "91-105": {
-          "total": 1,
-          "percentage": "3.23%"
+          "total": 4,
+          "percentage": "12.12%"
         },
         "106-120": {
           "total": null,
@@ -1061,7 +1530,7 @@
         },
         "": {
           "total": 1,
-          "percentage": "3.23%"
+          "percentage": "3.03%"
         }
       },
       "red": {
@@ -1074,20 +1543,20 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "33.33%"
-        },
-        "46-60": {
-          "total": 1,
-          "percentage": "33.33%"
-        },
-        "61-75": {
           "total": null,
           "percentage": null
         },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": 1,
+          "percentage": "50.00%"
+        },
         "76-90": {
           "total": 1,
-          "percentage": "33.33%"
+          "percentage": "50.00%"
         },
         "91-105": {
           "total": null,
@@ -1100,5 +1569,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:24.046Z"
+  "lastUpdated": "2025-03-27T10:42:14.728Z"
 }

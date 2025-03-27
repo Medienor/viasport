@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-20",
-          "end": "2024-04-06",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-22",
+          "end": "2025-03-16",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -59,10 +59,10 @@
     },
     {
       "league": {
-        "id": 11,
-        "name": "CONMEBOL Sudamericana",
+        "id": 13,
+        "name": "CONMEBOL Libertadores",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/11.png"
+        "logo": "https://media.api-sports.io/football/leagues/13.png"
       },
       "country": {
         "name": "World",
@@ -71,10 +71,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-03-05",
-          "end": "2024-11-23",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-05",
+          "end": "2025-05-28",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -89,44 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 73,
-        "name": "Copa Do Brasil",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/73.png"
-      },
-      "country": {
-        "name": "Brazil",
-        "code": "BR",
-        "flag": "https://media.api-sports.io/flags/br.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-02-20",
-          "end": "2024-11-10",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -145,16 +108,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-04-13",
-          "end": "2024-12-08",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-29",
+          "end": "2025-12-21",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": true,
             "players": true,
@@ -163,7 +126,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -188,142 +151,23 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1180732,
-          "date": "2024-12-08T19:00:00+00:00",
-          "venue": {
-            "id": 225,
-            "name": "Estádio Governador Plácido Aderaldo Castelo",
-            "city": "Fortaleza, Ceará"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1733684400
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": true
-          },
-          "away": {
-            "id": 119,
-            "name": "Internacional",
-            "logo": "https://media.api-sports.io/football/teams/119.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180715,
-          "date": "2024-12-05T00:30:00+00:00",
-          "venue": {
-            "id": 244,
-            "name": "Estádio José Pinheiro Borda",
-            "city": "Porto Alegre, Rio Grande do Sul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1733358600
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 119,
-            "name": "Internacional",
-            "logo": "https://media.api-sports.io/football/teams/119.png",
-            "winner": false
-          },
-          "away": {
-            "id": 120,
-            "name": "Botafogo",
-            "logo": "https://media.api-sports.io/football/teams/120.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180708,
-          "date": "2024-12-01T19:00:00+00:00",
+          "id": 1351043,
+          "date": "2025-03-29T23:00:00+00:00",
           "venue": {
             "id": null,
             "name": "Estadio Jornalista Mário Filho",
             "city": "Rio de Janeiro, Rio de Janeiro"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1733079600
+          "timestamp": 1743289200
         },
         "league": {
           "id": 71,
@@ -335,26 +179,500 @@
             "id": 127,
             "name": "Flamengo",
             "logo": "https://media.api-sports.io/football/teams/127.png",
-            "winner": true
+            "winner": null
           },
           "away": {
             "id": 119,
             "name": "Internacional",
             "logo": "https://media.api-sports.io/football/teams/119.png",
-            "winner": false
+            "winner": null
           }
         },
         "goals": {
-          "home": 3,
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361866,
+          "date": "2025-04-03T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Casa de Apostas Arena Fonte Nova",
+            "city": "Salvador, Bahia"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743717600
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 118,
+            "name": "Bahia",
+            "logo": "https://media.api-sports.io/football/teams/118.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361882,
+          "date": "2025-04-10T22:00:00+00:00",
+          "venue": {
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744322400
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1137,
+            "name": "Atletico Nacional",
+            "logo": "https://media.api-sports.io/football/teams/1137.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361898,
+          "date": "2025-04-23T00:30:00+00:00",
+          "venue": {
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745368200
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2356,
+            "name": "Club Nacional",
+            "logo": "https://media.api-sports.io/football/teams/2356.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361968,
+          "date": "2025-05-09T00:30:00+00:00",
+          "venue": {
+            "id": 380,
+            "name": "Estadio Atanasio Girardot",
+            "city": "Medellín"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746750600
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1137,
+            "name": "Atletico Nacional",
+            "logo": "https://media.api-sports.io/football/teams/1137.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361984,
+          "date": "2025-05-15T22:00:00+00:00",
+          "venue": {
+            "id": 1639,
+            "name": "Estadio Gran Parque Central",
+            "city": "Montevideo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747346400
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2356,
+            "name": "Club Nacional",
+            "logo": "https://media.api-sports.io/football/teams/2356.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362001,
+          "date": "2025-05-28T22:00:00+00:00",
+          "venue": {
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748469600
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          },
+          "away": {
+            "id": 118,
+            "name": "Bahia",
+            "logo": "https://media.api-sports.io/football/teams/118.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1356807,
+          "date": "2025-03-16T19:00:00+00:00",
+          "venue": {
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 14
+          },
+          "timestamp": 1742151600
+        },
+        "league": {
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
+        },
+        "teams": {
+          "home": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          },
+          "away": {
+            "id": 130,
+            "name": "Gremio",
+            "logo": "https://media.api-sports.io/football/teams/130.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356806,
+          "date": "2025-03-08T20:45:00+00:00",
+          "venue": {
+            "id": 241,
+            "name": "Arena do Grêmio",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1741466700
+        },
+        "league": {
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
+        },
+        "teams": {
+          "home": {
+            "id": 130,
+            "name": "Gremio",
+            "logo": "https://media.api-sports.io/football/teams/130.png",
+            "winner": false
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
           "away": 2
         },
         "score": {
           "halftime": {
-            "home": 3,
-            "away": 0
+            "home": 0,
+            "away": 2
           },
           "fulltime": {
-            "home": 3,
+            "home": 0,
             "away": 2
           },
           "extratime": {
@@ -369,8 +687,8 @@
       },
       {
         "fixture": {
-          "id": 1180695,
-          "date": "2024-11-24T19:00:00+00:00",
+          "id": 1352032,
+          "date": "2025-03-02T00:30:00+00:00",
           "venue": {
             "id": 244,
             "name": "Estádio José Pinheiro Borda",
@@ -382,12 +700,12 @@
             "elapsed": 90,
             "extra": 5
           },
-          "timestamp": 1732474800
+          "timestamp": 1740875400
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
         },
         "teams": {
           "home": {
@@ -397,23 +715,23 @@
             "winner": true
           },
           "away": {
-            "id": 794,
-            "name": "RB Bragantino",
-            "logo": "https://media.api-sports.io/football/teams/794.png",
+            "id": 7770,
+            "name": "Caxias",
+            "logo": "https://media.api-sports.io/football/teams/7770.png",
             "winner": false
           }
         },
         "goals": {
-          "home": 4,
+          "home": 3,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 2,
+            "home": 0,
             "away": 1
           },
           "fulltime": {
-            "home": 4,
+            "home": 3,
             "away": 1
           },
           "extratime": {
@@ -428,31 +746,31 @@
       },
       {
         "fixture": {
-          "id": 1180689,
-          "date": "2024-11-21T23:00:00+00:00",
+          "id": 1352031,
+          "date": "2025-02-22T19:30:00+00:00",
           "venue": {
-            "id": 19377,
-            "name": "Estádio São Januário",
-            "city": "Rio de Janeiro, Rio de Janeiro"
+            "id": 5625,
+            "name": "Estádio Francisco Stédile",
+            "city": "Caxias do Sul, Rio Grande do Sul"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 6
+            "extra": 4
           },
-          "timestamp": 1732230000
+          "timestamp": 1740252600
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
         },
         "teams": {
           "home": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "id": 7770,
+            "name": "Caxias",
+            "logo": "https://media.api-sports.io/football/teams/7770.png",
             "winner": false
           },
           "away": {
@@ -464,7 +782,7 @@
         },
         "goals": {
           "home": 0,
-          "away": 1
+          "away": 2
         },
         "score": {
           "halftime": {
@@ -473,7 +791,7 @@
           },
           "fulltime": {
             "home": 0,
-            "away": 1
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -487,8 +805,8 @@
       },
       {
         "fixture": {
-          "id": 1180675,
-          "date": "2024-11-08T22:00:00+00:00",
+          "id": 1322122,
+          "date": "2025-02-15T19:30:00+00:00",
           "venue": {
             "id": 244,
             "name": "Estádio José Pinheiro Borda",
@@ -498,14 +816,14 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 8
+            "extra": 3
           },
-          "timestamp": 1731103200
+          "timestamp": 1739647800
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
         },
         "teams": {
           "home": {
@@ -515,9 +833,9 @@
             "winner": true
           },
           "away": {
-            "id": 124,
-            "name": "Fluminense",
-            "logo": "https://media.api-sports.io/football/teams/124.png",
+            "id": 21233,
+            "name": "Monsoon",
+            "logo": "https://media.api-sports.io/football/teams/21233.png",
             "winner": false
           }
         },
@@ -527,7 +845,7 @@
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 2,
             "away": 0
           },
           "fulltime": {
@@ -546,149 +864,31 @@
       },
       {
         "fixture": {
-          "id": 1180665,
-          "date": "2024-11-06T00:30:00+00:00",
+          "id": 1322118,
+          "date": "2025-02-13T01:00:00+00:00",
           "venue": {
-            "id": 244,
-            "name": "Estádio José Pinheiro Borda",
-            "city": "Porto Alegre, Rio Grande do Sul"
+            "id": 7046,
+            "name": "Estádio 19 de Outubro",
+            "city": "Ijuí, Rio Grande do Sul"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 7
+            "extra": 5
           },
-          "timestamp": 1730853000
+          "timestamp": 1739408400
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
         },
         "teams": {
           "home": {
-            "id": 119,
-            "name": "Internacional",
-            "logo": "https://media.api-sports.io/football/teams/119.png",
-            "winner": true
-          },
-          "away": {
-            "id": 140,
-            "name": "Criciuma",
-            "logo": "https://media.api-sports.io/football/teams/140.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180515,
-          "date": "2024-10-30T22:00:00+00:00",
-          "venue": {
-            "id": 244,
-            "name": "Estádio José Pinheiro Borda",
-            "city": "Porto Alegre, Rio Grande do Sul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1730325600
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 119,
-            "name": "Internacional",
-            "logo": "https://media.api-sports.io/football/teams/119.png",
-            "winner": null
-          },
-          "away": {
-            "id": 127,
-            "name": "Flamengo",
-            "logo": "https://media.api-sports.io/football/teams/127.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180656,
-          "date": "2024-10-26T23:00:00+00:00",
-          "venue": {
-            "id": 21427,
-            "name": "Arena MRV",
-            "city": "Belo Horizonte, Minas Gerais"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1729983600
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1062,
-            "name": "Atletico-MG",
-            "logo": "https://media.api-sports.io/football/teams/1062.png",
+            "id": 10004,
+            "name": "São Luiz",
+            "logo": "https://media.api-sports.io/football/teams/10004.png",
             "winner": false
           },
           "away": {
@@ -705,7 +905,7 @@
         "score": {
           "halftime": {
             "home": 1,
-            "away": 2
+            "away": 1
           },
           "fulltime": {
             "home": 1,
@@ -723,8 +923,67 @@
       },
       {
         "fixture": {
-          "id": 1180645,
-          "date": "2024-10-19T19:00:00+00:00",
+          "id": 1322109,
+          "date": "2025-02-09T00:00:00+00:00",
+          "venue": {
+            "id": 241,
+            "name": "Arena do Grêmio",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1739059200
+        },
+        "league": {
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
+        },
+        "teams": {
+          "home": {
+            "id": 130,
+            "name": "Gremio",
+            "logo": "https://media.api-sports.io/football/teams/130.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1322104,
+          "date": "2025-02-05T23:00:00+00:00",
           "venue": {
             "id": 244,
             "name": "Estádio José Pinheiro Borda",
@@ -734,14 +993,14 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 7
+            "extra": 5
           },
-          "timestamp": 1729364400
+          "timestamp": 1738796400
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
         },
         "teams": {
           "home": {
@@ -751,9 +1010,68 @@
             "winner": true
           },
           "away": {
-            "id": 130,
-            "name": "Gremio",
-            "logo": "https://media.api-sports.io/football/teams/130.png",
+            "id": 141,
+            "name": "Brasil DE Pelotas",
+            "logo": "https://media.api-sports.io/football/teams/141.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1322102,
+          "date": "2025-02-02T23:30:00+00:00",
+          "venue": {
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1738539000
+        },
+        "league": {
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
+        },
+        "teams": {
+          "home": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2205,
+            "name": "Avenida",
+            "logo": "https://media.api-sports.io/football/teams/2205.png",
             "winner": false
           }
         },
@@ -769,6 +1087,65 @@
           "fulltime": {
             "home": 1,
             "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1322094,
+          "date": "2025-01-29T00:30:00+00:00",
+          "venue": {
+            "id": 254,
+            "name": "Estádio do Vale",
+            "city": "Novo Hamburgo, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1738110600
+        },
+        "league": {
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2232,
+            "name": "Sao Jose",
+            "logo": "https://media.api-sports.io/football/teams/2232.png",
+            "winner": false
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -789,24 +1166,24 @@
       "country": "Brazil",
       "logo": "https://media.api-sports.io/football/leagues/477.png",
       "flag": "https://media.api-sports.io/flags/br.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 119,
       "name": "Internacional",
       "logo": "https://media.api-sports.io/football/teams/119.png"
     },
-    "form": "WDWLWWWWWWWWDD",
+    "form": "DWWWWDWWWWWD",
     "fixtures": {
       "played": {
-        "home": 7,
-        "away": 7,
-        "total": 14
+        "home": 6,
+        "away": 6,
+        "total": 12
       },
       "wins": {
-        "home": 6,
+        "home": 5,
         "away": 4,
-        "total": 10
+        "total": 9
       },
       "draws": {
         "home": 1,
@@ -815,153 +1192,153 @@
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 16,
-          "away": 9,
-          "total": 25
+          "home": 12,
+          "away": 12,
+          "total": 24
         },
         "average": {
-          "home": "2.3",
-          "away": "1.3",
-          "total": "1.8"
+          "home": "2.0",
+          "away": "2.0",
+          "total": "2.0"
         },
         "minute": {
           "0-15": {
-            "total": 3,
-            "percentage": "9.68%"
+            "total": 1,
+            "percentage": "4.35%"
           },
           "16-30": {
-            "total": 6,
-            "percentage": "19.35%"
+            "total": 3,
+            "percentage": "13.04%"
           },
           "31-45": {
-            "total": 5,
-            "percentage": "16.13%"
+            "total": 1,
+            "percentage": "4.35%"
           },
           "46-60": {
-            "total": 5,
-            "percentage": "16.13%"
+            "total": 6,
+            "percentage": "26.09%"
           },
           "61-75": {
-            "total": 4,
-            "percentage": "12.90%"
+            "total": 9,
+            "percentage": "39.13%"
           },
           "76-90": {
             "total": 2,
-            "percentage": "6.45%"
+            "percentage": "8.70%"
           },
           "91-105": {
             "total": 1,
-            "percentage": "3.23%"
+            "percentage": "4.35%"
           },
           "106-120": {
-            "total": 5,
-            "percentage": "16.13%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
             "over": 12,
-            "under": 2
+            "under": 0
           },
           "1.5": {
-            "over": 8,
-            "under": 6
+            "over": 9,
+            "under": 3
           },
           "2.5": {
-            "over": 5,
+            "over": 3,
             "under": 9
           },
           "3.5": {
             "over": 0,
-            "under": 14
+            "under": 12
           },
           "4.5": {
             "over": 0,
-            "under": 14
+            "under": 12
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
+          "home": 2,
           "away": 4,
-          "total": 8
+          "total": 6
         },
         "average": {
-          "home": "0.6",
-          "away": "0.6",
-          "total": "0.6"
+          "home": "0.3",
+          "away": "0.7",
+          "total": "0.5"
         },
         "minute": {
           "0-15": {
-            "total": 3,
-            "percentage": "23.08%"
-          },
-          "16-30": {
-            "total": 1,
-            "percentage": "7.69%"
-          },
-          "31-45": {
-            "total": 1,
-            "percentage": "7.69%"
-          },
-          "46-60": {
-            "total": 1,
-            "percentage": "7.69%"
-          },
-          "61-75": {
             "total": null,
             "percentage": null
           },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 5,
+            "percentage": "71.43%"
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
           "76-90": {
-            "total": 1,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
             "percentage": null
           },
           "106-120": {
-            "total": 6,
-            "percentage": "46.15%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 6,
-            "under": 8
+            "over": 5,
+            "under": 7
           },
           "1.5": {
-            "over": 2,
-            "under": 12
+            "over": 1,
+            "under": 11
           },
           "2.5": {
             "over": 0,
-            "under": 14
+            "under": 12
           },
           "3.5": {
             "over": 0,
-            "under": 14
+            "under": 12
           },
           "4.5": {
             "over": 0,
-            "under": 14
+            "under": 12
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 8,
+        "wins": 5,
         "draws": 1,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
         "home": "3-0",
@@ -969,7 +1346,7 @@
       },
       "loses": {
         "home": null,
-        "away": "2-1"
+        "away": null
       },
       "goals": {
         "for": {
@@ -977,62 +1354,62 @@
           "away": 3
         },
         "against": {
-          "home": 2,
+          "home": 1,
           "away": 2
         }
       }
     },
     "clean_sheet": {
       "home": 4,
-      "away": 4,
-      "total": 8
+      "away": 3,
+      "total": 7
     },
     "failed_to_score": {
       "home": 0,
-      "away": 2,
-      "total": 2
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 8,
-        "percentage": "80.00%"
+        "total": 4,
+        "percentage": "100.00%"
       },
       "missed": {
-        "total": 2,
-        "percentage": "20.00%"
+        "total": 0,
+        "percentage": "0%"
       },
-      "total": 10
+      "total": 4
     },
     "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
           "total": 1,
-          "percentage": "4.76%"
+          "percentage": "4.55%"
         },
         "16-30": {
-          "total": 3,
-          "percentage": "14.29%"
+          "total": 1,
+          "percentage": "4.55%"
         },
         "31-45": {
-          "total": 1,
-          "percentage": "4.76%"
+          "total": 4,
+          "percentage": "18.18%"
         },
         "46-60": {
-          "total": 4,
-          "percentage": "19.05%"
+          "total": 2,
+          "percentage": "9.09%"
         },
         "61-75": {
-          "total": 4,
-          "percentage": "19.05%"
+          "total": 2,
+          "percentage": "9.09%"
         },
         "76-90": {
           "total": 5,
-          "percentage": "23.81%"
+          "percentage": "22.73%"
         },
         "91-105": {
-          "total": 3,
-          "percentage": "14.29%"
+          "total": 7,
+          "percentage": "31.82%"
         },
         "106-120": {
           "total": null,
@@ -1061,12 +1438,12 @@
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": 1,
-          "percentage": "50.00%"
+          "percentage": "100.00%"
         },
         "106-120": {
           "total": null,
@@ -1075,5 +1452,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:21.557Z"
+  "lastUpdated": "2025-03-27T10:42:12.093Z"
 }

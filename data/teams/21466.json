@@ -19,45 +19,7 @@
       "image": null
     }
   },
-  "leagues": [
-    {
-      "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    }
-  ],
+  "leagues": [],
   "seasons": [
     2023,
     2024
@@ -241,301 +203,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1035629,
+          "date": "2023-06-13T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1686672000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19073,
+            "name": "Portugal U18",
+            "logo": "https://media.api-sports.io/football/teams/19073.png",
+            "winner": null
+          },
+          "away": {
+            "id": 21466,
+            "name": "England U18",
+            "logo": "https://media.api-sports.io/football/teams/21466.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1035623,
+          "date": "2023-06-11T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1686477600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21466,
+            "name": "England U18",
+            "logo": "https://media.api-sports.io/football/teams/21466.png",
+            "winner": true
+          },
+          "away": {
+            "id": 21458,
+            "name": "Australia U18",
+            "logo": "https://media.api-sports.io/football/teams/21458.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1035621,
+          "date": "2023-06-09T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1686304800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21474,
+            "name": "Norway U18",
+            "logo": "https://media.api-sports.io/football/teams/21474.png",
+            "winner": null
+          },
+          "away": {
+            "id": 21466,
+            "name": "England U18",
+            "logo": "https://media.api-sports.io/football/teams/21466.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
-  "statistics": {
-    "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
-      "flag": null,
-      "season": 2024
-    },
-    "team": {
-      "id": 21466,
-      "name": "England U18",
-      "logo": "https://media.api-sports.io/football/teams/21466.png"
-    },
-    "form": "WDW",
-    "fixtures": {
-      "played": {
-        "home": 1,
-        "away": 2,
-        "total": 3
-      },
-      "wins": {
-        "home": 0,
-        "away": 2,
-        "total": 2
-      },
-      "draws": {
-        "home": 1,
-        "away": 0,
-        "total": 1
-      },
-      "loses": {
-        "home": 0,
-        "away": 0,
-        "total": 0
-      }
-    },
-    "goals": {
-      "for": {
-        "total": {
-          "home": 0,
-          "away": 4,
-          "total": 4
-        },
-        "average": {
-          "home": "0.0",
-          "away": "2.0",
-          "total": "1.3"
-        },
-        "minute": {
-          "0-15": {
-            "total": null,
-            "percentage": null
-          },
-          "16-30": {
-            "total": 1,
-            "percentage": "50.00%"
-          },
-          "31-45": {
-            "total": null,
-            "percentage": null
-          },
-          "46-60": {
-            "total": null,
-            "percentage": null
-          },
-          "61-75": {
-            "total": null,
-            "percentage": null
-          },
-          "76-90": {
-            "total": 1,
-            "percentage": "50.00%"
-          },
-          "91-105": {
-            "total": null,
-            "percentage": null
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 2,
-            "under": 1
-          },
-          "1.5": {
-            "over": 2,
-            "under": 1
-          },
-          "2.5": {
-            "over": 0,
-            "under": 3
-          },
-          "3.5": {
-            "over": 0,
-            "under": 3
-          },
-          "4.5": {
-            "over": 0,
-            "under": 3
-          }
-        }
-      },
-      "against": {
-        "total": {
-          "home": 0,
-          "away": 2,
-          "total": 2
-        },
-        "average": {
-          "home": "0.0",
-          "away": "1.0",
-          "total": "0.7"
-        },
-        "minute": {
-          "0-15": {
-            "total": null,
-            "percentage": null
-          },
-          "16-30": {
-            "total": null,
-            "percentage": null
-          },
-          "31-45": {
-            "total": null,
-            "percentage": null
-          },
-          "46-60": {
-            "total": null,
-            "percentage": null
-          },
-          "61-75": {
-            "total": null,
-            "percentage": null
-          },
-          "76-90": {
-            "total": 1,
-            "percentage": "100.00%"
-          },
-          "91-105": {
-            "total": null,
-            "percentage": null
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 2,
-            "under": 1
-          },
-          "1.5": {
-            "over": 0,
-            "under": 3
-          },
-          "2.5": {
-            "over": 0,
-            "under": 3
-          },
-          "3.5": {
-            "over": 0,
-            "under": 3
-          },
-          "4.5": {
-            "over": 0,
-            "under": 3
-          }
-        }
-      }
-    },
-    "biggest": {
-      "streak": {
-        "wins": 1,
-        "draws": 1,
-        "loses": 0
-      },
-      "wins": {
-        "home": null,
-        "away": "1-2"
-      },
-      "loses": {
-        "home": null,
-        "away": null
-      },
-      "goals": {
-        "for": {
-          "home": 0,
-          "away": 2
-        },
-        "against": {
-          "home": 0,
-          "away": 1
-        }
-      }
-    },
-    "clean_sheet": {
-      "home": 1,
-      "away": 0,
-      "total": 1
-    },
-    "failed_to_score": {
-      "home": 1,
-      "away": 0,
-      "total": 1
-    },
-    "penalty": {
-      "scored": {
-        "total": 0,
-        "percentage": "0%"
-      },
-      "missed": {
-        "total": 0,
-        "percentage": "0%"
-      },
-      "total": 0
-    },
-    "lineups": [],
-    "cards": {
-      "yellow": {
-        "0-15": {
-          "total": null,
-          "percentage": null
-        },
-        "16-30": {
-          "total": null,
-          "percentage": null
-        },
-        "31-45": {
-          "total": null,
-          "percentage": null
-        },
-        "46-60": {
-          "total": null,
-          "percentage": null
-        },
-        "61-75": {
-          "total": null,
-          "percentage": null
-        },
-        "76-90": {
-          "total": null,
-          "percentage": null
-        },
-        "91-105": {
-          "total": null,
-          "percentage": null
-        },
-        "106-120": {
-          "total": null,
-          "percentage": null
-        }
-      },
-      "red": {
-        "0-15": {
-          "total": null,
-          "percentage": null
-        },
-        "16-30": {
-          "total": null,
-          "percentage": null
-        },
-        "31-45": {
-          "total": null,
-          "percentage": null
-        },
-        "46-60": {
-          "total": null,
-          "percentage": null
-        },
-        "61-75": {
-          "total": null,
-          "percentage": null
-        },
-        "76-90": {
-          "total": null,
-          "percentage": null
-        },
-        "91-105": {
-          "total": null,
-          "percentage": null
-        },
-        "106-120": {
-          "total": null,
-          "percentage": null
-        }
-      }
-    }
-  },
-  "lastUpdated": "2025-03-24T20:42:39.602Z"
+  "statistics": null,
+  "lastUpdated": "2025-03-27T10:41:29.199Z"
 }

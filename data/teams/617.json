@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 848,
         "name": "UEFA Europa Conference League",
         "type": "Cup",
@@ -163,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -200,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -704,7 +667,7 @@
           "date": "2025-03-06T17:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Spiros Louis Olympic Stadium",
+            "name": "Olympiako Stadio Spyros Louis",
             "city": "Athens"
           },
           "status": {
@@ -881,7 +844,7 @@
           "date": "2025-02-20T20:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Spiros Louis Olympic Stadium",
+            "name": "Olympiako Stadio Spyros Louis",
             "city": "Athens"
           },
           "status": {
@@ -1174,34 +1137,34 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 617,
       "name": "Panathinaikos",
       "logo": "https://media.api-sports.io/football/teams/617.png"
     },
-    "form": "DW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -1212,14 +1175,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "0.5",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.5"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1227,8 +1190,8 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
@@ -1257,24 +1220,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       },
@@ -1326,23 +1289,23 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       }
@@ -1350,11 +1313,11 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "1-0",
+        "home": null,
         "away": null
       },
       "loses": {
@@ -1363,7 +1326,7 @@
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 0,
           "away": 0
         },
         "against": {
@@ -1373,14 +1336,14 @@
       }
     },
     "clean_sheet": {
-      "home": 2,
+      "home": 0,
       "away": 0,
-      "total": 2
+      "total": 0
     },
     "failed_to_score": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1393,12 +1356,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-2-1-3",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1470,5 +1428,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:40.488Z"
+  "lastUpdated": "2025-03-27T10:38:22.876Z"
 }

@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 106,
         "name": "Ekstraklasa",
         "type": "League",
@@ -127,6 +90,43 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -263,7 +263,7 @@
       {
         "fixture": {
           "id": 1203199,
-          "date": "2025-04-13T12:45:00+00:00",
+          "date": "2025-04-13T15:30:00+00:00",
           "venue": {
             "id": null,
             "name": "Motor Lublin Arena",
@@ -275,7 +275,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744548300
+          "timestamp": 1744558200
         },
         "league": {
           "id": 106,
@@ -380,242 +380,6 @@
       },
       {
         "fixture": {
-          "id": 1203216,
-          "date": "2025-04-26T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745625600
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14562,
-            "name": "Motor Lublin",
-            "logo": "https://media.api-sports.io/football/teams/14562.png",
-            "winner": null
-          },
-          "away": {
-            "id": 350,
-            "name": "Cracovia Krakow",
-            "logo": "https://media.api-sports.io/football/teams/350.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1203225,
-          "date": "2025-05-03T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746230400
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 348,
-            "name": "Pogon Szczecin",
-            "logo": "https://media.api-sports.io/football/teams/348.png",
-            "winner": null
-          },
-          "away": {
-            "id": 14562,
-            "name": "Motor Lublin",
-            "logo": "https://media.api-sports.io/football/teams/14562.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1203234,
-          "date": "2025-05-10T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746835200
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14562,
-            "name": "Motor Lublin",
-            "logo": "https://media.api-sports.io/football/teams/14562.png",
-            "winner": null
-          },
-          "away": {
-            "id": 349,
-            "name": "Piast Gliwice",
-            "logo": "https://media.api-sports.io/football/teams/349.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1203241,
-          "date": "2025-05-17T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1747440000
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14562,
-            "name": "Motor Lublin",
-            "logo": "https://media.api-sports.io/football/teams/14562.png",
-            "winner": null
-          },
-          "away": {
-            "id": 345,
-            "name": "Zaglebie Lubin",
-            "logo": "https://media.api-sports.io/football/teams/345.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1203254,
           "date": "2025-05-24T15:30:00+00:00",
           "venue": {
@@ -675,6 +439,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1365977,
+          "date": "2025-03-23T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Motor Lublin Arena",
+            "city": "Lublin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742727600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": false
+          },
+          "away": {
+            "id": 6958,
+            "name": "Stal Stalowa Wola",
+            "logo": "https://media.api-sports.io/football/teams/6958.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1203166,
@@ -1090,12 +913,71 @@
       },
       {
         "fixture": {
-          "id": 1203110,
-          "date": "2024-12-07T19:15:00+00:00",
+          "id": 1337976,
+          "date": "2025-01-24T14:30:00+00:00",
           "venue": {
-            "id": 18633,
-            "name": "Miejski Stadion Piłkarski Raków",
-            "city": "Częstochowa"
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1737729000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": true
+          },
+          "away": {
+            "id": 705,
+            "name": "Dinamo Batumi",
+            "logo": "https://media.api-sports.io/football/teams/705.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1339474,
+          "date": "2025-01-21T08:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
           },
           "status": {
             "long": "Match Finished",
@@ -1103,142 +985,24 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1733598900
+          "timestamp": 1737448200
         },
         "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3491,
-            "name": "Raków Częstochowa",
-            "logo": "https://media.api-sports.io/football/teams/3491.png",
-            "winner": null
-          },
-          "away": {
-            "id": 14562,
-            "name": "Motor Lublin",
-            "logo": "https://media.api-sports.io/football/teams/14562.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1203097,
-          "date": "2024-12-02T18:00:00+00:00",
-          "venue": {
-            "id": 11992,
-            "name": "Arena Lublin",
-            "city": "Lublin"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1733162400
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
             "id": 14562,
             "name": "Motor Lublin",
             "logo": "https://media.api-sports.io/football/teams/14562.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4248,
-            "name": "Radomiak Radom",
-            "logo": "https://media.api-sports.io/football/teams/4248.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1203087,
-          "date": "2024-11-22T17:00:00+00:00",
-          "venue": {
-            "id": 1260,
-            "name": "Stadion Zagłębia Lubin",
-            "city": "Lubin"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1732294800
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 345,
-            "name": "Zaglebie Lubin",
-            "logo": "https://media.api-sports.io/football/teams/345.png",
             "winner": false
           },
           "away": {
-            "id": 14562,
-            "name": "Motor Lublin",
-            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "id": 12319,
+            "name": "Jedinstvo Ub",
+            "logo": "https://media.api-sports.io/football/teams/12319.png",
             "winner": true
           }
         },
@@ -1248,7 +1012,7 @@
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 1
           },
           "fulltime": {
@@ -1269,52 +1033,52 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 14562,
       "name": "Motor Lublin",
       "logo": "https://media.api-sports.io/football/teams/14562.png"
     },
-    "form": "DWWDWLWWDWWLDWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 10,
-        "away": 5,
-        "total": 15
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 8,
-        "away": 1,
-        "total": 9
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 1,
-        "away": 3,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 18,
-          "away": 5,
-          "total": 23
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.8",
-          "away": "1.0",
-          "total": "1.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1322,92 +1086,92 @@
             "percentage": null
           },
           "16-30": {
-            "total": 6,
-            "percentage": "26.09%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "8.70%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "13.04%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 4,
-            "percentage": "17.39%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 6,
-            "percentage": "26.09%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "4.35%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
-            "total": 1,
-            "percentage": "4.35%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 12,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 7,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 13
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 14
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 14
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 7,
-          "away": 5,
-          "total": 12
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.7",
-          "away": "1.0",
-          "total": "0.8"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1420,80 +1184,80 @@
         },
         "under_over": {
           "0.5": {
-            "over": 8,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 12
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 14
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 15
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 15
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 1,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "5-1",
-        "away": "1-2"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "0-3",
-        "away": "2-1"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 5,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
-          "away": 2
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 6,
-      "away": 1,
-      "total": 7
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 2,
-      "away": 1,
-      "total": 3
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 2,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 2
+      "total": 0
     },
     "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
           "total": null,
@@ -1504,16 +1268,16 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1560,5 +1324,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:38:19.711Z"
+  "lastUpdated": "2025-03-27T10:37:00.188Z"
 }

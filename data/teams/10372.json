@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2023-10-11",
-          "end": "2024-03-26",
-          "current": false,
+          "year": 2025,
+          "start": "2024-10-09",
+          "end": "2025-03-25",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -52,44 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -107,6 +70,183 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1299959,
+          "date": "2024-10-15T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Miejski im. Grzegorza Lato",
+            "city": "Mielec"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1728990000
+        },
+        "league": {
+          "id": 893,
+          "name": "UEFA U19 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10363,
+            "name": "Gibraltar U19",
+            "logo": "https://media.api-sports.io/football/teams/10363.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10372,
+            "name": "Malta U19",
+            "logo": "https://media.api-sports.io/football/teams/10372.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1299952,
+          "date": "2024-10-12T10:00:00+00:00",
+          "venue": {
+            "id": 11362,
+            "name": "Podkarpackie Centrum Piłki Nożnej",
+            "city": "Stalowa Wola"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1728727200
+        },
+        "league": {
+          "id": 893,
+          "name": "UEFA U19 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10351,
+            "name": "Turkey U19",
+            "logo": "https://media.api-sports.io/football/teams/10351.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10372,
+            "name": "Malta U19",
+            "logo": "https://media.api-sports.io/football/teams/10372.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1299947,
+          "date": "2024-10-09T16:00:00+00:00",
+          "venue": {
+            "id": 18634,
+            "name": "Stadion Miejski w Mielcu",
+            "city": "Mielec"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1728489600
+        },
+        "league": {
+          "id": 893,
+          "name": "UEFA U19 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10372,
+            "name": "Malta U19",
+            "logo": "https://media.api-sports.io/football/teams/10372.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10376,
+            "name": "Poland U19",
+            "logo": "https://media.api-sports.io/football/teams/10376.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 6
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 6
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1189560,
@@ -401,6 +541,124 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1023098,
+          "date": "2023-07-09T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Gozo Stadium",
+            "city": "Gozo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1688918400
+        },
+        "league": {
+          "id": 493,
+          "name": "UEFA U19 Championship",
+          "logo": "https://media.api-sports.io/football/leagues/493.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10343,
+            "name": "Portugal U19",
+            "logo": "https://media.api-sports.io/football/teams/10343.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10372,
+            "name": "Malta U19",
+            "logo": "https://media.api-sports.io/football/teams/10372.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1023094,
+          "date": "2023-07-06T19:15:00+00:00",
+          "venue": {
+            "id": 1067,
+            "name": "MFA Centenary Stadium",
+            "city": "Ta'Qali"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1688670900
+        },
+        "league": {
+          "id": 493,
+          "name": "UEFA U19 Championship",
+          "logo": "https://media.api-sports.io/football/leagues/493.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10372,
+            "name": "Malta U19",
+            "logo": "https://media.api-sports.io/football/teams/10372.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10376,
+            "name": "Poland U19",
+            "logo": "https://media.api-sports.io/football/teams/10376.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
@@ -411,14 +669,14 @@
       "country": "World",
       "logo": "https://media.api-sports.io/football/leagues/893.png",
       "flag": null,
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 10372,
       "name": "Malta U19",
       "logo": "https://media.api-sports.io/football/teams/10372.png"
     },
-    "form": "LLD",
+    "form": "LLW",
     "fixtures": {
       "played": {
         "home": 1,
@@ -427,40 +685,40 @@
       },
       "wins": {
         "home": 0,
+        "away": 1,
+        "total": 1
+      },
+      "draws": {
+        "home": 0,
         "away": 0,
         "total": 0
       },
-      "draws": {
-        "home": 1,
-        "away": 0,
-        "total": 1
-      },
       "loses": {
-        "home": 0,
-        "away": 2,
+        "home": 1,
+        "away": 1,
         "total": 2
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 2,
-          "away": 1,
-          "total": 3
+          "home": 0,
+          "away": 2,
+          "total": 2
         },
         "average": {
-          "home": "2.0",
-          "away": "0.5",
-          "total": "1.0"
+          "home": "0.0",
+          "away": "1.0",
+          "total": "0.7"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "33.33%"
-          },
-          "16-30": {
             "total": null,
             "percentage": null
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "50.00%"
           },
           "31-45": {
             "total": null,
@@ -472,11 +730,11 @@
           },
           "61-75": {
             "total": 1,
-            "percentage": "33.33%"
+            "percentage": "50.00%"
           },
           "76-90": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -489,8 +747,8 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 1
+            "over": 1,
+            "under": 2
           },
           "1.5": {
             "over": 1,
@@ -512,14 +770,14 @@
       },
       "against": {
         "total": {
-          "home": 2,
-          "away": 6,
-          "total": 8
+          "home": 6,
+          "away": 3,
+          "total": 9
         },
         "average": {
-          "home": "2.0",
-          "away": "3.0",
-          "total": "2.7"
+          "home": "6.0",
+          "away": "1.5",
+          "total": "3.0"
         },
         "minute": {
           "0-15": {
@@ -528,23 +786,23 @@
           },
           "16-30": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "11.11%"
           },
           "31-45": {
-            "total": 3,
-            "percentage": "37.50%"
+            "total": 1,
+            "percentage": "11.11%"
           },
           "46-60": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": 4,
+            "percentage": "44.44%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "11.11%"
           },
           "76-90": {
-            "total": 3,
-            "percentage": "37.50%"
+            "total": 2,
+            "percentage": "22.22%"
           },
           "91-105": {
             "total": null,
@@ -561,20 +819,20 @@
             "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 0
-          },
-          "2.5": {
             "over": 2,
             "under": 1
           },
+          "2.5": {
+            "over": 1,
+            "under": 2
+          },
           "3.5": {
-            "over": 0,
-            "under": 3
+            "over": 1,
+            "under": 2
           },
           "4.5": {
-            "over": 0,
-            "under": 3
+            "over": 1,
+            "under": 2
           }
         }
       }
@@ -587,20 +845,20 @@
       },
       "wins": {
         "home": null,
-        "away": null
+        "away": "1-2"
       },
       "loses": {
-        "home": null,
-        "away": "3-0"
+        "home": "0-6",
+        "away": "2-0"
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 2
         },
         "against": {
-          "home": 2,
-          "away": 3
+          "home": 6,
+          "away": 2
         }
       }
     },
@@ -610,9 +868,9 @@
       "total": 0
     },
     "failed_to_score": {
-      "home": 0,
+      "home": 1,
       "away": 1,
-      "total": 1
+      "total": 2
     },
     "penalty": {
       "scored": {
@@ -633,28 +891,28 @@
           "percentage": null
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "22.22%"
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "11.11%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "22.22%"
         },
         "61-75": {
           "total": 2,
-          "percentage": "50.00%"
+          "percentage": "22.22%"
         },
         "76-90": {
-          "total": 2,
-          "percentage": "50.00%"
+          "total": 1,
+          "percentage": "11.11%"
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "11.11%"
         },
         "106-120": {
           "total": null,
@@ -697,5 +955,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:22.406Z"
+  "lastUpdated": "2025-03-27T10:41:11.711Z"
 }

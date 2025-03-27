@@ -22,117 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 972,
-        "name": "Super Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/972.png"
-      },
-      "country": {
-        "name": "China",
-        "code": "CN",
-        "flag": "https://media.api-sports.io/flags/cn.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-02-25",
-          "end": "2024-02-25",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": false,
-            "top_scorers": false,
-            "top_assists": false,
-            "top_cards": false,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 169,
-        "name": "Super League",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/169.png"
-      },
-      "country": {
-        "name": "China",
-        "code": "CN",
-        "flag": "https://media.api-sports.io/flags/cn.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-01",
-          "end": "2024-11-02",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 171,
-        "name": "FA Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/171.png"
-      },
-      "country": {
-        "name": "China",
-        "code": "CN",
-        "flag": "https://media.api-sports.io/flags/cn.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-15",
-          "end": "2024-11-23",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 17,
         "name": "AFC Champions League",
         "type": "Cup",
@@ -167,6 +56,117 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 972,
+        "name": "Super Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/972.png"
+      },
+      "country": {
+        "name": "China",
+        "code": "CN",
+        "flag": "https://media.api-sports.io/flags/cn.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-07",
+          "end": "2025-02-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 169,
+        "name": "Super League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/169.png"
+      },
+      "country": {
+        "name": "China",
+        "code": "CN",
+        "flag": "https://media.api-sports.io/flags/cn.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-22",
+          "end": "2025-11-22",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -182,7 +182,1188 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1340915,
+          "date": "2025-03-28T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Qingdao West Coast University City Stadium",
+            "city": "Qingdao"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743159600
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 17265,
+            "name": "Qingdao Youth Island",
+            "logo": "https://media.api-sports.io/football/teams/17265.png",
+            "winner": null
+          },
+          "away": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340930,
+          "date": "2025-04-02T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743595200
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1439,
+            "name": "Meizhou Kejia",
+            "logo": "https://media.api-sports.io/football/teams/1439.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340936,
+          "date": "2025-04-06T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743939300
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          },
+          "away": {
+            "id": 833,
+            "name": "Shanghai Shenhua",
+            "logo": "https://media.api-sports.io/football/teams/833.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340943,
+          "date": "2025-04-12T10:00:00+00:00",
+          "venue": {
+            "id": 355,
+            "name": "Zhengzhou Hanghai Stadium",
+            "city": "Zhengzhou"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744452000
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 840,
+            "name": "Henan Jianye",
+            "logo": "https://media.api-sports.io/football/teams/840.png",
+            "winner": null
+          },
+          "away": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340950,
+          "date": "2025-04-16T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "TEDA Football Stadium",
+            "city": "Tianjin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744797600
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 837,
+            "name": "Tianjin Teda",
+            "logo": "https://media.api-sports.io/football/teams/837.png",
+            "winner": null
+          },
+          "away": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340962,
+          "date": "2025-04-20T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745148900
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5648,
+            "name": "Chengdu Better City",
+            "logo": "https://media.api-sports.io/football/teams/5648.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340964,
+          "date": "2025-04-25T12:00:00+00:00",
+          "venue": {
+            "id": 19672,
+            "name": "Yuxi Plateau Sports Center Stadium",
+            "city": "Yuxi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745582400
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21265,
+            "name": "Yunnan Yukun",
+            "logo": "https://media.api-sports.io/football/teams/21265.png",
+            "winner": null
+          },
+          "away": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340976,
+          "date": "2025-05-01T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746099300
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          },
+          "away": {
+            "id": 830,
+            "name": "Beijing Guoan",
+            "logo": "https://media.api-sports.io/football/teams/830.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340981,
+          "date": "2025-05-05T11:00:00+00:00",
+          "venue": {
+            "id": 11560,
+            "name": "Wuhan Sports Center Stadium",
+            "city": "Wuhan"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746442800
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5695,
+            "name": "Wuhan Three Towns",
+            "logo": "https://media.api-sports.io/football/teams/5695.png",
+            "winner": null
+          },
+          "away": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340987,
+          "date": "2025-05-09T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746790500
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1431,
+            "name": "Qingdao Jonoon",
+            "logo": "https://media.api-sports.io/football/teams/1431.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341002,
+          "date": "2025-05-17T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747483200
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          },
+          "away": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341005,
+          "date": "2025-06-14T07:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Huanglong Sports Centre",
+            "city": "Hangzhou"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749886200
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 848,
+            "name": "Hangzhou Greentown",
+            "logo": "https://media.api-sports.io/football/teams/848.png",
+            "winner": null
+          },
+          "away": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341017,
+          "date": "2025-06-26T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750937700
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          },
+          "away": {
+            "id": 21263,
+            "name": "Dalian Zhixing",
+            "logo": "https://media.api-sports.io/football/teams/21263.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341026,
+          "date": "2025-06-30T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Shenzhen Stadium",
+            "city": "Shenzhen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751284800
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": null
+          },
+          "away": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341028,
+          "date": "2025-07-18T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Changchun Sports Center Stadium",
+            "city": "Changchun"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752838500
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 834,
+            "name": "Changchun Yatai",
+            "logo": "https://media.api-sports.io/football/teams/834.png",
+            "winner": null
+          },
+          "away": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341035,
+          "date": "2025-07-26T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753527600
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          },
+          "away": {
+            "id": 17265,
+            "name": "Qingdao Youth Island",
+            "logo": "https://media.api-sports.io/football/teams/17265.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341046,
+          "date": "2025-08-02T12:00:00+00:00",
+          "venue": {
+            "id": 19329,
+            "name": "Wuhua Olympic Sports Center Huitang Stadium",
+            "city": "Wuhua"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754136000
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1439,
+            "name": "Meizhou Kejia",
+            "logo": "https://media.api-sports.io/football/teams/1439.png",
+            "winner": null
+          },
+          "away": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341054,
+          "date": "2025-08-09T11:35:00+00:00",
+          "venue": {
+            "id": 19701,
+            "name": "Shanghai Stadium",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754739300
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 833,
+            "name": "Shanghai Shenhua",
+            "logo": "https://media.api-sports.io/football/teams/833.png",
+            "winner": null
+          },
+          "away": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341059,
+          "date": "2025-08-15T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755257700
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          },
+          "away": {
+            "id": 840,
+            "name": "Henan Jianye",
+            "logo": "https://media.api-sports.io/football/teams/840.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341067,
+          "date": "2025-08-23T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755946800
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          },
+          "away": {
+            "id": 837,
+            "name": "Tianjin Teda",
+            "logo": "https://media.api-sports.io/football/teams/837.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
       {
         "fixture": {
@@ -290,6 +1471,124 @@
           },
           "fulltime": {
             "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340908,
+          "date": "2025-02-28T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1740742500
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": true
+          },
+          "away": {
+            "id": 834,
+            "name": "Changchun Yatai",
+            "logo": "https://media.api-sports.io/football/teams/834.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340906,
+          "date": "2025-02-23T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1740310500
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
             "away": 1
           },
           "extratime": {
@@ -422,6 +1721,183 @@
       },
       {
         "fixture": {
+          "id": 1335169,
+          "date": "2025-02-07T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Kunshan Olympic Sports Center",
+            "city": "Kunshan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1738928100
+        },
+        "league": {
+          "id": 972,
+          "name": "Super Cup",
+          "logo": "https://media.api-sports.io/football/leagues/972.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": false
+          },
+          "away": {
+            "id": 833,
+            "name": "Shanghai Shenhua",
+            "logo": "https://media.api-sports.io/football/teams/833.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1337938,
+          "date": "2025-01-20T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sheikh Zayed Cricket Stadium",
+            "city": "Abu Dhabi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1737331200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 597,
+            "name": "Lokomotiv",
+            "logo": "https://media.api-sports.io/football/teams/597.png",
+            "winner": false
+          },
+          "away": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334004,
+          "date": "2025-01-15T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jebel Ali Centre of Excellence",
+            "city": "Dubai"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1736899200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6231,
+            "name": "Rapid",
+            "logo": "https://media.api-sports.io/football/teams/6231.png",
+            "winner": true
+          },
+          "away": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1288377,
           "date": "2024-12-03T12:00:00+00:00",
           "venue": {
@@ -478,329 +1954,34 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1288363,
-          "date": "2024-11-26T10:00:00+00:00",
-          "venue": {
-            "id": 1020,
-            "name": "Ulsan Munsu Football Stadium",
-            "city": "Ulsan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1732615200
-        },
-        "league": {
-          "id": 17,
-          "name": "AFC Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/17.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2767,
-            "name": "Ulsan Hyundai FC",
-            "logo": "https://media.api-sports.io/football/teams/2767.png",
-            "winner": false
-          },
-          "away": {
-            "id": 836,
-            "name": "SHANGHAI SIPG",
-            "logo": "https://media.api-sports.io/football/teams/836.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1308805,
-          "date": "2024-11-23T10:30:00+00:00",
-          "venue": {
-            "id": 359,
-            "name": "Wenzhou Olympic Sports Center Stadium",
-            "city": "Wenzhou"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1732357800
-        },
-        "league": {
-          "id": 171,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/171.png"
-        },
-        "teams": {
-          "home": {
-            "id": 844,
-            "name": "Shandong Luneng",
-            "logo": "https://media.api-sports.io/football/teams/844.png",
-            "winner": false
-          },
-          "away": {
-            "id": 836,
-            "name": "SHANGHAI SIPG",
-            "logo": "https://media.api-sports.io/football/teams/836.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1288351,
-          "date": "2024-11-05T10:00:00+00:00",
-          "venue": {
-            "id": 20516,
-            "name": "Uvance Todoroki Stadium by Fujitsu",
-            "city": "Kawasaki"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1730800800
-        },
-        "league": {
-          "id": 17,
-          "name": "AFC Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/17.png"
-        },
-        "teams": {
-          "home": {
-            "id": 294,
-            "name": "Kawasaki Frontale",
-            "logo": "https://media.api-sports.io/football/teams/294.png",
-            "winner": true
-          },
-          "away": {
-            "id": 836,
-            "name": "SHANGHAI SIPG",
-            "logo": "https://media.api-sports.io/football/teams/836.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1173269,
-          "date": "2024-11-02T07:30:00+00:00",
-          "venue": {
-            "id": 19701,
-            "name": "SAIC Motor Pudong Arena",
-            "city": "Shanghai"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730532600
-        },
-        "league": {
-          "id": 169,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/169.png"
-        },
-        "teams": {
-          "home": {
-            "id": 836,
-            "name": "SHANGHAI SIPG",
-            "logo": "https://media.api-sports.io/football/teams/836.png",
-            "winner": true
-          },
-          "away": {
-            "id": 837,
-            "name": "Tianjin Teda",
-            "logo": "https://media.api-sports.io/football/teams/837.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1173266,
-          "date": "2024-10-27T07:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Cangzhou Stadium",
-            "city": "Cangzhou"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730014200
-        },
-        "league": {
-          "id": 169,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/169.png"
-        },
-        "teams": {
-          "home": {
-            "id": 849,
-            "name": "Shijiazhuang Y. J.",
-            "logo": "https://media.api-sports.io/football/teams/849.png",
-            "winner": false
-          },
-          "away": {
-            "id": 836,
-            "name": "SHANGHAI SIPG",
-            "logo": "https://media.api-sports.io/football/teams/836.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 972,
-      "name": "Super Cup",
+      "id": 169,
+      "name": "Super League",
       "country": "China",
-      "logo": "https://media.api-sports.io/football/leagues/972.png",
+      "logo": "https://media.api-sports.io/football/leagues/169.png",
       "flag": "https://media.api-sports.io/flags/cn.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 836,
       "name": "SHANGHAI SIPG",
       "logo": "https://media.api-sports.io/football/teams/836.png"
     },
-    "form": "L",
+    "form": "WW",
     "fixtures": {
       "played": {
-        "home": 1,
+        "home": 2,
         "away": 0,
-        "total": 1
+        "total": 2
       },
       "wins": {
-        "home": 0,
+        "home": 2,
         "away": 0,
-        "total": 0
+        "total": 2
       },
       "draws": {
         "home": 0,
@@ -808,95 +1989,27 @@
         "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 0,
+          "home": 5,
           "away": 0,
-          "total": 0
+          "total": 5
         },
         "average": {
-          "home": "0.0",
+          "home": "2.5",
           "away": "0.0",
-          "total": "0.0"
+          "total": "2.5"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
-          },
-          "16-30": {
-            "total": null,
-            "percentage": null
-          },
-          "31-45": {
-            "total": null,
-            "percentage": null
-          },
-          "46-60": {
-            "total": null,
-            "percentage": null
-          },
-          "61-75": {
-            "total": null,
-            "percentage": null
-          },
-          "76-90": {
-            "total": null,
-            "percentage": null
-          },
-          "91-105": {
-            "total": null,
-            "percentage": null
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 0,
-            "under": 1
-          },
-          "1.5": {
-            "over": 0,
-            "under": 1
-          },
-          "2.5": {
-            "over": 0,
-            "under": 1
-          },
-          "3.5": {
-            "over": 0,
-            "under": 1
-          },
-          "4.5": {
-            "over": 0,
-            "under": 1
-          }
-        }
-      },
-      "against": {
-        "total": {
-          "home": 1,
-          "away": 0,
-          "total": 1
-        },
-        "average": {
-          "home": "1.0",
-          "away": "0.0",
-          "total": "1.0"
-        },
-        "minute": {
-          "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "16-30": {
             "total": null,
@@ -908,15 +2021,83 @@
           },
           "46-60": {
             "total": 1,
-            "percentage": "100.00%"
+            "percentage": "20.00%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "20.00%"
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": 2,
+            "percentage": "40.00%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 0
+          },
+          "1.5": {
+            "over": 2,
+            "under": 0
+          },
+          "2.5": {
+            "over": 1,
+            "under": 1
+          },
+          "3.5": {
+            "over": 0,
+            "under": 2
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 1,
+          "away": 0,
+          "total": 1
+        },
+        "average": {
+          "home": "0.5",
+          "away": "0.0",
+          "total": "0.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "100.00%"
           },
           "91-105": {
             "total": null,
@@ -930,44 +2111,44 @@
         "under_over": {
           "0.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 0,
+        "wins": 2,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
-        "home": null,
+        "home": "3-1",
         "away": null
       },
       "loses": {
-        "home": "0-1",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 0,
+          "home": 3,
           "away": 0
         },
         "against": {
@@ -977,56 +2158,61 @@
       }
     },
     "clean_sheet": {
-      "home": 0,
-      "away": 0,
-      "total": 0
-    },
-    "failed_to_score": {
       "home": 1,
       "away": 0,
       "total": 1
     },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
     "penalty": {
       "scored": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 1,
+        "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 0
+      "total": 1
     },
-    "lineups": [],
+    "lineups": [
+      {
+        "formation": "4-2-3-1",
+        "played": 2
+      }
+    ],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "14.29%"
         },
         "16-30": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": 2,
+          "percentage": "28.57%"
         },
         "31-45": {
           "total": null,
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "14.29%"
         },
         "76-90": {
-          "total": 2,
-          "percentage": "50.00%"
+          "total": 1,
+          "percentage": "14.29%"
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "28.57%"
         },
         "106-120": {
           "total": null,
@@ -1055,8 +2241,8 @@
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1069,5 +2255,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:54.240Z"
+  "lastUpdated": "2025-03-27T10:41:44.159Z"
 }

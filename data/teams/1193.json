@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-20",
-          "end": "2024-04-06",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-11",
+          "end": "2025-03-29",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -52,81 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 11,
-        "name": "CONMEBOL Sudamericana",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/11.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-05",
-          "end": "2024-11-23",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 843,
-        "name": "Copa Verde",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/843.png"
-      },
-      "country": {
-        "name": "Brazil",
-        "code": "BR",
-        "flag": "https://media.api-sports.io/flags/br.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-02-22",
-          "end": "2024-05-11",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -145,10 +71,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-02-20",
-          "end": "2024-11-10",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-18",
+          "end": "2025-03-14",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -170,10 +96,10 @@
     },
     {
       "league": {
-        "id": 71,
-        "name": "Serie A",
+        "id": 72,
+        "name": "Serie B",
         "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/71.png"
+        "logo": "https://media.api-sports.io/football/leagues/72.png"
       },
       "country": {
         "name": "Brazil",
@@ -182,23 +108,23 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-04-13",
-          "end": "2024-12-08",
-          "current": false,
+          "year": 2025,
+          "start": "2025-04-04",
+          "end": "2025-11-22",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
-            "injuries": true,
+            "injuries": false,
             "predictions": true,
             "odds": false
           }
@@ -223,56 +149,55 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1180733,
-          "date": "2024-12-08T19:00:00+00:00",
+          "id": 1362079,
+          "date": "2025-03-29T19:30:00+00:00",
           "venue": {
             "id": 235,
             "name": "Arena Pantanal",
             "city": "Cuiabá, Mato Grosso"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1733684400
+          "timestamp": 1743276600
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 630,
+          "name": "Matogrossense",
+          "logo": "https://media.api-sports.io/football/leagues/630.png"
         },
         "teams": {
           "home": {
             "id": 1193,
             "name": "Cuiaba",
             "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": false
+            "winner": null
           },
           "away": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": true
+            "id": 22825,
+            "name": "Primavera MG",
+            "logo": "https://media.api-sports.io/football/teams/22825.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 1,
-          "away": 2
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 2
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 1,
-            "away": 2
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -286,43 +211,222 @@
       },
       {
         "fixture": {
-          "id": 1180718,
-          "date": "2024-12-05T23:00:00+00:00",
+          "id": 1353269,
+          "date": "2025-04-06T22:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": "Estadio Jornalista Mário Filho",
-            "city": "Rio de Janeiro, Rio de Janeiro"
+            "id": 5650,
+            "name": "Estádio Municipal General Raulino de Oliveira",
+            "city": "Volta Redonda, Rio de Janeiro"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1733439600
+          "timestamp": 1743976800
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
         },
         "teams": {
           "home": {
-            "id": 124,
-            "name": "Fluminense",
-            "logo": "https://media.api-sports.io/football/teams/124.png",
-            "winner": true
+            "id": 7814,
+            "name": "Volta Redonda",
+            "logo": "https://media.api-sports.io/football/teams/7814.png",
+            "winner": null
           },
           "away": {
             "id": 1193,
             "name": "Cuiaba",
             "logo": "https://media.api-sports.io/football/teams/1193.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353272,
+          "date": "2025-04-11T00:30:00+00:00",
+          "venue": {
+            "id": 235,
+            "name": "Arena Pantanal",
+            "city": "Cuiabá, Mato Grosso"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744331400
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1193,
+            "name": "Cuiaba",
+            "logo": "https://media.api-sports.io/football/teams/1193.png",
+            "winner": null
+          },
+          "away": {
+            "id": 145,
+            "name": "Avai",
+            "logo": "https://media.api-sports.io/football/teams/145.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353282,
+          "date": "2025-04-15T22:00:00+00:00",
+          "venue": {
+            "id": 235,
+            "name": "Arena Pantanal",
+            "city": "Cuiabá, Mato Grosso"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744754400
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1193,
+            "name": "Cuiaba",
+            "logo": "https://media.api-sports.io/football/teams/1193.png",
+            "winner": null
+          },
+          "away": {
+            "id": 134,
+            "name": "Atletico Paranaense",
+            "logo": "https://media.api-sports.io/football/teams/134.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1362078,
+          "date": "2025-03-22T19:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estádio Municipal Antônio Santo Renosto",
+            "city": "Primavera do Leste, Mato Grosso"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742671800
+        },
+        "league": {
+          "id": 630,
+          "name": "Matogrossense",
+          "logo": "https://media.api-sports.io/football/leagues/630.png"
+        },
+        "teams": {
+          "home": {
+            "id": 22825,
+            "name": "Primavera MG",
+            "logo": "https://media.api-sports.io/football/teams/22825.png",
             "winner": false
+          },
+          "away": {
+            "id": 1193,
+            "name": "Cuiaba",
+            "logo": "https://media.api-sports.io/football/teams/1193.png",
+            "winner": true
           }
         },
         "goals": {
           "home": 1,
-          "away": 0
+          "away": 2
         },
         "score": {
           "halftime": {
@@ -331,65 +435,6 @@
           },
           "fulltime": {
             "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180713,
-          "date": "2024-11-30T22:30:00+00:00",
-          "venue": {
-            "id": 235,
-            "name": "Arena Pantanal",
-            "city": "Cuiabá, Mato Grosso"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1733005800
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": false
-          },
-          "away": {
-            "id": 118,
-            "name": "Bahia",
-            "logo": "https://media.api-sports.io/football/teams/118.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
             "away": 2
           },
           "extratime": {
@@ -404,31 +449,208 @@
       },
       {
         "fixture": {
-          "id": 1180704,
-          "date": "2024-11-23T22:30:00+00:00",
+          "id": 1358838,
+          "date": "2025-03-15T19:30:00+00:00",
           "venue": {
-            "id": 248,
-            "name": "Estádio Alfredo Jaconi",
-            "city": "Caxias do Sul, Rio Grande do Sul"
+            "id": 235,
+            "name": "Arena Pantanal",
+            "city": "Cuiabá, Mato Grosso"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 8
+            "extra": 5
           },
-          "timestamp": 1732401000
+          "timestamp": 1742067000
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 630,
+          "name": "Matogrossense",
+          "logo": "https://media.api-sports.io/football/leagues/630.png"
         },
         "teams": {
           "home": {
-            "id": 152,
-            "name": "Juventude",
-            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "id": 1193,
+            "name": "Cuiaba",
+            "logo": "https://media.api-sports.io/football/teams/1193.png",
+            "winner": true
+          },
+          "away": {
+            "id": 9999,
+            "name": "CEOV Operário",
+            "logo": "https://media.api-sports.io/football/teams/9999.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1358837,
+          "date": "2025-03-08T20:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estádio Dito Souza",
+            "city": "Várzea Grande, Mato Grosso"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1741466700
+        },
+        "league": {
+          "id": 630,
+          "name": "Matogrossense",
+          "logo": "https://media.api-sports.io/football/leagues/630.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9999,
+            "name": "CEOV Operário",
+            "logo": "https://media.api-sports.io/football/teams/9999.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1193,
+            "name": "Cuiaba",
+            "logo": "https://media.api-sports.io/football/teams/1193.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323182,
+          "date": "2025-02-22T19:30:00+00:00",
+          "venue": {
+            "id": 235,
+            "name": "Arena Pantanal",
+            "city": "Cuiabá, Mato Grosso"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1740252600
+        },
+        "league": {
+          "id": 630,
+          "name": "Matogrossense",
+          "logo": "https://media.api-sports.io/football/leagues/630.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1193,
+            "name": "Cuiaba",
+            "logo": "https://media.api-sports.io/football/teams/1193.png",
+            "winner": true
+          },
+          "away": {
+            "id": 18273,
+            "name": "Sport Sinop",
+            "logo": "https://media.api-sports.io/football/teams/18273.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 4,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323178,
+          "date": "2025-02-15T19:30:00+00:00",
+          "venue": {
+            "id": 5640,
+            "name": "Estádio Municipal Engenheiro Luthero Lopes",
+            "city": "Rondonópolis, Mato Grosso"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739647800
+        },
+        "league": {
+          "id": 630,
+          "name": "Matogrossense",
+          "logo": "https://media.api-sports.io/football/leagues/630.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7788,
+            "name": "União Rondonópolis",
+            "logo": "https://media.api-sports.io/football/teams/7788.png",
             "winner": null
           },
           "away": {
@@ -439,7 +661,125 @@
           }
         },
         "goals": {
-          "home": 1,
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323174,
+          "date": "2025-02-08T19:30:00+00:00",
+          "venue": {
+            "id": 235,
+            "name": "Arena Pantanal",
+            "city": "Cuiabá, Mato Grosso"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739043000
+        },
+        "league": {
+          "id": 630,
+          "name": "Matogrossense",
+          "logo": "https://media.api-sports.io/football/leagues/630.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1193,
+            "name": "Cuiaba",
+            "logo": "https://media.api-sports.io/football/teams/1193.png",
+            "winner": true
+          },
+          "away": {
+            "id": 13130,
+            "name": "Nova Mutum EC",
+            "logo": "https://media.api-sports.io/football/teams/13130.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323170,
+          "date": "2025-02-02T22:00:00+00:00",
+          "venue": {
+            "id": 5640,
+            "name": "Estádio Municipal Engenheiro Luthero Lopes",
+            "city": "Rondonópolis, Mato Grosso"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1738533600
+        },
+        "league": {
+          "id": 630,
+          "name": "Matogrossense",
+          "logo": "https://media.api-sports.io/football/leagues/630.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18862,
+            "name": "Academia",
+            "logo": "https://media.api-sports.io/football/teams/18862.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1193,
+            "name": "Cuiaba",
+            "logo": "https://media.api-sports.io/football/teams/1193.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
           "away": 1
         },
         "score": {
@@ -448,7 +788,7 @@
             "away": 0
           },
           "fulltime": {
-            "home": 1,
+            "home": 0,
             "away": 1
           },
           "extratime": {
@@ -463,8 +803,8 @@
       },
       {
         "fixture": {
-          "id": 1180693,
-          "date": "2024-11-20T22:00:00+00:00",
+          "id": 1323166,
+          "date": "2025-01-29T23:00:00+00:00",
           "venue": {
             "id": 235,
             "name": "Arena Pantanal",
@@ -474,100 +814,41 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 8
+            "extra": 6
           },
-          "timestamp": 1732140000
+          "timestamp": 1738191600
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 630,
+          "name": "Matogrossense",
+          "logo": "https://media.api-sports.io/football/leagues/630.png"
         },
         "teams": {
           "home": {
             "id": 1193,
             "name": "Cuiaba",
             "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": false
-          },
-          "away": {
-            "id": 127,
-            "name": "Flamengo",
-            "logo": "https://media.api-sports.io/football/teams/127.png",
             "winner": true
+          },
+          "away": {
+            "id": 752,
+            "name": "Luverdense",
+            "logo": "https://media.api-sports.io/football/teams/752.png",
+            "winner": false
           }
         },
         "goals": {
-          "home": 1,
-          "away": 2
+          "home": 3,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
             "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180679,
-          "date": "2024-11-09T19:30:00+00:00",
-          "venue": {
-            "id": 218,
-            "name": "Estádio Nilton Santos",
-            "city": "Rio de Janeiro"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1731180600
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 120,
-            "name": "Botafogo",
-            "logo": "https://media.api-sports.io/football/teams/120.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
             "away": 0
           },
           "fulltime": {
-            "home": 0,
-            "away": 0
+            "home": 3,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -581,71 +862,12 @@
       },
       {
         "fixture": {
-          "id": 1180671,
-          "date": "2024-11-02T19:00:00+00:00",
+          "id": 1323165,
+          "date": "2025-01-26T20:00:00+00:00",
           "venue": {
-            "id": 220,
-            "name": "Estádio Nabi Abi Chedid",
-            "city": "Bragança Paulista, São Paulo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730574000
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 794,
-            "name": "RB Bragantino",
-            "logo": "https://media.api-sports.io/football/teams/794.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180663,
-          "date": "2024-10-28T22:00:00+00:00",
-          "venue": {
-            "id": 235,
-            "name": "Arena Pantanal",
-            "city": "Cuiabá, Mato Grosso"
+            "id": null,
+            "name": "Estádio Municipal Antônio Santo Renosto",
+            "city": "Primavera do Leste, Mato Grosso"
           },
           "status": {
             "long": "Match Finished",
@@ -653,29 +875,29 @@
             "elapsed": 90,
             "extra": 9
           },
-          "timestamp": 1730152800
+          "timestamp": 1737921600
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 630,
+          "name": "Matogrossense",
+          "logo": "https://media.api-sports.io/football/leagues/630.png"
         },
         "teams": {
           "home": {
+            "id": 22825,
+            "name": "Primavera MG",
+            "logo": "https://media.api-sports.io/football/teams/22825.png",
+            "winner": null
+          },
+          "away": {
             "id": 1193,
             "name": "Cuiaba",
             "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": false
-          },
-          "away": {
-            "id": 131,
-            "name": "Corinthians",
-            "logo": "https://media.api-sports.io/football/teams/131.png",
-            "winner": true
+            "winner": null
           }
         },
         "goals": {
-          "home": 0,
+          "home": 1,
           "away": 1
         },
         "score": {
@@ -684,7 +906,7 @@
             "away": 1
           },
           "fulltime": {
-            "home": 0,
+            "home": 1,
             "away": 1
           },
           "extratime": {
@@ -699,12 +921,12 @@
       },
       {
         "fixture": {
-          "id": 1180539,
-          "date": "2024-10-25T22:00:00+00:00",
+          "id": 1323158,
+          "date": "2025-01-18T19:30:00+00:00",
           "venue": {
-            "id": 19377,
-            "name": "Estádio São Januário",
-            "city": "Rio de Janeiro, Rio de Janeiro"
+            "id": 235,
+            "name": "Arena Pantanal",
+            "city": "Cuiabá, Mato Grosso"
           },
           "status": {
             "long": "Match Finished",
@@ -712,98 +934,39 @@
             "elapsed": 90,
             "extra": 7
           },
-          "timestamp": 1729893600
+          "timestamp": 1737228600
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 630,
+          "name": "Matogrossense",
+          "logo": "https://media.api-sports.io/football/leagues/630.png"
         },
         "teams": {
           "home": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": true
-          },
-          "away": {
             "id": 1193,
             "name": "Cuiaba",
             "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": false
+            "winner": null
+          },
+          "away": {
+            "id": 2215,
+            "name": "Mixto",
+            "logo": "https://media.api-sports.io/football/teams/2215.png",
+            "winner": null
           }
         },
         "goals": {
           "home": 1,
-          "away": 0
+          "away": 1
         },
         "score": {
           "halftime": {
             "home": 0,
-            "away": 0
+            "away": 1
           },
           "fulltime": {
             "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180653,
-          "date": "2024-10-18T22:00:00+00:00",
-          "venue": {
-            "id": 211,
-            "name": "Estádio Antônio Accioly",
-            "city": "Goiânia, Goiás"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1729288800
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 144,
-            "name": "Atletico Goianiense",
-            "logo": "https://media.api-sports.io/football/teams/144.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -824,28 +987,28 @@
       "country": "Brazil",
       "logo": "https://media.api-sports.io/football/leagues/630.png",
       "flag": "https://media.api-sports.io/flags/br.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 1193,
       "name": "Cuiaba",
       "logo": "https://media.api-sports.io/football/teams/1193.png"
     },
-    "form": "DDWWWDWWDWWWW",
+    "form": "DDDWWWDWWWW",
     "fixtures": {
       "played": {
-        "home": 7,
+        "home": 5,
         "away": 6,
-        "total": 13
+        "total": 11
       },
       "wins": {
         "home": 4,
-        "away": 5,
-        "total": 9
+        "away": 3,
+        "total": 7
       },
       "draws": {
-        "home": 3,
-        "away": 1,
+        "home": 1,
+        "away": 3,
         "total": 4
       },
       "loses": {
@@ -857,43 +1020,43 @@
     "goals": {
       "for": {
         "total": {
-          "home": 17,
-          "away": 10,
-          "total": 27
+          "home": 16,
+          "away": 7,
+          "total": 23
         },
         "average": {
-          "home": "2.4",
-          "away": "1.7",
+          "home": "3.2",
+          "away": "1.2",
           "total": "2.1"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "3.85%"
+            "total": 4,
+            "percentage": "17.39%"
           },
           "16-30": {
-            "total": 4,
-            "percentage": "15.38%"
+            "total": 3,
+            "percentage": "13.04%"
           },
           "31-45": {
-            "total": 2,
-            "percentage": "7.69%"
+            "total": 4,
+            "percentage": "17.39%"
           },
           "46-60": {
-            "total": 7,
-            "percentage": "26.92%"
+            "total": 5,
+            "percentage": "21.74%"
           },
           "61-75": {
-            "total": 7,
-            "percentage": "26.92%"
+            "total": 3,
+            "percentage": "13.04%"
           },
           "76-90": {
             "total": 4,
-            "percentage": "15.38%"
+            "percentage": "17.39%"
           },
           "91-105": {
-            "total": 1,
-            "percentage": "3.85%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -902,66 +1065,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 13,
-            "under": 0
+            "over": 10,
+            "under": 1
           },
           "1.5": {
-            "over": 8,
+            "over": 6,
             "under": 5
           },
           "2.5": {
             "over": 3,
-            "under": 10
+            "under": 8
           },
           "3.5": {
             "over": 2,
-            "under": 11
+            "under": 9
           },
           "4.5": {
-            "over": 1,
-            "under": 12
+            "over": 2,
+            "under": 9
           }
         }
       },
       "against": {
         "total": {
-          "home": 7,
+          "home": 2,
           "away": 4,
-          "total": 11
+          "total": 6
         },
         "average": {
-          "home": "1.0",
+          "home": "0.4",
           "away": "0.7",
-          "total": "0.8"
+          "total": "0.5"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "8.33%"
+            "percentage": "16.67%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "16.67%"
           },
           "31-45": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "46-60": {
             "total": null,
             "percentage": null
           },
-          "46-60": {
-            "total": 6,
-            "percentage": "50.00%"
-          },
           "61-75": {
-            "total": 3,
-            "percentage": "25.00%"
+            "total": 2,
+            "percentage": "33.33%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "8.33%"
+            "percentage": "16.67%"
           },
           "91-105": {
-            "total": 1,
-            "percentage": "8.33%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -970,24 +1133,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 7,
+            "over": 5,
             "under": 6
           },
           "1.5": {
-            "over": 3,
+            "over": 1,
             "under": 10
           },
           "2.5": {
-            "over": 1,
-            "under": 12
+            "over": 0,
+            "under": 11
           },
           "3.5": {
             "over": 0,
-            "under": 13
+            "under": 11
           },
           "4.5": {
             "over": 0,
-            "under": 13
+            "under": 11
           }
         }
       }
@@ -995,12 +1158,12 @@
     "biggest": {
       "streak": {
         "wins": 3,
-        "draws": 2,
+        "draws": 3,
         "loses": 0
       },
       "wins": {
         "home": "5-0",
-        "away": "0-2"
+        "away": "1-2"
       },
       "loses": {
         "home": null,
@@ -1012,7 +1175,7 @@
           "away": 2
         },
         "against": {
-          "home": 3,
+          "home": 1,
           "away": 2
         }
       }
@@ -1024,8 +1187,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 0,
-      "total": 0
+      "away": 1,
+      "total": 1
     },
     "penalty": {
       "scored": {
@@ -1042,28 +1205,28 @@
     "cards": {
       "yellow": {
         "0-15": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "10.53%"
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "5.26%"
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "10.53%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 5,
+          "percentage": "26.32%"
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 4,
+          "percentage": "21.05%"
         },
         "76-90": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": 5,
+          "percentage": "26.32%"
         },
         "91-105": {
           "total": null,
@@ -1076,8 +1239,8 @@
       },
       "red": {
         "0-15": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "100.00%"
         },
         "16-30": {
           "total": null,
@@ -1088,20 +1251,20 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "20.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": 2,
-          "percentage": "40.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 2,
-          "percentage": "40.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1110,5 +1273,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:28.824Z"
+  "lastUpdated": "2025-03-27T10:42:19.737Z"
 }

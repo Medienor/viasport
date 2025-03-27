@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 850,
+        "name": "UEFA U21 Championship - Qualification",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/850.png"
       },
       "country": {
         "name": "World",
@@ -34,22 +34,22 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2027,
+          "start": "2025-06-05",
+          "end": "2026-10-06",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -68,6 +68,242 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1018264,
+          "date": "2024-10-15T16:00:00+00:00",
+          "venue": {
+            "id": 186,
+            "name": "King Power at Den Dreef Stadion",
+            "city": "Heverlee"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1729008000
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8183,
+            "name": "Belgium U21",
+            "logo": "https://media.api-sports.io/football/teams/8183.png",
+            "winner": false
+          },
+          "away": {
+            "id": 16500,
+            "name": "Hungary U21",
+            "logo": "https://media.api-sports.io/football/teams/16500.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018240,
+          "date": "2024-10-10T18:00:00+00:00",
+          "venue": {
+            "id": 802,
+            "name": "Hidegkuti Nándor Stadion",
+            "city": "Budapest"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1728583200
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16500,
+            "name": "Hungary U21",
+            "logo": "https://media.api-sports.io/football/teams/16500.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8208,
+            "name": "Malta U21",
+            "logo": "https://media.api-sports.io/football/teams/8208.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018224,
+          "date": "2024-09-10T15:45:00+00:00",
+          "venue": {
+            "id": 3862,
+            "name": "Széktói Stadion",
+            "city": "Kecskemét"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725983100
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16500,
+            "name": "Hungary U21",
+            "logo": "https://media.api-sports.io/football/teams/16500.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8224,
+            "name": "Spain U21",
+            "logo": "https://media.api-sports.io/football/teams/8224.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018182,
+          "date": "2024-03-26T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Ortalyq stadıon",
+            "city": "Almaty"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711461600
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8202,
+            "name": "Kazakhstan U21",
+            "logo": "https://media.api-sports.io/football/teams/8202.png",
+            "winner": false
+          },
+          "away": {
+            "id": 16500,
+            "name": "Hungary U21",
+            "logo": "https://media.api-sports.io/football/teams/16500.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1189532,
@@ -126,86 +362,381 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1018150,
+          "date": "2023-11-21T19:00:00+00:00",
+          "venue": {
+            "id": 802,
+            "name": "Hidegkuti Nándor Stadion",
+            "city": "Budapest"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700593200
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16500,
+            "name": "Hungary U21",
+            "logo": "https://media.api-sports.io/football/teams/16500.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8221,
+            "name": "Scotland U21",
+            "logo": "https://media.api-sports.io/football/teams/8221.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018133,
+          "date": "2023-11-17T20:00:00+00:00",
+          "venue": {
+            "id": 6511,
+            "name": "Estadio Nuevo Colombino",
+            "city": "Huelva"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700251200
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8224,
+            "name": "Spain U21",
+            "logo": "https://media.api-sports.io/football/teams/8224.png",
+            "winner": true
+          },
+          "away": {
+            "id": 16500,
+            "name": "Hungary U21",
+            "logo": "https://media.api-sports.io/football/teams/16500.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018108,
+          "date": "2023-10-17T15:45:00+00:00",
+          "venue": {
+            "id": 802,
+            "name": "Hidegkuti Nándor Stadion",
+            "city": "Budapest"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697557500
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16500,
+            "name": "Hungary U21",
+            "logo": "https://media.api-sports.io/football/teams/16500.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8183,
+            "name": "Belgium U21",
+            "logo": "https://media.api-sports.io/football/teams/8183.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018091,
+          "date": "2023-10-13T18:00:00+00:00",
+          "venue": {
+            "id": 1398,
+            "name": "Fir Park",
+            "city": "Motherwell"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697220000
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8221,
+            "name": "Scotland U21",
+            "logo": "https://media.api-sports.io/football/teams/8221.png",
+            "winner": true
+          },
+          "away": {
+            "id": 16500,
+            "name": "Hungary U21",
+            "logo": "https://media.api-sports.io/football/teams/16500.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018065,
+          "date": "2023-09-12T15:45:00+00:00",
+          "venue": {
+            "id": 12090,
+            "name": "Tony Bezzina Stadium",
+            "city": "Paola"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1694533500
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8208,
+            "name": "Malta U21",
+            "logo": "https://media.api-sports.io/football/teams/8208.png",
+            "winner": false
+          },
+          "away": {
+            "id": 16500,
+            "name": "Hungary U21",
+            "logo": "https://media.api-sports.io/football/teams/16500.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
+      "id": 850,
+      "name": "UEFA U21 Championship - Qualification",
       "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "logo": "https://media.api-sports.io/football/leagues/850.png",
       "flag": null,
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 16500,
       "name": "Hungary U21",
       "logo": "https://media.api-sports.io/football/teams/16500.png"
     },
-    "form": "W",
+    "form": "WWLLLDWLWW",
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 0,
-        "total": 1
+        "home": 5,
+        "away": 5,
+        "total": 10
       },
       "wins": {
+        "home": 2,
+        "away": 3,
+        "total": 5
+      },
+      "draws": {
         "home": 1,
         "away": 0,
         "total": 1
       },
-      "draws": {
-        "home": 0,
-        "away": 0,
-        "total": 0
-      },
       "loses": {
-        "home": 0,
-        "away": 0,
-        "total": 0
+        "home": 2,
+        "away": 2,
+        "total": 4
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 2,
-          "away": 0,
-          "total": 2
+          "home": 4,
+          "away": 8,
+          "total": 12
         },
         "average": {
-          "home": "2.0",
-          "away": "0.0",
-          "total": "2.0"
+          "home": "0.8",
+          "away": "1.6",
+          "total": "1.2"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 4,
+            "percentage": "33.33%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "8.33%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 3,
+            "percentage": "25.00%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "8.33%"
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "16.67%"
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "8.33%"
           },
           "106-120": {
             "total": null,
@@ -214,58 +745,58 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 0
+            "over": 6,
+            "under": 4
           },
           "1.5": {
-            "over": 1,
-            "under": 0
+            "over": 4,
+            "under": 6
           },
           "2.5": {
-            "over": 0,
-            "under": 1
+            "over": 2,
+            "under": 8
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 10
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 10
           }
         }
       },
       "against": {
         "total": {
-          "home": 0,
-          "away": 0,
-          "total": 0
+          "home": 3,
+          "away": 5,
+          "total": 8
         },
         "average": {
-          "home": "0.0",
-          "away": "0.0",
-          "total": "0.0"
+          "home": "0.6",
+          "away": "1.0",
+          "total": "0.8"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "25.00%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "12.50%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "25.00%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "12.50%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "25.00%"
           },
           "76-90": {
             "total": null,
@@ -282,104 +813,104 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
-            "under": 1
+            "over": 5,
+            "under": 5
           },
           "1.5": {
-            "over": 0,
-            "under": 1
+            "over": 2,
+            "under": 8
           },
           "2.5": {
-            "over": 0,
-            "under": 1
+            "over": 1,
+            "under": 9
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 10
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 10
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
-        "draws": 0,
-        "loses": 0
+        "wins": 2,
+        "draws": 1,
+        "loses": 3
       },
       "wins": {
         "home": "2-0",
-        "away": null
+        "away": "0-3"
       },
       "loses": {
-        "home": null,
-        "away": null
+        "home": "0-1",
+        "away": "3-1"
       },
       "goals": {
         "for": {
           "home": 2,
-          "away": 0
+          "away": 3
         },
         "against": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 3
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 0,
-      "total": 1
+      "home": 2,
+      "away": 3,
+      "total": 5
     },
     "failed_to_score": {
-      "home": 0,
-      "away": 0,
-      "total": 0
+      "home": 3,
+      "away": 1,
+      "total": 4
     },
     "penalty": {
       "scored": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 1,
+        "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 0
+      "total": 1
     },
     "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "3.70%"
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 4,
+          "percentage": "14.81%"
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 3,
+          "percentage": "11.11%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 3,
+          "percentage": "11.11%"
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 6,
+          "percentage": "22.22%"
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 8,
+          "percentage": "29.63%"
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "7.41%"
         },
         "106-120": {
           "total": null,
@@ -422,5 +953,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:29.656Z"
+  "lastUpdated": "2025-03-27T10:41:19.263Z"
 }

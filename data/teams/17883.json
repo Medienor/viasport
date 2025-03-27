@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 881,
+        "name": "Olympics Men - Qualification Concacaf",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/881.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,53 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2020,
+          "start": "2019-07-17",
+          "end": "2021-03-31",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1045,
+        "name": "Pan American Games",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1045.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-10-23",
+          "end": "2023-11-04",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -456,39 +493,275 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1141147,
+          "date": "2023-11-04T16:00:00+00:00",
+          "venue": {
+            "id": 334,
+            "name": "Estadio Sausalito",
+            "city": "Viña del Mar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1699113600
+        },
+        "league": {
+          "id": 1045,
+          "name": "Pan American Games",
+          "logo": "https://media.api-sports.io/football/leagues/1045.png"
+        },
+        "teams": {
+          "home": {
+            "id": 17883,
+            "name": "United States U23",
+            "logo": "https://media.api-sports.io/football/teams/17883.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10178,
+            "name": "Mexico U23",
+            "logo": "https://media.api-sports.io/football/teams/10178.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1140802,
+          "date": "2023-11-01T20:00:00+00:00",
+          "venue": {
+            "id": 341,
+            "name": "Estadio Elías Figueroa Brander",
+            "city": "Valparaíso"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1698868800
+        },
+        "league": {
+          "id": 1045,
+          "name": "Pan American Games",
+          "logo": "https://media.api-sports.io/football/leagues/1045.png"
+        },
+        "teams": {
+          "home": {
+            "id": 22705,
+            "name": "Chile U23",
+            "logo": "https://media.api-sports.io/football/teams/22705.png",
+            "winner": true
+          },
+          "away": {
+            "id": 17883,
+            "name": "United States U23",
+            "logo": "https://media.api-sports.io/football/teams/17883.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1140292,
+          "date": "2023-10-29T21:00:00+00:00",
+          "venue": {
+            "id": 341,
+            "name": "Estadio Elías Figueroa Brander",
+            "city": "Valparaíso"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1698613200
+        },
+        "league": {
+          "id": 1045,
+          "name": "Pan American Games",
+          "logo": "https://media.api-sports.io/football/leagues/1045.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10188,
+            "name": "Colombia U23",
+            "logo": "https://media.api-sports.io/football/teams/10188.png",
+            "winner": false
+          },
+          "away": {
+            "id": 17883,
+            "name": "United States U23",
+            "logo": "https://media.api-sports.io/football/teams/17883.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1140286,
+          "date": "2023-10-26T18:00:00+00:00",
+          "venue": {
+            "id": 334,
+            "name": "Estadio Sausalito",
+            "city": "Viña del Mar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1698343200
+        },
+        "league": {
+          "id": 1045,
+          "name": "Pan American Games",
+          "logo": "https://media.api-sports.io/football/leagues/1045.png"
+        },
+        "teams": {
+          "home": {
+            "id": 17883,
+            "name": "United States U23",
+            "logo": "https://media.api-sports.io/football/teams/17883.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10175,
+            "name": "Honduras U23",
+            "logo": "https://media.api-sports.io/football/teams/10175.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 17883,
       "name": "United States U23",
       "logo": "https://media.api-sports.io/football/teams/17883.png"
     },
-    "form": "WD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -499,14 +772,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 3,
-          "away": 2,
-          "total": 5
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "3.0",
-          "away": "2.0",
-          "total": "2.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -530,8 +803,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -544,37 +817,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 2,
-          "total": 2
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "2.0",
-          "total": "1.0"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -582,8 +855,8 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
@@ -598,8 +871,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -612,36 +885,36 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "3-0",
+        "home": null,
         "away": null
       },
       "loses": {
@@ -650,19 +923,19 @@
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 2
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -696,12 +969,12 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
@@ -752,5 +1025,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:32.087Z"
+  "lastUpdated": "2025-03-27T10:41:21.834Z"
 }

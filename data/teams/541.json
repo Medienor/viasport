@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
+        "id": 26,
+        "name": "International Champions Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
+        "logo": "https://media.api-sports.io/football/leagues/26.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2019,
+          "start": "2019-07-17",
+          "end": "2019-08-10",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -275,6 +275,43 @@
             "injuries": false,
             "predictions": true,
             "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/15.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-06-15",
+          "end": "2025-06-27",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
           }
         }
       ]
@@ -656,25 +693,25 @@
       },
       {
         "fixture": {
-          "id": 1208775,
-          "date": "2025-04-20T00:00:00+00:00",
+          "id": 1321693,
+          "date": "2025-06-18T19:00:00+00:00",
           "venue": {
-            "id": 1456,
-            "name": "Estadio Santiago Bernabéu",
-            "city": "Madrid"
+            "id": null,
+            "name": "Hard Rock Stadium",
+            "city": "Miami Gardens, Florida"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745107200
+          "timestamp": 1750273200
         },
         "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
+          "id": 15,
+          "name": "FIFA Club World Cup",
+          "logo": "https://media.api-sports.io/football/leagues/15.png"
         },
         "teams": {
           "home": {
@@ -684,9 +721,9 @@
             "winner": null
           },
           "away": {
-            "id": 531,
-            "name": "Athletic Club",
-            "logo": "https://media.api-sports.io/football/teams/531.png",
+            "id": 2932,
+            "name": "Al-Hilal Saudi FC",
+            "logo": "https://media.api-sports.io/football/teams/2932.png",
             "winner": null
           }
         },
@@ -715,37 +752,37 @@
       },
       {
         "fixture": {
-          "id": 1208787,
-          "date": "2025-04-23T00:00:00+00:00",
+          "id": 1321709,
+          "date": "2025-06-22T19:00:00+00:00",
           "venue": {
-            "id": 20422,
-            "name": "Estadio Coliseum",
-            "city": "Getafe"
+            "id": 18659,
+            "name": "Bank of America Stadium",
+            "city": "Charlotte, North Carolina"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745366400
+          "timestamp": 1750618800
         },
         "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
+          "id": 15,
+          "name": "FIFA Club World Cup",
+          "logo": "https://media.api-sports.io/football/leagues/15.png"
         },
         "teams": {
           "home": {
-            "id": 546,
-            "name": "Getafe",
-            "logo": "https://media.api-sports.io/football/teams/546.png",
-            "winner": null
-          },
-          "away": {
             "id": 541,
             "name": "Real Madrid",
             "logo": "https://media.api-sports.io/football/teams/541.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2292,
+            "name": "Pachuca",
+            "logo": "https://media.api-sports.io/football/teams/2292.png",
             "winner": null
           }
         },
@@ -774,90 +811,31 @@
       },
       {
         "fixture": {
-          "id": 1208796,
-          "date": "2025-05-04T00:00:00+00:00",
+          "id": 1321727,
+          "date": "2025-06-27T01:00:00+00:00",
           "venue": {
-            "id": 1456,
-            "name": "Estadio Santiago Bernabéu",
-            "city": "Madrid"
+            "id": null,
+            "name": "Lincoln Financial Field",
+            "city": "Philadelphia, Pennsylvania"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1746316800
+          "timestamp": 1750986000
         },
         "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
+          "id": 15,
+          "name": "FIFA Club World Cup",
+          "logo": "https://media.api-sports.io/football/leagues/15.png"
         },
         "teams": {
           "home": {
-            "id": 541,
-            "name": "Real Madrid",
-            "logo": "https://media.api-sports.io/football/teams/541.png",
-            "winner": null
-          },
-          "away": {
-            "id": 538,
-            "name": "Celta Vigo",
-            "logo": "https://media.api-sports.io/football/teams/538.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208801,
-          "date": "2025-05-11T00:00:00+00:00",
-          "venue": {
-            "id": 19939,
-            "name": "Estadi Olímpic Lluís Companys",
-            "city": "Barcelona"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746921600
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 529,
-            "name": "Barcelona",
-            "logo": "https://media.api-sports.io/football/teams/529.png",
+            "id": 571,
+            "name": "Red Bull Salzburg",
+            "logo": "https://media.api-sports.io/football/teams/571.png",
             "winner": null
           },
           "away": {
@@ -1486,29 +1464,29 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 541,
       "name": "Real Madrid",
       "logo": "https://media.api-sports.io/football/teams/541.png"
     },
-    "form": "LLW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -1517,21 +1495,21 @@
       },
       "loses": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 2,
-          "away": 1,
-          "total": 3
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.0",
-          "away": "0.5",
-          "total": "1.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1539,8 +1517,8 @@
             "percentage": null
           },
           "16-30": {
-            "total": 2,
-            "percentage": "66.67%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
@@ -1555,8 +1533,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1569,37 +1547,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
-          "away": 3,
-          "total": 4
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "1.5",
-          "total": "1.3"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1611,12 +1589,12 @@
             "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -1637,24 +1615,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
@@ -1663,24 +1641,24 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 2
+        "loses": 0
       },
       "wins": {
-        "home": "2-1",
+        "home": null,
         "away": null
       },
       "loses": {
         "home": null,
-        "away": "2-1"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 2
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -1691,8 +1669,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1705,12 +1683,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-3-3",
-        "played": 2
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1730,12 +1703,12 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 2,
-          "percentage": "66.67%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1782,5 +1755,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:37:31.061Z"
+  "lastUpdated": "2025-03-27T10:36:09.380Z"
 }

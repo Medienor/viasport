@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 135,
         "name": "Serie A",
         "type": "League",
@@ -126,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -711,6 +674,65 @@
             "id": 511,
             "name": "Empoli",
             "logo": "https://media.api-sports.io/football/teams/511.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1223968,
+          "date": "2025-05-25T13:00:00+00:00",
+          "venue": {
+            "id": 20109,
+            "name": "Stadio Carlo Castellani – Computer Gross Arena",
+            "city": "Empoli"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748178000
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 511,
+            "name": "Empoli",
+            "logo": "https://media.api-sports.io/football/teams/511.png",
+            "winner": null
+          },
+          "away": {
+            "id": 504,
+            "name": "Verona",
+            "logo": "https://media.api-sports.io/football/teams/504.png",
             "winner": null
           }
         },
@@ -1333,52 +1355,52 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 511,
       "name": "Empoli",
       "logo": "https://media.api-sports.io/football/teams/511.png"
     },
-    "form": "WDWL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 4,
+        "home": 0,
         "away": 0,
-        "total": 4
+        "total": 0
       },
       "wins": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 12,
+          "home": 0,
           "away": 0,
-          "total": 12
+          "total": 0
         },
         "average": {
-          "home": "3.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "3.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1394,12 +1416,12 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -1416,37 +1438,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 2,
+          "home": 0,
           "away": 0,
-          "total": 2
+          "total": 0
         },
         "average": {
-          "home": "0.5",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.5"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1458,8 +1480,8 @@
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -1470,8 +1492,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1484,62 +1506,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
-        "draws": 1,
+        "wins": 0,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "10-0",
+        "home": null,
         "away": null
       },
       "loses": {
-        "home": "0-2",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 10,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 2,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 3,
+      "home": 0,
       "away": 0,
-      "total": 3
+      "total": 0
     },
     "failed_to_score": {
-      "home": 2,
+      "home": 0,
       "away": 0,
-      "total": 2
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1552,16 +1574,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-3-3",
-        "played": 2
-      },
-      {
-        "formation": "4-2-3-1",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1569,8 +1582,8 @@
           "percentage": null
         },
         "16-30": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
           "total": null,
@@ -1633,5 +1646,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:37:43.335Z"
+  "lastUpdated": "2025-03-27T10:36:21.856Z"
 }

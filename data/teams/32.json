@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 860,
+        "name": "Arab Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/860.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2021,
+          "start": "2021-06-19",
+          "end": "2021-12-18",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -53,6 +53,43 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 29,
+        "name": "World Cup - Qualification Africa",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/29.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-11-13",
+          "end": "2025-10-13",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -93,6 +130,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 36,
+        "name": "Africa Cup of Nations - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/36.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2024-03-20",
+          "end": "2024-11-19",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 6,
+        "name": "Africa Cup of Nations",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/6.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-12-21",
+          "end": "2025-12-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -109,6 +220,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1125982,
+          "date": "2025-03-25T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Cairo International Stadium",
+            "city": "Cairo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742929200
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 32,
+            "name": "Egypt",
+            "logo": "https://media.api-sports.io/football/teams/32.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1499,
+            "name": "Sierra Leone",
+            "logo": "https://media.api-sports.io/football/teams/1499.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1125956,
+          "date": "2025-03-21T21:00:00+00:00",
+          "venue": {
+            "id": 4710,
+            "name": "Stade Larbi Zaouli",
+            "city": "Casablanca"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742590800
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1506,
+            "name": "Ethiopia",
+            "logo": "https://media.api-sports.io/football/teams/1506.png",
+            "winner": false
+          },
+          "away": {
+            "id": 32,
+            "name": "Egypt",
+            "logo": "https://media.api-sports.io/football/teams/32.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1351530,
@@ -229,43 +458,43 @@
       },
       {
         "fixture": {
-          "id": 1188621,
-          "date": "2024-03-26T20:00:00+00:00",
+          "id": 1232530,
+          "date": "2024-11-19T15:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "New Administrative Capital Stadium",
+            "name": "30 June Air Defence Stadium",
             "city": "Cairo"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 7
           },
-          "timestamp": 1711483200
+          "timestamp": 1732028400
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
             "id": 32,
             "name": "Egypt",
             "logo": "https://media.api-sports.io/football/teams/32.png",
-            "winner": false
+            "winner": null
           },
           "away": {
-            "id": 3,
-            "name": "Croatia",
-            "logo": "https://media.api-sports.io/football/teams/3.png",
-            "winner": true
+            "id": 1520,
+            "name": "Botswana",
+            "logo": "https://media.api-sports.io/football/teams/1520.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 2,
-          "away": 4
+          "home": 1,
+          "away": 1
         },
         "score": {
           "halftime": {
@@ -273,7 +502,243 @@
             "away": 1
           },
           "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232505,
+          "date": "2024-11-15T16:00:00+00:00",
+          "venue": {
+            "id": 314,
+            "name": "Estádio Nacional de Cabo Verde",
+            "city": "Praia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1731686400
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1533,
+            "name": "Cape Verde Islands",
+            "logo": "https://media.api-sports.io/football/teams/1533.png",
+            "winner": null
+          },
+          "away": {
+            "id": 32,
+            "name": "Egypt",
+            "logo": "https://media.api-sports.io/football/teams/32.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232481,
+          "date": "2024-10-15T16:00:00+00:00",
+          "venue": {
+            "id": 20023,
+            "name": "Stade Cheikha Ould Boïdiya",
+            "city": "Nouakchott"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1729008000
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1491,
+            "name": "Mauritania",
+            "logo": "https://media.api-sports.io/football/teams/1491.png",
+            "winner": false
+          },
+          "away": {
+            "id": 32,
+            "name": "Egypt",
+            "logo": "https://media.api-sports.io/football/teams/32.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232457,
+          "date": "2024-10-11T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Cairo International Stadium",
+            "city": "Cairo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1728662400
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 32,
+            "name": "Egypt",
+            "logo": "https://media.api-sports.io/football/teams/32.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1491,
+            "name": "Mauritania",
+            "logo": "https://media.api-sports.io/football/teams/1491.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
             "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232434,
+          "date": "2024-09-10T13:00:00+00:00",
+          "venue": {
+            "id": 4183,
+            "name": "Francistown Stadium",
+            "city": "Francistown"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725973200
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1520,
+            "name": "Botswana",
+            "logo": "https://media.api-sports.io/football/teams/1520.png",
+            "winner": false
+          },
+          "away": {
+            "id": 32,
+            "name": "Egypt",
+            "logo": "https://media.api-sports.io/football/teams/32.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
             "away": 4
           },
           "extratime": {
@@ -288,67 +753,8 @@
       },
       {
         "fixture": {
-          "id": 1174754,
-          "date": "2024-03-22T20:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "New Administrative Capital Stadium",
-            "city": "Cairo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711137600
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 32,
-            "name": "Egypt",
-            "logo": "https://media.api-sports.io/football/teams/32.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4673,
-            "name": "New Zealand",
-            "logo": "https://media.api-sports.io/football/teams/4673.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1155245,
-          "date": "2024-01-07T16:00:00+00:00",
+          "id": 1232409,
+          "date": "2024-09-06T19:00:00+00:00",
           "venue": {
             "id": null,
             "name": "Cairo International Stadium",
@@ -360,12 +766,12 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1704643200
+          "timestamp": 1725649200
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
@@ -375,23 +781,23 @@
             "winner": true
           },
           "away": {
-            "id": 1489,
-            "name": "Tanzania",
-            "logo": "https://media.api-sports.io/football/teams/1489.png",
+            "id": 1533,
+            "name": "Cape Verde Islands",
+            "logo": "https://media.api-sports.io/football/teams/1533.png",
             "winner": false
           }
         },
         "goals": {
-          "home": 2,
+          "home": 3,
           "away": 0
         },
         "score": {
           "halftime": {
-            "home": 1,
+            "home": 2,
             "away": 0
           },
           "fulltime": {
-            "home": 2,
+            "home": 3,
             "away": 0
           },
           "extratime": {
@@ -408,29 +814,29 @@
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 32,
       "name": "Egypt",
       "logo": "https://media.api-sports.io/football/teams/32.png"
     },
-    "form": "WWL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 3,
+        "home": 0,
         "away": 0,
-        "total": 3
+        "total": 0
       },
       "wins": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -438,35 +844,35 @@
         "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 5,
+          "home": 0,
           "away": 0,
-          "total": 5
+          "total": 0
         },
         "average": {
-          "home": "1.7",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.7"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -481,8 +887,8 @@
             "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -491,37 +897,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
+          "home": 0,
           "away": 0,
-          "total": 4
+          "total": 0
         },
         "average": {
-          "home": "1.3",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.3"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -529,24 +935,24 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -559,57 +965,57 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "2-0",
+        "home": null,
         "away": null
       },
       "loses": {
-        "home": "2-4",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 4,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 2,
+      "home": 0,
       "away": 0,
-      "total": 2
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -618,21 +1024,16 @@
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-3-3",
-        "played": 3
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -640,16 +1041,16 @@
           "percentage": null
         },
         "16-30": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
           "total": null,
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
@@ -704,5 +1105,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:10.987Z"
+  "lastUpdated": "2025-03-27T10:39:56.974Z"
 }

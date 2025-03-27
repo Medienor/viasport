@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
+        "id": 26,
+        "name": "International Champions Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
+        "logo": "https://media.api-sports.io/football/leagues/26.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2019,
+          "start": "2019-07-17",
+          "end": "2019-08-10",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -164,6 +164,43 @@
             "injuries": false,
             "predictions": true,
             "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 15,
+        "name": "FIFA Club World Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/15.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-06-15",
+          "end": "2025-06-27",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
           }
         }
       ]
@@ -427,31 +464,31 @@
       },
       {
         "fixture": {
-          "id": 1208776,
-          "date": "2025-04-20T00:00:00+00:00",
+          "id": 1321682,
+          "date": "2025-06-15T19:00:00+00:00",
           "venue": {
-            "id": 1481,
-            "name": "Estadio de Gran Canaria",
-            "city": "Las Palmas de Gran Canaria"
+            "id": null,
+            "name": "Rose Bowl",
+            "city": "Pasadena, California"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745107200
+          "timestamp": 1750014000
         },
         "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
+          "id": 15,
+          "name": "FIFA Club World Cup",
+          "logo": "https://media.api-sports.io/football/leagues/15.png"
         },
         "teams": {
           "home": {
-            "id": 534,
-            "name": "Las Palmas",
-            "logo": "https://media.api-sports.io/football/teams/534.png",
+            "id": 85,
+            "name": "Paris Saint Germain",
+            "logo": "https://media.api-sports.io/football/teams/85.png",
             "winner": null
           },
           "away": {
@@ -486,90 +523,31 @@
       },
       {
         "fixture": {
-          "id": 1208783,
-          "date": "2025-04-23T00:00:00+00:00",
+          "id": 1321698,
+          "date": "2025-06-19T22:00:00+00:00",
           "venue": {
-            "id": 19217,
-            "name": "Riyadh Air Metropolitano",
-            "city": "Madrid"
+            "id": 11534,
+            "name": "Lumen Field",
+            "city": "Seattle, Washington"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745366400
+          "timestamp": 1750370400
         },
         "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
+          "id": 15,
+          "name": "FIFA Club World Cup",
+          "logo": "https://media.api-sports.io/football/leagues/15.png"
         },
         "teams": {
           "home": {
-            "id": 530,
-            "name": "Atletico Madrid",
-            "logo": "https://media.api-sports.io/football/teams/530.png",
-            "winner": null
-          },
-          "away": {
-            "id": 728,
-            "name": "Rayo Vallecano",
-            "logo": "https://media.api-sports.io/football/teams/728.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208793,
-          "date": "2025-05-04T00:00:00+00:00",
-          "venue": {
-            "id": 1470,
-            "name": "Estadio de Mendizorroza",
-            "city": "Vitoria-Gasteiz"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746316800
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 542,
-            "name": "Alaves",
-            "logo": "https://media.api-sports.io/football/teams/542.png",
+            "id": 1595,
+            "name": "Seattle Sounders",
+            "logo": "https://media.api-sports.io/football/teams/1595.png",
             "winner": null
           },
           "away": {
@@ -604,25 +582,25 @@
       },
       {
         "fixture": {
-          "id": 1208800,
-          "date": "2025-05-11T00:00:00+00:00",
+          "id": 1321712,
+          "date": "2025-06-23T19:00:00+00:00",
           "venue": {
-            "id": 19217,
-            "name": "Riyadh Air Metropolitano",
-            "city": "Madrid"
+            "id": null,
+            "name": "Rose Bowl",
+            "city": "Pasadena, California"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1746921600
+          "timestamp": 1750705200
         },
         "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
+          "id": 15,
+          "name": "FIFA Club World Cup",
+          "logo": "https://media.api-sports.io/football/leagues/15.png"
         },
         "teams": {
           "home": {
@@ -632,127 +610,9 @@
             "winner": null
           },
           "away": {
-            "id": 548,
-            "name": "Real Sociedad",
-            "logo": "https://media.api-sports.io/football/teams/548.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208811,
-          "date": "2025-05-14T00:00:00+00:00",
-          "venue": {
-            "id": 1486,
-            "name": "Estadio El Sadar",
-            "city": "Iruñea"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1747180800
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 727,
-            "name": "Osasuna",
-            "logo": "https://media.api-sports.io/football/teams/727.png",
-            "winner": null
-          },
-          "away": {
-            "id": 530,
-            "name": "Atletico Madrid",
-            "logo": "https://media.api-sports.io/football/teams/530.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208818,
-          "date": "2025-05-18T00:00:00+00:00",
-          "venue": {
-            "id": 19217,
-            "name": "Riyadh Air Metropolitano",
-            "city": "Madrid"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1747526400
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 530,
-            "name": "Atletico Madrid",
-            "logo": "https://media.api-sports.io/football/teams/530.png",
-            "winner": null
-          },
-          "away": {
-            "id": 543,
-            "name": "Real Betis",
-            "logo": "https://media.api-sports.io/football/teams/543.png",
+            "id": 120,
+            "name": "Botafogo",
+            "logo": "https://media.api-sports.io/football/teams/120.png",
             "winner": null
           }
         },
@@ -1375,34 +1235,34 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 530,
       "name": "Atletico Madrid",
       "logo": "https://media.api-sports.io/football/teams/530.png"
     },
-    "form": "DWWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
-        "away": 2,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -1413,82 +1273,82 @@
     "goals": {
       "for": {
         "total": {
-          "home": 3,
-          "away": 9,
-          "total": 12
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.5",
-          "away": "4.5",
-          "total": "3.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "6.25%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "18.75%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "6.25%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
             "percentage": null
           },
           "106-120": {
-            "total": 5,
-            "percentage": "31.25%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 4,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
-          "away": 2,
-          "total": 3
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.5",
-          "away": "1.0",
-          "total": "0.8"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1500,16 +1360,16 @@
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "28.57%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -1520,30 +1380,30 @@
             "percentage": null
           },
           "106-120": {
-            "total": 3,
-            "percentage": "42.86%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       }
@@ -1551,12 +1411,12 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "2-0",
-        "away": "1-6"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
@@ -1564,19 +1424,19 @@
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 6
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 1
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -1585,25 +1445,16 @@
     },
     "penalty": {
       "scored": {
-        "total": 6,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 6
+      "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-2-3-1",
-        "played": 2
-      },
-      {
-        "formation": "3-4-3",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1615,20 +1466,20 @@
           "percentage": null
         },
         "31-45": {
-          "total": 5,
-          "percentage": "71.43%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
           "total": null,
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "14.29%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "14.29%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1675,5 +1526,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:37:26.157Z"
+  "lastUpdated": "2025-03-27T10:36:04.353Z"
 }

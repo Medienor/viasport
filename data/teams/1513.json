@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 29,
+        "name": "World Cup - Qualification Africa",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/29.png"
       },
       "country": {
         "name": "World",
@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2023,
+          "start": "2023-11-13",
+          "end": "2025-10-13",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -45,14 +45,14 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -93,6 +93,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 36,
+        "name": "Africa Cup of Nations - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/36.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2024-03-20",
+          "end": "2024-11-19",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -109,6 +146,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1125981,
+          "date": "2025-03-24T16:00:00+00:00",
+          "venue": {
+            "id": 786,
+            "name": "Estádio Nacional 24 de Setembro",
+            "city": "Bissau"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1742832000
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1513,
+            "name": "Guinea-Bissau",
+            "logo": "https://media.api-sports.io/football/teams/1513.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1502,
+            "name": "Burkina Faso",
+            "logo": "https://media.api-sports.io/football/teams/1502.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1125955,
+          "date": "2025-03-20T16:00:00+00:00",
+          "venue": {
+            "id": 20323,
+            "name": "Samuel Kanyon Doe Stadium",
+            "city": "Monrovia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1742486400
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1499,
+            "name": "Sierra Leone",
+            "logo": "https://media.api-sports.io/football/teams/1499.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1513,
+            "name": "Guinea-Bissau",
+            "logo": "https://media.api-sports.io/football/teams/1513.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1314006,
@@ -229,51 +384,110 @@
       },
       {
         "fixture": {
-          "id": 1189600,
-          "date": "2024-03-25T22:00:00+00:00",
+          "id": 1232541,
+          "date": "2024-11-19T16:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 786,
+            "name": "Estádio Nacional 24 de Setembro",
+            "city": "Bissau"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 6
           },
-          "timestamp": 1711404000
+          "timestamp": 1732032000
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
             "id": 1513,
             "name": "Guinea-Bissau",
             "logo": "https://media.api-sports.io/football/teams/1513.png",
-            "winner": true
+            "winner": false
           },
           "away": {
-            "id": 1510,
-            "name": "Sudan",
-            "logo": "https://media.api-sports.io/football/teams/1510.png",
-            "winner": false
+            "id": 1512,
+            "name": "Mozambique",
+            "logo": "https://media.api-sports.io/football/teams/1512.png",
+            "winner": true
           }
         },
         "goals": {
-          "home": 2,
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232518,
+          "date": "2024-11-15T16:00:00+00:00",
+          "venue": {
+            "id": 12715,
+            "name": "Mbombela Stadium",
+            "city": "Nelspruit"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1731686400
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2995,
+            "name": "Eswatini",
+            "logo": "https://media.api-sports.io/football/teams/2995.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1513,
+            "name": "Guinea-Bissau",
+            "logo": "https://media.api-sports.io/football/teams/1513.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 2,
-            "away": 1
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": 2,
+            "home": 1,
             "away": 1
           },
           "extratime": {
@@ -288,31 +502,90 @@
       },
       {
         "fixture": {
-          "id": 1189565,
-          "date": "2024-03-22T22:00:00+00:00",
+          "id": 1232493,
+          "date": "2024-10-15T16:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 786,
+            "name": "Estádio Nacional 24 de Setembro",
+            "city": "Bissau"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 5
           },
-          "timestamp": 1711144800
+          "timestamp": 1729008000
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
-            "id": 1510,
-            "name": "Sudan",
-            "logo": "https://media.api-sports.io/football/teams/1510.png",
+            "id": 1513,
+            "name": "Guinea-Bissau",
+            "logo": "https://media.api-sports.io/football/teams/1513.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1500,
+            "name": "Mali",
+            "logo": "https://media.api-sports.io/football/teams/1500.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232469,
+          "date": "2024-10-11T19:00:00+00:00",
+          "venue": {
+            "id": 1064,
+            "name": "Stade 26 Mars",
+            "city": "Bamako"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1728673200
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1500,
+            "name": "Mali",
+            "logo": "https://media.api-sports.io/football/teams/1500.png",
             "winner": true
           },
           "away": {
@@ -328,8 +601,8 @@
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
             "home": 1,
@@ -347,12 +620,12 @@
       },
       {
         "fixture": {
-          "id": 1155292,
-          "date": "2024-01-06T19:00:00+00:00",
+          "id": 1232445,
+          "date": "2024-09-10T13:00:00+00:00",
           "venue": {
-            "id": 1064,
-            "name": "Stade 26 Mars",
-            "city": "Bamako"
+            "id": 1113,
+            "name": "Estádio Nacional do Zimpeto",
+            "city": "Maputo"
           },
           "status": {
             "long": "Match Finished",
@@ -360,18 +633,18 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1704567600
+          "timestamp": 1725973200
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
-            "id": 1500,
-            "name": "Mali",
-            "logo": "https://media.api-sports.io/football/teams/1500.png",
+            "id": 1512,
+            "name": "Mozambique",
+            "logo": "https://media.api-sports.io/football/teams/1512.png",
             "winner": true
           },
           "away": {
@@ -382,17 +655,76 @@
           }
         },
         "goals": {
-          "home": 6,
-          "away": 2
+          "home": 2,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": 3,
-            "away": 2
+            "home": 1,
+            "away": 1
           },
           "fulltime": {
-            "home": 6,
-            "away": 2
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232422,
+          "date": "2024-09-05T16:00:00+00:00",
+          "venue": {
+            "id": 786,
+            "name": "Estádio Nacional 24 de Setembro",
+            "city": "Bissau"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725552000
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1513,
+            "name": "Guinea-Bissau",
+            "logo": "https://media.api-sports.io/football/teams/1513.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2995,
+            "name": "Eswatini",
+            "logo": "https://media.api-sports.io/football/teams/2995.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -408,29 +740,29 @@
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1513,
       "name": "Guinea-Bissau",
       "logo": "https://media.api-sports.io/football/teams/1513.png"
     },
-    "form": "LLW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -439,21 +771,21 @@
       },
       "loses": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 2,
-          "away": 2,
-          "total": 4
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.0",
-          "away": "1.0",
-          "total": "1.3"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -465,12 +797,12 @@
             "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "66.67%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -491,62 +823,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
-          "away": 7,
-          "total": 8
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "3.5",
-          "total": "2.7"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -559,24 +891,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           }
         }
       }
@@ -585,24 +917,24 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 2
+        "loses": 0
       },
       "wins": {
-        "home": "2-1",
+        "home": null,
         "away": null
       },
       "loses": {
         "home": null,
-        "away": "6-2"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 6
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -613,8 +945,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -627,12 +959,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-3-3",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -704,5 +1031,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:23.244Z"
+  "lastUpdated": "2025-03-27T10:40:09.656Z"
 }

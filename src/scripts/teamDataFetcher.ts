@@ -75,6 +75,9 @@ export const MAJOR_LEAGUES = [
   { id: 38, name: 'Women\'s Champions League' }
 ];
 
+// Add this constant at the top of the file, before any functions
+const norwegianLeagues = [103, 104, 725]; // Eliteserien, OBOS-ligaen, Toppserien
+
 // Add rate limiting helper
 const rateLimiter = {
   requestCount: 0,
@@ -112,12 +115,27 @@ type ProgressCallback = (data: {
   leagueProcessed: number;
 }) => void;
 
-async function fetchTeamsFromLeague(league: typeof MAJOR_LEAGUES[0]) {
+// Helper function to determine the correct season
+function getSeasonForLeague(leagueId: number): number {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  
+  // Norwegian leagues run within a calendar year
+  if (norwegianLeagues.includes(leagueId)) {
+    return currentYear;
+  }
+  
+  // For other leagues, if we're in second half of year, use next year
+  return currentDate.getMonth() >= 6 ? currentYear + 1 : currentYear;
+}
+
+export async function fetchTeamsFromLeague(league: typeof MAJOR_LEAGUES[0]) {
   try {
-    console.log(`Fetching teams for ${league.name} (${league.season})...`);
+    const season = getSeasonForLeague(league.id);
+    console.log(`Fetching teams for ${league.name} (${season})...`);
     
     const response = await fetch(
-      `${API_CONFIG.baseUrl}/teams?league=${league.id}&season=${league.season}`,
+      `${API_CONFIG.baseUrl}/teams?league=${league.id}&season=${season}`,
       { headers: API_CONFIG.headers }
     );
 
@@ -131,26 +149,7 @@ async function fetchTeamsFromLeague(league: typeof MAJOR_LEAGUES[0]) {
     return data.response || [];
   } catch (error) {
     console.error(`Error fetching teams for ${league.name}:`, error);
-    
-    // Try previous season if current season fails
-    try {
-      console.log(`Retrying with previous season (${league.season - 1}) for ${league.name}...`);
-      const retryResponse = await fetch(
-        `${API_CONFIG.baseUrl}/teams?league=${league.id}&season=${league.season - 1}`,
-        { headers: API_CONFIG.headers }
-      );
-
-      if (!retryResponse.ok) {
-        throw new Error(`Retry API responded with status: ${retryResponse.status}`);
-      }
-
-      const retryData = await retryResponse.json();
-      console.log(`Found ${retryData.response?.length || 0} teams for ${league.name} (previous season)`);
-      return retryData.response || [];
-    } catch (retryError) {
-      console.error(`Error fetching previous season for ${league.name}:`, retryError);
-      return [];
-    }
+    return [];
   }
 }
 
@@ -214,49 +213,64 @@ async function getAllTeams() {
 
 async function fetchTeamFullData(teamId: number) {
   try {
-    const season = 2024;
-    console.log(`Fetching full data for team ${teamId} (season ${season})...`);
+    // First get the team's leagues to determine correct season
+    const leaguesResponse = await fetch(
+      `${API_CONFIG.baseUrl}/leagues?team=${teamId}&current=true`, 
+      { headers: API_CONFIG.headers }
+    );
+    const leaguesData = await leaguesResponse.json();
+    
+    // Get all current leagues for the team
+    const teamLeagues = leaguesData.response || [];
+    
+    // Find the primary league (prioritize main domestic league)
+    const primaryLeague = teamLeagues.find((l: any) => 
+      l.league.type === 'League' && !l.league.name.includes('Champions') && !l.league.name.includes('Europa')
+    ) || teamLeagues[0];
 
-    // First fetch team and league data
-    const [teamData, leaguesData, seasonsData] = await Promise.all([
+    const primaryLeagueId = primaryLeague?.league?.id;
+    const season = getSeasonForLeague(primaryLeagueId);
+
+    console.log(`Fetching full data for team ${teamId} (season ${season}, league ${primaryLeagueId})...`);
+
+    // Rest of the function remains same but uses dynamic season
+    const [teamData, seasonsData] = await Promise.all([
       fetch(`${API_CONFIG.baseUrl}/teams?id=${teamId}`, 
-        { headers: API_CONFIG.headers }),
-      fetch(`${API_CONFIG.baseUrl}/leagues?team=${teamId}&season=${season}`, 
         { headers: API_CONFIG.headers }),
       fetch(`${API_CONFIG.baseUrl}/teams/seasons?team=${teamId}`, 
         { headers: API_CONFIG.headers })
     ]);
 
-    const [team, leagues, seasons] = await Promise.all([
+    // For fixtures, get both league and cup matches
+    const [upcomingFixtures, pastFixtures] = await Promise.all([
+      fetch(
+        `${API_CONFIG.baseUrl}/fixtures?team=${teamId}&next=20&status=NS`, 
+        { headers: API_CONFIG.headers }
+      ),
+      fetch(
+        `${API_CONFIG.baseUrl}/fixtures?team=${teamId}&last=10&status=FT`, 
+        { headers: API_CONFIG.headers }
+      )
+    ]);
+
+    const [team, seasons] = await Promise.all([
       teamData.json(),
-      leaguesData.json(),
       seasonsData.json()
     ]);
 
     // Fetch fixtures with more specific parameters
     console.log(`Fetching fixtures for team ${teamId}...`);
-    const [upcomingFixtures, pastFixtures] = await Promise.all([
-      // Next 10 fixtures
-      fetch(`${API_CONFIG.baseUrl}/fixtures?team=${teamId}&season=${season}&next=10`, 
-        { headers: API_CONFIG.headers }),
-      // Last 10 fixtures
-      fetch(`${API_CONFIG.baseUrl}/fixtures?team=${teamId}&season=${season}&last=10&status=FT`, 
-        { headers: API_CONFIG.headers })
-    ]);
-
     const [upcoming, past] = await Promise.all([
       upcomingFixtures.json(),
       pastFixtures.json()
     ]);
 
-    // Get statistics for the main league
-    const mainLeague = leagues.response?.[0]?.league;
+    // Get statistics for the main league if available
     let statistics = null;
-
-    if (mainLeague) {
-      console.log(`Fetching statistics for team ${teamId} in league ${mainLeague.id}...`);
+    if (primaryLeagueId) {
+      console.log(`Fetching statistics for team ${teamId} in league ${primaryLeagueId}...`);
       const statsResponse = await fetch(
-        `${API_CONFIG.baseUrl}/teams/statistics?team=${teamId}&league=${mainLeague.id}&season=${season}`,
+        `${API_CONFIG.baseUrl}/teams/statistics?team=${teamId}&league=${primaryLeagueId}&season=${season}`,
         { headers: API_CONFIG.headers }
       );
       statistics = await statsResponse.json();
@@ -299,7 +313,7 @@ async function fetchTeamFullData(teamId: number) {
     // Structure the complete response
     const structuredData = {
       team: team.response?.[0],
-      leagues: leagues.response || [],
+      leagues: leaguesData.response || [],
       seasons: seasons.response || [],
       fixtures: {
         upcoming: processFixtures(upcoming.response || []).sort((a: any, b: any) => 

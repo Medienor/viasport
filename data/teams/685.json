@@ -22,80 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 327,
-        "name": "Erovnuli Liga",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/327.png"
-      },
-      "country": {
-        "name": "Georgia",
-        "code": "GE",
-        "flag": "https://media.api-sports.io/flags/ge.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-01",
-          "end": "2024-12-16",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 672,
         "name": "David Kipiani Cup",
         "type": "Cup",
@@ -204,6 +130,117 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 903,
+        "name": "The Atlantic Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/903.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-30",
+          "end": "2025-02-09",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 327,
+        "name": "Erovnuli Liga",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/327.png"
+      },
+      "country": {
+        "name": "Georgia",
+        "code": "GE",
+        "flag": "https://media.api-sports.io/flags/ge.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-28",
+          "end": "2025-12-13",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -221,8 +258,1543 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1341160,
+          "date": "2025-03-28T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Batumi Arena",
+            "city": "Batumi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743181200
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 705,
+            "name": "Dinamo Batumi",
+            "logo": "https://media.api-sports.io/football/teams/705.png",
+            "winner": null
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341164,
+          "date": "2025-04-05T15:00:00+00:00",
+          "venue": {
+            "id": 693,
+            "name": "Ramaz Shengelias Sakhelobis Stadioni",
+            "city": "Kutaisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743865200
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10017,
+            "name": "Samgurali",
+            "logo": "https://media.api-sports.io/football/teams/10017.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341172,
+          "date": "2025-04-09T11:00:00+00:00",
+          "venue": {
+            "id": 2308,
+            "name": "Saragbo Baza Parki-Arena",
+            "city": "Poti"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744196400
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3507,
+            "name": "Kolkheti Poti",
+            "logo": "https://media.api-sports.io/football/teams/3507.png",
+            "winner": null
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341176,
+          "date": "2025-04-13T17:00:00+00:00",
+          "venue": {
+            "id": 693,
+            "name": "Ramaz Shengelias Sakhelobis Stadioni",
+            "city": "Kutaisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744563600
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2262,
+            "name": "Dinamo Tbilisi",
+            "logo": "https://media.api-sports.io/football/teams/2262.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341179,
+          "date": "2025-04-19T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sagarejos Tsentraluri Stadioni",
+            "city": "Sagarejo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745078400
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14860,
+            "name": "Gareji",
+            "logo": "https://media.api-sports.io/football/teams/14860.png",
+            "winner": null
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341141,
+          "date": "2025-04-24T17:00:00+00:00",
+          "venue": {
+            "id": 693,
+            "name": "Ramaz Shengelias Sakhelobis Stadioni",
+            "city": "Kutaisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745514000
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3505,
+            "name": "Gagra",
+            "logo": "https://media.api-sports.io/football/teams/3505.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341193,
+          "date": "2025-04-28T17:00:00+00:00",
+          "venue": {
+            "id": 693,
+            "name": "Ramaz Shengelias Sakhelobis Stadioni",
+            "city": "Kutaisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745859600
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3502,
+            "name": "Saburtalo",
+            "logo": "https://media.api-sports.io/football/teams/3502.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341196,
+          "date": "2025-05-03T11:00:00+00:00",
+          "venue": {
+            "id": 2310,
+            "name": "Stadioni Givi Chokheli",
+            "city": "Telavi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746270000
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3511,
+            "name": "Telavi",
+            "logo": "https://media.api-sports.io/football/teams/3511.png",
+            "winner": null
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341203,
+          "date": "2025-05-07T11:00:00+00:00",
+          "venue": {
+            "id": 2301,
+            "name": "Stadioni Tengiz Burjanadze",
+            "city": "Gori"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746615600
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3499,
+            "name": "Dila",
+            "logo": "https://media.api-sports.io/football/teams/3499.png",
+            "winner": null
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341205,
+          "date": "2025-05-11T11:00:00+00:00",
+          "venue": {
+            "id": 693,
+            "name": "Ramaz Shengelias Sakhelobis Stadioni",
+            "city": "Kutaisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746961200
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          },
+          "away": {
+            "id": 705,
+            "name": "Dinamo Batumi",
+            "logo": "https://media.api-sports.io/football/teams/705.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341211,
+          "date": "2025-05-15T11:00:00+00:00",
+          "venue": {
+            "id": 8571,
+            "name": "Stadioni 26 Maisi",
+            "city": "Tskhaltubo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747306800
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10017,
+            "name": "Samgurali",
+            "logo": "https://media.api-sports.io/football/teams/10017.png",
+            "winner": null
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341218,
+          "date": "2025-05-23T11:00:00+00:00",
+          "venue": {
+            "id": 693,
+            "name": "Ramaz Shengelias Sakhelobis Stadioni",
+            "city": "Kutaisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747998000
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3507,
+            "name": "Kolkheti Poti",
+            "logo": "https://media.api-sports.io/football/teams/3507.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341223,
+          "date": "2025-05-24T11:00:00+00:00",
+          "venue": {
+            "id": 691,
+            "name": "Boris Paichadze Dinamo Arena",
+            "city": "Tbilisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748084400
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2262,
+            "name": "Dinamo Tbilisi",
+            "logo": "https://media.api-sports.io/football/teams/2262.png",
+            "winner": null
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341226,
+          "date": "2025-05-29T11:00:00+00:00",
+          "venue": {
+            "id": 693,
+            "name": "Ramaz Shengelias Sakhelobis Stadioni",
+            "city": "Kutaisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748516400
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          },
+          "away": {
+            "id": 14860,
+            "name": "Gareji",
+            "logo": "https://media.api-sports.io/football/teams/14860.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341233,
+          "date": "2025-08-02T11:00:00+00:00",
+          "venue": {
+            "id": 693,
+            "name": "Ramaz Shengelias Sakhelobis Stadioni",
+            "city": "Kutaisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754132400
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3505,
+            "name": "Gagra",
+            "logo": "https://media.api-sports.io/football/teams/3505.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341235,
+          "date": "2025-08-09T11:00:00+00:00",
+          "venue": {
+            "id": 2302,
+            "name": "Mikheil Meskhis sakhelobis Stadioni",
+            "city": "Tbilisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754737200
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3502,
+            "name": "Saburtalo",
+            "logo": "https://media.api-sports.io/football/teams/3502.png",
+            "winner": null
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341242,
+          "date": "2025-08-16T11:00:00+00:00",
+          "venue": {
+            "id": 693,
+            "name": "Ramaz Shengelias Sakhelobis Stadioni",
+            "city": "Kutaisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755342000
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3511,
+            "name": "Telavi",
+            "logo": "https://media.api-sports.io/football/teams/3511.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341245,
+          "date": "2025-08-23T11:00:00+00:00",
+          "venue": {
+            "id": 693,
+            "name": "Ramaz Shengelias Sakhelobis Stadioni",
+            "city": "Kutaisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755946800
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3499,
+            "name": "Dila",
+            "logo": "https://media.api-sports.io/football/teams/3499.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341249,
+          "date": "2025-08-30T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Batumi Arena",
+            "city": "Batumi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756551600
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 705,
+            "name": "Dinamo Batumi",
+            "logo": "https://media.api-sports.io/football/teams/705.png",
+            "winner": null
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341258,
+          "date": "2025-09-13T11:00:00+00:00",
+          "venue": {
+            "id": 693,
+            "name": "Ramaz Shengelias Sakhelobis Stadioni",
+            "city": "Kutaisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757761200
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10017,
+            "name": "Samgurali",
+            "logo": "https://media.api-sports.io/football/teams/10017.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1365877,
+          "date": "2025-03-20T12:00:00+00:00",
+          "venue": {
+            "id": 20559,
+            "name": "Armaviri Hakob Tonoyani Stadium",
+            "city": "Armavir"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742472000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3684,
+            "name": "FC Noah",
+            "logo": "https://media.api-sports.io/football/teams/3684.png",
+            "winner": true
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341157,
+          "date": "2025-03-15T15:00:00+00:00",
+          "venue": {
+            "id": 693,
+            "name": "Ramaz Shengelias Sakhelobis Stadioni",
+            "city": "Kutaisi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1742050800
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3499,
+            "name": "Dila",
+            "logo": "https://media.api-sports.io/football/teams/3499.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341150,
+          "date": "2025-03-09T16:00:00+00:00",
+          "venue": {
+            "id": 693,
+            "name": "Ramaz Shengelias Sakhelobis Stadioni",
+            "city": "Kutaisi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1741536000
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3511,
+            "name": "Telavi",
+            "logo": "https://media.api-sports.io/football/teams/3511.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341147,
+          "date": "2025-03-05T15:00:00+00:00",
+          "venue": {
+            "id": 2302,
+            "name": "Mikheil Meskhis sakhelobis Stadioni",
+            "city": "Tbilisi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1741186800
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3502,
+            "name": "Saburtalo",
+            "logo": "https://media.api-sports.io/football/teams/3502.png",
+            "winner": true
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341184,
+          "date": "2025-03-01T14:00:00+00:00",
+          "venue": {
+            "id": 2306,
+            "name": "David Petriashvili Arena",
+            "city": "Tbilisi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1740837600
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3505,
+            "name": "Gagra",
+            "logo": "https://media.api-sports.io/football/teams/3505.png",
+            "winner": false
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349215,
+          "date": "2025-02-13T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Marbella Football Center - Sur 1",
+            "city": "San Pedro de Alcántara"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739458800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 17161,
+            "name": "LNZ Cherkasy",
+            "logo": "https://media.api-sports.io/football/teams/17161.png",
+            "winner": null
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1163278,
@@ -458,383 +2030,29 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1163259,
-          "date": "2024-11-08T16:00:00+00:00",
-          "venue": {
-            "id": 693,
-            "name": "Ramaz Shengelias Sakhelobis Stadioni",
-            "city": "Kutaisi"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1731081600
-        },
-        "league": {
-          "id": 327,
-          "name": "Erovnuli Liga",
-          "logo": "https://media.api-sports.io/football/leagues/327.png"
-        },
-        "teams": {
-          "home": {
-            "id": 685,
-            "name": "Torpedo Kutaisi",
-            "logo": "https://media.api-sports.io/football/teams/685.png",
-            "winner": true
-          },
-          "away": {
-            "id": 705,
-            "name": "Dinamo Batumi",
-            "logo": "https://media.api-sports.io/football/teams/705.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1163251,
-          "date": "2024-11-02T14:00:00+00:00",
-          "venue": {
-            "id": 2301,
-            "name": "Stadioni Tengiz Burjanadze",
-            "city": "Gori"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730556000
-        },
-        "league": {
-          "id": 327,
-          "name": "Erovnuli Liga",
-          "logo": "https://media.api-sports.io/football/leagues/327.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3499,
-            "name": "Dila",
-            "logo": "https://media.api-sports.io/football/teams/3499.png",
-            "winner": null
-          },
-          "away": {
-            "id": 685,
-            "name": "Torpedo Kutaisi",
-            "logo": "https://media.api-sports.io/football/teams/685.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1163246,
-          "date": "2024-10-28T16:00:00+00:00",
-          "venue": {
-            "id": 693,
-            "name": "Ramaz Shengelias Sakhelobis Stadioni",
-            "city": "Kutaisi"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730131200
-        },
-        "league": {
-          "id": 327,
-          "name": "Erovnuli Liga",
-          "logo": "https://media.api-sports.io/football/leagues/327.png"
-        },
-        "teams": {
-          "home": {
-            "id": 685,
-            "name": "Torpedo Kutaisi",
-            "logo": "https://media.api-sports.io/football/teams/685.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2262,
-            "name": "Dinamo Tbilisi",
-            "logo": "https://media.api-sports.io/football/teams/2262.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1163242,
-          "date": "2024-10-20T15:00:00+00:00",
-          "venue": {
-            "id": 2306,
-            "name": "David Petriashvili Arena",
-            "city": "Tbilisi"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1729436400
-        },
-        "league": {
-          "id": 327,
-          "name": "Erovnuli Liga",
-          "logo": "https://media.api-sports.io/football/leagues/327.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3502,
-            "name": "Saburtalo",
-            "logo": "https://media.api-sports.io/football/teams/3502.png",
-            "winner": true
-          },
-          "away": {
-            "id": 685,
-            "name": "Torpedo Kutaisi",
-            "logo": "https://media.api-sports.io/football/teams/685.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1163239,
-          "date": "2024-10-06T11:30:00+00:00",
-          "venue": {
-            "id": 692,
-            "name": "Stadioni Erosi Manjgaladze",
-            "city": "Samtredia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1728214200
-        },
-        "league": {
-          "id": 327,
-          "name": "Erovnuli Liga",
-          "logo": "https://media.api-sports.io/football/leagues/327.png"
-        },
-        "teams": {
-          "home": {
-            "id": 581,
-            "name": "Samtredia",
-            "logo": "https://media.api-sports.io/football/teams/581.png",
-            "winner": true
-          },
-          "away": {
-            "id": 685,
-            "name": "Torpedo Kutaisi",
-            "logo": "https://media.api-sports.io/football/teams/685.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1163232,
-          "date": "2024-09-30T15:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Kavkasioni Arena",
-            "city": "Telavi"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1727708400
-        },
-        "league": {
-          "id": 327,
-          "name": "Erovnuli Liga",
-          "logo": "https://media.api-sports.io/football/leagues/327.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3511,
-            "name": "Telavi",
-            "logo": "https://media.api-sports.io/football/teams/3511.png",
-            "winner": false
-          },
-          "away": {
-            "id": 685,
-            "name": "Torpedo Kutaisi",
-            "logo": "https://media.api-sports.io/football/teams/685.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
-      "flag": null,
-      "season": 2024
+      "id": 327,
+      "name": "Erovnuli Liga",
+      "country": "Georgia",
+      "logo": "https://media.api-sports.io/football/leagues/327.png",
+      "flag": "https://media.api-sports.io/flags/ge.svg",
+      "season": 2025
     },
     "team": {
       "id": 685,
       "name": "Torpedo Kutaisi",
       "logo": "https://media.api-sports.io/football/teams/685.png"
     },
-    "form": "W",
+    "form": "WLLL",
     "fixtures": {
       "played": {
-        "home": 0,
-        "away": 1,
-        "total": 1
+        "home": 2,
+        "away": 2,
+        "total": 4
       },
       "wins": {
         "home": 0,
@@ -847,111 +2065,43 @@
         "total": 0
       },
       "loses": {
-        "home": 0,
-        "away": 0,
-        "total": 0
+        "home": 2,
+        "away": 1,
+        "total": 3
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 0,
-          "away": 3,
-          "total": 3
+          "home": 2,
+          "away": 2,
+          "total": 4
         },
         "average": {
-          "home": "0.0",
-          "away": "3.0",
-          "total": "3.0"
-        },
-        "minute": {
-          "0-15": {
-            "total": 1,
-            "percentage": "33.33%"
-          },
-          "16-30": {
-            "total": null,
-            "percentage": null
-          },
-          "31-45": {
-            "total": null,
-            "percentage": null
-          },
-          "46-60": {
-            "total": null,
-            "percentage": null
-          },
-          "61-75": {
-            "total": null,
-            "percentage": null
-          },
-          "76-90": {
-            "total": 1,
-            "percentage": "33.33%"
-          },
-          "91-105": {
-            "total": 1,
-            "percentage": "33.33%"
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 1,
-            "under": 0
-          },
-          "1.5": {
-            "over": 1,
-            "under": 0
-          },
-          "2.5": {
-            "over": 1,
-            "under": 0
-          },
-          "3.5": {
-            "over": 0,
-            "under": 1
-          },
-          "4.5": {
-            "over": 0,
-            "under": 1
-          }
-        }
-      },
-      "against": {
-        "total": {
-          "home": 0,
-          "away": 1,
-          "total": 1
-        },
-        "average": {
-          "home": "0.0",
+          "home": "1.0",
           "away": "1.0",
           "total": "1.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "25.00%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "25.00%"
           },
           "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "50.00%"
           },
           "76-90": {
             "total": null,
@@ -968,24 +2118,92 @@
         },
         "under_over": {
           "0.5": {
+            "over": 3,
+            "under": 1
+          },
+          "1.5": {
             "over": 1,
+            "under": 3
+          },
+          "2.5": {
+            "over": 0,
+            "under": 4
+          },
+          "3.5": {
+            "over": 0,
+            "under": 4
+          },
+          "4.5": {
+            "over": 0,
+            "under": 4
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 4,
+          "away": 3,
+          "total": 7
+        },
+        "average": {
+          "home": "2.0",
+          "away": "1.5",
+          "total": "1.8"
+        },
+        "minute": {
+          "0-15": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "46-60": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 4,
             "under": 0
           },
           "1.5": {
-            "over": 0,
+            "over": 3,
             "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 4
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 4
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 4
           }
         }
       }
@@ -998,20 +2216,20 @@
       },
       "wins": {
         "home": null,
-        "away": "1-3"
+        "away": "1-2"
       },
       "loses": {
-        "home": null,
-        "away": null
+        "home": "1-2",
+        "away": "2-0"
       },
       "goals": {
         "for": {
-          "home": 0,
-          "away": 3
+          "home": 1,
+          "away": 2
         },
         "against": {
-          "home": 0,
-          "away": 1
+          "home": 2,
+          "away": 2
         }
       }
     },
@@ -1022,8 +2240,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 0,
-      "total": 0
+      "away": 1,
+      "total": 1
     },
     "penalty": {
       "scored": {
@@ -1040,28 +2258,28 @@
     "cards": {
       "yellow": {
         "0-15": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "16.67%"
         },
         "16-30": {
           "total": null,
           "percentage": null
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "16.67%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "16.67%"
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "16.67%"
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "33.33%"
         },
         "91-105": {
           "total": null,
@@ -1108,5 +2326,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:07.772Z"
+  "lastUpdated": "2025-03-27T10:38:50.884Z"
 }

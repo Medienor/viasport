@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-02-22",
-          "end": "2024-12-07",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-22",
+          "end": "2025-10-19",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -71,10 +71,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -89,44 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 772,
-        "name": "Leagues Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/772.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-07-27",
-          "end": "2024-08-25",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -149,24 +112,23 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1151233,
-          "date": "2024-10-20T22:00:00+00:00",
+          "id": 1326308,
+          "date": "2025-03-29T23:30:00+00:00",
           "venue": {
             "id": 1609,
             "name": "Soldier Field",
             "city": "Chicago, Illinois"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1729461600
+          "timestamp": 1743291000
         },
         "league": {
           "id": 253,
@@ -178,27 +140,27 @@
             "id": 1607,
             "name": "Chicago Fire",
             "logo": "https://media.api-sports.io/football/teams/1607.png",
-            "winner": false
+            "winner": null
           },
           "away": {
-            "id": 9569,
-            "name": "Nashville SC",
-            "logo": "https://media.api-sports.io/football/teams/9569.png",
-            "winner": true
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 0,
-          "away": 3
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 0,
-            "away": 3
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -212,20 +174,374 @@
       },
       {
         "fixture": {
-          "id": 1151206,
-          "date": "2024-10-02T23:30:00+00:00",
+          "id": 1326322,
+          "date": "2025-04-05T23:30:00+00:00",
+          "venue": {
+            "id": 21544,
+            "name": "Sports Illustrated Stadium",
+            "city": "Harrison, New Jersey"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743895800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326342,
+          "date": "2025-04-13T20:30:00+00:00",
+          "venue": {
+            "id": 1609,
+            "name": "Soldier Field",
+            "city": "Chicago, Illinois"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744576200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          },
+          "away": {
+            "id": 9568,
+            "name": "Inter Miami",
+            "logo": "https://media.api-sports.io/football/teams/9568.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326351,
+          "date": "2025-04-20T00:30:00+00:00",
+          "venue": {
+            "id": 1609,
+            "name": "Soldier Field",
+            "city": "Chicago, Illinois"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745109000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2242,
+            "name": "FC Cincinnati",
+            "logo": "https://media.api-sports.io/football/teams/2242.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326368,
+          "date": "2025-04-27T00:30:00+00:00",
+          "venue": {
+            "id": 19357,
+            "name": "GEODIS Park",
+            "city": "Nashville, Tennessee"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745713800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9569,
+            "name": "Nashville SC",
+            "logo": "https://media.api-sports.io/football/teams/9569.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326379,
+          "date": "2025-05-04T00:30:00+00:00",
+          "venue": {
+            "id": 1609,
+            "name": "Soldier Field",
+            "city": "Chicago, Illinois"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746318600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1598,
+            "name": "Orlando City SC",
+            "logo": "https://media.api-sports.io/football/teams/1598.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326386,
+          "date": "2025-05-10T18:30:00+00:00",
+          "venue": {
+            "id": 1609,
+            "name": "Soldier Field",
+            "city": "Chicago, Illinois"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746901800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326416,
+          "date": "2025-05-17T23:30:00+00:00",
           "venue": {
             "id": 18659,
             "name": "Bank of America Stadium",
             "city": "Charlotte, North Carolina"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1727911800
+          "timestamp": 1747524600
         },
         "league": {
           "id": 253,
@@ -237,86 +553,27 @@
             "id": 18310,
             "name": "Charlotte",
             "logo": "https://media.api-sports.io/football/teams/18310.png",
-            "winner": true
+            "winner": null
           },
           "away": {
-            "id": 1607,
-            "name": "Chicago Fire",
-            "logo": "https://media.api-sports.io/football/teams/1607.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151200,
-          "date": "2024-09-29T00:30:00+00:00",
-          "venue": {
-            "id": 19491,
-            "name": "SeatGeek Stadium",
-            "city": "Bridgeview, Illinois"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1727569800
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
             "id": 1607,
             "name": "Chicago Fire",
             "logo": "https://media.api-sports.io/football/teams/1607.png",
             "winner": null
-          },
-          "away": {
-            "id": 1601,
-            "name": "Toronto FC",
-            "logo": "https://media.api-sports.io/football/teams/1601.png",
-            "winner": null
           }
         },
         "goals": {
-          "home": 1,
-          "away": 1
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 1,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -330,315 +587,20 @@
       },
       {
         "fixture": {
-          "id": 1151180,
-          "date": "2024-09-21T23:30:00+00:00",
+          "id": 1326438,
+          "date": "2025-05-25T21:00:00+00:00",
           "venue": {
-            "id": 310,
-            "name": "Stade Saputo",
-            "city": "Montreal, Quebec"
+            "id": 1833,
+            "name": "Yankee Stadium",
+            "city": "New York City"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1726961400
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1614,
-            "name": "CF Montreal",
-            "logo": "https://media.api-sports.io/football/teams/1614.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1607,
-            "name": "Chicago Fire",
-            "logo": "https://media.api-sports.io/football/teams/1607.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151172,
-          "date": "2024-09-19T00:30:00+00:00",
-          "venue": {
-            "id": 19357,
-            "name": "GEODIS Park",
-            "city": "Nashville, Tennessee"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1726705800
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 9569,
-            "name": "Nashville SC",
-            "logo": "https://media.api-sports.io/football/teams/9569.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1607,
-            "name": "Chicago Fire",
-            "logo": "https://media.api-sports.io/football/teams/1607.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151158,
-          "date": "2024-09-15T00:30:00+00:00",
-          "venue": {
-            "id": 1609,
-            "name": "Soldier Field",
-            "city": "Chicago, Illinois"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
             "extra": null
           },
-          "timestamp": 1726360200
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1607,
-            "name": "Chicago Fire",
-            "logo": "https://media.api-sports.io/football/teams/1607.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1602,
-            "name": "New York Red Bulls",
-            "logo": "https://media.api-sports.io/football/teams/1602.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151149,
-          "date": "2024-09-08T00:30:00+00:00",
-          "venue": {
-            "id": 19491,
-            "name": "SeatGeek Stadium",
-            "city": "Bridgeview, Illinois"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1725755400
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1607,
-            "name": "Chicago Fire",
-            "logo": "https://media.api-sports.io/football/teams/1607.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1615,
-            "name": "DC United",
-            "logo": "https://media.api-sports.io/football/teams/1615.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151139,
-          "date": "2024-09-01T00:30:00+00:00",
-          "venue": {
-            "id": 1609,
-            "name": "Soldier Field",
-            "city": "Chicago, Illinois"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1725150600
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1607,
-            "name": "Chicago Fire",
-            "logo": "https://media.api-sports.io/football/teams/1607.png",
-            "winner": false
-          },
-          "away": {
-            "id": 9568,
-            "name": "Inter Miami",
-            "logo": "https://media.api-sports.io/football/teams/9568.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151124,
-          "date": "2024-08-24T23:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Citi Field",
-            "city": "New York, New York"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1724542200
+          "timestamp": 1748206800
         },
         "league": {
           "id": 253,
@@ -660,13 +622,900 @@
           }
         },
         "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326459,
+          "date": "2025-05-31T23:30:00+00:00",
+          "venue": {
+            "id": 20500,
+            "name": "Inter&Co Stadium",
+            "city": "Orlando, Florida"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748734200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1598,
+            "name": "Orlando City SC",
+            "logo": "https://media.api-sports.io/football/teams/1598.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326467,
+          "date": "2025-06-07T23:30:00+00:00",
+          "venue": {
+            "id": 1613,
+            "name": "Audi Field",
+            "city": "Washington, District of Columbia"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749339000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1615,
+            "name": "DC United",
+            "logo": "https://media.api-sports.io/football/teams/1615.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326479,
+          "date": "2025-06-15T00:30:00+00:00",
+          "venue": {
+            "id": 1609,
+            "name": "Soldier Field",
+            "city": "Chicago, Illinois"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749947400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          },
+          "away": {
+            "id": 9569,
+            "name": "Nashville SC",
+            "logo": "https://media.api-sports.io/football/teams/9569.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326488,
+          "date": "2025-06-26T00:30:00+00:00",
+          "venue": {
+            "id": 1609,
+            "name": "Soldier Field",
+            "city": "Chicago, Illinois"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750897800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1599,
+            "name": "Philadelphia Union",
+            "logo": "https://media.api-sports.io/football/teams/1599.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326502,
+          "date": "2025-06-29T00:30:00+00:00",
+          "venue": {
+            "id": 1609,
+            "name": "Soldier Field",
+            "city": "Chicago, Illinois"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751157000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18310,
+            "name": "Charlotte",
+            "logo": "https://media.api-sports.io/football/teams/18310.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326514,
+          "date": "2025-07-05T23:30:00+00:00",
+          "venue": {
+            "id": 19229,
+            "name": "TQL Stadium",
+            "city": "Cincinnati, Ohio"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751758200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2242,
+            "name": "FC Cincinnati",
+            "logo": "https://media.api-sports.io/football/teams/2242.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326730,
+          "date": "2025-07-13T00:30:00+00:00",
+          "venue": {
+            "id": 1609,
+            "name": "Soldier Field",
+            "city": "Chicago, Illinois"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752366600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          },
+          "away": {
+            "id": 25484,
+            "name": "San Diego",
+            "logo": "https://media.api-sports.io/football/teams/25484.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326538,
+          "date": "2025-07-16T23:30:00+00:00",
+          "venue": {
+            "id": 1898,
+            "name": "Mercedes-Benz Stadium",
+            "city": "Atlanta, Georgia"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752708600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326553,
+          "date": "2025-07-19T23:30:00+00:00",
+          "venue": {
+            "id": 310,
+            "name": "Stade Saputo",
+            "city": "Montreal, Quebec"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752967800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326574,
+          "date": "2025-07-27T00:30:00+00:00",
+          "venue": {
+            "id": 1609,
+            "name": "Soldier Field",
+            "city": "Chicago, Illinois"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753576200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326583,
+          "date": "2025-08-10T00:30:00+00:00",
+          "venue": {
+            "id": 1609,
+            "name": "Soldier Field",
+            "city": "Chicago, Illinois"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754785800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1326301,
+          "date": "2025-03-23T02:30:00+00:00",
+          "venue": {
+            "id": 19445,
+            "name": "BC Place",
+            "city": "Vancouver, British Columbia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742697000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1603,
+            "name": "Vancouver Whitecaps",
+            "logo": "https://media.api-sports.io/football/teams/1603.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326276,
+          "date": "2025-03-15T18:30:00+00:00",
+          "venue": {
+            "id": 312,
+            "name": "BMO Field",
+            "city": "Toronto, Ontario"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742063400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1601,
+            "name": "Toronto FC",
+            "logo": "https://media.api-sports.io/football/teams/1601.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326269,
+          "date": "2025-03-09T01:30:00+00:00",
+          "venue": {
+            "id": 1612,
+            "name": "Toyota Stadium",
+            "city": "Frisco, Texas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1741483800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1597,
+            "name": "FC Dallas",
+            "logo": "https://media.api-sports.io/football/teams/1597.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326253,
+          "date": "2025-03-02T01:30:00+00:00",
+          "venue": {
+            "id": 1609,
+            "name": "Soldier Field",
+            "city": "Chicago, Illinois"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1740879000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1615,
+            "name": "DC United",
+            "logo": "https://media.api-sports.io/football/teams/1615.png",
+            "winner": null
+          }
+        },
+        "goals": {
           "home": 2,
           "away": 2
         },
         "score": {
           "halftime": {
-            "home": 2,
-            "away": 0
+            "home": 1,
+            "away": 1
           },
           "fulltime": {
             "home": 2,
@@ -684,31 +1533,31 @@
       },
       {
         "fixture": {
-          "id": 1186119,
-          "date": "2024-08-02T01:00:00+00:00",
+          "id": 1326237,
+          "date": "2025-02-23T00:30:00+00:00",
           "venue": {
-            "id": 19491,
-            "name": "SeatGeek Stadium",
-            "city": "Bridgeview, Illinois"
+            "id": 12667,
+            "name": "Lower.com Field",
+            "city": "Columbus, Ohio"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 6
           },
-          "timestamp": 1722560400
+          "timestamp": 1740270600
         },
         "league": {
-          "id": 772,
-          "name": "Leagues Cup",
-          "logo": "https://media.api-sports.io/football/leagues/772.png"
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
         },
         "teams": {
           "home": {
-            "id": 2281,
-            "name": "Toluca",
-            "logo": "https://media.api-sports.io/football/teams/2281.png",
+            "id": 1613,
+            "name": "Columbus Crew",
+            "logo": "https://media.api-sports.io/football/teams/1613.png",
             "winner": true
           },
           "away": {
@@ -719,16 +1568,311 @@
           }
         },
         "goals": {
-          "home": 3,
+          "home": 4,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346146,
+          "date": "2025-02-15T20:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Empire Polo Club",
+            "city": "Indio, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739649600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1605,
+            "name": "Los Angeles Galaxy",
+            "logo": "https://media.api-sports.io/football/teams/1605.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 2,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 3,
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346097,
+          "date": "2025-02-15T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Empire Polo Club Field 2",
+            "city": "Indio, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739577600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3998,
+            "name": "Las Vegas Lights",
+            "logo": "https://media.api-sports.io/football/teams/3998.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349207,
+          "date": "2025-02-12T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Empire Polo Club",
+            "city": "Indio, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1739383200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 5,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345980,
+          "date": "2025-02-08T22:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Empire Polo Club Field 2",
+            "city": "Indio, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739053800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1617,
+            "name": "Portland Timbers",
+            "logo": "https://media.api-sports.io/football/teams/1617.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345836,
+          "date": "2025-02-05T21:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Empire Polo Club Field 2",
+            "city": "Indio, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1738791000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
             "away": 1
           },
           "extratime": {
@@ -750,76 +1894,76 @@
       "country": "USA",
       "logo": "https://media.api-sports.io/football/leagues/253.png",
       "flag": "https://media.api-sports.io/flags/us.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 1607,
       "name": "Chicago Fire",
       "logo": "https://media.api-sports.io/football/teams/1607.png"
     },
-    "form": "DLLWDLWDLDLLLLDDWWLLWLDWLDLLWLLDLL",
+    "form": "LDWWW",
     "fixtures": {
       "played": {
-        "home": 17,
-        "away": 17,
-        "total": 34
+        "home": 1,
+        "away": 4,
+        "total": 5
       },
       "wins": {
-        "home": 5,
-        "away": 2,
-        "total": 7
+        "home": 0,
+        "away": 3,
+        "total": 3
       },
       "draws": {
-        "home": 4,
-        "away": 5,
-        "total": 9
+        "home": 1,
+        "away": 0,
+        "total": 1
       },
       "loses": {
-        "home": 8,
-        "away": 10,
-        "total": 18
+        "home": 0,
+        "away": 1,
+        "total": 1
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 20,
-          "away": 20,
-          "total": 40
+          "home": 2,
+          "away": 10,
+          "total": 12
         },
         "average": {
-          "home": "1.2",
-          "away": "1.2",
-          "total": "1.2"
+          "home": "2.0",
+          "away": "2.5",
+          "total": "2.4"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "2.44%"
+            "total": 2,
+            "percentage": "15.38%"
           },
           "16-30": {
-            "total": 5,
-            "percentage": "12.20%"
+            "total": 3,
+            "percentage": "23.08%"
           },
           "31-45": {
-            "total": 5,
-            "percentage": "12.20%"
+            "total": 2,
+            "percentage": "15.38%"
           },
           "46-60": {
-            "total": 7,
-            "percentage": "17.07%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 8,
-            "percentage": "19.51%"
+            "total": 2,
+            "percentage": "15.38%"
           },
           "76-90": {
-            "total": 10,
-            "percentage": "24.39%"
+            "total": 2,
+            "percentage": "15.38%"
           },
           "91-105": {
-            "total": 5,
-            "percentage": "12.20%"
+            "total": 2,
+            "percentage": "15.38%"
           },
           "106-120": {
             "total": null,
@@ -828,66 +1972,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 23,
-            "under": 11
+            "over": 5,
+            "under": 0
           },
           "1.5": {
-            "over": 10,
-            "under": 24
+            "over": 5,
+            "under": 0
           },
           "2.5": {
-            "over": 4,
-            "under": 30
+            "over": 2,
+            "under": 3
           },
           "3.5": {
-            "over": 3,
-            "under": 31
+            "over": 0,
+            "under": 5
           },
           "4.5": {
             "over": 0,
-            "under": 34
+            "under": 5
           }
         }
       },
       "against": {
         "total": {
-          "home": 31,
-          "away": 31,
-          "total": 62
+          "home": 2,
+          "away": 7,
+          "total": 9
         },
         "average": {
-          "home": "1.8",
+          "home": "2.0",
           "away": "1.8",
           "total": "1.8"
         },
         "minute": {
           "0-15": {
-            "total": 9,
-            "percentage": "14.75%"
+            "total": 3,
+            "percentage": "37.50%"
           },
           "16-30": {
-            "total": 11,
-            "percentage": "18.03%"
+            "total": 1,
+            "percentage": "12.50%"
           },
           "31-45": {
-            "total": 6,
-            "percentage": "9.84%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 16,
-            "percentage": "26.23%"
+            "total": 3,
+            "percentage": "37.50%"
           },
           "61-75": {
-            "total": 10,
-            "percentage": "16.39%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "3.28%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 7,
-            "percentage": "11.48%"
+            "total": 1,
+            "percentage": "12.50%"
           },
           "106-120": {
             "total": null,
@@ -896,141 +2040,113 @@
         },
         "under_over": {
           "0.5": {
-            "over": 30,
-            "under": 4
+            "over": 5,
+            "under": 0
           },
           "1.5": {
-            "over": 18,
-            "under": 16
+            "over": 2,
+            "under": 3
           },
           "2.5": {
-            "over": 10,
-            "under": 24
+            "over": 1,
+            "under": 4
           },
           "3.5": {
-            "over": 4,
-            "under": 30
+            "over": 1,
+            "under": 4
           },
           "4.5": {
             "over": 0,
-            "under": 34
+            "under": 5
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 2,
-        "loses": 4
+        "wins": 0,
+        "draws": 1,
+        "loses": 1
       },
       "wins": {
-        "home": "4-3",
-        "away": "1-4"
+        "home": null,
+        "away": "1-3"
       },
       "loses": {
-        "home": "0-4",
-        "away": "3-0"
+        "home": null,
+        "away": "4-2"
       },
       "goals": {
         "for": {
-          "home": 4,
-          "away": 4
+          "home": 2,
+          "away": 3
         },
         "against": {
-          "home": 4,
+          "home": 2,
           "away": 4
         }
       }
     },
     "clean_sheet": {
-      "home": 2,
-      "away": 2,
-      "total": 4
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 6,
-      "away": 5,
-      "total": 11
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 5,
+        "total": 1,
         "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 5
+      "total": 1
     },
     "lineups": [
       {
-        "formation": "4-2-3-1",
-        "played": 12
-      },
-      {
-        "formation": "3-5-2",
-        "played": 7
-      },
-      {
-        "formation": "4-4-2",
+        "formation": "4-3-3",
         "played": 4
       },
       {
-        "formation": "3-4-3",
-        "played": 3
-      },
-      {
-        "formation": "5-3-2",
-        "played": 3
-      },
-      {
-        "formation": "3-4-2-1",
-        "played": 2
-      },
-      {
-        "formation": "3-4-1-2",
-        "played": 1
-      },
-      {
-        "formation": "4-3-1-2",
-        "played": 1
-      },
-      {
-        "formation": "5-4-1",
+        "formation": "4-2-3-1",
         "played": 1
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 4,
-          "percentage": "5.88%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
-          "total": 9,
-          "percentage": "13.24%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 10,
-          "percentage": "14.71%"
+          "total": 3,
+          "percentage": "33.33%"
         },
         "46-60": {
-          "total": 15,
-          "percentage": "22.06%"
+          "total": 2,
+          "percentage": "22.22%"
         },
         "61-75": {
-          "total": 12,
-          "percentage": "17.65%"
+          "total": 2,
+          "percentage": "22.22%"
         },
         "76-90": {
-          "total": 8,
-          "percentage": "11.76%"
+          "total": 2,
+          "percentage": "22.22%"
         },
         "91-105": {
-          "total": 10,
-          "percentage": "14.71%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1059,8 +2175,8 @@
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1073,5 +2189,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:44:00.340Z"
+  "lastUpdated": "2025-03-27T10:42:52.436Z"
 }

@@ -22,6 +22,43 @@
   "leagues": [
     {
       "league": {
+        "id": 960,
+        "name": "Euro Championship - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/960.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-03-23",
+          "end": "2024-03-26",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 4,
         "name": "Euro Championship",
         "type": "Cup",
@@ -46,43 +83,6 @@
               "statistics_players": true
             },
             "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
@@ -167,6 +167,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -182,6 +219,124 @@
   ],
   "fixtures": {
     "upcoming": [
+      {
+        "fixture": {
+          "id": 1345280,
+          "date": "2025-06-06T18:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Luxembourg",
+            "city": "Luxembourg"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749233700
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1102,
+            "name": "Luxembourg",
+            "logo": "https://media.api-sports.io/football/teams/1102.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1091,
+            "name": "Slovenia",
+            "logo": "https://media.api-sports.io/football/teams/1091.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1347475,
+          "date": "2025-06-10T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "TBC",
+            "city": "TBC"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749571200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1091,
+            "name": "Slovenia",
+            "logo": "https://media.api-sports.io/football/teams/1091.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1113,
+            "name": "Bosnia & Herzegovina",
+            "logo": "https://media.api-sports.io/football/teams/1113.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1323284,
@@ -721,7 +876,7 @@
           "date": "2024-10-13T13:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Ortalyq stadıon",
+            "name": "Central Stadium",
             "city": "Almaty"
           },
           "status": {
@@ -1132,24 +1287,24 @@
   },
   "statistics": {
     "league": {
-      "id": 4,
-      "name": "Euro Championship",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/4.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1091,
       "name": "Slovenia",
       "logo": "https://media.api-sports.io/football/teams/1091.png"
     },
-    "form": "DDDD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
-        "away": 2,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -1157,9 +1312,9 @@
         "total": 0
       },
       "draws": {
-        "home": 2,
-        "away": 2,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -1170,14 +1325,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 2,
+          "home": 0,
           "away": 0,
-          "total": 2
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.5"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1197,12 +1352,12 @@
             "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1215,37 +1370,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 2,
+          "home": 0,
           "away": 0,
-          "total": 2
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.5"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1253,8 +1408,8 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
@@ -1273,34 +1428,34 @@
             "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
-            "total": 3,
-            "percentage": "60.00%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       }
@@ -1308,7 +1463,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 4,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
@@ -1321,24 +1476,24 @@
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 1,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
       "home": 0,
-      "away": 2,
-      "total": 2
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 2,
-      "total": 2
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1346,17 +1501,12 @@
         "percentage": "0%"
       },
       "missed": {
-        "total": 3,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
-      "total": 3
+      "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-4-2",
-        "played": 4
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1364,32 +1514,32 @@
           "percentage": null
         },
         "16-30": {
-          "total": 1,
-          "percentage": "9.09%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 2,
-          "percentage": "18.18%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "9.09%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "9.09%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 2,
-          "percentage": "18.18%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 2,
-          "percentage": "18.18%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
-          "total": 2,
-          "percentage": "18.18%"
+          "total": null,
+          "percentage": null
         }
       },
       "red": {
@@ -1428,5 +1578,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:46.613Z"
+  "lastUpdated": "2025-03-27T10:39:31.706Z"
 }

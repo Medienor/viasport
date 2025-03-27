@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 919,
+        "name": "Mediterranean Games",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/919.png"
       },
       "country": {
         "name": "World",
@@ -34,22 +34,22 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2022,
+          "start": "2022-06-26",
+          "end": "2022-07-05",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -242,34 +242,388 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1035629,
+          "date": "2023-06-13T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1686672000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19073,
+            "name": "Portugal U18",
+            "logo": "https://media.api-sports.io/football/teams/19073.png",
+            "winner": null
+          },
+          "away": {
+            "id": 21466,
+            "name": "England U18",
+            "logo": "https://media.api-sports.io/football/teams/21466.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1035624,
+          "date": "2023-06-11T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1686502800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19073,
+            "name": "Portugal U18",
+            "logo": "https://media.api-sports.io/football/teams/19073.png",
+            "winner": true
+          },
+          "away": {
+            "id": 21474,
+            "name": "Norway U18",
+            "logo": "https://media.api-sports.io/football/teams/21474.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1035622,
+          "date": "2023-06-09T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1686330000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19073,
+            "name": "Portugal U18",
+            "logo": "https://media.api-sports.io/football/teams/19073.png",
+            "winner": true
+          },
+          "away": {
+            "id": 21458,
+            "name": "Australia U18",
+            "logo": "https://media.api-sports.io/football/teams/21458.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 879820,
+          "date": "2022-06-30T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Sig",
+            "city": "Sig"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1656604800
+        },
+        "league": {
+          "id": 919,
+          "name": "Mediterranean Games",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19073,
+            "name": "Portugal U18",
+            "logo": "https://media.api-sports.io/football/teams/19073.png",
+            "winner": false
+          },
+          "away": {
+            "id": 19070,
+            "name": "Greece U18",
+            "logo": "https://media.api-sports.io/football/teams/19070.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 879819,
+          "date": "2022-06-28T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Sig",
+            "city": "Sig"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1656442800
+        },
+        "league": {
+          "id": 919,
+          "name": "Mediterranean Games",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19073,
+            "name": "Portugal U18",
+            "logo": "https://media.api-sports.io/football/teams/19073.png",
+            "winner": true
+          },
+          "away": {
+            "id": 19075,
+            "name": "Turkey U18",
+            "logo": "https://media.api-sports.io/football/teams/19075.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 879815,
+          "date": "2022-06-26T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Ahmed Zabana",
+            "city": "Oran"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1656270000
+        },
+        "league": {
+          "id": 919,
+          "name": "Mediterranean Games",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19071,
+            "name": "Italy U18",
+            "logo": "https://media.api-sports.io/football/teams/19071.png",
+            "winner": true
+          },
+          "away": {
+            "id": 19073,
+            "name": "Portugal U18",
+            "logo": "https://media.api-sports.io/football/teams/19073.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 19073,
       "name": "Portugal U18",
       "logo": "https://media.api-sports.io/football/teams/19073.png"
     },
-    "form": "WWL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 3,
+        "home": 0,
         "away": 0,
-        "total": 3
+        "total": 0
       },
       "wins": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -277,22 +631,22 @@
         "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 6,
+          "home": 0,
           "away": 0,
-          "total": 6
+          "total": 0
         },
         "average": {
-          "home": "2.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "2.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -330,37 +684,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 2,
+          "home": 0,
           "away": 0,
-          "total": 2
+          "total": 0
         },
         "average": {
-          "home": "0.7",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.7"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -368,8 +722,8 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
@@ -398,62 +752,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "4-0",
+        "home": null,
         "away": null
       },
       "loses": {
-        "home": "0-1",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 4,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 1,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "failed_to_score": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -538,5 +892,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:34.509Z"
+  "lastUpdated": "2025-03-27T10:41:24.291Z"
 }

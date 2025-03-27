@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 890,
         "name": "U20 Elite League",
         "type": "Cup",
@@ -577,29 +540,147 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1028143,
+          "date": "2024-03-21T15:00:00+00:00",
+          "venue": {
+            "id": 19187,
+            "name": "Estádio José Gomes",
+            "city": "Amadora"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711033200
+        },
+        "league": {
+          "id": 890,
+          "name": "U20 Elite League",
+          "logo": "https://media.api-sports.io/football/leagues/890.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10299,
+            "name": "Portugal U20",
+            "logo": "https://media.api-sports.io/football/teams/10299.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18047,
+            "name": "Czech Republic U20",
+            "logo": "https://media.api-sports.io/football/teams/18047.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1135815,
+          "date": "2023-11-21T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadio Enzo Ricci",
+            "city": "Sassuolo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700571600
+        },
+        "league": {
+          "id": 890,
+          "name": "U20 Elite League",
+          "logo": "https://media.api-sports.io/football/leagues/890.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10289,
+            "name": "Italy U20",
+            "logo": "https://media.api-sports.io/football/teams/10289.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10299,
+            "name": "Portugal U20",
+            "logo": "https://media.api-sports.io/football/teams/10299.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 10299,
       "name": "Portugal U20",
       "logo": "https://media.api-sports.io/football/teams/10299.png"
     },
-    "form": "L",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -612,27 +693,27 @@
         "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -665,46 +746,46 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
+          "home": 0,
           "away": 0,
-          "total": 4
+          "total": 0
         },
         "average": {
-          "home": "4.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "4.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
@@ -719,8 +800,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -733,24 +814,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "3.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       }
@@ -759,23 +840,23 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
         "home": null,
         "away": null
       },
       "loses": {
-        "home": "1-4",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 4,
+          "home": 0,
           "away": 0
         }
       }
@@ -873,5 +954,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:19.969Z"
+  "lastUpdated": "2025-03-27T10:41:09.044Z"
 }

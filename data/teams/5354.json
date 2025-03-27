@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 2,
         "name": "UEFA Champions League",
         "type": "Cup",
@@ -183,8 +146,8 @@
       "seasons": [
         {
           "year": 2024,
-          "start": "2024-08-10",
-          "end": "2025-03-22",
+          "start": "2024-08-09",
+          "end": "2025-04-26",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -274,7 +237,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -291,7 +254,303 @@
     2024
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1366540,
+          "date": "2025-04-01T18:45:00+00:00",
+          "venue": {
+            "id": 4043,
+            "name": "Stangmore Park",
+            "city": "Dungannon"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743533100
+        },
+        "league": {
+          "id": 408,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/408.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5351,
+            "name": "Dungannon Swifts",
+            "logo": "https://media.api-sports.io/football/teams/5351.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5354,
+            "name": "Larne",
+            "logo": "https://media.api-sports.io/football/teams/5354.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1366544,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 1171,
+            "name": "Seaview",
+            "city": "Belfast"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 408,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/408.png"
+        },
+        "teams": {
+          "home": {
+            "id": 697,
+            "name": "Crusaders FC",
+            "logo": "https://media.api-sports.io/football/teams/697.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5354,
+            "name": "Larne",
+            "logo": "https://media.api-sports.io/football/teams/5354.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1366546,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 1170,
+            "name": "The Showgrounds",
+            "city": "Coleraine"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 408,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/408.png"
+        },
+        "teams": {
+          "home": {
+            "id": 669,
+            "name": "Coleraine FC",
+            "logo": "https://media.api-sports.io/football/teams/669.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5354,
+            "name": "Larne",
+            "logo": "https://media.api-sports.io/football/teams/5354.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1366549,
+          "date": "2025-04-18T18:45:00+00:00",
+          "venue": {
+            "id": 4045,
+            "name": "Inver Park",
+            "city": "Larne"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745001900
+        },
+        "league": {
+          "id": 408,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/408.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5354,
+            "name": "Larne",
+            "logo": "https://media.api-sports.io/football/teams/5354.png",
+            "winner": null
+          },
+          "away": {
+            "id": 583,
+            "name": "Linfield",
+            "logo": "https://media.api-sports.io/football/teams/583.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1366554,
+          "date": "2025-04-26T16:30:00+00:00",
+          "venue": {
+            "id": 4045,
+            "name": "Inver Park",
+            "city": "Larne"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745685000
+        },
+        "league": {
+          "id": 408,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/408.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5354,
+            "name": "Larne",
+            "logo": "https://media.api-sports.io/football/teams/5354.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5352,
+            "name": "Glentoran",
+            "logo": "https://media.api-sports.io/football/teams/5352.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
       {
         "fixture": {
@@ -887,34 +1146,34 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 5354,
       "name": "Larne",
       "logo": "https://media.api-sports.io/football/teams/5354.png"
     },
-    "form": "DW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -925,14 +1184,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 2,
-          "away": 1,
-          "total": 3
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.0",
-          "away": "1.0",
-          "total": "1.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -944,16 +1203,16 @@
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -970,37 +1229,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
-          "away": 1,
-          "total": 2
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "1.0",
-          "total": "1.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1016,12 +1275,12 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -1038,24 +1297,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       }
@@ -1063,11 +1322,11 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "2-1",
+        "home": null,
         "away": null
       },
       "loses": {
@@ -1076,12 +1335,12 @@
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 1
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -1097,14 +1356,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -1178,5 +1437,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:35.724Z"
+  "lastUpdated": "2025-03-27T10:38:17.861Z"
 }

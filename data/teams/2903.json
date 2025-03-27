@@ -22,6 +22,80 @@
   "leagues": [
     {
       "league": {
+        "id": 841,
+        "name": "QFA Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/841.png"
+      },
+      "country": {
+        "name": "Qatar",
+        "code": "QA",
+        "flag": "https://media.api-sports.io/flags/qa.svg"
+      },
+      "seasons": [
+        {
+          "year": 2022,
+          "start": "2023-09-03",
+          "end": "2024-03-27",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 825,
+        "name": "Qatar Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/825.png"
+      },
+      "country": {
+        "name": "Qatar",
+        "code": "QA",
+        "flag": "https://media.api-sports.io/flags/qa.svg"
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2024-05-01",
+          "end": "2024-05-04",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 824,
         "name": "Emir Cup",
         "type": "Cup",
@@ -126,7 +200,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -167,6 +241,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -191,7 +302,7 @@
       {
         "fixture": {
           "id": 1231401,
-          "date": "2025-03-29T18:30:00+00:00",
+          "date": "2025-03-29T18:00:00+00:00",
           "venue": {
             "id": null,
             "name": "Thani Bin Jassim Stadium",
@@ -203,7 +314,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743273000
+          "timestamp": 1743271200
         },
         "league": {
           "id": 305,
@@ -900,6 +1011,65 @@
       },
       {
         "fixture": {
+          "id": 1336818,
+          "date": "2025-01-16T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Thani Bin Jassim Stadium",
+            "city": "Ar-Rayyan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1736985600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2903,
+            "name": "Al-Gharafa",
+            "logo": "https://media.api-sports.io/football/teams/2903.png",
+            "winner": false
+          },
+          "away": {
+            "id": 656,
+            "name": "Slovan Bratislava",
+            "logo": "https://media.api-sports.io/football/teams/656.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1231358,
           "date": "2025-01-11T13:15:00+00:00",
           "venue": {
@@ -956,98 +1126,39 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231353,
-          "date": "2024-12-08T14:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Suheim Bin Hamad Stadium",
-            "city": "Doha"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1733668200
-        },
-        "league": {
-          "id": 305,
-          "name": "Stars League",
-          "logo": "https://media.api-sports.io/football/leagues/305.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2893,
-            "name": "Al Shahaniya",
-            "logo": "https://media.api-sports.io/football/teams/2893.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2903,
-            "name": "Al-Gharafa",
-            "logo": "https://media.api-sports.io/football/teams/2903.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 824,
-      "name": "Emir Cup",
-      "country": "Qatar",
-      "logo": "https://media.api-sports.io/football/leagues/824.png",
-      "flag": "https://media.api-sports.io/flags/qa.svg",
-      "season": 2024
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
+      "flag": null,
+      "season": null
     },
     "team": {
       "id": 2903,
       "name": "Al-Gharafa",
       "logo": "https://media.api-sports.io/football/teams/2903.png"
     },
-    "form": "WWD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -1058,150 +1169,150 @@
     "goals": {
       "for": {
         "total": {
-          "home": 4,
-          "away": 6,
-          "total": 10
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "4.0",
-          "away": "3.0",
-          "total": "3.3"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "15.38%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 3,
-            "percentage": "23.08%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
-            "total": 4,
-            "percentage": "30.77%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 3,
-          "away": 4,
-          "total": 7
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "3.0",
-          "away": "2.0",
-          "total": "2.3"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
-            "total": 4,
-            "percentage": "36.36%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "4-3",
-        "away": "2-4"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
@@ -1209,12 +1320,12 @@
       },
       "goals": {
         "for": {
-          "home": 4,
-          "away": 4
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
-          "away": 2
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -1230,14 +1341,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 3,
-        "percentage": "60.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
-        "total": 2,
-        "percentage": "40.00%"
+        "total": 0,
+        "percentage": "0%"
       },
-      "total": 5
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -1259,16 +1370,16 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1311,5 +1422,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:01.606Z"
+  "lastUpdated": "2025-03-27T10:41:51.861Z"
 }

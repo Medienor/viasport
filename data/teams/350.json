@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 106,
         "name": "Ekstraklasa",
         "type": "League",
@@ -127,6 +90,43 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -355,242 +355,6 @@
             "id": 350,
             "name": "Cracovia Krakow",
             "logo": "https://media.api-sports.io/football/teams/350.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1203216,
-          "date": "2025-04-26T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745625600
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14562,
-            "name": "Motor Lublin",
-            "logo": "https://media.api-sports.io/football/teams/14562.png",
-            "winner": null
-          },
-          "away": {
-            "id": 350,
-            "name": "Cracovia Krakow",
-            "logo": "https://media.api-sports.io/football/teams/350.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1203220,
-          "date": "2025-05-03T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746230400
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 350,
-            "name": "Cracovia Krakow",
-            "logo": "https://media.api-sports.io/football/teams/350.png",
-            "winner": null
-          },
-          "away": {
-            "id": 343,
-            "name": "Lechia Gdansk",
-            "logo": "https://media.api-sports.io/football/teams/343.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1203229,
-          "date": "2025-05-10T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746835200
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3484,
-            "name": "GKS Katowice",
-            "logo": "https://media.api-sports.io/football/teams/3484.png",
-            "winner": null
-          },
-          "away": {
-            "id": 350,
-            "name": "Cracovia Krakow",
-            "logo": "https://media.api-sports.io/football/teams/350.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1203238,
-          "date": "2025-05-17T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1747440000
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 350,
-            "name": "Cracovia Krakow",
-            "logo": "https://media.api-sports.io/football/teams/350.png",
-            "winner": null
-          },
-          "away": {
-            "id": 339,
-            "name": "Legia Warszawa",
-            "logo": "https://media.api-sports.io/football/teams/339.png",
             "winner": null
           }
         },
@@ -1034,6 +798,65 @@
       },
       {
         "fixture": {
+          "id": 1345085,
+          "date": "2025-02-02T10:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Baza treningowa KS Cracovia",
+            "city": "Rączna"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1738492200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 350,
+            "name": "Cracovia Krakow",
+            "logo": "https://media.api-sports.io/football/teams/350.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3486,
+            "name": "Jastrzębie",
+            "logo": "https://media.api-sports.io/football/teams/3486.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203112,
           "date": "2025-02-01T16:30:00+00:00",
           "venue": {
@@ -1093,12 +916,71 @@
       },
       {
         "fixture": {
-          "id": 1203107,
-          "date": "2024-12-08T11:15:00+00:00",
+          "id": 1337947,
+          "date": "2025-01-24T00:00:00+00:00",
           "venue": {
-            "id": 1255,
-            "name": "Stadion Miejski",
-            "city": "Gliwice"
+            "id": null,
+            "name": "TBC",
+            "city": "TBC"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1737676800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 350,
+            "name": "Cracovia Krakow",
+            "logo": "https://media.api-sports.io/football/teams/350.png",
+            "winner": false
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1336899,
+          "date": "2025-01-18T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
           },
           "status": {
             "long": "Match Finished",
@@ -1106,142 +988,24 @@
             "elapsed": 90,
             "extra": 4
           },
-          "timestamp": 1733656500
+          "timestamp": 1737194400
         },
         "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 349,
-            "name": "Piast Gliwice",
-            "logo": "https://media.api-sports.io/football/teams/349.png",
-            "winner": null
-          },
-          "away": {
-            "id": 350,
-            "name": "Cracovia Krakow",
-            "logo": "https://media.api-sports.io/football/teams/350.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1203094,
-          "date": "2024-11-29T17:00:00+00:00",
-          "venue": {
-            "id": 1247,
-            "name": "Stadion Cracovii im. Józefa Piłsudskiego",
-            "city": "Kraków"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1732899600
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
             "id": 350,
             "name": "Cracovia Krakow",
             "logo": "https://media.api-sports.io/football/teams/350.png",
-            "winner": null
-          },
-          "away": {
-            "id": 345,
-            "name": "Zaglebie Lubin",
-            "logo": "https://media.api-sports.io/football/teams/345.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1203090,
-          "date": "2024-11-23T19:15:00+00:00",
-          "venue": {
-            "id": 1253,
-            "name": "Stadion Miejski Legii Warszawa im. Marszałka Józefa Piłsudskiego",
-            "city": "Warszawa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1732389300
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 339,
-            "name": "Legia Warszawa",
-            "logo": "https://media.api-sports.io/football/teams/339.png",
             "winner": true
           },
           "away": {
-            "id": 350,
-            "name": "Cracovia Krakow",
-            "logo": "https://media.api-sports.io/football/teams/350.png",
+            "id": 2655,
+            "name": "Napredak",
+            "logo": "https://media.api-sports.io/football/teams/2655.png",
             "winner": false
           }
         },
@@ -1251,8 +1015,8 @@
         },
         "score": {
           "halftime": {
-            "home": 3,
-            "away": 1
+            "home": 2,
+            "away": 0
           },
           "fulltime": {
             "home": 3,
@@ -1272,29 +1036,29 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 350,
       "name": "Cracovia Krakow",
       "logo": "https://media.api-sports.io/football/teams/350.png"
     },
-    "form": "LWWWLWLWL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 9,
+        "home": 0,
         "away": 0,
-        "total": 9
+        "total": 0
       },
       "wins": {
-        "home": 5,
+        "home": 0,
         "away": 0,
-        "total": 5
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -1302,51 +1066,51 @@
         "total": 0
       },
       "loses": {
-        "home": 4,
+        "home": 0,
         "away": 0,
-        "total": 4
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 11,
+          "home": 0,
           "away": 0,
-          "total": 11
+          "total": 0
         },
         "average": {
-          "home": "1.2",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.2"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "18.18%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 4,
-            "percentage": "36.36%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -1355,62 +1119,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 7,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 9
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 9
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 9,
+          "home": 0,
           "away": 0,
-          "total": 9
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1423,73 +1187,73 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 9
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
+        "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
-        "home": "3-0",
+        "home": null,
         "away": null
       },
       "loses": {
-        "home": "1-4",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 3,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 4,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 4,
+      "home": 0,
       "away": 0,
-      "total": 4
+      "total": 0
     },
     "failed_to_score": {
-      "home": 2,
+      "home": 0,
       "away": 0,
-      "total": 2
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 2,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 2
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -1507,16 +1271,16 @@
           "percentage": null
         },
         "46-60": {
-          "total": 2,
-          "percentage": "66.67%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1563,5 +1327,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:38:17.197Z"
+  "lastUpdated": "2025-03-27T10:36:57.697Z"
 }

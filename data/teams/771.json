@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 960,
+        "name": "Euro Championship - Qualification",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/960.png"
       },
       "country": {
         "name": "World",
@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2023,
+          "start": "2023-03-23",
+          "end": "2024-03-26",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -45,7 +45,7 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
@@ -130,6 +130,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -146,6 +183,65 @@
   ],
   "fixtures": {
     "upcoming": [
+      {
+        "fixture": {
+          "id": 1348101,
+          "date": "2025-06-10T18:45:00+00:00",
+          "venue": {
+            "id": 1971,
+            "name": "Windsor Park",
+            "city": "Belfast"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749581100
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 771,
+            "name": "Northern Ireland",
+            "logo": "https://media.api-sports.io/football/teams/771.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18,
+            "name": "Iceland",
+            "logo": "https://media.api-sports.io/football/teams/18.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1323281,
@@ -173,6 +269,65 @@
             "id": 1102,
             "name": "Luxembourg",
             "logo": "https://media.api-sports.io/football/teams/1102.png",
+            "winner": null
+          },
+          "away": {
+            "id": 771,
+            "name": "Northern Ireland",
+            "logo": "https://media.api-sports.io/football/teams/771.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1366288,
+          "date": "2025-09-07T18:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757270700
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25,
+            "name": "Germany",
+            "logo": "https://media.api-sports.io/football/teams/25.png",
             "winner": null
           },
           "away": {
@@ -238,6 +393,65 @@
             "id": 773,
             "name": "Slovakia",
             "logo": "https://media.api-sports.io/football/teams/773.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1366306,
+          "date": "2025-10-13T18:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1760381100
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 771,
+            "name": "Northern Ireland",
+            "logo": "https://media.api-sports.io/football/teams/771.png",
+            "winner": null
+          },
+          "away": {
+            "id": 25,
+            "name": "Germany",
+            "logo": "https://media.api-sports.io/football/teams/25.png",
             "winner": null
           }
         },
@@ -384,6 +598,124 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1335518,
+          "date": "2025-03-25T18:00:00+00:00",
+          "venue": {
+            "id": 21411,
+            "name": "Strawberry Arena",
+            "city": "Solna"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1742925600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5,
+            "name": "Sweden",
+            "logo": "https://media.api-sports.io/football/teams/5.png",
+            "winner": true
+          },
+          "away": {
+            "id": 771,
+            "name": "Northern Ireland",
+            "logo": "https://media.api-sports.io/football/teams/771.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1348098,
+          "date": "2025-03-21T19:45:00+00:00",
+          "venue": {
+            "id": 1971,
+            "name": "Windsor Park",
+            "city": "Belfast"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1742586300
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 771,
+            "name": "Northern Ireland",
+            "logo": "https://media.api-sports.io/football/teams/771.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15,
+            "name": "Switzerland",
+            "logo": "https://media.api-sports.io/football/teams/15.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1173026,
@@ -855,188 +1187,70 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1155278,
-          "date": "2024-03-26T19:45:00+00:00",
-          "venue": {
-            "id": 2617,
-            "name": "Hampden Park",
-            "city": "Glasgow"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711482300
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1108,
-            "name": "Scotland",
-            "logo": "https://media.api-sports.io/football/teams/1108.png",
-            "winner": false
-          },
-          "away": {
-            "id": 771,
-            "name": "Northern Ireland",
-            "logo": "https://media.api-sports.io/football/teams/771.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1155266,
-          "date": "2024-03-22T19:45:00+00:00",
-          "venue": {
-            "id": 1326,
-            "name": "Arena Naţională",
-            "city": "Bucureşti"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711136700
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 774,
-            "name": "Romania",
-            "logo": "https://media.api-sports.io/football/teams/774.png",
-            "winner": null
-          },
-          "away": {
-            "id": 771,
-            "name": "Northern Ireland",
-            "logo": "https://media.api-sports.io/football/teams/771.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 771,
       "name": "Northern Ireland",
       "logo": "https://media.api-sports.io/football/teams/771.png"
     },
-    "form": "DWLW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 3,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 2,
-          "away": 3,
-          "total": 5
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.0",
-          "away": "1.0",
-          "total": "1.3"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -1061,54 +1275,54 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 6,
-          "total": 6
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "2.0",
-          "total": "1.5"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -1129,57 +1343,57 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
-        "draws": 1,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "2-0",
-        "away": "0-1"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
-        "away": "5-1"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 5
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -1197,16 +1411,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "5-4-1",
-        "played": 3
-      },
-      {
-        "formation": "3-4-2-1",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1214,24 +1419,24 @@
           "percentage": null
         },
         "16-30": {
-          "total": 1,
-          "percentage": "16.67%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 2,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
           "total": null,
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "16.67%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 2,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1278,5 +1483,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:49.037Z"
+  "lastUpdated": "2025-03-27T10:39:34.200Z"
 }

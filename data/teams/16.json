@@ -22,6 +22,117 @@
   "leagues": [
     {
       "league": {
+        "id": 21,
+        "name": "Confederations Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/21.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2017,
+          "start": "2017-06-17",
+          "end": "2017-07-02",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2022,
+          "start": "2022-11-20",
+          "end": "2022-12-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 22,
+        "name": "CONCACAF Gold Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/22.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-06-25",
+          "end": "2023-07-16",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 9,
         "name": "Copa America",
         "type": "Cup",
@@ -46,43 +157,6 @@
               "statistics_players": true
             },
             "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
@@ -130,6 +204,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -149,7 +260,126 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1358791,
+          "date": "2025-06-07T20:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Rice-Eccles Stadium",
+            "city": "Salt Lake City, Utah"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749326400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16,
+            "name": "Mexico",
+            "logo": "https://media.api-sports.io/football/teams/16.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15,
+            "name": "Switzerland",
+            "logo": "https://media.api-sports.io/football/teams/15.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1358792,
+          "date": "2025-06-11T00:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Kenan Memorial Stadium",
+            "city": "Chapel Hill, North Carolina"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749601800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16,
+            "name": "Mexico",
+            "logo": "https://media.api-sports.io/football/teams/16.png",
+            "winner": null
+          },
+          "away": {
+            "id": 777,
+            "name": "Türkiye",
+            "logo": "https://media.api-sports.io/football/teams/777.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
       {
         "fixture": {
@@ -158,7 +388,7 @@
           "venue": {
             "id": null,
             "name": "SoFi Stadium",
-            "city": "Inglewood"
+            "city": "Inglewood, California"
           },
           "status": {
             "long": "Match Finished",
@@ -217,7 +447,7 @@
           "venue": {
             "id": null,
             "name": "SoFi Stadium",
-            "city": "Inglewood"
+            "city": "Inglewood, California"
           },
           "status": {
             "long": "Match Finished",
@@ -745,52 +975,52 @@
   },
   "statistics": {
     "league": {
-      "id": 9,
-      "name": "Copa America",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/9.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 16,
       "name": "Mexico",
       "logo": "https://media.api-sports.io/football/teams/16.png"
     },
-    "form": "WLD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "0.5",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.3"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -810,8 +1040,8 @@
             "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -828,37 +1058,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 1,
-          "total": 1
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "0.3"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -874,8 +1104,8 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -896,62 +1126,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
-        "home": "1-0",
+        "home": null,
         "away": null
       },
       "loses": {
         "home": null,
-        "away": "1-0"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 0,
           "away": 0
         },
         "against": {
           "home": 0,
-          "away": 1
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 2,
+      "home": 0,
       "away": 0,
-      "total": 2
+      "total": 0
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -964,49 +1194,36 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-2-3-1",
-        "played": 1
-      },
-      {
-        "formation": "4-1-4-1",
-        "played": 1
-      },
-      {
-        "formation": "4-3-3",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 1,
-          "percentage": "14.29%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
           "total": null,
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "14.29%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "14.29%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 2,
-          "percentage": "28.57%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "14.29%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "14.29%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1049,5 +1266,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:06.090Z"
+  "lastUpdated": "2025-03-27T10:39:51.858Z"
 }

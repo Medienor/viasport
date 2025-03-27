@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 7,
+        "name": "Asian Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/7.png"
       },
       "country": {
         "name": "World",
@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2023,
+          "start": "2024-01-12",
+          "end": "2024-02-10",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -45,7 +45,7 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
@@ -93,6 +93,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 30,
+        "name": "World Cup - Qualification Asia",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/30.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2023-10-12",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -111,6 +148,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1218550,
+          "date": "2025-03-25T13:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Gelora Bung Karno Stadium",
+            "city": "Senayan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1742910300
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1547,
+            "name": "Bahrain",
+            "logo": "https://media.api-sports.io/football/teams/1547.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1218541,
+          "date": "2025-03-20T09:10:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Allianz Stadium",
+            "city": "Sydney"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1742461800
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 20,
+            "name": "Australia",
+            "logo": "https://media.api-sports.io/football/teams/20.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1201035,
@@ -349,51 +504,51 @@
       },
       {
         "fixture": {
-          "id": 1200691,
-          "date": "2024-06-02T09:00:00+00:00",
+          "id": 1218533,
+          "date": "2024-11-19T12:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": "Stadion Madya Gelora Bung Karno",
+            "id": 21414,
+            "name": "Gelora Bung Karno Stadium",
             "city": "Jakarta"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 10
           },
-          "timestamp": 1717318800
+          "timestamp": 1732017600
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
         },
         "teams": {
           "home": {
             "id": 1571,
             "name": "Indonesia",
             "logo": "https://media.api-sports.io/football/teams/1571.png",
-            "winner": null
+            "winner": true
           },
           "away": {
-            "id": 1489,
-            "name": "Tanzania",
-            "logo": "https://media.api-sports.io/football/teams/1489.png",
-            "winner": null
+            "id": 23,
+            "name": "Saudi Arabia",
+            "logo": "https://media.api-sports.io/football/teams/23.png",
+            "winner": false
           }
         },
         "goals": {
-          "home": 0,
+          "home": 2,
           "away": 0
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 0
           },
           "fulltime": {
-            "home": 0,
+            "home": 2,
             "away": 0
           },
           "extratime": {
@@ -408,25 +563,25 @@
       },
       {
         "fixture": {
-          "id": 1155252,
-          "date": "2024-01-09T17:30:00+00:00",
+          "id": 1218523,
+          "date": "2024-11-15T12:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": "Al Rayyan Training Ground",
-            "city": "Ar-Rayyan"
+            "id": 21414,
+            "name": "Gelora Bung Karno Stadium",
+            "city": "Jakarta"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 5
           },
-          "timestamp": 1704821400
+          "timestamp": 1731672000
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
         },
         "teams": {
           "home": {
@@ -436,127 +591,9 @@
             "winner": false
           },
           "away": {
-            "id": 22,
-            "name": "Iran",
-            "logo": "https://media.api-sports.io/football/teams/22.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 5
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 5
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1155239,
-          "date": "2024-01-05T13:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Mardan Stadyumu",
-            "city": "Antalya"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1704459600
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1571,
-            "name": "Indonesia",
-            "logo": "https://media.api-sports.io/football/teams/1571.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1526,
-            "name": "Libya",
-            "logo": "https://media.api-sports.io/football/teams/1526.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1155236,
-          "date": "2024-01-02T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Mardan Stadyumu",
-            "city": "Antalya"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1704153600
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1571,
-            "name": "Indonesia",
-            "logo": "https://media.api-sports.io/football/teams/1571.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1526,
-            "name": "Libya",
-            "logo": "https://media.api-sports.io/football/teams/1526.png",
+            "id": 12,
+            "name": "Japan",
+            "logo": "https://media.api-sports.io/football/teams/12.png",
             "winner": true
           }
         },
@@ -567,11 +604,129 @@
         "score": {
           "halftime": {
             "home": 0,
-            "away": 1
+            "away": 2
           },
           "fulltime": {
             "home": 0,
             "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1218513,
+          "date": "2024-10-15T12:00:00+00:00",
+          "venue": {
+            "id": 20427,
+            "name": "Qingdao Youth Football Stadium",
+            "city": "Qingdao"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1728993600
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1566,
+            "name": "China",
+            "logo": "https://media.api-sports.io/football/teams/1566.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1218505,
+          "date": "2024-10-10T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Bahrain National Stadium",
+            "city": "Riffa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1728576000
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1547,
+            "name": "Bahrain",
+            "logo": "https://media.api-sports.io/football/teams/1547.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -587,24 +742,24 @@
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1571,
       "name": "Indonesia",
       "logo": "https://media.api-sports.io/football/teams/1571.png"
     },
-    "form": "LLLD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 4,
+        "home": 0,
         "away": 0,
-        "total": 4
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -612,32 +767,32 @@
         "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
-        "home": 3,
+        "home": 0,
         "away": 0,
-        "total": 3
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "0.3",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.3"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -670,66 +825,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 11,
+          "home": 0,
           "away": 0,
-          "total": 11
+          "total": 0
         },
         "average": {
-          "home": "2.8",
+          "home": "0.0",
           "away": "0.0",
-          "total": "2.8"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "18.18%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "27.27%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "18.18%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -738,24 +893,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           }
         }
       }
@@ -764,36 +919,36 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 3
+        "loses": 0
       },
       "wins": {
         "home": null,
         "away": null
       },
       "loses": {
-        "home": "0-5",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 5,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "failed_to_score": {
-      "home": 3,
+      "home": 0,
       "away": 0,
-      "total": 3
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -806,21 +961,12 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-2-3-1",
-        "played": 1
-      },
-      {
-        "formation": "3-4-3",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
           "total": null,
@@ -839,8 +985,8 @@
           "percentage": null
         },
         "76-90": {
-          "total": 2,
-          "percentage": "66.67%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -887,5 +1033,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:47.802Z"
+  "lastUpdated": "2025-03-27T10:40:34.879Z"
 }

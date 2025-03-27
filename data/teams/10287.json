@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 490,
+        "name": "World Cup - U20",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/490.png"
       },
       "country": {
         "name": "World",
@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2023,
+          "start": "2023-05-20",
+          "end": "2023-06-11",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -458,29 +458,265 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1023446,
+          "date": "2023-05-28T21:00:00+00:00",
+          "venue": {
+            "id": 12716,
+            "name": "Estadio Único Diego Armando Maradona",
+            "city": "La Plata, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1685307600
+        },
+        "league": {
+          "id": 490,
+          "name": "World Cup - U20",
+          "logo": "https://media.api-sports.io/football/leagues/490.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10288,
+            "name": "Honduras U20",
+            "logo": "https://media.api-sports.io/football/teams/10288.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10287,
+            "name": "France U20",
+            "logo": "https://media.api-sports.io/football/teams/10287.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1023434,
+          "date": "2023-05-25T18:00:00+00:00",
+          "venue": {
+            "id": 80,
+            "name": "Estadio Malvinas Argentinas",
+            "city": "Mendoza, Provincia de Mendoza"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1685037600
+        },
+        "league": {
+          "id": 490,
+          "name": "World Cup - U20",
+          "logo": "https://media.api-sports.io/football/leagues/490.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10287,
+            "name": "France U20",
+            "logo": "https://media.api-sports.io/football/teams/10287.png",
+            "winner": false
+          },
+          "away": {
+            "id": 11031,
+            "name": "Gambia U20",
+            "logo": "https://media.api-sports.io/football/teams/11031.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1023422,
+          "date": "2023-05-22T18:00:00+00:00",
+          "venue": {
+            "id": 80,
+            "name": "Estadio Malvinas Argentinas",
+            "city": "Mendoza, Provincia de Mendoza"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1684778400
+        },
+        "league": {
+          "id": 490,
+          "name": "World Cup - U20",
+          "logo": "https://media.api-sports.io/football/leagues/490.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10287,
+            "name": "France U20",
+            "logo": "https://media.api-sports.io/football/teams/10287.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10291,
+            "name": "Korea Republic U20",
+            "logo": "https://media.api-sports.io/football/teams/10291.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 866217,
+          "date": "2022-06-12T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Marcel Roustan",
+            "city": "Salon-de-Provence"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1655049600
+        },
+        "league": {
+          "id": 914,
+          "name": "Tournoi Maurice Revello",
+          "logo": "https://media.api-sports.io/football/leagues/914.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10287,
+            "name": "France U20",
+            "logo": "https://media.api-sports.io/football/teams/10287.png",
+            "winner": true
+          },
+          "away": {
+            "id": 18983,
+            "name": "Venezuela U23",
+            "logo": "https://media.api-sports.io/football/teams/18983.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 10287,
       "name": "France U20",
       "logo": "https://media.api-sports.io/football/teams/10287.png"
     },
-    "form": "LD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -488,27 +724,27 @@
         "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 4,
-          "away": 1,
-          "total": 5
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "4.0",
-          "away": "1.0",
-          "total": "2.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -516,12 +752,12 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -532,8 +768,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -546,37 +782,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
-          "away": 3,
-          "total": 7
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "4.0",
-          "away": "3.0",
-          "total": "3.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -592,16 +828,16 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -614,24 +850,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       }
@@ -640,7 +876,7 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
         "home": null,
@@ -648,16 +884,16 @@
       },
       "loses": {
         "home": null,
-        "away": "3-1"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 4,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 4,
-          "away": 3
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -754,5 +990,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:17.662Z"
+  "lastUpdated": "2025-03-27T10:41:06.505Z"
 }

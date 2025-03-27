@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 890,
         "name": "U20 Elite League",
         "type": "Cup",
@@ -635,39 +598,98 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1113849,
+          "date": "2023-11-20T17:00:00+00:00",
+          "venue": {
+            "id": 10490,
+            "name": "Jahnstadion Regensburg",
+            "city": "Regensburg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700499600
+        },
+        "league": {
+          "id": 890,
+          "name": "U20 Elite League",
+          "logo": "https://media.api-sports.io/football/leagues/890.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10310,
+            "name": "Germany U20",
+            "logo": "https://media.api-sports.io/football/teams/10310.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10309,
+            "name": "England U20",
+            "logo": "https://media.api-sports.io/football/teams/10309.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 10310,
       "name": "Germany U20",
       "logo": "https://media.api-sports.io/football/teams/10310.png"
     },
-    "form": "WD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -678,14 +700,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 3,
-          "away": 4,
-          "total": 7
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "3.0",
-          "away": "4.0",
-          "total": "3.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -701,16 +723,16 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -723,37 +745,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
-          "away": 4,
-          "total": 5
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "4.0",
-          "total": "2.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -761,12 +783,12 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -777,8 +799,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -791,36 +813,36 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "3-1",
+        "home": null,
         "away": null
       },
       "loses": {
@@ -829,12 +851,12 @@
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 4
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 4
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -850,14 +872,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -867,16 +889,16 @@
           "percentage": null
         },
         "16-30": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
           "total": null,
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
@@ -931,5 +953,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:20.017Z"
+  "lastUpdated": "2025-03-27T10:41:09.095Z"
 }

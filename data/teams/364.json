@@ -22,80 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 113,
-        "name": "Allsvenskan",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/113.png"
-      },
-      "country": {
-        "name": "Sweden",
-        "code": "SE",
-        "flag": "https://media.api-sports.io/flags/se.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-30",
-          "end": "2024-11-24",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": true,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 115,
         "name": "Svenska Cupen",
         "type": "Cup",
@@ -110,7 +36,7 @@
         {
           "year": 2024,
           "start": "2024-05-14",
-          "end": "2025-03-16",
+          "end": "2025-05-29",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -126,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -167,6 +93,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 113,
+        "name": "Allsvenskan",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/113.png"
+      },
+      "country": {
+        "name": "Sweden",
+        "code": "SE",
+        "flag": "https://media.api-sports.io/flags/se.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-29",
+          "end": "2025-11-09",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": true,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -185,20 +185,138 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361290,
-          "date": "2025-04-10T00:00:00+00:00",
+          "id": 1341946,
+          "date": "2025-03-29T14:00:00+00:00",
           "venue": {
             "id": null,
-            "name": null,
-            "city": null
+            "name": "3Arena",
+            "city": "Stockholm"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744243200
+          "timestamp": 1743256800
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          },
+          "away": {
+            "id": 375,
+            "name": "Malmo FF",
+            "logo": "https://media.api-sports.io/football/teams/375.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341960,
+          "date": "2025-04-05T13:00:00+00:00",
+          "venue": {
+            "id": 1524,
+            "name": "Studenternas IP",
+            "city": "Uppsala"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743858000
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 370,
+            "name": "Sirius",
+            "logo": "https://media.api-sports.io/football/teams/370.png",
+            "winner": null
+          },
+          "away": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361290,
+          "date": "2025-04-10T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "3Arena",
+            "city": "Stockholm"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744311600
         },
         "league": {
           "id": 848,
@@ -244,20 +362,79 @@
       },
       {
         "fixture": {
+          "id": 1341964,
+          "date": "2025-04-13T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "3Arena",
+            "city": "Stockholm"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744545600
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 363,
+            "name": "Hammarby FF",
+            "logo": "https://media.api-sports.io/football/teams/363.png",
+            "winner": null
+          },
+          "away": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1361291,
-          "date": "2025-04-17T00:00:00+00:00",
+          "date": "2025-04-17T19:00:00+00:00",
           "venue": {
             "id": 145,
             "name": "Allianz Stadion",
             "city": "Wien"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744848000
+          "timestamp": 1744916400
         },
         "league": {
           "id": 848,
@@ -300,16 +477,606 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1341977,
+          "date": "2025-04-21T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "3Arena",
+            "city": "Stockholm"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745236800
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2170,
+            "name": "Gais",
+            "logo": "https://media.api-sports.io/football/teams/2170.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341982,
+          "date": "2025-04-24T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "3Arena",
+            "city": "Stockholm"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745514000
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2174,
+            "name": "Osters IF",
+            "logo": "https://media.api-sports.io/football/teams/2174.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341991,
+          "date": "2025-04-28T17:00:00+00:00",
+          "venue": {
+            "id": 1503,
+            "name": "Grimsta IP",
+            "city": "Stockholm"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745859600
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 371,
+            "name": "IF Brommapojkarna",
+            "logo": "https://media.api-sports.io/football/teams/371.png",
+            "winner": null
+          },
+          "away": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341996,
+          "date": "2025-05-04T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "3Arena",
+            "city": "Stockholm"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746360000
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          },
+          "away": {
+            "id": 377,
+            "name": "AIK Stockholm",
+            "logo": "https://media.api-sports.io/football/teams/377.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342009,
+          "date": "2025-05-12T17:10:00+00:00",
+          "venue": {
+            "id": 1509,
+            "name": "Gamla Ullevi",
+            "city": "Göteborg"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747069800
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 366,
+            "name": "IFK Goteborg",
+            "logo": "https://media.api-sports.io/football/teams/366.png",
+            "winner": null
+          },
+          "away": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342013,
+          "date": "2025-05-15T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "3Arena",
+            "city": "Stockholm"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747328400
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2240,
+            "name": "Mjallby AIF",
+            "logo": "https://media.api-sports.io/football/teams/2240.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342025,
+          "date": "2025-05-19T17:10:00+00:00",
+          "venue": {
+            "id": 1507,
+            "name": "Borås Arena",
+            "city": "Borås"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747674600
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 372,
+            "name": "IF Elfsborg",
+            "logo": "https://media.api-sports.io/football/teams/372.png",
+            "winner": null
+          },
+          "away": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342033,
+          "date": "2025-05-26T17:10:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "3Arena",
+            "city": "Stockholm"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748279400
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          },
+          "away": {
+            "id": 367,
+            "name": "BK Hacken",
+            "logo": "https://media.api-sports.io/football/teams/367.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342039,
+          "date": "2025-06-01T12:00:00+00:00",
+          "venue": {
+            "id": 1512,
+            "name": "Örjans Vall",
+            "city": "Halmstad"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748779200
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": null
+          },
+          "away": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1365902,
+          "date": "2025-03-21T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lidingövallen 1",
+            "city": "Lidingö"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742558400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1165,
+            "name": "KuPS",
+            "logo": "https://media.api-sports.io/football/teams/1165.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1353217,
           "date": "2025-03-13T17:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Tele2 Arena",
+            "name": "3Arena",
             "city": "Stockholm"
           },
           "status": {
@@ -600,6 +1367,183 @@
       },
       {
         "fixture": {
+          "id": 1345964,
+          "date": "2025-02-08T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "3Arena",
+            "city": "Stockholm"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1739023200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1163,
+            "name": "Ilves",
+            "logo": "https://media.api-sports.io/football/teams/1163.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345105,
+          "date": "2025-02-02T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Campo Ernesto Aparicio",
+            "city": "Las Palmas de Gran Canaria"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1738508400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2240,
+            "name": "Mjallby AIF",
+            "logo": "https://media.api-sports.io/football/teams/2240.png",
+            "winner": false
+          },
+          "away": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1339705,
+          "date": "2025-01-25T00:00:00+00:00",
+          "venue": {
+            "id": 19703,
+            "name": "Hitachi Energy Arena",
+            "city": "Västerås"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1737763200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2241,
+            "name": "Vasteras SK FK",
+            "logo": "https://media.api-sports.io/football/teams/2241.png",
+            "winner": null
+          },
+          "away": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1299387,
           "date": "2024-12-19T20:00:00+00:00",
           "venue": {
@@ -656,322 +1600,86 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299382,
-          "date": "2024-12-12T13:00:00+00:00",
-          "venue": {
-            "id": 820,
-            "name": "Kópavogsvöllur",
-            "city": "Kópavogur"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1734008400
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 278,
-            "name": "Vikingur Reykjavik",
-            "logo": "https://media.api-sports.io/football/teams/278.png",
-            "winner": false
-          },
-          "away": {
-            "id": 364,
-            "name": "Djurgardens IF",
-            "logo": "https://media.api-sports.io/football/teams/364.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1316724,
-          "date": "2024-12-05T15:00:00+00:00",
-          "venue": {
-            "id": 1506,
-            "name": "Tele2 Arena",
-            "city": "Stockholm"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1733410800
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 364,
-            "name": "Djurgardens IF",
-            "logo": "https://media.api-sports.io/football/teams/364.png",
-            "winner": true
-          },
-          "away": {
-            "id": 649,
-            "name": "HJK helsinki",
-            "logo": "https://media.api-sports.io/football/teams/649.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 6,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 6,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1299358,
-          "date": "2024-11-28T17:45:00+00:00",
-          "venue": {
-            "id": 19925,
-            "name": "The Croud Meadow",
-            "city": "Shrewsbury, Shropshire"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1732815900
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 354,
-            "name": "The New Saints",
-            "logo": "https://media.api-sports.io/football/teams/354.png",
-            "winner": false
-          },
-          "away": {
-            "id": 364,
-            "name": "Djurgardens IF",
-            "logo": "https://media.api-sports.io/football/teams/364.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1316711,
-          "date": "2024-11-22T13:00:00+00:00",
-          "venue": {
-            "id": 1506,
-            "name": "Tele2 Arena",
-            "city": "Stockholm"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1732280400
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 364,
-            "name": "Djurgardens IF",
-            "logo": "https://media.api-sports.io/football/teams/364.png",
-            "winner": false
-          },
-          "away": {
-            "id": 372,
-            "name": "IF Elfsborg",
-            "logo": "https://media.api-sports.io/football/teams/372.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
-      "flag": null,
-      "season": 2024
+      "id": 113,
+      "name": "Allsvenskan",
+      "country": "Sweden",
+      "logo": "https://media.api-sports.io/football/leagues/113.png",
+      "flag": "https://media.api-sports.io/flags/se.svg",
+      "season": 2025
     },
     "team": {
       "id": 364,
       "name": "Djurgardens IF",
       "logo": "https://media.api-sports.io/football/teams/364.png"
     },
-    "form": "LDLLWDLW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 5,
-        "away": 3,
-        "total": 8
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 3,
-        "away": 1,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 12,
-          "away": 2,
-          "total": 14
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.4",
-          "away": "0.7",
-          "total": "1.8"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "7.14%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "7.14%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "21.43%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 4,
-            "percentage": "28.57%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 3,
-            "percentage": "21.43%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -980,66 +1688,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 2,
-            "under": 6
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 8,
-          "away": 5,
-          "total": 13
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.6",
-          "away": "1.7",
-          "total": "1.6"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "10.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "10.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "30.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 3,
-            "percentage": "30.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
             "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -1048,62 +1756,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 6,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 4,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 3,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
-        "draws": 1,
-        "loses": 2
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "6-1",
+        "home": null,
         "away": null
       },
       "loses": {
-        "home": "0-3",
-        "away": "3-0"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 6,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
-          "away": 3
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 2,
-      "away": 2,
-      "total": 4
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1116,12 +1824,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-2-3-1",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1133,20 +1836,20 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1193,5 +1896,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:52.564Z"
+  "lastUpdated": "2025-03-27T10:38:35.510Z"
 }

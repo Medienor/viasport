@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 919,
+        "name": "Mediterranean Games",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/919.png"
       },
       "country": {
         "name": "World",
@@ -34,22 +34,22 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2022,
+          "start": "2022-06-26",
+          "end": "2022-07-05",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -64,16 +64,312 @@
   ],
   "fixtures": {
     "upcoming": [],
-    "past": []
+    "past": [
+      {
+        "fixture": {
+          "id": 883563,
+          "date": "2022-07-04T16:00:00+00:00",
+          "venue": {
+            "id": 21541,
+            "name": "Stade Olympique d'Oran",
+            "city": "Bir El Djir"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1656950400
+        },
+        "league": {
+          "id": 919,
+          "name": "Mediterranean Games",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19075,
+            "name": "Turkey U18",
+            "logo": "https://media.api-sports.io/football/teams/19075.png",
+            "winner": false
+          },
+          "away": {
+            "id": 19072,
+            "name": "Morocco U18",
+            "logo": "https://media.api-sports.io/football/teams/19072.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 882448,
+          "date": "2022-07-02T16:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Mers El Hadjadj",
+            "city": "Mers El Hadjadj"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1656779400
+        },
+        "league": {
+          "id": 919,
+          "name": "Mediterranean Games",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19069,
+            "name": "France U18",
+            "logo": "https://media.api-sports.io/football/teams/19069.png",
+            "winner": true
+          },
+          "away": {
+            "id": 19075,
+            "name": "Turkey U18",
+            "logo": "https://media.api-sports.io/football/teams/19075.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 879821,
+          "date": "2022-06-30T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Sig",
+            "city": "Sig"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1656615600
+        },
+        "league": {
+          "id": 919,
+          "name": "Mediterranean Games",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19075,
+            "name": "Turkey U18",
+            "logo": "https://media.api-sports.io/football/teams/19075.png",
+            "winner": null
+          },
+          "away": {
+            "id": 19071,
+            "name": "Italy U18",
+            "logo": "https://media.api-sports.io/football/teams/19071.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 879819,
+          "date": "2022-06-28T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Sig",
+            "city": "Sig"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1656442800
+        },
+        "league": {
+          "id": 919,
+          "name": "Mediterranean Games",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19073,
+            "name": "Portugal U18",
+            "logo": "https://media.api-sports.io/football/teams/19073.png",
+            "winner": true
+          },
+          "away": {
+            "id": 19075,
+            "name": "Turkey U18",
+            "logo": "https://media.api-sports.io/football/teams/19075.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 879813,
+          "date": "2022-06-26T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Mers El Hadjadj",
+            "city": "Mers El Hadjadj"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1656270000
+        },
+        "league": {
+          "id": 919,
+          "name": "Mediterranean Games",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19070,
+            "name": "Greece U18",
+            "logo": "https://media.api-sports.io/football/teams/19070.png",
+            "winner": false
+          },
+          "away": {
+            "id": 19075,
+            "name": "Turkey U18",
+            "logo": "https://media.api-sports.io/football/teams/19075.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 19075,
@@ -359,5 +655,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:34.490Z"
+  "lastUpdated": "2025-03-27T10:41:24.278Z"
 }

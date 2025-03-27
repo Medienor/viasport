@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 19,
+        "name": "African Nations Championship",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/19.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2022,
+          "start": "2023-01-13",
+          "end": "2023-02-04",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -53,6 +53,43 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 29,
+        "name": "World Cup - Qualification Africa",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/29.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-11-13",
+          "end": "2025-10-13",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -93,6 +130,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 36,
+        "name": "Africa Cup of Nations - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/36.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2024-03-20",
+          "end": "2024-11-19",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -114,6 +188,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1125983,
+          "date": "2025-03-24T21:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade El Abdi",
+            "city": "El Jadida"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1742850000
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1506,
+            "name": "Ethiopia",
+            "logo": "https://media.api-sports.io/football/teams/1506.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1535,
+            "name": "Djibouti",
+            "logo": "https://media.api-sports.io/football/teams/1535.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 6,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 6,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1125956,
+          "date": "2025-03-21T21:00:00+00:00",
+          "venue": {
+            "id": 4710,
+            "name": "Stade Larbi Zaouli",
+            "city": "Casablanca"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742590800
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1506,
+            "name": "Ethiopia",
+            "logo": "https://media.api-sports.io/football/teams/1506.png",
+            "winner": false
+          },
+          "away": {
+            "id": 32,
+            "name": "Egypt",
+            "logo": "https://media.api-sports.io/football/teams/32.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1314886,
@@ -234,43 +426,43 @@
       },
       {
         "fixture": {
-          "id": 1184788,
-          "date": "2024-03-24T12:00:00+00:00",
+          "id": 1232540,
+          "date": "2024-11-19T16:00:00+00:00",
           "venue": {
-            "id": 608,
-            "name": "Addis Ababa Stadium",
-            "city": "Addis Abeba"
+            "id": 391,
+            "name": "Stade des Martyrs de la Pentecôte",
+            "city": "Kinshasa"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 8
           },
-          "timestamp": 1711281600
+          "timestamp": 1732032000
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
+            "id": 1508,
+            "name": "Congo DR",
+            "logo": "https://media.api-sports.io/football/teams/1508.png",
+            "winner": false
+          },
+          "away": {
             "id": 1506,
             "name": "Ethiopia",
             "logo": "https://media.api-sports.io/football/teams/1506.png",
             "winner": true
-          },
-          "away": {
-            "id": 1518,
-            "name": "Lesotho",
-            "logo": "https://media.api-sports.io/football/teams/1518.png",
-            "winner": false
           }
         },
         "goals": {
-          "home": 2,
-          "away": 1
+          "home": 1,
+          "away": 2
         },
         "score": {
           "halftime": {
@@ -278,7 +470,184 @@
             "away": 1
           },
           "fulltime": {
-            "home": 2,
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232516,
+          "date": "2024-11-16T16:00:00+00:00",
+          "venue": {
+            "id": 391,
+            "name": "Stade des Martyrs de la Pentecôte",
+            "city": "Kinshasa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1731772800
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1506,
+            "name": "Ethiopia",
+            "logo": "https://media.api-sports.io/football/teams/1506.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1489,
+            "name": "Tanzania",
+            "logo": "https://media.api-sports.io/football/teams/1489.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232492,
+          "date": "2024-10-15T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Olympique Alassane Ouattara",
+            "city": "Abidjan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1729018800
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1506,
+            "name": "Ethiopia",
+            "logo": "https://media.api-sports.io/football/teams/1506.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1509,
+            "name": "Guinea",
+            "logo": "https://media.api-sports.io/football/teams/1509.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232468,
+          "date": "2024-10-12T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Olympique Alassane Ouattara",
+            "city": "Abidjan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1728748800
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1509,
+            "name": "Guinea",
+            "logo": "https://media.api-sports.io/football/teams/1509.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1506,
+            "name": "Ethiopia",
+            "logo": "https://media.api-sports.io/football/teams/1506.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
             "away": 1
           },
           "extratime": {
@@ -293,12 +662,12 @@
       },
       {
         "fixture": {
-          "id": 1184787,
-          "date": "2024-03-21T12:00:00+00:00",
+          "id": 1232444,
+          "date": "2024-09-09T19:00:00+00:00",
           "venue": {
-            "id": 608,
-            "name": "Addis Ababa Stadium",
-            "city": "Addis Abeba"
+            "id": 1550,
+            "name": "Benjamin Mkapa National Stadium",
+            "city": "Dar-es-Salaam"
           },
           "status": {
             "long": "Match Finished",
@@ -306,12 +675,12 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1711022400
+          "timestamp": 1725908400
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
@@ -321,24 +690,83 @@
             "winner": false
           },
           "away": {
-            "id": 1518,
-            "name": "Lesotho",
-            "logo": "https://media.api-sports.io/football/teams/1518.png",
+            "id": 1508,
+            "name": "Congo DR",
+            "logo": "https://media.api-sports.io/football/teams/1508.png",
             "winner": true
           }
         },
         "goals": {
-          "home": 1,
+          "home": 0,
           "away": 2
         },
         "score": {
           "halftime": {
             "home": 0,
-            "away": 2
+            "away": 0
           },
           "fulltime": {
-            "home": 1,
+            "home": 0,
             "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232420,
+          "date": "2024-09-04T16:00:00+00:00",
+          "venue": {
+            "id": 1550,
+            "name": "Benjamin Mkapa National Stadium",
+            "city": "Dar-es-Salaam"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725465600
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1489,
+            "name": "Tanzania",
+            "logo": "https://media.api-sports.io/football/teams/1489.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1506,
+            "name": "Ethiopia",
+            "logo": "https://media.api-sports.io/football/teams/1506.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -354,29 +782,29 @@
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1506,
       "name": "Ethiopia",
       "logo": "https://media.api-sports.io/football/teams/1506.png"
     },
-    "form": "LW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -384,22 +812,22 @@
         "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 3,
+          "home": 0,
           "away": 0,
-          "total": 3
+          "total": 0
         },
         "average": {
-          "home": "1.5",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.5"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -415,12 +843,12 @@
             "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "66.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -437,37 +865,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 3,
+          "home": 0,
           "away": 0,
-          "total": 3
+          "total": 0
         },
         "average": {
-          "home": "1.5",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.5"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -479,8 +907,8 @@
             "percentage": null
           },
           "31-45": {
-            "total": 3,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -505,24 +933,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       }
@@ -531,23 +959,23 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
-        "home": "2-1",
+        "home": null,
         "away": null
       },
       "loses": {
-        "home": "1-2",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 2,
+          "home": 0,
           "away": 0
         }
       }
@@ -645,5 +1073,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:18.356Z"
+  "lastUpdated": "2025-03-27T10:40:04.697Z"
 }

@@ -22,22 +22,22 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
+        "id": 65,
+        "name": "Coupe de la Ligue",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
+        "logo": "https://media.api-sports.io/football/leagues/65.png"
       },
       "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
+        "name": "France",
+        "code": "FR",
+        "flag": "https://media.api-sports.io/flags/fr.svg"
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2019,
+          "start": "2019-07-26",
+          "end": "2020-07-31",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -272,19 +272,19 @@
       {
         "fixture": {
           "id": 1213999,
-          "date": "2025-04-13T00:00:00+00:00",
+          "date": "2025-04-12T17:00:00+00:00",
           "venue": {
             "id": 682,
             "name": "Stadium de Toulouse",
             "city": "Toulouse"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744502400
+          "timestamp": 1744477200
         },
         "league": {
           "id": 61,
@@ -355,242 +355,6 @@
             "id": 93,
             "name": "Reims",
             "logo": "https://media.api-sports.io/football/teams/93.png",
-            "winner": null
-          },
-          "away": {
-            "id": 96,
-            "name": "Toulouse",
-            "logo": "https://media.api-sports.io/football/teams/96.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1214019,
-          "date": "2025-04-27T00:00:00+00:00",
-          "venue": {
-            "id": 662,
-            "name": "Stade de la Beaujoire - Louis Fonteneau",
-            "city": "Nantes"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745712000
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 83,
-            "name": "Nantes",
-            "logo": "https://media.api-sports.io/football/teams/83.png",
-            "winner": null
-          },
-          "away": {
-            "id": 96,
-            "name": "Toulouse",
-            "logo": "https://media.api-sports.io/football/teams/96.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1214032,
-          "date": "2025-05-04T00:00:00+00:00",
-          "venue": {
-            "id": 682,
-            "name": "Stadium de Toulouse",
-            "city": "Toulouse"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746316800
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 96,
-            "name": "Toulouse",
-            "logo": "https://media.api-sports.io/football/teams/96.png",
-            "winner": null
-          },
-          "away": {
-            "id": 94,
-            "name": "Rennes",
-            "logo": "https://media.api-sports.io/football/teams/94.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1214041,
-          "date": "2025-05-11T00:00:00+00:00",
-          "venue": {
-            "id": 682,
-            "name": "Stadium de Toulouse",
-            "city": "Toulouse"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746921600
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 96,
-            "name": "Toulouse",
-            "logo": "https://media.api-sports.io/football/teams/96.png",
-            "winner": null
-          },
-          "away": {
-            "id": 116,
-            "name": "Lens",
-            "logo": "https://media.api-sports.io/football/teams/116.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1214047,
-          "date": "2025-05-18T00:00:00+00:00",
-          "venue": {
-            "id": 676,
-            "name": "Stade Geoffroy-Guichard",
-            "city": "Saint-Ètienne"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1747526400
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1063,
-            "name": "Saint Etienne",
-            "logo": "https://media.api-sports.io/football/teams/1063.png",
             "winner": null
           },
           "away": {
@@ -1219,52 +983,52 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 96,
       "name": "Toulouse",
       "logo": "https://media.api-sports.io/football/teams/96.png"
     },
-    "form": "WDWDL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 3,
-        "away": 2,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 4,
-          "away": 4,
-          "total": 8
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.3",
-          "away": "2.0",
-          "total": "1.6"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1272,20 +1036,20 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "28.57%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 3,
-            "percentage": "42.86%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -1302,66 +1066,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 5,
+          "home": 0,
           "away": 0,
-          "total": 5
+          "total": 0
         },
         "average": {
-          "home": "1.7",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -1370,62 +1134,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
-        "draws": 1,
+        "wins": 0,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "2-1",
-        "away": "0-4"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "0-2",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 4
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 2,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
       "home": 0,
-      "away": 2,
-      "total": 2
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1438,25 +1202,20 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "3-4-3",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
           "total": null,
@@ -1467,8 +1226,8 @@
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1515,5 +1274,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:38:00.154Z"
+  "lastUpdated": "2025-03-27T10:36:39.541Z"
 }

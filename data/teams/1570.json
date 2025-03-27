@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 860,
+        "name": "Arab Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/860.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,53 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2021,
+          "start": "2021-06-19",
+          "end": "2021-12-18",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 28,
+        "name": "SAFF Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/28.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-06-21",
+          "end": "2023-07-04",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -93,6 +130,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 30,
+        "name": "World Cup - Qualification Asia",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/30.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2023-10-12",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -112,6 +186,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1218547,
+          "date": "2025-03-25T18:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jaber al-Ahmad International Stadium",
+            "city": "Kuwait City"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1742926500
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1570,
+            "name": "Kuwait",
+            "logo": "https://media.api-sports.io/football/teams/1570.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1552,
+            "name": "Oman",
+            "logo": "https://media.api-sports.io/football/teams/1552.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1218538,
+          "date": "2025-03-20T18:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Basra International Stadium",
+            "city": "Basra"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742494500
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1567,
+            "name": "Iraq",
+            "logo": "https://media.api-sports.io/football/teams/1567.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1570,
+            "name": "Kuwait",
+            "logo": "https://media.api-sports.io/football/teams/1570.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1330972,
@@ -527,111 +719,52 @@
       },
       {
         "fixture": {
-          "id": 1155299,
-          "date": "2024-01-19T16:00:00+00:00",
+          "id": 1218530,
+          "date": "2024-11-19T18:15:00+00:00",
           "venue": {
-            "id": null,
-            "name": "Cairo International Stadium",
-            "city": "Cairo"
+            "id": 21426,
+            "name": "Jaber Al-Ahmad International Stadium",
+            "city": "Ardhiyah"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 13
           },
-          "timestamp": 1705680000
+          "timestamp": 1732040100
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
         },
         "teams": {
           "home": {
             "id": 1570,
             "name": "Kuwait",
             "logo": "https://media.api-sports.io/football/teams/1570.png",
-            "winner": false
+            "winner": null
           },
           "away": {
-            "id": 1519,
-            "name": "Uganda",
-            "logo": "https://media.api-sports.io/football/teams/1519.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1155298,
-          "date": "2024-01-12T15:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Cairo International Stadium",
-            "city": "Cairo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1705071600
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1570,
-            "name": "Kuwait",
-            "logo": "https://media.api-sports.io/football/teams/1570.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1526,
-            "name": "Libya",
-            "logo": "https://media.api-sports.io/football/teams/1526.png",
-            "winner": true
+            "id": 1548,
+            "name": "Jordan",
+            "logo": "https://media.api-sports.io/football/teams/1548.png",
+            "winner": null
           }
         },
         "goals": {
           "home": 1,
-          "away": 3
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 1
           },
           "fulltime": {
             "home": 1,
-            "away": 3
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -647,24 +780,24 @@
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1570,
       "name": "Kuwait",
       "logo": "https://media.api-sports.io/football/teams/1570.png"
     },
-    "form": "LLDLL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 5,
+        "home": 0,
         "away": 0,
-        "total": 5
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -672,32 +805,32 @@
         "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
-        "home": 4,
+        "home": 0,
         "away": 0,
-        "total": 4
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 3,
+          "home": 0,
           "away": 0,
-          "total": 3
+          "total": 0
         },
         "average": {
-          "home": "0.6",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.6"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -730,37 +863,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 10,
+          "home": 0,
           "away": 0,
-          "total": 10
+          "total": 0
         },
         "average": {
-          "home": "2.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "2.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -784,8 +917,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -798,24 +931,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 4,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       }
@@ -823,24 +956,24 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
-        "loses": 2
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
         "home": null,
         "away": null
       },
       "loses": {
-        "home": "1-3",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 3,
+          "home": 0,
           "away": 0
         }
       }
@@ -851,9 +984,9 @@
       "total": 0
     },
     "failed_to_score": {
-      "home": 2,
+      "home": 0,
       "away": 0,
-      "total": 2
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -938,5 +1071,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:47.804Z"
+  "lastUpdated": "2025-03-27T10:40:34.898Z"
 }

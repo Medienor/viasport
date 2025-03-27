@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 98,
-        "name": "J1 League",
+        "id": 99,
+        "name": "J2 League",
         "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/98.png"
+        "logo": "https://media.api-sports.io/football/leagues/99.png"
       },
       "country": {
         "name": "Japan",
@@ -34,16 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-02-23",
-          "end": "2024-12-08",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-15",
+          "end": "2025-11-29",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": true,
             "players": true,
@@ -52,44 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -108,10 +71,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-03-06",
-          "end": "2024-11-02",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-20",
+          "end": "2025-04-16",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -126,35 +89,35 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
     },
     {
       "league": {
-        "id": 102,
-        "name": "Emperor Cup",
+        "id": 667,
+        "name": "Friendlies Clubs",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/102.png"
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
       },
       "country": {
-        "name": "Japan",
-        "code": "JP",
-        "flag": "https://media.api-sports.io/flags/jp.svg"
+        "name": "World",
+        "code": null,
+        "flag": null
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-05-25",
-          "end": "2024-11-23",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": false,
             "players": true,
@@ -163,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -186,8 +149,1602 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1324581,
+          "date": "2025-03-30T04:00:00+00:00",
+          "venue": {
+            "id": 1934,
+            "name": "Egao Kenko Stadium",
+            "city": "Kumamoto"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743307200
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 314,
+            "name": "Roasso Kumamoto",
+            "logo": "https://media.api-sports.io/football/teams/314.png",
+            "winner": null
+          },
+          "away": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324590,
+          "date": "2025-04-05T05:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743829200
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4317,
+            "name": "Fujieda MYFC",
+            "logo": "https://media.api-sports.io/football/teams/4317.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324600,
+          "date": "2025-04-13T05:00:00+00:00",
+          "venue": {
+            "id": 981,
+            "name": "PEACE STADIUM Connected by SoftBank",
+            "city": "Nagasaki"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744520400
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 285,
+            "name": "V-varen Nagasaki",
+            "logo": "https://media.api-sports.io/football/teams/285.png",
+            "winner": null
+          },
+          "away": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324610,
+          "date": "2025-04-19T05:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745038800
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          },
+          "away": {
+            "id": 309,
+            "name": "Renofa Yamaguchi",
+            "logo": "https://media.api-sports.io/football/teams/309.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324620,
+          "date": "2025-04-25T10:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745575200
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          },
+          "away": {
+            "id": 312,
+            "name": "Montedio Yamagata",
+            "logo": "https://media.api-sports.io/football/teams/312.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324631,
+          "date": "2025-04-29T05:00:00+00:00",
+          "venue": {
+            "id": 20498,
+            "name": "Resonac Dome Oita",
+            "city": "Oita"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745902800
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 298,
+            "name": "Oita Trinita",
+            "logo": "https://media.api-sports.io/football/teams/298.png",
+            "winner": null
+          },
+          "away": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324639,
+          "date": "2025-05-03T05:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746248400
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          },
+          "away": {
+            "id": 301,
+            "name": "JEF United Chiba",
+            "logo": "https://media.api-sports.io/football/teams/301.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324649,
+          "date": "2025-05-06T06:50:00+00:00",
+          "venue": {
+            "id": 979,
+            "name": "Pocari Sweat Stadium",
+            "city": "Naruto"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746514200
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 299,
+            "name": "Tokushima Vortis",
+            "logo": "https://media.api-sports.io/football/teams/299.png",
+            "winner": null
+          },
+          "away": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324659,
+          "date": "2025-05-11T05:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746939600
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          },
+          "away": {
+            "id": 308,
+            "name": "Ventforet Kofu",
+            "logo": "https://media.api-sports.io/football/teams/308.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324663,
+          "date": "2025-05-17T05:00:00+00:00",
+          "venue": {
+            "id": 11576,
+            "name": "Soyu Stadium",
+            "city": "Akita"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747458000
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4315,
+            "name": "Blaublitz Akita",
+            "logo": "https://media.api-sports.io/football/teams/4315.png",
+            "winner": null
+          },
+          "away": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324676,
+          "date": "2025-05-25T05:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748149200
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324690,
+          "date": "2025-05-31T05:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748667600
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          },
+          "away": {
+            "id": 318,
+            "name": "Ehime FC",
+            "logo": "https://media.api-sports.io/football/teams/318.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324694,
+          "date": "2025-06-14T09:00:00+00:00",
+          "venue": {
+            "id": 970,
+            "name": "K’s Denki Stadium",
+            "city": "Mito"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749891600
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 305,
+            "name": "Mito Hollyhock",
+            "logo": "https://media.api-sports.io/football/teams/305.png",
+            "winner": null
+          },
+          "away": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324705,
+          "date": "2025-06-21T10:00:00+00:00",
+          "venue": {
+            "id": 19674,
+            "name": "NACK5 Stadium",
+            "city": "Saitama"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750500000
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 313,
+            "name": "Omiya Ardija",
+            "logo": "https://media.api-sports.io/football/teams/313.png",
+            "winner": null
+          },
+          "away": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324720,
+          "date": "2025-06-28T10:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751104800
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7127,
+            "name": "Iwaki",
+            "logo": "https://media.api-sports.io/football/teams/7127.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324726,
+          "date": "2025-07-05T10:00:00+00:00",
+          "venue": {
+            "id": 962,
+            "name": "Fukuda Denshi Arena",
+            "city": "Chiba"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751709600
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 301,
+            "name": "JEF United Chiba",
+            "logo": "https://media.api-sports.io/football/teams/301.png",
+            "winner": null
+          },
+          "away": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324741,
+          "date": "2025-07-12T10:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752314400
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          },
+          "away": {
+            "id": 298,
+            "name": "Oita Trinita",
+            "logo": "https://media.api-sports.io/football/teams/298.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324742,
+          "date": "2025-08-02T05:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Daiwa House Premist Dome",
+            "city": "Sapporo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754110800
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          },
+          "away": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324758,
+          "date": "2025-08-10T10:00:00+00:00",
+          "venue": {
+            "id": 956,
+            "name": "Ningineer Stadium",
+            "city": "Matsuyama"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754820000
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 318,
+            "name": "Ehime FC",
+            "logo": "https://media.api-sports.io/football/teams/318.png",
+            "winner": null
+          },
+          "away": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324770,
+          "date": "2025-08-17T10:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755424800
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          },
+          "away": {
+            "id": 285,
+            "name": "V-varen Nagasaki",
+            "logo": "https://media.api-sports.io/football/teams/285.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1324569,
+          "date": "2025-03-23T05:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1742706000
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4322,
+            "name": "Kataller Toyama",
+            "logo": "https://media.api-sports.io/football/teams/4322.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324559,
+          "date": "2025-03-15T05:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742014800
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": true
+          },
+          "away": {
+            "id": 313,
+            "name": "Omiya Ardija",
+            "logo": "https://media.api-sports.io/football/teams/313.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324545,
+          "date": "2025-03-09T05:00:00+00:00",
+          "venue": {
+            "id": 20560,
+            "name": "Hawaiians Stadium Iwaki",
+            "city": "Iwaki"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1741496400
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7127,
+            "name": "Iwaki",
+            "logo": "https://media.api-sports.io/football/teams/7127.png",
+            "winner": null
+          },
+          "away": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324539,
+          "date": "2025-03-01T05:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1740805200
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10075,
+            "name": "Imabari",
+            "logo": "https://media.api-sports.io/football/teams/10075.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324525,
+          "date": "2025-02-22T05:00:00+00:00",
+          "venue": {
+            "id": 963,
+            "name": "Yamaha Stadium",
+            "city": "Iwata"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1740200400
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 280,
+            "name": "Jubilo Iwata",
+            "logo": "https://media.api-sports.io/football/teams/280.png",
+            "winner": true
+          },
+          "away": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324519,
+          "date": "2025-02-15T05:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1739595600
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": false
+          },
+          "away": {
+            "id": 286,
+            "name": "Vegalta Sendai",
+            "logo": "https://media.api-sports.io/football/teams/286.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1344659,
+          "date": "2025-01-22T02:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1737511200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          },
+          "away": {
+            "id": 315,
+            "name": "Tochigi SC",
+            "logo": "https://media.api-sports.io/football/teams/315.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1166512,
@@ -364,499 +1921,86 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1166482,
-          "date": "2024-11-03T05:00:00+00:00",
-          "venue": {
-            "id": 974,
-            "name": "Ekimae Real Estate Stadium",
-            "city": "Tosu"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730610000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 295,
-            "name": "Sagan Tosu",
-            "logo": "https://media.api-sports.io/football/teams/295.png",
-            "winner": true
-          },
-          "away": {
-            "id": 303,
-            "name": "Machida Zelvia",
-            "logo": "https://media.api-sports.io/football/teams/303.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166470,
-          "date": "2024-10-19T05:00:00+00:00",
-          "venue": {
-            "id": 967,
-            "name": "Sanga Stadium by Kyocera",
-            "city": "Kameoka"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 12
-          },
-          "timestamp": 1729314000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 302,
-            "name": "Kyoto Sanga",
-            "logo": "https://media.api-sports.io/football/teams/302.png",
-            "winner": true
-          },
-          "away": {
-            "id": 295,
-            "name": "Sagan Tosu",
-            "logo": "https://media.api-sports.io/football/teams/295.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166456,
-          "date": "2024-10-05T06:00:00+00:00",
-          "venue": {
-            "id": 960,
-            "name": "Ajinomoto Stadium",
-            "city": "Chōfu"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1728108000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 292,
-            "name": "FC Tokyo",
-            "logo": "https://media.api-sports.io/football/teams/292.png",
-            "winner": null
-          },
-          "away": {
-            "id": 295,
-            "name": "Sagan Tosu",
-            "logo": "https://media.api-sports.io/football/teams/295.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166452,
-          "date": "2024-09-28T10:00:00+00:00",
-          "venue": {
-            "id": 974,
-            "name": "Ekimae Real Estate Stadium",
-            "city": "Tosu"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1727517600
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 295,
-            "name": "Sagan Tosu",
-            "logo": "https://media.api-sports.io/football/teams/295.png",
-            "winner": null
-          },
-          "away": {
-            "id": 316,
-            "name": "Avispa Fukuoka",
-            "logo": "https://media.api-sports.io/football/teams/316.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166435,
-          "date": "2024-09-22T09:00:00+00:00",
-          "venue": {
-            "id": 960,
-            "name": "Ajinomoto Stadium",
-            "city": "Chōfu"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1726995600
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 306,
-            "name": "Tokyo Verdy",
-            "logo": "https://media.api-sports.io/football/teams/306.png",
-            "winner": true
-          },
-          "away": {
-            "id": 295,
-            "name": "Sagan Tosu",
-            "logo": "https://media.api-sports.io/football/teams/295.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166427,
-          "date": "2024-09-13T10:00:00+00:00",
-          "venue": {
-            "id": 20516,
-            "name": "Uvance Todoroki Stadium by Fujitsu",
-            "city": "Kawasaki"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726221600
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 294,
-            "name": "Kawasaki Frontale",
-            "logo": "https://media.api-sports.io/football/teams/294.png",
-            "winner": true
-          },
-          "away": {
-            "id": 295,
-            "name": "Sagan Tosu",
-            "logo": "https://media.api-sports.io/football/teams/295.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166420,
-          "date": "2024-08-31T10:00:00+00:00",
-          "venue": {
-            "id": 974,
-            "name": "Ekimae Real Estate Stadium",
-            "city": "Tosu"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1725098400
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 295,
-            "name": "Sagan Tosu",
-            "logo": "https://media.api-sports.io/football/teams/295.png",
-            "winner": false
-          },
-          "away": {
-            "id": 284,
-            "name": "Shonan Bellmare",
-            "logo": "https://media.api-sports.io/football/teams/284.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 98,
-      "name": "J1 League",
+      "id": 99,
+      "name": "J2 League",
       "country": "Japan",
-      "logo": "https://media.api-sports.io/football/leagues/98.png",
+      "logo": "https://media.api-sports.io/football/leagues/99.png",
       "flag": "https://media.api-sports.io/flags/jp.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 295,
       "name": "Sagan Tosu",
       "logo": "https://media.api-sports.io/football/teams/295.png"
     },
-    "form": "LWLLLDLLWDLLWWLLLWLLWWLLLDLLLLLDDLWLWW",
+    "form": "LLLDWW",
     "fixtures": {
       "played": {
-        "home": 19,
-        "away": 19,
-        "total": 38
+        "home": 4,
+        "away": 2,
+        "total": 6
       },
       "wins": {
-        "home": 6,
-        "away": 4,
-        "total": 10
+        "home": 2,
+        "away": 0,
+        "total": 2
       },
       "draws": {
-        "home": 3,
-        "away": 2,
-        "total": 5
+        "home": 0,
+        "away": 1,
+        "total": 1
       },
       "loses": {
-        "home": 10,
-        "away": 13,
-        "total": 23
+        "home": 2,
+        "away": 1,
+        "total": 3
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 27,
-          "away": 21,
-          "total": 48
+          "home": 3,
+          "away": 1,
+          "total": 4
         },
         "average": {
-          "home": "1.4",
-          "away": "1.1",
-          "total": "1.3"
+          "home": "0.8",
+          "away": "0.5",
+          "total": "0.7"
         },
         "minute": {
           "0-15": {
-            "total": 8,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 6,
-            "percentage": "12.50%"
+            "total": 1,
+            "percentage": "33.33%"
           },
           "31-45": {
-            "total": 6,
-            "percentage": "12.50%"
+            "total": 1,
+            "percentage": "33.33%"
           },
           "46-60": {
-            "total": 13,
-            "percentage": "27.08%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 5,
-            "percentage": "10.42%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 8,
-            "percentage": "16.67%"
+            "total": 1,
+            "percentage": "33.33%"
           },
           "91-105": {
-            "total": 2,
-            "percentage": "4.17%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -865,66 +2009,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 23,
-            "under": 15
+            "over": 4,
+            "under": 2
           },
           "1.5": {
-            "over": 11,
-            "under": 27
+            "over": 0,
+            "under": 6
           },
           "2.5": {
-            "over": 9,
-            "under": 29
+            "over": 0,
+            "under": 6
           },
           "3.5": {
-            "over": 4,
-            "under": 34
+            "over": 0,
+            "under": 6
           },
           "4.5": {
-            "over": 1,
-            "under": 37
+            "over": 0,
+            "under": 6
           }
         }
       },
       "against": {
         "total": {
-          "home": 29,
-          "away": 39,
-          "total": 68
+          "home": 5,
+          "away": 2,
+          "total": 7
         },
         "average": {
-          "home": "1.5",
-          "away": "2.1",
-          "total": "1.8"
+          "home": "1.3",
+          "away": "1.0",
+          "total": "1.2"
         },
         "minute": {
           "0-15": {
-            "total": 9,
-            "percentage": "13.24%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 9,
-            "percentage": "13.24%"
+            "total": 1,
+            "percentage": "12.50%"
           },
           "31-45": {
-            "total": 5,
-            "percentage": "7.35%"
+            "total": 2,
+            "percentage": "25.00%"
           },
           "46-60": {
-            "total": 15,
-            "percentage": "22.06%"
+            "total": 2,
+            "percentage": "25.00%"
           },
           "61-75": {
-            "total": 11,
-            "percentage": "16.18%"
+            "total": 1,
+            "percentage": "12.50%"
           },
           "76-90": {
-            "total": 14,
-            "percentage": "20.59%"
+            "total": 2,
+            "percentage": "25.00%"
           },
           "91-105": {
-            "total": 5,
-            "percentage": "7.35%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -933,121 +2077,104 @@
         },
         "under_over": {
           "0.5": {
-            "over": 30,
-            "under": 8
+            "over": 4,
+            "under": 2
           },
           "1.5": {
-            "over": 24,
-            "under": 14
+            "over": 1,
+            "under": 5
           },
           "2.5": {
-            "over": 9,
-            "under": 29
+            "over": 1,
+            "under": 5
           },
           "3.5": {
-            "over": 4,
-            "under": 34
+            "over": 1,
+            "under": 5
           },
           "4.5": {
-            "over": 1,
-            "under": 37
+            "over": 0,
+            "under": 6
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 2,
-        "loses": 5
+        "wins": 0,
+        "draws": 1,
+        "loses": 3
       },
       "wins": {
-        "home": "4-0",
-        "away": "0-3"
+        "home": "1-0",
+        "away": null
       },
       "loses": {
         "home": "1-4",
-        "away": "4-0"
+        "away": "1-0"
       },
       "goals": {
         "for": {
-          "home": 5,
-          "away": 4
+          "home": 1,
+          "away": 1
         },
         "against": {
           "home": 4,
-          "away": 5
+          "away": 1
         }
       }
     },
     "clean_sheet": {
-      "home": 5,
-      "away": 3,
-      "total": 8
+      "home": 2,
+      "away": 0,
+      "total": 2
     },
     "failed_to_score": {
-      "home": 7,
-      "away": 8,
-      "total": 15
+      "home": 1,
+      "away": 1,
+      "total": 2
     },
     "penalty": {
       "scored": {
-        "total": 3,
+        "total": 1,
         "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 3
+      "total": 1
     },
-    "lineups": [
-      {
-        "formation": "4-2-3-1",
-        "played": 18
-      },
-      {
-        "formation": "4-4-2",
-        "played": 13
-      },
-      {
-        "formation": "3-1-4-2",
-        "played": 6
-      },
-      {
-        "formation": "3-4-2-1",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 4,
-          "percentage": "8.33%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
-          "total": 7,
-          "percentage": "14.58%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 10,
-          "percentage": "20.83%"
+          "total": 2,
+          "percentage": "28.57%"
         },
         "46-60": {
-          "total": 8,
-          "percentage": "16.67%"
+          "total": 3,
+          "percentage": "42.86%"
         },
         "61-75": {
-          "total": 8,
-          "percentage": "16.67%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 9,
-          "percentage": "18.75%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": 2,
-          "percentage": "4.17%"
+          "percentage": "28.57%"
         },
         "106-120": {
           "total": null,
@@ -1064,12 +2191,12 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
@@ -1080,8 +2207,8 @@
           "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1090,5 +2217,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:50.776Z"
+  "lastUpdated": "2025-03-27T10:42:42.324Z"
 }

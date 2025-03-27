@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 804,
+        "name": "Caribbean Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/804.png"
       },
       "country": {
         "name": "World",
@@ -34,10 +34,84 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2016,
+          "start": "2016-03-22",
+          "end": "2017-06-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 808,
+        "name": "CONCACAF Nations League - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/808.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2018,
+          "start": "2018-09-06",
+          "end": "2019-03-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 22,
+        "name": "CONCACAF Gold Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/22.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-06-25",
+          "end": "2023-07-16",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -45,7 +119,7 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
@@ -93,6 +167,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 31,
+        "name": "World Cup - Qualification CONCACAF",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/31.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2024-03-22",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -115,6 +263,65 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1357846,
+          "date": "2025-03-22T17:45:00+00:00",
+          "venue": {
+            "id": 4130,
+            "name": "Mehdi Hüseynzadə adına Sumqayıt şəhər stadionu",
+            "city": "Sumqayıt"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1742665500
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1096,
+            "name": "Azerbaijan",
+            "logo": "https://media.api-sports.io/football/teams/1096.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2386,
+            "name": "Haiti",
+            "logo": "https://media.api-sports.io/football/teams/2386.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1201323,
@@ -180,8 +387,8 @@
           "date": "2024-11-15T21:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estadio Centroamericano de Mayaguez",
-            "city": "Mayaguez"
+            "name": "Estadio Centroamericano de Mayagüez",
+            "city": "Mayagüez"
           },
           "status": {
             "long": "Match Finished",
@@ -471,6 +678,124 @@
       },
       {
         "fixture": {
+          "id": 1169527,
+          "date": "2024-06-09T21:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Wildey Turf",
+            "city": "Bridgetown"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717966800
+        },
+        "league": {
+          "id": 31,
+          "name": "World Cup - Qualification CONCACAF",
+          "logo": "https://media.api-sports.io/football/leagues/31.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5527,
+            "name": "Barbados",
+            "logo": "https://media.api-sports.io/football/teams/5527.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2386,
+            "name": "Haiti",
+            "logo": "https://media.api-sports.io/football/teams/2386.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1169517,
+          "date": "2024-06-06T21:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Wildey Turf",
+            "city": "Bridgetown"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717707600
+        },
+        "league": {
+          "id": 31,
+          "name": "World Cup - Qualification CONCACAF",
+          "logo": "https://media.api-sports.io/football/leagues/31.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2386,
+            "name": "Haiti",
+            "logo": "https://media.api-sports.io/football/teams/2386.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5540,
+            "name": "St. Lucia",
+            "logo": "https://media.api-sports.io/football/teams/5540.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1189572,
           "date": "2024-03-23T20:00:00+00:00",
           "venue": {
@@ -532,24 +857,24 @@
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 2386,
       "name": "Haiti",
       "logo": "https://media.api-sports.io/football/teams/2386.png"
     },
-    "form": "D",
+    "form": null,
     "fixtures": {
       "played": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -558,8 +883,8 @@
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -571,13 +896,13 @@
       "for": {
         "total": {
           "home": 0,
-          "away": 1,
-          "total": 1
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "1.0"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -615,37 +940,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 1,
-          "total": 1
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "1.0"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -683,24 +1008,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       }
@@ -708,7 +1033,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
@@ -722,11 +1047,11 @@
       "goals": {
         "for": {
           "home": 0,
-          "away": 1
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 1
+          "away": 0
         }
       }
     },
@@ -823,5 +1148,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:52.651Z"
+  "lastUpdated": "2025-03-27T10:40:39.975Z"
 }

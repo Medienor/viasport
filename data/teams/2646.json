@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 848,
         "name": "UEFA Europa Conference League",
         "type": "Cup",
@@ -200,7 +163,44 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -277,55 +277,57 @@
             "away": null
           }
         }
-      },
+      }
+    ],
+    "past": [
       {
         "fixture": {
-          "id": 1214789,
-          "date": "2025-04-05T00:00:00+00:00",
+          "id": 1365980,
+          "date": "2025-03-23T12:00:00+00:00",
           "venue": {
-            "id": 18679,
-            "name": "TSC Arena",
-            "city": "Bačka Topola"
+            "id": null,
+            "name": "Mezőkövesd Zsóry Edzőpálya",
+            "city": "Mezőkövesd"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1743811200
+          "timestamp": 1742731200
         },
         "league": {
-          "id": 286,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/286.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
+            "id": 2393,
+            "name": "Diosgyori VTK",
+            "logo": "https://media.api-sports.io/football/teams/2393.png",
+            "winner": true
+          },
+          "away": {
             "id": 2646,
             "name": "TSC Backa Topola",
             "logo": "https://media.api-sports.io/football/teams/2646.png",
-            "winner": null
-          },
-          "away": {
-            "id": 12360,
-            "name": "Železničar Pančevo",
-            "logo": "https://media.api-sports.io/football/teams/12360.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 1
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 4,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -336,9 +338,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1214772,
@@ -699,8 +699,8 @@
           "date": "2025-02-20T20:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Bialystok City Stadium",
-            "city": "Bialystok"
+            "name": "Chorten Arena",
+            "city": "Białystok"
           },
           "status": {
             "long": "Match Finished",
@@ -869,98 +869,39 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1214725,
-          "date": "2025-02-08T13:00:00+00:00",
-          "venue": {
-            "id": 10502,
-            "name": "Mladost Stadium Lučani",
-            "city": "Lučani"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739019600
-        },
-        "league": {
-          "id": 286,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/286.png"
-        },
-        "teams": {
-          "home": {
-            "id": 699,
-            "name": "Mladost Lucani",
-            "logo": "https://media.api-sports.io/football/teams/699.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2646,
-            "name": "TSC Backa Topola",
-            "logo": "https://media.api-sports.io/football/teams/2646.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 2646,
       "name": "TSC Backa Topola",
       "logo": "https://media.api-sports.io/football/teams/2646.png"
     },
-    "form": "WDWWWDWDWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 5,
-        "away": 5,
-        "total": 10
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 4,
-        "away": 3,
-        "total": 7
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -971,39 +912,39 @@
     "goals": {
       "for": {
         "total": {
-          "home": 10,
-          "away": 10,
-          "total": 20
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.0",
-          "away": "2.0",
-          "total": "2.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 3,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "8.33%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "8.33%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 5,
-            "percentage": "41.67%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1016,58 +957,58 @@
         },
         "under_over": {
           "0.5": {
-            "over": 10,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 6,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 10
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
-          "away": 3,
-          "total": 7
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.8",
-          "away": "0.6",
-          "total": "0.7"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -1084,37 +1025,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 6,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 9
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 10
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 10
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 10
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
-        "draws": 1,
+        "wins": 0,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "4-1",
-        "away": "0-4"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
@@ -1122,19 +1063,19 @@
       },
       "goals": {
         "for": {
-          "home": 4,
-          "away": 4
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 2
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 3,
-      "total": 4
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -1152,16 +1093,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-3-3",
-        "played": 1
-      },
-      {
-        "formation": "4-1-4-1",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1173,20 +1105,20 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1233,5 +1165,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:45.302Z"
+  "lastUpdated": "2025-03-27T10:38:28.038Z"
 }

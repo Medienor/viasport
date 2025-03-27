@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 807,
+        "name": "AFC Challenge Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/807.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2014,
+          "start": "2013-03-02",
+          "end": "2014-05-30",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -89,7 +89,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -130,6 +130,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 30,
+        "name": "World Cup - Qualification Asia",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/30.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2023-10-12",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -146,21 +220,22 @@
     2026
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1321311,
           "date": "2025-03-25T12:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Sân vận động Gò Đậu",
+            "name": "Sân v?n d?ng Gò Ð?u",
             "city": "Thu Dau Mot"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
           },
           "timestamp": 1742905800
         },
@@ -174,27 +249,27 @@
             "id": 1542,
             "name": "Vietnam",
             "logo": "https://media.api-sports.io/football/teams/1542.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 1558,
             "name": "Laos",
             "logo": "https://media.api-sports.io/football/teams/1558.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 5,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 2,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 5,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -208,52 +283,52 @@
       },
       {
         "fixture": {
-          "id": 1321321,
-          "date": "2025-06-10T00:00:00+00:00",
+          "id": 1361377,
+          "date": "2025-03-20T12:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 21438,
+            "name": "Lao National Stadium KM16",
+            "city": "Vientiane"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
           },
-          "timestamp": 1749513600
+          "timestamp": 1742472000
         },
         "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
         },
         "teams": {
           "home": {
             "id": 1558,
             "name": "Laos",
             "logo": "https://media.api-sports.io/football/teams/1558.png",
-            "winner": null
+            "winner": false
           },
           "away": {
-            "id": 1545,
-            "name": "Nepal",
-            "logo": "https://media.api-sports.io/football/teams/1545.png",
-            "winner": null
+            "id": 5166,
+            "name": "Sri Lanka",
+            "logo": "https://media.api-sports.io/football/teams/5166.png",
+            "winner": true
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 1
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -265,244 +340,6 @@
           }
         }
       },
-      {
-        "fixture": {
-          "id": 1321331,
-          "date": "2025-10-09T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1759968000
-        },
-        "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1558,
-            "name": "Laos",
-            "logo": "https://media.api-sports.io/football/teams/1558.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1538,
-            "name": "Malaysia",
-            "logo": "https://media.api-sports.io/football/teams/1538.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1321341,
-          "date": "2025-10-14T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1760400000
-        },
-        "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1538,
-            "name": "Malaysia",
-            "logo": "https://media.api-sports.io/football/teams/1538.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1558,
-            "name": "Laos",
-            "logo": "https://media.api-sports.io/football/teams/1558.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1321351,
-          "date": "2025-11-18T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1763424000
-        },
-        "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1558,
-            "name": "Laos",
-            "logo": "https://media.api-sports.io/football/teams/1558.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1542,
-            "name": "Vietnam",
-            "logo": "https://media.api-sports.io/football/teams/1542.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1321362,
-          "date": "2026-03-31T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1774915200
-        },
-        "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1545,
-            "name": "Nepal",
-            "logo": "https://media.api-sports.io/football/teams/1545.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1558,
-            "name": "Laos",
-            "logo": "https://media.api-sports.io/football/teams/1558.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      }
-    ],
-    "past": [
       {
         "fixture": {
           "id": 1201031,
@@ -856,29 +693,147 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1100390,
+          "date": "2023-10-17T12:00:00+00:00",
+          "venue": {
+            "id": 19511,
+            "name": "National Stadium KM16",
+            "city": "Vientiane"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697544000
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1558,
+            "name": "Laos",
+            "logo": "https://media.api-sports.io/football/teams/1558.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1545,
+            "name": "Nepal",
+            "logo": "https://media.api-sports.io/football/teams/1545.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100389,
+          "date": "2023-10-12T11:45:00+00:00",
+          "venue": {
+            "id": 3896,
+            "name": "Dashrath Rangasala",
+            "city": "Kathmandu"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697111100
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1545,
+            "name": "Nepal",
+            "logo": "https://media.api-sports.io/football/teams/1545.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1558,
+            "name": "Laos",
+            "logo": "https://media.api-sports.io/football/teams/1558.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1558,
       "name": "Laos",
       "logo": "https://media.api-sports.io/football/teams/1558.png"
     },
-    "form": "LD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -887,26 +842,26 @@
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 1,
-          "away": 1,
-          "total": 2
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "1.0",
-          "total": "1.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -918,16 +873,16 @@
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -944,42 +899,42 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 3,
-          "away": 1,
-          "total": 4
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "3.0",
-          "away": "1.0",
-          "total": "2.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -990,16 +945,16 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1012,24 +967,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       }
@@ -1038,24 +993,24 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
         "home": null,
         "away": null
       },
       "loses": {
-        "home": "1-3",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 1,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
-          "away": 1
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -1104,12 +1059,12 @@
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 3,
-          "percentage": "75.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1152,5 +1107,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:43.045Z"
+  "lastUpdated": "2025-03-27T10:40:29.908Z"
 }

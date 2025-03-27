@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2023-10-11",
-          "end": "2024-03-26",
-          "current": false,
+          "year": 2025,
+          "start": "2024-10-09",
+          "end": "2025-03-25",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -52,44 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -107,6 +70,183 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1300012,
+          "date": "2024-11-19T11:00:00+00:00",
+          "venue": {
+            "id": 2615,
+            "name": "Stadionul Zimbru",
+            "city": "Chişinău"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1732014000
+        },
+        "league": {
+          "id": 893,
+          "name": "UEFA U19 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10373,
+            "name": "Moldova U19",
+            "logo": "https://media.api-sports.io/football/teams/10373.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10357,
+            "name": "Azerbaijan U19",
+            "logo": "https://media.api-sports.io/football/teams/10357.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1299992,
+          "date": "2024-11-16T12:00:00+00:00",
+          "venue": {
+            "id": 2615,
+            "name": "Stadionul Zimbru",
+            "city": "Chişinău"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1731758400
+        },
+        "league": {
+          "id": 893,
+          "name": "UEFA U19 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10337,
+            "name": "Iceland U19",
+            "logo": "https://media.api-sports.io/football/teams/10337.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10373,
+            "name": "Moldova U19",
+            "logo": "https://media.api-sports.io/football/teams/10373.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1299971,
+          "date": "2024-11-13T12:00:00+00:00",
+          "venue": {
+            "id": 19104,
+            "name": "Stadionul Orăşenesc",
+            "city": "Nisporeni"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1731499200
+        },
+        "league": {
+          "id": 893,
+          "name": "UEFA U19 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10377,
+            "name": "Republic of Ireland U19",
+            "logo": "https://media.api-sports.io/football/teams/10377.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10373,
+            "name": "Moldova U19",
+            "logo": "https://media.api-sports.io/football/teams/10373.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1189607,
@@ -342,6 +482,183 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 961275,
+          "date": "2022-09-27T17:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sportpark Marsdijk",
+            "city": "Assen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1664299800
+        },
+        "league": {
+          "id": 893,
+          "name": "UEFA U19 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10373,
+            "name": "Moldova U19",
+            "logo": "https://media.api-sports.io/football/teams/10373.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10375,
+            "name": "Northern Ireland U19",
+            "logo": "https://media.api-sports.io/football/teams/10375.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 961251,
+          "date": "2022-09-24T13:00:00+00:00",
+          "venue": {
+            "id": 2865,
+            "name": "Sportpark de Boshoek",
+            "city": "Hardenberg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1664024400
+        },
+        "league": {
+          "id": 893,
+          "name": "UEFA U19 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10348,
+            "name": "Slovenia U19",
+            "logo": "https://media.api-sports.io/football/teams/10348.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10373,
+            "name": "Moldova U19",
+            "logo": "https://media.api-sports.io/football/teams/10373.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 961231,
+          "date": "2022-09-21T17:30:00+00:00",
+          "venue": {
+            "id": 2865,
+            "name": "Sportpark de Boshoek",
+            "city": "Hardenberg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1663781400
+        },
+        "league": {
+          "id": 893,
+          "name": "UEFA U19 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10340,
+            "name": "Netherlands U19",
+            "logo": "https://media.api-sports.io/football/teams/10340.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10373,
+            "name": "Moldova U19",
+            "logo": "https://media.api-sports.io/football/teams/10373.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
@@ -352,14 +669,14 @@
       "country": "World",
       "logo": "https://media.api-sports.io/football/leagues/893.png",
       "flag": null,
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 10373,
       "name": "Moldova U19",
       "logo": "https://media.api-sports.io/football/teams/10373.png"
     },
-    "form": "LLL",
+    "form": "DLD",
     "fixtures": {
       "played": {
         "home": 1,
@@ -372,44 +689,44 @@
         "total": 0
       },
       "draws": {
-        "home": 0,
-        "away": 0,
-        "total": 0
+        "home": 1,
+        "away": 1,
+        "total": 2
       },
       "loses": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 1,
+        "total": 1
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 0,
-          "away": 1,
-          "total": 1
+          "home": 2,
+          "away": 0,
+          "total": 2
         },
         "average": {
-          "home": "0.0",
-          "away": "0.5",
-          "total": "0.3"
+          "home": "2.0",
+          "away": "0.0",
+          "total": "0.7"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "33.33%"
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "100.00%"
-          },
-          "46-60": {
             "total": null,
             "percentage": null
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "33.33%"
           },
           "61-75": {
             "total": null,
@@ -420,8 +737,8 @@
             "percentage": null
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "33.33%"
           },
           "106-120": {
             "total": null,
@@ -434,8 +751,8 @@
             "under": 2
           },
           "1.5": {
-            "over": 0,
-            "under": 3
+            "over": 1,
+            "under": 2
           },
           "2.5": {
             "over": 0,
@@ -453,43 +770,43 @@
       },
       "against": {
         "total": {
-          "home": 1,
-          "away": 7,
-          "total": 8
+          "home": 2,
+          "away": 1,
+          "total": 3
         },
         "average": {
-          "home": "1.0",
-          "away": "3.5",
-          "total": "2.7"
+          "home": "2.0",
+          "away": "0.5",
+          "total": "1.0"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "50.00%"
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "50.00%"
           },
           "61-75": {
-            "total": 3,
-            "percentage": "37.50%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -498,24 +815,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 0
-          },
-          "1.5": {
             "over": 2,
             "under": 1
           },
-          "2.5": {
+          "1.5": {
             "over": 1,
             "under": 2
+          },
+          "2.5": {
+            "over": 0,
+            "under": 3
           },
           "3.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 3
           },
           "4.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 3
           }
         }
       }
@@ -523,36 +840,36 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 0,
-        "loses": 3
+        "draws": 1,
+        "loses": 1
       },
       "wins": {
         "home": null,
         "away": null
       },
       "loses": {
-        "home": "0-1",
-        "away": "5-0"
+        "home": null,
+        "away": "1-0"
       },
       "goals": {
         "for": {
-          "home": 0,
-          "away": 1
+          "home": 2,
+          "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 5
+          "home": 2,
+          "away": 1
         }
       }
     },
     "clean_sheet": {
       "home": 0,
-      "away": 0,
-      "total": 0
+      "away": 1,
+      "total": 1
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 1,
+      "home": 0,
+      "away": 2,
       "total": 2
     },
     "penalty": {
@@ -578,24 +895,24 @@
           "percentage": null
         },
         "31-45": {
-          "total": 2,
-          "percentage": "28.57%"
+          "total": 1,
+          "percentage": "20.00%"
         },
         "46-60": {
-          "total": 1,
-          "percentage": "14.29%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 2,
-          "percentage": "28.57%"
+          "total": 1,
+          "percentage": "20.00%"
         },
         "76-90": {
           "total": 2,
-          "percentage": "28.57%"
+          "percentage": "40.00%"
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "20.00%"
         },
         "106-120": {
           "total": null,
@@ -628,8 +945,8 @@
           "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -638,5 +955,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:22.427Z"
+  "lastUpdated": "2025-03-27T10:41:11.587Z"
 }

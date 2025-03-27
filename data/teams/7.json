@@ -22,6 +22,80 @@
   "leagues": [
     {
       "league": {
+        "id": 766,
+        "name": "China Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/766.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2019,
+          "start": "2019-03-21",
+          "end": "2019-03-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2022,
+          "start": "2022-11-20",
+          "end": "2022-12-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 9,
         "name": "Copa America",
         "type": "Cup",
@@ -59,10 +133,10 @@
     },
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 34,
+        "name": "World Cup - Qualification South America",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/34.png"
       },
       "country": {
         "name": "World",
@@ -71,10 +145,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2026,
+          "start": "2023-09-07",
+          "end": "2025-10-14",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -82,14 +156,14 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -113,6 +187,478 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1100298,
+          "date": "2025-03-25T20:00:00+00:00",
+          "venue": {
+            "id": 2487,
+            "name": "Estadio Municipal El Alto",
+            "city": "El Alto"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742932800
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2381,
+            "name": "Bolivia",
+            "logo": "https://media.api-sports.io/football/teams/2381.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7,
+            "name": "Uruguay",
+            "logo": "https://media.api-sports.io/football/teams/7.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100297,
+          "date": "2025-03-21T23:30:00+00:00",
+          "venue": {
+            "id": 1624,
+            "name": "Estadio Centenario",
+            "city": "Montevideo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742599800
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7,
+            "name": "Uruguay",
+            "logo": "https://media.api-sports.io/football/teams/7.png",
+            "winner": false
+          },
+          "away": {
+            "id": 26,
+            "name": "Argentina",
+            "logo": "https://media.api-sports.io/football/teams/26.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100292,
+          "date": "2024-11-20T00:45:00+00:00",
+          "venue": {
+            "id": 216,
+            "name": "Casa de Apostas Arena Fonte Nova",
+            "city": "Salvador, Bahia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1732063500
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7,
+            "name": "Uruguay",
+            "logo": "https://media.api-sports.io/football/teams/7.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100284,
+          "date": "2024-11-16T00:00:00+00:00",
+          "venue": {
+            "id": 1624,
+            "name": "Estadio Centenario",
+            "city": "Montevideo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 14
+          },
+          "timestamp": 1731715200
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7,
+            "name": "Uruguay",
+            "logo": "https://media.api-sports.io/football/teams/7.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8,
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100278,
+          "date": "2024-10-15T23:30:00+00:00",
+          "venue": {
+            "id": 1624,
+            "name": "Estadio Centenario",
+            "city": "Montevideo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1729035000
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7,
+            "name": "Uruguay",
+            "logo": "https://media.api-sports.io/football/teams/7.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2382,
+            "name": "Ecuador",
+            "logo": "https://media.api-sports.io/football/teams/2382.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100277,
+          "date": "2024-10-12T01:30:00+00:00",
+          "venue": {
+            "id": 1228,
+            "name": "Estadio Nacional de Lima",
+            "city": "Lima"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1728696600
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 30,
+            "name": "Peru",
+            "logo": "https://media.api-sports.io/football/teams/30.png",
+            "winner": true
+          },
+          "away": {
+            "id": 7,
+            "name": "Uruguay",
+            "logo": "https://media.api-sports.io/football/teams/7.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100269,
+          "date": "2024-09-11T22:00:00+00:00",
+          "venue": {
+            "id": 1660,
+            "name": "Estadio Monumental de Maturín",
+            "city": "Maturín"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1726092000
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2379,
+            "name": "Venezuela",
+            "logo": "https://media.api-sports.io/football/teams/2379.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7,
+            "name": "Uruguay",
+            "logo": "https://media.api-sports.io/football/teams/7.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100264,
+          "date": "2024-09-06T23:30:00+00:00",
+          "venue": {
+            "id": 1624,
+            "name": "Estadio Centenario",
+            "city": "Montevideo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725665400
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7,
+            "name": "Uruguay",
+            "logo": "https://media.api-sports.io/football/teams/7.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2380,
+            "name": "Paraguay",
+            "logo": "https://media.api-sports.io/football/teams/2380.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1261912,
@@ -230,479 +776,66 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1146317,
-          "date": "2024-07-02T01:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Arrowhead Stadium",
-            "city": "Kansas City, Missouri"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1719882000
-        },
-        "league": {
-          "id": 9,
-          "name": "Copa America",
-          "logo": "https://media.api-sports.io/football/leagues/9.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2384,
-            "name": "USA",
-            "logo": "https://media.api-sports.io/football/teams/2384.png",
-            "winner": false
-          },
-          "away": {
-            "id": 7,
-            "name": "Uruguay",
-            "logo": "https://media.api-sports.io/football/teams/7.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1146311,
-          "date": "2024-06-28T01:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "MetLife Stadium",
-            "city": "East Rutherford, New Jersey"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1719536400
-        },
-        "league": {
-          "id": 9,
-          "name": "Copa America",
-          "logo": "https://media.api-sports.io/football/leagues/9.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7,
-            "name": "Uruguay",
-            "logo": "https://media.api-sports.io/football/teams/7.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2381,
-            "name": "Bolivia",
-            "logo": "https://media.api-sports.io/football/teams/2381.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1146305,
-          "date": "2024-06-24T01:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Hard Rock Stadium",
-            "city": "Miami Gardens, Florida"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1719190800
-        },
-        "league": {
-          "id": 9,
-          "name": "Copa America",
-          "logo": "https://media.api-sports.io/football/leagues/9.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7,
-            "name": "Uruguay",
-            "logo": "https://media.api-sports.io/football/teams/7.png",
-            "winner": true
-          },
-          "away": {
-            "id": 11,
-            "name": "Panama",
-            "logo": "https://media.api-sports.io/football/teams/11.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1155281,
-          "date": "2024-06-06T01:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Empower Field at Mile High",
-            "city": "Denver, Colorado"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1717635600
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 16,
-            "name": "Mexico",
-            "logo": "https://media.api-sports.io/football/teams/16.png",
-            "winner": false
-          },
-          "away": {
-            "id": 7,
-            "name": "Uruguay",
-            "logo": "https://media.api-sports.io/football/teams/7.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1199025,
-          "date": "2024-06-01T02:00:00+00:00",
-          "venue": {
-            "id": 392,
-            "name": "Estadio Nacional de Costa Rica",
-            "city": "San José"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1717207200
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 29,
-            "name": "Costa Rica",
-            "logo": "https://media.api-sports.io/football/teams/29.png",
-            "winner": null
-          },
-          "away": {
-            "id": 7,
-            "name": "Uruguay",
-            "logo": "https://media.api-sports.io/football/teams/7.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180735,
-          "date": "2024-03-26T19:30:00+00:00",
-          "venue": {
-            "id": 654,
-            "name": "Stade Bollaert-Delelis",
-            "city": "Lens"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711481400
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1501,
-            "name": "Ivory Coast",
-            "logo": "https://media.api-sports.io/football/teams/1501.png",
-            "winner": true
-          },
-          "away": {
-            "id": 7,
-            "name": "Uruguay",
-            "logo": "https://media.api-sports.io/football/teams/7.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1189570,
-          "date": "2024-03-23T19:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711220400
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7,
-            "name": "Uruguay",
-            "logo": "https://media.api-sports.io/football/teams/7.png",
-            "winner": null
-          },
-          "away": {
-            "id": 23263,
-            "name": "Basque Country",
-            "logo": "https://media.api-sports.io/football/teams/23263.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 9,
-      "name": "Copa America",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/9.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 7,
       "name": "Uruguay",
       "logo": "https://media.api-sports.io/football/teams/7.png"
     },
-    "form": "WWWDLD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 4,
-        "away": 2,
-        "total": 6
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 8,
-          "away": 3,
-          "total": 11
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.0",
-          "away": "1.5",
-          "total": "1.8"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "10.53%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 2,
-            "percentage": "10.53%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
@@ -713,55 +846,55 @@
             "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "5.26%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 4,
-            "percentage": "21.05%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "10.53%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
-            "total": 8,
-            "percentage": "42.11%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 4,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 5
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 2,
-          "away": 2,
-          "total": 4
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.5",
-          "away": "1.0",
-          "total": "0.7"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -769,12 +902,12 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -785,102 +918,89 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
-            "total": 5,
-            "percentage": "55.56%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
-        "draws": 1,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "5-0",
-        "away": "0-1"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "0-1",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 5,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 2
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 2,
-      "away": 1,
-      "total": 3
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 2,
+      "home": 0,
       "away": 0,
-      "total": 2
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 8,
-        "percentage": "88.89%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
-        "total": 1,
-        "percentage": "11.11%"
+        "total": 0,
+        "percentage": "0%"
       },
-      "total": 9
+      "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-2-3-1",
-        "played": 4
-      },
-      {
-        "formation": "3-2-4-1",
-        "played": 1
-      },
-      {
-        "formation": "4-3-3",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -888,24 +1008,24 @@
           "percentage": null
         },
         "16-30": {
-          "total": 2,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
           "total": null,
           "percentage": null
         },
         "46-60": {
-          "total": 3,
-          "percentage": "37.50%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 2,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "12.50%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -934,8 +1054,8 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
@@ -948,13 +1068,9 @@
         "106-120": {
           "total": null,
           "percentage": null
-        },
-        "": {
-          "total": 1,
-          "percentage": "50.00%"
         }
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:03.684Z"
+  "lastUpdated": "2025-03-27T10:39:49.362Z"
 }

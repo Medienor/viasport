@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -71,16 +71,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-03-31",
-          "end": "2024-12-08",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-29",
+          "end": "2025-11-30",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": true,
             "players": true,
@@ -88,43 +88,6 @@
             "top_assists": true,
             "top_cards": true,
             "injuries": true,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 105,
-        "name": "NM Cupen",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/105.png"
-      },
-      "country": {
-        "name": "Norway",
-        "code": "NO",
-        "flag": "https://media.api-sports.io/flags/no.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-04-09",
-          "end": "2024-12-07",
-          "current": true,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
             "predictions": true,
             "odds": false
           }
@@ -145,8 +108,1661 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1342188,
+          "date": "2025-03-30T12:30:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743337800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342201,
+          "date": "2025-04-06T17:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743959700
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2143,
+            "name": "KFUM Oslo",
+            "logo": "https://media.api-sports.io/football/teams/2143.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342306,
+          "date": "2025-04-10T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744304400
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 320,
+            "name": "Kristiansund BK",
+            "logo": "https://media.api-sports.io/football/teams/320.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342206,
+          "date": "2025-04-21T15:00:00+00:00",
+          "venue": {
+            "id": 1177,
+            "name": "Briskeby Arena",
+            "city": "Hamar"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745247600
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2159,
+            "name": "Ham-Kam",
+            "logo": "https://media.api-sports.io/football/teams/2159.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342217,
+          "date": "2025-04-27T17:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745774100
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 325,
+            "name": "Tromso",
+            "logo": "https://media.api-sports.io/football/teams/325.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342322,
+          "date": "2025-04-30T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746028800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342224,
+          "date": "2025-05-04T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746370800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 333,
+            "name": "Sarpsborg 08 FF",
+            "logo": "https://media.api-sports.io/football/teams/333.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342233,
+          "date": "2025-05-11T17:15:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746983700
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342240,
+          "date": "2025-05-16T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747411200
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 332,
+            "name": "Sandefjord",
+            "logo": "https://media.api-sports.io/football/teams/332.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342245,
+          "date": "2025-05-25T15:00:00+00:00",
+          "venue": {
+            "id": 19680,
+            "name": "Nordmøre stadion",
+            "city": "Kristiansund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748185200
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 320,
+            "name": "Kristiansund BK",
+            "logo": "https://media.api-sports.io/football/teams/320.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342330,
+          "date": "2025-05-28T19:00:00+00:00",
+          "venue": {
+            "id": 1175,
+            "name": "Aspmyra Stadion",
+            "city": "Bodø"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748458800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 327,
+            "name": "Bodo/Glimt",
+            "logo": "https://media.api-sports.io/football/teams/327.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342257,
+          "date": "2025-06-01T17:15:00+00:00",
+          "venue": {
+            "id": 1184,
+            "name": "Aker Stadion",
+            "city": "Molde"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748798100
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 329,
+            "name": "Molde",
+            "logo": "https://media.api-sports.io/football/teams/329.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342264,
+          "date": "2025-06-22T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750604400
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2149,
+            "name": "Fredrikstad",
+            "logo": "https://media.api-sports.io/football/teams/2149.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342272,
+          "date": "2025-06-29T15:00:00+00:00",
+          "venue": {
+            "id": 1190,
+            "name": "Lerkendal Stadion",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751209200
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 331,
+            "name": "Rosenborg",
+            "logo": "https://media.api-sports.io/football/teams/331.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342280,
+          "date": "2025-07-06T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751814000
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 324,
+            "name": "Stromsgodset",
+            "logo": "https://media.api-sports.io/football/teams/324.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342283,
+          "date": "2025-07-13T15:00:00+00:00",
+          "venue": {
+            "id": 1176,
+            "name": "Brann Stadion",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752418800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 319,
+            "name": "Brann",
+            "logo": "https://media.api-sports.io/football/teams/319.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342296,
+          "date": "2025-07-20T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753023600
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 327,
+            "name": "Bodo/Glimt",
+            "logo": "https://media.api-sports.io/football/teams/327.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342300,
+          "date": "2025-07-27T15:00:00+00:00",
+          "venue": {
+            "id": 2793,
+            "name": "Bryne Stadion",
+            "city": "Bryne"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753628400
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2142,
+            "name": "Bryne",
+            "logo": "https://media.api-sports.io/football/teams/2142.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342321,
+          "date": "2025-08-10T15:00:00+00:00",
+          "venue": {
+            "id": 20418,
+            "name": "Jotun Arena",
+            "city": "Sandefjord"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754838000
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 332,
+            "name": "Sandefjord",
+            "logo": "https://media.api-sports.io/football/teams/332.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342344,
+          "date": "2025-08-31T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756652400
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 331,
+            "name": "Rosenborg",
+            "logo": "https://media.api-sports.io/football/teams/331.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366037,
+          "date": "2025-03-23T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742742000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": true
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351501,
+          "date": "2025-03-16T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1742140800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": true
+          },
+          "away": {
+            "id": 331,
+            "name": "Rosenborg",
+            "logo": "https://media.api-sports.io/football/teams/331.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349316,
+          "date": "2025-03-07T13:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1741354200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": true
+          },
+          "away": {
+            "id": 320,
+            "name": "Kristiansund BK",
+            "logo": "https://media.api-sports.io/football/teams/320.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346278,
+          "date": "2025-03-01T11:30:00+00:00",
+          "venue": {
+            "id": 2792,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1740828600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2149,
+            "name": "Fredrikstad",
+            "logo": "https://media.api-sports.io/football/teams/2149.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349291,
+          "date": "2025-02-22T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Marbella Football Center - Sur 1",
+            "city": "San Pedro de Alcántara"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1740240000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": true
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346076,
+          "date": "2025-02-14T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Marbella Football Center - Sur 1",
+            "city": "San Pedro de Alcántara"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1739552400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 319,
+            "name": "Brann",
+            "logo": "https://media.api-sports.io/football/teams/319.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345874,
+          "date": "2025-02-07T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1738933200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": true
+          },
+          "away": {
+            "id": 6976,
+            "name": "Egersund",
+            "logo": "https://media.api-sports.io/football/teams/6976.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1344863,
+          "date": "2025-01-31T16:30:00+00:00",
+          "venue": {
+            "id": 12682,
+            "name": "Øster Hus Arena",
+            "city": "Sandnes"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1738341000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1164553,
@@ -264,558 +1880,86 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1164536,
-          "date": "2024-11-10T16:00:00+00:00",
-          "venue": {
-            "id": 19680,
-            "name": "Nordmøre stadion",
-            "city": "Kristiansund"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1731254400
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 320,
-            "name": "Kristiansund BK",
-            "logo": "https://media.api-sports.io/football/teams/320.png",
-            "winner": false
-          },
-          "away": {
-            "id": 759,
-            "name": "Viking",
-            "logo": "https://media.api-sports.io/football/teams/759.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164535,
-          "date": "2024-11-02T17:00:00+00:00",
-          "venue": {
-            "id": 1204,
-            "name": "SR-Bank Arena",
-            "city": "Stavanger"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1730566800
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 759,
-            "name": "Viking",
-            "logo": "https://media.api-sports.io/football/teams/759.png",
-            "winner": true
-          },
-          "away": {
-            "id": 332,
-            "name": "Sandefjord",
-            "logo": "https://media.api-sports.io/football/teams/332.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164525,
-          "date": "2024-10-27T16:00:00+00:00",
-          "venue": {
-            "id": 1193,
-            "name": "Sarpsborg Stadion",
-            "city": "Sarpsborg"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1730044800
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 333,
-            "name": "Sarpsborg 08 FF",
-            "logo": "https://media.api-sports.io/football/teams/333.png",
-            "winner": false
-          },
-          "away": {
-            "id": 759,
-            "name": "Viking",
-            "logo": "https://media.api-sports.io/football/teams/759.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164518,
-          "date": "2024-10-20T15:00:00+00:00",
-          "venue": {
-            "id": 1204,
-            "name": "SR-Bank Arena",
-            "city": "Stavanger"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1729436400
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 759,
-            "name": "Viking",
-            "logo": "https://media.api-sports.io/football/teams/759.png",
-            "winner": null
-          },
-          "away": {
-            "id": 330,
-            "name": "ODD Ballklubb",
-            "logo": "https://media.api-sports.io/football/teams/330.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1311205,
-          "date": "2024-10-10T17:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "TBC",
-            "city": "TBC"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1728579600
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 202,
-            "name": "Groningen",
-            "logo": "https://media.api-sports.io/football/teams/202.png",
-            "winner": null
-          },
-          "away": {
-            "id": 759,
-            "name": "Viking",
-            "logo": "https://media.api-sports.io/football/teams/759.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164506,
-          "date": "2024-09-29T15:00:00+00:00",
-          "venue": {
-            "id": 1182,
-            "name": "Åråsen Stadion",
-            "city": "Kjeller"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1727622000
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 321,
-            "name": "Lillestrom",
-            "logo": "https://media.api-sports.io/football/teams/321.png",
-            "winner": false
-          },
-          "away": {
-            "id": 759,
-            "name": "Viking",
-            "logo": "https://media.api-sports.io/football/teams/759.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164498,
-          "date": "2024-09-22T17:15:00+00:00",
-          "venue": {
-            "id": 2792,
-            "name": "Nye Fredrikstad Stadion",
-            "city": "Fredrikstad"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1727025300
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2149,
-            "name": "Fredrikstad",
-            "logo": "https://media.api-sports.io/football/teams/2149.png",
-            "winner": true
-          },
-          "away": {
-            "id": 759,
-            "name": "Viking",
-            "logo": "https://media.api-sports.io/football/teams/759.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164495,
-          "date": "2024-09-14T14:00:00+00:00",
-          "venue": {
-            "id": 1204,
-            "name": "SR-Bank Arena",
-            "city": "Stavanger"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726322400
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 759,
-            "name": "Viking",
-            "logo": "https://media.api-sports.io/football/teams/759.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2143,
-            "name": "KFUM Oslo",
-            "logo": "https://media.api-sports.io/football/teams/2143.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
-      "flag": null,
-      "season": 2024
+      "id": 103,
+      "name": "Eliteserien",
+      "country": "Norway",
+      "logo": "https://media.api-sports.io/football/leagues/103.png",
+      "flag": "https://media.api-sports.io/flags/no.svg",
+      "season": 2025
     },
     "team": {
       "id": 759,
       "name": "Viking",
       "logo": "https://media.api-sports.io/football/teams/759.png"
     },
-    "form": "WDWLDWWDWWWWWWD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 8,
-        "away": 7,
-        "total": 15
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 6,
-        "away": 4,
-        "total": 10
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 1,
-        "away": 3,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 18,
-          "away": 10,
-          "total": 28
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.3",
-          "away": "1.4",
-          "total": "1.9"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 6,
-            "percentage": "27.27%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "13.64%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 4,
-            "percentage": "18.18%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 3,
-            "percentage": "13.64%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -824,62 +1968,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 13,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 9,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 4,
-            "under": 11
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 14
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 14
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
-          "away": 4,
-          "total": 8
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.5",
-          "away": "0.6",
-          "total": "0.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "37.50%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -892,84 +2036,75 @@
         },
         "under_over": {
           "0.5": {
-            "over": 6,
-            "under": 9
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 13
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 15
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 15
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 15
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 6,
-        "draws": 1,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "5-0",
-        "away": "1-3"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "1-2",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 5,
-          "away": 3
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 2,
-          "away": 2
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 5,
-      "away": 4,
-      "total": 9
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 2,
-      "total": 2
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-1-4-1",
-        "played": 2
-      },
-      {
-        "formation": "4-3-3",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -989,16 +2124,16 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1019,8 +2154,8 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
@@ -1041,5 +2176,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:37:02.013Z"
+  "lastUpdated": "2025-03-27T10:35:38.864Z"
 }

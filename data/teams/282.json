@@ -22,154 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 98,
-        "name": "J1 League",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/98.png"
-      },
-      "country": {
-        "name": "Japan",
-        "code": "JP",
-        "flag": "https://media.api-sports.io/flags/jp.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-02-23",
-          "end": "2024-12-08",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 101,
-        "name": "J-League Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/101.png"
-      },
-      "country": {
-        "name": "Japan",
-        "code": "JP",
-        "flag": "https://media.api-sports.io/flags/jp.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-06",
-          "end": "2024-11-02",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 102,
-        "name": "Emperor Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/102.png"
-      },
-      "country": {
-        "name": "Japan",
-        "code": "JP",
-        "flag": "https://media.api-sports.io/flags/jp.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-05-25",
-          "end": "2024-11-23",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 18,
         "name": "AFC Cup",
         "type": "Cup",
@@ -204,6 +56,117 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 548,
+        "name": "Super Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/548.png"
+      },
+      "country": {
+        "name": "Japan",
+        "code": "JP",
+        "flag": "https://media.api-sports.io/flags/jp.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-08",
+          "end": "2025-02-08",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 98,
+        "name": "J1 League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/98.png"
+      },
+      "country": {
+        "name": "Japan",
+        "code": "JP",
+        "flag": "https://media.api-sports.io/flags/jp.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-14",
+          "end": "2025-12-06",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -223,8 +186,1248 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1324019,
+          "date": "2025-03-29T05:00:00+00:00",
+          "venue": {
+            "id": 967,
+            "name": "Sanga Stadium by Kyocera",
+            "city": "Kameoka"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743224400
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 302,
+            "name": "Kyoto Sanga",
+            "logo": "https://media.api-sports.io/football/teams/302.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324031,
+          "date": "2025-04-02T10:00:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743588000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          },
+          "away": {
+            "id": 290,
+            "name": "Kashima",
+            "logo": "https://media.api-sports.io/football/teams/290.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324040,
+          "date": "2025-04-06T06:00:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743919200
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          },
+          "away": {
+            "id": 291,
+            "name": "Cerezo Osaka",
+            "logo": "https://media.api-sports.io/football/teams/291.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324050,
+          "date": "2025-04-12T05:00:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744434000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          },
+          "away": {
+            "id": 310,
+            "name": "Fagiano Okayama",
+            "logo": "https://media.api-sports.io/football/teams/310.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324058,
+          "date": "2025-04-20T05:00:00+00:00",
+          "venue": {
+            "id": 972,
+            "name": "Toyota Stadium",
+            "city": "Toyota"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745125200
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 288,
+            "name": "Nagoya Grampus",
+            "logo": "https://media.api-sports.io/football/teams/288.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324063,
+          "date": "2025-04-25T10:30:00+00:00",
+          "venue": {
+            "id": 980,
+            "name": "Saitama Stadium 2002",
+            "city": "Saitama"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745577000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 287,
+            "name": "Urawa",
+            "logo": "https://media.api-sports.io/football/teams/287.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324079,
+          "date": "2025-04-29T05:00:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745902800
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          },
+          "away": {
+            "id": 311,
+            "name": "Albirex Niigata",
+            "logo": "https://media.api-sports.io/football/teams/311.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324088,
+          "date": "2025-05-03T04:00:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746244800
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          },
+          "away": {
+            "id": 316,
+            "name": "Avispa Fukuoka",
+            "logo": "https://media.api-sports.io/football/teams/316.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324096,
+          "date": "2025-05-07T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lemon Gas Stadium Hiratsuka",
+            "city": "Hiratsuka"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746612000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 284,
+            "name": "Shonan Bellmare",
+            "logo": "https://media.api-sports.io/football/teams/284.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324110,
+          "date": "2025-05-11T06:00:00+00:00",
+          "venue": {
+            "id": 18623,
+            "name": "Panasonic Stadium Suita",
+            "city": "Suita"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746943200
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 293,
+            "name": "Gamba Osaka",
+            "logo": "https://media.api-sports.io/football/teams/293.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324121,
+          "date": "2025-05-17T05:00:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747458000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          },
+          "away": {
+            "id": 306,
+            "name": "Tokyo Verdy",
+            "logo": "https://media.api-sports.io/football/teams/306.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324122,
+          "date": "2025-05-25T06:00:00+00:00",
+          "venue": {
+            "id": 960,
+            "name": "Japan National Stadium",
+            "city": "Tokyo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748152800
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 292,
+            "name": "FC Tokyo",
+            "logo": "https://media.api-sports.io/football/teams/292.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324140,
+          "date": "2025-05-31T08:30:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748680200
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          },
+          "away": {
+            "id": 294,
+            "name": "Kawasaki Frontale",
+            "logo": "https://media.api-sports.io/football/teams/294.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324142,
+          "date": "2025-06-14T09:00:00+00:00",
+          "venue": {
+            "id": 964,
+            "name": "Kashima Soccer Stadium",
+            "city": "Kashima"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749891600
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 290,
+            "name": "Kashima",
+            "logo": "https://media.api-sports.io/football/teams/290.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324156,
+          "date": "2025-06-22T09:00:00+00:00",
+          "venue": {
+            "id": 11579,
+            "name": "NHK Spring Mitsuzawa Football Stadium",
+            "city": "Yokohama"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750582800
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 307,
+            "name": "Yokohama FC",
+            "logo": "https://media.api-sports.io/football/teams/307.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324169,
+          "date": "2025-06-28T10:00:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751104800
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          },
+          "away": {
+            "id": 288,
+            "name": "Nagoya Grampus",
+            "logo": "https://media.api-sports.io/football/teams/288.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324001,
+          "date": "2025-07-02T10:00:00+00:00",
+          "venue": {
+            "id": 984,
+            "name": "NOEVIR Stadium Kobe",
+            "city": "Kobe"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751450400
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 289,
+            "name": "Vissel Kobe",
+            "logo": "https://media.api-sports.io/football/teams/289.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324180,
+          "date": "2025-07-05T09:55:00+00:00",
+          "venue": {
+            "id": 957,
+            "name": "City Light Stadium",
+            "city": "Okayama"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751709300
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 310,
+            "name": "Fagiano Okayama",
+            "logo": "https://media.api-sports.io/football/teams/310.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324187,
+          "date": "2025-07-20T10:00:00+00:00",
+          "venue": {
+            "id": 952,
+            "name": "Denka Big Swan Stadium",
+            "city": "Niigata"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753005600
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 311,
+            "name": "Albirex Niigata",
+            "logo": "https://media.api-sports.io/football/teams/311.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324201,
+          "date": "2025-08-10T09:30:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754818200
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          },
+          "away": {
+            "id": 283,
+            "name": "Shimizu S-pulse",
+            "logo": "https://media.api-sports.io/football/teams/283.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1324010,
+          "date": "2025-03-16T05:00:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742101200
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          },
+          "away": {
+            "id": 281,
+            "name": "Kashiwa Reysol",
+            "logo": "https://media.api-sports.io/football/teams/281.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1353183,
@@ -345,6 +1548,183 @@
       },
       {
         "fixture": {
+          "id": 1323991,
+          "date": "2025-03-02T05:30:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1740893400
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": true
+          },
+          "away": {
+            "id": 307,
+            "name": "Yokohama FC",
+            "logo": "https://media.api-sports.io/football/teams/307.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323978,
+          "date": "2025-02-26T10:00:00+00:00",
+          "venue": {
+            "id": 976,
+            "name": "IAI Stadium Nihondaira",
+            "city": "Shizuoka"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1740564000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 283,
+            "name": "Shimizu S-pulse",
+            "logo": "https://media.api-sports.io/football/teams/283.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323971,
+          "date": "2025-02-23T05:00:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1740286800
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": true
+          },
+          "away": {
+            "id": 296,
+            "name": "Yokohama F. Marinos",
+            "logo": "https://media.api-sports.io/football/teams/296.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1322661,
           "date": "2025-02-19T10:00:00+00:00",
           "venue": {
@@ -391,6 +1771,65 @@
           "fulltime": {
             "home": 4,
             "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323954,
+          "date": "2025-02-16T05:00:00+00:00",
+          "venue": {
+            "id": 968,
+            "name": "Machida Gion Stadium",
+            "city": "Tokyo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1739682000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 303,
+            "name": "Machida Zelvia",
+            "logo": "https://media.api-sports.io/football/teams/303.png",
+            "winner": false
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -463,326 +1902,31 @@
       },
       {
         "fixture": {
-          "id": 1166510,
-          "date": "2024-12-08T05:00:00+00:00",
+          "id": 1321678,
+          "date": "2025-02-08T04:35:00+00:00",
           "venue": {
-            "id": 18623,
-            "name": "Panasonic Stadium Suita",
-            "city": "Suita"
+            "id": null,
+            "name": "Japan National Stadium",
+            "city": "Tokyo"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 6
+            "extra": 8
           },
-          "timestamp": 1733634000
+          "timestamp": 1738989300
         },
         "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
+          "id": 548,
+          "name": "Super Cup",
+          "logo": "https://media.api-sports.io/football/leagues/548.png"
         },
         "teams": {
           "home": {
-            "id": 293,
-            "name": "Gamba Osaka",
-            "logo": "https://media.api-sports.io/football/teams/293.png",
-            "winner": true
-          },
-          "away": {
-            "id": 282,
-            "name": "Sanfrecce Hiroshima",
-            "logo": "https://media.api-sports.io/football/teams/282.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1289415,
-          "date": "2024-12-05T08:00:00+00:00",
-          "venue": {
-            "id": 20557,
-            "name": "Edion Peace Wing Hiroshima",
-            "city": "Hiroshima"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1733385600
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 282,
-            "name": "Sanfrecce Hiroshima",
-            "logo": "https://media.api-sports.io/football/teams/282.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4451,
-            "name": "Eastern",
-            "logo": "https://media.api-sports.io/football/teams/4451.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166501,
-          "date": "2024-12-01T05:00:00+00:00",
-          "venue": {
-            "id": 20557,
-            "name": "Edion Peace Wing Hiroshima",
-            "city": "Hiroshima"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1733029200
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 282,
-            "name": "Sanfrecce Hiroshima",
-            "logo": "https://media.api-sports.io/football/teams/282.png",
-            "winner": true
-          },
-          "away": {
-            "id": 279,
-            "name": "Consadole Sapporo",
-            "logo": "https://media.api-sports.io/football/teams/279.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1289399,
-          "date": "2024-11-28T12:00:00+00:00",
-          "venue": {
-            "id": 1244,
-            "name": "Rizal Memorial Stadium",
-            "city": "Manila"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1732795200
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8030,
-            "name": "Kaya",
-            "logo": "https://media.api-sports.io/football/teams/8030.png",
-            "winner": null
-          },
-          "away": {
-            "id": 282,
-            "name": "Sanfrecce Hiroshima",
-            "logo": "https://media.api-sports.io/football/teams/282.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166484,
-          "date": "2024-11-10T06:00:00+00:00",
-          "venue": {
-            "id": 980,
-            "name": "Saitama Stadium 2002",
-            "city": "Saitama"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1731218400
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 287,
-            "name": "Urawa",
-            "logo": "https://media.api-sports.io/football/teams/287.png",
-            "winner": true
-          },
-          "away": {
-            "id": 282,
-            "name": "Sanfrecce Hiroshima",
-            "logo": "https://media.api-sports.io/football/teams/282.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1289385,
-          "date": "2024-11-07T08:00:00+00:00",
-          "venue": {
-            "id": 129,
-            "name": "Netstrata Jubilee Stadium",
-            "city": "Sydney"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1730966400
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 943,
-            "name": "Sydney",
-            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "id": 289,
+            "name": "Vissel Kobe",
+            "logo": "https://media.api-sports.io/football/teams/289.png",
             "winner": false
           },
           "away": {
@@ -794,16 +1938,16 @@
         },
         "goals": {
           "home": 0,
-          "away": 1
+          "away": 2
         },
         "score": {
           "halftime": {
             "home": 0,
-            "away": 0
+            "away": 1
           },
           "fulltime": {
             "home": 0,
-            "away": 1
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -824,76 +1968,76 @@
       "country": "Japan",
       "logo": "https://media.api-sports.io/football/leagues/98.png",
       "flag": "https://media.api-sports.io/flags/jp.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 282,
       "name": "Sanfrecce Hiroshima",
       "logo": "https://media.api-sports.io/football/teams/282.png"
     },
-    "form": "WDWDDWWDDDDLLWDWWLWDDLWWWWWWWDWWWLLLWL",
+    "form": "WWDWD",
     "fixtures": {
       "played": {
-        "home": 19,
-        "away": 19,
-        "total": 38
+        "home": 3,
+        "away": 2,
+        "total": 5
       },
       "wins": {
-        "home": 12,
-        "away": 7,
-        "total": 19
+        "home": 2,
+        "away": 1,
+        "total": 3
       },
       "draws": {
-        "home": 3,
-        "away": 8,
-        "total": 11
+        "home": 1,
+        "away": 1,
+        "total": 2
       },
       "loses": {
-        "home": 4,
-        "away": 4,
-        "total": 8
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 43,
-          "away": 29,
-          "total": 72
+          "home": 3,
+          "away": 3,
+          "total": 6
         },
         "average": {
-          "home": "2.3",
+          "home": "1.0",
           "away": "1.5",
-          "total": "1.9"
+          "total": "1.2"
         },
         "minute": {
           "0-15": {
-            "total": 8,
-            "percentage": "10.81%"
+            "total": 1,
+            "percentage": "14.29%"
           },
           "16-30": {
-            "total": 11,
-            "percentage": "14.86%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 11,
-            "percentage": "14.86%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 16,
-            "percentage": "21.62%"
+            "total": 2,
+            "percentage": "28.57%"
           },
           "61-75": {
-            "total": 8,
-            "percentage": "10.81%"
+            "total": 2,
+            "percentage": "28.57%"
           },
           "76-90": {
-            "total": 14,
-            "percentage": "18.92%"
+            "total": 2,
+            "percentage": "28.57%"
           },
           "91-105": {
-            "total": 6,
-            "percentage": "8.11%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -902,66 +2046,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 35,
-            "under": 3
+            "over": 5,
+            "under": 0
           },
           "1.5": {
-            "over": 20,
-            "under": 18
+            "over": 1,
+            "under": 4
           },
           "2.5": {
-            "over": 7,
-            "under": 31
+            "over": 0,
+            "under": 5
           },
           "3.5": {
-            "over": 6,
-            "under": 32
+            "over": 0,
+            "under": 5
           },
           "4.5": {
-            "over": 3,
-            "under": 35
+            "over": 0,
+            "under": 5
           }
         }
       },
       "against": {
         "total": {
-          "home": 20,
-          "away": 23,
-          "total": 43
+          "home": 1,
+          "away": 2,
+          "total": 3
         },
         "average": {
-          "home": "1.1",
-          "away": "1.2",
-          "total": "1.1"
+          "home": "0.3",
+          "away": "1.0",
+          "total": "0.6"
         },
         "minute": {
           "0-15": {
-            "total": 7,
-            "percentage": "17.07%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 6,
-            "percentage": "14.63%"
+            "total": 1,
+            "percentage": "50.00%"
           },
           "31-45": {
-            "total": 2,
-            "percentage": "4.88%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 6,
-            "percentage": "14.63%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 7,
-            "percentage": "17.07%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 10,
-            "percentage": "24.39%"
+            "total": 1,
+            "percentage": "50.00%"
           },
           "91-105": {
-            "total": 3,
-            "percentage": "7.32%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -970,117 +2114,109 @@
         },
         "under_over": {
           "0.5": {
-            "over": 26,
-            "under": 12
+            "over": 3,
+            "under": 2
           },
           "1.5": {
-            "over": 11,
-            "under": 27
+            "over": 0,
+            "under": 5
           },
           "2.5": {
-            "over": 6,
-            "under": 32
+            "over": 0,
+            "under": 5
           },
           "3.5": {
             "over": 0,
-            "under": 38
+            "under": 5
           },
           "4.5": {
             "over": 0,
-            "under": 38
+            "under": 5
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 7,
-        "draws": 4,
-        "loses": 3
+        "wins": 2,
+        "draws": 1,
+        "loses": 0
       },
       "wins": {
-        "home": "6-2",
-        "away": "0-5"
+        "home": "1-0",
+        "away": "1-2"
       },
       "loses": {
-        "home": "1-3",
-        "away": "3-0"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 6,
-          "away": 5
+          "home": 1,
+          "away": 2
         },
         "against": {
-          "home": 3,
-          "away": 3
+          "home": 1,
+          "away": 1
         }
       }
     },
     "clean_sheet": {
-      "home": 8,
-      "away": 4,
-      "total": 12
+      "home": 2,
+      "away": 0,
+      "total": 2
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 2,
-      "total": 3
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 6,
+        "total": 1,
         "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 6
+      "total": 1
     },
     "lineups": [
       {
         "formation": "3-4-2-1",
-        "played": 36
-      },
-      {
-        "formation": "3-1-4-2",
-        "played": 1
-      },
-      {
-        "formation": "3-4-3",
-        "played": 1
+        "played": 5
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
           "total": 1,
-          "percentage": "3.03%"
+          "percentage": "16.67%"
         },
         "16-30": {
-          "total": 4,
-          "percentage": "12.12%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 5,
-          "percentage": "15.15%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 5,
-          "percentage": "15.15%"
+          "total": 2,
+          "percentage": "33.33%"
         },
         "61-75": {
-          "total": 6,
-          "percentage": "18.18%"
+          "total": 1,
+          "percentage": "16.67%"
         },
         "76-90": {
-          "total": 6,
-          "percentage": "18.18%"
+          "total": 1,
+          "percentage": "16.67%"
         },
         "91-105": {
-          "total": 6,
-          "percentage": "18.18%"
+          "total": 1,
+          "percentage": "16.67%"
         },
         "106-120": {
           "total": null,
@@ -1101,8 +2237,8 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
@@ -1123,5 +2259,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:04.671Z"
+  "lastUpdated": "2025-03-27T10:41:54.350Z"
 }

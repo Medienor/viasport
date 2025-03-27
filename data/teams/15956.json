@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 725,
-        "name": "Toppserien",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/725.png"
-      },
-      "country": {
-        "name": "Norway",
-        "code": "NO",
-        "flag": "https://media.api-sports.io/flags/no.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-16",
-          "end": "2024-11-16",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 525,
         "name": "UEFA Champions League Women",
         "type": "Cup",
@@ -93,6 +56,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 725,
+        "name": "Toppserien",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/725.png"
+      },
+      "country": {
+        "name": "Norway",
+        "code": "NO",
+        "flag": "https://media.api-sports.io/flags/no.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-21",
+          "end": "2025-11-15",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -103,8 +103,1248 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1328625,
+          "date": "2025-03-29T13:00:00+00:00",
+          "venue": {
+            "id": 5125,
+            "name": "Koteng Arena",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743253200
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          },
+          "away": {
+            "id": 22858,
+            "name": "Bodø / Glimt",
+            "logo": "https://media.api-sports.io/football/teams/22858.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328627,
+          "date": "2025-04-12T12:00:00+00:00",
+          "venue": {
+            "id": 5112,
+            "name": "AKA Arena",
+            "city": "Hønefoss"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744459200
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18991,
+            "name": "Hønefoss W",
+            "logo": "https://media.api-sports.io/football/teams/18991.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328635,
+          "date": "2025-04-16T16:00:00+00:00",
+          "venue": {
+            "id": 5125,
+            "name": "Koteng Arena",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744819200
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15535,
+            "name": "Vålerenga W",
+            "logo": "https://media.api-sports.io/football/teams/15535.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328640,
+          "date": "2025-04-22T16:00:00+00:00",
+          "venue": {
+            "id": 5125,
+            "name": "Koteng Arena",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745337600
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15955,
+            "name": "Lyn W",
+            "logo": "https://media.api-sports.io/football/teams/15955.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328645,
+          "date": "2025-04-26T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Røabanen",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745676000
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18379,
+            "name": "Røa",
+            "logo": "https://media.api-sports.io/football/teams/18379.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328650,
+          "date": "2025-04-29T16:00:00+00:00",
+          "venue": {
+            "id": 5125,
+            "name": "Koteng Arena",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745942400
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15952,
+            "name": "Kolbotn W",
+            "logo": "https://media.api-sports.io/football/teams/15952.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328654,
+          "date": "2025-05-03T12:00:00+00:00",
+          "venue": {
+            "id": 11311,
+            "name": "LSK-hallen",
+            "city": "Lillestrøm"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746273600
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10894,
+            "name": "Lillestrøm",
+            "logo": "https://media.api-sports.io/football/teams/10894.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328660,
+          "date": "2025-05-10T12:00:00+00:00",
+          "venue": {
+            "id": 5125,
+            "name": "Koteng Arena",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746878400
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15953,
+            "name": "Stabæk W",
+            "logo": "https://media.api-sports.io/football/teams/15953.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328666,
+          "date": "2025-05-15T16:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747324800
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15535,
+            "name": "Vålerenga W",
+            "logo": "https://media.api-sports.io/football/teams/15535.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328670,
+          "date": "2025-05-24T12:00:00+00:00",
+          "venue": {
+            "id": 5125,
+            "name": "Koteng Arena",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748088000
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18380,
+            "name": "Brann W",
+            "logo": "https://media.api-sports.io/football/teams/18380.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328672,
+          "date": "2025-06-06T16:00:00+00:00",
+          "venue": {
+            "id": 1175,
+            "name": "Aspmyra Stadion",
+            "city": "Bodø"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749225600
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 22858,
+            "name": "Bodø / Glimt",
+            "logo": "https://media.api-sports.io/football/teams/22858.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328679,
+          "date": "2025-06-14T12:00:00+00:00",
+          "venue": {
+            "id": 5125,
+            "name": "Koteng Arena",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749902400
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18379,
+            "name": "Røa",
+            "logo": "https://media.api-sports.io/football/teams/18379.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328683,
+          "date": "2025-06-19T16:00:00+00:00",
+          "venue": {
+            "id": 5108,
+            "name": "Grorud stadion",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750348800
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15952,
+            "name": "Kolbotn W",
+            "logo": "https://media.api-sports.io/football/teams/15952.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328690,
+          "date": "2025-08-05T16:00:00+00:00",
+          "venue": {
+            "id": 5125,
+            "name": "Koteng Arena",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754409600
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10894,
+            "name": "Lillestrøm",
+            "logo": "https://media.api-sports.io/football/teams/10894.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328695,
+          "date": "2025-08-09T12:00:00+00:00",
+          "venue": {
+            "id": 1196,
+            "name": "Nadderud Stadion",
+            "city": "Bærum"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754740800
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15953,
+            "name": "Stabæk W",
+            "logo": "https://media.api-sports.io/football/teams/15953.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328712,
+          "date": "2025-08-13T16:00:00+00:00",
+          "venue": {
+            "id": 5125,
+            "name": "Koteng Arena",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755100800
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10894,
+            "name": "Lillestrøm",
+            "logo": "https://media.api-sports.io/football/teams/10894.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328700,
+          "date": "2025-08-16T12:00:00+00:00",
+          "venue": {
+            "id": 5125,
+            "name": "Koteng Arena",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755345600
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18991,
+            "name": "Hønefoss W",
+            "logo": "https://media.api-sports.io/football/teams/18991.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328704,
+          "date": "2025-08-23T12:00:00+00:00",
+          "venue": {
+            "id": 5118,
+            "name": "Kringsjå kunstgress",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755950400
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15955,
+            "name": "Lyn W",
+            "logo": "https://media.api-sports.io/football/teams/15955.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328711,
+          "date": "2025-09-06T12:00:00+00:00",
+          "venue": {
+            "id": 5125,
+            "name": "Koteng Arena",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757160000
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15953,
+            "name": "Stabæk W",
+            "logo": "https://media.api-sports.io/football/teams/15953.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1328719,
+          "date": "2025-09-21T12:00:00+00:00",
+          "venue": {
+            "id": 5118,
+            "name": "Kringsjå kunstgress",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1758456000
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15955,
+            "name": "Lyn W",
+            "logo": "https://media.api-sports.io/football/teams/15955.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1328621,
+          "date": "2025-03-23T17:00:00+00:00",
+          "venue": {
+            "id": 1176,
+            "name": "Brann Stadion",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742749200
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18380,
+            "name": "Brann W",
+            "logo": "https://media.api-sports.io/football/teams/18380.png",
+            "winner": true
+          },
+          "away": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1151870,
@@ -635,65 +1875,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1151823,
-          "date": "2024-08-30T16:00:00+00:00",
-          "venue": {
-            "id": 5125,
-            "name": "Koteng Arena",
-            "city": "Trondheim"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1725033600
-        },
-        "league": {
-          "id": 725,
-          "name": "Toppserien",
-          "logo": "https://media.api-sports.io/football/leagues/725.png"
-        },
-        "teams": {
-          "home": {
-            "id": 15956,
-            "name": "Rosenborg W",
-            "logo": "https://media.api-sports.io/football/teams/15956.png",
-            "winner": false
-          },
-          "away": {
-            "id": 15955,
-            "name": "Lyn W",
-            "logo": "https://media.api-sports.io/football/teams/15955.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -704,76 +1885,76 @@
       "country": "Norway",
       "logo": "https://media.api-sports.io/football/leagues/725.png",
       "flag": "https://media.api-sports.io/flags/no.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 15956,
       "name": "Rosenborg W",
       "logo": "https://media.api-sports.io/football/teams/15956.png"
     },
-    "form": "WWWWWLWWWWWLLDWLWLLWLLLLWLW",
+    "form": "L",
     "fixtures": {
       "played": {
-        "home": 14,
-        "away": 13,
-        "total": 27
-      },
-      "wins": {
-        "home": 9,
-        "away": 6,
-        "total": 15
-      },
-      "draws": {
         "home": 0,
         "away": 1,
         "total": 1
       },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
       "loses": {
-        "home": 5,
-        "away": 6,
-        "total": 11
+        "home": 0,
+        "away": 1,
+        "total": 1
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 22,
-          "away": 16,
-          "total": 38
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.6",
-          "away": "1.2",
-          "total": "1.4"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 7,
-            "percentage": "18.42%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 2,
-            "percentage": "5.26%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 6,
-            "percentage": "15.79%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 6,
-            "percentage": "15.79%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 6,
-            "percentage": "15.79%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 8,
-            "percentage": "21.05%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 3,
-            "percentage": "7.89%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -782,66 +1963,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 24,
-            "under": 3
+            "over": 0,
+            "under": 1
           },
           "1.5": {
-            "over": 8,
-            "under": 19
+            "over": 0,
+            "under": 1
           },
           "2.5": {
-            "over": 5,
-            "under": 22
+            "over": 0,
+            "under": 1
           },
           "3.5": {
-            "over": 1,
-            "under": 26
+            "over": 0,
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 27
+            "under": 1
           }
         }
       },
       "against": {
         "total": {
-          "home": 14,
-          "away": 18,
-          "total": 32
+          "home": 0,
+          "away": 3,
+          "total": 3
         },
         "average": {
-          "home": "1.0",
-          "away": "1.4",
-          "total": "1.2"
+          "home": "0.0",
+          "away": "3.0",
+          "total": "3.0"
         },
         "minute": {
           "0-15": {
-            "total": 6,
-            "percentage": "18.75%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "9.38%"
+            "total": 1,
+            "percentage": "33.33%"
           },
           "31-45": {
-            "total": 7,
-            "percentage": "21.88%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 5,
-            "percentage": "15.63%"
+            "total": 2,
+            "percentage": "66.67%"
           },
           "61-75": {
-            "total": 3,
-            "percentage": "9.38%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 5,
-            "percentage": "15.63%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 3,
-            "percentage": "9.38%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -850,73 +2031,73 @@
         },
         "under_over": {
           "0.5": {
-            "over": 17,
-            "under": 10
+            "over": 1,
+            "under": 0
           },
           "1.5": {
-            "over": 11,
-            "under": 16
+            "over": 1,
+            "under": 0
           },
           "2.5": {
-            "over": 4,
-            "under": 23
+            "over": 1,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 27
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 27
+            "under": 1
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 5,
-        "draws": 1,
-        "loses": 4
+        "wins": 0,
+        "draws": 0,
+        "loses": 1
       },
       "wins": {
-        "home": "3-0",
-        "away": "1-4"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "1-3",
-        "away": "3-1"
+        "home": null,
+        "away": "3-0"
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 4
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
+          "home": 0,
           "away": 3
         }
       }
     },
     "clean_sheet": {
-      "home": 6,
-      "away": 4,
-      "total": 10
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 2,
+      "home": 0,
       "away": 1,
-      "total": 3
+      "total": 1
     },
     "penalty": {
       "scored": {
-        "total": 2,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 2
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -990,5 +2171,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:37:14.134Z"
+  "lastUpdated": "2025-03-27T10:35:51.799Z"
 }

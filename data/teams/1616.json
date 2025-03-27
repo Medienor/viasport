@@ -22,6 +22,43 @@
   "leagues": [
     {
       "league": {
+        "id": 16,
+        "name": "CONCACAF Champions League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/16.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-05",
+          "end": "2025-04-08",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 253,
         "name": "Major League Soccer",
         "type": "League",
@@ -34,10 +71,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-02-22",
-          "end": "2024-12-07",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-22",
+          "end": "2025-10-19",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -52,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -71,10 +108,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -89,44 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 257,
-        "name": "US Open Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/257.png"
-      },
-      "country": {
-        "name": "USA",
-        "code": "US",
-        "flag": "https://media.api-sports.io/flags/us.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-18",
-          "end": "2024-09-26",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -145,22 +145,22 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-07-27",
-          "end": "2024-08-25",
-          "current": false,
+          "year": 2025,
+          "start": "2025-07-29",
+          "end": "2025-08-07",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -180,201 +180,259 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1313007,
-          "date": "2024-11-09T03:30:00+00:00",
+          "id": 1326714,
+          "date": "2025-03-30T02:30:00+00:00",
           "venue": {
-            "id": 19419,
-            "name": "BMO Stadium",
-            "city": "Los Angeles, California"
+            "id": null,
+            "name": "Snapdragon Stadium",
+            "city": "San Diego, California"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1731123000
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1616,
-            "name": "Los Angeles FC",
-            "logo": "https://media.api-sports.io/football/teams/1616.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1603,
-            "name": "Vancouver Whitecaps",
-            "logo": "https://media.api-sports.io/football/teams/1603.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1313006,
-          "date": "2024-11-04T01:45:00+00:00",
-          "venue": {
-            "id": 19445,
-            "name": "BC Place",
-            "city": "Vancouver, British Columbia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1730684700
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1603,
-            "name": "Vancouver Whitecaps",
-            "logo": "https://media.api-sports.io/football/teams/1603.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1616,
-            "name": "Los Angeles FC",
-            "logo": "https://media.api-sports.io/football/teams/1616.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1313005,
-          "date": "2024-10-28T01:45:00+00:00",
-          "venue": {
-            "id": 19419,
-            "name": "BMO Stadium",
-            "city": "Los Angeles, California"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1730079900
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1616,
-            "name": "Los Angeles FC",
-            "logo": "https://media.api-sports.io/football/teams/1616.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1603,
-            "name": "Vancouver Whitecaps",
-            "logo": "https://media.api-sports.io/football/teams/1603.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151243,
-          "date": "2024-10-20T01:00:00+00:00",
-          "venue": {
-            "id": 19419,
-            "name": "BMO Stadium",
-            "city": "Los Angeles, California"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
             "extra": null
           },
-          "timestamp": 1729386000
+          "timestamp": 1743301800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25484,
+            "name": "San Diego",
+            "logo": "https://media.api-sports.io/football/teams/25484.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361466,
+          "date": "2025-04-03T03:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743651000
+        },
+        "league": {
+          "id": 16,
+          "name": "CONCACAF Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/16.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          },
+          "away": {
+            "id": 9568,
+            "name": "Inter Miami",
+            "logo": "https://media.api-sports.io/football/teams/9568.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326324,
+          "date": "2025-04-06T00:30:00+00:00",
+          "venue": {
+            "id": 19418,
+            "name": "Shell Energy Stadium",
+            "city": "Houston, Texas"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743899400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1600,
+            "name": "Houston Dynamo",
+            "logo": "https://media.api-sports.io/football/teams/1600.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361467,
+          "date": "2025-04-10T00:00:00+00:00",
+          "venue": {
+            "id": 20764,
+            "name": "Chase Stadium",
+            "city": "Fort Lauderdale, Florida"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744243200
+        },
+        "league": {
+          "id": 16,
+          "name": "CONCACAF Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/16.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9568,
+            "name": "Inter Miami",
+            "logo": "https://media.api-sports.io/football/teams/9568.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326340,
+          "date": "2025-04-13T02:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744511400
         },
         "league": {
           "id": 253,
@@ -386,27 +444,27 @@
             "id": 1616,
             "name": "Los Angeles FC",
             "logo": "https://media.api-sports.io/football/teams/1616.png",
-            "winner": true
+            "winner": null
           },
           "away": {
             "id": 1596,
             "name": "San Jose Earthquakes",
             "logo": "https://media.api-sports.io/football/teams/1596.png",
-            "winner": false
+            "winner": null
           }
         },
         "goals": {
-          "home": 3,
-          "away": 1
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 3,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -420,20 +478,197 @@
       },
       {
         "fixture": {
-          "id": 1151119,
-          "date": "2024-10-13T23:30:00+00:00",
+          "id": 1326356,
+          "date": "2025-04-20T02:15:00+00:00",
+          "venue": {
+            "id": 1748,
+            "name": "Providence Park",
+            "city": "Portland, Oregon"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745115300
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1617,
+            "name": "Portland Timbers",
+            "logo": "https://media.api-sports.io/football/teams/1617.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326371,
+          "date": "2025-04-27T23:00:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745794800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          },
+          "away": {
+            "id": 20787,
+            "name": "St. Louis City",
+            "logo": "https://media.api-sports.io/football/teams/20787.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326381,
+          "date": "2025-05-04T02:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746325800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1600,
+            "name": "Houston Dynamo",
+            "logo": "https://media.api-sports.io/football/teams/1600.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326399,
+          "date": "2025-05-11T23:00:00+00:00",
           "venue": {
             "id": 19445,
             "name": "BC Place",
             "city": "Vancouver, British Columbia"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1728862200
+          "timestamp": 1747004400
         },
         "league": {
           "id": 253,
@@ -445,27 +680,27 @@
             "id": 1603,
             "name": "Vancouver Whitecaps",
             "logo": "https://media.api-sports.io/football/teams/1603.png",
-            "winner": false
+            "winner": null
           },
           "away": {
             "id": 1616,
             "name": "Los Angeles FC",
             "logo": "https://media.api-sports.io/football/teams/1616.png",
-            "winner": true
+            "winner": null
           }
         },
         "goals": {
-          "home": 1,
-          "away": 2
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 1,
-            "away": 2
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -479,8 +714,659 @@
       },
       {
         "fixture": {
-          "id": 1151227,
-          "date": "2024-10-06T00:30:00+00:00",
+          "id": 1326410,
+          "date": "2025-05-15T02:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747276200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1595,
+            "name": "Seattle Sounders",
+            "logo": "https://media.api-sports.io/football/teams/1595.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326425,
+          "date": "2025-05-19T01:00:00+00:00",
+          "venue": {
+            "id": 1616,
+            "name": "Dignity Health Sports Park",
+            "city": "Carson, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747616400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1605,
+            "name": "Los Angeles Galaxy",
+            "logo": "https://media.api-sports.io/football/teams/1605.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326429,
+          "date": "2025-05-24T23:30:00+00:00",
+          "venue": {
+            "id": 310,
+            "name": "Stade Saputo",
+            "city": "Montreal, Quebec"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748129400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326450,
+          "date": "2025-05-29T02:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748485800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326465,
+          "date": "2025-06-01T02:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748745000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326472,
+          "date": "2025-06-14T02:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749868200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1601,
+            "name": "Toronto FC",
+            "logo": "https://media.api-sports.io/football/teams/1601.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326494,
+          "date": "2025-06-26T01:30:00+00:00",
+          "venue": {
+            "id": 19223,
+            "name": "America First Field",
+            "city": "Sandy, Utah"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750901400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1606,
+            "name": "Real Salt Lake",
+            "logo": "https://media.api-sports.io/football/teams/1606.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326505,
+          "date": "2025-06-29T02:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751164200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1603,
+            "name": "Vancouver Whitecaps",
+            "logo": "https://media.api-sports.io/football/teams/1603.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326517,
+          "date": "2025-07-06T00:30:00+00:00",
+          "venue": {
+            "id": 11535,
+            "name": "Q2 Stadium",
+            "city": "Austin, Texas"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751761800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16489,
+            "name": "Austin",
+            "logo": "https://media.api-sports.io/football/teams/16489.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326536,
+          "date": "2025-07-13T02:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752373800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1597,
+            "name": "FC Dallas",
+            "logo": "https://media.api-sports.io/football/teams/1597.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326545,
+          "date": "2025-07-17T00:30:00+00:00",
+          "venue": {
+            "id": 1617,
+            "name": "Allianz Field",
+            "city": "Saint Paul, Minnesota"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752712200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1612,
+            "name": "Minnesota United FC",
+            "logo": "https://media.api-sports.io/football/teams/1612.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1326296,
+          "date": "2025-03-23T00:30:00+00:00",
           "venue": {
             "id": 1615,
             "name": "Children's Mercy Park",
@@ -490,9 +1376,9 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 4
+            "extra": 7
           },
-          "timestamp": 1728174600
+          "timestamp": 1742689800
         },
         "league": {
           "id": 253,
@@ -515,16 +1401,16 @@
         },
         "goals": {
           "home": 0,
-          "away": 3
+          "away": 2
         },
         "score": {
           "halftime": {
             "home": 0,
-            "away": 2
+            "away": 1
           },
           "fulltime": {
             "home": 0,
-            "away": 3
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -538,8 +1424,8 @@
       },
       {
         "fixture": {
-          "id": 1151215,
-          "date": "2024-10-03T02:30:00+00:00",
+          "id": 1326277,
+          "date": "2025-03-15T19:45:00+00:00",
           "venue": {
             "id": 19419,
             "name": "BMO Stadium",
@@ -549,9 +1435,245 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742067900
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": false
+          },
+          "away": {
+            "id": 16489,
+            "name": "Austin",
+            "logo": "https://media.api-sports.io/football/teams/16489.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355025,
+          "date": "2025-03-12T00:30:00+00:00",
+          "venue": {
+            "id": 12667,
+            "name": "Lower.com Field",
+            "city": "Columbus, Ohio"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
             "extra": 7
           },
-          "timestamp": 1727922600
+          "timestamp": 1741739400
+        },
+        "league": {
+          "id": 16,
+          "name": "CONCACAF Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/16.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1613,
+            "name": "Columbus Crew",
+            "logo": "https://media.api-sports.io/football/teams/1613.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326262,
+          "date": "2025-03-08T21:45:00+00:00",
+          "venue": {
+            "id": 11534,
+            "name": "Lumen Field",
+            "city": "Seattle, Washington"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1741470300
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1595,
+            "name": "Seattle Sounders",
+            "logo": "https://media.api-sports.io/football/teams/1595.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355024,
+          "date": "2025-03-05T03:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1741145400
+        },
+        "league": {
+          "id": 16,
+          "name": "CONCACAF Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/16.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1613,
+            "name": "Columbus Crew",
+            "logo": "https://media.api-sports.io/football/teams/1613.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326257,
+          "date": "2025-03-02T03:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1740886200
         },
         "league": {
           "id": 253,
@@ -566,9 +1688,9 @@
             "winner": true
           },
           "away": {
-            "id": 20787,
-            "name": "St. Louis City",
-            "logo": "https://media.api-sports.io/football/teams/20787.png",
+            "id": 1604,
+            "name": "New York City FC",
+            "logo": "https://media.api-sports.io/football/teams/1604.png",
             "winner": false
           }
         },
@@ -578,130 +1700,12 @@
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151192,
-          "date": "2024-09-28T23:30:00+00:00",
-          "venue": {
-            "id": 19229,
-            "name": "TQL Stadium",
-            "city": "Cincinnati, Ohio"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1727566200
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2242,
-            "name": "FC Cincinnati",
-            "logo": "https://media.api-sports.io/football/teams/2242.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1616,
-            "name": "Los Angeles FC",
-            "logo": "https://media.api-sports.io/football/teams/1616.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
             "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151183,
-          "date": "2024-09-22T00:30:00+00:00",
-          "venue": {
-            "id": 1612,
-            "name": "Toyota Stadium",
-            "city": "Frisco, Texas"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1726965000
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1597,
-            "name": "FC Dallas",
-            "logo": "https://media.api-sports.io/football/teams/1597.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1616,
-            "name": "Los Angeles FC",
-            "logo": "https://media.api-sports.io/football/teams/1616.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
             "away": 0
           },
           "fulltime": {
-            "home": 3,
-            "away": 1
+            "home": 1,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -715,8 +1719,8 @@
       },
       {
         "fixture": {
-          "id": 1151174,
-          "date": "2024-09-19T02:30:00+00:00",
+          "id": 1321844,
+          "date": "2025-02-26T03:00:00+00:00",
           "venue": {
             "id": 19419,
             "name": "BMO Stadium",
@@ -726,9 +1730,68 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 5
+            "extra": 8
           },
-          "timestamp": 1726713000
+          "timestamp": 1740538800
+        },
+        "league": {
+          "id": 16,
+          "name": "CONCACAF Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/16.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326234,
+          "date": "2025-02-22T21:45:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1740260700
         },
         "league": {
           "id": 253,
@@ -740,26 +1803,144 @@
             "id": 1616,
             "name": "Los Angeles FC",
             "logo": "https://media.api-sports.io/football/teams/1616.png",
-            "winner": null
+            "winner": true
           },
           "away": {
-            "id": 16489,
-            "name": "Austin",
-            "logo": "https://media.api-sports.io/football/teams/16489.png",
-            "winner": null
+            "id": 1612,
+            "name": "Minnesota United FC",
+            "logo": "https://media.api-sports.io/football/teams/1612.png",
+            "winner": false
           }
         },
         "goals": {
           "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1321843,
+          "date": "2025-02-19T03:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Dick's Sporting Goods Park",
+            "city": "Commerce City, Colorado"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1739934000
+        },
+        "league": {
+          "id": 16,
+          "name": "CONCACAF Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/16.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
           "away": 1
         },
         "score": {
           "halftime": {
             "home": 0,
-            "away": 1
+            "away": 0
           },
           "fulltime": {
-            "home": 1,
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346028,
+          "date": "2025-02-12T03:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1739331000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2287,
+            "name": "Club America",
+            "logo": "https://media.api-sports.io/football/teams/2287.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
             "away": 1
           },
           "extratime": {
@@ -781,76 +1962,76 @@
       "country": "USA",
       "logo": "https://media.api-sports.io/football/leagues/253.png",
       "flag": "https://media.api-sports.io/flags/us.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 1616,
       "name": "Los Angeles FC",
       "logo": "https://media.api-sports.io/football/teams/1616.png"
     },
-    "form": "WLDLWLWDDWLWWWWWWDWWWLDWLDLDLWWWWWWLWL",
+    "form": "WWLLW",
     "fixtures": {
       "played": {
-        "home": 20,
-        "away": 18,
-        "total": 38
+        "home": 3,
+        "away": 2,
+        "total": 5
       },
       "wins": {
-        "home": 13,
-        "away": 8,
-        "total": 21
+        "home": 2,
+        "away": 1,
+        "total": 3
       },
       "draws": {
-        "home": 4,
-        "away": 3,
-        "total": 7
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 3,
-        "away": 7,
-        "total": 10
+        "home": 1,
+        "away": 1,
+        "total": 2
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 40,
-          "away": 27,
-          "total": 67
+          "home": 2,
+          "away": 4,
+          "total": 6
         },
         "average": {
-          "home": "2.0",
-          "away": "1.5",
-          "total": "1.8"
+          "home": "0.7",
+          "away": "2.0",
+          "total": "1.2"
         },
         "minute": {
           "0-15": {
-            "total": 11,
-            "percentage": "15.28%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 8,
-            "percentage": "11.11%"
+            "total": 1,
+            "percentage": "16.67%"
           },
           "31-45": {
-            "total": 10,
-            "percentage": "13.89%"
+            "total": 1,
+            "percentage": "16.67%"
           },
           "46-60": {
-            "total": 14,
-            "percentage": "19.44%"
+            "total": 1,
+            "percentage": "16.67%"
           },
           "61-75": {
-            "total": 15,
-            "percentage": "20.83%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 8,
-            "percentage": "11.11%"
+            "total": 2,
+            "percentage": "33.33%"
           },
           "91-105": {
-            "total": 6,
-            "percentage": "8.33%"
+            "total": 1,
+            "percentage": "16.67%"
           },
           "106-120": {
             "total": null,
@@ -859,185 +2040,181 @@
         },
         "under_over": {
           "0.5": {
-            "over": 32,
-            "under": 6
+            "over": 4,
+            "under": 1
           },
           "1.5": {
-            "over": 21,
-            "under": 17
+            "over": 2,
+            "under": 3
           },
           "2.5": {
-            "over": 9,
-            "under": 29
+            "over": 0,
+            "under": 5
           },
           "3.5": {
-            "over": 2,
-            "under": 36
+            "over": 0,
+            "under": 5
           },
           "4.5": {
-            "over": 2,
-            "under": 36
+            "over": 0,
+            "under": 5
           }
         }
       },
       "against": {
         "total": {
-          "home": 21,
-          "away": 28,
-          "total": 49
+          "home": 1,
+          "away": 5,
+          "total": 6
         },
         "average": {
-          "home": "1.1",
-          "away": "1.6",
-          "total": "1.3"
+          "home": "0.3",
+          "away": "2.5",
+          "total": "1.2"
         },
         "minute": {
           "0-15": {
-            "total": 4,
-            "percentage": "9.09%"
+            "total": 2,
+            "percentage": "33.33%"
           },
           "16-30": {
-            "total": 6,
-            "percentage": "13.64%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 6,
-            "percentage": "13.64%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 11,
-            "percentage": "25.00%"
+            "total": 1,
+            "percentage": "16.67%"
           },
           "61-75": {
-            "total": 8,
-            "percentage": "18.18%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 7,
-            "percentage": "15.91%"
+            "total": 2,
+            "percentage": "33.33%"
           },
           "91-105": {
             "total": 1,
-            "percentage": "2.27%"
+            "percentage": "16.67%"
           },
           "106-120": {
-            "total": 1,
-            "percentage": "2.27%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 25,
-            "under": 13
+            "over": 2,
+            "under": 3
           },
           "1.5": {
-            "over": 14,
-            "under": 24
+            "over": 1,
+            "under": 4
           },
           "2.5": {
-            "over": 7,
-            "under": 31
+            "over": 1,
+            "under": 4
           },
           "3.5": {
-            "over": 2,
-            "under": 36
+            "over": 1,
+            "under": 4
           },
           "4.5": {
             "over": 1,
-            "under": 37
+            "under": 4
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 6,
-        "draws": 2,
-        "loses": 1
+        "wins": 2,
+        "draws": 0,
+        "loses": 2
       },
       "wins": {
-        "home": "5-0",
-        "away": "0-3"
+        "home": "1-0",
+        "away": "0-2"
       },
       "loses": {
-        "home": "1-5",
-        "away": "3-0"
+        "home": "0-1",
+        "away": "5-2"
       },
       "goals": {
         "for": {
-          "home": 6,
-          "away": 3
+          "home": 1,
+          "away": 2
         },
         "against": {
-          "home": 5,
-          "away": 4
+          "home": 1,
+          "away": 5
         }
       }
     },
     "clean_sheet": {
-      "home": 8,
-      "away": 5,
-      "total": 13
+      "home": 2,
+      "away": 1,
+      "total": 3
     },
     "failed_to_score": {
-      "home": 2,
-      "away": 4,
-      "total": 6
+      "home": 1,
+      "away": 0,
+      "total": 1
     },
     "penalty": {
       "scored": {
-        "total": 8,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 8
+      "total": 0
     },
     "lineups": [
       {
         "formation": "4-3-3",
-        "played": 25
+        "played": 3
       },
       {
         "formation": "3-4-3",
-        "played": 12
-      },
-      {
-        "formation": "4-3-1-2",
-        "played": 1
+        "played": 2
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 5,
-          "percentage": "6.10%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
-          "total": 7,
-          "percentage": "8.54%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 14,
-          "percentage": "17.07%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 19,
-          "percentage": "23.17%"
+          "total": 2,
+          "percentage": "40.00%"
         },
         "61-75": {
-          "total": 14,
-          "percentage": "17.07%"
+          "total": 1,
+          "percentage": "20.00%"
         },
         "76-90": {
-          "total": 20,
-          "percentage": "24.39%"
+          "total": 1,
+          "percentage": "20.00%"
         },
         "91-105": {
-          "total": 3,
-          "percentage": "3.66%"
+          "total": 1,
+          "percentage": "20.00%"
         },
         "106-120": {
           "total": null,
@@ -1066,12 +2243,12 @@
           "percentage": null
         },
         "76-90": {
-          "total": 4,
-          "percentage": "80.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "20.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1080,5 +2257,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:44:05.241Z"
+  "lastUpdated": "2025-03-27T10:42:57.507Z"
 }

@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2023-10-11",
-          "end": "2024-03-26",
-          "current": false,
+          "year": 2025,
+          "start": "2024-10-09",
+          "end": "2025-03-25",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -52,44 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -107,6 +70,183 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1300016,
+          "date": "2024-11-19T17:00:00+00:00",
+          "venue": {
+            "id": 1511,
+            "name": "Bravida Arena",
+            "city": "Göteborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1732035600
+        },
+        "league": {
+          "id": 893,
+          "name": "UEFA U19 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10361,
+            "name": "Estonia U19",
+            "logo": "https://media.api-sports.io/football/teams/10361.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10335,
+            "name": "Georgia U19",
+            "logo": "https://media.api-sports.io/football/teams/10335.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1299996,
+          "date": "2024-11-16T17:00:00+00:00",
+          "venue": {
+            "id": 1507,
+            "name": "Borås Arena",
+            "city": "Borås"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1731776400
+        },
+        "league": {
+          "id": 893,
+          "name": "UEFA U19 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10380,
+            "name": "Sweden U19",
+            "logo": "https://media.api-sports.io/football/teams/10380.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10361,
+            "name": "Estonia U19",
+            "logo": "https://media.api-sports.io/football/teams/10361.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1299975,
+          "date": "2024-11-13T12:00:00+00:00",
+          "venue": {
+            "id": 1507,
+            "name": "Borås Arena",
+            "city": "Borås"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1731499200
+        },
+        "league": {
+          "id": 893,
+          "name": "UEFA U19 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10342,
+            "name": "Norway U19",
+            "logo": "https://media.api-sports.io/football/teams/10342.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10361,
+            "name": "Estonia U19",
+            "logo": "https://media.api-sports.io/football/teams/10361.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1189607,
@@ -342,6 +482,183 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1035591,
+          "date": "2023-06-16T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1686909600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10361,
+            "name": "Estonia U19",
+            "logo": "https://media.api-sports.io/football/teams/10361.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10339,
+            "name": "Latvia U19",
+            "logo": "https://media.api-sports.io/football/teams/10339.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 6,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 6,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1035573,
+          "date": "2023-06-14T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1686754800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10333,
+            "name": "Finland U19",
+            "logo": "https://media.api-sports.io/football/teams/10333.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10361,
+            "name": "Estonia U19",
+            "logo": "https://media.api-sports.io/football/teams/10361.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 978701,
+          "date": "2023-03-28T18:30:00+00:00",
+          "venue": {
+            "id": 2630,
+            "name": "Waterford Regional Sports Centre",
+            "city": "Waterford"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1680028200
+        },
+        "league": {
+          "id": 893,
+          "name": "UEFA U19 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/893.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10347,
+            "name": "Slovakia U19",
+            "logo": "https://media.api-sports.io/football/teams/10347.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10361,
+            "name": "Estonia U19",
+            "logo": "https://media.api-sports.io/football/teams/10361.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
@@ -352,14 +669,14 @@
       "country": "World",
       "logo": "https://media.api-sports.io/football/leagues/893.png",
       "flag": null,
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 10361,
       "name": "Estonia U19",
       "logo": "https://media.api-sports.io/football/teams/10361.png"
     },
-    "form": "LLL",
+    "form": "LWD",
     "fixtures": {
       "played": {
         "home": 1,
@@ -368,31 +685,31 @@
       },
       "wins": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       },
       "draws": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "loses": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 1,
+        "total": 1
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 0,
-          "away": 0,
-          "total": 0
+          "home": 1,
+          "away": 3,
+          "total": 4
         },
         "average": {
-          "home": "0.0",
-          "away": "0.0",
-          "total": "0.0"
+          "home": "1.0",
+          "away": "1.5",
+          "total": "1.3"
         },
         "minute": {
           "0-15": {
@@ -400,12 +717,12 @@
             "percentage": null
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 4,
+            "percentage": "80.00%"
           },
           "46-60": {
             "total": null,
@@ -430,12 +747,12 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
-            "under": 3
+            "over": 3,
+            "under": 0
           },
           "1.5": {
-            "over": 0,
-            "under": 3
+            "over": 1,
+            "under": 2
           },
           "2.5": {
             "over": 0,
@@ -453,43 +770,43 @@
       },
       "against": {
         "total": {
-          "home": 3,
-          "away": 6,
-          "total": 9
+          "home": 1,
+          "away": 3,
+          "total": 4
         },
         "average": {
-          "home": "3.0",
-          "away": "3.0",
-          "total": "3.0"
+          "home": "1.0",
+          "away": "1.5",
+          "total": "1.3"
         },
         "minute": {
           "0-15": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "16-30": {
             "total": null,
             "percentage": null
           },
-          "16-30": {
-            "total": 1,
-            "percentage": "11.11%"
-          },
           "31-45": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "22.22%"
+            "total": 1,
+            "percentage": "33.33%"
           },
           "76-90": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": 1,
-            "percentage": "11.11%"
+            "percentage": "33.33%"
           },
           "106-120": {
             "total": null,
@@ -502,16 +819,16 @@
             "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 0
-          },
-          "2.5": {
-            "over": 2,
-            "under": 1
-          },
-          "3.5": {
             "over": 1,
             "under": 2
+          },
+          "2.5": {
+            "over": 0,
+            "under": 3
+          },
+          "3.5": {
+            "over": 0,
+            "under": 3
           },
           "4.5": {
             "over": 0,
@@ -522,26 +839,26 @@
     },
     "biggest": {
       "streak": {
-        "wins": 0,
+        "wins": 1,
         "draws": 0,
-        "loses": 3
+        "loses": 1
       },
       "wins": {
         "home": null,
-        "away": null
+        "away": "1-2"
       },
       "loses": {
-        "home": "0-3",
-        "away": "4-0"
+        "home": null,
+        "away": "2-1"
       },
       "goals": {
         "for": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 2
         },
         "against": {
-          "home": 3,
-          "away": 4
+          "home": 1,
+          "away": 2
         }
       }
     },
@@ -551,51 +868,51 @@
       "total": 0
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 2,
-      "total": 3
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 1,
+        "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 0
+      "total": 1
     },
     "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
           "total": null,
           "percentage": null
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "14.29%"
         },
         "46-60": {
           "total": 1,
-          "percentage": "25.00%"
+          "percentage": "14.29%"
         },
         "61-75": {
           "total": 2,
-          "percentage": "50.00%"
+          "percentage": "28.57%"
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "14.29%"
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "28.57%"
         },
         "106-120": {
           "total": null,
@@ -620,8 +937,8 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
@@ -638,5 +955,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:22.434Z"
+  "lastUpdated": "2025-03-27T10:41:11.574Z"
 }

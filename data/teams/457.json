@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 130,
-        "name": "Copa Argentina",
+        "id": 483,
+        "name": "Copa de la Superliga",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/130.png"
+        "logo": "https://media.api-sports.io/football/leagues/483.png"
       },
       "country": {
         "name": "Argentina",
@@ -34,53 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-25",
-          "end": "2024-12-04",
-          "current": false,
+          "year": 2020,
+          "start": "2020-03-13",
+          "end": "2020-12-23",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
             },
             "standings": false,
             "players": true,
@@ -133,6 +96,43 @@
     },
     {
       "league": {
+        "id": 130,
+        "name": "Copa Argentina",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/130.png"
+      },
+      "country": {
+        "name": "Argentina",
+        "code": "AR",
+        "flag": "https://media.api-sports.io/flags/ar.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-23",
+          "end": "2025-06-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 128,
         "name": "Liga Profesional Argentina",
         "type": "League",
@@ -145,10 +145,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-05-12",
-          "end": "2024-12-15",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-23",
+          "end": "2025-05-04",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -183,24 +183,23 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1159026,
-          "date": "2024-12-15T22:30:00+00:00",
+          "id": 1334428,
+          "date": "2025-03-30T22:30:00+00:00",
           "venue": {
-            "id": 110,
-            "name": "Estadio Mario Alberto Kempes",
-            "city": "Ciudad de Córdoba, Provincia de Córdoba"
+            "id": 93,
+            "name": "Estadio Marcelo Alberto Bielsa",
+            "city": "Rosario, Provincia de Santa Fe"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1734301800
+          "timestamp": 1743373800
         },
         "league": {
           "id": 128,
@@ -209,30 +208,30 @@
         },
         "teams": {
           "home": {
-            "id": 456,
-            "name": "Talleres Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/456.png",
-            "winner": false
-          },
-          "away": {
             "id": 457,
             "name": "Newells Old Boys",
             "logo": "https://media.api-sports.io/football/teams/457.png",
-            "winner": true
+            "winner": null
+          },
+          "away": {
+            "id": 451,
+            "name": "Boca Juniors",
+            "logo": "https://media.api-sports.io/football/teams/451.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 1,
-          "away": 3
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 1,
-            "away": 3
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -246,8 +245,305 @@
       },
       {
         "fixture": {
-          "id": 1159022,
-          "date": "2024-12-09T00:00:00+00:00",
+          "id": 1330791,
+          "date": "2025-04-02T20:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743624000
+        },
+        "league": {
+          "id": 130,
+          "name": "Copa Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/130.png"
+        },
+        "teams": {
+          "home": {
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3975,
+            "name": "Kimberley Mar del Plata",
+            "logo": "https://media.api-sports.io/football/teams/3975.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334446,
+          "date": "2025-04-07T22:00:00+00:00",
+          "venue": {
+            "id": 112,
+            "name": "Estadio José Dellagiovanna",
+            "city": "San Fernando, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744063200
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 452,
+            "name": "Tigre",
+            "logo": "https://media.api-sports.io/football/teams/452.png",
+            "winner": null
+          },
+          "away": {
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334459,
+          "date": "2025-04-12T00:00:00+00:00",
+          "venue": {
+            "id": 93,
+            "name": "Estadio Marcelo Alberto Bielsa",
+            "city": "Rosario, Provincia de Santa Fe"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744416000
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
+            "winner": null
+          },
+          "away": {
+            "id": 458,
+            "name": "Argentinos JRS",
+            "logo": "https://media.api-sports.io/football/teams/458.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334490,
+          "date": "2025-04-29T22:00:00+00:00",
+          "venue": {
+            "id": 93,
+            "name": "Estadio Marcelo Alberto Bielsa",
+            "city": "Rosario, Provincia de Santa Fe"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745964000
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
+            "winner": null
+          },
+          "away": {
+            "id": 445,
+            "name": "Huracan",
+            "logo": "https://media.api-sports.io/football/teams/445.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1334415,
+          "date": "2025-03-15T21:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jorge Luis Hirschi",
+            "city": "La Plata, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1742074200
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 450,
+            "name": "Estudiantes L.P.",
+            "logo": "https://media.api-sports.io/football/teams/450.png",
+            "winner": null
+          },
+          "away": {
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334407,
+          "date": "2025-03-10T00:30:00+00:00",
           "venue": {
             "id": 93,
             "name": "Estadio Marcelo Alberto Bielsa",
@@ -259,7 +555,7 @@
             "elapsed": 90,
             "extra": 7
           },
-          "timestamp": 1733702400
+          "timestamp": 1741566600
         },
         "league": {
           "id": 128,
@@ -271,18 +567,18 @@
             "id": 457,
             "name": "Newells Old Boys",
             "logo": "https://media.api-sports.io/football/teams/457.png",
-            "winner": false
+            "winner": null
           },
           "away": {
-            "id": 451,
-            "name": "Boca Juniors",
-            "logo": "https://media.api-sports.io/football/teams/451.png",
-            "winner": true
+            "id": 440,
+            "name": "Belgrano Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/440.png",
+            "winner": null
           }
         },
         "goals": {
           "home": 0,
-          "away": 1
+          "away": 0
         },
         "score": {
           "halftime": {
@@ -291,7 +587,7 @@
           },
           "fulltime": {
             "home": 0,
-            "away": 1
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -305,8 +601,8 @@
       },
       {
         "fixture": {
-          "id": 1158997,
-          "date": "2024-12-03T01:00:00+00:00",
+          "id": 1334396,
+          "date": "2025-03-04T00:00:00+00:00",
           "venue": {
             "id": 42,
             "name": "Estadio Monumental Presidente José Fierro",
@@ -316,9 +612,9 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 12
+            "extra": 8
           },
-          "timestamp": 1733187600
+          "timestamp": 1741046400
         },
         "league": {
           "id": 128,
@@ -330,254 +626,18 @@
             "id": 455,
             "name": "Atletico Tucuman",
             "logo": "https://media.api-sports.io/football/teams/455.png",
-            "winner": null
+            "winner": false
           },
           "away": {
-            "id": 457,
-            "name": "Newells Old Boys",
-            "logo": "https://media.api-sports.io/football/teams/457.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158995,
-          "date": "2024-11-26T22:00:00+00:00",
-          "venue": {
-            "id": 93,
-            "name": "Estadio Marcelo Alberto Bielsa",
-            "city": "Rosario, Provincia de Santa Fe"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 12
-          },
-          "timestamp": 1732658400
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
             "id": 457,
             "name": "Newells Old Boys",
             "logo": "https://media.api-sports.io/football/teams/457.png",
             "winner": true
-          },
-          "away": {
-            "id": 453,
-            "name": "Independiente",
-            "logo": "https://media.api-sports.io/football/teams/453.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158968,
-          "date": "2024-11-20T20:00:00+00:00",
-          "venue": {
-            "id": 93,
-            "name": "Estadio Marcelo Alberto Bielsa",
-            "city": "Rosario, Provincia de Santa Fe"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1732132800
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 457,
-            "name": "Newells Old Boys",
-            "logo": "https://media.api-sports.io/football/teams/457.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1065,
-            "name": "Central Cordoba de Santiago",
-            "logo": "https://media.api-sports.io/football/teams/1065.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158967,
-          "date": "2024-11-09T20:00:00+00:00",
-          "venue": {
-            "id": 77,
-            "name": "Estadio Juan Carmelo Zerillo",
-            "city": "La Plata, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1731182400
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 434,
-            "name": "Gimnasia L.P.",
-            "logo": "https://media.api-sports.io/football/teams/434.png",
-            "winner": true
-          },
-          "away": {
-            "id": 457,
-            "name": "Newells Old Boys",
-            "logo": "https://media.api-sports.io/football/teams/457.png",
-            "winner": false
           }
         },
         "goals": {
           "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158941,
-          "date": "2024-11-06T00:00:00+00:00",
-          "venue": {
-            "id": 93,
-            "name": "Estadio Marcelo Alberto Bielsa",
-            "city": "Rosario, Provincia de Santa Fe"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1730851200
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 457,
-            "name": "Newells Old Boys",
-            "logo": "https://media.api-sports.io/football/teams/457.png",
-            "winner": false
-          },
-          "away": {
-            "id": 445,
-            "name": "Huracan",
-            "logo": "https://media.api-sports.io/football/teams/445.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 4
+          "away": 2
         },
         "score": {
           "halftime": {
@@ -585,8 +645,8 @@
             "away": 2
           },
           "fulltime": {
-            "home": 2,
-            "away": 4
+            "home": 1,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -600,20 +660,20 @@
       },
       {
         "fixture": {
-          "id": 1158938,
-          "date": "2024-11-02T00:15:00+00:00",
+          "id": 1334379,
+          "date": "2025-02-24T20:00:00+00:00",
           "venue": {
-            "id": 1933,
-            "name": "Estadio 15 de Abril",
-            "city": "Ciudad de Santa Fe, Provincia de Santa Fe"
+            "id": 38,
+            "name": "Estadio Julio Humberto Grondona",
+            "city": "Avellaneda, Provincia de Buenos Aires"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 4
+            "extra": 6
           },
-          "timestamp": 1730506500
+          "timestamp": 1740427200
         },
         "league": {
           "id": 128,
@@ -622,9 +682,9 @@
         },
         "teams": {
           "home": {
-            "id": 441,
-            "name": "Union Santa Fe",
-            "logo": "https://media.api-sports.io/football/teams/441.png",
+            "id": 2432,
+            "name": "Barracas Central",
+            "logo": "https://media.api-sports.io/football/teams/2432.png",
             "winner": true
           },
           "away": {
@@ -659,8 +719,8 @@
       },
       {
         "fixture": {
-          "id": 1158914,
-          "date": "2024-10-26T20:15:00+00:00",
+          "id": 1334358,
+          "date": "2025-02-16T20:00:00+00:00",
           "venue": {
             "id": 93,
             "name": "Estadio Marcelo Alberto Bielsa",
@@ -672,7 +732,7 @@
             "elapsed": 90,
             "extra": 5
           },
-          "timestamp": 1729973700
+          "timestamp": 1739736000
         },
         "league": {
           "id": 128,
@@ -684,26 +744,85 @@
             "id": 457,
             "name": "Newells Old Boys",
             "logo": "https://media.api-sports.io/football/teams/457.png",
-            "winner": null
+            "winner": false
           },
           "away": {
-            "id": 474,
-            "name": "Sarmiento Junin",
-            "logo": "https://media.api-sports.io/football/teams/474.png",
-            "winner": null
+            "id": 437,
+            "name": "Rosario Central",
+            "logo": "https://media.api-sports.io/football/teams/437.png",
+            "winner": true
           }
         },
         "goals": {
           "home": 1,
-          "away": 1
+          "away": 2
         },
         "score": {
           "halftime": {
-            "home": 1,
+            "home": 0,
             "away": 1
           },
           "fulltime": {
             "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334342,
+          "date": "2025-02-12T20:45:00+00:00",
+          "venue": {
+            "id": 93,
+            "name": "Estadio Marcelo Alberto Bielsa",
+            "city": "Rosario, Provincia de Santa Fe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1739393100
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
+            "winner": false
+          },
+          "away": {
+            "id": 442,
+            "name": "Defensa Y Justicia",
+            "logo": "https://media.api-sports.io/football/teams/442.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
             "away": 1
           },
           "extratime": {
@@ -718,20 +837,20 @@
       },
       {
         "fixture": {
-          "id": 1158909,
-          "date": "2024-10-20T22:30:00+00:00",
+          "id": 1334325,
+          "date": "2025-02-07T23:00:00+00:00",
           "venue": {
-            "id": 80,
-            "name": "Estadio Malvinas Argentinas",
-            "city": "Mendoza, Provincia de Mendoza"
+            "id": 2997,
+            "name": "Estadio Único Madre de Ciudades",
+            "city": "Santiago del Estero, Prov. de Santiago del Estero"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 5
+            "extra": 8
           },
-          "timestamp": 1729463400
+          "timestamp": 1738969200
         },
         "league": {
           "id": 128,
@@ -740,9 +859,9 @@
         },
         "teams": {
           "home": {
-            "id": 439,
-            "name": "Godoy Cruz",
-            "logo": "https://media.api-sports.io/football/teams/439.png",
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
             "winner": true
           },
           "away": {
@@ -764,6 +883,183 @@
           "fulltime": {
             "home": 2,
             "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334312,
+          "date": "2025-02-02T22:15:00+00:00",
+          "venue": {
+            "id": 93,
+            "name": "Estadio Marcelo Alberto Bielsa",
+            "city": "Rosario, Provincia de Santa Fe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1738534500
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
+            "winner": true
+          },
+          "away": {
+            "id": 463,
+            "name": "Aldosivi",
+            "logo": "https://media.api-sports.io/football/teams/463.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334292,
+          "date": "2025-01-27T23:00:00+00:00",
+          "venue": {
+            "id": 43,
+            "name": "Estadio Florencio Solá",
+            "city": "Lomas de Zamora, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1738018800
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 449,
+            "name": "Banfield",
+            "logo": "https://media.api-sports.io/football/teams/449.png",
+            "winner": true
+          },
+          "away": {
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334279,
+          "date": "2025-01-24T00:30:00+00:00",
+          "venue": {
+            "id": 93,
+            "name": "Estadio Marcelo Alberto Bielsa",
+            "city": "Rosario, Provincia de Santa Fe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1737678600
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
+            "winner": false
+          },
+          "away": {
+            "id": 473,
+            "name": "Independ. Rivadavia",
+            "logo": "https://media.api-sports.io/football/teams/473.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -779,34 +1075,34 @@
   },
   "statistics": {
     "league": {
-      "id": 130,
-      "name": "Copa Argentina",
-      "country": "Argentina",
-      "logo": "https://media.api-sports.io/football/leagues/130.png",
-      "flag": "https://media.api-sports.io/flags/ar.svg",
-      "season": 2024
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
+      "flag": null,
+      "season": null
     },
     "team": {
       "id": 457,
       "name": "Newells Old Boys",
       "logo": "https://media.api-sports.io/football/teams/457.png"
     },
-    "form": "WWD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -817,14 +1113,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 2,
-          "away": 1,
-          "total": 3
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.0",
-          "away": "0.5",
-          "total": "1.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -832,54 +1128,54 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
             "percentage": null
           },
           "106-120": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
@@ -924,43 +1220,43 @@
             "percentage": null
           },
           "106-120": {
-            "total": 3,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "2-0",
-        "away": "0-1"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
@@ -968,8 +1264,8 @@
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
           "home": 0,
@@ -978,25 +1274,25 @@
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 2,
-      "total": 3
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 2,
-        "percentage": "40.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
-        "total": 3,
-        "percentage": "60.00%"
+        "total": 0,
+        "percentage": "0%"
       },
-      "total": 5
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -1010,24 +1306,24 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
           "total": null,
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1070,5 +1366,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:04.235Z"
+  "lastUpdated": "2025-03-27T10:37:45.071Z"
 }

@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 804,
+        "name": "Caribbean Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/804.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,53 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2016,
+          "start": "2016-03-22",
+          "end": "2017-06-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 808,
+        "name": "CONCACAF Nations League - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/808.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2018,
+          "start": "2018-09-06",
+          "end": "2019-03-25",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -234,7 +271,7 @@
           "date": "2024-10-15T01:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Nicaragua National Football Stadium",
+            "name": "Estadio Nacional de Fútbol",
             "city": "Managua"
           },
           "status": {
@@ -522,29 +559,206 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1060847,
+          "date": "2023-11-21T19:00:00+00:00",
+          "venue": {
+            "id": 5761,
+            "name": "Stade Municipal Pierre-Aliker",
+            "city": "Fort-de-France"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700593200
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8118,
+            "name": "French Guyana",
+            "logo": "https://media.api-sports.io/football/teams/8118.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5158,
+            "name": "Bermuda",
+            "logo": "https://media.api-sports.io/football/teams/5158.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1060840,
+          "date": "2023-11-18T02:00:00+00:00",
+          "venue": {
+            "id": 4153,
+            "name": "FFB Field",
+            "city": "Belmopán"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700272800
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5528,
+            "name": "Belize",
+            "logo": "https://media.api-sports.io/football/teams/5528.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8118,
+            "name": "French Guyana",
+            "logo": "https://media.api-sports.io/football/teams/8118.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1060831,
+          "date": "2023-10-16T23:00:00+00:00",
+          "venue": {
+            "id": 5761,
+            "name": "Stade Municipal Pierre-Aliker",
+            "city": "Fort-de-France"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697497200
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8118,
+            "name": "French Guyana",
+            "logo": "https://media.api-sports.io/football/teams/8118.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5541,
+            "name": "St. Vincent / Grenadines",
+            "logo": "https://media.api-sports.io/football/teams/5541.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 8118,
       "name": "French Guyana",
       "logo": "https://media.api-sports.io/football/teams/8118.png"
     },
-    "form": "D",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -552,9 +766,9 @@
         "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -565,14 +779,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -610,37 +824,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -678,24 +892,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       }
@@ -703,7 +917,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
@@ -716,11 +930,11 @@
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 1,
+          "home": 0,
           "away": 0
         }
       }
@@ -818,5 +1032,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:05.157Z"
+  "lastUpdated": "2025-03-27T10:40:53.764Z"
 }

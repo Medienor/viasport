@@ -22,47 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 253,
-        "name": "Major League Soccer",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/253.png"
-      },
-      "country": {
-        "name": "USA",
-        "code": "US",
-        "flag": "https://media.api-sports.io/flags/us.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-02-22",
-          "end": "2024-12-07",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": true,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
+        "id": 16,
+        "name": "CONCACAF Champions League",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
+        "logo": "https://media.api-sports.io/football/leagues/16.png"
       },
       "country": {
         "name": "World",
@@ -71,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-05",
+          "end": "2025-04-08",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -96,10 +59,47 @@
     },
     {
       "league": {
-        "id": 772,
-        "name": "Leagues Cup",
+        "id": 253,
+        "name": "Major League Soccer",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/253.png"
+      },
+      "country": {
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-22",
+          "end": "2025-10-19",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": true,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/772.png"
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
       },
       "country": {
         "name": "World",
@@ -108,10 +108,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-07-27",
-          "end": "2024-08-25",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -124,6 +124,43 @@
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 772,
+        "name": "Leagues Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/772.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-07-29",
+          "end": "2025-08-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -149,142 +186,23 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1312293,
-          "date": "2024-11-02T01:30:00+00:00",
+          "id": 1326304,
+          "date": "2025-03-29T20:30:00+00:00",
           "venue": {
             "id": 1610,
             "name": "Dick's Sporting Goods Park",
             "city": "Commerce City, Colorado"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730511000
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1610,
-            "name": "Colorado Rapids",
-            "logo": "https://media.api-sports.io/football/teams/1610.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1605,
-            "name": "Los Angeles Galaxy",
-            "logo": "https://media.api-sports.io/football/teams/1605.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1312287,
-          "date": "2024-10-27T03:00:00+00:00",
-          "venue": {
-            "id": 1616,
-            "name": "Dignity Health Sports Park",
-            "city": "Carson, California"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1729998000
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1605,
-            "name": "Los Angeles Galaxy",
-            "logo": "https://media.api-sports.io/football/teams/1605.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1610,
-            "name": "Colorado Rapids",
-            "logo": "https://media.api-sports.io/football/teams/1610.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151240,
-          "date": "2024-10-20T01:00:00+00:00",
-          "venue": {
-            "id": 11535,
-            "name": "Q2 Stadium",
-            "city": "Austin, Texas"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
             "extra": null
           },
-          "timestamp": 1729386000
+          "timestamp": 1743280200
         },
         "league": {
           "id": 253,
@@ -293,30 +211,30 @@
         },
         "teams": {
           "home": {
-            "id": 16489,
-            "name": "Austin",
-            "logo": "https://media.api-sports.io/football/teams/16489.png",
-            "winner": true
-          },
-          "away": {
             "id": 1610,
             "name": "Colorado Rapids",
             "logo": "https://media.api-sports.io/football/teams/1610.png",
-            "winner": false
+            "winner": null
+          },
+          "away": {
+            "id": 18310,
+            "name": "Charlotte",
+            "logo": "https://media.api-sports.io/football/teams/18310.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 3,
-          "away": 2
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 3,
-            "away": 2
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -330,20 +248,79 @@
       },
       {
         "fixture": {
-          "id": 1151229,
-          "date": "2024-10-06T01:30:00+00:00",
+          "id": 1326326,
+          "date": "2025-04-06T01:30:00+00:00",
+          "venue": {
+            "id": 19445,
+            "name": "BC Place",
+            "city": "Vancouver, British Columbia"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743903000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1603,
+            "name": "Vancouver Whitecaps",
+            "logo": "https://media.api-sports.io/football/teams/1603.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326716,
+          "date": "2025-04-13T01:30:00+00:00",
           "venue": {
             "id": 1610,
             "name": "Dick's Sporting Goods Park",
             "city": "Commerce City, Colorado"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1728178200
+          "timestamp": 1744507800
         },
         "league": {
           "id": 253,
@@ -355,27 +332,145 @@
             "id": 1610,
             "name": "Colorado Rapids",
             "logo": "https://media.api-sports.io/football/teams/1610.png",
-            "winner": false
+            "winner": null
+          },
+          "away": {
+            "id": 25484,
+            "name": "San Diego",
+            "logo": "https://media.api-sports.io/football/teams/25484.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326352,
+          "date": "2025-04-20T00:30:00+00:00",
+          "venue": {
+            "id": 19418,
+            "name": "Shell Energy Stadium",
+            "city": "Houston, Texas"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745109000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1600,
+            "name": "Houston Dynamo",
+            "logo": "https://media.api-sports.io/football/teams/1600.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326369,
+          "date": "2025-04-27T01:30:00+00:00",
+          "venue": {
+            "id": 1610,
+            "name": "Dick's Sporting Goods Park",
+            "city": "Commerce City, Colorado"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745717400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
           },
           "away": {
             "id": 1595,
             "name": "Seattle Sounders",
             "logo": "https://media.api-sports.io/football/teams/1595.png",
-            "winner": true
+            "winner": null
           }
         },
         "goals": {
-          "home": 0,
-          "away": 1
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 0,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -389,8 +484,895 @@
       },
       {
         "fixture": {
-          "id": 1151213,
-          "date": "2024-10-03T01:30:00+00:00",
+          "id": 1326375,
+          "date": "2025-05-03T23:30:00+00:00",
+          "venue": {
+            "id": 1613,
+            "name": "Audi Field",
+            "city": "Washington, District of Columbia"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746315000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1615,
+            "name": "DC United",
+            "logo": "https://media.api-sports.io/football/teams/1615.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326397,
+          "date": "2025-05-11T01:30:00+00:00",
+          "venue": {
+            "id": 1610,
+            "name": "Dick's Sporting Goods Park",
+            "city": "Commerce City, Colorado"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746927000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326721,
+          "date": "2025-05-15T02:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Snapdragon Stadium",
+            "city": "San Diego, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747276200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25484,
+            "name": "San Diego",
+            "logo": "https://media.api-sports.io/football/teams/25484.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326422,
+          "date": "2025-05-18T01:30:00+00:00",
+          "venue": {
+            "id": 1610,
+            "name": "Dick's Sporting Goods Park",
+            "city": "Commerce City, Colorado"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747531800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1606,
+            "name": "Real Salt Lake",
+            "logo": "https://media.api-sports.io/football/teams/1606.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326435,
+          "date": "2025-05-25T01:30:00+00:00",
+          "venue": {
+            "id": 1610,
+            "name": "Dick's Sporting Goods Park",
+            "city": "Commerce City, Colorado"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748136600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          },
+          "away": {
+            "id": 20787,
+            "name": "St. Louis City",
+            "logo": "https://media.api-sports.io/football/teams/20787.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326451,
+          "date": "2025-05-29T02:30:00+00:00",
+          "venue": {
+            "id": 1748,
+            "name": "Providence Park",
+            "city": "Portland, Oregon"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748485800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1617,
+            "name": "Portland Timbers",
+            "logo": "https://media.api-sports.io/football/teams/1617.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326465,
+          "date": "2025-06-01T02:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748745000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326468,
+          "date": "2025-06-08T01:30:00+00:00",
+          "venue": {
+            "id": 1610,
+            "name": "Dick's Sporting Goods Park",
+            "city": "Commerce City, Colorado"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749346200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          },
+          "away": {
+            "id": 16489,
+            "name": "Austin",
+            "logo": "https://media.api-sports.io/football/teams/16489.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326482,
+          "date": "2025-06-15T01:30:00+00:00",
+          "venue": {
+            "id": 1610,
+            "name": "Dick's Sporting Goods Park",
+            "city": "Commerce City, Colorado"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749951000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1598,
+            "name": "Orlando City SC",
+            "logo": "https://media.api-sports.io/football/teams/1598.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326493,
+          "date": "2025-06-26T01:30:00+00:00",
+          "venue": {
+            "id": 1610,
+            "name": "Dick's Sporting Goods Park",
+            "city": "Commerce City, Colorado"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750901400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1605,
+            "name": "Los Angeles Galaxy",
+            "logo": "https://media.api-sports.io/football/teams/1605.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326498,
+          "date": "2025-06-28T23:30:00+00:00",
+          "venue": {
+            "id": 1618,
+            "name": "Gillette Stadium",
+            "city": "Foxborough, Massachusetts"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751153400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326511,
+          "date": "2025-07-05T01:30:00+00:00",
+          "venue": {
+            "id": 1610,
+            "name": "Dick's Sporting Goods Park",
+            "city": "Commerce City, Colorado"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751679000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326533,
+          "date": "2025-07-13T01:30:00+00:00",
+          "venue": {
+            "id": 1610,
+            "name": "Dick's Sporting Goods Park",
+            "city": "Commerce City, Colorado"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752370200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1603,
+            "name": "Vancouver Whitecaps",
+            "logo": "https://media.api-sports.io/football/teams/1603.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326547,
+          "date": "2025-07-17T01:30:00+00:00",
+          "venue": {
+            "id": 11534,
+            "name": "Lumen Field",
+            "city": "Seattle, Washington"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752715800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1595,
+            "name": "Seattle Sounders",
+            "logo": "https://media.api-sports.io/football/teams/1595.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326573,
+          "date": "2025-07-26T23:30:00+00:00",
+          "venue": {
+            "id": 1620,
+            "name": "Subaru Park",
+            "city": "Chester, Pennsylvania"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753572600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1599,
+            "name": "Philadelphia Union",
+            "logo": "https://media.api-sports.io/football/teams/1599.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1326298,
+          "date": "2025-03-23T01:30:00+00:00",
           "venue": {
             "id": 1610,
             "name": "Dick's Sporting Goods Park",
@@ -400,9 +1382,9 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 10
+            "extra": 3
           },
-          "timestamp": 1727919000
+          "timestamp": 1742693400
         },
         "league": {
           "id": 253,
@@ -417,23 +1399,23 @@
             "winner": false
           },
           "away": {
-            "id": 1605,
-            "name": "Los Angeles Galaxy",
-            "logo": "https://media.api-sports.io/football/teams/1605.png",
+            "id": 1617,
+            "name": "Portland Timbers",
+            "logo": "https://media.api-sports.io/football/teams/1617.png",
             "winner": true
           }
         },
         "goals": {
-          "home": 1,
+          "home": 0,
           "away": 3
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 0
+            "home": 0,
+            "away": 1
           },
           "fulltime": {
-            "home": 1,
+            "home": 0,
             "away": 3
           },
           "extratime": {
@@ -448,12 +1430,12 @@
       },
       {
         "fixture": {
-          "id": 1151202,
-          "date": "2024-09-29T00:30:00+00:00",
+          "id": 1326285,
+          "date": "2025-03-16T02:30:00+00:00",
           "venue": {
-            "id": 1617,
-            "name": "Allianz Field",
-            "city": "Saint Paul, Minnesota"
+            "id": 11918,
+            "name": "PayPal Park",
+            "city": "San Jose, California"
           },
           "status": {
             "long": "Match Finished",
@@ -461,7 +1443,7 @@
             "elapsed": 90,
             "extra": 7
           },
-          "timestamp": 1727569800
+          "timestamp": 1742092200
         },
         "league": {
           "id": 253,
@@ -470,9 +1452,186 @@
         },
         "teams": {
           "home": {
-            "id": 1612,
-            "name": "Minnesota United FC",
-            "logo": "https://media.api-sports.io/football/teams/1612.png",
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326268,
+          "date": "2025-03-09T01:30:00+00:00",
+          "venue": {
+            "id": 11535,
+            "name": "Q2 Stadium",
+            "city": "Austin, Texas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 12
+          },
+          "timestamp": 1741483800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16489,
+            "name": "Austin",
+            "logo": "https://media.api-sports.io/football/teams/16489.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326256,
+          "date": "2025-03-02T02:30:00+00:00",
+          "venue": {
+            "id": 1610,
+            "name": "Dick's Sporting Goods Park",
+            "city": "Commerce City, Colorado"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1740882600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1597,
+            "name": "FC Dallas",
+            "logo": "https://media.api-sports.io/football/teams/1597.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1321844,
+          "date": "2025-02-26T03:00:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1740538800
+        },
+        "league": {
+          "id": 16,
+          "name": "CONCACAF Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/16.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
             "winner": true
           },
           "away": {
@@ -483,16 +1642,16 @@
           }
         },
         "goals": {
-          "home": 3,
+          "home": 1,
           "away": 0
         },
         "score": {
           "halftime": {
-            "home": 1,
+            "home": 0,
             "away": 0
           },
           "fulltime": {
-            "home": 3,
+            "home": 1,
             "away": 0
           },
           "extratime": {
@@ -507,10 +1666,69 @@
       },
       {
         "fixture": {
-          "id": 1151186,
-          "date": "2024-09-22T01:30:00+00:00",
+          "id": 1326243,
+          "date": "2025-02-23T01:30:00+00:00",
           "venue": {
+            "id": 19408,
+            "name": "Energizer Park",
+            "city": "St. Louis, Missouri"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1740274200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 20787,
+            "name": "St. Louis City",
+            "logo": "https://media.api-sports.io/football/teams/20787.png",
+            "winner": null
+          },
+          "away": {
             "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1321843,
+          "date": "2025-02-19T03:00:00+00:00",
+          "venue": {
+            "id": null,
             "name": "Dick's Sporting Goods Park",
             "city": "Commerce City, Colorado"
           },
@@ -518,14 +1736,73 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 6
+            "extra": 9
           },
-          "timestamp": 1726968600
+          "timestamp": 1739934000
         },
         "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
+          "id": 16,
+          "name": "CONCACAF Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/16.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349187,
+          "date": "2025-02-11T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "The Gardens North County District Park",
+            "city": "Palm Beach Gardens, Florida"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1739289600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
@@ -542,8 +1819,67 @@
           }
         },
         "goals": {
-          "home": 2,
+          "home": 1,
           "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345883,
+          "date": "2025-02-07T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "The Gardens North County District Park",
+            "city": "Palm Beach Gardens, Florida"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1738944000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1615,
+            "name": "DC United",
+            "logo": "https://media.api-sports.io/football/teams/1615.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
         },
         "score": {
           "halftime": {
@@ -551,127 +1887,9 @@
             "away": 0
           },
           "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151170,
-          "date": "2024-09-19T00:30:00+00:00",
-          "venue": {
-            "id": 1615,
-            "name": "Children's Mercy Park",
-            "city": "Kansas City, Kansas"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1726705800
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1611,
-            "name": "Sporting Kansas City",
-            "logo": "https://media.api-sports.io/football/teams/1611.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1610,
-            "name": "Colorado Rapids",
-            "logo": "https://media.api-sports.io/football/teams/1610.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151161,
-          "date": "2024-09-15T01:30:00+00:00",
-          "venue": {
-            "id": 1610,
-            "name": "Dick's Sporting Goods Park",
-            "city": "Commerce City, Colorado"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726363800
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1610,
-            "name": "Colorado Rapids",
-            "logo": "https://media.api-sports.io/football/teams/1610.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1617,
-            "name": "Portland Timbers",
-            "logo": "https://media.api-sports.io/football/teams/1617.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
             "home": 1,
             "away": 1
           },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
           "extratime": {
             "home": null,
             "away": null
@@ -684,31 +1902,31 @@
       },
       {
         "fixture": {
-          "id": 1151140,
-          "date": "2024-09-01T00:30:00+00:00",
+          "id": 1344864,
+          "date": "2025-01-31T17:00:00+00:00",
           "venue": {
-            "id": 1612,
-            "name": "Toyota Stadium",
-            "city": "Frisco, Texas"
+            "id": null,
+            "name": "Cancha La Loma",
+            "city": "Santiago de Querétaro"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 19
           },
-          "timestamp": 1725150600
+          "timestamp": 1738342800
         },
         "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
-            "id": 1597,
-            "name": "FC Dallas",
-            "logo": "https://media.api-sports.io/football/teams/1597.png",
+            "id": 19024,
+            "name": "CA La Paz",
+            "logo": "https://media.api-sports.io/football/teams/19024.png",
             "winner": false
           },
           "away": {
@@ -719,16 +1937,16 @@
           }
         },
         "goals": {
-          "home": 2,
+          "home": 0,
           "away": 3
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 2,
+            "home": 0,
             "away": 3
           },
           "extratime": {
@@ -750,76 +1968,76 @@
       "country": "USA",
       "logo": "https://media.api-sports.io/football/leagues/253.png",
       "flag": "https://media.api-sports.io/flags/us.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 1610,
       "name": "Colorado Rapids",
       "logo": "https://media.api-sports.io/football/teams/1610.png"
     },
-    "form": "LDWDLWDWWLWLWLDLLWWWLWWDLWWWLWLLLLLL",
+    "form": "DDWWL",
     "fixtures": {
       "played": {
-        "home": 18,
-        "away": 18,
-        "total": 36
-      },
-      "wins": {
-        "home": 10,
-        "away": 5,
-        "total": 15
-      },
-      "draws": {
-        "home": 3,
-        "away": 2,
+        "home": 2,
+        "away": 3,
         "total": 5
       },
+      "wins": {
+        "home": 0,
+        "away": 2,
+        "total": 2
+      },
+      "draws": {
+        "home": 1,
+        "away": 1,
+        "total": 2
+      },
       "loses": {
-        "home": 5,
-        "away": 11,
-        "total": 16
+        "home": 1,
+        "away": 0,
+        "total": 1
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 34,
-          "away": 28,
-          "total": 62
+          "home": 3,
+          "away": 3,
+          "total": 6
         },
         "average": {
-          "home": "1.9",
-          "away": "1.6",
-          "total": "1.7"
+          "home": "1.5",
+          "away": "1.0",
+          "total": "1.2"
         },
         "minute": {
           "0-15": {
-            "total": 6,
-            "percentage": "10.00%"
+            "total": 1,
+            "percentage": "14.29%"
           },
           "16-30": {
-            "total": 6,
-            "percentage": "10.00%"
+            "total": 1,
+            "percentage": "14.29%"
           },
           "31-45": {
-            "total": 12,
-            "percentage": "20.00%"
+            "total": 2,
+            "percentage": "28.57%"
           },
           "46-60": {
-            "total": 12,
-            "percentage": "20.00%"
+            "total": 1,
+            "percentage": "14.29%"
           },
           "61-75": {
-            "total": 8,
-            "percentage": "13.33%"
+            "total": 2,
+            "percentage": "28.57%"
           },
           "76-90": {
-            "total": 11,
-            "percentage": "18.33%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 5,
-            "percentage": "8.33%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -828,66 +2046,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 31,
-            "under": 5
+            "over": 3,
+            "under": 2
           },
           "1.5": {
-            "over": 20,
-            "under": 16
+            "over": 2,
+            "under": 3
           },
           "2.5": {
-            "over": 9,
-            "under": 27
+            "over": 1,
+            "under": 4
           },
           "3.5": {
-            "over": 2,
-            "under": 34
+            "over": 0,
+            "under": 5
           },
           "4.5": {
             "over": 0,
-            "under": 36
+            "under": 5
           }
         }
       },
       "against": {
         "total": {
-          "home": 26,
-          "away": 43,
-          "total": 69
+          "home": 6,
+          "away": 1,
+          "total": 7
         },
         "average": {
-          "home": "1.4",
-          "away": "2.4",
-          "total": "1.9"
+          "home": "3.0",
+          "away": "0.3",
+          "total": "1.4"
         },
         "minute": {
           "0-15": {
-            "total": 12,
-            "percentage": "16.90%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 7,
-            "percentage": "9.86%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 9,
-            "percentage": "12.68%"
+            "total": 2,
+            "percentage": "33.33%"
           },
           "46-60": {
-            "total": 18,
-            "percentage": "25.35%"
+            "total": 2,
+            "percentage": "33.33%"
           },
           "61-75": {
-            "total": 8,
-            "percentage": "11.27%"
+            "total": 2,
+            "percentage": "33.33%"
           },
           "76-90": {
-            "total": 9,
-            "percentage": "12.68%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 8,
-            "percentage": "11.27%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -896,121 +2114,117 @@
         },
         "under_over": {
           "0.5": {
-            "over": 30,
-            "under": 6
+            "over": 3,
+            "under": 2
           },
           "1.5": {
-            "over": 19,
-            "under": 17
+            "over": 2,
+            "under": 3
           },
           "2.5": {
-            "over": 13,
-            "under": 23
+            "over": 2,
+            "under": 3
           },
           "3.5": {
-            "over": 5,
-            "under": 31
+            "over": 0,
+            "under": 5
           },
           "4.5": {
-            "over": 2,
-            "under": 34
+            "over": 0,
+            "under": 5
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
-        "draws": 1,
-        "loses": 2
+        "wins": 2,
+        "draws": 2,
+        "loses": 0
       },
       "wins": {
-        "home": "4-1",
-        "away": "0-3"
+        "home": null,
+        "away": "1-2"
       },
       "loses": {
-        "home": "1-4",
-        "away": "5-0"
+        "home": "0-3",
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 4,
-          "away": 3
+          "home": 3,
+          "away": 2
         },
         "against": {
-          "home": 4,
-          "away": 5
+          "home": 3,
+          "away": 1
         }
       }
     },
     "clean_sheet": {
-      "home": 3,
-      "away": 3,
-      "total": 6
+      "home": 0,
+      "away": 2,
+      "total": 2
     },
     "failed_to_score": {
-      "home": 2,
-      "away": 3,
-      "total": 5
+      "home": 1,
+      "away": 1,
+      "total": 2
     },
     "penalty": {
       "scored": {
-        "total": 10,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 10
+      "total": 0
     },
     "lineups": [
       {
-        "formation": "4-2-3-1",
-        "played": 35
+        "formation": "4-3-3",
+        "played": 4
       },
       {
-        "formation": "3-4-2-1",
+        "formation": "4-2-3-1",
         "played": 1
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 5,
-          "percentage": "8.93%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
-          "total": 7,
-          "percentage": "12.50%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 11,
-          "percentage": "19.64%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 9,
-          "percentage": "16.07%"
+          "total": 2,
+          "percentage": "33.33%"
         },
         "61-75": {
-          "total": 10,
-          "percentage": "17.86%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 8,
-          "percentage": "14.29%"
+          "total": 3,
+          "percentage": "50.00%"
         },
         "91-105": {
-          "total": 5,
-          "percentage": "8.93%"
+          "total": 1,
+          "percentage": "16.67%"
         },
         "106-120": {
           "total": null,
           "percentage": null
-        },
-        "": {
-          "total": 1,
-          "percentage": "1.79%"
         }
       },
       "red": {
@@ -1031,16 +2245,16 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
           "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1049,5 +2263,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:44:02.792Z"
+  "lastUpdated": "2025-03-27T10:42:54.974Z"
 }

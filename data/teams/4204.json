@@ -22,28 +22,28 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
+        "id": 505,
+        "name": "League Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
+        "logo": "https://media.api-sports.io/football/leagues/505.png"
       },
       "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
+        "name": "Singapore",
+        "code": "SG",
+        "flag": "https://media.api-sports.io/flags/sg.svg"
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2017,
+          "start": "2017-07-07",
+          "end": "2017-07-21",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -786,6 +786,65 @@
             "id": 4201,
             "name": "Balestier Khalsa",
             "logo": "https://media.api-sports.io/football/teams/4201.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1196696,
+          "date": "2025-05-24T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jalan Besar Stadium",
+            "city": "Singapore"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748080800
+        },
+        "league": {
+          "id": 368,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/368.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4206,
+            "name": "Tampines Rovers",
+            "logo": "https://media.api-sports.io/football/teams/4206.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4204,
+            "name": "Home United",
+            "logo": "https://media.api-sports.io/football/teams/4204.png",
             "winner": null
           }
         },
@@ -1408,24 +1467,24 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 4204,
       "name": "Home United",
       "logo": "https://media.api-sports.io/football/teams/4204.png"
     },
-    "form": "LLL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 3,
+        "home": 0,
         "away": 0,
-        "total": 3
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -1438,22 +1497,22 @@
         "total": 0
       },
       "loses": {
-        "home": 3,
+        "home": 0,
         "away": 0,
-        "total": 3
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 3,
+          "home": 0,
           "away": 0,
-          "total": 3
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1465,12 +1524,12 @@
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -1491,46 +1550,46 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 18,
+          "home": 0,
           "away": 0,
-          "total": 18
+          "total": 0
         },
         "average": {
-          "home": "6.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "6.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 3,
-            "percentage": "60.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
@@ -1545,8 +1604,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1559,24 +1618,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           }
         }
       }
@@ -1585,23 +1644,23 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 3
+        "loses": 0
       },
       "wins": {
         "home": null,
         "away": null
       },
       "loses": {
-        "home": "1-13",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 13,
+          "home": 0,
           "away": 0
         }
       }
@@ -1681,8 +1740,8 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
@@ -1699,5 +1758,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:11.906Z"
+  "lastUpdated": "2025-03-27T10:42:02.089Z"
 }

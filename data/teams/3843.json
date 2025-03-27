@@ -22,80 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 357,
-        "name": "Premier Division",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/357.png"
-      },
-      "country": {
-        "name": "Ireland",
-        "code": "IE",
-        "flag": "https://media.api-sports.io/flags/ie.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-02-16",
-          "end": "2024-11-16",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 359,
         "name": "FAI Cup",
         "type": "Cup",
@@ -167,6 +93,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 357,
+        "name": "Premier Division",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/357.png"
+      },
+      "country": {
+        "name": "Ireland",
+        "code": "IE",
+        "flag": "https://media.api-sports.io/flags/ie.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-14",
+          "end": "2025-11-01",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -182,24 +182,23 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1167537,
-          "date": "2024-11-01T19:45:00+00:00",
+          "id": 1340553,
+          "date": "2025-03-28T19:45:00+00:00",
           "venue": {
-            "id": 2627,
-            "name": "The Showgrounds",
-            "city": "Sligo"
+            "id": 2630,
+            "name": "Waterford Regional Sports Centre",
+            "city": "Waterford"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1730490300
+          "timestamp": 1743191100
         },
         "league": {
           "id": 357,
@@ -208,30 +207,30 @@
         },
         "teams": {
           "home": {
-            "id": 3842,
-            "name": "Sligo Rovers",
-            "logo": "https://media.api-sports.io/football/teams/3842.png",
-            "winner": false
+            "id": 3845,
+            "name": "Waterford",
+            "logo": "https://media.api-sports.io/football/teams/3845.png",
+            "winner": null
           },
           "away": {
             "id": 3843,
             "name": "St Patrick's Athl.",
             "logo": "https://media.api-sports.io/football/teams/3843.png",
-            "winner": true
+            "winner": null
           }
         },
         "goals": {
-          "home": 0,
-          "away": 2
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 0,
-            "away": 2
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -245,8 +244,1131 @@
       },
       {
         "fixture": {
-          "id": 1167531,
-          "date": "2024-10-25T18:45:00+00:00",
+          "id": 1340560,
+          "date": "2025-04-04T18:45:00+00:00",
+          "venue": {
+            "id": 2628,
+            "name": "Richmond Park",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743792300
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3854,
+            "name": "Shelbourne",
+            "logo": "https://media.api-sports.io/football/teams/3854.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340561,
+          "date": "2025-04-11T18:45:00+00:00",
+          "venue": {
+            "id": 863,
+            "name": "Turner's Cross",
+            "city": "Cork"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744397100
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 653,
+            "name": "Cork City",
+            "logo": "https://media.api-sports.io/football/teams/653.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340569,
+          "date": "2025-04-18T18:45:00+00:00",
+          "venue": {
+            "id": 2628,
+            "name": "Richmond Park",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745001900
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          },
+          "away": {
+            "id": 652,
+            "name": "Shamrock Rovers",
+            "logo": "https://media.api-sports.io/football/teams/652.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340573,
+          "date": "2025-04-21T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sullivan & Lambe Park",
+            "city": "Drogheda"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745251200
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3850,
+            "name": "Drogheda United",
+            "logo": "https://media.api-sports.io/football/teams/3850.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340576,
+          "date": "2025-04-25T18:45:00+00:00",
+          "venue": {
+            "id": 2625,
+            "name": "Dalymount Park",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745606700
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3840,
+            "name": "Bohemians",
+            "logo": "https://media.api-sports.io/football/teams/3840.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340585,
+          "date": "2025-05-02T18:45:00+00:00",
+          "venue": {
+            "id": 2628,
+            "name": "Richmond Park",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746211500
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3851,
+            "name": "Galway United",
+            "logo": "https://media.api-sports.io/football/teams/3851.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340586,
+          "date": "2025-05-05T16:00:00+00:00",
+          "venue": {
+            "id": 1172,
+            "name": "The Ryan McBride Brandywell Stadium",
+            "city": "Londonderry"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746460800
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 670,
+            "name": "Derry City",
+            "logo": "https://media.api-sports.io/football/teams/670.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340592,
+          "date": "2025-05-09T18:45:00+00:00",
+          "venue": {
+            "id": 2639,
+            "name": "Tolka Park",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746816300
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3854,
+            "name": "Shelbourne",
+            "logo": "https://media.api-sports.io/football/teams/3854.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340599,
+          "date": "2025-05-16T18:45:00+00:00",
+          "venue": {
+            "id": 2628,
+            "name": "Richmond Park",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747421100
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          },
+          "away": {
+            "id": 653,
+            "name": "Cork City",
+            "logo": "https://media.api-sports.io/football/teams/653.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340637,
+          "date": "2025-05-19T19:00:00+00:00",
+          "venue": {
+            "id": 865,
+            "name": "Tallaght Stadium",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747681200
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 652,
+            "name": "Shamrock Rovers",
+            "logo": "https://media.api-sports.io/football/teams/652.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340605,
+          "date": "2025-05-23T18:45:00+00:00",
+          "venue": {
+            "id": 2628,
+            "name": "Richmond Park",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748025900
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3845,
+            "name": "Waterford",
+            "logo": "https://media.api-sports.io/football/teams/3845.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340609,
+          "date": "2025-05-30T18:45:00+00:00",
+          "venue": {
+            "id": 2627,
+            "name": "The Showgrounds",
+            "city": "Sligo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748630700
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3842,
+            "name": "Sligo Rovers",
+            "logo": "https://media.api-sports.io/football/teams/3842.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340614,
+          "date": "2025-06-13T18:45:00+00:00",
+          "venue": {
+            "id": 2628,
+            "name": "Richmond Park",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749840300
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3850,
+            "name": "Drogheda United",
+            "logo": "https://media.api-sports.io/football/teams/3850.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340642,
+          "date": "2025-06-16T18:45:00+00:00",
+          "venue": {
+            "id": 2628,
+            "name": "Richmond Park",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750099500
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3854,
+            "name": "Shelbourne",
+            "logo": "https://media.api-sports.io/football/teams/3854.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340617,
+          "date": "2025-06-20T18:45:00+00:00",
+          "venue": {
+            "id": 2636,
+            "name": "Eamonn Deacy Park",
+            "city": "Galway"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750445100
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3851,
+            "name": "Galway United",
+            "logo": "https://media.api-sports.io/football/teams/3851.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340624,
+          "date": "2025-06-23T18:45:00+00:00",
+          "venue": {
+            "id": 2628,
+            "name": "Richmond Park",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750704300
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          },
+          "away": {
+            "id": 670,
+            "name": "Derry City",
+            "logo": "https://media.api-sports.io/football/teams/670.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340627,
+          "date": "2025-06-27T18:45:00+00:00",
+          "venue": {
+            "id": 863,
+            "name": "Turner's Cross",
+            "city": "Cork"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751049900
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 653,
+            "name": "Cork City",
+            "logo": "https://media.api-sports.io/football/teams/653.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340634,
+          "date": "2025-07-04T18:45:00+00:00",
+          "venue": {
+            "id": 2628,
+            "name": "Richmond Park",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751654700
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3840,
+            "name": "Bohemians",
+            "logo": "https://media.api-sports.io/football/teams/3840.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340648,
+          "date": "2025-08-01T18:45:00+00:00",
+          "venue": {
+            "id": 2630,
+            "name": "Waterford Regional Sports Centre",
+            "city": "Waterford"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754073900
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3845,
+            "name": "Waterford",
+            "logo": "https://media.api-sports.io/football/teams/3845.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1340549,
+          "date": "2025-03-14T19:45:00+00:00",
           "venue": {
             "id": 2628,
             "name": "Richmond Park",
@@ -256,9 +1378,127 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 6
+            "extra": 4
           },
-          "timestamp": 1729881900
+          "timestamp": 1741981500
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3840,
+            "name": "Bohemians",
+            "logo": "https://media.api-sports.io/football/teams/3840.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340545,
+          "date": "2025-03-07T19:45:00+00:00",
+          "venue": {
+            "id": 865,
+            "name": "Tallaght Stadium",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1741376700
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 652,
+            "name": "Shamrock Rovers",
+            "logo": "https://media.api-sports.io/football/teams/652.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340539,
+          "date": "2025-03-03T19:45:00+00:00",
+          "venue": {
+            "id": 2628,
+            "name": "Richmond Park",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1741031100
         },
         "league": {
           "id": 357,
@@ -280,7 +1520,7 @@
           }
         },
         "goals": {
-          "home": 1,
+          "home": 2,
           "away": 0
         },
         "score": {
@@ -289,7 +1529,7 @@
             "away": 0
           },
           "fulltime": {
-            "home": 1,
+            "home": 2,
             "away": 0
           },
           "extratime": {
@@ -304,8 +1544,8 @@
       },
       {
         "fixture": {
-          "id": 1167526,
-          "date": "2024-10-18T18:45:00+00:00",
+          "id": 1340535,
+          "date": "2025-02-28T19:45:00+00:00",
           "venue": {
             "id": 2628,
             "name": "Richmond Park",
@@ -315,9 +1555,9 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 8
+            "extra": 5
           },
-          "timestamp": 1729277100
+          "timestamp": 1740771900
         },
         "league": {
           "id": 357,
@@ -332,9 +1572,68 @@
             "winner": true
           },
           "away": {
+            "id": 3842,
+            "name": "Sligo Rovers",
+            "logo": "https://media.api-sports.io/football/teams/3842.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340528,
+          "date": "2025-02-21T19:45:00+00:00",
+          "venue": {
+            "id": 2636,
+            "name": "Eamonn Deacy Park",
+            "city": "Galway"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1740167100
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
             "id": 3851,
             "name": "Galway United",
             "logo": "https://media.api-sports.io/football/teams/3851.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
             "winner": false
           }
         },
@@ -344,8 +1643,8 @@
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 0
+            "home": 2,
+            "away": 1
           },
           "fulltime": {
             "home": 2,
@@ -363,185 +1662,8 @@
       },
       {
         "fixture": {
-          "id": 1167518,
-          "date": "2024-10-14T18:45:00+00:00",
-          "venue": {
-            "id": 2625,
-            "name": "Dalymount Park",
-            "city": "Dublin"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1728931500
-        },
-        "league": {
-          "id": 357,
-          "name": "Premier Division",
-          "logo": "https://media.api-sports.io/football/leagues/357.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3840,
-            "name": "Bohemians",
-            "logo": "https://media.api-sports.io/football/teams/3840.png",
-            "winner": false
-          },
-          "away": {
-            "id": 3843,
-            "name": "St Patrick's Athl.",
-            "logo": "https://media.api-sports.io/football/teams/3843.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1167505,
-          "date": "2024-09-30T18:15:00+00:00",
-          "venue": {
-            "id": 2639,
-            "name": "Tolka Park",
-            "city": "Dublin"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1727720100
-        },
-        "league": {
-          "id": 357,
-          "name": "Premier Division",
-          "logo": "https://media.api-sports.io/football/leagues/357.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3854,
-            "name": "Shelbourne",
-            "logo": "https://media.api-sports.io/football/teams/3854.png",
-            "winner": false
-          },
-          "away": {
-            "id": 3843,
-            "name": "St Patrick's Athl.",
-            "logo": "https://media.api-sports.io/football/teams/3843.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1167517,
-          "date": "2024-09-27T19:00:00+00:00",
-          "venue": {
-            "id": 865,
-            "name": "Tallaght Stadium",
-            "city": "Dublin"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1727463600
-        },
-        "league": {
-          "id": 357,
-          "name": "Premier Division",
-          "logo": "https://media.api-sports.io/football/leagues/357.png"
-        },
-        "teams": {
-          "home": {
-            "id": 652,
-            "name": "Shamrock Rovers",
-            "logo": "https://media.api-sports.io/football/teams/652.png",
-            "winner": false
-          },
-          "away": {
-            "id": 3843,
-            "name": "St Patrick's Athl.",
-            "logo": "https://media.api-sports.io/football/teams/3843.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1167511,
-          "date": "2024-09-20T18:45:00+00:00",
+          "id": 1340523,
+          "date": "2025-02-14T19:45:00+00:00",
           "venue": {
             "id": 2628,
             "name": "Richmond Park",
@@ -551,9 +1673,9 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 6
+            "extra": 7
           },
-          "timestamp": 1726857900
+          "timestamp": 1739562300
         },
         "league": {
           "id": 357,
@@ -565,26 +1687,26 @@
             "id": 3843,
             "name": "St Patrick's Athl.",
             "logo": "https://media.api-sports.io/football/teams/3843.png",
-            "winner": true
+            "winner": null
           },
           "away": {
-            "id": 3845,
-            "name": "Waterford",
-            "logo": "https://media.api-sports.io/football/teams/3845.png",
-            "winner": false
+            "id": 3850,
+            "name": "Drogheda United",
+            "logo": "https://media.api-sports.io/football/teams/3850.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 3,
+          "home": 0,
           "away": 0
         },
         "score": {
           "halftime": {
-            "home": 2,
+            "home": 0,
             "away": 0
           },
           "fulltime": {
-            "home": 3,
+            "home": 0,
             "away": 0
           },
           "extratime": {
@@ -599,31 +1721,90 @@
       },
       {
         "fixture": {
-          "id": 1167494,
-          "date": "2024-09-05T18:45:00+00:00",
+          "id": 1345892,
+          "date": "2025-02-07T19:45:00+00:00",
           "venue": {
-            "id": 864,
-            "name": "Oriel Park",
-            "city": "Dundalk"
+            "id": 2628,
+            "name": "Richmond Park",
+            "city": "Dublin"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 1
           },
-          "timestamp": 1725561900
+          "timestamp": 1738957500
         },
         "league": {
-          "id": 357,
-          "name": "Premier Division",
-          "logo": "https://media.api-sports.io/football/leagues/357.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
-            "id": 584,
-            "name": "Dundalk",
-            "logo": "https://media.api-sports.io/football/teams/584.png",
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3844,
+            "name": "UCD",
+            "logo": "https://media.api-sports.io/football/teams/3844.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1344929,
+          "date": "2025-02-01T11:30:00+00:00",
+          "venue": {
+            "id": 11024,
+            "name": "Estadio Municipal Francisco Muñoz Pérez",
+            "city": "Estepona"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1738409400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 329,
+            "name": "Molde",
+            "logo": "https://media.api-sports.io/football/teams/329.png",
             "winner": false
           },
           "away": {
@@ -640,7 +1821,7 @@
         "score": {
           "halftime": {
             "home": 1,
-            "away": 0
+            "away": 1
           },
           "fulltime": {
             "home": 1,
@@ -658,51 +1839,51 @@
       },
       {
         "fixture": {
-          "id": 1167501,
-          "date": "2024-09-01T17:00:00+00:00",
+          "id": 1339859,
+          "date": "2025-01-29T13:00:00+00:00",
           "venue": {
-            "id": 2628,
-            "name": "Richmond Park",
-            "city": "Dublin"
+            "id": null,
+            "name": null,
+            "city": null
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 3
           },
-          "timestamp": 1725210000
+          "timestamp": 1738155600
         },
         "league": {
-          "id": 357,
-          "name": "Premier Division",
-          "logo": "https://media.api-sports.io/football/leagues/357.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
             "id": 3843,
             "name": "St Patrick's Athl.",
             "logo": "https://media.api-sports.io/football/teams/3843.png",
-            "winner": true
+            "winner": null
           },
           "away": {
-            "id": 3850,
-            "name": "Drogheda United",
-            "logo": "https://media.api-sports.io/football/teams/3850.png",
-            "winner": false
+            "id": 1603,
+            "name": "Vancouver Whitecaps",
+            "logo": "https://media.api-sports.io/football/teams/1603.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 4,
+          "home": 1,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 2,
-            "away": 1
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
-            "home": 4,
+            "home": 1,
             "away": 1
           },
           "extratime": {
@@ -717,52 +1898,52 @@
       },
       {
         "fixture": {
-          "id": 1287579,
-          "date": "2024-08-28T16:00:00+00:00",
+          "id": 1338004,
+          "date": "2025-01-24T19:30:00+00:00",
           "venue": {
-            "id": 1584,
-            "name": "Başakşehir Fatih Terim Stadyumu",
-            "city": "İstanbul"
+            "id": null,
+            "name": null,
+            "city": null
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 4
           },
-          "timestamp": 1724860800
+          "timestamp": 1737747000
         },
         "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
-            "id": 564,
-            "name": "Istanbul Basaksehir",
-            "logo": "https://media.api-sports.io/football/teams/564.png",
-            "winner": true
+            "id": 3846,
+            "name": "Athlone Town",
+            "logo": "https://media.api-sports.io/football/teams/3846.png",
+            "winner": null
           },
           "away": {
             "id": 3843,
             "name": "St Patrick's Athl.",
             "logo": "https://media.api-sports.io/football/teams/3843.png",
-            "winner": false
+            "winner": null
           }
         },
         "goals": {
-          "home": 2,
-          "away": 0
+          "home": 3,
+          "away": 3
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 0
+            "home": 1,
+            "away": 2
           },
           "fulltime": {
-            "home": 2,
-            "away": 0
+            "home": 3,
+            "away": 3
           },
           "extratime": {
             "home": null,
@@ -778,29 +1959,29 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
-      "flag": null,
-      "season": 2024
+      "id": 357,
+      "name": "Premier Division",
+      "country": "Ireland",
+      "logo": "https://media.api-sports.io/football/leagues/357.png",
+      "flag": "https://media.api-sports.io/flags/ie.svg",
+      "season": 2025
     },
     "team": {
       "id": 3843,
       "name": "St Patrick's Athl.",
       "logo": "https://media.api-sports.io/football/teams/3843.png"
     },
-    "form": "WDWL",
+    "form": "DLWWLW",
     "fixtures": {
       "played": {
-        "home": 2,
+        "home": 4,
         "away": 2,
-        "total": 4
+        "total": 6
       },
       "wins": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 3,
+        "away": 0,
+        "total": 3
       },
       "draws": {
         "home": 1,
@@ -809,20 +1990,88 @@
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 2,
+        "total": 2
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 3,
+          "home": 9,
           "away": 1,
-          "total": 4
+          "total": 10
         },
         "average": {
-          "home": "1.5",
+          "home": "2.3",
           "away": "0.5",
+          "total": "1.7"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": 3,
+            "percentage": "27.27%"
+          },
+          "31-45": {
+            "total": 3,
+            "percentage": "27.27%"
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "9.09%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "9.09%"
+          },
+          "76-90": {
+            "total": 3,
+            "percentage": "27.27%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 4,
+            "under": 2
+          },
+          "1.5": {
+            "over": 3,
+            "under": 3
+          },
+          "2.5": {
+            "over": 2,
+            "under": 4
+          },
+          "3.5": {
+            "over": 1,
+            "under": 5
+          },
+          "4.5": {
+            "over": 0,
+            "under": 6
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 3,
+          "away": 3,
+          "total": 6
+        },
+        "average": {
+          "home": "0.8",
+          "away": "1.5",
           "total": "1.0"
         },
         "minute": {
@@ -831,8 +2080,8 @@
             "percentage": null
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "40.00%"
           },
           "31-45": {
             "total": null,
@@ -843,12 +2092,12 @@
             "percentage": null
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "40.00%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "100.00%"
+            "percentage": "20.00%"
           },
           "91-105": {
             "total": null,
@@ -862,171 +2111,112 @@
         "under_over": {
           "0.5": {
             "over": 3,
-            "under": 1
-          },
-          "1.5": {
-            "over": 1,
             "under": 3
           },
-          "2.5": {
-            "over": 0,
-            "under": 4
-          },
-          "3.5": {
-            "over": 0,
-            "under": 4
-          },
-          "4.5": {
-            "over": 0,
-            "under": 4
-          }
-        }
-      },
-      "against": {
-        "total": {
-          "home": 2,
-          "away": 1,
-          "total": 3
-        },
-        "average": {
-          "home": "1.0",
-          "away": "0.5",
-          "total": "0.8"
-        },
-        "minute": {
-          "0-15": {
-            "total": null,
-            "percentage": null
-          },
-          "16-30": {
-            "total": null,
-            "percentage": null
-          },
-          "31-45": {
-            "total": null,
-            "percentage": null
-          },
-          "46-60": {
-            "total": null,
-            "percentage": null
-          },
-          "61-75": {
-            "total": null,
-            "percentage": null
-          },
-          "76-90": {
-            "total": null,
-            "percentage": null
-          },
-          "91-105": {
-            "total": null,
-            "percentage": null
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 3,
-            "under": 1
-          },
           "1.5": {
-            "over": 0,
+            "over": 2,
             "under": 4
           },
           "2.5": {
-            "over": 0,
-            "under": 4
+            "over": 1,
+            "under": 5
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 6
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 6
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 2,
         "draws": 1,
-        "loses": 0
+        "loses": 1
       },
       "wins": {
-        "home": "2-1",
-        "away": "0-1"
+        "home": "3-0",
+        "away": null
       },
       "loses": {
         "home": null,
-        "away": "1-0"
+        "away": "2-1"
       },
       "goals": {
         "for": {
-          "home": 2,
+          "home": 4,
           "away": 1
         },
         "against": {
-          "home": 1,
-          "away": 1
+          "home": 3,
+          "away": 2
         }
       }
     },
     "clean_sheet": {
-      "home": 0,
-      "away": 1,
-      "total": 1
+      "home": 3,
+      "away": 0,
+      "total": 3
     },
     "failed_to_score": {
-      "home": 0,
+      "home": 1,
       "away": 1,
-      "total": 1
+      "total": 2
     },
     "penalty": {
       "scored": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 2,
+        "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 0
+      "total": 2
     },
-    "lineups": [],
+    "lineups": [
+      {
+        "formation": "4-3-3",
+        "played": 4
+      },
+      {
+        "formation": "4-4-2",
+        "played": 1
+      }
+    ],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "7.69%"
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "7.69%"
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "15.38%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "15.38%"
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 4,
+          "percentage": "30.77%"
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "15.38%"
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "7.69%"
         },
         "106-120": {
           "total": null,
@@ -1059,8 +2249,8 @@
           "percentage": null
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "100.00%"
         },
         "106-120": {
           "total": null,
@@ -1069,5 +2259,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:27.165Z"
+  "lastUpdated": "2025-03-27T10:39:11.038Z"
 }

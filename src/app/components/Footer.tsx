@@ -25,7 +25,7 @@ const Footer = () => {
   
   // Define teams with their IDs
   const norwegianTeams = [
-    { name: 'Norge landskamper', id: '0' },
+    { name: 'Norge landskamper', id: 'norway-1090', fullUrl: true },
     { name: 'Rosenborg', id: '331' },
     { name: 'Brann', id: '319' },
     { name: 'Molde', id: '329' },
@@ -83,7 +83,12 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-gray-300">
               {norwegianTeams.map((team, index) => (
                 <li key={index}>
-                  <Link href={`/lag/${team.name.toLowerCase().replace(/\s+/g, '-').replace(/\//g, '-')}-${team.id}`} className="hover:text-white">
+                  <Link 
+                    href={team.fullUrl 
+                      ? `/lag/${team.id}` 
+                      : `/lag/${team.name.toLowerCase().replace(/\s+/g, '-').replace(/\//g, '-')}-${team.id}`} 
+                    className="hover:text-white"
+                  >
                     {team.name} kamper
                   </Link>
                 </li>

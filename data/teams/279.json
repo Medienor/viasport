@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 98,
-        "name": "J1 League",
+        "id": 99,
+        "name": "J2 League",
         "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/98.png"
+        "logo": "https://media.api-sports.io/football/leagues/99.png"
       },
       "country": {
         "name": "Japan",
@@ -34,16 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-02-23",
-          "end": "2024-12-08",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-15",
+          "end": "2025-11-29",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": true,
             "players": true,
@@ -52,44 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -108,10 +71,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-03-06",
-          "end": "2024-11-02",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-20",
+          "end": "2025-04-16",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -126,35 +89,35 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
     },
     {
       "league": {
-        "id": 102,
-        "name": "Emperor Cup",
+        "id": 667,
+        "name": "Friendlies Clubs",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/102.png"
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
       },
       "country": {
-        "name": "Japan",
-        "code": "JP",
-        "flag": "https://media.api-sports.io/flags/jp.svg"
+        "name": "World",
+        "code": null,
+        "flag": null
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-05-25",
-          "end": "2024-11-23",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": false,
             "players": true,
@@ -163,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -186,8 +149,1720 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1324572,
+          "date": "2025-03-29T05:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Daiwa House Premist Dome",
+            "city": "Sapporo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743224400
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          },
+          "away": {
+            "id": 308,
+            "name": "Ventforet Kofu",
+            "logo": "https://media.api-sports.io/football/teams/308.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324582,
+          "date": "2025-04-05T05:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Daiwa House Premist Dome",
+            "city": "Sapporo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743829200
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          },
+          "away": {
+            "id": 299,
+            "name": "Tokushima Vortis",
+            "logo": "https://media.api-sports.io/football/teams/299.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324595,
+          "date": "2025-04-12T05:00:00+00:00",
+          "venue": {
+            "id": 970,
+            "name": "K’s Denki Stadium",
+            "city": "Mito"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744434000
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 305,
+            "name": "Mito Hollyhock",
+            "logo": "https://media.api-sports.io/football/teams/305.png",
+            "winner": null
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324602,
+          "date": "2025-04-20T05:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Daiwa House Premist Dome",
+            "city": "Sapporo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745125200
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4317,
+            "name": "Fujieda MYFC",
+            "logo": "https://media.api-sports.io/football/teams/4317.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324614,
+          "date": "2025-04-25T10:00:00+00:00",
+          "venue": {
+            "id": 19674,
+            "name": "NACK5 Stadium",
+            "city": "Saitama"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745575200
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 313,
+            "name": "Omiya Ardija",
+            "logo": "https://media.api-sports.io/football/teams/313.png",
+            "winner": null
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324622,
+          "date": "2025-04-29T05:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Daiwa House Premist Dome",
+            "city": "Sapporo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745902800
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          },
+          "away": {
+            "id": 285,
+            "name": "V-varen Nagasaki",
+            "logo": "https://media.api-sports.io/football/teams/285.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324633,
+          "date": "2025-05-03T05:00:00+00:00",
+          "venue": {
+            "id": 971,
+            "name": "ND Soft Stadium",
+            "city": "Tendo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746248400
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 312,
+            "name": "Montedio Yamagata",
+            "logo": "https://media.api-sports.io/football/teams/312.png",
+            "winner": null
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324642,
+          "date": "2025-05-06T05:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Daiwa House Premist Dome",
+            "city": "Sapporo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746507600
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          },
+          "away": {
+            "id": 280,
+            "name": "Jubilo Iwata",
+            "logo": "https://media.api-sports.io/football/teams/280.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324652,
+          "date": "2025-05-11T04:00:00+00:00",
+          "venue": {
+            "id": 20560,
+            "name": "Hawaiians Stadium Iwaki",
+            "city": "Iwaki"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746936000
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7127,
+            "name": "Iwaki",
+            "logo": "https://media.api-sports.io/football/teams/7127.png",
+            "winner": null
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324662,
+          "date": "2025-05-17T05:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Daiwa House Premist Dome",
+            "city": "Sapporo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747458000
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4322,
+            "name": "Kataller Toyama",
+            "logo": "https://media.api-sports.io/football/teams/4322.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324676,
+          "date": "2025-05-25T05:00:00+00:00",
+          "venue": {
+            "id": 974,
+            "name": "Ekimae Real Estate Stadium",
+            "city": "Tosu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748149200
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324682,
+          "date": "2025-05-31T05:00:00+00:00",
+          "venue": {
+            "id": 982,
+            "name": "Yurtec Stadium Sendai",
+            "city": "Sendai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748667600
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 286,
+            "name": "Vegalta Sendai",
+            "logo": "https://media.api-sports.io/football/teams/286.png",
+            "winner": null
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324692,
+          "date": "2025-06-15T05:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Daiwa House Premist Dome",
+            "city": "Sapporo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749963600
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10075,
+            "name": "Imabari",
+            "logo": "https://media.api-sports.io/football/teams/10075.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324707,
+          "date": "2025-06-21T10:00:00+00:00",
+          "venue": {
+            "id": 3300,
+            "name": "Fujieda City General Sports Park",
+            "city": "Fujieda"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750500000
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4317,
+            "name": "Fujieda MYFC",
+            "logo": "https://media.api-sports.io/football/teams/4317.png",
+            "winner": null
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324712,
+          "date": "2025-06-28T05:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Daiwa House Premist Dome",
+            "city": "Sapporo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751086800
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          },
+          "away": {
+            "id": 314,
+            "name": "Roasso Kumamoto",
+            "logo": "https://media.api-sports.io/football/teams/314.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324722,
+          "date": "2025-07-05T05:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Daiwa House Premist Dome",
+            "city": "Sapporo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751691600
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          },
+          "away": {
+            "id": 309,
+            "name": "Renofa Yamaguchi",
+            "logo": "https://media.api-sports.io/football/teams/309.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324737,
+          "date": "2025-07-12T10:30:00+00:00",
+          "venue": {
+            "id": 963,
+            "name": "Yamaha Stadium",
+            "city": "Iwata"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752316200
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 280,
+            "name": "Jubilo Iwata",
+            "logo": "https://media.api-sports.io/football/teams/280.png",
+            "winner": null
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324742,
+          "date": "2025-08-02T05:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Daiwa House Premist Dome",
+            "city": "Sapporo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754110800
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          },
+          "away": {
+            "id": 295,
+            "name": "Sagan Tosu",
+            "logo": "https://media.api-sports.io/football/teams/295.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324760,
+          "date": "2025-08-09T09:00:00+00:00",
+          "venue": {
+            "id": 981,
+            "name": "Nagasaki Stadium City",
+            "city": "Nagasaki"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754730000
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 285,
+            "name": "V-varen Nagasaki",
+            "logo": "https://media.api-sports.io/football/teams/285.png",
+            "winner": null
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324762,
+          "date": "2025-08-16T05:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Daiwa House Premist Dome",
+            "city": "Sapporo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755320400
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4315,
+            "name": "Blaublitz Akita",
+            "logo": "https://media.api-sports.io/football/teams/4315.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1324568,
+          "date": "2025-03-23T05:00:00+00:00",
+          "venue": {
+            "id": 956,
+            "name": "Ningineer Stadium",
+            "city": "Matsuyama"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742706000
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 318,
+            "name": "Ehime FC",
+            "logo": "https://media.api-sports.io/football/teams/318.png",
+            "winner": false
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324552,
+          "date": "2025-03-15T04:00:00+00:00",
+          "venue": {
+            "id": 11576,
+            "name": "Soyu Stadium",
+            "city": "Akita"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742011200
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4315,
+            "name": "Blaublitz Akita",
+            "logo": "https://media.api-sports.io/football/teams/4315.png",
+            "winner": false
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324542,
+          "date": "2025-03-09T04:05:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Daiwa House Premist Dome",
+            "city": "Sapporo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1741493100
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": false
+          },
+          "away": {
+            "id": 301,
+            "name": "JEF United Chiba",
+            "logo": "https://media.api-sports.io/football/teams/301.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324538,
+          "date": "2025-03-02T05:00:00+00:00",
+          "venue": {
+            "id": 1697,
+            "name": "Ishin Me-Life Stadium",
+            "city": "Yamaguchi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1740891600
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 309,
+            "name": "Renofa Yamaguchi",
+            "logo": "https://media.api-sports.io/football/teams/309.png",
+            "winner": true
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324530,
+          "date": "2025-02-23T04:00:00+00:00",
+          "venue": {
+            "id": 1934,
+            "name": "Egao Kenko Stadium",
+            "city": "Kumamoto"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1740283200
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 314,
+            "name": "Roasso Kumamoto",
+            "logo": "https://media.api-sports.io/football/teams/314.png",
+            "winner": true
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1324521,
+          "date": "2025-02-16T05:00:00+00:00",
+          "venue": {
+            "id": 20498,
+            "name": "Resonac Dome Oita",
+            "city": "Oita"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1739682000
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 298,
+            "name": "Oita Trinita",
+            "logo": "https://media.api-sports.io/football/teams/298.png",
+            "winner": true
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1339483,
+          "date": "2025-01-24T02:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1737684000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 293,
+            "name": "Gamba Osaka",
+            "logo": "https://media.api-sports.io/football/teams/293.png",
+            "winner": null
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1339473,
+          "date": "2025-01-21T02:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1737424800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 285,
+            "name": "V-varen Nagasaki",
+            "logo": "https://media.api-sports.io/football/teams/285.png",
+            "winner": false
+          },
+          "away": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1336884,
+          "date": "2025-01-18T02:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1737165600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 279,
+            "name": "Consadole Sapporo",
+            "logo": "https://media.api-sports.io/football/teams/279.png",
+            "winner": null
+          },
+          "away": {
+            "id": 315,
+            "name": "Tochigi SC",
+            "logo": "https://media.api-sports.io/football/teams/315.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1166503,
@@ -246,617 +1921,86 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1166501,
-          "date": "2024-12-01T05:00:00+00:00",
-          "venue": {
-            "id": 20557,
-            "name": "Edion Peace Wing Hiroshima",
-            "city": "Hiroshima"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1733029200
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 282,
-            "name": "Sanfrecce Hiroshima",
-            "logo": "https://media.api-sports.io/football/teams/282.png",
-            "winner": true
-          },
-          "away": {
-            "id": 279,
-            "name": "Consadole Sapporo",
-            "logo": "https://media.api-sports.io/football/teams/279.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166488,
-          "date": "2024-11-09T05:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Lemon Gas Stadium Hiratsuka",
-            "city": "Hiratsuka"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1731128400
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 284,
-            "name": "Shonan Bellmare",
-            "logo": "https://media.api-sports.io/football/teams/284.png",
-            "winner": null
-          },
-          "away": {
-            "id": 279,
-            "name": "Consadole Sapporo",
-            "logo": "https://media.api-sports.io/football/teams/279.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166473,
-          "date": "2024-11-03T04:00:00+00:00",
-          "venue": {
-            "id": 955,
-            "name": "Daiwa House Premist Dome",
-            "city": "Sapporo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1730606400
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 279,
-            "name": "Consadole Sapporo",
-            "logo": "https://media.api-sports.io/football/teams/279.png",
-            "winner": null
-          },
-          "away": {
-            "id": 291,
-            "name": "Cerezo Osaka",
-            "logo": "https://media.api-sports.io/football/teams/291.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166469,
-          "date": "2024-10-19T05:00:00+00:00",
-          "venue": {
-            "id": 972,
-            "name": "Toyota Stadium",
-            "city": "Toyota"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1729314000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 288,
-            "name": "Nagoya Grampus",
-            "logo": "https://media.api-sports.io/football/teams/288.png",
-            "winner": false
-          },
-          "away": {
-            "id": 279,
-            "name": "Consadole Sapporo",
-            "logo": "https://media.api-sports.io/football/teams/279.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166462,
-          "date": "2024-10-05T08:30:00+00:00",
-          "venue": {
-            "id": 18623,
-            "name": "Panasonic Stadium Suita",
-            "city": "Suita"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1728117000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 293,
-            "name": "Gamba Osaka",
-            "logo": "https://media.api-sports.io/football/teams/293.png",
-            "winner": true
-          },
-          "away": {
-            "id": 279,
-            "name": "Consadole Sapporo",
-            "logo": "https://media.api-sports.io/football/teams/279.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166443,
-          "date": "2024-09-28T04:00:00+00:00",
-          "venue": {
-            "id": 955,
-            "name": "Daiwa House Premist Dome",
-            "city": "Sapporo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1727496000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 279,
-            "name": "Consadole Sapporo",
-            "logo": "https://media.api-sports.io/football/teams/279.png",
-            "winner": true
-          },
-          "away": {
-            "id": 302,
-            "name": "Kyoto Sanga",
-            "logo": "https://media.api-sports.io/football/teams/302.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166436,
-          "date": "2024-09-21T10:00:00+00:00",
-          "venue": {
-            "id": 968,
-            "name": "Machida Gion Stadium",
-            "city": "Tokyo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 13
-          },
-          "timestamp": 1726912800
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 303,
-            "name": "Machida Zelvia",
-            "logo": "https://media.api-sports.io/football/teams/303.png",
-            "winner": null
-          },
-          "away": {
-            "id": 279,
-            "name": "Consadole Sapporo",
-            "logo": "https://media.api-sports.io/football/teams/279.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1166423,
-          "date": "2024-09-14T05:00:00+00:00",
-          "venue": {
-            "id": 955,
-            "name": "Daiwa House Premist Dome",
-            "city": "Sapporo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726290000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 279,
-            "name": "Consadole Sapporo",
-            "logo": "https://media.api-sports.io/football/teams/279.png",
-            "winner": false
-          },
-          "away": {
-            "id": 306,
-            "name": "Tokyo Verdy",
-            "logo": "https://media.api-sports.io/football/teams/306.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1222532,
-          "date": "2024-09-08T05:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Daiwa House Premist Dome",
-            "city": "Sapporo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1725771600
-        },
-        "league": {
-          "id": 101,
-          "name": "J-League Cup",
-          "logo": "https://media.api-sports.io/football/leagues/101.png"
-        },
-        "teams": {
-          "home": {
-            "id": 279,
-            "name": "Consadole Sapporo",
-            "logo": "https://media.api-sports.io/football/teams/279.png",
-            "winner": true
-          },
-          "away": {
-            "id": 296,
-            "name": "Yokohama F. Marinos",
-            "logo": "https://media.api-sports.io/football/teams/296.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 98,
-      "name": "J1 League",
+      "id": 99,
+      "name": "J2 League",
       "country": "Japan",
-      "logo": "https://media.api-sports.io/football/leagues/98.png",
+      "logo": "https://media.api-sports.io/football/leagues/99.png",
       "flag": "https://media.api-sports.io/flags/jp.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 279,
       "name": "Consadole Sapporo",
       "logo": "https://media.api-sports.io/football/teams/279.png"
     },
-    "form": "DLLLLLWDDDDLLWLLLLLLLLDWLDWWWLDWLWDDLW",
+    "form": "LLLLWW",
     "fixtures": {
       "played": {
-        "home": 19,
-        "away": 19,
-        "total": 38
+        "home": 1,
+        "away": 5,
+        "total": 6
       },
       "wins": {
-        "home": 6,
-        "away": 3,
-        "total": 9
+        "home": 0,
+        "away": 2,
+        "total": 2
       },
       "draws": {
-        "home": 5,
-        "away": 5,
-        "total": 10
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 8,
-        "away": 11,
-        "total": 19
+        "home": 1,
+        "away": 3,
+        "total": 4
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 23,
-          "away": 20,
-          "total": 43
+          "home": 1,
+          "away": 5,
+          "total": 6
         },
         "average": {
-          "home": "1.2",
-          "away": "1.1",
-          "total": "1.1"
+          "home": "1.0",
+          "away": "1.0",
+          "total": "1.0"
         },
         "minute": {
           "0-15": {
-            "total": 9,
-            "percentage": "20.45%"
+            "total": 1,
+            "percentage": "16.67%"
           },
           "16-30": {
-            "total": 7,
-            "percentage": "15.91%"
+            "total": 1,
+            "percentage": "16.67%"
           },
           "31-45": {
-            "total": 7,
-            "percentage": "15.91%"
+            "total": 2,
+            "percentage": "33.33%"
           },
           "46-60": {
-            "total": 9,
-            "percentage": "20.45%"
+            "total": 1,
+            "percentage": "16.67%"
           },
           "61-75": {
-            "total": 3,
-            "percentage": "6.82%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 7,
-            "percentage": "15.91%"
+            "total": 1,
+            "percentage": "16.67%"
           },
           "91-105": {
-            "total": 2,
-            "percentage": "4.55%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -865,66 +2009,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 26,
-            "under": 12
+            "over": 3,
+            "under": 3
           },
           "1.5": {
-            "over": 10,
-            "under": 28
+            "over": 2,
+            "under": 4
           },
           "2.5": {
-            "over": 4,
-            "under": 34
+            "over": 1,
+            "under": 5
           },
           "3.5": {
-            "over": 2,
-            "under": 36
+            "over": 0,
+            "under": 6
           },
           "4.5": {
-            "over": 1,
-            "under": 37
+            "over": 0,
+            "under": 6
           }
         }
       },
       "against": {
         "total": {
-          "home": 25,
-          "away": 41,
-          "total": 66
+          "home": 3,
+          "away": 9,
+          "total": 12
         },
         "average": {
-          "home": "1.3",
-          "away": "2.2",
-          "total": "1.7"
+          "home": "3.0",
+          "away": "1.8",
+          "total": "2.0"
         },
         "minute": {
           "0-15": {
-            "total": 6,
-            "percentage": "9.23%"
+            "total": 2,
+            "percentage": "16.67%"
           },
           "16-30": {
-            "total": 7,
-            "percentage": "10.77%"
+            "total": 1,
+            "percentage": "8.33%"
           },
           "31-45": {
-            "total": 5,
-            "percentage": "7.69%"
+            "total": 2,
+            "percentage": "16.67%"
           },
           "46-60": {
-            "total": 15,
-            "percentage": "23.08%"
+            "total": 2,
+            "percentage": "16.67%"
           },
           "61-75": {
-            "total": 11,
-            "percentage": "16.92%"
+            "total": 1,
+            "percentage": "8.33%"
           },
           "76-90": {
-            "total": 13,
-            "percentage": "20.00%"
+            "total": 2,
+            "percentage": "16.67%"
           },
           "91-105": {
-            "total": 8,
-            "percentage": "12.31%"
+            "total": 2,
+            "percentage": "16.67%"
           },
           "106-120": {
             "total": null,
@@ -933,133 +2077,108 @@
         },
         "under_over": {
           "0.5": {
-            "over": 29,
-            "under": 9
+            "over": 6,
+            "under": 0
           },
           "1.5": {
-            "over": 19,
-            "under": 19
+            "over": 4,
+            "under": 2
           },
           "2.5": {
-            "over": 10,
-            "under": 28
+            "over": 2,
+            "under": 4
           },
           "3.5": {
-            "over": 4,
-            "under": 34
+            "over": 0,
+            "under": 6
           },
           "4.5": {
-            "over": 3,
-            "under": 35
+            "over": 0,
+            "under": 6
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
-        "draws": 4,
-        "loses": 8
+        "wins": 0,
+        "draws": 0,
+        "loses": 4
       },
       "wins": {
-        "home": "5-3",
-        "away": "0-2"
+        "home": null,
+        "away": "1-3"
       },
       "loses": {
-        "home": "0-3",
-        "away": "6-1"
+        "home": "1-3",
+        "away": "3-0"
       },
       "goals": {
         "for": {
-          "home": 5,
-          "away": 4
+          "home": 1,
+          "away": 3
         },
         "against": {
           "home": 3,
-          "away": 6
+          "away": 3
         }
       }
     },
     "clean_sheet": {
-      "home": 5,
-      "away": 4,
-      "total": 9
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 5,
-      "away": 7,
-      "total": 12
+      "home": 0,
+      "away": 3,
+      "total": 3
     },
     "penalty": {
       "scored": {
-        "total": 2,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 2
+      "total": 0
     },
-    "lineups": [
-      {
-        "formation": "3-4-2-1",
-        "played": 23
-      },
-      {
-        "formation": "3-4-1-2",
-        "played": 8
-      },
-      {
-        "formation": "3-1-4-2",
-        "played": 3
-      },
-      {
-        "formation": "4-4-2",
-        "played": 2
-      },
-      {
-        "formation": "3-4-3",
-        "played": 2
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 2,
-          "percentage": "3.17%"
+          "total": 1,
+          "percentage": "10.00%"
         },
         "16-30": {
-          "total": 12,
-          "percentage": "19.05%"
+          "total": 1,
+          "percentage": "10.00%"
         },
         "31-45": {
-          "total": 8,
-          "percentage": "12.70%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 11,
-          "percentage": "17.46%"
+          "total": 3,
+          "percentage": "30.00%"
         },
         "61-75": {
-          "total": 8,
-          "percentage": "12.70%"
+          "total": 1,
+          "percentage": "10.00%"
         },
         "76-90": {
-          "total": 11,
-          "percentage": "17.46%"
+          "total": 3,
+          "percentage": "30.00%"
         },
         "91-105": {
-          "total": 10,
-          "percentage": "15.87%"
+          "total": 1,
+          "percentage": "10.00%"
         },
         "106-120": {
           "total": null,
           "percentage": null
-        },
-        "": {
-          "total": 1,
-          "percentage": "1.59%"
         }
       },
       "red": {
@@ -1076,12 +2195,12 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
@@ -1098,5 +2217,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:45.962Z"
+  "lastUpdated": "2025-03-27T10:42:37.299Z"
 }

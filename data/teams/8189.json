@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 38,
+        "name": "UEFA U21 Championship",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/38.png"
       },
       "country": {
         "name": "World",
@@ -34,22 +34,59 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2025,
+          "start": "2025-06-11",
+          "end": "2025-06-18",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 850,
+        "name": "UEFA U21 Championship - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/850.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2027,
+          "start": "2025-06-05",
+          "end": "2026-10-06",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -67,8 +104,422 @@
     2027
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1320045,
+          "date": "2025-06-12T16:00:00+00:00",
+          "venue": {
+            "id": 7248,
+            "name": "Štadión Tatran",
+            "city": "Prešov"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749744000
+        },
+        "league": {
+          "id": 38,
+          "name": "UEFA U21 Championship",
+          "logo": "https://media.api-sports.io/football/leagues/38.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8228,
+            "name": "Ukraine U21",
+            "logo": "https://media.api-sports.io/football/teams/8228.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1320056,
+          "date": "2025-06-15T19:00:00+00:00",
+          "venue": {
+            "id": 7248,
+            "name": "Štadión Tatran",
+            "city": "Prešov"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750014000
+        },
+        "league": {
+          "id": 38,
+          "name": "UEFA U21 Championship",
+          "logo": "https://media.api-sports.io/football/leagues/38.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8211,
+            "name": "Netherlands U21",
+            "logo": "https://media.api-sports.io/football/teams/8211.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1320062,
+          "date": "2025-06-18T16:00:00+00:00",
+          "venue": {
+            "id": 18644,
+            "name": "Košická futbalová aréna",
+            "city": "Košice"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750262400
+        },
+        "league": {
+          "id": 38,
+          "name": "UEFA U21 Championship",
+          "logo": "https://media.api-sports.io/football/leagues/38.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8193,
+            "name": "Finland U21",
+            "logo": "https://media.api-sports.io/football/teams/8193.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1018281,
+          "date": "2024-10-15T16:00:00+00:00",
+          "venue": {
+            "id": 462,
+            "name": "Vejle Stadion",
+            "city": "Vejle"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1729008000
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8199,
+            "name": "Iceland U21",
+            "logo": "https://media.api-sports.io/football/teams/8199.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018238,
+          "date": "2024-09-10T16:00:00+00:00",
+          "venue": {
+            "id": 462,
+            "name": "Vejle Stadion",
+            "city": "Vejle"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725984000
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8188,
+            "name": "Czech Republic U21",
+            "logo": "https://media.api-sports.io/football/teams/8188.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018216,
+          "date": "2024-09-06T15:00:00+00:00",
+          "venue": {
+            "id": 831,
+            "name": "Víkingsvöllur",
+            "city": "Reykjavík"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725634800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8199,
+            "name": "Iceland U21",
+            "logo": "https://media.api-sports.io/football/teams/8199.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018196,
+          "date": "2024-03-26T17:00:00+00:00",
+          "venue": {
+            "id": 462,
+            "name": "Vejle Stadion",
+            "city": "Vejle"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711472400
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8206,
+            "name": "Lithuania U21",
+            "logo": "https://media.api-sports.io/football/teams/8206.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1189562,
@@ -127,29 +578,324 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1018146,
+          "date": "2023-11-20T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Rodney Parade",
+            "city": "Casnewydd"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700503200
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8229,
+            "name": "Wales U21",
+            "logo": "https://media.api-sports.io/football/teams/8229.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018124,
+          "date": "2023-10-17T16:00:00+00:00",
+          "venue": {
+            "id": 2517,
+            "name": "Fotbalový stadion Střelecký ostrov",
+            "city": "Ceské Budejovice"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697558400
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8188,
+            "name": "Czech Republic U21",
+            "logo": "https://media.api-sports.io/football/teams/8188.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018042,
+          "date": "2023-06-20T16:00:00+00:00",
+          "venue": {
+            "id": 462,
+            "name": "Vejle Stadion",
+            "city": "Vejle"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1687276800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8229,
+            "name": "Wales U21",
+            "logo": "https://media.api-sports.io/football/teams/8229.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018037,
+          "date": "2023-06-16T15:00:00+00:00",
+          "venue": {
+            "id": 2645,
+            "name": "Jonavos centrinis stadionas",
+            "city": "Jonava"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1686927600
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8206,
+            "name": "Lithuania U21",
+            "logo": "https://media.api-sports.io/football/teams/8206.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 874017,
+          "date": "2022-09-23T16:00:00+00:00",
+          "venue": {
+            "id": 416,
+            "name": "Stadion Aldo Drosina",
+            "city": "Pula"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1663948800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8186,
+            "name": "Croatia U21",
+            "logo": "https://media.api-sports.io/football/teams/8186.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
+      "id": 38,
+      "name": "UEFA U21 Championship",
       "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "logo": "https://media.api-sports.io/football/leagues/38.png",
       "flag": null,
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 8189,
       "name": "Denmark U21",
       "logo": "https://media.api-sports.io/football/teams/8189.png"
     },
-    "form": "D",
+    "form": null,
     "fixtures": {
       "played": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -158,8 +904,8 @@
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -171,13 +917,13 @@
       "for": {
         "total": {
           "home": 0,
-          "away": 1,
-          "total": 1
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "1.0"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -215,37 +961,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 1,
-          "total": 1
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "1.0"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -283,24 +1029,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       }
@@ -308,7 +1054,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
@@ -322,11 +1068,11 @@
       "goals": {
         "for": {
           "home": 0,
-          "away": 1
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 1
+          "away": 0
         }
       }
     },
@@ -423,5 +1169,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:10.129Z"
+  "lastUpdated": "2025-03-27T10:40:58.828Z"
 }

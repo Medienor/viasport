@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 850,
+        "name": "UEFA U21 Championship - Qualification",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/850.png"
       },
       "country": {
         "name": "World",
@@ -34,22 +34,22 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2027,
+          "start": "2025-06-05",
+          "end": "2026-10-06",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -69,6 +69,419 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1312233,
+          "date": "2024-11-19T17:30:00+00:00",
+          "venue": {
+            "id": 1204,
+            "name": "SR-Bank Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1732037400
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8214,
+            "name": "Norway U21",
+            "logo": "https://media.api-sports.io/football/teams/8214.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8193,
+            "name": "Finland U21",
+            "logo": "https://media.api-sports.io/football/teams/8193.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1312232,
+          "date": "2024-11-15T16:45:00+00:00",
+          "venue": {
+            "id": 617,
+            "name": "Tammelan Stadion",
+            "city": "Tampere"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1731689100
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8193,
+            "name": "Finland U21",
+            "logo": "https://media.api-sports.io/football/teams/8193.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8214,
+            "name": "Norway U21",
+            "logo": "https://media.api-sports.io/football/teams/8214.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018261,
+          "date": "2024-10-15T16:30:00+00:00",
+          "venue": {
+            "id": 1204,
+            "name": "SR-Bank Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1729009800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8214,
+            "name": "Norway U21",
+            "logo": "https://media.api-sports.io/football/teams/8214.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8227,
+            "name": "Turkey U21",
+            "logo": "https://media.api-sports.io/football/teams/8227.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018244,
+          "date": "2024-10-11T18:00:00+00:00",
+          "venue": {
+            "id": 863,
+            "name": "Turner's Cross",
+            "city": "Cork"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1728669600
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8217,
+            "name": "Republic of Ireland U21",
+            "logo": "https://media.api-sports.io/football/teams/8217.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8214,
+            "name": "Norway U21",
+            "logo": "https://media.api-sports.io/football/teams/8214.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018221,
+          "date": "2024-09-10T16:30:00+00:00",
+          "venue": {
+            "id": 1204,
+            "name": "SR-Bank Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725985800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8214,
+            "name": "Norway U21",
+            "logo": "https://media.api-sports.io/football/teams/8214.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8201,
+            "name": "Italy U21",
+            "logo": "https://media.api-sports.io/football/teams/8201.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018204,
+          "date": "2024-09-05T14:00:00+00:00",
+          "venue": {
+            "id": 11512,
+            "name": "Slokas Stadionā",
+            "city": "Jūrmala"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725544800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8204,
+            "name": "Latvia U21",
+            "logo": "https://media.api-sports.io/football/teams/8204.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8214,
+            "name": "Norway U21",
+            "logo": "https://media.api-sports.io/football/teams/8214.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018180,
+          "date": "2024-03-26T16:00:00+00:00",
+          "venue": {
+            "id": 1204,
+            "name": "SR-Bank Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711468800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8214,
+            "name": "Norway U21",
+            "logo": "https://media.api-sports.io/football/teams/8214.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8220,
+            "name": "San Marino U21",
+            "logo": "https://media.api-sports.io/football/teams/8220.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1189535,
@@ -127,86 +540,204 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1018148,
+          "date": "2023-11-21T16:45:00+00:00",
+          "venue": {
+            "id": 21379,
+            "name": "GAIN Park Stadium",
+            "city": "Alanya"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700585100
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8227,
+            "name": "Turkey U21",
+            "logo": "https://media.api-sports.io/football/teams/8227.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8214,
+            "name": "Norway U21",
+            "logo": "https://media.api-sports.io/football/teams/8214.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018132,
+          "date": "2023-11-17T17:00:00+00:00",
+          "venue": {
+            "id": 1199,
+            "name": "Marienlyst Stadion",
+            "city": "Drammen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700240400
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8214,
+            "name": "Norway U21",
+            "logo": "https://media.api-sports.io/football/teams/8214.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8217,
+            "name": "Republic of Ireland U21",
+            "logo": "https://media.api-sports.io/football/teams/8217.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
+      "id": 850,
+      "name": "UEFA U21 Championship - Qualification",
       "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "logo": "https://media.api-sports.io/football/leagues/850.png",
       "flag": null,
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 8214,
       "name": "Norway U21",
       "logo": "https://media.api-sports.io/football/teams/8214.png"
     },
-    "form": "W",
+    "form": "WWLWLWWLDWLW",
     "fixtures": {
       "played": {
-        "home": 0,
-        "away": 1,
-        "total": 1
+        "home": 6,
+        "away": 6,
+        "total": 12
       },
       "wins": {
-        "home": 0,
-        "away": 1,
-        "total": 1
+        "home": 5,
+        "away": 2,
+        "total": 7
       },
       "draws": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       },
       "loses": {
-        "home": 0,
-        "away": 0,
-        "total": 0
+        "home": 1,
+        "away": 3,
+        "total": 4
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 0,
-          "away": 2,
-          "total": 2
+          "home": 21,
+          "away": 10,
+          "total": 31
         },
         "average": {
-          "home": "0.0",
-          "away": "2.0",
-          "total": "2.0"
+          "home": "3.5",
+          "away": "1.7",
+          "total": "2.6"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "6.45%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "6.45%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 5,
+            "percentage": "16.13%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 6,
+            "percentage": "19.35%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 6,
+            "percentage": "19.35%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 8,
+            "percentage": "25.81%"
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "6.45%"
           },
           "106-120": {
             "total": null,
@@ -215,66 +746,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 0
+            "over": 9,
+            "under": 3
           },
           "1.5": {
-            "over": 1,
-            "under": 0
+            "over": 6,
+            "under": 6
           },
           "2.5": {
-            "over": 0,
-            "under": 1
+            "over": 5,
+            "under": 7
           },
           "3.5": {
-            "over": 0,
-            "under": 1
+            "over": 4,
+            "under": 8
           },
           "4.5": {
-            "over": 0,
-            "under": 1
+            "over": 3,
+            "under": 9
           }
         }
       },
       "against": {
         "total": {
-          "home": 0,
-          "away": 1,
-          "total": 1
+          "home": 7,
+          "away": 10,
+          "total": 17
         },
         "average": {
-          "home": "0.0",
-          "away": "1.0",
-          "total": "1.0"
+          "home": "1.2",
+          "away": "1.7",
+          "total": "1.4"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 3,
+            "percentage": "17.65%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "11.76%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "5.88%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 3,
+            "percentage": "17.65%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 3,
+            "percentage": "17.65%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 4,
+            "percentage": "23.53%"
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "5.88%"
           },
           "106-120": {
             "total": null,
@@ -283,100 +814,100 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 0
+            "over": 8,
+            "under": 4
           },
           "1.5": {
-            "over": 0,
-            "under": 1
+            "over": 5,
+            "under": 7
           },
           "2.5": {
-            "over": 0,
-            "under": 1
+            "over": 2,
+            "under": 10
           },
           "3.5": {
-            "over": 0,
-            "under": 1
+            "over": 1,
+            "under": 11
           },
           "4.5": {
-            "over": 0,
-            "under": 1
+            "over": 1,
+            "under": 11
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
-        "draws": 0,
-        "loses": 0
+        "wins": 2,
+        "draws": 1,
+        "loses": 1
       },
       "wins": {
-        "home": null,
-        "away": "1-2"
+        "home": "7-0",
+        "away": "0-7"
       },
       "loses": {
-        "home": null,
-        "away": null
+        "home": "0-3",
+        "away": "5-1"
       },
       "goals": {
         "for": {
-          "home": 0,
-          "away": 2
+          "home": 7,
+          "away": 7
         },
         "against": {
-          "home": 0,
-          "away": 1
+          "home": 3,
+          "away": 5
         }
       }
     },
     "clean_sheet": {
-      "home": 0,
-      "away": 0,
-      "total": 0
+      "home": 2,
+      "away": 2,
+      "total": 4
     },
     "failed_to_score": {
-      "home": 0,
-      "away": 0,
-      "total": 0
+      "home": 1,
+      "away": 2,
+      "total": 3
     },
     "penalty": {
       "scored": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 4,
+        "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 0
+      "total": 4
     },
     "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "5.26%"
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "10.53%"
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "5.26%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 5,
+          "percentage": "26.32%"
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 5,
+          "percentage": "26.32%"
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 5,
+          "percentage": "26.32%"
         },
         "91-105": {
           "total": null,
@@ -401,8 +932,8 @@
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "100.00%"
         },
         "61-75": {
           "total": null,
@@ -423,5 +954,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:12.544Z"
+  "lastUpdated": "2025-03-27T10:41:01.332Z"
 }

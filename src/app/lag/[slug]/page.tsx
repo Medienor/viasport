@@ -9,6 +9,8 @@ import TeamAnalysis from '@/app/components/TeamAnalysis';
 import { extractTeamId } from '@/utils/helpers';
 import { getTeamData } from '@/utils/api';
 import TabNav from '@/app/components/TabNav';
+import { calculateTeamStats } from '@/app/utils/statsCalculator';
+import OtherTeamsInLeague from '@/app/components/OtherTeamsInLeague';
 
 // Add this constant at the top level
 const DATA_DIR = path.join(process.cwd(), 'data', 'teams');
@@ -43,15 +45,20 @@ export const dynamic = 'force-static';
 export const revalidate = 86400; // 24 hours in seconds
 
 export default async function TeamPage({ params }: { params: { slug: string } }) {
-  const teamId = extractTeamId(params.slug);
+  // Wait for params
+  const slug = await params.slug;
+  const teamId = extractTeamId(slug);
   
   if (!teamId) {
-    console.error('No team ID found in slug:', params.slug);
+    console.error('No team ID found in slug:', slug);
     return notFound();
   }
 
   const data = await getTeamData(teamId);
   
+  // Calculate statistics from fixtures
+  const calculatedStats = calculateTeamStats(data);
+
   if (!data || !data.team?.team?.name) {
     console.error('Invalid team data for ID:', teamId);
     return notFound();
@@ -61,18 +68,25 @@ export default async function TeamPage({ params }: { params: { slug: string } })
     team,
     leagues = [],
     fixtures = { upcoming: [], past: [] },
-    statistics: teamStats = null
   } = data;
+
+  // More debug logging
+  console.log('Extracted Data:', {
+    teamName: team.team.name,
+    hasLeagues: leagues.length > 0,
+    hasFixtures: fixtures.upcoming.length + fixtures.past.length,
+    hasStats: !!calculatedStats
+  });
 
   // Add proper typing to the map function
   const seasonYears = leagues[0]?.seasons?.map((season: Season) => season.year) || [];
 
   const tabs = [
-    { name: 'Oversikt', href: `/lag/${params.slug}` },
-    { name: 'Tropp', href: `/lag/${params.slug}/tropp` },
-    { name: 'Resultater', href: `/lag/${params.slug}/resultater` },
-    { name: 'Kamper', href: `/lag/${params.slug}/kamper` },
-    { name: 'Tabell', href: `/lag/${params.slug}/tabell` },
+    { name: 'Oversikt', href: `/lag/${slug}` },
+    { name: 'Tropp', href: `/lag/${slug}/tropp` },
+    { name: 'Resultater', href: `/lag/${slug}/resultater` },
+    { name: 'Kamper', href: `/lag/${slug}/kamper` },
+    { name: 'Tabell', href: `/lag/${slug}/tabell` },
   ];
 
   return (
@@ -112,8 +126,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
               <h2 className="text-xl font-semibold mb-6">Kommende kamper</h2>
               <div className="space-y-4">
                 {fixtures.upcoming.map((fixture: any) => (
-                  <Link 
-                    href={`/fotball/kamp/${fixture.fixture.id}`}
+                  <div 
                     key={fixture.fixture.id}
                     className="block hover:bg-gray-50 transition rounded-md border border-gray-200 overflow-hidden bg-white relative"
                   >
@@ -129,60 +142,59 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                       })}
                     </div>
 
-                    {/* Match Content - Added more top padding to accommodate the badge */}
-                    <div className="flex items-center justify-between p-4 pt-8">
-                      <div className="flex items-center space-x-3 w-2/5">
-                        <div className="relative h-8 w-8 flex-shrink-0">
-                          <Image
-                            src={fixture.teams.home.logo || '/images/team-placeholder.png'}
-                            alt={fixture.teams.home.name}
-                            fill
-                            className="object-contain"
-                          />
-                        </div>
-                        <Link 
-                          href={`/lag/${createTeamSlug(fixture.teams.home.name, fixture.teams.home.id)}`}
-                          className={`font-medium truncate hover:underline ${fixture.teams.home.id === teamId ? 'font-bold' : ''}`}
-                        >
-                          {fixture.teams.home.name}
-                        </Link>
-                      </div>
-                      
-                      <div className="text-center w-1/5">
-                        <div className="font-bold">
-                          {fixture.fixture.status?.short === 'FT' ? 
-                            `${fixture.goals.home} - ${fixture.goals.away}` : 
-                            new Date(fixture.fixture.date).toLocaleTimeString('no-NO', {
-                              hour: '2-digit',
-                              minute: '2-digit'
-                            })
-                          }
-                        </div>
-                        {fixture.league && (
-                          <div className="text-xs text-gray-500 mt-1">
-                            {fixture.league.name}
+                    {/* Match Content */}
+                    <Link 
+                      href={`/fotball/kamp/${fixture.fixture.id}`}
+                      className="block p-4 pt-8"
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-3 w-2/5">
+                          <div className="relative h-8 w-8 flex-shrink-0">
+                            <Image
+                              src={fixture.teams.home.logo || '/images/team-placeholder.png'}
+                              alt={fixture.teams.home.name}
+                              fill
+                              className="object-contain"
+                            />
                           </div>
-                        )}
-                      </div>
-                      
-                      <div className="flex items-center justify-end space-x-3 w-2/5">
-                        <Link 
-                          href={`/lag/${createTeamSlug(fixture.teams.away.name, fixture.teams.away.id)}`}
-                          className={`font-medium text-right truncate hover:underline ${fixture.teams.away.id === teamId ? 'font-bold' : ''}`}
-                        >
-                          {fixture.teams.away.name}
-                        </Link>
-                        <div className="relative h-8 w-8 flex-shrink-0">
-                          <Image
-                            src={fixture.teams.away.logo || '/images/team-placeholder.png'}
-                            alt={fixture.teams.away.name}
-                            fill
-                            className="object-contain"
-                          />
+                          <span className={`font-medium truncate ${fixture.teams.home.id === teamId ? 'font-bold' : ''}`}>
+                            {fixture.teams.home.name}
+                          </span>
+                        </div>
+                        
+                        <div className="text-center w-1/5">
+                          <div className="font-bold">
+                            {fixture.fixture.status?.short === 'FT' ? 
+                              `${fixture.goals.home} - ${fixture.goals.away}` : 
+                              new Date(fixture.fixture.date).toLocaleTimeString('no-NO', {
+                                hour: '2-digit',
+                                minute: '2-digit'
+                              })
+                            }
+                          </div>
+                          {fixture.league && (
+                            <div className="text-xs text-gray-500 mt-1">
+                              {fixture.league.name}
+                            </div>
+                          )}
+                        </div>
+                        
+                        <div className="flex items-center justify-end space-x-3 w-2/5">
+                          <span className={`font-medium text-right truncate ${fixture.teams.away.id === teamId ? 'font-bold' : ''}`}>
+                            {fixture.teams.away.name}
+                          </span>
+                          <div className="relative h-8 w-8 flex-shrink-0">
+                            <Image
+                              src={fixture.teams.away.logo || '/images/team-placeholder.png'}
+                              alt={fixture.teams.away.name}
+                              fill
+                              className="object-contain"
+                            />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </Link>
+                    </Link>
+                  </div>
                 ))}
               </div>
             </div>
@@ -325,9 +337,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
           )}
 
           {/* Team Statistics */}
-          {teamStats && (
-            <TeamStats statistics={teamStats} />
-          )}
+          <TeamStats statistics={calculatedStats} />
 
           {/* Team Standing Analysis Section */}
           {leagues.length > 0 && (
@@ -394,6 +404,9 @@ export default async function TeamPage({ params }: { params: { slug: string } })
               </div>
             </div>
           )}
+
+          {/* Add the new component */}
+          <OtherTeamsInLeague currentTeamId={teamId} />
         </div>
       </div>
     </div>

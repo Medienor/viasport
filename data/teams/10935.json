@@ -22,6 +22,43 @@
   "leagues": [
     {
       "league": {
+        "id": 803,
+        "name": "Asian Games",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/803.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2022,
+          "start": "2023-09-19",
+          "end": "2023-10-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 952,
         "name": "AFC U23 Asian Cup - Qualification",
         "type": "Cup",
@@ -44,43 +81,6 @@
               "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
             },
             "standings": false,
             "players": true,
@@ -225,6 +225,242 @@
       },
       {
         "fixture": {
+          "id": 1135727,
+          "date": "2023-09-28T11:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Huanglong Stadium",
+            "city": "Hangzhou"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1695900600
+        },
+        "league": {
+          "id": 803,
+          "name": "Asian Games",
+          "logo": "https://media.api-sports.io/football/leagues/803.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10935,
+            "name": "India U23",
+            "logo": "https://media.api-sports.io/football/teams/10935.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10955,
+            "name": "Saudi Arabia U23",
+            "logo": "https://media.api-sports.io/football/teams/10955.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1113884,
+          "date": "2023-09-24T11:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Xiaoshan Sports Center Stadium",
+            "city": "Hangzhou"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1695555000
+        },
+        "league": {
+          "id": 803,
+          "name": "Asian Games",
+          "logo": "https://media.api-sports.io/football/leagues/803.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10948,
+            "name": "Myanmar U23",
+            "logo": "https://media.api-sports.io/football/teams/10948.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10935,
+            "name": "India U23",
+            "logo": "https://media.api-sports.io/football/teams/10935.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1113870,
+          "date": "2023-09-21T08:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Xiaoshan Sports Center Stadium",
+            "city": "Hangzhou"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1695283200
+        },
+        "league": {
+          "id": 803,
+          "name": "Asian Games",
+          "logo": "https://media.api-sports.io/football/leagues/803.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10935,
+            "name": "India U23",
+            "logo": "https://media.api-sports.io/football/teams/10935.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10929,
+            "name": "Bangladesh U23",
+            "logo": "https://media.api-sports.io/football/teams/10929.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1113863,
+          "date": "2023-09-19T11:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Huanglong Stadium",
+            "city": "Hangzhou"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1695123000
+        },
+        "league": {
+          "id": 803,
+          "name": "Asian Games",
+          "logo": "https://media.api-sports.io/football/leagues/803.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10932,
+            "name": "China PR U23",
+            "logo": "https://media.api-sports.io/football/teams/10932.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10935,
+            "name": "India U23",
+            "logo": "https://media.api-sports.io/football/teams/10935.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1028865,
           "date": "2023-09-12T08:30:00+00:00",
           "venue": {
@@ -340,29 +576,147 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 966409,
+          "date": "2021-10-30T16:30:00+00:00",
+          "venue": {
+            "id": 1602,
+            "name": "Fujairah Stadium",
+            "city": "Dibba Al-Fujairah"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1635611400
+        },
+        "league": {
+          "id": 952,
+          "name": "AFC U23 Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/952.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10935,
+            "name": "India U23",
+            "logo": "https://media.api-sports.io/football/teams/10935.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10941,
+            "name": "Kyrgyz Republic U23",
+            "logo": "https://media.api-sports.io/football/teams/10941.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 966389,
+          "date": "2021-10-27T16:30:00+00:00",
+          "venue": {
+            "id": 1602,
+            "name": "Fujairah Stadium",
+            "city": "Dibba Al-Fujairah"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1635352200
+        },
+        "league": {
+          "id": 952,
+          "name": "AFC U23 Asian Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/952.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10935,
+            "name": "India U23",
+            "logo": "https://media.api-sports.io/football/teams/10935.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10184,
+            "name": "UAE U23",
+            "logo": "https://media.api-sports.io/football/teams/10184.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 952,
-      "name": "AFC U23 Asian Cup - Qualification",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/952.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 10935,
       "name": "India U23",
       "logo": "https://media.api-sports.io/football/teams/10935.png"
     },
-    "form": "LL",
+    "form": null,
     "fixtures": {
       "played": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -376,21 +730,21 @@
       },
       "loses": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
           "home": 0,
-          "away": 1,
-          "total": 1
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "0.5",
-          "total": "0.5"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -428,37 +782,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 5,
-          "total": 5
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "2.5",
-          "total": "2.5"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -466,28 +820,28 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
             "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -496,24 +850,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       }
@@ -522,7 +876,7 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 2
+        "loses": 0
       },
       "wins": {
         "home": null,
@@ -530,16 +884,16 @@
       },
       "loses": {
         "home": null,
-        "away": "3-0"
+        "away": null
       },
       "goals": {
         "for": {
           "home": 0,
-          "away": 1
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 3
+          "away": 0
         }
       }
     },
@@ -550,8 +904,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -636,5 +990,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:22.467Z"
+  "lastUpdated": "2025-03-27T10:41:11.619Z"
 }

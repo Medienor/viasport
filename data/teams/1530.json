@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 21,
+        "name": "Confederations Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/21.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2017,
+          "start": "2017-06-17",
+          "end": "2017-07-02",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
               "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -53,6 +53,117 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2022,
+          "start": "2022-11-20",
+          "end": "2022-12-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 19,
+        "name": "African Nations Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/19.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2022,
+          "start": "2023-01-13",
+          "end": "2023-02-04",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 29,
+        "name": "World Cup - Qualification Africa",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/29.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-11-13",
+          "end": "2025-10-13",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -93,6 +204,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 36,
+        "name": "Africa Cup of Nations - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/36.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2024-03-20",
+          "end": "2024-11-19",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 6,
+        "name": "Africa Cup of Nations",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/6.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-12-21",
+          "end": "2025-12-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -113,6 +298,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1125991,
+          "date": "2025-03-25T19:00:00+00:00",
+          "venue": {
+            "id": 308,
+            "name": "Stade Omnisport Ahmadou Ahidjo",
+            "city": "Yaoundé"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1742929200
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1530,
+            "name": "Cameroon",
+            "logo": "https://media.api-sports.io/football/teams/1530.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1526,
+            "name": "Libya",
+            "logo": "https://media.api-sports.io/football/teams/1526.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1125965,
+          "date": "2025-03-19T16:00:00+00:00",
+          "venue": {
+            "id": 12715,
+            "name": "Mbombela Stadium",
+            "city": "Nelspruit"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742400000
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2995,
+            "name": "Eswatini",
+            "logo": "https://media.api-sports.io/football/teams/2995.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1530,
+            "name": "Cameroon",
+            "logo": "https://media.api-sports.io/football/teams/1530.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1313992,
@@ -233,31 +536,90 @@
       },
       {
         "fixture": {
-          "id": 1155253,
-          "date": "2024-01-09T13:00:00+00:00",
+          "id": 1232544,
+          "date": "2024-11-19T13:00:00+00:00",
           "venue": {
-            "id": 1364,
-            "name": "King Abdullah Sports City",
-            "city": "Jeddah"
+            "id": 308,
+            "name": "Stade Omnisport Ahmadou Ahidjo",
+            "city": "Yaoundé"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 5
           },
-          "timestamp": 1704805200
+          "timestamp": 1732021200
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
-            "id": 1507,
-            "name": "Zambia",
-            "logo": "https://media.api-sports.io/football/teams/1507.png",
+            "id": 1530,
+            "name": "Cameroon",
+            "logo": "https://media.api-sports.io/football/teams/1530.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1522,
+            "name": "Zimbabwe",
+            "logo": "https://media.api-sports.io/football/teams/1522.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232519,
+          "date": "2024-11-13T13:00:00+00:00",
+          "venue": {
+            "id": 1453,
+            "name": "Orlando Stadium",
+            "city": "Johannesburg, GA"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1731502800
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1493,
+            "name": "Namibia",
+            "logo": "https://media.api-sports.io/football/teams/1493.png",
             "winner": null
           },
           "away": {
@@ -268,17 +630,253 @@
           }
         },
         "goals": {
-          "home": 1,
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232495,
+          "date": "2024-10-14T13:00:00+00:00",
+          "venue": {
+            "id": 1592,
+            "name": "Mandela National Stadium",
+            "city": "Kampala"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1728910800
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1511,
+            "name": "Kenya",
+            "logo": "https://media.api-sports.io/football/teams/1511.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1530,
+            "name": "Cameroon",
+            "logo": "https://media.api-sports.io/football/teams/1530.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 1,
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232471,
+          "date": "2024-10-11T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Omnisport de Douala",
+            "city": "Douala"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1728662400
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1530,
+            "name": "Cameroon",
+            "logo": "https://media.api-sports.io/football/teams/1530.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1511,
+            "name": "Kenya",
+            "logo": "https://media.api-sports.io/football/teams/1511.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
             "away": 1
           },
           "fulltime": {
-            "home": 1,
+            "home": 4,
             "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232448,
+          "date": "2024-09-10T16:00:00+00:00",
+          "venue": {
+            "id": 1592,
+            "name": "Mandela National Stadium",
+            "city": "Kampala"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725984000
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1522,
+            "name": "Zimbabwe",
+            "logo": "https://media.api-sports.io/football/teams/1522.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1530,
+            "name": "Cameroon",
+            "logo": "https://media.api-sports.io/football/teams/1530.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232423,
+          "date": "2024-09-07T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Omnisports Roumdé Adjia",
+            "city": "Garoua"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725724800
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1530,
+            "name": "Cameroon",
+            "logo": "https://media.api-sports.io/football/teams/1530.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1493,
+            "name": "Namibia",
+            "logo": "https://media.api-sports.io/football/teams/1493.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -294,24 +892,24 @@
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1530,
       "name": "Cameroon",
       "logo": "https://media.api-sports.io/football/teams/1530.png"
     },
-    "form": "D",
+    "form": null,
     "fixtures": {
       "played": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -320,8 +918,8 @@
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -333,13 +931,13 @@
       "for": {
         "total": {
           "home": 0,
-          "away": 1,
-          "total": 1
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "1.0"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -347,8 +945,8 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
@@ -377,42 +975,42 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 1,
-          "total": 1
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "1.0"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -445,24 +1043,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       }
@@ -470,7 +1068,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
@@ -484,11 +1082,11 @@
       "goals": {
         "for": {
           "home": 0,
-          "away": 1
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 1
+          "away": 0
         }
       }
     },
@@ -585,5 +1183,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:30.598Z"
+  "lastUpdated": "2025-03-27T10:40:17.259Z"
 }

@@ -22,6 +22,43 @@
   "leagues": [
     {
       "league": {
+        "id": 768,
+        "name": "Arab Club Champions Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/768.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-03-02",
+          "end": "2023-08-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 720,
         "name": "Emir Cup",
         "type": "Cup",
@@ -89,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -879,24 +916,24 @@
   },
   "statistics": {
     "league": {
-      "id": 720,
-      "name": "Emir Cup",
-      "country": "Kuwait",
-      "logo": "https://media.api-sports.io/football/leagues/720.png",
-      "flag": "https://media.api-sports.io/flags/kw.svg",
-      "season": 2024
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
+      "flag": null,
+      "season": null
     },
     "team": {
       "id": 3535,
       "name": "Al Kuwait",
       "logo": "https://media.api-sports.io/football/teams/3535.png"
     },
-    "form": "D",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -904,9 +941,9 @@
         "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -917,14 +954,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -944,8 +981,8 @@
             "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -956,43 +993,43 @@
             "percentage": null
           },
           "106-120": {
-            "total": 4,
-            "percentage": "80.00%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1008,8 +1045,8 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -1024,30 +1061,30 @@
             "percentage": null
           },
           "106-120": {
-            "total": 5,
-            "percentage": "83.33%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       }
@@ -1055,7 +1092,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
@@ -1068,11 +1105,11 @@
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 1,
+          "home": 0,
           "away": 0
         }
       }
@@ -1089,14 +1126,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 4,
-        "percentage": "80.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
-        "total": 1,
-        "percentage": "20.00%"
+        "total": 0,
+        "percentage": "0%"
       },
-      "total": 5
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -1170,5 +1207,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:11.919Z"
+  "lastUpdated": "2025-03-27T10:42:02.073Z"
 }

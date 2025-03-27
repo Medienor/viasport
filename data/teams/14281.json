@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 848,
         "name": "UEFA Europa Conference League",
         "type": "Cup",
@@ -110,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-08-10",
-          "end": "2025-03-16",
+          "end": "2025-03-29",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -181,25 +144,25 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1359803,
-          "date": "2025-04-09T00:00:00+00:00",
+          "id": 1366522,
+          "date": "2025-03-27T13:00:00+00:00",
           "venue": {
             "id": null,
-            "name": null,
-            "city": null
+            "name": "Stadiumi i qytetit Gjilan",
+            "city": "Gnjilane"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744156800
+          "timestamp": 1743080400
         },
         "league": {
-          "id": 665,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/665.png"
+          "id": 664,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/664.png"
         },
         "teams": {
           "home": {
@@ -209,68 +172,9 @@
             "winner": null
           },
           "away": {
-            "id": 680,
-            "name": "Prishtina",
-            "logo": "https://media.api-sports.io/football/teams/680.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1359804,
-          "date": "2025-04-23T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745366400
-        },
-        "league": {
-          "id": 665,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/665.png"
-        },
-        "teams": {
-          "home": {
-            "id": 680,
-            "name": "Prishtina",
-            "logo": "https://media.api-sports.io/football/teams/680.png",
-            "winner": null
-          },
-          "away": {
-            "id": 14281,
-            "name": "Drita",
-            "logo": "https://media.api-sports.io/football/teams/14281.png",
+            "id": 12772,
+            "name": "Gjilani",
+            "logo": "https://media.api-sports.io/football/teams/12772.png",
             "winner": null
           }
         },
@@ -893,34 +797,34 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 14281,
       "name": "Drita",
       "logo": "https://media.api-sports.io/football/teams/14281.png"
     },
-    "form": "WWWDD",
+    "form": null,
     "fixtures": {
       "played": {
         "home": 0,
-        "away": 5,
-        "total": 5
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
-        "away": 3,
-        "total": 3
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -932,13 +836,13 @@
       "for": {
         "total": {
           "home": 0,
-          "away": 9,
-          "total": 9
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.8",
-          "total": "1.8"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -976,37 +880,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 5,
-          "total": 5
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "1.0"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1044,37 +948,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
         "home": null,
-        "away": "1-3"
+        "away": null
       },
       "loses": {
         "home": null,
@@ -1083,18 +987,18 @@
       "goals": {
         "for": {
           "home": 0,
-          "away": 3
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 2
+          "away": 0
         }
       }
     },
     "clean_sheet": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -1184,5 +1088,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:34.318Z"
+  "lastUpdated": "2025-03-27T10:39:18.986Z"
 }

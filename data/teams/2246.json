@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 848,
         "name": "UEFA Europa Conference League",
         "type": "Cup",
@@ -155,6 +118,43 @@
               "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": false,
             "players": true,
@@ -274,9 +274,9 @@
             "winner": null
           },
           "away": {
-            "id": 559,
-            "name": "FCSB",
-            "logo": "https://media.api-sports.io/football/teams/559.png",
+            "id": 632,
+            "name": "Universitatea Craiova",
+            "logo": "https://media.api-sports.io/football/teams/632.png",
             "winner": null
           }
         },
@@ -365,19 +365,19 @@
       {
         "fixture": {
           "id": 1360145,
-          "date": "2025-04-12T00:00:00+00:00",
+          "date": "2025-04-14T17:30:00+00:00",
           "venue": {
             "id": 1311,
             "name": "Stadionul Dr. Constantin Rădulescu",
             "city": "Cluj-Napoca"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744416000
+          "timestamp": 1744651800
         },
         "league": {
           "id": 283,
@@ -395,360 +395,6 @@
             "id": 6231,
             "name": "Rapid",
             "logo": "https://media.api-sports.io/football/teams/6231.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1360146,
-          "date": "2025-04-19T00:00:00+00:00",
-          "venue": {
-            "id": 1326,
-            "name": "Arena Naţională",
-            "city": "Bucureşti"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745020800
-        },
-        "league": {
-          "id": 283,
-          "name": "Liga I",
-          "logo": "https://media.api-sports.io/football/leagues/283.png"
-        },
-        "teams": {
-          "home": {
-            "id": 559,
-            "name": "FCSB",
-            "logo": "https://media.api-sports.io/football/teams/559.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2246,
-            "name": "CFR 1907 Cluj",
-            "logo": "https://media.api-sports.io/football/teams/2246.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1360150,
-          "date": "2025-04-26T00:00:00+00:00",
-          "venue": {
-            "id": 19612,
-            "name": "Stadionul Arcul de Triumf",
-            "city": "București"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745625600
-        },
-        "league": {
-          "id": 283,
-          "name": "Liga I",
-          "logo": "https://media.api-sports.io/football/leagues/283.png"
-        },
-        "teams": {
-          "home": {
-            "id": 635,
-            "name": "Dinamo Bucuresti",
-            "logo": "https://media.api-sports.io/football/teams/635.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2246,
-            "name": "CFR 1907 Cluj",
-            "logo": "https://media.api-sports.io/football/teams/2246.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1360153,
-          "date": "2025-05-03T00:00:00+00:00",
-          "venue": {
-            "id": 1311,
-            "name": "Stadionul Dr. Constantin Rădulescu",
-            "city": "Cluj-Napoca"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746230400
-        },
-        "league": {
-          "id": 283,
-          "name": "Liga I",
-          "logo": "https://media.api-sports.io/football/leagues/283.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2246,
-            "name": "CFR 1907 Cluj",
-            "logo": "https://media.api-sports.io/football/teams/2246.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2599,
-            "name": "Universitatea Cluj",
-            "logo": "https://media.api-sports.io/football/teams/2599.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1360156,
-          "date": "2025-05-10T00:00:00+00:00",
-          "venue": {
-            "id": 12282,
-            "name": "Complex Sportiv Craiova",
-            "city": "Craiova"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746835200
-        },
-        "league": {
-          "id": 283,
-          "name": "Liga I",
-          "logo": "https://media.api-sports.io/football/leagues/283.png"
-        },
-        "teams": {
-          "home": {
-            "id": 632,
-            "name": "Universitatea Craiova",
-            "logo": "https://media.api-sports.io/football/teams/632.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2246,
-            "name": "CFR 1907 Cluj",
-            "logo": "https://media.api-sports.io/football/teams/2246.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1360160,
-          "date": "2025-05-17T00:00:00+00:00",
-          "venue": {
-            "id": 19516,
-            "name": "Superbet Arena-Giulești",
-            "city": "București"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1747440000
-        },
-        "league": {
-          "id": 283,
-          "name": "Liga I",
-          "logo": "https://media.api-sports.io/football/leagues/283.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6231,
-            "name": "Rapid",
-            "logo": "https://media.api-sports.io/football/teams/6231.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2246,
-            "name": "CFR 1907 Cluj",
-            "logo": "https://media.api-sports.io/football/teams/2246.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1360161,
-          "date": "2025-05-24T00:00:00+00:00",
-          "venue": {
-            "id": 1311,
-            "name": "Stadionul Dr. Constantin Rădulescu",
-            "city": "Cluj-Napoca"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1748044800
-        },
-        "league": {
-          "id": 283,
-          "name": "Liga I",
-          "logo": "https://media.api-sports.io/football/leagues/283.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2246,
-            "name": "CFR 1907 Cluj",
-            "logo": "https://media.api-sports.io/football/teams/2246.png",
-            "winner": null
-          },
-          "away": {
-            "id": 559,
-            "name": "FCSB",
-            "logo": "https://media.api-sports.io/football/teams/559.png",
             "winner": null
           }
         },
@@ -1371,52 +1017,52 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 2246,
       "name": "CFR 1907 Cluj",
       "logo": "https://media.api-sports.io/football/teams/2246.png"
     },
-    "form": "LLWD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 3,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 1,
-          "away": 2,
-          "total": 3
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "0.7",
-          "total": "0.8"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1428,8 +1074,8 @@
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -1440,8 +1086,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1454,37 +1100,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 4,
-          "total": 4
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.3",
-          "total": "1.0"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1508,8 +1154,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1522,73 +1168,73 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 0,
         "draws": 0,
-        "loses": 2
+        "loses": 0
       },
       "wins": {
-        "home": "1-0",
+        "home": null,
         "away": null
       },
       "loses": {
         "home": null,
-        "away": "2-1"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 1,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 2
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -1610,8 +1256,8 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
@@ -1662,5 +1308,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:15.011Z"
+  "lastUpdated": "2025-03-27T10:38:58.530Z"
 }

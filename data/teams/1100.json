@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 960,
+        "name": "Euro Championship - Qualification",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/960.png"
       },
       "country": {
         "name": "World",
@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2023,
+          "start": "2023-03-23",
+          "end": "2024-03-26",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -45,7 +45,7 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
@@ -124,6 +124,43 @@
             "top_scorers": false,
             "top_assists": false,
             "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
             "injuries": false,
             "predictions": true,
             "odds": true
@@ -265,6 +302,65 @@
       },
       {
         "fixture": {
+          "id": 1366295,
+          "date": "2025-10-09T18:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1760035500
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1100,
+            "name": "Belarus",
+            "logo": "https://media.api-sports.io/football/teams/1100.png",
+            "winner": null
+          },
+          "away": {
+            "id": 21,
+            "name": "Denmark",
+            "logo": "https://media.api-sports.io/football/teams/21.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1323328,
           "date": "2025-10-12T16:00:00+00:00",
           "venue": {
@@ -290,6 +386,65 @@
             "id": 1108,
             "name": "Scotland",
             "logo": "https://media.api-sports.io/football/teams/1108.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1100,
+            "name": "Belarus",
+            "logo": "https://media.api-sports.io/football/teams/1100.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1366318,
+          "date": "2025-11-15T19:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1763235900
+        },
+        "league": {
+          "id": 32,
+          "name": "World Cup - Qualification Europe",
+          "logo": "https://media.api-sports.io/football/leagues/32.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21,
+            "name": "Denmark",
+            "logo": "https://media.api-sports.io/football/teams/21.png",
             "winner": null
           },
           "away": {
@@ -383,6 +538,124 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334978,
+          "date": "2025-03-25T17:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Bank Respublika Arena",
+            "city": "Masazir"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742924700
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1096,
+            "name": "Azerbaijan",
+            "logo": "https://media.api-sports.io/football/teams/1096.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1100,
+            "name": "Belarus",
+            "logo": "https://media.api-sports.io/football/teams/1100.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332406,
+          "date": "2025-03-20T11:00:00+00:00",
+          "venue": {
+            "id": 21416,
+            "name": "Republican Central Stadium",
+            "city": "Dushanbe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742468400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1536,
+            "name": "Tajikistan",
+            "logo": "https://media.api-sports.io/football/teams/1536.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1100,
+            "name": "Belarus",
+            "logo": "https://media.api-sports.io/football/teams/1100.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1173025,
@@ -854,147 +1127,29 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1165958,
-          "date": "2024-03-26T18:00:00+00:00",
-          "venue": {
-            "id": 2614,
-            "name": "Ta'Qali National Stadium",
-            "city": "Ta'Qali"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711476000
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1112,
-            "name": "Malta",
-            "logo": "https://media.api-sports.io/football/teams/1112.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1100,
-            "name": "Belarus",
-            "logo": "https://media.api-sports.io/football/teams/1100.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1169680,
-          "date": "2024-03-21T17:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Mardan Stadyumu",
-            "city": "Antalya"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711040400
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1100,
-            "name": "Belarus",
-            "logo": "https://media.api-sports.io/football/teams/1100.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1109,
-            "name": "Montenegro",
-            "logo": "https://media.api-sports.io/football/teams/1109.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1100,
       "name": "Belarus",
       "logo": "https://media.api-sports.io/football/teams/1100.png"
     },
-    "form": "LDLL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 3,
-        "away": 1,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -1003,13 +1158,13 @@
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 3,
+        "home": 0,
         "away": 0,
-        "total": 3
+        "total": 0
       }
     },
     "goals": {
@@ -1061,61 +1216,61 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 10,
+          "home": 0,
           "away": 0,
-          "total": 10
+          "total": 0
         },
         "average": {
-          "home": "3.3",
+          "home": "0.0",
           "away": "0.0",
-          "total": "2.5"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "30.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "10.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1128,24 +1283,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       }
@@ -1153,15 +1308,15 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
-        "loses": 1
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
         "home": null,
         "away": null
       },
       "loses": {
-        "home": "0-4",
+        "home": null,
         "away": null
       },
       "goals": {
@@ -1170,20 +1325,20 @@
           "away": 0
         },
         "against": {
-          "home": 4,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 3,
-      "away": 1,
-      "total": 4
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1196,16 +1351,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "3-5-2",
-        "played": 2
-      },
-      {
-        "formation": "4-4-2",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1217,20 +1363,20 @@
           "percentage": null
         },
         "31-45": {
-          "total": 3,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
           "total": null,
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "16.67%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 2,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1259,8 +1405,8 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
@@ -1277,5 +1423,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:53.975Z"
+  "lastUpdated": "2025-03-27T10:39:39.229Z"
 }

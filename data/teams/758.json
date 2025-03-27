@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 104,
-        "name": "1. Division",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/104.png"
-      },
-      "country": {
-        "name": "Norway",
-        "code": "NO",
-        "flag": "https://media.api-sports.io/flags/no.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-04-01",
-          "end": "2024-12-01",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 667,
         "name": "Friendlies Clubs",
         "type": "Cup",
@@ -71,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -89,17 +52,17 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
     },
     {
       "league": {
-        "id": 105,
-        "name": "NM Cupen",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/105.png"
+        "id": 104,
+        "name": "1. Division",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/104.png"
       },
       "country": {
         "name": "Norway",
@@ -108,25 +71,25 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-04-09",
-          "end": "2024-12-07",
+          "year": 2025,
+          "start": "2025-03-31",
+          "end": "2025-11-08",
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
+              "events": false,
+              "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -145,24 +108,23 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1152106,
-          "date": "2024-11-09T15:00:00+00:00",
+          "id": 1342431,
+          "date": "2025-03-31T17:00:00+00:00",
           "venue": {
-            "id": 1195,
-            "name": "Fosshaugane Campus",
-            "city": "Sogndal"
+            "id": 1197,
+            "name": "Sparebanken Sør Arena",
+            "city": "Kristiansand"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1731164400
+          "timestamp": 1743440400
         },
         "league": {
           "id": 104,
@@ -171,30 +133,30 @@
         },
         "teams": {
           "home": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": null
+          },
+          "away": {
             "id": 758,
             "name": "Sogndal",
             "logo": "https://media.api-sports.io/football/teams/758.png",
-            "winner": false
-          },
-          "away": {
-            "id": 326,
-            "name": "Valerenga",
-            "logo": "https://media.api-sports.io/football/teams/326.png",
-            "winner": true
+            "winner": null
           }
         },
         "goals": {
-          "home": 0,
-          "away": 3
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 0,
-            "away": 3
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -208,20 +170,492 @@
       },
       {
         "fixture": {
-          "id": 1152102,
-          "date": "2024-11-02T15:00:00+00:00",
+          "id": 1342440,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 1195,
+            "name": "Fosshaugane Campus",
+            "city": "Sogndal"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
+          },
+          "away": {
+            "id": 757,
+            "name": "Aalesund",
+            "logo": "https://media.api-sports.io/football/teams/757.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342445,
+          "date": "2025-04-21T15:00:00+00:00",
+          "venue": {
+            "id": 1188,
+            "name": "EXTRA Arena",
+            "city": "Ranheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745247600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 322,
+            "name": "Ranheim",
+            "logo": "https://media.api-sports.io/football/teams/322.png",
+            "winner": null
+          },
+          "away": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342455,
+          "date": "2025-04-28T17:00:00+00:00",
+          "venue": {
+            "id": 1195,
+            "name": "Fosshaugane Campus",
+            "city": "Sogndal"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745859600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
+          },
+          "away": {
+            "id": 330,
+            "name": "ODD Ballklubb",
+            "logo": "https://media.api-sports.io/football/teams/330.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342461,
+          "date": "2025-05-03T14:00:00+00:00",
+          "venue": {
+            "id": 1195,
+            "name": "Fosshaugane Campus",
+            "city": "Sogndal"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746280800
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2152,
+            "name": "Mjondalen",
+            "logo": "https://media.api-sports.io/football/teams/2152.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342469,
+          "date": "2025-05-12T17:00:00+00:00",
+          "venue": {
+            "id": 2794,
+            "name": "Nye Høddvoll Stadion",
+            "city": "Ulsteinvik"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747069200
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2150,
+            "name": "hodd",
+            "logo": "https://media.api-sports.io/football/teams/2150.png",
+            "winner": null
+          },
+          "away": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342478,
+          "date": "2025-05-16T16:00:00+00:00",
+          "venue": {
+            "id": 1195,
+            "name": "Fosshaugane Campus",
+            "city": "Sogndal"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747411200
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2148,
+            "name": "Asane",
+            "logo": "https://media.api-sports.io/football/teams/2148.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342488,
+          "date": "2025-05-25T15:00:00+00:00",
+          "venue": {
+            "id": 5094,
+            "name": "Egersund Idrettsparken",
+            "city": "Egersund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748185200
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6976,
+            "name": "Egersund",
+            "logo": "https://media.api-sports.io/football/teams/6976.png",
+            "winner": null
+          },
+          "away": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342496,
+          "date": "2025-05-31T14:00:00+00:00",
+          "venue": {
+            "id": 1195,
+            "name": "Fosshaugane Campus",
+            "city": "Sogndal"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748700000
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2153,
+            "name": "Raufoss",
+            "logo": "https://media.api-sports.io/football/teams/2153.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342501,
+          "date": "2025-06-15T15:00:00+00:00",
           "venue": {
             "id": 1180,
             "name": "Gjemselund Stadion",
             "city": "Kongsvinger"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1730559600
+          "timestamp": 1749999600
         },
         "league": {
           "id": 104,
@@ -233,26 +667,205 @@
             "id": 2144,
             "name": "Kongsvinger",
             "logo": "https://media.api-sports.io/football/teams/2144.png",
-            "winner": false
+            "winner": null
           },
           "away": {
             "id": 758,
             "name": "Sogndal",
             "logo": "https://media.api-sports.io/football/teams/758.png",
-            "winner": true
+            "winner": null
           }
         },
         "goals": {
-          "home": 0,
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342512,
+          "date": "2025-06-18T17:00:00+00:00",
+          "venue": {
+            "id": 1194,
+            "name": "Nordre Åsen kunstgress",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750266000
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2239,
+            "name": "Skeid",
+            "logo": "https://media.api-sports.io/football/teams/2239.png",
+            "winner": null
+          },
+          "away": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1365983,
+          "date": "2025-03-23T14:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1742738400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2148,
+            "name": "Asane",
+            "logo": "https://media.api-sports.io/football/teams/2148.png",
+            "winner": true
+          },
+          "away": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350896,
+          "date": "2025-03-15T14:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742047200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 319,
+            "name": "Brann",
+            "logo": "https://media.api-sports.io/football/teams/319.png",
+            "winner": true
+          },
+          "away": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 0
           },
           "fulltime": {
-            "home": 0,
+            "home": 3,
             "away": 1
           },
           "extratime": {
@@ -267,51 +880,110 @@
       },
       {
         "fixture": {
-          "id": 1152089,
-          "date": "2024-10-26T14:00:00+00:00",
+          "id": 1349330,
+          "date": "2025-03-08T13:00:00+00:00",
           "venue": {
-            "id": 1195,
-            "name": "Fosshaugane Campus",
-            "city": "Sogndal"
+            "id": null,
+            "name": "Valdres Storhall",
+            "city": "Leira i Valdres"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 5
+            "extra": null
           },
-          "timestamp": 1729951200
+          "timestamp": 1741438800
         },
         "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          },
+          "away": {
             "id": 758,
             "name": "Sogndal",
             "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349308,
+          "date": "2025-03-01T14:00:00+00:00",
+          "venue": {
+            "id": 1174,
+            "name": "Color Line Stadion",
+            "city": "Ålesund"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1740837600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 757,
+            "name": "Aalesund",
+            "logo": "https://media.api-sports.io/football/teams/757.png",
             "winner": false
           },
           "away": {
-            "id": 2148,
-            "name": "Asane",
-            "logo": "https://media.api-sports.io/football/teams/2148.png",
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
             "winner": true
           }
         },
         "goals": {
-          "home": 0,
+          "home": 1,
           "away": 2
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
-            "home": 0,
+            "home": 1,
             "away": 2
           },
           "extratime": {
@@ -326,67 +998,8 @@
       },
       {
         "fixture": {
-          "id": 1152080,
-          "date": "2024-10-21T17:00:00+00:00",
-          "venue": {
-            "id": 1183,
-            "name": "Consto Arena",
-            "city": "Mjøndalen"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1729530000
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2152,
-            "name": "Mjondalen",
-            "logo": "https://media.api-sports.io/football/teams/2152.png",
-            "winner": null
-          },
-          "away": {
-            "id": 758,
-            "name": "Sogndal",
-            "logo": "https://media.api-sports.io/football/teams/758.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152073,
-          "date": "2024-10-05T15:00:00+00:00",
+          "id": 1346245,
+          "date": "2025-02-26T12:00:00+00:00",
           "venue": {
             "id": 1195,
             "name": "Fosshaugane Campus",
@@ -396,14 +1009,14 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 7
+            "extra": 6
           },
-          "timestamp": 1728140400
+          "timestamp": 1740571200
         },
         "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
@@ -413,201 +1026,24 @@
             "winner": false
           },
           "away": {
-            "id": 757,
-            "name": "Aalesund",
-            "logo": "https://media.api-sports.io/football/teams/757.png",
+            "id": 2150,
+            "name": "hodd",
+            "logo": "https://media.api-sports.io/football/teams/2150.png",
             "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152066,
-          "date": "2024-09-28T14:00:00+00:00",
-          "venue": {
-            "id": 1196,
-            "name": "Nadderud Stadion",
-            "city": "Bærum"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1727532000
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 323,
-            "name": "Stabaek",
-            "logo": "https://media.api-sports.io/football/teams/323.png",
-            "winner": true
-          },
-          "away": {
-            "id": 758,
-            "name": "Sogndal",
-            "logo": "https://media.api-sports.io/football/teams/758.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152063,
-          "date": "2024-09-25T17:00:00+00:00",
-          "venue": {
-            "id": 1195,
-            "name": "Fosshaugane Campus",
-            "city": "Sogndal"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1727283600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 758,
-            "name": "Sogndal",
-            "logo": "https://media.api-sports.io/football/teams/758.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2142,
-            "name": "Bryne",
-            "logo": "https://media.api-sports.io/football/teams/2142.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152053,
-          "date": "2024-09-21T14:00:00+00:00",
-          "venue": {
-            "id": 12682,
-            "name": "Øster Hus Arena",
-            "city": "Sandnes"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726927200
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2146,
-            "name": "Sandnes ULF",
-            "logo": "https://media.api-sports.io/football/teams/2146.png",
-            "winner": true
-          },
-          "away": {
-            "id": 758,
-            "name": "Sogndal",
-            "logo": "https://media.api-sports.io/football/teams/758.png",
-            "winner": false
           }
         },
         "goals": {
           "home": 1,
-          "away": 0
+          "away": 2
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 0
+            "home": 0,
+            "away": 1
           },
           "fulltime": {
             "home": 1,
-            "away": 0
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -621,51 +1057,51 @@
       },
       {
         "fixture": {
-          "id": 1152040,
-          "date": "2024-09-15T15:00:00+00:00",
+          "id": 1346191,
+          "date": "2025-02-22T00:00:00+00:00",
           "venue": {
             "id": 1195,
-            "name": "Fosshaugane Campus",
+            "name": "Sognahallen",
             "city": "Sogndal"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 4
           },
-          "timestamp": 1726412400
+          "timestamp": 1740182400
         },
         "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
             "id": 758,
             "name": "Sogndal",
             "logo": "https://media.api-sports.io/football/teams/758.png",
-            "winner": false
+            "winner": null
           },
           "away": {
             "id": 7006,
             "name": "Lyn",
             "logo": "https://media.api-sports.io/football/teams/7006.png",
-            "winner": true
+            "winner": null
           }
         },
         "goals": {
-          "home": 0,
+          "home": 1,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 0
           },
           "fulltime": {
-            "home": 0,
+            "home": 1,
             "away": 1
           },
           "extratime": {
@@ -680,43 +1116,220 @@
       },
       {
         "fixture": {
-          "id": 1152034,
-          "date": "2024-09-02T17:00:00+00:00",
+          "id": 1349204,
+          "date": "2025-02-12T15:00:00+00:00",
           "venue": {
-            "id": 1189,
-            "name": "NAMMO stadion",
-            "city": "Raufoss"
+            "id": null,
+            "name": "Real Club de Golf Campoamor Campo 1",
+            "city": "Orihuela Costa"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 2
           },
-          "timestamp": 1725296400
+          "timestamp": 1739372400
         },
         "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
-            "id": 2153,
-            "name": "Raufoss",
-            "logo": "https://media.api-sports.io/football/teams/2153.png",
-            "winner": true
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
           },
           "away": {
+            "id": 6489,
+            "name": "Kryvbas KR",
+            "logo": "https://media.api-sports.io/football/teams/6489.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346317,
+          "date": "2025-02-04T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Nuevo Campo del Campoamor Golf Resort",
+            "city": "Orihuela"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1738681200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
             "id": 758,
             "name": "Sogndal",
             "logo": "https://media.api-sports.io/football/teams/758.png",
             "winner": false
+          },
+          "away": {
+            "id": 325,
+            "name": "Tromso",
+            "logo": "https://media.api-sports.io/football/teams/325.png",
+            "winner": true
           }
         },
         "goals": {
-          "home": 4,
-          "away": 1
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1339691,
+          "date": "2025-01-25T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sognahallen",
+            "city": "Sogndal"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1737763200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": true
+          },
+          "away": {
+            "id": 6998,
+            "name": "Hønefoss",
+            "logo": "https://media.api-sports.io/football/teams/6998.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1337036,
+          "date": "2025-01-18T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sognahallen",
+            "city": "Sogndal"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1737158400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": true
+          },
+          "away": {
+            "id": 7007,
+            "name": "Lysekloster",
+            "logo": "https://media.api-sports.io/football/teams/7007.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
         },
         "score": {
           "halftime": {
@@ -724,8 +1337,8 @@
             "away": 0
           },
           "fulltime": {
-            "home": 4,
-            "away": 1
+            "home": 3,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -746,76 +1359,76 @@
       "country": "Norway",
       "logo": "https://media.api-sports.io/football/leagues/104.png",
       "flag": "https://media.api-sports.io/flags/no.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 758,
       "name": "Sogndal",
       "logo": "https://media.api-sports.io/football/teams/758.png"
     },
-    "form": "DWDWLDWWDLLDWWLWWDLLLLLLLLDLWL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 15,
-        "away": 15,
-        "total": 30
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 5,
-        "away": 4,
-        "total": 9
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 3,
-        "away": 4,
-        "total": 7
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 7,
-        "away": 7,
-        "total": 14
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 23,
-          "away": 11,
-          "total": 34
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.5",
-          "away": "0.7",
-          "total": "1.1"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 3,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 6,
-            "percentage": "18.18%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 11,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 7,
-            "percentage": "21.21%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "3.03%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "6.06%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -824,66 +1437,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 18,
-            "under": 12
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 10,
-            "under": 20
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 3,
-            "under": 27
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 28
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 29
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 21,
-          "away": 19,
-          "total": 40
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.4",
-          "away": "1.3",
-          "total": "1.3"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 8,
-            "percentage": "19.51%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 6,
-            "percentage": "14.63%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 5,
-            "percentage": "12.20%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 4,
-            "percentage": "9.76%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 9,
-            "percentage": "21.95%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 8,
-            "percentage": "19.51%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "2.44%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -892,104 +1505,104 @@
         },
         "under_over": {
           "0.5": {
-            "over": 22,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 11,
-            "under": 19
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 6,
-            "under": 24
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 29
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 30
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 1,
-        "loses": 8
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "5-1",
-        "away": "0-2"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "0-3",
-        "away": "4-1"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 5,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
-          "away": 4
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 3,
-      "away": 5,
-      "total": 8
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 5,
-      "away": 7,
-      "total": 12
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 3,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 3
+      "total": 0
     },
     "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 4,
-          "percentage": "8.51%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
-          "total": 2,
-          "percentage": "4.26%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 7,
-          "percentage": "14.89%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 9,
-          "percentage": "19.15%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 9,
-          "percentage": "19.15%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 9,
-          "percentage": "19.15%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 7,
-          "percentage": "14.89%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1022,8 +1635,8 @@
           "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1032,5 +1645,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:37:06.804Z"
+  "lastUpdated": "2025-03-27T10:35:43.768Z"
 }

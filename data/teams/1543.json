@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 807,
+        "name": "AFC Challenge Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/807.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2014,
+          "start": "2013-03-02",
+          "end": "2014-05-30",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -89,7 +89,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -130,6 +130,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 30,
+        "name": "World Cup - Qualification Asia",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/30.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2023-10-12",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -148,6 +222,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1354388,
+          "date": "2025-03-25T12:00:00+00:00",
+          "venue": {
+            "id": 20324,
+            "name": "Olympic Stadium",
+            "city": "Phnom Penh"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1742904000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1543,
+            "name": "Cambodia",
+            "logo": "https://media.api-sports.io/football/teams/1543.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8167,
+            "name": "Aruba",
+            "logo": "https://media.api-sports.io/football/teams/8167.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350315,
+          "date": "2025-03-19T12:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Gò Đậu",
+            "city": "Thu Dau Mot"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1742387400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1542,
+            "name": "Vietnam",
+            "logo": "https://media.api-sports.io/football/teams/1542.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1543,
+            "name": "Cambodia",
+            "logo": "https://media.api-sports.io/football/teams/1543.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1201032,
@@ -619,152 +811,34 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1194765,
-          "date": "2024-06-07T11:00:00+00:00",
-          "venue": {
-            "id": 20324,
-            "name": "Olympic Stadium",
-            "city": "Phnom Penh"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1717758000
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1543,
-            "name": "Cambodia",
-            "logo": "https://media.api-sports.io/football/teams/1543.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5534,
-            "name": "Mongolia",
-            "logo": "https://media.api-sports.io/football/teams/5534.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1178426,
-          "date": "2024-03-26T19:00:00+00:00",
-          "venue": {
-            "id": 19932,
-            "name": "Prince Abdullah al-Faisal Stadium",
-            "city": "Jeddah"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711479600
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5162,
-            "name": "Guyana",
-            "logo": "https://media.api-sports.io/football/teams/5162.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1543,
-            "name": "Cambodia",
-            "logo": "https://media.api-sports.io/football/teams/1543.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1543,
       "name": "Cambodia",
       "logo": "https://media.api-sports.io/football/teams/1543.png"
     },
-    "form": "LLWLWL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
-        "away": 4,
-        "total": 6
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -773,21 +847,21 @@
       },
       "loses": {
         "home": 0,
-        "away": 4,
-        "total": 4
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 5,
-          "away": 2,
-          "total": 7
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.5",
-          "away": "0.5",
-          "total": "1.2"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -795,20 +869,20 @@
             "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "42.86%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "28.57%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -825,37 +899,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 2,
-          "away": 11,
-          "total": 13
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "2.8",
-          "total": "2.2"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -863,28 +937,28 @@
             "percentage": null
           },
           "16-30": {
-            "total": 2,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "10.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "10.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 3,
-            "percentage": "30.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "10.00%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -893,62 +967,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 5,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 0,
         "draws": 0,
-        "loses": 2
+        "loses": 0
       },
       "wins": {
-        "home": "2-0",
+        "home": null,
         "away": null
       },
       "loses": {
         "home": null,
-        "away": "4-1"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 2,
-          "away": 4
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 2,
-      "total": 2
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -956,30 +1030,17 @@
         "percentage": "0%"
       },
       "missed": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-3-3",
-        "played": 1
-      },
-      {
-        "formation": "3-5-2",
-        "played": 1
-      },
-      {
-        "formation": "3-4-3",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 1,
-          "percentage": "16.67%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
           "total": null,
@@ -990,16 +1051,16 @@
           "percentage": null
         },
         "46-60": {
-          "total": 3,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": 2,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1046,5 +1107,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:35.416Z"
+  "lastUpdated": "2025-03-27T10:40:22.318Z"
 }

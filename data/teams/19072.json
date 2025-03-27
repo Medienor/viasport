@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 919,
+        "name": "Mediterranean Games",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/919.png"
       },
       "country": {
         "name": "World",
@@ -34,22 +34,22 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2022,
+          "start": "2022-06-26",
+          "end": "2022-07-05",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -241,29 +241,324 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 883563,
+          "date": "2022-07-04T16:00:00+00:00",
+          "venue": {
+            "id": 21541,
+            "name": "Stade Olympique d'Oran",
+            "city": "Bir El Djir"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1656950400
+        },
+        "league": {
+          "id": 919,
+          "name": "Mediterranean Games",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19075,
+            "name": "Turkey U18",
+            "logo": "https://media.api-sports.io/football/teams/19075.png",
+            "winner": false
+          },
+          "away": {
+            "id": 19072,
+            "name": "Morocco U18",
+            "logo": "https://media.api-sports.io/football/teams/19072.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 882449,
+          "date": "2022-07-02T20:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Sig",
+            "city": "Sig"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1656792000
+        },
+        "league": {
+          "id": 919,
+          "name": "Mediterranean Games",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19071,
+            "name": "Italy U18",
+            "logo": "https://media.api-sports.io/football/teams/19071.png",
+            "winner": true
+          },
+          "away": {
+            "id": 19072,
+            "name": "Morocco U18",
+            "logo": "https://media.api-sports.io/football/teams/19072.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 879823,
+          "date": "2022-06-30T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Mers El Hadjadj",
+            "city": "Mers El Hadjadj"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1656615600
+        },
+        "league": {
+          "id": 919,
+          "name": "Mediterranean Games",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19072,
+            "name": "Morocco U18",
+            "logo": "https://media.api-sports.io/football/teams/19072.png",
+            "winner": null
+          },
+          "away": {
+            "id": 19074,
+            "name": "Spain U18",
+            "logo": "https://media.api-sports.io/football/teams/19074.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 879816,
+          "date": "2022-06-28T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Sig",
+            "city": "Sig"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1656432000
+        },
+        "league": {
+          "id": 919,
+          "name": "Mediterranean Games",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19068,
+            "name": "Algeria U18",
+            "logo": "https://media.api-sports.io/football/teams/19068.png",
+            "winner": false
+          },
+          "away": {
+            "id": 19072,
+            "name": "Morocco U18",
+            "logo": "https://media.api-sports.io/football/teams/19072.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 879814,
+          "date": "2022-06-26T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Sig",
+            "city": "Sig"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1656270000
+        },
+        "league": {
+          "id": 919,
+          "name": "Mediterranean Games",
+          "logo": "https://media.api-sports.io/football/leagues/919.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19069,
+            "name": "France U18",
+            "logo": "https://media.api-sports.io/football/teams/19069.png",
+            "winner": true
+          },
+          "away": {
+            "id": 19072,
+            "name": "Morocco U18",
+            "logo": "https://media.api-sports.io/football/teams/19072.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 19072,
       "name": "Morocco U18",
       "logo": "https://media.api-sports.io/football/teams/19072.png"
     },
-    "form": "LLD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -271,27 +566,27 @@
         "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 2,
-          "away": 1,
-          "total": 3
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "1.0",
-          "total": "1.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -329,37 +624,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
-          "away": 2,
-          "total": 6
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.0",
-          "away": "2.0",
-          "total": "2.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -397,24 +692,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
@@ -423,24 +718,24 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 2
+        "loses": 0
       },
       "wins": {
         "home": null,
         "away": null
       },
       "loses": {
-        "home": "0-2",
-        "away": "2-1"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 2,
-          "away": 2
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -450,9 +745,9 @@
       "total": 0
     },
     "failed_to_score": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -537,5 +832,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:34.476Z"
+  "lastUpdated": "2025-03-27T10:41:24.282Z"
 }

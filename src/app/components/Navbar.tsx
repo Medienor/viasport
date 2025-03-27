@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import SearchBar from './SearchBar';
 import NavDropdown from './NavDropdown';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -71,15 +72,21 @@ const Navbar = () => {
   }));
 
   return (
-    <nav className="bg-[#061206] text-white md:bg-[#061206]">
+    <nav className="bg-[#204028] text-white md:bg-[#204028]">
       {/* Top navigation bar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-0 bg-gray-100 md:bg-[#061206]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-8 lg:pr-0 bg-[#204028]">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="text-xl font-bold text-[#142811] md:text-white">
-                ViaSport
+              <Link href="/" className="relative w-48 h-8">
+                <Image
+                  src="/viasportlogo.svg"
+                  alt="ViaSport"
+                  fill
+                  priority
+                  className="object-contain"
+                />
               </Link>
             </div>
             
@@ -92,7 +99,7 @@ const Navbar = () => {
           <div className="flex items-center">
             {/* User menu - hide on mobile */}
             <div className="hidden md:flex items-center">
-              <button className="bg-gradient-to-t from-[#061206] to-[#1e3a1e] px-4 py-2 rounded-md text-sm font-medium flex items-center hover:from-[#0a1e0a] hover:to-[#2a4a2a] transition-all duration-300">
+              <button className="px-4 py-2 rounded-md text-sm font-medium border border-white/20 hover:bg-white/10 transition-colors duration-200 flex items-center">
                 <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                 </svg>
@@ -100,11 +107,11 @@ const Navbar = () => {
               </button>
             </div>
             
-            {/* Mobile menu button */}
+            {/* Mobile menu button - Updated color */}
             <div className="flex md:hidden ml-4">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-md text-[#142811] hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-[#142811] md:text-white"
+                className="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-[#2a532f] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#204028] focus:ring-white"
                 aria-expanded={isMenuOpen}
               >
                 <span className="sr-only">Åpne meny</span>
@@ -124,7 +131,7 @@ const Navbar = () => {
       </div>
       
       {/* Secondary navigation bar - only visible on desktop/tablet */}
-      <div className="hidden md:block bg-[#142811]">
+      <div className="hidden md:block bg-[#204028]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-12 overflow-x-auto hide-scrollbar">
             <div className="flex items-center space-x-4">
@@ -162,7 +169,7 @@ const Navbar = () => {
       
       {/* Mobile menu - improved layout */}
       <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#1e3a1e]">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#204028]">
           {/* Mobile search */}
           <div className="px-2 py-2">
             <div className="relative">
@@ -181,15 +188,15 @@ const Navbar = () => {
           
           {/* Collapsible sections for mobile */}
           <div className="mt-3">
-            <div className="px-3 py-2 bg-[#061206] rounded-t-md font-medium text-white">
+            <div className="px-3 py-2 bg-[#204028] rounded-t-md font-medium text-white">
               Kommende kamper
             </div>
-            <div className="bg-[#0a1e0a] rounded-b-md mb-2">
+            <div className="bg-[#204028] rounded-b-md mb-2">
               {upcomingItems.map((item, index) => (
                 <Link
                   key={index}
                   href={item.href}
-                  className="block px-3 py-2 text-sm font-medium hover:bg-[#142811] border-b border-[#061206] last:border-b-0"
+                  className="block px-3 py-2 text-sm font-medium hover:bg-[#204028] border-b border-[#204028] last:border-b-0"
                 >
                   {item.text}
                 </Link>
@@ -199,15 +206,15 @@ const Navbar = () => {
           
           {/* Popular leagues section */}
           <div className="mt-3">
-            <div className="px-3 py-2 bg-[#061206] rounded-t-md font-medium text-white">
+            <div className="px-3 py-2 bg-[#204028] rounded-t-md font-medium text-white">
               Populære ligaer
             </div>
-            <div className="bg-[#0a1e0a] rounded-b-md mb-2">
+            <div className="bg-[#204028] rounded-b-md mb-2">
               {mainLeagues.map((league, index) => (
                 <Link 
                   key={index} 
                   href={`/fotball/liga/${league.name.toLowerCase().replace(/\s+/g, '-')}-${league.id}`}
-                  className="flex items-center justify-between px-3 py-2 text-sm font-medium hover:bg-[#142811] border-b border-[#061206] last:border-b-0"
+                  className="flex items-center justify-between px-3 py-2 text-sm font-medium hover:bg-[#204028] border-b border-[#204028] last:border-b-0"
                 >
                   <span>{league.name}</span>
                   <span className="text-xs text-green-200">{league.country}</span>
@@ -218,15 +225,15 @@ const Navbar = () => {
           
           {/* Other leagues section */}
           <div className="mt-3">
-            <div className="px-3 py-2 bg-[#061206] rounded-t-md font-medium text-white">
+            <div className="px-3 py-2 bg-[#204028] rounded-t-md font-medium text-white">
               Andre ligaer
             </div>
-            <div className="bg-[#0a1e0a] rounded-b-md mb-2">
+            <div className="bg-[#204028] rounded-b-md mb-2">
               {additionalLeagues.map((league, index) => (
                 <Link 
                   key={index} 
                   href={`/fotball/liga/${league.name.toLowerCase().replace(/\s+/g, '-')}-${league.id}`}
-                  className="flex items-center justify-between px-3 py-2 text-sm font-medium hover:bg-[#142811] border-b border-[#061206] last:border-b-0"
+                  className="flex items-center justify-between px-3 py-2 text-sm font-medium hover:bg-[#204028] border-b border-[#204028] last:border-b-0"
                 >
                   <span>{league.name}</span>
                   <span className="text-xs text-green-200">{league.country}</span>
@@ -235,9 +242,9 @@ const Navbar = () => {
             </div>
           </div>
           
-          {/* Login button - removed px-3 from container div */}
+          {/* Login button - mobile version */}
           <div className="mt-6">
-            <button className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium bg-gradient-to-t from-[#061206] to-[#1e3a1e] hover:from-[#0a1e0a] hover:to-[#2a4a2a] transition-all duration-300">
+            <button className="w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium border border-white/20 hover:bg-white/10 transition-colors duration-200">
               <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
               </svg>

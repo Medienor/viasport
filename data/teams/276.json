@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 168,
-        "name": "League Cup",
+        "id": 815,
+        "name": "Fotbolti.net Cup A",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/168.png"
+        "logo": "https://media.api-sports.io/football/leagues/815.png"
       },
       "country": {
         "name": "Iceland",
@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-13",
-          "end": "2024-03-27",
-          "current": false,
+          "year": 2022,
+          "start": "2022-01-08",
+          "end": "2022-01-29",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -50,117 +50,6 @@
             "top_scorers": false,
             "top_assists": false,
             "top_cards": false,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 164,
-        "name": "Úrvalsdeild",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/164.png"
-      },
-      "country": {
-        "name": "Iceland",
-        "code": "IS",
-        "flag": "https://media.api-sports.io/flags/is.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-04-06",
-          "end": "2024-10-27",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 167,
-        "name": "Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/167.png"
-      },
-      "country": {
-        "name": "Iceland",
-        "code": "IS",
-        "flag": "https://media.api-sports.io/flags/is.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-04-01",
-          "end": "2024-08-23",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -204,6 +93,154 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 168,
+        "name": "League Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/168.png"
+      },
+      "country": {
+        "name": "Iceland",
+        "code": "IS",
+        "flag": "https://media.api-sports.io/flags/is.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-01",
+          "end": "2025-03-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 639,
+        "name": "Super Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/639.png"
+      },
+      "country": {
+        "name": "Iceland",
+        "code": "IS",
+        "flag": "https://media.api-sports.io/flags/is.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-31",
+          "end": "2025-03-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 164,
+        "name": "Úrvalsdeild",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/164.png"
+      },
+      "country": {
+        "name": "Iceland",
+        "code": "IS",
+        "flag": "https://media.api-sports.io/flags/is.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-04-05",
+          "end": "2025-09-14",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -220,8 +257,1543 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1332709,
+          "date": "2025-03-30T16:15:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743351300
+        },
+        "league": {
+          "id": 639,
+          "name": "Super Cup",
+          "logo": "https://media.api-sports.io/football/leagues/639.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          },
+          "away": {
+            "id": 272,
+            "name": "KA Akureyri",
+            "logo": "https://media.api-sports.io/football/teams/272.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332710,
+          "date": "2025-04-05T19:15:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743880500
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3514,
+            "name": "Afturelding",
+            "logo": "https://media.api-sports.io/football/teams/3514.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332719,
+          "date": "2025-04-13T19:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lambhagavöllurinn",
+            "city": "Reykjavík"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744571700
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2117,
+            "name": "Fram Reykjavik",
+            "logo": "https://media.api-sports.io/football/teams/2117.png",
+            "winner": null
+          },
+          "away": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332725,
+          "date": "2025-04-23T19:15:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745435700
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          },
+          "away": {
+            "id": 275,
+            "name": "Stjarnan",
+            "logo": "https://media.api-sports.io/football/teams/275.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332728,
+          "date": "2025-04-27T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Kerecisvöllurinn",
+            "city": "Hnífsdalur, Ísafjarðabær"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745762400
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4165,
+            "name": "Vestri",
+            "logo": "https://media.api-sports.io/football/teams/4165.png",
+            "winner": null
+          },
+          "away": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332739,
+          "date": "2025-05-05T19:15:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746472500
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          },
+          "away": {
+            "id": 271,
+            "name": "KR Reykjavik",
+            "logo": "https://media.api-sports.io/football/teams/271.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332743,
+          "date": "2025-05-11T17:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Greifavöllurinn",
+            "city": "Akureyri"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746984600
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 272,
+            "name": "KA Akureyri",
+            "logo": "https://media.api-sports.io/football/teams/272.png",
+            "winner": null
+          },
+          "away": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332750,
+          "date": "2025-05-19T19:15:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747682100
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          },
+          "away": {
+            "id": 274,
+            "name": "Valur Reykjavik",
+            "logo": "https://media.api-sports.io/football/teams/274.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332757,
+          "date": "2025-05-25T19:15:00+00:00",
+          "venue": {
+            "id": 821,
+            "name": "Kaplakrikavöllur",
+            "city": "Hafnarfjörður"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748200500
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 270,
+            "name": "FH hafnarfjordur",
+            "logo": "https://media.api-sports.io/football/teams/270.png",
+            "winner": null
+          },
+          "away": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332763,
+          "date": "2025-05-29T19:15:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748546100
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          },
+          "away": {
+            "id": 827,
+            "name": "IA Akranes",
+            "logo": "https://media.api-sports.io/football/teams/827.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332768,
+          "date": "2025-06-01T19:15:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748805300
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          },
+          "away": {
+            "id": 278,
+            "name": "Vikingur Reykjavik",
+            "logo": "https://media.api-sports.io/football/teams/278.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332771,
+          "date": "2025-06-15T17:00:00+00:00",
+          "venue": {
+            "id": 826,
+            "name": "Hásteinsvöllur",
+            "city": "Vestmannaeyjar"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750006800
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 268,
+            "name": "IBV Vestmannaeyjar",
+            "logo": "https://media.api-sports.io/football/teams/268.png",
+            "winner": null
+          },
+          "away": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332779,
+          "date": "2025-06-22T19:15:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750619700
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2117,
+            "name": "Fram Reykjavik",
+            "logo": "https://media.api-sports.io/football/teams/2117.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332782,
+          "date": "2025-06-26T19:15:00+00:00",
+          "venue": {
+            "id": 829,
+            "name": "Samsung völlurinn",
+            "city": "Garðabær"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750965300
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 275,
+            "name": "Stjarnan",
+            "logo": "https://media.api-sports.io/football/teams/275.png",
+            "winner": null
+          },
+          "away": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332788,
+          "date": "2025-07-03T19:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751570100
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3514,
+            "name": "Afturelding",
+            "logo": "https://media.api-sports.io/football/teams/3514.png",
+            "winner": null
+          },
+          "away": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332797,
+          "date": "2025-07-19T14:00:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752933600
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4165,
+            "name": "Vestri",
+            "logo": "https://media.api-sports.io/football/teams/4165.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332801,
+          "date": "2025-07-27T19:15:00+00:00",
+          "venue": {
+            "id": 10591,
+            "name": "KR-völlur",
+            "city": "Reykjavík"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753643700
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 271,
+            "name": "KR Reykjavik",
+            "logo": "https://media.api-sports.io/football/teams/271.png",
+            "winner": null
+          },
+          "away": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332809,
+          "date": "2025-08-05T19:15:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754421300
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          },
+          "away": {
+            "id": 272,
+            "name": "KA Akureyri",
+            "logo": "https://media.api-sports.io/football/teams/272.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332815,
+          "date": "2025-08-10T19:15:00+00:00",
+          "venue": {
+            "id": 20547,
+            "name": "N1-völlurinn Hlíðarenda",
+            "city": "Reykjavík"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754853300
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 274,
+            "name": "Valur Reykjavik",
+            "logo": "https://media.api-sports.io/football/teams/274.png",
+            "winner": null
+          },
+          "away": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1332822,
+          "date": "2025-08-17T19:15:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755458100
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          },
+          "away": {
+            "id": 270,
+            "name": "FH hafnarfjordur",
+            "logo": "https://media.api-sports.io/football/teams/270.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1320799,
+          "date": "2025-02-27T19:00:00+00:00",
+          "venue": {
+            "id": 18455,
+            "name": "Nettóhöllin",
+            "city": "Keflavík, Reykjanesbær"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1740682800
+        },
+        "league": {
+          "id": 168,
+          "name": "League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/168.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2123,
+            "name": "Njardvik",
+            "logo": "https://media.api-sports.io/football/teams/2123.png",
+            "winner": false
+          },
+          "away": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1320792,
+          "date": "2025-02-22T16:00:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1740240000
+        },
+        "league": {
+          "id": 168,
+          "name": "League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/168.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4166,
+            "name": "Völsungur",
+            "logo": "https://media.api-sports.io/football/teams/4166.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 6,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 4,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 6,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1320782,
+          "date": "2025-02-15T13:00:00+00:00",
+          "venue": {
+            "id": 21597,
+            "name": "Boginn",
+            "city": "Akureyri"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739624400
+        },
+        "league": {
+          "id": 168,
+          "name": "League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/168.png"
+        },
+        "teams": {
+          "home": {
+            "id": 272,
+            "name": "KA Akureyri",
+            "logo": "https://media.api-sports.io/football/teams/272.png",
+            "winner": false
+          },
+          "away": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1320771,
+          "date": "2025-02-08T13:00:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1739019600
+        },
+        "league": {
+          "id": 168,
+          "name": "League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/168.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          },
+          "away": {
+            "id": 267,
+            "name": "Fylkir",
+            "logo": "https://media.api-sports.io/football/teams/267.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1320812,
+          "date": "2025-02-04T19:00:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1738695600
+        },
+        "league": {
+          "id": 168,
+          "name": "League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/168.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2117,
+            "name": "Fram Reykjavik",
+            "logo": "https://media.api-sports.io/football/teams/2117.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1339447,
+          "date": "2025-01-18T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1737205200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": true
+          },
+          "away": {
+            "id": 827,
+            "name": "IA Akranes",
+            "logo": "https://media.api-sports.io/football/teams/827.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1306748,
@@ -457,440 +2029,86 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1306734,
-          "date": "2024-09-23T19:15:00+00:00",
-          "venue": {
-            "id": 820,
-            "name": "Kópavogsvöllur",
-            "city": "Kópavogur"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1727118900
-        },
-        "league": {
-          "id": 164,
-          "name": "Úrvalsdeild",
-          "logo": "https://media.api-sports.io/football/leagues/164.png"
-        },
-        "teams": {
-          "home": {
-            "id": 276,
-            "name": "Breidablik",
-            "logo": "https://media.api-sports.io/football/teams/276.png",
-            "winner": true
-          },
-          "away": {
-            "id": 827,
-            "name": "IA Akranes",
-            "logo": "https://media.api-sports.io/football/teams/827.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152241,
-          "date": "2024-09-15T17:00:00+00:00",
-          "venue": {
-            "id": 820,
-            "name": "Kópavogsvöllur",
-            "city": "Kópavogur"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726419600
-        },
-        "league": {
-          "id": 164,
-          "name": "Úrvalsdeild",
-          "logo": "https://media.api-sports.io/football/leagues/164.png"
-        },
-        "teams": {
-          "home": {
-            "id": 276,
-            "name": "Breidablik",
-            "logo": "https://media.api-sports.io/football/teams/276.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2113,
-            "name": "HK Kopavogur",
-            "logo": "https://media.api-sports.io/football/teams/2113.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152234,
-          "date": "2024-09-01T16:15:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Greifavöllurinn",
-            "city": "Akureyri"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1725207300
-        },
-        "league": {
-          "id": 164,
-          "name": "Úrvalsdeild",
-          "logo": "https://media.api-sports.io/football/leagues/164.png"
-        },
-        "teams": {
-          "home": {
-            "id": 272,
-            "name": "KA Akureyri",
-            "logo": "https://media.api-sports.io/football/teams/272.png",
-            "winner": false
-          },
-          "away": {
-            "id": 276,
-            "name": "Breidablik",
-            "logo": "https://media.api-sports.io/football/teams/276.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152228,
-          "date": "2024-08-25T17:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "ELKEM völlurinn",
-            "city": "Akranes"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1724605200
-        },
-        "league": {
-          "id": 164,
-          "name": "Úrvalsdeild",
-          "logo": "https://media.api-sports.io/football/leagues/164.png"
-        },
-        "teams": {
-          "home": {
-            "id": 827,
-            "name": "IA Akranes",
-            "logo": "https://media.api-sports.io/football/teams/827.png",
-            "winner": false
-          },
-          "away": {
-            "id": 276,
-            "name": "Breidablik",
-            "logo": "https://media.api-sports.io/football/teams/276.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152223,
-          "date": "2024-08-19T19:15:00+00:00",
-          "venue": {
-            "id": 820,
-            "name": "Kópavogsvöllur",
-            "city": "Kópavogur"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1724094900
-        },
-        "league": {
-          "id": 164,
-          "name": "Úrvalsdeild",
-          "logo": "https://media.api-sports.io/football/leagues/164.png"
-        },
-        "teams": {
-          "home": {
-            "id": 276,
-            "name": "Breidablik",
-            "logo": "https://media.api-sports.io/football/teams/276.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2117,
-            "name": "Fram Reykjavik",
-            "logo": "https://media.api-sports.io/football/teams/2117.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152206,
-          "date": "2024-08-15T19:15:00+00:00",
-          "venue": {
-            "id": 20547,
-            "name": "N1-völlurinn Hlíðarenda",
-            "city": "Reykjavík"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1723749300
-        },
-        "league": {
-          "id": 164,
-          "name": "Úrvalsdeild",
-          "logo": "https://media.api-sports.io/football/leagues/164.png"
-        },
-        "teams": {
-          "home": {
-            "id": 274,
-            "name": "Valur Reykjavik",
-            "logo": "https://media.api-sports.io/football/teams/274.png",
-            "winner": false
-          },
-          "away": {
-            "id": 276,
-            "name": "Breidablik",
-            "logo": "https://media.api-sports.io/football/teams/276.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 168,
-      "name": "League Cup",
+      "id": 164,
+      "name": "Úrvalsdeild",
       "country": "Iceland",
-      "logo": "https://media.api-sports.io/football/leagues/168.png",
+      "logo": "https://media.api-sports.io/football/leagues/164.png",
       "flag": "https://media.api-sports.io/flags/is.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 276,
       "name": "Breidablik",
       "logo": "https://media.api-sports.io/football/teams/276.png"
     },
-    "form": "LWWDWWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 5,
-        "away": 2,
-        "total": 7
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 3,
-        "away": 2,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 14,
-          "away": 6,
-          "total": 20
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.8",
-          "away": "3.0",
-          "total": "2.9"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 3,
-            "percentage": "15.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 5,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "5.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 6,
-            "percentage": "30.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "10.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "10.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "5.00%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -899,37 +2117,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 7,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 4,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 4,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 4,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 6
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 5,
+          "home": 0,
           "away": 0,
-          "total": 5
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.7"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -941,20 +2159,20 @@
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -967,57 +2185,57 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 7
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 7
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 1,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "4-0",
-        "away": "0-5"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "1-3",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 4,
-          "away": 5
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 2,
-      "away": 2,
-      "total": 4
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -1026,14 +2244,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -1043,28 +2261,28 @@
           "percentage": null
         },
         "16-30": {
-          "total": 2,
-          "percentage": "14.29%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "7.14%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 3,
-          "percentage": "21.43%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 3,
-          "percentage": "21.43%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 4,
-          "percentage": "28.57%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "7.14%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1107,5 +2325,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:50.149Z"
+  "lastUpdated": "2025-03-27T10:38:32.980Z"
 }

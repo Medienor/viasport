@@ -22,6 +22,80 @@
   "leagues": [
     {
       "league": {
+        "id": 941,
+        "name": "Islamic Solidarity Games",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/941.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2022,
+          "start": "2022-08-08",
+          "end": "2022-08-16",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 803,
+        "name": "Asian Games",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/803.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2022,
+          "start": "2023-09-19",
+          "end": "2023-10-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 952,
         "name": "AFC U23 Asian Cup - Qualification",
         "type": "Cup",
@@ -96,80 +170,6 @@
     },
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 1077,
-        "name": "WAFF Championship U23",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/1077.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-20",
-          "end": "2024-03-26",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": false,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": false,
-            "top_scorers": false,
-            "top_assists": false,
-            "top_cards": false,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 914,
         "name": "Tournoi Maurice Revello",
         "type": "Cup",
@@ -204,6 +204,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 1077,
+        "name": "WAFF Championship U23",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1077.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-19",
+          "end": "2025-03-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -218,6 +255,183 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1366050,
+          "date": "2025-03-25T19:30:00+00:00",
+          "venue": {
+            "id": 4025,
+            "name": "Al-Seeb Stadium",
+            "city": "Seeb"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1742931000
+        },
+        "league": {
+          "id": 1077,
+          "name": "WAFF Championship U23",
+          "logo": "https://media.api-sports.io/football/leagues/1077.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10940,
+            "name": "Kuwait U23",
+            "logo": "https://media.api-sports.io/football/teams/10940.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10955,
+            "name": "Saudi Arabia U23",
+            "logo": "https://media.api-sports.io/football/teams/10955.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1364218,
+          "date": "2025-03-22T16:30:00+00:00",
+          "venue": {
+            "id": 4025,
+            "name": "Al-Seeb Stadium",
+            "city": "Seeb"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742661000
+        },
+        "league": {
+          "id": 1077,
+          "name": "WAFF Championship U23",
+          "logo": "https://media.api-sports.io/football/leagues/1077.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10184,
+            "name": "UAE U23",
+            "logo": "https://media.api-sports.io/football/teams/10184.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10955,
+            "name": "Saudi Arabia U23",
+            "logo": "https://media.api-sports.io/football/teams/10955.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356235,
+          "date": "2025-03-19T19:30:00+00:00",
+          "venue": {
+            "id": 4025,
+            "name": "Al-Seeb Stadium",
+            "city": "Seeb"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1742412600
+        },
+        "league": {
+          "id": 1077,
+          "name": "WAFF Championship U23",
+          "logo": "https://media.api-sports.io/football/leagues/1077.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10950,
+            "name": "Oman U23",
+            "logo": "https://media.api-sports.io/football/teams/10950.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10955,
+            "name": "Saudi Arabia U23",
+            "logo": "https://media.api-sports.io/football/teams/10955.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1196831,
@@ -630,211 +844,34 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1144768,
-          "date": "2024-04-16T18:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Khalifa International Stadium",
-            "city": "Ar-Rayyan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1713290400
-        },
-        "league": {
-          "id": 532,
-          "name": "AFC U23 Asian Cup",
-          "logo": "https://media.api-sports.io/football/leagues/532.png"
-        },
-        "teams": {
-          "home": {
-            "id": 10955,
-            "name": "Saudi Arabia U23",
-            "logo": "https://media.api-sports.io/football/teams/10955.png",
-            "winner": true
-          },
-          "away": {
-            "id": 10959,
-            "name": "Tajikistan U23",
-            "logo": "https://media.api-sports.io/football/teams/10959.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1189616,
-          "date": "2024-03-26T18:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711477800
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 10955,
-            "name": "Saudi Arabia U23",
-            "logo": "https://media.api-sports.io/football/teams/10955.png",
-            "winner": true
-          },
-          "away": {
-            "id": 10932,
-            "name": "China PR U23",
-            "logo": "https://media.api-sports.io/football/teams/10932.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1188732,
-          "date": "2024-03-23T20:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Al Fateh Club Stadium",
-            "city": "Al-Hasa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711224000
-        },
-        "league": {
-          "id": 1077,
-          "name": "WAFF Championship U23",
-          "logo": "https://media.api-sports.io/football/leagues/1077.png"
-        },
-        "teams": {
-          "home": {
-            "id": 10177,
-            "name": "Korea Republic U23",
-            "logo": "https://media.api-sports.io/football/teams/10177.png",
-            "winner": true
-          },
-          "away": {
-            "id": 10955,
-            "name": "Saudi Arabia U23",
-            "logo": "https://media.api-sports.io/football/teams/10955.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 952,
-      "name": "AFC U23 Asian Cup - Qualification",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/952.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 10955,
       "name": "Saudi Arabia U23",
       "logo": "https://media.api-sports.io/football/teams/10955.png"
     },
-    "form": "WWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -850,43 +887,43 @@
     "goals": {
       "for": {
         "total": {
-          "home": 9,
-          "away": 3,
-          "total": 12
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "4.5",
-          "away": "3.0",
-          "total": "4.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 2,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "8.33%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 3,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -895,42 +932,42 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 2,
+          "home": 0,
           "away": 0,
-          "total": 2
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.7"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -963,37 +1000,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "6-1",
-        "away": "0-3"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
@@ -1001,19 +1038,19 @@
       },
       "goals": {
         "for": {
-          "home": 6,
-          "away": 3
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -1026,10 +1063,10 @@
         "percentage": "0%"
       },
       "missed": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -1103,5 +1140,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:24.872Z"
+  "lastUpdated": "2025-03-27T10:41:14.222Z"
 }

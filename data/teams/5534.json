@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 807,
+        "name": "AFC Challenge Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/807.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2014,
+          "start": "2013-03-02",
+          "end": "2014-05-30",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -89,7 +89,81 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1169,
+        "name": "EAFF E-1 Football Championship - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1169.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2024-12-08",
+          "end": "2024-12-17",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 30,
+        "name": "World Cup - Qualification Asia",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/30.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2023-10-12",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -111,6 +185,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1322462,
+          "date": "2024-12-11T12:00:00+00:00",
+          "venue": {
+            "id": 3384,
+            "name": "Mong Kok Stadium",
+            "city": "Hong Kong"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1733918400
+        },
+        "league": {
+          "id": 1169,
+          "name": "EAFF E-1 Football Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1557,
+            "name": "Chinese Taipei",
+            "logo": "https://media.api-sports.io/football/teams/1557.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5534,
+            "name": "Mongolia",
+            "logo": "https://media.api-sports.io/football/teams/5534.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1322461,
+          "date": "2024-12-08T00:00:00+00:00",
+          "venue": {
+            "id": 3384,
+            "name": "Mong Kok Stadium",
+            "city": "Hong Kong"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1733616000
+        },
+        "league": {
+          "id": 1169,
+          "name": "EAFF E-1 Football Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/1169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5534,
+            "name": "Mongolia",
+            "logo": "https://media.api-sports.io/football/teams/5534.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4460,
+            "name": "Hong Kong",
+            "logo": "https://media.api-sports.io/football/teams/4460.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1200271,
@@ -464,34 +656,152 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1100374,
+          "date": "2023-10-17T07:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Football Centre MFF",
+            "city": "Ulaanbaatar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697526000
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5534,
+            "name": "Mongolia",
+            "logo": "https://media.api-sports.io/football/teams/5534.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1553,
+            "name": "Afghanistan",
+            "logo": "https://media.api-sports.io/football/teams/1553.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100373,
+          "date": "2023-10-12T14:00:00+00:00",
+          "venue": {
+            "id": 3898,
+            "name": "Respublikanskiy Stadion im. M.V. Frunze",
+            "city": "Dushanbe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697119200
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1553,
+            "name": "Afghanistan",
+            "logo": "https://media.api-sports.io/football/teams/1553.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5534,
+            "name": "Mongolia",
+            "logo": "https://media.api-sports.io/football/teams/5534.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 5534,
       "name": "Mongolia",
       "logo": "https://media.api-sports.io/football/teams/5534.png"
     },
-    "form": "LLLW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 3,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -500,21 +810,21 @@
       },
       "loses": {
         "home": 0,
-        "away": 3,
-        "total": 3
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 2,
+          "home": 0,
           "away": 0,
-          "total": 2
+          "total": 0
         },
         "average": {
-          "home": "2.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.5"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -530,12 +840,12 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -552,37 +862,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
-          "away": 6,
-          "total": 7
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "2.0",
-          "total": "1.8"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -590,28 +900,28 @@
             "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "42.86%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -620,24 +930,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       }
@@ -646,24 +956,24 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 3
+        "loses": 0
       },
       "wins": {
-        "home": "2-1",
+        "home": null,
         "away": null
       },
       "loses": {
         "home": null,
-        "away": "3-0"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 3
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -674,8 +984,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 3,
-      "total": 3
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -688,45 +998,36 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "5-3-2",
-        "played": 3
-      },
-      {
-        "formation": "3-4-3",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 1,
-          "percentage": "10.00%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
           "total": null,
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "10.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "10.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 4,
-          "percentage": "40.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 2,
-          "percentage": "20.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "10.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -751,8 +1052,8 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
@@ -769,5 +1070,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:02.712Z"
+  "lastUpdated": "2025-03-27T10:40:50.577Z"
 }

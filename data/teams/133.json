@@ -34,16 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-17",
-          "end": "2024-04-07",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-11",
+          "end": "2025-03-16",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": true,
             "players": true,
@@ -59,10 +59,10 @@
     },
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
+        "id": 11,
+        "name": "CONMEBOL Sudamericana",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
+        "logo": "https://media.api-sports.io/football/leagues/11.png"
       },
       "country": {
         "name": "World",
@@ -71,10 +71,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-05",
+          "end": "2025-05-28",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -82,14 +82,14 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -108,10 +108,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-02-20",
-          "end": "2024-11-10",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-18",
+          "end": "2025-03-14",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -145,16 +145,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-04-13",
-          "end": "2024-12-08",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-29",
+          "end": "2025-12-21",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": true,
             "players": true,
@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -188,193 +188,371 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1351044,
+          "date": "2025-03-30T21:30:00+00:00",
+          "venue": {
+            "id": 19377,
+            "name": "Estádio São Januário",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743370200
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": null
+          },
+          "away": {
+            "id": 128,
+            "name": "Santos",
+            "logo": "https://media.api-sports.io/football/teams/128.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362104,
+          "date": "2025-04-02T22:00:00+00:00",
+          "venue": {
+            "id": 1235,
+            "name": "Estadio de la Universidad Nacional San Agustín",
+            "city": "Arequipa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743631200
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2554,
+            "name": "FBC Melgar",
+            "logo": "https://media.api-sports.io/football/teams/2554.png",
+            "winner": null
+          },
+          "away": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362120,
+          "date": "2025-04-10T00:30:00+00:00",
+          "venue": {
+            "id": 19377,
+            "name": "Estádio São Januário",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744245000
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2827,
+            "name": "Puerto Cabello",
+            "logo": "https://media.api-sports.io/football/teams/2827.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362136,
+          "date": "2025-04-23T00:30:00+00:00",
+          "venue": {
+            "id": 19377,
+            "name": "Estádio São Januário",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745368200
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": null
+          },
+          "away": {
+            "id": 446,
+            "name": "Lanus",
+            "logo": "https://media.api-sports.io/football/teams/446.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362152,
+          "date": "2025-05-07T22:00:00+00:00",
+          "venue": {
+            "id": 1654,
+            "name": "Estadio Polideportivo Misael Delgado",
+            "city": "Valencia"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746655200
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2827,
+            "name": "Puerto Cabello",
+            "logo": "https://media.api-sports.io/football/teams/2827.png",
+            "winner": null
+          },
+          "away": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362168,
+          "date": "2025-05-14T00:30:00+00:00",
+          "venue": {
+            "id": 88,
+            "name": "Estadio Ciudad de Lanús - Néstor Díaz Pérez",
+            "city": "Lanús, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747182600
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 446,
+            "name": "Lanus",
+            "logo": "https://media.api-sports.io/football/teams/446.png",
+            "winner": null
+          },
+          "away": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
       {
         "fixture": {
-          "id": 1180733,
-          "date": "2024-12-08T19:00:00+00:00",
+          "id": 1354219,
+          "date": "2025-03-08T20:45:00+00:00",
           "venue": {
-            "id": 235,
-            "name": "Arena Pantanal",
-            "city": "Cuiabá, Mato Grosso"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1733684400
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": false
-          },
-          "away": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180719,
-          "date": "2024-12-04T22:00:00+00:00",
-          "venue": {
-            "id": 19377,
-            "name": "Estádio São Januário",
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
             "city": "Rio de Janeiro, Rio de Janeiro"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1733349600
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1062,
-            "name": "Atletico-MG",
-            "logo": "https://media.api-sports.io/football/teams/1062.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180709,
-          "date": "2024-12-01T00:30:00+00:00",
-          "venue": {
-            "id": 19377,
-            "name": "Estádio São Januário",
-            "city": "Rio de Janeiro, Rio de Janeiro"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1733013000
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": null
-          },
-          "away": {
-            "id": 144,
-            "name": "Atletico Goianiense",
-            "logo": "https://media.api-sports.io/football/teams/144.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180700,
-          "date": "2024-11-24T19:00:00+00:00",
-          "venue": {
-            "id": 11531,
-            "name": "Neo Química Arena",
-            "city": "São Paulo, São Paulo"
           },
           "status": {
             "long": "Match Finished",
@@ -382,18 +560,18 @@
             "elapsed": 90,
             "extra": 5
           },
-          "timestamp": 1732474800
+          "timestamp": 1741466700
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 624,
+          "name": "Carioca - 1",
+          "logo": "https://media.api-sports.io/football/leagues/624.png"
         },
         "teams": {
           "home": {
-            "id": 131,
-            "name": "Corinthians",
-            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
             "winner": true
           },
           "away": {
@@ -404,16 +582,16 @@
           }
         },
         "goals": {
-          "home": 3,
+          "home": 2,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 3,
-            "away": 0
+            "home": 1,
+            "away": 1
           },
           "fulltime": {
-            "home": 3,
+            "home": 2,
             "away": 1
           },
           "extratime": {
@@ -428,25 +606,84 @@
       },
       {
         "fixture": {
-          "id": 1180689,
-          "date": "2024-11-21T23:00:00+00:00",
+          "id": 1355029,
+          "date": "2025-03-06T00:30:00+00:00",
           "venue": {
-            "id": 19377,
-            "name": "Estádio São Januário",
-            "city": "Rio de Janeiro, Rio de Janeiro"
+            "id": 5635,
+            "name": "Estádio Olímpico Nilton Santos",
+            "city": "Rio de Janeiro"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 6
+            "extra": 2
           },
-          "timestamp": 1732230000
+          "timestamp": 1741221000
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7782,
+            "name": "Nova Iguaçu",
+            "logo": "https://media.api-sports.io/football/teams/7782.png",
+            "winner": false
+          },
+          "away": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1354218,
+          "date": "2025-03-01T20:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estádio Olímpico Nilton Santos",
+            "city": "Rio de Janeiro"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1740861900
+        },
+        "league": {
+          "id": 624,
+          "name": "Carioca - 1",
+          "logo": "https://media.api-sports.io/football/leagues/624.png"
         },
         "teams": {
           "home": {
@@ -456,9 +693,9 @@
             "winner": false
           },
           "away": {
-            "id": 119,
-            "name": "Internacional",
-            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
             "winner": true
           }
         },
@@ -487,126 +724,8 @@
       },
       {
         "fixture": {
-          "id": 1180682,
-          "date": "2024-11-09T22:00:00+00:00",
-          "venue": {
-            "id": 225,
-            "name": "Estádio Governador Plácido Aderaldo Castelo",
-            "city": "Fortaleza, Ceará"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1731189600
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": true
-          },
-          "away": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180669,
-          "date": "2024-11-06T00:30:00+00:00",
-          "venue": {
-            "id": 218,
-            "name": "Estádio Nilton Santos",
-            "city": "Rio de Janeiro"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730853000
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 120,
-            "name": "Botafogo",
-            "logo": "https://media.api-sports.io/football/teams/120.png",
-            "winner": true
-          },
-          "away": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180659,
-          "date": "2024-10-29T00:00:00+00:00",
+          "id": 1318034,
+          "date": "2025-02-23T21:30:00+00:00",
           "venue": {
             "id": 19377,
             "name": "Estádio São Januário",
@@ -618,12 +737,12 @@
             "elapsed": 90,
             "extra": 8
           },
-          "timestamp": 1730160000
+          "timestamp": 1740346200
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 624,
+          "name": "Carioca - 1",
+          "logo": "https://media.api-sports.io/football/leagues/624.png"
         },
         "teams": {
           "home": {
@@ -633,23 +752,259 @@
             "winner": true
           },
           "away": {
-            "id": 118,
-            "name": "Bahia",
-            "logo": "https://media.api-sports.io/football/teams/118.png",
+            "id": 120,
+            "name": "Botafogo",
+            "logo": "https://media.api-sports.io/football/teams/120.png",
             "winner": false
           }
         },
         "goals": {
-          "home": 3,
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349592,
+          "date": "2025-02-19T00:30:00+00:00",
+          "venue": {
+            "id": 20691,
+            "name": "Estádio Kleber José de Andrade",
+            "city": "Cariacica, Espírito Santo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1739925000
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7788,
+            "name": "União Rondonópolis",
+            "logo": "https://media.api-sports.io/football/teams/7788.png",
+            "winner": false
+          },
+          "away": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1318028,
+          "date": "2025-02-16T00:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1739666700
+        },
+        "league": {
+          "id": 624,
+          "name": "Carioca - 1",
+          "logo": "https://media.api-sports.io/football/leagues/624.png"
+        },
+        "teams": {
+          "home": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": true
+          },
+          "away": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1318023,
+          "date": "2025-02-10T23:00:00+00:00",
+          "venue": {
+            "id": 8290,
+            "name": "Estádio Lourival Gomes de Almeida",
+            "city": "Saquarema, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1739228400
+        },
+        "league": {
+          "id": 624,
+          "name": "Carioca - 1",
+          "logo": "https://media.api-sports.io/football/leagues/624.png"
+        },
+        "teams": {
+          "home": {
+            "id": 13115,
+            "name": "Sampaio Corrêa RJ",
+            "logo": "https://media.api-sports.io/football/teams/13115.png",
+            "winner": null
+          },
+          "away": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1318016,
+          "date": "2025-02-06T00:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Arena BRB Mané Garrincha",
+            "city": "Brasília, Distrito Federal"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1738801800
+        },
+        "league": {
+          "id": 624,
+          "name": "Carioca - 1",
+          "logo": "https://media.api-sports.io/football/leagues/624.png"
+        },
+        "teams": {
+          "home": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": false
+          },
+          "away": {
+            "id": 124,
+            "name": "Fluminense",
+            "logo": "https://media.api-sports.io/football/teams/124.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
           "away": 2
         },
         "score": {
           "halftime": {
-            "home": 3,
-            "away": 1
+            "home": 1,
+            "away": 2
           },
           "fulltime": {
-            "home": 3,
+            "home": 1,
             "away": 2
           },
           "extratime": {
@@ -664,43 +1019,43 @@
       },
       {
         "fixture": {
-          "id": 1180539,
-          "date": "2024-10-25T22:00:00+00:00",
+          "id": 1318012,
+          "date": "2025-02-01T19:30:00+00:00",
           "venue": {
-            "id": 19377,
-            "name": "Estádio São Januário",
-            "city": "Rio de Janeiro, Rio de Janeiro"
+            "id": 20691,
+            "name": "Estádio Kleber José de Andrade",
+            "city": "Cariacica, Espírito Santo"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 7
+            "extra": 13
           },
-          "timestamp": 1729893600
+          "timestamp": 1738438200
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 624,
+          "name": "Carioca - 1",
+          "logo": "https://media.api-sports.io/football/leagues/624.png"
         },
         "teams": {
           "home": {
             "id": 133,
             "name": "Vasco DA Gama",
             "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": true
+            "winner": null
           },
           "away": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": false
+            "id": 7814,
+            "name": "Volta Redonda",
+            "logo": "https://media.api-sports.io/football/teams/7814.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 1,
-          "away": 0
+          "home": 2,
+          "away": 2
         },
         "score": {
           "halftime": {
@@ -708,8 +1063,8 @@
             "away": 0
           },
           "fulltime": {
-            "home": 1,
-            "away": 0
+            "home": 2,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -723,8 +1078,8 @@
       },
       {
         "fixture": {
-          "id": 1305648,
-          "date": "2024-10-19T21:30:00+00:00",
+          "id": 1318006,
+          "date": "2025-01-29T22:00:00+00:00",
           "venue": {
             "id": 19377,
             "name": "Estádio São Januário",
@@ -734,40 +1089,40 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 6
+            "extra": 7
           },
-          "timestamp": 1729373400
+          "timestamp": 1738188000
         },
         "league": {
-          "id": 73,
-          "name": "Copa Do Brasil",
-          "logo": "https://media.api-sports.io/football/leagues/73.png"
+          "id": 624,
+          "name": "Carioca - 1",
+          "logo": "https://media.api-sports.io/football/leagues/624.png"
         },
         "teams": {
           "home": {
+            "id": 14000,
+            "name": "CFRJ / Maricá",
+            "logo": "https://media.api-sports.io/football/teams/14000.png",
+            "winner": false
+          },
+          "away": {
             "id": 133,
             "name": "Vasco DA Gama",
             "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1062,
-            "name": "Atletico-MG",
-            "logo": "https://media.api-sports.io/football/teams/1062.png",
-            "winner": null
+            "winner": true
           }
         },
         "goals": {
-          "home": 1,
+          "home": 0,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 1,
+            "home": 0,
             "away": 0
           },
           "fulltime": {
-            "home": 1,
+            "home": 0,
             "away": 1
           },
           "extratime": {
@@ -789,14 +1144,14 @@
       "country": "Brazil",
       "logo": "https://media.api-sports.io/football/leagues/624.png",
       "flag": "https://media.api-sports.io/flags/br.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 133,
       "name": "Vasco DA Gama",
       "logo": "https://media.api-sports.io/football/teams/133.png"
     },
-    "form": "WDWDLDWDWWWDL",
+    "form": "DDDWWWDLDLWLL",
     "fixtures": {
       "played": {
         "home": 7,
@@ -804,9 +1159,9 @@
         "total": 13
       },
       "wins": {
-        "home": 5,
+        "home": 3,
         "away": 1,
-        "total": 6
+        "total": 4
       },
       "draws": {
         "home": 2,
@@ -814,51 +1169,51 @@
         "total": 5
       },
       "loses": {
-        "home": 0,
+        "home": 2,
         "away": 2,
-        "total": 2
+        "total": 4
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 12,
-          "away": 9,
-          "total": 21
+          "home": 10,
+          "away": 4,
+          "total": 14
         },
         "average": {
-          "home": "1.7",
-          "away": "1.5",
-          "total": "1.6"
+          "home": "1.4",
+          "away": "0.7",
+          "total": "1.1"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "10.00%"
+            "total": 1,
+            "percentage": "6.67%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 4,
+            "percentage": "26.67%"
           },
           "31-45": {
-            "total": 3,
-            "percentage": "15.00%"
+            "total": 2,
+            "percentage": "13.33%"
           },
           "46-60": {
-            "total": 7,
-            "percentage": "35.00%"
+            "total": 2,
+            "percentage": "13.33%"
           },
           "61-75": {
-            "total": 5,
-            "percentage": "25.00%"
+            "total": 2,
+            "percentage": "13.33%"
           },
           "76-90": {
             "total": 2,
-            "percentage": "10.00%"
+            "percentage": "13.33%"
           },
           "91-105": {
-            "total": 1,
-            "percentage": "5.00%"
+            "total": 2,
+            "percentage": "13.33%"
           },
           "106-120": {
             "total": null,
@@ -871,16 +1226,16 @@
             "under": 4
           },
           "1.5": {
-            "over": 7,
-            "under": 6
-          },
-          "2.5": {
             "over": 3,
             "under": 10
           },
+          "2.5": {
+            "over": 1,
+            "under": 12
+          },
           "3.5": {
-            "over": 2,
-            "under": 11
+            "over": 1,
+            "under": 12
           },
           "4.5": {
             "over": 0,
@@ -890,13 +1245,13 @@
       },
       "against": {
         "total": {
-          "home": 2,
-          "away": 10,
+          "home": 6,
+          "away": 6,
           "total": 12
         },
         "average": {
-          "home": "0.3",
-          "away": "1.7",
+          "home": "0.9",
+          "away": "1.0",
           "total": "0.9"
         },
         "minute": {
@@ -906,27 +1261,27 @@
           },
           "16-30": {
             "total": 2,
-            "percentage": "15.38%"
+            "percentage": "18.18%"
           },
           "31-45": {
-            "total": 2,
-            "percentage": "15.38%"
+            "total": 3,
+            "percentage": "27.27%"
           },
           "46-60": {
             "total": 1,
-            "percentage": "7.69%"
+            "percentage": "9.09%"
           },
           "61-75": {
             "total": 4,
-            "percentage": "30.77%"
+            "percentage": "36.36%"
           },
           "76-90": {
-            "total": 3,
-            "percentage": "23.08%"
+            "total": 1,
+            "percentage": "9.09%"
           },
           "91-105": {
-            "total": 1,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -935,16 +1290,16 @@
         },
         "under_over": {
           "0.5": {
-            "over": 7,
-            "under": 6
+            "over": 8,
+            "under": 5
           },
           "1.5": {
             "over": 4,
             "under": 9
           },
           "2.5": {
-            "over": 1,
-            "under": 12
+            "over": 0,
+            "under": 13
           },
           "3.5": {
             "over": 0,
@@ -960,79 +1315,100 @@
     "biggest": {
       "streak": {
         "wins": 3,
-        "draws": 1,
+        "draws": 3,
         "loses": 1
       },
       "wins": {
-        "home": "4-0",
-        "away": "2-4"
+        "home": "4-1",
+        "away": "0-1"
       },
       "loses": {
-        "home": null,
+        "home": "1-2",
         "away": "2-0"
       },
       "goals": {
         "for": {
           "home": 4,
-          "away": 4
+          "away": 1
         },
         "against": {
-          "home": 1,
-          "away": 3
+          "home": 2,
+          "away": 2
         }
       }
     },
     "clean_sheet": {
-      "home": 5,
-      "away": 1,
-      "total": 6
+      "home": 3,
+      "away": 2,
+      "total": 5
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 3,
+      "home": 2,
+      "away": 2,
       "total": 4
     },
     "penalty": {
       "scored": {
-        "total": 1,
+        "total": 2,
         "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 2
     },
-    "lineups": [],
+    "lineups": [
+      {
+        "formation": "4-4-2",
+        "played": 6
+      },
+      {
+        "formation": "4-2-3-1",
+        "played": 2
+      },
+      {
+        "formation": "4-3-3",
+        "played": 2
+      },
+      {
+        "formation": "4-3-2-1",
+        "played": 1
+      },
+      {
+        "formation": "4-3-1-2",
+        "played": 1
+      }
+    ],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 1,
-          "percentage": "2.86%"
+          "total": 3,
+          "percentage": "8.82%"
         },
         "16-30": {
-          "total": 5,
-          "percentage": "14.29%"
+          "total": 4,
+          "percentage": "11.76%"
         },
         "31-45": {
-          "total": 6,
-          "percentage": "17.14%"
+          "total": 3,
+          "percentage": "8.82%"
         },
         "46-60": {
-          "total": 2,
-          "percentage": "5.71%"
+          "total": 9,
+          "percentage": "26.47%"
         },
         "61-75": {
-          "total": 5,
-          "percentage": "14.29%"
+          "total": 2,
+          "percentage": "5.88%"
         },
         "76-90": {
-          "total": 7,
-          "percentage": "20.00%"
+          "total": 9,
+          "percentage": "26.47%"
         },
         "91-105": {
-          "total": 9,
-          "percentage": "25.71%"
+          "total": 4,
+          "percentage": "11.76%"
         },
         "106-120": {
           "total": null,
@@ -1041,8 +1417,8 @@
       },
       "red": {
         "0-15": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
           "total": null,
@@ -1057,16 +1433,16 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
           "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1075,5 +1451,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:24.074Z"
+  "lastUpdated": "2025-03-27T10:42:14.701Z"
 }

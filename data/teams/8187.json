@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 850,
+        "name": "UEFA U21 Championship - Qualification",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/850.png"
       },
       "country": {
         "name": "World",
@@ -34,22 +34,22 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2027,
+          "start": "2025-06-05",
+          "end": "2026-10-06",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -69,6 +69,242 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1018280,
+          "date": "2024-10-15T14:00:00+00:00",
+          "venue": {
+            "id": 201,
+            "name": "Stadion Grbavica",
+            "city": "Sarajevo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1729000800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8184,
+            "name": "Bosnia-Herzegovina U21",
+            "logo": "https://media.api-sports.io/football/teams/8184.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8187,
+            "name": "Cyprus U21",
+            "logo": "https://media.api-sports.io/football/teams/8187.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018256,
+          "date": "2024-10-11T16:30:00+00:00",
+          "venue": {
+            "id": 2222,
+            "name": "Stadio Dasaki Achnas",
+            "city": "Dasaki Achnas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1728664200
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8187,
+            "name": "Cyprus U21",
+            "logo": "https://media.api-sports.io/football/teams/8187.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8194,
+            "name": "France U21",
+            "logo": "https://media.api-sports.io/football/teams/8194.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018237,
+          "date": "2024-09-10T16:00:00+00:00",
+          "venue": {
+            "id": 3201,
+            "name": "Mestni Štadion Fazanerija",
+            "city": "Murska Sobota"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725984000
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8231,
+            "name": "Slovenia U21",
+            "logo": "https://media.api-sports.io/football/teams/8231.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8187,
+            "name": "Cyprus U21",
+            "logo": "https://media.api-sports.io/football/teams/8187.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018195,
+          "date": "2024-03-26T17:00:00+00:00",
+          "venue": {
+            "id": 19921,
+            "name": "Innviertel Arena",
+            "city": "Ried Im Innkreis"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711472400
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8180,
+            "name": "Austria U21",
+            "logo": "https://media.api-sports.io/football/teams/8180.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8187,
+            "name": "Cyprus U21",
+            "logo": "https://media.api-sports.io/football/teams/8187.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1189543,
@@ -127,82 +363,377 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1018142,
+          "date": "2023-11-17T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadio Antonis Papadopoulos",
+            "city": "Larnaca"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700236800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8187,
+            "name": "Cyprus U21",
+            "logo": "https://media.api-sports.io/football/teams/8187.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8184,
+            "name": "Bosnia-Herzegovina U21",
+            "logo": "https://media.api-sports.io/football/teams/8184.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018122,
+          "date": "2023-10-17T16:30:00+00:00",
+          "venue": {
+            "id": 649,
+            "name": "Stade des Alpes",
+            "city": "Grenoble"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697560200
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8194,
+            "name": "France U21",
+            "logo": "https://media.api-sports.io/football/teams/8194.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8187,
+            "name": "Cyprus U21",
+            "logo": "https://media.api-sports.io/football/teams/8187.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 9,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 4,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 9,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018100,
+          "date": "2023-10-13T16:00:00+00:00",
+          "venue": {
+            "id": 2222,
+            "name": "Stadio Dasaki Achnas",
+            "city": "Dasaki Achnas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697212800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8187,
+            "name": "Cyprus U21",
+            "logo": "https://media.api-sports.io/football/teams/8187.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8231,
+            "name": "Slovenia U21",
+            "logo": "https://media.api-sports.io/football/teams/8231.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018049,
+          "date": "2023-09-07T17:00:00+00:00",
+          "venue": {
+            "id": 2222,
+            "name": "Stadio Dasaki Achnas",
+            "city": "Dasaki Achnas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1694106000
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8187,
+            "name": "Cyprus U21",
+            "logo": "https://media.api-sports.io/football/teams/8187.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8180,
+            "name": "Austria U21",
+            "logo": "https://media.api-sports.io/football/teams/8180.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1035587,
+          "date": "2023-06-15T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1686844800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8195,
+            "name": "Georgia U21",
+            "logo": "https://media.api-sports.io/football/teams/8195.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8187,
+            "name": "Cyprus U21",
+            "logo": "https://media.api-sports.io/football/teams/8187.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
+      "id": 850,
+      "name": "UEFA U21 Championship - Qualification",
       "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "logo": "https://media.api-sports.io/football/leagues/850.png",
       "flag": null,
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 8187,
       "name": "Cyprus U21",
       "logo": "https://media.api-sports.io/football/teams/8187.png"
     },
-    "form": "L",
+    "form": "DLLLDLLW",
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 0,
-        "total": 1
+        "home": 4,
+        "away": 4,
+        "total": 8
       },
       "wins": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       },
       "draws": {
-        "home": 0,
-        "away": 0,
-        "total": 0
+        "home": 1,
+        "away": 1,
+        "total": 2
       },
       "loses": {
-        "home": 1,
-        "away": 0,
-        "total": 1
+        "home": 3,
+        "away": 2,
+        "total": 5
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 1,
-          "away": 0,
-          "total": 1
+          "home": 2,
+          "away": 5,
+          "total": 7
         },
         "average": {
-          "home": "1.0",
-          "away": "0.0",
-          "total": "1.0"
+          "home": "0.5",
+          "away": "1.3",
+          "total": "0.9"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "10.00%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "20.00%"
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 3,
+            "percentage": "30.00%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "20.00%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "20.00%"
           },
           "91-105": {
             "total": null,
@@ -215,66 +746,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 0
+            "over": 4,
+            "under": 4
           },
           "1.5": {
-            "over": 0,
-            "under": 1
+            "over": 2,
+            "under": 6
           },
           "2.5": {
-            "over": 0,
-            "under": 1
+            "over": 1,
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 8
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 8
           }
         }
       },
       "against": {
         "total": {
-          "home": 6,
-          "away": 0,
-          "total": 6
+          "home": 9,
+          "away": 14,
+          "total": 23
         },
         "average": {
-          "home": "6.0",
-          "away": "0.0",
-          "total": "6.0"
+          "home": "2.3",
+          "away": "3.5",
+          "total": "2.9"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "5.00%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 3,
+            "percentage": "15.00%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 3,
+            "percentage": "15.00%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 3,
+            "percentage": "15.00%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 3,
+            "percentage": "15.00%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 5,
+            "percentage": "25.00%"
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "10.00%"
           },
           "106-120": {
             "total": null,
@@ -283,24 +814,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 8,
             "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 0
+            "over": 6,
+            "under": 2
           },
           "2.5": {
-            "over": 1,
-            "under": 0
+            "over": 3,
+            "under": 5
           },
           "3.5": {
             "over": 1,
-            "under": 0
+            "under": 7
           },
           "4.5": {
             "over": 1,
-            "under": 0
+            "under": 7
           }
         }
       }
@@ -308,25 +839,25 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 0,
-        "loses": 1
+        "draws": 1,
+        "loses": 3
       },
       "wins": {
         "home": null,
-        "away": null
+        "away": "1-3"
       },
       "loses": {
-        "home": "1-6",
-        "away": null
+        "home": "0-3",
+        "away": "9-0"
       },
       "goals": {
         "for": {
           "home": 1,
-          "away": 0
+          "away": 3
         },
         "against": {
-          "home": 6,
-          "away": 0
+          "home": 3,
+          "away": 9
         }
       }
     },
@@ -336,9 +867,9 @@
       "total": 0
     },
     "failed_to_score": {
-      "home": 0,
-      "away": 0,
-      "total": 0
+      "home": 2,
+      "away": 2,
+      "total": 4
     },
     "penalty": {
       "scored": {
@@ -355,32 +886,32 @@
     "cards": {
       "yellow": {
         "0-15": {
-          "total": null,
-          "percentage": null
+          "total": 3,
+          "percentage": "11.54%"
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 4,
+          "percentage": "15.38%"
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 3,
+          "percentage": "11.54%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 5,
+          "percentage": "19.23%"
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 5,
+          "percentage": "19.23%"
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 5,
+          "percentage": "19.23%"
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "3.85%"
         },
         "106-120": {
           "total": null,
@@ -423,5 +954,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:10.127Z"
+  "lastUpdated": "2025-03-27T10:40:58.831Z"
 }

@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 725,
-        "name": "Toppserien",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/725.png"
-      },
-      "country": {
-        "name": "Norway",
-        "code": "NO",
-        "flag": "https://media.api-sports.io/flags/no.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-16",
-          "end": "2024-11-16",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 915,
         "name": "1. Division Women",
         "type": "League",
@@ -71,14 +34,14 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-03-16",
-          "end": "2024-11-23",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-22",
+          "end": "2025-10-18",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": true,
+              "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -102,8 +65,1248 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1356250,
+          "date": "2025-03-30T13:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743339600
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18985,
+            "name": "Fortuna Ålesund W",
+            "logo": "https://media.api-sports.io/football/teams/18985.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356253,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 1187,
+            "name": "Skagerak Arena",
+            "city": "Skien"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 22859,
+            "name": "Odd",
+            "logo": "https://media.api-sports.io/football/teams/22859.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356259,
+          "date": "2025-04-20T12:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745150400
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18989,
+            "name": "TIL 2020 W",
+            "logo": "https://media.api-sports.io/football/teams/18989.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356267,
+          "date": "2025-04-27T13:00:00+00:00",
+          "venue": {
+            "id": 1184,
+            "name": "Aker Stadion",
+            "city": "Molde"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745758800
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25761,
+            "name": "Molde W",
+            "logo": "https://media.api-sports.io/football/teams/25761.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356270,
+          "date": "2025-05-04T10:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746352800
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          },
+          "away": {
+            "id": 25762,
+            "name": "Start W",
+            "logo": "https://media.api-sports.io/football/teams/25762.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356275,
+          "date": "2025-05-10T12:00:00+00:00",
+          "venue": {
+            "id": 1177,
+            "name": "Briskeby Arena",
+            "city": "Hamar"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746878400
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25759,
+            "name": "HamKam",
+            "logo": "https://media.api-sports.io/football/teams/25759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356283,
+          "date": "2025-05-24T12:00:00+00:00",
+          "venue": {
+            "id": 5084,
+            "name": "Arna Idrettspark",
+            "city": "Indre Arna"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748088000
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15954,
+            "name": "Arna-Bjørnar W",
+            "logo": "https://media.api-sports.io/football/teams/15954.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356289,
+          "date": "2025-06-07T12:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749297600
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          },
+          "away": {
+            "id": 25760,
+            "name": "Haugesund W",
+            "logo": "https://media.api-sports.io/football/teams/25760.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356294,
+          "date": "2025-06-14T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749906000
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 22860,
+            "name": "Viking FK",
+            "logo": "https://media.api-sports.io/football/teams/22860.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356299,
+          "date": "2025-06-20T16:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750435200
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          },
+          "away": {
+            "id": 20885,
+            "name": "Fyllingsdalen W",
+            "logo": "https://media.api-sports.io/football/teams/20885.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356308,
+          "date": "2025-08-02T13:00:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754139600
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25760,
+            "name": "Haugesund W",
+            "logo": "https://media.api-sports.io/football/teams/25760.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356311,
+          "date": "2025-08-09T11:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754737200
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          },
+          "away": {
+            "id": 22859,
+            "name": "Odd",
+            "logo": "https://media.api-sports.io/football/teams/22859.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356322,
+          "date": "2025-08-17T13:00:00+00:00",
+          "venue": {
+            "id": 5105,
+            "name": "Varden Amfi",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755435600
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 20885,
+            "name": "Fyllingsdalen W",
+            "logo": "https://media.api-sports.io/football/teams/20885.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356324,
+          "date": "2025-08-23T12:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755950400
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15954,
+            "name": "Arna-Bjørnar W",
+            "logo": "https://media.api-sports.io/football/teams/15954.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356334,
+          "date": "2025-08-31T14:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756648800
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          },
+          "away": {
+            "id": 22860,
+            "name": "Viking FK",
+            "logo": "https://media.api-sports.io/football/teams/22860.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356339,
+          "date": "2025-09-07T14:00:00+00:00",
+          "venue": {
+            "id": 1197,
+            "name": "Sparebanken Sør Arena",
+            "city": "Kristiansand"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757253600
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25762,
+            "name": "Start W",
+            "logo": "https://media.api-sports.io/football/teams/25762.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356341,
+          "date": "2025-09-13T11:30:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757763000
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18987,
+            "name": "KIL / Hemne W",
+            "logo": "https://media.api-sports.io/football/teams/18987.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356348,
+          "date": "2025-09-20T12:00:00+00:00",
+          "venue": {
+            "id": 19681,
+            "name": "Romssa Arena",
+            "city": "Tromsø"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1758369600
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18989,
+            "name": "TIL 2020 W",
+            "logo": "https://media.api-sports.io/football/teams/18989.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356357,
+          "date": "2025-10-05T12:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1759665600
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          },
+          "away": {
+            "id": 25761,
+            "name": "Molde W",
+            "logo": "https://media.api-sports.io/football/teams/25761.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356362,
+          "date": "2025-10-12T11:00:00+00:00",
+          "venue": {
+            "id": 1174,
+            "name": "Color Line Stadion",
+            "city": "Ålesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1760266800
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18985,
+            "name": "Fortuna Ålesund W",
+            "logo": "https://media.api-sports.io/football/teams/18985.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1356242,
+          "date": "2025-03-23T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sodvinhallen",
+            "city": "Kyrksæterøra"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742731200
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18987,
+            "name": "KIL / Hemne W",
+            "logo": "https://media.api-sports.io/football/teams/18987.png",
+            "winner": false
+          },
+          "away": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1316606,
@@ -634,141 +1837,82 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1151829,
-          "date": "2024-09-08T13:00:00+00:00",
-          "venue": {
-            "id": 1176,
-            "name": "Brann Stadion",
-            "city": "Bergen"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1725800400
-        },
-        "league": {
-          "id": 725,
-          "name": "Toppserien",
-          "logo": "https://media.api-sports.io/football/leagues/725.png"
-        },
-        "teams": {
-          "home": {
-            "id": 18380,
-            "name": "Brann W",
-            "logo": "https://media.api-sports.io/football/teams/18380.png",
-            "winner": true
-          },
-          "away": {
-            "id": 18992,
-            "name": "Åsane W",
-            "logo": "https://media.api-sports.io/football/teams/18992.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 725,
-      "name": "Toppserien",
+      "id": 915,
+      "name": "1. Division Women",
       "country": "Norway",
-      "logo": "https://media.api-sports.io/football/leagues/725.png",
+      "logo": "https://media.api-sports.io/football/leagues/915.png",
       "flag": "https://media.api-sports.io/flags/no.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 18992,
       "name": "Åsane W",
       "logo": "https://media.api-sports.io/football/teams/18992.png"
     },
-    "form": "DDLLLLLDLLDLLDLDLDLWDLWWLDL",
+    "form": "W",
     "fixtures": {
       "played": {
-        "home": 13,
-        "away": 14,
-        "total": 27
+        "home": 0,
+        "away": 1,
+        "total": 1
       },
       "wins": {
-        "home": 2,
+        "home": 0,
         "away": 1,
-        "total": 3
+        "total": 1
       },
       "draws": {
-        "home": 6,
-        "away": 3,
-        "total": 9
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 5,
-        "away": 10,
-        "total": 15
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 9,
-          "away": 10,
-          "total": 19
+          "home": 0,
+          "away": 1,
+          "total": 1
         },
         "average": {
-          "home": "0.7",
-          "away": "0.7",
-          "total": "0.7"
+          "home": "0.0",
+          "away": "1.0",
+          "total": "1.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "9.52%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 2,
-            "percentage": "9.52%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 4,
-            "percentage": "19.05%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "9.52%"
+            "total": 1,
+            "percentage": "100.00%"
           },
           "76-90": {
-            "total": 8,
-            "percentage": "38.10%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -781,66 +1925,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 16,
-            "under": 11
+            "over": 1,
+            "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 24
+            "over": 0,
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 27
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 27
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 27
+            "under": 1
           }
         }
       },
       "against": {
         "total": {
-          "home": 18,
-          "away": 21,
-          "total": 39
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.4",
-          "away": "1.5",
-          "total": "1.4"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 5,
-            "percentage": "13.51%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 5,
-            "percentage": "13.51%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 5,
-            "percentage": "13.51%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 5,
-            "percentage": "13.51%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 10,
-            "percentage": "27.03%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 5,
-            "percentage": "13.51%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "5.41%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -849,73 +1993,73 @@
         },
         "under_over": {
           "0.5": {
-            "over": 21,
-            "under": 6
+            "over": 0,
+            "under": 1
           },
           "1.5": {
-            "over": 9,
-            "under": 18
+            "over": 0,
+            "under": 1
           },
           "2.5": {
-            "over": 7,
-            "under": 20
+            "over": 0,
+            "under": 1
           },
           "3.5": {
-            "over": 2,
-            "under": 25
+            "over": 0,
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 27
+            "under": 1
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 2,
-        "loses": 5
+        "wins": 1,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "1-0",
-        "away": "0-2"
+        "home": null,
+        "away": "0-1"
       },
       "loses": {
-        "home": "0-3",
-        "away": "4-1"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 2
+          "home": 0,
+          "away": 1
         },
         "against": {
-          "home": 4,
-          "away": 4
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 4,
-      "away": 2,
-      "total": 6
+      "home": 0,
+      "away": 1,
+      "total": 1
     },
     "failed_to_score": {
-      "home": 5,
-      "away": 6,
-      "total": 11
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -937,8 +2081,8 @@
           "percentage": null
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "100.00%"
         },
         "76-90": {
           "total": null,
@@ -989,5 +2133,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:37:16.466Z"
+  "lastUpdated": "2025-03-27T10:35:54.356Z"
 }

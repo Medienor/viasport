@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 850,
+        "name": "UEFA U21 Championship - Qualification",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/850.png"
       },
       "country": {
         "name": "World",
@@ -34,22 +34,22 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2027,
+          "start": "2025-06-05",
+          "end": "2026-10-06",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -68,6 +68,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1018257,
+          "date": "2024-10-11T16:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Rodney Parade",
+            "city": "Casnewydd"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1728664200
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8229,
+            "name": "Wales U21",
+            "logo": "https://media.api-sports.io/football/teams/8229.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8188,
+            "name": "Czech Republic U21",
+            "logo": "https://media.api-sports.io/football/teams/8188.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018239,
+          "date": "2024-09-10T16:30:00+00:00",
+          "venue": {
+            "id": 831,
+            "name": "Víkingsvöllur",
+            "city": "Reykjavík"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725985800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8199,
+            "name": "Iceland U21",
+            "logo": "https://media.api-sports.io/football/teams/8199.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8229,
+            "name": "Wales U21",
+            "logo": "https://media.api-sports.io/football/teams/8229.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1189615,
@@ -126,86 +244,499 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1018177,
+          "date": "2024-03-22T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Rodney Parade",
+            "city": "Casnewydd"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1711130400
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8229,
+            "name": "Wales U21",
+            "logo": "https://media.api-sports.io/football/teams/8229.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8206,
+            "name": "Lithuania U21",
+            "logo": "https://media.api-sports.io/football/teams/8206.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018146,
+          "date": "2023-11-20T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Rodney Parade",
+            "city": "Casnewydd"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700503200
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8229,
+            "name": "Wales U21",
+            "logo": "https://media.api-sports.io/football/teams/8229.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018131,
+          "date": "2023-11-16T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Rodney Parade",
+            "city": "Casnewydd"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700157600
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8229,
+            "name": "Wales U21",
+            "logo": "https://media.api-sports.io/football/teams/8229.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8199,
+            "name": "Iceland U21",
+            "logo": "https://media.api-sports.io/football/teams/8199.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018101,
+          "date": "2023-10-13T16:00:00+00:00",
+          "venue": {
+            "id": 2517,
+            "name": "Fotbalový stadion Střelecký ostrov",
+            "city": "Ceské Budejovice"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697212800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8188,
+            "name": "Czech Republic U21",
+            "logo": "https://media.api-sports.io/football/teams/8188.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8229,
+            "name": "Wales U21",
+            "logo": "https://media.api-sports.io/football/teams/8229.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018082,
+          "date": "2023-09-12T15:00:00+00:00",
+          "venue": {
+            "id": 2645,
+            "name": "Jonavos centrinis stadionas",
+            "city": "Jonava"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1694530800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8206,
+            "name": "Lithuania U21",
+            "logo": "https://media.api-sports.io/football/teams/8206.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8229,
+            "name": "Wales U21",
+            "logo": "https://media.api-sports.io/football/teams/8229.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1018042,
+          "date": "2023-06-20T16:00:00+00:00",
+          "venue": {
+            "id": 462,
+            "name": "Vejle Stadion",
+            "city": "Vejle"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1687276800
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8189,
+            "name": "Denmark U21",
+            "logo": "https://media.api-sports.io/football/teams/8189.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8229,
+            "name": "Wales U21",
+            "logo": "https://media.api-sports.io/football/teams/8229.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 715233,
+          "date": "2022-06-14T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Parc y Scarlets",
+            "city": "Llanelli"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1655222400
+        },
+        "league": {
+          "id": 850,
+          "name": "UEFA U21 Championship - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/850.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8229,
+            "name": "Wales U21",
+            "logo": "https://media.api-sports.io/football/teams/8229.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8197,
+            "name": "Gibraltar U21",
+            "logo": "https://media.api-sports.io/football/teams/8197.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
+      "id": 850,
+      "name": "UEFA U21 Championship - Qualification",
       "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "logo": "https://media.api-sports.io/football/leagues/850.png",
       "flag": null,
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 8229,
       "name": "Wales U21",
       "logo": "https://media.api-sports.io/football/teams/8229.png"
     },
-    "form": "L",
+    "form": "DWDWLWWL",
     "fixtures": {
       "played": {
-        "home": 0,
-        "away": 1,
-        "total": 1
+        "home": 4,
+        "away": 4,
+        "total": 8
       },
       "wins": {
-        "home": 0,
-        "away": 0,
-        "total": 0
+        "home": 2,
+        "away": 2,
+        "total": 4
       },
       "draws": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 2,
+        "total": 2
       },
       "loses": {
-        "home": 0,
-        "away": 1,
-        "total": 1
+        "home": 2,
+        "away": 0,
+        "total": 2
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 0,
-          "away": 0,
-          "total": 0
+          "home": 5,
+          "away": 8,
+          "total": 13
         },
         "average": {
-          "home": "0.0",
-          "away": "0.0",
-          "total": "0.0"
+          "home": "1.3",
+          "away": "2.0",
+          "total": "1.6"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "7.14%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "14.29%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "7.14%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 4,
+            "percentage": "28.57%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "7.14%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "14.29%"
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 3,
+            "percentage": "21.43%"
           },
           "106-120": {
             "total": null,
@@ -214,66 +745,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
-            "under": 1
+            "over": 8,
+            "under": 0
           },
           "1.5": {
-            "over": 0,
-            "under": 1
+            "over": 4,
+            "under": 4
           },
           "2.5": {
-            "over": 0,
-            "under": 1
+            "over": 1,
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 8
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 8
           }
         }
       },
       "against": {
         "total": {
-          "home": 0,
-          "away": 2,
-          "total": 2
+          "home": 5,
+          "away": 6,
+          "total": 11
         },
         "average": {
-          "home": "0.0",
-          "away": "2.0",
-          "total": "2.0"
+          "home": "1.3",
+          "away": "1.5",
+          "total": "1.4"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": 2,
+            "percentage": "20.00%"
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "20.00%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "10.00%"
           },
           "61-75": {
             "total": 1,
-            "percentage": "50.00%"
+            "percentage": "10.00%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "10.00%"
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 3,
+            "percentage": "30.00%"
           },
           "106-120": {
             "total": null,
@@ -282,73 +813,73 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 0
+            "over": 7,
+            "under": 1
           },
           "1.5": {
-            "over": 1,
-            "under": 0
+            "over": 4,
+            "under": 4
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 8
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 8
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 8
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 0,
-        "draws": 0,
+        "wins": 2,
+        "draws": 1,
         "loses": 1
       },
       "wins": {
-        "home": null,
-        "away": null
+        "home": "2-1",
+        "away": "2-3"
       },
       "loses": {
-        "home": null,
-        "away": "2-0"
+        "home": "1-2",
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 0,
-          "away": 0
+          "home": 2,
+          "away": 3
         },
         "against": {
-          "home": 0,
+          "home": 2,
           "away": 2
         }
       }
     },
     "clean_sheet": {
+      "home": 1,
+      "away": 0,
+      "total": 1
+    },
+    "failed_to_score": {
       "home": 0,
       "away": 0,
       "total": 0
     },
-    "failed_to_score": {
-      "home": 0,
-      "away": 1,
-      "total": 1
-    },
     "penalty": {
       "scored": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 2,
+        "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 0
+      "total": 2
     },
     "lineups": [],
     "cards": {
@@ -358,28 +889,28 @@
           "percentage": null
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "5.00%"
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 6,
+          "percentage": "30.00%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "5.00%"
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 5,
+          "percentage": "25.00%"
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 6,
+          "percentage": "30.00%"
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "5.00%"
         },
         "106-120": {
           "total": null,
@@ -404,8 +935,8 @@
           "percentage": null
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "100.00%"
         },
         "76-90": {
           "total": null,
@@ -422,5 +953,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:15.025Z"
+  "lastUpdated": "2025-03-27T10:41:03.981Z"
 }

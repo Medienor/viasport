@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 766,
+        "name": "China Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/766.png"
       },
       "country": {
         "name": "World",
@@ -34,10 +34,47 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2019,
+          "start": "2019-03-21",
+          "end": "2019-03-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 7,
+        "name": "Asian Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/7.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2024-01-12",
+          "end": "2024-02-10",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -45,7 +82,7 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
@@ -89,7 +126,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -167,6 +204,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 30,
+        "name": "World Cup - Qualification Asia",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/30.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2023-10-12",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -184,7 +295,8 @@
     2026
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1321307,
@@ -195,10 +307,10 @@
             "city": "Bangkok"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
           },
           "timestamp": 1742905800
         },
@@ -212,27 +324,27 @@
             "id": 1564,
             "name": "Thailand",
             "logo": "https://media.api-sports.io/football/teams/1564.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 5166,
             "name": "Sri Lanka",
             "logo": "https://media.api-sports.io/football/teams/5166.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -246,52 +358,52 @@
       },
       {
         "fixture": {
-          "id": 1321318,
-          "date": "2025-06-10T00:00:00+00:00",
+          "id": 1355082,
+          "date": "2025-03-21T13:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 1551,
+            "name": "Rajamangala National Stadium",
+            "city": "Bangkok"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
           },
-          "timestamp": 1749513600
+          "timestamp": 1742562000
         },
         "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
         },
         "teams": {
           "home": {
-            "id": 1539,
-            "name": "Turkmenistan",
-            "logo": "https://media.api-sports.io/football/teams/1539.png",
-            "winner": null
-          },
-          "away": {
             "id": 1564,
             "name": "Thailand",
             "logo": "https://media.api-sports.io/football/teams/1564.png",
-            "winner": null
+            "winner": true
+          },
+          "away": {
+            "id": 1553,
+            "name": "Afghanistan",
+            "logo": "https://media.api-sports.io/football/teams/1553.png",
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 2,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -303,244 +415,6 @@
           }
         }
       },
-      {
-        "fixture": {
-          "id": 1321328,
-          "date": "2025-10-09T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1759968000
-        },
-        "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1564,
-            "name": "Thailand",
-            "logo": "https://media.api-sports.io/football/teams/1564.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1557,
-            "name": "Chinese Taipei",
-            "logo": "https://media.api-sports.io/football/teams/1557.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1321338,
-          "date": "2025-10-14T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1760400000
-        },
-        "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1557,
-            "name": "Chinese Taipei",
-            "logo": "https://media.api-sports.io/football/teams/1557.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1564,
-            "name": "Thailand",
-            "logo": "https://media.api-sports.io/football/teams/1564.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1321347,
-          "date": "2025-11-18T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1763424000
-        },
-        "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5166,
-            "name": "Sri Lanka",
-            "logo": "https://media.api-sports.io/football/teams/5166.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1564,
-            "name": "Thailand",
-            "logo": "https://media.api-sports.io/football/teams/1564.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1321357,
-          "date": "2026-03-31T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1774915200
-        },
-        "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1564,
-            "name": "Thailand",
-            "logo": "https://media.api-sports.io/football/teams/1564.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1539,
-            "name": "Turkmenistan",
-            "logo": "https://media.api-sports.io/football/teams/1539.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      }
-    ],
-    "past": [
       {
         "fixture": {
           "id": 1331838,
@@ -1012,175 +886,57 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1312231,
-          "date": "2024-11-14T12:30:00+00:00",
-          "venue": {
-            "id": 1553,
-            "name": "Thammasat Stadium",
-            "city": "Pathum Thani"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1731587400
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1564,
-            "name": "Thailand",
-            "logo": "https://media.api-sports.io/football/teams/1564.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1551,
-            "name": "Lebanon",
-            "logo": "https://media.api-sports.io/football/teams/1551.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1311649,
-          "date": "2024-10-14T13:00:00+00:00",
-          "venue": {
-            "id": 11054,
-            "name": "Tinsulanon Stadium",
-            "city": "Songkhla"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1728910800
-        },
-        "league": {
-          "id": 1038,
-          "name": "King's Cup",
-          "logo": "https://media.api-sports.io/football/leagues/1038.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1564,
-            "name": "Thailand",
-            "logo": "https://media.api-sports.io/football/teams/1564.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1565,
-            "name": "Syria",
-            "logo": "https://media.api-sports.io/football/teams/1565.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1564,
       "name": "Thailand",
       "logo": "https://media.api-sports.io/football/teams/1564.png"
     },
-    "form": "LWDD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
-        "away": 2,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 1,
-          "away": 2,
-          "total": 3
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.5",
-          "away": "1.0",
-          "total": "0.8"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1188,20 +944,20 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -1218,37 +974,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
-          "away": 6,
-          "total": 7
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.5",
-          "away": "3.0",
-          "total": "1.8"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1256,28 +1012,28 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -1286,62 +1042,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
         "home": null,
-        "away": "1-2"
+        "away": null
       },
       "loses": {
         "home": null,
-        "away": "5-0"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 1,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 5
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1354,20 +1110,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-4-2",
-        "played": 1
-      },
-      {
-        "formation": "4-1-4-1",
-        "played": 1
-      },
-      {
-        "formation": "4-3-3",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1379,24 +1122,24 @@
           "percentage": null
         },
         "31-45": {
-          "total": 2,
-          "percentage": "40.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
           "total": null,
           "percentage": null
         },
         "61-75": {
-          "total": 2,
-          "percentage": "40.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
           "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "20.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1439,5 +1182,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:45.443Z"
+  "lastUpdated": "2025-03-27T10:40:32.346Z"
 }

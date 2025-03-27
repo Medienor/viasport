@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -71,16 +71,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-03-31",
-          "end": "2024-12-08",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-29",
+          "end": "2025-11-30",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": true,
             "players": true,
@@ -88,43 +88,6 @@
             "top_assists": true,
             "top_cards": true,
             "injuries": true,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 105,
-        "name": "NM Cupen",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/105.png"
-      },
-      "country": {
-        "name": "Norway",
-        "code": "NO",
-        "flag": "https://media.api-sports.io/flags/no.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-04-09",
-          "end": "2024-12-07",
-          "current": true,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
             "predictions": true,
             "odds": false
           }
@@ -146,8 +109,1543 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1342192,
+          "date": "2025-03-30T15:00:00+00:00",
+          "venue": {
+            "id": 19681,
+            "name": "Romssa Arena",
+            "city": "Tromsø"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743346800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 325,
+            "name": "Tromso",
+            "logo": "https://media.api-sports.io/football/teams/325.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342197,
+          "date": "2025-04-06T15:00:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743951600
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 324,
+            "name": "Stromsgodset",
+            "logo": "https://media.api-sports.io/football/teams/324.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342204,
+          "date": "2025-04-21T15:00:00+00:00",
+          "venue": {
+            "id": 2793,
+            "name": "Bryne Stadion",
+            "city": "Bryne"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745247600
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2142,
+            "name": "Bryne",
+            "logo": "https://media.api-sports.io/football/teams/2142.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342213,
+          "date": "2025-04-27T15:00:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745766000
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2149,
+            "name": "Fredrikstad",
+            "logo": "https://media.api-sports.io/football/teams/2149.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342322,
+          "date": "2025-04-30T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lyse Arena",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746028800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342221,
+          "date": "2025-05-04T15:00:00+00:00",
+          "venue": {
+            "id": 1184,
+            "name": "Aker Stadion",
+            "city": "Molde"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746370800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 329,
+            "name": "Molde",
+            "logo": "https://media.api-sports.io/football/teams/329.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342233,
+          "date": "2025-05-11T17:15:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746983700
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342237,
+          "date": "2025-05-16T16:00:00+00:00",
+          "venue": {
+            "id": 1190,
+            "name": "Lerkendal Stadion",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747411200
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 331,
+            "name": "Rosenborg",
+            "logo": "https://media.api-sports.io/football/teams/331.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342248,
+          "date": "2025-05-25T17:15:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748193300
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 319,
+            "name": "Brann",
+            "logo": "https://media.api-sports.io/football/teams/319.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342255,
+          "date": "2025-06-01T15:00:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748790000
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 327,
+            "name": "Bodo/Glimt",
+            "logo": "https://media.api-sports.io/football/teams/327.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342262,
+          "date": "2025-06-22T15:00:00+00:00",
+          "venue": {
+            "id": 20418,
+            "name": "Jotun Arena",
+            "city": "Sandefjord"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750604400
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 332,
+            "name": "Sandefjord",
+            "logo": "https://media.api-sports.io/football/teams/332.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342270,
+          "date": "2025-06-29T15:00:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751209200
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 320,
+            "name": "Kristiansund BK",
+            "logo": "https://media.api-sports.io/football/teams/320.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342278,
+          "date": "2025-07-06T15:00:00+00:00",
+          "venue": {
+            "id": 1193,
+            "name": "Sarpsborg Stadion",
+            "city": "Sarpsborg"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751814000
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 333,
+            "name": "Sarpsborg 08 FF",
+            "logo": "https://media.api-sports.io/football/teams/333.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342286,
+          "date": "2025-07-13T15:00:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752418800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2143,
+            "name": "KFUM Oslo",
+            "logo": "https://media.api-sports.io/football/teams/2143.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342297,
+          "date": "2025-07-20T15:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753023600
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342302,
+          "date": "2025-07-27T15:00:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753628400
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2159,
+            "name": "Ham-Kam",
+            "logo": "https://media.api-sports.io/football/teams/2159.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342311,
+          "date": "2025-08-03T15:00:00+00:00",
+          "venue": {
+            "id": 1199,
+            "name": "Marienlyst Stadion",
+            "city": "Drammen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754233200
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 324,
+            "name": "Stromsgodset",
+            "logo": "https://media.api-sports.io/football/teams/324.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342319,
+          "date": "2025-08-10T15:00:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754838000
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 333,
+            "name": "Sarpsborg 08 FF",
+            "logo": "https://media.api-sports.io/football/teams/333.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342333,
+          "date": "2025-08-24T15:00:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756047600
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342338,
+          "date": "2025-08-31T15:00:00+00:00",
+          "venue": {
+            "id": 2792,
+            "name": "Nye Fredrikstad Stadion",
+            "city": "Fredrikstad"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756652400
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2149,
+            "name": "Fredrikstad",
+            "logo": "https://media.api-sports.io/football/teams/2149.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1365985,
+          "date": "2025-03-23T13:00:00+00:00",
+          "venue": {
+            "id": 1183,
+            "name": "Consto Arena",
+            "city": "Mjøndalen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1742734800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2152,
+            "name": "Mjondalen",
+            "logo": "https://media.api-sports.io/football/teams/2152.png",
+            "winner": false
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350867,
+          "date": "2025-03-14T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Karmøyhallen",
+            "city": "Kopervik"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1741964400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": false
+          },
+          "away": {
+            "id": 6976,
+            "name": "Egersund",
+            "logo": "https://media.api-sports.io/football/teams/6976.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349319,
+          "date": "2025-03-07T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sparebanken Vest Arena Karmøy",
+            "city": "Veavågen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1741363200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2142,
+            "name": "Bryne",
+            "logo": "https://media.api-sports.io/football/teams/2142.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349290,
+          "date": "2025-02-22T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Banús Football Center",
+            "city": "Marbella"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1740229200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 321,
+            "name": "Lillestrom",
+            "logo": "https://media.api-sports.io/football/teams/321.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349259,
+          "date": "2025-02-16T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Complejo Deportivo Arroyo Enmedio",
+            "city": "Estepona"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1739707200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346483,
+          "date": "2025-02-08T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739026800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 404,
+            "name": "AC Horsens",
+            "logo": "https://media.api-sports.io/football/teams/404.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1319937,
@@ -383,436 +1881,82 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1164540,
-          "date": "2024-11-10T16:00:00+00:00",
-          "venue": {
-            "id": 12130,
-            "name": "Haugesund Sparebank Arena",
-            "city": "Haugesund"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1731254400
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 328,
-            "name": "Haugesund",
-            "logo": "https://media.api-sports.io/football/teams/328.png",
-            "winner": true
-          },
-          "away": {
-            "id": 325,
-            "name": "Tromso",
-            "logo": "https://media.api-sports.io/football/teams/325.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164531,
-          "date": "2024-11-03T16:00:00+00:00",
-          "venue": {
-            "id": 1182,
-            "name": "Åråsen Stadion",
-            "city": "Kjeller"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1730649600
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 321,
-            "name": "Lillestrom",
-            "logo": "https://media.api-sports.io/football/teams/321.png",
-            "winner": false
-          },
-          "away": {
-            "id": 328,
-            "name": "Haugesund",
-            "logo": "https://media.api-sports.io/football/teams/328.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164527,
-          "date": "2024-10-27T16:00:00+00:00",
-          "venue": {
-            "id": 12130,
-            "name": "Haugesund Sparebank Arena",
-            "city": "Haugesund"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730044800
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 328,
-            "name": "Haugesund",
-            "logo": "https://media.api-sports.io/football/teams/328.png",
-            "winner": false
-          },
-          "away": {
-            "id": 329,
-            "name": "Molde",
-            "logo": "https://media.api-sports.io/football/teams/329.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164514,
-          "date": "2024-10-20T15:00:00+00:00",
-          "venue": {
-            "id": 1179,
-            "name": "KFUM Arena",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1729436400
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2143,
-            "name": "KFUM Oslo",
-            "logo": "https://media.api-sports.io/football/teams/2143.png",
-            "winner": null
-          },
-          "away": {
-            "id": 328,
-            "name": "Haugesund",
-            "logo": "https://media.api-sports.io/football/teams/328.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164505,
-          "date": "2024-09-28T16:00:00+00:00",
-          "venue": {
-            "id": 12130,
-            "name": "Haugesund Sparebank Arena",
-            "city": "Haugesund"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1727539200
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 328,
-            "name": "Haugesund",
-            "logo": "https://media.api-sports.io/football/teams/328.png",
-            "winner": false
-          },
-          "away": {
-            "id": 319,
-            "name": "Brann",
-            "logo": "https://media.api-sports.io/football/teams/319.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164500,
-          "date": "2024-09-22T15:00:00+00:00",
-          "venue": {
-            "id": 1190,
-            "name": "Lerkendal Stadion",
-            "city": "Trondheim"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1727017200
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 331,
-            "name": "Rosenborg",
-            "logo": "https://media.api-sports.io/football/teams/331.png",
-            "winner": true
-          },
-          "away": {
-            "id": 328,
-            "name": "Haugesund",
-            "logo": "https://media.api-sports.io/football/teams/328.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
-      "flag": null,
-      "season": 2024
+      "id": 103,
+      "name": "Eliteserien",
+      "country": "Norway",
+      "logo": "https://media.api-sports.io/football/leagues/103.png",
+      "flag": "https://media.api-sports.io/flags/no.svg",
+      "season": 2025
     },
     "team": {
       "id": 328,
       "name": "Haugesund",
       "logo": "https://media.api-sports.io/football/teams/328.png"
     },
-    "form": "WDWWWDWLLWD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 5,
-        "away": 6,
-        "total": 11
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 3,
-        "away": 3,
-        "total": 6
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 9,
-          "away": 14,
-          "total": 23
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.8",
-          "away": "2.3",
-          "total": "2.1"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 4,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 2,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "5.56%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 4,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 5,
-            "percentage": "27.78%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -825,62 +1969,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 9,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 6,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 4,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 9
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 10
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 6,
-          "away": 7,
-          "total": 13
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.2",
-          "away": "1.2",
-          "total": "1.2"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 5,
-            "percentage": "45.45%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "18.18%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "18.18%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -893,73 +2037,73 @@
         },
         "under_over": {
           "0.5": {
-            "over": 9,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 4,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 11
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 11
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 11
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
-        "draws": 1,
-        "loses": 2
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "3-1",
-        "away": "0-6"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "0-1",
-        "away": "2-0"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 6
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 2,
-          "away": 2
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
       "home": 0,
-      "away": 2,
-      "total": 2
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -973,8 +2117,8 @@
           "percentage": null
         },
         "31-45": {
-          "total": 2,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
           "total": null,
@@ -1007,8 +2151,8 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
           "total": null,
@@ -1033,5 +2177,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:36:59.625Z"
+  "lastUpdated": "2025-03-27T10:35:36.335Z"
 }

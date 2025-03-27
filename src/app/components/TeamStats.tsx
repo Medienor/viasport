@@ -15,8 +15,44 @@ ChartJS.register(
   Legend
 );
 
-const TeamStats = ({ statistics }: { statistics: any }) => {
+interface TeamStatsProps {
+  statistics: any | null;
+}
+
+export default function TeamStats({ statistics }: TeamStatsProps) {
   const [activeTab, setActiveTab] = useState('overview');
+
+  const defaultMinuteData = {
+    '0-15': { total: 0, percentage: '0%' },
+    '16-30': { total: 0, percentage: '0%' },
+    '31-45': { total: 0, percentage: '0%' },
+    '46-60': { total: 0, percentage: '0%' },
+    '61-75': { total: 0, percentage: '0%' },
+    '76-90': { total: 0, percentage: '0%' }
+  };
+
+  // Use the existing statistics or default values
+  const stats = {
+    fixtures: statistics?.fixtures || { played: { total: 0 }, wins: { total: 0 }, draws: { total: 0 }, loses: { total: 0 } },
+    goals: {
+      for: { 
+        total: statistics?.goals?.for?.total || { total: 0 },
+        minute: statistics?.goals?.for?.minute || defaultMinuteData
+      },
+      against: { 
+        total: statistics?.goals?.against?.total || { total: 0 },
+        minute: statistics?.goals?.against?.minute || defaultMinuteData
+      }
+    },
+    clean_sheet: statistics?.clean_sheet || { total: 0, home: 0, away: 0 }
+  };
+
+  // Add debug logging
+  console.log('Raw statistics:', JSON.stringify(statistics, null, 2));
+
+  if (!statistics || !statistics.fixtures) {
+    return null;
+  }
 
   // Enhanced color palette
   const colors = {
@@ -36,67 +72,196 @@ const TeamStats = ({ statistics }: { statistics: any }) => {
     }
   };
 
-  // Goal distribution by minute chart data
-  const goalsByMinuteData = {
+  // Helper function to safely get total value
+  const getTotal = (obj: any): number => {
+    if (!obj) return 0;
+    if (typeof obj === 'number') return obj;
+    if (typeof obj === 'object') {
+      if ('total' in obj) return obj.total || 0;
+      if ('total' in obj.total) return obj.total.total || 0;
+    }
+    return 0;
+  };
+
+  // Helper function to safely get nested value
+  const getSafeValue = (path: string): number => {
+    const value = path.split('.').reduce((obj, key) => obj?.[key], statistics);
+    return getTotal(value);
+  };
+
+  // Log all the values we're trying to render
+  console.log('Values being rendered:', {
+    played: getSafeValue('fixtures.played'),
+    wins: getSafeValue('fixtures.wins'),
+    draws: getSafeValue('fixtures.draws'),
+    loses: getSafeValue('fixtures.loses'),
+    goalsFor: getSafeValue('goals.for'),
+    goalsAgainst: getSafeValue('goals.against'),
+    cleanSheet: getSafeValue('clean_sheet'),
+    cleanSheetHome: statistics.clean_sheet?.home,
+    cleanSheetAway: statistics.clean_sheet?.away,
+  });
+
+  // Goals data with safe fallbacks
+  const goalsData = {
     labels: ['0-15', '16-30', '31-45', '46-60', '61-75', '76-90'],
     datasets: [
       {
         label: 'Mål scoret',
-        data: [
-          statistics.goals.for.minute['0-15']?.total || 0,
-          statistics.goals.for.minute['16-30']?.total || 0,
-          statistics.goals.for.minute['31-45']?.total || 0,
-          statistics.goals.for.minute['46-60']?.total || 0,
-          statistics.goals.for.minute['61-75']?.total || 0,
-          statistics.goals.for.minute['76-90']?.total || 0,
-        ],
-        backgroundColor: colors.primary.win,
-        borderColor: colors.border.win,
-        borderWidth: 1,
+        data: Object.keys(defaultMinuteData).map(() => 0), // Default to zeros if no data
+        backgroundColor: 'rgba(34, 197, 94, 0.5)',
+        borderColor: 'rgb(34, 197, 94)',
+        borderWidth: 1
       },
       {
         label: 'Mål imot',
-        data: [
-          statistics.goals.against.minute['0-15']?.total || 0,
-          statistics.goals.against.minute['16-30']?.total || 0,
-          statistics.goals.against.minute['31-45']?.total || 0,
-          statistics.goals.against.minute['46-60']?.total || 0,
-          statistics.goals.against.minute['61-75']?.total || 0,
-          statistics.goals.against.minute['76-90']?.total || 0,
-        ],
-        backgroundColor: colors.primary.loss,
-        borderColor: colors.border.loss,
-        borderWidth: 1,
-      },
-    ],
+        data: Object.keys(defaultMinuteData).map(() => 0), // Default to zeros if no data
+        backgroundColor: 'rgba(239, 68, 68, 0.5)',
+        borderColor: 'rgb(239, 68, 68)',
+        borderWidth: 1
+      }
+    ]
   };
 
-  // Results distribution chart data
-  const resultsData = {
-    labels: ['Seire', 'Uavgjort', 'Tap'],
-    datasets: [{
-      data: [
-        statistics.fixtures.wins.total,
-        statistics.fixtures.draws.total,
-        statistics.fixtures.loses.total,
-      ],
-      backgroundColor: [colors.primary.win, colors.primary.draw, colors.primary.loss],
-      borderColor: [colors.border.win, colors.border.draw, colors.border.loss],
-      borderWidth: 1,
-    }],
+  // Performance data with safe fallbacks
+  const performanceData = {
+    labels: ['Seire', 'Uavgjort', 'Tap', 'Mål scoret', 'Mål imot'],
+    datasets: [
+      {
+        label: 'Hjemme',
+        data: [
+          statistics?.fixtures?.wins?.home || 0,
+          statistics?.fixtures?.draws?.home || 0,
+          statistics?.fixtures?.loses?.home || 0,
+          statistics?.goals?.for?.total?.home || 0,
+          statistics?.goals?.against?.total?.home || 0
+        ],
+        backgroundColor: 'rgba(37, 99, 235, 0.8)',
+        borderColor: 'rgba(37, 99, 235, 1)',
+        borderWidth: 1
+      },
+      {
+        label: 'Borte',
+        data: [
+          statistics?.fixtures?.wins?.away || 0,
+          statistics?.fixtures?.draws?.away || 0,
+          statistics?.fixtures?.loses?.away || 0,
+          statistics?.goals?.for?.total?.away || 0,
+          statistics?.goals?.against?.total?.away || 0
+        ],
+        backgroundColor: 'rgba(99, 102, 241, 0.8)',
+        borderColor: 'rgba(99, 102, 241, 1)',
+        borderWidth: 1
+      }
+    ]
+  };
+
+  // Cards data with safe fallbacks
+  const cardsData = {
+    labels: ['0-15', '16-30', '31-45', '46-60', '61-75', '76-90'],
+    datasets: [
+      {
+        label: 'Gule kort',
+        data: Object.keys(defaultMinuteData).map(() => 0),
+        backgroundColor: 'rgba(234, 179, 8, 0.5)',
+        borderColor: 'rgb(234, 179, 8)',
+        borderWidth: 1
+      },
+      {
+        label: 'Røde kort',
+        data: Object.keys(defaultMinuteData).map(() => 0),
+        backgroundColor: 'rgba(220, 38, 38, 0.5)',
+        borderColor: 'rgb(220, 38, 38)',
+        borderWidth: 1
+      }
+    ]
   };
 
   const tabs = [
     { id: 'overview', label: 'Oversikt' },
-    { id: 'goals', label: 'Målstatistikk' },
     { id: 'performance', label: 'Prestasjon' },
-    { id: 'discipline', label: 'Disiplin' },
   ];
 
   return (
-    <div className="mt-8 bg-white rounded-lg shadow">
+    <div className="bg-white rounded-lg shadow p-6">
+      <h2 className="text-xl font-semibold mb-6">Statistikk</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Fixtures Summary */}
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h3 className="text-lg font-semibold mb-4">Kamper</h3>
+          <div className="space-y-2">
+            <div className="flex justify-between">
+              <span>Spilt:</span>
+              <span className="font-medium">{getSafeValue('fixtures.played')}</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Vunnet:</span>
+              <span className="font-medium text-green-600">{getSafeValue('fixtures.wins')}</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Uavgjort:</span>
+              <span className="font-medium text-yellow-600">{getSafeValue('fixtures.draws')}</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Tapt:</span>
+              <span className="font-medium text-red-600">{getSafeValue('fixtures.loses')}</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Goals Summary */}
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h3 className="text-lg font-semibold mb-4">Mål</h3>
+          <div className="space-y-2">
+            <div className="flex justify-between">
+              <span>Scoret:</span>
+              <span className="font-medium text-green-600">
+                {getTotal(statistics.goals?.for?.total)}
+              </span>
+            </div>
+            <div className="flex justify-between">
+              <span>Innsluppet:</span>
+              <span className="font-medium text-red-600">
+                {getTotal(statistics.goals?.against?.total)}
+              </span>
+            </div>
+            <div className="flex justify-between">
+              <span>Målforskjell:</span>
+              <span className={`font-medium ${
+                (getTotal(statistics.goals?.for?.total) - getTotal(statistics.goals?.against?.total)) > 0 
+                  ? 'text-green-600' 
+                  : (getTotal(statistics.goals?.for?.total) - getTotal(statistics.goals?.against?.total)) < 0 
+                    ? 'text-red-600' 
+                    : ''
+              }`}>
+                {getTotal(statistics.goals?.for?.total) - getTotal(statistics.goals?.against?.total)}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Clean Sheets */}
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h3 className="text-lg font-semibold mb-4">Clean Sheets</h3>
+          <div className="space-y-2">
+            <div className="flex justify-between">
+              <span>Totalt:</span>
+              <span className="font-medium">{getTotal(statistics.clean_sheet)}</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Hjemme:</span>
+              <span className="font-medium">{statistics.clean_sheet?.home || 0}</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Borte:</span>
+              <span className="font-medium">{statistics.clean_sheet?.away || 0}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Tabs Navigation */}
-      <div className="border-b">
+      <div className="mt-8 border-b">
         <div className="flex overflow-x-auto scrollbar-hide">
           {tabs.map((tab) => (
             <button
@@ -118,44 +283,36 @@ const TeamStats = ({ statistics }: { statistics: any }) => {
       <div className="p-4">
         {activeTab === 'overview' && (
           <div className="space-y-6">
-            {/* Form Guide */}
-            <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-4">Siste kamper</h3>
-              <div className="flex gap-2 overflow-x-auto pb-2">
-                {statistics.form.split('').map((result: string, index: number) => (
-                  <div
-                    key={index}
-                    className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-medium flex-shrink-0 ${
-                      result === 'W' ? 'bg-green-500' :
-                      result === 'L' ? 'bg-red-500' : 'bg-yellow-500'
-                    }`}
-                  >
-                    {result}
-                  </div>
-                ))}
-              </div>
-            </div>
-
             {/* Results Distribution */}
             <div className="max-w-sm mx-auto">
               <h3 className="text-lg font-semibold mb-4 text-center">Resultatfordeling</h3>
               <Doughnut 
-                data={resultsData}
+                data={{
+                  labels: ['Seire', 'Uavgjort', 'Tap'],
+                  datasets: [{
+                    data: [
+                      statistics?.fixtures?.wins?.total || 0,
+                      statistics?.fixtures?.draws?.total || 0,
+                      statistics?.fixtures?.loses?.total || 0,
+                    ],
+                    backgroundColor: [
+                      'rgba(22, 163, 74, 0.8)',
+                      'rgba(234, 179, 8, 0.8)',
+                      'rgba(220, 38, 38, 0.8)',
+                    ],
+                    borderColor: [
+                      'rgba(22, 163, 74, 1)',
+                      'rgba(234, 179, 8, 1)',
+                      'rgba(220, 38, 38, 1)',
+                    ],
+                    borderWidth: 1,
+                  }],
+                }}
                 options={{
                   responsive: true,
                   plugins: {
                     legend: {
                       position: 'bottom',
-                    },
-                    tooltip: {
-                      callbacks: {
-                        label: (context) => {
-                          const total = statistics.fixtures.played.total;
-                          const value = context.raw as number;
-                          const percentage = ((value / total) * 100).toFixed(1);
-                          return `${context.label}: ${value} (${percentage}%)`;
-                        }
-                      }
                     }
                   }
                 }}
@@ -164,150 +321,28 @@ const TeamStats = ({ statistics }: { statistics: any }) => {
           </div>
         )}
 
-        {activeTab === 'goals' && (
-          <div className="space-y-6">
-            {/* Goals by Minute */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Målfordeling per spilleminutt</h3>
-              <div className="h-[300px]">
-                <Bar
-                  data={goalsByMinuteData}
-                  options={{
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                      y: {
-                        beginAtZero: true,
-                        ticks: { stepSize: 1 }
-                      }
-                    },
-                    plugins: {
-                      legend: { position: 'bottom' }
-                    }
-                  }}
-                />
-              </div>
-            </div>
-
-            {/* Goals Stats */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <p className="text-sm text-gray-600">Mål scoret</p>
-                <p className="text-3xl font-bold text-green-600">{statistics.goals.for.total.total}</p>
-                <p className="text-sm text-gray-500">
-                  Snitt: {statistics.goals.for.average.total} per kamp
-                </p>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <p className="text-sm text-gray-600">Mål imot</p>
-                <p className="text-3xl font-bold text-red-600">{statistics.goals.against.total.total}</p>
-                <p className="text-sm text-gray-500">
-                  Snitt: {statistics.goals.against.average.total} per kamp
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
-
         {activeTab === 'performance' && (
           <div className="space-y-6">
-            {/* Home vs Away Performance */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Hjemme vs. Borte prestasjon</h3>
-              <div className="h-[300px]">
+              <div className="h-64">
                 <Bar
-                  data={{
-                    labels: ['Seire', 'Uavgjort', 'Tap', 'Mål scoret', 'Mål imot'],
-                    datasets: [
-                      {
-                        label: 'Hjemme',
-                        data: [
-                          statistics.fixtures.wins.home,
-                          statistics.fixtures.draws.home,
-                          statistics.fixtures.loses.home,
-                          statistics.goals.for.total.home,
-                          statistics.goals.against.total.home,
-                        ],
-                        backgroundColor: colors.primary.home,
-                        borderColor: colors.border.home,
-                        borderWidth: 1,
-                      },
-                      {
-                        label: 'Borte',
-                        data: [
-                          statistics.fixtures.wins.away,
-                          statistics.fixtures.draws.away,
-                          statistics.fixtures.loses.away,
-                          statistics.goals.for.total.away,
-                          statistics.goals.against.total.away,
-                        ],
-                        backgroundColor: colors.primary.away,
-                        borderColor: colors.border.away,
-                        borderWidth: 1,
-                      },
-                    ],
-                  }}
+                  data={performanceData}
                   options={{
                     responsive: true,
                     maintainAspectRatio: false,
                     scales: {
                       y: {
-                        beginAtZero: true,
-                        ticks: { stepSize: 1 }
+                        beginAtZero: true
                       }
                     },
                     plugins: {
-                      legend: { position: 'bottom' }
+                      legend: {
+                        position: 'bottom'
+                      }
                     }
                   }}
                 />
-              </div>
-            </div>
-
-            {/* Formations */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Foretrukne formasjoner</h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {statistics.lineups.map((lineup: any, index: number) => (
-                  <div key={index} className="p-4 bg-gray-50 rounded-lg text-center">
-                    <p className="text-xl font-semibold">{lineup.formation}</p>
-                    <p className="text-sm text-gray-600">{lineup.played} kamper</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
-
-        {activeTab === 'discipline' && (
-          <div className="space-y-6">
-            {/* Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="p-6 bg-yellow-50 rounded-lg">
-                <h3 className="text-lg font-semibold mb-2">Gule kort</h3>
-                <p className="text-3xl font-bold text-yellow-600">
-                  {Object.values(statistics.cards.yellow).reduce((acc: number, curr: any) => 
-                    acc + (curr.total || 0), 0)}
-                </p>
-              </div>
-              <div className="p-6 bg-red-50 rounded-lg">
-                <h3 className="text-lg font-semibold mb-2">Røde kort</h3>
-                <p className="text-3xl font-bold text-red-600">
-                  {Object.values(statistics.cards.red).reduce((acc: number, curr: any) => 
-                    acc + (curr.total || 0), 0)}
-                </p>
-              </div>
-            </div>
-
-            {/* Clean Sheets & Failed to Score */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="p-6 bg-blue-50 rounded-lg">
-                <h3 className="text-lg font-semibold mb-2">Clean sheets</h3>
-                <p className="text-3xl font-bold text-blue-600">{statistics.clean_sheet.total}</p>
-              </div>
-              <div className="p-6 bg-orange-50 rounded-lg">
-                <h3 className="text-lg font-semibold mb-2">Kamper uten scoring</h3>
-                <p className="text-3xl font-bold text-orange-600">{statistics.failed_to_score.total}</p>
               </div>
             </div>
           </div>
@@ -315,6 +350,4 @@ const TeamStats = ({ statistics }: { statistics: any }) => {
       </div>
     </div>
   );
-};
-
-export default TeamStats; 
+} 

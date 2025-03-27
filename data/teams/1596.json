@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-02-22",
-          "end": "2024-12-07",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-22",
+          "end": "2025-10-19",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -71,10 +71,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -89,81 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 257,
-        "name": "US Open Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/257.png"
-      },
-      "country": {
-        "name": "USA",
-        "code": "US",
-        "flag": "https://media.api-sports.io/flags/us.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-18",
-          "end": "2024-09-26",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 772,
-        "name": "Leagues Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/772.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-07-27",
-          "end": "2024-08-25",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -186,24 +112,141 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1151243,
-          "date": "2024-10-20T01:00:00+00:00",
+          "id": 1326313,
+          "date": "2025-03-30T02:30:00+00:00",
+          "venue": {
+            "id": 11918,
+            "name": "PayPal Park",
+            "city": "San Jose, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743301800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1595,
+            "name": "Seattle Sounders",
+            "logo": "https://media.api-sports.io/football/teams/1595.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326329,
+          "date": "2025-04-06T21:00:00+00:00",
+          "venue": {
+            "id": 11918,
+            "name": "PayPal Park",
+            "city": "San Jose, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743973200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1615,
+            "name": "DC United",
+            "logo": "https://media.api-sports.io/football/teams/1615.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326340,
+          "date": "2025-04-13T02:30:00+00:00",
           "venue": {
             "id": 19419,
             "name": "BMO Stadium",
             "city": "Los Angeles, California"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
             "extra": null
           },
-          "timestamp": 1729386000
+          "timestamp": 1744511400
         },
         "league": {
           "id": 253,
@@ -215,27 +258,27 @@
             "id": 1616,
             "name": "Los Angeles FC",
             "logo": "https://media.api-sports.io/football/teams/1616.png",
-            "winner": true
+            "winner": null
           },
           "away": {
             "id": 1596,
             "name": "San Jose Earthquakes",
             "logo": "https://media.api-sports.io/football/teams/1596.png",
-            "winner": false
+            "winner": null
           }
         },
         "goals": {
-          "home": 3,
-          "away": 1
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 3,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -249,20 +292,20 @@
       },
       {
         "fixture": {
-          "id": 1151231,
-          "date": "2024-10-06T02:30:00+00:00",
+          "id": 1326357,
+          "date": "2025-04-20T02:30:00+00:00",
           "venue": {
             "id": 11918,
             "name": "PayPal Park",
             "city": "San Jose, California"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1728181800
+          "timestamp": 1745116200
         },
         "league": {
           "id": 253,
@@ -274,27 +317,27 @@
             "id": 1596,
             "name": "San Jose Earthquakes",
             "logo": "https://media.api-sports.io/football/teams/1596.png",
-            "winner": false
+            "winner": null
           },
           "away": {
-            "id": 1606,
-            "name": "Real Salt Lake",
-            "logo": "https://media.api-sports.io/football/teams/1606.png",
-            "winner": true
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 0,
-          "away": 1
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 0,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -308,20 +351,79 @@
       },
       {
         "fixture": {
-          "id": 1151217,
-          "date": "2024-10-03T02:30:00+00:00",
+          "id": 1326364,
+          "date": "2025-04-26T23:30:00+00:00",
+          "venue": {
+            "id": 12667,
+            "name": "Lower.com Field",
+            "city": "Columbus, Ohio"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745710200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1613,
+            "name": "Columbus Crew",
+            "logo": "https://media.api-sports.io/football/teams/1613.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326382,
+          "date": "2025-05-04T02:30:00+00:00",
           "venue": {
             "id": 11918,
             "name": "PayPal Park",
             "city": "San Jose, California"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1727922600
+          "timestamp": 1746325800
         },
         "league": {
           "id": 253,
@@ -333,27 +435,735 @@
             "id": 1596,
             "name": "San Jose Earthquakes",
             "logo": "https://media.api-sports.io/football/teams/1596.png",
-            "winner": true
+            "winner": null
+          },
+          "away": {
+            "id": 1617,
+            "name": "Portland Timbers",
+            "logo": "https://media.api-sports.io/football/teams/1617.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326397,
+          "date": "2025-05-11T01:30:00+00:00",
+          "venue": {
+            "id": 1610,
+            "name": "Dick's Sporting Goods Park",
+            "city": "Commerce City, Colorado"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746927000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326411,
+          "date": "2025-05-15T02:30:00+00:00",
+          "venue": {
+            "id": 11918,
+            "name": "PayPal Park",
+            "city": "San Jose, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747276200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          },
+          "away": {
+            "id": 9568,
+            "name": "Inter Miami",
+            "logo": "https://media.api-sports.io/football/teams/9568.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326417,
+          "date": "2025-05-17T23:30:00+00:00",
+          "venue": {
+            "id": 1618,
+            "name": "Gillette Stadium",
+            "city": "Foxborough, Massachusetts"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747524600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326437,
+          "date": "2025-05-25T02:30:00+00:00",
+          "venue": {
+            "id": 11918,
+            "name": "PayPal Park",
+            "city": "San Jose, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748140200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1600,
+            "name": "Houston Dynamo",
+            "logo": "https://media.api-sports.io/football/teams/1600.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326449,
+          "date": "2025-05-29T02:00:00+00:00",
+          "venue": {
+            "id": 1616,
+            "name": "Dignity Health Sports Park",
+            "city": "Carson, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748484000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1605,
+            "name": "Los Angeles Galaxy",
+            "logo": "https://media.api-sports.io/football/teams/1605.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326453,
+          "date": "2025-05-31T18:30:00+00:00",
+          "venue": {
+            "id": 19408,
+            "name": "CITYPARK",
+            "city": "St. Louis, Missouri"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748716200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 20787,
+            "name": "St. Louis City",
+            "logo": "https://media.api-sports.io/football/teams/20787.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326473,
+          "date": "2025-06-14T02:30:00+00:00",
+          "venue": {
+            "id": 1748,
+            "name": "Providence Park",
+            "city": "Portland, Oregon"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749868200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1617,
+            "name": "Portland Timbers",
+            "logo": "https://media.api-sports.io/football/teams/1617.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326489,
+          "date": "2025-06-26T00:30:00+00:00",
+          "venue": {
+            "id": 1612,
+            "name": "Toyota Stadium",
+            "city": "Frisco, Texas"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750897800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1597,
+            "name": "FC Dallas",
+            "logo": "https://media.api-sports.io/football/teams/1597.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326506,
+          "date": "2025-06-29T02:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stanford Stadium",
+            "city": "Stanford, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751164200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1605,
+            "name": "Los Angeles Galaxy",
+            "logo": "https://media.api-sports.io/football/teams/1605.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326521,
+          "date": "2025-07-06T02:30:00+00:00",
+          "venue": {
+            "id": 11918,
+            "name": "PayPal Park",
+            "city": "San Jose, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751769000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326532,
+          "date": "2025-07-13T00:30:00+00:00",
+          "venue": {
+            "id": 1617,
+            "name": "Allianz Field",
+            "city": "Saint Paul, Minnesota"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752366600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1612,
+            "name": "Minnesota United FC",
+            "logo": "https://media.api-sports.io/football/teams/1612.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326550,
+          "date": "2025-07-17T02:30:00+00:00",
+          "venue": {
+            "id": 11918,
+            "name": "PayPal Park",
+            "city": "San Jose, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752719400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
           },
           "away": {
             "id": 1597,
             "name": "FC Dallas",
             "logo": "https://media.api-sports.io/football/teams/1597.png",
-            "winner": false
+            "winner": null
           }
         },
         "goals": {
-          "home": 3,
-          "away": 2
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 3,
-            "away": 2
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -367,138 +1177,20 @@
       },
       {
         "fixture": {
-          "id": 1151195,
-          "date": "2024-09-28T23:30:00+00:00",
-          "venue": {
-            "id": 310,
-            "name": "Stade Saputo",
-            "city": "Montreal, Quebec"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1727566200
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1614,
-            "name": "CF Montreal",
-            "logo": "https://media.api-sports.io/football/teams/1614.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1596,
-            "name": "San Jose Earthquakes",
-            "logo": "https://media.api-sports.io/football/teams/1596.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151189,
-          "date": "2024-09-22T02:30:00+00:00",
-          "venue": {
-            "id": 11918,
-            "name": "PayPal Park",
-            "city": "San Jose, California"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1726972200
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1596,
-            "name": "San Jose Earthquakes",
-            "logo": "https://media.api-sports.io/football/teams/1596.png",
-            "winner": false
-          },
-          "away": {
-            "id": 20787,
-            "name": "St. Louis City",
-            "logo": "https://media.api-sports.io/football/teams/20787.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1151176,
-          "date": "2024-09-19T02:30:00+00:00",
+          "id": 1326560,
+          "date": "2025-07-20T00:30:00+00:00",
           "venue": {
             "id": 11534,
             "name": "Lumen Field",
             "city": "Seattle, Washington"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1726713000
+          "timestamp": 1752971400
         },
         "league": {
           "id": 253,
@@ -520,17 +1212,17 @@
           }
         },
         "goals": {
-          "home": 2,
-          "away": 2
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 2,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 2,
-            "away": 2
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -544,20 +1236,20 @@
       },
       {
         "fixture": {
-          "id": 1151150,
-          "date": "2024-09-15T02:30:00+00:00",
+          "id": 1326576,
+          "date": "2025-07-27T01:30:00+00:00",
           "venue": {
-            "id": 19445,
-            "name": "BC Place",
-            "city": "Vancouver, British Columbia"
+            "id": 19223,
+            "name": "America First Field",
+            "city": "Sandy, Utah"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
             "extra": null
           },
-          "timestamp": 1726367400
+          "timestamp": 1753579800
         },
         "league": {
           "id": 253,
@@ -566,9 +1258,70 @@
         },
         "teams": {
           "home": {
-            "id": 1603,
-            "name": "Vancouver Whitecaps",
-            "logo": "https://media.api-sports.io/football/teams/1603.png",
+            "id": 1606,
+            "name": "Real Salt Lake",
+            "logo": "https://media.api-sports.io/football/teams/1606.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1326291,
+          "date": "2025-03-22T23:30:00+00:00",
+          "venue": {
+            "id": 18659,
+            "name": "Bank of America Stadium",
+            "city": "Charlotte, North Carolina"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742686200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18310,
+            "name": "Charlotte",
+            "logo": "https://media.api-sports.io/football/teams/18310.png",
             "winner": true
           },
           "away": {
@@ -579,17 +1332,17 @@
           }
         },
         "goals": {
-          "home": 2,
-          "away": 0
+          "home": 4,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": 1,
+            "home": 3,
             "away": 0
           },
           "fulltime": {
-            "home": 2,
-            "away": 0
+            "home": 4,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -603,8 +1356,8 @@
       },
       {
         "fixture": {
-          "id": 1151144,
-          "date": "2024-09-01T02:30:00+00:00",
+          "id": 1326285,
+          "date": "2025-03-16T02:30:00+00:00",
           "venue": {
             "id": 11918,
             "name": "PayPal Park",
@@ -614,9 +1367,9 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 7
           },
-          "timestamp": 1725157800
+          "timestamp": 1742092200
         },
         "league": {
           "id": 253,
@@ -631,9 +1384,9 @@
             "winner": false
           },
           "away": {
-            "id": 1612,
-            "name": "Minnesota United FC",
-            "logo": "https://media.api-sports.io/football/teams/1612.png",
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
             "winner": true
           }
         },
@@ -662,20 +1415,20 @@
       },
       {
         "fixture": {
-          "id": 1151129,
-          "date": "2024-08-25T01:30:00+00:00",
+          "id": 1326272,
+          "date": "2025-03-09T03:30:00+00:00",
           "venue": {
-            "id": 19223,
-            "name": "America First Field",
-            "city": "Sandy, Utah"
+            "id": 11918,
+            "name": "PayPal Park",
+            "city": "San Jose, California"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 5
           },
-          "timestamp": 1724549400
+          "timestamp": 1741491000
         },
         "league": {
           "id": 253,
@@ -684,9 +1437,68 @@
         },
         "teams": {
           "home": {
-            "id": 1606,
-            "name": "Real Salt Lake",
-            "logo": "https://media.api-sports.io/football/teams/1606.png",
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1612,
+            "name": "Minnesota United FC",
+            "logo": "https://media.api-sports.io/football/teams/1612.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1326254,
+          "date": "2025-03-02T01:30:00+00:00",
+          "venue": {
+            "id": 1615,
+            "name": "Children's Mercy Park",
+            "city": "Kansas City, Kansas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1740879000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
             "winner": false
           },
           "away": {
@@ -697,16 +1509,16 @@
           }
         },
         "goals": {
-          "home": 0,
+          "home": 1,
           "away": 2
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 2
           },
           "fulltime": {
-            "home": 0,
+            "home": 1,
             "away": 2
           },
           "extratime": {
@@ -721,12 +1533,71 @@
       },
       {
         "fixture": {
-          "id": 1285919,
-          "date": "2024-08-14T02:30:00+00:00",
+          "id": 1326244,
+          "date": "2025-02-23T03:30:00+00:00",
           "venue": {
-            "id": 19419,
-            "name": "BMO Stadium",
-            "city": "Los Angeles, California"
+            "id": 11918,
+            "name": "PayPal Park",
+            "city": "San Jose, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1740281400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1606,
+            "name": "Real Salt Lake",
+            "logo": "https://media.api-sports.io/football/teams/1606.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346086,
+          "date": "2025-02-15T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Empire Polo Club",
+            "city": "Indio, California"
           },
           "status": {
             "long": "Match Finished",
@@ -734,18 +1605,18 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1723602600
+          "timestamp": 1739577600
         },
         "league": {
-          "id": 772,
-          "name": "Leagues Cup",
-          "logo": "https://media.api-sports.io/football/leagues/772.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
-            "id": 1616,
-            "name": "Los Angeles FC",
-            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "id": 20787,
+            "name": "St. Louis City",
+            "logo": "https://media.api-sports.io/football/teams/20787.png",
             "winner": true
           },
           "away": {
@@ -756,17 +1627,253 @@
           }
         },
         "goals": {
-          "home": 4,
+          "home": 2,
           "away": 1
         },
         "score": {
           "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
             "home": 2,
             "away": 1
           },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349207,
+          "date": "2025-02-12T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Empire Polo Club",
+            "city": "Indio, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1739383200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1607,
+            "name": "Chicago Fire",
+            "logo": "https://media.api-sports.io/football/teams/1607.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 5,
+            "away": 0
+          },
           "fulltime": {
-            "home": 4,
+            "home": 5,
             "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345979,
+          "date": "2025-02-08T21:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Empire Polo Club",
+            "city": "Indio, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739050200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346345,
+          "date": "2025-02-05T20:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Empire Polo Club",
+            "city": "Indio, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1738787400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1617,
+            "name": "Portland Timbers",
+            "logo": "https://media.api-sports.io/football/teams/1617.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345071,
+          "date": "2025-02-01T20:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1738440000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18375,
+            "name": "Monterey Bay",
+            "logo": "https://media.api-sports.io/football/teams/18375.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1596,
+            "name": "San Jose Earthquakes",
+            "logo": "https://media.api-sports.io/football/teams/1596.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
           },
           "extratime": {
             "home": null,
@@ -787,72 +1894,72 @@
       "country": "USA",
       "logo": "https://media.api-sports.io/football/leagues/253.png",
       "flag": "https://media.api-sports.io/flags/us.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 1596,
       "name": "San Jose Earthquakes",
       "logo": "https://media.api-sports.io/football/teams/1596.png"
     },
-    "form": "LLLLWLLLLDWWLLDLLLLLLWLLLWLLDLLWLL",
+    "form": "WWLLL",
     "fixtures": {
       "played": {
-        "home": 17,
-        "away": 17,
-        "total": 34
+        "home": 3,
+        "away": 2,
+        "total": 5
       },
       "wins": {
-        "home": 4,
-        "away": 2,
-        "total": 6
+        "home": 1,
+        "away": 1,
+        "total": 2
       },
       "draws": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 12,
-        "away": 13,
-        "total": 25
+        "home": 2,
+        "away": 1,
+        "total": 3
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 18,
-          "away": 23,
-          "total": 41
+          "home": 5,
+          "away": 3,
+          "total": 8
         },
         "average": {
-          "home": "1.1",
-          "away": "1.4",
-          "total": "1.2"
+          "home": "1.7",
+          "away": "1.5",
+          "total": "1.6"
         },
         "minute": {
           "0-15": {
-            "total": 8,
-            "percentage": "20.00%"
+            "total": 1,
+            "percentage": "12.50%"
           },
           "16-30": {
             "total": 2,
-            "percentage": "5.00%"
+            "percentage": "25.00%"
           },
           "31-45": {
-            "total": 10,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 10,
-            "percentage": "25.00%"
+            "total": 1,
+            "percentage": "12.50%"
           },
           "61-75": {
-            "total": 6,
-            "percentage": "15.00%"
+            "total": 2,
+            "percentage": "25.00%"
           },
           "76-90": {
-            "total": 4,
-            "percentage": "10.00%"
+            "total": 2,
+            "percentage": "25.00%"
           },
           "91-105": {
             "total": null,
@@ -865,66 +1972,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 24,
-            "under": 10
+            "over": 4,
+            "under": 1
           },
           "1.5": {
-            "over": 11,
-            "under": 23
+            "over": 2,
+            "under": 3
           },
           "2.5": {
-            "over": 6,
-            "under": 28
+            "over": 1,
+            "under": 4
           },
           "3.5": {
-            "over": 0,
-            "under": 34
+            "over": 1,
+            "under": 4
           },
           "4.5": {
             "over": 0,
-            "under": 34
+            "under": 5
           }
         }
       },
       "against": {
         "total": {
-          "home": 32,
-          "away": 46,
-          "total": 78
+          "home": 3,
+          "away": 5,
+          "total": 8
         },
         "average": {
-          "home": "1.9",
-          "away": "2.7",
-          "total": "2.3"
+          "home": "1.0",
+          "away": "2.5",
+          "total": "1.6"
         },
         "minute": {
           "0-15": {
-            "total": 6,
-            "percentage": "7.59%"
+            "total": 1,
+            "percentage": "12.50%"
           },
           "16-30": {
-            "total": 11,
-            "percentage": "13.92%"
+            "total": 1,
+            "percentage": "12.50%"
           },
           "31-45": {
-            "total": 11,
-            "percentage": "13.92%"
+            "total": 4,
+            "percentage": "50.00%"
           },
           "46-60": {
-            "total": 11,
-            "percentage": "13.92%"
+            "total": 1,
+            "percentage": "12.50%"
           },
           "61-75": {
-            "total": 14,
-            "percentage": "17.72%"
+            "total": 1,
+            "percentage": "12.50%"
           },
           "76-90": {
-            "total": 19,
-            "percentage": "24.05%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 7,
-            "percentage": "8.86%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -933,24 +2040,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 32,
-            "under": 2
+            "over": 4,
+            "under": 1
           },
           "1.5": {
-            "over": 26,
-            "under": 8
+            "over": 2,
+            "under": 3
           },
           "2.5": {
-            "over": 11,
-            "under": 23
+            "over": 1,
+            "under": 4
           },
           "3.5": {
-            "over": 6,
-            "under": 28
+            "over": 1,
+            "under": 4
           },
           "4.5": {
-            "over": 2,
-            "under": 32
+            "over": 0,
+            "under": 5
           }
         }
       }
@@ -958,37 +2065,37 @@
     "biggest": {
       "streak": {
         "wins": 2,
-        "draws": 1,
-        "loses": 6
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "3-1",
-        "away": "0-2"
+        "home": "4-0",
+        "away": "1-2"
       },
       "loses": {
-        "home": "0-3",
-        "away": "6-2"
+        "home": "1-2",
+        "away": "4-1"
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 3
+          "home": 4,
+          "away": 2
         },
         "against": {
-          "home": 4,
-          "away": 6
+          "home": 2,
+          "away": 4
         }
       }
     },
     "clean_sheet": {
       "home": 1,
-      "away": 1,
-      "total": 2
+      "away": 0,
+      "total": 1
     },
     "failed_to_score": {
-      "home": 6,
-      "away": 4,
-      "total": 10
+      "home": 1,
+      "away": 0,
+      "total": 1
     },
     "penalty": {
       "scored": {
@@ -1003,55 +2110,47 @@
     },
     "lineups": [
       {
+        "formation": "3-5-2",
+        "played": 2
+      },
+      {
         "formation": "4-2-3-1",
-        "played": 19
-      },
-      {
-        "formation": "4-3-3",
-        "played": 9
-      },
-      {
-        "formation": "4-4-2",
         "played": 2
       },
       {
         "formation": "3-4-3",
-        "played": 2
-      },
-      {
-        "formation": "5-4-1",
         "played": 1
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 4,
-          "percentage": "5.63%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
-          "total": 4,
-          "percentage": "5.63%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 15,
-          "percentage": "21.13%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 9,
-          "percentage": "12.68%"
+          "total": 2,
+          "percentage": "22.22%"
         },
         "61-75": {
-          "total": 16,
-          "percentage": "22.54%"
+          "total": 2,
+          "percentage": "22.22%"
         },
         "76-90": {
-          "total": 16,
-          "percentage": "22.54%"
+          "total": 4,
+          "percentage": "44.44%"
         },
         "91-105": {
-          "total": 7,
-          "percentage": "9.86%"
+          "total": 1,
+          "percentage": "11.11%"
         },
         "106-120": {
           "total": null,
@@ -1068,24 +2167,24 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "33.33%"
-        },
-        "46-60": {
           "total": null,
           "percentage": null
         },
-        "61-75": {
+        "46-60": {
           "total": 1,
-          "percentage": "33.33%"
+          "percentage": "100.00%"
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
           "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1094,5 +2193,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:55.531Z"
+  "lastUpdated": "2025-03-27T10:42:47.363Z"
 }

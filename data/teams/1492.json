@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 29,
+        "name": "World Cup - Qualification Africa",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/29.png"
       },
       "country": {
         "name": "World",
@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2023,
+          "start": "2023-11-13",
+          "end": "2025-10-13",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -45,14 +45,14 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -93,6 +93,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 36,
+        "name": "Africa Cup of Nations - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/36.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2024-03-20",
+          "end": "2024-11-19",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -107,55 +144,56 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
-          "id": 1360041,
-          "date": "2025-05-02T00:00:00+00:00",
+          "id": 1125997,
+          "date": "2025-03-24T19:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 411,
+            "name": "Stade Félix Houphouët-Boigny",
+            "city": "Abidjan"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
           },
-          "timestamp": 1746144000
+          "timestamp": 1742842800
         },
         "league": {
-          "id": 1163,
-          "name": "African Nations Championship - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/1163.png"
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
         },
         "teams": {
           "home": {
+            "id": 1501,
+            "name": "Ivory Coast",
+            "logo": "https://media.api-sports.io/football/teams/1501.png",
+            "winner": true
+          },
+          "away": {
             "id": 1492,
             "name": "Gambia",
             "logo": "https://media.api-sports.io/football/teams/1492.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1532,
-            "name": "Algeria",
-            "logo": "https://media.api-sports.io/football/teams/1532.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -169,52 +207,52 @@
       },
       {
         "fixture": {
-          "id": 1360042,
-          "date": "2025-05-09T00:00:00+00:00",
+          "id": 1125970,
+          "date": "2025-03-20T19:00:00+00:00",
           "venue": {
             "id": null,
-            "name": null,
-            "city": null
+            "name": "Stade Olympique Alassane Ouattara",
+            "city": "Abidjan"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
           },
-          "timestamp": 1746748800
+          "timestamp": 1742497200
         },
         "league": {
-          "id": 1163,
-          "name": "African Nations Championship - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/1163.png"
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
         },
         "teams": {
           "home": {
-            "id": 1532,
-            "name": "Algeria",
-            "logo": "https://media.api-sports.io/football/teams/1532.png",
-            "winner": null
-          },
-          "away": {
             "id": 1492,
             "name": "Gambia",
             "logo": "https://media.api-sports.io/football/teams/1492.png",
             "winner": null
+          },
+          "away": {
+            "id": 1511,
+            "name": "Kenya",
+            "logo": "https://media.api-sports.io/football/teams/1511.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 3
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 3,
+            "away": 3
           },
           "extratime": {
             "home": null,
@@ -225,9 +263,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1351531,
@@ -286,17 +322,430 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1232526,
+          "date": "2024-11-18T19:00:00+00:00",
+          "venue": {
+            "id": 21412,
+            "name": "Stade olympique Hammadi-Agrebi",
+            "city": "Radès"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1731956400
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 28,
+            "name": "Tunisia",
+            "logo": "https://media.api-sports.io/football/teams/28.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1492,
+            "name": "Gambia",
+            "logo": "https://media.api-sports.io/football/teams/1492.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232502,
+          "date": "2024-11-15T19:00:00+00:00",
+          "venue": {
+            "id": 1112,
+            "name": "Stade Municipal de Berkane",
+            "city": "Berkane"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1731697200
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1492,
+            "name": "Gambia",
+            "logo": "https://media.api-sports.io/football/teams/1492.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1524,
+            "name": "Comoros",
+            "logo": "https://media.api-sports.io/football/teams/1524.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232478,
+          "date": "2024-10-14T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Ben Ahmed El Abdi",
+            "city": "Mazghan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1728914400
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1492,
+            "name": "Gambia",
+            "logo": "https://media.api-sports.io/football/teams/1492.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1490,
+            "name": "Madagascar",
+            "logo": "https://media.api-sports.io/football/teams/1490.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232454,
+          "date": "2024-10-11T14:00:00+00:00",
+          "venue": {
+            "id": 4710,
+            "name": "Stade Larbi Zaouli",
+            "city": "Casablanca"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1728655200
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1490,
+            "name": "Madagascar",
+            "logo": "https://media.api-sports.io/football/teams/1490.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1492,
+            "name": "Gambia",
+            "logo": "https://media.api-sports.io/football/teams/1492.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232430,
+          "date": "2024-09-08T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Ben Ahmed El Abdi",
+            "city": "Mazghan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725807600
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1492,
+            "name": "Gambia",
+            "logo": "https://media.api-sports.io/football/teams/1492.png",
+            "winner": false
+          },
+          "away": {
+            "id": 28,
+            "name": "Tunisia",
+            "logo": "https://media.api-sports.io/football/teams/28.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232406,
+          "date": "2024-09-04T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Ben Ahmed El Abdi",
+            "city": "Mazghan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725462000
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1524,
+            "name": "Comoros",
+            "logo": "https://media.api-sports.io/football/teams/1524.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1492,
+            "name": "Gambia",
+            "logo": "https://media.api-sports.io/football/teams/1492.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1125942,
+          "date": "2024-06-11T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Franceville",
+            "city": "Franceville"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1718132400
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1503,
+            "name": "Gabon",
+            "logo": "https://media.api-sports.io/football/teams/1503.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1492,
+            "name": "Gambia",
+            "logo": "https://media.api-sports.io/football/teams/1492.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1492,
@@ -582,5 +1031,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:13.379Z"
+  "lastUpdated": "2025-03-27T10:39:59.488Z"
 }

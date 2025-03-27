@@ -22,117 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 11,
-        "name": "CONMEBOL Sudamericana",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/11.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-05",
-          "end": "2024-11-23",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 130,
-        "name": "Copa Argentina",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/130.png"
-      },
-      "country": {
-        "name": "Argentina",
-        "code": "AR",
-        "flag": "https://media.api-sports.io/flags/ar.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-25",
-          "end": "2024-12-04",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 1032,
         "name": "Copa de la Liga Profesional",
         "type": "League",
@@ -170,6 +59,43 @@
     },
     {
       "league": {
+        "id": 130,
+        "name": "Copa Argentina",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/130.png"
+      },
+      "country": {
+        "name": "Argentina",
+        "code": "AR",
+        "flag": "https://media.api-sports.io/flags/ar.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-23",
+          "end": "2025-06-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 128,
         "name": "Liga Profesional Argentina",
         "type": "League",
@@ -182,10 +108,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-05-12",
-          "end": "2024-12-15",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-23",
+          "end": "2025-05-04",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -200,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -220,83 +146,23 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1159036,
-          "date": "2024-12-14T20:00:00+00:00",
-          "venue": {
-            "id": 19391,
-            "name": "Estadio Gigante de Arroyito",
-            "city": "Rosario, Provincia de Santa Fe"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1734206400
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 437,
-            "name": "Rosario Central",
-            "logo": "https://media.api-sports.io/football/teams/437.png",
-            "winner": true
-          },
-          "away": {
-            "id": 440,
-            "name": "Belgrano Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/440.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1159012,
-          "date": "2024-12-09T22:15:00+00:00",
+          "id": 1334441,
+          "date": "2025-03-30T18:00:00+00:00",
           "venue": {
             "id": 45,
             "name": "Estadio Julio César Villagra",
             "city": "Ciudad de Córdoba, Provincia de Córdoba"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1733782500
+          "timestamp": 1743357600
         },
         "league": {
           "id": 128,
@@ -311,24 +177,83 @@
             "winner": null
           },
           "away": {
+            "id": 456,
+            "name": "Talleres Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/456.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334448,
+          "date": "2025-04-04T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jorge Luis Hirschi",
+            "city": "La Plata, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743804000
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
             "id": 450,
             "name": "Estudiantes L.P.",
             "logo": "https://media.api-sports.io/football/teams/450.png",
             "winner": null
+          },
+          "away": {
+            "id": 440,
+            "name": "Belgrano Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/440.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 2,
-          "away": 2
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 2,
-            "away": 2
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -342,20 +267,20 @@
       },
       {
         "fixture": {
-          "id": 1159007,
-          "date": "2024-11-29T22:00:00+00:00",
+          "id": 1334457,
+          "date": "2025-04-12T23:30:00+00:00",
           "venue": {
-            "id": 103,
-            "name": "Estadio Pedro Bidegaín",
-            "city": "Capital Federal, Ciudad de Buenos Aires"
+            "id": 45,
+            "name": "Estadio Julio César Villagra",
+            "city": "Ciudad de Córdoba, Provincia de Córdoba"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1732917600
+          "timestamp": 1744500600
         },
         "league": {
           "id": 128,
@@ -364,30 +289,30 @@
         },
         "teams": {
           "home": {
-            "id": 460,
-            "name": "San Lorenzo",
-            "logo": "https://media.api-sports.io/football/teams/460.png",
-            "winner": false
-          },
-          "away": {
             "id": 440,
             "name": "Belgrano Cordoba",
             "logo": "https://media.api-sports.io/football/teams/440.png",
-            "winner": true
+            "winner": null
+          },
+          "away": {
+            "id": 451,
+            "name": "Boca Juniors",
+            "logo": "https://media.api-sports.io/football/teams/451.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 0,
-          "away": 2
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 0,
-            "away": 2
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -401,8 +326,69 @@
       },
       {
         "fixture": {
-          "id": 1158985,
-          "date": "2024-11-26T00:15:00+00:00",
+          "id": 1334477,
+          "date": "2025-04-21T22:00:00+00:00",
+          "venue": {
+            "id": 112,
+            "name": "Estadio José Dellagiovanna",
+            "city": "San Fernando, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745272800
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 452,
+            "name": "Tigre",
+            "logo": "https://media.api-sports.io/football/teams/452.png",
+            "winner": null
+          },
+          "away": {
+            "id": 440,
+            "name": "Belgrano Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/440.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1334421,
+          "date": "2025-03-17T00:00:00+00:00",
           "venue": {
             "id": 45,
             "name": "Estadio Julio César Villagra",
@@ -412,9 +398,9 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 9
+            "extra": 14
           },
-          "timestamp": 1732580100
+          "timestamp": 1742169600
         },
         "league": {
           "id": 128,
@@ -426,71 +412,12 @@
             "id": 440,
             "name": "Belgrano Cordoba",
             "logo": "https://media.api-sports.io/football/teams/440.png",
-            "winner": false
-          },
-          "away": {
-            "id": 473,
-            "name": "Independ. Rivadavia",
-            "logo": "https://media.api-sports.io/football/teams/473.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158978,
-          "date": "2024-11-21T20:00:00+00:00",
-          "venue": {
-            "id": 88,
-            "name": "Estadio Ciudad de Lanús - Néstor Díaz Pérez",
-            "city": "Lanús, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1732219200
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2432,
-            "name": "Barracas Central",
-            "logo": "https://media.api-sports.io/football/teams/2432.png",
             "winner": null
           },
           "away": {
-            "id": 440,
-            "name": "Belgrano Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/440.png",
+            "id": 2432,
+            "name": "Barracas Central",
+            "logo": "https://media.api-sports.io/football/teams/2432.png",
             "winner": null
           }
         },
@@ -519,20 +446,20 @@
       },
       {
         "fixture": {
-          "id": 1158958,
-          "date": "2024-11-12T00:00:00+00:00",
+          "id": 1334407,
+          "date": "2025-03-10T00:30:00+00:00",
           "venue": {
-            "id": 45,
-            "name": "Estadio Julio César Villagra",
-            "city": "Ciudad de Córdoba, Provincia de Córdoba"
+            "id": 93,
+            "name": "Estadio Marcelo Alberto Bielsa",
+            "city": "Rosario, Provincia de Santa Fe"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 4
+            "extra": 7
           },
-          "timestamp": 1731369600
+          "timestamp": 1741566600
         },
         "league": {
           "id": 128,
@@ -541,15 +468,74 @@
         },
         "teams": {
           "home": {
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
+            "winner": null
+          },
+          "away": {
             "id": 440,
             "name": "Belgrano Cordoba",
             "logo": "https://media.api-sports.io/football/teams/440.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334384,
+          "date": "2025-03-01T01:15:00+00:00",
+          "venue": {
+            "id": 104,
+            "name": "Estadio Ingeniero Hilario Sánchez",
+            "city": "San Juan, Provincia de San Juan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1740791700
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 461,
+            "name": "San Martin S.J.",
+            "logo": "https://media.api-sports.io/football/teams/461.png",
             "winner": true
           },
           "away": {
-            "id": 478,
-            "name": "Instituto Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/478.png",
+            "id": 440,
+            "name": "Belgrano Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/440.png",
             "winner": false
           }
         },
@@ -559,8 +545,8 @@
         },
         "score": {
           "halftime": {
-            "home": 2,
-            "away": 1
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
             "home": 3,
@@ -578,8 +564,185 @@
       },
       {
         "fixture": {
-          "id": 1158949,
-          "date": "2024-11-06T20:00:00+00:00",
+          "id": 1334376,
+          "date": "2025-02-24T00:00:00+00:00",
+          "venue": {
+            "id": 45,
+            "name": "Estadio Julio César Villagra",
+            "city": "Ciudad de Córdoba, Provincia de Córdoba"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1740355200
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 440,
+            "name": "Belgrano Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/440.png",
+            "winner": true
+          },
+          "away": {
+            "id": 442,
+            "name": "Defensa Y Justicia",
+            "logo": "https://media.api-sports.io/football/teams/442.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334355,
+          "date": "2025-02-15T22:15:00+00:00",
+          "venue": {
+            "id": 2997,
+            "name": "Estadio Único Madre de Ciudades",
+            "city": "Santiago del Estero, Prov. de Santiago del Estero"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1739657700
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": true
+          },
+          "away": {
+            "id": 440,
+            "name": "Belgrano Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/440.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334341,
+          "date": "2025-02-12T01:15:00+00:00",
+          "venue": {
+            "id": 45,
+            "name": "Estadio Julio César Villagra",
+            "city": "Ciudad de Córdoba, Provincia de Córdoba"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1739322900
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 440,
+            "name": "Belgrano Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/440.png",
+            "winner": true
+          },
+          "away": {
+            "id": 463,
+            "name": "Aldosivi",
+            "logo": "https://media.api-sports.io/football/teams/463.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334324,
+          "date": "2025-02-07T20:45:00+00:00",
           "venue": {
             "id": 43,
             "name": "Estadio Florencio Solá",
@@ -589,9 +752,9 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 3
+            "extra": null
           },
-          "timestamp": 1730923200
+          "timestamp": 1738961100
         },
         "league": {
           "id": 128,
@@ -618,8 +781,8 @@
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
             "home": 1,
@@ -637,8 +800,8 @@
       },
       {
         "fixture": {
-          "id": 1158931,
-          "date": "2024-11-02T23:00:00+00:00",
+          "id": 1334318,
+          "date": "2025-02-04T00:30:00+00:00",
           "venue": {
             "id": 45,
             "name": "Estadio Julio César Villagra",
@@ -648,9 +811,9 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 6
+            "extra": 3
           },
-          "timestamp": 1730588400
+          "timestamp": 1738629000
         },
         "league": {
           "id": 128,
@@ -665,24 +828,24 @@
             "winner": false
           },
           "away": {
-            "id": 442,
-            "name": "Defensa Y Justicia",
-            "logo": "https://media.api-sports.io/football/teams/442.png",
+            "id": 473,
+            "name": "Independ. Rivadavia",
+            "logo": "https://media.api-sports.io/football/teams/473.png",
             "winner": true
           }
         },
         "goals": {
-          "home": 1,
-          "away": 2
+          "home": 0,
+          "away": 3
         },
         "score": {
           "halftime": {
             "home": 0,
-            "away": 0
+            "away": 3
           },
           "fulltime": {
-            "home": 1,
-            "away": 2
+            "home": 0,
+            "away": 3
           },
           "extratime": {
             "home": null,
@@ -696,12 +859,12 @@
       },
       {
         "fixture": {
-          "id": 1158920,
-          "date": "2024-10-27T01:00:00+00:00",
+          "id": 1334304,
+          "date": "2025-01-30T22:15:00+00:00",
           "venue": {
-            "id": 115,
-            "name": "Estadio José Amalfitani",
-            "city": "Capital Federal, Ciudad de Buenos Aires"
+            "id": 99,
+            "name": "Estadio Presidente Juan Domingo Perón",
+            "city": "Avellaneda, Provincia de Buenos Aires"
           },
           "status": {
             "long": "Match Finished",
@@ -709,7 +872,7 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1729990800
+          "timestamp": 1738275300
         },
         "league": {
           "id": 128,
@@ -718,30 +881,30 @@
         },
         "teams": {
           "home": {
-            "id": 438,
-            "name": "Velez Sarsfield",
-            "logo": "https://media.api-sports.io/football/teams/438.png",
-            "winner": null
+            "id": 436,
+            "name": "Racing Club",
+            "logo": "https://media.api-sports.io/football/teams/436.png",
+            "winner": true
           },
           "away": {
             "id": 440,
             "name": "Belgrano Cordoba",
             "logo": "https://media.api-sports.io/football/teams/440.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": 1,
-          "away": 1
+          "home": 4,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
-            "home": 1,
-            "away": 1
+            "home": 4,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -755,8 +918,8 @@
       },
       {
         "fixture": {
-          "id": 1158904,
-          "date": "2024-10-19T20:00:00+00:00",
+          "id": 1334284,
+          "date": "2025-01-25T00:00:00+00:00",
           "venue": {
             "id": 45,
             "name": "Estadio Julio César Villagra",
@@ -768,7 +931,7 @@
             "elapsed": 90,
             "extra": 7
           },
-          "timestamp": 1729368000
+          "timestamp": 1737763200
         },
         "league": {
           "id": 128,
@@ -780,26 +943,26 @@
             "id": 440,
             "name": "Belgrano Cordoba",
             "logo": "https://media.api-sports.io/football/teams/440.png",
-            "winner": false
+            "winner": null
           },
           "away": {
-            "id": 1064,
-            "name": "Platense",
-            "logo": "https://media.api-sports.io/football/teams/1064.png",
-            "winner": true
+            "id": 445,
+            "name": "Huracan",
+            "logo": "https://media.api-sports.io/football/teams/445.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 0,
+          "home": 1,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 0
+            "home": 1,
+            "away": 1
           },
           "fulltime": {
-            "home": 0,
+            "home": 1,
             "away": 1
           },
           "extratime": {
@@ -816,77 +979,77 @@
   },
   "statistics": {
     "league": {
-      "id": 11,
-      "name": "CONMEBOL Sudamericana",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/11.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 440,
       "name": "Belgrano Cordoba",
       "logo": "https://media.api-sports.io/football/teams/440.png"
     },
-    "form": "DDWDWWLL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 4,
-        "away": 4,
-        "total": 8
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 2,
-          "away": 6,
-          "total": 8
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.5",
-          "away": "1.5",
-          "total": "1.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -899,37 +1062,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 6,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 3,
-          "away": 4,
-          "total": 7
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.8",
-          "away": "1.0",
-          "total": "0.9"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -941,24 +1104,24 @@
             "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "28.57%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "28.57%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -967,62 +1130,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 2,
+        "wins": 0,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "1-0",
-        "away": "0-2"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "0-2",
-        "away": "2-1"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 1,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 2,
-          "away": 2
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 2,
-      "away": 1,
-      "total": 3
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 2,
+      "home": 0,
       "away": 0,
-      "total": 2
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1035,57 +1198,36 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-4-2",
-        "played": 2
-      },
-      {
-        "formation": "3-4-3",
-        "played": 2
-      },
-      {
-        "formation": "3-5-2",
-        "played": 2
-      },
-      {
-        "formation": "4-4-1-1",
-        "played": 1
-      },
-      {
-        "formation": "3-4-2-1",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 2,
-          "percentage": "8.00%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
-          "total": 4,
-          "percentage": "16.00%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 2,
-          "percentage": "8.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 7,
-          "percentage": "28.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 5,
-          "percentage": "20.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 2,
-          "percentage": "8.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 3,
-          "percentage": "12.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1098,8 +1240,8 @@
           "percentage": null
         },
         "16-30": {
-          "total": 2,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
           "total": null,
@@ -1128,5 +1270,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:38:58.443Z"
+  "lastUpdated": "2025-03-27T10:37:40.116Z"
 }

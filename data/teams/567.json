@@ -22,34 +22,34 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
+        "id": 925,
+        "name": "Super Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
+        "logo": "https://media.api-sports.io/football/leagues/925.png"
       },
       "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
+        "name": "Czech-Republic",
+        "code": "CZ",
+        "flag": "https://media.api-sports.io/flags/cz.svg"
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2015,
+          "start": "2015-07-18",
+          "end": "2015-07-18",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -164,6 +164,43 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -1078,77 +1115,77 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 567,
       "name": "Plzen",
       "logo": "https://media.api-sports.io/football/teams/567.png"
     },
-    "form": "WWWWWDWWWWLD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 8,
-        "away": 4,
-        "total": 12
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 5,
-        "away": 4,
-        "total": 9
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 27,
-          "away": 15,
-          "total": 42
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "3.4",
-          "away": "3.8",
-          "total": "3.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 9,
-            "percentage": "24.32%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 6,
-            "percentage": "16.22%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 3,
-            "percentage": "8.11%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 7,
-            "percentage": "18.92%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 7,
-            "percentage": "18.92%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 5,
-            "percentage": "13.51%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1161,58 +1198,58 @@
         },
         "under_over": {
           "0.5": {
-            "over": 12,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 9,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 6,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 3,
-            "under": 9
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 3,
-            "under": 9
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 7,
-          "away": 1,
-          "total": 8
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.9",
-          "away": "0.3",
-          "total": "0.7"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -1229,57 +1266,57 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 10
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 11
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 12
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 12
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 5,
-        "draws": 1,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "11-0",
-        "away": "0-7"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "1-2",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 11,
-          "away": 7
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
-          "away": 1
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 4,
-      "away": 3,
-      "total": 7
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -1288,50 +1325,41 @@
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
-    "lineups": [
-      {
-        "formation": "3-4-2-1",
-        "played": 5
-      },
-      {
-        "formation": "3-4-3",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 1,
-          "percentage": "11.11%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
           "total": null,
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "11.11%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 4,
-          "percentage": "44.44%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 2,
-          "percentage": "22.22%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "11.11%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1360,8 +1388,8 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
@@ -1378,5 +1406,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:40.534Z"
+  "lastUpdated": "2025-03-27T10:38:22.831Z"
 }

@@ -59,10 +59,10 @@
     },
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 34,
+        "name": "World Cup - Qualification South America",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/34.png"
       },
       "country": {
         "name": "World",
@@ -71,10 +71,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2026,
+          "start": "2023-09-07",
+          "end": "2025-10-14",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -82,14 +82,14 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -112,6 +112,478 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1100300,
+          "date": "2025-03-26T00:00:00+00:00",
+          "venue": {
+            "id": 366,
+            "name": "Estadio Metropolitano Roberto Meléndez",
+            "city": "Barranquilla"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 12
+          },
+          "timestamp": 1742947200
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8,
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2380,
+            "name": "Paraguay",
+            "logo": "https://media.api-sports.io/football/teams/2380.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100295,
+          "date": "2025-03-21T00:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Arena BRB Mané Garrincha",
+            "city": "Brasília, Distrito Federal"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 14
+          },
+          "timestamp": 1742517900
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8,
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100289,
+          "date": "2024-11-19T23:00:00+00:00",
+          "venue": {
+            "id": 366,
+            "name": "Estadio Metropolitano Roberto Meléndez",
+            "city": "Barranquilla"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1732057200
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8,
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2382,
+            "name": "Ecuador",
+            "logo": "https://media.api-sports.io/football/teams/2382.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100284,
+          "date": "2024-11-16T00:00:00+00:00",
+          "venue": {
+            "id": 1624,
+            "name": "Estadio Centenario",
+            "city": "Montevideo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 14
+          },
+          "timestamp": 1731715200
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7,
+            "name": "Uruguay",
+            "logo": "https://media.api-sports.io/football/teams/7.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8,
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100280,
+          "date": "2024-10-15T20:30:00+00:00",
+          "venue": {
+            "id": 366,
+            "name": "Estadio Metropolitano Roberto Meléndez",
+            "city": "Barranquilla"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1729024200
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8,
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2383,
+            "name": "Chile",
+            "logo": "https://media.api-sports.io/football/teams/2383.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100273,
+          "date": "2024-10-10T20:00:00+00:00",
+          "venue": {
+            "id": 2487,
+            "name": "Estadio Municipal El Alto",
+            "city": "El Alto"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1728590400
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2381,
+            "name": "Bolivia",
+            "logo": "https://media.api-sports.io/football/teams/2381.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8,
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100270,
+          "date": "2024-09-10T20:30:00+00:00",
+          "venue": {
+            "id": 366,
+            "name": "Estadio Metropolitano Roberto Meléndez",
+            "city": "Barranquilla"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1726000200
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8,
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png",
+            "winner": true
+          },
+          "away": {
+            "id": 26,
+            "name": "Argentina",
+            "logo": "https://media.api-sports.io/football/teams/26.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100266,
+          "date": "2024-09-07T01:30:00+00:00",
+          "venue": {
+            "id": 1228,
+            "name": "Estadio Nacional de Lima",
+            "city": "Lima"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725672600
+        },
+        "league": {
+          "id": 34,
+          "name": "World Cup - Qualification South America",
+          "logo": "https://media.api-sports.io/football/leagues/34.png"
+        },
+        "teams": {
+          "home": {
+            "id": 30,
+            "name": "Peru",
+            "logo": "https://media.api-sports.io/football/teams/30.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8,
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1227538,
@@ -229,499 +701,86 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1146318,
-          "date": "2024-07-03T01:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Levi's Stadium",
-            "city": "Santa Clara, California"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1719968400
-        },
-        "league": {
-          "id": 9,
-          "name": "Copa America",
-          "logo": "https://media.api-sports.io/football/leagues/9.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6,
-            "name": "Brazil",
-            "logo": "https://media.api-sports.io/football/teams/6.png",
-            "winner": null
-          },
-          "away": {
-            "id": 8,
-            "name": "Colombia",
-            "logo": "https://media.api-sports.io/football/teams/8.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1189123,
-          "date": "2024-06-29T22:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "State Farm Stadium",
-            "city": "Glendale, Arizona"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1719698400
-        },
-        "league": {
-          "id": 9,
-          "name": "Copa America",
-          "logo": "https://media.api-sports.io/football/leagues/9.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8,
-            "name": "Colombia",
-            "logo": "https://media.api-sports.io/football/teams/8.png",
-            "winner": true
-          },
-          "away": {
-            "id": 29,
-            "name": "Costa Rica",
-            "logo": "https://media.api-sports.io/football/teams/29.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1146306,
-          "date": "2024-06-24T22:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "NRG Stadium",
-            "city": "Houston, Texas"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1719266400
-        },
-        "league": {
-          "id": 9,
-          "name": "Copa America",
-          "logo": "https://media.api-sports.io/football/leagues/9.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8,
-            "name": "Colombia",
-            "logo": "https://media.api-sports.io/football/teams/8.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2380,
-            "name": "Paraguay",
-            "logo": "https://media.api-sports.io/football/teams/2380.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1198059,
-          "date": "2024-06-15T21:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Pratt & Whitney Stadium at Rentschler Field",
-            "city": "East Hartford, Connecticut"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1718485200
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8,
-            "name": "Colombia",
-            "logo": "https://media.api-sports.io/football/teams/8.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2381,
-            "name": "Bolivia",
-            "logo": "https://media.api-sports.io/football/teams/2381.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1174091,
-          "date": "2024-06-08T21:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "FedEx Field",
-            "city": "Landover, Maryland"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1717882200
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2384,
-            "name": "USA",
-            "logo": "https://media.api-sports.io/football/teams/2384.png",
-            "winner": false
-          },
-          "away": {
-            "id": 8,
-            "name": "Colombia",
-            "logo": "https://media.api-sports.io/football/teams/8.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 5
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 5
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1155274,
-          "date": "2024-03-26T19:30:00+00:00",
-          "venue": {
-            "id": 19217,
-            "name": "Estádio Cívitas Metropolitano",
-            "city": "Madrid"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711481400
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8,
-            "name": "Colombia",
-            "logo": "https://media.api-sports.io/football/teams/8.png",
-            "winner": true
-          },
-          "away": {
-            "id": 774,
-            "name": "Romania",
-            "logo": "https://media.api-sports.io/football/teams/774.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1168769,
-          "date": "2024-03-22T20:30:00+00:00",
-          "venue": {
-            "id": 598,
-            "name": "London Stadium",
-            "city": "London"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711139400
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 9,
-            "name": "Spain",
-            "logo": "https://media.api-sports.io/football/teams/9.png",
-            "winner": false
-          },
-          "away": {
-            "id": 8,
-            "name": "Colombia",
-            "logo": "https://media.api-sports.io/football/teams/8.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 9,
-      "name": "Copa America",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/9.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 8,
       "name": "Colombia",
       "logo": "https://media.api-sports.io/football/teams/8.png"
     },
-    "form": "WWDWWL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 3,
-        "away": 3,
-        "total": 6
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 3,
-        "away": 1,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 10,
-          "away": 2,
-          "total": 12
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "3.3",
-          "away": "0.7",
-          "total": "2.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 5,
-            "percentage": "41.67%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
             "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "8.33%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -730,42 +789,42 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 5
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
-          "away": 2,
-          "total": 3
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.3",
-          "away": "0.7",
-          "total": "0.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -780,8 +839,8 @@
             "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -792,123 +851,114 @@
             "percentage": null
           },
           "106-120": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 1,
+        "wins": 0,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "5-0",
-        "away": "0-1"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
-        "away": "1-0"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 5,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 1
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 2,
-      "away": 1,
-      "total": 3
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 3,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 3
+      "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-3-3",
-        "played": 5
-      },
-      {
-        "formation": "4-2-3-1",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 1,
-          "percentage": "7.69%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
-          "total": 3,
-          "percentage": "23.08%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 3,
-          "percentage": "23.08%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 2,
-          "percentage": "15.38%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "7.69%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
           "percentage": null
         },
         "91-105": {
-          "total": 2,
-          "percentage": "15.38%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
-          "total": 1,
-          "percentage": "7.69%"
+          "total": null,
+          "percentage": null
         }
       },
       "red": {
@@ -925,8 +975,8 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
@@ -947,5 +997,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:03.721Z"
+  "lastUpdated": "2025-03-27T10:39:49.390Z"
 }

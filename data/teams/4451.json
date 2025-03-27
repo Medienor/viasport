@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 544,
-        "name": "FA Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/544.png"
-      },
-      "country": {
-        "name": "Hong-Kong",
-        "code": "HK",
-        "flag": "https://media.api-sports.io/flags/hk.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2023-10-14",
-          "end": "2024-06-01",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 1051,
         "name": "HKPL Cup",
         "type": "Cup",
@@ -163,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -221,7 +184,7 @@
         {
           "year": 2024,
           "start": "2024-10-12",
-          "end": "2025-03-23",
+          "end": "2025-04-09",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -238,6 +201,43 @@
             "injuries": false,
             "predictions": true,
             "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 544,
+        "name": "FA Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/544.png"
+      },
+      "country": {
+        "name": "Hong-Kong",
+        "code": "HK",
+        "flag": "https://media.api-sports.io/flags/hk.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-02",
+          "end": "2025-04-20",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
           }
         }
       ]
@@ -353,6 +353,65 @@
             "id": 4457,
             "name": "Wofoo Tai Po",
             "logo": "https://media.api-sports.io/football/teams/4457.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1357056,
+          "date": "2025-04-20T07:00:00+00:00",
+          "venue": {
+            "id": 3384,
+            "name": "Mong Kok Stadium",
+            "city": "Hong Kong"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745132400
+        },
+        "league": {
+          "id": 544,
+          "name": "FA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/544.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4457,
+            "name": "Wofoo Tai Po",
+            "logo": "https://media.api-sports.io/football/teams/4457.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4451,
+            "name": "Eastern",
+            "logo": "https://media.api-sports.io/football/teams/4451.png",
             "winner": null
           }
         },
@@ -914,6 +973,65 @@
       },
       {
         "fixture": {
+          "id": 1338272,
+          "date": "2025-03-02T07:00:00+00:00",
+          "venue": {
+            "id": 3383,
+            "name": "Sham Shui Po Sports Ground",
+            "city": "Kowloon"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1740898800
+        },
+        "league": {
+          "id": 544,
+          "name": "FA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/544.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4451,
+            "name": "Eastern",
+            "logo": "https://media.api-sports.io/football/teams/4451.png",
+            "winner": true
+          },
+          "away": {
+            "id": 20392,
+            "name": "Kowloon City",
+            "logo": "https://media.api-sports.io/football/teams/20392.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1288894,
           "date": "2025-02-23T07:00:00+00:00",
           "venue": {
@@ -1206,93 +1324,34 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1288877,
-          "date": "2025-01-18T10:00:00+00:00",
-          "venue": {
-            "id": 3384,
-            "name": "Mong Kok Stadium",
-            "city": "Hong Kong"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737194400
-        },
-        "league": {
-          "id": 380,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/380.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4451,
-            "name": "Eastern",
-            "logo": "https://media.api-sports.io/football/teams/4451.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4453,
-            "name": "Kitchee",
-            "logo": "https://media.api-sports.io/football/teams/4453.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 544,
-      "name": "FA Cup",
-      "country": "Hong-Kong",
-      "logo": "https://media.api-sports.io/football/leagues/544.png",
-      "flag": "https://media.api-sports.io/flags/hk.svg",
-      "season": 2024
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
+      "flag": null,
+      "season": null
     },
     "team": {
       "id": 4451,
       "name": "Eastern",
       "logo": "https://media.api-sports.io/football/teams/4451.png"
     },
-    "form": "WWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -1308,23 +1367,23 @@
     "goals": {
       "for": {
         "total": {
-          "home": 4,
-          "away": 2,
-          "total": 6
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.0",
-          "away": "2.0",
-          "total": "2.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
@@ -1339,51 +1398,51 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 2,
-          "away": 1,
-          "total": 3
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "1.0",
-          "total": "1.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1407,51 +1466,51 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "3-2",
-        "away": "1-2"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
@@ -1459,19 +1518,19 @@
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -1501,24 +1560,24 @@
           "percentage": null
         },
         "31-45": {
-          "total": 2,
-          "percentage": "22.22%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "11.11%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "11.11%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 2,
-          "percentage": "22.22%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 3,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1561,5 +1620,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:14.327Z"
+  "lastUpdated": "2025-03-27T10:42:04.596Z"
 }

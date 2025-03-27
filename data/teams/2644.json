@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 848,
         "name": "UEFA Europa Conference League",
         "type": "Cup",
@@ -163,7 +126,44 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -215,65 +215,6 @@
             "id": 2644,
             "name": "Radnicki 1923",
             "logo": "https://media.api-sports.io/football/teams/2644.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1214788,
-          "date": "2025-04-05T00:00:00+00:00",
-          "venue": {
-            "id": 1415,
-            "name": "Stadion Čika Dača",
-            "city": "Kragujevac"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743811200
-        },
-        "league": {
-          "id": 286,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/286.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2644,
-            "name": "Radnicki 1923",
-            "logo": "https://media.api-sports.io/football/teams/2644.png",
-            "winner": null
-          },
-          "away": {
-            "id": 573,
-            "name": "FK Partizan",
-            "logo": "https://media.api-sports.io/football/teams/573.png",
             "winner": null
           }
         },
@@ -776,52 +717,52 @@
       },
       {
         "fixture": {
-          "id": 1214711,
-          "date": "2024-12-21T13:00:00+00:00",
+          "id": 1337980,
+          "date": "2025-01-24T00:00:00+00:00",
           "venue": {
-            "id": 1425,
-            "name": "Stadion Karađorđe",
-            "city": "Novi Sad"
+            "id": null,
+            "name": "Limak Arcadia Atlantis Football Center",
+            "city": "Serik"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 6
+            "extra": 3
           },
-          "timestamp": 1734786000
+          "timestamp": 1737676800
         },
         "league": {
-          "id": 286,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/286.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
-            "id": 702,
-            "name": "Vojvodina",
-            "logo": "https://media.api-sports.io/football/teams/702.png",
-            "winner": true
-          },
-          "away": {
             "id": 2644,
             "name": "Radnicki 1923",
             "logo": "https://media.api-sports.io/football/teams/2644.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2392,
+            "name": "Debreceni VSC",
+            "logo": "https://media.api-sports.io/football/teams/2392.png",
             "winner": false
           }
         },
         "goals": {
-          "home": 3,
-          "away": 2
+          "home": 2,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": 2,
-            "away": 0
+            "home": 0,
+            "away": 1
           },
           "fulltime": {
-            "home": 3,
-            "away": 2
+            "home": 2,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -835,25 +776,25 @@
       },
       {
         "fixture": {
-          "id": 1214702,
-          "date": "2024-12-16T16:00:00+00:00",
+          "id": 1337074,
+          "date": "2025-01-19T00:00:00+00:00",
           "venue": {
-            "id": 1415,
-            "name": "Stadion Čika Dača",
-            "city": "Kragujevac"
+            "id": null,
+            "name": "Mardan Stadyumu",
+            "city": "Antalya"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 7
+            "extra": 1
           },
-          "timestamp": 1734364800
+          "timestamp": 1737244800
         },
         "league": {
-          "id": 286,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/286.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
@@ -863,24 +804,24 @@
             "winner": true
           },
           "away": {
-            "id": 2251,
-            "name": "FK Spartak Zdrepceva KRV",
-            "logo": "https://media.api-sports.io/football/teams/2251.png",
+            "id": 2011,
+            "name": "Nizhny Novgorod",
+            "logo": "https://media.api-sports.io/football/teams/2011.png",
             "winner": false
           }
         },
         "goals": {
           "home": 2,
-          "away": 0
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 0
+            "home": 0,
+            "away": 1
           },
           "fulltime": {
             "home": 2,
-            "away": 0
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -896,73 +837,73 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 2644,
       "name": "Radnicki 1923",
       "logo": "https://media.api-sports.io/football/teams/2644.png"
     },
-    "form": "LWDDDWWDW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 5,
-        "away": 4,
-        "total": 9
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 3,
-        "away": 1,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 2,
-        "away": 2,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 13,
-          "away": 5,
-          "total": 18
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.6",
-          "away": "1.3",
-          "total": "2.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "6.67%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 4,
-            "percentage": "26.67%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 4,
-            "percentage": "26.67%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 4,
-            "percentage": "26.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "13.33%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -979,62 +920,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 9,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 4,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 3,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 9
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
-          "away": 5,
-          "total": 9
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.8",
-          "away": "1.3",
-          "total": "1.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1047,57 +988,57 @@
         },
         "under_over": {
           "0.5": {
-            "over": 7,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 9
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 9
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 9
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 3,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "4-0",
-        "away": "1-2"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
-        "away": "2-1"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 4,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 2,
-          "away": 2
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 2,
+      "home": 0,
       "away": 0,
-      "total": 2
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -1115,12 +1056,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-1-4-1",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1132,12 +1068,12 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
@@ -1192,5 +1128,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:19.923Z"
+  "lastUpdated": "2025-03-27T10:39:03.507Z"
 }

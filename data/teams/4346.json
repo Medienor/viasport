@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 2,
         "name": "UEFA Champions League",
         "type": "Cup",
@@ -201,6 +164,43 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -1167,170 +1167,170 @@
       },
       {
         "fixture": {
-          "id": 1273870,
-          "date": "2024-12-08T12:00:00+00:00",
+          "id": 1344843,
+          "date": "2025-01-31T10:30:00+00:00",
           "venue": {
-            "id": 3323,
-            "name": "Gradska Plaža Stadium",
-            "city": "Struga"
+            "id": null,
+            "name": "Club Megasaray Football Center",
+            "city": "Antalya"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 4
+            "extra": 1
           },
-          "timestamp": 1733659200
+          "timestamp": 1738319400
         },
         "league": {
-          "id": 371,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/371.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
             "id": 4346,
             "name": "Struga",
             "logo": "https://media.api-sports.io/football/teams/4346.png",
-            "winner": true
+            "winner": false
           },
           "away": {
-            "id": 17663,
-            "name": "Voska Sport",
-            "logo": "https://media.api-sports.io/football/teams/17663.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1273864,
-          "date": "2024-12-03T12:00:00+00:00",
-          "venue": {
-            "id": 1801,
-            "name": "Stadion Čair",
-            "city": "Skopje"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1733227200
-        },
-        "league": {
-          "id": 371,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/371.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2265,
-            "name": "Shkupi 1927",
-            "logo": "https://media.api-sports.io/football/teams/2265.png",
+            "id": 3552,
+            "name": "Zemplín Michalovce",
+            "logo": "https://media.api-sports.io/football/teams/3552.png",
             "winner": true
-          },
-          "away": {
-            "id": 4346,
-            "name": "Struga",
-            "logo": "https://media.api-sports.io/football/teams/4346.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1273857,
-          "date": "2024-11-27T12:00:00+00:00",
-          "venue": {
-            "id": 3323,
-            "name": "Gradska Plaža Stadium",
-            "city": "Struga"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1732708800
-        },
-        "league": {
-          "id": 371,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/371.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4346,
-            "name": "Struga",
-            "logo": "https://media.api-sports.io/football/teams/4346.png",
-            "winner": true
-          },
-          "away": {
-            "id": 693,
-            "name": "Pelister",
-            "logo": "https://media.api-sports.io/football/teams/693.png",
-            "winner": false
           }
         },
         "goals": {
           "home": 1,
-          "away": 0
+          "away": 2
         },
         "score": {
           "halftime": {
             "home": 1,
-            "away": 0
+            "away": 2
           },
           "fulltime": {
             "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1339789,
+          "date": "2025-01-27T14:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1737988200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4346,
+            "name": "Struga",
+            "logo": "https://media.api-sports.io/football/teams/4346.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4554,
+            "name": "Kyzyl-Zhar",
+            "logo": "https://media.api-sports.io/football/teams/4554.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
             "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1339694,
+          "date": "2025-01-25T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Calista Sports Center - Field A",
+            "city": "Belek"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1737763200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4346,
+            "name": "Struga",
+            "logo": "https://media.api-sports.io/football/teams/4346.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1083,
+            "name": "Rubin",
+            "logo": "https://media.api-sports.io/football/teams/1083.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -1346,24 +1346,24 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 4346,
       "name": "Struga",
       "logo": "https://media.api-sports.io/football/teams/4346.png"
     },
-    "form": "LDL",
+    "form": null,
     "fixtures": {
       "played": {
         "home": 0,
-        "away": 3,
-        "total": 3
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -1372,43 +1372,43 @@
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
           "home": 0,
-          "away": 5,
-          "total": 5
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.7",
-          "total": "1.7"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -1429,62 +1429,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 10,
-          "total": 10
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "3.3",
-          "total": "3.3"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1497,24 +1497,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           }
         }
       }
@@ -1522,8 +1522,8 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
-        "loses": 1
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
         "home": null,
@@ -1531,16 +1531,16 @@
       },
       "loses": {
         "home": null,
-        "away": "5-1"
+        "away": null
       },
       "goals": {
         "for": {
           "home": 0,
-          "away": 3
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 5
+          "away": 0
         }
       }
     },
@@ -1556,14 +1556,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -1637,5 +1637,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:35.710Z"
+  "lastUpdated": "2025-03-27T10:38:17.875Z"
 }

@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 130,
-        "name": "Copa Argentina",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/130.png"
-      },
-      "country": {
-        "name": "Argentina",
-        "code": "AR",
-        "flag": "https://media.api-sports.io/flags/ar.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-25",
-          "end": "2024-12-04",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 1032,
         "name": "Copa de la Liga Profesional",
         "type": "League",
@@ -96,6 +59,43 @@
     },
     {
       "league": {
+        "id": 130,
+        "name": "Copa Argentina",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/130.png"
+      },
+      "country": {
+        "name": "Argentina",
+        "code": "AR",
+        "flag": "https://media.api-sports.io/flags/ar.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-23",
+          "end": "2025-06-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 128,
         "name": "Liga Profesional Argentina",
         "type": "League",
@@ -108,10 +108,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-05-12",
-          "end": "2024-12-15",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-23",
+          "end": "2025-05-04",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -146,24 +146,23 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1159034,
-          "date": "2024-12-14T00:15:00+00:00",
+          "id": 1334429,
+          "date": "2025-03-28T20:00:00+00:00",
           "venue": {
-            "id": 103,
-            "name": "Estadio Pedro Bidegaín",
-            "city": "Capital Federal, Ciudad de Buenos Aires"
+            "id": 59,
+            "name": "Estadio Norberto Tito Tomaghello",
+            "city": "Florencio Varela, Provincia de Buenos Aires"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1734135300
+          "timestamp": 1743192000
         },
         "league": {
           "id": 128,
@@ -172,30 +171,30 @@
         },
         "teams": {
           "home": {
-            "id": 460,
-            "name": "San Lorenzo",
-            "logo": "https://media.api-sports.io/football/teams/460.png",
-            "winner": false
+            "id": 442,
+            "name": "Defensa Y Justicia",
+            "logo": "https://media.api-sports.io/football/teams/442.png",
+            "winner": null
           },
           "away": {
             "id": 452,
             "name": "Tigre",
             "logo": "https://media.api-sports.io/football/teams/452.png",
-            "winner": true
+            "winner": null
           }
         },
         "goals": {
-          "home": 0,
-          "away": 1
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 0,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -209,8 +208,305 @@
       },
       {
         "fixture": {
-          "id": 1159014,
-          "date": "2024-12-09T20:00:00+00:00",
+          "id": 1334446,
+          "date": "2025-04-07T22:00:00+00:00",
+          "venue": {
+            "id": 112,
+            "name": "Estadio José Dellagiovanna",
+            "city": "San Fernando, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744063200
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 452,
+            "name": "Tigre",
+            "logo": "https://media.api-sports.io/football/teams/452.png",
+            "winner": null
+          },
+          "away": {
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334458,
+          "date": "2025-04-12T21:00:00+00:00",
+          "venue": {
+            "id": 44,
+            "name": "Estadio Claudio Fabián Tapia",
+            "city": "Capital Federal, Ciudad de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744491600
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2432,
+            "name": "Barracas Central",
+            "logo": "https://media.api-sports.io/football/teams/2432.png",
+            "winner": null
+          },
+          "away": {
+            "id": 452,
+            "name": "Tigre",
+            "logo": "https://media.api-sports.io/football/teams/452.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334477,
+          "date": "2025-04-21T22:00:00+00:00",
+          "venue": {
+            "id": 112,
+            "name": "Estadio José Dellagiovanna",
+            "city": "San Fernando, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745272800
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 452,
+            "name": "Tigre",
+            "logo": "https://media.api-sports.io/football/teams/452.png",
+            "winner": null
+          },
+          "away": {
+            "id": 440,
+            "name": "Belgrano Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/440.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334487,
+          "date": "2025-04-28T22:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jorge Luis Hirschi",
+            "city": "La Plata, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745879400
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 450,
+            "name": "Estudiantes L.P.",
+            "logo": "https://media.api-sports.io/football/teams/450.png",
+            "winner": null
+          },
+          "away": {
+            "id": 452,
+            "name": "Tigre",
+            "logo": "https://media.api-sports.io/football/teams/452.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1330774,
+          "date": "2025-03-22T22:15:00+00:00",
+          "venue": {
+            "id": 65,
+            "name": "Estadio Nuevo Francisco Urbano",
+            "city": "Morón, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1742681700
+        },
+        "league": {
+          "id": 130,
+          "name": "Copa Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/130.png"
+        },
+        "teams": {
+          "home": {
+            "id": 452,
+            "name": "Tigre",
+            "logo": "https://media.api-sports.io/football/teams/452.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8382,
+            "name": "Berazategui",
+            "logo": "https://media.api-sports.io/football/teams/8382.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334424,
+          "date": "2025-03-17T22:00:00+00:00",
           "venue": {
             "id": 112,
             "name": "Estadio José Dellagiovanna",
@@ -220,9 +516,9 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 4
+            "extra": 6
           },
-          "timestamp": 1733774400
+          "timestamp": 1742248800
         },
         "league": {
           "id": 128,
@@ -237,9 +533,68 @@
             "winner": false
           },
           "away": {
-            "id": 473,
-            "name": "Independ. Rivadavia",
-            "logo": "https://media.api-sports.io/football/teams/473.png",
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334405,
+          "date": "2025-03-09T20:00:00+00:00",
+          "venue": {
+            "id": 33,
+            "name": "Estadio José María Minella",
+            "city": "Mar del Plata, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1741550400
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 463,
+            "name": "Aldosivi",
+            "logo": "https://media.api-sports.io/football/teams/463.png",
+            "winner": false
+          },
+          "away": {
+            "id": 452,
+            "name": "Tigre",
+            "logo": "https://media.api-sports.io/football/teams/452.png",
             "winner": true
           }
         },
@@ -268,20 +623,20 @@
       },
       {
         "fixture": {
-          "id": 1159005,
-          "date": "2024-12-02T20:00:00+00:00",
+          "id": 1334388,
+          "date": "2025-03-02T00:30:00+00:00",
           "venue": {
-            "id": 88,
-            "name": "Estadio Ciudad de Lanús - Néstor Díaz Pérez",
-            "city": "Lanús, Provincia de Buenos Aires"
+            "id": 110,
+            "name": "Estadio Mario Alberto Kempes",
+            "city": "Ciudad de Córdoba, Provincia de Córdoba"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 6
+            "extra": 8
           },
-          "timestamp": 1733169600
+          "timestamp": 1740875400
         },
         "league": {
           "id": 128,
@@ -290,30 +645,30 @@
         },
         "teams": {
           "home": {
-            "id": 2432,
-            "name": "Barracas Central",
-            "logo": "https://media.api-sports.io/football/teams/2432.png",
-            "winner": null
+            "id": 456,
+            "name": "Talleres Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/456.png",
+            "winner": false
           },
           "away": {
             "id": 452,
             "name": "Tigre",
             "logo": "https://media.api-sports.io/football/teams/452.png",
-            "winner": null
+            "winner": true
           }
         },
         "goals": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 2
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 0
+            "home": 1,
+            "away": 1
           },
           "fulltime": {
-            "home": 0,
-            "away": 0
+            "home": 1,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -327,8 +682,8 @@
       },
       {
         "fixture": {
-          "id": 1158987,
-          "date": "2024-11-23T22:30:00+00:00",
+          "id": 1334381,
+          "date": "2025-02-25T00:00:00+00:00",
           "venue": {
             "id": 112,
             "name": "Estadio José Dellagiovanna",
@@ -338,9 +693,9 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 5
+            "extra": 6
           },
-          "timestamp": 1732401000
+          "timestamp": 1740441600
         },
         "league": {
           "id": 128,
@@ -352,77 +707,18 @@
             "id": 452,
             "name": "Tigre",
             "logo": "https://media.api-sports.io/football/teams/452.png",
-            "winner": null
+            "winner": true
           },
           "away": {
-            "id": 478,
-            "name": "Instituto Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/478.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158976,
-          "date": "2024-11-18T20:00:00+00:00",
-          "venue": {
-            "id": 43,
-            "name": "Estadio Florencio Solá",
-            "city": "Lomas de Zamora, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1731960000
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
             "id": 449,
             "name": "Banfield",
             "logo": "https://media.api-sports.io/football/teams/449.png",
             "winner": false
-          },
-          "away": {
-            "id": 452,
-            "name": "Tigre",
-            "logo": "https://media.api-sports.io/football/teams/452.png",
-            "winner": true
           }
         },
         "goals": {
-          "home": 0,
-          "away": 1
+          "home": 1,
+          "away": 0
         },
         "score": {
           "halftime": {
@@ -430,8 +726,8 @@
             "away": 0
           },
           "fulltime": {
-            "home": 0,
-            "away": 1
+            "home": 1,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -445,20 +741,20 @@
       },
       {
         "fixture": {
-          "id": 1158960,
-          "date": "2024-11-11T21:45:00+00:00",
+          "id": 1334356,
+          "date": "2025-02-15T22:15:00+00:00",
           "venue": {
-            "id": 112,
-            "name": "Estadio José Dellagiovanna",
-            "city": "San Fernando, Provincia de Buenos Aires"
+            "id": 83,
+            "name": "Estadio Juan Bautista Gargantini",
+            "city": "Mendoza, Provincia de Mendoza"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 3
+            "extra": 4
           },
-          "timestamp": 1731361500
+          "timestamp": 1739657700
         },
         "league": {
           "id": 128,
@@ -467,29 +763,29 @@
         },
         "teams": {
           "home": {
-            "id": 452,
-            "name": "Tigre",
-            "logo": "https://media.api-sports.io/football/teams/452.png",
+            "id": 473,
+            "name": "Independ. Rivadavia",
+            "logo": "https://media.api-sports.io/football/teams/473.png",
             "winner": false
           },
           "away": {
-            "id": 442,
-            "name": "Defensa Y Justicia",
-            "logo": "https://media.api-sports.io/football/teams/442.png",
+            "id": 452,
+            "name": "Tigre",
+            "logo": "https://media.api-sports.io/football/teams/452.png",
             "winner": true
           }
         },
         "goals": {
-          "home": 0,
+          "home": 1,
           "away": 4
         },
         "score": {
           "halftime": {
             "home": 0,
-            "away": 0
+            "away": 2
           },
           "fulltime": {
-            "home": 0,
+            "home": 1,
             "away": 4
           },
           "extratime": {
@@ -504,20 +800,79 @@
       },
       {
         "fixture": {
-          "id": 1158947,
-          "date": "2024-11-08T00:15:00+00:00",
+          "id": 1334337,
+          "date": "2025-02-12T01:15:00+00:00",
           "venue": {
-            "id": 115,
-            "name": "Estadio José Amalfitani",
+            "id": 112,
+            "name": "Estadio José Dellagiovanna",
+            "city": "San Fernando, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1739322900
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 452,
+            "name": "Tigre",
+            "logo": "https://media.api-sports.io/football/teams/452.png",
+            "winner": true
+          },
+          "away": {
+            "id": 436,
+            "name": "Racing Club",
+            "logo": "https://media.api-sports.io/football/teams/436.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334326,
+          "date": "2025-02-07T23:00:00+00:00",
+          "venue": {
+            "id": 82,
+            "name": "Estadio Tomás Adolfo Ducó",
             "city": "Capital Federal, Ciudad de Buenos Aires"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 5
+            "extra": null
           },
-          "timestamp": 1731024900
+          "timestamp": 1738969200
         },
         "league": {
           "id": 128,
@@ -526,9 +881,127 @@
         },
         "teams": {
           "home": {
-            "id": 438,
-            "name": "Velez Sarsfield",
-            "logo": "https://media.api-sports.io/football/teams/438.png",
+            "id": 445,
+            "name": "Huracan",
+            "logo": "https://media.api-sports.io/football/teams/445.png",
+            "winner": true
+          },
+          "away": {
+            "id": 452,
+            "name": "Tigre",
+            "logo": "https://media.api-sports.io/football/teams/452.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334315,
+          "date": "2025-02-03T22:15:00+00:00",
+          "venue": {
+            "id": 112,
+            "name": "Estadio José Dellagiovanna",
+            "city": "San Fernando, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1738620900
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 452,
+            "name": "Tigre",
+            "logo": "https://media.api-sports.io/football/teams/452.png",
+            "winner": true
+          },
+          "away": {
+            "id": 441,
+            "name": "Union Santa Fe",
+            "logo": "https://media.api-sports.io/football/teams/441.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334305,
+          "date": "2025-01-31T00:30:00+00:00",
+          "venue": {
+            "id": 37,
+            "name": "Estadio Diego Armando Maradona",
+            "city": "Capital Federal, Ciudad de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1738283400
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 458,
+            "name": "Argentinos JRS",
+            "logo": "https://media.api-sports.io/football/teams/458.png",
             "winner": true
           },
           "away": {
@@ -544,188 +1017,11 @@
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158933,
-          "date": "2024-11-03T20:00:00+00:00",
-          "venue": {
-            "id": 112,
-            "name": "Estadio José Dellagiovanna",
-            "city": "San Fernando, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730664000
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 452,
-            "name": "Tigre",
-            "logo": "https://media.api-sports.io/football/teams/452.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1064,
-            "name": "Platense",
-            "logo": "https://media.api-sports.io/football/teams/1064.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158918,
-          "date": "2024-10-28T00:15:00+00:00",
-          "venue": {
-            "id": 110,
-            "name": "Estadio Mario Alberto Kempes",
-            "city": "Ciudad de Córdoba, Provincia de Córdoba"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730074500
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 456,
-            "name": "Talleres Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/456.png",
-            "winner": null
-          },
-          "away": {
-            "id": 452,
-            "name": "Tigre",
-            "logo": "https://media.api-sports.io/football/teams/452.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158906,
-          "date": "2024-10-19T22:15:00+00:00",
-          "venue": {
-            "id": 112,
-            "name": "Estadio José Dellagiovanna",
-            "city": "San Fernando, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1729376100
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 452,
-            "name": "Tigre",
-            "logo": "https://media.api-sports.io/football/teams/452.png",
-            "winner": true
-          },
-          "away": {
-            "id": 451,
-            "name": "Boca Juniors",
-            "logo": "https://media.api-sports.io/football/teams/451.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
             "home": 1,
             "away": 0
           },
           "fulltime": {
-            "home": 3,
+            "home": 1,
             "away": 0
           },
           "extratime": {
@@ -742,24 +1038,24 @@
   },
   "statistics": {
     "league": {
-      "id": 130,
-      "name": "Copa Argentina",
-      "country": "Argentina",
-      "logo": "https://media.api-sports.io/football/leagues/130.png",
-      "flag": "https://media.api-sports.io/flags/ar.svg",
-      "season": 2024
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
+      "flag": null,
+      "season": null
     },
     "team": {
       "id": 452,
       "name": "Tigre",
       "logo": "https://media.api-sports.io/football/teams/452.png"
     },
-    "form": "D",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -767,9 +1063,9 @@
         "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -780,14 +1076,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -803,8 +1099,8 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -825,37 +1121,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -871,8 +1167,8 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -893,24 +1189,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       }
@@ -918,7 +1214,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
@@ -931,11 +1227,11 @@
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 1,
+          "home": 0,
           "away": 0
         }
       }
@@ -977,8 +1273,8 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
@@ -1011,8 +1307,8 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
@@ -1033,5 +1329,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:00.799Z"
+  "lastUpdated": "2025-03-27T10:37:42.572Z"
 }

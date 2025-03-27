@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 860,
+        "name": "Arab Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/860.png"
       },
       "country": {
         "name": "World",
@@ -34,10 +34,47 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2021,
+          "start": "2021-06-19",
+          "end": "2021-12-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2022,
+          "start": "2022-11-20",
+          "end": "2022-12-18",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -45,7 +82,44 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 7,
+        "name": "Asian Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/7.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2024-01-12",
+          "end": "2024-02-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
@@ -93,6 +167,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 30,
+        "name": "World Cup - Qualification Asia",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/30.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2023-10-12",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -112,6 +223,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1218549,
+          "date": "2025-03-25T10:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Saitama Stadium 2002",
+            "city": "Saitama"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1742898900
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 12,
+            "name": "Japan",
+            "logo": "https://media.api-sports.io/football/teams/12.png",
+            "winner": null
+          },
+          "away": {
+            "id": 23,
+            "name": "Saudi Arabia",
+            "logo": "https://media.api-sports.io/football/teams/23.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1218540,
+          "date": "2025-03-20T18:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Al-Awwal Park",
+            "city": "Riyadh"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1742494500
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 23,
+            "name": "Saudi Arabia",
+            "logo": "https://media.api-sports.io/football/teams/23.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1566,
+            "name": "China",
+            "logo": "https://media.api-sports.io/football/teams/1566.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1330493,
@@ -409,37 +638,37 @@
       },
       {
         "fixture": {
-          "id": 1155257,
-          "date": "2024-01-10T15:30:00+00:00",
+          "id": 1218533,
+          "date": "2024-11-19T12:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": "Saoud Bin Abdulrahman Stadium",
-            "city": "Al-Wakra"
+            "id": 21414,
+            "name": "Gelora Bung Karno Stadium",
+            "city": "Jakarta"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 10
           },
-          "timestamp": 1704900600
+          "timestamp": 1732017600
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
         },
         "teams": {
           "home": {
-            "id": 23,
-            "name": "Saudi Arabia",
-            "logo": "https://media.api-sports.io/football/teams/23.png",
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
             "winner": true
           },
           "away": {
-            "id": 4460,
-            "name": "Hong Kong",
-            "logo": "https://media.api-sports.io/football/teams/4460.png",
+            "id": 23,
+            "name": "Saudi Arabia",
+            "logo": "https://media.api-sports.io/football/teams/23.png",
             "winner": false
           }
         },
@@ -449,8 +678,8 @@
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
             "home": 2,
@@ -468,12 +697,12 @@
       },
       {
         "fixture": {
-          "id": 1155255,
-          "date": "2024-01-09T15:30:00+00:00",
+          "id": 1218524,
+          "date": "2024-11-14T09:10:00+00:00",
           "venue": {
-            "id": null,
-            "name": "Saoud Bin Abdulrahman Stadium",
-            "city": "Al-Wakra"
+            "id": 20807,
+            "name": "AAMI Park",
+            "city": "Melbourne"
           },
           "status": {
             "long": "Match Finished",
@@ -481,24 +710,24 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1704814200
+          "timestamp": 1731575400
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
         },
         "teams": {
           "home": {
-            "id": 23,
-            "name": "Saudi Arabia",
-            "logo": "https://media.api-sports.io/football/teams/23.png",
+            "id": 20,
+            "name": "Australia",
+            "logo": "https://media.api-sports.io/football/teams/20.png",
             "winner": null
           },
           "away": {
-            "id": 1562,
-            "name": "Palestine",
-            "logo": "https://media.api-sports.io/football/teams/1562.png",
+            "id": 23,
+            "name": "Saudi Arabia",
+            "logo": "https://media.api-sports.io/football/teams/23.png",
             "winner": null
           }
         },
@@ -508,8 +737,8 @@
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
             "home": 0,
@@ -527,51 +756,51 @@
       },
       {
         "fixture": {
-          "id": 1155237,
-          "date": "2024-01-04T13:30:00+00:00",
+          "id": 1218514,
+          "date": "2024-10-15T18:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": "Saoud Bin Abdulrahman Stadium",
-            "city": "Al-Wakra"
+            "id": 1364,
+            "name": "King Abdullah Sports City",
+            "city": "Jeddah"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 14
           },
-          "timestamp": 1704375000
+          "timestamp": 1729015200
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
         },
         "teams": {
           "home": {
             "id": 23,
             "name": "Saudi Arabia",
             "logo": "https://media.api-sports.io/football/teams/23.png",
-            "winner": true
+            "winner": null
           },
           "away": {
-            "id": 1551,
-            "name": "Lebanon",
-            "logo": "https://media.api-sports.io/football/teams/1551.png",
-            "winner": false
+            "id": 1547,
+            "name": "Bahrain",
+            "logo": "https://media.api-sports.io/football/teams/1547.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 1,
+          "home": 0,
           "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": 1,
+            "home": 0,
             "away": 0
           },
           "extratime": {
@@ -588,34 +817,34 @@
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 23,
       "name": "Saudi Arabia",
       "logo": "https://media.api-sports.io/football/teams/23.png"
     },
-    "form": "WDWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 4,
+        "home": 0,
         "away": 0,
-        "total": 4
+        "total": 0
       },
       "wins": {
-        "home": 3,
+        "home": 0,
         "away": 0,
-        "total": 3
+        "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -626,14 +855,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 6,
+          "home": 0,
           "away": 0,
-          "total": 6
+          "total": 0
         },
         "average": {
-          "home": "1.5",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.5"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -649,8 +878,8 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -671,37 +900,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "0.3",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.3"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -739,36 +968,36 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
-        "draws": 1,
+        "wins": 0,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "3-1",
+        "home": null,
         "away": null
       },
       "loses": {
@@ -777,24 +1006,24 @@
       },
       "goals": {
         "for": {
-          "home": 3,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 1,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 3,
+      "home": 0,
       "away": 0,
-      "total": 3
+      "total": 0
     },
     "failed_to_score": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -879,5 +1108,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:08.542Z"
+  "lastUpdated": "2025-03-27T10:39:54.440Z"
 }

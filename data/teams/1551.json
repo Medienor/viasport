@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 860,
+        "name": "Arab Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/860.png"
       },
       "country": {
         "name": "World",
@@ -34,10 +34,84 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2021,
+          "start": "2021-06-19",
+          "end": "2021-12-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 28,
+        "name": "SAFF Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/28.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-06-21",
+          "end": "2023-07-04",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 7,
+        "name": "Asian Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/7.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2024-01-12",
+          "end": "2024-02-10",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -45,7 +119,7 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
@@ -89,7 +163,81 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 30,
+        "name": "World Cup - Qualification Asia",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/30.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2023-10-12",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -108,7 +256,8 @@
     2026
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1321303,
@@ -119,10 +268,10 @@
             "city": "Al-Wakra"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
           },
           "timestamp": 1742927400
         },
@@ -136,27 +285,27 @@
             "id": 1551,
             "name": "Lebanon",
             "logo": "https://media.api-sports.io/football/teams/1551.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 5538,
             "name": "Brunei",
             "logo": "https://media.api-sports.io/football/teams/5538.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 5,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 4,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 5,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -170,52 +319,52 @@
       },
       {
         "fixture": {
-          "id": 1321314,
-          "date": "2025-06-10T00:00:00+00:00",
+          "id": 1361551,
+          "date": "2025-03-20T18:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 1301,
+            "name": "Al-Khwar Stadium",
+            "city": "Al-Khor"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
           },
-          "timestamp": 1749513600
+          "timestamp": 1742493600
         },
         "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
         },
         "teams": {
           "home": {
-            "id": 1550,
-            "name": "Yemen",
-            "logo": "https://media.api-sports.io/football/teams/1550.png",
-            "winner": null
-          },
-          "away": {
             "id": 1551,
             "name": "Lebanon",
             "logo": "https://media.api-sports.io/football/teams/1551.png",
-            "winner": null
+            "winner": true
+          },
+          "away": {
+            "id": 5537,
+            "name": "Timor-Leste",
+            "logo": "https://media.api-sports.io/football/teams/5537.png",
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 4,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -227,244 +376,6 @@
           }
         }
       },
-      {
-        "fixture": {
-          "id": 1321324,
-          "date": "2025-10-09T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1759968000
-        },
-        "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1551,
-            "name": "Lebanon",
-            "logo": "https://media.api-sports.io/football/teams/1551.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1540,
-            "name": "Bhutan",
-            "logo": "https://media.api-sports.io/football/teams/1540.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1321334,
-          "date": "2025-10-14T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1760400000
-        },
-        "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1540,
-            "name": "Bhutan",
-            "logo": "https://media.api-sports.io/football/teams/1540.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1551,
-            "name": "Lebanon",
-            "logo": "https://media.api-sports.io/football/teams/1551.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1321343,
-          "date": "2025-11-18T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1763424000
-        },
-        "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5538,
-            "name": "Brunei",
-            "logo": "https://media.api-sports.io/football/teams/5538.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1551,
-            "name": "Lebanon",
-            "logo": "https://media.api-sports.io/football/teams/1551.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1321353,
-          "date": "2026-03-31T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1774915200
-        },
-        "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1551,
-            "name": "Lebanon",
-            "logo": "https://media.api-sports.io/football/teams/1551.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1550,
-            "name": "Yemen",
-            "logo": "https://media.api-sports.io/football/teams/1550.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      }
-    ],
-    "past": [
       {
         "fixture": {
           "id": 1321855,
@@ -821,12 +732,12 @@
       },
       {
         "fixture": {
-          "id": 1155237,
-          "date": "2024-01-04T13:30:00+00:00",
+          "id": 1139139,
+          "date": "2024-06-11T16:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Saoud Bin Abdulrahman Stadium",
-            "city": "Al-Wakra"
+            "name": "Jassim Bin Hamad Stadium",
+            "city": "Doha"
           },
           "status": {
             "long": "Match Finished",
@@ -834,38 +745,97 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1704375000
+          "timestamp": 1718121600
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
         },
         "teams": {
           "home": {
-            "id": 23,
-            "name": "Saudi Arabia",
-            "logo": "https://media.api-sports.io/football/teams/23.png",
+            "id": 1551,
+            "name": "Lebanon",
+            "logo": "https://media.api-sports.io/football/teams/1551.png",
             "winner": true
+          },
+          "away": {
+            "id": 1560,
+            "name": "Bangladesh",
+            "logo": "https://media.api-sports.io/football/teams/1560.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100363,
+          "date": "2024-06-06T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jassim Bin Hamad Stadium",
+            "city": "Doha"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717689600
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1562,
+            "name": "Palestine",
+            "logo": "https://media.api-sports.io/football/teams/1562.png",
+            "winner": null
           },
           "away": {
             "id": 1551,
             "name": "Lebanon",
             "logo": "https://media.api-sports.io/football/teams/1551.png",
-            "winner": false
+            "winner": null
           }
         },
         "goals": {
-          "home": 1,
+          "home": 0,
           "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": 1,
+            "home": 0,
             "away": 0
           },
           "extratime": {
@@ -882,77 +852,77 @@
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1551,
       "name": "Lebanon",
       "logo": "https://media.api-sports.io/football/teams/1551.png"
     },
-    "form": "LWLDWWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 6,
-        "total": 7
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
-        "away": 3,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 1,
-          "away": 7,
-          "total": 8
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "1.2",
-          "total": "1.1"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 3,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -965,54 +935,54 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 7
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 7
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 5,
-          "total": 5
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "0.8",
-          "total": "0.7"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -1033,62 +1003,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 7
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 7
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 7
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
-        "draws": 1,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "1-0",
-        "away": "0-2"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
-        "away": "1-0"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 1,
-          "away": 3
+          "home": 0,
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 2
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 2,
-      "total": 3
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 3,
-      "total": 3
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1101,12 +1071,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-2-3-1",
-        "played": 3
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1122,16 +1087,16 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1178,5 +1143,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:37.994Z"
+  "lastUpdated": "2025-03-27T10:40:24.786Z"
 }

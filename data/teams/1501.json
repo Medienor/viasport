@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 19,
+        "name": "African Nations Championship",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/19.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2022,
+          "start": "2023-01-13",
+          "end": "2023-02-04",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -53,6 +53,43 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 29,
+        "name": "World Cup - Qualification Africa",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/29.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-11-13",
+          "end": "2025-10-13",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -93,6 +130,117 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 36,
+        "name": "Africa Cup of Nations - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/36.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2024-03-20",
+          "end": "2024-11-19",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 6,
+        "name": "Africa Cup of Nations",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/6.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-12-21",
+          "end": "2025-12-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -111,8 +259,245 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1364923,
+          "date": "2025-06-07T23:00:00+00:00",
+          "venue": {
+            "id": 312,
+            "name": "BMO Field",
+            "city": "Toronto, Ontario"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749337200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4673,
+            "name": "New Zealand",
+            "logo": "https://media.api-sports.io/football/teams/4673.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1501,
+            "name": "Ivory Coast",
+            "logo": "https://media.api-sports.io/football/teams/1501.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1364925,
+          "date": "2025-06-11T00:30:00+00:00",
+          "venue": {
+            "id": 312,
+            "name": "BMO Field",
+            "city": "Toronto, Ontario"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749601800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5529,
+            "name": "Canada",
+            "logo": "https://media.api-sports.io/football/teams/5529.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1501,
+            "name": "Ivory Coast",
+            "logo": "https://media.api-sports.io/football/teams/1501.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1125997,
+          "date": "2025-03-24T19:00:00+00:00",
+          "venue": {
+            "id": 411,
+            "name": "Stade Félix Houphouët-Boigny",
+            "city": "Abidjan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1742842800
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1501,
+            "name": "Ivory Coast",
+            "logo": "https://media.api-sports.io/football/teams/1501.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1492,
+            "name": "Gambia",
+            "logo": "https://media.api-sports.io/football/teams/1492.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1125971,
+          "date": "2025-03-21T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade d'Honneur",
+            "city": "Meknes"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742583600
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1528,
+            "name": "Burundi",
+            "logo": "https://media.api-sports.io/football/teams/1528.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1501,
+            "name": "Ivory Coast",
+            "logo": "https://media.api-sports.io/football/teams/1501.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1313999,
@@ -174,25 +559,25 @@
       },
       {
         "fixture": {
-          "id": 1180735,
-          "date": "2024-03-26T19:30:00+00:00",
+          "id": 1232538,
+          "date": "2024-11-19T16:00:00+00:00",
           "venue": {
-            "id": 654,
-            "name": "Stade Bollaert-Delelis",
-            "city": "Lens"
+            "id": 411,
+            "name": "Stade Félix Houphouët-Boigny",
+            "city": "Abidjan"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 5
           },
-          "timestamp": 1711481400
+          "timestamp": 1732032000
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
@@ -202,15 +587,74 @@
             "winner": true
           },
           "away": {
-            "id": 7,
-            "name": "Uruguay",
-            "logo": "https://media.api-sports.io/football/teams/7.png",
+            "id": 1523,
+            "name": "Chad",
+            "logo": "https://media.api-sports.io/football/teams/1523.png",
             "winner": false
           }
         },
         "goals": {
-          "home": 2,
-          "away": 1
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232513,
+          "date": "2024-11-15T16:00:00+00:00",
+          "venue": {
+            "id": 3930,
+            "name": "Levy Mwanawasa Stadium",
+            "city": "Ndola"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1731686400
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1507,
+            "name": "Zambia",
+            "logo": "https://media.api-sports.io/football/teams/1507.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1501,
+            "name": "Ivory Coast",
+            "logo": "https://media.api-sports.io/football/teams/1501.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
         },
         "score": {
           "halftime": {
@@ -218,8 +662,8 @@
             "away": 0
           },
           "fulltime": {
-            "home": 2,
-            "away": 1
+            "home": 1,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -233,52 +677,52 @@
       },
       {
         "fixture": {
-          "id": 1182074,
-          "date": "2024-03-23T16:00:00+00:00",
+          "id": 1232489,
+          "date": "2024-10-15T16:00:00+00:00",
           "venue": {
-            "id": 633,
-            "name": "Stade Crédit Agricole de la Licorne",
-            "city": "Amiens"
+            "id": 20323,
+            "name": "Samuel Kanyon Doe Stadium",
+            "city": "Monrovia"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 7
           },
-          "timestamp": 1711209600
+          "timestamp": 1729008000
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
+            "id": 1499,
+            "name": "Sierra Leone",
+            "logo": "https://media.api-sports.io/football/teams/1499.png",
+            "winner": true
+          },
+          "away": {
             "id": 1501,
             "name": "Ivory Coast",
             "logo": "https://media.api-sports.io/football/teams/1501.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1516,
-            "name": "Benin",
-            "logo": "https://media.api-sports.io/football/teams/1516.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": 2,
-          "away": 2
+          "home": 1,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 1
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": 2,
-            "away": 2
+            "home": 1,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -292,8 +736,8 @@
       },
       {
         "fixture": {
-          "id": 1155243,
-          "date": "2024-01-06T17:00:00+00:00",
+          "id": 1232465,
+          "date": "2024-10-11T19:00:00+00:00",
           "venue": {
             "id": null,
             "name": "Stade Laurent Pokou",
@@ -303,14 +747,14 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 4
           },
-          "timestamp": 1704560400
+          "timestamp": 1728673200
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
@@ -327,17 +771,194 @@
           }
         },
         "goals": {
-          "home": 5,
+          "home": 4,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 3,
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232442,
+          "date": "2024-09-10T19:00:00+00:00",
+          "venue": {
+            "id": 308,
+            "name": "Stade Omnisport Ahmadou Ahidjo",
+            "city": "Yaoundé"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725994800
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1523,
+            "name": "Chad",
+            "logo": "https://media.api-sports.io/football/teams/1523.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1501,
+            "name": "Ivory Coast",
+            "logo": "https://media.api-sports.io/football/teams/1501.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232417,
+          "date": "2024-09-06T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Bouaké",
+            "city": "Bouaké"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725649200
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1501,
+            "name": "Ivory Coast",
+            "logo": "https://media.api-sports.io/football/teams/1501.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1507,
+            "name": "Zambia",
+            "logo": "https://media.api-sports.io/football/teams/1507.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
             "away": 0
           },
           "fulltime": {
-            "home": 5,
-            "away": 1
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1125943,
+          "date": "2024-06-11T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Bingu National Stadium",
+            "city": "Lilongwe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1718110800
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1511,
+            "name": "Kenya",
+            "logo": "https://media.api-sports.io/football/teams/1511.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1501,
+            "name": "Ivory Coast",
+            "logo": "https://media.api-sports.io/football/teams/1501.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -353,34 +974,34 @@
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1501,
       "name": "Ivory Coast",
       "logo": "https://media.api-sports.io/football/teams/1501.png"
     },
-    "form": "WDW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 3,
+        "home": 0,
         "away": 0,
-        "total": 3
+        "total": 0
       },
       "wins": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -391,14 +1012,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 9,
+          "home": 0,
           "away": 0,
-          "total": 9
+          "total": 0
         },
         "average": {
-          "home": "3.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "3.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -406,24 +1027,24 @@
             "percentage": null
           },
           "16-30": {
-            "total": 2,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -436,42 +1057,42 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
+          "home": 0,
           "away": 0,
-          "total": 4
+          "total": 0
         },
         "average": {
-          "home": "1.3",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.3"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -482,16 +1103,16 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -504,36 +1125,36 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
-        "draws": 1,
+        "wins": 0,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "5-1",
+        "home": null,
         "away": null
       },
       "loses": {
@@ -542,11 +1163,11 @@
       },
       "goals": {
         "for": {
-          "home": 5,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 2,
+          "home": 0,
           "away": 0
         }
       }
@@ -572,12 +1193,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-2-3-1",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -597,12 +1213,12 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -649,5 +1265,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:15.838Z"
+  "lastUpdated": "2025-03-27T10:40:02.101Z"
 }

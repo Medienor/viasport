@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 848,
         "name": "UEFA Europa Conference League",
         "type": "Cup",
@@ -164,6 +127,43 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -952,25 +952,25 @@
       },
       {
         "fixture": {
-          "id": 1210527,
-          "date": "2024-12-14T18:00:00+00:00",
+          "id": 1337978,
+          "date": "2025-01-24T00:00:00+00:00",
           "venue": {
-            "id": 2495,
-            "name": "Městský stadion - Vítkovice Aréna",
-            "city": "Ostrava"
+            "id": null,
+            "name": "Gloria Sports Arena",
+            "city": "Belek"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 5
+            "extra": null
           },
-          "timestamp": 1734199200
+          "timestamp": 1737676800
         },
         "league": {
-          "id": 345,
-          "name": "Czech Liga",
-          "logo": "https://media.api-sports.io/football/leagues/345.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
@@ -980,24 +980,24 @@
             "winner": true
           },
           "away": {
-            "id": 3719,
-            "name": "Slovácko",
-            "logo": "https://media.api-sports.io/football/teams/3719.png",
+            "id": 3619,
+            "name": "Oleksandria",
+            "logo": "https://media.api-sports.io/football/teams/3619.png",
             "winner": false
           }
         },
         "goals": {
-          "home": 3,
-          "away": 1
+          "home": 2,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": 2,
+            "home": 1,
             "away": 0
           },
           "fulltime": {
-            "home": 3,
-            "away": 1
+            "home": 2,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -1011,51 +1011,51 @@
       },
       {
         "fixture": {
-          "id": 1210520,
-          "date": "2024-12-08T17:30:00+00:00",
+          "id": 1337113,
+          "date": "2025-01-21T00:00:00+00:00",
           "venue": {
-            "id": 20749,
-            "name": "Malšovická Aréna",
-            "city": "Hradec Králové"
+            "id": null,
+            "name": "Susesi Sport Center A",
+            "city": "Belek"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 7
+            "extra": null
           },
-          "timestamp": 1733679000
+          "timestamp": 1737417600
         },
         "league": {
-          "id": 345,
-          "name": "Czech Liga",
-          "logo": "https://media.api-sports.io/football/leagues/345.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
-            "id": 3723,
-            "name": "Hradec Králové",
-            "logo": "https://media.api-sports.io/football/teams/3723.png",
-            "winner": false
+            "id": 346,
+            "name": "Korona Kielce",
+            "logo": "https://media.api-sports.io/football/teams/346.png",
+            "winner": true
           },
           "away": {
             "id": 3713,
             "name": "Baník Ostrava",
             "logo": "https://media.api-sports.io/football/teams/3713.png",
-            "winner": true
+            "winner": false
           }
         },
         "goals": {
-          "home": 0,
+          "home": 3,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 0
           },
           "fulltime": {
-            "home": 0,
+            "home": 3,
             "away": 1
           },
           "extratime": {
@@ -1072,77 +1072,77 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 3713,
       "name": "Baník Ostrava",
       "logo": "https://media.api-sports.io/football/teams/3713.png"
     },
-    "form": "DWWWWDDDLLLLW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 8,
-        "away": 5,
-        "total": 13
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 4,
-        "away": 1,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 2,
-        "away": 2,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 2,
-        "away": 2,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 14,
-          "away": 7,
-          "total": 21
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.8",
-          "away": "1.4",
-          "total": "1.6"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 3,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 6,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 3,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": 3,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1155,37 +1155,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 10,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 6,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 5,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 13
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 13
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 12,
-          "away": 7,
-          "total": 19
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.5",
-          "away": "1.4",
-          "total": "1.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1193,24 +1193,24 @@
             "percentage": null
           },
           "16-30": {
-            "total": 4,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 3,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1223,80 +1223,75 @@
         },
         "under_over": {
           "0.5": {
-            "over": 11,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 7,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 12
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 13
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 13
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 4,
-        "draws": 3,
-        "loses": 4
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "3-1",
-        "away": "0-3"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "0-3",
-        "away": "2-0"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 3
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
-          "away": 2
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 2,
-      "away": 1,
-      "total": 3
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-1-4-1",
-        "played": 3
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1304,8 +1299,8 @@
           "percentage": null
         },
         "16-30": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
           "total": null,
@@ -1320,8 +1315,8 @@
           "percentage": null
         },
         "76-90": {
-          "total": 3,
-          "percentage": "75.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1368,5 +1363,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:24.817Z"
+  "lastUpdated": "2025-03-27T10:39:08.582Z"
 }

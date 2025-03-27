@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 848,
         "name": "UEFA Europa Conference League",
         "type": "Cup",
@@ -164,6 +127,43 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -332,419 +332,6 @@
             "id": 4360,
             "name": "Celje",
             "logo": "https://media.api-sports.io/football/teams/4360.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1220738,
-          "date": "2025-04-09T00:00:00+00:00",
-          "venue": {
-            "id": 3336,
-            "name": "Športni Park",
-            "city": "Nova Gorica"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744156800
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14007,
-            "name": "Primorje",
-            "logo": "https://media.api-sports.io/football/teams/14007.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4359,
-            "name": "Bravo",
-            "logo": "https://media.api-sports.io/football/teams/4359.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1220743,
-          "date": "2025-04-12T00:00:00+00:00",
-          "venue": {
-            "id": 11939,
-            "name": "Športni Park Šiška",
-            "city": "Ljubljana"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744416000
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4359,
-            "name": "Bravo",
-            "logo": "https://media.api-sports.io/football/teams/4359.png",
-            "winner": null
-          },
-          "away": {
-            "id": 552,
-            "name": "Maribor",
-            "logo": "https://media.api-sports.io/football/teams/552.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1220748,
-          "date": "2025-04-19T00:00:00+00:00",
-          "venue": {
-            "id": 3346,
-            "name": "ŠRC Bonifika",
-            "city": "Koper"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745020800
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4374,
-            "name": "Koper",
-            "logo": "https://media.api-sports.io/football/teams/4374.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4359,
-            "name": "Bravo",
-            "logo": "https://media.api-sports.io/football/teams/4359.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1220753,
-          "date": "2025-04-26T00:00:00+00:00",
-          "venue": {
-            "id": 11939,
-            "name": "Športni Park Šiška",
-            "city": "Ljubljana"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745625600
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4359,
-            "name": "Bravo",
-            "logo": "https://media.api-sports.io/football/teams/4359.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4197,
-            "name": "Mura",
-            "logo": "https://media.api-sports.io/football/teams/4197.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1220758,
-          "date": "2025-05-03T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746230400
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4376,
-            "name": "Nafta",
-            "logo": "https://media.api-sports.io/football/teams/4376.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4359,
-            "name": "Bravo",
-            "logo": "https://media.api-sports.io/football/teams/4359.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1220763,
-          "date": "2025-05-10T00:00:00+00:00",
-          "venue": {
-            "id": 11939,
-            "name": "Športni Park Šiška",
-            "city": "Ljubljana"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746835200
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4359,
-            "name": "Bravo",
-            "logo": "https://media.api-sports.io/football/teams/4359.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4378,
-            "name": "Radomlje",
-            "logo": "https://media.api-sports.io/football/teams/4378.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1220768,
-          "date": "2025-05-17T00:00:00+00:00",
-          "venue": {
-            "id": 1440,
-            "name": "Športni Park",
-            "city": "Domžale"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1747440000
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 615,
-            "name": "NK Domzale",
-            "logo": "https://media.api-sports.io/football/teams/615.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4359,
-            "name": "Bravo",
-            "logo": "https://media.api-sports.io/football/teams/4359.png",
             "winner": null
           }
         },
@@ -1306,25 +893,25 @@
       },
       {
         "fixture": {
-          "id": 1220683,
-          "date": "2024-12-07T16:30:00+00:00",
+          "id": 1337986,
+          "date": "2025-01-24T00:00:00+00:00",
           "venue": {
-            "id": 1442,
-            "name": "Stadion Stožice",
-            "city": "Ljubljana"
+            "id": null,
+            "name": "Sportski Centar Terme Čatež",
+            "city": "Čatež ob Savi"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 4
+            "extra": null
           },
-          "timestamp": 1733589000
+          "timestamp": 1737676800
         },
         "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
@@ -1334,24 +921,24 @@
             "winner": null
           },
           "away": {
-            "id": 677,
-            "name": "Olimpija Ljubljana",
-            "logo": "https://media.api-sports.io/football/teams/677.png",
+            "id": 3632,
+            "name": "Ruh Lviv",
+            "logo": "https://media.api-sports.io/football/teams/3632.png",
             "winner": null
           }
         },
         "goals": {
-          "home": 1,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 1
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": 1,
-            "away": 1
+            "home": 0,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -1367,69 +954,69 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 4359,
       "name": "Bravo",
       "logo": "https://media.api-sports.io/football/teams/4359.png"
     },
-    "form": "DDLWWWWD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 6,
-        "away": 2,
-        "total": 8
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 4,
+        "home": 0,
         "away": 0,
-        "total": 4
+        "total": 0
       },
       "draws": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 10,
-          "away": 1,
-          "total": 11
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.7",
-          "away": "0.5",
-          "total": "1.4"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 4,
-            "percentage": "57.14%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 2,
-            "percentage": "28.57%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -1450,37 +1037,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 6,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
-          "away": 1,
-          "total": 5
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.7",
-          "away": "0.5",
-          "total": "0.6"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1492,16 +1079,16 @@
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -1518,62 +1105,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 4,
-        "draws": 2,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "3-0",
+        "home": null,
         "away": null
       },
       "loses": {
-        "home": "1-2",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 3,
-      "away": 1,
-      "total": 4
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1586,16 +1173,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "3-4-3",
-        "played": 1
-      },
-      {
-        "formation": "4-4-2",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1667,5 +1245,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:29.581Z"
+  "lastUpdated": "2025-03-27T10:39:13.621Z"
 }

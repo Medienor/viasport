@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 770,
+        "name": "Pacific Games",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/770.png"
       },
       "country": {
         "name": "World",
@@ -34,22 +34,22 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2023,
+          "start": "2023-11-17",
+          "end": "2023-12-01",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -93,6 +93,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 33,
+        "name": "World Cup - Qualification Oceania",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/33.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2024-09-05",
+          "end": "2025-03-24",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -108,6 +145,65 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1316045,
+          "date": "2025-03-21T06:00:00+00:00",
+          "venue": {
+            "id": 130,
+            "name": "Sky Stadium",
+            "city": "Wellington"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742536800
+        },
+        "league": {
+          "id": 33,
+          "name": "World Cup - Qualification Oceania",
+          "logo": "https://media.api-sports.io/football/leagues/33.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4673,
+            "name": "New Zealand",
+            "logo": "https://media.api-sports.io/football/teams/4673.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5160,
+            "name": "Fiji",
+            "logo": "https://media.api-sports.io/football/teams/5160.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 7,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 4,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 7,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1327874,
@@ -156,6 +252,183 @@
           "fulltime": {
             "home": 1,
             "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1283602,
+          "date": "2024-11-17T03:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "PNG Football Stadium",
+            "city": "Port Moresby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1731812400
+        },
+        "league": {
+          "id": 33,
+          "name": "World Cup - Qualification Oceania",
+          "logo": "https://media.api-sports.io/football/leagues/33.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5160,
+            "name": "Fiji",
+            "logo": "https://media.api-sports.io/football/teams/5160.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5163,
+            "name": "New Caledonia",
+            "logo": "https://media.api-sports.io/football/teams/5163.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1283600,
+          "date": "2024-11-14T06:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "PNG Football Stadium",
+            "city": "Port Moresby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1731564000
+        },
+        "league": {
+          "id": 33,
+          "name": "World Cup - Qualification Oceania",
+          "logo": "https://media.api-sports.io/football/leagues/33.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8175,
+            "name": "Papua New Guinea",
+            "logo": "https://media.api-sports.io/football/teams/8175.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5160,
+            "name": "Fiji",
+            "logo": "https://media.api-sports.io/football/teams/5160.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1283597,
+          "date": "2024-10-10T07:00:00+00:00",
+          "venue": {
+            "id": 19498,
+            "name": "HFC Bank Stadium",
+            "city": "Suva"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1728543600
+        },
+        "league": {
+          "id": 33,
+          "name": "World Cup - Qualification Oceania",
+          "logo": "https://media.api-sports.io/football/leagues/33.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5165,
+            "name": "Solomon Islands",
+            "logo": "https://media.api-sports.io/football/teams/5165.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5160,
+            "name": "Fiji",
+            "logo": "https://media.api-sports.io/football/teams/5160.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -461,314 +734,78 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1188624,
-          "date": "2024-06-19T07:00:00+00:00",
-          "venue": {
-            "id": 19498,
-            "name": "HFC Bank Stadium",
-            "city": "Suva"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1718780400
-        },
-        "league": {
-          "id": 806,
-          "name": "OFC Nations Cup",
-          "logo": "https://media.api-sports.io/football/leagues/806.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8176,
-            "name": "Samoa",
-            "logo": "https://media.api-sports.io/football/teams/8176.png",
-            "winner": false
-          },
-          "away": {
-            "id": 5160,
-            "name": "Fiji",
-            "logo": "https://media.api-sports.io/football/teams/5160.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 9
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 9
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1171365,
-          "date": "2024-06-16T04:00:00+00:00",
-          "venue": {
-            "id": 19498,
-            "name": "HFC Bank Stadium",
-            "city": "Suva"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1718510400
-        },
-        "league": {
-          "id": 806,
-          "name": "OFC Nations Cup",
-          "logo": "https://media.api-sports.io/football/leagues/806.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8175,
-            "name": "Papua New Guinea",
-            "logo": "https://media.api-sports.io/football/teams/8175.png",
-            "winner": false
-          },
-          "away": {
-            "id": 5160,
-            "name": "Fiji",
-            "logo": "https://media.api-sports.io/football/teams/5160.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 5
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 5
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1184431,
-          "date": "2024-03-21T02:00:00+00:00",
-          "venue": {
-            "id": 3903,
-            "name": "Lawson Tama Stadium",
-            "city": "Honiara"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1710986400
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5165,
-            "name": "Solomon Islands",
-            "logo": "https://media.api-sports.io/football/teams/5165.png",
-            "winner": false
-          },
-          "away": {
-            "id": 5160,
-            "name": "Fiji",
-            "logo": "https://media.api-sports.io/football/teams/5160.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1184430,
-          "date": "2024-03-18T04:00:00+00:00",
-          "venue": {
-            "id": 3903,
-            "name": "Lawson Tama Stadium",
-            "city": "Honiara"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1710734400
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5165,
-            "name": "Solomon Islands",
-            "logo": "https://media.api-sports.io/football/teams/5165.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5160,
-            "name": "Fiji",
-            "logo": "https://media.api-sports.io/football/teams/5160.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 5160,
       "name": "Fiji",
       "logo": "https://media.api-sports.io/football/teams/5160.png"
     },
-    "form": "LWWDW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 4,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 1,
-          "away": 7,
-          "total": 8
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "1.8",
-          "total": "1.6"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -785,37 +822,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 4,
-          "total": 4
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "0.8"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -839,8 +876,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -853,57 +890,57 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 1,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "1-0",
-        "away": "1-3"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
-        "away": "2-1"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 1,
-          "away": 3
+          "home": 0,
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 2
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -993,5 +1030,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:55.100Z"
+  "lastUpdated": "2025-03-27T10:40:42.569Z"
 }

@@ -11,6 +11,17 @@ interface ClientFixturesSectionProps {
   popularLeagueIds: number[];
 }
 
+// Add weekday mapping at the top of the file
+const weekdayToUrl: { [key: string]: string } = {
+  'mandag': 'mandag',
+  'tirsdag': 'tirsdag',
+  'onsdag': 'onsdag',
+  'torsdag': 'torsdag',
+  'fredag': 'fredag',
+  'lørdag': 'lordag',
+  'søndag': 'sondag'
+};
+
 export default function ClientFixturesSection({
   fixtures,
   formattedDates,
@@ -184,8 +195,25 @@ export default function ClientFixturesSection({
               </table>
             </div>
             <div className="px-6 py-4 border-t border-gray-200 bg-gray-50">
-              <Link href="/fotball" className="text-blue-600 font-medium hover:text-blue-500">
-                Se alle kamper {dateKey === 'today' ? 'i dag' : dateKey === 'day1' ? 'i morgen' : formattedDates[dateKey]} 
+              <Link 
+                href={dateKey === 'today' 
+                  ? "/fotball/i-dag"
+                  : dateKey === 'day1' 
+                    ? "/fotball/i-morgen" 
+                    : (() => {
+                        // Get the weekday from the formatted date
+                        const weekday = formattedDates[dateKey].split(' ')[0].toLowerCase();
+                        // Return the URL-friendly weekday path
+                        return `/fotball/${weekdayToUrl[weekday] || ''}`;
+                      })()
+                } 
+                className="text-blue-600 font-medium hover:text-blue-500"
+              >
+                Se alle kamper {dateKey === 'today' 
+                  ? 'i dag' 
+                  : dateKey === 'day1' 
+                    ? 'i morgen' 
+                    : formattedDates[dateKey]} 
                 {totalFixtureCount[dateKey] > MAX_FIXTURES_PER_DAY && 
                   ` (${totalFixtureCount[dateKey] - MAX_FIXTURES_PER_DAY} flere)`
                 }

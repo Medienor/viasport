@@ -22,117 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 292,
-        "name": "K League 1",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/292.png"
-      },
-      "country": {
-        "name": "South-Korea",
-        "code": "KR",
-        "flag": "https://media.api-sports.io/flags/kr.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-01",
-          "end": "2024-11-24",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 294,
-        "name": "FA Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/294.png"
-      },
-      "country": {
-        "name": "South-Korea",
-        "code": "KR",
-        "flag": "https://media.api-sports.io/flags/kr.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-09",
-          "end": "2024-11-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 18,
         "name": "AFC Cup",
         "type": "Cup",
@@ -167,6 +56,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 292,
+        "name": "K League 1",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/292.png"
+      },
+      "country": {
+        "name": "South-Korea",
+        "code": "KR",
+        "flag": "https://media.api-sports.io/flags/kr.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-15",
+          "end": "2025-10-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 294,
+        "name": "FA Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/294.png"
+      },
+      "country": {
+        "name": "South-Korea",
+        "code": "KR",
+        "flag": "https://media.api-sports.io/flags/kr.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-08",
+          "end": "2025-04-16",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -181,8 +144,1248 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1340736,
+          "date": "2025-03-30T07:30:00+00:00",
+          "venue": {
+            "id": 1003,
+            "name": "Anyang Stadium",
+            "city": "Anyang"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743319800
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2748,
+            "name": "FC Anyang",
+            "logo": "https://media.api-sports.io/football/teams/2748.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340739,
+          "date": "2025-04-05T07:30:00+00:00",
+          "venue": {
+            "id": 1008,
+            "name": "Daejeon World Cup Stadium",
+            "city": "Daejeon"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743838200
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2750,
+            "name": "Daejeon Citizen",
+            "logo": "https://media.api-sports.io/football/teams/2750.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340747,
+          "date": "2025-04-13T07:30:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744529400
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2761,
+            "name": "Jeju United FC",
+            "logo": "https://media.api-sports.io/football/teams/2761.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1366114,
+          "date": "2025-04-16T10:00:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744797600
+        },
+        "league": {
+          "id": 294,
+          "name": "FA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/294.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2758,
+            "name": "Ansan Greeners",
+            "logo": "https://media.api-sports.io/football/teams/2758.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340754,
+          "date": "2025-04-20T07:30:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745134200
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2747,
+            "name": "Daegu FC",
+            "logo": "https://media.api-sports.io/football/teams/2747.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340755,
+          "date": "2025-04-26T05:00:00+00:00",
+          "venue": {
+            "id": 1019,
+            "name": "Suwon Sports Complex",
+            "city": "Suwon"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745643600
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2756,
+            "name": "Suwon City FC",
+            "logo": "https://media.api-sports.io/football/teams/2756.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340765,
+          "date": "2025-05-03T10:00:00+00:00",
+          "venue": {
+            "id": 1002,
+            "name": "Seoul World Cup Stadium",
+            "city": "Seoul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746266400
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2766,
+            "name": "FC Seoul",
+            "logo": "https://media.api-sports.io/football/teams/2766.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340769,
+          "date": "2025-05-06T07:30:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746516600
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2750,
+            "name": "Daejeon Citizen",
+            "logo": "https://media.api-sports.io/football/teams/2750.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340778,
+          "date": "2025-05-11T10:00:00+00:00",
+          "venue": {
+            "id": 10498,
+            "name": "Gwangju Football Stadium",
+            "city": "Gwangju"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746957600
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2759,
+            "name": "Gwangju FC",
+            "logo": "https://media.api-sports.io/football/teams/2759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340779,
+          "date": "2025-05-17T07:30:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747467000
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2748,
+            "name": "FC Anyang",
+            "logo": "https://media.api-sports.io/football/teams/2748.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340785,
+          "date": "2025-05-23T10:30:00+00:00",
+          "venue": {
+            "id": 1014,
+            "name": "Jeju World Cup Stadium",
+            "city": "Seogwipo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747996200
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2761,
+            "name": "Jeju United FC",
+            "logo": "https://media.api-sports.io/football/teams/2761.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340793,
+          "date": "2025-05-27T10:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "DGB Daegu Bank Park",
+            "city": "Daegu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748341800
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2747,
+            "name": "Daegu FC",
+            "logo": "https://media.api-sports.io/football/teams/2747.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340798,
+          "date": "2025-05-31T10:00:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748685600
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2767,
+            "name": "Ulsan Hyundai FC",
+            "logo": "https://media.api-sports.io/football/teams/2767.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340803,
+          "date": "2025-06-13T10:30:00+00:00",
+          "venue": {
+            "id": 1009,
+            "name": "Chuncheon Songam Stadium",
+            "city": "Chuncheon"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749810600
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2746,
+            "name": "Gangwon FC",
+            "logo": "https://media.api-sports.io/football/teams/2746.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340810,
+          "date": "2025-06-17T10:30:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750156200
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2756,
+            "name": "Suwon City FC",
+            "logo": "https://media.api-sports.io/football/teams/2756.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340817,
+          "date": "2025-06-21T10:00:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750500000
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2766,
+            "name": "FC Seoul",
+            "logo": "https://media.api-sports.io/football/teams/2766.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340821,
+          "date": "2025-06-27T10:30:00+00:00",
+          "venue": {
+            "id": 19551,
+            "name": "Gimcheon Stadium",
+            "city": "Gimcheon"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751020200
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2768,
+            "name": "Gimcheon Sangmu FC",
+            "logo": "https://media.api-sports.io/football/teams/2768.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340830,
+          "date": "2025-07-19T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Steelyard",
+            "city": "Pohang"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752919200
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2764,
+            "name": "Pohang Steelers",
+            "logo": "https://media.api-sports.io/football/teams/2764.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340838,
+          "date": "2025-07-23T10:30:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753266600
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2746,
+            "name": "Gangwon FC",
+            "logo": "https://media.api-sports.io/football/teams/2746.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340841,
+          "date": "2025-07-27T10:00:00+00:00",
+          "venue": {
+            "id": 10498,
+            "name": "Gwangju Football Stadium",
+            "city": "Gwangju"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753610400
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2759,
+            "name": "Gwangju FC",
+            "logo": "https://media.api-sports.io/football/teams/2759.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1340730,
+          "date": "2025-03-16T07:30:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742110200
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2764,
+            "name": "Pohang Steelers",
+            "logo": "https://media.api-sports.io/football/teams/2764.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1353185,
@@ -231,6 +1434,65 @@
           "fulltime": {
             "home": 3,
             "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340724,
+          "date": "2025-03-09T07:30:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1741505400
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2746,
+            "name": "Gangwon FC",
+            "logo": "https://media.api-sports.io/football/teams/2746.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -303,6 +1565,124 @@
       },
       {
         "fixture": {
+          "id": 1340713,
+          "date": "2025-03-01T05:00:00+00:00",
+          "venue": {
+            "id": 1020,
+            "name": "Ulsan Munsu Football Stadium",
+            "city": "Ulsan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1740805200
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2767,
+            "name": "Ulsan Hyundai FC",
+            "logo": "https://media.api-sports.io/football/teams/2767.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340711,
+          "date": "2025-02-23T07:30:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1740295800
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2759,
+            "name": "Gwangju FC",
+            "logo": "https://media.api-sports.io/football/teams/2759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1322667,
           "date": "2025-02-20T10:00:00+00:00",
           "venue": {
@@ -349,6 +1729,65 @@
           "fulltime": {
             "home": 1,
             "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340705,
+          "date": "2025-02-16T07:30:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1739691000
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2768,
+            "name": "Gimcheon Sangmu FC",
+            "logo": "https://media.api-sports.io/football/teams/2768.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -477,334 +1916,39 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1289417,
-          "date": "2024-12-05T10:00:00+00:00",
-          "venue": {
-            "id": 1551,
-            "name": "Rajamangala National Stadium",
-            "city": "Bangkok"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1733392800
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2786,
-            "name": "Muangthong United",
-            "logo": "https://media.api-sports.io/football/teams/2786.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2762,
-            "name": "Jeonbuk Motors",
-            "logo": "https://media.api-sports.io/football/teams/2762.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1317867,
-          "date": "2024-12-01T07:00:00+00:00",
-          "venue": {
-            "id": 19536,
-            "name": "Mokdong Stadium",
-            "city": "Seoul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1733036400
-        },
-        "league": {
-          "id": 292,
-          "name": "K League 1",
-          "logo": "https://media.api-sports.io/football/leagues/292.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2749,
-            "name": "Seoul E-Land FC",
-            "logo": "https://media.api-sports.io/football/teams/2749.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2762,
-            "name": "Jeonbuk Motors",
-            "logo": "https://media.api-sports.io/football/teams/2762.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1289401,
-          "date": "2024-11-28T10:00:00+00:00",
-          "venue": {
-            "id": 1015,
-            "name": "Jeonju World Cup Stadium",
-            "city": "Jeonju"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1732788000
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2762,
-            "name": "Jeonbuk Motors",
-            "logo": "https://media.api-sports.io/football/teams/2762.png",
-            "winner": true
-          },
-          "away": {
-            "id": 18265,
-            "name": "Dynamic Herb Cebu",
-            "logo": "https://media.api-sports.io/football/teams/18265.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1311096,
-          "date": "2024-11-24T05:00:00+00:00",
-          "venue": {
-            "id": 10498,
-            "name": "Gwangju Football Stadium",
-            "city": "Gwangju"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1732424400
-        },
-        "league": {
-          "id": 292,
-          "name": "K League 1",
-          "logo": "https://media.api-sports.io/football/leagues/292.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2759,
-            "name": "Gwangju FC",
-            "logo": "https://media.api-sports.io/football/teams/2759.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2762,
-            "name": "Jeonbuk Motors",
-            "logo": "https://media.api-sports.io/football/teams/2762.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1311095,
-          "date": "2024-11-10T07:30:00+00:00",
-          "venue": {
-            "id": 1015,
-            "name": "Jeonju World Cup Stadium",
-            "city": "Jeonju"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1731223800
-        },
-        "league": {
-          "id": 292,
-          "name": "K League 1",
-          "logo": "https://media.api-sports.io/football/leagues/292.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2762,
-            "name": "Jeonbuk Motors",
-            "logo": "https://media.api-sports.io/football/teams/2762.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2747,
-            "name": "Daegu FC",
-            "logo": "https://media.api-sports.io/football/teams/2747.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
-      "flag": null,
-      "season": 2024
+      "id": 292,
+      "name": "K League 1",
+      "country": "South-Korea",
+      "logo": "https://media.api-sports.io/football/leagues/292.png",
+      "flag": "https://media.api-sports.io/flags/kr.svg",
+      "season": 2025
     },
     "team": {
       "id": 2762,
       "name": "Jeonbuk Motors",
       "logo": "https://media.api-sports.io/football/teams/2762.png"
     },
-    "form": "DLL",
+    "form": "WDLLD",
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 4,
+        "away": 1,
+        "total": 5
       },
       "wins": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "draws": {
-        "home": 0,
-        "away": 1,
-        "total": 1
+        "home": 2,
+        "away": 0,
+        "total": 2
       },
       "loses": {
         "home": 1,
@@ -815,14 +1959,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 0,
-          "away": 2,
-          "total": 2
+          "home": 6,
+          "away": 0,
+          "total": 6
         },
         "average": {
-          "home": "0.0",
-          "away": "1.0",
-          "total": "0.7"
+          "home": "1.5",
+          "away": "0.0",
+          "total": "1.2"
         },
         "minute": {
           "0-15": {
@@ -830,76 +1974,8 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
+            "total": 3,
             "percentage": "50.00%"
-          },
-          "31-45": {
-            "total": null,
-            "percentage": null
-          },
-          "46-60": {
-            "total": null,
-            "percentage": null
-          },
-          "61-75": {
-            "total": 1,
-            "percentage": "50.00%"
-          },
-          "76-90": {
-            "total": null,
-            "percentage": null
-          },
-          "91-105": {
-            "total": null,
-            "percentage": null
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 2,
-            "under": 1
-          },
-          "1.5": {
-            "over": 0,
-            "under": 3
-          },
-          "2.5": {
-            "over": 0,
-            "under": 3
-          },
-          "3.5": {
-            "over": 0,
-            "under": 3
-          },
-          "4.5": {
-            "over": 0,
-            "under": 3
-          }
-        }
-      },
-      "against": {
-        "total": {
-          "home": 2,
-          "away": 6,
-          "total": 8
-        },
-        "average": {
-          "home": "2.0",
-          "away": "3.0",
-          "total": "2.7"
-        },
-        "minute": {
-          "0-15": {
-            "total": null,
-            "percentage": null
-          },
-          "16-30": {
-            "total": 1,
-            "percentage": "16.67%"
           },
           "31-45": {
             "total": null,
@@ -910,12 +1986,12 @@
             "percentage": "16.67%"
           },
           "61-75": {
-            "total": 4,
-            "percentage": "66.67%"
+            "total": 1,
+            "percentage": "16.67%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "16.67%"
           },
           "91-105": {
             "total": null,
@@ -929,49 +2005,117 @@
         "under_over": {
           "0.5": {
             "over": 3,
+            "under": 2
+          },
+          "1.5": {
+            "over": 3,
+            "under": 2
+          },
+          "2.5": {
+            "over": 0,
+            "under": 5
+          },
+          "3.5": {
+            "over": 0,
+            "under": 5
+          },
+          "4.5": {
+            "over": 0,
+            "under": 5
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 6,
+          "away": 1,
+          "total": 7
+        },
+        "average": {
+          "home": "1.5",
+          "away": "1.0",
+          "total": "1.4"
+        },
+        "minute": {
+          "0-15": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "61-75": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
+          "76-90": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 5,
             "under": 0
           },
           "1.5": {
             "over": 2,
-            "under": 1
+            "under": 3
           },
           "2.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 5
           },
           "3.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 5
           },
           "4.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 5
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 0,
+        "wins": 1,
         "draws": 1,
-        "loses": 0
+        "loses": 2
       },
       "wins": {
-        "home": null,
+        "home": "2-1",
         "away": null
       },
       "loses": {
-        "home": "0-2",
-        "away": "5-1"
+        "home": "0-1",
+        "away": "1-0"
       },
       "goals": {
         "for": {
-          "home": 0,
-          "away": 1
+          "home": 2,
+          "away": 0
         },
         "against": {
           "home": 2,
-          "away": 5
+          "away": 1
         }
       }
     },
@@ -982,8 +2126,8 @@
     },
     "failed_to_score": {
       "home": 1,
-      "away": 0,
-      "total": 1
+      "away": 1,
+      "total": 2
     },
     "penalty": {
       "scored": {
@@ -998,39 +2142,43 @@
     },
     "lineups": [
       {
-        "formation": "4-4-2",
+        "formation": "4-3-3",
+        "played": 4
+      },
+      {
+        "formation": "4-2-3-1",
         "played": 1
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "11.11%"
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "11.11%"
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "11.11%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "22.22%"
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "11.11%"
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "22.22%"
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "11.11%"
         },
         "106-120": {
           "total": null,
@@ -1051,8 +2199,8 @@
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "100.00%"
         },
         "61-75": {
           "total": null,
@@ -1073,5 +2221,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:09.468Z"
+  "lastUpdated": "2025-03-27T10:41:59.512Z"
 }

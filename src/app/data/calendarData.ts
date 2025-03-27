@@ -1,8 +1,7 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-03-26T20:25:49.172Z
+// Last updated: 2025-03-27T14:50:22.195Z
 
 export const calendarData = {
-  "2025-03-19": [],
   "2025-03-20": [],
   "2025-03-21": [],
   "2025-03-22": [],
@@ -228,7 +227,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223886,
-        "referee": null,
+        "referee": "M. Mariani",
         "timezone": "UTC",
         "date": "2025-03-29T14:00:00+00:00",
         "timestamp": 1743256800,
@@ -298,7 +297,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223894,
-        "referee": null,
+        "referee": "M. Di Bello",
         "timezone": "UTC",
         "date": "2025-03-29T14:00:00+00:00",
         "timestamp": 1743256800,
@@ -788,7 +787,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223890,
-        "referee": null,
+        "referee": "A. Rapuano",
         "timezone": "UTC",
         "date": "2025-03-29T17:00:00+00:00",
         "timestamp": 1743267600,
@@ -998,7 +997,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223892,
-        "referee": null,
+        "referee": "G. Manganiello",
         "timezone": "UTC",
         "date": "2025-03-29T19:45:00+00:00",
         "timestamp": 1743277500,
@@ -1140,7 +1139,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223885,
-        "referee": null,
+        "referee": "F. Fourneau",
         "timezone": "UTC",
         "date": "2025-03-30T10:30:00+00:00",
         "timestamp": 1743330600,
@@ -1280,7 +1279,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223887,
-        "referee": null,
+        "referee": "D. Doveri",
         "timezone": "UTC",
         "date": "2025-03-30T13:00:00+00:00",
         "timestamp": 1743339600,
@@ -1560,7 +1559,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223889,
-        "referee": null,
+        "referee": "D. Chiffi",
         "timezone": "UTC",
         "date": "2025-03-30T16:00:00+00:00",
         "timestamp": 1743350400,
@@ -1770,7 +1769,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223893,
-        "referee": null,
+        "referee": "S. Sozza",
         "timezone": "UTC",
         "date": "2025-03-30T18:45:00+00:00",
         "timestamp": 1743360300,
@@ -1912,7 +1911,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223888,
-        "referee": null,
+        "referee": "J. Sacchi",
         "timezone": "UTC",
         "date": "2025-03-31T16:30:00+00:00",
         "timestamp": 1743438600,
@@ -1982,7 +1981,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223891,
-        "referee": null,
+        "referee": "D. Massa",
         "timezone": "UTC",
         "date": "2025-03-31T18:45:00+00:00",
         "timestamp": 1743446700,
@@ -2727,6 +2726,78 @@ export const calendarData = {
           "id": 45,
           "name": "Everton",
           "logo": "https://media.api-sports.io/football/teams/45.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    }
+  ],
+  "2025-04-03": [
+    {
+      "fixture": {
+        "id": 1208318,
+        "referee": "C. Pawson",
+        "timezone": "UTC",
+        "date": "2025-04-03T19:00:00+00:00",
+        "timestamp": 1743706800,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": 519,
+          "name": "Stamford Bridge",
+          "city": "London"
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "logo": "https://media.api-sports.io/football/leagues/39.png",
+        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+        "season": 2024,
+        "round": "Regular Season - 30",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 49,
+          "name": "Chelsea",
+          "logo": "https://media.api-sports.io/football/teams/49.png",
+          "winner": null
+        },
+        "away": {
+          "id": 47,
+          "name": "Tottenham",
+          "logo": "https://media.api-sports.io/football/teams/47.png",
           "winner": null
         }
       },

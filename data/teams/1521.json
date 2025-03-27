@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 29,
+        "name": "World Cup - Qualification Africa",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/29.png"
       },
       "country": {
         "name": "World",
@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2023,
+          "start": "2023-11-13",
+          "end": "2025-10-13",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -45,14 +45,14 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -93,6 +93,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 36,
+        "name": "Africa Cup of Nations - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/36.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2024-03-20",
+          "end": "2024-11-19",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 6,
+        "name": "Africa Cup of Nations",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/6.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-12-21",
+          "end": "2025-12-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -110,6 +184,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1126002,
+          "date": "2025-03-24T12:00:00+00:00",
+          "venue": {
+            "id": 1453,
+            "name": "Peter Mokaba Stadium",
+            "city": "Pietersburg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1742817600
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1493,
+            "name": "Namibia",
+            "logo": "https://media.api-sports.io/football/teams/1493.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1521,
+            "name": "Equatorial Guinea",
+            "logo": "https://media.api-sports.io/football/teams/1521.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1125975,
+          "date": "2025-03-21T13:00:00+00:00",
+          "venue": {
+            "id": 604,
+            "name": "Nuevo Estadio de Malabo",
+            "city": "Malabo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742562000
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1521,
+            "name": "Equatorial Guinea",
+            "logo": "https://media.api-sports.io/football/teams/1521.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1494,
+            "name": "Sao Tome and Principe",
+            "logo": "https://media.api-sports.io/football/teams/1494.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1313990,
@@ -230,31 +422,31 @@
       },
       {
         "fixture": {
-          "id": 1178429,
-          "date": "2024-03-25T19:00:00+00:00",
+          "id": 1232533,
+          "date": "2024-11-17T16:00:00+00:00",
           "venue": {
-            "id": 19932,
-            "name": "Prince Abdullah al-Faisal Stadium",
-            "city": "Jeddah"
+            "id": 1563,
+            "name": "Stade de Kégué",
+            "city": "Lomé"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 5
           },
-          "timestamp": 1711393200
+          "timestamp": 1731859200
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
-            "id": 1533,
-            "name": "Cape Verde Islands",
-            "logo": "https://media.api-sports.io/football/teams/1533.png",
+            "id": 1534,
+            "name": "Togo",
+            "logo": "https://media.api-sports.io/football/teams/1534.png",
             "winner": true
           },
           "away": {
@@ -265,12 +457,189 @@
           }
         },
         "goals": {
-          "home": 1,
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232509,
+          "date": "2024-11-14T13:00:00+00:00",
+          "venue": {
+            "id": 604,
+            "name": "Nuevo Estadio de Malabo",
+            "city": "Malabo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1731589200
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1521,
+            "name": "Equatorial Guinea",
+            "logo": "https://media.api-sports.io/football/teams/1521.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1532,
+            "name": "Algeria",
+            "logo": "https://media.api-sports.io/football/teams/1532.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
           "away": 0
         },
         "score": {
           "halftime": {
             "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232486,
+          "date": "2024-10-14T16:00:00+00:00",
+          "venue": {
+            "id": 20323,
+            "name": "Samuel Kanyon Doe Stadium",
+            "city": "Monrovia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1728921600
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1525,
+            "name": "Liberia",
+            "logo": "https://media.api-sports.io/football/teams/1525.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1521,
+            "name": "Equatorial Guinea",
+            "logo": "https://media.api-sports.io/football/teams/1521.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232462,
+          "date": "2024-10-11T13:00:00+00:00",
+          "venue": {
+            "id": 604,
+            "name": "Nuevo Estadio de Malabo",
+            "city": "Malabo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1728651600
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1521,
+            "name": "Equatorial Guinea",
+            "logo": "https://media.api-sports.io/football/teams/1521.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1525,
+            "name": "Liberia",
+            "logo": "https://media.api-sports.io/football/teams/1525.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
             "away": 0
           },
           "fulltime": {
@@ -289,67 +658,8 @@
       },
       {
         "fixture": {
-          "id": 1178428,
-          "date": "2024-03-22T19:00:00+00:00",
-          "venue": {
-            "id": 19932,
-            "name": "Prince Abdullah al-Faisal Stadium",
-            "city": "Jeddah"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711134000
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1521,
-            "name": "Equatorial Guinea",
-            "logo": "https://media.api-sports.io/football/teams/1521.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1543,
-            "name": "Cambodia",
-            "logo": "https://media.api-sports.io/football/teams/1543.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1155296,
-          "date": "2024-01-09T14:00:00+00:00",
+          "id": 1232437,
+          "date": "2024-09-09T15:00:00+00:00",
           "venue": {
             "id": 604,
             "name": "Nuevo Estadio de Malabo",
@@ -361,12 +671,12 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1704808800
+          "timestamp": 1725894000
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
@@ -376,24 +686,83 @@
             "winner": null
           },
           "away": {
-            "id": 1535,
-            "name": "Djibouti",
-            "logo": "https://media.api-sports.io/football/teams/1535.png",
+            "id": 1534,
+            "name": "Togo",
+            "logo": "https://media.api-sports.io/football/teams/1534.png",
             "winner": null
           }
         },
         "goals": {
-          "home": 1,
-          "away": 1
+          "home": 2,
+          "away": 2
         },
         "score": {
           "halftime": {
             "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232413,
+          "date": "2024-09-05T19:00:00+00:00",
+          "venue": {
+            "id": 21541,
+            "name": "Stade Olympique d'Oran",
+            "city": "Bir El Djir"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725562800
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1532,
+            "name": "Algeria",
+            "logo": "https://media.api-sports.io/football/teams/1532.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1521,
+            "name": "Equatorial Guinea",
+            "logo": "https://media.api-sports.io/football/teams/1521.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
             "away": 0
           },
           "fulltime": {
-            "home": 1,
-            "away": 1
+            "home": 2,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -409,57 +778,57 @@
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1521,
       "name": "Equatorial Guinea",
       "logo": "https://media.api-sports.io/football/teams/1521.png"
     },
-    "form": "DWL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 3,
+          "home": 0,
           "away": 0,
-          "total": 3
+          "total": 0
         },
         "average": {
-          "home": "1.5",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -492,37 +861,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
-          "away": 1,
-          "total": 2
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.5",
-          "away": "1.0",
-          "total": "0.7"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -542,8 +911,8 @@
             "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -560,62 +929,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
-        "draws": 1,
+        "wins": 0,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "2-0",
+        "home": null,
         "away": null
       },
       "loses": {
         "home": null,
-        "away": "1-0"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 1
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -628,12 +997,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-2-3-1",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -705,5 +1069,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:25.628Z"
+  "lastUpdated": "2025-03-27T10:40:12.248Z"
 }

@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 771,
         "name": "COSAFA U20 Championship",
         "type": "Cup",
@@ -93,6 +56,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 538,
+        "name": "Africa Cup of Nations U20",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/538.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-04-26",
+          "end": "2025-05-08",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -100,10 +100,189 @@
     2020,
     2022,
     2023,
-    2024
+    2024,
+    2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1366606,
+          "date": "2025-05-01T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Bouaké",
+            "city": "Bouaké"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746118800
+        },
+        "league": {
+          "id": 538,
+          "name": "Africa Cup of Nations U20",
+          "logo": "https://media.api-sports.io/football/leagues/538.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10302,
+            "name": "Senegal U20",
+            "logo": "https://media.api-sports.io/football/teams/10302.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10316,
+            "name": "Zambia U20",
+            "logo": "https://media.api-sports.io/football/teams/10316.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1366612,
+          "date": "2025-05-04T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade de Bouaké",
+            "city": "Bouaké"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746378000
+        },
+        "league": {
+          "id": 538,
+          "name": "Africa Cup of Nations U20",
+          "logo": "https://media.api-sports.io/football/leagues/538.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10316,
+            "name": "Zambia U20",
+            "logo": "https://media.api-sports.io/football/teams/10316.png",
+            "winner": null
+          },
+          "away": {
+            "id": 11034,
+            "name": "Kenya U20",
+            "logo": "https://media.api-sports.io/football/teams/11034.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1366619,
+          "date": "2025-05-07T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Amadou Gon Coulibaly",
+            "city": "Korhogo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746637200
+        },
+        "league": {
+          "id": 538,
+          "name": "Africa Cup of Nations U20",
+          "logo": "https://media.api-sports.io/football/leagues/538.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10316,
+            "name": "Zambia U20",
+            "logo": "https://media.api-sports.io/football/teams/10316.png",
+            "winner": null
+          },
+          "away": {
+            "id": 11044,
+            "name": "Sierra Leone U20",
+            "logo": "https://media.api-sports.io/football/teams/11044.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
       {
         "fixture": {
@@ -281,17 +460,430 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 983609,
+          "date": "2023-02-27T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Cairo International Stadium",
+            "city": "Cairo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1677517200
+        },
+        "league": {
+          "id": 538,
+          "name": "Africa Cup of Nations U20",
+          "logo": "https://media.api-sports.io/football/leagues/538.png"
+        },
+        "teams": {
+          "home": {
+            "id": 11049,
+            "name": "Tunisia U20",
+            "logo": "https://media.api-sports.io/football/teams/11049.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10316,
+            "name": "Zambia U20",
+            "logo": "https://media.api-sports.io/football/teams/10316.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 983603,
+          "date": "2023-02-24T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Haras El Hodoud Stadium",
+            "city": "Alexandria"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1677258000
+        },
+        "league": {
+          "id": 538,
+          "name": "Africa Cup of Nations U20",
+          "logo": "https://media.api-sports.io/football/leagues/538.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10316,
+            "name": "Zambia U20",
+            "logo": "https://media.api-sports.io/football/teams/10316.png",
+            "winner": false
+          },
+          "away": {
+            "id": 11031,
+            "name": "Gambia U20",
+            "logo": "https://media.api-sports.io/football/teams/11031.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 983597,
+          "date": "2023-02-21T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Alexandria Stadium",
+            "city": "Alexandria"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1676998800
+        },
+        "league": {
+          "id": 538,
+          "name": "Africa Cup of Nations U20",
+          "logo": "https://media.api-sports.io/football/leagues/538.png"
+        },
+        "teams": {
+          "home": {
+            "id": 11019,
+            "name": "Benin U20",
+            "logo": "https://media.api-sports.io/football/teams/11019.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10316,
+            "name": "Zambia U20",
+            "logo": "https://media.api-sports.io/football/teams/10316.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 966961,
+          "date": "2022-10-16T13:00:00+00:00",
+          "venue": {
+            "id": 1500,
+            "name": "Somhlolo National Stadium",
+            "city": "Lobamba"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1665925200
+        },
+        "league": {
+          "id": 771,
+          "name": "COSAFA U20 Championship",
+          "logo": "https://media.api-sports.io/football/leagues/771.png"
+        },
+        "teams": {
+          "home": {
+            "id": 11040,
+            "name": "Mozambique U20",
+            "logo": "https://media.api-sports.io/football/teams/11040.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10316,
+            "name": "Zambia U20",
+            "logo": "https://media.api-sports.io/football/teams/10316.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 961462,
+          "date": "2022-10-11T13:30:00+00:00",
+          "venue": {
+            "id": 12217,
+            "name": "Mavuso Sports Centre",
+            "city": "Manzini"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1665495000
+        },
+        "league": {
+          "id": 771,
+          "name": "COSAFA U20 Championship",
+          "logo": "https://media.api-sports.io/football/leagues/771.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10316,
+            "name": "Zambia U20",
+            "logo": "https://media.api-sports.io/football/teams/10316.png",
+            "winner": true
+          },
+          "away": {
+            "id": 11020,
+            "name": "Botswana U20",
+            "logo": "https://media.api-sports.io/football/teams/11020.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 961457,
+          "date": "2022-10-09T13:30:00+00:00",
+          "venue": {
+            "id": 1500,
+            "name": "Somhlolo National Stadium",
+            "city": "Lobamba"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1665322200
+        },
+        "league": {
+          "id": 771,
+          "name": "COSAFA U20 Championship",
+          "logo": "https://media.api-sports.io/football/leagues/771.png"
+        },
+        "teams": {
+          "home": {
+            "id": 11028,
+            "name": "Eswatini U20",
+            "logo": "https://media.api-sports.io/football/teams/11028.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10316,
+            "name": "Zambia U20",
+            "logo": "https://media.api-sports.io/football/teams/10316.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 961450,
+          "date": "2022-10-07T10:00:00+00:00",
+          "venue": {
+            "id": 1500,
+            "name": "Somhlolo National Stadium",
+            "city": "Lobamba"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1665136800
+        },
+        "league": {
+          "id": 771,
+          "name": "COSAFA U20 Championship",
+          "logo": "https://media.api-sports.io/football/leagues/771.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10316,
+            "name": "Zambia U20",
+            "logo": "https://media.api-sports.io/football/teams/10316.png",
+            "winner": true
+          },
+          "away": {
+            "id": 20341,
+            "name": "Mauritius U20",
+            "logo": "https://media.api-sports.io/football/teams/20341.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 10316,
@@ -577,5 +1169,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:20.012Z"
+  "lastUpdated": "2025-03-27T10:41:09.006Z"
 }

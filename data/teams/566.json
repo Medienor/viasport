@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 2,
         "name": "UEFA Champions League",
         "type": "Cup",
@@ -238,6 +201,43 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -441,19 +441,19 @@
       {
         "fixture": {
           "id": 1355650,
-          "date": "2025-04-09T00:00:00+00:00",
+          "date": "2025-04-10T16:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 285,
+            "name": "Stadion Hristo Botev",
+            "city": "Vratsa"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744156800
+          "timestamp": 1744300800
         },
         "league": {
           "id": 174,
@@ -618,19 +618,19 @@
       {
         "fixture": {
           "id": 1355651,
-          "date": "2025-04-23T00:00:00+00:00",
+          "date": "2025-04-23T16:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 10547,
+            "name": "Huvepharma Arena",
+            "city": "Razgrad"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
+            "long": "Not Started",
+            "short": "NS",
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745366400
+          "timestamp": 1745424000
         },
         "league": {
           "id": 174,
@@ -1209,52 +1209,52 @@
       },
       {
         "fixture": {
-          "id": 1214342,
-          "date": "2024-12-19T15:00:00+00:00",
+          "id": 1333114,
+          "date": "2025-01-07T00:00:00+00:00",
           "venue": {
-            "id": 19922,
-            "name": "Stadion Hristo Botev",
-            "city": "Plovdiv"
+            "id": null,
+            "name": "Regnum Carya Golf & Spa Resort - Field 1",
+            "city": "Belek"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 5
+            "extra": 2
           },
-          "timestamp": 1734620400
+          "timestamp": 1736208000
         },
         "league": {
-          "id": 172,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/172.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
-            "id": 634,
-            "name": "Botev Plovdiv",
-            "logo": "https://media.api-sports.io/football/teams/634.png",
-            "winner": false
+            "id": 2581,
+            "name": "FC Botosani",
+            "logo": "https://media.api-sports.io/football/teams/2581.png",
+            "winner": null
           },
           "away": {
             "id": 566,
             "name": "Ludogorets",
             "logo": "https://media.api-sports.io/football/teams/566.png",
-            "winner": true
+            "winner": null
           }
         },
         "goals": {
-          "home": 2,
-          "away": 4
+          "home": 1,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 3
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": 2,
-            "away": 4
+            "home": 1,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -1270,81 +1270,81 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 566,
       "name": "Ludogorets",
       "logo": "https://media.api-sports.io/football/teams/566.png"
     },
-    "form": "WWLWDLWWWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 5,
-        "away": 5,
-        "total": 10
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 4,
-        "away": 3,
-        "total": 7
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 15,
-          "away": 10,
-          "total": 25
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "3.0",
-          "away": "2.0",
-          "total": "2.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 7,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 6,
-            "percentage": "28.57%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "9.52%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "9.52%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
             "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "4.76%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -1353,58 +1353,58 @@
         },
         "under_over": {
           "0.5": {
-            "over": 10,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 7,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 5,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 9
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 5,
-          "away": 5,
-          "total": 10
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "1.0",
-          "total": "1.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -1421,57 +1421,57 @@
         },
         "under_over": {
           "0.5": {
-            "over": 6,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 10
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 10
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 1,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "5-0",
-        "away": "0-3"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "2-3",
-        "away": "3-1"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 5,
-          "away": 3
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
-          "away": 3
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 2,
-      "away": 2,
-      "total": 4
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -1484,17 +1484,12 @@
         "percentage": "0%"
       },
       "missed": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-2-3-1",
-        "played": 3
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1510,16 +1505,16 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": 3,
-          "percentage": "75.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1566,5 +1561,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:18.714Z"
+  "lastUpdated": "2025-03-27T10:38:00.360Z"
 }

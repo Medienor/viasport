@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 141,
         "name": "Segunda División",
         "type": "League",
@@ -111,6 +74,43 @@
           "year": 2024,
           "start": "2024-10-09",
           "end": "2025-04-02",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -292,419 +292,6 @@
             "id": 724,
             "name": "Cadiz",
             "logo": "https://media.api-sports.io/football/teams/724.png",
-            "winner": null
-          },
-          "away": {
-            "id": 797,
-            "name": "Elche",
-            "logo": "https://media.api-sports.io/football/teams/797.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1217891,
-          "date": "2025-04-20T00:00:00+00:00",
-          "venue": {
-            "id": 1473,
-            "name": "Estadio Manuel Martínez Valero",
-            "city": "Elche"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745107200
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 797,
-            "name": "Elche",
-            "logo": "https://media.api-sports.io/football/teams/797.png",
-            "winner": null
-          },
-          "away": {
-            "id": 722,
-            "name": "Albacete",
-            "logo": "https://media.api-sports.io/football/teams/722.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1217903,
-          "date": "2025-04-27T00:00:00+00:00",
-          "venue": {
-            "id": 1479,
-            "name": "Estadio Nuevo Los Cármenes",
-            "city": "Granada"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745712000
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 715,
-            "name": "Granada CF",
-            "logo": "https://media.api-sports.io/football/teams/715.png",
-            "winner": null
-          },
-          "away": {
-            "id": 797,
-            "name": "Elche",
-            "logo": "https://media.api-sports.io/football/teams/797.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1217907,
-          "date": "2025-05-04T00:00:00+00:00",
-          "venue": {
-            "id": 6674,
-            "name": "Estadio Municipal de El Plantío",
-            "city": "Burgos"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746316800
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 9580,
-            "name": "Burgos",
-            "logo": "https://media.api-sports.io/football/teams/9580.png",
-            "winner": null
-          },
-          "away": {
-            "id": 797,
-            "name": "Elche",
-            "logo": "https://media.api-sports.io/football/teams/797.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1217919,
-          "date": "2025-05-11T00:00:00+00:00",
-          "venue": {
-            "id": 1473,
-            "name": "Estadio Manuel Martínez Valero",
-            "city": "Elche"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746921600
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 797,
-            "name": "Elche",
-            "logo": "https://media.api-sports.io/football/teams/797.png",
-            "winner": null
-          },
-          "away": {
-            "id": 539,
-            "name": "Levante",
-            "logo": "https://media.api-sports.io/football/teams/539.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1217938,
-          "date": "2025-05-18T00:00:00+00:00",
-          "venue": {
-            "id": 1480,
-            "name": "Estadio El Alcoraz",
-            "city": "Huesca"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1747526400
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 726,
-            "name": "Huesca",
-            "logo": "https://media.api-sports.io/football/teams/726.png",
-            "winner": null
-          },
-          "away": {
-            "id": 797,
-            "name": "Elche",
-            "logo": "https://media.api-sports.io/football/teams/797.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1217942,
-          "date": "2025-05-25T00:00:00+00:00",
-          "venue": {
-            "id": 1473,
-            "name": "Estadio Manuel Martínez Valero",
-            "city": "Elche"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1748131200
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 797,
-            "name": "Elche",
-            "logo": "https://media.api-sports.io/football/teams/797.png",
-            "winner": null
-          },
-          "away": {
-            "id": 535,
-            "name": "Malaga",
-            "logo": "https://media.api-sports.io/football/teams/535.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1217953,
-          "date": "2025-06-01T00:00:00+00:00",
-          "venue": {
-            "id": 1471,
-            "name": "Estadio Abanca-Riazor",
-            "city": "La Coruña"
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1748736000
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 544,
-            "name": "Deportivo La Coruna",
-            "logo": "https://media.api-sports.io/football/teams/544.png",
             "winner": null
           },
           "away": {
@@ -1040,8 +627,8 @@
           "date": "2025-02-17T19:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "UD Almeria Stadium",
-            "city": "Almeria"
+            "name": "UD Almería Stadium",
+            "city": "Almería"
           },
           "status": {
             "long": "Match Finished",
@@ -1140,6 +727,65 @@
           },
           "fulltime": {
             "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345079,
+          "date": "2025-02-02T11:30:00+00:00",
+          "venue": {
+            "id": 1473,
+            "name": "Estadio Manuel Martínez Valero",
+            "city": "Elche"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1738495800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 797,
+            "name": "Elche",
+            "logo": "https://media.api-sports.io/football/teams/797.png",
+            "winner": true
+          },
+          "away": {
+            "id": 400,
+            "name": "FC Copenhagen",
+            "logo": "https://media.api-sports.io/football/teams/400.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
             "away": 0
           },
           "extratime": {
@@ -1269,93 +915,34 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217747,
-          "date": "2025-01-18T17:30:00+00:00",
-          "venue": {
-            "id": 1495,
-            "name": "Estadio Municipal El Molinón",
-            "city": "Gijón"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737221400
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 731,
-            "name": "Sporting Gijon",
-            "logo": "https://media.api-sports.io/football/teams/731.png",
-            "winner": null
-          },
-          "away": {
-            "id": 797,
-            "name": "Elche",
-            "logo": "https://media.api-sports.io/football/teams/797.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 797,
       "name": "Elche",
       "logo": "https://media.api-sports.io/football/teams/797.png"
     },
-    "form": "WWLLWL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 4,
-        "away": 2,
-        "total": 6
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -1363,47 +950,47 @@
         "total": 0
       },
       "loses": {
-        "home": 3,
+        "home": 0,
         "away": 0,
-        "total": 3
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 1,
-          "away": 5,
-          "total": 6
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.3",
-          "away": "2.5",
-          "total": "1.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1416,37 +1003,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 8,
+          "home": 0,
           "away": 0,
-          "total": 8
+          "total": 0
         },
         "average": {
-          "home": "2.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.3"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1454,20 +1041,20 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 4,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -1484,62 +1071,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 5
+            "over": 0,
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
+        "wins": 0,
         "draws": 0,
-        "loses": 2
+        "loses": 0
       },
       "wins": {
-        "home": "1-0",
-        "away": "0-3"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "0-6",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 1,
-          "away": 3
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 6,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 2,
-      "total": 3
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 3,
+      "home": 0,
       "away": 0,
-      "total": 3
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1552,12 +1139,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-2-3-1",
-        "played": 3
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1577,8 +1159,8 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
@@ -1629,5 +1211,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:36.129Z"
+  "lastUpdated": "2025-03-27T10:42:27.333Z"
 }

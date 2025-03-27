@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 770,
+        "name": "Pacific Games",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/770.png"
       },
       "country": {
         "name": "World",
@@ -34,22 +34,22 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2023,
+          "start": "2023-11-17",
+          "end": "2023-12-01",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -90,6 +90,43 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 33,
+        "name": "World Cup - Qualification Oceania",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/33.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2024-09-05",
+          "end": "2025-03-24",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -155,6 +192,183 @@
           "fulltime": {
             "home": 1,
             "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1283603,
+          "date": "2024-11-17T06:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "PNG Football Stadium",
+            "city": "Port Moresby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1731823200
+        },
+        "league": {
+          "id": 33,
+          "name": "World Cup - Qualification Oceania",
+          "logo": "https://media.api-sports.io/football/leagues/33.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8175,
+            "name": "Papua New Guinea",
+            "logo": "https://media.api-sports.io/football/teams/8175.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5165,
+            "name": "Solomon Islands",
+            "logo": "https://media.api-sports.io/football/teams/5165.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1283600,
+          "date": "2024-11-14T06:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "PNG Football Stadium",
+            "city": "Port Moresby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1731564000
+        },
+        "league": {
+          "id": 33,
+          "name": "World Cup - Qualification Oceania",
+          "logo": "https://media.api-sports.io/football/leagues/33.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8175,
+            "name": "Papua New Guinea",
+            "logo": "https://media.api-sports.io/football/teams/8175.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5160,
+            "name": "Fiji",
+            "logo": "https://media.api-sports.io/football/teams/5160.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1283596,
+          "date": "2024-10-10T04:00:00+00:00",
+          "venue": {
+            "id": 19498,
+            "name": "HFC Bank Stadium",
+            "city": "Suva"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1728532800
+        },
+        "league": {
+          "id": 33,
+          "name": "World Cup - Qualification Oceania",
+          "logo": "https://media.api-sports.io/football/leagues/33.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5163,
+            "name": "New Caledonia",
+            "logo": "https://media.api-sports.io/football/teams/5163.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8175,
+            "name": "Papua New Guinea",
+            "logo": "https://media.api-sports.io/football/teams/8175.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -460,57 +674,116 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1144388,
+          "date": "2023-11-30T08:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SIFF Academy Field 1",
+            "city": "Honiara"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1701331200
+        },
+        "league": {
+          "id": 770,
+          "name": "Pacific Games",
+          "logo": "https://media.api-sports.io/football/leagues/770.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5167,
+            "name": "Tahiti",
+            "logo": "https://media.api-sports.io/football/teams/5167.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8175,
+            "name": "Papua New Guinea",
+            "logo": "https://media.api-sports.io/football/teams/8175.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 8175,
       "name": "Papua New Guinea",
       "logo": "https://media.api-sports.io/football/teams/8175.png"
     },
-    "form": "DLW",
+    "form": null,
     "fixtures": {
       "played": {
         "home": 0,
-        "away": 3,
-        "total": 3
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
           "home": 0,
-          "away": 2,
-          "total": 2
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "0.7",
-          "total": "0.7"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -548,50 +821,50 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 5,
-          "total": 5
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.7",
-          "total": "1.7"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -602,8 +875,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -616,24 +889,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
@@ -641,37 +914,37 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
-        "loses": 1
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
         "home": null,
-        "away": "1-2"
+        "away": null
       },
       "loses": {
         "home": null,
-        "away": "4-0"
+        "away": null
       },
       "goals": {
         "for": {
           "home": 0,
-          "away": 2
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 4
+          "away": 0
         }
       }
     },
     "clean_sheet": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 2,
-      "total": 2
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -700,16 +973,16 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -756,5 +1029,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:07.673Z"
+  "lastUpdated": "2025-03-27T10:40:56.294Z"
 }

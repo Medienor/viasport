@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 804,
+        "name": "Caribbean Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/804.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,53 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2016,
+          "start": "2016-03-22",
+          "end": "2017-06-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 808,
+        "name": "CONCACAF Nations League - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/808.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2018,
+          "start": "2018-09-06",
+          "end": "2019-03-25",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -93,6 +130,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 858,
+        "name": "CONCACAF Gold Cup - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/858.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-21",
+          "end": "2025-03-26",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 31,
+        "name": "World Cup - Qualification CONCACAF",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/31.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2024-03-22",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -112,6 +223,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1351586,
+          "date": "2025-03-25T23:00:00+00:00",
+          "venue": {
+            "id": 5761,
+            "name": "Stade Municipal Pierre-Aliker",
+            "city": "Fort-de-France"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742943600
+        },
+        "league": {
+          "id": 858,
+          "name": "CONCACAF Gold Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/858.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8117,
+            "name": "Martinique",
+            "logo": "https://media.api-sports.io/football/teams/8117.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8171,
+            "name": "Suriname",
+            "logo": "https://media.api-sports.io/football/teams/8171.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351585,
+          "date": "2025-03-21T22:00:00+00:00",
+          "venue": {
+            "id": 7380,
+            "name": "Dr. Ir. Franklin Essed Stadion",
+            "city": "Paramaribo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742594400
+        },
+        "league": {
+          "id": 858,
+          "name": "CONCACAF Gold Cup - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/858.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8171,
+            "name": "Suriname",
+            "logo": "https://media.api-sports.io/football/teams/8171.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8117,
+            "name": "Martinique",
+            "logo": "https://media.api-sports.io/football/teams/8117.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1312099,
@@ -468,12 +697,12 @@
       },
       {
         "fixture": {
-          "id": 1175758,
-          "date": "2024-03-24T18:00:00+00:00",
+          "id": 1190048,
+          "date": "2024-06-08T19:30:00+00:00",
           "venue": {
-            "id": 1141,
-            "name": "Yanmar Stadion",
-            "city": "Almere"
+            "id": null,
+            "name": "Raymond E. Guishard Technical Centre",
+            "city": "The Valley"
           },
           "status": {
             "long": "Match Finished",
@@ -481,38 +710,97 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1711303200
+          "timestamp": 1717875000
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 31,
+          "name": "World Cup - Qualification CONCACAF",
+          "logo": "https://media.api-sports.io/football/leagues/31.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8150,
+            "name": "Anguilla",
+            "logo": "https://media.api-sports.io/football/teams/8150.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8171,
+            "name": "Suriname",
+            "logo": "https://media.api-sports.io/football/teams/8171.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1169514,
+          "date": "2024-06-05T21:00:00+00:00",
+          "venue": {
+            "id": 7380,
+            "name": "Dr. Ir. Franklin Essed Stadion",
+            "city": "Paramaribo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717621200
+        },
+        "league": {
+          "id": 31,
+          "name": "World Cup - Qualification CONCACAF",
+          "logo": "https://media.api-sports.io/football/leagues/31.png"
         },
         "teams": {
           "home": {
             "id": 8171,
             "name": "Suriname",
             "logo": "https://media.api-sports.io/football/teams/8171.png",
-            "winner": null
+            "winner": true
           },
           "away": {
-            "id": 8117,
-            "name": "Martinique",
-            "logo": "https://media.api-sports.io/football/teams/8117.png",
-            "winner": null
+            "id": 5541,
+            "name": "St. Vincent / Grenadines",
+            "logo": "https://media.api-sports.io/football/teams/5541.png",
+            "winner": false
           }
         },
         "goals": {
-          "home": 1,
+          "home": 4,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 1,
+            "home": 2,
             "away": 1
           },
           "fulltime": {
-            "home": 1,
+            "home": 4,
             "away": 1
           },
           "extratime": {
@@ -529,24 +817,24 @@
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 8171,
       "name": "Suriname",
       "logo": "https://media.api-sports.io/football/teams/8171.png"
     },
-    "form": "D",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -554,9 +842,9 @@
         "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -567,14 +855,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -586,8 +874,8 @@
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -612,42 +900,42 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -680,24 +968,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       }
@@ -705,7 +993,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
@@ -718,11 +1006,11 @@
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 1,
+          "home": 0,
           "away": 0
         }
       }
@@ -760,8 +1048,8 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
           "total": null,
@@ -820,5 +1108,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:07.614Z"
+  "lastUpdated": "2025-03-27T10:40:56.257Z"
 }

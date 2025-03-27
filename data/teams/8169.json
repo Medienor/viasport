@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 808,
+        "name": "CONCACAF Nations League - Qualification",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/808.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2018,
+          "start": "2018-09-06",
+          "end": "2019-03-25",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -93,6 +93,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 31,
+        "name": "World Cup - Qualification CONCACAF",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/31.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2024-03-22",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -114,7 +151,7 @@
           "venue": {
             "id": null,
             "name": "Stade Roger Zami",
-            "city": "Guadalupe"
+            "city": "Le-Gosier"
           },
           "status": {
             "long": "Match Finished",
@@ -463,6 +500,65 @@
       },
       {
         "fixture": {
+          "id": 1169521,
+          "date": "2024-06-09T20:30:00+00:00",
+          "venue": {
+            "id": 5790,
+            "name": "Truman Bodden Sports Complex",
+            "city": "George Town"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1717965000
+        },
+        "league": {
+          "id": 31,
+          "name": "World Cup - Qualification CONCACAF",
+          "logo": "https://media.api-sports.io/football/leagues/31.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8169,
+            "name": "Cayman Islands",
+            "logo": "https://media.api-sports.io/football/teams/8169.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5526,
+            "name": "Antigua and Barbuda",
+            "logo": "https://media.api-sports.io/football/teams/5526.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1187442,
           "date": "2024-03-26T14:00:00+00:00",
           "venue": {
@@ -519,29 +615,147 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1060866,
+          "date": "2023-11-20T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Compleho Deportivo Guillermo Prospero Trinidad",
+            "city": "Oranjestad"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700506800
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8167,
+            "name": "Aruba",
+            "logo": "https://media.api-sports.io/football/teams/8167.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8169,
+            "name": "Cayman Islands",
+            "logo": "https://media.api-sports.io/football/teams/8169.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1060862,
+          "date": "2023-10-17T20:30:00+00:00",
+          "venue": {
+            "id": 5790,
+            "name": "Truman Bodden Sports Complex",
+            "city": "George Town"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697574600
+        },
+        "league": {
+          "id": 536,
+          "name": "CONCACAF Nations League",
+          "logo": "https://media.api-sports.io/football/leagues/536.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8169,
+            "name": "Cayman Islands",
+            "logo": "https://media.api-sports.io/football/teams/8169.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8172,
+            "name": "US Virgin Islands",
+            "logo": "https://media.api-sports.io/football/teams/8172.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 8169,
       "name": "Cayman Islands",
       "logo": "https://media.api-sports.io/football/teams/8169.png"
     },
-    "form": "L",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -554,9 +768,9 @@
         "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
@@ -608,36 +822,36 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
+          "home": 0,
           "away": 0,
-          "total": 4
+          "total": 0
         },
         "average": {
-          "home": "4.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "4.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -645,16 +859,16 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -665,8 +879,8 @@
             "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -675,24 +889,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "3.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       }
@@ -701,14 +915,14 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
         "home": null,
         "away": null
       },
       "loses": {
-        "home": "0-4",
+        "home": null,
         "away": null
       },
       "goals": {
@@ -717,7 +931,7 @@
           "away": 0
         },
         "against": {
-          "home": 4,
+          "home": 0,
           "away": 0
         }
       }
@@ -728,9 +942,9 @@
       "total": 0
     },
     "failed_to_score": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -815,5 +1029,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:07.771Z"
+  "lastUpdated": "2025-03-27T10:40:56.309Z"
 }

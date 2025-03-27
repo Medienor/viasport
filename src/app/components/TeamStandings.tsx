@@ -109,6 +109,14 @@ export default function TeamStandings({ teamId, seasons, teamName, hideSeasonSel
     fetchLeagueStandings();
   }, [selectedLeagueId, selectedSeason]);
 
+  // Add this after the standings state is set
+  useEffect(() => {
+    if (standings.length > 0) {
+      // Share standings data globally
+      window.leagueStandings = standings;
+    }
+  }, [standings]);
+
   // Sort seasons in descending order
   const sortedSeasons = [...seasons].sort((a, b) => b - a);
 
@@ -260,7 +268,9 @@ export default function TeamStandings({ teamId, seasons, teamName, hideSeasonSel
                                 </div>
                               </td>
                               <td className="px-2 py-2 whitespace-nowrap">
-                                <Link href={`/lag/${standing.team.name.toLowerCase().replace(/\s+/g, '-')}-${standing.team.id}`}>
+                                <Link href={`/lag/${standing.team.name.toLowerCase()
+                                  .replace(/\s+/g, '-')
+                                  .replace(/\//g, '')}-${standing.team.id}`}>
                                   <div className="flex items-center">
                                     <div className="flex-shrink-0 h-6 w-6 relative">
                                       <Image

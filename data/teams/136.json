@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 612,
-        "name": "Copa do Nordeste",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/612.png"
-      },
-      "country": {
-        "name": "Brazil",
-        "code": "BR",
-        "flag": "https://media.api-sports.io/flags/br.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-06",
-          "end": "2024-06-09",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 602,
         "name": "Baiano - 1",
         "type": "League",
@@ -71,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-14",
-          "end": "2024-04-07",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-11",
+          "end": "2025-03-22",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -89,7 +52,81 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 612,
+        "name": "Copa do Nordeste",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/612.png"
+      },
+      "country": {
+        "name": "Brazil",
+        "code": "BR",
+        "flag": "https://media.api-sports.io/flags/br.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-03-23",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 11,
+        "name": "CONMEBOL Sudamericana",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/11.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-05",
+          "end": "2025-05-28",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -108,10 +145,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-02-20",
-          "end": "2024-11-10",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-18",
+          "end": "2025-03-14",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -145,16 +182,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-04-13",
-          "end": "2024-12-08",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-29",
+          "end": "2025-12-21",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": true,
             "players": true,
@@ -163,7 +200,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -187,24 +224,23 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1180728,
-          "date": "2024-12-08T19:00:00+00:00",
+          "id": 1351052,
+          "date": "2025-03-29T21:30:00+00:00",
           "venue": {
-            "id": null,
-            "name": "Estadio Jornalista Mário Filho",
-            "city": "Rio de Janeiro, Rio de Janeiro"
+            "id": 248,
+            "name": "Estádio Alfredo Jaconi",
+            "city": "Caxias do Sul, Rio Grande do Sul"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1733684400
+          "timestamp": 1743283800
         },
         "league": {
           "id": 71,
@@ -213,9 +249,9 @@
         },
         "teams": {
           "home": {
-            "id": 127,
-            "name": "Flamengo",
-            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
             "winner": null
           },
           "away": {
@@ -226,17 +262,17 @@
           }
         },
         "goals": {
-          "home": 2,
-          "away": 2
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 2,
-            "away": 2
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -250,25 +286,25 @@
       },
       {
         "fixture": {
-          "id": 1180717,
-          "date": "2024-12-04T23:00:00+00:00",
+          "id": 1362094,
+          "date": "2025-04-03T00:30:00+00:00",
           "venue": {
             "id": 281,
             "name": "Estádio Manoel Barradas",
             "city": "Salvador, Bahia"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1733353200
+          "timestamp": 1743640200
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
         },
         "teams": {
           "home": {
@@ -278,9 +314,306 @@
             "winner": null
           },
           "away": {
-            "id": 130,
-            "name": "Gremio",
-            "logo": "https://media.api-sports.io/football/teams/130.png",
+            "id": 1157,
+            "name": "Universidad Catolica",
+            "logo": "https://media.api-sports.io/football/teams/1157.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362111,
+          "date": "2025-04-10T22:00:00+00:00",
+          "venue": {
+            "id": 59,
+            "name": "Estadio Norberto Tito Tomaghello",
+            "city": "Florencio Varela, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744322400
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 442,
+            "name": "Defensa Y Justicia",
+            "logo": "https://media.api-sports.io/football/teams/442.png",
+            "winner": null
+          },
+          "away": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362127,
+          "date": "2025-04-24T00:30:00+00:00",
+          "venue": {
+            "id": 281,
+            "name": "Estádio Manoel Barradas",
+            "city": "Salvador, Bahia"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745454600
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2369,
+            "name": "Cerro Largo",
+            "logo": "https://media.api-sports.io/football/teams/2369.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362159,
+          "date": "2025-05-15T00:30:00+00:00",
+          "venue": {
+            "id": 1624,
+            "name": "Estadio Centenario",
+            "city": "Montevideo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747269000
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2369,
+            "name": "Cerro Largo",
+            "logo": "https://media.api-sports.io/football/teams/2369.png",
+            "winner": null
+          },
+          "away": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362175,
+          "date": "2025-05-29T00:30:00+00:00",
+          "venue": {
+            "id": 465,
+            "name": "Estadio Olímpico Atahualpa",
+            "city": "Quito"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748478600
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1157,
+            "name": "Universidad Catolica",
+            "logo": "https://media.api-sports.io/football/teams/1157.png",
+            "winner": null
+          },
+          "away": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1337266,
+          "date": "2025-03-27T00:30:00+00:00",
+          "venue": {
+            "id": 265,
+            "name": "Estádio Governador João Castelo",
+            "city": "São Luís, Maranhão"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743035400
+        },
+        "league": {
+          "id": 612,
+          "name": "Copa do Nordeste",
+          "logo": "https://media.api-sports.io/football/leagues/612.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2216,
+            "name": "Moto Club",
+            "logo": "https://media.api-sports.io/football/teams/2216.png",
+            "winner": null
+          },
+          "away": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
             "winner": null
           }
         },
@@ -290,7 +623,7 @@
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 1
           },
           "fulltime": {
@@ -309,8 +642,8 @@
       },
       {
         "fixture": {
-          "id": 1180707,
-          "date": "2024-12-01T21:30:00+00:00",
+          "id": 1360067,
+          "date": "2025-03-23T19:00:00+00:00",
           "venue": {
             "id": 281,
             "name": "Estádio Manoel Barradas",
@@ -320,14 +653,73 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 8
+            "extra": null
           },
-          "timestamp": 1733088600
+          "timestamp": 1742756400
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 602,
+          "name": "Baiano - 1",
+          "logo": "https://media.api-sports.io/football/leagues/602.png"
+        },
+        "teams": {
+          "home": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": null
+          },
+          "away": {
+            "id": 118,
+            "name": "Bahia",
+            "logo": "https://media.api-sports.io/football/teams/118.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1337258,
+          "date": "2025-03-20T00:30:00+00:00",
+          "venue": {
+            "id": 281,
+            "name": "Estádio Manoel Barradas",
+            "city": "Salvador, Bahia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742430600
+        },
+        "league": {
+          "id": 612,
+          "name": "Copa do Nordeste",
+          "logo": "https://media.api-sports.io/football/leagues/612.png"
         },
         "teams": {
           "home": {
@@ -337,9 +729,68 @@
             "winner": true
           },
           "away": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "id": 123,
+            "name": "Sport Recife",
+            "logo": "https://media.api-sports.io/football/teams/123.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1360066,
+          "date": "2025-03-16T21:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Casa de Apostas Arena Fonte Nova",
+            "city": "Salvador, Bahia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742158800
+        },
+        "league": {
+          "id": 602,
+          "name": "Baiano - 1",
+          "logo": "https://media.api-sports.io/football/leagues/602.png"
+        },
+        "teams": {
+          "home": {
+            "id": 118,
+            "name": "Bahia",
+            "logo": "https://media.api-sports.io/football/teams/118.png",
+            "winner": true
+          },
+          "away": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
             "winner": false
           }
         },
@@ -368,37 +819,155 @@
       },
       {
         "fixture": {
-          "id": 1180699,
-          "date": "2024-11-23T22:30:00+00:00",
+          "id": 1355035,
+          "date": "2025-03-12T22:00:00+00:00",
           "venue": {
-            "id": 218,
-            "name": "Estádio Nilton Santos",
-            "city": "Rio de Janeiro"
+            "id": 281,
+            "name": "Estádio Manoel Barradas",
+            "city": "Salvador, Bahia"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 9
+            "extra": 7
           },
-          "timestamp": 1732401000
+          "timestamp": 1741816800
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
         },
         "teams": {
           "home": {
-            "id": 120,
-            "name": "Botafogo",
-            "logo": "https://media.api-sports.io/football/teams/120.png",
-            "winner": null
-          },
-          "away": {
             "id": 136,
             "name": "Vitoria",
             "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": false
+          },
+          "away": {
+            "id": 755,
+            "name": "Nautico Recife",
+            "logo": "https://media.api-sports.io/football/teams/755.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1354190,
+          "date": "2025-03-08T21:00:00+00:00",
+          "venue": {
+            "id": 281,
+            "name": "Estádio Manoel Barradas",
+            "city": "Salvador, Bahia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1741467600
+        },
+        "league": {
+          "id": 602,
+          "name": "Baiano - 1",
+          "logo": "https://media.api-sports.io/football/leagues/602.png"
+        },
+        "teams": {
+          "home": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": true
+          },
+          "away": {
+            "id": 9997,
+            "name": "Atlético Alagoinhas",
+            "logo": "https://media.api-sports.io/football/teams/9997.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1337248,
+          "date": "2025-03-06T00:30:00+00:00",
+          "venue": {
+            "id": 281,
+            "name": "Estádio Manoel Barradas",
+            "city": "Salvador, Bahia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1741221000
+        },
+        "league": {
+          "id": 612,
+          "name": "Copa do Nordeste",
+          "logo": "https://media.api-sports.io/football/leagues/612.png"
+        },
+        "teams": {
+          "home": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1203,
+            "name": "Altos",
+            "logo": "https://media.api-sports.io/football/teams/1203.png",
             "winner": null
           }
         },
@@ -408,8 +977,8 @@
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
             "home": 1,
@@ -427,31 +996,90 @@
       },
       {
         "fixture": {
-          "id": 1180694,
-          "date": "2024-11-20T19:30:00+00:00",
+          "id": 1354189,
+          "date": "2025-03-01T21:30:00+00:00",
           "venue": {
-            "id": 233,
-            "name": "Estádio Heriberto Hülse",
-            "city": "Criciúma, Santa Catarina"
+            "id": 7041,
+            "name": "Estádio Antônio de Figueiredo Carneiro",
+            "city": "Alagoinhas, Bahia"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 8
+            "extra": 6
           },
-          "timestamp": 1732131000
+          "timestamp": 1740864600
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 602,
+          "name": "Baiano - 1",
+          "logo": "https://media.api-sports.io/football/leagues/602.png"
         },
         "teams": {
           "home": {
-            "id": 140,
-            "name": "Criciuma",
-            "logo": "https://media.api-sports.io/football/teams/140.png",
+            "id": 9997,
+            "name": "Atlético Alagoinhas",
+            "logo": "https://media.api-sports.io/football/teams/9997.png",
+            "winner": false
+          },
+          "away": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349605,
+          "date": "2025-02-25T22:00:00+00:00",
+          "venue": {
+            "id": 265,
+            "name": "Estádio Governador João Castelo",
+            "city": "São Luís, Maranhão"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1740520800
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7832,
+            "name": "Maranhão",
+            "logo": "https://media.api-sports.io/football/teams/7832.png",
             "winner": false
           },
           "away": {
@@ -486,12 +1114,12 @@
       },
       {
         "fixture": {
-          "id": 1180677,
-          "date": "2024-11-09T19:30:00+00:00",
+          "id": 1332503,
+          "date": "2025-02-22T21:30:00+00:00",
           "venue": {
-            "id": 281,
-            "name": "Estádio Manoel Barradas",
-            "city": "Salvador, Bahia"
+            "id": 7041,
+            "name": "Estádio Antônio de Figueiredo Carneiro",
+            "city": "Alagoinhas, Bahia"
           },
           "status": {
             "long": "Match Finished",
@@ -499,77 +1127,18 @@
             "elapsed": 90,
             "extra": 5
           },
-          "timestamp": 1731180600
+          "timestamp": 1740259800
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 602,
+          "name": "Baiano - 1",
+          "logo": "https://media.api-sports.io/football/leagues/602.png"
         },
         "teams": {
           "home": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": false
-          },
-          "away": {
-            "id": 131,
-            "name": "Corinthians",
-            "logo": "https://media.api-sports.io/football/teams/131.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180672,
-          "date": "2024-11-02T21:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Ligga Arena",
-            "city": "Curitiba, Paraná"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1730583000
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 134,
-            "name": "Atletico Paranaense",
-            "logo": "https://media.api-sports.io/football/teams/134.png",
+            "id": 9997,
+            "name": "Atlético Alagoinhas",
+            "logo": "https://media.api-sports.io/football/teams/9997.png",
             "winner": false
           },
           "away": {
@@ -580,194 +1149,17 @@
           }
         },
         "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180657,
-          "date": "2024-10-26T19:30:00+00:00",
-          "venue": {
-            "id": 281,
-            "name": "Estádio Manoel Barradas",
-            "city": "Salvador, Bahia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1729971000
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": true
-          },
-          "away": {
-            "id": 124,
-            "name": "Fluminense",
-            "logo": "https://media.api-sports.io/football/teams/124.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
+          "home": 0,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
+            "home": 0,
             "away": 1
           },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180647,
-          "date": "2024-10-19T19:00:00+00:00",
-          "venue": {
-            "id": 281,
-            "name": "Estádio Manoel Barradas",
-            "city": "Salvador, Bahia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1729364400
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": true
-          },
-          "away": {
-            "id": 794,
-            "name": "RB Bragantino",
-            "logo": "https://media.api-sports.io/football/teams/794.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
+          "fulltime": {
             "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180636,
-          "date": "2024-10-05T19:30:00+00:00",
-          "venue": {
-            "id": 21427,
-            "name": "Arena MRV",
-            "city": "Belo Horizonte, Minas Gerais"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1728156600
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1062,
-            "name": "Atletico-MG",
-            "logo": "https://media.api-sports.io/football/teams/1062.png",
-            "winner": null
-          },
-          "away": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -783,81 +1175,81 @@
   },
   "statistics": {
     "league": {
-      "id": 612,
-      "name": "Copa do Nordeste",
+      "id": 602,
+      "name": "Baiano - 1",
       "country": "Brazil",
-      "logo": "https://media.api-sports.io/football/leagues/612.png",
+      "logo": "https://media.api-sports.io/football/leagues/602.png",
       "flag": "https://media.api-sports.io/flags/br.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 136,
       "name": "Vitoria",
       "logo": "https://media.api-sports.io/football/teams/136.png"
     },
-    "form": "DWLDWLWW",
+    "form": "DWDWWDWWWWWLD",
     "fixtures": {
       "played": {
+        "home": 7,
+        "away": 6,
+        "total": 13
+      },
+      "wins": {
         "home": 4,
         "away": 4,
         "total": 8
       },
-      "wins": {
+      "draws": {
         "home": 3,
         "away": 1,
         "total": 4
       },
-      "draws": {
-        "home": 1,
-        "away": 1,
-        "total": 2
-      },
       "loses": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 1,
+        "total": 1
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 10,
-          "away": 2,
-          "total": 12
+          "home": 13,
+          "away": 13,
+          "total": 26
         },
         "average": {
-          "home": "2.5",
-          "away": "0.5",
-          "total": "1.5"
+          "home": "1.9",
+          "away": "2.2",
+          "total": "2.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "8.33%"
+            "total": 5,
+            "percentage": "20.00%"
           },
           "16-30": {
             "total": 1,
-            "percentage": "8.33%"
+            "percentage": "4.00%"
           },
           "31-45": {
-            "total": 2,
-            "percentage": "16.67%"
+            "total": 3,
+            "percentage": "12.00%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 5,
+            "percentage": "20.00%"
           },
           "61-75": {
-            "total": 1,
-            "percentage": "8.33%"
+            "total": 3,
+            "percentage": "12.00%"
           },
           "76-90": {
-            "total": 6,
-            "percentage": "50.00%"
+            "total": 5,
+            "percentage": "20.00%"
           },
           "91-105": {
-            "total": 1,
-            "percentage": "8.33%"
+            "total": 3,
+            "percentage": "12.00%"
           },
           "106-120": {
             "total": null,
@@ -866,24 +1258,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 6,
-            "under": 2
+            "over": 10,
+            "under": 3
           },
           "1.5": {
-            "over": 3,
-            "under": 5
+            "over": 7,
+            "under": 6
           },
           "2.5": {
-            "over": 3,
-            "under": 5
+            "over": 5,
+            "under": 8
           },
           "3.5": {
-            "over": 0,
-            "under": 8
+            "over": 4,
+            "under": 9
           },
           "4.5": {
             "over": 0,
-            "under": 8
+            "under": 13
           }
         }
       },
@@ -894,38 +1286,38 @@
           "total": 7
         },
         "average": {
-          "home": "0.8",
-          "away": "1.0",
-          "total": "0.9"
+          "home": "0.4",
+          "away": "0.7",
+          "total": "0.5"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "12.50%"
           },
           "16-30": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "12.50%"
           },
           "31-45": {
-            "total": 3,
-            "percentage": "42.86%"
-          },
-          "46-60": {
-            "total": 2,
-            "percentage": "28.57%"
-          },
-          "61-75": {
             "total": null,
             "percentage": null
+          },
+          "46-60": {
+            "total": 3,
+            "percentage": "37.50%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "12.50%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "12.50%"
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "12.50%"
           },
           "106-120": {
             "total": null,
@@ -934,37 +1326,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
-            "under": 3
+            "over": 6,
+            "under": 7
           },
           "1.5": {
-            "over": 2,
-            "under": 6
+            "over": 1,
+            "under": 12
           },
           "2.5": {
             "over": 0,
-            "under": 8
+            "under": 13
           },
           "3.5": {
             "over": 0,
-            "under": 8
+            "under": 13
           },
           "4.5": {
             "over": 0,
-            "under": 8
+            "under": 13
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 5,
         "draws": 1,
         "loses": 1
       },
       "wins": {
-        "home": "3-0",
-        "away": "0-1"
+        "home": "4-0",
+        "away": "0-4"
       },
       "loses": {
         "home": null,
@@ -972,8 +1364,8 @@
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 1
+          "home": 4,
+          "away": 4
         },
         "against": {
           "home": 1,
@@ -982,56 +1374,56 @@
       }
     },
     "clean_sheet": {
+      "home": 4,
+      "away": 3,
+      "total": 7
+    },
+    "failed_to_score": {
       "home": 1,
       "away": 2,
       "total": 3
     },
-    "failed_to_score": {
-      "home": 0,
-      "away": 2,
-      "total": 2
-    },
     "penalty": {
       "scored": {
-        "total": 2,
+        "total": 1,
         "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 2
+      "total": 1
     },
     "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
           "total": 1,
-          "percentage": "9.09%"
+          "percentage": "3.23%"
         },
         "16-30": {
-          "total": 2,
-          "percentage": "18.18%"
+          "total": 6,
+          "percentage": "19.35%"
         },
         "31-45": {
-          "total": 2,
-          "percentage": "18.18%"
+          "total": 8,
+          "percentage": "25.81%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 3,
+          "percentage": "9.68%"
         },
         "61-75": {
-          "total": 1,
-          "percentage": "9.09%"
+          "total": 4,
+          "percentage": "12.90%"
         },
         "76-90": {
           "total": 4,
-          "percentage": "36.36%"
+          "percentage": "12.90%"
         },
         "91-105": {
-          "total": 1,
-          "percentage": "9.09%"
+          "total": 5,
+          "percentage": "16.13%"
         },
         "106-120": {
           "total": null,
@@ -1056,16 +1448,16 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
           "percentage": null
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "100.00%"
         },
         "106-120": {
           "total": null,
@@ -1074,5 +1466,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:26.450Z"
+  "lastUpdated": "2025-03-27T10:42:17.205Z"
 }

@@ -22,6 +22,43 @@
   "leagues": [
     {
       "league": {
+        "id": 768,
+        "name": "Arab Club Champions Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/768.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-03-02",
+          "end": "2023-08-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 17,
         "name": "AFC Champions League",
         "type": "Cup",
@@ -73,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-09-20",
-          "end": "2025-03-14",
+          "end": "2025-03-30",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -87,6 +124,43 @@
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 402,
+        "name": "Sudani Premier League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/402.png"
+      },
+      "country": {
+        "name": "Sudan",
+        "code": "SD",
+        "flag": "https://media.api-sports.io/flags/sd.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-10",
+          "end": "2025-02-19",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -107,7 +181,67 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1366244,
+          "date": "2025-03-30T20:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Al-Shaab Stadium",
+            "city": "Baghdād"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743366600
+        },
+        "league": {
+          "id": 542,
+          "name": "Iraqi League",
+          "logo": "https://media.api-sports.io/football/leagues/542.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5242,
+            "name": "Al Shorta",
+            "logo": "https://media.api-sports.io/football/teams/5242.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8009,
+            "name": "Al Quwa Al Jawiya",
+            "logo": "https://media.api-sports.io/football/teams/8009.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
       {
         "fixture": {
@@ -288,6 +422,65 @@
       },
       {
         "fixture": {
+          "id": 1350676,
+          "date": "2025-02-18T13:00:00+00:00",
+          "venue": {
+            "id": 6313,
+            "name": "Al-Gadarf Stadium",
+            "city": "Al-Gadarf"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739883600
+        },
+        "league": {
+          "id": 402,
+          "name": "Sudani Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/402.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5242,
+            "name": "Al Shorta",
+            "logo": "https://media.api-sports.io/football/teams/5242.png",
+            "winner": null
+          },
+          "away": {
+            "id": 25523,
+            "name": "Al-Mergheni",
+            "logo": "https://media.api-sports.io/football/teams/25523.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1288395,
           "date": "2025-02-17T16:00:00+00:00",
           "venue": {
@@ -347,6 +540,65 @@
       },
       {
         "fixture": {
+          "id": 1349882,
+          "date": "2025-02-15T13:00:00+00:00",
+          "venue": {
+            "id": 6313,
+            "name": "Al-Gadarf Stadium",
+            "city": "Al-Gadarf"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739624400
+        },
+        "league": {
+          "id": 402,
+          "name": "Sudani Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/402.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25520,
+            "name": "Al Hilal Al Manaqil",
+            "logo": "https://media.api-sports.io/football/teams/25520.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5242,
+            "name": "Al Shorta",
+            "logo": "https://media.api-sports.io/football/teams/5242.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1350631,
           "date": "2025-02-13T14:00:00+00:00",
           "venue": {
@@ -393,6 +645,65 @@
           "fulltime": {
             "home": 2,
             "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349879,
+          "date": "2025-02-11T13:00:00+00:00",
+          "venue": {
+            "id": 21584,
+            "name": "Stade Al-Merghani Kassala",
+            "city": "Kassala"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739278800
+        },
+        "league": {
+          "id": 402,
+          "name": "Sudani Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/402.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5245,
+            "name": "Hay Al Arab",
+            "logo": "https://media.api-sports.io/football/teams/5245.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5242,
+            "name": "Al Shorta",
+            "logo": "https://media.api-sports.io/football/teams/5242.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -521,234 +832,57 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1340248,
-          "date": "2025-01-30T16:30:00+00:00",
-          "venue": {
-            "id": 5710,
-            "name": "Al-Shaab Stadium",
-            "city": "Bagdad"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1738254600
-        },
-        "league": {
-          "id": 542,
-          "name": "Iraqi League",
-          "logo": "https://media.api-sports.io/football/leagues/542.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8009,
-            "name": "Al Quwa Al Jawiya",
-            "logo": "https://media.api-sports.io/football/teams/8009.png",
-            "winner": false
-          },
-          "away": {
-            "id": 5242,
-            "name": "Al Shorta",
-            "logo": "https://media.api-sports.io/football/teams/5242.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1339879,
-          "date": "2025-01-24T16:30:00+00:00",
-          "venue": {
-            "id": 5710,
-            "name": "Al-Shaab Stadium",
-            "city": "Bagdad"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737736200
-        },
-        "league": {
-          "id": 542,
-          "name": "Iraqi League",
-          "logo": "https://media.api-sports.io/football/leagues/542.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5242,
-            "name": "Al Shorta",
-            "logo": "https://media.api-sports.io/football/teams/5242.png",
-            "winner": null
-          },
-          "away": {
-            "id": 25062,
-            "name": "Newroz",
-            "logo": "https://media.api-sports.io/football/teams/25062.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1338005,
-          "date": "2025-01-18T14:00:00+00:00",
-          "venue": {
-            "id": 19302,
-            "name": "Karbala Stadium",
-            "city": "Karbala"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737208800
-        },
-        "league": {
-          "id": 542,
-          "name": "Iraqi League",
-          "logo": "https://media.api-sports.io/football/leagues/542.png"
-        },
-        "teams": {
-          "home": {
-            "id": 20464,
-            "name": "Karbala",
-            "logo": "https://media.api-sports.io/football/teams/20464.png",
-            "winner": false
-          },
-          "away": {
-            "id": 5242,
-            "name": "Al Shorta",
-            "logo": "https://media.api-sports.io/football/teams/5242.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 17,
-      "name": "AFC Champions League",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/17.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 5242,
       "name": "Al Shorta",
       "logo": "https://media.api-sports.io/football/teams/5242.png"
     },
-    "form": "DLDLLLDW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 4,
-        "away": 4,
-        "total": 8
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 1,
-        "away": 3,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 4,
-          "away": 3,
-          "total": 7
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "0.8",
-          "total": "0.9"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -756,16 +890,16 @@
             "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "42.86%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "42.86%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -776,8 +910,8 @@
             "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -786,42 +920,42 @@
         },
         "under_over": {
           "0.5": {
-            "over": 6,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
-          "away": 13,
-          "total": 17
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "3.3",
-          "total": "2.1"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 6,
-            "percentage": "35.29%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -832,20 +966,20 @@
             "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "17.65%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 4,
-            "percentage": "23.53%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "5.88%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 3,
-            "percentage": "17.65%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -854,24 +988,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 6,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 4,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 3,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 2,
-            "under": 6
+            "over": 0,
+            "under": 0
           }
         }
       }
@@ -879,37 +1013,37 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
-        "loses": 3
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "2-0",
+        "home": null,
         "away": null
       },
       "loses": {
-        "home": "1-3",
-        "away": "5-0"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
-          "away": 5
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 2,
+      "home": 0,
       "away": 0,
-      "total": 2
+      "total": 0
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -922,20 +1056,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-5-1",
-        "played": 3
-      },
-      {
-        "formation": "4-1-4-1",
-        "played": 3
-      },
-      {
-        "formation": "4-4-2",
-        "played": 2
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -943,28 +1064,28 @@
           "percentage": null
         },
         "16-30": {
-          "total": 2,
-          "percentage": "12.50%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 3,
-          "percentage": "18.75%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 2,
-          "percentage": "12.50%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 3,
-          "percentage": "18.75%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 5,
-          "percentage": "31.25%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "6.25%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1007,5 +1128,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:04.689Z"
+  "lastUpdated": "2025-03-27T10:41:54.376Z"
 }

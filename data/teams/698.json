@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 837,
-        "name": "Rock Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/837.png"
-      },
-      "country": {
-        "name": "Gibraltar",
-        "code": "GI",
-        "flag": "https://media.api-sports.io/flags/gi.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-30",
-          "end": "2024-04-17",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": false,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": false,
-            "top_scorers": false,
-            "top_assists": false,
-            "top_cards": false,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 848,
         "name": "UEFA Europa Conference League",
         "type": "Cup",
@@ -161,6 +124,43 @@
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 837,
+        "name": "Rock Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/837.png"
+      },
+      "country": {
+        "name": "Gibraltar",
+        "code": "GI",
+        "flag": "https://media.api-sports.io/flags/gi.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-01",
+          "end": "2025-03-29",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -407,6 +407,65 @@
           },
           "fulltime": {
             "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334894,
+          "date": "2025-02-02T15:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Europa Point Stadium",
+            "city": "Gibraltar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1738510200
+        },
+        "league": {
+          "id": 837,
+          "name": "Rock Cup",
+          "logo": "https://media.api-sports.io/football/leagues/837.png"
+        },
+        "teams": {
+          "home": {
+            "id": 698,
+            "name": "St Joseph S Fc",
+            "logo": "https://media.api-sports.io/football/teams/698.png",
+            "winner": true
+          },
+          "away": {
+            "id": 16130,
+            "name": "College 1975",
+            "logo": "https://media.api-sports.io/football/teams/16130.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
             "away": 0
           },
           "extratime": {
@@ -713,93 +772,34 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1287772,
-          "date": "2024-11-23T15:30:00+00:00",
-          "venue": {
-            "id": 760,
-            "name": "Europa Point Stadium",
-            "city": "Gibraltar"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1732375800
-        },
-        "league": {
-          "id": 758,
-          "name": "Premier Division",
-          "logo": "https://media.api-sports.io/football/leagues/758.png"
-        },
-        "teams": {
-          "home": {
-            "id": 16133,
-            "name": "Lions Gibraltar",
-            "logo": "https://media.api-sports.io/football/teams/16133.png",
-            "winner": false
-          },
-          "away": {
-            "id": 698,
-            "name": "St Joseph S Fc",
-            "logo": "https://media.api-sports.io/football/teams/698.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 837,
-      "name": "Rock Cup",
-      "country": "Gibraltar",
-      "logo": "https://media.api-sports.io/football/leagues/837.png",
-      "flag": "https://media.api-sports.io/flags/gi.svg",
-      "season": 2024
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
+      "flag": null,
+      "season": null
     },
     "team": {
       "id": 698,
       "name": "St Joseph S Fc",
       "logo": "https://media.api-sports.io/football/teams/698.png"
     },
-    "form": "WWL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -807,22 +807,22 @@
         "total": 0
       },
       "loses": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 3,
-          "away": 2,
-          "total": 5
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.5",
-          "away": "2.0",
-          "total": "1.7"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -830,24 +830,24 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -860,37 +860,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "0.5",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.3"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -902,8 +902,8 @@
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -928,62 +928,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "3-0",
-        "away": "0-2"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "0-1",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1068,5 +1068,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:10.188Z"
+  "lastUpdated": "2025-03-27T10:38:53.318Z"
 }

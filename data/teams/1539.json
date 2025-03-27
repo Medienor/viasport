@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 807,
+        "name": "AFC Challenge Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/807.png"
       },
       "country": {
         "name": "World",
@@ -34,22 +34,59 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2014,
+          "start": "2013-03-02",
+          "end": "2014-05-30",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1008,
+        "name": "CAFA Nations Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1008.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2023-06-10",
+          "end": "2023-06-20",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -89,7 +126,44 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 30,
+        "name": "World Cup - Qualification Asia",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/30.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2023-10-12",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -106,7 +180,8 @@
     2026
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1321308,
@@ -117,10 +192,10 @@
             "city": "Gaoxiong"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
           },
           "timestamp": 1742898600
         },
@@ -134,27 +209,27 @@
             "id": 1557,
             "name": "Chinese Taipei",
             "logo": "https://media.api-sports.io/football/teams/1557.png",
-            "winner": null
+            "winner": false
           },
           "away": {
             "id": 1539,
             "name": "Turkmenistan",
             "logo": "https://media.api-sports.io/football/teams/1539.png",
-            "winner": null
+            "winner": true
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -168,25 +243,25 @@
       },
       {
         "fixture": {
-          "id": 1321318,
-          "date": "2025-06-10T00:00:00+00:00",
+          "id": 1139135,
+          "date": "2024-06-11T15:00:00+00:00",
           "venue": {
             "id": null,
-            "name": null,
-            "city": null
+            "name": "Saparmurat Turkmenbashy Olympic Stadium",
+            "city": "Ashgabat"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1749513600
+          "timestamp": 1718118000
         },
         "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
         },
         "teams": {
           "home": {
@@ -196,24 +271,24 @@
             "winner": null
           },
           "away": {
-            "id": 1564,
-            "name": "Thailand",
-            "logo": "https://media.api-sports.io/football/teams/1564.png",
+            "id": 4460,
+            "name": "Hong Kong",
+            "logo": "https://media.api-sports.io/football/teams/4460.png",
             "winner": null
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -227,52 +302,52 @@
       },
       {
         "fixture": {
-          "id": 1321327,
-          "date": "2025-10-09T00:00:00+00:00",
+          "id": 1100360,
+          "date": "2024-06-06T14:30:00+00:00",
           "venue": {
             "id": null,
-            "name": null,
-            "city": null
+            "name": "Milliy Stadioni",
+            "city": "Tashkent"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1759968000
+          "timestamp": 1717684200
         },
         "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
         },
         "teams": {
           "home": {
-            "id": 5166,
-            "name": "Sri Lanka",
-            "logo": "https://media.api-sports.io/football/teams/5166.png",
-            "winner": null
+            "id": 1568,
+            "name": "Uzbekistan",
+            "logo": "https://media.api-sports.io/football/teams/1568.png",
+            "winner": true
           },
           "away": {
             "id": 1539,
             "name": "Turkmenistan",
             "logo": "https://media.api-sports.io/football/teams/1539.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 2,
+            "away": 1
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 3,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -286,52 +361,52 @@
       },
       {
         "fixture": {
-          "id": 1321337,
-          "date": "2025-10-14T00:00:00+00:00",
+          "id": 1100352,
+          "date": "2024-03-26T15:00:00+00:00",
           "venue": {
             "id": null,
-            "name": null,
-            "city": null
+            "name": "Aşgabat Stadiony",
+            "city": "Ashgabat"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1760400000
+          "timestamp": 1711465200
         },
         "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
         },
         "teams": {
           "home": {
             "id": 1539,
             "name": "Turkmenistan",
             "logo": "https://media.api-sports.io/football/teams/1539.png",
-            "winner": null
+            "winner": false
           },
           "away": {
-            "id": 5166,
-            "name": "Sri Lanka",
-            "logo": "https://media.api-sports.io/football/teams/5166.png",
-            "winner": null
+            "id": 22,
+            "name": "Iran",
+            "logo": "https://media.api-sports.io/football/teams/22.png",
+            "winner": true
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 1
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -345,52 +420,52 @@
       },
       {
         "fixture": {
-          "id": 1321348,
-          "date": "2025-11-18T00:00:00+00:00",
+          "id": 1100344,
+          "date": "2024-03-21T16:00:00+00:00",
           "venue": {
             "id": null,
-            "name": null,
-            "city": null
+            "name": "Azadi Stadium",
+            "city": "Teheran"
           },
           "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1763424000
+          "timestamp": 1711036800
         },
         "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
         },
         "teams": {
           "home": {
+            "id": 22,
+            "name": "Iran",
+            "logo": "https://media.api-sports.io/football/teams/22.png",
+            "winner": true
+          },
+          "away": {
             "id": 1539,
             "name": "Turkmenistan",
             "logo": "https://media.api-sports.io/football/teams/1539.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1557,
-            "name": "Chinese Taipei",
-            "logo": "https://media.api-sports.io/football/teams/1557.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 5,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 2,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 5,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -402,67 +477,6 @@
           }
         }
       },
-      {
-        "fixture": {
-          "id": 1321357,
-          "date": "2026-03-31T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Time to be defined",
-            "short": "TBD",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1774915200
-        },
-        "league": {
-          "id": 35,
-          "name": "Asian Cup - Qualification",
-          "logo": "https://media.api-sports.io/football/leagues/35.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1564,
-            "name": "Thailand",
-            "logo": "https://media.api-sports.io/football/teams/1564.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1539,
-            "name": "Turkmenistan",
-            "logo": "https://media.api-sports.io/football/teams/1539.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      }
-    ],
-    "past": [
       {
         "fixture": {
           "id": 1169679,
@@ -521,29 +535,265 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1139096,
+          "date": "2023-11-21T12:00:00+00:00",
+          "venue": {
+            "id": 3385,
+            "name": "Hong Kong Stadium",
+            "city": "Hong Kong"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700568000
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4460,
+            "name": "Hong Kong",
+            "logo": "https://media.api-sports.io/football/teams/4460.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1539,
+            "name": "Turkmenistan",
+            "logo": "https://media.api-sports.io/football/teams/1539.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1100327,
+          "date": "2023-11-16T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Aşgabat Stadiony",
+            "city": "Ashgabat"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700143200
+        },
+        "league": {
+          "id": 30,
+          "name": "World Cup - Qualification Asia",
+          "logo": "https://media.api-sports.io/football/leagues/30.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1539,
+            "name": "Turkmenistan",
+            "logo": "https://media.api-sports.io/football/teams/1539.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1568,
+            "name": "Uzbekistan",
+            "logo": "https://media.api-sports.io/football/teams/1568.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1119712,
+          "date": "2023-09-12T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Police Officers Club Stadium",
+            "city": "Dubai"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1694530800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1547,
+            "name": "Bahrain",
+            "logo": "https://media.api-sports.io/football/teams/1547.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1539,
+            "name": "Turkmenistan",
+            "logo": "https://media.api-sports.io/football/teams/1539.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1131720,
+          "date": "2023-09-08T12:30:00+00:00",
+          "venue": {
+            "id": 835,
+            "name": "Stadion Gelora Bung Tomo",
+            "city": "Surabaya"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1694176200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1571,
+            "name": "Indonesia",
+            "logo": "https://media.api-sports.io/football/teams/1571.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1539,
+            "name": "Turkmenistan",
+            "logo": "https://media.api-sports.io/football/teams/1539.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1539,
       "name": "Turkmenistan",
       "logo": "https://media.api-sports.io/football/teams/1539.png"
     },
-    "form": "L",
+    "form": null,
     "fixtures": {
       "played": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -557,8 +807,8 @@
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
@@ -610,41 +860,41 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 2,
-          "total": 2
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "2.0",
-          "total": "2.0"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -655,8 +905,8 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -677,24 +927,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       }
@@ -703,7 +953,7 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
         "home": null,
@@ -711,7 +961,7 @@
       },
       "loses": {
         "home": null,
-        "away": "2-0"
+        "away": null
       },
       "goals": {
         "for": {
@@ -720,7 +970,7 @@
         },
         "against": {
           "home": 0,
-          "away": 2
+          "away": 0
         }
       }
     },
@@ -731,8 +981,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -817,5 +1067,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:33.031Z"
+  "lastUpdated": "2025-03-27T10:40:19.753Z"
 }

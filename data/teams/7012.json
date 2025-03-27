@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 104,
-        "name": "1. Division",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/104.png"
-      },
-      "country": {
-        "name": "Norway",
-        "code": "NO",
-        "flag": "https://media.api-sports.io/flags/no.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-04-01",
-          "end": "2024-12-01",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 667,
         "name": "Friendlies Clubs",
         "type": "Cup",
@@ -71,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -89,17 +52,17 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
     },
     {
       "league": {
-        "id": 103,
-        "name": "Eliteserien",
+        "id": 104,
+        "name": "1. Division",
         "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/103.png"
+        "logo": "https://media.api-sports.io/football/leagues/104.png"
       },
       "country": {
         "name": "Norway",
@@ -108,62 +71,25 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-03-31",
-          "end": "2024-12-08",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-31",
+          "end": "2025-11-08",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
-            "injuries": true,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 105,
-        "name": "NM Cupen",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/105.png"
-      },
-      "country": {
-        "name": "Norway",
-        "code": "NO",
-        "flag": "https://media.api-sports.io/flags/no.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-04-09",
-          "end": "2024-12-07",
-          "current": true,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -179,8 +105,1071 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1342433,
+          "date": "2025-04-01T17:00:00+00:00",
+          "venue": {
+            "id": 1189,
+            "name": "NAMMO stadion",
+            "city": "Raufoss"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743526800
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2153,
+            "name": "Raufoss",
+            "logo": "https://media.api-sports.io/football/teams/2153.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342438,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 5124,
+            "name": "Melløs Stadion",
+            "city": "Moss"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          },
+          "away": {
+            "id": 322,
+            "name": "Ranheim",
+            "logo": "https://media.api-sports.io/football/teams/322.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342443,
+          "date": "2025-04-21T15:00:00+00:00",
+          "venue": {
+            "id": 1180,
+            "name": "Gjemselund Stadion",
+            "city": "Kongsvinger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745247600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2144,
+            "name": "Kongsvinger",
+            "logo": "https://media.api-sports.io/football/teams/2144.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342451,
+          "date": "2025-04-27T15:00:00+00:00",
+          "venue": {
+            "id": 5124,
+            "name": "Melløs Stadion",
+            "city": "Moss"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745766000
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          },
+          "away": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342458,
+          "date": "2025-05-03T14:00:00+00:00",
+          "venue": {
+            "id": 1182,
+            "name": "Åråsen Stadion",
+            "city": "Kjeller"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746280800
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 321,
+            "name": "Lillestrom",
+            "logo": "https://media.api-sports.io/football/teams/321.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342471,
+          "date": "2025-05-12T17:00:00+00:00",
+          "venue": {
+            "id": 5124,
+            "name": "Melløs Stadion",
+            "city": "Moss"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747069200
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7006,
+            "name": "Lyn",
+            "logo": "https://media.api-sports.io/football/teams/7006.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342477,
+          "date": "2025-05-16T16:00:00+00:00",
+          "venue": {
+            "id": 1187,
+            "name": "Skagerak Arena",
+            "city": "Skien"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747411200
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 330,
+            "name": "ODD Ballklubb",
+            "logo": "https://media.api-sports.io/football/teams/330.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342484,
+          "date": "2025-05-24T14:00:00+00:00",
+          "venue": {
+            "id": 5124,
+            "name": "Melløs Stadion",
+            "city": "Moss"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748095200
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2239,
+            "name": "Skeid",
+            "logo": "https://media.api-sports.io/football/teams/2239.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342493,
+          "date": "2025-05-31T14:00:00+00:00",
+          "venue": {
+            "id": 5124,
+            "name": "Melløs Stadion",
+            "city": "Moss"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748700000
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          },
+          "away": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342502,
+          "date": "2025-06-15T15:00:00+00:00",
+          "venue": {
+            "id": 1183,
+            "name": "Consto Arena",
+            "city": "Mjøndalen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749999600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2152,
+            "name": "Mjondalen",
+            "logo": "https://media.api-sports.io/football/teams/2152.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342509,
+          "date": "2025-06-18T17:00:00+00:00",
+          "venue": {
+            "id": 5124,
+            "name": "Melløs Stadion",
+            "city": "Moss"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750266000
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2150,
+            "name": "hodd",
+            "logo": "https://media.api-sports.io/football/teams/2150.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1365978,
+          "date": "2025-03-23T12:00:00+00:00",
+          "venue": {
+            "id": 5118,
+            "name": "Kringsjå kunstgress",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742731200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7006,
+            "name": "Lyn",
+            "logo": "https://media.api-sports.io/football/teams/7006.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350890,
+          "date": "2025-03-15T13:00:00+00:00",
+          "venue": {
+            "id": 1183,
+            "name": "Consto Arena",
+            "city": "Mjøndalen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742043600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2152,
+            "name": "Mjondalen",
+            "logo": "https://media.api-sports.io/football/teams/2152.png",
+            "winner": true
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349332,
+          "date": "2025-03-08T11:00:00+00:00",
+          "venue": {
+            "id": 11311,
+            "name": "Raufoss Storhall",
+            "city": "Raufoss"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1741431600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2153,
+            "name": "Raufoss",
+            "logo": "https://media.api-sports.io/football/teams/2153.png",
+            "winner": true
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346271,
+          "date": "2025-03-01T13:00:00+00:00",
+          "venue": {
+            "id": 1187,
+            "name": "Skagerak Arena",
+            "city": "Skien"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1740834000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 330,
+            "name": "ODD Ballklubb",
+            "logo": "https://media.api-sports.io/football/teams/330.png",
+            "winner": false
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349259,
+          "date": "2025-02-16T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Complejo Deportivo Arroyo Enmedio",
+            "city": "Estepona"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1739707200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345871,
+          "date": "2025-02-07T12:00:00+00:00",
+          "venue": {
+            "id": 1193,
+            "name": "Sarpsborg Stadion",
+            "city": "Sarpsborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1738929600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 333,
+            "name": "Sarpsborg 08 FF",
+            "logo": "https://media.api-sports.io/football/teams/333.png",
+            "winner": true
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1344829,
+          "date": "2025-01-31T12:00:00+00:00",
+          "venue": {
+            "id": 20418,
+            "name": "Jotun Arena",
+            "city": "Sandefjord"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1738324800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 332,
+            "name": "Sandefjord",
+            "logo": "https://media.api-sports.io/football/teams/332.png",
+            "winner": true
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1319937,
@@ -357,419 +1346,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1152104,
-          "date": "2024-11-09T15:00:00+00:00",
-          "venue": {
-            "id": 1179,
-            "name": "KFUM Arena",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1731164400
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7006,
-            "name": "Lyn",
-            "logo": "https://media.api-sports.io/football/teams/7006.png",
-            "winner": false
-          },
-          "away": {
-            "id": 7012,
-            "name": "Moss",
-            "logo": "https://media.api-sports.io/football/teams/7012.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152100,
-          "date": "2024-11-02T15:00:00+00:00",
-          "venue": {
-            "id": 5124,
-            "name": "Melløs Stadion",
-            "city": "Moss"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1730559600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7012,
-            "name": "Moss",
-            "logo": "https://media.api-sports.io/football/teams/7012.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2153,
-            "name": "Raufoss",
-            "logo": "https://media.api-sports.io/football/teams/2153.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152095,
-          "date": "2024-10-26T14:00:00+00:00",
-          "venue": {
-            "id": 1197,
-            "name": "Sparebanken Sør Arena",
-            "city": "Kristiansand"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1729951200
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 334,
-            "name": "Start",
-            "logo": "https://media.api-sports.io/football/teams/334.png",
-            "winner": null
-          },
-          "away": {
-            "id": 7012,
-            "name": "Moss",
-            "logo": "https://media.api-sports.io/football/teams/7012.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152087,
-          "date": "2024-10-21T17:00:00+00:00",
-          "venue": {
-            "id": 5124,
-            "name": "Melløs Stadion",
-            "city": "Moss"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1729530000
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7012,
-            "name": "Moss",
-            "logo": "https://media.api-sports.io/football/teams/7012.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2145,
-            "name": "Levanger",
-            "logo": "https://media.api-sports.io/football/teams/2145.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152078,
-          "date": "2024-10-06T12:30:00+00:00",
-          "venue": {
-            "id": 5124,
-            "name": "Melløs Stadion",
-            "city": "Moss"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1728217800
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7012,
-            "name": "Moss",
-            "logo": "https://media.api-sports.io/football/teams/7012.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2148,
-            "name": "Asane",
-            "logo": "https://media.api-sports.io/football/teams/2148.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152067,
-          "date": "2024-09-28T14:00:00+00:00",
-          "venue": {
-            "id": 2793,
-            "name": "Bryne Stadion",
-            "city": "Bryne"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1727532000
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2142,
-            "name": "Bryne",
-            "logo": "https://media.api-sports.io/football/teams/2142.png",
-            "winner": true
-          },
-          "away": {
-            "id": 7012,
-            "name": "Moss",
-            "logo": "https://media.api-sports.io/football/teams/7012.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152062,
-          "date": "2024-09-25T17:00:00+00:00",
-          "venue": {
-            "id": 5124,
-            "name": "Melløs Stadion",
-            "city": "Moss"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1727283600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7012,
-            "name": "Moss",
-            "logo": "https://media.api-sports.io/football/teams/7012.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2146,
-            "name": "Sandnes ULF",
-            "logo": "https://media.api-sports.io/football/teams/2146.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 6,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 6,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -780,76 +1356,76 @@
       "country": "Norway",
       "logo": "https://media.api-sports.io/football/leagues/104.png",
       "flag": "https://media.api-sports.io/flags/no.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 7012,
       "name": "Moss",
       "logo": "https://media.api-sports.io/football/teams/7012.png"
     },
-    "form": "WLWLLDDWWWWLWWWWLLWLWDLWLDWDWWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 16,
-        "away": 15,
-        "total": 31
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 12,
-        "away": 5,
-        "total": 17
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 2,
-        "away": 3,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 2,
-        "away": 7,
-        "total": 9
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 36,
-          "away": 21,
-          "total": 57
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.3",
-          "away": "1.4",
-          "total": "1.8"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 6,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 7,
-            "percentage": "12.96%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 7,
-            "percentage": "12.96%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 8,
-            "percentage": "14.81%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 9,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 16,
-            "percentage": "29.63%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "1.85%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -858,66 +1434,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 24,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 16,
-            "under": 15
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 10,
-            "under": 21
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 4,
-            "under": 27
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 2,
-            "under": 29
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 16,
-          "away": 27,
-          "total": 43
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "1.8",
-          "total": "1.4"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 9,
-            "percentage": "19.57%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 5,
-            "percentage": "10.87%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 3,
-            "percentage": "6.52%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 14,
-            "percentage": "30.43%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 10,
-            "percentage": "21.74%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 3,
-            "percentage": "6.52%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "4.35%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -926,73 +1502,73 @@
         },
         "under_over": {
           "0.5": {
-            "over": 23,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 10,
-            "under": 21
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 6,
-            "under": 25
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 29
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 2,
-            "under": 29
+            "over": 0,
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 4,
-        "draws": 2,
-        "loses": 2
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "6-1",
-        "away": "1-4"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "0-2",
-        "away": "5-0"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 6,
-          "away": 4
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
-          "away": 5
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 6,
-      "away": 2,
-      "total": 8
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 6,
-      "total": 7
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 3,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 3
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -1002,28 +1578,28 @@
           "percentage": null
         },
         "16-30": {
-          "total": 8,
-          "percentage": "14.81%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 7,
-          "percentage": "12.96%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 17,
-          "percentage": "31.48%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 12,
-          "percentage": "22.22%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 6,
-          "percentage": "11.11%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 4,
-          "percentage": "7.41%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1066,5 +1642,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:37:04.357Z"
+  "lastUpdated": "2025-03-27T10:35:41.331Z"
 }

@@ -19,45 +19,7 @@
       "image": null
     }
   },
-  "leagues": [
-    {
-      "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    }
-  ],
+  "leagues": [],
   "seasons": [
     2023,
     2024
@@ -241,301 +203,68 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1035620,
+          "date": "2023-06-09T09:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1686301200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21479,
+            "name": "Slovakia U18",
+            "logo": "https://media.api-sports.io/football/teams/21479.png",
+            "winner": false
+          },
+          "away": {
+            "id": 21465,
+            "name": "Czech Republic U18",
+            "logo": "https://media.api-sports.io/football/teams/21465.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
-  "statistics": {
-    "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
-      "flag": null,
-      "season": 2024
-    },
-    "team": {
-      "id": 21465,
-      "name": "Czech Republic U18",
-      "logo": "https://media.api-sports.io/football/teams/21465.png"
-    },
-    "form": "LLW",
-    "fixtures": {
-      "played": {
-        "home": 2,
-        "away": 1,
-        "total": 3
-      },
-      "wins": {
-        "home": 0,
-        "away": 1,
-        "total": 1
-      },
-      "draws": {
-        "home": 0,
-        "away": 0,
-        "total": 0
-      },
-      "loses": {
-        "home": 2,
-        "away": 0,
-        "total": 2
-      }
-    },
-    "goals": {
-      "for": {
-        "total": {
-          "home": 4,
-          "away": 4,
-          "total": 8
-        },
-        "average": {
-          "home": "2.0",
-          "away": "4.0",
-          "total": "2.7"
-        },
-        "minute": {
-          "0-15": {
-            "total": 1,
-            "percentage": "25.00%"
-          },
-          "16-30": {
-            "total": null,
-            "percentage": null
-          },
-          "31-45": {
-            "total": null,
-            "percentage": null
-          },
-          "46-60": {
-            "total": null,
-            "percentage": null
-          },
-          "61-75": {
-            "total": 3,
-            "percentage": "75.00%"
-          },
-          "76-90": {
-            "total": null,
-            "percentage": null
-          },
-          "91-105": {
-            "total": null,
-            "percentage": null
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 3,
-            "under": 0
-          },
-          "1.5": {
-            "over": 2,
-            "under": 1
-          },
-          "2.5": {
-            "over": 2,
-            "under": 1
-          },
-          "3.5": {
-            "over": 1,
-            "under": 2
-          },
-          "4.5": {
-            "over": 0,
-            "under": 3
-          }
-        }
-      },
-      "against": {
-        "total": {
-          "home": 6,
-          "away": 1,
-          "total": 7
-        },
-        "average": {
-          "home": "3.0",
-          "away": "1.0",
-          "total": "2.3"
-        },
-        "minute": {
-          "0-15": {
-            "total": 1,
-            "percentage": "100.00%"
-          },
-          "16-30": {
-            "total": null,
-            "percentage": null
-          },
-          "31-45": {
-            "total": null,
-            "percentage": null
-          },
-          "46-60": {
-            "total": null,
-            "percentage": null
-          },
-          "61-75": {
-            "total": null,
-            "percentage": null
-          },
-          "76-90": {
-            "total": null,
-            "percentage": null
-          },
-          "91-105": {
-            "total": null,
-            "percentage": null
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 3,
-            "under": 0
-          },
-          "1.5": {
-            "over": 2,
-            "under": 1
-          },
-          "2.5": {
-            "over": 1,
-            "under": 2
-          },
-          "3.5": {
-            "over": 1,
-            "under": 2
-          },
-          "4.5": {
-            "over": 0,
-            "under": 3
-          }
-        }
-      }
-    },
-    "biggest": {
-      "streak": {
-        "wins": 0,
-        "draws": 0,
-        "loses": 2
-      },
-      "wins": {
-        "home": null,
-        "away": "1-4"
-      },
-      "loses": {
-        "home": "3-4",
-        "away": null
-      },
-      "goals": {
-        "for": {
-          "home": 3,
-          "away": 4
-        },
-        "against": {
-          "home": 4,
-          "away": 1
-        }
-      }
-    },
-    "clean_sheet": {
-      "home": 0,
-      "away": 0,
-      "total": 0
-    },
-    "failed_to_score": {
-      "home": 0,
-      "away": 0,
-      "total": 0
-    },
-    "penalty": {
-      "scored": {
-        "total": 0,
-        "percentage": "0%"
-      },
-      "missed": {
-        "total": 0,
-        "percentage": "0%"
-      },
-      "total": 0
-    },
-    "lineups": [],
-    "cards": {
-      "yellow": {
-        "0-15": {
-          "total": null,
-          "percentage": null
-        },
-        "16-30": {
-          "total": null,
-          "percentage": null
-        },
-        "31-45": {
-          "total": null,
-          "percentage": null
-        },
-        "46-60": {
-          "total": null,
-          "percentage": null
-        },
-        "61-75": {
-          "total": null,
-          "percentage": null
-        },
-        "76-90": {
-          "total": null,
-          "percentage": null
-        },
-        "91-105": {
-          "total": null,
-          "percentage": null
-        },
-        "106-120": {
-          "total": null,
-          "percentage": null
-        }
-      },
-      "red": {
-        "0-15": {
-          "total": null,
-          "percentage": null
-        },
-        "16-30": {
-          "total": null,
-          "percentage": null
-        },
-        "31-45": {
-          "total": null,
-          "percentage": null
-        },
-        "46-60": {
-          "total": null,
-          "percentage": null
-        },
-        "61-75": {
-          "total": null,
-          "percentage": null
-        },
-        "76-90": {
-          "total": null,
-          "percentage": null
-        },
-        "91-105": {
-          "total": null,
-          "percentage": null
-        },
-        "106-120": {
-          "total": null,
-          "percentage": null
-        }
-      }
-    }
-  },
-  "lastUpdated": "2025-03-24T20:42:39.573Z"
+  "statistics": null,
+  "lastUpdated": "2025-03-27T10:41:29.142Z"
 }

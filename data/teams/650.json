@@ -22,154 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 899,
-        "name": "League Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/899.png"
-      },
-      "country": {
-        "name": "Finland",
-        "code": "FI",
-        "flag": "https://media.api-sports.io/flags/fi.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-26",
-          "end": "2024-03-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 244,
-        "name": "Veikkausliiga",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/244.png"
-      },
-      "country": {
-        "name": "Finland",
-        "code": "FI",
-        "flag": "https://media.api-sports.io/flags/fi.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-04-06",
-          "end": "2024-11-02",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 246,
-        "name": "Suomen Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/246.png"
-      },
-      "country": {
-        "name": "Finland",
-        "code": "FI",
-        "flag": "https://media.api-sports.io/flags/fi.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-02-10",
-          "end": "2024-09-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 848,
         "name": "UEFA Europa Conference League",
         "type": "Cup",
@@ -204,6 +56,117 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 899,
+        "name": "League Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/899.png"
+      },
+      "country": {
+        "name": "Finland",
+        "code": "FI",
+        "flag": "https://media.api-sports.io/flags/fi.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-11",
+          "end": "2025-03-29",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 244,
+        "name": "Veikkausliiga",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/244.png"
+      },
+      "country": {
+        "name": "Finland",
+        "code": "FI",
+        "flag": "https://media.api-sports.io/flags/fi.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-04-05",
+          "end": "2025-08-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -223,8 +186,1661 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1366693,
+          "date": "2025-03-29T10:30:00+00:00",
+          "venue": {
+            "id": 19205,
+            "name": "Lemonsoft Stadion",
+            "city": "Vaasa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743244200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10199,
+            "name": "KPV-j",
+            "logo": "https://media.api-sports.io/football/teams/10199.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342670,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 19205,
+            "name": "Lemonsoft Stadion",
+            "city": "Vaasa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2077,
+            "name": "AC Oulu",
+            "logo": "https://media.api-sports.io/football/teams/2077.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342673,
+          "date": "2025-04-11T15:00:00+00:00",
+          "venue": {
+            "id": 621,
+            "name": "Arto Tolsa Areena",
+            "city": "Kotka"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744383600
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2076,
+            "name": "Kooteepee",
+            "logo": "https://media.api-sports.io/football/teams/2076.png",
+            "winner": null
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342678,
+          "date": "2025-04-19T12:00:00+00:00",
+          "venue": {
+            "id": 19205,
+            "name": "Lemonsoft Stadion",
+            "city": "Vaasa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745064000
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1164,
+            "name": "Inter Turku",
+            "logo": "https://media.api-sports.io/football/teams/1164.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342686,
+          "date": "2025-04-26T16:00:00+00:00",
+          "venue": {
+            "id": 615,
+            "name": "Bolt Arena",
+            "city": "Helsinki"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745683200
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 649,
+            "name": "HJK helsinki",
+            "logo": "https://media.api-sports.io/football/teams/649.png",
+            "winner": null
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342692,
+          "date": "2025-05-02T15:00:00+00:00",
+          "venue": {
+            "id": 19205,
+            "name": "Lemonsoft Stadion",
+            "city": "Vaasa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746198000
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1163,
+            "name": "Ilves",
+            "logo": "https://media.api-sports.io/football/teams/1163.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342701,
+          "date": "2025-05-12T16:00:00+00:00",
+          "venue": {
+            "id": 629,
+            "name": "OmaSP Stadion",
+            "city": "Seinäjoki"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747065600
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 689,
+            "name": "SJK",
+            "logo": "https://media.api-sports.io/football/teams/689.png",
+            "winner": null
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342707,
+          "date": "2025-05-17T16:00:00+00:00",
+          "venue": {
+            "id": 19205,
+            "name": "Lemonsoft Stadion",
+            "city": "Vaasa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747497600
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2075,
+            "name": "FF Jaro",
+            "logo": "https://media.api-sports.io/football/teams/2075.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342712,
+          "date": "2025-05-25T13:00:00+00:00",
+          "venue": {
+            "id": 12286,
+            "name": "Väre Areena",
+            "city": "Kuopio"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748178000
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1165,
+            "name": "KuPS",
+            "logo": "https://media.api-sports.io/football/teams/1165.png",
+            "winner": null
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342716,
+          "date": "2025-05-31T14:00:00+00:00",
+          "venue": {
+            "id": 614,
+            "name": "Tehtaan kenttä",
+            "city": "Valkeakoski"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748700000
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2080,
+            "name": "Haka",
+            "logo": "https://media.api-sports.io/football/teams/2080.png",
+            "winner": null
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342722,
+          "date": "2025-06-14T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Wiklöf Holding Arena",
+            "city": "Åland"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749909600
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 587,
+            "name": "Mariehamn",
+            "logo": "https://media.api-sports.io/football/teams/587.png",
+            "winner": null
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342729,
+          "date": "2025-06-18T18:00:00+00:00",
+          "venue": {
+            "id": 19205,
+            "name": "Lemonsoft Stadion",
+            "city": "Vaasa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750269600
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2082,
+            "name": "Gnistan",
+            "logo": "https://media.api-sports.io/football/teams/2082.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342737,
+          "date": "2025-06-28T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Raatti Tekonurmi",
+            "city": "Oulu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751137200
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2077,
+            "name": "AC Oulu",
+            "logo": "https://media.api-sports.io/football/teams/2077.png",
+            "winner": null
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342743,
+          "date": "2025-07-02T15:00:00+00:00",
+          "venue": {
+            "id": 19205,
+            "name": "Lemonsoft Stadion",
+            "city": "Vaasa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751468400
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2080,
+            "name": "Haka",
+            "logo": "https://media.api-sports.io/football/teams/2080.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342746,
+          "date": "2025-07-05T16:00:00+00:00",
+          "venue": {
+            "id": 19205,
+            "name": "Lemonsoft Stadion",
+            "city": "Vaasa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751731200
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          },
+          "away": {
+            "id": 649,
+            "name": "HJK helsinki",
+            "logo": "https://media.api-sports.io/football/teams/649.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342753,
+          "date": "2025-07-12T14:00:00+00:00",
+          "venue": {
+            "id": 617,
+            "name": "Tammelan Stadion",
+            "city": "Tampere"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752328800
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1163,
+            "name": "Ilves",
+            "logo": "https://media.api-sports.io/football/teams/1163.png",
+            "winner": null
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342757,
+          "date": "2025-07-19T14:00:00+00:00",
+          "venue": {
+            "id": 19205,
+            "name": "Lemonsoft Stadion",
+            "city": "Vaasa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752933600
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1165,
+            "name": "KuPS",
+            "logo": "https://media.api-sports.io/football/teams/1165.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342763,
+          "date": "2025-07-25T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Centralplan",
+            "city": "Närpes"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753459200
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2075,
+            "name": "FF Jaro",
+            "logo": "https://media.api-sports.io/football/teams/2075.png",
+            "winner": null
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342768,
+          "date": "2025-08-01T15:00:00+00:00",
+          "venue": {
+            "id": 19205,
+            "name": "Lemonsoft Stadion",
+            "city": "Vaasa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754060400
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          },
+          "away": {
+            "id": 587,
+            "name": "Mariehamn",
+            "logo": "https://media.api-sports.io/football/teams/587.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342778,
+          "date": "2025-08-10T15:30:00+00:00",
+          "venue": {
+            "id": 19205,
+            "name": "Lemonsoft Stadion",
+            "city": "Vaasa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754839800
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          },
+          "away": {
+            "id": 689,
+            "name": "SJK",
+            "logo": "https://media.api-sports.io/football/teams/689.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1365972,
+          "date": "2025-03-22T17:00:00+00:00",
+          "venue": {
+            "id": 1510,
+            "name": "NP3 Arena",
+            "city": "Sundsvall"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742662800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 373,
+            "name": "GIF Sundsvall",
+            "logo": "https://media.api-sports.io/football/teams/373.png",
+            "winner": false
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350874,
+          "date": "2025-03-15T10:30:00+00:00",
+          "venue": {
+            "id": 629,
+            "name": "OmaSP Stadion",
+            "city": "Seinäjoki"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742034600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9198,
+            "name": "SJK Akatemia",
+            "logo": "https://media.api-sports.io/football/teams/9198.png",
+            "winner": false
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323947,
+          "date": "2025-02-22T12:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Wallsport Areena",
+            "city": "Seinäjoki"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1740227400
+        },
+        "league": {
+          "id": 899,
+          "name": "League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/899.png"
+        },
+        "teams": {
+          "home": {
+            "id": 689,
+            "name": "SJK",
+            "logo": "https://media.api-sports.io/football/teams/689.png",
+            "winner": false
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323942,
+          "date": "2025-02-15T12:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Pirkkahalli C",
+            "city": "Tampere"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1739623500
+        },
+        "league": {
+          "id": 899,
+          "name": "League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/899.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1163,
+            "name": "Ilves",
+            "logo": "https://media.api-sports.io/football/teams/1163.png",
+            "winner": true
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323939,
+          "date": "2025-02-08T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "VEO Areena",
+            "city": "Vaasa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1739030400
+        },
+        "league": {
+          "id": 899,
+          "name": "League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/899.png"
+        },
+        "teams": {
+          "home": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2077,
+            "name": "AC Oulu",
+            "logo": "https://media.api-sports.io/football/teams/2077.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323930,
+          "date": "2025-02-01T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lippumäen kuplahalli",
+            "city": "Kuopio"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1738414800
+        },
+        "league": {
+          "id": 899,
+          "name": "League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/899.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1165,
+            "name": "KuPS",
+            "logo": "https://media.api-sports.io/football/teams/1165.png",
+            "winner": true
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323926,
+          "date": "2025-01-25T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "VEO Areena",
+            "city": "Vaasa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1737820800
+        },
+        "league": {
+          "id": 899,
+          "name": "League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/899.png"
+        },
+        "teams": {
+          "home": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2075,
+            "name": "FF Jaro",
+            "logo": "https://media.api-sports.io/football/teams/2075.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1336841,
+          "date": "2025-01-17T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Garam Masala Areena TN",
+            "city": "Oulu"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1737072000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2077,
+            "name": "AC Oulu",
+            "logo": "https://media.api-sports.io/football/teams/2077.png",
+            "winner": null
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1312330,
@@ -342,529 +1958,57 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1301244,
-          "date": "2024-10-04T15:00:00+00:00",
-          "venue": {
-            "id": 19205,
-            "name": "Lemonsoft Stadion",
-            "city": "Vaasa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1728054000
-        },
-        "league": {
-          "id": 244,
-          "name": "Veikkausliiga",
-          "logo": "https://media.api-sports.io/football/leagues/244.png"
-        },
-        "teams": {
-          "home": {
-            "id": 650,
-            "name": "VPS",
-            "logo": "https://media.api-sports.io/football/teams/650.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1163,
-            "name": "Ilves",
-            "logo": "https://media.api-sports.io/football/teams/1163.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1301241,
-          "date": "2024-09-28T11:30:00+00:00",
-          "venue": {
-            "id": 629,
-            "name": "OmaSP Stadion",
-            "city": "Seinäjoki"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1727523000
-        },
-        "league": {
-          "id": 244,
-          "name": "Veikkausliiga",
-          "logo": "https://media.api-sports.io/football/leagues/244.png"
-        },
-        "teams": {
-          "home": {
-            "id": 689,
-            "name": "SJK",
-            "logo": "https://media.api-sports.io/football/teams/689.png",
-            "winner": false
-          },
-          "away": {
-            "id": 650,
-            "name": "VPS",
-            "logo": "https://media.api-sports.io/football/teams/650.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1301239,
-          "date": "2024-09-20T17:00:00+00:00",
-          "venue": {
-            "id": 19205,
-            "name": "Lemonsoft Stadion",
-            "city": "Vaasa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1726851600
-        },
-        "league": {
-          "id": 244,
-          "name": "Veikkausliiga",
-          "logo": "https://media.api-sports.io/football/leagues/244.png"
-        },
-        "teams": {
-          "home": {
-            "id": 650,
-            "name": "VPS",
-            "logo": "https://media.api-sports.io/football/teams/650.png",
-            "winner": null
-          },
-          "away": {
-            "id": 649,
-            "name": "HJK helsinki",
-            "logo": "https://media.api-sports.io/football/teams/649.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1301237,
-          "date": "2024-09-14T16:00:00+00:00",
-          "venue": {
-            "id": 12286,
-            "name": "Väre Areena",
-            "city": "Kuopio"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726329600
-        },
-        "league": {
-          "id": 244,
-          "name": "Veikkausliiga",
-          "logo": "https://media.api-sports.io/football/leagues/244.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1165,
-            "name": "KuPS",
-            "logo": "https://media.api-sports.io/football/teams/1165.png",
-            "winner": true
-          },
-          "away": {
-            "id": 650,
-            "name": "VPS",
-            "logo": "https://media.api-sports.io/football/teams/650.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164691,
-          "date": "2024-09-01T13:00:00+00:00",
-          "venue": {
-            "id": 19205,
-            "name": "Lemonsoft Stadion",
-            "city": "Vaasa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1725195600
-        },
-        "league": {
-          "id": 244,
-          "name": "Veikkausliiga",
-          "logo": "https://media.api-sports.io/football/leagues/244.png"
-        },
-        "teams": {
-          "home": {
-            "id": 650,
-            "name": "VPS",
-            "logo": "https://media.api-sports.io/football/teams/650.png",
-            "winner": false
-          },
-          "away": {
-            "id": 649,
-            "name": "HJK helsinki",
-            "logo": "https://media.api-sports.io/football/teams/649.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164685,
-          "date": "2024-08-25T15:30:00+00:00",
-          "venue": {
-            "id": 623,
-            "name": "Lahden Stadion",
-            "city": "Lahti"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1724599800
-        },
-        "league": {
-          "id": 244,
-          "name": "Veikkausliiga",
-          "logo": "https://media.api-sports.io/football/leagues/244.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1166,
-            "name": "Lahti",
-            "logo": "https://media.api-sports.io/football/teams/1166.png",
-            "winner": null
-          },
-          "away": {
-            "id": 650,
-            "name": "VPS",
-            "logo": "https://media.api-sports.io/football/teams/650.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164679,
-          "date": "2024-08-18T15:30:00+00:00",
-          "venue": {
-            "id": 19205,
-            "name": "Lemonsoft Stadion",
-            "city": "Vaasa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1723995000
-        },
-        "league": {
-          "id": 244,
-          "name": "Veikkausliiga",
-          "logo": "https://media.api-sports.io/football/leagues/244.png"
-        },
-        "teams": {
-          "home": {
-            "id": 650,
-            "name": "VPS",
-            "logo": "https://media.api-sports.io/football/teams/650.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2080,
-            "name": "Haka",
-            "logo": "https://media.api-sports.io/football/teams/2080.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1164673,
-          "date": "2024-08-12T16:00:00+00:00",
-          "venue": {
-            "id": 629,
-            "name": "OmaSP Stadion",
-            "city": "Seinäjoki"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1723478400
-        },
-        "league": {
-          "id": 244,
-          "name": "Veikkausliiga",
-          "logo": "https://media.api-sports.io/football/leagues/244.png"
-        },
-        "teams": {
-          "home": {
-            "id": 689,
-            "name": "SJK",
-            "logo": "https://media.api-sports.io/football/teams/689.png",
-            "winner": true
-          },
-          "away": {
-            "id": 650,
-            "name": "VPS",
-            "logo": "https://media.api-sports.io/football/teams/650.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 899,
-      "name": "League Cup",
+      "id": 244,
+      "name": "Veikkausliiga",
       "country": "Finland",
-      "logo": "https://media.api-sports.io/football/leagues/899.png",
+      "logo": "https://media.api-sports.io/football/leagues/244.png",
       "flag": "https://media.api-sports.io/flags/fi.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 650,
       "name": "VPS",
       "logo": "https://media.api-sports.io/football/teams/650.png"
     },
-    "form": "WLLDL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 3,
-        "away": 2,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "loses": {
-        "home": 1,
-        "away": 2,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 3,
-          "away": 1,
-          "total": 4
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "0.5",
-          "total": "0.8"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -876,12 +2020,12 @@
             "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -902,58 +2046,58 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 3,
-          "away": 8,
-          "total": 11
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "4.0",
-          "total": "2.2"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 3,
-            "percentage": "27.27%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 2,
-            "percentage": "18.18%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "27.27%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 3,
-            "percentage": "27.27%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -970,50 +2114,50 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
-        "draws": 1,
-        "loses": 2
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "2-1",
+        "home": null,
         "away": null
       },
       "loses": {
-        "home": "0-1",
-        "away": "5-0"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 5
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -1023,9 +2167,9 @@
       "total": 0
     },
     "failed_to_score": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1046,24 +2190,24 @@
           "percentage": null
         },
         "16-30": {
-          "total": 1,
-          "percentage": "16.67%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
           "total": null,
           "percentage": null
         },
         "46-60": {
-          "total": 2,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "16.67%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 2,
-          "percentage": "33.33%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1110,5 +2254,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:05.313Z"
+  "lastUpdated": "2025-03-27T10:38:47.993Z"
 }

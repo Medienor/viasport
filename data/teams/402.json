@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 119,
         "name": "Superliga",
         "type": "League",
@@ -127,6 +90,43 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -745,6 +745,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1365876,
+          "date": "2025-03-20T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Fredensvang Kunst Bane 4",
+            "city": "Viby J"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742468400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 406,
+            "name": "Aarhus",
+            "logo": "https://media.api-sports.io/football/teams/406.png",
+            "winner": null
+          },
+          "away": {
+            "id": 402,
+            "name": "Aalborg",
+            "logo": "https://media.api-sports.io/football/teams/402.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1205555,
           "date": "2025-03-16T16:00:00+00:00",
           "venue": {
@@ -1040,110 +1099,51 @@
       },
       {
         "fixture": {
-          "id": 1314525,
-          "date": "2024-12-16T18:00:00+00:00",
+          "id": 1346360,
+          "date": "2025-02-07T10:00:00+00:00",
           "venue": {
-            "id": 440,
-            "name": "Aalborg Portland Park",
-            "city": "Aalborg"
+            "id": null,
+            "name": null,
+            "city": null
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 6
+            "extra": null
           },
-          "timestamp": 1734372000
+          "timestamp": 1738922400
         },
         "league": {
-          "id": 121,
-          "name": "DBU Pokalen",
-          "logo": "https://media.api-sports.io/football/leagues/121.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
+            "id": 17161,
+            "name": "LNZ Cherkasy",
+            "logo": "https://media.api-sports.io/football/teams/17161.png",
+            "winner": true
+          },
+          "away": {
             "id": 402,
             "name": "Aalborg",
             "logo": "https://media.api-sports.io/football/teams/402.png",
             "winner": false
-          },
-          "away": {
-            "id": 2073,
-            "name": "Silkeborg",
-            "logo": "https://media.api-sports.io/football/teams/2073.png",
-            "winner": true
           }
         },
         "goals": {
-          "home": 1,
+          "home": 4,
           "away": 2
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1314524,
-          "date": "2024-12-08T14:30:00+00:00",
-          "venue": {
-            "id": 459,
-            "name": "JYSK park",
-            "city": "Silkeborg"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1733668200
-        },
-        "league": {
-          "id": 121,
-          "name": "DBU Pokalen",
-          "logo": "https://media.api-sports.io/football/leagues/121.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2073,
-            "name": "Silkeborg",
-            "logo": "https://media.api-sports.io/football/teams/2073.png",
-            "winner": null
-          },
-          "away": {
-            "id": 402,
-            "name": "Aalborg",
-            "logo": "https://media.api-sports.io/football/teams/402.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
             "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
             "away": 2
           },
           "extratime": {
@@ -1158,71 +1158,12 @@
       },
       {
         "fixture": {
-          "id": 1205525,
-          "date": "2024-11-29T18:00:00+00:00",
+          "id": 1344848,
+          "date": "2025-01-31T14:00:00+00:00",
           "venue": {
-            "id": 443,
-            "name": "Brøndby Stadion",
-            "city": "Brøndby"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1732903200
-        },
-        "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
-        },
-        "teams": {
-          "home": {
-            "id": 407,
-            "name": "Brondby",
-            "logo": "https://media.api-sports.io/football/teams/407.png",
-            "winner": true
-          },
-          "away": {
-            "id": 402,
-            "name": "Aalborg",
-            "logo": "https://media.api-sports.io/football/teams/402.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1205517,
-          "date": "2024-11-24T13:00:00+00:00",
-          "venue": {
-            "id": 440,
-            "name": "Aalborg Portland Park",
-            "city": "Aalborg"
+            "id": null,
+            "name": null,
+            "city": null
           },
           "status": {
             "long": "Match Finished",
@@ -1230,39 +1171,39 @@
             "elapsed": 90,
             "extra": 4
           },
-          "timestamp": 1732453200
+          "timestamp": 1738332000
         },
         "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
             "id": 402,
             "name": "Aalborg",
             "logo": "https://media.api-sports.io/football/teams/402.png",
-            "winner": null
+            "winner": false
           },
           "away": {
-            "id": 2070,
-            "name": "Viborg",
-            "logo": "https://media.api-sports.io/football/teams/2070.png",
-            "winner": null
+            "id": 1595,
+            "name": "Seattle Sounders",
+            "logo": "https://media.api-sports.io/football/teams/1595.png",
+            "winner": true
           }
         },
         "goals": {
-          "home": 0,
-          "away": 0
+          "home": 3,
+          "away": 5
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 0,
-            "away": 0
+            "home": 3,
+            "away": 5
           },
           "extratime": {
             "home": null,
@@ -1276,52 +1217,111 @@
       },
       {
         "fixture": {
-          "id": 1205513,
-          "date": "2024-11-10T13:00:00+00:00",
+          "id": 1337956,
+          "date": "2025-01-24T12:00:00+00:00",
           "venue": {
-            "id": 452,
-            "name": "Lyngby Stadion",
-            "city": "Lyngby"
+            "id": null,
+            "name": null,
+            "city": null
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 6
+            "extra": null
           },
-          "timestamp": 1731243600
+          "timestamp": 1737720000
         },
         "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
-            "id": 625,
-            "name": "Lyngby",
-            "logo": "https://media.api-sports.io/football/teams/625.png",
-            "winner": null
+            "id": 402,
+            "name": "Aalborg",
+            "logo": "https://media.api-sports.io/football/teams/402.png",
+            "winner": true
+          },
+          "away": {
+            "id": 404,
+            "name": "AC Horsens",
+            "logo": "https://media.api-sports.io/football/teams/404.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 6,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 6,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1336937,
+          "date": "2025-01-18T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Viborg FF´s Anlæg Kunstgræsbanen",
+            "city": "Viborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1737158400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": true
           },
           "away": {
             "id": 402,
             "name": "Aalborg",
             "logo": "https://media.api-sports.io/football/teams/402.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
           "home": 2,
-          "away": 2
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": 1,
+            "home": 2,
             "away": 0
           },
           "fulltime": {
             "home": 2,
-            "away": 2
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -1337,145 +1337,145 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 402,
       "name": "Aalborg",
       "logo": "https://media.api-sports.io/football/teams/402.png"
     },
-    "form": "WWLWWDWL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 4,
-        "away": 4,
-        "total": 8
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 2,
-        "away": 3,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 7,
-          "away": 12,
-          "total": 19
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.8",
-          "away": "3.0",
-          "total": "2.4"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 4,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 2,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "5.56%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "5.56%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 4,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
-            "total": 1,
-            "percentage": "5.56%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
-            "over": 8,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 5,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 4,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 9,
-          "away": 3,
-          "total": 12
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.3",
-          "away": "0.8",
-          "total": "1.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 4,
-            "percentage": "30.77%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "23.08%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "15.38%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 3,
-            "percentage": "23.08%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -1488,57 +1488,57 @@
         },
         "under_over": {
           "0.5": {
-            "over": 7,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 8
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 1,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "3-1",
-        "away": "0-4"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "1-4",
+        "home": null,
         "away": null
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 4
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 4,
-          "away": 1
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -1547,14 +1547,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -1568,20 +1568,20 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": 2,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1628,5 +1628,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:11.458Z"
+  "lastUpdated": "2025-03-27T10:37:52.698Z"
 }

@@ -22,6 +22,43 @@
   "leagues": [
     {
       "league": {
+        "id": 803,
+        "name": "Asian Games",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/803.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2022,
+          "start": "2023-09-19",
+          "end": "2023-10-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 952,
         "name": "AFC U23 Asian Cup - Qualification",
         "type": "Cup",
@@ -81,43 +118,6 @@
               "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 10,
-        "name": "Friendlies",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
             },
             "standings": false,
             "players": true,
@@ -775,29 +775,29 @@
   },
   "statistics": {
     "league": {
-      "id": 952,
-      "name": "AFC U23 Asian Cup - Qualification",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/952.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 10963,
       "name": "Uzbekistan U23",
       "logo": "https://media.api-sports.io/football/teams/10963.png"
     },
-    "form": "WWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -813,43 +813,43 @@
     "goals": {
       "for": {
         "total": {
-          "home": 9,
-          "away": 10,
-          "total": 19
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "4.5",
-          "away": "10.0",
-          "total": "6.3"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 2,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "5.56%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 6,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "5.56%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 4,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -858,37 +858,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 2,
-            "under": 1
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "0.5",
+          "home": "0.0",
           "away": "0.0",
-          "total": "0.3"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -900,16 +900,16 @@
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -926,37 +926,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "8-1",
-        "away": "0-10"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
@@ -964,19 +964,19 @@
       },
       "goals": {
         "for": {
-          "home": 8,
-          "away": 10
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
+          "home": 0,
           "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -985,14 +985,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 1,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -1066,5 +1066,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:24.839Z"
+  "lastUpdated": "2025-03-27T10:41:14.122Z"
 }

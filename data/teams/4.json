@@ -22,6 +22,43 @@
   "leagues": [
     {
       "league": {
+        "id": 21,
+        "name": "Confederations Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/21.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2017,
+          "start": "2017-06-17",
+          "end": "2017-07-02",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 10,
         "name": "Friendlies",
         "type": "Cup",
@@ -34,10 +71,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -52,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -75,6 +112,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1360316,
+          "date": "2025-03-25T17:00:00+00:00",
+          "venue": {
+            "id": 1334,
+            "name": "VTB Arena",
+            "city": "Moskva"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742922000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4,
+            "name": "Russia",
+            "logo": "https://media.api-sports.io/football/teams/4.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1507,
+            "name": "Zambia",
+            "logo": "https://media.api-sports.io/football/teams/1507.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1360315,
+          "date": "2025-03-19T17:00:00+00:00",
+          "venue": {
+            "id": 1334,
+            "name": "VTB Arena",
+            "city": "Moskva"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1742403600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4,
+            "name": "Russia",
+            "logo": "https://media.api-sports.io/football/teams/4.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5533,
+            "name": "Grenada",
+            "logo": "https://media.api-sports.io/football/teams/5533.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1313507,
@@ -369,34 +524,211 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1141287,
+          "date": "2023-11-20T16:30:00+00:00",
+          "venue": {
+            "id": 1348,
+            "name": "Volgograd Arena",
+            "city": "Volgograd"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1700497800
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4,
+            "name": "Russia",
+            "logo": "https://media.api-sports.io/football/teams/4.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2388,
+            "name": "Cuba",
+            "logo": "https://media.api-sports.io/football/teams/2388.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 8,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 8,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1136474,
+          "date": "2023-10-16T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Mardan Stadyumu",
+            "city": "Antalya"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697472000
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1511,
+            "name": "Kenya",
+            "logo": "https://media.api-sports.io/football/teams/1511.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4,
+            "name": "Russia",
+            "logo": "https://media.api-sports.io/football/teams/4.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1136685,
+          "date": "2023-10-12T16:00:00+00:00",
+          "venue": {
+            "id": 1334,
+            "name": "VTB Arena",
+            "city": "Moskva"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1697126400
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4,
+            "name": "Russia",
+            "logo": "https://media.api-sports.io/football/teams/4.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1530,
+            "name": "Cameroon",
+            "logo": "https://media.api-sports.io/football/teams/1530.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 4,
       "name": "Russia",
       "logo": "https://media.api-sports.io/football/teams/4.png"
     },
-    "form": "WWWWW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 3,
-        "away": 2,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 3,
-        "away": 2,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -412,43 +744,43 @@
     "goals": {
       "for": {
         "total": {
-          "home": 19,
-          "away": 7,
-          "total": 26
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "6.3",
-          "away": "3.5",
-          "total": "5.2"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 3,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 4,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "8.33%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 4,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 6,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 4,
-            "percentage": "16.67%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "4.17%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -457,24 +789,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 5,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 5,
+            "over": 0,
             "under": 0
           },
           "3.5": {
-            "over": 4,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           }
         }
       },
@@ -491,8 +823,8 @@
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -507,8 +839,8 @@
             "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -526,36 +858,36 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 5,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "11-0",
-        "away": "0-4"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
@@ -563,8 +895,8 @@
       },
       "goals": {
         "for": {
-          "home": 11,
-          "away": 4
+          "home": 0,
+          "away": 0
         },
         "against": {
           "home": 0,
@@ -573,9 +905,9 @@
       }
     },
     "clean_sheet": {
-      "home": 3,
-      "away": 2,
-      "total": 5
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -584,25 +916,16 @@
     },
     "penalty": {
       "scored": {
-        "total": 2,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 2
+      "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-3-3",
-        "played": 4
-      },
-      {
-        "formation": "4-2-3-1",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -618,8 +941,8 @@
           "percentage": null
         },
         "46-60": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
@@ -630,8 +953,8 @@
           "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -674,5 +997,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:03.727Z"
+  "lastUpdated": "2025-03-27T10:39:49.391Z"
 }

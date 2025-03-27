@@ -22,117 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 340,
-        "name": "V.League 1",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/340.png"
-      },
-      "country": {
-        "name": "Vietnam",
-        "code": "VN",
-        "flag": "https://media.api-sports.io/flags/vn.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2023-10-20",
-          "end": "2024-07-06",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 341,
-        "name": "Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/341.png"
-      },
-      "country": {
-        "name": "Vietnam",
-        "code": "VN",
-        "flag": "https://media.api-sports.io/flags/vn.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2023-11-24",
-          "end": "2024-07-07",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": false,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 18,
         "name": "AFC Cup",
         "type": "Cup",
@@ -167,6 +56,117 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 831,
+        "name": "Super Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/831.png"
+      },
+      "country": {
+        "name": "Vietnam",
+        "code": "VN",
+        "flag": "https://media.api-sports.io/flags/vn.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2024-08-31",
+          "end": "2024-08-31",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 340,
+        "name": "V.League 1",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/340.png"
+      },
+      "country": {
+        "name": "Vietnam",
+        "code": "VN",
+        "flag": "https://media.api-sports.io/flags/vn.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2024-09-14",
+          "end": "2025-06-22",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 341,
+        "name": "Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/341.png"
+      },
+      "country": {
+        "name": "Vietnam",
+        "code": "VN",
+        "flag": "https://media.api-sports.io/flags/vn.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2024-10-19",
+          "end": "2025-04-22",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -180,8 +180,776 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1355175,
+          "date": "2025-04-06T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Thiên Trường",
+            "city": "Nam Dinh"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743937200
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3671,
+            "name": "Hai Phong",
+            "logo": "https://media.api-sports.io/football/teams/3671.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355184,
+          "date": "2025-04-13T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Thiên Trường",
+            "city": "Nam Dinh"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744542000
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3672,
+            "name": "Ho Chi Minh City",
+            "logo": "https://media.api-sports.io/football/teams/3672.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355192,
+          "date": "2025-04-20T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Tam Kỳ",
+            "city": "Tam Ky"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745146800
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3669,
+            "name": "Da Nang",
+            "logo": "https://media.api-sports.io/football/teams/3669.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355194,
+          "date": "2025-04-26T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Thiên Trường",
+            "city": "Nam Dinh"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745665200
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3668,
+            "name": "Binh Duong",
+            "logo": "https://media.api-sports.io/football/teams/3668.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355205,
+          "date": "2025-05-04T12:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Hàng Đẫy",
+            "city": "Hanoi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746360900
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3670,
+            "name": "Ha Noi",
+            "logo": "https://media.api-sports.io/football/teams/3670.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355213,
+          "date": "2025-05-11T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Thiên Trường",
+            "city": "Nam Dinh"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746961200
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3680,
+            "name": "Thanh Hóa",
+            "logo": "https://media.api-sports.io/football/teams/3680.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355218,
+          "date": "2025-05-18T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Thiên Trường",
+            "city": "Nam Dinh"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747566000
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3673,
+            "name": "Hoang Anh Gia Lai",
+            "logo": "https://media.api-sports.io/football/teams/3673.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355223,
+          "date": "2025-05-24T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Vinh",
+            "city": "Vinh"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748084400
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3678,
+            "name": "Song Lam Nghe An",
+            "logo": "https://media.api-sports.io/football/teams/3678.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355234,
+          "date": "2025-06-15T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Tam Kỳ",
+            "city": "Tam Ky"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749981600
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3675,
+            "name": "Quang Nam",
+            "logo": "https://media.api-sports.io/football/teams/3675.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1355238,
+          "date": "2025-06-22T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Thiên Trường",
+            "city": "Nam Dinh"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750586400
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": null
+          },
+          "away": {
+            "id": 11134,
+            "name": "Hồng Lĩnh Hà Tĩnh",
+            "logo": "https://media.api-sports.io/football/teams/11134.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1355168,
+          "date": "2025-03-08T12:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Hàng Đẫy",
+            "city": "Hanoi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1741436100
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16400,
+            "name": "Công An Nhân Dân",
+            "logo": "https://media.api-sports.io/football/teams/16400.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323150,
+          "date": "2025-02-28T12:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động quốc gia Mỹ Đình",
+            "city": "Hanoi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 12
+          },
+          "timestamp": 1740744900
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3681,
+            "name": "Viettel",
+            "logo": "https://media.api-sports.io/football/teams/3681.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323147,
+          "date": "2025-02-24T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Thiên Trường",
+            "city": "Nam Dinh"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1740394800
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": true
+          },
+          "away": {
+            "id": 9160,
+            "name": "Binh Dinh",
+            "logo": "https://media.api-sports.io/football/teams/9160.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1322661,
@@ -302,6 +1070,242 @@
       },
       {
         "fixture": {
+          "id": 1323134,
+          "date": "2025-02-05T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Thiên Trường",
+            "city": "Nam Dinh"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1738753200
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3670,
+            "name": "Ha Noi",
+            "logo": "https://media.api-sports.io/football/teams/3670.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323122,
+          "date": "2025-01-24T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Qui Nhơn",
+            "city": "Qui Nhon"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1737716400
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9160,
+            "name": "Binh Dinh",
+            "logo": "https://media.api-sports.io/football/teams/9160.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323117,
+          "date": "2025-01-19T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Sân vận động Thiên Trường",
+            "city": "Nam Dinh"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 12
+          },
+          "timestamp": 1737284400
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3681,
+            "name": "Viettel",
+            "logo": "https://media.api-sports.io/football/teams/3681.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1323127,
+          "date": "2025-01-14T11:00:00+00:00",
+          "venue": {
+            "id": 2477,
+            "name": "Sân vận động Thanh Hóa",
+            "city": "Thanh Hóa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1736852400
+        },
+        "league": {
+          "id": 340,
+          "name": "V.League 1",
+          "logo": "https://media.api-sports.io/football/leagues/340.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3680,
+            "name": "Thanh Hóa",
+            "logo": "https://media.api-sports.io/football/teams/3680.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3674,
+            "name": "Nam Dinh",
+            "logo": "https://media.api-sports.io/football/teams/3674.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1289408,
           "date": "2024-12-04T12:00:00+00:00",
           "venue": {
@@ -358,419 +1362,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1289394,
-          "date": "2024-11-27T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Sân vận động Thiên Trường",
-            "city": "Nam Dinh"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1732708800
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3674,
-            "name": "Nam Dinh",
-            "logo": "https://media.api-sports.io/football/teams/3674.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4207,
-            "name": "Warriors",
-            "logo": "https://media.api-sports.io/football/teams/4207.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1289378,
-          "date": "2024-11-06T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Sân vận động Thiên Trường",
-            "city": "Nam Dinh"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1730894400
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3674,
-            "name": "Nam Dinh",
-            "logo": "https://media.api-sports.io/football/teams/3674.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4206,
-            "name": "Tampines Rovers",
-            "logo": "https://media.api-sports.io/football/teams/4206.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1289373,
-          "date": "2024-10-24T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Jalan Besar Stadium",
-            "city": "Singapore"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1729771200
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4206,
-            "name": "Tampines Rovers",
-            "logo": "https://media.api-sports.io/football/teams/4206.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3674,
-            "name": "Nam Dinh",
-            "logo": "https://media.api-sports.io/football/teams/3674.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1289348,
-          "date": "2024-10-02T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Sân vận động Thiên Trường",
-            "city": "Nam Dinh"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1727870400
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3674,
-            "name": "Nam Dinh",
-            "logo": "https://media.api-sports.io/football/teams/3674.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2770,
-            "name": "Bangkok United",
-            "logo": "https://media.api-sports.io/football/teams/2770.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1289330,
-          "date": "2024-09-18T12:00:00+00:00",
-          "venue": {
-            "id": 3384,
-            "name": "Mong Kok Stadium",
-            "city": "Hong Kong"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1726660800
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4207,
-            "name": "Warriors",
-            "logo": "https://media.api-sports.io/football/teams/4207.png",
-            "winner": false
-          },
-          "away": {
-            "id": 3674,
-            "name": "Nam Dinh",
-            "logo": "https://media.api-sports.io/football/teams/3674.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1198972,
-          "date": "2024-07-04T11:00:00+00:00",
-          "venue": {
-            "id": 2477,
-            "name": "Sân vận động Thanh Hóa",
-            "city": "Thanh Hóa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1720090800
-        },
-        "league": {
-          "id": 341,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/341.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3680,
-            "name": "Thanh Hóa",
-            "logo": "https://media.api-sports.io/football/teams/3680.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3674,
-            "name": "Nam Dinh",
-            "logo": "https://media.api-sports.io/football/teams/3674.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1198966,
-          "date": "2024-06-30T10:00:00+00:00",
-          "venue": {
-            "id": 2467,
-            "name": "Sân Vận Động Hòa Xuân",
-            "city": "Da Nang"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1719741600
-        },
-        "league": {
-          "id": 340,
-          "name": "V.League 1",
-          "logo": "https://media.api-sports.io/football/leagues/340.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3675,
-            "name": "Quang Nam",
-            "logo": "https://media.api-sports.io/football/teams/3675.png",
-            "winner": false
-          },
-          "away": {
-            "id": 3674,
-            "name": "Nam Dinh",
-            "logo": "https://media.api-sports.io/football/teams/3674.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -781,76 +1372,76 @@
       "country": "Vietnam",
       "logo": "https://media.api-sports.io/football/leagues/340.png",
       "flag": "https://media.api-sports.io/flags/vn.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 3674,
       "name": "Nam Dinh",
       "logo": "https://media.api-sports.io/football/teams/3674.png"
     },
-    "form": "WWWWDLWWWLWWDWLWWDLLWDDWWW",
+    "form": "LWDWLWWWWDLDWWWD",
     "fixtures": {
       "played": {
-        "home": 13,
-        "away": 13,
-        "total": 26
-      },
-      "wins": {
-        "home": 8,
-        "away": 8,
+        "home": 7,
+        "away": 9,
         "total": 16
       },
+      "wins": {
+        "home": 5,
+        "away": 4,
+        "total": 9
+      },
       "draws": {
-        "home": 3,
-        "away": 2,
-        "total": 5
+        "home": 0,
+        "away": 4,
+        "total": 4
       },
       "loses": {
         "home": 2,
-        "away": 3,
-        "total": 5
+        "away": 1,
+        "total": 3
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 30,
-          "away": 30,
-          "total": 60
+          "home": 15,
+          "away": 13,
+          "total": 28
         },
         "average": {
-          "home": "2.3",
-          "away": "2.3",
-          "total": "2.3"
+          "home": "2.1",
+          "away": "1.4",
+          "total": "1.8"
         },
         "minute": {
           "0-15": {
-            "total": 9,
-            "percentage": "14.75%"
+            "total": 3,
+            "percentage": "10.71%"
           },
           "16-30": {
-            "total": 7,
-            "percentage": "11.48%"
+            "total": 2,
+            "percentage": "7.14%"
           },
           "31-45": {
-            "total": 8,
-            "percentage": "13.11%"
+            "total": 6,
+            "percentage": "21.43%"
           },
           "46-60": {
-            "total": 9,
-            "percentage": "14.75%"
+            "total": 10,
+            "percentage": "35.71%"
           },
           "61-75": {
-            "total": 10,
-            "percentage": "16.39%"
+            "total": 4,
+            "percentage": "14.29%"
           },
           "76-90": {
-            "total": 11,
-            "percentage": "18.03%"
+            "total": 1,
+            "percentage": "3.57%"
           },
           "91-105": {
-            "total": 7,
-            "percentage": "11.48%"
+            "total": 2,
+            "percentage": "7.14%"
           },
           "106-120": {
             "total": null,
@@ -859,66 +1450,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 26,
-            "under": 0
+            "over": 11,
+            "under": 5
           },
           "1.5": {
-            "over": 18,
+            "over": 8,
             "under": 8
           },
           "2.5": {
-            "over": 11,
-            "under": 15
+            "over": 5,
+            "under": 11
           },
           "3.5": {
             "over": 3,
-            "under": 23
+            "under": 13
           },
           "4.5": {
-            "over": 2,
-            "under": 24
+            "over": 1,
+            "under": 15
           }
         }
       },
       "against": {
         "total": {
-          "home": 18,
-          "away": 20,
-          "total": 38
+          "home": 7,
+          "away": 5,
+          "total": 12
         },
         "average": {
-          "home": "1.4",
-          "away": "1.5",
-          "total": "1.5"
+          "home": "1.0",
+          "away": "0.6",
+          "total": "0.8"
         },
         "minute": {
           "0-15": {
-            "total": 6,
-            "percentage": "16.22%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "8.11%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": 4,
-            "percentage": "10.81%"
+            "percentage": "33.33%"
           },
           "46-60": {
-            "total": 11,
-            "percentage": "29.73%"
+            "total": 4,
+            "percentage": "33.33%"
           },
           "61-75": {
-            "total": 7,
-            "percentage": "18.92%"
+            "total": 2,
+            "percentage": "16.67%"
           },
           "76-90": {
-            "total": 3,
-            "percentage": "8.11%"
+            "total": 2,
+            "percentage": "16.67%"
           },
           "91-105": {
-            "total": 3,
-            "percentage": "8.11%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -927,24 +1518,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 22,
-            "under": 4
+            "over": 10,
+            "under": 6
           },
           "1.5": {
-            "over": 11,
+            "over": 1,
             "under": 15
           },
           "2.5": {
-            "over": 3,
-            "under": 23
+            "over": 1,
+            "under": 15
           },
           "3.5": {
-            "over": 2,
-            "under": 24
+            "over": 0,
+            "under": 16
           },
           "4.5": {
             "over": 0,
-            "under": 26
+            "under": 16
           }
         }
       }
@@ -952,79 +1543,79 @@
     "biggest": {
       "streak": {
         "wins": 4,
-        "draws": 2,
-        "loses": 2
+        "draws": 1,
+        "loses": 1
       },
       "wins": {
-        "home": "5-1",
-        "away": "2-5"
+        "home": "5-0",
+        "away": "1-4"
       },
       "loses": {
-        "home": "2-4",
-        "away": "3-2"
+        "home": "0-3",
+        "away": "1-0"
       },
       "goals": {
         "for": {
           "home": 5,
-          "away": 5
+          "away": 4
         },
         "against": {
-          "home": 4,
-          "away": 3
+          "home": 3,
+          "away": 1
         }
       }
     },
     "clean_sheet": {
-      "home": 3,
-      "away": 1,
-      "total": 4
+      "home": 2,
+      "away": 4,
+      "total": 6
     },
     "failed_to_score": {
-      "home": 0,
-      "away": 0,
-      "total": 0
+      "home": 2,
+      "away": 3,
+      "total": 5
     },
     "penalty": {
       "scored": {
-        "total": 5,
+        "total": 1,
         "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 5
+      "total": 1
     },
     "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
+          "total": 2,
+          "percentage": "7.41%"
+        },
+        "16-30": {
+          "total": 3,
+          "percentage": "11.11%"
+        },
+        "31-45": {
+          "total": 7,
+          "percentage": "25.93%"
+        },
+        "46-60": {
+          "total": 6,
+          "percentage": "22.22%"
+        },
+        "61-75": {
+          "total": 6,
+          "percentage": "22.22%"
+        },
+        "76-90": {
           "total": null,
           "percentage": null
         },
-        "16-30": {
-          "total": 5,
-          "percentage": "12.50%"
-        },
-        "31-45": {
-          "total": 8,
-          "percentage": "20.00%"
-        },
-        "46-60": {
-          "total": 3,
-          "percentage": "7.50%"
-        },
-        "61-75": {
-          "total": 10,
-          "percentage": "25.00%"
-        },
-        "76-90": {
-          "total": 10,
-          "percentage": "25.00%"
-        },
         "91-105": {
-          "total": 4,
-          "percentage": "10.00%"
+          "total": 3,
+          "percentage": "11.11%"
         },
         "106-120": {
           "total": null,
@@ -1057,8 +1648,8 @@
           "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1067,5 +1658,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:11.926Z"
+  "lastUpdated": "2025-03-27T10:42:02.127Z"
 }

@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 29,
+        "name": "World Cup - Qualification Africa",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/29.png"
       },
       "country": {
         "name": "World",
@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2023,
+          "start": "2023-11-13",
+          "end": "2025-10-13",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -45,14 +45,14 @@
               "statistics_fixtures": true,
               "statistics_players": true
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -130,6 +130,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 36,
+        "name": "Africa Cup of Nations - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/36.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2024-03-20",
+          "end": "2024-11-19",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -147,6 +184,124 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1125989,
+          "date": "2025-03-25T16:00:00+00:00",
+          "venue": {
+            "id": 1357,
+            "name": "Stade Amahoro",
+            "city": "Kigali"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742918400
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1514,
+            "name": "Rwanda",
+            "logo": "https://media.api-sports.io/football/teams/1514.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1518,
+            "name": "Lesotho",
+            "logo": "https://media.api-sports.io/football/teams/1518.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1125960,
+          "date": "2025-03-21T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Peter Mokaba Stadium",
+            "city": "Polokwane"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742572800
+        },
+        "league": {
+          "id": 29,
+          "name": "World Cup - Qualification Africa",
+          "logo": "https://media.api-sports.io/football/leagues/29.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1531,
+            "name": "South Africa",
+            "logo": "https://media.api-sports.io/football/teams/1531.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1518,
+            "name": "Lesotho",
+            "logo": "https://media.api-sports.io/football/teams/1518.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1314884,
@@ -267,6 +422,124 @@
       },
       {
         "fixture": {
+          "id": 1232528,
+          "date": "2024-11-18T19:00:00+00:00",
+          "venue": {
+            "id": 1109,
+            "name": "Stade d'Honneur d'Oujda",
+            "city": "Oujda"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1731956400
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1518,
+            "name": "Lesotho",
+            "logo": "https://media.api-sports.io/football/teams/1518.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 7,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 5,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 7,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1232504,
+          "date": "2024-11-14T13:00:00+00:00",
+          "venue": {
+            "id": 21589,
+            "name": "Free State Toyota Stadium",
+            "city": "Bloemfontein, FS"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1731589200
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1518,
+            "name": "Lesotho",
+            "logo": "https://media.api-sports.io/football/teams/1518.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1527,
+            "name": "Central African Republic",
+            "logo": "https://media.api-sports.io/football/teams/1527.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1314011,
           "date": "2024-10-26T16:00:00+00:00",
           "venue": {
@@ -326,25 +599,25 @@
       },
       {
         "fixture": {
-          "id": 1209659,
-          "date": "2024-07-03T13:00:00+00:00",
+          "id": 1232480,
+          "date": "2024-10-15T13:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": "Nelson Mandela Bay Stadium",
-            "city": "Gqeberha"
+            "id": 21586,
+            "name": "Moses Mabhida Stadium",
+            "city": "Durban"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 5
           },
-          "timestamp": 1720011600
+          "timestamp": 1728997200
         },
         "league": {
-          "id": 859,
-          "name": "COSAFA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/859.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
@@ -354,318 +627,23 @@
             "winner": false
           },
           "away": {
-            "id": 1529,
-            "name": "Angola",
-            "logo": "https://media.api-sports.io/football/teams/1529.png",
+            "id": 1503,
+            "name": "Gabon",
+            "logo": "https://media.api-sports.io/football/teams/1503.png",
             "winner": true
           }
         },
         "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1209653,
-          "date": "2024-07-01T13:00:00+00:00",
-          "venue": {
-            "id": 19172,
-            "name": "Wolfson Stadium",
-            "city": "Ibhayi, Kwazakhele"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1719838800
-        },
-        "league": {
-          "id": 859,
-          "name": "COSAFA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/859.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1493,
-            "name": "Namibia",
-            "logo": "https://media.api-sports.io/football/teams/1493.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1518,
-            "name": "Lesotho",
-            "logo": "https://media.api-sports.io/football/teams/1518.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1209646,
-          "date": "2024-06-28T13:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Nelson Mandela Bay Stadium",
-            "city": "Gqeberha"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1719579600
-        },
-        "league": {
-          "id": 859,
-          "name": "COSAFA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/859.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1518,
-            "name": "Lesotho",
-            "logo": "https://media.api-sports.io/football/teams/1518.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1515,
-            "name": "Seychelles",
-            "logo": "https://media.api-sports.io/football/teams/1515.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1202461,
-          "date": "2024-06-01T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "TBC",
-            "city": "TBC"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1717200000
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1518,
-            "name": "Lesotho",
-            "logo": "https://media.api-sports.io/football/teams/1518.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1493,
-            "name": "Namibia",
-            "logo": "https://media.api-sports.io/football/teams/1493.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1184788,
-          "date": "2024-03-24T12:00:00+00:00",
-          "venue": {
-            "id": 608,
-            "name": "Addis Ababa Stadium",
-            "city": "Addis Abeba"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711281600
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1506,
-            "name": "Ethiopia",
-            "logo": "https://media.api-sports.io/football/teams/1506.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1518,
-            "name": "Lesotho",
-            "logo": "https://media.api-sports.io/football/teams/1518.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1184787,
-          "date": "2024-03-21T12:00:00+00:00",
-          "venue": {
-            "id": 608,
-            "name": "Addis Ababa Stadium",
-            "city": "Addis Abeba"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1711022400
-        },
-        "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1506,
-            "name": "Ethiopia",
-            "logo": "https://media.api-sports.io/football/teams/1506.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1518,
-            "name": "Lesotho",
-            "logo": "https://media.api-sports.io/football/teams/1518.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
+          "home": 0,
           "away": 2
         },
         "score": {
           "halftime": {
             "home": 0,
-            "away": 2
+            "away": 0
           },
           "fulltime": {
-            "home": 1,
+            "home": 0,
             "away": 2
           },
           "extratime": {
@@ -680,31 +658,31 @@
       },
       {
         "fixture": {
-          "id": 1155258,
-          "date": "2024-01-10T13:00:00+00:00",
+          "id": 1232456,
+          "date": "2024-10-11T19:00:00+00:00",
           "venue": {
-            "id": 1451,
-            "name": "Lucas Masterpieces Moripe Stadium",
-            "city": "Pretoria, GT"
+            "id": 688,
+            "name": "Stade de Franceville",
+            "city": "Franceville"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": null
+            "extra": 10
           },
-          "timestamp": 1704891600
+          "timestamp": 1728673200
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
         },
         "teams": {
           "home": {
-            "id": 1531,
-            "name": "South Africa",
-            "logo": "https://media.api-sports.io/football/teams/1531.png",
+            "id": 1503,
+            "name": "Gabon",
+            "logo": "https://media.api-sports.io/football/teams/1503.png",
             "winner": null
           },
           "away": {
@@ -736,57 +714,116 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1232432,
+          "date": "2024-09-09T18:00:00+00:00",
+          "venue": {
+            "id": 1105,
+            "name": "Stade d'Agadir",
+            "city": "Agadir"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1725904800
+        },
+        "league": {
+          "id": 36,
+          "name": "Africa Cup of Nations - Qualification",
+          "logo": "https://media.api-sports.io/football/leagues/36.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1518,
+            "name": "Lesotho",
+            "logo": "https://media.api-sports.io/football/teams/1518.png",
+            "winner": false
+          },
+          "away": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 1518,
       "name": "Lesotho",
       "logo": "https://media.api-sports.io/football/teams/1518.png"
     },
-    "form": "LDWLD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 4,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 1,
-          "away": 3,
-          "total": 4
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "0.8",
-          "total": "0.8"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -798,8 +835,8 @@
             "percentage": null
           },
           "31-45": {
-            "total": 3,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -824,37 +861,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
-          "away": 5,
-          "total": 6
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "1.3",
-          "total": "1.2"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -862,24 +899,24 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "40.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -892,62 +929,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
-        "draws": 1,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
         "home": null,
-        "away": "1-2"
+        "away": null
       },
       "loses": {
         "home": null,
-        "away": "2-0"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 1,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 1,
-          "away": 2
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 2,
-      "total": 2
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -968,28 +1005,28 @@
           "percentage": null
         },
         "16-30": {
-          "total": 1,
-          "percentage": "20.00%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
           "total": null,
           "percentage": null
         },
         "46-60": {
-          "total": 2,
-          "percentage": "40.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "20.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 1,
-          "percentage": "20.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1032,5 +1069,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:41:25.635Z"
+  "lastUpdated": "2025-03-27T10:40:12.199Z"
 }

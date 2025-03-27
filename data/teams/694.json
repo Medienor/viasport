@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 848,
         "name": "UEFA Europa Conference League",
         "type": "Cup",
@@ -188,65 +151,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1278511,
-          "date": "2025-03-26T17:00:00+00:00",
-          "venue": {
-            "id": 2,
-            "name": "Elbasan Arena",
-            "city": "Elbasan"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743008400
-        },
-        "league": {
-          "id": 310,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/310.png"
-        },
-        "teams": {
-          "home": {
-            "id": 694,
-            "name": "Tirana",
-            "logo": "https://media.api-sports.io/football/teams/694.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3325,
-            "name": "Bylis",
-            "logo": "https://media.api-sports.io/football/teams/3325.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1278517,
           "date": "2025-03-31T16:00:00+00:00",
           "venue": {
@@ -307,7 +211,7 @@
       {
         "fixture": {
           "id": 1278519,
-          "date": "2025-04-06T14:00:00+00:00",
+          "date": "2025-04-07T18:00:00+00:00",
           "venue": {
             "id": 4,
             "name": "Stadiumi Selman Stërmasi",
@@ -319,7 +223,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743948000
+          "timestamp": 1744048800
         },
         "league": {
           "id": 310,
@@ -542,6 +446,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1278511,
+          "date": "2025-03-26T17:00:00+00:00",
+          "venue": {
+            "id": 2,
+            "name": "Air Albania Stadium",
+            "city": "Tirana"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743008400
+        },
+        "league": {
+          "id": 310,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/310.png"
+        },
+        "teams": {
+          "home": {
+            "id": 694,
+            "name": "Tirana",
+            "logo": "https://media.api-sports.io/football/teams/694.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3325,
+            "name": "Bylis",
+            "logo": "https://media.api-sports.io/football/teams/3325.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1278508,
@@ -1072,88 +1035,29 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1278463,
-          "date": "2025-01-18T15:30:00+00:00",
-          "venue": {
-            "id": 4,
-            "name": "Air Albania Stadium",
-            "city": "Tirana"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737214200
-        },
-        "league": {
-          "id": 310,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/310.png"
-        },
-        "teams": {
-          "home": {
-            "id": 694,
-            "name": "Tirana",
-            "logo": "https://media.api-sports.io/football/teams/694.png",
-            "winner": false
-          },
-          "away": {
-            "id": 3327,
-            "name": "Egnatia Rrogozhinë",
-            "logo": "https://media.api-sports.io/football/teams/3327.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 694,
       "name": "Tirana",
       "logo": "https://media.api-sports.io/football/teams/694.png"
     },
-    "form": "L",
+    "form": null,
     "fixtures": {
       "played": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -1167,8 +1071,8 @@
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
@@ -1220,36 +1124,36 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 1,
-          "total": 1
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "1.0"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1287,24 +1191,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       }
@@ -1313,7 +1217,7 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
         "home": null,
@@ -1321,7 +1225,7 @@
       },
       "loses": {
         "home": null,
-        "away": "1-0"
+        "away": null
       },
       "goals": {
         "for": {
@@ -1330,7 +1234,7 @@
         },
         "against": {
           "home": 0,
-          "away": 1
+          "away": 0
         }
       }
     },
@@ -1341,8 +1245,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1427,5 +1331,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:10.228Z"
+  "lastUpdated": "2025-03-27T10:38:53.326Z"
 }

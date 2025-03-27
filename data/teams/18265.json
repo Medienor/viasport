@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 765,
-        "name": "PFL",
+        "id": 867,
+        "name": "Copa Paulino Alcantara",
         "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/765.png"
+        "logo": "https://media.api-sports.io/football/leagues/867.png"
       },
       "country": {
         "name": "Philippines",
@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-04-06",
-          "end": "2024-07-14",
-          "current": false,
+          "year": 2023,
+          "start": "2023-07-15",
+          "end": "2023-11-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -46,10 +46,10 @@
               "statistics_players": false
             },
             "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -93,6 +93,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 765,
+        "name": "PFL",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/765.png"
+      },
+      "country": {
+        "name": "Philippines",
+        "code": "PH",
+        "flag": "https://media.api-sports.io/flags/ph.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2024-09-28",
+          "end": "2025-03-30",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -103,8 +140,481 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1366735,
+          "date": "2025-03-29T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Dynamic Herb-Borromeo Sports Complex",
+            "city": "Talisay"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743242400
+        },
+        "league": {
+          "id": 765,
+          "name": "PFL",
+          "logo": "https://media.api-sports.io/football/leagues/765.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18265,
+            "name": "Dynamic Herb Cebu",
+            "logo": "https://media.api-sports.io/football/teams/18265.png",
+            "winner": null
+          },
+          "away": {
+            "id": 21575,
+            "name": "Loyola",
+            "logo": "https://media.api-sports.io/football/teams/21575.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361324,
+          "date": "2025-03-16T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Dynamic Herb-Borromeo Sports Complex",
+            "city": "Talisay"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742119200
+        },
+        "league": {
+          "id": 765,
+          "name": "PFL",
+          "logo": "https://media.api-sports.io/football/leagues/765.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18265,
+            "name": "Dynamic Herb Cebu",
+            "logo": "https://media.api-sports.io/football/teams/18265.png",
+            "winner": true
+          },
+          "away": {
+            "id": 16191,
+            "name": "Maharlika",
+            "logo": "https://media.api-sports.io/football/teams/16191.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1358490,
+          "date": "2025-03-08T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Biñan Football Stadium",
+            "city": "Biñan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1741431600
+        },
+        "league": {
+          "id": 765,
+          "name": "PFL",
+          "logo": "https://media.api-sports.io/football/leagues/765.png"
+        },
+        "teams": {
+          "home": {
+            "id": 23384,
+            "name": "Taguig",
+            "logo": "https://media.api-sports.io/football/teams/23384.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18265,
+            "name": "Dynamic Herb Cebu",
+            "logo": "https://media.api-sports.io/football/teams/18265.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1354335,
+          "date": "2025-03-01T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Dynamic Herb-Borromeo Sports Complex",
+            "city": "Talisay"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1740823200
+        },
+        "league": {
+          "id": 765,
+          "name": "PFL",
+          "logo": "https://media.api-sports.io/football/leagues/765.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18265,
+            "name": "Dynamic Herb Cebu",
+            "logo": "https://media.api-sports.io/football/teams/18265.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8030,
+            "name": "Kaya",
+            "logo": "https://media.api-sports.io/football/teams/8030.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353124,
+          "date": "2025-02-22T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Dynamic Herb-Borromeo Sports Complex",
+            "city": "Talisay"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1740218400
+        },
+        "league": {
+          "id": 765,
+          "name": "PFL",
+          "logo": "https://media.api-sports.io/football/leagues/765.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21576,
+            "name": "Manila Digger",
+            "logo": "https://media.api-sports.io/football/teams/21576.png",
+            "winner": true
+          },
+          "away": {
+            "id": 18265,
+            "name": "Dynamic Herb Cebu",
+            "logo": "https://media.api-sports.io/football/teams/18265.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350265,
+          "date": "2025-02-12T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Dynamic Herb-Borromeo Sports Complex",
+            "city": "Talisay"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739354400
+        },
+        "league": {
+          "id": 765,
+          "name": "PFL",
+          "logo": "https://media.api-sports.io/football/leagues/765.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18265,
+            "name": "Dynamic Herb Cebu",
+            "logo": "https://media.api-sports.io/football/teams/18265.png",
+            "winner": true
+          },
+          "away": {
+            "id": 25189,
+            "name": "PFF Developmental Club",
+            "logo": "https://media.api-sports.io/football/teams/25189.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1348628,
+          "date": "2025-02-08T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Dynamic Herb-Borromeo Sports Complex",
+            "city": "Talisay"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 12
+          },
+          "timestamp": 1739008800
+        },
+        "league": {
+          "id": 765,
+          "name": "PFL",
+          "logo": "https://media.api-sports.io/football/leagues/765.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18265,
+            "name": "Dynamic Herb Cebu",
+            "logo": "https://media.api-sports.io/football/teams/18265.png",
+            "winner": true
+          },
+          "away": {
+            "id": 16192,
+            "name": "Mendiola",
+            "logo": "https://media.api-sports.io/football/teams/16192.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345734,
+          "date": "2025-02-02T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "UP Diliman Football Pitch",
+            "city": "Quezon City"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1738490400
+        },
+        "league": {
+          "id": 765,
+          "name": "PFL",
+          "logo": "https://media.api-sports.io/football/leagues/765.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8030,
+            "name": "Kaya",
+            "logo": "https://media.api-sports.io/football/teams/8030.png",
+            "winner": true
+          },
+          "away": {
+            "id": 18265,
+            "name": "Dynamic Herb Cebu",
+            "logo": "https://media.api-sports.io/football/teams/18265.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1289414,
@@ -153,6 +663,65 @@
           "fulltime": {
             "home": 0,
             "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1310763,
+          "date": "2024-12-01T08:00:00+00:00",
+          "venue": {
+            "id": 1244,
+            "name": "Rizal Memorial Stadium",
+            "city": "Manila"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1733040000
+        },
+        "league": {
+          "id": 765,
+          "name": "PFL",
+          "logo": "https://media.api-sports.io/football/leagues/765.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21575,
+            "name": "Loyola",
+            "logo": "https://media.api-sports.io/football/teams/21575.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18265,
+            "name": "Dynamic Herb Cebu",
+            "logo": "https://media.api-sports.io/football/teams/18265.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -222,506 +791,34 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1289384,
-          "date": "2024-11-07T10:00:00+00:00",
-          "venue": {
-            "id": 1244,
-            "name": "Rizal Memorial Stadium",
-            "city": "Manila"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730973600
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 18265,
-            "name": "Dynamic Herb Cebu",
-            "logo": "https://media.api-sports.io/football/teams/18265.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2786,
-            "name": "Muangthong United",
-            "logo": "https://media.api-sports.io/football/teams/2786.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 9
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 6
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 9
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1289363,
-          "date": "2024-10-23T12:00:00+00:00",
-          "venue": {
-            "id": 1551,
-            "name": "Rajamangala National Stadium",
-            "city": "Bangkok"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1729684800
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2786,
-            "name": "Muangthong United",
-            "logo": "https://media.api-sports.io/football/teams/2786.png",
-            "winner": null
-          },
-          "away": {
-            "id": 18265,
-            "name": "Dynamic Herb Cebu",
-            "logo": "https://media.api-sports.io/football/teams/18265.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1289358,
-          "date": "2024-10-03T12:00:00+00:00",
-          "venue": {
-            "id": 21442,
-            "name": "MBPJ Stadium",
-            "city": "Petaling Jaya"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1727956800
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2526,
-            "name": "Selangor",
-            "logo": "https://media.api-sports.io/football/teams/2526.png",
-            "winner": true
-          },
-          "away": {
-            "id": 18265,
-            "name": "Dynamic Herb Cebu",
-            "logo": "https://media.api-sports.io/football/teams/18265.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1289338,
-          "date": "2024-09-19T12:00:00+00:00",
-          "venue": {
-            "id": 1244,
-            "name": "Rizal Memorial Stadium",
-            "city": "Manila"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1726747200
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 18265,
-            "name": "Dynamic Herb Cebu",
-            "logo": "https://media.api-sports.io/football/teams/18265.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2762,
-            "name": "Jeonbuk Motors",
-            "logo": "https://media.api-sports.io/football/teams/2762.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 6
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 6
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1193569,
-          "date": "2024-07-13T09:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Dynamic Herb-Borromeo Sports Complex",
-            "city": "Talisay"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1720863000
-        },
-        "league": {
-          "id": 765,
-          "name": "PFL",
-          "logo": "https://media.api-sports.io/football/leagues/765.png"
-        },
-        "teams": {
-          "home": {
-            "id": 18265,
-            "name": "Dynamic Herb Cebu",
-            "logo": "https://media.api-sports.io/football/teams/18265.png",
-            "winner": true
-          },
-          "away": {
-            "id": 16192,
-            "name": "Mendiola",
-            "logo": "https://media.api-sports.io/football/teams/16192.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1193562,
-          "date": "2024-07-06T09:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Dynamic Herb-Borromeo Sports Complex",
-            "city": "Talisay"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1720258200
-        },
-        "league": {
-          "id": 765,
-          "name": "PFL",
-          "logo": "https://media.api-sports.io/football/leagues/765.png"
-        },
-        "teams": {
-          "home": {
-            "id": 18265,
-            "name": "Dynamic Herb Cebu",
-            "logo": "https://media.api-sports.io/football/teams/18265.png",
-            "winner": false
-          },
-          "away": {
-            "id": 16193,
-            "name": "Stallion",
-            "logo": "https://media.api-sports.io/football/teams/16193.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1193555,
-          "date": "2024-06-29T09:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Dynamic Herb-Borromeo Sports Complex",
-            "city": "Talisay"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1719653400
-        },
-        "league": {
-          "id": 765,
-          "name": "PFL",
-          "logo": "https://media.api-sports.io/football/leagues/765.png"
-        },
-        "teams": {
-          "home": {
-            "id": 18265,
-            "name": "Dynamic Herb Cebu",
-            "logo": "https://media.api-sports.io/football/teams/18265.png",
-            "winner": true
-          },
-          "away": {
-            "id": 21578,
-            "name": "Philippine Army",
-            "logo": "https://media.api-sports.io/football/teams/21578.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1193552,
-          "date": "2024-06-23T09:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Dynamic Herb-Borromeo Sports Complex",
-            "city": "Talisay"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1719133200
-        },
-        "league": {
-          "id": 765,
-          "name": "PFL",
-          "logo": "https://media.api-sports.io/football/leagues/765.png"
-        },
-        "teams": {
-          "home": {
-            "id": 18265,
-            "name": "Dynamic Herb Cebu",
-            "logo": "https://media.api-sports.io/football/teams/18265.png",
-            "winner": true
-          },
-          "away": {
-            "id": 23383,
-            "name": "Manila Montet",
-            "logo": "https://media.api-sports.io/football/teams/23383.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 7,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 7,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 765,
-      "name": "PFL",
-      "country": "Philippines",
-      "logo": "https://media.api-sports.io/football/leagues/765.png",
-      "flag": "https://media.api-sports.io/flags/ph.svg",
-      "season": 2024
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
+      "flag": null,
+      "season": null
     },
     "team": {
       "id": 18265,
       "name": "Dynamic Herb Cebu",
       "logo": "https://media.api-sports.io/football/teams/18265.png"
     },
-    "form": "WWWLWWWWWWWWLW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 12,
-        "away": 2,
-        "total": 14
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 11,
-        "away": 1,
-        "total": 12
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -729,51 +826,51 @@
         "total": 0
       },
       "loses": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 59,
-          "away": 7,
-          "total": 66
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "4.9",
-          "away": "3.5",
-          "total": "4.7"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 4,
-            "percentage": "6.25%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 7,
-            "percentage": "10.94%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 7,
-            "percentage": "10.94%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 14,
-            "percentage": "21.88%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 15,
-            "percentage": "23.44%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 12,
-            "percentage": "18.75%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 5,
-            "percentage": "7.81%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -782,62 +879,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 13,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 10,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 9,
-            "under": 5
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 8,
-            "under": 6
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 6,
-            "under": 8
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 7,
-          "away": 2,
-          "total": 9
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "0.6",
-          "away": "1.0",
-          "total": "0.6"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "10.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "10.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 5,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 2,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "10.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -850,73 +947,73 @@
         },
         "under_over": {
           "0.5": {
-            "over": 7,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 12
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 14
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 14
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 14
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 8,
+        "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
-        "home": "16-2",
-        "away": "1-7"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "1-2",
-        "away": "1-0"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 16,
-          "away": 7
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 7,
+      "home": 0,
       "away": 0,
-      "total": 7
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 4,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 4
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -990,5 +1087,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:19.194Z"
+  "lastUpdated": "2025-03-27T10:42:09.541Z"
 }

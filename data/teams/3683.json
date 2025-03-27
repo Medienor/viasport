@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 848,
         "name": "UEFA Europa Conference League",
         "type": "Cup",
@@ -201,6 +164,43 @@
             "injuries": false,
             "predictions": true,
             "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
           }
         }
       ]
@@ -457,6 +457,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1365913,
+          "date": "2025-03-22T00:00:00+00:00",
+          "venue": {
+            "id": 120,
+            "name": "Yerevan Football Academy",
+            "city": "Yerevan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742601600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3683,
+            "name": "Ararat-Armenia",
+            "logo": "https://media.api-sports.io/football/teams/3683.png",
+            "winner": false
+          },
+          "away": {
+            "id": 582,
+            "name": "Alashkert",
+            "logo": "https://media.api-sports.io/football/teams/582.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1355053,
@@ -754,6 +813,183 @@
       },
       {
         "fixture": {
+          "id": 1350804,
+          "date": "2025-02-11T09:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "TBC",
+            "city": "TBC"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739264400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3412,
+            "name": "Ethnikos Achna",
+            "logo": "https://media.api-sports.io/football/teams/3412.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3683,
+            "name": "Ararat-Armenia",
+            "logo": "https://media.api-sports.io/football/teams/3683.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345909,
+          "date": "2025-02-08T13:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Gipedo 8 Dimou Agias Napas",
+            "city": "Ayia Napa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739021400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3683,
+            "name": "Ararat-Armenia",
+            "logo": "https://media.api-sports.io/football/teams/3683.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346300,
+          "date": "2025-02-02T08:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Dimotiko Stadio Ayia Napa",
+            "city": "Agia Napa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1738485000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3409,
+            "name": "Ayia Napa",
+            "logo": "https://media.api-sports.io/football/teams/3409.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3683,
+            "name": "Ararat-Armenia",
+            "logo": "https://media.api-sports.io/football/teams/3683.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 6
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 6
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1308697,
           "date": "2024-12-04T14:00:00+00:00",
           "venue": {
@@ -810,298 +1046,62 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1312857,
-          "date": "2024-11-27T11:00:00+00:00",
-          "venue": {
-            "id": 4654,
-            "name": "Kotaik Stadium",
-            "city": "Abovian"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1732705200
-        },
-        "league": {
-          "id": 342,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/342.png"
-        },
-        "teams": {
-          "home": {
-            "id": 582,
-            "name": "Alashkert",
-            "logo": "https://media.api-sports.io/football/teams/582.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3683,
-            "name": "Ararat-Armenia",
-            "logo": "https://media.api-sports.io/football/teams/3683.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1312852,
-          "date": "2024-11-21T14:00:00+00:00",
-          "venue": {
-            "id": 120,
-            "name": "Yerevan Football Academy",
-            "city": "Yerevan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1732197600
-        },
-        "league": {
-          "id": 342,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/342.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3683,
-            "name": "Ararat-Armenia",
-            "logo": "https://media.api-sports.io/football/teams/3683.png",
-            "winner": true
-          },
-          "away": {
-            "id": 688,
-            "name": "Gandzasar",
-            "logo": "https://media.api-sports.io/football/teams/688.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1312541,
-          "date": "2024-11-10T11:00:00+00:00",
-          "venue": {
-            "id": 120,
-            "name": "Yerevan Football Academy",
-            "city": "Yerevan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1731236400
-        },
-        "league": {
-          "id": 342,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/342.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3682,
-            "name": "Ararat",
-            "logo": "https://media.api-sports.io/football/teams/3682.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3683,
-            "name": "Ararat-Armenia",
-            "logo": "https://media.api-sports.io/football/teams/3683.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1312536,
-          "date": "2024-11-06T13:00:00+00:00",
-          "venue": {
-            "id": 120,
-            "name": "Yerevan Football Academy",
-            "city": "Yerevan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730898000
-        },
-        "league": {
-          "id": 342,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/342.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3683,
-            "name": "Ararat-Armenia",
-            "logo": "https://media.api-sports.io/football/teams/3683.png",
-            "winner": true
-          },
-          "away": {
-            "id": 6287,
-            "name": "West Armenia",
-            "logo": "https://media.api-sports.io/football/teams/6287.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 3683,
       "name": "Ararat-Armenia",
       "logo": "https://media.api-sports.io/football/teams/3683.png"
     },
-    "form": "WWDLD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 4,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 3,
-          "away": 4,
-          "total": 7
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "3.0",
-          "away": "1.0",
-          "total": "1.4"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
@@ -1134,37 +1134,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 3,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 4,
-          "total": 4
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "0.8"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -1176,12 +1176,12 @@
             "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "66.67%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -1202,62 +1202,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 1,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "3-0",
-        "away": "1-2"
+        "home": null,
+        "away": null
       },
       "loses": {
         "home": null,
-        "away": "1-0"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 2
+          "home": 0,
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 2
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 2,
-      "total": 2
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1328,8 +1328,8 @@
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1342,5 +1342,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:24.788Z"
+  "lastUpdated": "2025-03-27T10:39:08.565Z"
 }

@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 104,
-        "name": "1. Division",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/104.png"
-      },
-      "country": {
-        "name": "Norway",
-        "code": "NO",
-        "flag": "https://media.api-sports.io/flags/no.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-04-01",
-          "end": "2024-12-01",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 667,
         "name": "Friendlies Clubs",
         "type": "Cup",
@@ -71,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -89,17 +52,17 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
     },
     {
       "league": {
-        "id": 105,
-        "name": "NM Cupen",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/105.png"
+        "id": 103,
+        "name": "Eliteserien",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/103.png"
       },
       "country": {
         "name": "Norway",
@@ -108,23 +71,23 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-04-09",
-          "end": "2024-12-07",
+          "year": 2025,
+          "start": "2025-03-29",
+          "end": "2025-11-30",
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
+              "events": false,
+              "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
-            "injuries": false,
+            "injuries": true,
             "predictions": true,
             "odds": false
           }
@@ -145,8 +108,1661 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1342188,
+          "date": "2025-03-30T12:30:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743337800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342200,
+          "date": "2025-04-06T15:00:00+00:00",
+          "venue": {
+            "id": 1193,
+            "name": "Sarpsborg Stadion",
+            "city": "Sarpsborg"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743951600
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 333,
+            "name": "Sarpsborg 08 FF",
+            "logo": "https://media.api-sports.io/football/teams/333.png",
+            "winner": null
+          },
+          "away": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342314,
+          "date": "2025-04-09T17:00:00+00:00",
+          "venue": {
+            "id": 2792,
+            "name": "Nye Fredrikstad Stadion",
+            "city": "Fredrikstad"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744218000
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2149,
+            "name": "Fredrikstad",
+            "logo": "https://media.api-sports.io/football/teams/2149.png",
+            "winner": null
+          },
+          "away": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342203,
+          "date": "2025-04-21T12:30:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745238600
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 331,
+            "name": "Rosenborg",
+            "logo": "https://media.api-sports.io/football/teams/331.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342214,
+          "date": "2025-04-27T15:00:00+00:00",
+          "venue": {
+            "id": 19680,
+            "name": "Nordmøre stadion",
+            "city": "Kristiansund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745766000
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 320,
+            "name": "Kristiansund BK",
+            "logo": "https://media.api-sports.io/football/teams/320.png",
+            "winner": null
+          },
+          "away": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342220,
+          "date": "2025-05-03T16:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746288000
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 319,
+            "name": "Brann",
+            "logo": "https://media.api-sports.io/football/teams/319.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342231,
+          "date": "2025-05-11T15:00:00+00:00",
+          "venue": {
+            "id": 20418,
+            "name": "Jotun Arena",
+            "city": "Sandefjord"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746975600
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 332,
+            "name": "Sandefjord",
+            "logo": "https://media.api-sports.io/football/teams/332.png",
+            "winner": null
+          },
+          "away": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342241,
+          "date": "2025-05-16T18:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747418400
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2159,
+            "name": "Ham-Kam",
+            "logo": "https://media.api-sports.io/football/teams/2159.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342249,
+          "date": "2025-05-26T17:00:00+00:00",
+          "venue": {
+            "id": 1179,
+            "name": "KFUM Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748278800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2143,
+            "name": "KFUM Oslo",
+            "logo": "https://media.api-sports.io/football/teams/2143.png",
+            "winner": null
+          },
+          "away": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342251,
+          "date": "2025-05-31T16:45:00+00:00",
+          "venue": {
+            "id": 19681,
+            "name": "Romssa Arena",
+            "city": "Tromsø"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748709900
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 325,
+            "name": "Tromso",
+            "logo": "https://media.api-sports.io/football/teams/325.png",
+            "winner": null
+          },
+          "away": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342265,
+          "date": "2025-06-22T15:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750604400
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 329,
+            "name": "Molde",
+            "logo": "https://media.api-sports.io/football/teams/329.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342273,
+          "date": "2025-06-29T15:00:00+00:00",
+          "venue": {
+            "id": 1199,
+            "name": "Marienlyst Stadion",
+            "city": "Drammen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751209200
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 324,
+            "name": "Stromsgodset",
+            "logo": "https://media.api-sports.io/football/teams/324.png",
+            "winner": null
+          },
+          "away": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342281,
+          "date": "2025-07-06T15:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751814000
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2149,
+            "name": "Fredrikstad",
+            "logo": "https://media.api-sports.io/football/teams/2149.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342284,
+          "date": "2025-07-13T15:00:00+00:00",
+          "venue": {
+            "id": 2793,
+            "name": "Bryne Stadion",
+            "city": "Bryne"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752418800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2142,
+            "name": "Bryne",
+            "logo": "https://media.api-sports.io/football/teams/2142.png",
+            "winner": null
+          },
+          "away": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342297,
+          "date": "2025-07-20T15:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753023600
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342299,
+          "date": "2025-07-27T15:00:00+00:00",
+          "venue": {
+            "id": 1175,
+            "name": "Aspmyra Stadion",
+            "city": "Bodø"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753628400
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 327,
+            "name": "Bodo/Glimt",
+            "logo": "https://media.api-sports.io/football/teams/327.png",
+            "winner": null
+          },
+          "away": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342313,
+          "date": "2025-08-03T15:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754233200
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 332,
+            "name": "Sandefjord",
+            "logo": "https://media.api-sports.io/football/teams/332.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342329,
+          "date": "2025-08-17T15:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755442800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 333,
+            "name": "Sarpsborg 08 FF",
+            "logo": "https://media.api-sports.io/football/teams/333.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342333,
+          "date": "2025-08-24T15:00:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756047600
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 328,
+            "name": "Haugesund",
+            "logo": "https://media.api-sports.io/football/teams/328.png",
+            "winner": null
+          },
+          "away": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342345,
+          "date": "2025-08-31T15:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756652400
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2142,
+            "name": "Bryne",
+            "logo": "https://media.api-sports.io/football/teams/2142.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1365970,
+          "date": "2025-03-22T15:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742655600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 319,
+            "name": "Brann",
+            "logo": "https://media.api-sports.io/football/teams/319.png",
+            "winner": true
+          },
+          "away": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350873,
+          "date": "2025-03-15T14:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1742047200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": false
+          },
+          "away": {
+            "id": 325,
+            "name": "Tromso",
+            "logo": "https://media.api-sports.io/football/teams/325.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349315,
+          "date": "2025-03-07T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Vallhall Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1741345200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": false
+          },
+          "away": {
+            "id": 324,
+            "name": "Stromsgodset",
+            "logo": "https://media.api-sports.io/football/teams/324.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346282,
+          "date": "2025-03-03T15:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Marbella Football Center - Sur 1",
+            "city": "San Pedro de Alcántara"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1741015800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": null
+          },
+          "away": {
+            "id": 270,
+            "name": "FH hafnarfjordur",
+            "logo": "https://media.api-sports.io/football/teams/270.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349291,
+          "date": "2025-02-22T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Marbella Football Center - Sur 1",
+            "city": "San Pedro de Alcántara"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1740240000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": true
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345935,
+          "date": "2025-02-08T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Vallhall Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1739012400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2239,
+            "name": "Skeid",
+            "logo": "https://media.api-sports.io/football/teams/2239.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345057,
+          "date": "2025-02-01T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Vallhall Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1738418400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": true
+          },
+          "away": {
+            "id": 333,
+            "name": "Sarpsborg 08 FF",
+            "logo": "https://media.api-sports.io/football/teams/333.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1337165,
+          "date": "2025-01-22T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1737550800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9802,
+            "name": "Tenerife II",
+            "logo": "https://media.api-sports.io/football/teams/9802.png",
+            "winner": false
+          },
+          "away": {
+            "id": 326,
+            "name": "Valerenga",
+            "logo": "https://media.api-sports.io/football/teams/326.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1152106,
@@ -264,558 +1880,86 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1152094,
-          "date": "2024-10-25T17:00:00+00:00",
-          "venue": {
-            "id": 1196,
-            "name": "Nadderud Stadion",
-            "city": "Bærum"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1729875600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 323,
-            "name": "Stabaek",
-            "logo": "https://media.api-sports.io/football/teams/323.png",
-            "winner": false
-          },
-          "away": {
-            "id": 326,
-            "name": "Valerenga",
-            "logo": "https://media.api-sports.io/football/teams/326.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152082,
-          "date": "2024-10-21T17:00:00+00:00",
-          "venue": {
-            "id": 1203,
-            "name": "Intility Arena",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1729530000
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 326,
-            "name": "Valerenga",
-            "logo": "https://media.api-sports.io/football/teams/326.png",
-            "winner": true
-          },
-          "away": {
-            "id": 6976,
-            "name": "Egersund",
-            "logo": "https://media.api-sports.io/football/teams/6976.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1199598,
-          "date": "2024-10-06T18:00:00+00:00",
-          "venue": {
-            "id": 1203,
-            "name": "Intility Arena",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1728237600
-        },
-        "league": {
-          "id": 105,
-          "name": "NM Cupen",
-          "logo": "https://media.api-sports.io/football/leagues/105.png"
-        },
-        "teams": {
-          "home": {
-            "id": 326,
-            "name": "Valerenga",
-            "logo": "https://media.api-sports.io/football/teams/326.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2149,
-            "name": "Fredrikstad",
-            "logo": "https://media.api-sports.io/football/teams/2149.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152075,
-          "date": "2024-10-02T17:00:00+00:00",
-          "venue": {
-            "id": 1203,
-            "name": "Intility Arena",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1727888400
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 326,
-            "name": "Valerenga",
-            "logo": "https://media.api-sports.io/football/teams/326.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2152,
-            "name": "Mjondalen",
-            "logo": "https://media.api-sports.io/football/teams/2152.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152064,
-          "date": "2024-09-28T14:00:00+00:00",
-          "venue": {
-            "id": 1180,
-            "name": "Gjemselund Stadion",
-            "city": "Kongsvinger"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1727532000
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2144,
-            "name": "Kongsvinger",
-            "logo": "https://media.api-sports.io/football/teams/2144.png",
-            "winner": null
-          },
-          "away": {
-            "id": 326,
-            "name": "Valerenga",
-            "logo": "https://media.api-sports.io/football/teams/326.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152060,
-          "date": "2024-09-24T17:00:00+00:00",
-          "venue": {
-            "id": 1203,
-            "name": "Intility Arena",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1727197200
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 326,
-            "name": "Valerenga",
-            "logo": "https://media.api-sports.io/football/teams/326.png",
-            "winner": true
-          },
-          "away": {
-            "id": 757,
-            "name": "Aalesund",
-            "logo": "https://media.api-sports.io/football/teams/757.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152048,
-          "date": "2024-09-21T14:00:00+00:00",
-          "venue": {
-            "id": 2793,
-            "name": "Bryne Stadion",
-            "city": "Bryne"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726927200
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2142,
-            "name": "Bryne",
-            "logo": "https://media.api-sports.io/football/teams/2142.png",
-            "winner": null
-          },
-          "away": {
-            "id": 326,
-            "name": "Valerenga",
-            "logo": "https://media.api-sports.io/football/teams/326.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152047,
-          "date": "2024-09-16T17:00:00+00:00",
-          "venue": {
-            "id": 1203,
-            "name": "Intility Arena",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726506000
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 326,
-            "name": "Valerenga",
-            "logo": "https://media.api-sports.io/football/teams/326.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2148,
-            "name": "Asane",
-            "logo": "https://media.api-sports.io/football/teams/2148.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 104,
-      "name": "1. Division",
+      "id": 103,
+      "name": "Eliteserien",
       "country": "Norway",
-      "logo": "https://media.api-sports.io/football/leagues/104.png",
+      "logo": "https://media.api-sports.io/football/leagues/103.png",
       "flag": "https://media.api-sports.io/flags/no.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 326,
       "name": "Valerenga",
       "logo": "https://media.api-sports.io/football/teams/326.png"
     },
-    "form": "DWLDLWWLWWWWDWWWWWWWWWDWDWWWDW",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 15,
-        "away": 15,
-        "total": 30
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 11,
-        "away": 10,
-        "total": 21
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 2,
-        "away": 4,
-        "total": 6
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 2,
-        "away": 1,
-        "total": 3
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 47,
-          "away": 35,
-          "total": 82
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "3.1",
-          "away": "2.3",
-          "total": "2.7"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 7,
-            "percentage": "8.64%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 18,
-            "percentage": "22.22%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 9,
-            "percentage": "11.11%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 13,
-            "percentage": "16.05%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 14,
-            "percentage": "17.28%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 14,
-            "percentage": "17.28%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 6,
-            "percentage": "7.41%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -824,62 +1968,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 29,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 22,
-            "under": 8
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 15,
-            "under": 15
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 9,
-            "under": 21
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 4,
-            "under": 26
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 15,
-          "away": 16,
-          "total": 31
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "1.1",
-          "total": "1.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 4,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "3.13%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 4,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 8,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 9,
-            "percentage": "28.13%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 6,
-            "percentage": "18.75%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -892,73 +2036,73 @@
         },
         "under_over": {
           "0.5": {
-            "over": 21,
-            "under": 9
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 6,
-            "under": 24
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 28
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 29
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 29
+            "over": 0,
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 9,
-        "draws": 1,
-        "loses": 1
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "8-0",
-        "away": "1-5"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "1-3",
-        "away": "5-3"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 8,
-          "away": 5
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 3,
-          "away": 5
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 5,
-      "away": 4,
-      "total": 9
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 2,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 2
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -968,28 +2112,28 @@
           "percentage": null
         },
         "16-30": {
-          "total": 7,
-          "percentage": "19.44%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 5,
-          "percentage": "13.89%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 9,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 5,
-          "percentage": "13.89%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 6,
-          "percentage": "16.67%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 4,
-          "percentage": "11.11%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1006,8 +2150,8 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
           "total": null,
@@ -1032,5 +2176,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:37:04.409Z"
+  "lastUpdated": "2025-03-27T10:35:41.304Z"
 }

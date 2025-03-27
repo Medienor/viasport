@@ -22,80 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "country": {
-        "name": "World",
-        "code": null,
-        "flag": null
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 362,
-        "name": "A Lyga",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/362.png"
-      },
-      "country": {
-        "name": "Lithuania",
-        "code": "LT",
-        "flag": "https://media.api-sports.io/flags/lt.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-01",
-          "end": "2024-11-23",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 661,
         "name": "Cup",
         "type": "Cup",
@@ -167,6 +93,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 362,
+        "name": "A Lyga",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/362.png"
+      },
+      "country": {
+        "name": "Lithuania",
+        "code": "LT",
+        "flag": "https://media.api-sports.io/flags/lt.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-28",
+          "end": "2025-06-30",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -183,24 +183,436 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1199478,
-          "date": "2024-11-09T14:25:00+00:00",
+          "id": 1353656,
+          "date": "2025-03-29T14:00:00+00:00",
+          "venue": {
+            "id": 18559,
+            "name": "Šiaulių Gytarių stadionas",
+            "city": "Šiauliai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743256800
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3872,
+            "name": "Kauno Žalgiris",
+            "logo": "https://media.api-sports.io/football/teams/3872.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353662,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 2642,
+            "name": "Gargždų miesto stadionas",
+            "city": "Gargždai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3858,
+            "name": "Banga",
+            "logo": "https://media.api-sports.io/football/teams/3858.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353666,
+          "date": "2025-04-12T12:00:00+00:00",
+          "venue": {
+            "id": 18559,
+            "name": "Šiaulių Gytarių stadionas",
+            "city": "Šiauliai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744459200
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          },
+          "away": {
+            "id": 586,
+            "name": "FK Zalgiris Vilnius",
+            "logo": "https://media.api-sports.io/football/teams/586.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353672,
+          "date": "2025-04-16T15:00:00+00:00",
+          "venue": {
+            "id": 18559,
+            "name": "Šiaulių Gytarių stadionas",
+            "city": "Šiauliai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744815600
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          },
+          "away": {
+            "id": 638,
+            "name": "FK Trakai",
+            "logo": "https://media.api-sports.io/football/teams/638.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353677,
+          "date": "2025-04-19T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Marijampolės futbolo arenos stadionas",
+            "city": "Marijampolė"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745074800
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 612,
+            "name": "Suduva Marijampole",
+            "logo": "https://media.api-sports.io/football/teams/612.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353681,
+          "date": "2025-04-26T12:00:00+00:00",
+          "venue": {
+            "id": 2644,
+            "name": "Telšių centrinis stadionas",
+            "city": "Telšiai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745668800
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3860,
+            "name": "Džiugas Telšiai",
+            "logo": "https://media.api-sports.io/football/teams/3860.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353685,
+          "date": "2025-05-02T15:00:00+00:00",
+          "venue": {
+            "id": 18559,
+            "name": "Šiaulių Gytarių stadionas",
+            "city": "Šiauliai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746198000
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3861,
+            "name": "Hegelmann Litauen",
+            "logo": "https://media.api-sports.io/football/teams/3861.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353694,
+          "date": "2025-05-11T14:25:00+00:00",
           "venue": {
             "id": 2643,
             "name": "Alytaus m. centrinis stadionas",
             "city": "Alytus"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1731162300
+          "timestamp": 1746973500
         },
         "league": {
           "id": 362,
@@ -212,6 +624,775 @@
             "id": 3859,
             "name": "Dainava",
             "logo": "https://media.api-sports.io/football/teams/3859.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353698,
+          "date": "2025-05-18T12:00:00+00:00",
+          "venue": {
+            "id": 18559,
+            "name": "Šiaulių Gytarių stadionas",
+            "city": "Šiauliai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747569600
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3858,
+            "name": "Banga",
+            "logo": "https://media.api-sports.io/football/teams/3858.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353700,
+          "date": "2025-05-23T15:30:00+00:00",
+          "venue": {
+            "id": 2612,
+            "name": "S. Dariaus ir S. Girėno stadionas",
+            "city": "Kaunas"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748014200
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3872,
+            "name": "Kauno Žalgiris",
+            "logo": "https://media.api-sports.io/football/teams/3872.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353709,
+          "date": "2025-06-01T14:25:00+00:00",
+          "venue": {
+            "id": 18559,
+            "name": "Šiaulių Gytarių stadionas",
+            "city": "Šiauliai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748787900
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3874,
+            "name": "Panevėžys",
+            "logo": "https://media.api-sports.io/football/teams/3874.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353711,
+          "date": "2025-06-13T15:30:00+00:00",
+          "venue": {
+            "id": 1030,
+            "name": "Vilniaus LFF stadionas",
+            "city": "Vilnius"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749828600
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 586,
+            "name": "FK Zalgiris Vilnius",
+            "logo": "https://media.api-sports.io/football/teams/586.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353716,
+          "date": "2025-06-19T15:00:00+00:00",
+          "venue": {
+            "id": 1030,
+            "name": "Vilniaus LFF stadionas",
+            "city": "Vilnius"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750345200
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 638,
+            "name": "FK Trakai",
+            "logo": "https://media.api-sports.io/football/teams/638.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353723,
+          "date": "2025-06-25T15:00:00+00:00",
+          "venue": {
+            "id": 18559,
+            "name": "Šiaulių Gytarių stadionas",
+            "city": "Šiauliai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750863600
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          },
+          "away": {
+            "id": 612,
+            "name": "Suduva Marijampole",
+            "logo": "https://media.api-sports.io/football/teams/612.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353725,
+          "date": "2025-06-29T12:00:00+00:00",
+          "venue": {
+            "id": 18559,
+            "name": "Šiaulių Gytarių stadionas",
+            "city": "Šiauliai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751198400
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3860,
+            "name": "Džiugas Telšiai",
+            "logo": "https://media.api-sports.io/football/teams/3860.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1353651,
+          "date": "2025-03-15T14:00:00+00:00",
+          "venue": {
+            "id": 12604,
+            "name": "Raudondvario stadionas",
+            "city": "Raudondvaris"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1742047200
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3861,
+            "name": "Hegelmann Litauen",
+            "logo": "https://media.api-sports.io/football/teams/3861.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353646,
+          "date": "2025-03-08T13:00:00+00:00",
+          "venue": {
+            "id": 18559,
+            "name": "Šiaulių Gytarių stadionas",
+            "city": "Šiauliai"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1741438800
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3859,
+            "name": "Dainava",
+            "logo": "https://media.api-sports.io/football/teams/3859.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353643,
+          "date": "2025-03-02T12:00:00+00:00",
+          "venue": {
+            "id": 7719,
+            "name": "Panevėžio futbolo akademijos stadionas",
+            "city": "Panevėžys"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1740916800
+        },
+        "league": {
+          "id": 362,
+          "name": "A Lyga",
+          "logo": "https://media.api-sports.io/football/leagues/362.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3874,
+            "name": "Panevėžys",
+            "logo": "https://media.api-sports.io/football/teams/3874.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346197,
+          "date": "2025-02-22T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadions Zvejnieku aleja",
+            "city": "Liepāja"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1740229200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 661,
+            "name": "FK Liepaja",
+            "logo": "https://media.api-sports.io/football/teams/661.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346089,
+          "date": "2025-02-15T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Pilaitės futbolo maniežas",
+            "city": "Vilnius"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739638800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 638,
+            "name": "FK Trakai",
+            "logo": "https://media.api-sports.io/football/teams/638.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349251,
+          "date": "2025-02-15T15:00:00+00:00",
+          "venue": {
+            "id": 19446,
+            "name": "Hikvision Football Indoor Arena",
+            "city": "Marijampolė"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739631600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3874,
+            "name": "Panevėžys",
+            "logo": "https://media.api-sports.io/football/teams/3874.png",
             "winner": true
           },
           "away": {
@@ -227,8 +1408,8 @@
         },
         "score": {
           "halftime": {
-            "home": 2,
-            "away": 2
+            "home": null,
+            "away": null
           },
           "fulltime": {
             "home": 3,
@@ -246,424 +1427,11 @@
       },
       {
         "fixture": {
-          "id": 1199415,
-          "date": "2024-11-06T17:00:00+00:00",
+          "id": 1345916,
+          "date": "2025-02-08T16:00:00+00:00",
           "venue": {
-            "id": 1030,
-            "name": "Vilniaus LFF stadionas",
-            "city": "Vilnius"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730912400
-        },
-        "league": {
-          "id": 362,
-          "name": "A Lyga",
-          "logo": "https://media.api-sports.io/football/leagues/362.png"
-        },
-        "teams": {
-          "home": {
-            "id": 586,
-            "name": "FK Zalgiris Vilnius",
-            "logo": "https://media.api-sports.io/football/teams/586.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3870,
-            "name": "Šiauliai",
-            "logo": "https://media.api-sports.io/football/teams/3870.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1199471,
-          "date": "2024-11-02T11:00:00+00:00",
-          "venue": {
-            "id": 3523,
-            "name": "Šiaulių m. savivaldybes stadionas",
-            "city": "Šiauliai"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1730545200
-        },
-        "league": {
-          "id": 362,
-          "name": "A Lyga",
-          "logo": "https://media.api-sports.io/football/leagues/362.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3870,
-            "name": "Šiauliai",
-            "logo": "https://media.api-sports.io/football/teams/3870.png",
-            "winner": false
-          },
-          "away": {
-            "id": 3860,
-            "name": "Džiugas Telšiai",
-            "logo": "https://media.api-sports.io/football/teams/3860.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1199470,
-          "date": "2024-10-27T16:25:00+00:00",
-          "venue": {
-            "id": 11572,
-            "name": "Aukštaitija stadionas",
-            "city": "Panevėžys"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730046300
-        },
-        "league": {
-          "id": 362,
-          "name": "A Lyga",
-          "logo": "https://media.api-sports.io/football/leagues/362.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3874,
-            "name": "Panevėžys",
-            "logo": "https://media.api-sports.io/football/teams/3874.png",
-            "winner": false
-          },
-          "away": {
-            "id": 3870,
-            "name": "Šiauliai",
-            "logo": "https://media.api-sports.io/football/teams/3870.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1199464,
-          "date": "2024-10-20T13:00:00+00:00",
-          "venue": {
-            "id": 18559,
-            "name": "Šiaulių Gytarių stadionas",
-            "city": "Šiauliai"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1729429200
-        },
-        "league": {
-          "id": 362,
-          "name": "A Lyga",
-          "logo": "https://media.api-sports.io/football/leagues/362.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3870,
-            "name": "Šiauliai",
-            "logo": "https://media.api-sports.io/football/teams/3870.png",
-            "winner": true
-          },
-          "away": {
-            "id": 612,
-            "name": "Suduva Marijampole",
-            "logo": "https://media.api-sports.io/football/teams/612.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1199456,
-          "date": "2024-10-04T16:00:00+00:00",
-          "venue": {
-            "id": 18559,
-            "name": "Šiaulių Gytarių stadionas",
-            "city": "Šiauliai"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1728057600
-        },
-        "league": {
-          "id": 362,
-          "name": "A Lyga",
-          "logo": "https://media.api-sports.io/football/leagues/362.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3870,
-            "name": "Šiauliai",
-            "logo": "https://media.api-sports.io/football/teams/3870.png",
-            "winner": false
-          },
-          "away": {
-            "id": 586,
-            "name": "FK Zalgiris Vilnius",
-            "logo": "https://media.api-sports.io/football/teams/586.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1199423,
-          "date": "2024-09-26T15:00:00+00:00",
-          "venue": {
-            "id": 3523,
-            "name": "Šiaulių m. savivaldybes stadionas",
-            "city": "Šiauliai"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1727362800
-        },
-        "league": {
-          "id": 362,
-          "name": "A Lyga",
-          "logo": "https://media.api-sports.io/football/leagues/362.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3870,
-            "name": "Šiauliai",
-            "logo": "https://media.api-sports.io/football/teams/3870.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3874,
-            "name": "Panevėžys",
-            "logo": "https://media.api-sports.io/football/teams/3874.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1199452,
-          "date": "2024-09-21T12:00:00+00:00",
-          "venue": {
-            "id": 19583,
-            "name": "Širvintų stadionas",
-            "city": "Širvintos"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726920000
-        },
-        "league": {
-          "id": 362,
-          "name": "A Lyga",
-          "logo": "https://media.api-sports.io/football/leagues/362.png"
-        },
-        "teams": {
-          "home": {
-            "id": 18878,
-            "name": "TransINVEST Vilnius",
-            "logo": "https://media.api-sports.io/football/teams/18878.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3870,
-            "name": "Šiauliai",
-            "logo": "https://media.api-sports.io/football/teams/3870.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1199449,
-          "date": "2024-09-15T13:00:00+00:00",
-          "venue": {
-            "id": 11538,
-            "name": "SM Tauras Stadionas",
+            "id": null,
+            "name": "Kauno Žalgirio FA maniežas",
             "city": "Kaunas"
           },
           "status": {
@@ -672,38 +1440,38 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1726405200
+          "timestamp": 1739030400
         },
         "league": {
-          "id": 362,
-          "name": "A Lyga",
-          "logo": "https://media.api-sports.io/football/leagues/362.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
-            "id": 3872,
-            "name": "Kauno Žalgiris",
-            "logo": "https://media.api-sports.io/football/teams/3872.png",
-            "winner": true
+            "id": 11885,
+            "name": "Tauras",
+            "logo": "https://media.api-sports.io/football/teams/11885.png",
+            "winner": null
           },
           "away": {
             "id": 3870,
             "name": "Šiauliai",
             "logo": "https://media.api-sports.io/football/teams/3870.png",
-            "winner": false
+            "winner": null
           }
         },
         "goals": {
-          "home": 2,
+          "home": 1,
           "away": 1
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 1
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 2,
+            "home": 1,
             "away": 1
           },
           "extratime": {
@@ -718,12 +1486,12 @@
       },
       {
         "fixture": {
-          "id": 1199443,
-          "date": "2024-09-01T11:00:00+00:00",
+          "id": 1345924,
+          "date": "2025-02-08T10:00:00+00:00",
           "venue": {
-            "id": 18559,
-            "name": "Šiaulių Gytarių stadionas",
-            "city": "Šiauliai"
+            "id": null,
+            "name": "Kauno Žalgirio FA maniežas",
+            "city": "Kaunas"
           },
           "status": {
             "long": "Match Finished",
@@ -731,24 +1499,24 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1725188400
+          "timestamp": 1739008800
         },
         "league": {
-          "id": 362,
-          "name": "A Lyga",
-          "logo": "https://media.api-sports.io/football/leagues/362.png"
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
         },
         "teams": {
           "home": {
-            "id": 3870,
-            "name": "Šiauliai",
-            "logo": "https://media.api-sports.io/football/teams/3870.png",
-            "winner": true
-          },
-          "away": {
             "id": 3861,
             "name": "Hegelmann Litauen",
             "logo": "https://media.api-sports.io/football/teams/3861.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
             "winner": false
           }
         },
@@ -764,6 +1532,124 @@
           "fulltime": {
             "home": 3,
             "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345775,
+          "date": "2025-02-02T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Marijampolės futbolo arenos stadionas",
+            "city": "Marijampolė"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1738508400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3859,
+            "name": "Dainava",
+            "logo": "https://media.api-sports.io/football/teams/3859.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1339534,
+          "date": "2025-01-25T00:00:00+00:00",
+          "venue": {
+            "id": 19446,
+            "name": "Hikvision Football Indoor Arena",
+            "city": "Marijampolė"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1737763200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 612,
+            "name": "Suduva Marijampole",
+            "logo": "https://media.api-sports.io/football/teams/612.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3870,
+            "name": "Šiauliai",
+            "logo": "https://media.api-sports.io/football/teams/3870.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -779,77 +1665,77 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
-      "flag": null,
-      "season": 2024
+      "id": 362,
+      "name": "A Lyga",
+      "country": "Lithuania",
+      "logo": "https://media.api-sports.io/football/leagues/362.png",
+      "flag": "https://media.api-sports.io/flags/lt.svg",
+      "season": 2025
     },
     "team": {
       "id": 3870,
       "name": "Šiauliai",
       "logo": "https://media.api-sports.io/football/teams/3870.png"
     },
-    "form": "WDWLWLW",
+    "form": "WDL",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 6,
-        "total": 7
+        "away": 2,
+        "total": 3
       },
       "wins": {
-        "home": 1,
-        "away": 3,
-        "total": 4
-      },
-      "draws": {
         "home": 0,
         "away": 1,
         "total": 1
       },
+      "draws": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
       "loses": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 1,
+        "total": 1
       }
     },
     "goals": {
       "for": {
         "total": {
           "home": 2,
-          "away": 10,
-          "total": 12
+          "away": 3,
+          "total": 5
         },
         "average": {
           "home": "2.0",
-          "away": "1.7",
+          "away": "1.5",
           "total": "1.7"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "40.00%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "91-105": {
             "total": null,
@@ -862,42 +1748,42 @@
         },
         "under_over": {
           "0.5": {
-            "over": 6,
+            "over": 2,
             "under": 1
           },
           "1.5": {
-            "over": 4,
-            "under": 3
+            "over": 2,
+            "under": 1
           },
           "2.5": {
             "over": 1,
-            "under": 6
+            "under": 2
           },
           "3.5": {
-            "over": 1,
-            "under": 6
+            "over": 0,
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 7
+            "under": 3
           }
         }
       },
       "against": {
         "total": {
-          "home": 0,
-          "away": 6,
-          "total": 6
+          "home": 2,
+          "away": 2,
+          "total": 4
         },
         "average": {
-          "home": "0.0",
+          "home": "2.0",
           "away": "1.0",
-          "total": "0.9"
+          "total": "1.3"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "25.00%"
           },
           "16-30": {
             "total": null,
@@ -908,16 +1794,16 @@
             "percentage": null
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "25.00%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "25.00%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "25.00%"
           },
           "91-105": {
             "total": null,
@@ -931,23 +1817,23 @@
         "under_over": {
           "0.5": {
             "over": 3,
-            "under": 4
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 5
+            "over": 1,
+            "under": 2
           },
           "2.5": {
-            "over": 1,
-            "under": 6
+            "over": 0,
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 7
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 7
+            "under": 3
           }
         }
       }
@@ -956,31 +1842,31 @@
       "streak": {
         "wins": 1,
         "draws": 1,
-        "loses": 1
+        "loses": 0
       },
       "wins": {
-        "home": "2-0",
-        "away": "0-4"
+        "home": null,
+        "away": "1-3"
       },
       "loses": {
         "home": null,
-        "away": "2-0"
+        "away": "1-0"
       },
       "goals": {
         "for": {
           "home": 2,
-          "away": 4
+          "away": 3
         },
         "against": {
-          "home": 0,
-          "away": 3
+          "home": 2,
+          "away": 1
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 3,
-      "total": 4
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -989,14 +1875,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 1,
+        "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 0
+      "total": 1
     },
     "lineups": [],
     "cards": {
@@ -1014,16 +1900,16 @@
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "50.00%"
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "50.00%"
         },
         "91-105": {
           "total": null,
@@ -1070,5 +1956,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:40:27.127Z"
+  "lastUpdated": "2025-03-27T10:39:10.982Z"
 }

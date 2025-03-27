@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 804,
+        "name": "Caribbean Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/804.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +34,53 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2016,
+          "start": "2016-03-22",
+          "end": "2017-06-25",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 808,
+        "name": "CONCACAF Nations League - Qualification",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/808.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2018,
+          "start": "2018-09-06",
+          "end": "2019-03-25",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -93,6 +130,80 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 31,
+        "name": "World Cup - Qualification CONCACAF",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/31.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2026,
+          "start": "2024-03-22",
+          "end": "2025-06-10",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -116,12 +227,130 @@
     "past": [
       {
         "fixture": {
+          "id": 1347477,
+          "date": "2025-03-26T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Cibao",
+            "city": "Santiago De Los Caballeros"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1742947200
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5532,
+            "name": "Dominican Republic",
+            "logo": "https://media.api-sports.io/football/teams/5532.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5539,
+            "name": "Puerto Rico",
+            "logo": "https://media.api-sports.io/football/teams/5539.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1347476,
+          "date": "2025-03-22T00:00:00+00:00",
+          "venue": {
+            "id": 4160,
+            "name": "Estadio Juán Rámon Loubriel",
+            "city": "Bayamón"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1742601600
+        },
+        "league": {
+          "id": 10,
+          "name": "Friendlies",
+          "logo": "https://media.api-sports.io/football/leagues/10.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5539,
+            "name": "Puerto Rico",
+            "logo": "https://media.api-sports.io/football/teams/5539.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5532,
+            "name": "Dominican Republic",
+            "logo": "https://media.api-sports.io/football/teams/5532.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1201325,
           "date": "2024-11-19T23:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estadio Cibao FC",
-            "city": "Santiago de los Caballeros"
+            "name": "Estadio Cibao",
+            "city": "Santiago De Los Caballeros"
           },
           "status": {
             "long": "Match Finished",
@@ -179,8 +408,8 @@
           "date": "2024-11-16T23:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estadio Cibao FC",
-            "city": "Santiago de los Caballeros"
+            "name": "Estadio Cibao",
+            "city": "Santiago De Los Caballeros"
           },
           "status": {
             "long": "Match Finished",
@@ -470,12 +699,12 @@
       },
       {
         "fixture": {
-          "id": 1162614,
-          "date": "2024-03-27T01:30:00+00:00",
+          "id": 1190049,
+          "date": "2024-06-12T00:00:00+00:00",
           "venue": {
-            "id": 1242,
-            "name": "Estadio Monumental",
-            "city": "Lima"
+            "id": null,
+            "name": "Estadio Panamericano",
+            "city": "San Cristóbal"
           },
           "status": {
             "long": "Match Finished",
@@ -483,39 +712,39 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1711503000
+          "timestamp": 1718150400
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 31,
+          "name": "World Cup - Qualification CONCACAF",
+          "logo": "https://media.api-sports.io/football/leagues/31.png"
         },
         "teams": {
           "home": {
-            "id": 30,
-            "name": "Peru",
-            "logo": "https://media.api-sports.io/football/teams/30.png",
-            "winner": true
-          },
-          "away": {
             "id": 5532,
             "name": "Dominican Republic",
             "logo": "https://media.api-sports.io/football/teams/5532.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8168,
+            "name": "British Virgin Islands",
+            "logo": "https://media.api-sports.io/football/teams/8168.png",
             "winner": false
           }
         },
         "goals": {
           "home": 4,
-          "away": 1
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": 2,
+            "home": 3,
             "away": 0
           },
           "fulltime": {
             "home": 4,
-            "away": 1
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -529,12 +758,12 @@
       },
       {
         "fixture": {
-          "id": 1174093,
-          "date": "2024-03-23T22:00:00+00:00",
+          "id": 1169519,
+          "date": "2024-06-06T20:30:00+00:00",
           "venue": {
-            "id": null,
-            "name": "Estadio Cibao",
-            "city": "Santiago De Los Caballeros"
+            "id": 1976,
+            "name": "Independence Park",
+            "city": "Kingston"
           },
           "status": {
             "long": "Match Finished",
@@ -542,38 +771,38 @@
             "elapsed": 90,
             "extra": null
           },
-          "timestamp": 1711231200
+          "timestamp": 1717705800
         },
         "league": {
-          "id": 10,
-          "name": "Friendlies",
-          "logo": "https://media.api-sports.io/football/leagues/10.png"
+          "id": 31,
+          "name": "World Cup - Qualification CONCACAF",
+          "logo": "https://media.api-sports.io/football/leagues/31.png"
         },
         "teams": {
           "home": {
-            "id": 5532,
-            "name": "Dominican Republic",
-            "logo": "https://media.api-sports.io/football/teams/5532.png",
+            "id": 2385,
+            "name": "Jamaica",
+            "logo": "https://media.api-sports.io/football/teams/2385.png",
             "winner": true
           },
           "away": {
-            "id": 8167,
-            "name": "Aruba",
-            "logo": "https://media.api-sports.io/football/teams/8167.png",
+            "id": 5532,
+            "name": "Dominican Republic",
+            "logo": "https://media.api-sports.io/football/teams/5532.png",
             "winner": false
           }
         },
         "goals": {
-          "home": 2,
+          "home": 1,
           "away": 0
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 0
           },
           "fulltime": {
-            "home": 2,
+            "home": 1,
             "away": 0
           },
           "extratime": {
@@ -590,29 +819,29 @@
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 5532,
       "name": "Dominican Republic",
       "logo": "https://media.api-sports.io/football/teams/5532.png"
     },
-    "form": "WL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
-        "away": 1,
-        "total": 2
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -621,21 +850,21 @@
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 2,
-          "away": 1,
-          "total": 3
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.0",
-          "away": "1.0",
-          "total": "1.5"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -651,16 +880,16 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -673,37 +902,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 4,
-          "total": 4
+          "away": 0,
+          "total": 0
         },
         "average": {
           "home": "0.0",
-          "away": "4.0",
-          "total": "2.0"
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -711,16 +940,16 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
             "total": null,
@@ -731,8 +960,8 @@
             "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -741,57 +970,57 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "2-0",
+        "home": null,
         "away": null
       },
       "loses": {
         "home": null,
-        "away": "4-1"
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
           "home": 0,
-          "away": 4
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
+      "home": 0,
       "away": 0,
-      "total": 1
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
@@ -809,12 +1038,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "3-4-3",
-        "played": 1
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -834,8 +1058,8 @@
           "percentage": null
         },
         "61-75": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
           "total": null,
@@ -886,5 +1110,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:02.744Z"
+  "lastUpdated": "2025-03-27T10:40:51.300Z"
 }

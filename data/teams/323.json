@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 104,
-        "name": "1. Division",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/104.png"
-      },
-      "country": {
-        "name": "Norway",
-        "code": "NO",
-        "flag": "https://media.api-sports.io/flags/no.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-04-01",
-          "end": "2024-12-01",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 667,
         "name": "Friendlies Clubs",
         "type": "Cup",
@@ -71,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -89,17 +52,17 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
     },
     {
       "league": {
-        "id": 105,
-        "name": "NM Cupen",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/105.png"
+        "id": 104,
+        "name": "1. Division",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/104.png"
       },
       "country": {
         "name": "Norway",
@@ -108,25 +71,25 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-04-09",
-          "end": "2024-12-07",
+          "year": 2025,
+          "start": "2025-03-31",
+          "end": "2025-11-08",
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
+              "events": false,
+              "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -145,8 +108,1130 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1342430,
+          "date": "2025-03-31T17:00:00+00:00",
+          "venue": {
+            "id": 1196,
+            "name": "Nadderud Stadion",
+            "city": "Bærum"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743440400
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2150,
+            "name": "hodd",
+            "logo": "https://media.api-sports.io/football/teams/2150.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342434,
+          "date": "2025-04-06T15:00:00+00:00",
+          "venue": {
+            "id": 19421,
+            "name": "Bislett Stadion",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743951600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7006,
+            "name": "Lyn",
+            "logo": "https://media.api-sports.io/football/teams/7006.png",
+            "winner": null
+          },
+          "away": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342447,
+          "date": "2025-04-21T15:00:00+00:00",
+          "venue": {
+            "id": 1196,
+            "name": "Nadderud Stadion",
+            "city": "Bærum"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745247600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          },
+          "away": {
+            "id": 321,
+            "name": "Lillestrom",
+            "logo": "https://media.api-sports.io/football/teams/321.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342451,
+          "date": "2025-04-27T15:00:00+00:00",
+          "venue": {
+            "id": 5124,
+            "name": "Melløs Stadion",
+            "city": "Moss"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745766000
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": null
+          },
+          "away": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342464,
+          "date": "2025-05-04T12:30:00+00:00",
+          "venue": {
+            "id": 1196,
+            "name": "Nadderud Stadion",
+            "city": "Bærum"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746361800
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2239,
+            "name": "Skeid",
+            "logo": "https://media.api-sports.io/football/teams/2239.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342473,
+          "date": "2025-05-12T17:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747069200
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2148,
+            "name": "Asane",
+            "logo": "https://media.api-sports.io/football/teams/2148.png",
+            "winner": null
+          },
+          "away": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342479,
+          "date": "2025-05-16T16:00:00+00:00",
+          "venue": {
+            "id": 1196,
+            "name": "Nadderud Stadion",
+            "city": "Bærum"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747411200
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2152,
+            "name": "Mjondalen",
+            "logo": "https://media.api-sports.io/football/teams/2152.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342485,
+          "date": "2025-05-24T14:00:00+00:00",
+          "venue": {
+            "id": 1189,
+            "name": "NAMMO stadion",
+            "city": "Raufoss"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748095200
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2153,
+            "name": "Raufoss",
+            "logo": "https://media.api-sports.io/football/teams/2153.png",
+            "winner": null
+          },
+          "away": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342497,
+          "date": "2025-05-31T14:00:00+00:00",
+          "venue": {
+            "id": 1196,
+            "name": "Nadderud Stadion",
+            "city": "Bærum"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748700000
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2144,
+            "name": "Kongsvinger",
+            "logo": "https://media.api-sports.io/football/teams/2144.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342505,
+          "date": "2025-06-15T17:15:00+00:00",
+          "venue": {
+            "id": 1174,
+            "name": "Color Line Stadion",
+            "city": "Ålesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750007700
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 757,
+            "name": "Aalesund",
+            "logo": "https://media.api-sports.io/football/teams/757.png",
+            "winner": null
+          },
+          "away": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342513,
+          "date": "2025-06-18T17:00:00+00:00",
+          "venue": {
+            "id": 1196,
+            "name": "Nadderud Stadion",
+            "city": "Bærum"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750266000
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          },
+          "away": {
+            "id": 6976,
+            "name": "Egersund",
+            "logo": "https://media.api-sports.io/football/teams/6976.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1365988,
+          "date": "2025-03-23T14:00:00+00:00",
+          "venue": {
+            "id": 1180,
+            "name": "Gjemselund Stadion",
+            "city": "Kongsvinger"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742738400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2144,
+            "name": "Kongsvinger",
+            "logo": "https://media.api-sports.io/football/teams/2144.png",
+            "winner": true
+          },
+          "away": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350900,
+          "date": "2025-03-15T15:00:00+00:00",
+          "venue": {
+            "id": 4889,
+            "name": "Valhalla IP",
+            "city": "Göteborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1742050800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2166,
+            "name": "Orgryte IS",
+            "logo": "https://media.api-sports.io/football/teams/2166.png",
+            "winner": false
+          },
+          "away": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349330,
+          "date": "2025-03-08T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Valdres Storhall",
+            "city": "Leira i Valdres"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1741438800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          },
+          "away": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346213,
+          "date": "2025-02-22T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Oliva Nova Golf & Beach Resort Campo 1",
+            "city": "Oliva"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1740225600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": false
+          },
+          "away": {
+            "id": 332,
+            "name": "Sandefjord",
+            "logo": "https://media.api-sports.io/football/teams/332.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349221,
+          "date": "2025-02-14T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Nadderud Stadion",
+            "city": "Bærum"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1739527200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          },
+          "away": {
+            "id": 6026,
+            "name": "Hillerød",
+            "logo": "https://media.api-sports.io/football/teams/6026.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345875,
+          "date": "2025-02-07T12:00:00+00:00",
+          "venue": {
+            "id": 11311,
+            "name": "Nadderud Stadion",
+            "city": "Bærum"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1738929600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": false
+          },
+          "away": {
+            "id": 324,
+            "name": "Stromsgodset",
+            "logo": "https://media.api-sports.io/football/teams/324.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1344866,
+          "date": "2025-01-31T00:00:00+00:00",
+          "venue": {
+            "id": 11311,
+            "name": "LSK-hallen",
+            "city": "Lillestrøm"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1738281600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7001,
+            "name": "Kjelsås",
+            "logo": "https://media.api-sports.io/football/teams/7001.png",
+            "winner": null
+          },
+          "away": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1337989,
+          "date": "2025-01-24T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Nadderud Stadion",
+            "city": "Bærum"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1737676800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2151,
+            "name": "jerv",
+            "logo": "https://media.api-sports.io/football/teams/2151.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 6,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 6,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1152108,
@@ -264,478 +1349,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1152094,
-          "date": "2024-10-25T17:00:00+00:00",
-          "venue": {
-            "id": 1196,
-            "name": "Nadderud Stadion",
-            "city": "Bærum"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1729875600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 323,
-            "name": "Stabaek",
-            "logo": "https://media.api-sports.io/football/teams/323.png",
-            "winner": false
-          },
-          "away": {
-            "id": 326,
-            "name": "Valerenga",
-            "logo": "https://media.api-sports.io/football/teams/326.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152085,
-          "date": "2024-10-21T17:00:00+00:00",
-          "venue": {
-            "id": 1180,
-            "name": "Gjemselund Stadion",
-            "city": "Kongsvinger"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1729530000
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2144,
-            "name": "Kongsvinger",
-            "logo": "https://media.api-sports.io/football/teams/2144.png",
-            "winner": false
-          },
-          "away": {
-            "id": 323,
-            "name": "Stabaek",
-            "logo": "https://media.api-sports.io/football/teams/323.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1199899,
-          "date": "2024-10-06T12:30:00+00:00",
-          "venue": {
-            "id": 1196,
-            "name": "Nadderud Stadion",
-            "city": "Bærum"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1728217800
-        },
-        "league": {
-          "id": 105,
-          "name": "NM Cupen",
-          "logo": "https://media.api-sports.io/football/leagues/105.png"
-        },
-        "teams": {
-          "home": {
-            "id": 323,
-            "name": "Stabaek",
-            "logo": "https://media.api-sports.io/football/teams/323.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2143,
-            "name": "KFUM Oslo",
-            "logo": "https://media.api-sports.io/football/teams/2143.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152076,
-          "date": "2024-10-02T17:00:00+00:00",
-          "venue": {
-            "id": 1952,
-            "name": "TOBB ARENA Levanger",
-            "city": "Levanger"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1727888400
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2145,
-            "name": "Levanger",
-            "logo": "https://media.api-sports.io/football/teams/2145.png",
-            "winner": false
-          },
-          "away": {
-            "id": 323,
-            "name": "Stabaek",
-            "logo": "https://media.api-sports.io/football/teams/323.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152066,
-          "date": "2024-09-28T14:00:00+00:00",
-          "venue": {
-            "id": 1196,
-            "name": "Nadderud Stadion",
-            "city": "Bærum"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1727532000
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 323,
-            "name": "Stabaek",
-            "logo": "https://media.api-sports.io/football/teams/323.png",
-            "winner": true
-          },
-          "away": {
-            "id": 758,
-            "name": "Sogndal",
-            "logo": "https://media.api-sports.io/football/teams/758.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152061,
-          "date": "2024-09-25T14:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "B&G-banen",
-            "city": "Egersund"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1727272800
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6976,
-            "name": "Egersund",
-            "logo": "https://media.api-sports.io/football/teams/6976.png",
-            "winner": true
-          },
-          "away": {
-            "id": 323,
-            "name": "Stabaek",
-            "logo": "https://media.api-sports.io/football/teams/323.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152055,
-          "date": "2024-09-21T14:00:00+00:00",
-          "venue": {
-            "id": 1196,
-            "name": "Nadderud Stadion",
-            "city": "Bærum"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726927200
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 323,
-            "name": "Stabaek",
-            "logo": "https://media.api-sports.io/football/teams/323.png",
-            "winner": false
-          },
-          "away": {
-            "id": 334,
-            "name": "Start",
-            "logo": "https://media.api-sports.io/football/teams/334.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152041,
-          "date": "2024-09-16T17:00:00+00:00",
-          "venue": {
-            "id": 1196,
-            "name": "Nadderud Stadion",
-            "city": "Bærum"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726506000
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 323,
-            "name": "Stabaek",
-            "logo": "https://media.api-sports.io/football/teams/323.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2153,
-            "name": "Raufoss",
-            "logo": "https://media.api-sports.io/football/teams/2153.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -746,76 +1359,76 @@
       "country": "Norway",
       "logo": "https://media.api-sports.io/football/leagues/104.png",
       "flag": "https://media.api-sports.io/flags/no.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 323,
       "name": "Stabaek",
       "logo": "https://media.api-sports.io/football/teams/323.png"
     },
-    "form": "DWWDWDDLLWWLWDLWLWWDLLLLWWWLLL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 15,
-        "away": 15,
-        "total": 30
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 7,
-        "away": 5,
-        "total": 12
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 2,
-        "away": 4,
-        "total": 6
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 6,
-        "away": 6,
-        "total": 12
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 32,
-          "away": 25,
-          "total": 57
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.1",
-          "away": "1.7",
-          "total": "1.9"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 12,
-            "percentage": "20.69%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 6,
-            "percentage": "10.34%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 6,
-            "percentage": "10.34%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 12,
-            "percentage": "20.69%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 9,
-            "percentage": "15.52%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 10,
-            "percentage": "17.24%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 3,
-            "percentage": "5.17%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -824,66 +1437,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 26,
-            "under": 4
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 16,
-            "under": 14
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 11,
-            "under": 19
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 3,
-            "under": 27
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 29
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 25,
-          "away": 34,
-          "total": 59
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.7",
-          "away": "2.3",
-          "total": "2.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 8,
-            "percentage": "13.79%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 8,
-            "percentage": "13.79%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 7,
-            "percentage": "12.07%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 8,
-            "percentage": "13.79%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 13,
-            "percentage": "22.41%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 12,
-            "percentage": "20.69%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "3.45%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -892,104 +1505,104 @@
         },
         "under_over": {
           "0.5": {
-            "over": 23,
-            "under": 7
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 17,
-            "under": 13
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 10,
-            "under": 20
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 5,
-            "under": 25
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 2,
-            "under": 28
+            "over": 0,
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
-        "draws": 2,
-        "loses": 4
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "5-0",
-        "away": "1-3"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "1-4",
-        "away": "7-1"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 5,
-          "away": 3
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 5,
-          "away": 7
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 6,
-      "away": 1,
-      "total": 7
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 4,
-      "total": 4
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 3,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 3
+      "total": 0
     },
     "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 1,
-          "percentage": "2.50%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
-          "total": 3,
-          "percentage": "7.50%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 8,
-          "percentage": "20.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 7,
-          "percentage": "17.50%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 4,
-          "percentage": "10.00%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 12,
-          "percentage": "30.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 5,
-          "percentage": "12.50%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1032,5 +1645,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:37:04.379Z"
+  "lastUpdated": "2025-03-27T10:35:41.317Z"
 }

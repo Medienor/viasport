@@ -22,80 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 169,
-        "name": "Super League",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/169.png"
-      },
-      "country": {
-        "name": "China",
-        "code": "CN",
-        "flag": "https://media.api-sports.io/flags/cn.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-01",
-          "end": "2024-11-02",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
-        "id": 171,
-        "name": "FA Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/171.png"
-      },
-      "country": {
-        "name": "China",
-        "code": "CN",
-        "flag": "https://media.api-sports.io/flags/cn.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-03-15",
-          "end": "2024-11-23",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 17,
         "name": "AFC Champions League",
         "type": "Cup",
@@ -130,6 +56,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 169,
+        "name": "Super League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/169.png"
+      },
+      "country": {
+        "name": "China",
+        "code": "CN",
+        "flag": "https://media.api-sports.io/flags/cn.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-22",
+          "end": "2025-11-22",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -145,8 +108,1307 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1340921,
+          "date": "2025-03-29T11:00:00+00:00",
+          "venue": {
+            "id": 19329,
+            "name": "Wuhua Olympic Sports Center Huitang Stadium",
+            "city": "Wuhua"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743246000
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1439,
+            "name": "Meizhou Kejia",
+            "logo": "https://media.api-sports.io/football/teams/1439.png",
+            "winner": null
+          },
+          "away": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340928,
+          "date": "2025-04-02T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jinan Olympic Sports Center",
+            "city": "Jinan"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743593700
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5648,
+            "name": "Chengdu Better City",
+            "logo": "https://media.api-sports.io/football/teams/5648.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340932,
+          "date": "2025-04-06T07:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Changchun Sports Center Stadium",
+            "city": "Changchun"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743924600
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 834,
+            "name": "Changchun Yatai",
+            "logo": "https://media.api-sports.io/football/teams/834.png",
+            "winner": null
+          },
+          "away": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340939,
+          "date": "2025-04-11T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jinan Olympic Sports Center",
+            "city": "Jinan"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744371300
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340947,
+          "date": "2025-04-15T10:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Qingdao West Coast University City Stadium",
+            "city": "Qingdao"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744713000
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 17265,
+            "name": "Qingdao Youth Island",
+            "logo": "https://media.api-sports.io/football/teams/17265.png",
+            "winner": null
+          },
+          "away": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340956,
+          "date": "2025-04-19T11:35:00+00:00",
+          "venue": {
+            "id": 348,
+            "name": "Workers' Stadium",
+            "city": "Beijing"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745062500
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 830,
+            "name": "Beijing Guoan",
+            "logo": "https://media.api-sports.io/football/teams/830.png",
+            "winner": null
+          },
+          "away": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340967,
+          "date": "2025-04-26T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jinan Olympic Sports Center",
+            "city": "Jinan"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745667300
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          },
+          "away": {
+            "id": 833,
+            "name": "Shanghai Shenhua",
+            "logo": "https://media.api-sports.io/football/teams/833.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340975,
+          "date": "2025-05-01T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jinan Olympic Sports Center",
+            "city": "Jinan"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746099300
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1431,
+            "name": "Qingdao Jonoon",
+            "logo": "https://media.api-sports.io/football/teams/1431.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340984,
+          "date": "2025-05-05T12:00:00+00:00",
+          "venue": {
+            "id": 19672,
+            "name": "Yuxi Plateau Sports Center Stadium",
+            "city": "Yuxi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746446400
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21265,
+            "name": "Yunnan Yukun",
+            "logo": "https://media.api-sports.io/football/teams/21265.png",
+            "winner": null
+          },
+          "away": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340990,
+          "date": "2025-05-10T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jinan Olympic Sports Center",
+            "city": "Jinan"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746876900
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          },
+          "away": {
+            "id": 848,
+            "name": "Hangzhou Greentown",
+            "logo": "https://media.api-sports.io/football/teams/848.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341002,
+          "date": "2025-05-17T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "SAIC Motor Pudong Arena",
+            "city": "Shanghai"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747483200
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 836,
+            "name": "SHANGHAI SIPG",
+            "logo": "https://media.api-sports.io/football/teams/836.png",
+            "winner": null
+          },
+          "away": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341010,
+          "date": "2025-06-14T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "TEDA Football Stadium",
+            "city": "Tianjin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749902400
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 837,
+            "name": "Tianjin Teda",
+            "logo": "https://media.api-sports.io/football/teams/837.png",
+            "winner": null
+          },
+          "away": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341013,
+          "date": "2025-06-25T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jinan Olympic Sports Center",
+            "city": "Jinan"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750851300
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5695,
+            "name": "Wuhan Three Towns",
+            "logo": "https://media.api-sports.io/football/teams/5695.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341023,
+          "date": "2025-06-30T11:00:00+00:00",
+          "venue": {
+            "id": 355,
+            "name": "Zhengzhou Hanghai Stadium",
+            "city": "Zhengzhou"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751281200
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 840,
+            "name": "Henan Jianye",
+            "logo": "https://media.api-sports.io/football/teams/840.png",
+            "winner": null
+          },
+          "away": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341031,
+          "date": "2025-07-19T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Dalian Suoyuwan Football Stadium",
+            "city": "Dalian"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752922800
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21263,
+            "name": "Dalian Zhixing",
+            "logo": "https://media.api-sports.io/football/teams/21263.png",
+            "winner": null
+          },
+          "away": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341042,
+          "date": "2025-07-27T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jinan Olympic Sports Center",
+            "city": "Jinan"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753617600
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1439,
+            "name": "Meizhou Kejia",
+            "logo": "https://media.api-sports.io/football/teams/1439.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341045,
+          "date": "2025-08-02T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Wuliangye Sports Center Stadium",
+            "city": "Chengdu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754134500
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5648,
+            "name": "Chengdu Better City",
+            "logo": "https://media.api-sports.io/football/teams/5648.png",
+            "winner": null
+          },
+          "away": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341053,
+          "date": "2025-08-09T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jinan Olympic Sports Center",
+            "city": "Jinan"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754737200
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          },
+          "away": {
+            "id": 834,
+            "name": "Changchun Yatai",
+            "logo": "https://media.api-sports.io/football/teams/834.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341064,
+          "date": "2025-08-16T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Shenzhen Stadium",
+            "city": "Shenzhen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755344100
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5686,
+            "name": "Sichuan Jiuniu",
+            "logo": "https://media.api-sports.io/football/teams/5686.png",
+            "winner": null
+          },
+          "away": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341074,
+          "date": "2025-08-24T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jinan Olympic Sports Center",
+            "city": "Jinan"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756036800
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          },
+          "away": {
+            "id": 17265,
+            "name": "Qingdao Youth Island",
+            "logo": "https://media.api-sports.io/football/teams/17265.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1340907,
+          "date": "2025-02-28T07:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jinan Olympic Sports Center",
+            "city": "Jinan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1740727800
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": true
+          },
+          "away": {
+            "id": 21263,
+            "name": "Dalian Zhixing",
+            "logo": "https://media.api-sports.io/football/teams/21263.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1340904,
+          "date": "2025-02-23T07:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jinan Olympic Sports Center",
+            "city": "Jinan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1740295800
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": null
+          },
+          "away": {
+            "id": 840,
+            "name": "Henan Jianye",
+            "logo": "https://media.api-sports.io/football/teams/840.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1288391,
@@ -618,124 +1880,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1173254,
-          "date": "2024-10-18T11:35:00+00:00",
-          "venue": {
-            "id": 359,
-            "name": "Jinan Olympic Sports Center",
-            "city": "Jinan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1729251300
-        },
-        "league": {
-          "id": 169,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/169.png"
-        },
-        "teams": {
-          "home": {
-            "id": 844,
-            "name": "Shandong Luneng",
-            "logo": "https://media.api-sports.io/football/teams/844.png",
-            "winner": true
-          },
-          "away": {
-            "id": 837,
-            "name": "Tianjin Teda",
-            "logo": "https://media.api-sports.io/football/teams/837.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1288332,
-          "date": "2024-10-02T10:00:00+00:00",
-          "venue": {
-            "id": 984,
-            "name": "NOEVIR Stadium Kobe",
-            "city": "Kobe"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 15
-          },
-          "timestamp": 1727863200
-        },
-        "league": {
-          "id": 17,
-          "name": "AFC Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/17.png"
-        },
-        "teams": {
-          "home": {
-            "id": 289,
-            "name": "Vissel Kobe",
-            "logo": "https://media.api-sports.io/football/teams/289.png",
-            "winner": true
-          },
-          "away": {
-            "id": 844,
-            "name": "Shandong Luneng",
-            "logo": "https://media.api-sports.io/football/teams/844.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -746,76 +1890,76 @@
       "country": "China",
       "logo": "https://media.api-sports.io/football/leagues/169.png",
       "flag": "https://media.api-sports.io/flags/cn.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 844,
       "name": "Shandong Luneng",
       "logo": "https://media.api-sports.io/football/teams/844.png"
     },
-    "form": "WDLWDLWWWDWWDWDDLLDWLLLWLDWWDW",
+    "form": "DW",
     "fixtures": {
       "played": {
-        "home": 15,
-        "away": 15,
-        "total": 30
+        "home": 2,
+        "away": 0,
+        "total": 2
       },
       "wins": {
-        "home": 8,
-        "away": 5,
-        "total": 13
+        "home": 1,
+        "away": 0,
+        "total": 1
       },
       "draws": {
-        "home": 4,
-        "away": 5,
-        "total": 9
+        "home": 1,
+        "away": 0,
+        "total": 1
       },
       "loses": {
-        "home": 3,
-        "away": 5,
-        "total": 8
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 29,
-          "away": 20,
-          "total": 49
+          "home": 4,
+          "away": 0,
+          "total": 4
         },
         "average": {
-          "home": "1.9",
-          "away": "1.3",
-          "total": "1.6"
+          "home": "2.0",
+          "away": "0.0",
+          "total": "2.0"
         },
         "minute": {
           "0-15": {
-            "total": 5,
-            "percentage": "10.20%"
+            "total": 1,
+            "percentage": "25.00%"
           },
           "16-30": {
-            "total": 11,
-            "percentage": "22.45%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 7,
-            "percentage": "14.29%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 11,
-            "percentage": "22.45%"
+            "total": 1,
+            "percentage": "25.00%"
           },
           "61-75": {
-            "total": 6,
-            "percentage": "12.24%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "4.08%"
+            "total": 1,
+            "percentage": "25.00%"
           },
           "91-105": {
-            "total": 7,
-            "percentage": "14.29%"
+            "total": 1,
+            "percentage": "25.00%"
           },
           "106-120": {
             "total": null,
@@ -824,66 +1968,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 20,
-            "under": 10
+            "over": 1,
+            "under": 1
           },
           "1.5": {
-            "over": 15,
-            "under": 15
+            "over": 1,
+            "under": 1
           },
           "2.5": {
-            "over": 10,
-            "under": 20
+            "over": 1,
+            "under": 1
           },
           "3.5": {
-            "over": 4,
-            "under": 26
+            "over": 1,
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 30
+            "under": 2
           }
         }
       },
       "against": {
         "total": {
-          "home": 16,
-          "away": 24,
-          "total": 40
+          "home": 1,
+          "away": 0,
+          "total": 1
         },
         "average": {
-          "home": "1.1",
-          "away": "1.6",
-          "total": "1.3"
+          "home": "0.5",
+          "away": "0.0",
+          "total": "0.5"
         },
         "minute": {
           "0-15": {
-            "total": 10,
-            "percentage": "25.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 4,
-            "percentage": "10.00%"
+            "total": 1,
+            "percentage": "100.00%"
           },
           "31-45": {
-            "total": 5,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 5,
-            "percentage": "12.50%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 8,
-            "percentage": "20.00%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 6,
-            "percentage": "15.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "5.00%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -892,125 +2036,113 @@
         },
         "under_over": {
           "0.5": {
-            "over": 21,
-            "under": 9
+            "over": 1,
+            "under": 1
           },
           "1.5": {
-            "over": 10,
-            "under": 20
+            "over": 0,
+            "under": 2
           },
           "2.5": {
-            "over": 5,
-            "under": 25
+            "over": 0,
+            "under": 2
           },
           "3.5": {
-            "over": 2,
-            "under": 28
+            "over": 0,
+            "under": 2
           },
           "4.5": {
-            "over": 1,
-            "under": 29
+            "over": 0,
+            "under": 2
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
-        "draws": 2,
-        "loses": 3
+        "wins": 0,
+        "draws": 1,
+        "loses": 0
       },
       "wins": {
         "home": "4-1",
-        "away": "1-4"
+        "away": null
       },
       "loses": {
-        "home": "0-3",
-        "away": "6-0"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
           "home": 4,
-          "away": 4
+          "away": 0
         },
         "against": {
-          "home": 3,
-          "away": 6
+          "home": 1,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 4,
-      "away": 5,
-      "total": 9
+      "home": 1,
+      "away": 0,
+      "total": 1
     },
     "failed_to_score": {
-      "home": 5,
-      "away": 5,
-      "total": 10
+      "home": 1,
+      "away": 0,
+      "total": 1
     },
     "penalty": {
       "scored": {
-        "total": 2,
-        "percentage": "100.00%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 2
+      "total": 0
     },
     "lineups": [
       {
         "formation": "4-4-2",
-        "played": 17
-      },
-      {
-        "formation": "4-1-4-1",
-        "played": 9
-      },
-      {
-        "formation": "4-2-3-1",
-        "played": 2
-      },
-      {
-        "formation": "4-5-1",
         "played": 1
       },
       {
-        "formation": "4-4-1-1",
+        "formation": "4-1-3-2",
         "played": 1
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 5,
-          "percentage": "8.47%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
-          "total": 4,
-          "percentage": "6.78%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 9,
-          "percentage": "15.25%"
+          "total": 1,
+          "percentage": "50.00%"
         },
         "46-60": {
-          "total": 15,
-          "percentage": "25.42%"
+          "total": 1,
+          "percentage": "50.00%"
         },
         "61-75": {
-          "total": 10,
-          "percentage": "16.95%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 14,
-          "percentage": "23.73%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 2,
-          "percentage": "3.39%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1023,7 +2155,7 @@
           "percentage": null
         },
         "16-30": {
-          "total": 2,
+          "total": 1,
           "percentage": "100.00%"
         },
         "31-45": {
@@ -1053,5 +2185,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:54.265Z"
+  "lastUpdated": "2025-03-27T10:41:44.196Z"
 }

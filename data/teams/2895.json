@@ -22,10 +22,84 @@
   "leagues": [
     {
       "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
+        "id": 309,
+        "name": "Division 2",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/309.png"
+      },
+      "country": {
+        "name": "Saudi-Arabia",
+        "code": "SA",
+        "flag": "https://media.api-sports.io/flags/sa.svg"
+      },
+      "seasons": [
+        {
+          "year": 2018,
+          "start": "2018-10-19",
+          "end": "2019-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 841,
+        "name": "QFA Cup",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
+        "logo": "https://media.api-sports.io/football/leagues/841.png"
+      },
+      "country": {
+        "name": "Qatar",
+        "code": "QA",
+        "flag": "https://media.api-sports.io/flags/qa.svg"
+      },
+      "seasons": [
+        {
+          "year": 2022,
+          "start": "2023-09-03",
+          "end": "2024-03-27",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 768,
+        "name": "Arab Club Champions Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/768.png"
       },
       "country": {
         "name": "World",
@@ -34,16 +108,53 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2023,
+          "start": "2023-03-02",
+          "end": "2023-08-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
               "lineups": true,
               "statistics_fixtures": true,
               "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 825,
+        "name": "Qatar Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/825.png"
+      },
+      "country": {
+        "name": "Qatar",
+        "code": "QA",
+        "flag": "https://media.api-sports.io/flags/qa.svg"
+      },
+      "seasons": [
+        {
+          "year": 2023,
+          "start": "2024-05-01",
+          "end": "2024-05-04",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
             "players": true,
@@ -163,6 +274,43 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 1089,
+        "name": "UAE-Qatar - Super Shield",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1089.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-18",
+          "end": "2025-01-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
             "odds": false
           }
         }
@@ -191,7 +339,7 @@
       {
         "fixture": {
           "id": 1231400,
-          "date": "2025-03-29T18:30:00+00:00",
+          "date": "2025-03-29T18:00:00+00:00",
           "venue": {
             "id": null,
             "name": "Jassim Bin Hamad Stadium",
@@ -203,7 +351,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743273000
+          "timestamp": 1743271200
         },
         "league": {
           "id": 305,
@@ -1079,34 +1227,34 @@
   },
   "statistics": {
     "league": {
-      "id": 667,
-      "name": "Friendlies Clubs",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/667.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 2895,
       "name": "Al Sadd",
       "logo": "https://media.api-sports.io/football/teams/2895.png"
     },
-    "form": "WWDD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
-        "away": 2,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       },
       "draws": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 0,
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -1117,35 +1265,35 @@
     "goals": {
       "for": {
         "total": {
-          "home": 11,
-          "away": 1,
-          "total": 12
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "5.5",
-          "away": "0.5",
-          "total": "3.0"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "18.18%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "9.09%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "27.27%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 5,
-            "percentage": "45.45%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
             "total": null,
@@ -1162,50 +1310,50 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
-            "under": 1
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 2,
-          "away": 1,
-          "total": 3
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.0",
-          "away": "0.5",
-          "total": "0.8"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
             "total": null,
@@ -1230,36 +1378,36 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
-            "under": 2
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 1,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "8-0",
+        "home": null,
         "away": null
       },
       "loses": {
@@ -1268,24 +1416,24 @@
       },
       "goals": {
         "for": {
-          "home": 8,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 2,
-          "away": 1
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 1,
-      "away": 1,
-      "total": 2
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -1298,12 +1446,7 @@
       },
       "total": 0
     },
-    "lineups": [
-      {
-        "formation": "4-2-3-1",
-        "played": 3
-      }
-    ],
+    "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1375,5 +1518,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:02.344Z"
+  "lastUpdated": "2025-03-27T10:41:51.839Z"
 }

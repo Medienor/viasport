@@ -22,10 +22,10 @@
   "leagues": [
     {
       "league": {
-        "id": 10,
-        "name": "Friendlies",
+        "id": 934,
+        "name": "Arab Championship - U20",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/10.png"
+        "logo": "https://media.api-sports.io/football/leagues/934.png"
       },
       "country": {
         "name": "World",
@@ -34,22 +34,22 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-01",
-          "end": "2024-12-21",
-          "current": false,
+          "year": 2022,
+          "start": "2022-07-20",
+          "end": "2022-08-07",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -93,6 +93,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 965,
+        "name": "AFC U20 Asian Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/965.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-12",
+          "end": "2025-03-01",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -104,6 +141,183 @@
   "fixtures": {
     "upcoming": [],
     "past": [
+      {
+        "fixture": {
+          "id": 1315284,
+          "date": "2025-02-19T07:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Longhua Cultural and Sports Centre Stadium",
+            "city": "Shenzhen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739948400
+        },
+        "league": {
+          "id": 965,
+          "name": "AFC U20 Asian Cup",
+          "logo": "https://media.api-sports.io/football/leagues/965.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19626,
+            "name": "Iraq U20",
+            "logo": "https://media.api-sports.io/football/teams/19626.png",
+            "winner": null
+          },
+          "away": {
+            "id": 19627,
+            "name": "Jordan U20",
+            "logo": "https://media.api-sports.io/football/teams/19627.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1315275,
+          "date": "2025-02-16T07:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Longhua Cultural and Sports Centre Stadium",
+            "city": "Shenzhen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1739689200
+        },
+        "league": {
+          "id": 965,
+          "name": "AFC U20 Asian Cup",
+          "logo": "https://media.api-sports.io/football/leagues/965.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25113,
+            "name": "Korea DPR U20",
+            "logo": "https://media.api-sports.io/football/teams/25113.png",
+            "winner": false
+          },
+          "away": {
+            "id": 19627,
+            "name": "Jordan U20",
+            "logo": "https://media.api-sports.io/football/teams/19627.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1315269,
+          "date": "2025-02-13T11:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Baoan Sports Centre Stadium",
+            "city": "Shenzhen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1739446200
+        },
+        "league": {
+          "id": 965,
+          "name": "AFC U20 Asian Cup",
+          "logo": "https://media.api-sports.io/football/leagues/965.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19627,
+            "name": "Jordan U20",
+            "logo": "https://media.api-sports.io/football/teams/19627.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10301,
+            "name": "Saudi Arabia U20",
+            "logo": "https://media.api-sports.io/football/teams/10301.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1308148,
@@ -339,34 +553,211 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1013651,
+          "date": "2023-03-12T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Lokomotiv",
+            "city": "Tashkent"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1678629600
+        },
+        "league": {
+          "id": 965,
+          "name": "AFC U20 Asian Cup",
+          "logo": "https://media.api-sports.io/football/leagues/965.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10290,
+            "name": "Japan U20",
+            "logo": "https://media.api-sports.io/football/teams/10290.png",
+            "winner": true
+          },
+          "away": {
+            "id": 19627,
+            "name": "Jordan U20",
+            "logo": "https://media.api-sports.io/football/teams/19627.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1011690,
+          "date": "2023-03-08T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Lokomotiv",
+            "city": "Tashkent"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1678276800
+        },
+        "league": {
+          "id": 965,
+          "name": "AFC U20 Asian Cup",
+          "logo": "https://media.api-sports.io/football/leagues/965.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19627,
+            "name": "Jordan U20",
+            "logo": "https://media.api-sports.io/football/teams/19627.png",
+            "winner": null
+          },
+          "away": {
+            "id": 19629,
+            "name": "Oman U20",
+            "logo": "https://media.api-sports.io/football/teams/19629.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1011681,
+          "date": "2023-03-05T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Majmuasi",
+            "city": "Tashkent"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1678010400
+        },
+        "league": {
+          "id": 965,
+          "name": "AFC U20 Asian Cup",
+          "logo": "https://media.api-sports.io/football/leagues/965.png"
+        },
+        "teams": {
+          "home": {
+            "id": 19627,
+            "name": "Jordan U20",
+            "logo": "https://media.api-sports.io/football/teams/19627.png",
+            "winner": false
+          },
+          "away": {
+            "id": 10291,
+            "name": "Korea Republic U20",
+            "logo": "https://media.api-sports.io/football/teams/10291.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 10,
-      "name": "Friendlies",
-      "country": "World",
-      "logo": "https://media.api-sports.io/football/leagues/10.png",
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
       "flag": null,
-      "season": 2024
+      "season": null
     },
     "team": {
       "id": 19627,
       "name": "Jordan U20",
       "logo": "https://media.api-sports.io/football/teams/19627.png"
     },
-    "form": "W",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "wins": {
-        "home": 1,
+        "home": 0,
         "away": 0,
-        "total": 1
+        "total": 0
       },
       "draws": {
         "home": 0,
@@ -382,14 +773,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 4,
+          "home": 0,
           "away": 0,
-          "total": 4
+          "total": 0
         },
         "average": {
-          "home": "4.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "4.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -427,37 +818,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "2.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "3.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
+          "home": 0,
           "away": 0,
-          "total": 1
+          "total": 0
         },
         "average": {
-          "home": "1.0",
+          "home": "0.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
@@ -495,36 +886,36 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 0,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 0,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": "4-1",
+        "home": null,
         "away": null
       },
       "loses": {
@@ -533,11 +924,11 @@
       },
       "goals": {
         "for": {
-          "home": 4,
+          "home": 0,
           "away": 0
         },
         "against": {
-          "home": 1,
+          "home": 0,
           "away": 0
         }
       }
@@ -635,5 +1026,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:42:34.538Z"
+  "lastUpdated": "2025-03-27T10:41:24.313Z"
 }

@@ -21,8 +21,8 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          {/* Color overlay */}
-          <div className="absolute inset-0 bg-blue-900/70 mix-blend-multiply"></div>
+          {/* Updated gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#204028] via-[#204028]/80 to-transparent"></div>
         </div>
         
         {/* Content */}
@@ -36,13 +36,13 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link 
               href="/fotball" 
-              className="px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-800 bg-white hover:bg-gray-100 shadow-lg transition-colors"
+              className="px-8 py-3 text-base font-medium rounded-md text-white bg-[#204028] hover:bg-[#2a532f] transition-colors border border-white/20 text-lg min-w-[160px] text-center"
             >
               Fotball
             </Link>
             <Link 
               href="/fotball/liga" 
-              className="px-8 py-3 border border-white text-base font-medium rounded-md text-white bg-green-800 hover:bg-green-700 shadow-lg transition-colors"
+              className="px-8 py-3 text-base font-medium rounded-md text-white hover:bg-white/10 transition-colors border border-white/20 text-lg min-w-[160px] text-center"
             >
               Ligaer
             </Link>

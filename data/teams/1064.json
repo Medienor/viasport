@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 130,
-        "name": "Copa Argentina",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/130.png"
-      },
-      "country": {
-        "name": "Argentina",
-        "code": "AR",
-        "flag": "https://media.api-sports.io/flags/ar.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-01-25",
-          "end": "2024-12-04",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 1032,
         "name": "Copa de la Liga Profesional",
         "type": "League",
@@ -96,6 +59,43 @@
     },
     {
       "league": {
+        "id": 130,
+        "name": "Copa Argentina",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/130.png"
+      },
+      "country": {
+        "name": "Argentina",
+        "code": "AR",
+        "flag": "https://media.api-sports.io/flags/ar.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-23",
+          "end": "2025-06-07",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 128,
         "name": "Liga Profesional Argentina",
         "type": "League",
@@ -108,10 +108,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-05-12",
-          "end": "2024-12-15",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-23",
+          "end": "2025-05-04",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -150,24 +150,23 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1159027,
-          "date": "2024-12-15T20:00:00+00:00",
+          "id": 1334437,
+          "date": "2025-03-29T00:30:00+00:00",
           "venue": {
             "id": 97,
             "name": "Estadio Ciudad de Vicente López",
             "city": "Vicente López, Provincia de Buenos Aires"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1734292800
+          "timestamp": 1743208200
         },
         "league": {
           "id": 128,
@@ -179,27 +178,27 @@
             "id": 1064,
             "name": "Platense",
             "logo": "https://media.api-sports.io/football/teams/1064.png",
-            "winner": true
+            "winner": null
           },
           "away": {
-            "id": 434,
-            "name": "Gimnasia L.P.",
-            "logo": "https://media.api-sports.io/football/teams/434.png",
-            "winner": false
+            "id": 455,
+            "name": "Atletico Tucuman",
+            "logo": "https://media.api-sports.io/football/teams/455.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 1,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 1,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -213,20 +212,20 @@
       },
       {
         "fixture": {
-          "id": 1159020,
-          "date": "2024-12-10T00:30:00+00:00",
+          "id": 1334452,
+          "date": "2025-04-07T18:30:00+00:00",
           "venue": {
-            "id": 82,
-            "name": "Estadio Tomás Adolfo Ducó",
+            "id": 66,
+            "name": "Estadio Guillermo Laza",
             "city": "Capital Federal, Ciudad de Buenos Aires"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
             "extra": null
           },
-          "timestamp": 1733790600
+          "timestamp": 1744050600
         },
         "league": {
           "id": 128,
@@ -235,30 +234,30 @@
         },
         "teams": {
           "home": {
-            "id": 445,
-            "name": "Huracan",
-            "logo": "https://media.api-sports.io/football/teams/445.png",
-            "winner": true
+            "id": 476,
+            "name": "Deportivo Riestra",
+            "logo": "https://media.api-sports.io/football/teams/476.png",
+            "winner": null
           },
           "away": {
             "id": 1064,
             "name": "Platense",
             "logo": "https://media.api-sports.io/football/teams/1064.png",
-            "winner": false
+            "winner": null
           }
         },
         "goals": {
-          "home": 1,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 1,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -272,20 +271,20 @@
       },
       {
         "fixture": {
-          "id": 1159000,
-          "date": "2024-12-02T22:15:00+00:00",
+          "id": 1334466,
+          "date": "2025-04-15T23:00:00+00:00",
           "venue": {
             "id": 97,
             "name": "Estadio Ciudad de Vicente López",
             "city": "Vicente López, Provincia de Buenos Aires"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1733177700
+          "timestamp": 1744758000
         },
         "league": {
           "id": 128,
@@ -297,27 +296,27 @@
             "id": 1064,
             "name": "Platense",
             "logo": "https://media.api-sports.io/football/teams/1064.png",
-            "winner": true
+            "winner": null
           },
           "away": {
-            "id": 441,
-            "name": "Union Santa Fe",
-            "logo": "https://media.api-sports.io/football/teams/441.png",
-            "winner": false
+            "id": 437,
+            "name": "Rosario Central",
+            "logo": "https://media.api-sports.io/football/teams/437.png",
+            "winner": null
           }
         },
         "goals": {
-          "home": 1,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 0,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 1,
-            "away": 0
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -331,20 +330,20 @@
       },
       {
         "fixture": {
-          "id": 1158991,
-          "date": "2024-11-27T00:15:00+00:00",
+          "id": 1334483,
+          "date": "2025-04-20T21:00:00+00:00",
           "venue": {
             "id": 107,
             "name": "Estadio Eva Perón de Junín",
             "city": "Junín, Provincia de Buenos Aires"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1732666500
+          "timestamp": 1745182800
         },
         "league": {
           "id": 128,
@@ -356,26 +355,205 @@
             "id": 474,
             "name": "Sarmiento Junin",
             "logo": "https://media.api-sports.io/football/teams/474.png",
-            "winner": true
+            "winner": null
           },
           "away": {
             "id": 1064,
             "name": "Platense",
             "logo": "https://media.api-sports.io/football/teams/1064.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334495,
+          "date": "2025-04-29T22:00:00+00:00",
+          "venue": {
+            "id": 97,
+            "name": "Estadio Ciudad de Vicente López",
+            "city": "Vicente López, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745964000
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1064,
+            "name": "Platense",
+            "logo": "https://media.api-sports.io/football/teams/1064.png",
+            "winner": null
+          },
+          "away": {
+            "id": 456,
+            "name": "Talleres Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/456.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1334425,
+          "date": "2025-03-18T00:15:00+00:00",
+          "venue": {
+            "id": 104,
+            "name": "Estadio Ingeniero Hilario Sánchez",
+            "city": "San Juan, Provincia de San Juan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742256900
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 461,
+            "name": "San Martin S.J.",
+            "logo": "https://media.api-sports.io/football/teams/461.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1064,
+            "name": "Platense",
+            "logo": "https://media.api-sports.io/football/teams/1064.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1330776,
+          "date": "2025-03-12T20:00:00+00:00",
+          "venue": {
+            "id": 71,
+            "name": "Estadio Ciudad de Caseros",
+            "city": "Caseros, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1741809600
+        },
+        "league": {
+          "id": 130,
+          "name": "Copa Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/130.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1064,
+            "name": "Platense",
+            "logo": "https://media.api-sports.io/football/teams/1064.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8376,
+            "name": "Argentino Quilmes",
+            "logo": "https://media.api-sports.io/football/teams/8376.png",
             "winner": false
           }
         },
         "goals": {
-          "home": 1,
+          "home": 2,
           "away": 0
         },
         "score": {
           "halftime": {
-            "home": 1,
+            "home": 0,
             "away": 0
           },
           "fulltime": {
-            "home": 1,
+            "home": 2,
             "away": 0
           },
           "extratime": {
@@ -390,8 +568,185 @@
       },
       {
         "fixture": {
-          "id": 1158973,
-          "date": "2024-11-18T22:15:00+00:00",
+          "id": 1334402,
+          "date": "2025-03-09T00:30:00+00:00",
+          "venue": {
+            "id": 97,
+            "name": "Estadio Ciudad de Vicente López",
+            "city": "Vicente López, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1741480200
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1064,
+            "name": "Platense",
+            "logo": "https://media.api-sports.io/football/teams/1064.png",
+            "winner": null
+          },
+          "away": {
+            "id": 446,
+            "name": "Lanus",
+            "logo": "https://media.api-sports.io/football/teams/446.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334393,
+          "date": "2025-03-05T00:30:00+00:00",
+          "venue": {
+            "id": 97,
+            "name": "Estadio Ciudad de Vicente López",
+            "city": "Vicente López, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1741134600
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1064,
+            "name": "Platense",
+            "logo": "https://media.api-sports.io/football/teams/1064.png",
+            "winner": false
+          },
+          "away": {
+            "id": 442,
+            "name": "Defensa Y Justicia",
+            "logo": "https://media.api-sports.io/football/teams/442.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334369,
+          "date": "2025-02-21T22:15:00+00:00",
+          "venue": {
+            "id": 80,
+            "name": "Estadio Malvinas Argentinas",
+            "city": "Mendoza, Provincia de Mendoza"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1740176100
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 439,
+            "name": "Godoy Cruz",
+            "logo": "https://media.api-sports.io/football/teams/439.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1064,
+            "name": "Platense",
+            "logo": "https://media.api-sports.io/football/teams/1064.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334364,
+          "date": "2025-02-17T22:15:00+00:00",
           "venue": {
             "id": 97,
             "name": "Estadio Ciudad de Vicente López",
@@ -403,7 +758,125 @@
             "elapsed": 90,
             "extra": 6
           },
-          "timestamp": 1731968100
+          "timestamp": 1739830500
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1064,
+            "name": "Platense",
+            "logo": "https://media.api-sports.io/football/teams/1064.png",
+            "winner": null
+          },
+          "away": {
+            "id": 453,
+            "name": "Independiente",
+            "logo": "https://media.api-sports.io/football/teams/453.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334348,
+          "date": "2025-02-13T23:00:00+00:00",
+          "venue": {
+            "id": 103,
+            "name": "Estadio Pedro Bidegaín",
+            "city": "Capital Federal, Ciudad de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 13
+          },
+          "timestamp": 1739487600
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 460,
+            "name": "San Lorenzo",
+            "logo": "https://media.api-sports.io/football/teams/460.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1064,
+            "name": "Platense",
+            "logo": "https://media.api-sports.io/football/teams/1064.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334333,
+          "date": "2025-02-09T20:00:00+00:00",
+          "venue": {
+            "id": 97,
+            "name": "Estadio Ciudad de Vicente López",
+            "city": "Vicente López, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1739131200
         },
         "league": {
           "id": 128,
@@ -418,9 +891,9 @@
             "winner": true
           },
           "away": {
-            "id": 439,
-            "name": "Godoy Cruz",
-            "logo": "https://media.api-sports.io/football/teams/439.png",
+            "id": 478,
+            "name": "Instituto Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/478.png",
             "winner": false
           }
         },
@@ -449,248 +922,12 @@
       },
       {
         "fixture": {
-          "id": 1158962,
-          "date": "2024-11-11T21:45:00+00:00",
+          "id": 1334319,
+          "date": "2025-02-04T00:30:00+00:00",
           "venue": {
-            "id": 88,
-            "name": "Estadio Ciudad de Lanús - Néstor Díaz Pérez",
-            "city": "Lanús, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1731361500
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 446,
-            "name": "Lanus",
-            "logo": "https://media.api-sports.io/football/teams/446.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1064,
-            "name": "Platense",
-            "logo": "https://media.api-sports.io/football/teams/1064.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158946,
-          "date": "2024-11-08T00:00:00+00:00",
-          "venue": {
-            "id": 97,
-            "name": "Estadio Ciudad de Vicente López",
-            "city": "Vicente López, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1731024000
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1064,
-            "name": "Platense",
-            "logo": "https://media.api-sports.io/football/teams/1064.png",
-            "winner": null
-          },
-          "away": {
-            "id": 476,
-            "name": "Deportivo Riestra",
-            "logo": "https://media.api-sports.io/football/teams/476.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158933,
-          "date": "2024-11-03T20:00:00+00:00",
-          "venue": {
-            "id": 112,
-            "name": "Estadio José Dellagiovanna",
-            "city": "San Fernando, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730664000
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 452,
-            "name": "Tigre",
-            "logo": "https://media.api-sports.io/football/teams/452.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1064,
-            "name": "Platense",
-            "logo": "https://media.api-sports.io/football/teams/1064.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158919,
-          "date": "2024-10-27T18:00:00+00:00",
-          "venue": {
-            "id": 97,
-            "name": "Estadio Ciudad de Vicente López",
-            "city": "Vicente López, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1730052000
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1064,
-            "name": "Platense",
-            "logo": "https://media.api-sports.io/football/teams/1064.png",
-            "winner": true
-          },
-          "away": {
-            "id": 458,
-            "name": "Argentinos JRS",
-            "logo": "https://media.api-sports.io/football/teams/458.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1158904,
-          "date": "2024-10-19T20:00:00+00:00",
-          "venue": {
-            "id": 45,
-            "name": "Estadio Julio César Villagra",
-            "city": "Ciudad de Córdoba, Provincia de Córdoba"
+            "id": 37,
+            "name": "Estadio Diego Armando Maradona",
+            "city": "Capital Federal, Ciudad de Buenos Aires"
           },
           "status": {
             "long": "Match Finished",
@@ -698,7 +935,7 @@
             "elapsed": 90,
             "extra": 7
           },
-          "timestamp": 1729368000
+          "timestamp": 1738629000
         },
         "league": {
           "id": 128,
@@ -707,9 +944,68 @@
         },
         "teams": {
           "home": {
-            "id": 440,
-            "name": "Belgrano Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/440.png",
+            "id": 458,
+            "name": "Argentinos JRS",
+            "logo": "https://media.api-sports.io/football/teams/458.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1064,
+            "name": "Platense",
+            "logo": "https://media.api-sports.io/football/teams/1064.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334297,
+          "date": "2025-01-29T00:30:00+00:00",
+          "venue": {
+            "id": 115,
+            "name": "Estadio José Amalfitani",
+            "city": "Capital Federal, Ciudad de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1738110600
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 438,
+            "name": "Velez Sarsfield",
+            "logo": "https://media.api-sports.io/football/teams/438.png",
             "winner": false
           },
           "away": {
@@ -746,24 +1042,24 @@
   },
   "statistics": {
     "league": {
-      "id": 130,
-      "name": "Copa Argentina",
-      "country": "Argentina",
-      "logo": "https://media.api-sports.io/football/leagues/130.png",
-      "flag": "https://media.api-sports.io/flags/ar.svg",
-      "season": 2024
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
+      "flag": null,
+      "season": null
     },
     "team": {
       "id": 1064,
       "name": "Platense",
       "logo": "https://media.api-sports.io/football/teams/1064.png"
     },
-    "form": "DD",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       },
       "wins": {
         "home": 0,
@@ -771,9 +1067,9 @@
         "total": 0
       },
       "draws": {
-        "home": 2,
+        "home": 0,
         "away": 0,
-        "total": 2
+        "total": 0
       },
       "loses": {
         "home": 0,
@@ -823,30 +1119,30 @@
             "percentage": null
           },
           "106-120": {
-            "total": 4,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       },
@@ -891,30 +1187,30 @@
             "percentage": null
           },
           "106-120": {
-            "total": 5,
-            "percentage": "100.00%"
+            "total": null,
+            "percentage": null
           }
         },
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 0
           }
         }
       }
@@ -922,7 +1218,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 2,
+        "draws": 0,
         "loses": 0
       },
       "wins": {
@@ -945,25 +1241,25 @@
       }
     },
     "clean_sheet": {
-      "home": 2,
+      "home": 0,
       "away": 0,
-      "total": 2
+      "total": 0
     },
     "failed_to_score": {
-      "home": 2,
+      "home": 0,
       "away": 0,
-      "total": 2
+      "total": 0
     },
     "penalty": {
       "scored": {
-        "total": 4,
-        "percentage": "66.67%"
+        "total": 0,
+        "percentage": "0%"
       },
       "missed": {
-        "total": 2,
-        "percentage": "33.33%"
+        "total": 0,
+        "percentage": "0%"
       },
-      "total": 6
+      "total": 0
     },
     "lineups": [],
     "cards": {
@@ -1037,5 +1333,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:39:06.600Z"
+  "lastUpdated": "2025-03-27T10:37:47.550Z"
 }

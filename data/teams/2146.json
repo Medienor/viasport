@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 104,
-        "name": "1. Division",
-        "type": "League",
-        "logo": "https://media.api-sports.io/football/leagues/104.png"
-      },
-      "country": {
-        "name": "Norway",
-        "code": "NO",
-        "flag": "https://media.api-sports.io/flags/no.svg"
-      },
-      "seasons": [
-        {
-          "year": 2024,
-          "start": "2024-04-01",
-          "end": "2024-12-01",
-          "current": false,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": true,
-            "players": true,
-            "top_scorers": true,
-            "top_assists": true,
-            "top_cards": true,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 667,
         "name": "Friendlies Clubs",
         "type": "Cup",
@@ -71,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-04",
-          "end": "2024-12-30",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -89,17 +52,17 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
     },
     {
       "league": {
-        "id": 105,
-        "name": "NM Cupen",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/105.png"
+        "id": 473,
+        "name": "2. Division - Group 1",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/473.png"
       },
       "country": {
         "name": "Norway",
@@ -108,18 +71,18 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-04-09",
-          "end": "2024-12-07",
+          "year": 2025,
+          "start": "2025-03-29",
+          "end": "2025-10-25",
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
+              "events": false,
+              "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
             },
-            "standings": false,
+            "standings": true,
             "players": true,
             "top_scorers": true,
             "top_assists": true,
@@ -145,8 +108,1602 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1343278,
+          "date": "2025-03-30T11:00:00+00:00",
+          "venue": {
+            "id": 12682,
+            "name": "Øster Hus Arena",
+            "city": "Sandnes"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743332400
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          },
+          "away": {
+            "id": 16211,
+            "name": "Eik-Tønsberg",
+            "logo": "https://media.api-sports.io/football/teams/16211.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343290,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 2790,
+            "name": "Norac Stadion",
+            "city": "Arendal"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2155,
+            "name": "Arendal",
+            "logo": "https://media.api-sports.io/football/teams/2155.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343292,
+          "date": "2025-04-21T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745233200
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7020,
+            "name": "Pors Grenland",
+            "logo": "https://media.api-sports.io/football/teams/7020.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343300,
+          "date": "2025-04-28T14:30:00+00:00",
+          "venue": {
+            "id": 5105,
+            "name": "Varden Amfi",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745850600
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16218,
+            "name": "Brann II",
+            "logo": "https://media.api-sports.io/football/teams/16218.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343306,
+          "date": "2025-05-03T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746280800
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7040,
+            "name": "Træff",
+            "logo": "https://media.api-sports.io/football/teams/7040.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343316,
+          "date": "2025-05-11T11:00:00+00:00",
+          "venue": {
+            "id": 5088,
+            "name": "Brattvåg kunstgress",
+            "city": "Brattvåg"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746961200
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6970,
+            "name": "Brattvåg",
+            "logo": "https://media.api-sports.io/football/teams/6970.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343320,
+          "date": "2025-05-24T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748088000
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7007,
+            "name": "Lysekloster",
+            "logo": "https://media.api-sports.io/football/teams/7007.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343333,
+          "date": "2025-05-31T15:00:00+00:00",
+          "venue": {
+            "id": 1751,
+            "name": "J.J. Ugland Stadion",
+            "city": "Grimstad"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748703600
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2151,
+            "name": "jerv",
+            "logo": "https://media.api-sports.io/football/teams/2151.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343334,
+          "date": "2025-06-07T13:00:00+00:00",
+          "venue": {
+            "id": 12130,
+            "name": "Haugesund Sparebank Arena",
+            "city": "Haugesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749301200
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7043,
+            "name": "Vard",
+            "logo": "https://media.api-sports.io/football/teams/7043.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343341,
+          "date": "2025-06-14T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749909600
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          },
+          "away": {
+            "id": 6982,
+            "name": "Flekkerøy",
+            "logo": "https://media.api-sports.io/football/teams/6982.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343351,
+          "date": "2025-06-22T11:00:00+00:00",
+          "venue": {
+            "id": 1186,
+            "name": "Optime Arena",
+            "city": "Notodden"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1750590000
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2161,
+            "name": "Notodden",
+            "logo": "https://media.api-sports.io/football/teams/2161.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343355,
+          "date": "2025-06-28T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751112000
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          },
+          "away": {
+            "id": 14545,
+            "name": "Sandviken",
+            "logo": "https://media.api-sports.io/football/teams/14545.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343368,
+          "date": "2025-07-05T14:00:00+00:00",
+          "venue": {
+            "id": 5139,
+            "name": "Straume stadion",
+            "city": "Sotra"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1751724000
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7028,
+            "name": "Sotra",
+            "logo": "https://media.api-sports.io/football/teams/7028.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343369,
+          "date": "2025-07-13T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752404400
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2161,
+            "name": "Notodden",
+            "logo": "https://media.api-sports.io/football/teams/2161.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343377,
+          "date": "2025-08-09T13:00:00+00:00",
+          "venue": {
+            "id": 11316,
+            "name": "Stemmemyren kunstgressbane",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754744400
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14545,
+            "name": "Sandviken",
+            "logo": "https://media.api-sports.io/football/teams/14545.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343383,
+          "date": "2025-08-16T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755352800
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7028,
+            "name": "Sotra",
+            "logo": "https://media.api-sports.io/football/teams/7028.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343393,
+          "date": "2025-08-23T11:00:00+00:00",
+          "venue": {
+            "id": 5132,
+            "name": "Pors Stadion",
+            "city": "Porsgrunn"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755946800
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7020,
+            "name": "Pors Grenland",
+            "logo": "https://media.api-sports.io/football/teams/7020.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343397,
+          "date": "2025-08-31T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756648800
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2151,
+            "name": "jerv",
+            "logo": "https://media.api-sports.io/football/teams/2151.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343406,
+          "date": "2025-09-07T11:00:00+00:00",
+          "venue": {
+            "id": 5151,
+            "name": "Reknesbanen",
+            "city": "Molde"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757242800
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7040,
+            "name": "Træff",
+            "logo": "https://media.api-sports.io/football/teams/7040.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1343411,
+          "date": "2025-09-15T14:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757946600
+        },
+        "league": {
+          "id": 473,
+          "name": "2. Division - Group 1",
+          "logo": "https://media.api-sports.io/football/leagues/473.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          },
+          "away": {
+            "id": 16218,
+            "name": "Brann II",
+            "logo": "https://media.api-sports.io/football/teams/16218.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
+      {
+        "fixture": {
+          "id": 1365942,
+          "date": "2025-03-22T13:00:00+00:00",
+          "venue": {
+            "id": 12682,
+            "name": "Øster Hus Arena",
+            "city": "Sandnes"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742648400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": true
+          },
+          "away": {
+            "id": 6982,
+            "name": "Flekkerøy",
+            "logo": "https://media.api-sports.io/football/teams/6982.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350866,
+          "date": "2025-03-14T14:00:00+00:00",
+          "venue": {
+            "id": 12682,
+            "name": "Øster Hus Arena",
+            "city": "Sandnes"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1741960800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2155,
+            "name": "Arendal",
+            "logo": "https://media.api-sports.io/football/teams/2155.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349339,
+          "date": "2025-03-08T13:00:00+00:00",
+          "venue": {
+            "id": 12682,
+            "name": "Øster Hus Arena",
+            "city": "Sandnes"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1741438800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": false
+          },
+          "away": {
+            "id": 7043,
+            "name": "Vard",
+            "logo": "https://media.api-sports.io/football/teams/7043.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346226,
+          "date": "2025-02-22T16:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1740240000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7007,
+            "name": "Lysekloster",
+            "logo": "https://media.api-sports.io/football/teams/7007.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1349244,
+          "date": "2025-02-15T13:00:00+00:00",
+          "venue": {
+            "id": 12682,
+            "name": "Øster Hus Arena",
+            "city": "Sandnes"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1739624400
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": true
+          },
+          "away": {
+            "id": 7046,
+            "name": "Vidar",
+            "logo": "https://media.api-sports.io/football/teams/7046.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1345870,
+          "date": "2025-02-08T12:00:00+00:00",
+          "venue": {
+            "id": 2793,
+            "name": "Aarbakkebanen",
+            "city": "Bryne"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1739016000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2142,
+            "name": "Bryne",
+            "logo": "https://media.api-sports.io/football/teams/2142.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1344863,
+          "date": "2025-01-31T16:30:00+00:00",
+          "venue": {
+            "id": 12682,
+            "name": "Øster Hus Arena",
+            "city": "Sandnes"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1738341000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          },
+          "away": {
+            "id": 759,
+            "name": "Viking",
+            "logo": "https://media.api-sports.io/football/teams/759.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1152110,
@@ -323,499 +1880,86 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1152091,
-          "date": "2024-10-26T14:00:00+00:00",
-          "venue": {
-            "id": 1952,
-            "name": "TOBB ARENA Levanger",
-            "city": "Levanger"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1729951200
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2145,
-            "name": "Levanger",
-            "logo": "https://media.api-sports.io/football/teams/2145.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2146,
-            "name": "Sandnes ULF",
-            "logo": "https://media.api-sports.io/football/teams/2146.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152081,
-          "date": "2024-10-21T17:00:00+00:00",
-          "venue": {
-            "id": 12682,
-            "name": "Øster Hus Arena",
-            "city": "Sandnes"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1729530000
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2146,
-            "name": "Sandnes ULF",
-            "logo": "https://media.api-sports.io/football/teams/2146.png",
-            "winner": false
-          },
-          "away": {
-            "id": 7006,
-            "name": "Lyn",
-            "logo": "https://media.api-sports.io/football/teams/7006.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1199599,
-          "date": "2024-10-05T17:00:00+00:00",
-          "venue": {
-            "id": 12682,
-            "name": "Øster Hus Arena",
-            "city": "Sandnes"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1728147600
-        },
-        "league": {
-          "id": 105,
-          "name": "NM Cupen",
-          "logo": "https://media.api-sports.io/football/leagues/105.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2146,
-            "name": "Sandnes ULF",
-            "logo": "https://media.api-sports.io/football/teams/2146.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2145,
-            "name": "Levanger",
-            "logo": "https://media.api-sports.io/football/teams/2145.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152079,
-          "date": "2024-10-02T17:00:00+00:00",
-          "venue": {
-            "id": 1189,
-            "name": "NAMMO stadion",
-            "city": "Raufoss"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1727888400
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2153,
-            "name": "Raufoss",
-            "logo": "https://media.api-sports.io/football/teams/2153.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2146,
-            "name": "Sandnes ULF",
-            "logo": "https://media.api-sports.io/football/teams/2146.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152069,
-          "date": "2024-09-28T14:00:00+00:00",
-          "venue": {
-            "id": 12682,
-            "name": "Øster Hus Arena",
-            "city": "Sandnes"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1727532000
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2146,
-            "name": "Sandnes ULF",
-            "logo": "https://media.api-sports.io/football/teams/2146.png",
-            "winner": false
-          },
-          "away": {
-            "id": 334,
-            "name": "Start",
-            "logo": "https://media.api-sports.io/football/teams/334.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152062,
-          "date": "2024-09-25T17:00:00+00:00",
-          "venue": {
-            "id": 5124,
-            "name": "Melløs Stadion",
-            "city": "Moss"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1727283600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7012,
-            "name": "Moss",
-            "logo": "https://media.api-sports.io/football/teams/7012.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2146,
-            "name": "Sandnes ULF",
-            "logo": "https://media.api-sports.io/football/teams/2146.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 6,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 6,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1152053,
-          "date": "2024-09-21T14:00:00+00:00",
-          "venue": {
-            "id": 12682,
-            "name": "Øster Hus Arena",
-            "city": "Sandnes"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726927200
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2146,
-            "name": "Sandnes ULF",
-            "logo": "https://media.api-sports.io/football/teams/2146.png",
-            "winner": true
-          },
-          "away": {
-            "id": 758,
-            "name": "Sogndal",
-            "logo": "https://media.api-sports.io/football/teams/758.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
   "statistics": {
     "league": {
-      "id": 104,
-      "name": "1. Division",
+      "id": 473,
+      "name": "2. Division - Group 1",
       "country": "Norway",
-      "logo": "https://media.api-sports.io/football/leagues/104.png",
+      "logo": "https://media.api-sports.io/football/leagues/473.png",
       "flag": "https://media.api-sports.io/flags/no.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 2146,
       "name": "Sandnes ULF",
       "logo": "https://media.api-sports.io/football/teams/2146.png"
     },
-    "form": "LLWDDDLWLLLLLDLLWLLLLLWLLDLLLL",
+    "form": null,
     "fixtures": {
       "played": {
-        "home": 15,
-        "away": 15,
-        "total": 30
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "wins": {
-        "home": 3,
-        "away": 1,
-        "total": 4
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "draws": {
-        "home": 2,
-        "away": 3,
-        "total": 5
+        "home": 0,
+        "away": 0,
+        "total": 0
       },
       "loses": {
-        "home": 10,
-        "away": 11,
-        "total": 21
+        "home": 0,
+        "away": 0,
+        "total": 0
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 18,
-          "away": 8,
-          "total": 26
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "1.2",
-          "away": "0.5",
-          "total": "0.9"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "11.54%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 6,
-            "percentage": "23.08%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 9,
-            "percentage": "34.62%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 2,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 2,
-            "percentage": "7.69%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -824,66 +1968,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 17,
-            "under": 13
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 7,
-            "under": 23
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 2,
-            "under": 28
+            "over": 0,
+            "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 30
+            "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 30
+            "under": 0
           }
         }
       },
       "against": {
         "total": {
-          "home": 36,
-          "away": 44,
-          "total": 80
+          "home": 0,
+          "away": 0,
+          "total": 0
         },
         "average": {
-          "home": "2.4",
-          "away": "2.9",
-          "total": "2.7"
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
         },
         "minute": {
           "0-15": {
-            "total": 11,
-            "percentage": "13.75%"
+            "total": null,
+            "percentage": null
           },
           "16-30": {
-            "total": 12,
-            "percentage": "15.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 12,
-            "percentage": "15.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 11,
-            "percentage": "13.75%"
+            "total": null,
+            "percentage": null
           },
           "61-75": {
-            "total": 19,
-            "percentage": "23.75%"
+            "total": null,
+            "percentage": null
           },
           "76-90": {
-            "total": 14,
-            "percentage": "17.50%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
-            "total": 1,
-            "percentage": "1.25%"
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -892,62 +2036,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 27,
-            "under": 3
+            "over": 0,
+            "under": 0
           },
           "1.5": {
-            "over": 20,
-            "under": 10
+            "over": 0,
+            "under": 0
           },
           "2.5": {
-            "over": 15,
-            "under": 15
+            "over": 0,
+            "under": 0
           },
           "3.5": {
-            "over": 8,
-            "under": 22
+            "over": 0,
+            "under": 0
           },
           "4.5": {
-            "over": 5,
-            "under": 25
+            "over": 0,
+            "under": 0
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
-        "draws": 3,
-        "loses": 5
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
       },
       "wins": {
-        "home": "2-0",
-        "away": "0-1"
+        "home": null,
+        "away": null
       },
       "loses": {
-        "home": "2-6",
-        "away": "8-0"
+        "home": null,
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 3,
-          "away": 1
+          "home": 0,
+          "away": 0
         },
         "against": {
-          "home": 6,
-          "away": 8
+          "home": 0,
+          "away": 0
         }
       }
     },
     "clean_sheet": {
-      "home": 2,
-      "away": 1,
-      "total": 3
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "failed_to_score": {
-      "home": 6,
-      "away": 7,
-      "total": 13
+      "home": 0,
+      "away": 0,
+      "total": 0
     },
     "penalty": {
       "scored": {
@@ -968,28 +2112,28 @@
           "percentage": null
         },
         "16-30": {
-          "total": 6,
-          "percentage": "10.71%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
-          "total": 14,
-          "percentage": "25.00%"
+          "total": null,
+          "percentage": null
         },
         "46-60": {
-          "total": 11,
-          "percentage": "19.64%"
+          "total": null,
+          "percentage": null
         },
         "61-75": {
-          "total": 11,
-          "percentage": "19.64%"
+          "total": null,
+          "percentage": null
         },
         "76-90": {
-          "total": 10,
-          "percentage": "17.86%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
-          "total": 4,
-          "percentage": "7.14%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1018,8 +2162,8 @@
           "percentage": null
         },
         "76-90": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "91-105": {
           "total": null,
@@ -1032,5 +2176,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:37:09.203Z"
+  "lastUpdated": "2025-03-27T10:35:46.334Z"
 }

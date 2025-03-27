@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-06",
-          "end": "2024-06-09",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-03-23",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -71,10 +71,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-20",
-          "end": "2024-04-06",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-18",
+          "end": "2025-03-22",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -89,17 +89,17 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
     },
     {
       "league": {
-        "id": 11,
-        "name": "CONMEBOL Sudamericana",
+        "id": 13,
+        "name": "CONMEBOL Libertadores",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/11.png"
+        "logo": "https://media.api-sports.io/football/leagues/13.png"
       },
       "country": {
         "name": "World",
@@ -108,10 +108,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-03-05",
-          "end": "2024-11-23",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-05",
+          "end": "2025-05-28",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -126,29 +126,29 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
     },
     {
       "league": {
-        "id": 73,
-        "name": "Copa Do Brasil",
+        "id": 667,
+        "name": "Friendlies Clubs",
         "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/73.png"
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
       },
       "country": {
-        "name": "Brazil",
-        "code": "BR",
-        "flag": "https://media.api-sports.io/flags/br.svg"
+        "name": "World",
+        "code": null,
+        "flag": null
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-02-20",
-          "end": "2024-11-10",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -182,16 +182,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-04-13",
-          "end": "2024-12-08",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-29",
+          "end": "2025-12-21",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": true,
             "players": true,
@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -223,201 +223,23 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
-    "past": [
+    "upcoming": [
       {
         "fixture": {
-          "id": 1180732,
-          "date": "2024-12-08T19:00:00+00:00",
+          "id": 1351051,
+          "date": "2025-03-29T21:30:00+00:00",
           "venue": {
             "id": 225,
             "name": "Estádio Governador Plácido Aderaldo Castelo",
             "city": "Fortaleza, Ceará"
           },
           "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
           },
-          "timestamp": 1733684400
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": true
-          },
-          "away": {
-            "id": 119,
-            "name": "Internacional",
-            "logo": "https://media.api-sports.io/football/teams/119.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180723,
-          "date": "2024-12-05T00:30:00+00:00",
-          "venue": {
-            "id": 211,
-            "name": "Estádio Antônio Accioly",
-            "city": "Goiânia, Goiás"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1733358600
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 144,
-            "name": "Atletico Goianiense",
-            "logo": "https://media.api-sports.io/football/teams/144.png",
-            "winner": true
-          },
-          "away": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180707,
-          "date": "2024-12-01T21:30:00+00:00",
-          "venue": {
-            "id": 281,
-            "name": "Estádio Manoel Barradas",
-            "city": "Salvador, Bahia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1733088600
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": true
-          },
-          "away": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180702,
-          "date": "2024-11-26T23:00:00+00:00",
-          "venue": {
-            "id": 225,
-            "name": "Estádio Governador Plácido Aderaldo Castelo",
-            "city": "Fortaleza, Ceará"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1732662000
+          "timestamp": 1743283800
         },
         "league": {
           "id": 71,
@@ -432,63 +254,122 @@
             "winner": null
           },
           "away": {
-            "id": 127,
-            "name": "Flamengo",
-            "logo": "https://media.api-sports.io/football/teams/127.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180688,
-          "date": "2024-11-23T00:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estadio Jornalista Mário Filho",
-            "city": "Rio de Janeiro, Rio de Janeiro"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1732321800
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
             "id": 124,
             "name": "Fluminense",
             "logo": "https://media.api-sports.io/football/teams/124.png",
             "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361865,
+          "date": "2025-04-02T00:30:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743553800
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          },
+          "away": {
+            "id": 436,
+            "name": "Racing Club",
+            "logo": "https://media.api-sports.io/football/teams/436.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361880,
+          "date": "2025-04-11T00:00:00+00:00",
+          "venue": {
+            "id": 319,
+            "name": "Estadio Monumental David Arellano",
+            "city": "Santiago de Chile"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744329600
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2315,
+            "name": "Colo Colo",
+            "logo": "https://media.api-sports.io/football/teams/2315.png",
+            "winner": null
           },
           "away": {
             "id": 154,
@@ -498,17 +379,17 @@
           }
         },
         "goals": {
-          "home": 2,
-          "away": 2
+          "home": null,
+          "away": null
         },
         "score": {
           "halftime": {
-            "home": 1,
-            "away": 2
+            "home": null,
+            "away": null
           },
           "fulltime": {
-            "home": 2,
-            "away": 2
+            "home": null,
+            "away": null
           },
           "extratime": {
             "home": null,
@@ -522,8 +403,246 @@
       },
       {
         "fixture": {
-          "id": 1180682,
-          "date": "2024-11-09T22:00:00+00:00",
+          "id": 1361897,
+          "date": "2025-04-24T02:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Américo Montanini",
+            "city": "Bucaramanga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745460000
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1131,
+            "name": "Bucaramanga",
+            "logo": "https://media.api-sports.io/football/teams/1131.png",
+            "winner": null
+          },
+          "away": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361966,
+          "date": "2025-05-07T00:30:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746577800
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2315,
+            "name": "Colo Colo",
+            "logo": "https://media.api-sports.io/football/teams/2315.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361983,
+          "date": "2025-05-14T00:30:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747182600
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1131,
+            "name": "Bucaramanga",
+            "logo": "https://media.api-sports.io/football/teams/1131.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361998,
+          "date": "2025-05-30T00:30:00+00:00",
+          "venue": {
+            "id": 99,
+            "name": "Estadio Presidente Juan Domingo Perón",
+            "city": "Avellaneda, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748565000
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 436,
+            "name": "Racing Club",
+            "logo": "https://media.api-sports.io/football/teams/436.png",
+            "winner": null
+          },
+          "away": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1337265,
+          "date": "2025-03-27T00:30:00+00:00",
           "venue": {
             "id": 225,
             "name": "Estádio Governador Plácido Aderaldo Castelo",
@@ -533,159 +652,41 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 5
+            "extra": 9
           },
-          "timestamp": 1731189600
+          "timestamp": 1743035400
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 612,
+          "name": "Copa do Nordeste",
+          "logo": "https://media.api-sports.io/football/leagues/612.png"
         },
         "teams": {
           "home": {
             "id": 154,
             "name": "Fortaleza EC",
             "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": true
-          },
-          "away": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180674,
-          "date": "2024-11-02T21:30:00+00:00",
-          "venue": {
-            "id": 248,
-            "name": "Estádio Alfredo Jaconi",
-            "city": "Caxias do Sul, Rio Grande do Sul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1730583000
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 152,
-            "name": "Juventude",
-            "logo": "https://media.api-sports.io/football/teams/152.png",
             "winner": false
           },
           "away": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "id": 146,
+            "name": "CRB",
+            "logo": "https://media.api-sports.io/football/teams/146.png",
             "winner": true
           }
         },
         "goals": {
           "home": 0,
-          "away": 3
+          "away": 1
         },
         "score": {
           "halftime": {
             "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180660,
-          "date": "2024-10-26T19:30:00+00:00",
-          "venue": {
-            "id": 258,
-            "name": "Allianz Parque",
-            "city": "São Paulo, São Paulo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1729971000
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 121,
-            "name": "Palmeiras",
-            "logo": "https://media.api-sports.io/football/teams/121.png",
-            "winner": null
-          },
-          "away": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
             "away": 1
           },
           "fulltime": {
-            "home": 2,
-            "away": 2
+            "home": 0,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -699,8 +700,8 @@
       },
       {
         "fixture": {
-          "id": 1180652,
-          "date": "2024-10-17T00:45:00+00:00",
+          "id": 1360077,
+          "date": "2025-03-22T19:30:00+00:00",
           "venue": {
             "id": 225,
             "name": "Estádio Governador Plácido Aderaldo Castelo",
@@ -710,26 +711,26 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 14
+            "extra": 10
           },
-          "timestamp": 1729125900
+          "timestamp": 1742671800
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 609,
+          "name": "Cearense - 1",
+          "logo": "https://media.api-sports.io/football/leagues/609.png"
         },
         "teams": {
           "home": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "id": 129,
+            "name": "Ceara",
+            "logo": "https://media.api-sports.io/football/teams/129.png",
             "winner": null
           },
           "away": {
-            "id": 1062,
-            "name": "Atletico-MG",
-            "logo": "https://media.api-sports.io/football/teams/1062.png",
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
             "winner": null
           }
         },
@@ -739,7 +740,7 @@
         },
         "score": {
           "halftime": {
-            "home": 1,
+            "home": 0,
             "away": 0
           },
           "fulltime": {
@@ -758,31 +759,31 @@
       },
       {
         "fixture": {
-          "id": 1180635,
-          "date": "2024-10-05T00:30:00+00:00",
+          "id": 1337257,
+          "date": "2025-03-20T00:30:00+00:00",
           "venue": {
-            "id": 241,
-            "name": "Arena do Grêmio",
-            "city": "Porto Alegre, Rio Grande do Sul"
+            "id": 5687,
+            "name": "Estádio Governador Antônio Mariz",
+            "city": "Sousa, Paraíba"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 9
+            "extra": 7
           },
-          "timestamp": 1728088200
+          "timestamp": 1742430600
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 612,
+          "name": "Copa do Nordeste",
+          "logo": "https://media.api-sports.io/football/leagues/612.png"
         },
         "teams": {
           "home": {
-            "id": 130,
-            "name": "Gremio",
-            "logo": "https://media.api-sports.io/football/teams/130.png",
+            "id": 7864,
+            "name": "Sousa",
+            "logo": "https://media.api-sports.io/football/teams/7864.png",
             "winner": true
           },
           "away": {
@@ -793,7 +794,7 @@
           }
         },
         "goals": {
-          "home": 3,
+          "home": 2,
           "away": 1
         },
         "score": {
@@ -802,8 +803,421 @@
             "away": 1
           },
           "fulltime": {
-            "home": 3,
+            "home": 2,
             "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1360076,
+          "date": "2025-03-15T19:30:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1742067000
+        },
+        "league": {
+          "id": 609,
+          "name": "Cearense - 1",
+          "logo": "https://media.api-sports.io/football/leagues/609.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": false
+          },
+          "away": {
+            "id": 129,
+            "name": "Ceara",
+            "logo": "https://media.api-sports.io/football/teams/129.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1354196,
+          "date": "2025-03-08T19:30:00+00:00",
+          "venue": {
+            "id": 237,
+            "name": "Estádio Municipal Presidente Getúlio Vargas",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1741462200
+        },
+        "league": {
+          "id": 609,
+          "name": "Cearense - 1",
+          "logo": "https://media.api-sports.io/football/leagues/609.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1195,
+            "name": "Ferroviario",
+            "logo": "https://media.api-sports.io/football/teams/1195.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1337247,
+          "date": "2025-03-05T22:00:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1741212000
+        },
+        "league": {
+          "id": 612,
+          "name": "Copa do Nordeste",
+          "logo": "https://media.api-sports.io/football/leagues/612.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1195,
+            "name": "Ferroviario",
+            "logo": "https://media.api-sports.io/football/teams/1195.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1354195,
+          "date": "2025-03-01T19:30:00+00:00",
+          "venue": {
+            "id": 237,
+            "name": "Estádio Municipal Presidente Getúlio Vargas",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1740857400
+        },
+        "league": {
+          "id": 609,
+          "name": "Cearense - 1",
+          "logo": "https://media.api-sports.io/football/leagues/609.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1195,
+            "name": "Ferroviario",
+            "logo": "https://media.api-sports.io/football/teams/1195.png",
+            "winner": null
+          },
+          "away": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1337240,
+          "date": "2025-02-20T00:30:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1740011400
+        },
+        "league": {
+          "id": 612,
+          "name": "Copa do Nordeste",
+          "logo": "https://media.api-sports.io/football/leagues/612.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": false
+          },
+          "away": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1337233,
+          "date": "2025-02-12T00:30:00+00:00",
+          "venue": {
+            "id": 12657,
+            "name": "Estádio Governador Alberto Tavares Silva",
+            "city": "Teresina, Piauí"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1739320200
+        },
+        "league": {
+          "id": 612,
+          "name": "Copa do Nordeste",
+          "logo": "https://media.api-sports.io/football/leagues/612.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1203,
+            "name": "Altos",
+            "logo": "https://media.api-sports.io/football/teams/1203.png",
+            "winner": true
+          },
+          "away": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1319046,
+          "date": "2025-02-08T19:30:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739043000
+        },
+        "league": {
+          "id": 609,
+          "name": "Cearense - 1",
+          "logo": "https://media.api-sports.io/football/leagues/609.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": false
+          },
+          "away": {
+            "id": 129,
+            "name": "Ceara",
+            "logo": "https://media.api-sports.io/football/teams/129.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -819,28 +1233,28 @@
   },
   "statistics": {
     "league": {
-      "id": 612,
-      "name": "Copa do Nordeste",
+      "id": 609,
+      "name": "Cearense - 1",
       "country": "Brazil",
-      "logo": "https://media.api-sports.io/football/leagues/612.png",
+      "logo": "https://media.api-sports.io/football/leagues/609.png",
       "flag": "https://media.api-sports.io/flags/br.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 154,
       "name": "Fortaleza EC",
       "logo": "https://media.api-sports.io/football/teams/154.png"
     },
-    "form": "WLWDDLLLWWWL",
+    "form": "WWWWLDWLD",
     "fixtures": {
       "played": {
-        "home": 6,
-        "away": 6,
-        "total": 12
+        "home": 5,
+        "away": 4,
+        "total": 9
       },
       "wins": {
-        "home": 4,
-        "away": 1,
+        "home": 3,
+        "away": 2,
         "total": 5
       },
       "draws": {
@@ -850,16 +1264,16 @@
       },
       "loses": {
         "home": 2,
-        "away": 3,
-        "total": 5
+        "away": 0,
+        "total": 2
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 12,
-          "away": 8,
-          "total": 20
+          "home": 10,
+          "away": 5,
+          "total": 15
         },
         "average": {
           "home": "2.0",
@@ -868,32 +1282,32 @@
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "5.00%"
+            "total": 2,
+            "percentage": "13.33%"
           },
           "16-30": {
-            "total": 6,
-            "percentage": "30.00%"
+            "total": 2,
+            "percentage": "13.33%"
           },
           "31-45": {
-            "total": 6,
-            "percentage": "30.00%"
+            "total": 2,
+            "percentage": "13.33%"
           },
           "46-60": {
             "total": 3,
-            "percentage": "15.00%"
+            "percentage": "20.00%"
           },
           "61-75": {
-            "total": 3,
-            "percentage": "15.00%"
+            "total": 4,
+            "percentage": "26.67%"
           },
           "76-90": {
-            "total": 1,
-            "percentage": "5.00%"
-          },
-          "91-105": {
             "total": null,
             "percentage": null
+          },
+          "91-105": {
+            "total": 2,
+            "percentage": "13.33%"
           },
           "106-120": {
             "total": null,
@@ -902,37 +1316,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 8,
-            "under": 4
+            "over": 7,
+            "under": 2
           },
           "1.5": {
-            "over": 6,
-            "under": 6
+            "over": 2,
+            "under": 7
           },
           "2.5": {
-            "over": 3,
-            "under": 9
+            "over": 2,
+            "under": 7
           },
           "3.5": {
-            "over": 2,
-            "under": 10
+            "over": 1,
+            "under": 8
           },
           "4.5": {
             "over": 1,
-            "under": 11
+            "under": 8
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
-          "away": 9,
-          "total": 13
+          "home": 3,
+          "away": 2,
+          "total": 5
         },
         "average": {
-          "home": "0.7",
-          "away": "1.5",
-          "total": "1.1"
+          "home": "0.6",
+          "away": "0.5",
+          "total": "0.6"
         },
         "minute": {
           "0-15": {
@@ -940,24 +1354,24 @@
             "percentage": null
           },
           "16-30": {
-            "total": 1,
-            "percentage": "7.69%"
+            "total": 2,
+            "percentage": "40.00%"
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "15.38%"
+            "total": 1,
+            "percentage": "20.00%"
           },
           "61-75": {
-            "total": 4,
-            "percentage": "30.77%"
+            "total": 1,
+            "percentage": "20.00%"
           },
           "76-90": {
-            "total": 6,
-            "percentage": "46.15%"
+            "total": 1,
+            "percentage": "20.00%"
           },
           "91-105": {
             "total": null,
@@ -970,104 +1384,104 @@
         },
         "under_over": {
           "0.5": {
-            "over": 10,
-            "under": 2
+            "over": 4,
+            "under": 5
           },
           "1.5": {
-            "over": 2,
-            "under": 10
+            "over": 1,
+            "under": 8
           },
           "2.5": {
-            "over": 1,
-            "under": 11
+            "over": 0,
+            "under": 9
           },
           "3.5": {
             "over": 0,
-            "under": 12
+            "under": 9
           },
           "4.5": {
             "over": 0,
-            "under": 12
+            "under": 9
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
-        "draws": 2,
-        "loses": 3
+        "wins": 4,
+        "draws": 1,
+        "loses": 1
       },
       "wins": {
-        "home": "5-0",
-        "away": "1-4"
+        "home": "7-0",
+        "away": "1-3"
       },
       "loses": {
-        "home": "0-1",
-        "away": "2-0"
+        "home": "1-2",
+        "away": null
       },
       "goals": {
         "for": {
-          "home": 5,
-          "away": 4
+          "home": 7,
+          "away": 3
         },
         "against": {
-          "home": 1,
-          "away": 3
+          "home": 2,
+          "away": 1
         }
       }
     },
     "clean_sheet": {
-      "home": 2,
-      "away": 0,
-      "total": 2
+      "home": 3,
+      "away": 2,
+      "total": 5
     },
     "failed_to_score": {
-      "home": 2,
-      "away": 2,
-      "total": 4
+      "home": 1,
+      "away": 1,
+      "total": 2
     },
     "penalty": {
       "scored": {
-        "total": 2,
+        "total": 3,
         "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 2
+      "total": 3
     },
     "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 3,
-          "percentage": "8.82%"
+          "total": 2,
+          "percentage": "13.33%"
         },
         "16-30": {
-          "total": 5,
-          "percentage": "14.71%"
+          "total": 2,
+          "percentage": "13.33%"
         },
         "31-45": {
-          "total": 7,
-          "percentage": "20.59%"
+          "total": 1,
+          "percentage": "6.67%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "13.33%"
         },
         "61-75": {
-          "total": 5,
-          "percentage": "14.71%"
+          "total": 4,
+          "percentage": "26.67%"
         },
         "76-90": {
-          "total": 9,
-          "percentage": "26.47%"
+          "total": 3,
+          "percentage": "20.00%"
         },
         "91-105": {
-          "total": 5,
-          "percentage": "14.71%"
+          "total": 1,
+          "percentage": "6.67%"
         },
         "106-120": {
           "total": null,
@@ -1080,28 +1494,28 @@
           "percentage": null
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "33.33%"
         },
         "31-45": {
           "total": null,
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "33.33%"
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "33.33%"
         },
         "91-105": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1110,5 +1524,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:28.875Z"
+  "lastUpdated": "2025-03-27T10:42:19.792Z"
 }

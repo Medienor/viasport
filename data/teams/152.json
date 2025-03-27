@@ -34,10 +34,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-01-20",
-          "end": "2024-04-06",
-          "current": false,
+          "year": 2025,
+          "start": "2025-01-22",
+          "end": "2025-03-16",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -59,6 +59,43 @@
     },
     {
       "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 73,
         "name": "Copa Do Brasil",
         "type": "Cup",
@@ -71,10 +108,10 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-02-20",
-          "end": "2024-11-10",
-          "current": false,
+          "year": 2025,
+          "start": "2025-02-18",
+          "end": "2025-03-14",
+          "current": true,
           "coverage": {
             "fixtures": {
               "events": true,
@@ -108,16 +145,16 @@
       },
       "seasons": [
         {
-          "year": 2024,
-          "start": "2024-04-13",
-          "end": "2024-12-08",
-          "current": false,
+          "year": 2025,
+          "start": "2025-03-29",
+          "end": "2025-12-21",
+          "current": true,
           "coverage": {
             "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": true,
-              "statistics_players": true
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
             },
             "standings": true,
             "players": true,
@@ -126,7 +163,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -149,234 +186,117 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1351052,
+          "date": "2025-03-29T21:30:00+00:00",
+          "venue": {
+            "id": 248,
+            "name": "Estádio Alfredo Jaconi",
+            "city": "Caxias do Sul, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743283800
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": null
+          },
+          "away": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
       {
         "fixture": {
-          "id": 1180734,
-          "date": "2024-12-08T19:00:00+00:00",
+          "id": 1349606,
+          "date": "2025-02-25T22:30:00+00:00",
           "venue": {
-            "id": 248,
-            "name": "Estádio Alfredo Jaconi",
-            "city": "Caxias do Sul, Rio Grande do Sul"
+            "id": 5663,
+            "name": "Estádio Regional Willie Davids",
+            "city": "Maringá, Paraná"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 12
+            "extra": 7
           },
-          "timestamp": 1733684400
+          "timestamp": 1740522600
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
         },
         "teams": {
           "home": {
-            "id": 152,
-            "name": "Juventude",
-            "logo": "https://media.api-sports.io/football/teams/152.png",
-            "winner": false
-          },
-          "away": {
-            "id": 135,
-            "name": "Cruzeiro",
-            "logo": "https://media.api-sports.io/football/teams/135.png",
+            "id": 7833,
+            "name": "Maringá",
+            "logo": "https://media.api-sports.io/football/teams/7833.png",
             "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180721,
-          "date": "2024-12-04T23:00:00+00:00",
-          "venue": {
-            "id": 20813,
-            "name": "MorumBIS",
-            "city": "São Paulo, São Paulo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1733353200
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 126,
-            "name": "Sao Paulo",
-            "logo": "https://media.api-sports.io/football/teams/126.png",
-            "winner": false
           },
           "away": {
             "id": 152,
             "name": "Juventude",
             "logo": "https://media.api-sports.io/football/teams/152.png",
-            "winner": true
+            "winner": false
           }
         },
         "goals": {
           "home": 1,
-          "away": 2
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 0
           },
           "fulltime": {
             "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180706,
-          "date": "2024-11-27T00:30:00+00:00",
-          "venue": {
-            "id": 206,
-            "name": "Estádio Raimundo Sampaio",
-            "city": "Belo Horizonte, Minas Gerais"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1732667400
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1062,
-            "name": "Atletico-MG",
-            "logo": "https://media.api-sports.io/football/teams/1062.png",
-            "winner": false
-          },
-          "away": {
-            "id": 152,
-            "name": "Juventude",
-            "logo": "https://media.api-sports.io/football/teams/152.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180704,
-          "date": "2024-11-23T22:30:00+00:00",
-          "venue": {
-            "id": 248,
-            "name": "Estádio Alfredo Jaconi",
-            "city": "Caxias do Sul, Rio Grande do Sul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1732401000
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 152,
-            "name": "Juventude",
-            "logo": "https://media.api-sports.io/football/teams/152.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
             "away": 0
           },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
           "extratime": {
             "home": null,
             "away": null
@@ -389,8 +309,8 @@
       },
       {
         "fixture": {
-          "id": 1180685,
-          "date": "2024-11-20T22:00:00+00:00",
+          "id": 1352033,
+          "date": "2025-02-23T00:30:00+00:00",
           "venue": {
             "id": 241,
             "name": "Arena do Grêmio",
@@ -400,85 +320,26 @@
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 8
+            "extra": 12
           },
-          "timestamp": 1732140000
+          "timestamp": 1740270600
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
         },
         "teams": {
           "home": {
             "id": 130,
             "name": "Gremio",
             "logo": "https://media.api-sports.io/football/teams/130.png",
-            "winner": null
-          },
-          "away": {
-            "id": 152,
-            "name": "Juventude",
-            "logo": "https://media.api-sports.io/football/teams/152.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180684,
-          "date": "2024-11-09T22:00:00+00:00",
-          "venue": {
-            "id": 248,
-            "name": "Estádio Alfredo Jaconi",
-            "city": "Caxias do Sul, Rio Grande do Sul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1731189600
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 152,
-            "name": "Juventude",
-            "logo": "https://media.api-sports.io/football/teams/152.png",
             "winner": true
           },
           "away": {
-            "id": 118,
-            "name": "Bahia",
-            "logo": "https://media.api-sports.io/football/teams/118.png",
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
             "winner": false
           }
         },
@@ -488,7 +349,7 @@
         },
         "score": {
           "halftime": {
-            "home": 0,
+            "home": 1,
             "away": 1
           },
           "fulltime": {
@@ -507,51 +368,51 @@
       },
       {
         "fixture": {
-          "id": 1180674,
-          "date": "2024-11-02T21:30:00+00:00",
+          "id": 1322123,
+          "date": "2025-02-15T19:30:00+00:00",
           "venue": {
-            "id": 248,
-            "name": "Estádio Alfredo Jaconi",
-            "city": "Caxias do Sul, Rio Grande do Sul"
+            "id": 7078,
+            "name": "Estádio Boca do Lobo",
+            "city": "Pelotas, Rio Grande do Sul"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 3
+            "extra": 9
           },
-          "timestamp": 1730583000
+          "timestamp": 1739647800
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
         },
         "teams": {
           "home": {
-            "id": 152,
-            "name": "Juventude",
-            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "id": 10043,
+            "name": "Pelotas",
+            "logo": "https://media.api-sports.io/football/teams/10043.png",
             "winner": false
           },
           "away": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
             "winner": true
           }
         },
         "goals": {
-          "home": 0,
+          "home": 2,
           "away": 3
         },
         "score": {
           "halftime": {
             "home": 0,
-            "away": 2
+            "away": 1
           },
           "fulltime": {
-            "home": 0,
+            "home": 2,
             "away": 3
           },
           "extratime": {
@@ -566,149 +427,31 @@
       },
       {
         "fixture": {
-          "id": 1180658,
-          "date": "2024-10-26T19:30:00+00:00",
+          "id": 1322115,
+          "date": "2025-02-12T22:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estadio Jornalista Mário Filho",
-            "city": "Rio de Janeiro, Rio de Janeiro"
+            "name": "Estádio Ildo Meneghetti",
+            "city": "Porto Alegre, Rio Grande do Sul"
           },
           "status": {
             "long": "Match Finished",
             "short": "FT",
             "elapsed": 90,
-            "extra": 8
+            "extra": 6
           },
-          "timestamp": 1729971000
+          "timestamp": 1739399400
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
         },
         "teams": {
           "home": {
-            "id": 127,
-            "name": "Flamengo",
-            "logo": "https://media.api-sports.io/football/teams/127.png",
-            "winner": true
-          },
-          "away": {
-            "id": 152,
-            "name": "Juventude",
-            "logo": "https://media.api-sports.io/football/teams/152.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180654,
-          "date": "2024-10-20T23:00:00+00:00",
-          "venue": {
-            "id": 248,
-            "name": "Estádio Alfredo Jaconi",
-            "city": "Caxias do Sul, Rio Grande do Sul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1729465200
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 152,
-            "name": "Juventude",
-            "logo": "https://media.api-sports.io/football/teams/152.png",
-            "winner": false
-          },
-          "away": {
-            "id": 121,
-            "name": "Palmeiras",
-            "logo": "https://media.api-sports.io/football/teams/121.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 5
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 5
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1180639,
-          "date": "2024-10-06T00:00:00+00:00",
-          "venue": {
-            "id": 19377,
-            "name": "Estádio São Januário",
-            "city": "Rio de Janeiro, Rio de Janeiro"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1728172800
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "id": 2205,
+            "name": "Avenida",
+            "logo": "https://media.api-sports.io/football/teams/2205.png",
             "winner": null
           },
           "away": {
@@ -725,11 +468,365 @@
         "score": {
           "halftime": {
             "home": 1,
-            "away": 1
+            "away": 0
           },
           "fulltime": {
             "home": 1,
             "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1322113,
+          "date": "2025-02-09T22:00:00+00:00",
+          "venue": {
+            "id": 248,
+            "name": "Estádio Alfredo Jaconi",
+            "city": "Caxias do Sul, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1739138400
+        },
+        "league": {
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
+        },
+        "teams": {
+          "home": {
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2232,
+            "name": "Sao Jose",
+            "logo": "https://media.api-sports.io/football/teams/2232.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1322103,
+          "date": "2025-02-06T01:00:00+00:00",
+          "venue": {
+            "id": 248,
+            "name": "Estádio Alfredo Jaconi",
+            "city": "Caxias do Sul, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1738803600
+        },
+        "league": {
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
+        },
+        "teams": {
+          "home": {
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": true
+          },
+          "away": {
+            "id": 130,
+            "name": "Gremio",
+            "logo": "https://media.api-sports.io/football/teams/130.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1322100,
+          "date": "2025-02-01T23:30:00+00:00",
+          "venue": {
+            "id": 5625,
+            "name": "Estádio Francisco Stédile",
+            "city": "Caxias do Sul, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1738452600
+        },
+        "league": {
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7770,
+            "name": "Caxias",
+            "logo": "https://media.api-sports.io/football/teams/7770.png",
+            "winner": false
+          },
+          "away": {
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1322091,
+          "date": "2025-01-28T22:00:00+00:00",
+          "venue": {
+            "id": 248,
+            "name": "Estádio Alfredo Jaconi",
+            "city": "Caxias do Sul, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1738101600
+        },
+        "league": {
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
+        },
+        "teams": {
+          "home": {
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10049,
+            "name": "Guarany de Bagé",
+            "logo": "https://media.api-sports.io/football/teams/10049.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1322086,
+          "date": "2025-01-25T19:30:00+00:00",
+          "venue": {
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1737833400
+        },
+        "league": {
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
+        },
+        "teams": {
+          "home": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": true
+          },
+          "away": {
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1322080,
+          "date": "2025-01-22T22:00:00+00:00",
+          "venue": {
+            "id": 248,
+            "name": "Estádio Alfredo Jaconi",
+            "city": "Caxias do Sul, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1737583200
+        },
+        "league": {
+          "id": 477,
+          "name": "Gaúcho - 1",
+          "logo": "https://media.api-sports.io/football/leagues/477.png"
+        },
+        "teams": {
+          "home": {
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1221,
+            "name": "Ypiranga-RS",
+            "logo": "https://media.api-sports.io/football/teams/1221.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -750,250 +847,250 @@
       "country": "Brazil",
       "logo": "https://media.api-sports.io/football/leagues/477.png",
       "flag": "https://media.api-sports.io/flags/br.svg",
-      "season": 2024
+      "season": 2025
     },
     "team": {
       "id": 152,
       "name": "Juventude",
       "logo": "https://media.api-sports.io/football/teams/152.png"
     },
-    "form": "WWLLWWDDDLLWDDDL",
+    "form": "WLWWWWDWLW",
     "fixtures": {
       "played": {
-        "home": 7,
-        "away": 9,
-        "total": 16
+        "home": 5,
+        "away": 5,
+        "total": 10
       },
       "wins": {
-        "home": 3,
+        "home": 5,
         "away": 2,
-        "total": 5
+        "total": 7
       },
       "draws": {
-        "home": 3,
-        "away": 3,
-        "total": 6
+        "home": 0,
+        "away": 1,
+        "total": 1
       },
       "loses": {
-        "home": 1,
-        "away": 4,
-        "total": 5
+        "home": 0,
+        "away": 2,
+        "total": 2
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 12,
-          "away": 9,
-          "total": 21
+          "home": 10,
+          "away": 7,
+          "total": 17
         },
         "average": {
-          "home": "1.7",
-          "away": "1.0",
-          "total": "1.3"
+          "home": "2.0",
+          "away": "1.4",
+          "total": "1.7"
         },
         "minute": {
           "0-15": {
-            "total": 3,
-            "percentage": "12.00%"
+            "total": 1,
+            "percentage": "5.26%"
           },
           "16-30": {
-            "total": 3,
-            "percentage": "12.00%"
+            "total": null,
+            "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "8.00%"
+            "total": 4,
+            "percentage": "21.05%"
           },
           "46-60": {
-            "total": 4,
-            "percentage": "16.00%"
+            "total": 3,
+            "percentage": "15.79%"
           },
           "61-75": {
-            "total": 4,
-            "percentage": "16.00%"
+            "total": 2,
+            "percentage": "10.53%"
           },
           "76-90": {
-            "total": 2,
-            "percentage": "8.00%"
+            "total": 4,
+            "percentage": "21.05%"
           },
           "91-105": {
-            "total": 1,
-            "percentage": "4.00%"
+            "total": 3,
+            "percentage": "15.79%"
           },
           "106-120": {
-            "total": 6,
-            "percentage": "24.00%"
+            "total": 2,
+            "percentage": "10.53%"
           }
         },
         "under_over": {
           "0.5": {
-            "over": 11,
-            "under": 5
+            "over": 9,
+            "under": 1
           },
           "1.5": {
-            "over": 4,
-            "under": 12
+            "over": 6,
+            "under": 4
           },
           "2.5": {
-            "over": 4,
-            "under": 12
+            "over": 2,
+            "under": 8
           },
           "3.5": {
-            "over": 2,
-            "under": 14
+            "over": 0,
+            "under": 10
           },
           "4.5": {
             "over": 0,
-            "under": 16
+            "under": 10
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
-          "away": 9,
-          "total": 13
+          "home": 2,
+          "away": 7,
+          "total": 9
         },
         "average": {
-          "home": "0.6",
-          "away": "1.0",
-          "total": "0.8"
+          "home": "0.4",
+          "away": "1.4",
+          "total": "0.9"
         },
         "minute": {
           "0-15": {
+            "total": 2,
+            "percentage": "16.67%"
+          },
+          "16-30": {
             "total": null,
             "percentage": null
           },
-          "16-30": {
-            "total": 5,
-            "percentage": "25.00%"
-          },
           "31-45": {
-            "total": 2,
-            "percentage": "10.00%"
+            "total": null,
+            "percentage": null
           },
           "46-60": {
-            "total": 4,
-            "percentage": "20.00%"
+            "total": 2,
+            "percentage": "16.67%"
           },
           "61-75": {
             "total": 1,
-            "percentage": "5.00%"
+            "percentage": "8.33%"
           },
           "76-90": {
             "total": 3,
-            "percentage": "15.00%"
+            "percentage": "25.00%"
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "8.33%"
           },
           "106-120": {
-            "total": 5,
+            "total": 3,
             "percentage": "25.00%"
           }
         },
         "under_over": {
           "0.5": {
-            "over": 10,
-            "under": 6
+            "over": 6,
+            "under": 4
           },
           "1.5": {
-            "over": 2,
-            "under": 14
+            "over": 3,
+            "under": 7
           },
           "2.5": {
-            "over": 1,
-            "under": 15
+            "over": 0,
+            "under": 10
           },
           "3.5": {
             "over": 0,
-            "under": 16
+            "under": 10
           },
           "4.5": {
             "over": 0,
-            "under": 16
+            "under": 10
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 2,
-        "draws": 3,
-        "loses": 2
+        "wins": 4,
+        "draws": 1,
+        "loses": 1
       },
       "wins": {
-        "home": "4-0",
-        "away": "0-4"
+        "home": "3-1",
+        "away": "0-2"
       },
       "loses": {
-        "home": "1-2",
-        "away": "3-1"
+        "home": null,
+        "away": "2-0"
       },
       "goals": {
         "for": {
-          "home": 4,
-          "away": 4
+          "home": 3,
+          "away": 3
         },
         "against": {
-          "home": 2,
-          "away": 3
+          "home": 1,
+          "away": 2
         }
       }
     },
     "clean_sheet": {
-      "home": 4,
-      "away": 2,
-      "total": 6
+      "home": 3,
+      "away": 1,
+      "total": 4
     },
     "failed_to_score": {
-      "home": 2,
-      "away": 3,
-      "total": 5
+      "home": 0,
+      "away": 1,
+      "total": 1
     },
     "penalty": {
       "scored": {
-        "total": 6,
-        "percentage": "85.71%"
+        "total": 3,
+        "percentage": "50.00%"
       },
       "missed": {
-        "total": 1,
-        "percentage": "14.29%"
+        "total": 3,
+        "percentage": "50.00%"
       },
-      "total": 7
+      "total": 6
     },
     "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 2,
-          "percentage": "4.76%"
+          "total": null,
+          "percentage": null
         },
         "16-30": {
-          "total": 6,
-          "percentage": "14.29%"
+          "total": 3,
+          "percentage": "13.64%"
         },
         "31-45": {
-          "total": 6,
-          "percentage": "14.29%"
+          "total": 2,
+          "percentage": "9.09%"
         },
         "46-60": {
-          "total": 9,
-          "percentage": "21.43%"
+          "total": 6,
+          "percentage": "27.27%"
         },
         "61-75": {
-          "total": 10,
-          "percentage": "23.81%"
+          "total": 5,
+          "percentage": "22.73%"
         },
         "76-90": {
-          "total": 8,
-          "percentage": "19.05%"
+          "total": 6,
+          "percentage": "27.27%"
         },
         "91-105": {
-          "total": 1,
-          "percentage": "2.38%"
+          "total": null,
+          "percentage": null
         },
         "106-120": {
           "total": null,
@@ -1006,8 +1103,8 @@
           "percentage": null
         },
         "16-30": {
-          "total": 1,
-          "percentage": "100.00%"
+          "total": null,
+          "percentage": null
         },
         "31-45": {
           "total": null,
@@ -1026,8 +1123,8 @@
           "percentage": null
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "100.00%"
         },
         "106-120": {
           "total": null,
@@ -1036,5 +1133,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-24T20:43:28.895Z"
+  "lastUpdated": "2025-03-27T10:42:19.804Z"
 }
