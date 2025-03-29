@@ -10,8 +10,8 @@ import MatchHighlights from '@/app/components/MatchHighlights';
 import UpcomingMatchDetails from '@/app/components/UpcomingMatchDetails';
 import PreventAutoScroll from '@/app/components/PreventAutoScroll';
 
-// Instead, use dynamic rendering with ISR for this page
-export const dynamic = 'force-dynamic';
+// Add these instead
+export const revalidate = 86400; // 24 hours cache
 
 // Add these type definitions at the top of your file
 interface Team {
