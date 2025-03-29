@@ -78,30 +78,22 @@ export const MAJOR_LEAGUES = [
 // Add this constant at the top of the file, before any functions
 const norwegianLeagues = [103, 104, 725]; // Eliteserien, OBOS-ligaen, Toppserien
 
-// Add rate limiting helper
-const rateLimiter = {
-  requestCount: 0,
-  lastResetTime: Date.now(),
+// Export the rate limiter
+export const rateLimiter = {
+  lastCall: 0,
+  minDelay: 500, // 500ms between calls
   
   async checkLimit() {
     const now = Date.now();
-    const timeWindow = 60 * 1000; // 1 minute in milliseconds
+    const timeSinceLastCall = now - this.lastCall;
     
-    if (now - this.lastResetTime > timeWindow) {
-      // Reset counter if a minute has passed
-      this.requestCount = 0;
-      this.lastResetTime = now;
+    if (timeSinceLastCall < this.minDelay) {
+      await new Promise(resolve => 
+        setTimeout(resolve, this.minDelay - timeSinceLastCall)
+      );
     }
     
-    if (this.requestCount >= 850) { // Leave some buffer
-      const waitTime = timeWindow - (now - this.lastResetTime);
-      console.log(`Rate limit approaching, waiting ${waitTime/1000} seconds...`);
-      await new Promise(resolve => setTimeout(resolve, waitTime));
-      this.requestCount = 0;
-      this.lastResetTime = Date.now();
-    }
-    
-    this.requestCount++;
+    this.lastCall = Date.now();
   }
 };
 

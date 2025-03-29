@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { headers, BASE_URL } from '@/app/services/sportApi';
 
+export const revalidate = 86400; // 24 hours
+
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const teamId = searchParams.get('team');
@@ -16,7 +18,7 @@ export async function GET(request: NextRequest) {
   try {
     const response = await fetch(`${BASE_URL}/leagues?team=${teamId}&season=${season}`, {
       headers,
-      next: { revalidate: 3600 } // Cache for 1 hour
+      next: { revalidate: 86400 } // 24 hours cache
     });
     
     if (!response.ok) {

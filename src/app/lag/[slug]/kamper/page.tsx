@@ -6,6 +6,9 @@ import TabNav from '@/app/components/TabNav';
 import { format } from 'date-fns';
 import { nb } from 'date-fns/locale';
 
+export const dynamic = 'force-static';
+export const revalidate = 86400; // 24 hours
+
 export default async function TeamFixturesPage({ params }: { params: { slug: string } }) {
   const teamId = extractTeamId(params.slug);
   

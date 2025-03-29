@@ -17,6 +17,12 @@ function logDisabledCall(functionName: string, ...args: any[]) {
   return null;
 }
   
+// Update the fetch options type
+type FetchOptions = {
+  next?: { revalidate: number };
+  headers?: Record<string, string>;
+};
+  
   /**
    * Fetch basic team data
    * @param teamId - Team ID
@@ -99,10 +105,12 @@ function logDisabledCall(functionName: string, ...args: any[]) {
     try {
       console.log(`Fetching standings for team ${teamId} (optimized)`);
       
-      // Step 1: Get the leagues the team plays in
-      console.log(`Getting leagues for team ${teamId}`);
       const leaguesResponse = await fetch(`${BASE_URL}/leagues?team=${teamId}`, {
-        headers
+        headers: {
+          ...headers,
+          'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate'
+        },
+        next: { revalidate: 86400 }
       });
       
       if (!leaguesResponse.ok) {
@@ -120,7 +128,11 @@ function logDisabledCall(functionName: string, ...args: any[]) {
         const currentSeason = new Date().getMonth() >= 6 ? currentYear : currentYear - 1;
         
         const premierLeagueResponse = await fetch(`${BASE_URL}/standings?league=39&season=${currentSeason}`, {
-          headers
+          headers: {
+            'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate',
+            ...headers
+          },
+          next: { revalidate: 86400 } // 24 hours cache
         });
         
         if (premierLeagueResponse.ok) {
@@ -188,7 +200,11 @@ function logDisabledCall(functionName: string, ...args: any[]) {
         
         try {
           const response = await fetch(`${BASE_URL}/standings?league=${league.id}&season=${currentSeason}`, {
-            headers
+            headers: {
+              'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate',
+              ...headers
+            },
+            next: { revalidate: 86400 } // 24 hours cache
           });
           
           if (response.ok) {
@@ -208,7 +224,11 @@ function logDisabledCall(functionName: string, ...args: any[]) {
         
         try {
           const response = await fetch(`${BASE_URL}/standings?league=${league.id}&season=${previousSeason}`, {
-            headers
+            headers: {
+              'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate',
+              ...headers
+            },
+            next: { revalidate: 86400 } // 24 hours cache
           });
           
           if (response.ok) {
@@ -228,7 +248,11 @@ function logDisabledCall(functionName: string, ...args: any[]) {
       
       // Try Premier League as last resort
       const premierLeagueResponse = await fetch(`${BASE_URL}/standings?league=39&season=${currentSeason}`, {
-        headers
+        headers: {
+          'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate',
+          ...headers
+        },
+        next: { revalidate: 86400 } // 24 hours cache
       });
       
       if (premierLeagueResponse.ok) {
@@ -254,12 +278,17 @@ function logDisabledCall(functionName: string, ...args: any[]) {
   export async function fetchTeamMatches(teamId: number, type: 'upcoming' | 'past') {
     // Remove the API disable check
     try {
+      const options = {
+        next: { revalidate: 86400 }, // 24 hours cache
+        headers: {
+          'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate'
+        }
+      };
+      
       if (type === 'upcoming') {
-        // Use the existing function for upcoming matches
-        return await getTeamMatches(teamId, 'NS', 10);
+        return await getTeamMatches(teamId, 'NS', 10, options);
       } else {
-        // Use the existing function for past matches
-        return await getTeamMatches(teamId, 'FT', 10);
+        return await getTeamMatches(teamId, 'FT', 10, options);
       }
     } catch (error) {
       console.error(`Error fetching ${type} matches for team ID ${teamId}:`, error);
@@ -275,7 +304,12 @@ function logDisabledCall(functionName: string, ...args: any[]) {
   export async function fetchTeamPlayers(teamId: number) {
     // Remove the API disable check
     try {
-      const squad = await getTeamSquad(teamId);
+      const squad = await getTeamSquad(teamId, {
+        next: { revalidate: 86400 }, // 24 hours cache
+        headers: {
+          'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate'
+        }
+      });
       
       return squad.map(player => ({
         id: player.id,
@@ -292,8 +326,17 @@ function logDisabledCall(functionName: string, ...args: any[]) {
     }
   }
   
-  // Export the trackedFetch function
-  export const trackedFetch = async (url: string, options?: RequestInit) => {
+  // Update trackedFetch to handle types correctly
+  export const trackedFetch = async (url: string, options: RequestInit = {}) => {
+    const mergedOptions: RequestInit = {
+      ...options,
+      headers: {
+        ...options.headers,
+        'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate'
+      },
+      next: { revalidate: 86400 }
+    };
+
     // Skip API call if disabled
     if (DISABLE_API_CALLS) {
       console.log(`[API DISABLED] trackedFetch would have been called with URL: ${url}`);
@@ -303,14 +346,9 @@ function logDisabledCall(functionName: string, ...args: any[]) {
     }
 
     try {
-      // Extract the endpoint path from the URL
       const endpoint = new URL(url).pathname;
-      
-      // Increment the request counter
       useAPITracking.getState().incrementRequest(endpoint);
-      
-      // Make the actual fetch request
-      return await fetch(url, options);
+      return await fetch(url, mergedOptions);
     } catch (error) {
       console.error('Error in trackedFetch:', error);
       throw error;
@@ -546,9 +584,10 @@ function logDisabledCall(functionName: string, ...args: any[]) {
       const response = await fetch(`https://api-football-v1.p.rapidapi.com/v3/players?search=${encodeURIComponent(searchQuery)}`, {
         headers: {
           'x-rapidapi-key': '1a7dc8ba9cmshff75c6099ce0152p158153jsnac5252d21d90',
-          'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
+          'x-rapidapi-host': 'api-football-v1.p.rapidapi.com',
+          'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate'
         },
-        next: { revalidate: 3600 } // Cache for 1 hour
+        next: { revalidate: 86400 }
       });
 
       if (!response.ok) {
@@ -597,9 +636,10 @@ function logDisabledCall(functionName: string, ...args: any[]) {
       const response = await trackedFetch(`https://api-football-v1.p.rapidapi.com/v3/players/teams?player=${playerId}`, {
         headers: {
           'x-rapidapi-key': '1a7dc8ba9cmshff75c6099ce0152p158153jsnac5252d21d90',
-          'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
+          'x-rapidapi-host': 'api-football-v1.p.rapidapi.com',
+          'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate'
         },
-        next: { revalidate: 86400 } // Cache for 24 hours
+        next: { revalidate: 86400 }
       });
       
       if (!response.ok) {

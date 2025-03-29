@@ -4,6 +4,8 @@ import { headers, BASE_URL } from '@/app/services/sportApi';
 // Remove the API disable flag
 // const DISABLE_API_CALLS = true;
 
+export const revalidate = 86400; // 24 hours
+
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const leagueId = searchParams.get('league');
@@ -19,7 +21,7 @@ export async function GET(request: NextRequest) {
   try {
     const response = await fetch(`${BASE_URL}/standings?league=${leagueId}&season=${season}`, {
       headers,
-      next: { revalidate: 3600 } // Cache for 1 hour
+      next: { revalidate: 86400 } // 24 hours cache
     });
     
     if (!response.ok) {

@@ -112,10 +112,6 @@ export default function MatchOddsSlider({ matchId, isFinished = false }: MatchOd
     
     if (matchId) {
       fetchOdds();
-      
-      // Refresh odds every minute for live matches
-      const intervalId = setInterval(fetchOdds, 60000);
-      return () => clearInterval(intervalId);
     }
   }, [matchId, isFinished]);
   

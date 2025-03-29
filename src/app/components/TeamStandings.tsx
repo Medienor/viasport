@@ -31,8 +31,13 @@ export default function TeamStandings({ teamId, seasons, teamName, hideSeasonSel
         
         console.log(`Fetching leagues for team ${teamId}, season ${selectedSeason}`);
         
-        // Fetch the team's leagues for the selected season
-        const response = await fetch(`/api/leagues?team=${teamId}&season=${selectedSeason}`);
+        // Add cache-control headers to the fetch request
+        const response = await fetch(`/api/leagues?team=${teamId}&season=${selectedSeason}`, {
+          next: { revalidate: 86400 }, // 24 hours cache
+          headers: {
+            'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate'
+          }
+        });
         
         if (!response.ok) {
           throw new Error(`API responded with status: ${response.status}`);
@@ -83,8 +88,13 @@ export default function TeamStandings({ teamId, seasons, teamName, hideSeasonSel
         
         console.log(`Fetching standings for league ${selectedLeagueId}, season ${selectedSeason}`);
         
-        // Use the standings endpoint with league parameter to get all teams
-        const response = await fetch(`/api/standings?league=${selectedLeagueId}&season=${selectedSeason}`);
+        // Add cache-control headers to the fetch request
+        const response = await fetch(`/api/standings?league=${selectedLeagueId}&season=${selectedSeason}`, {
+          next: { revalidate: 86400 }, // 24 hours cache
+          headers: {
+            'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate'
+          }
+        });
         
         if (!response.ok) {
           throw new Error(`API responded with status: ${response.status}`);

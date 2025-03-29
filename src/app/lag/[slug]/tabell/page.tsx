@@ -4,6 +4,9 @@ import { getTeamData, extractTeamId } from '@/utils/api';
 import TabNav from '@/app/components/TabNav';
 import TeamStandings from '@/app/components/TeamStandings';
 
+export const dynamic = 'force-static';
+export const revalidate = 86400; // 24 hours
+
 export default async function TeamTablePage({ params }: { params: { slug: string } }) {
   const teamId = extractTeamId(params.slug);
   
