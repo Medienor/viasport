@@ -19,6 +19,12 @@ interface MatchHighlightsProps {
   matchDate: string;
   matchStatus: string;
   maxResults?: number;
+  match?: {
+    goals?: {
+      home: number;
+      away: number;
+    };
+  };
 }
 
 // Define a more specific type for YouTube API response
@@ -50,7 +56,8 @@ export default function MatchHighlights({
   awayTeam, 
   matchDate,
   matchStatus,
-  maxResults = 5 
+  maxResults = 5,
+  match
 }: MatchHighlightsProps) {
   const [videos, setVideos] = useState<Video[]>([]);
   const [loading, setLoading] = useState(true);
@@ -75,14 +82,28 @@ export default function MatchHighlights({
       
       setLoading(true);
       try {
-        // Format the search query
-        const searchQuery = `${homeTeam} vs ${awayTeam}`;
+        // Construct search query based on match status
+        let searchQuery;
+        if (matchStatus === 'FT' || matchStatus === 'AET' || matchStatus === 'PEN') {
+          // For finished matches, include the score if available
+          const score = `${match?.goals?.home ?? '?'}-${match?.goals?.away ?? '?'}`;
+          searchQuery = `${homeTeam} ${awayTeam} ${score} highlights all goals`;
+        } else if (matchStatus === 'NS') {
+          // For upcoming matches
+          searchQuery = `${homeTeam} vs ${awayTeam} prediction`;
+        } else {
+          // Default query for other statuses
+          searchQuery = `${homeTeam} vs ${awayTeam} highlights`;
+        }
+        
         const encodedQuery = encodeURIComponent(searchQuery);
         
         console.log(`Fetching videos for: ${searchQuery}, status: ${matchStatus}`);
         
-        // Get videos from our API endpoint with match status
-        const response = await fetch(`/api/youtube/search?q=${encodedQuery}&maxResults=${maxResults}&status=${matchStatus}`);
+        // Add order parameter to get most viewed/relevant videos first
+        const response = await fetch(
+          `/api/youtube/search?q=${encodedQuery}&maxResults=${maxResults}&status=${matchStatus}&order=viewCount`
+        );
         
         console.log(`API response status: ${response.status}`);
         
@@ -170,32 +191,19 @@ export default function MatchHighlights({
     }
   };
 
+  // If no videos found or error, return null instead of empty component
+  if (error || videos.length === 0) {
+    return null;
+  }
+
   if (loading) {
     return (
       <div className="bg-white rounded-lg overflow-hidden mb-6">
         <div className="p-4 border-b border-gray-100">
           <h2 className="text-xl font-bold">{getSectionTitle()}</h2>
         </div>
-        <div className="flex justify-center items-center h-64 bg-gray-50">
+        <div className="flex justify-center items-center h-64">
           <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-blue-600"></div>
-        </div>
-      </div>
-    );
-  }
-
-  if (error || videos.length === 0) {
-    return (
-      <div className="bg-white rounded-lg overflow-hidden mb-6">
-        <div className="p-4 border-b border-gray-100">
-          <h2 className="text-xl font-bold">{getSectionTitle()}</h2>
-        </div>
-        <div className="flex flex-col justify-center items-center h-64 bg-gray-50 p-6">
-          <svg className="w-16 h-16 text-gray-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-          </svg>
-          <p className="text-gray-500 text-center">
-            {error || `Ingen ${getSectionTitle().toLowerCase()} tilgjengelig for denne kampen ennå.`}
-          </p>
         </div>
       </div>
     );

@@ -272,16 +272,15 @@ async function fetchAndInsertFixtures(leagueId: number, leagueName: string, seas
     const fixtures = response.data.response;
     console.log(`Found ${fixtures.length} fixtures for ${leagueName}`);
 
-    // 2. Get all finished fixtures that need events
-    const finishedFixtureIds = fixtures
-      .filter(f => FINISHED_MATCH_STATUSES.includes(f.fixture.status.short))
+    // Modify to include both finished and upcoming matches
+    const relevantFixtureIds = fixtures
+      .filter(f => [...FINISHED_MATCH_STATUSES, 'NS'].includes(f.fixture.status.short))
       .map(f => f.fixture.id);
 
-    // 3. Check which fixtures already have events in Supabase
     const { data: existingFixtures } = await supabase
       .from('fixtures')
       .select('id, event_data, fixture_statistics, head_to_head')
-      .in('id', finishedFixtureIds);
+      .in('id', relevantFixtureIds);
 
     const existingEventIds = new Set(
       existingFixtures
@@ -295,15 +294,15 @@ async function fetchAndInsertFixtures(leagueId: number, leagueName: string, seas
         .map(f => f.id)
     );
 
-    // 4. Get fixtures that need events or statistics
-    const fixturesNeedingEvents = finishedFixtureIds
+    // For events and statistics, still use only finished matches
+    const fixturesNeedingEvents = relevantFixtureIds
       .filter(id => !existingEventIds.has(id));
     
-    const fixturesNeedingStatistics = finishedFixtureIds
+    const fixturesNeedingStatistics = relevantFixtureIds
       .filter(id => !existingStatisticsIds.has(id));
 
-    // Properly declare fixturesNeedingH2H
-    const fixturesNeedingH2H = finishedFixtureIds.filter(id => {
+    // For H2H, use all relevant fixtures (finished + upcoming)
+    const fixturesNeedingH2H = relevantFixtureIds.filter(id => {
       const fixture = existingFixtures?.find(f => f.id === id);
       return !fixture?.head_to_head;
     });

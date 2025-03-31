@@ -5,6 +5,9 @@ import { createClient } from '@supabase/supabase-js';
 import type { Fixture } from '@/types/fixtures';
 import MatchCalendar from '@/app/components/MatchCalendar';
 import PreventAutoScroll from '@/app/components/PreventAutoScroll';
+import HeadToHeadFixtures from '@/app/components/HeadToHeadFixtures';
+import MatchHighlights from '@/app/components/MatchHighlights';
+import { formatMatchDateTime } from '@/utils/dateUtils';
 
 export const revalidate = 86400; // 24 hours cache
 
@@ -41,7 +44,8 @@ async function fetchMatchById(matchId: string): Promise<Fixture | null> {
         event_cards_yellow,
         event_cards_red,
         event_substitutions,
-        fixture_statistics
+        fixture_statistics,
+        head_to_head
       `)
       .eq('id', matchId)
       .single();
@@ -90,35 +94,6 @@ export async function generateStaticParams() {
   } catch (error) {
     console.error('Error generating static params:', error);
     return [];
-  }
-}
-
-export async function generateMetadata({ 
-  params 
-}: { 
-  params: Promise<{ matchId: string }> 
-}): Promise<Metadata> {
-  const resolvedParams = await params;
-  try {
-    const match = await fetchMatchById(resolvedParams.matchId);
-    
-    if (!match) {
-      return {
-        title: 'Match Details | ViaSport',
-        description: 'Follow football matches live on ViaSport.',
-      };
-    }
-
-    return {
-      title: `${match.teams.home.name} vs ${match.teams.away.name} | ViaSport`,
-      description: `Follow the match between ${match.teams.home.name} and ${match.teams.away.name} live on ViaSport.`,
-    };
-  } catch (error) {
-    console.error('Error generating metadata:', error);
-    return {
-      title: 'Match Details | ViaSport',
-      description: 'Follow football matches live on ViaSport.',
-    };
   }
 }
 
@@ -173,18 +148,14 @@ function generateMatchSummary(match: any) {
 // Add this function to check if match is finished
 const isMatchFinished = (status: string) => ['FT', 'AET', 'PEN'].includes(status);
 
-export default async function MatchPage({ 
-  params 
-}: { 
-  params: Promise<{ matchId: string }> 
-}) {
+export default async function MatchPage({ params }: { params: { matchId: string } }) {
   // Await the params
   const resolvedParams = await params;
   console.log('🔵 Rendering MatchPage with params:', resolvedParams);
   
   if (!resolvedParams?.matchId) {
     return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-0 sm:px-0 lg:px-8 py-8">
         <div className="bg-white rounded-lg shadow-md p-6">
           <h1 className="text-2xl font-bold text-red-600 mb-4">Invalid Match ID</h1>
           <Link href="/" className="mt-4 inline-block text-blue-600 hover:text-blue-800">
@@ -210,7 +181,7 @@ export default async function MatchPage({
     const matchStatus = match.match_status;
     
     return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-0 sm:px-0 lg:px-8 py-8">
         <PreventAutoScroll />
         <div className="flex flex-col md:flex-row gap-8">
           {/* Right column - Match details (now first on mobile) */}
@@ -226,19 +197,24 @@ export default async function MatchPage({
             >
               {/* League info */}
               <div className="p-4">
-                <div className="flex justify-between items-center text-white">
-                  <div className="flex items-center">
-                    <div className="relative h-6 w-6 mr-2">
-                      <Image 
-                        src={match.league.logo}
-                        alt={match.league.name}
-                        fill
-                        className="object-contain"
-                      />
+                <div className="flex flex-col md:flex-row md:justify-between md:items-center text-white">
+                  {/* League on left for desktop, centered for mobile */}
+                  <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
+                    <div className="flex items-center mb-1 md:mb-0">
+                      <div className="relative h-6 w-6 mr-2">
+                        <Image 
+                          src={match.league.logo}
+                          alt={match.league.name}
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <span className="font-medium text-sm">{match.league.name}</span>
                     </div>
-                    <span className="font-medium text-sm">{match.league.name}</span>
                   </div>
-                  <span className="text-sm truncate ml-2">
+
+                  {/* Venue on right for desktop, below league for mobile */}
+                  <span className="text-sm truncate opacity-90 text-center md:text-right">
                     {match.venue?.name}, {match.venue?.city}
                   </span>
                 </div>
@@ -249,8 +225,11 @@ export default async function MatchPage({
                 <div className="grid grid-cols-7 items-center gap-4">
                   {/* Home team */}
                   <div className="col-span-2">
-                    <div className="flex flex-col items-center">
-                      <div className="relative h-16 w-16 mb-2">
+                    <Link 
+                      href={`/lag/${match.teams.home.name.toLowerCase().replace(/\s+/g, '-')}-${match.teams.home.id}`}
+                      className="flex flex-col items-center group hover:opacity-90 transition-opacity"
+                    >
+                      <div className="relative h-12 w-12 md:h-16 md:w-16 mb-2">
                         <Image 
                           src={match.teams.home.logo}
                           alt={match.teams.home.name}
@@ -258,24 +237,26 @@ export default async function MatchPage({
                           className="object-contain"
                         />
                       </div>
-                      <span className="font-bold text-lg text-center line-clamp-2">{match.teams.home.name}</span>
-                    </div>
+                      <span className="font-bold text-base md:text-lg text-center line-clamp-2 group-hover:underline">
+                        {match.teams.home.name}
+                      </span>
+                    </Link>
                   </div>
                   
                   {/* Score/Time section */}
                   <div className="col-span-3 flex justify-center">
                     {isUpcoming ? (
                       <div className="flex flex-col items-center">
-                        <div className="text-4xl font-bold mb-1">
+                        <div className="text-2xl md:text-4xl font-bold mb-1">
                           {formatMatchDateTime(match.date).time}
                         </div>
-                        <div className="text-sm opacity-90 whitespace-nowrap">
-                          {formatMatchDateTime(match.date).date}
+                        <div className="text-xs md:text-sm opacity-90 whitespace-nowrap">
+                          {formatMatchDateTime(match.date).fullDate}
                         </div>
                       </div>
                     ) : (
                       <div className="flex flex-col items-center">
-                        <div className="text-4xl font-bold mb-2 whitespace-nowrap">
+                        <div className="text-2xl md:text-4xl font-bold mb-2 whitespace-nowrap">
                           {match.goals.home ?? 0} - {match.goals.away ?? 0}
                         </div>
                         {isLive && (
@@ -295,8 +276,11 @@ export default async function MatchPage({
                   
                   {/* Away team */}
                   <div className="col-span-2">
-                    <div className="flex flex-col items-center">
-                      <div className="relative h-16 w-16 mb-2">
+                    <Link 
+                      href={`/lag/${match.teams.away.name.toLowerCase().replace(/\s+/g, '-')}-${match.teams.away.id}`}
+                      className="flex flex-col items-center group hover:opacity-90 transition-opacity"
+                    >
+                      <div className="relative h-12 w-12 md:h-16 md:w-16 mb-2">
                         <Image 
                           src={match.teams.away.logo}
                           alt={match.teams.away.name}
@@ -304,13 +288,65 @@ export default async function MatchPage({
                           className="object-contain"
                         />
                       </div>
-                      <span className="font-bold text-lg text-center line-clamp-2">{match.teams.away.name}</span>
-                    </div>
+                      <span className="font-bold text-base md:text-lg text-center line-clamp-2 group-hover:underline">
+                        {match.teams.away.name}
+                      </span>
+                    </Link>
                   </div>
                 </div>
+
+                {/* Match events timeline for finished matches */}
+                {isFinished && match.event_data && match.event_data.length > 0 && (
+                  <div className="mt-6 space-y-2 max-w-lg mx-auto text-sm">
+                    {match.event_data
+                      .filter(event => 
+                        (event.type === 'Goal' || event.type === 'Card') && 
+                        event.player?.name && 
+                        event.time?.elapsed
+                      )
+                      .sort((a, b) => (a.time.elapsed + (a.time.extra || 0)) - (b.time.elapsed + (b.time.extra || 0)))
+                      .map((event, index) => (
+                        <div key={index} className="flex items-center justify-center gap-2">
+                          {/* Time */}
+                          <span className="text-white/80">
+                            {event.time.elapsed}'
+                            {event.time.extra && `+${event.time.extra}`}
+                          </span>
+
+                          {/* Player name */}
+                          <span className="font-medium">
+                            {event.player.name}
+                          </span>
+
+                          {/* Score or card indicator */}
+                          {event.type === 'Goal' && event.goals && (
+                            <span className="text-white/90">
+                              {event.goals.home}-{event.goals.away}
+                            </span>
+                          )}
+                          
+                          {event.type === 'Card' && (
+                            <div className={`w-3 h-4 rounded-sm ${
+                              event.detail === 'Yellow Card' ? 'bg-yellow-400' : 'bg-red-600'
+                            }`} />
+                          )}
+                        </div>
+                      ))}
+                  </div>
+                )}
               </div>
             </div>
             
+            {/* Add MatchHighlights component here */}
+            <MatchHighlights 
+              homeTeam={match.teams.home.name}
+              awayTeam={match.teams.away.name}
+              matchDate={match.date}
+              matchStatus={match.status.short}
+              maxResults={5}
+              match={match}
+            />
+
             {/* Match details */}
             <div className="bg-white rounded-lg shadow-md p-6">
               {isUpcoming && (
@@ -353,216 +389,198 @@ export default async function MatchPage({
                     <div className="mt-6">
                       <h2 className="text-lg font-semibold mb-4">Kampens hendelser</h2>
                       <div className="relative">
-                        {/* Timeline line - adjusted for mobile */}
-                        <div className="absolute left-12 md:left-24 w-px h-full bg-gray-200" />
+                        {/* Timeline line */}
+                        <div className="absolute left-[60px] md:left-[100px] w-px h-full bg-gray-200" />
                         
-                        <div className="space-y-4">
-                          {/* Kickoff event - mobile optimized */}
-                          <div className="relative flex items-start -mb-2">
-                            <div className="w-12 md:w-24 flex-shrink-0 text-xs md:text-sm text-gray-500 pt-0.5">0'</div>
-                            <div className="absolute left-12 md:left-24 w-2 h-2 rounded-full mt-2 transform -translate-x-1 bg-gray-400" />
-                            <div className="ml-6 md:ml-8 flex items-center">
-                              <div className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-1.5 opacity-75">
-                                <Image
-                                  src="/images/channels/whistle.svg"
-                                  alt="Kickoff"
-                                  width={14}
-                                  height={14}
-                                  className="inline-block"
-                                />
-                              </div>
-                              <span className="text-xs md:text-sm text-gray-500">Avspark</span>
+                        <div className="space-y-2">
+                          {/* Kickoff event */}
+                          <div className="grid grid-cols-[60px_24px_1fr] md:grid-cols-[100px_24px_1fr] items-center gap-2 bg-white rounded-lg p-2">
+                            <div className="text-sm text-gray-500">0'</div>
+                            <div className="flex justify-center">
+                              <Image
+                                src="/images/channels/whistle.svg"
+                                alt="Kickoff"
+                                width={14}
+                                height={14}
+                                className="opacity-75"
+                              />
                             </div>
+                            <span className="text-sm text-gray-500">Avspark</span>
                           </div>
 
                           {/* Match events */}
                           {match.event_data
                             .sort((a, b) => (a.time.elapsed + (a.time.extra || 0)) - (b.time.elapsed + (b.time.extra || 0)))
                             .map((event, index) => (
-                              <div key={index} className="relative flex items-start">
-                                {/* Time - mobile optimized */}
-                                <div className="w-12 md:w-24 flex-shrink-0 text-xs md:text-sm text-gray-500 pt-0.5">
+                              <div 
+                                key={index} 
+                                className="grid grid-cols-[60px_24px_1fr] md:grid-cols-[100px_24px_1fr] items-center gap-2 bg-white hover:bg-gray-50 rounded-lg p-2"
+                              >
+                                {/* Time column */}
+                                <div className="text-sm text-gray-500">
                                   {event.time.elapsed}'
                                   {event.time.extra && `+${event.time.extra}`}
                                 </div>
 
-                                {/* Event dot */}
-                                <div className={`absolute left-12 md:left-24 w-2 h-2 rounded-full mt-2 transform -translate-x-1 
-                                  ${event.type === 'Goal' ? 'bg-green-500' : 
-                                    event.type === 'Card' ? (event.detail === 'Yellow Card' ? 'bg-yellow-400' : 'bg-red-500') :
-                                    'bg-gray-400'}`}
-                                />
+                                {/* Icon column */}
+                                <div className="flex justify-center">
+                                  {event.type === 'Goal' && (
+                                    <Image
+                                      src="/images/channels/ball.svg"
+                                      alt="Goal"
+                                      width={14}
+                                      height={14}
+                                      className="opacity-75"
+                                    />
+                                  )}
+                                  {event.type === 'Card' && (
+                                    <Image
+                                      src={event.detail === 'Yellow Card' 
+                                        ? "/images/channels/yellow-card.svg" 
+                                        : "/images/channels/red.svg"}
+                                      alt={event.detail}
+                                      width={14}
+                                      height={14}
+                                      className="opacity-75"
+                                    />
+                                  )}
+                                  {event.type === 'subst' && (
+                                    <Image
+                                      src="/images/channels/sub.svg"
+                                      alt="Substitution"
+                                      width={14}
+                                      height={14}
+                                      className="opacity-75"
+                                    />
+                                  )}
+                                </div>
 
-                                {/* Event content - mobile optimized */}
-                                <div className="ml-6 md:ml-8 min-w-0 flex-1"> {/* Added min-w-0 and flex-1 for text truncation */}
-                                  <div className="flex items-center flex-wrap gap-y-1">
-                                    {/* Event icon */}
-                                    <div className="w-3 h-3 md:w-4 md:h-4 mr-1.5 md:mr-2 flex-shrink-0 opacity-75">
-                                      {event.type === 'Goal' && (
-                                        <Image
-                                          src="/images/channels/ball.svg"
-                                          alt="Goal"
-                                          width={16}
-                                          height={16}
-                                          className="inline-block"
-                                        />
-                                      )}
-                                      {event.type === 'Card' && (
-                                        <Image
-                                          src={event.detail === 'Yellow Card' 
-                                            ? "/images/channels/yellow-card.svg" 
-                                            : "/images/channels/red.svg"}
-                                          alt={event.detail === 'Yellow Card' ? "Yellow Card" : "Red Card"}
-                                          width={16}
-                                          height={16}
-                                          className="inline-block"
-                                        />
-                                      )}
-                                      {event.type === 'subst' && (
-                                        <Image
-                                          src="/images/channels/sub.svg"
-                                          alt="Substitution"
-                                          width={16}
-                                          height={16}
-                                          className="inline-block"
-                                        />
-                                      )}
-                                    </div>
-
-                                    {/* Event details - mobile optimized */}
-                                    {event.type === 'Goal' && (
-                                      <div className="flex items-center flex-wrap gap-x-1 min-w-0">
-                                        <div className="flex items-center min-w-0">
-                                          {event.player.id && (
-                                            <div className="w-5 h-5 md:w-6 md:h-6 relative mr-1.5 flex-shrink-0">
-                                              <Image
-                                                src={`https://media.api-sports.io/football/players/${event.player.id}.png`}
-                                                alt={event.player.name}
-                                                fill
-                                                className="object-cover rounded-full"
-                                              />
-                                            </div>
-                                          )}
-                                          <Link 
-                                            href={`/spillerprofil/${event.player.id}`}
-                                            className="font-medium hover:text-blue-600 transition-colors truncate"
-                                          >
-                                            {event.player.name}
-                                          </Link>
-                                        </div>
-                                        {event.assist?.name && (
-                                          <div className="flex items-center text-xs md:text-sm text-gray-500 min-w-0">
-                                            <span className="mx-1 hidden md:inline">•</span>
-                                            <Link 
-                                              href={`/spillerprofil/${event.assist.id}`}
-                                              className="hover:text-blue-600 transition-colors truncate"
-                                            >
-                                              {event.assist.name}
-                                            </Link>
+                                {/* Event details column */}
+                                <div className="min-w-0">
+                                  {event.type === 'Goal' && (
+                                    <div className="flex flex-col md:flex-row md:items-center gap-2">
+                                      <div className="flex items-center gap-2">
+                                        {event.player.id && (
+                                          <div className="relative w-5 h-5 flex-shrink-0">
+                                            <Image
+                                              src={`https://media.api-sports.io/football/players/${event.player.id}.png`}
+                                              alt={event.player.name}
+                                              fill
+                                              className="object-cover rounded-full"
+                                            />
                                           </div>
                                         )}
+                                        <Link 
+                                          href={`/spillerprofil/${event.player.id}`}
+                                          className="text-sm font-medium hover:text-blue-600 transition-colors"
+                                        >
+                                          {event.player.name}
+                                        </Link>
                                       </div>
-                                    )}
-
-                                    {event.type === 'subst' && (
-                                      <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 min-w-0">
-                                        <div className="flex items-center min-w-0">
-                                          {event.assist.id && (
-                                            <div className="w-5 h-5 md:w-6 md:h-6 relative mr-1.5 flex-shrink-0">
-                                              <Image
-                                                src={`https://media.api-sports.io/football/players/${event.assist.id}.png`}
-                                                alt={event.assist.name}
-                                                fill
-                                                className="object-cover rounded-full"
-                                              />
-                                            </div>
-                                          )}
+                                      {event.assist?.name && (
+                                        <div className="flex items-center gap-2">
+                                          <span className="text-sm text-gray-400 hidden md:inline">•</span>
                                           <Link 
                                             href={`/spillerprofil/${event.assist.id}`}
-                                            className="text-green-600 hover:text-green-700 transition-colors truncate text-sm"
+                                            className="text-sm text-gray-500 hover:text-blue-600 transition-colors"
                                           >
                                             {event.assist.name}
                                           </Link>
                                         </div>
-                                        <span className="text-gray-400 hidden md:inline">→</span>
-                                        <div className="flex items-center min-w-0">
-                                          {event.player.id && (
-                                            <div className="w-5 h-5 md:w-6 md:h-6 relative mr-1.5 flex-shrink-0">
-                                              <Image
-                                                src={`https://media.api-sports.io/football/players/${event.player.id}.png`}
-                                                alt={event.player.name}
-                                                fill
-                                                className="object-cover rounded-full"
-                                              />
-                                            </div>
-                                          )}
-                                          <Link 
-                                            href={`/spillerprofil/${event.player.id}`}
-                                            className="text-red-600 hover:text-red-700 transition-colors truncate text-sm"
-                                          >
-                                            {event.player.name}
-                                          </Link>
-                                        </div>
-                                      </div>
-                                    )}
+                                      )}
+                                    </div>
+                                  )}
 
-                                    {event.type === 'Card' && (
-                                      <div className="flex items-center flex-wrap gap-x-1 min-w-0">
-                                        <div className="flex items-center min-w-0">
-                                          {event.player.id && (
-                                            <div className="w-5 h-5 md:w-6 md:h-6 relative mr-1.5 flex-shrink-0">
-                                              <Image
-                                                src={`https://media.api-sports.io/football/players/${event.player.id}.png`}
-                                                alt={event.player.name}
-                                                fill
-                                                className="object-cover rounded-full"
-                                              />
-                                            </div>
-                                          )}
-                                          <Link 
-                                            href={`/spillerprofil/${event.player.id}`}
-                                            className="font-medium hover:text-blue-600 transition-colors truncate"
-                                          >
-                                            {event.player.name}
-                                          </Link>
-                                          <div className="flex items-center text-xs md:text-sm text-gray-500 ml-2">
-                                            <span className="hidden md:inline mx-1">•</span>
-                                            <span className={`${
-                                              event.detail === 'Yellow Card' ? 'text-yellow-600' : 'text-red-600'
-                                            }`}>
-                                              {event.detail === 'Yellow Card' ? 'Gult kort' : 'Rødt kort'}
-                                            </span>
-                                            {event.comments && (
-                                              <>
-                                                <span className="mx-1">-</span>
-                                                <span className="text-gray-500 italic">{event.comments}</span>
-                                              </>
-                                            )}
-                                          </div>
+                                  {event.type === 'subst' && (
+                                    <div className="flex flex-col gap-2">
+                                      <div className="flex items-center gap-2">
+                                        <div className="relative w-5 h-5 flex-shrink-0">
+                                          <Image
+                                            src={`https://media.api-sports.io/football/players/${event.assist.id}.png`}
+                                            alt={event.assist.name}
+                                            fill
+                                            className="object-cover rounded-full"
+                                          />
                                         </div>
+                                        <Link 
+                                          href={`/spillerprofil/${event.assist.id}`}
+                                          className="text-sm text-green-600 hover:text-green-700 transition-colors"
+                                        >
+                                          {event.assist.name}
+                                        </Link>
+                                        <span className="text-xs text-green-600">(inn)</span>
                                       </div>
-                                    )}
-                                  </div>
+                                      <div className="flex items-center gap-2">
+                                        <div className="relative w-5 h-5 flex-shrink-0">
+                                          <Image
+                                            src={`https://media.api-sports.io/football/players/${event.player.id}.png`}
+                                            alt={event.player.name}
+                                            fill
+                                            className="object-cover rounded-full"
+                                          />
+                                        </div>
+                                        <Link 
+                                          href={`/spillerprofil/${event.player.id}`}
+                                          className="text-sm text-red-600 hover:text-red-700 transition-colors"
+                                        >
+                                          {event.player.name}
+                                        </Link>
+                                        <span className="text-xs text-red-600">(ut)</span>
+                                      </div>
+                                    </div>
+                                  )}
+
+                                  {event.type === 'Card' && (
+                                    <div className="flex flex-col md:flex-row gap-2">
+                                      <div className="flex items-center gap-2">
+                                        {event.player.id && (
+                                          <div className="relative w-5 h-5 flex-shrink-0">
+                                            <Image
+                                              src={`https://media.api-sports.io/football/players/${event.player.id}.png`}
+                                              alt={event.player.name}
+                                              fill
+                                              className="object-cover rounded-full"
+                                            />
+                                          </div>
+                                        )}
+                                        <Link 
+                                          href={`/spillerprofil/${event.player.id}`}
+                                          className="text-sm font-medium hover:text-blue-600 transition-colors"
+                                        >
+                                          {event.player.name}
+                                        </Link>
+                                      </div>
+                                      <div className="flex items-center gap-2">
+                                        <span className={`text-sm ${
+                                          event.detail === 'Yellow Card' ? 'text-yellow-600' : 'text-red-600'
+                                        }`}>
+                                          {event.detail === 'Yellow Card' ? 'Gult kort' : 'Rødt kort'}
+                                        </span>
+                                        {event.comments && (
+                                          <span className="text-sm text-gray-500 italic">
+                                            {event.comments}
+                                          </span>
+                                        )}
+                                      </div>
+                                    </div>
+                                  )}
                                 </div>
                               </div>
                             ))}
 
-                          {/* Final whistle - mobile optimized */}
-                          <div className="relative flex items-start -mb-2">
-                            <div className="w-12 md:w-24 flex-shrink-0 text-xs md:text-sm text-gray-500 pt-0.5">90'</div>
-                            <div className="absolute left-12 md:left-24 w-2 h-2 rounded-full mt-2 transform -translate-x-1 bg-gray-400" />
-                            <div className="ml-6 md:ml-8 flex items-center">
-                              <div className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-1.5 opacity-75">
-                                <Image
-                                  src="/images/channels/whistle.svg"
-                                  alt="Final whistle"
-                                  width={14}
-                                  height={14}
-                                  className="inline-block"
-                                />
-                              </div>
-                              <span className="text-xs md:text-sm text-gray-500">Kampslutt</span>
+                          {/* Final whistle */}
+                          <div className="grid grid-cols-[60px_24px_1fr] md:grid-cols-[100px_24px_1fr] items-center gap-2 bg-white rounded-lg p-2">
+                            <div className="text-sm text-gray-500">90'</div>
+                            <div className="flex justify-center">
+                              <Image
+                                src="/images/channels/whistle.svg"
+                                alt="Final whistle"
+                                width={14}
+                                height={14}
+                                className="opacity-75"
+                              />
                             </div>
+                            <span className="text-sm text-gray-500">Kampslutt</span>
                           </div>
                         </div>
                       </div>
@@ -571,7 +589,7 @@ export default async function MatchPage({
 
                   {/* Add this after your events section */}
                   {isMatchFinished(match.status.short) && match.fixture_statistics && (
-                    <div className="mt-8 bg-white rounded-lg p-4">
+                    <div className="mt-8 bg-white rounded-lg">
                       <h2 className="text-lg font-semibold mb-6">Kampstatistikk</h2>
                       
                       {/* Teams header */}
@@ -669,6 +687,62 @@ export default async function MatchPage({
                   )}
                 </>
               )}
+
+              {/* Head to head section - moved outside of isFinished */}
+              {match.head_to_head && match.head_to_head.length > 0 && (
+                <div className="bg-white rounded-lg mt-6">
+                  <h2 className="text-lg font-semibold mb-4">Tidligere kamper</h2>
+                  
+                  {/* Summary stats */}
+                  <div className="bg-gray-50 rounded-lg p-4 mb-6">
+                    <div className="flex justify-between items-center">
+                      <div className="text-center flex-1">
+                        <Image
+                          src={match.teams.home.logo}
+                          alt={match.teams.home.name}
+                          width={40}
+                          height={40}
+                          className="mx-auto mb-2"
+                        />
+                        <div className="text-2xl font-semibold">
+                          {match.head_to_head.filter(m => 
+                            (m.teams.home.id === match.teams.home.id && m.goals.home > m.goals.away) ||
+                            (m.teams.away.id === match.teams.home.id && m.goals.away > m.goals.home)
+                          ).length}
+                        </div>
+                        <div className="text-sm text-gray-600">seire</div>
+                      </div>
+
+                      <div className="text-center flex-1">
+                        <div className="text-2xl font-semibold mt-8">
+                          {match.head_to_head.filter(m => m.goals.home === m.goals.away).length}
+                        </div>
+                        <div className="text-sm text-gray-600">uavgjort</div>
+                      </div>
+
+                      <div className="text-center flex-1">
+                        <Image
+                          src={match.teams.away.logo}
+                          alt={match.teams.away.name}
+                          width={40}
+                          height={40}
+                          className="mx-auto mb-2"
+                        />
+                        <div className="text-2xl font-semibold">
+                          {match.head_to_head.filter(m => 
+                            (m.teams.home.id === match.teams.away.id && m.goals.home > m.goals.away) ||
+                            (m.teams.away.id === match.teams.away.id && m.goals.away > m.goals.home)
+                          ).length}
+                        </div>
+                        <div className="text-sm text-gray-600">seire</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Head to head fixtures list */}
+                  <HeadToHeadFixtures matches={match.head_to_head} />
+                </div>
+              )}
             </div>
           </div>
           
@@ -682,7 +756,7 @@ export default async function MatchPage({
   } catch (error) {
     console.error('🔴 Detailed error in MatchPage:', error);
     return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-0 sm:px-0 lg:px-8 py-8">
         <div className="bg-white rounded-lg shadow-md p-6">
           <h1 className="text-2xl font-bold text-red-600 mb-4">Error Loading Match</h1>
           <p className="text-gray-700">We couldn&apos;t load the match details. Please try again later.</p>
@@ -693,16 +767,4 @@ export default async function MatchPage({
       </div>
     );
   }
-}
-
-function formatMatchDateTime(dateString: string) {
-  const date = new Date(dateString);
-  const days = ['Søndag', 'Mandag', 'Tirsdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lørdag'];
-  const months = ['januar', 'februar', 'mars', 'april', 'mai', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'desember'];
-  
-  return {
-    dayName: days[date.getDay()],
-    fullDate: `${date.getDate()}. ${months[date.getMonth()]} ${date.getFullYear()}`,
-    time: `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`
-  };
 }
