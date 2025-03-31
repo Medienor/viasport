@@ -151,6 +151,17 @@ const Navbar = () => {
               
               {/* More leagues dropdown */}
               <NavDropdown label="Flere ligaer" items={moreLeaguesItems} />
+
+              {/* Live now link with dot indicator */}
+              <Link 
+                href="/fotball/live"
+                className="flex items-center text-sm font-medium text-white hover:text-gray-200 whitespace-nowrap"
+              >
+                <span className="flex items-center">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mr-2 animate-pulse"></span>
+                  Live nå
+                </span>
+              </Link>
             </div>
           </div>
         </div>
@@ -185,6 +196,15 @@ const Navbar = () => {
               />
             </div>
           </div>
+          
+          {/* Live now link - Added at the top of mobile menu */}
+          <Link
+            href="/fotball/live"
+            className="flex items-center px-3 py-2 rounded-md text-sm font-medium bg-[#2a532f] text-white mb-3"
+          >
+            <span className="w-2 h-2 bg-red-500 rounded-full mr-2 animate-pulse"></span>
+            Live nå
+          </Link>
           
           {/* Collapsible sections for mobile */}
           <div className="mt-3">

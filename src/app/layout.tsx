@@ -27,7 +27,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ViaSport - Forball på TV & Streaming",
+  title: "ViaSport - Fotball på TV & Streaming",
   description: "Din ultimate destinasjon for sportskalendere og kampinformasjon",
 };
 

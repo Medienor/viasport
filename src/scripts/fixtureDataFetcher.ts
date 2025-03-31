@@ -1,272 +1,133 @@
-import dotenv from 'dotenv';
 import { createClient } from '@supabase/supabase-js';
-import fs from 'fs/promises';
+import dotenv from 'dotenv';
 import path from 'path';
-import { MAJOR_LEAGUES, rateLimiter } from './teamDataFetcher';
+import { fileURLToPath } from 'url';
+import fs from 'fs';
+import axios from 'axios';
 
-// Load environment variables from .env.local
-dotenv.config({ path: '.env.local' });
+// Load environment variables from .env.local in the project root
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const rootDir = path.resolve(__dirname, '../../');
 
-// Log to help debug
-console.log('Environment check:');
-console.log('SUPABASE_URL:', process.env.SUPABASE_URL ? '✓ Present' : '✗ Missing');
-console.log('SUPABASE_KEY:', process.env.SUPABASE_KEY ? '✓ Present' : '✗ Missing');
-console.log('RAPID_API_KEY:', process.env.RAPID_API_KEY ? '✓ Present' : '✗ Missing');
-
-const API_CONFIG = {
-  baseUrl: 'https://api-football-v1.p.rapidapi.com/v3',
-  headers: {
-    'x-rapidapi-host': 'api-football-v1.p.rapidapi.com',
-    'x-rapidapi-key': process.env.RAPID_API_KEY || ''
-  }
-};
-
-const supabase = createClient(
-  process.env.SUPABASE_URL || '',
-  process.env.SUPABASE_KEY || ''
-);
-
-interface FixtureData {
-  fixture: {
-    id: number;
-    date: string;
-    status: {
-      short: string;
-      long: string;
-    };
-    venue: any;
-  };
-  league: {
-    id: number;
-    name: string;
-  };
-  teams: {
-    home: { id: number; name: string };
-    away: { id: number; name: string };
-  };
-  goals: {
-    home: number | null;
-    away: number | null;
-  };
-  score: any;
+// Try to load from .env.local first, then fall back to .env
+let envPath = path.join(rootDir, '.env.local');
+if (!fs.existsSync(envPath)) {
+  envPath = path.join(rootDir, '.env');
 }
+dotenv.config({ path: envPath });
 
-interface FixtureProgress {
+// Supabase setup (same as our working test file)
+const supabaseUrl = 'https://cdynfbwdwdsiwkgiua.supabase.co';
+const supabaseKey = process.env.SUPABASE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNkeW5mYndkd2Rmc2l3a2dpeHVhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MjU3ODQwMSwiZXhwIjoyMDU4MTU0NDAxfQ.5V7CbSCE4lb3FbJUa3kgipRPWXG4LeVRCf7eeLSrSoI';
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+const RAPID_API_KEY = '1a7dc8ba9cmshff75c6099ce0152p158153jsnac5252d21d90';
+
+// Progress tracking interface
+export interface FixtureProgress {
   totalFixtures: number;
   processedFixtures: number;
   apiCalls: number;
 }
 
-interface ProgressCallback {
-  (progress: FixtureProgress): void;
-}
-
-async function updateFixtureData(leagueId: number, progressCallback?: ProgressCallback) {
+export async function updateFixtureData(
+  leagueId: number = 39,
+  progressCallback?: (progress: FixtureProgress) => void
+) {
   const progress: FixtureProgress = {
     totalFixtures: 0,
     processedFixtures: 0,
     apiCalls: 0
   };
 
-  console.log('Starting fixture update process...');
-  
   try {
-    // Calculate date range (today to 3 months ahead)
-    const today = new Date();
-    const threeMonthsFromNow = new Date(today);
-    threeMonthsFromNow.setMonth(today.getMonth() + 3);
-
-    // Process each league
-    for (const league of MAJOR_LEAGUES) {
-      console.log(`Processing fixtures for ${league.name}...`);
-      
-      try {
-        await rateLimiter.checkLimit();
-        
-        // Fetch fixtures for the league
-        const fixtures = await fetchLeagueFixtures(
-          league.id,
-          today.toISOString().split('T')[0],
-          threeMonthsFromNow.toISOString().split('T')[0]
-        );
-
-        // Process fixtures based on their status
-        await processFixtures(fixtures);
-        
-      } catch (error) {
-        console.error(`Error processing league ${league.name}:`, error);
-      }
-    }
-
-    console.log('Fixture update completed successfully!');
-  } catch (error) {
-    console.error('Failed to update fixtures:', error);
-    throw error;
-  } finally {
-    progressCallback?.(progress);
-  }
-}
-
-async function fetchLeagueFixtures(leagueId: number, from: string, to: string): Promise<FixtureData[]> {
-  console.log(`\n📊 Fetching fixtures for league ${leagueId}`);
-  
-  const allFixtures: FixtureData[] = [];
-  let totalApiCalls = 0;
-  
-  for (const season of [2024, 2025]) {
-    const url = `${API_CONFIG.baseUrl}/fixtures?league=${leagueId}&season=${season}`;
-    console.log(`\n🔍 Season ${season}`);
-    console.log(`API URL: ${url}`);
+    console.log(`Fetching fixtures for league ${leagueId}...`);
     
+    // Test Supabase connection first
+    console.log('Testing Supabase connection...');
     try {
-      totalApiCalls++;
-      const response = await fetch(url, { 
-        headers: {
-          'x-rapidapi-host': 'api-football-v1.p.rapidapi.com',
-          'x-rapidapi-key': process.env.RAPID_API_KEY || ''
-        }
-      });
-
-      if (!response.ok) {
-        const text = await response.text();
-        console.error(`❌ API Error for season ${season}:`, text);
-        continue;
-      }
-
-      const data = await response.json();
-      const fixtures = data.response || [];
-      allFixtures.push(...fixtures);
-      
-      console.log(`✅ Season ${season}: Found ${fixtures.length} fixtures`);
-      console.log(`📈 Running total: ${allFixtures.length} fixtures`);
-      
-      await rateLimiter.checkLimit();
-      
-    } catch (error) {
-      console.error(`❌ Error fetching season ${season}:`, error);
+      const { data, error } = await supabase.from('fixtures').select('count').limit(1);
+      if (error) throw error;
+      console.log('Supabase connection successful');
+    } catch (e) {
+      console.error('Supabase connection test failed:', e);
+      throw e;
     }
-  }
 
-  console.log(`\n📊 Summary for league ${leagueId}:`);
-  console.log(`🎯 Total fixtures found: ${allFixtures.length}`);
-  console.log(`🔄 API calls made: ${totalApiCalls}`);
-  console.log('----------------------------------------');
-  
-  return allFixtures;
-}
+    // Step 1: Get fixtures from football API
+    progress.apiCalls++;
+    const response = await axios.get(
+      `https://api-football-v1.p.rapidapi.com/v3/fixtures?league=${leagueId}&season=2024`,
+      {
+        headers: {
+          'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com',
+          'X-RapidAPI-Key': RAPID_API_KEY
+        }
+      }
+    );
 
-async function processFixtures(fixtures: FixtureData[]) {
-  console.log(`\n⚽ Processing ${fixtures.length} fixtures`);
-  
-  // Separate fixtures based on status
-  const completedFixtures = fixtures.filter(f => 
-    ['FT', 'AET', 'PEN', 'ABD', 'AWD', 'WO'].includes(f.fixture.status.short)
-  );
-  const upcomingFixtures = fixtures.filter(f => 
-    ['NS', 'TBD', 'PST', 'CANC'].includes(f.fixture.status.short)
-  );
+    // Take only first 3 fixtures for testing
+    const fixtures = (response.data.response || []).slice(0, 3);
+    console.log(`Testing with first 3 fixtures from league ${leagueId}`);
+    
+    progress.totalFixtures = fixtures.length;
+    progressCallback?.(progress);
 
-  console.log(`📊 Fixture breakdown:`);
-  console.log(`✅ Completed fixtures: ${completedFixtures.length}`);
-  console.log(`🕒 Upcoming fixtures: ${upcomingFixtures.length}`);
-
-  // Process completed fixtures
-  for (let i = 0; i < completedFixtures.length; i++) {
-    const fixture = completedFixtures[i];
-    console.log(`\nProcessing completed fixture ${i + 1}/${completedFixtures.length}`);
-    console.log(`${fixture.teams.home.name} vs ${fixture.teams.away.name}`);
-    await processCompletedFixture(fixture);
-  }
-
-  // Process upcoming fixtures
-  console.log('\nStoring upcoming fixtures...');
-  await storeUpcomingFixtures(upcomingFixtures);
-}
-
-async function processCompletedFixture(fixture: FixtureData) {
-  try {
-    // 1. Store basic fixture data
-    await supabase.from('fixtures').upsert({
+    // Step 2: Format fixtures
+    const formattedFixtures = fixtures.map((fixture: any) => ({
       id: fixture.fixture.id,
       date: fixture.fixture.date,
-      league_id: fixture.league.id,
+      league_id: leagueId,
       home_team_id: fixture.teams.home.id,
       away_team_id: fixture.teams.away.id,
-      status: fixture.fixture.status,
+      status: fixture.fixture.status.short,
       score: fixture.score,
       venue: fixture.fixture.venue,
       updated_at: new Date().toISOString()
-    });
+    }));
 
-    // 2. Fetch and store events
-    await rateLimiter.checkLimit();
-    const eventsResponse = await fetch(
-      `${API_CONFIG.baseUrl}/fixtures/events?fixture=${fixture.fixture.id}`,
-      { headers: API_CONFIG.headers }
-    );
-    const eventsData = await eventsResponse.json();
-    
-    if (eventsData.response) {
-      for (const event of eventsData.response) {
-        await supabase.from('fixture_events').upsert({
-          fixture_id: fixture.fixture.id,
-          time: event.time,
-          team_id: event.team.id,
-          player_id: event.player?.id,
-          type: event.type,
-          detail: event.detail
-        }, { onConflict: 'fixture_id, time, team_id, type' });
-      }
+    console.log('\nTest Fixtures to process:', JSON.stringify(formattedFixtures, null, 2));
+
+    // Step 3: Insert into Supabase
+    console.log('Attempting to insert into Supabase...');
+    const { error: insertError } = await supabase
+      .from('fixtures')
+      .insert(formattedFixtures)
+      .select();
+
+    if (insertError) {
+      console.error(`❌ Error inserting fixtures:`, JSON.stringify(insertError, null, 2));
+      throw insertError;
     }
 
-    // 3. Fetch and store statistics
-    await rateLimiter.checkLimit();
-    const statsResponse = await fetch(
-      `${API_CONFIG.baseUrl}/fixtures/statistics?fixture=${fixture.fixture.id}`,
-      { headers: API_CONFIG.headers }
-    );
-    const statsData = await statsResponse.json();
-    
-    if (statsData.response) {
-      for (const teamStats of statsData.response) {
-        await supabase.from('fixture_statistics').upsert({
-          fixture_id: fixture.fixture.id,
-          team_id: teamStats.team.id,
-          statistics: teamStats.statistics
-        }, { onConflict: 'fixture_id, team_id' });
-      }
-    }
+    progress.processedFixtures = formattedFixtures.length;
+    progressCallback?.(progress);
+
+    console.log(`✅ Successfully processed ${progress.processedFixtures} test fixtures`);
 
   } catch (error) {
-    console.error(`Error processing completed fixture ${fixture.fixture.id}:`, error);
+    console.error(`❌ Error processing test fixtures:`, JSON.stringify(error, null, 2));
+    throw error;
   }
 }
 
-async function storeUpcomingFixtures(fixtures: FixtureData[]) {
-  // Group fixtures by date
-  const fixturesByDate = fixtures.reduce((acc, fixture) => {
-    const date = fixture.fixture.date.split('T')[0];
-    if (!acc[date]) acc[date] = [];
-    acc[date].push(fixture);
-    return acc;
-  }, {} as { [key: string]: FixtureData[] });
+// Function to check fixture count in Supabase
+export async function getFixtureStats(leagueId: number = 39) {
+  try {
+    const { data, error } = await supabase
+      .from('fixtures')
+      .select('*', { count: 'exact' })
+      .eq('league_id', leagueId);
 
-  // Ensure directory exists
-  const fixturesDir = path.join(process.cwd(), 'data', 'fixtures', 'upcoming');
-  await fs.mkdir(fixturesDir, { recursive: true });
+    if (error) {
+      console.error('Error fetching fixture stats:', error);
+      return;
+    }
 
-  // Store each date's fixtures
-  for (const [date, dateFixtures] of Object.entries(fixturesByDate)) {
-    await fs.writeFile(
-      path.join(fixturesDir, `${date}.json`),
-      JSON.stringify(dateFixtures, null, 2)
-    );
+    console.log(`Current fixtures in database for league ${leagueId}: ${data?.length || 0}`);
+    return data;
+  } catch (error) {
+    console.error('Error in getFixtureStats:', error);
+    return null;
   }
 }
-
-// Single export statement
-export {
-  updateFixtureData,
-  type FixtureProgress,
-  type ProgressCallback
-};

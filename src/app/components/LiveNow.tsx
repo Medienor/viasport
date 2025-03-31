@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
@@ -85,172 +85,46 @@ const POPULAR_LEAGUE_IDS = [
 ];
 
 interface LiveNowProps {
+  liveMatches: Fixture[];
   popularLeaguesOnly?: boolean;
 }
 
-export default function LiveNow({ popularLeaguesOnly = false }: LiveNowProps) {
-  const [liveMatches, setLiveMatches] = useState<Fixture[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+export default function LiveNow({ liveMatches, popularLeaguesOnly = false }: LiveNowProps) {
   const [currentMatchIndex, setCurrentMatchIndex] = useState(0);
   const router = useRouter();
-  const lastFetchTime = useRef<number>(0);
-  const MIN_FETCH_INTERVAL = 30000; // 30 seconds minimum between fetches
+  
+  // Filter matches to only show popular leagues
+  const filteredMatches = popularLeaguesOnly 
+    ? liveMatches.filter(match => POPULAR_LEAGUE_IDS.includes(match.league.id))
+    : liveMatches;
+  
+  if (filteredMatches.length === 0) {
+    return null;
+  }
 
-  // Modified fetch function with rate limiting and error handling
-  const fetchLiveMatches = useCallback(async (force: boolean = false) => {
-    const now = Date.now();
-    if (!force && now - lastFetchTime.current < MIN_FETCH_INTERVAL) {
-      return; // Skip if not enough time has passed
-    }
-
-    try {
-      // Use server endpoint instead of direct API call
-      const response = await fetch('/api/live-matches', {
-        cache: 'no-store',
-        headers: {
-          'Cache-Control': 'no-cache'
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const data = await response.json();
-      lastFetchTime.current = now;
-
-      // Filter and sort matches
-      let matches = data.matches || [];
-      if (popularLeaguesOnly) {
-        matches = matches.filter((match: Fixture) => 
-          POPULAR_LEAGUE_IDS.includes(match.league?.id)
-        );
-      }
-
-      // Sort matches by league popularity and match time
-      matches.sort((a: Fixture, b: Fixture) => {
-        const leagueAIndex = POPULAR_LEAGUE_IDS.indexOf(a.league.id);
-        const leagueBIndex = POPULAR_LEAGUE_IDS.indexOf(b.league.id);
-        
-        if (leagueAIndex !== -1 && leagueBIndex !== -1) {
-          return leagueAIndex - leagueBIndex;
-        } else if (leagueAIndex !== -1) {
-          return -1;
-        } else if (leagueBIndex !== -1) {
-          return 1;
-        }
-        
-        return (b.fixture.status.elapsed ?? 0) - (a.fixture.status.elapsed ?? 0);
-      });
-
-      setLiveMatches(matches);
-      setError(null);
-    } catch (err) {
-      console.error('Error fetching live matches:', err);
-      setError('Kunne ikke hente direktesendte kamper.');
-    } finally {
-      setIsLoading(false);
-    }
-  }, [popularLeaguesOnly]);
-
-  // Optimized useEffect with cleanup and visibility handling
-  useEffect(() => {
-    let intervalId: NodeJS.Timeout | null = null;
-    let isSubscribed = true;
-
-    const handleVisibilityChange = () => {
-      if (document.hidden) {
-        if (intervalId) {
-          clearInterval(intervalId);
-          intervalId = null;
-        }
-      } else {
-        fetchLiveMatches(true); // Force fetch when becoming visible
-        startInterval();
-      }
-    };
-
-    const startInterval = () => {
-      if (!intervalId) {
-        intervalId = setInterval(() => {
-          if (isSubscribed) {
-            fetchLiveMatches(false);
-          }
-        }, 120000); // 2 minutes
-      }
-    };
-
-    // Initial fetch
-    fetchLiveMatches(true);
-    startInterval();
-
-    // Add visibility change listener
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-
-    return () => {
-      isSubscribed = false;
-      if (intervalId) {
-        clearInterval(intervalId);
-      }
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    };
-  }, [fetchLiveMatches]);
-
-  // Navigation functions
-  const goToPreviousMatch = useCallback(() => {
-    if (liveMatches.length === 0) return;
-    setCurrentMatchIndex((prevIndex) => 
-      prevIndex === 0 ? liveMatches.length - 1 : prevIndex - 1
-    );
-  }, [liveMatches.length]);
-
-  const goToNextMatch = useCallback(() => {
-    if (liveMatches.length === 0) return;
-    setCurrentMatchIndex((prevIndex) => 
-      prevIndex === liveMatches.length - 1 ? 0 : prevIndex + 1
-    );
-  }, [liveMatches.length]);
-
-  // Helper function to get match status display
-  const getMatchStatusDisplay = (fixture: Fixture) => {
-    if (!fixture.fixture?.status) return 'LIVE';
-    
-    switch(fixture.fixture.status.short) {
-      case '1H': return `1. OMGANG ${fixture.fixture.status.elapsed}'`;
-      case 'HT': return 'PAUSE';
-      case '2H': return `2. OMGANG ${fixture.fixture.status.elapsed}'`;
-      case 'ET': return `EKSTRAOMGANGER ${fixture.fixture.status.elapsed}'`;
-      case 'BT': return 'PAUSE I EKSTRAOMGANGER';
-      case 'P': return 'STRAFFESPARK';
-      case 'SUSP': return 'KAMPEN ER SUSPENDERT';
-      case 'INT': return 'KAMPEN ER AVBRUTT';
-      default: return `LIVE ${fixture.fixture.status.elapsed}'`;
-    }
+  const currentMatch = filteredMatches[currentMatchIndex];
+  
+  // Helper functions
+  const goToNextMatch = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentMatchIndex((prev) => (prev + 1) % filteredMatches.length);
   };
 
-  // Loading state - return null to hide component
-  if (isLoading && liveMatches.length === 0) {
-    return null;
-  }
+  const goToPreviousMatch = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentMatchIndex((prev) => (prev - 1 + filteredMatches.length) % filteredMatches.length);
+  };
 
-  // Error state - return null to hide component
-  if (error && liveMatches.length === 0) {
-    return null;
-  }
+  const getMatchStatusDisplay = (match: Fixture) => {
+    const { short, elapsed } = match.fixture.status;
+    if (short === 'HT') return 'Pause';
+    if (short === 'BT') return 'Pause';
+    if (elapsed) return `${elapsed}'`;
+    return short;
+  };
 
-  // No matches state - return null to hide component
-  if (liveMatches.length === 0) {
-    return null;
-  }
-
-  // Get current match
-  const currentMatch = liveMatches[currentMatchIndex];
-  
-  // Determine status display and color
   const statusDisplay = getMatchStatusDisplay(currentMatch);
-  const isPaused = currentMatch.fixture?.status?.short === 'HT' || 
-                   currentMatch.fixture?.status?.short === 'BT';
+  const isPaused = ['HT', 'BT'].includes(currentMatch.fixture.status.short);
 
   return (
     <div className="rounded-lg overflow-hidden shadow-md">
@@ -269,7 +143,7 @@ export default function LiveNow({ popularLeaguesOnly = false }: LiveNowProps) {
         {/* <div className="absolute inset-0 bg-black bg-opacity-60"></div> */}
         
         {/* Pagination arrows */}
-        {liveMatches.length > 1 && (
+        {filteredMatches.length > 1 && (
           <>
             <button 
               onClick={goToPreviousMatch}
@@ -356,14 +230,13 @@ export default function LiveNow({ popularLeaguesOnly = false }: LiveNowProps) {
         </div>
       </div>
       
-      {/* Additional matches in a more compact format - removed league names */}
-      {liveMatches.length > 1 && (
+      {/* Additional matches section - now using filtered matches */}
+      {filteredMatches.length > 1 && (
         <div className="bg-white p-4">
           <h3 className="font-medium text-gray-900 mb-3">Andre direktesendte kamper</h3>
           
           <div className="space-y-3">
-            {/* Filter out the currently featured match */}
-            {liveMatches
+            {filteredMatches
               .filter((_, index) => index !== currentMatchIndex)
               .map((match: Fixture) => (
                 <div 

@@ -1,4 +1,4 @@
-import { BASE_URL, headers } from '../services/sportApi';
+import { createClient } from '@supabase/supabase-js';
 import ClientFixturesSection from './ClientFixturesSection';
 
 // Maximum number of fixtures to display per day
@@ -12,6 +12,17 @@ const popularLeagues = [
   { name: 'La Liga', id: 140 },
   { name: 'Serie A', id: 135 }
 ];
+
+// Initialize Supabase client with the working configuration
+const supabase = createClient(
+  'https://cdynfbwdwdfsiwkgixua.supabase.co',
+  process.env.SUPABASE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNkeW5mYndkd2Rmc2l3a2dpeHVhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MjU3ODQwMSwiZXhwIjoyMDU4MTU0NDAxfQ.5V7CbSCE4lb3FbJUa3kgipRPWXG4LeVRCf7eeLSrSoI',
+  {
+    global: {
+      fetch: fetch as any
+    }
+  }
+);
 
 // Generate dates for the next 7 days
 function generateDates() {
@@ -64,70 +75,98 @@ function isPopularLeague(leagueId: number) {
   return popularLeagues.some(league => league.id === leagueId);
 }
 
-// Fetch fixtures for a specific date
-async function fetchFixturesForDate(dateKey: string, date: Date) {
+// New function to fetch fixtures from Supabase
+async function fetchFixturesFromSupabase(date: Date) {
   try {
-    // Format date as YYYY-MM-DD
-    const dateStr = date.toISOString().split('T')[0];
+    const startOfDay = new Date(date);
+    startOfDay.setHours(0, 0, 0, 0);
     
-    // Fetch from API with appropriate cache time
-    const response = await fetch(`${BASE_URL}/fixtures?date=${dateStr}`, { 
-      headers,
-      next: { revalidate: 1800 } // 30 minutes cache for upcoming fixtures
+    const endOfDay = new Date(date);
+    endOfDay.setHours(23, 59, 59, 999);
+
+    console.log('Querying for date range:', {
+      start: startOfDay.toISOString(),
+      end: endOfDay.toISOString()
     });
-    
-    if (!response.ok) {
-      throw new Error(`API error: ${response.status}`);
+
+    const { data: fixtures, error } = await supabase
+      .from('fixtures')
+      .select(`
+        id,
+        date,
+        league_id,
+        home_team_id,
+        away_team_id,
+        status,
+        score,
+        league,
+        teams,
+        match_status
+      `)
+      .eq('match_status', 'NS')
+      .gte('date', startOfDay.toISOString())
+      .lt('date', endOfDay.toISOString())
+      .order('date', { ascending: true });
+
+    if (error) {
+      console.error('Supabase query error details:', error);
+      return { fixtures: [], totalCount: 0 };
     }
-    
-    const data = await response.json();
-    
-    if (data.response && Array.isArray(data.response)) {
-      // Filter for only "Not Started" matches
-      const notStartedFixtures = data.response.filter((fixture: any) => 
-        fixture?.fixture?.status?.short === 'NS'
-      );
-      
-      // Separate fixtures into popular and other leagues
-      const popularFixtures: any[] = [];
-      const otherFixtures: any[] = [];
-      
-      notStartedFixtures.forEach((fixture: any) => {
-        const leagueId = fixture?.league?.id;
-        
-        if (isPopularLeague(leagueId)) {
-          popularFixtures.push(fixture);
-        } else {
-          otherFixtures.push(fixture);
-        }
-      });
-      
-      // Sort each group by time
-      const sortByTime = (a: any, b: any) => {
-        return new Date(a.fixture.date).getTime() - new Date(b.fixture.date).getTime();
+
+    console.log('Fetched fixtures:', fixtures?.length || 0);
+
+    // Separate fixtures into popular and other leagues
+    const popularFixtures: any[] = [];
+    const otherFixtures: any[] = [];
+
+    fixtures?.forEach(fixture => {
+      const fixtureData = {
+        fixture: {
+          id: fixture.id,
+          date: fixture.date,
+          status: fixture.status
+        },
+        league: {
+          id: fixture.league_id,
+          name: fixture.league.name,
+          country: fixture.league.country,
+          logo: `https://media.api-sports.io/football/leagues/${fixture.league_id}.png`
+        },
+        teams: {
+          home: {
+            id: fixture.home_team_id,
+            name: fixture.teams.home.name,
+            logo: `https://media.api-sports.io/football/teams/${fixture.home_team_id}.png`
+          },
+          away: {
+            id: fixture.away_team_id,
+            name: fixture.teams.away.name,
+            logo: `https://media.api-sports.io/football/teams/${fixture.away_team_id}.png`
+          }
+        },
+        formattedTime: new Date(fixture.date).toLocaleTimeString('no-NO', { 
+          hour: '2-digit', 
+          minute: '2-digit' 
+        })
       };
-      
-      popularFixtures.sort(sortByTime);
-      otherFixtures.sort(sortByTime);
-      
-      // Combine with popular leagues first
-      const sortedFixtures = [...popularFixtures, ...otherFixtures];
-      
-      // Format time for each fixture
-      sortedFixtures.forEach(fixture => {
-        const date = new Date(fixture.fixture.date);
-        fixture.formattedTime = date.toLocaleTimeString('no-NO', { hour: '2-digit', minute: '2-digit' });
-      });
-      
-      return {
-        fixtures: sortedFixtures.slice(0, MAX_FIXTURES_PER_DAY),
-        totalCount: notStartedFixtures.length
-      };
-    }
-    
-    return { fixtures: [], totalCount: 0 };
+
+      if (isPopularLeague(fixture.league_id)) {
+        popularFixtures.push(fixtureData);
+      } else {
+        otherFixtures.push(fixtureData);
+      }
+    });
+
+    // Combine fixtures with popular leagues first
+    const sortedFixtures = [...popularFixtures, ...otherFixtures]
+      .slice(0, MAX_FIXTURES_PER_DAY);
+
+    return {
+      fixtures: sortedFixtures,
+      totalCount: fixtures?.length || 0
+    };
   } catch (err) {
-    console.error(`Error fetching fixtures for ${dateKey}:`, err);
+    console.error('Error fetching fixtures:', err);
     return { fixtures: [], totalCount: 0 };
   }
 }
@@ -139,7 +178,7 @@ export default async function FixturesSection() {
   
   // Fetch fixtures for all dates in parallel
   const fixturesPromises = Object.entries(dates).map(async ([key, date]) => {
-    const result = await fetchFixturesForDate(key, date);
+    const result = await fetchFixturesFromSupabase(date);
     return { key, ...result };
   });
   

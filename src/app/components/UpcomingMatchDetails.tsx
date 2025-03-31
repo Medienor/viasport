@@ -4,9 +4,10 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import TeamStatisticsTable from './TeamStatisticsTable';
 import { getTeamMatches, getTeamTopPlayers, getHeadToHead } from '@/app/services/sportApi';
+import { Fixture, HeadToHeadMatch } from '@/types/fixtures';
 
 interface UpcomingMatchDetailsProps {
-  match: any;
+  match: Fixture;
 }
 
 // Add this loader function at the top of your file
@@ -46,7 +47,12 @@ interface HeadToHeadMatch {
 }
 
 export default function UpcomingMatchDetails({ match }: UpcomingMatchDetailsProps) {
+  const [timeUntilMatch, setTimeUntilMatch] = useState('');
   const [headToHead, setHeadToHead] = useState<HeadToHeadMatch[]>([]);
+  const [homeTeamMatches, setHomeTeamMatches] = useState<Fixture[]>([]);
+  const [awayTeamMatches, setAwayTeamMatches] = useState<Fixture[]>([]);
+  const [homeTeamPlayers, setHomeTeamPlayers] = useState<any[]>([]);
+  const [awayTeamPlayers, setAwayTeamPlayers] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('preview');
   const [countdown, setCountdown] = useState<{
@@ -55,58 +61,73 @@ export default function UpcomingMatchDetails({ match }: UpcomingMatchDetailsProp
     minutes: number;
     seconds: number;
   }>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-  const [homeTeamMatches, setHomeTeamMatches] = useState<any[]>([]);
-  const [awayTeamMatches, setAwayTeamMatches] = useState<any[]>([]);
-  const [homeTeamPlayers, setHomeTeamPlayers] = useState<any[]>([]);
-  const [awayTeamPlayers, setAwayTeamPlayers] = useState<any[]>([]);
   
-  const homeTeamId = match.teams.home.id;
-  const awayTeamId = match.teams.away.id;
+  const homeTeamId = match.home_team_id;
+  const awayTeamId = match.away_team_id;
   
   useEffect(() => {
-    const fetchHeadToHead = async () => {
-      if (homeTeamId && awayTeamId) {
-        const h2hData = await getHeadToHead(homeTeamId, awayTeamId);
-        setHeadToHead(h2hData);
-        setLoading(false);
-      }
-    };
-
-    fetchHeadToHead();
-  }, [homeTeamId, awayTeamId]);
-  
-  // Calculate and update countdown
-  useEffect(() => {
-    const matchDate = new Date(match.fixture.date);
-    
     const updateCountdown = () => {
+      const matchDate = new Date(match.date);
       const now = new Date();
-      const difference = matchDate.getTime() - now.getTime();
+      const diff = matchDate.getTime() - now.getTime();
       
-      if (difference <= 0) {
+      if (diff <= 0) {
         // Match has started
         setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0 });
         return;
       }
       
-      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
       
       setCountdown({ days, hours, minutes, seconds });
     };
     
-    // Update immediately
-    updateCountdown();
-    
-    // Then update every second
     const interval = setInterval(updateCountdown, 1000);
-    
+    updateCountdown();
+
     return () => clearInterval(interval);
-  }, [match.fixture.date]);
+  }, [match.date]);
   
-  const matchDate = new Date(match.fixture.date);
+  useEffect(() => {
+    const fetchMatchData = async () => {
+      try {
+        setLoading(true);
+        
+        // Fetch head-to-head matches
+        const h2hResponse = await fetch(`/api/matches/h2h/${match.home_team_id}/${match.away_team_id}`);
+        const h2hData = await h2hResponse.json();
+        setHeadToHead(h2hData.matches || []);
+
+        // Fetch home team's last matches
+        const homeTeamResponse = await fetch(`/api/matches/team/${match.home_team_id}`);
+        const homeTeamData = await homeTeamResponse.json();
+        setHomeTeamMatches(homeTeamData.matches || []);
+
+        // Fetch away team's last matches
+        const awayTeamResponse = await fetch(`/api/matches/team/${match.away_team_id}`);
+        const awayTeamData = await awayTeamResponse.json();
+        setAwayTeamMatches(awayTeamData.matches || []);
+
+        // Fetch lineups if available
+        if (match.lineups) {
+          setHomeTeamPlayers(match.lineups.home || []);
+          setAwayTeamPlayers(match.lineups.away || []);
+        }
+
+      } catch (error) {
+        console.error('Error fetching match data:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchMatchData();
+  }, [match.home_team_id, match.away_team_id, match.lineups]);
+  
+  const matchDate = new Date(match.date);
   // Use native JavaScript date formatting
   const formattedDate = formatDate(matchDate);
   
@@ -174,16 +195,15 @@ export default function UpcomingMatchDetails({ match }: UpcomingMatchDetailsProp
   }, [match.teams.home.id, match.teams.away.id, match.league.season, activeTab]);
   
   // Helper function to determine match result
-  function getMatchResult(match: any, teamId: number): 'W' | 'D' | 'L' {
-    if (match.goals.home === match.goals.away) return 'D';
+  const getMatchResult = (match: Fixture, teamId: number) => {
+    const isHomeTeam = match.home_team_id === teamId;
+    const homeGoals = match.goals?.home || 0;
+    const awayGoals = match.goals?.away || 0;
     
-    const isHomeTeam = match.teams.home.id === teamId;
-    const teamWon = isHomeTeam ? 
-      match.goals.home > match.goals.away : 
-      match.goals.away > match.goals.home;
-    
-    return teamWon ? 'W' : 'L';
-  }
+    if (homeGoals === awayGoals) return 'D';
+    if (isHomeTeam) return homeGoals > awayGoals ? 'W' : 'L';
+    return awayGoals > homeGoals ? 'W' : 'L';
+  };
   
   return (
     <>
@@ -401,7 +421,7 @@ export default function UpcomingMatchDetails({ match }: UpcomingMatchDetailsProp
                     <div className="text-gray-500">
                       <svg className="w-12 h-12 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-                          d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01" 
+                          d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01" 
                         />
                       </svg>
                       <p className="text-lg font-medium">Ingen tidligere møter mellom disse lagene</p>
@@ -624,7 +644,7 @@ export default function UpcomingMatchDetails({ match }: UpcomingMatchDetailsProp
                         return (
                           <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                             <td className="px-3 py-2 whitespace-nowrap text-xs text-gray-500">
-                              {formatSimpleDate(new Date(match.fixture.date))}
+                              {formatSimpleDate(new Date(match.date))}
                             </td>
                             <td className="px-3 py-2 whitespace-nowrap">
                               <div className="flex items-center">
@@ -713,7 +733,7 @@ export default function UpcomingMatchDetails({ match }: UpcomingMatchDetailsProp
                         return (
                           <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                             <td className="px-3 py-2 whitespace-nowrap text-xs text-gray-500">
-                              {formatSimpleDate(new Date(match.fixture.date))}
+                              {formatSimpleDate(new Date(match.date))}
                             </td>
                             <td className="px-3 py-2 whitespace-nowrap">
                               <div className="flex items-center">

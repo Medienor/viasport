@@ -1,85 +1,143 @@
-import { Metadata } from 'next';
 import MatchCalendar from '@/app/components/MatchCalendar';
-import { getLiveMatches } from '@/app/services/sportApi';
 import ClientLiveMatches from './ClientLiveMatches';
+import { MAJOR_LEAGUES } from '@/scripts/teamDataFetcher';
 
 // Force dynamic rendering for this page
 export const dynamic = 'force-dynamic';
 
-// Define metadata
-export async function generateMetadata({ params }: { params: { sport: string } }): Promise<Metadata> {
-  const sport = params.sport;
-  const sportName = sport.charAt(0).toUpperCase() + sport.slice(1);
-  
-  return {
-    title: `Direktesendte ${sportName}-kamper som går nå på TV & Stream | ViaSport.no`,
-    description: `Se alle direktesendte ${sportName}-kamper som spilles akkurat nå. Følg kampene live med oppdaterte resultater og statistikk.`,
-  };
-}
+// Define league priorities
+const LEAGUE_PRIORITIES = {
+  // Tier 1: Norwegian Leagues
+  103: 1, // Eliteserien
+  104: 2, // OBOS-ligaen
+  725: 3, // Toppserien
+
+  // Tier 2: Top European Leagues
+  39: 4,  // Premier League
+  140: 5, // La Liga
+  135: 6, // Serie A
+  78: 7,  // Bundesliga
+  61: 8,  // Ligue 1
+
+  // Tier 3: European Competitions
+  2: 9,   // Champions League
+  3: 10,  // Europa League
+  848: 11, // Conference League
+
+  // Tier 4: Other Major European Leagues
+  94: 12,  // Primeira Liga
+  88: 13,  // Eredivisie
+  144: 14, // Allsvenskan
+  179: 15, // Superliga
+};
 
 export default async function LiveMatchesPage({ params }: { params: { sport: string } }) {
-  const sport = params.sport;
-  const sportName = sport.charAt(0).toUpperCase() + sport.slice(1);
+  const sport = await Promise.resolve(params.sport);
   
   try {
-    // Fetch live matches with server component
-    let matches = [];
-    let fixturesByLeague: Record<string, any[]> = {};
-    let sortedLeagues: string[] = [];
-    
-    // For football, use the existing sportApi service
-    if (sport === 'fotball') {
-      matches = await getLiveMatches();
-      
-      // Group fixtures by league
-      fixturesByLeague = matches.reduce((acc: Record<string, any[]>, fixture: any) => {
-        const leagueId = fixture.league.id.toString();
-        if (!acc[leagueId]) {
-          acc[leagueId] = [];
-        }
-        
-        // Format the time for each fixture here on the server
-        const date = new Date(fixture.fixture.date);
-        fixture.formattedTime = date.toLocaleTimeString('no-NO', { hour: '2-digit', minute: '2-digit' });
-        
-        acc[leagueId].push(fixture);
-        return acc;
-      }, {});
-      
-      // Sort leagues by number of fixtures (more fixtures first)
-      sortedLeagues = Object.keys(fixturesByLeague).sort((a, b) => {
-        return fixturesByLeague[b].length - fixturesByLeague[a].length;
-      });
+    if (!process.env.RAPID_API_KEY) {
+      throw new Error('API key is not configured');
     }
+
+    const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/fixtures?live=all', {
+      headers: {
+        'x-rapidapi-host': 'api-football-v1.p.rapidapi.com',
+        'x-rapidapi-key': process.env.RAPID_API_KEY
+      },
+      next: { revalidate: 30 }
+    });
+
+    if (!response.ok) {
+      throw new Error(`API request failed: ${response.status}`);
+    }
+
+    const data = await response.json();
     
+    if (!data || !data.response) {
+      throw new Error('Invalid API response format');
+    }
+
+    // Create a Set of major league IDs for faster lookup
+    const majorLeagueIds = new Set(MAJOR_LEAGUES.map(league => league.id));
+
+    // Filter response to only include major leagues
+    const filteredResponse = data.response.filter((fixture: any) => 
+      majorLeagueIds.has(fixture.league.id)
+    );
+
+    // If no matches are found in major leagues
+    if (!filteredResponse || filteredResponse.length === 0) {
+      return (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <h1 className="text-2xl font-bold text-gray-900 mb-6">Direktesendte {sport}-kamper</h1>
+          <div className="bg-white shadow rounded-lg p-6 text-center">
+            <p className="text-gray-500">
+              Ingen direktesendte kamper i de store ligaene akkurat nå.
+            </p>
+          </div>
+        </div>
+      );
+    }
+
+    // Sort leagues by priority
+    const sortLeagues = (a: any, b: any) => {
+      const priorityA = LEAGUE_PRIORITIES[a.league.id] || 999;
+      const priorityB = LEAGUE_PRIORITIES[b.league.id] || 999;
+      
+      if (priorityA === priorityB) {
+        return a.league.name.localeCompare(b.league.name);
+      }
+      return priorityA - priorityB;
+    };
+
+    // Sort the filtered response data by priority
+    const sortedResponse = filteredResponse.sort(sortLeagues);
+
+    // Group fixtures by league
+    const fixturesByLeague = sortedResponse.reduce((acc: Record<string, any[]>, fixture: any) => {
+      const leagueId = fixture.league.id.toString();
+      if (!acc[leagueId]) {
+        acc[leagueId] = [];
+      }
+      acc[leagueId].push(fixture);
+      return acc;
+    }, {});
+
+    // Create sorted league IDs based on priority
+    const sortedLeagues = Object.keys(fixturesByLeague);
+
+    // Extract unique leagues for the dropdown with proper checks
+    const liveLeagues = sortedLeagues
+      .map(leagueId => {
+        const fixtures = fixturesByLeague[leagueId];
+        if (!fixtures || fixtures.length === 0) return null;
+        
+        const league = fixtures[0].league;
+        if (!league) return null;
+
+        return {
+          id: league.id,
+          name: league.name,
+          country: league.country,
+          logo: league.logo,
+          flag: league.flag
+        };
+      })
+      .filter((league): league is NonNullable<typeof league> => league !== null);
+
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row gap-8">
-          {/* Left column - Live matches - First on mobile and desktop */}
-          <div className="w-full md:w-2/3 order-1">
-            <div className="space-y-8">
-              <h1 className="text-lg font-bold text-gray-900">Direktesendte {sportName}-kamper</h1>
-              
-              {sortedLeagues.length === 0 ? (
-                <div className="p-8 text-center text-gray-500 bg-white shadow rounded-lg">
-                  <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                  <p className="mt-2">Ingen direktesendte kamper akkurat nå.</p>
-                </div>
-              ) : (
-                // Pass the data to a client component for interactivity
-                <ClientLiveMatches 
-                  fixturesByLeague={fixturesByLeague}
-                  sortedLeagues={sortedLeagues}
-                  sport={sport}
-                />
-              )}
-            </div>
+          <div className="w-full md:w-2/3">
+            <h1 className="text-2xl font-bold text-gray-900 mb-6">Direktesendte {sport}-kamper</h1>
+            <ClientLiveMatches 
+              fixturesByLeague={fixturesByLeague}
+              sortedLeagues={sortedLeagues}
+              sport={sport}
+              liveLeagues={liveLeagues}
+            />
           </div>
-          
-          {/* Right column - Calendar - Second on mobile, second on desktop */}
-          <div className="w-full md:w-1/3 order-2">
+          <div className="w-full md:w-1/3">
             <MatchCalendar currentMatchId="" />
           </div>
         </div>
@@ -91,6 +149,11 @@ export default async function LiveMatchesPage({ params }: { params: { sport: str
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="p-8 text-center text-red-500 bg-white shadow rounded-lg">
           <p>Kunne ikke hente direktesendte kamper. Vennligst prøv igjen senere.</p>
+          {process.env.NODE_ENV === 'development' && (
+            <p className="mt-2 text-sm text-gray-500">
+              {error instanceof Error ? error.message : 'Unknown error'}
+            </p>
+          )}
         </div>
       </div>
     );
