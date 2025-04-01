@@ -225,65 +225,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1221040,
-          "date": "2025-03-30T10:00:00+00:00",
-          "venue": {
-            "id": 20115,
-            "name": "Stadion Vorskla im. Oleksiya Butovskoho",
-            "city": "Poltava"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743328800
-        },
-        "league": {
-          "id": 333,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/333.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1121,
-            "name": "Vorskla Poltava",
-            "logo": "https://media.api-sports.io/football/teams/1121.png",
-            "winner": null
-          },
-          "away": {
-            "id": 6489,
-            "name": "Kryvbas KR",
-            "logo": "https://media.api-sports.io/football/teams/6489.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1221045,
           "date": "2025-04-06T10:00:00+00:00",
           "venue": {
@@ -399,9 +340,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1221064,
+          "date": "2025-04-18T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Hirnyk",
+            "city": "Kryvyi Rih"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745013600
+        },
+        "league": {
+          "id": 333,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/333.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6489,
+            "name": "Kryvbas KR",
+            "logo": "https://media.api-sports.io/football/teams/6489.png",
+            "winner": null
+          },
+          "away": {
+            "id": 599,
+            "name": "Zorya Luhansk",
+            "logo": "https://media.api-sports.io/football/teams/599.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1221040,
+          "date": "2025-03-30T10:00:00+00:00",
+          "venue": {
+            "id": 20115,
+            "name": "Stadion Vorskla im. Oleksiya Butovskoho",
+            "city": "Poltava"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743328800
+        },
+        "league": {
+          "id": 333,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/333.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1121,
+            "name": "Vorskla Poltava",
+            "logo": "https://media.api-sports.io/football/teams/1121.png",
+            "winner": false
+          },
+          "away": {
+            "id": 6489,
+            "name": "Kryvbas KR",
+            "logo": "https://media.api-sports.io/football/teams/6489.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1221021,
@@ -880,7 +939,7 @@
           "date": "2024-12-14T13:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadion Hirnyk",
+            "name": "Metalurh Stadium",
             "city": "Kryvyi Rih"
           },
           "status": {
@@ -922,65 +981,6 @@
           "fulltime": {
             "home": 2,
             "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1220990,
-          "date": "2024-12-07T13:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadion Chornomorets",
-            "city": "Odesa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1733578200
-        },
-        "league": {
-          "id": 333,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/333.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3615,
-            "name": "Chornomorets",
-            "logo": "https://media.api-sports.io/football/teams/3615.png",
-            "winner": false
-          },
-          "away": {
-            "id": 6489,
-            "name": "Kryvbas KR",
-            "logo": "https://media.api-sports.io/football/teams/6489.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
           },
           "extratime": {
             "home": null,
@@ -1287,5 +1287,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:30.453Z"
+  "lastUpdated": "2025-04-01T14:55:25.709Z"
 }

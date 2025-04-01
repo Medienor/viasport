@@ -147,7 +147,7 @@
         {
           "year": 2024,
           "start": "2024-08-10",
-          "end": "2025-03-29",
+          "end": "2025-04-06",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -218,12 +218,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1366525,
-          "date": "2025-03-29T13:00:00+00:00",
+          "id": 1367392,
+          "date": "2025-04-05T13:00:00+00:00",
           "venue": {
-            "id": 11084,
-            "name": "Stadiumi Zahir Pajaziti",
-            "city": "Besiana, Podujevo"
+            "id": 8093,
+            "name": "Stadiumi i qytetit Suharekë",
+            "city": "Suva Reka"
           },
           "status": {
             "long": "Not Started",
@@ -231,7 +231,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743253200
+          "timestamp": 1743858000
         },
         "league": {
           "id": 664,
@@ -240,15 +240,15 @@
         },
         "teams": {
           "home": {
-            "id": 14395,
-            "name": "Llapi",
-            "logo": "https://media.api-sports.io/football/teams/14395.png",
-            "winner": null
-          },
-          "away": {
             "id": 12733,
             "name": "Ballkani",
             "logo": "https://media.api-sports.io/football/teams/12733.png",
+            "winner": null
+          },
+          "away": {
+            "id": 22817,
+            "name": "Suhareka",
+            "logo": "https://media.api-sports.io/football/teams/22817.png",
             "winner": null
           }
         },
@@ -277,6 +277,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366525,
+          "date": "2025-03-29T13:00:00+00:00",
+          "venue": {
+            "id": 11084,
+            "name": "Stadiumi Zahir Pajaziti",
+            "city": "Besiana, Podujevo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743253200
+        },
+        "league": {
+          "id": 664,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/664.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14395,
+            "name": "Llapi",
+            "logo": "https://media.api-sports.io/football/teams/14395.png",
+            "winner": null
+          },
+          "away": {
+            "id": 12733,
+            "name": "Ballkani",
+            "logo": "https://media.api-sports.io/football/teams/12733.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361295,
@@ -807,65 +866,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1319862,
-          "date": "2024-12-08T12:00:00+00:00",
-          "venue": {
-            "id": 19336,
-            "name": "Stadiumi me bar sintetik Ferizaj",
-            "city": "Uroševac"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1733659200
-        },
-        "league": {
-          "id": 664,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/664.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14394,
-            "name": "Ferizaj",
-            "logo": "https://media.api-sports.io/football/teams/14394.png",
-            "winner": null
-          },
-          "away": {
-            "id": 12733,
-            "name": "Ballkani",
-            "logo": "https://media.api-sports.io/football/teams/12733.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1162,5 +1162,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:20.396Z"
+  "lastUpdated": "2025-04-01T14:55:15.498Z"
 }

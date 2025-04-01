@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1224209,
-          "date": "2025-03-28T19:30:00+00:00",
-          "venue": {
-            "id": 699,
-            "name": "BayArena",
-            "city": "Leverkusen"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743190200
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 168,
-            "name": "Bayer Leverkusen",
-            "logo": "https://media.api-sports.io/football/teams/168.png",
-            "winner": null
-          },
-          "away": {
-            "id": 176,
-            "name": "VfL Bochum",
-            "logo": "https://media.api-sports.io/football/teams/176.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1224225,
           "date": "2025-04-05T13:30:00+00:00",
           "venue": {
@@ -625,6 +566,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1224209,
+          "date": "2025-03-28T19:30:00+00:00",
+          "venue": {
+            "id": 699,
+            "name": "BayArena",
+            "city": "Leverkusen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743190200
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 168,
+            "name": "Bayer Leverkusen",
+            "logo": "https://media.api-sports.io/football/teams/168.png",
+            "winner": true
+          },
+          "away": {
+            "id": 176,
+            "name": "VfL Bochum",
+            "logo": "https://media.api-sports.io/football/teams/176.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365886,
@@ -1155,65 +1155,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224135,
-          "date": "2025-01-18T14:30:00+00:00",
-          "venue": {
-            "id": 751,
-            "name": "Vonovia Ruhrstadion",
-            "city": "Bochum"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737210600
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 176,
-            "name": "VfL Bochum",
-            "logo": "https://media.api-sports.io/football/teams/176.png",
-            "winner": null
-          },
-          "away": {
-            "id": 173,
-            "name": "RB Leipzig",
-            "logo": "https://media.api-sports.io/football/teams/173.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1510,5 +1451,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:31.879Z"
+  "lastUpdated": "2025-04-01T14:53:25.307Z"
 }

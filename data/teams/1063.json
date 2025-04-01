@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1213986,
-          "date": "2025-03-29T18:00:00+00:00",
-          "venue": {
-            "id": 676,
-            "name": "Stade Geoffroy-Guichard",
-            "city": "Saint-Ètienne"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743271200
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1063,
-            "name": "Saint Etienne",
-            "logo": "https://media.api-sports.io/football/teams/1063.png",
-            "winner": null
-          },
-          "away": {
-            "id": 85,
-            "name": "Paris Saint Germain",
-            "logo": "https://media.api-sports.io/football/teams/85.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1213995,
@@ -386,9 +327,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1214018,
+          "date": "2025-04-26T15:00:00+00:00",
+          "venue": {
+            "id": 681,
+            "name": "Stade de la Meinau",
+            "city": "Strasbourg"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745679600
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 95,
+            "name": "Strasbourg",
+            "logo": "https://media.api-sports.io/football/teams/95.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1063,
+            "name": "Saint Etienne",
+            "logo": "https://media.api-sports.io/football/teams/1063.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213986,
+          "date": "2025-03-29T18:00:00+00:00",
+          "venue": {
+            "id": 676,
+            "name": "Stade Geoffroy-Guichard",
+            "city": "Saint-Ètienne"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743271200
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1063,
+            "name": "Saint Etienne",
+            "logo": "https://media.api-sports.io/football/teams/1063.png",
+            "winner": false
+          },
+          "away": {
+            "id": 85,
+            "name": "Paris Saint Germain",
+            "logo": "https://media.api-sports.io/football/teams/85.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 6
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 6
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213963,
@@ -690,8 +749,8 @@
           "date": "2025-02-01T20:05:00+00:00",
           "venue": {
             "id": null,
-            "name": "Decathlon Arena - Stade Pierre-Mauroy",
-            "city": "Villeneuve d'Ascq"
+            "name": "Decathlon Arena - Stade Pierre Mauroy",
+            "city": "Lille"
           },
           "status": {
             "long": "Match Finished",
@@ -908,65 +967,6 @@
           },
           "fulltime": {
             "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1213885,
-          "date": "2025-01-04T16:00:00+00:00",
-          "venue": {
-            "id": 676,
-            "name": "Stade Geoffroy-Guichard",
-            "city": "Saint-Ètienne"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1736006400
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1063,
-            "name": "Saint Etienne",
-            "logo": "https://media.api-sports.io/football/teams/1063.png",
-            "winner": true
-          },
-          "away": {
-            "id": 93,
-            "name": "Reims",
-            "logo": "https://media.api-sports.io/football/teams/93.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
             "away": 1
           },
           "extratime": {
@@ -1274,5 +1274,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:42.111Z"
+  "lastUpdated": "2025-04-01T14:53:35.610Z"
 }

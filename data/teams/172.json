@@ -228,65 +228,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1224212,
-          "date": "2025-03-29T17:30:00+00:00",
-          "venue": {
-            "id": 10491,
-            "name": "Deutsche Bank Park",
-            "city": "Frankfurt am Main"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743269400
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 169,
-            "name": "Eintracht Frankfurt",
-            "logo": "https://media.api-sports.io/football/teams/169.png",
-            "winner": null
-          },
-          "away": {
-            "id": 172,
-            "name": "VfB Stuttgart",
-            "logo": "https://media.api-sports.io/football/teams/172.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1357110,
           "date": "2025-04-02T18:45:00+00:00",
           "venue": {
@@ -759,6 +700,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1224212,
+          "date": "2025-03-29T17:30:00+00:00",
+          "venue": {
+            "id": 10491,
+            "name": "Deutsche Bank Park",
+            "city": "Frankfurt am Main"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743269400
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 169,
+            "name": "Eintracht Frankfurt",
+            "logo": "https://media.api-sports.io/football/teams/169.png",
+            "winner": true
+          },
+          "away": {
+            "id": 172,
+            "name": "VfB Stuttgart",
+            "logo": "https://media.api-sports.io/football/teams/172.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1224200,
@@ -1289,65 +1289,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224143,
-          "date": "2025-01-25T14:30:00+00:00",
-          "venue": {
-            "id": 11899,
-            "name": "MEWA ARENA",
-            "city": "Mainz"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737815400
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 164,
-            "name": "FSV Mainz 05",
-            "logo": "https://media.api-sports.io/football/teams/164.png",
-            "winner": true
-          },
-          "away": {
-            "id": 172,
-            "name": "VfB Stuttgart",
-            "logo": "https://media.api-sports.io/football/teams/172.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1644,5 +1585,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:29.359Z"
+  "lastUpdated": "2025-04-01T14:53:22.722Z"
 }

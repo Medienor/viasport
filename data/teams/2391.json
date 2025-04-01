@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1211462,
-          "date": "2025-03-29T18:30:00+00:00",
-          "venue": {
-            "id": 808,
-            "name": "Városi Stadion",
-            "city": "Nyíregyháza"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743273000
-        },
-        "league": {
-          "id": 271,
-          "name": "NB I",
-          "logo": "https://media.api-sports.io/football/leagues/271.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2403,
-            "name": "Nyiregyhaza",
-            "logo": "https://media.api-sports.io/football/teams/2403.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2391,
-            "name": "Puskas Academy",
-            "logo": "https://media.api-sports.io/football/teams/2391.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1211472,
@@ -363,9 +304,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1211483,
+          "date": "2025-04-18T22:00:00+00:00",
+          "venue": {
+            "id": 809,
+            "name": "Paksi FC Stadion",
+            "city": "Paks"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745013600
+        },
+        "league": {
+          "id": 271,
+          "name": "NB I",
+          "logo": "https://media.api-sports.io/football/leagues/271.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2390,
+            "name": "Paks",
+            "logo": "https://media.api-sports.io/football/teams/2390.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2391,
+            "name": "Puskas Academy",
+            "logo": "https://media.api-sports.io/football/teams/2391.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1211462,
+          "date": "2025-03-29T18:30:00+00:00",
+          "venue": {
+            "id": 808,
+            "name": "Városi Stadion",
+            "city": "Nyíregyháza"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743273000
+        },
+        "league": {
+          "id": 271,
+          "name": "NB I",
+          "logo": "https://media.api-sports.io/football/leagues/271.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2403,
+            "name": "Nyiregyhaza",
+            "logo": "https://media.api-sports.io/football/teams/2403.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2391,
+            "name": "Puskas Academy",
+            "logo": "https://media.api-sports.io/football/teams/2391.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1211459,
@@ -896,65 +955,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337096,
-          "date": "2025-01-20T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Banús Football Center",
-            "city": "Marbella"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737331200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2391,
-            "name": "Puskas Academy",
-            "logo": "https://media.api-sports.io/football/teams/2391.png",
-            "winner": true
-          },
-          "away": {
-            "id": 363,
-            "name": "Hammarby FF",
-            "logo": "https://media.api-sports.io/football/teams/363.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1251,5 +1251,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:39:03.536Z"
+  "lastUpdated": "2025-04-01T14:55:59.436Z"
 }

@@ -147,65 +147,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208747,
-          "date": "2025-03-30T14:15:00+00:00",
-          "venue": {
-            "id": 19939,
-            "name": "Estadi Olímpic Lluís Companys",
-            "city": "Barcelona"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743344100
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 529,
-            "name": "Barcelona",
-            "logo": "https://media.api-sports.io/football/teams/529.png",
-            "winner": null
-          },
-          "away": {
-            "id": 547,
-            "name": "Girona",
-            "logo": "https://media.api-sports.io/football/teams/547.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208763,
           "date": "2025-04-05T12:00:00+00:00",
           "venue": {
@@ -321,9 +262,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1208777,
+          "date": "2025-04-21T19:00:00+00:00",
+          "venue": {
+            "id": 1478,
+            "name": "Estadi Municipal de Montilivi",
+            "city": "Girona"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745262000
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 547,
+            "name": "Girona",
+            "logo": "https://media.api-sports.io/football/teams/547.png",
+            "winner": null
+          },
+          "away": {
+            "id": 543,
+            "name": "Real Betis",
+            "logo": "https://media.api-sports.io/football/teams/543.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208790,
+          "date": "2025-04-24T17:00:00+00:00",
+          "venue": {
+            "id": 1464,
+            "name": "Estadio Municipal de Butarque",
+            "city": "Leganés"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745514000
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 537,
+            "name": "Leganes",
+            "logo": "https://media.api-sports.io/football/teams/537.png",
+            "winner": null
+          },
+          "away": {
+            "id": 547,
+            "name": "Girona",
+            "logo": "https://media.api-sports.io/football/teams/547.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208747,
+          "date": "2025-03-30T14:15:00+00:00",
+          "venue": {
+            "id": 19939,
+            "name": "Estadi Olímpic Lluís Companys",
+            "city": "Barcelona"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743344100
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 529,
+            "name": "Barcelona",
+            "logo": "https://media.api-sports.io/football/teams/529.png",
+            "winner": true
+          },
+          "away": {
+            "id": 547,
+            "name": "Girona",
+            "logo": "https://media.api-sports.io/football/teams/547.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208738,
@@ -854,65 +972,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299105,
-          "date": "2025-01-22T20:00:00+00:00",
-          "venue": {
-            "id": 907,
-            "name": "Stadio Giuseppe Meazza",
-            "city": "Milano"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737576000
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 489,
-            "name": "AC Milan",
-            "logo": "https://media.api-sports.io/football/teams/489.png",
-            "winner": true
-          },
-          "away": {
-            "id": 547,
-            "name": "Girona",
-            "logo": "https://media.api-sports.io/football/teams/547.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1209,5 +1268,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:11.982Z"
+  "lastUpdated": "2025-04-01T14:53:03.941Z"
 }

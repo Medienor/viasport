@@ -36,7 +36,7 @@
         {
           "year": 2024,
           "start": "2024-09-04",
-          "end": "2025-03-26",
+          "end": "2025-04-26",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -105,65 +105,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1328626,
-          "date": "2025-03-29T13:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Røabanen",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743253200
-        },
-        "league": {
-          "id": 725,
-          "name": "Toppserien",
-          "logo": "https://media.api-sports.io/football/leagues/725.png"
-        },
-        "teams": {
-          "home": {
-            "id": 18379,
-            "name": "Røa",
-            "logo": "https://media.api-sports.io/football/teams/18379.png",
-            "winner": null
-          },
-          "away": {
-            "id": 15535,
-            "name": "Vålerenga W",
-            "logo": "https://media.api-sports.io/football/teams/15535.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1328630,
@@ -1284,9 +1225,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1328723,
+          "date": "2025-10-04T12:00:00+00:00",
+          "venue": {
+            "id": 1175,
+            "name": "Aspmyra Stadion",
+            "city": "Bodø"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1759579200
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 22858,
+            "name": "Bodø / Glimt",
+            "logo": "https://media.api-sports.io/football/teams/22858.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15535,
+            "name": "Vålerenga W",
+            "logo": "https://media.api-sports.io/football/teams/15535.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1328626,
+          "date": "2025-03-29T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Røabanen",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743253200
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 18379,
+            "name": "Røa",
+            "logo": "https://media.api-sports.io/football/teams/18379.png",
+            "winner": false
+          },
+          "away": {
+            "id": 15535,
+            "name": "Vålerenga W",
+            "logo": "https://media.api-sports.io/football/teams/15535.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1328620,
@@ -1352,8 +1411,8 @@
           "date": "2024-12-18T20:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Juventus Center",
-            "city": "Vinovo"
+            "name": "Stadio Comunale Vittorio Pozzo Lamarmora",
+            "city": "Biella"
           },
           "status": {
             "long": "Match Finished",
@@ -1817,65 +1876,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1309684,
-          "date": "2024-10-16T19:00:00+00:00",
-          "venue": {
-            "id": 494,
-            "name": "Emirates Stadium",
-            "city": "London"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1729105200
-        },
-        "league": {
-          "id": 525,
-          "name": "UEFA Champions League Women",
-          "logo": "https://media.api-sports.io/football/leagues/525.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1850,
-            "name": "Arsenal W",
-            "logo": "https://media.api-sports.io/football/teams/1850.png",
-            "winner": true
-          },
-          "away": {
-            "id": 15535,
-            "name": "Vålerenga W",
-            "logo": "https://media.api-sports.io/football/teams/15535.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1893,17 +1893,17 @@
       "name": "Vålerenga W",
       "logo": "https://media.api-sports.io/football/teams/15535.png"
     },
-    "form": "W",
+    "form": "WW",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "wins": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "draws": {
         "home": 0,
@@ -1920,26 +1920,26 @@
       "for": {
         "total": {
           "home": 6,
-          "away": 0,
-          "total": 6
+          "away": 1,
+          "total": 7
         },
         "average": {
           "home": "6.0",
-          "away": "0.0",
-          "total": "6.0"
+          "away": "1.0",
+          "total": "3.5"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "16.67%"
+            "percentage": "14.29%"
           },
           "16-30": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": 2,
+            "percentage": "28.57%"
           },
           "31-45": {
             "total": 3,
-            "percentage": "50.00%"
+            "percentage": "42.86%"
           },
           "46-60": {
             "total": null,
@@ -1947,7 +1947,7 @@
           },
           "61-75": {
             "total": 1,
-            "percentage": "16.67%"
+            "percentage": "14.29%"
           },
           "76-90": {
             "total": null,
@@ -1964,24 +1964,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "1.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           }
         }
       },
@@ -2033,36 +2033,36 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 2,
         "draws": 0,
         "loses": 0
       },
       "wins": {
         "home": "6-0",
-        "away": null
+        "away": "0-1"
       },
       "loses": {
         "home": null,
@@ -2071,7 +2071,7 @@
       "goals": {
         "for": {
           "home": 6,
-          "away": 0
+          "away": 1
         },
         "against": {
           "home": 0,
@@ -2081,8 +2081,8 @@
     },
     "clean_sheet": {
       "home": 1,
-      "away": 0,
-      "total": 1
+      "away": 1,
+      "total": 2
     },
     "failed_to_score": {
       "home": 0,
@@ -2172,5 +2172,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:35:48.878Z"
+  "lastUpdated": "2025-04-01T14:52:41.053Z"
 }

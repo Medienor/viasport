@@ -228,65 +228,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213676,
-          "date": "2025-03-30T14:45:00+00:00",
-          "venue": {
-            "id": 1128,
-            "name": "Stadion Feijenoord",
-            "city": "Rotterdam"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743345900
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 209,
-            "name": "Feyenoord",
-            "logo": "https://media.api-sports.io/football/teams/209.png",
-            "winner": null
-          },
-          "away": {
-            "id": 410,
-            "name": "GO Ahead Eagles",
-            "logo": "https://media.api-sports.io/football/teams/410.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213659,
           "date": "2025-04-02T18:00:00+00:00",
           "venue": {
@@ -759,6 +700,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213676,
+          "date": "2025-03-30T14:45:00+00:00",
+          "venue": {
+            "id": 1128,
+            "name": "Stadion Feijenoord",
+            "city": "Rotterdam"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743345900
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 209,
+            "name": "Feyenoord",
+            "logo": "https://media.api-sports.io/football/teams/209.png",
+            "winner": true
+          },
+          "away": {
+            "id": 410,
+            "name": "GO Ahead Eagles",
+            "logo": "https://media.api-sports.io/football/teams/410.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213669,
@@ -1289,65 +1289,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1338276,
-          "date": "2025-02-05T17:45:00+00:00",
-          "venue": {
-            "id": 1143,
-            "name": "Philips Stadion",
-            "city": "Eindhoven"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738777500
-        },
-        "league": {
-          "id": 90,
-          "name": "KNVB Beker",
-          "logo": "https://media.api-sports.io/football/leagues/90.png"
-        },
-        "teams": {
-          "home": {
-            "id": 197,
-            "name": "PSV Eindhoven",
-            "logo": "https://media.api-sports.io/football/teams/197.png",
-            "winner": true
-          },
-          "away": {
-            "id": 209,
-            "name": "Feyenoord",
-            "logo": "https://media.api-sports.io/football/teams/209.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1644,5 +1585,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:05.224Z"
+  "lastUpdated": "2025-04-01T14:53:58.519Z"
 }

@@ -107,65 +107,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361772,
-          "date": "2025-03-30T17:15:00+00:00",
-          "venue": {
-            "id": 19052,
-            "name": "DENDER Football Complex",
-            "city": "Denderleeuw"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743354900
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6215,
-            "name": "Dender",
-            "logo": "https://media.api-sports.io/football/teams/6215.png",
-            "winner": null
-          },
-          "away": {
-            "id": 261,
-            "name": "KVC Westerlo",
-            "logo": "https://media.api-sports.io/football/teams/261.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361773,
           "date": "2025-04-04T18:45:00+00:00",
           "venue": {
@@ -699,6 +640,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361772,
+          "date": "2025-03-30T17:15:00+00:00",
+          "venue": {
+            "id": 19052,
+            "name": "DENDER Football Complex",
+            "city": "Denderleeuw"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1743354900
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6215,
+            "name": "Dender",
+            "logo": "https://media.api-sports.io/football/teams/6215.png",
+            "winner": true
+          },
+          "away": {
+            "id": 261,
+            "name": "KVC Westerlo",
+            "logo": "https://media.api-sports.io/football/teams/261.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1213440,
           "date": "2025-03-16T17:30:00+00:00",
           "venue": {
@@ -1227,65 +1227,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213368,
-          "date": "2025-01-12T15:00:00+00:00",
-          "venue": {
-            "id": 19052,
-            "name": "DENDER Football Complex",
-            "city": "Denderleeuw"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1736694000
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6215,
-            "name": "Dender",
-            "logo": "https://media.api-sports.io/football/teams/6215.png",
-            "winner": null
-          },
-          "away": {
-            "id": 631,
-            "name": "Gent",
-            "logo": "https://media.api-sports.io/football/teams/631.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1582,5 +1523,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:17.752Z"
+  "lastUpdated": "2025-04-01T14:54:11.602Z"
 }

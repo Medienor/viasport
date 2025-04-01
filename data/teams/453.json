@@ -261,65 +261,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334440,
-          "date": "2025-03-29T21:45:00+00:00",
-          "venue": {
-            "id": 7131,
-            "name": "Estadio Libertadores de América",
-            "city": "Avellaneda, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743284700
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 453,
-            "name": "Independiente",
-            "logo": "https://media.api-sports.io/football/teams/453.png",
-            "winner": null
-          },
-          "away": {
-            "id": 439,
-            "name": "Godoy Cruz",
-            "logo": "https://media.api-sports.io/football/teams/439.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362093,
           "date": "2025-04-01T22:00:00+00:00",
           "venue": {
@@ -853,6 +794,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1334440,
+          "date": "2025-03-29T21:45:00+00:00",
+          "venue": {
+            "id": 7131,
+            "name": "Estadio Libertadores de América",
+            "city": "Avellaneda, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1743284700
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 453,
+            "name": "Independiente",
+            "logo": "https://media.api-sports.io/football/teams/453.png",
+            "winner": true
+          },
+          "away": {
+            "id": 439,
+            "name": "Godoy Cruz",
+            "logo": "https://media.api-sports.io/football/teams/439.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 4,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1365908,
           "date": "2025-03-21T14:00:00+00:00",
           "venue": {
@@ -1381,65 +1381,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334314,
-          "date": "2025-02-03T00:30:00+00:00",
-          "venue": {
-            "id": 7131,
-            "name": "Estadio Libertadores de América",
-            "city": "Avellaneda, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738542600
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 453,
-            "name": "Independiente",
-            "logo": "https://media.api-sports.io/football/teams/453.png",
-            "winner": true
-          },
-          "away": {
-            "id": 434,
-            "name": "Gimnasia L.P.",
-            "logo": "https://media.api-sports.io/football/teams/434.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1736,5 +1677,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:42.556Z"
+  "lastUpdated": "2025-04-01T14:54:37.094Z"
 }

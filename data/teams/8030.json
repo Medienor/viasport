@@ -163,7 +163,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -179,7 +179,8 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1366737,
@@ -190,10 +191,10 @@
             "city": "Iloilo City"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
           },
           "timestamp": 1743319800
         },
@@ -207,27 +208,27 @@
             "id": 8030,
             "name": "Kaya",
             "logo": "https://media.api-sports.io/football/teams/8030.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 23384,
             "name": "Taguig",
             "logo": "https://media.api-sports.io/football/teams/23384.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 2,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -238,9 +239,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1361322,
@@ -771,65 +770,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337214,
-          "date": "2025-01-19T08:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "UP Diliman Football Pitch",
-            "city": "Quezon City"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737273600
-        },
-        "league": {
-          "id": 765,
-          "name": "PFL",
-          "logo": "https://media.api-sports.io/football/leagues/765.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8030,
-            "name": "Kaya",
-            "logo": "https://media.api-sports.io/football/teams/8030.png",
-            "winner": true
-          },
-          "away": {
-            "id": 25189,
-            "name": "PFF Developmental Club",
-            "logo": "https://media.api-sports.io/football/teams/25189.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1126,5 +1066,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:09.661Z"
+  "lastUpdated": "2025-04-01T14:59:07.249Z"
 }

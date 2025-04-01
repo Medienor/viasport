@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-09-20",
-          "end": "2025-03-30",
+          "end": "2025-04-04",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -146,8 +146,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1366244,
-          "date": "2025-03-30T20:30:00+00:00",
+          "id": 1367253,
+          "date": "2025-04-03T15:30:00+00:00",
           "venue": {
             "id": null,
             "name": "Al-Shaab Stadium",
@@ -159,7 +159,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743366600
+          "timestamp": 1743694200
         },
         "league": {
           "id": 542,
@@ -168,15 +168,15 @@
         },
         "teams": {
           "home": {
-            "id": 5242,
-            "name": "Al Shorta",
-            "logo": "https://media.api-sports.io/football/teams/5242.png",
-            "winner": null
-          },
-          "away": {
             "id": 8009,
             "name": "Al Quwa Al Jawiya",
             "logo": "https://media.api-sports.io/football/teams/8009.png",
+            "winner": null
+          },
+          "away": {
+            "id": 11072,
+            "name": "Naft Al-Janoob",
+            "logo": "https://media.api-sports.io/football/teams/11072.png",
             "winner": null
           }
         },
@@ -205,6 +205,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366244,
+          "date": "2025-03-30T20:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Al-Shaab Stadium",
+            "city": "Baghdād"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743366600
+        },
+        "league": {
+          "id": 542,
+          "name": "Iraqi League",
+          "logo": "https://media.api-sports.io/football/leagues/542.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5242,
+            "name": "Al Shorta",
+            "logo": "https://media.api-sports.io/football/teams/5242.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8009,
+            "name": "Al Quwa Al Jawiya",
+            "logo": "https://media.api-sports.io/football/teams/8009.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360564,
@@ -735,65 +794,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1338006,
-          "date": "2025-01-18T16:30:00+00:00",
-          "venue": {
-            "id": 5710,
-            "name": "Al-Shaab Stadium",
-            "city": "Bagdad"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737217800
-        },
-        "league": {
-          "id": 542,
-          "name": "Iraqi League",
-          "logo": "https://media.api-sports.io/football/leagues/542.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8009,
-            "name": "Al Quwa Al Jawiya",
-            "logo": "https://media.api-sports.io/football/teams/8009.png",
-            "winner": false
-          },
-          "away": {
-            "id": 15546,
-            "name": "Al-Qasim",
-            "logo": "https://media.api-sports.io/football/teams/15546.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1090,5 +1090,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:07.066Z"
+  "lastUpdated": "2025-04-01T14:59:04.687Z"
 }

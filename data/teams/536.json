@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208748,
-          "date": "2025-03-30T19:00:00+00:00",
-          "venue": {
-            "id": 1489,
-            "name": "Estadio Benito Villamarín",
-            "city": "Sevilla"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743361200
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 543,
-            "name": "Real Betis",
-            "logo": "https://media.api-sports.io/football/teams/543.png",
-            "winner": null
-          },
-          "away": {
-            "id": 536,
-            "name": "Sevilla",
-            "logo": "https://media.api-sports.io/football/teams/536.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208760,
           "date": "2025-04-06T14:15:00+00:00",
           "venue": {
@@ -327,9 +268,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1208780,
+          "date": "2025-04-20T16:30:00+00:00",
+          "venue": {
+            "id": 1494,
+            "name": "Estadio Ramón Sánchez Pizjuán",
+            "city": "Sevilla"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745166600
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 536,
+            "name": "Sevilla",
+            "logo": "https://media.api-sports.io/football/teams/536.png",
+            "winner": null
+          },
+          "away": {
+            "id": 542,
+            "name": "Alaves",
+            "logo": "https://media.api-sports.io/football/teams/542.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1208788,
+          "date": "2025-04-24T17:00:00+00:00",
+          "venue": {
+            "id": 1486,
+            "name": "Estadio El Sadar",
+            "city": "Iruñea"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745514000
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 727,
+            "name": "Osasuna",
+            "logo": "https://media.api-sports.io/football/teams/727.png",
+            "winner": null
+          },
+          "away": {
+            "id": 536,
+            "name": "Sevilla",
+            "logo": "https://media.api-sports.io/football/teams/536.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208748,
+          "date": "2025-03-30T19:00:00+00:00",
+          "venue": {
+            "id": 1489,
+            "name": "Estadio Benito Villamarín",
+            "city": "Sevilla"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743361200
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 543,
+            "name": "Real Betis",
+            "logo": "https://media.api-sports.io/football/teams/543.png",
+            "winner": true
+          },
+          "away": {
+            "id": 536,
+            "name": "Sevilla",
+            "logo": "https://media.api-sports.io/football/teams/536.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208740,
@@ -860,65 +978,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208659,
-          "date": "2025-01-11T20:00:00+00:00",
-          "venue": {
-            "id": 1494,
-            "name": "Estadio Ramón Sánchez Pizjuán",
-            "city": "Sevilla"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1736625600
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 536,
-            "name": "Sevilla",
-            "logo": "https://media.api-sports.io/football/teams/536.png",
-            "winner": null
-          },
-          "away": {
-            "id": 532,
-            "name": "Valencia",
-            "logo": "https://media.api-sports.io/football/teams/532.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1215,5 +1274,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:06.873Z"
+  "lastUpdated": "2025-04-01T14:52:58.770Z"
 }

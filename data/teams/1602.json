@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1326302,
-          "date": "2025-03-29T18:30:00+00:00",
-          "venue": {
-            "id": 1618,
-            "name": "Gillette Stadium",
-            "city": "Foxborough, Massachusetts"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743273000
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1609,
-            "name": "New England Revolution",
-            "logo": "https://media.api-sports.io/football/teams/1609.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1602,
-            "name": "New York Red Bulls",
-            "logo": "https://media.api-sports.io/football/teams/1602.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1326322,
           "date": "2025-04-05T23:30:00+00:00",
           "venue": {
@@ -1329,13 +1270,131 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1326589,
+          "date": "2025-08-10T22:00:00+00:00",
+          "venue": {
+            "id": 21544,
+            "name": "Sports Illustrated Stadium",
+            "city": "Harrison, New Jersey"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754863200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1606,
+            "name": "Real Salt Lake",
+            "logo": "https://media.api-sports.io/football/teams/1606.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
       {
         "fixture": {
+          "id": 1326302,
+          "date": "2025-03-29T18:30:00+00:00",
+          "venue": {
+            "id": 1618,
+            "name": "Gillette Stadium",
+            "city": "Foxborough, Massachusetts"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1743273000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1326293,
-          "date": "2025-03-22T23:30:00+00:00",
+          "date": "2025-03-23T23:30:00+00:00",
           "venue": {
             "id": 21544,
             "name": "Sports Illustrated Stadium",
@@ -1347,7 +1406,7 @@
             "elapsed": 90,
             "extra": 8
           },
-          "timestamp": 1742686200
+          "timestamp": 1742772600
         },
         "league": {
           "id": 253,
@@ -1862,65 +1921,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1339872,
-          "date": "2025-01-29T16:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1738166400
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1602,
-            "name": "New York Red Bulls",
-            "logo": "https://media.api-sports.io/football/teams/1602.png",
-            "winner": false
-          },
-          "away": {
-            "id": 20787,
-            "name": "St. Louis City",
-            "logo": "https://media.api-sports.io/football/teams/20787.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1938,12 +1938,12 @@
       "name": "New York Red Bulls",
       "logo": "https://media.api-sports.io/football/teams/1602.png"
     },
-    "form": "LWDDW",
+    "form": "LWDDWL",
     "fixtures": {
       "played": {
         "home": 3,
-        "away": 2,
-        "total": 5
+        "away": 3,
+        "total": 6
       },
       "wins": {
         "home": 2,
@@ -1957,26 +1957,94 @@
       },
       "loses": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 2,
+        "total": 2
       }
     },
     "goals": {
       "for": {
         "total": {
           "home": 6,
-          "away": 0,
-          "total": 6
+          "away": 1,
+          "total": 7
         },
         "average": {
           "home": "2.0",
-          "away": "0.0",
+          "away": "0.3",
           "total": "1.2"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "16.67%"
+            "percentage": "14.29%"
+          },
+          "16-30": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "46-60": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 4,
+            "under": 2
+          },
+          "1.5": {
+            "over": 3,
+            "under": 3
+          },
+          "2.5": {
+            "over": 0,
+            "under": 6
+          },
+          "3.5": {
+            "over": 0,
+            "under": 6
+          },
+          "4.5": {
+            "over": 0,
+            "under": 6
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 3,
+          "away": 3,
+          "total": 6
+        },
+        "average": {
+          "home": "1.0",
+          "away": "1.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
           },
           "16-30": {
             "total": 2,
@@ -1987,88 +2055,20 @@
             "percentage": "16.67%"
           },
           "46-60": {
-            "total": 1,
-            "percentage": "16.67%"
-          },
-          "61-75": {
-            "total": null,
-            "percentage": null
-          },
-          "76-90": {
-            "total": 1,
-            "percentage": "16.67%"
-          },
-          "91-105": {
-            "total": null,
-            "percentage": null
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 3,
-            "under": 2
-          },
-          "1.5": {
-            "over": 3,
-            "under": 2
-          },
-          "2.5": {
-            "over": 0,
-            "under": 5
-          },
-          "3.5": {
-            "over": 0,
-            "under": 5
-          },
-          "4.5": {
-            "over": 0,
-            "under": 5
-          }
-        }
-      },
-      "against": {
-        "total": {
-          "home": 3,
-          "away": 1,
-          "total": 4
-        },
-        "average": {
-          "home": "1.0",
-          "away": "0.5",
-          "total": "0.8"
-        },
-        "minute": {
-          "0-15": {
-            "total": null,
-            "percentage": null
-          },
-          "16-30": {
-            "total": 1,
-            "percentage": "25.00%"
-          },
-          "31-45": {
-            "total": 1,
-            "percentage": "25.00%"
-          },
-          "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
             "total": 2,
-            "percentage": "50.00%"
+            "percentage": "33.33%"
           },
           "76-90": {
             "total": null,
             "percentage": null
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "16.67%"
           },
           "106-120": {
             "total": null,
@@ -2077,24 +2077,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 4,
             "under": 2
           },
           "1.5": {
-            "over": 1,
+            "over": 2,
             "under": 4
           },
           "2.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           }
         }
       }
@@ -2111,16 +2111,16 @@
       },
       "loses": {
         "home": null,
-        "away": "1-0"
+        "away": "2-1"
       },
       "goals": {
         "for": {
           "home": 2,
-          "away": 0
+          "away": 1
         },
         "against": {
           "home": 2,
-          "away": 1
+          "away": 2
         }
       }
     },
@@ -2148,7 +2148,7 @@
     "lineups": [
       {
         "formation": "3-4-2-1",
-        "played": 3
+        "played": 4
       },
       {
         "formation": "3-4-1-2",
@@ -2159,7 +2159,7 @@
       "yellow": {
         "0-15": {
           "total": 2,
-          "percentage": "16.67%"
+          "percentage": "13.33%"
         },
         "16-30": {
           "total": null,
@@ -2170,19 +2170,19 @@
           "percentage": null
         },
         "46-60": {
-          "total": 2,
-          "percentage": "16.67%"
+          "total": 3,
+          "percentage": "20.00%"
         },
         "61-75": {
           "total": 3,
-          "percentage": "25.00%"
+          "percentage": "20.00%"
         },
         "76-90": {
-          "total": 1,
-          "percentage": "8.33%"
+          "total": 2,
+          "percentage": "13.33%"
         },
         "91-105": {
-          "total": 4,
+          "total": 5,
           "percentage": "33.33%"
         },
         "106-120": {
@@ -2226,5 +2226,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:49.939Z"
+  "lastUpdated": "2025-04-01T14:59:48.574Z"
 }

@@ -188,12 +188,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334432,
-          "date": "2025-03-28T22:15:00+00:00",
+          "id": 1330775,
+          "date": "2025-04-01T22:00:00+00:00",
           "venue": {
-            "id": 43,
-            "name": "Estadio Florencio Solá",
-            "city": "Lomas de Zamora, Provincia de Buenos Aires"
+            "id": 59,
+            "name": "Estadio Norberto Tito Tomaghello",
+            "city": "Florencio Varela, Provincia de Buenos Aires"
           },
           "status": {
             "long": "Not Started",
@@ -201,12 +201,12 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743200100
+          "timestamp": 1743544800
         },
         "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
+          "id": 130,
+          "name": "Copa Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/130.png"
         },
         "teams": {
           "home": {
@@ -216,9 +216,9 @@
             "winner": null
           },
           "away": {
-            "id": 445,
-            "name": "Huracan",
-            "logo": "https://media.api-sports.io/football/teams/445.png",
+            "id": 1938,
+            "name": "Villa Mitre",
+            "logo": "https://media.api-sports.io/football/teams/1938.png",
             "winner": null
           }
         },
@@ -424,6 +424,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334432,
+          "date": "2025-03-28T22:15:00+00:00",
+          "venue": {
+            "id": 43,
+            "name": "Estadio Florencio Solá",
+            "city": "Lomas de Zamora, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743200100
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 449,
+            "name": "Banfield",
+            "logo": "https://media.api-sports.io/football/teams/449.png",
+            "winner": null
+          },
+          "away": {
+            "id": 445,
+            "name": "Huracan",
+            "logo": "https://media.api-sports.io/football/teams/445.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334423,
@@ -954,65 +1013,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334280,
-          "date": "2025-01-24T00:30:00+00:00",
-          "venue": {
-            "id": 59,
-            "name": "Estadio Norberto Tito Tomaghello",
-            "city": "Florencio Varela, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737678600
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 442,
-            "name": "Defensa Y Justicia",
-            "logo": "https://media.api-sports.io/football/teams/442.png",
-            "winner": false
-          },
-          "away": {
-            "id": 449,
-            "name": "Banfield",
-            "logo": "https://media.api-sports.io/football/teams/449.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1309,5 +1309,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:42.646Z"
+  "lastUpdated": "2025-04-01T14:54:37.055Z"
 }

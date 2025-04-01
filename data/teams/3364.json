@@ -260,71 +260,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362824,
-          "date": "2025-03-29T19:45:00+00:00",
-          "venue": {
-            "id": 2187,
-            "name": "Gradski Stadion",
-            "city": "Banja Luka"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743277500
-        },
-        "league": {
-          "id": 315,
-          "name": "Premijer Liga",
-          "logo": "https://media.api-sports.io/football/leagues/315.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3364,
-            "name": "Borac Banja Luka",
-            "logo": "https://media.api-sports.io/football/teams/3364.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3356,
-            "name": "GOŠK Gabela",
-            "logo": "https://media.api-sports.io/football/teams/3356.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1366096,
           "date": "2025-04-02T18:30:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 199,
+            "name": "Olimpijski Stadion Asim Ferhatović Hase",
+            "city": "Sarajevo"
           },
           "status": {
             "long": "Not Started",
@@ -379,7 +320,7 @@
       {
         "fixture": {
           "id": 1362829,
-          "date": "2025-04-05T13:00:00+00:00",
+          "date": "2025-04-06T17:45:00+00:00",
           "venue": {
             "id": 202,
             "name": "Stadion Bijeli Brijeg",
@@ -391,7 +332,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743858000
+          "timestamp": 1743961500
         },
         "league": {
           "id": 315,
@@ -499,9 +440,9 @@
           "id": 1366097,
           "date": "2025-04-15T16:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 2187,
+            "name": "Gradski Stadion",
+            "city": "Banja Luka"
           },
           "status": {
             "long": "Not Started",
@@ -1027,6 +968,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362824,
+          "date": "2025-03-29T19:45:00+00:00",
+          "venue": {
+            "id": 2187,
+            "name": "Gradski Stadion",
+            "city": "Banja Luka"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743277500
+        },
+        "league": {
+          "id": 315,
+          "name": "Premijer Liga",
+          "logo": "https://media.api-sports.io/football/leagues/315.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3364,
+            "name": "Borac Banja Luka",
+            "logo": "https://media.api-sports.io/football/teams/3364.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3356,
+            "name": "GOŠK Gabela",
+            "logo": "https://media.api-sports.io/football/teams/3356.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1226574,
@@ -1557,65 +1557,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1325912,
-          "date": "2025-02-13T20:00:00+00:00",
-          "venue": {
-            "id": 2187,
-            "name": "Gradski Stadion",
-            "city": "Banja Luka"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1739476800
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3364,
-            "name": "Borac Banja Luka",
-            "logo": "https://media.api-sports.io/football/teams/3364.png",
-            "winner": true
-          },
-          "away": {
-            "id": 677,
-            "name": "Olimpija Ljubljana",
-            "logo": "https://media.api-sports.io/football/teams/677.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1912,5 +1853,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:15.344Z"
+  "lastUpdated": "2025-04-01T14:55:10.231Z"
 }

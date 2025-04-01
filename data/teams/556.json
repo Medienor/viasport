@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1261107,
-          "date": "2025-03-28T15:30:00+00:00",
-          "venue": {
-            "id": 4131,
-            "name": "Şəhər stadionu",
-            "city": "Tovuz"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743175800
-        },
-        "league": {
-          "id": 419,
-          "name": "Premyer Liqa",
-          "logo": "https://media.api-sports.io/football/leagues/419.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5499,
-            "name": "Turan",
-            "logo": "https://media.api-sports.io/football/teams/5499.png",
-            "winner": null
-          },
-          "away": {
-            "id": 556,
-            "name": "Qarabag",
-            "logo": "https://media.api-sports.io/football/teams/556.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1356371,
@@ -425,6 +366,65 @@
       },
       {
         "fixture": {
+          "id": 1261122,
+          "date": "2025-04-17T22:00:00+00:00",
+          "venue": {
+            "id": 5799,
+            "name": "Tofiq Bəhramov adına Respublika stadionu",
+            "city": "Baku"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744927200
+        },
+        "league": {
+          "id": 419,
+          "name": "Premyer Liqa",
+          "logo": "https://media.api-sports.io/football/leagues/419.png"
+        },
+        "teams": {
+          "home": {
+            "id": 556,
+            "name": "Qarabag",
+            "logo": "https://media.api-sports.io/football/teams/556.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2270,
+            "name": "Neftchi Baku",
+            "logo": "https://media.api-sports.io/football/teams/2270.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1356372,
           "date": "2025-04-23T13:00:00+00:00",
           "venue": {
@@ -484,6 +484,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1261107,
+          "date": "2025-03-28T15:30:00+00:00",
+          "venue": {
+            "id": 4131,
+            "name": "Şəhər stadionu",
+            "city": "Tovuz"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743175800
+        },
+        "league": {
+          "id": 419,
+          "name": "Premyer Liqa",
+          "logo": "https://media.api-sports.io/football/leagues/419.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5499,
+            "name": "Turan",
+            "logo": "https://media.api-sports.io/football/teams/5499.png",
+            "winner": false
+          },
+          "away": {
+            "id": 556,
+            "name": "Qarabag",
+            "logo": "https://media.api-sports.io/football/teams/556.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1261102,
@@ -1014,65 +1073,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299264,
-          "date": "2025-01-30T20:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadio Georgios Karaiskáki",
-            "city": "Piraeus"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738267200
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 553,
-            "name": "Olympiakos Piraeus",
-            "logo": "https://media.api-sports.io/football/teams/553.png",
-            "winner": true
-          },
-          "away": {
-            "id": 556,
-            "name": "Qarabag",
-            "logo": "https://media.api-sports.io/football/teams/556.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1369,5 +1369,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:57.824Z"
+  "lastUpdated": "2025-04-01T14:54:52.505Z"
 }

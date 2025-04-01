@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1231221,
-          "date": "2025-03-30T14:00:00+00:00",
-          "venue": {
-            "id": 1031,
-            "name": "Stade Parc des Sports",
-            "city": "Differdange"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743343200
-        },
-        "league": {
-          "id": 261,
-          "name": "National Division",
-          "logo": "https://media.api-sports.io/football/leagues/261.png"
-        },
-        "teams": {
-          "home": {
-            "id": 684,
-            "name": "FC Differdange 03",
-            "logo": "https://media.api-sports.io/football/teams/684.png",
-            "winner": null
-          },
-          "away": {
-            "id": 15886,
-            "name": "Mondercange",
-            "logo": "https://media.api-sports.io/football/teams/15886.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1231233,
@@ -819,6 +760,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1231221,
+          "date": "2025-03-30T14:00:00+00:00",
+          "venue": {
+            "id": 1031,
+            "name": "Stade Parc des Sports",
+            "city": "Differdange"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743343200
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 684,
+            "name": "FC Differdange 03",
+            "logo": "https://media.api-sports.io/football/teams/684.png",
+            "winner": true
+          },
+          "away": {
+            "id": 15886,
+            "name": "Mondercange",
+            "logo": "https://media.api-sports.io/football/teams/15886.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1231216,
           "date": "2025-03-16T15:00:00+00:00",
           "venue": {
@@ -1347,65 +1347,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231156,
-          "date": "2024-12-01T14:00:00+00:00",
-          "venue": {
-            "id": 1031,
-            "name": "Stade Parc des Sports",
-            "city": "Differdange"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1733061600
-        },
-        "league": {
-          "id": 261,
-          "name": "National Division",
-          "logo": "https://media.api-sports.io/football/leagues/261.png"
-        },
-        "teams": {
-          "home": {
-            "id": 684,
-            "name": "FC Differdange 03",
-            "logo": "https://media.api-sports.io/football/teams/684.png",
-            "winner": true
-          },
-          "away": {
-            "id": 11906,
-            "name": "Wiltz",
-            "logo": "https://media.api-sports.io/football/teams/11906.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1702,5 +1643,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:10.373Z"
+  "lastUpdated": "2025-04-01T14:55:05.189Z"
 }

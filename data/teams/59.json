@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-02",
-          "end": "2025-03-29",
+          "end": "2025-04-26",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1357109,
-          "date": "2025-03-30T12:30:00+00:00",
-          "venue": {
-            "id": 574,
-            "name": "Deepdale",
-            "city": "Preston"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743337800
-        },
-        "league": {
-          "id": 45,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/45.png"
-        },
-        "teams": {
-          "home": {
-            "id": 59,
-            "name": "Preston",
-            "logo": "https://media.api-sports.io/football/teams/59.png",
-            "winner": null
-          },
-          "away": {
-            "id": 66,
-            "name": "Aston Villa",
-            "logo": "https://media.api-sports.io/football/teams/66.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1216301,
@@ -683,6 +624,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1357109,
+          "date": "2025-03-30T12:30:00+00:00",
+          "venue": {
+            "id": 574,
+            "name": "Deepdale",
+            "city": "Preston"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743337800
+        },
+        "league": {
+          "id": 45,
+          "name": "FA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/45.png"
+        },
+        "teams": {
+          "home": {
+            "id": 59,
+            "name": "Preston",
+            "logo": "https://media.api-sports.io/football/teams/59.png",
+            "winner": false
+          },
+          "away": {
+            "id": 66,
+            "name": "Aston Villa",
+            "logo": "https://media.api-sports.io/football/teams/66.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216294,
@@ -1213,65 +1213,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216191,
-          "date": "2025-01-31T20:00:00+00:00",
-          "venue": {
-            "id": 500,
-            "name": "Ewood Park",
-            "city": "Blackburn, Lancashire"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1738353600
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 67,
-            "name": "Blackburn",
-            "logo": "https://media.api-sports.io/football/teams/67.png",
-            "winner": true
-          },
-          "away": {
-            "id": 59,
-            "name": "Preston",
-            "logo": "https://media.api-sports.io/football/teams/59.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1568,5 +1509,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:20.303Z"
+  "lastUpdated": "2025-04-01T14:54:14.114Z"
 }

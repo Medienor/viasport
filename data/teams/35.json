@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-02",
-          "end": "2025-03-29",
+          "end": "2025-04-26",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1357107,
-          "date": "2025-03-30T15:30:00+00:00",
-          "venue": {
-            "id": 504,
-            "name": "Vitality Stadium",
-            "city": "Bournemouth, Dorset"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743348600
-        },
-        "league": {
-          "id": 45,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/45.png"
-        },
-        "teams": {
-          "home": {
-            "id": 35,
-            "name": "Bournemouth",
-            "logo": "https://media.api-sports.io/football/teams/35.png",
-            "winner": null
-          },
-          "away": {
-            "id": 50,
-            "name": "Manchester City",
-            "logo": "https://media.api-sports.io/football/teams/50.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1208313,
@@ -958,6 +899,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1357107,
+          "date": "2025-03-30T15:30:00+00:00",
+          "venue": {
+            "id": 504,
+            "name": "Vitality Stadium",
+            "city": "Bournemouth, Dorset"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743348600
+        },
+        "league": {
+          "id": 45,
+          "name": "FA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/45.png"
+        },
+        "teams": {
+          "home": {
+            "id": 35,
+            "name": "Bournemouth",
+            "logo": "https://media.api-sports.io/football/teams/35.png",
+            "winner": false
+          },
+          "away": {
+            "id": 50,
+            "name": "Manchester City",
+            "logo": "https://media.api-sports.io/football/teams/50.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1208303,
           "date": "2025-03-15T17:30:00+00:00",
           "venue": {
@@ -1486,65 +1486,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208230,
-          "date": "2025-01-14T19:30:00+00:00",
-          "venue": {
-            "id": 519,
-            "name": "Stamford Bridge",
-            "city": "London"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1736883000
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 49,
-            "name": "Chelsea",
-            "logo": "https://media.api-sports.io/football/teams/49.png",
-            "winner": null
-          },
-          "away": {
-            "id": 35,
-            "name": "Bournemouth",
-            "logo": "https://media.api-sports.io/football/teams/35.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1841,5 +1782,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:35:54.319Z"
+  "lastUpdated": "2025-04-01T14:52:46.187Z"
 }

@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -219,65 +219,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1349663,
-          "date": "2025-03-29T17:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadio di Dogana Ezio Conti",
-            "city": "Dogana"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743267600
-        },
-        "league": {
-          "id": 404,
-          "name": "Campionato",
-          "logo": "https://media.api-sports.io/football/leagues/404.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5303,
-            "name": "Libertas",
-            "logo": "https://media.api-sports.io/football/teams/5303.png",
-            "winner": null
-          },
-          "away": {
-            "id": 5308,
-            "name": "Virtus",
-            "logo": "https://media.api-sports.io/football/teams/5308.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1338998,
@@ -457,6 +398,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1349663,
+          "date": "2025-03-29T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadio di Dogana Ezio Conti",
+            "city": "Dogana"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743267600
+        },
+        "league": {
+          "id": 404,
+          "name": "Campionato",
+          "logo": "https://media.api-sports.io/football/leagues/404.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5303,
+            "name": "Libertas",
+            "logo": "https://media.api-sports.io/football/teams/5303.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5308,
+            "name": "Virtus",
+            "logo": "https://media.api-sports.io/football/teams/5308.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1349652,
@@ -987,65 +987,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1319961,
-          "date": "2025-01-21T20:15:00+00:00",
-          "venue": {
-            "id": 2932,
-            "name": "Stadio Fonte Dell'Ovo",
-            "city": "Città di San Marino"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737490500
-        },
-        "league": {
-          "id": 404,
-          "name": "Campionato",
-          "logo": "https://media.api-sports.io/football/leagues/404.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5308,
-            "name": "Virtus",
-            "logo": "https://media.api-sports.io/football/teams/5308.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5299,
-            "name": "Domagnano",
-            "logo": "https://media.api-sports.io/football/teams/5299.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1342,5 +1283,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:17.864Z"
+  "lastUpdated": "2025-04-01T14:55:12.885Z"
 }

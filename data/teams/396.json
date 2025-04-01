@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362793,
-          "date": "2025-03-30T12:00:00+00:00",
-          "venue": {
-            "id": 460,
-            "name": "Sydbank Park",
-            "city": "Haderslev"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743336000
-        },
-        "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
-        },
-        "teams": {
-          "home": {
-            "id": 396,
-            "name": "Sonderjyske",
-            "logo": "https://media.api-sports.io/football/teams/396.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2073,
-            "name": "Silkeborg",
-            "logo": "https://media.api-sports.io/football/teams/2073.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362795,
           "date": "2025-04-06T12:00:00+00:00",
           "venue": {
@@ -333,9 +274,9 @@
           "id": 1362802,
           "date": "2025-04-17T12:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 452,
+            "name": "Lyngby Stadion",
+            "city": "Lyngby"
           },
           "status": {
             "long": "Not Started",
@@ -392,9 +333,9 @@
           "id": 1362804,
           "date": "2025-04-20T15:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 440,
+            "name": "Aalborg Portland Park",
+            "city": "Aalborg"
           },
           "status": {
             "long": "Not Started",
@@ -743,6 +684,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362793,
+          "date": "2025-03-30T12:00:00+00:00",
+          "venue": {
+            "id": 460,
+            "name": "Sydbank Park",
+            "city": "Haderslev"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743336000
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 396,
+            "name": "Sonderjyske",
+            "logo": "https://media.api-sports.io/football/teams/396.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2073,
+            "name": "Silkeborg",
+            "logo": "https://media.api-sports.io/football/teams/2073.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1366008,
@@ -1273,65 +1273,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1336843,
-          "date": "2025-01-17T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737115200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 396,
-            "name": "Sonderjyske",
-            "logo": "https://media.api-sports.io/football/teams/396.png",
-            "winner": false
-          },
-          "away": {
-            "id": 6026,
-            "name": "Hillerød",
-            "logo": "https://media.api-sports.io/football/teams/6026.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1628,5 +1569,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:50.087Z"
+  "lastUpdated": "2025-04-01T14:54:44.757Z"
 }

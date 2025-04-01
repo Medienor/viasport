@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-09-20",
-          "end": "2025-03-30",
+          "end": "2025-04-04",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -184,12 +184,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1366244,
-          "date": "2025-03-30T20:30:00+00:00",
+          "id": 1367257,
+          "date": "2025-04-04T18:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": "Al-Shaab Stadium",
-            "city": "Baghdād"
+            "id": 11077,
+            "name": "Zakho International Stadium",
+            "city": "Zakho"
           },
           "status": {
             "long": "Not Started",
@@ -197,7 +197,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743366600
+          "timestamp": 1743789600
         },
         "league": {
           "id": 542,
@@ -206,15 +206,15 @@
         },
         "teams": {
           "home": {
-            "id": 5242,
-            "name": "Al Shorta",
-            "logo": "https://media.api-sports.io/football/teams/5242.png",
+            "id": 15547,
+            "name": "Zakho",
+            "logo": "https://media.api-sports.io/football/teams/15547.png",
             "winner": null
           },
           "away": {
-            "id": 8009,
-            "name": "Al Quwa Al Jawiya",
-            "logo": "https://media.api-sports.io/football/teams/8009.png",
+            "id": 5242,
+            "name": "Al Shorta",
+            "logo": "https://media.api-sports.io/football/teams/5242.png",
             "winner": null
           }
         },
@@ -243,6 +243,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366244,
+          "date": "2025-03-30T20:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Al-Shaab Stadium",
+            "city": "Baghdād"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743366600
+        },
+        "league": {
+          "id": 542,
+          "name": "Iraqi League",
+          "logo": "https://media.api-sports.io/football/leagues/542.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5242,
+            "name": "Al Shorta",
+            "logo": "https://media.api-sports.io/football/teams/5242.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8009,
+            "name": "Al Quwa Al Jawiya",
+            "logo": "https://media.api-sports.io/football/teams/8009.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360561,
@@ -773,65 +832,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1288383,
-          "date": "2025-02-03T16:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Azadi Stadium",
-            "city": "Teheran"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 12
-          },
-          "timestamp": 1738598400
-        },
-        "league": {
-          "id": 17,
-          "name": "AFC Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/17.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2733,
-            "name": "Esteghlal FC",
-            "logo": "https://media.api-sports.io/football/teams/2733.png",
-            "winner": null
-          },
-          "away": {
-            "id": 5242,
-            "name": "Al Shorta",
-            "logo": "https://media.api-sports.io/football/teams/5242.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1128,5 +1128,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:41:54.376Z"
+  "lastUpdated": "2025-04-01T14:58:52.127Z"
 }

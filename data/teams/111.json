@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1213983,
-          "date": "2025-03-30T15:15:00+00:00",
-          "venue": {
-            "id": 652,
-            "name": "Stade Océane",
-            "city": "Le Havre"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743347700
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 111,
-            "name": "LE Havre",
-            "logo": "https://media.api-sports.io/football/teams/111.png",
-            "winner": null
-          },
-          "away": {
-            "id": 83,
-            "name": "Nantes",
-            "logo": "https://media.api-sports.io/football/teams/83.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1213993,
@@ -386,9 +327,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1214017,
+          "date": "2025-04-26T17:00:00+00:00",
+          "venue": {
+            "id": 652,
+            "name": "Stade Océane",
+            "city": "Le Havre"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745686800
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 111,
+            "name": "LE Havre",
+            "logo": "https://media.api-sports.io/football/teams/111.png",
+            "winner": null
+          },
+          "away": {
+            "id": 91,
+            "name": "Monaco",
+            "logo": "https://media.api-sports.io/football/teams/91.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213983,
+          "date": "2025-03-30T15:15:00+00:00",
+          "venue": {
+            "id": 652,
+            "name": "Stade Océane",
+            "city": "Le Havre"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743347700
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 111,
+            "name": "LE Havre",
+            "logo": "https://media.api-sports.io/football/teams/111.png",
+            "winner": true
+          },
+          "away": {
+            "id": 83,
+            "name": "Nantes",
+            "logo": "https://media.api-sports.io/football/teams/83.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213976,
@@ -690,8 +749,8 @@
           "date": "2025-02-08T18:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Decathlon Arena - Stade Pierre-Mauroy",
-            "city": "Villeneuve d'Ascq"
+            "name": "Decathlon Arena - Stade Pierre Mauroy",
+            "city": "Lille"
           },
           "status": {
             "long": "Match Finished",
@@ -867,7 +926,7 @@
           "date": "2025-01-19T16:15:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stade Auguste-Delaune",
+            "name": "Stade Auguste Delaune",
             "city": "Reims"
           },
           "status": {
@@ -909,65 +968,6 @@
           "fulltime": {
             "home": 1,
             "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1213895,
-          "date": "2025-01-12T14:00:00+00:00",
-          "venue": {
-            "id": 652,
-            "name": "Stade Océane",
-            "city": "Le Havre"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1736690400
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 111,
-            "name": "LE Havre",
-            "logo": "https://media.api-sports.io/football/teams/111.png",
-            "winner": false
-          },
-          "away": {
-            "id": 116,
-            "name": "Lens",
-            "logo": "https://media.api-sports.io/football/teams/116.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
           },
           "extratime": {
             "home": null,
@@ -1274,5 +1274,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:42.059Z"
+  "lastUpdated": "2025-04-01T14:53:35.609Z"
 }

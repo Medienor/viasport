@@ -109,65 +109,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1217851,
-          "date": "2025-03-30T16:30:00+00:00",
-          "venue": {
-            "id": 1458,
-            "name": "Estadio Carlos Belmonte",
-            "city": "Albacete"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743352200
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 722,
-            "name": "Albacete",
-            "logo": "https://media.api-sports.io/football/teams/722.png",
-            "winner": null
-          },
-          "away": {
-            "id": 799,
-            "name": "Mirandes",
-            "logo": "https://media.api-sports.io/football/teams/799.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1217868,
           "date": "2025-04-04T18:30:00+00:00",
           "venue": {
@@ -283,9 +224,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1217891,
+          "date": "2025-04-20T16:30:00+00:00",
+          "venue": {
+            "id": 1473,
+            "name": "Estadio Manuel Martínez Valero",
+            "city": "Elche"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745166600
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 797,
+            "name": "Elche",
+            "logo": "https://media.api-sports.io/football/teams/797.png",
+            "winner": null
+          },
+          "away": {
+            "id": 722,
+            "name": "Albacete",
+            "logo": "https://media.api-sports.io/football/teams/722.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1217895,
+          "date": "2025-04-26T12:00:00+00:00",
+          "venue": {
+            "id": 1458,
+            "name": "Estadio Carlos Belmonte",
+            "city": "Albacete"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745668800
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 722,
+            "name": "Albacete",
+            "logo": "https://media.api-sports.io/football/teams/722.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5262,
+            "name": "FC Cartagena",
+            "logo": "https://media.api-sports.io/football/teams/5262.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217851,
+          "date": "2025-03-30T16:30:00+00:00",
+          "venue": {
+            "id": 1458,
+            "name": "Estadio Carlos Belmonte",
+            "city": "Albacete"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1743352200
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 722,
+            "name": "Albacete",
+            "logo": "https://media.api-sports.io/football/teams/722.png",
+            "winner": true
+          },
+          "away": {
+            "id": 799,
+            "name": "Mirandes",
+            "logo": "https://media.api-sports.io/football/teams/799.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217844,
@@ -816,65 +934,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217745,
-          "date": "2025-01-18T17:30:00+00:00",
-          "venue": {
-            "id": 1472,
-            "name": "Estadio Municipal de Ipurúa",
-            "city": "Eibar"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737221400
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 545,
-            "name": "Eibar",
-            "logo": "https://media.api-sports.io/football/teams/545.png",
-            "winner": null
-          },
-          "away": {
-            "id": 722,
-            "name": "Albacete",
-            "logo": "https://media.api-sports.io/football/teams/722.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1171,5 +1230,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:24.739Z"
+  "lastUpdated": "2025-04-01T14:59:22.967Z"
 }

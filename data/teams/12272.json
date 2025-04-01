@@ -112,65 +112,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1358879,
-          "date": "2025-03-29T10:00:00+00:00",
-          "venue": {
-            "id": 7813,
-            "name": "Stadion im. Langari Langarieva",
-            "city": "Kulyab"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743242400
-        },
-        "league": {
-          "id": 571,
-          "name": "Vysshaya Liga",
-          "logo": "https://media.api-sports.io/football/leagues/571.png"
-        },
-        "teams": {
-          "home": {
-            "id": 12272,
-            "name": "Ravshan",
-            "logo": "https://media.api-sports.io/football/teams/12272.png",
-            "winner": null
-          },
-          "away": {
-            "id": 8031,
-            "name": "Khujand",
-            "logo": "https://media.api-sports.io/football/teams/8031.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1358583,
           "date": "2025-04-05T11:00:00+00:00",
           "venue": {
@@ -1294,6 +1235,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1358879,
+          "date": "2025-03-29T10:00:00+00:00",
+          "venue": {
+            "id": 21416,
+            "name": "Republican Central Stadium",
+            "city": "Dushanbe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743242400
+        },
+        "league": {
+          "id": 571,
+          "name": "Vysshaya Liga",
+          "logo": "https://media.api-sports.io/football/leagues/571.png"
+        },
+        "teams": {
+          "home": {
+            "id": 12272,
+            "name": "Ravshan",
+            "logo": "https://media.api-sports.io/football/teams/12272.png",
+            "winner": true
+          },
+          "away": {
+            "id": 8031,
+            "name": "Khujand",
+            "logo": "https://media.api-sports.io/football/teams/8031.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1355700,
           "date": "2025-03-14T11:00:00+00:00",
           "venue": {
@@ -1822,65 +1822,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1289377,
-          "date": "2024-10-23T14:00:00+00:00",
-          "venue": {
-            "id": 21416,
-            "name": "Republican Central Stadium",
-            "city": "Dushanbe"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1729692000
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 12272,
-            "name": "Ravshan",
-            "logo": "https://media.api-sports.io/football/teams/12272.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2737,
-            "name": "Tractor Sazi",
-            "logo": "https://media.api-sports.io/football/teams/2737.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1898,17 +1839,17 @@
       "name": "Ravshan",
       "logo": "https://media.api-sports.io/football/teams/12272.png"
     },
-    "form": "DL",
+    "form": "DLW",
     "fixtures": {
       "played": {
-        "home": 1,
+        "home": 2,
         "away": 1,
-        "total": 2
+        "total": 3
       },
       "wins": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "draws": {
         "home": 1,
@@ -1924,87 +1865,19 @@
     "goals": {
       "for": {
         "total": {
-          "home": 1,
+          "home": 5,
           "away": 0,
-          "total": 1
+          "total": 5
         },
         "average": {
-          "home": "1.0",
+          "home": "2.5",
           "away": "0.0",
-          "total": "0.5"
+          "total": "1.7"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "100.00%"
-          },
-          "16-30": {
-            "total": null,
-            "percentage": null
-          },
-          "31-45": {
-            "total": null,
-            "percentage": null
-          },
-          "46-60": {
-            "total": null,
-            "percentage": null
-          },
-          "61-75": {
-            "total": null,
-            "percentage": null
-          },
-          "76-90": {
-            "total": null,
-            "percentage": null
-          },
-          "91-105": {
-            "total": null,
-            "percentage": null
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 1,
-            "under": 1
-          },
-          "1.5": {
-            "over": 0,
-            "under": 2
-          },
-          "2.5": {
-            "over": 0,
-            "under": 2
-          },
-          "3.5": {
-            "over": 0,
-            "under": 2
-          },
-          "4.5": {
-            "over": 0,
-            "under": 2
-          }
-        }
-      },
-      "against": {
-        "total": {
-          "home": 1,
-          "away": 1,
-          "total": 2
-        },
-        "average": {
-          "home": "1.0",
-          "away": "1.0",
-          "total": "1.0"
-        },
-        "minute": {
-          "0-15": {
-            "total": null,
-            "percentage": null
+            "percentage": "20.00%"
           },
           "16-30": {
             "total": null,
@@ -2012,19 +1885,19 @@
           },
           "31-45": {
             "total": 1,
-            "percentage": "50.00%"
+            "percentage": "20.00%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "40.00%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "76-90": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": null,
+            "percentage": null
           },
           "91-105": {
             "total": null,
@@ -2038,23 +1911,91 @@
         "under_over": {
           "0.5": {
             "over": 2,
-            "under": 0
+            "under": 1
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 2
           },
           "2.5": {
-            "over": 0,
+            "over": 1,
             "under": 2
           },
           "3.5": {
-            "over": 0,
+            "over": 1,
             "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 2,
+          "away": 1,
+          "total": 3
+        },
+        "average": {
+          "home": "1.0",
+          "away": "1.0",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "33.33%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 3,
+            "under": 0
+          },
+          "1.5": {
+            "over": 0,
+            "under": 3
+          },
+          "2.5": {
+            "over": 0,
+            "under": 3
+          },
+          "3.5": {
+            "over": 0,
+            "under": 3
+          },
+          "4.5": {
+            "over": 0,
+            "under": 3
           }
         }
       }
@@ -2063,10 +2004,10 @@
       "streak": {
         "wins": 0,
         "draws": 1,
-        "loses": 0
+        "loses": 1
       },
       "wins": {
-        "home": null,
+        "home": "4-1",
         "away": null
       },
       "loses": {
@@ -2075,7 +2016,7 @@
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 4,
           "away": 0
         },
         "against": {
@@ -2096,14 +2037,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 1,
+        "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 0
+      "total": 1
     },
     "lineups": [],
     "cards": {
@@ -2177,5 +2118,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:09.621Z"
+  "lastUpdated": "2025-04-01T14:59:07.224Z"
 }

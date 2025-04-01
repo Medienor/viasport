@@ -188,65 +188,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1327726,
-          "date": "2025-03-30T14:30:00+00:00",
-          "venue": {
-            "id": 1533,
-            "name": "Stadion Letzigrund",
-            "city": "Zürich"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743345000
-        },
-        "league": {
-          "id": 207,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/207.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1013,
-            "name": "Grasshoppers",
-            "logo": "https://media.api-sports.io/football/teams/1013.png",
-            "winner": null
-          },
-          "away": {
-            "id": 783,
-            "name": "FC Zurich",
-            "logo": "https://media.api-sports.io/football/teams/783.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1327731,
           "date": "2025-04-02T18:30:00+00:00",
           "venue": {
@@ -483,6 +424,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1327726,
+          "date": "2025-03-30T14:30:00+00:00",
+          "venue": {
+            "id": 1533,
+            "name": "Stadion Letzigrund",
+            "city": "Zürich"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743345000
+        },
+        "league": {
+          "id": 207,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/207.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1013,
+            "name": "Grasshoppers",
+            "logo": "https://media.api-sports.io/football/teams/1013.png",
+            "winner": false
+          },
+          "away": {
+            "id": 783,
+            "name": "FC Zurich",
+            "logo": "https://media.api-sports.io/football/teams/783.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1327718,
@@ -1013,65 +1013,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1222587,
-          "date": "2025-01-26T15:30:00+00:00",
-          "venue": {
-            "id": 1537,
-            "name": "swissporarena",
-            "city": "Luzern"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737905400
-        },
-        "league": {
-          "id": 207,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/207.png"
-        },
-        "teams": {
-          "home": {
-            "id": 644,
-            "name": "FC Luzern",
-            "logo": "https://media.api-sports.io/football/teams/644.png",
-            "winner": true
-          },
-          "away": {
-            "id": 783,
-            "name": "FC Zurich",
-            "logo": "https://media.api-sports.io/football/teams/783.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1368,5 +1309,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:55.992Z"
+  "lastUpdated": "2025-04-01T14:55:51.657Z"
 }

@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361729,
-          "date": "2025-03-30T11:30:00+00:00",
-          "venue": {
-            "id": 176,
-            "name": "Jan Breydelstadion",
-            "city": "Brugge"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743334200
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 569,
-            "name": "Club Brugge KV",
-            "logo": "https://media.api-sports.io/football/teams/569.png",
-            "winner": null
-          },
-          "away": {
-            "id": 554,
-            "name": "Anderlecht",
-            "logo": "https://media.api-sports.io/football/teams/554.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361733,
           "date": "2025-04-06T16:30:00+00:00",
           "venue": {
@@ -745,6 +686,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361729,
+          "date": "2025-03-30T11:30:00+00:00",
+          "venue": {
+            "id": 176,
+            "name": "Jan Breydelstadion",
+            "city": "Brugge"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743334200
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 569,
+            "name": "Club Brugge KV",
+            "logo": "https://media.api-sports.io/football/teams/569.png",
+            "winner": true
+          },
+          "away": {
+            "id": 554,
+            "name": "Anderlecht",
+            "logo": "https://media.api-sports.io/football/teams/554.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1213434,
           "date": "2025-03-16T17:30:00+00:00",
           "venue": {
@@ -1273,65 +1273,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213387,
-          "date": "2025-02-02T17:30:00+00:00",
-          "venue": {
-            "id": 20727,
-            "name": "Planet Group Arena",
-            "city": "Gent"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738517400
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 631,
-            "name": "Gent",
-            "logo": "https://media.api-sports.io/football/teams/631.png",
-            "winner": true
-          },
-          "away": {
-            "id": 554,
-            "name": "Anderlecht",
-            "logo": "https://media.api-sports.io/football/teams/554.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1628,5 +1569,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:12.677Z"
+  "lastUpdated": "2025-04-01T14:54:06.258Z"
 }

@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -263,65 +263,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1213986,
-          "date": "2025-03-29T18:00:00+00:00",
-          "venue": {
-            "id": 676,
-            "name": "Stade Geoffroy-Guichard",
-            "city": "Saint-Ètienne"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743271200
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1063,
-            "name": "Saint Etienne",
-            "logo": "https://media.api-sports.io/football/teams/1063.png",
-            "winner": null
-          },
-          "away": {
-            "id": 85,
-            "name": "Paris Saint Germain",
-            "logo": "https://media.api-sports.io/football/teams/85.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1355645,
@@ -678,6 +619,65 @@
       },
       {
         "fixture": {
+          "id": 1214023,
+          "date": "2025-04-25T18:45:00+00:00",
+          "venue": {
+            "id": 671,
+            "name": "Parc des Princes",
+            "city": "Paris"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745606700
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 85,
+            "name": "Paris Saint Germain",
+            "logo": "https://media.api-sports.io/football/teams/85.png",
+            "winner": null
+          },
+          "away": {
+            "id": 84,
+            "name": "Nice",
+            "logo": "https://media.api-sports.io/football/teams/84.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1321682,
           "date": "2025-06-15T19:00:00+00:00",
           "venue": {
@@ -855,6 +855,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213986,
+          "date": "2025-03-29T18:00:00+00:00",
+          "venue": {
+            "id": 676,
+            "name": "Stade Geoffroy-Guichard",
+            "city": "Saint-Ètienne"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743271200
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1063,
+            "name": "Saint Etienne",
+            "logo": "https://media.api-sports.io/football/teams/1063.png",
+            "winner": false
+          },
+          "away": {
+            "id": 85,
+            "name": "Paris Saint Germain",
+            "logo": "https://media.api-sports.io/football/teams/85.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 6
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 6
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213972,
@@ -1385,65 +1444,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213932,
-          "date": "2025-02-07T20:05:00+00:00",
-          "venue": {
-            "id": 671,
-            "name": "Parc des Princes",
-            "city": "Paris"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738958700
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 85,
-            "name": "Paris Saint Germain",
-            "logo": "https://media.api-sports.io/football/teams/85.png",
-            "winner": true
-          },
-          "away": {
-            "id": 91,
-            "name": "Monaco",
-            "logo": "https://media.api-sports.io/football/teams/91.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1740,5 +1740,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:36.920Z"
+  "lastUpdated": "2025-04-01T14:53:30.371Z"
 }

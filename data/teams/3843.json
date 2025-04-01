@@ -185,65 +185,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1340553,
-          "date": "2025-03-28T19:45:00+00:00",
-          "venue": {
-            "id": 2630,
-            "name": "Waterford Regional Sports Centre",
-            "city": "Waterford"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743191100
-        },
-        "league": {
-          "id": 357,
-          "name": "Premier Division",
-          "logo": "https://media.api-sports.io/football/leagues/357.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3845,
-            "name": "Waterford",
-            "logo": "https://media.api-sports.io/football/teams/3845.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3843,
-            "name": "St Patrick's Athl.",
-            "logo": "https://media.api-sports.io/football/teams/3843.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1340560,
           "date": "2025-04-04T18:45:00+00:00",
           "venue": {
@@ -1362,9 +1303,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1340655,
+          "date": "2025-08-08T18:45:00+00:00",
+          "venue": {
+            "id": 2628,
+            "name": "Richmond Park",
+            "city": "Dublin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754678700
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3842,
+            "name": "Sligo Rovers",
+            "logo": "https://media.api-sports.io/football/teams/3842.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1340553,
+          "date": "2025-03-28T19:45:00+00:00",
+          "venue": {
+            "id": 2630,
+            "name": "Waterford Regional Sports Centre",
+            "city": "Waterford"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743191100
+        },
+        "league": {
+          "id": 357,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/357.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3845,
+            "name": "Waterford",
+            "logo": "https://media.api-sports.io/football/teams/3845.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3843,
+            "name": "St Patrick's Athl.",
+            "logo": "https://media.api-sports.io/football/teams/3843.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1340549,
@@ -1895,65 +1954,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1338004,
-          "date": "2025-01-24T19:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1737747000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3846,
-            "name": "Athlone Town",
-            "logo": "https://media.api-sports.io/football/teams/3846.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3843,
-            "name": "St Patrick's Athl.",
-            "logo": "https://media.api-sports.io/football/teams/3843.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1971,17 +1971,17 @@
       "name": "St Patrick's Athl.",
       "logo": "https://media.api-sports.io/football/teams/3843.png"
     },
-    "form": "DLWWLW",
+    "form": "DLWWLWW",
     "fixtures": {
       "played": {
         "home": 4,
-        "away": 2,
-        "total": 6
+        "away": 3,
+        "total": 7
       },
       "wins": {
         "home": 3,
-        "away": 0,
-        "total": 3
+        "away": 1,
+        "total": 4
       },
       "draws": {
         "home": 1,
@@ -1998,12 +1998,12 @@
       "for": {
         "total": {
           "home": 9,
-          "away": 1,
-          "total": 10
+          "away": 3,
+          "total": 12
         },
         "average": {
           "home": "2.3",
-          "away": "0.5",
+          "away": "1.0",
           "total": "1.7"
         },
         "minute": {
@@ -2013,23 +2013,91 @@
           },
           "16-30": {
             "total": 3,
-            "percentage": "27.27%"
+            "percentage": "25.00%"
           },
           "31-45": {
             "total": 3,
-            "percentage": "27.27%"
+            "percentage": "25.00%"
           },
           "46-60": {
             "total": 1,
-            "percentage": "9.09%"
+            "percentage": "8.33%"
           },
           "61-75": {
             "total": 1,
-            "percentage": "9.09%"
+            "percentage": "8.33%"
           },
           "76-90": {
-            "total": 3,
-            "percentage": "27.27%"
+            "total": 4,
+            "percentage": "33.33%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 5,
+            "under": 2
+          },
+          "1.5": {
+            "over": 4,
+            "under": 3
+          },
+          "2.5": {
+            "over": 2,
+            "under": 5
+          },
+          "3.5": {
+            "over": 1,
+            "under": 6
+          },
+          "4.5": {
+            "over": 0,
+            "under": 7
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 3,
+          "away": 4,
+          "total": 7
+        },
+        "average": {
+          "home": "0.8",
+          "away": "1.3",
+          "total": "1.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": 1,
+            "percentage": "14.29%"
+          },
+          "16-30": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": 2,
+            "percentage": "28.57%"
+          },
+          "76-90": {
+            "total": 2,
+            "percentage": "28.57%"
           },
           "91-105": {
             "total": null,
@@ -2043,91 +2111,23 @@
         "under_over": {
           "0.5": {
             "over": 4,
-            "under": 2
-          },
-          "1.5": {
-            "over": 3,
-            "under": 3
-          },
-          "2.5": {
-            "over": 2,
-            "under": 4
-          },
-          "3.5": {
-            "over": 1,
-            "under": 5
-          },
-          "4.5": {
-            "over": 0,
-            "under": 6
-          }
-        }
-      },
-      "against": {
-        "total": {
-          "home": 3,
-          "away": 3,
-          "total": 6
-        },
-        "average": {
-          "home": "0.8",
-          "away": "1.5",
-          "total": "1.0"
-        },
-        "minute": {
-          "0-15": {
-            "total": null,
-            "percentage": null
-          },
-          "16-30": {
-            "total": 2,
-            "percentage": "40.00%"
-          },
-          "31-45": {
-            "total": null,
-            "percentage": null
-          },
-          "46-60": {
-            "total": null,
-            "percentage": null
-          },
-          "61-75": {
-            "total": 2,
-            "percentage": "40.00%"
-          },
-          "76-90": {
-            "total": 1,
-            "percentage": "20.00%"
-          },
-          "91-105": {
-            "total": null,
-            "percentage": null
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 3,
             "under": 3
           },
           "1.5": {
             "over": 2,
-            "under": 4
+            "under": 5
           },
           "2.5": {
             "over": 1,
-            "under": 5
+            "under": 6
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       }
@@ -2140,7 +2140,7 @@
       },
       "wins": {
         "home": "3-0",
-        "away": null
+        "away": "1-2"
       },
       "loses": {
         "home": null,
@@ -2149,7 +2149,7 @@
       "goals": {
         "for": {
           "home": 4,
-          "away": 1
+          "away": 2
         },
         "against": {
           "home": 3,
@@ -2186,37 +2186,41 @@
       {
         "formation": "4-4-2",
         "played": 1
+      },
+      {
+        "formation": "4-1-4-1",
+        "played": 1
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
           "total": 1,
-          "percentage": "7.69%"
+          "percentage": "6.67%"
         },
         "16-30": {
           "total": 1,
-          "percentage": "7.69%"
+          "percentage": "6.67%"
         },
         "31-45": {
           "total": 2,
-          "percentage": "15.38%"
+          "percentage": "13.33%"
         },
         "46-60": {
-          "total": 2,
-          "percentage": "15.38%"
+          "total": 4,
+          "percentage": "26.67%"
         },
         "61-75": {
           "total": 4,
-          "percentage": "30.77%"
+          "percentage": "26.67%"
         },
         "76-90": {
           "total": 2,
-          "percentage": "15.38%"
+          "percentage": "13.33%"
         },
         "91-105": {
           "total": 1,
-          "percentage": "7.69%"
+          "percentage": "6.67%"
         },
         "106-120": {
           "total": null,
@@ -2259,5 +2263,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:39:11.038Z"
+  "lastUpdated": "2025-04-01T14:56:07.104Z"
 }

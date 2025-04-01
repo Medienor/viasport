@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -182,7 +182,8 @@
     2024
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1328281,
@@ -193,10 +194,10 @@
             "city": "Gozo"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
           },
           "timestamp": 1743336000
         },
@@ -210,27 +211,27 @@
             "id": 4628,
             "name": "Sliema Wanderers",
             "logo": "https://media.api-sports.io/football/teams/4628.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 2277,
             "name": "Birkirkara",
             "logo": "https://media.api-sports.io/football/teams/2277.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 2,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -241,9 +242,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1328275,
@@ -774,65 +773,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1328234,
-          "date": "2025-01-25T13:00:00+00:00",
-          "venue": {
-            "id": 2614,
-            "name": "Ta'Qali National Stadium",
-            "city": "Ta'Qali"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737810000
-        },
-        "league": {
-          "id": 393,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/393.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4627,
-            "name": "Mosta",
-            "logo": "https://media.api-sports.io/football/teams/4627.png",
-            "winner": false
-          },
-          "away": {
-            "id": 4628,
-            "name": "Sliema Wanderers",
-            "logo": "https://media.api-sports.io/football/teams/4628.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1129,5 +1069,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:39:16.373Z"
+  "lastUpdated": "2025-04-01T14:56:12.211Z"
 }

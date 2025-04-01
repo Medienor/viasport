@@ -187,65 +187,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1327723,
-          "date": "2025-03-29T17:00:00+00:00",
-          "venue": {
-            "id": 10500,
-            "name": "Stadion Wankdorf",
-            "city": "Bern"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743267600
-        },
-        "league": {
-          "id": 207,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/207.png"
-        },
-        "teams": {
-          "home": {
-            "id": 565,
-            "name": "BSC Young Boys",
-            "logo": "https://media.api-sports.io/football/teams/565.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1011,
-            "name": "FC ST. Gallen",
-            "logo": "https://media.api-sports.io/football/teams/1011.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1327728,
           "date": "2025-04-01T18:30:00+00:00",
           "venue": {
@@ -482,6 +423,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1327723,
+          "date": "2025-03-29T17:00:00+00:00",
+          "venue": {
+            "id": 10500,
+            "name": "Stadion Wankdorf",
+            "city": "Bern"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743267600
+        },
+        "league": {
+          "id": 207,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/207.png"
+        },
+        "teams": {
+          "home": {
+            "id": 565,
+            "name": "BSC Young Boys",
+            "logo": "https://media.api-sports.io/football/teams/565.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1011,
+            "name": "FC ST. Gallen",
+            "logo": "https://media.api-sports.io/football/teams/1011.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1327720,
@@ -1012,65 +1012,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1344923,
-          "date": "2025-02-01T11:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1738407600
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2068,
-            "name": "Skive",
-            "logo": "https://media.api-sports.io/football/teams/2068.png",
-            "winner": true
-          },
-          "away": {
-            "id": 565,
-            "name": "BSC Young Boys",
-            "logo": "https://media.api-sports.io/football/teams/565.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1367,5 +1308,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:00.410Z"
+  "lastUpdated": "2025-04-01T14:54:55.177Z"
 }

@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -237,7 +237,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -294,65 +294,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1203179,
-          "date": "2025-03-29T16:30:00+00:00",
-          "venue": {
-            "id": 18627,
-            "name": "Polsat Plus Arena Gdańsk",
-            "city": "Gdańsk"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743265800
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 343,
-            "name": "Lechia Gdansk",
-            "logo": "https://media.api-sports.io/football/teams/343.png",
-            "winner": null
-          },
-          "away": {
-            "id": 336,
-            "name": "Jagiellonia",
-            "logo": "https://media.api-sports.io/football/teams/336.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1210376,
@@ -709,6 +650,65 @@
       },
       {
         "fixture": {
+          "id": 1203214,
+          "date": "2025-04-27T10:15:00+00:00",
+          "venue": {
+            "id": 21189,
+            "name": "Stadion Miejski",
+            "city": "Kielce"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745748900
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 346,
+            "name": "Korona Kielce",
+            "logo": "https://media.api-sports.io/football/teams/346.png",
+            "winner": null
+          },
+          "away": {
+            "id": 336,
+            "name": "Jagiellonia",
+            "logo": "https://media.api-sports.io/football/teams/336.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203248,
           "date": "2025-05-24T15:30:00+00:00",
           "venue": {
@@ -770,12 +770,71 @@
     "past": [
       {
         "fixture": {
+          "id": 1203179,
+          "date": "2025-03-29T16:30:00+00:00",
+          "venue": {
+            "id": 18627,
+            "name": "Polsat Plus Arena Gdańsk",
+            "city": "Gdańsk"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743265800
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 343,
+            "name": "Lechia Gdansk",
+            "logo": "https://media.api-sports.io/football/teams/343.png",
+            "winner": true
+          },
+          "away": {
+            "id": 336,
+            "name": "Jagiellonia",
+            "logo": "https://media.api-sports.io/football/teams/336.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203167,
           "date": "2025-03-16T19:15:00+00:00",
           "venue": {
             "id": null,
             "name": "Chorten Arena",
-            "city": "Białystok"
+            "city": "Bialystok"
           },
           "status": {
             "long": "Match Finished",
@@ -1010,8 +1069,8 @@
           "date": "2025-03-02T16:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Chorten Arena",
-            "city": "Białystok"
+            "name": "Bialystok City Stadium",
+            "city": "Bialystok"
           },
           "status": {
             "long": "Match Finished",
@@ -1246,8 +1305,8 @@
           "date": "2025-02-16T16:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Chorten Arena",
-            "city": "Białystok"
+            "name": "Bialystok City Stadium",
+            "city": "Bialystok"
           },
           "status": {
             "long": "Match Finished",
@@ -1288,65 +1347,6 @@
           "fulltime": {
             "home": 3,
             "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1325906,
-          "date": "2025-02-13T17:45:00+00:00",
-          "venue": {
-            "id": 18679,
-            "name": "TSC Arena",
-            "city": "Bačka Topola"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739468700
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2646,
-            "name": "TSC Backa Topola",
-            "logo": "https://media.api-sports.io/football/teams/2646.png",
-            "winner": false
-          },
-          "away": {
-            "id": 336,
-            "name": "Jagiellonia",
-            "logo": "https://media.api-sports.io/football/teams/336.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
           },
           "extratime": {
             "home": null,
@@ -1653,5 +1653,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:52.603Z"
+  "lastUpdated": "2025-04-01T14:53:45.867Z"
 }

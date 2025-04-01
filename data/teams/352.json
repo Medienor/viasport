@@ -189,65 +189,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1338875,
-          "date": "2025-03-29T14:30:00+00:00",
-          "venue": {
-            "id": 1669,
-            "name": "Maes Tegid",
-            "city": "Bala, Gwynedd"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743258600
-        },
-        "league": {
-          "id": 110,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/110.png"
-        },
-        "teams": {
-          "home": {
-            "id": 352,
-            "name": "Bala Town",
-            "logo": "https://media.api-sports.io/football/teams/352.png",
-            "winner": null
-          },
-          "away": {
-            "id": 353,
-            "name": "Cardiff MET",
-            "logo": "https://media.api-sports.io/football/teams/353.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1338879,
           "date": "2025-04-11T18:45:00+00:00",
           "venue": {
@@ -366,6 +307,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1338875,
+          "date": "2025-03-29T14:30:00+00:00",
+          "venue": {
+            "id": 1669,
+            "name": "Maes Tegid",
+            "city": "Bala, Gwynedd"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743258600
+        },
+        "league": {
+          "id": 110,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/110.png"
+        },
+        "teams": {
+          "home": {
+            "id": 352,
+            "name": "Bala Town",
+            "logo": "https://media.api-sports.io/football/teams/352.png",
+            "winner": null
+          },
+          "away": {
+            "id": 353,
+            "name": "Cardiff MET",
+            "logo": "https://media.api-sports.io/football/teams/353.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1338872,
@@ -896,65 +896,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1212422,
-          "date": "2024-12-26T14:30:00+00:00",
-          "venue": {
-            "id": 1667,
-            "name": "Park Avenue",
-            "city": "Aberystwyth, Ceredigion"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1735223400
-        },
-        "league": {
-          "id": 110,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/110.png"
-        },
-        "teams": {
-          "home": {
-            "id": 351,
-            "name": "Aberystwyth Town",
-            "logo": "https://media.api-sports.io/football/teams/351.png",
-            "winner": null
-          },
-          "away": {
-            "id": 352,
-            "name": "Bala Town",
-            "logo": "https://media.api-sports.io/football/teams/352.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1251,5 +1192,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:33.068Z"
+  "lastUpdated": "2025-04-01T14:55:28.300Z"
 }

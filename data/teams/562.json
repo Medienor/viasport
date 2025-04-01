@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -163,7 +163,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -189,12 +189,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1351835,
-          "date": "2025-03-30T11:00:00+00:00",
+          "id": 1351848,
+          "date": "2025-04-05T14:00:00+00:00",
           "venue": {
-            "id": 989,
-            "name": "Astana Arena",
-            "city": "Astana"
+            "id": 20740,
+            "name": "Sportivnyy Kompleks Kaznu",
+            "city": "Almaty"
           },
           "status": {
             "long": "Not Started",
@@ -202,7 +202,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743332400
+          "timestamp": 1743861600
         },
         "league": {
           "id": 389,
@@ -217,9 +217,9 @@
             "winner": null
           },
           "away": {
-            "id": 4560,
-            "name": "Zhetysu",
-            "logo": "https://media.api-sports.io/football/teams/4560.png",
+            "id": 692,
+            "name": "Ordabasy",
+            "logo": "https://media.api-sports.io/football/teams/692.png",
             "winner": null
           }
         },
@@ -304,9 +304,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1351850,
+          "date": "2025-04-18T22:00:00+00:00",
+          "venue": {
+            "id": 3203,
+            "name": "Stadion Qajimuqan Muñaytpasov",
+            "city": "Shymkent"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745013600
+        },
+        "league": {
+          "id": 389,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/389.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21502,
+            "name": "Turan Turkistan",
+            "logo": "https://media.api-sports.io/football/teams/21502.png",
+            "winner": null
+          },
+          "away": {
+            "id": 562,
+            "name": "FC Astana",
+            "logo": "https://media.api-sports.io/football/teams/562.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1351835,
+          "date": "2025-03-30T11:00:00+00:00",
+          "venue": {
+            "id": 989,
+            "name": "Astana Arena",
+            "city": "Astana"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743332400
+        },
+        "league": {
+          "id": 389,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/389.png"
+        },
+        "teams": {
+          "home": {
+            "id": 562,
+            "name": "FC Astana",
+            "logo": "https://media.api-sports.io/football/teams/562.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4560,
+            "name": "Zhetysu",
+            "logo": "https://media.api-sports.io/football/teams/4560.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1351834,
@@ -837,65 +955,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299334,
-          "date": "2024-11-07T17:45:00+00:00",
-          "venue": {
-            "id": 19616,
-            "name": "Alphamega Stadium",
-            "city": "Kolossi"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1731001500
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3403,
-            "name": "Pafos",
-            "logo": "https://media.api-sports.io/football/teams/3403.png",
-            "winner": true
-          },
-          "away": {
-            "id": 562,
-            "name": "FC Astana",
-            "logo": "https://media.api-sports.io/football/teams/562.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -913,17 +972,17 @@
       "name": "FC Astana",
       "logo": "https://media.api-sports.io/football/teams/562.png"
     },
-    "form": "DW",
+    "form": "DWW",
     "fixtures": {
       "played": {
+        "home": 2,
+        "away": 1,
+        "total": 3
+      },
+      "wins": {
         "home": 1,
         "away": 1,
         "total": 2
-      },
-      "wins": {
-        "home": 0,
-        "away": 1,
-        "total": 1
       },
       "draws": {
         "home": 1,
@@ -939,18 +998,18 @@
     "goals": {
       "for": {
         "total": {
-          "home": 1,
+          "home": 4,
           "away": 2,
-          "total": 3
+          "total": 6
         },
         "average": {
-          "home": "1.0",
+          "home": "2.0",
           "away": "2.0",
-          "total": "1.5"
+          "total": "2.0"
         },
         "minute": {
           "0-15": {
-            "total": 1,
+            "total": 2,
             "percentage": "33.33%"
           },
           "16-30": {
@@ -959,15 +1018,15 @@
           },
           "31-45": {
             "total": 2,
-            "percentage": "66.67%"
+            "percentage": "33.33%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "16.67%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "16.67%"
           },
           "76-90": {
             "total": null,
@@ -984,24 +1043,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 3,
             "under": 0
           },
           "1.5": {
-            "over": 1,
+            "over": 2,
             "under": 1
           },
           "2.5": {
-            "over": 0,
+            "over": 1,
             "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       },
@@ -1012,9 +1071,9 @@
           "total": 1
         },
         "average": {
-          "home": "1.0",
+          "home": "0.5",
           "away": "0.0",
-          "total": "0.5"
+          "total": "0.3"
         },
         "minute": {
           "0-15": {
@@ -1053,23 +1112,23 @@
         "under_over": {
           "0.5": {
             "over": 1,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       }
@@ -1081,7 +1140,7 @@
         "loses": 0
       },
       "wins": {
-        "home": null,
+        "home": "3-0",
         "away": "0-2"
       },
       "loses": {
@@ -1090,7 +1149,7 @@
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 3,
           "away": 2
         },
         "against": {
@@ -1100,9 +1159,9 @@
       }
     },
     "clean_sheet": {
-      "home": 0,
+      "home": 1,
       "away": 1,
-      "total": 1
+      "total": 2
     },
     "failed_to_score": {
       "home": 0,
@@ -1123,7 +1182,7 @@
     "lineups": [
       {
         "formation": "4-2-3-1",
-        "played": 2
+        "played": 3
       }
     ],
     "cards": {
@@ -1133,20 +1192,20 @@
           "percentage": null
         },
         "16-30": {
-          "total": 1,
+          "total": 2,
           "percentage": "50.00%"
         },
         "31-45": {
           "total": 1,
-          "percentage": "50.00%"
+          "percentage": "25.00%"
         },
         "46-60": {
           "total": null,
           "percentage": null
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "25.00%"
         },
         "76-90": {
           "total": null,
@@ -1197,5 +1256,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:38.004Z"
+  "lastUpdated": "2025-04-01T14:55:33.564Z"
 }

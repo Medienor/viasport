@@ -114,7 +114,7 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
+              "events": true,
               "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
@@ -127,6 +127,43 @@
             "injuries": false,
             "predictions": true,
             "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 105,
+        "name": "NM Cupen",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/105.png"
+      },
+      "country": {
+        "name": "Norway",
+        "code": "NO",
+        "flag": "https://media.api-sports.io/flags/no.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-26",
+          "end": "2025-04-13",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
           }
         }
       ]
@@ -146,65 +183,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1342426,
-          "date": "2025-03-31T17:00:00+00:00",
-          "venue": {
-            "id": 5094,
-            "name": "B&G-banen",
-            "city": "Egersund"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743440400
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6976,
-            "name": "Egersund",
-            "logo": "https://media.api-sports.io/football/teams/6976.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2152,
-            "name": "Mjondalen",
-            "logo": "https://media.api-sports.io/football/teams/2152.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1342437,
@@ -799,6 +777,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1342426,
+          "date": "2025-03-31T17:00:00+00:00",
+          "venue": {
+            "id": 5094,
+            "name": "B&G-banen",
+            "city": "Egersund"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743440400
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6976,
+            "name": "Egersund",
+            "logo": "https://media.api-sports.io/football/teams/6976.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2152,
+            "name": "Mjondalen",
+            "logo": "https://media.api-sports.io/football/teams/2152.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1365985,
           "date": "2025-03-23T13:00:00+00:00",
           "venue": {
@@ -1327,65 +1364,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1152107,
-          "date": "2024-11-09T15:00:00+00:00",
-          "venue": {
-            "id": 1189,
-            "name": "NAMMO stadion",
-            "city": "Raufoss"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1731164400
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2153,
-            "name": "Raufoss",
-            "logo": "https://media.api-sports.io/football/teams/2153.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2152,
-            "name": "Mjondalen",
-            "logo": "https://media.api-sports.io/football/teams/2152.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1682,5 +1660,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:35:46.313Z"
+  "lastUpdated": "2025-04-01T14:52:38.520Z"
 }

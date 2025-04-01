@@ -189,65 +189,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1224216,
-          "date": "2025-03-29T14:30:00+00:00",
-          "venue": {
-            "id": 20471,
-            "name": "BORUSSIA-PARK",
-            "city": "Mönchengladbach"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743258600
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 163,
-            "name": "Borussia Mönchengladbach",
-            "logo": "https://media.api-sports.io/football/teams/163.png",
-            "winner": null
-          },
-          "away": {
-            "id": 173,
-            "name": "RB Leipzig",
-            "logo": "https://media.api-sports.io/football/teams/173.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1357110,
           "date": "2025-04-02T18:45:00+00:00",
           "venue": {
@@ -720,6 +661,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1224216,
+          "date": "2025-03-29T14:30:00+00:00",
+          "venue": {
+            "id": 20471,
+            "name": "BORUSSIA-PARK",
+            "city": "Mönchengladbach"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743258600
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 163,
+            "name": "Borussia Mönchengladbach",
+            "logo": "https://media.api-sports.io/football/teams/163.png",
+            "winner": true
+          },
+          "away": {
+            "id": 173,
+            "name": "RB Leipzig",
+            "logo": "https://media.api-sports.io/football/teams/173.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1224201,
@@ -1250,65 +1250,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224137,
-          "date": "2025-01-25T14:30:00+00:00",
-          "venue": {
-            "id": 738,
-            "name": "Red Bull Arena",
-            "city": "Leipzig"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737815400
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 173,
-            "name": "RB Leipzig",
-            "logo": "https://media.api-sports.io/football/teams/173.png",
-            "winner": null
-          },
-          "away": {
-            "id": 168,
-            "name": "Bayer Leverkusen",
-            "logo": "https://media.api-sports.io/football/teams/168.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1605,5 +1546,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:29.471Z"
+  "lastUpdated": "2025-04-01T14:53:22.773Z"
 }

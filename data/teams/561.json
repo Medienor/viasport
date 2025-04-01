@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -222,65 +222,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1202778,
-          "date": "2025-03-29T17:45:00+00:00",
-          "venue": {
-            "id": 426,
-            "name": "Gradski Stadion",
-            "city": "Koprivnica"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743270300
-        },
-        "league": {
-          "id": 210,
-          "name": "HNL",
-          "logo": "https://media.api-sports.io/football/leagues/210.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1018,
-            "name": "NK Slaven Belupo",
-            "logo": "https://media.api-sports.io/football/teams/1018.png",
-            "winner": null
-          },
-          "away": {
-            "id": 561,
-            "name": "HNK Rijeka",
-            "logo": "https://media.api-sports.io/football/teams/561.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1359790,
@@ -875,6 +816,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1202778,
+          "date": "2025-03-29T17:45:00+00:00",
+          "venue": {
+            "id": 426,
+            "name": "Gradski Stadion",
+            "city": "Koprivnica"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743270300
+        },
+        "league": {
+          "id": 210,
+          "name": "HNL",
+          "logo": "https://media.api-sports.io/football/leagues/210.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1018,
+            "name": "NK Slaven Belupo",
+            "logo": "https://media.api-sports.io/football/teams/1018.png",
+            "winner": true
+          },
+          "away": {
+            "id": 561,
+            "name": "HNK Rijeka",
+            "logo": "https://media.api-sports.io/football/teams/561.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1202776,
           "date": "2025-03-16T16:45:00+00:00",
           "venue": {
@@ -1403,65 +1403,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1202740,
-          "date": "2025-01-26T14:00:00+00:00",
-          "venue": {
-            "id": 423,
-            "name": "Stadion HNK Rijeka",
-            "city": "Rijeka"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1737900000
-        },
-        "league": {
-          "id": 210,
-          "name": "HNL",
-          "logo": "https://media.api-sports.io/football/leagues/210.png"
-        },
-        "teams": {
-          "home": {
-            "id": 561,
-            "name": "HNK Rijeka",
-            "logo": "https://media.api-sports.io/football/teams/561.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1017,
-            "name": "NK Lokomotiva Zagreb",
-            "logo": "https://media.api-sports.io/football/teams/1017.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1758,5 +1699,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:22.874Z"
+  "lastUpdated": "2025-04-01T14:55:17.988Z"
 }

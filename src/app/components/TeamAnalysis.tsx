@@ -193,11 +193,16 @@ export default function TeamAnalysis({ team, leagues, fixtures }: TeamAnalysisPr
         </h2>
         <div className="prose prose-lg max-w-none">
           <p>
-            {`${team.team.name} ble grunnlagt i ${team.team.founded} og spiller sine hjemmekamper på ${team.venue.name} 
-            som har en kapasitet på ${team.venue.capacity.toLocaleString('no-NO')} tilskuere. 
-            Stadion ligger i ${team.venue.city}${team.venue.address ? `, ${team.venue.address}` : ''}.`}
+            {`${team.team.name} ${team.team.founded ? `ble grunnlagt i ${team.team.founded} og ` : ''}`}
+            {team.venue ? 
+              `spiller sine hjemmekamper på ${team.venue.name}` +
+              `${team.venue.capacity ? ` som har en kapasitet på ${team.venue.capacity.toLocaleString('no-NO')} tilskuere` : ''}.` +
+              `${team.venue.city ? ` Stadion ligger i ${team.venue.city}` : ''}` +
+              `${team.venue.address ? `, ${team.venue.address}` : ''}.`
+              : '.'
+            }
           </p>
-          {team.venue.surface && (
+          {team.venue?.surface && (
             <p>
               {`Hjemmebanen har ${
                 team.venue.surface === 'grass' ? 'naturgressbane' : 

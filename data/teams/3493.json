@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -144,65 +144,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1203181,
-          "date": "2025-03-30T12:45:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Motor Lublin Arena",
-            "city": "Lublin"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743338700
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14562,
-            "name": "Motor Lublin",
-            "logo": "https://media.api-sports.io/football/teams/14562.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3493,
-            "name": "Stal Mielec",
-            "logo": "https://media.api-sports.io/football/teams/3493.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1203190,
@@ -382,6 +323,65 @@
       },
       {
         "fixture": {
+          "id": 1203213,
+          "date": "2025-04-28T17:00:00+00:00",
+          "venue": {
+            "id": 1260,
+            "name": "Stadion Zagłębia Lubin",
+            "city": "Lubin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745859600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 345,
+            "name": "Zaglebie Lubin",
+            "logo": "https://media.api-sports.io/football/teams/345.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3493,
+            "name": "Stal Mielec",
+            "logo": "https://media.api-sports.io/football/teams/3493.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203252,
           "date": "2025-05-24T15:30:00+00:00",
           "venue": {
@@ -443,11 +443,70 @@
     "past": [
       {
         "fixture": {
+          "id": 1203181,
+          "date": "2025-03-30T12:45:00+00:00",
+          "venue": {
+            "id": 11992,
+            "name": "Motor Lublin Arena",
+            "city": "Lublin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743338700
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14562,
+            "name": "Motor Lublin",
+            "logo": "https://media.api-sports.io/football/teams/14562.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3493,
+            "name": "Stal Mielec",
+            "logo": "https://media.api-sports.io/football/teams/3493.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203173,
           "date": "2025-03-15T13:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadion Miejski im. Grzegorza Lato",
+            "name": "Stadion Stali Mielec",
             "city": "Mielec"
           },
           "status": {
@@ -565,7 +624,7 @@
           "date": "2025-03-01T13:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadion Miejski im. Grzegorza Lato",
+            "name": "Stadion Stali Mielec",
             "city": "Mielec"
           },
           "status": {
@@ -683,7 +742,7 @@
           "date": "2025-02-16T11:15:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadion Miejski im. Grzegorza Lato",
+            "name": "Stadion Stali Mielec",
             "city": "Mielec"
           },
           "status": {
@@ -742,7 +801,7 @@
           "date": "2025-02-07T17:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadion Miejski im. Grzegorza Lato",
+            "name": "Stadion Stali Mielec",
             "city": "Mielec"
           },
           "status": {
@@ -961,65 +1020,6 @@
           "fulltime": {
             "home": 1,
             "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1336819,
-          "date": "2025-01-16T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Pinatar Arena Football Center",
-            "city": "San Pedro del Pinatar"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1736985600
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3493,
-            "name": "Stal Mielec",
-            "logo": "https://media.api-sports.io/football/teams/3493.png",
-            "winner": true
-          },
-          "away": {
-            "id": 372,
-            "name": "IF Elfsborg",
-            "logo": "https://media.api-sports.io/football/teams/372.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
           },
           "extratime": {
             "home": null,
@@ -1326,5 +1326,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:00.223Z"
+  "lastUpdated": "2025-04-01T14:53:53.486Z"
 }

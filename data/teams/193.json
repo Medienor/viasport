@@ -114,65 +114,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213681,
-          "date": "2025-03-29T20:00:00+00:00",
-          "venue": {
-            "id": 1160,
-            "name": "MAC³PARK Stadion",
-            "city": "Zwolle"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743278400
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 193,
-            "name": "PEC Zwolle",
-            "logo": "https://media.api-sports.io/football/teams/193.png",
-            "winner": null
-          },
-          "away": {
-            "id": 417,
-            "name": "Waalwijk",
-            "logo": "https://media.api-sports.io/football/teams/417.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213685,
           "date": "2025-04-05T19:00:00+00:00",
           "venue": {
@@ -586,6 +527,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213681,
+          "date": "2025-03-29T20:00:00+00:00",
+          "venue": {
+            "id": 1160,
+            "name": "MAC³PARK Stadion",
+            "city": "Zwolle"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743278400
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 193,
+            "name": "PEC Zwolle",
+            "logo": "https://media.api-sports.io/football/teams/193.png",
+            "winner": true
+          },
+          "away": {
+            "id": 417,
+            "name": "Waalwijk",
+            "logo": "https://media.api-sports.io/football/teams/417.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213674,
@@ -1116,65 +1116,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213591,
-          "date": "2024-12-20T19:00:00+00:00",
-          "venue": {
-            "id": 1144,
-            "name": "Mandemakers Stadion",
-            "city": "Waalwijk"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1734721200
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 417,
-            "name": "Waalwijk",
-            "logo": "https://media.api-sports.io/football/teams/417.png",
-            "winner": null
-          },
-          "away": {
-            "id": 193,
-            "name": "PEC Zwolle",
-            "logo": "https://media.api-sports.io/football/teams/193.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1471,5 +1412,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:00.186Z"
+  "lastUpdated": "2025-04-01T14:53:53.452Z"
 }

@@ -258,65 +258,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360243,
-          "date": "2025-03-29T17:00:00+00:00",
-          "venue": {
-            "id": 3408,
-            "name": "HaMoshava Stadium",
-            "city": "Petach-Tikva"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743267600
-        },
-        "league": {
-          "id": 383,
-          "name": "Ligat Ha'al",
-          "logo": "https://media.api-sports.io/football/leagues/383.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4495,
-            "name": "Maccabi Petah Tikva",
-            "logo": "https://media.api-sports.io/football/teams/4495.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4500,
-            "name": "Hapoel Hadera",
-            "logo": "https://media.api-sports.io/football/teams/4500.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1360247,
           "date": "2025-04-05T17:00:00+00:00",
           "venue": {
@@ -553,6 +494,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360243,
+          "date": "2025-03-29T17:00:00+00:00",
+          "venue": {
+            "id": 3408,
+            "name": "HaMoshava Stadium",
+            "city": "Petach-Tikva"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743267600
+        },
+        "league": {
+          "id": 383,
+          "name": "Ligat Ha'al",
+          "logo": "https://media.api-sports.io/football/leagues/383.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4495,
+            "name": "Maccabi Petah Tikva",
+            "logo": "https://media.api-sports.io/football/teams/4495.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4500,
+            "name": "Hapoel Hadera",
+            "logo": "https://media.api-sports.io/football/teams/4500.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360239,
@@ -1083,65 +1083,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1215011,
-          "date": "2025-01-11T16:00:00+00:00",
-          "venue": {
-            "id": 3408,
-            "name": "HaMoshava Stadium",
-            "city": "Petach-Tikva"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1736611200
-        },
-        "league": {
-          "id": 383,
-          "name": "Ligat Ha'al",
-          "logo": "https://media.api-sports.io/football/leagues/383.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4495,
-            "name": "Maccabi Petah Tikva",
-            "logo": "https://media.api-sports.io/football/teams/4495.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4486,
-            "name": "Hapoel Katamon",
-            "logo": "https://media.api-sports.io/football/teams/4486.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1438,5 +1379,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:30.550Z"
+  "lastUpdated": "2025-04-01T14:55:25.700Z"
 }

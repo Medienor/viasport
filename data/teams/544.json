@@ -151,65 +151,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1217859,
-          "date": "2025-03-29T15:15:00+00:00",
-          "venue": {
-            "id": 6510,
-            "name": "Estadio Municipal de A Malata",
-            "city": "Ferrol"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743261300
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 9409,
-            "name": "Racing Ferrol",
-            "logo": "https://media.api-sports.io/football/teams/9409.png",
-            "winner": null
-          },
-          "away": {
-            "id": 544,
-            "name": "Deportivo La Coruna",
-            "logo": "https://media.api-sports.io/football/teams/544.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1217870,
           "date": "2025-04-06T19:00:00+00:00",
           "venue": {
@@ -325,9 +266,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1217887,
+          "date": "2025-04-20T19:00:00+00:00",
+          "venue": {
+            "id": 1471,
+            "name": "Estadio Abanca-Riazor",
+            "city": "La Coruña"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745175600
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 544,
+            "name": "Deportivo La Coruna",
+            "logo": "https://media.api-sports.io/football/teams/544.png",
+            "winner": null
+          },
+          "away": {
+            "id": 719,
+            "name": "Tenerife",
+            "logo": "https://media.api-sports.io/football/teams/719.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1217901,
+          "date": "2025-04-27T14:15:00+00:00",
+          "venue": {
+            "id": 3516,
+            "name": "Campos de Sport de El Sardinero",
+            "city": "Santander"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745763300
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4665,
+            "name": "Racing Santander",
+            "logo": "https://media.api-sports.io/football/teams/4665.png",
+            "winner": null
+          },
+          "away": {
+            "id": 544,
+            "name": "Deportivo La Coruna",
+            "logo": "https://media.api-sports.io/football/teams/544.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217859,
+          "date": "2025-03-29T15:15:00+00:00",
+          "venue": {
+            "id": 6510,
+            "name": "Estadio Municipal de A Malata",
+            "city": "Ferrol"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743261300
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9409,
+            "name": "Racing Ferrol",
+            "logo": "https://media.api-sports.io/football/teams/9409.png",
+            "winner": false
+          },
+          "away": {
+            "id": 544,
+            "name": "Deportivo La Coruna",
+            "logo": "https://media.api-sports.io/football/teams/544.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217847,
@@ -858,65 +976,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217755,
-          "date": "2025-01-25T17:30:00+00:00",
-          "venue": {
-            "id": 1471,
-            "name": "Estadio Abanca-Riazor",
-            "city": "La Coruña"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737826200
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 544,
-            "name": "Deportivo La Coruna",
-            "logo": "https://media.api-sports.io/football/teams/544.png",
-            "winner": false
-          },
-          "away": {
-            "id": 539,
-            "name": "Levante",
-            "logo": "https://media.api-sports.io/football/teams/539.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1213,5 +1272,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:22.247Z"
+  "lastUpdated": "2025-04-01T14:59:20.402Z"
 }

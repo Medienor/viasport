@@ -115,65 +115,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208752,
-          "date": "2025-03-29T17:30:00+00:00",
-          "venue": {
-            "id": 1470,
-            "name": "Estadio de Mendizorroza",
-            "city": "Vitoria-Gasteiz"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743269400
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 542,
-            "name": "Alaves",
-            "logo": "https://media.api-sports.io/football/teams/542.png",
-            "winner": null
-          },
-          "away": {
-            "id": 728,
-            "name": "Rayo Vallecano",
-            "logo": "https://media.api-sports.io/football/teams/728.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1212939,
           "date": "2025-04-04T19:00:00+00:00",
           "venue": {
@@ -289,9 +230,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1208774,
+          "date": "2025-04-19T12:00:00+00:00",
+          "venue": {
+            "id": 1488,
+            "name": "Estadio de Vallecas",
+            "city": "Madrid"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745064000
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 728,
+            "name": "Rayo Vallecano",
+            "logo": "https://media.api-sports.io/football/teams/728.png",
+            "winner": null
+          },
+          "away": {
+            "id": 532,
+            "name": "Valencia",
+            "logo": "https://media.api-sports.io/football/teams/532.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208752,
+          "date": "2025-03-29T17:30:00+00:00",
+          "venue": {
+            "id": 1470,
+            "name": "Estadio de Mendizorroza",
+            "city": "Vitoria-Gasteiz"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743269400
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 542,
+            "name": "Alaves",
+            "logo": "https://media.api-sports.io/football/teams/542.png",
+            "winner": false
+          },
+          "away": {
+            "id": 728,
+            "name": "Rayo Vallecano",
+            "logo": "https://media.api-sports.io/football/teams/728.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208739,
@@ -822,65 +881,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334035,
-          "date": "2025-01-16T18:30:00+00:00",
-          "venue": {
-            "id": 1491,
-            "name": "Reale Arena",
-            "city": "Donostia-San Sebastián"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737052200
-        },
-        "league": {
-          "id": 143,
-          "name": "Copa del Rey",
-          "logo": "https://media.api-sports.io/football/leagues/143.png"
-        },
-        "teams": {
-          "home": {
-            "id": 548,
-            "name": "Real Sociedad",
-            "logo": "https://media.api-sports.io/football/teams/548.png",
-            "winner": true
-          },
-          "away": {
-            "id": 728,
-            "name": "Rayo Vallecano",
-            "logo": "https://media.api-sports.io/football/teams/728.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1177,5 +1177,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:14.427Z"
+  "lastUpdated": "2025-04-01T14:53:06.431Z"
 }

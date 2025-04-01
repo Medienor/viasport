@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362079,
-          "date": "2025-03-29T19:30:00+00:00",
-          "venue": {
-            "id": 235,
-            "name": "Arena Pantanal",
-            "city": "Cuiabá, Mato Grosso"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743276600
-        },
-        "league": {
-          "id": 630,
-          "name": "Matogrossense",
-          "logo": "https://media.api-sports.io/football/leagues/630.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": null
-          },
-          "away": {
-            "id": 22825,
-            "name": "Primavera MG",
-            "logo": "https://media.api-sports.io/football/teams/22825.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1353269,
           "date": "2025-04-06T22:00:00+00:00",
           "venue": {
@@ -360,6 +301,65 @@
             "id": 134,
             "name": "Atletico Paranaense",
             "logo": "https://media.api-sports.io/football/teams/134.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353292,
+          "date": "2025-04-19T22:00:00+00:00",
+          "venue": {
+            "id": 211,
+            "name": "Estádio Antônio Accioly",
+            "city": "Goiânia, Goiás"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745100000
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 144,
+            "name": "Atletico Goianiense",
+            "logo": "https://media.api-sports.io/football/teams/144.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1193,
+            "name": "Cuiaba",
+            "logo": "https://media.api-sports.io/football/teams/1193.png",
             "winner": null
           }
         },
@@ -994,12 +994,12 @@
       "name": "Cuiaba",
       "logo": "https://media.api-sports.io/football/teams/1193.png"
     },
-    "form": "DDDWWWDWWWW",
+    "form": "DDDWWWDWWWWL",
     "fixtures": {
       "played": {
-        "home": 5,
+        "home": 6,
         "away": 6,
-        "total": 11
+        "total": 12
       },
       "wins": {
         "home": 4,
@@ -1012,9 +1012,9 @@
         "total": 4
       },
       "loses": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       }
     },
     "goals": {
@@ -1025,90 +1025,90 @@
           "total": 23
         },
         "average": {
-          "home": "3.2",
+          "home": "2.7",
           "away": "1.2",
-          "total": "2.1"
+          "total": "1.9"
         },
         "minute": {
           "0-15": {
             "total": 4,
-            "percentage": "17.39%"
+            "percentage": "16.00%"
           },
           "16-30": {
             "total": 3,
-            "percentage": "13.04%"
+            "percentage": "12.00%"
           },
           "31-45": {
             "total": 4,
-            "percentage": "17.39%"
+            "percentage": "16.00%"
           },
           "46-60": {
             "total": 5,
-            "percentage": "21.74%"
+            "percentage": "20.00%"
           },
           "61-75": {
             "total": 3,
-            "percentage": "13.04%"
+            "percentage": "12.00%"
           },
           "76-90": {
             "total": 4,
-            "percentage": "17.39%"
+            "percentage": "16.00%"
           },
           "91-105": {
             "total": null,
             "percentage": null
           },
           "106-120": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "8.00%"
           }
         },
         "under_over": {
           "0.5": {
             "over": 10,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 6,
-            "under": 5
+            "under": 6
           },
           "2.5": {
             "over": 3,
-            "under": 8
+            "under": 9
           },
           "3.5": {
             "over": 2,
-            "under": 9
+            "under": 10
           },
           "4.5": {
             "over": 2,
-            "under": 9
+            "under": 10
           }
         }
       },
       "against": {
         "total": {
-          "home": 2,
+          "home": 3,
           "away": 4,
-          "total": 6
+          "total": 7
         },
         "average": {
-          "home": "0.4",
+          "home": "0.5",
           "away": "0.7",
-          "total": "0.5"
+          "total": "0.6"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "16.67%"
+            "percentage": "9.09%"
           },
           "16-30": {
             "total": 1,
-            "percentage": "16.67%"
+            "percentage": "9.09%"
           },
           "31-45": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": 2,
+            "percentage": "18.18%"
           },
           "46-60": {
             "total": null,
@@ -1116,48 +1116,48 @@
           },
           "61-75": {
             "total": 2,
-            "percentage": "33.33%"
+            "percentage": "18.18%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "16.67%"
+            "percentage": "9.09%"
           },
           "91-105": {
             "total": null,
             "percentage": null
           },
           "106-120": {
-            "total": null,
-            "percentage": null
+            "total": 4,
+            "percentage": "36.36%"
           }
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 6,
             "under": 6
           },
           "1.5": {
             "over": 1,
-            "under": 10
+            "under": 11
           },
           "2.5": {
             "over": 0,
-            "under": 11
+            "under": 12
           },
           "3.5": {
             "over": 0,
-            "under": 11
+            "under": 12
           },
           "4.5": {
             "over": 0,
-            "under": 11
+            "under": 12
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 3,
+        "wins": 4,
         "draws": 3,
         "loses": 0
       },
@@ -1166,7 +1166,7 @@
         "away": "1-2"
       },
       "loses": {
-        "home": null,
+        "home": "0-1",
         "away": null
       },
       "goals": {
@@ -1186,47 +1186,47 @@
       "total": 6
     },
     "failed_to_score": {
-      "home": 0,
+      "home": 1,
       "away": 1,
-      "total": 1
+      "total": 2
     },
     "penalty": {
       "scored": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 2,
+        "percentage": "50.00%"
       },
       "missed": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 2,
+        "percentage": "50.00%"
       },
-      "total": 0
+      "total": 4
     },
     "lineups": [],
     "cards": {
       "yellow": {
         "0-15": {
           "total": 2,
-          "percentage": "10.53%"
+          "percentage": "10.00%"
         },
         "16-30": {
           "total": 1,
-          "percentage": "5.26%"
+          "percentage": "5.00%"
         },
         "31-45": {
           "total": 2,
-          "percentage": "10.53%"
+          "percentage": "10.00%"
         },
         "46-60": {
           "total": 5,
-          "percentage": "26.32%"
+          "percentage": "25.00%"
         },
         "61-75": {
-          "total": 4,
-          "percentage": "21.05%"
+          "total": 5,
+          "percentage": "25.00%"
         },
         "76-90": {
           "total": 5,
-          "percentage": "26.32%"
+          "percentage": "25.00%"
         },
         "91-105": {
           "total": null,
@@ -1240,7 +1240,7 @@
       "red": {
         "0-15": {
           "total": 1,
-          "percentage": "100.00%"
+          "percentage": "50.00%"
         },
         "16-30": {
           "total": null,
@@ -1263,8 +1263,8 @@
           "percentage": null
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "106-120": {
           "total": null,
@@ -1273,5 +1273,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:19.737Z"
+  "lastUpdated": "2025-04-01T14:59:17.930Z"
 }

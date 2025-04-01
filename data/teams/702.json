@@ -147,7 +147,7 @@
         {
           "year": 2024,
           "start": "2024-09-11",
-          "end": "2024-12-04",
+          "end": "2025-04-02",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -224,12 +224,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1214780,
-          "date": "2025-03-29T18:00:00+00:00",
+          "id": 1366862,
+          "date": "2025-04-02T14:00:00+00:00",
           "venue": {
-            "id": 1425,
-            "name": "Stadion Karađorđe",
-            "city": "Novi Sad"
+            "id": 1427,
+            "name": "Gradski Stadion Čair",
+            "city": "Niš"
           },
           "status": {
             "long": "Not Started",
@@ -237,7 +237,66 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743271200
+          "timestamp": 1743602400
+        },
+        "league": {
+          "id": 732,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/732.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2254,
+            "name": "Radnicki NIS",
+            "logo": "https://media.api-sports.io/football/teams/2254.png",
+            "winner": null
+          },
+          "away": {
+            "id": 702,
+            "name": "Vojvodina",
+            "logo": "https://media.api-sports.io/football/teams/702.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1214793,
+          "date": "2025-04-07T16:00:00+00:00",
+          "venue": {
+            "id": 10502,
+            "name": "Mladost Stadium Lučani",
+            "city": "Lučani"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744041600
         },
         "league": {
           "id": 286,
@@ -246,15 +305,15 @@
         },
         "teams": {
           "home": {
-            "id": 702,
-            "name": "Vojvodina",
-            "logo": "https://media.api-sports.io/football/teams/702.png",
+            "id": 699,
+            "name": "Mladost Lucani",
+            "logo": "https://media.api-sports.io/football/teams/699.png",
             "winner": null
           },
           "away": {
-            "id": 598,
-            "name": "FK Crvena Zvezda",
-            "logo": "https://media.api-sports.io/football/teams/598.png",
+            "id": 702,
+            "name": "Vojvodina",
+            "logo": "https://media.api-sports.io/football/teams/702.png",
             "winner": null
           }
         },
@@ -283,6 +342,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1214780,
+          "date": "2025-03-29T18:00:00+00:00",
+          "venue": {
+            "id": 1425,
+            "name": "Stadion Karađorđe",
+            "city": "Novi Sad"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743271200
+        },
+        "league": {
+          "id": 286,
+          "name": "Super Liga",
+          "logo": "https://media.api-sports.io/football/leagues/286.png"
+        },
+        "teams": {
+          "home": {
+            "id": 702,
+            "name": "Vojvodina",
+            "logo": "https://media.api-sports.io/football/teams/702.png",
+            "winner": false
+          },
+          "away": {
+            "id": 598,
+            "name": "FK Crvena Zvezda",
+            "logo": "https://media.api-sports.io/football/teams/598.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1214778,
@@ -813,65 +931,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337078,
-          "date": "2025-01-19T14:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737295200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 702,
-            "name": "Vojvodina",
-            "logo": "https://media.api-sports.io/football/teams/702.png",
-            "winner": false
-          },
-          "away": {
-            "id": 854,
-            "name": "Slavia Sofia",
-            "logo": "https://media.api-sports.io/football/teams/854.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1168,5 +1227,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:25.533Z"
+  "lastUpdated": "2025-04-01T14:55:20.538Z"
 }

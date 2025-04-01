@@ -227,65 +227,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1221037,
-          "date": "2025-03-29T13:30:00+00:00",
-          "venue": {
-            "id": 20122,
-            "name": "Obolon Arena",
-            "city": "Kyiv"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743255000
-        },
-        "league": {
-          "id": 333,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/333.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3630,
-            "name": "Obolon'-Brovar",
-            "logo": "https://media.api-sports.io/football/teams/3630.png",
-            "winner": null
-          },
-          "away": {
-            "id": 550,
-            "name": "Shakhtar Donetsk",
-            "logo": "https://media.api-sports.io/football/teams/550.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1315261,
           "date": "2025-04-02T11:00:00+00:00",
           "venue": {
@@ -349,8 +290,8 @@
           "date": "2025-04-06T15:00:00+00:00",
           "venue": {
             "id": 20124,
-            "name": "Arena Lviv",
-            "city": "Lviv"
+            "name": "Stadion Livyi Bereh",
+            "city": "Kyiv"
           },
           "status": {
             "long": "Not Started",
@@ -460,9 +401,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1221061,
+          "date": "2025-04-18T22:00:00+00:00",
+          "venue": {
+            "id": 20124,
+            "name": "Arena Lviv",
+            "city": "Lviv"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745013600
+        },
+        "league": {
+          "id": 333,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/333.png"
+        },
+        "teams": {
+          "home": {
+            "id": 550,
+            "name": "Shakhtar Donetsk",
+            "logo": "https://media.api-sports.io/football/teams/550.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3627,
+            "name": "Kolos Kovalivka",
+            "logo": "https://media.api-sports.io/football/teams/3627.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1221037,
+          "date": "2025-03-29T13:30:00+00:00",
+          "venue": {
+            "id": 20122,
+            "name": "Obolon Arena",
+            "city": "Kyiv"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743255000
+        },
+        "league": {
+          "id": 333,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/333.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3630,
+            "name": "Obolon'-Brovar",
+            "logo": "https://media.api-sports.io/football/teams/3630.png",
+            "winner": false
+          },
+          "away": {
+            "id": 550,
+            "name": "Shakhtar Donetsk",
+            "logo": "https://media.api-sports.io/football/teams/550.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1221031,
@@ -993,65 +1052,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220996,
-          "date": "2024-12-15T16:00:00+00:00",
-          "venue": {
-            "id": 11948,
-            "name": "Tsentralnyi Stadion",
-            "city": "Zhytomyr"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1734278400
-        },
-        "league": {
-          "id": 333,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/333.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6496,
-            "name": "Polessya",
-            "logo": "https://media.api-sports.io/football/teams/6496.png",
-            "winner": true
-          },
-          "away": {
-            "id": 550,
-            "name": "Shakhtar Donetsk",
-            "logo": "https://media.api-sports.io/football/teams/550.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1348,5 +1348,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:57.857Z"
+  "lastUpdated": "2025-04-01T14:54:52.612Z"
 }

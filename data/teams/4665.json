@@ -110,65 +110,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1217857,
-          "date": "2025-03-29T17:30:00+00:00",
-          "venue": {
-            "id": 3516,
-            "name": "Campos de Sport de El Sardinero",
-            "city": "Santander"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743269400
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4665,
-            "name": "Racing Santander",
-            "logo": "https://media.api-sports.io/football/teams/4665.png",
-            "winner": null
-          },
-          "away": {
-            "id": 732,
-            "name": "Zaragoza",
-            "logo": "https://media.api-sports.io/football/teams/732.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1217866,
           "date": "2025-04-06T14:15:00+00:00",
           "venue": {
@@ -284,9 +225,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1217889,
+          "date": "2025-04-19T14:15:00+00:00",
+          "venue": {
+            "id": 1480,
+            "name": "Estadio El Alcoraz",
+            "city": "Huesca"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745072100
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 726,
+            "name": "Huesca",
+            "logo": "https://media.api-sports.io/football/teams/726.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4665,
+            "name": "Racing Santander",
+            "logo": "https://media.api-sports.io/football/teams/4665.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1217901,
+          "date": "2025-04-27T14:15:00+00:00",
+          "venue": {
+            "id": 3516,
+            "name": "Campos de Sport de El Sardinero",
+            "city": "Santander"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745763300
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4665,
+            "name": "Racing Santander",
+            "logo": "https://media.api-sports.io/football/teams/4665.png",
+            "winner": null
+          },
+          "away": {
+            "id": 544,
+            "name": "Deportivo La Coruna",
+            "logo": "https://media.api-sports.io/football/teams/544.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217857,
+          "date": "2025-03-29T17:30:00+00:00",
+          "venue": {
+            "id": 3516,
+            "name": "Campos de Sport de El Sardinero",
+            "city": "Santander"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743269400
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4665,
+            "name": "Racing Santander",
+            "logo": "https://media.api-sports.io/football/teams/4665.png",
+            "winner": true
+          },
+          "away": {
+            "id": 732,
+            "name": "Zaragoza",
+            "logo": "https://media.api-sports.io/football/teams/732.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217843,
@@ -817,65 +935,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217748,
-          "date": "2025-01-19T15:15:00+00:00",
-          "venue": {
-            "id": 3516,
-            "name": "Campos de Sport de El Sardinero",
-            "city": "Santander"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1737299700
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4665,
-            "name": "Racing Santander",
-            "logo": "https://media.api-sports.io/football/teams/4665.png",
-            "winner": true
-          },
-          "away": {
-            "id": 9409,
-            "name": "Racing Ferrol",
-            "logo": "https://media.api-sports.io/football/teams/9409.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 6,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 6,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1172,5 +1231,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:29.913Z"
+  "lastUpdated": "2025-04-01T14:59:28.239Z"
 }

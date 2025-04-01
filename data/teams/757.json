@@ -77,7 +77,7 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
+              "events": true,
               "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
@@ -90,6 +90,43 @@
             "injuries": false,
             "predictions": true,
             "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 105,
+        "name": "NM Cupen",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/105.png"
+      },
+      "country": {
+        "name": "Norway",
+        "code": "NO",
+        "flag": "https://media.api-sports.io/flags/no.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-26",
+          "end": "2025-04-13",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
           }
         }
       ]
@@ -109,65 +146,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1342432,
-          "date": "2025-03-31T17:00:00+00:00",
-          "venue": {
-            "id": 1174,
-            "name": "Color Line Stadion",
-            "city": "Ålesund"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743440400
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 757,
-            "name": "Aalesund",
-            "logo": "https://media.api-sports.io/football/teams/757.png",
-            "winner": null
-          },
-          "away": {
-            "id": 321,
-            "name": "Lillestrom",
-            "logo": "https://media.api-sports.io/football/teams/321.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1342440,
@@ -762,6 +740,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1342432,
+          "date": "2025-03-31T17:00:00+00:00",
+          "venue": {
+            "id": 1174,
+            "name": "Color Line Stadion",
+            "city": "Ålesund"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743440400
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 757,
+            "name": "Aalesund",
+            "logo": "https://media.api-sports.io/football/teams/757.png",
+            "winner": null
+          },
+          "away": {
+            "id": 321,
+            "name": "Lillestrom",
+            "logo": "https://media.api-sports.io/football/teams/321.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1365992,
           "date": "2025-03-23T15:00:00+00:00",
           "venue": {
@@ -1290,65 +1327,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1152099,
-          "date": "2024-11-02T15:00:00+00:00",
-          "venue": {
-            "id": 1174,
-            "name": "Color Line Stadion",
-            "city": "Ålesund"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1730559600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 757,
-            "name": "Aalesund",
-            "logo": "https://media.api-sports.io/football/teams/757.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2145,
-            "name": "Levanger",
-            "logo": "https://media.api-sports.io/football/teams/2145.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1366,12 +1344,12 @@
       "name": "Aalesund",
       "logo": "https://media.api-sports.io/football/teams/757.png"
     },
-    "form": null,
+    "form": "D",
     "fixtures": {
       "played": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "wins": {
         "home": 0,
@@ -1379,9 +1357,9 @@
         "total": 0
       },
       "draws": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "loses": {
         "home": 0,
@@ -1392,23 +1370,23 @@
     "goals": {
       "for": {
         "total": {
-          "home": 0,
+          "home": 2,
           "away": 0,
-          "total": 0
+          "total": 2
         },
         "average": {
-          "home": "0.0",
+          "home": "2.0",
           "away": "0.0",
-          "total": "0.0"
+          "total": "2.0"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "31-45": {
             "total": null,
@@ -1437,50 +1415,50 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       },
       "against": {
         "total": {
-          "home": 0,
+          "home": 2,
           "away": 0,
-          "total": 0
+          "total": 2
         },
         "average": {
-          "home": "0.0",
+          "home": "2.0",
           "away": "0.0",
-          "total": "0.0"
+          "total": "2.0"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "46-60": {
             "total": null,
@@ -1505,24 +1483,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       }
@@ -1530,7 +1508,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 0,
+        "draws": 1,
         "loses": 0
       },
       "wins": {
@@ -1543,11 +1521,11 @@
       },
       "goals": {
         "for": {
-          "home": 0,
+          "home": 2,
           "away": 0
         },
         "against": {
-          "home": 0,
+          "home": 2,
           "away": 0
         }
       }
@@ -1568,10 +1546,10 @@
         "percentage": "0%"
       },
       "missed": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 1,
+        "percentage": "100.00%"
       },
-      "total": 0
+      "total": 1
     },
     "lineups": [],
     "cards": {
@@ -1589,12 +1567,12 @@
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "76-90": {
           "total": null,
@@ -1645,5 +1623,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:35:43.835Z"
+  "lastUpdated": "2025-04-01T14:52:35.935Z"
 }

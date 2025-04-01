@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -147,65 +147,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1349662,
-          "date": "2025-03-29T14:00:00+00:00",
-          "venue": {
-            "id": 4007,
-            "name": "Stadio di Domagnano",
-            "city": "Domagnano"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743256800
-        },
-        "league": {
-          "id": 404,
-          "name": "Campionato",
-          "logo": "https://media.api-sports.io/football/leagues/404.png"
-        },
-        "teams": {
-          "home": {
-            "id": 700,
-            "name": "Tre Penne",
-            "logo": "https://media.api-sports.io/football/teams/700.png",
-            "winner": null
-          },
-          "away": {
-            "id": 5307,
-            "name": "San Giovanni",
-            "logo": "https://media.api-sports.io/football/teams/5307.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1339000,
@@ -385,6 +326,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1349662,
+          "date": "2025-03-29T14:00:00+00:00",
+          "venue": {
+            "id": 4007,
+            "name": "Stadio di Domagnano",
+            "city": "Domagnano"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743256800
+        },
+        "league": {
+          "id": 404,
+          "name": "Campionato",
+          "logo": "https://media.api-sports.io/football/leagues/404.png"
+        },
+        "teams": {
+          "home": {
+            "id": 700,
+            "name": "Tre Penne",
+            "logo": "https://media.api-sports.io/football/teams/700.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5307,
+            "name": "San Giovanni",
+            "logo": "https://media.api-sports.io/football/teams/5307.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1349659,
@@ -915,65 +915,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1320395,
-          "date": "2025-01-22T20:15:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadio di Dogana Ezio Conti",
-            "city": "Dogana"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 2
-          },
-          "timestamp": 1737576900
-        },
-        "league": {
-          "id": 404,
-          "name": "Campionato",
-          "logo": "https://media.api-sports.io/football/leagues/404.png"
-        },
-        "teams": {
-          "home": {
-            "id": 700,
-            "name": "Tre Penne",
-            "logo": "https://media.api-sports.io/football/teams/700.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5300,
-            "name": "Faetano",
-            "logo": "https://media.api-sports.io/football/teams/5300.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1270,5 +1211,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:53.348Z"
+  "lastUpdated": "2025-04-01T14:55:49.109Z"
 }

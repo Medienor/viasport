@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -151,10 +151,10 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": true,
             "players": true,
@@ -189,8 +189,67 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1351047,
-          "date": "2025-03-31T23:00:00+00:00",
+          "id": 1351053,
+          "date": "2025-04-06T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743966000
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 124,
+            "name": "Fluminense",
+            "logo": "https://media.api-sports.io/football/teams/124.png",
+            "winner": null
+          },
+          "away": {
+            "id": 794,
+            "name": "RB Bragantino",
+            "logo": "https://media.api-sports.io/football/teams/794.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351067,
+          "date": "2025-04-12T19:00:00+00:00",
           "venue": {
             "id": 220,
             "name": "Estádio Nabi Abi Chedid",
@@ -202,7 +261,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743462000
+          "timestamp": 1744484400
         },
         "league": {
           "id": 71,
@@ -217,9 +276,540 @@
             "winner": null
           },
           "away": {
-            "id": 129,
-            "name": "Ceara",
-            "logo": "https://media.api-sports.io/football/teams/129.png",
+            "id": 120,
+            "name": "Botafogo",
+            "logo": "https://media.api-sports.io/football/teams/120.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351082,
+          "date": "2025-04-16T22:00:00+00:00",
+          "venue": {
+            "id": 276,
+            "name": "Estádio Adelmar da Costa Carvalho",
+            "city": "Recife, Pernambuco"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744840800
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 123,
+            "name": "Sport Recife",
+            "logo": "https://media.api-sports.io/football/teams/123.png",
+            "winner": null
+          },
+          "away": {
+            "id": 794,
+            "name": "RB Bragantino",
+            "logo": "https://media.api-sports.io/football/teams/794.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351087,
+          "date": "2025-04-20T23:30:00+00:00",
+          "venue": {
+            "id": 220,
+            "name": "Estádio Nabi Abi Chedid",
+            "city": "Bragança Paulista, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745191800
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 794,
+            "name": "RB Bragantino",
+            "logo": "https://media.api-sports.io/football/teams/794.png",
+            "winner": null
+          },
+          "away": {
+            "id": 135,
+            "name": "Cruzeiro",
+            "logo": "https://media.api-sports.io/football/teams/135.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351096,
+          "date": "2025-04-27T23:30:00+00:00",
+          "venue": {
+            "id": 10494,
+            "name": "Estádio Urbano Caldeira",
+            "city": "Santos, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745796600
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 128,
+            "name": "Santos",
+            "logo": "https://media.api-sports.io/football/teams/128.png",
+            "winner": null
+          },
+          "away": {
+            "id": 794,
+            "name": "RB Bragantino",
+            "logo": "https://media.api-sports.io/football/teams/794.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351107,
+          "date": "2025-05-05T22:00:00+00:00",
+          "venue": {
+            "id": 220,
+            "name": "Estádio Nabi Abi Chedid",
+            "city": "Bragança Paulista, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746482400
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 794,
+            "name": "RB Bragantino",
+            "logo": "https://media.api-sports.io/football/teams/794.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7848,
+            "name": "Mirassol",
+            "logo": "https://media.api-sports.io/football/teams/7848.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351119,
+          "date": "2025-05-10T21:30:00+00:00",
+          "venue": {
+            "id": 241,
+            "name": "Arena do Grêmio",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746912600
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 130,
+            "name": "Gremio",
+            "logo": "https://media.api-sports.io/football/teams/130.png",
+            "winner": null
+          },
+          "away": {
+            "id": 794,
+            "name": "RB Bragantino",
+            "logo": "https://media.api-sports.io/football/teams/794.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351127,
+          "date": "2025-05-18T21:30:00+00:00",
+          "venue": {
+            "id": 220,
+            "name": "Estádio Nabi Abi Chedid",
+            "city": "Bragança Paulista, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747603800
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 794,
+            "name": "RB Bragantino",
+            "logo": "https://media.api-sports.io/football/teams/794.png",
+            "winner": null
+          },
+          "away": {
+            "id": 121,
+            "name": "Palmeiras",
+            "logo": "https://media.api-sports.io/football/teams/121.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351137,
+          "date": "2025-05-26T23:00:00+00:00",
+          "venue": {
+            "id": 220,
+            "name": "Estádio Nabi Abi Chedid",
+            "city": "Bragança Paulista, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748300400
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 794,
+            "name": "RB Bragantino",
+            "logo": "https://media.api-sports.io/football/teams/794.png",
+            "winner": null
+          },
+          "away": {
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351144,
+          "date": "2025-06-01T00:00:00+00:00",
+          "venue": {
+            "id": 19377,
+            "name": "Estádio São Januário",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748736000
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": null
+          },
+          "away": {
+            "id": 794,
+            "name": "RB Bragantino",
+            "logo": "https://media.api-sports.io/football/teams/794.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351157,
+          "date": "2025-06-12T22:00:00+00:00",
+          "venue": {
+            "id": 220,
+            "name": "Estádio Nabi Abi Chedid",
+            "city": "Bragança Paulista, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749765600
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 794,
+            "name": "RB Bragantino",
+            "logo": "https://media.api-sports.io/football/teams/794.png",
+            "winner": null
+          },
+          "away": {
+            "id": 118,
+            "name": "Bahia",
+            "logo": "https://media.api-sports.io/football/teams/118.png",
             "winner": null
           }
         },
@@ -248,6 +838,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1351047,
+          "date": "2025-03-31T23:00:00+00:00",
+          "venue": {
+            "id": 220,
+            "name": "Estádio Nabi Abi Chedid",
+            "city": "Bragança Paulista, São Paulo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743462000
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 794,
+            "name": "RB Bragantino",
+            "logo": "https://media.api-sports.io/football/teams/794.png",
+            "winner": null
+          },
+          "away": {
+            "id": 129,
+            "name": "Ceara",
+            "logo": "https://media.api-sports.io/football/teams/129.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1366028,
@@ -778,65 +1427,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1319806,
-          "date": "2025-02-04T23:30:00+00:00",
-          "venue": {
-            "id": 243,
-            "name": "Estádio Major José Levy Sobrinho",
-            "city": "Limeira, São Paulo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738711800
-        },
-        "league": {
-          "id": 475,
-          "name": "Paulista - A1",
-          "logo": "https://media.api-sports.io/football/leagues/475.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1201,
-            "name": "Inter De Limeira",
-            "logo": "https://media.api-sports.io/football/teams/1201.png",
-            "winner": null
-          },
-          "away": {
-            "id": 794,
-            "name": "RB Bragantino",
-            "logo": "https://media.api-sports.io/football/teams/794.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1158,5 +1748,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:19.713Z"
+  "lastUpdated": "2025-04-01T14:59:17.724Z"
 }

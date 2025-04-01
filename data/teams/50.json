@@ -221,7 +221,7 @@
         {
           "year": 2024,
           "start": "2024-08-02",
-          "end": "2025-03-29",
+          "end": "2025-04-26",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -300,65 +300,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1357107,
-          "date": "2025-03-30T15:30:00+00:00",
-          "venue": {
-            "id": 504,
-            "name": "Vitality Stadium",
-            "city": "Bournemouth, Dorset"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743348600
-        },
-        "league": {
-          "id": 45,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/45.png"
-        },
-        "teams": {
-          "home": {
-            "id": 35,
-            "name": "Bournemouth",
-            "logo": "https://media.api-sports.io/football/teams/35.png",
-            "winner": null
-          },
-          "away": {
-            "id": 50,
-            "name": "Manchester City",
-            "logo": "https://media.api-sports.io/football/teams/50.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1208319,
@@ -597,12 +538,12 @@
       },
       {
         "fixture": {
-          "id": 1208358,
-          "date": "2025-04-28T19:00:00+00:00",
+          "id": 1367448,
+          "date": "2025-04-26T14:00:00+00:00",
           "venue": {
-            "id": 555,
-            "name": "Etihad Stadium",
-            "city": "Manchester"
+            "id": 489,
+            "name": "Wembley Stadium",
+            "city": "London"
           },
           "status": {
             "long": "Not Started",
@@ -610,24 +551,24 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745866800
+          "timestamp": 1745676000
         },
         "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
+          "id": 45,
+          "name": "FA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/45.png"
         },
         "teams": {
           "home": {
-            "id": 50,
-            "name": "Manchester City",
-            "logo": "https://media.api-sports.io/football/teams/50.png",
+            "id": 65,
+            "name": "Nottingham Forest",
+            "logo": "https://media.api-sports.io/football/teams/65.png",
             "winner": null
           },
           "away": {
-            "id": 66,
-            "name": "Aston Villa",
-            "logo": "https://media.api-sports.io/football/teams/66.png",
+            "id": 50,
+            "name": "Manchester City",
+            "logo": "https://media.api-sports.io/football/teams/50.png",
             "winner": null
           }
         },
@@ -1069,6 +1010,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1357107,
+          "date": "2025-03-30T15:30:00+00:00",
+          "venue": {
+            "id": 504,
+            "name": "Vitality Stadium",
+            "city": "Bournemouth, Dorset"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743348600
+        },
+        "league": {
+          "id": 45,
+          "name": "FA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/45.png"
+        },
+        "teams": {
+          "home": {
+            "id": 35,
+            "name": "Bournemouth",
+            "logo": "https://media.api-sports.io/football/teams/35.png",
+            "winner": false
+          },
+          "away": {
+            "id": 50,
+            "name": "Manchester City",
+            "logo": "https://media.api-sports.io/football/teams/50.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208310,
@@ -1599,65 +1599,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208254,
-          "date": "2025-02-02T16:30:00+00:00",
-          "venue": {
-            "id": 494,
-            "name": "Emirates Stadium",
-            "city": "London"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738513800
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 42,
-            "name": "Arsenal",
-            "logo": "https://media.api-sports.io/football/teams/42.png",
-            "winner": true
-          },
-          "away": {
-            "id": 50,
-            "name": "Manchester City",
-            "logo": "https://media.api-sports.io/football/teams/50.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1954,5 +1895,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:01.874Z"
+  "lastUpdated": "2025-04-01T14:52:53.719Z"
 }

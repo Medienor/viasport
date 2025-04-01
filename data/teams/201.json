@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213679,
-          "date": "2025-03-29T20:00:00+00:00",
-          "venue": {
-            "id": 1140,
-            "name": "Goffertstadion",
-            "city": "Nijmegen"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743278400
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 413,
-            "name": "NEC Nijmegen",
-            "logo": "https://media.api-sports.io/football/teams/413.png",
-            "winner": null
-          },
-          "away": {
-            "id": 201,
-            "name": "AZ Alkmaar",
-            "logo": "https://media.api-sports.io/football/teams/201.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213657,
           "date": "2025-04-01T18:00:00+00:00",
           "venue": {
@@ -745,6 +686,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1213679,
+          "date": "2025-03-29T20:00:00+00:00",
+          "venue": {
+            "id": 1140,
+            "name": "Goffertstadion",
+            "city": "Nijmegen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743278400
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 413,
+            "name": "NEC Nijmegen",
+            "logo": "https://media.api-sports.io/football/teams/413.png",
+            "winner": null
+          },
+          "away": {
+            "id": 201,
+            "name": "AZ Alkmaar",
+            "logo": "https://media.api-sports.io/football/teams/201.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1213666,
           "date": "2025-03-16T15:45:00+00:00",
           "venue": {
@@ -1273,65 +1273,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213629,
-          "date": "2025-02-02T19:00:00+00:00",
-          "venue": {
-            "id": 1159,
-            "name": "Koning Willem II Stadion",
-            "city": "Tilburg"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738522800
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 195,
-            "name": "Willem II",
-            "logo": "https://media.api-sports.io/football/teams/195.png",
-            "winner": false
-          },
-          "away": {
-            "id": 201,
-            "name": "AZ Alkmaar",
-            "logo": "https://media.api-sports.io/football/teams/201.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1628,5 +1569,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:02.748Z"
+  "lastUpdated": "2025-04-01T14:53:55.922Z"
 }

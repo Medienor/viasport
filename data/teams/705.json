@@ -263,65 +263,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1341160,
-          "date": "2025-03-28T17:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Batumi Arena",
-            "city": "Batumi"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743181200
-        },
-        "league": {
-          "id": 327,
-          "name": "Erovnuli Liga",
-          "logo": "https://media.api-sports.io/football/leagues/327.png"
-        },
-        "teams": {
-          "home": {
-            "id": 705,
-            "name": "Dinamo Batumi",
-            "logo": "https://media.api-sports.io/football/teams/705.png",
-            "winner": null
-          },
-          "away": {
-            "id": 685,
-            "name": "Torpedo Kutaisi",
-            "logo": "https://media.api-sports.io/football/teams/685.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1341143,
           "date": "2025-04-01T15:00:00+00:00",
           "venue": {
@@ -736,7 +677,7 @@
       {
         "fixture": {
           "id": 1341197,
-          "date": "2025-05-07T11:00:00+00:00",
+          "date": "2025-05-03T11:00:00+00:00",
           "venue": {
             "id": 2306,
             "name": "David Petriashvili Arena",
@@ -748,7 +689,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1746615600
+          "timestamp": 1746270000
         },
         "league": {
           "id": 327,
@@ -795,7 +736,7 @@
       {
         "fixture": {
           "id": 1341154,
-          "date": "2025-05-11T11:00:00+00:00",
+          "date": "2025-05-07T11:00:00+00:00",
           "venue": {
             "id": null,
             "name": "Batumi Arena",
@@ -807,7 +748,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1746961200
+          "timestamp": 1746615600
         },
         "league": {
           "id": 327,
@@ -972,7 +913,7 @@
       {
         "fixture": {
           "id": 1341217,
-          "date": "2025-05-23T11:00:00+00:00",
+          "date": "2025-05-19T11:00:00+00:00",
           "venue": {
             "id": 2310,
             "name": "Stadioni Givi Chokheli",
@@ -984,7 +925,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1747998000
+          "timestamp": 1747652400
         },
         "league": {
           "id": 327,
@@ -1440,9 +1381,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1341255,
+          "date": "2025-09-13T11:00:00+00:00",
+          "venue": {
+            "id": 2301,
+            "name": "Stadioni Tengiz Burjanadze",
+            "city": "Gori"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757761200
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3499,
+            "name": "Dila",
+            "logo": "https://media.api-sports.io/football/teams/3499.png",
+            "winner": null
+          },
+          "away": {
+            "id": 705,
+            "name": "Dinamo Batumi",
+            "logo": "https://media.api-sports.io/football/teams/705.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1341160,
+          "date": "2025-03-28T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Batumi Arena",
+            "city": "Batumi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743181200
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 705,
+            "name": "Dinamo Batumi",
+            "logo": "https://media.api-sports.io/football/teams/705.png",
+            "winner": true
+          },
+          "away": {
+            "id": 685,
+            "name": "Torpedo Kutaisi",
+            "logo": "https://media.api-sports.io/football/teams/685.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1341200,
@@ -1973,65 +2032,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1163275,
-          "date": "2024-12-08T09:30:00+00:00",
-          "venue": {
-            "id": 692,
-            "name": "Stadioni Erosi Manjgaladze",
-            "city": "Samtredia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1733650200
-        },
-        "league": {
-          "id": 327,
-          "name": "Erovnuli Liga",
-          "logo": "https://media.api-sports.io/football/leagues/327.png"
-        },
-        "teams": {
-          "home": {
-            "id": 581,
-            "name": "Samtredia",
-            "logo": "https://media.api-sports.io/football/teams/581.png",
-            "winner": false
-          },
-          "away": {
-            "id": 705,
-            "name": "Dinamo Batumi",
-            "logo": "https://media.api-sports.io/football/teams/705.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2049,17 +2049,17 @@
       "name": "Dinamo Batumi",
       "logo": "https://media.api-sports.io/football/teams/705.png"
     },
-    "form": "DWD",
+    "form": "DWDW",
     "fixtures": {
       "played": {
-        "home": 1,
+        "home": 2,
         "away": 2,
-        "total": 3
+        "total": 4
       },
       "wins": {
-        "home": 1,
+        "home": 2,
         "away": 0,
-        "total": 1
+        "total": 2
       },
       "draws": {
         "home": 0,
@@ -2075,31 +2075,31 @@
     "goals": {
       "for": {
         "total": {
-          "home": 2,
+          "home": 3,
           "away": 1,
-          "total": 3
+          "total": 4
         },
         "average": {
-          "home": "2.0",
+          "home": "1.5",
           "away": "0.5",
           "total": "1.0"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "33.33%"
+            "percentage": "25.00%"
           },
           "16-30": {
             "total": 1,
-            "percentage": "33.33%"
+            "percentage": "25.00%"
           },
           "31-45": {
             "total": 1,
-            "percentage": "33.33%"
+            "percentage": "25.00%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "25.00%"
           },
           "61-75": {
             "total": null,
@@ -2120,24 +2120,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 3,
             "under": 1
           },
           "1.5": {
             "over": 1,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           }
         }
       },
@@ -2148,9 +2148,9 @@
           "total": 2
         },
         "average": {
-          "home": "1.0",
+          "home": "0.5",
           "away": "0.5",
-          "total": "0.7"
+          "total": "0.5"
         },
         "minute": {
           "0-15": {
@@ -2189,23 +2189,23 @@
         "under_over": {
           "0.5": {
             "over": 2,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           }
         }
       }
@@ -2236,9 +2236,9 @@
       }
     },
     "clean_sheet": {
-      "home": 0,
+      "home": 1,
       "away": 1,
-      "total": 1
+      "total": 2
     },
     "failed_to_score": {
       "home": 0,
@@ -2261,27 +2261,27 @@
       "yellow": {
         "0-15": {
           "total": 1,
-          "percentage": "20.00%"
+          "percentage": "14.29%"
         },
         "16-30": {
           "total": null,
           "percentage": null
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "14.29%"
         },
         "46-60": {
           "total": 1,
-          "percentage": "20.00%"
+          "percentage": "14.29%"
         },
         "61-75": {
           "total": 2,
-          "percentage": "40.00%"
+          "percentage": "28.57%"
         },
         "76-90": {
-          "total": 1,
-          "percentage": "20.00%"
+          "total": 2,
+          "percentage": "28.57%"
         },
         "91-105": {
           "total": null,
@@ -2328,5 +2328,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:12.902Z"
+  "lastUpdated": "2025-04-01T14:55:07.800Z"
 }

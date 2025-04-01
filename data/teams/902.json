@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220294,
-          "date": "2025-03-30T13:30:00+00:00",
-          "venue": {
-            "id": 1402,
-            "name": "Global Energy Stadium",
-            "city": "Dingwall"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743341400
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 902,
-            "name": "Ross County",
-            "logo": "https://media.api-sports.io/football/teams/902.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1386,
-            "name": "Dundee Utd",
-            "logo": "https://media.api-sports.io/football/teams/1386.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220300,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -330,6 +271,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220294,
+          "date": "2025-03-30T13:30:00+00:00",
+          "venue": {
+            "id": 1402,
+            "name": "Global Energy Stadium",
+            "city": "Dingwall"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743341400
+        },
+        "league": {
+          "id": 179,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/179.png"
+        },
+        "teams": {
+          "home": {
+            "id": 902,
+            "name": "Ross County",
+            "logo": "https://media.api-sports.io/football/teams/902.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1386,
+            "name": "Dundee Utd",
+            "logo": "https://media.api-sports.io/football/teams/1386.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220286,
@@ -860,65 +860,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220230,
-          "date": "2025-01-02T15:00:00+00:00",
-          "venue": {
-            "id": 1383,
-            "name": "Pittodrie Stadium",
-            "city": "Aberdeen"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1735830000
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 252,
-            "name": "Aberdeen",
-            "logo": "https://media.api-sports.io/football/teams/252.png",
-            "winner": false
-          },
-          "away": {
-            "id": 902,
-            "name": "Ross County",
-            "logo": "https://media.api-sports.io/football/teams/902.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1215,5 +1156,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:35.136Z"
+  "lastUpdated": "2025-04-01T14:54:29.320Z"
 }

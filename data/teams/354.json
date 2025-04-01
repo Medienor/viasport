@@ -263,65 +263,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1338877,
-          "date": "2025-03-29T14:30:00+00:00",
-          "venue": {
-            "id": 11921,
-            "name": "SDM Glass Stadium",
-            "city": "Bridgend, Bridgend County Borough"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743258600
-        },
-        "league": {
-          "id": 110,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/110.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2191,
-            "name": "Penybont",
-            "logo": "https://media.api-sports.io/football/teams/2191.png",
-            "winner": null
-          },
-          "away": {
-            "id": 354,
-            "name": "The New Saints",
-            "logo": "https://media.api-sports.io/football/teams/354.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1338879,
           "date": "2025-04-11T18:45:00+00:00",
           "venue": {
@@ -499,6 +440,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1338877,
+          "date": "2025-03-29T14:30:00+00:00",
+          "venue": {
+            "id": 11921,
+            "name": "SDM Glass Stadium",
+            "city": "Bridgend, Bridgend County Borough"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743258600
+        },
+        "league": {
+          "id": 110,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/110.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2191,
+            "name": "Penybont",
+            "logo": "https://media.api-sports.io/football/teams/2191.png",
+            "winner": true
+          },
+          "away": {
+            "id": 354,
+            "name": "The New Saints",
+            "logo": "https://media.api-sports.io/football/teams/354.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1338874,
@@ -1029,65 +1029,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1338859,
-          "date": "2025-02-01T14:30:00+00:00",
-          "venue": {
-            "id": 1684,
-            "name": "Park Hall Stadium",
-            "city": "Oswestry / Croesoswallt, Shropshire"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738420200
-        },
-        "league": {
-          "id": 110,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/110.png"
-        },
-        "teams": {
-          "home": {
-            "id": 354,
-            "name": "The New Saints",
-            "logo": "https://media.api-sports.io/football/teams/354.png",
-            "winner": true
-          },
-          "away": {
-            "id": 353,
-            "name": "Cardiff MET",
-            "logo": "https://media.api-sports.io/football/teams/353.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1384,5 +1325,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:57.844Z"
+  "lastUpdated": "2025-04-01T14:54:52.560Z"
 }

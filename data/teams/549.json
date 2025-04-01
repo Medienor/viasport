@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1238102,
-          "date": "2025-03-29T17:30:00+00:00",
-          "venue": {
-            "id": 20423,
-            "name": "Tüpraş Stadyumu",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743269400
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 549,
-            "name": "Besiktas",
-            "logo": "https://media.api-sports.io/football/teams/549.png",
-            "winner": null
-          },
-          "away": {
-            "id": 645,
-            "name": "Galatasaray",
-            "logo": "https://media.api-sports.io/football/teams/645.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1359788,
@@ -401,9 +342,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1238120,
+          "date": "2025-04-12T16:00:00+00:00",
+          "venue": {
+            "id": 20423,
+            "name": "Tüpraş Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744473600
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 549,
+            "name": "Besiktas",
+            "logo": "https://media.api-sports.io/football/teams/549.png",
+            "winner": null
+          },
+          "away": {
+            "id": 564,
+            "name": "Istanbul Basaksehir",
+            "logo": "https://media.api-sports.io/football/teams/564.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238128,
+          "date": "2025-04-19T22:00:00+00:00",
+          "venue": {
+            "id": 1583,
+            "name": "Gürsel Aksel Stadyumu",
+            "city": "İzmir"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745100000
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 994,
+            "name": "Goztepe",
+            "logo": "https://media.api-sports.io/football/teams/994.png",
+            "winner": null
+          },
+          "away": {
+            "id": 549,
+            "name": "Besiktas",
+            "logo": "https://media.api-sports.io/football/teams/549.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238102,
+          "date": "2025-03-29T17:30:00+00:00",
+          "venue": {
+            "id": 20423,
+            "name": "Tüpraş Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743269400
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 549,
+            "name": "Besiktas",
+            "logo": "https://media.api-sports.io/football/teams/549.png",
+            "winner": true
+          },
+          "away": {
+            "id": 645,
+            "name": "Galatasaray",
+            "logo": "https://media.api-sports.io/football/teams/645.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365853,
@@ -469,7 +587,7 @@
           "date": "2025-03-15T17:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Medaş Konya Büyükşehir Stadyumu",
+            "name": "Medas Konya Büyüksehir Belediyesi Stadium",
             "city": "Konya"
           },
           "status": {
@@ -934,65 +1052,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299258,
-          "date": "2025-01-30T20:00:00+00:00",
-          "venue": {
-            "id": 1153,
-            "name": "De Grolsch Veste",
-            "city": "Enschede"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738267200
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 415,
-            "name": "Twente",
-            "logo": "https://media.api-sports.io/football/teams/415.png",
-            "winner": true
-          },
-          "away": {
-            "id": 549,
-            "name": "Besiktas",
-            "logo": "https://media.api-sports.io/football/teams/549.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1289,5 +1348,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:20.369Z"
+  "lastUpdated": "2025-04-01T14:55:15.484Z"
 }

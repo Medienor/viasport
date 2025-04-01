@@ -83,10 +83,10 @@
               "statistics_players": false
             },
             "standings": true,
-            "players": false,
-            "top_scorers": false,
-            "top_assists": false,
-            "top_cards": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -108,65 +108,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1358239,
-          "date": "2025-03-30T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743336000
-        },
-        "league": {
-          "id": 636,
-          "name": "Ýokary Liga",
-          "logo": "https://media.api-sports.io/football/leagues/636.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8020,
-            "name": "Ahal",
-            "logo": "https://media.api-sports.io/football/teams/8020.png",
-            "winner": null
-          },
-          "away": {
-            "id": 8023,
-            "name": "Altyn Asyr",
-            "logo": "https://media.api-sports.io/football/teams/8023.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1357774,
@@ -225,9 +166,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1357777,
+          "date": "2025-04-11T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744408800
+        },
+        "league": {
+          "id": 636,
+          "name": "Ýokary Liga",
+          "logo": "https://media.api-sports.io/football/leagues/636.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8023,
+            "name": "Altyn Asyr",
+            "logo": "https://media.api-sports.io/football/teams/8023.png",
+            "winner": null
+          },
+          "away": {
+            "id": 12903,
+            "name": "Şagadam",
+            "logo": "https://media.api-sports.io/football/teams/12903.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1357781,
+          "date": "2025-04-18T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745013600
+        },
+        "league": {
+          "id": 636,
+          "name": "Ýokary Liga",
+          "logo": "https://media.api-sports.io/football/leagues/636.png"
+        },
+        "teams": {
+          "home": {
+            "id": 13158,
+            "name": "Merw",
+            "logo": "https://media.api-sports.io/football/teams/13158.png",
+            "winner": null
+          },
+          "away": {
+            "id": 8023,
+            "name": "Altyn Asyr",
+            "logo": "https://media.api-sports.io/football/teams/8023.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1358239,
+          "date": "2025-03-30T12:00:00+00:00",
+          "venue": {
+            "id": 5717,
+            "name": "Ahal Stadium",
+            "city": "Abadan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743336000
+        },
+        "league": {
+          "id": 636,
+          "name": "Ýokary Liga",
+          "logo": "https://media.api-sports.io/football/leagues/636.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8020,
+            "name": "Ahal",
+            "logo": "https://media.api-sports.io/football/teams/8020.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8023,
+            "name": "Altyn Asyr",
+            "logo": "https://media.api-sports.io/football/teams/8023.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1357765,
@@ -758,65 +876,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1309654,
-          "date": "2024-11-10T11:00:00+00:00",
-          "venue": {
-            "id": 5726,
-            "name": "Balkanabat Stadiony",
-            "city": "Balkanabat"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1731236400
-        },
-        "league": {
-          "id": 636,
-          "name": "Ýokary Liga",
-          "logo": "https://media.api-sports.io/football/leagues/636.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8039,
-            "name": "Balkan",
-            "logo": "https://media.api-sports.io/football/teams/8039.png",
-            "winner": null
-          },
-          "away": {
-            "id": 8023,
-            "name": "Altyn Asyr",
-            "logo": "https://media.api-sports.io/football/teams/8023.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -834,17 +893,17 @@
       "name": "Altyn Asyr",
       "logo": "https://media.api-sports.io/football/teams/8023.png"
     },
-    "form": "WL",
+    "form": "WLW",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 1,
-        "total": 2
+        "away": 2,
+        "total": 3
       },
       "wins": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "draws": {
         "home": 0,
@@ -861,13 +920,13 @@
       "for": {
         "total": {
           "home": 1,
-          "away": 0,
-          "total": 1
+          "away": 1,
+          "total": 2
         },
         "average": {
           "home": "1.0",
-          "away": "0.0",
-          "total": "0.5"
+          "away": "0.5",
+          "total": "0.7"
         },
         "minute": {
           "0-15": {
@@ -905,24 +964,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 1
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       },
@@ -934,8 +993,8 @@
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "0.5"
+          "away": "0.5",
+          "total": "0.3"
         },
         "minute": {
           "0-15": {
@@ -974,23 +1033,23 @@
         "under_over": {
           "0.5": {
             "over": 1,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       }
@@ -999,11 +1058,11 @@
       "streak": {
         "wins": 1,
         "draws": 0,
-        "loses": 0
+        "loses": 1
       },
       "wins": {
         "home": "1-0",
-        "away": null
+        "away": "0-1"
       },
       "loses": {
         "home": null,
@@ -1012,7 +1071,7 @@
       "goals": {
         "for": {
           "home": 1,
-          "away": 0
+          "away": 1
         },
         "against": {
           "home": 0,
@@ -1022,8 +1081,8 @@
     },
     "clean_sheet": {
       "home": 1,
-      "away": 0,
-      "total": 1
+      "away": 1,
+      "total": 2
     },
     "failed_to_score": {
       "home": 0,
@@ -1113,5 +1172,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:07.089Z"
+  "lastUpdated": "2025-04-01T14:59:04.758Z"
 }

@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1211465,
-          "date": "2025-03-30T15:00:00+00:00",
-          "venue": {
-            "id": 796,
-            "name": "Diósgyőri Stadion",
-            "city": "Miskolc"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743346800
-        },
-        "league": {
-          "id": 271,
-          "name": "NB I",
-          "logo": "https://media.api-sports.io/football/leagues/271.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2393,
-            "name": "Diosgyori VTK",
-            "logo": "https://media.api-sports.io/football/teams/2393.png",
-            "winner": null
-          },
-          "away": {
-            "id": 651,
-            "name": "Ferencvarosi TC",
-            "logo": "https://media.api-sports.io/football/teams/651.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1355642,
@@ -460,9 +401,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1211481,
+          "date": "2025-04-18T22:00:00+00:00",
+          "venue": {
+            "id": 799,
+            "name": "Groupama Aréna",
+            "city": "Budapest"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745013600
+        },
+        "league": {
+          "id": 271,
+          "name": "NB I",
+          "logo": "https://media.api-sports.io/football/leagues/271.png"
+        },
+        "teams": {
+          "home": {
+            "id": 651,
+            "name": "Ferencvarosi TC",
+            "logo": "https://media.api-sports.io/football/teams/651.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2403,
+            "name": "Nyiregyhaza",
+            "logo": "https://media.api-sports.io/football/teams/2403.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1211465,
+          "date": "2025-03-30T15:00:00+00:00",
+          "venue": {
+            "id": 796,
+            "name": "Diósgyőri Stadion",
+            "city": "Miskolc"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743346800
+        },
+        "league": {
+          "id": 271,
+          "name": "NB I",
+          "logo": "https://media.api-sports.io/football/leagues/271.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2393,
+            "name": "Diosgyori VTK",
+            "logo": "https://media.api-sports.io/football/teams/2393.png",
+            "winner": null
+          },
+          "away": {
+            "id": 651,
+            "name": "Ferencvarosi TC",
+            "logo": "https://media.api-sports.io/football/teams/651.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1211456,
@@ -993,65 +1052,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1211425,
-          "date": "2025-02-02T19:15:00+00:00",
-          "venue": {
-            "id": 799,
-            "name": "Groupama Aréna",
-            "city": "Budapest"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738523700
-        },
-        "league": {
-          "id": 271,
-          "name": "NB I",
-          "logo": "https://media.api-sports.io/football/leagues/271.png"
-        },
-        "teams": {
-          "home": {
-            "id": 651,
-            "name": "Ferencvarosi TC",
-            "logo": "https://media.api-sports.io/football/teams/651.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2396,
-            "name": "MTK Budapest",
-            "logo": "https://media.api-sports.io/football/teams/2396.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1348,5 +1348,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:07.867Z"
+  "lastUpdated": "2025-04-01T14:55:02.713Z"
 }

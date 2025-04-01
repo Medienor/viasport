@@ -184,7 +184,7 @@
         {
           "year": 2024,
           "start": "2024-09-11",
-          "end": "2024-12-04",
+          "end": "2025-04-02",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -264,8 +264,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1214785,
-          "date": "2025-03-29T15:30:00+00:00",
+          "id": 1366863,
+          "date": "2025-04-02T15:30:00+00:00",
           "venue": {
             "id": 1424,
             "name": "Stadion Partizana",
@@ -277,12 +277,12 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743262200
+          "timestamp": 1743607800
         },
         "league": {
-          "id": 286,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/286.png"
+          "id": 732,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/732.png"
         },
         "teams": {
           "home": {
@@ -320,9 +320,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1214788,
+          "date": "2025-04-06T13:00:00+00:00",
+          "venue": {
+            "id": 1415,
+            "name": "Stadion Čika Dača",
+            "city": "Kragujevac"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743944400
+        },
+        "league": {
+          "id": 286,
+          "name": "Super Liga",
+          "logo": "https://media.api-sports.io/football/leagues/286.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2644,
+            "name": "Radnicki 1923",
+            "logo": "https://media.api-sports.io/football/teams/2644.png",
+            "winner": null
+          },
+          "away": {
+            "id": 573,
+            "name": "FK Partizan",
+            "logo": "https://media.api-sports.io/football/teams/573.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1214785,
+          "date": "2025-03-29T15:30:00+00:00",
+          "venue": {
+            "id": 1424,
+            "name": "Stadion Partizana",
+            "city": "Beograd"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743262200
+        },
+        "league": {
+          "id": 286,
+          "name": "Super Liga",
+          "logo": "https://media.api-sports.io/football/leagues/286.png"
+        },
+        "teams": {
+          "home": {
+            "id": 573,
+            "name": "FK Partizan",
+            "logo": "https://media.api-sports.io/football/teams/573.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2646,
+            "name": "TSC Backa Topola",
+            "logo": "https://media.api-sports.io/football/teams/2646.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365971,
@@ -853,65 +971,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1214717,
-          "date": "2025-02-01T17:30:00+00:00",
-          "venue": {
-            "id": 1424,
-            "name": "Stadion Partizana",
-            "city": "Beograd"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738431000
-        },
-        "league": {
-          "id": 286,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/286.png"
-        },
-        "teams": {
-          "home": {
-            "id": 573,
-            "name": "FK Partizan",
-            "logo": "https://media.api-sports.io/football/teams/573.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2251,
-            "name": "FK Spartak Zdrepceva KRV",
-            "logo": "https://media.api-sports.io/football/teams/2251.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1208,5 +1267,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:02.911Z"
+  "lastUpdated": "2025-04-01T14:54:57.684Z"
 }

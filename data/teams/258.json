@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220293,
-          "date": "2025-03-29T15:00:00+00:00",
-          "venue": {
-            "id": 1394,
-            "name": "Easter Road Stadium",
-            "city": "Edinburgh"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743260400
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 249,
-            "name": "Hibernian",
-            "logo": "https://media.api-sports.io/football/teams/249.png",
-            "winner": null
-          },
-          "away": {
-            "id": 258,
-            "name": "ST Johnstone",
-            "logo": "https://media.api-sports.io/football/teams/258.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220301,
           "date": "2025-04-06T11:00:00+00:00",
           "venue": {
@@ -330,6 +271,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220293,
+          "date": "2025-03-29T15:00:00+00:00",
+          "venue": {
+            "id": 1394,
+            "name": "Easter Road Stadium",
+            "city": "Edinburgh"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743260400
+        },
+        "league": {
+          "id": 179,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/179.png"
+        },
+        "teams": {
+          "home": {
+            "id": 249,
+            "name": "Hibernian",
+            "logo": "https://media.api-sports.io/football/teams/249.png",
+            "winner": true
+          },
+          "away": {
+            "id": 258,
+            "name": "ST Johnstone",
+            "logo": "https://media.api-sports.io/football/teams/258.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220289,
@@ -860,65 +860,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1318874,
-          "date": "2025-01-18T15:00:00+00:00",
-          "venue": {
-            "id": 1403,
-            "name": "McDiarmid Park",
-            "city": "Perth"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737212400
-        },
-        "league": {
-          "id": 181,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/181.png"
-        },
-        "teams": {
-          "home": {
-            "id": 258,
-            "name": "ST Johnstone",
-            "logo": "https://media.api-sports.io/football/teams/258.png",
-            "winner": true
-          },
-          "away": {
-            "id": 256,
-            "name": "Motherwell",
-            "logo": "https://media.api-sports.io/football/teams/256.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1215,5 +1156,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:35.145Z"
+  "lastUpdated": "2025-04-01T14:54:29.286Z"
 }

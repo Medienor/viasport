@@ -115,65 +115,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1326306,
-          "date": "2025-03-29T23:30:00+00:00",
-          "venue": {
-            "id": 1613,
-            "name": "Audi Field",
-            "city": "Washington, District of Columbia"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743291000
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1615,
-            "name": "DC United",
-            "logo": "https://media.api-sports.io/football/teams/1615.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1613,
-            "name": "Columbus Crew",
-            "logo": "https://media.api-sports.io/football/teams/1613.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1326329,
           "date": "2025-04-06T21:00:00+00:00",
           "venue": {
@@ -1292,13 +1233,131 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1326579,
+          "date": "2025-08-09T23:30:00+00:00",
+          "venue": {
+            "id": 1618,
+            "name": "Gillette Stadium",
+            "city": "Foxborough, Massachusetts"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754782200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1615,
+            "name": "DC United",
+            "logo": "https://media.api-sports.io/football/teams/1615.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
       {
         "fixture": {
+          "id": 1326306,
+          "date": "2025-03-29T23:30:00+00:00",
+          "venue": {
+            "id": 1613,
+            "name": "Audi Field",
+            "city": "Washington, District of Columbia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743291000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1615,
+            "name": "DC United",
+            "logo": "https://media.api-sports.io/football/teams/1615.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1613,
+            "name": "Columbus Crew",
+            "logo": "https://media.api-sports.io/football/teams/1613.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1326294,
-          "date": "2025-03-22T23:30:00+00:00",
+          "date": "2025-03-23T23:30:00+00:00",
           "venue": {
             "id": 20500,
             "name": "Inter&Co Stadium",
@@ -1310,7 +1369,7 @@
             "elapsed": 90,
             "extra": 7
           },
-          "timestamp": 1742686200
+          "timestamp": 1742772600
         },
         "league": {
           "id": 253,
@@ -1825,65 +1884,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1339733,
-          "date": "2025-01-25T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "IMG Academy Soccer Stadium",
-            "city": "Bradenton, Florida"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1737763200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1602,
-            "name": "New York Red Bulls",
-            "logo": "https://media.api-sports.io/football/teams/1602.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1615,
-            "name": "DC United",
-            "logo": "https://media.api-sports.io/football/teams/1615.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1901,12 +1901,12 @@
       "name": "DC United",
       "logo": "https://media.api-sports.io/football/teams/1615.png"
     },
-    "form": "DDWDL",
+    "form": "DDWDLL",
     "fixtures": {
       "played": {
-        "home": 3,
+        "home": 4,
         "away": 2,
-        "total": 5
+        "total": 6
       },
       "wins": {
         "home": 1,
@@ -1919,27 +1919,27 @@
         "total": 3
       },
       "loses": {
-        "home": 0,
+        "home": 1,
         "away": 1,
-        "total": 1
+        "total": 2
       }
     },
     "goals": {
       "for": {
         "total": {
-          "home": 4,
+          "home": 5,
           "away": 3,
-          "total": 7
+          "total": 8
         },
         "average": {
           "home": "1.3",
           "away": "1.5",
-          "total": "1.4"
+          "total": "1.3"
         },
         "minute": {
           "0-15": {
-            "total": 2,
-            "percentage": "28.57%"
+            "total": 3,
+            "percentage": "37.50%"
           },
           "16-30": {
             "total": null,
@@ -1947,15 +1947,15 @@
           },
           "31-45": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "12.50%"
           },
           "46-60": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "12.50%"
           },
           "61-75": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "12.50%"
           },
           "76-90": {
             "total": null,
@@ -1963,7 +1963,7 @@
           },
           "91-105": {
             "total": 2,
-            "percentage": "28.57%"
+            "percentage": "25.00%"
           },
           "106-120": {
             "total": null,
@@ -1972,35 +1972,35 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
+            "over": 5,
             "under": 1
           },
           "1.5": {
             "over": 3,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           }
         }
       },
       "against": {
         "total": {
-          "home": 3,
+          "home": 5,
           "away": 6,
-          "total": 9
+          "total": 11
         },
         "average": {
-          "home": "1.0",
+          "home": "1.3",
           "away": "3.0",
           "total": "1.8"
         },
@@ -2010,20 +2010,20 @@
             "percentage": null
           },
           "16-30": {
-            "total": 3,
-            "percentage": "33.33%"
+            "total": 4,
+            "percentage": "36.36%"
           },
           "31-45": {
             "total": 1,
-            "percentage": "11.11%"
+            "percentage": "9.09%"
           },
           "46-60": {
             "total": 3,
-            "percentage": "33.33%"
+            "percentage": "27.27%"
           },
           "61-75": {
-            "total": 2,
-            "percentage": "22.22%"
+            "total": 3,
+            "percentage": "27.27%"
           },
           "76-90": {
             "total": null,
@@ -2040,24 +2040,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
+            "over": 5,
             "under": 1
           },
           "1.5": {
-            "over": 3,
+            "over": 4,
             "under": 2
           },
           "2.5": {
             "over": 1,
-            "under": 4
+            "under": 5
           },
           "3.5": {
             "over": 1,
-            "under": 4
+            "under": 5
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           }
         }
       }
@@ -2073,7 +2073,7 @@
         "away": null
       },
       "loses": {
-        "home": null,
+        "home": "1-2",
         "away": "4-1"
       },
       "goals": {
@@ -2100,18 +2100,18 @@
     "penalty": {
       "scored": {
         "total": 1,
-        "percentage": "100.00%"
+        "percentage": "50.00%"
       },
       "missed": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 1,
+        "percentage": "50.00%"
       },
-      "total": 1
+      "total": 2
     },
     "lineups": [
       {
         "formation": "4-2-3-1",
-        "played": 4
+        "played": 5
       },
       {
         "formation": "3-4-2-1",
@@ -2122,31 +2122,31 @@
       "yellow": {
         "0-15": {
           "total": 1,
-          "percentage": "7.14%"
+          "percentage": "5.56%"
         },
         "16-30": {
           "total": null,
           "percentage": null
         },
         "31-45": {
-          "total": 4,
-          "percentage": "28.57%"
+          "total": 6,
+          "percentage": "33.33%"
         },
         "46-60": {
           "total": 1,
-          "percentage": "7.14%"
+          "percentage": "5.56%"
         },
         "61-75": {
-          "total": 1,
-          "percentage": "7.14%"
+          "total": 2,
+          "percentage": "11.11%"
         },
         "76-90": {
-          "total": 2,
-          "percentage": "14.29%"
+          "total": 3,
+          "percentage": "16.67%"
         },
         "91-105": {
           "total": 5,
-          "percentage": "35.71%"
+          "percentage": "27.78%"
         },
         "106-120": {
           "total": null,
@@ -2189,5 +2189,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:57.408Z"
+  "lastUpdated": "2025-04-01T14:59:56.368Z"
 }

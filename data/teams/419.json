@@ -110,65 +110,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213683,
-          "date": "2025-03-29T17:45:00+00:00",
-          "venue": {
-            "id": 1159,
-            "name": "Koning Willem II Stadion",
-            "city": "Tilburg"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743270300
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 195,
-            "name": "Willem II",
-            "logo": "https://media.api-sports.io/football/teams/195.png",
-            "winner": null
-          },
-          "away": {
-            "id": 419,
-            "name": "Almere City FC",
-            "logo": "https://media.api-sports.io/football/teams/419.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213685,
           "date": "2025-04-05T19:00:00+00:00",
           "venue": {
@@ -582,6 +523,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213683,
+          "date": "2025-03-29T17:45:00+00:00",
+          "venue": {
+            "id": 1159,
+            "name": "Koning Willem II Stadion",
+            "city": "Tilburg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743270300
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 195,
+            "name": "Willem II",
+            "logo": "https://media.api-sports.io/football/teams/195.png",
+            "winner": false
+          },
+          "away": {
+            "id": 419,
+            "name": "Almere City FC",
+            "logo": "https://media.api-sports.io/football/teams/419.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213667,
@@ -1112,65 +1112,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213585,
-          "date": "2024-12-21T17:45:00+00:00",
-          "venue": {
-            "id": 1141,
-            "name": "Yanmar Stadion",
-            "city": "Almere"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1734803100
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 419,
-            "name": "Almere City FC",
-            "logo": "https://media.api-sports.io/football/teams/419.png",
-            "winner": true
-          },
-          "away": {
-            "id": 210,
-            "name": "Heerenveen",
-            "logo": "https://media.api-sports.io/football/teams/210.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1467,5 +1408,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:10.155Z"
+  "lastUpdated": "2025-04-01T14:54:03.800Z"
 }

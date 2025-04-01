@@ -126,7 +126,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -140,7 +140,8 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1366735,
@@ -151,10 +152,10 @@
             "city": "Talisay"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 12
           },
           "timestamp": 1743242400
         },
@@ -168,27 +169,27 @@
             "id": 18265,
             "name": "Dynamic Herb Cebu",
             "logo": "https://media.api-sports.io/football/teams/18265.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 21575,
             "name": "Loyola",
             "logo": "https://media.api-sports.io/football/teams/21575.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 3,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -199,9 +200,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1361324,
@@ -732,65 +731,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1289401,
-          "date": "2024-11-28T10:00:00+00:00",
-          "venue": {
-            "id": 1015,
-            "name": "Jeonju World Cup Stadium",
-            "city": "Jeonju"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1732788000
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2762,
-            "name": "Jeonbuk Motors",
-            "logo": "https://media.api-sports.io/football/teams/2762.png",
-            "winner": true
-          },
-          "away": {
-            "id": 18265,
-            "name": "Dynamic Herb Cebu",
-            "logo": "https://media.api-sports.io/football/teams/18265.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1087,5 +1027,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:09.541Z"
+  "lastUpdated": "2025-04-01T14:59:07.241Z"
 }

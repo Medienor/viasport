@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -188,10 +188,10 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": true,
             "players": true,
@@ -226,65 +226,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1351051,
-          "date": "2025-03-29T21:30:00+00:00",
-          "venue": {
-            "id": 225,
-            "name": "Estádio Governador Plácido Aderaldo Castelo",
-            "city": "Fortaleza, Ceará"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743283800
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": null
-          },
-          "away": {
-            "id": 124,
-            "name": "Fluminense",
-            "logo": "https://media.api-sports.io/football/teams/124.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361865,
           "date": "2025-04-02T00:30:00+00:00",
           "venue": {
@@ -316,6 +257,65 @@
             "id": 436,
             "name": "Racing Club",
             "logo": "https://media.api-sports.io/football/teams/436.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351057,
+          "date": "2025-04-06T21:30:00+00:00",
+          "venue": {
+            "id": 5676,
+            "name": "Estádio José Maria de Campos Maia",
+            "city": "Mirassol, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743975000
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7848,
+            "name": "Mirassol",
+            "logo": "https://media.api-sports.io/football/teams/7848.png",
+            "winner": null
+          },
+          "away": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
             "winner": null
           }
         },
@@ -403,6 +403,183 @@
       },
       {
         "fixture": {
+          "id": 1351071,
+          "date": "2025-04-13T23:00:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744585200
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351080,
+          "date": "2025-04-17T00:30:00+00:00",
+          "venue": {
+            "id": 281,
+            "name": "Estádio Manoel Barradas",
+            "city": "Salvador, Bahia"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744849800
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": null
+          },
+          "away": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351091,
+          "date": "2025-04-20T21:30:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745184600
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          },
+          "away": {
+            "id": 121,
+            "name": "Palmeiras",
+            "logo": "https://media.api-sports.io/football/teams/121.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1361897,
           "date": "2025-04-24T02:00:00+00:00",
           "venue": {
@@ -428,6 +605,124 @@
             "id": 1131,
             "name": "Bucaramanga",
             "logo": "https://media.api-sports.io/football/teams/1131.png",
+            "winner": null
+          },
+          "away": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351102,
+          "date": "2025-04-26T23:00:00+00:00",
+          "venue": {
+            "id": 276,
+            "name": "Estádio Adelmar da Costa Carvalho",
+            "city": "Recife, Pernambuco"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745708400
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 123,
+            "name": "Sport Recife",
+            "logo": "https://media.api-sports.io/football/teams/123.png",
+            "winner": null
+          },
+          "away": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351106,
+          "date": "2025-05-03T00:30:00+00:00",
+          "venue": {
+            "id": 20813,
+            "name": "MorumBIS",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746232200
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 126,
+            "name": "Sao Paulo",
+            "logo": "https://media.api-sports.io/football/teams/126.png",
             "winner": null
           },
           "away": {
@@ -521,6 +816,65 @@
       },
       {
         "fixture": {
+          "id": 1351121,
+          "date": "2025-05-10T19:00:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746903600
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          },
+          "away": {
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1361983,
           "date": "2025-05-14T00:30:00+00:00",
           "venue": {
@@ -552,6 +906,124 @@
             "id": 1131,
             "name": "Bucaramanga",
             "logo": "https://media.api-sports.io/football/teams/1131.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351124,
+          "date": "2025-05-17T21:30:00+00:00",
+          "venue": {
+            "id": 19377,
+            "name": "Estádio São Januário",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747517400
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": null
+          },
+          "away": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351141,
+          "date": "2025-05-25T23:30:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748215800
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          },
+          "away": {
+            "id": 135,
+            "name": "Cruzeiro",
+            "logo": "https://media.api-sports.io/football/teams/135.png",
             "winner": null
           }
         },
@@ -636,9 +1108,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1351143,
+          "date": "2025-06-01T21:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748813400
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          },
+          "away": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351161,
+          "date": "2025-06-12T22:30:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749767400
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          },
+          "away": {
+            "id": 128,
+            "name": "Santos",
+            "logo": "https://media.api-sports.io/football/teams/128.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1351051,
+          "date": "2025-03-29T21:30:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743283800
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": true
+          },
+          "away": {
+            "id": 124,
+            "name": "Fluminense",
+            "logo": "https://media.api-sports.io/football/teams/124.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1337265,
@@ -1169,65 +1818,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1319046,
-          "date": "2025-02-08T19:30:00+00:00",
-          "venue": {
-            "id": 225,
-            "name": "Estádio Governador Plácido Aderaldo Castelo",
-            "city": "Fortaleza, Ceará"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1739043000
-        },
-        "league": {
-          "id": 609,
-          "name": "Cearense - 1",
-          "logo": "https://media.api-sports.io/football/leagues/609.png"
-        },
-        "teams": {
-          "home": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": false
-          },
-          "away": {
-            "id": 129,
-            "name": "Ceara",
-            "logo": "https://media.api-sports.io/football/teams/129.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1524,5 +2114,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:19.792Z"
+  "lastUpdated": "2025-04-01T14:59:17.597Z"
 }

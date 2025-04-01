@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1211463,
-          "date": "2025-03-29T16:00:00+00:00",
-          "venue": {
-            "id": 818,
-            "name": "ZTE-Aréna",
-            "city": "Zalaegerszeg"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743264000
-        },
-        "league": {
-          "id": 271,
-          "name": "NB I",
-          "logo": "https://media.api-sports.io/football/leagues/271.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2414,
-            "name": "Zalaegerszegi TE",
-            "logo": "https://media.api-sports.io/football/teams/2414.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2390,
-            "name": "Paks",
-            "logo": "https://media.api-sports.io/football/teams/2390.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1355644,
@@ -460,9 +401,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1211483,
+          "date": "2025-04-18T22:00:00+00:00",
+          "venue": {
+            "id": 809,
+            "name": "Paksi FC Stadion",
+            "city": "Paks"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745013600
+        },
+        "league": {
+          "id": 271,
+          "name": "NB I",
+          "logo": "https://media.api-sports.io/football/leagues/271.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2390,
+            "name": "Paks",
+            "logo": "https://media.api-sports.io/football/teams/2390.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2391,
+            "name": "Puskas Academy",
+            "logo": "https://media.api-sports.io/football/teams/2391.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1211463,
+          "date": "2025-03-29T16:00:00+00:00",
+          "venue": {
+            "id": 818,
+            "name": "ZTE-Aréna",
+            "city": "Zalaegerszeg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743264000
+        },
+        "league": {
+          "id": 271,
+          "name": "NB I",
+          "logo": "https://media.api-sports.io/football/leagues/271.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2414,
+            "name": "Zalaegerszegi TE",
+            "logo": "https://media.api-sports.io/football/teams/2414.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2390,
+            "name": "Paks",
+            "logo": "https://media.api-sports.io/football/teams/2390.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365898,
@@ -993,65 +1052,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337985,
-          "date": "2025-01-24T11:45:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737719100
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 395,
-            "name": "Vejle",
-            "logo": "https://media.api-sports.io/football/teams/395.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2390,
-            "name": "Paks",
-            "logo": "https://media.api-sports.io/football/teams/2390.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1348,5 +1348,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:28.050Z"
+  "lastUpdated": "2025-04-01T14:55:23.164Z"
 }

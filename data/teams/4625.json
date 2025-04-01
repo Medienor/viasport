@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -144,7 +144,8 @@
     2024
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1328282,
@@ -155,10 +156,10 @@
             "city": "Gozo"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
           },
           "timestamp": 1743253200
         },
@@ -182,17 +183,17 @@
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -203,9 +204,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1328276,
@@ -736,65 +735,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1328233,
-          "date": "2025-01-25T14:00:00+00:00",
-          "venue": {
-            "id": 12090,
-            "name": "Tony Bezzina Stadium",
-            "city": "Paola"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1737813600
-        },
-        "league": {
-          "id": 393,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/393.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4625,
-            "name": "Floriana",
-            "logo": "https://media.api-sports.io/football/teams/4625.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4626,
-            "name": "Hamrun Spartans",
-            "logo": "https://media.api-sports.io/football/teams/4626.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1091,5 +1031,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:39:13.617Z"
+  "lastUpdated": "2025-04-01T14:56:09.669Z"
 }

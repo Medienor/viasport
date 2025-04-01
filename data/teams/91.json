@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1213989,
-          "date": "2025-03-29T20:05:00+00:00",
-          "venue": {
-            "id": 20470,
-            "name": "Stade Louis-II",
-            "city": "Monaco"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743278700
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 91,
-            "name": "Monaco",
-            "logo": "https://media.api-sports.io/football/teams/91.png",
-            "winner": null
-          },
-          "away": {
-            "id": 84,
-            "name": "Nice",
-            "logo": "https://media.api-sports.io/football/teams/84.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1213992,
@@ -460,9 +401,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1214017,
+          "date": "2025-04-26T17:00:00+00:00",
+          "venue": {
+            "id": 652,
+            "name": "Stade Océane",
+            "city": "Le Havre"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745686800
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 111,
+            "name": "LE Havre",
+            "logo": "https://media.api-sports.io/football/teams/111.png",
+            "winner": null
+          },
+          "away": {
+            "id": 91,
+            "name": "Monaco",
+            "logo": "https://media.api-sports.io/football/teams/91.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213989,
+          "date": "2025-03-29T20:05:00+00:00",
+          "venue": {
+            "id": 20470,
+            "name": "Stade Louis-II",
+            "city": "Monaco"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743278700
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 91,
+            "name": "Monaco",
+            "logo": "https://media.api-sports.io/football/teams/91.png",
+            "winner": true
+          },
+          "away": {
+            "id": 84,
+            "name": "Nice",
+            "logo": "https://media.api-sports.io/football/teams/84.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213980,
@@ -646,8 +705,8 @@
           "date": "2025-02-22T16:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Decathlon Arena - Stade Pierre-Mauroy",
-            "city": "Villeneuve d'Ascq"
+            "name": "Decathlon Arena - Stade Pierre Mauroy",
+            "city": "Lille"
           },
           "status": {
             "long": "Match Finished",
@@ -993,65 +1052,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299119,
-          "date": "2025-01-29T20:00:00+00:00",
-          "venue": {
-            "id": 907,
-            "name": "Stadio Giuseppe Meazza",
-            "city": "Milano"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738180800
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 505,
-            "name": "Inter",
-            "logo": "https://media.api-sports.io/football/teams/505.png",
-            "winner": true
-          },
-          "away": {
-            "id": 91,
-            "name": "Monaco",
-            "logo": "https://media.api-sports.io/football/teams/91.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1348,5 +1348,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:36.980Z"
+  "lastUpdated": "2025-04-01T14:53:30.408Z"
 }

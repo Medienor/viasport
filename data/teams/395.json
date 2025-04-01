@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362794,
-          "date": "2025-03-30T12:00:00+00:00",
-          "venue": {
-            "id": 452,
-            "name": "Lyngby Stadion",
-            "city": "Lyngby"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743336000
-        },
-        "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
-        },
-        "teams": {
-          "home": {
-            "id": 625,
-            "name": "Lyngby",
-            "logo": "https://media.api-sports.io/football/teams/625.png",
-            "winner": null
-          },
-          "away": {
-            "id": 395,
-            "name": "Vejle",
-            "logo": "https://media.api-sports.io/football/teams/395.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362797,
           "date": "2025-04-06T14:00:00+00:00",
           "venue": {
@@ -333,9 +274,9 @@
           "id": 1362803,
           "date": "2025-04-17T12:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 462,
+            "name": "Vejle Stadion",
+            "city": "Vejle"
           },
           "status": {
             "long": "Not Started",
@@ -743,6 +684,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362794,
+          "date": "2025-03-30T12:00:00+00:00",
+          "venue": {
+            "id": 452,
+            "name": "Lyngby Stadion",
+            "city": "Lyngby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743336000
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": false
+          },
+          "away": {
+            "id": 395,
+            "name": "Vejle",
+            "logo": "https://media.api-sports.io/football/teams/395.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1205553,
@@ -1273,65 +1273,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1205516,
-          "date": "2024-11-24T13:00:00+00:00",
-          "venue": {
-            "id": 457,
-            "name": "Cepheus Park Randers",
-            "city": "Randers"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1732453200
-        },
-        "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
-        },
-        "teams": {
-          "home": {
-            "id": 401,
-            "name": "Randers FC",
-            "logo": "https://media.api-sports.io/football/teams/401.png",
-            "winner": true
-          },
-          "away": {
-            "id": 395,
-            "name": "Vejle",
-            "logo": "https://media.api-sports.io/football/teams/395.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1628,5 +1569,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:50.213Z"
+  "lastUpdated": "2025-04-01T14:54:44.714Z"
 }

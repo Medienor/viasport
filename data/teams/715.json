@@ -115,65 +115,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1217860,
-          "date": "2025-03-28T19:30:00+00:00",
-          "venue": {
-            "id": 1496,
-            "name": "Estadio Heliodoro Rodríguez Lopéz",
-            "city": "Tenerife"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743190200
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 719,
-            "name": "Tenerife",
-            "logo": "https://media.api-sports.io/football/teams/719.png",
-            "winner": null
-          },
-          "away": {
-            "id": 715,
-            "name": "Granada CF",
-            "logo": "https://media.api-sports.io/football/teams/715.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1217869,
           "date": "2025-04-05T16:30:00+00:00",
           "venue": {
@@ -289,9 +230,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1217885,
+          "date": "2025-04-20T12:00:00+00:00",
+          "venue": {
+            "id": 3976,
+            "name": "Estadio Municipal Cartagonova",
+            "city": "Cartagena"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745150400
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5262,
+            "name": "FC Cartagena",
+            "logo": "https://media.api-sports.io/football/teams/5262.png",
+            "winner": null
+          },
+          "away": {
+            "id": 715,
+            "name": "Granada CF",
+            "logo": "https://media.api-sports.io/football/teams/715.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1217903,
+          "date": "2025-04-26T16:30:00+00:00",
+          "venue": {
+            "id": 1479,
+            "name": "Estadio Nuevo Los Cármenes",
+            "city": "Granada"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745685000
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 715,
+            "name": "Granada CF",
+            "logo": "https://media.api-sports.io/football/teams/715.png",
+            "winner": null
+          },
+          "away": {
+            "id": 797,
+            "name": "Elche",
+            "logo": "https://media.api-sports.io/football/teams/797.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217860,
+          "date": "2025-03-28T19:30:00+00:00",
+          "venue": {
+            "id": 1496,
+            "name": "Estadio Heliodoro Rodríguez Lopéz",
+            "city": "Tenerife"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743190200
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 719,
+            "name": "Tenerife",
+            "logo": "https://media.api-sports.io/football/teams/719.png",
+            "winner": true
+          },
+          "away": {
+            "id": 715,
+            "name": "Granada CF",
+            "logo": "https://media.api-sports.io/football/teams/715.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217842,
@@ -822,65 +940,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217749,
-          "date": "2025-01-18T20:00:00+00:00",
-          "venue": {
-            "id": 1482,
-            "name": "Estadio Ciudad de Valencia",
-            "city": "Valencia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737230400
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 539,
-            "name": "Levante",
-            "logo": "https://media.api-sports.io/football/teams/539.png",
-            "winner": true
-          },
-          "away": {
-            "id": 715,
-            "name": "Granada CF",
-            "logo": "https://media.api-sports.io/football/teams/715.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1177,5 +1236,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:24.842Z"
+  "lastUpdated": "2025-04-01T14:59:22.949Z"
 }

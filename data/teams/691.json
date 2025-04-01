@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-08-03",
-          "end": "2025-04-26",
+          "end": "2025-05-10",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -184,65 +184,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1351555,
-          "date": "2025-03-29T14:00:00+00:00",
-          "venue": {
-            "id": 19653,
-            "name": "Stadionul Orăşenesc",
-            "city": "Bălţi"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743256800
-        },
-        "league": {
-          "id": 394,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/394.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14008,
-            "name": "CSF Bălți",
-            "logo": "https://media.api-sports.io/football/teams/14008.png",
-            "winner": null
-          },
-          "away": {
-            "id": 691,
-            "name": "Milsami Orhei",
-            "logo": "https://media.api-sports.io/football/teams/691.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1357116,
@@ -599,6 +540,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1351555,
+          "date": "2025-03-29T14:00:00+00:00",
+          "venue": {
+            "id": 19653,
+            "name": "Stadionul Orăşenesc",
+            "city": "Bălţi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743256800
+        },
+        "league": {
+          "id": 394,
+          "name": "Super Liga",
+          "logo": "https://media.api-sports.io/football/leagues/394.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14008,
+            "name": "CSF Bălți",
+            "logo": "https://media.api-sports.io/football/teams/14008.png",
+            "winner": false
+          },
+          "away": {
+            "id": 691,
+            "name": "Milsami Orhei",
+            "logo": "https://media.api-sports.io/football/teams/691.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1366016,
@@ -1129,65 +1129,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1239668,
-          "date": "2024-10-19T13:00:00+00:00",
-          "venue": {
-            "id": 19653,
-            "name": "Stadionul Orăşenesc",
-            "city": "Bălţi"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1729342800
-        },
-        "league": {
-          "id": 394,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/394.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14008,
-            "name": "CSF Bălți",
-            "logo": "https://media.api-sports.io/football/teams/14008.png",
-            "winner": null
-          },
-          "away": {
-            "id": 691,
-            "name": "Milsami Orhei",
-            "logo": "https://media.api-sports.io/football/teams/691.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1484,5 +1425,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:50.440Z"
+  "lastUpdated": "2025-04-01T14:55:46.481Z"
 }

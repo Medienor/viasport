@@ -114,10 +114,10 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": true,
             "players": true,
@@ -154,12 +154,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1351043,
-          "date": "2025-03-29T23:00:00+00:00",
+          "id": 1361866,
+          "date": "2025-04-03T22:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estadio Jornalista Mário Filho",
-            "city": "Rio de Janeiro, Rio de Janeiro"
+            "name": "Casa de Apostas Arena Fonte Nova",
+            "city": "Salvador, Bahia"
           },
           "status": {
             "long": "Not Started",
@@ -167,18 +167,18 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743289200
+          "timestamp": 1743717600
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
         },
         "teams": {
           "home": {
-            "id": 127,
-            "name": "Flamengo",
-            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "id": 118,
+            "name": "Bahia",
+            "logo": "https://media.api-sports.io/football/teams/118.png",
             "winner": null
           },
           "away": {
@@ -213,12 +213,12 @@
       },
       {
         "fixture": {
-          "id": 1361866,
-          "date": "2025-04-03T22:00:00+00:00",
+          "id": 1351059,
+          "date": "2025-04-06T21:30:00+00:00",
           "venue": {
-            "id": null,
-            "name": "Casa de Apostas Arena Fonte Nova",
-            "city": "Salvador, Bahia"
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
           },
           "status": {
             "long": "Not Started",
@@ -226,24 +226,24 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743717600
+          "timestamp": 1743975000
         },
         "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
         },
         "teams": {
           "home": {
-            "id": 118,
-            "name": "Bahia",
-            "logo": "https://media.api-sports.io/football/teams/118.png",
-            "winner": null
-          },
-          "away": {
             "id": 119,
             "name": "Internacional",
             "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          },
+          "away": {
+            "id": 135,
+            "name": "Cruzeiro",
+            "logo": "https://media.api-sports.io/football/teams/135.png",
             "winner": null
           }
         },
@@ -331,6 +331,183 @@
       },
       {
         "fixture": {
+          "id": 1351071,
+          "date": "2025-04-13T23:00:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744585200
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351079,
+          "date": "2025-04-16T22:30:00+00:00",
+          "venue": {
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744842600
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          },
+          "away": {
+            "id": 121,
+            "name": "Palmeiras",
+            "logo": "https://media.api-sports.io/football/teams/121.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351089,
+          "date": "2025-04-20T00:00:00+00:00",
+          "venue": {
+            "id": 241,
+            "name": "Arena do Grêmio",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745107200
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 130,
+            "name": "Gremio",
+            "logo": "https://media.api-sports.io/football/teams/130.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1361898,
           "date": "2025-04-23T00:30:00+00:00",
           "venue": {
@@ -390,6 +567,124 @@
       },
       {
         "fixture": {
+          "id": 1351099,
+          "date": "2025-04-26T19:00:00+00:00",
+          "venue": {
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745694000
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          },
+          "away": {
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351105,
+          "date": "2025-05-03T21:30:00+00:00",
+          "venue": {
+            "id": 11531,
+            "name": "Neo Química Arena",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746307800
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1361968,
           "date": "2025-05-09T00:30:00+00:00",
           "venue": {
@@ -415,6 +710,65 @@
             "id": 1137,
             "name": "Atletico Nacional",
             "logo": "https://media.api-sports.io/football/teams/1137.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351114,
+          "date": "2025-05-11T23:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estádio Olímpico Nilton Santos",
+            "city": "Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747004400
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 120,
+            "name": "Botafogo",
+            "logo": "https://media.api-sports.io/football/teams/120.png",
             "winner": null
           },
           "away": {
@@ -508,6 +862,124 @@
       },
       {
         "fixture": {
+          "id": 1351129,
+          "date": "2025-05-18T23:30:00+00:00",
+          "venue": {
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747611000
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7848,
+            "name": "Mirassol",
+            "logo": "https://media.api-sports.io/football/teams/7848.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351142,
+          "date": "2025-05-25T19:00:00+00:00",
+          "venue": {
+            "id": 276,
+            "name": "Estádio Adelmar da Costa Carvalho",
+            "city": "Recife, Pernambuco"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748199600
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 123,
+            "name": "Sport Recife",
+            "logo": "https://media.api-sports.io/football/teams/123.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1362001,
           "date": "2025-05-28T22:00:00+00:00",
           "venue": {
@@ -564,9 +1036,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1351149,
+          "date": "2025-06-01T23:30:00+00:00",
+          "venue": {
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748820600
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          },
+          "away": {
+            "id": 124,
+            "name": "Fluminense",
+            "logo": "https://media.api-sports.io/football/teams/124.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351158,
+          "date": "2025-06-13T00:30:00+00:00",
+          "venue": {
+            "id": 21427,
+            "name": "Arena MRV",
+            "city": "Belo Horizonte, Minas Gerais"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749774600
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1062,
+            "name": "Atletico-MG",
+            "logo": "https://media.api-sports.io/football/teams/1062.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1351043,
+          "date": "2025-03-30T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743292800
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1356807,
@@ -1097,65 +1746,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1322094,
-          "date": "2025-01-29T00:30:00+00:00",
-          "venue": {
-            "id": 254,
-            "name": "Estádio do Vale",
-            "city": "Novo Hamburgo, Rio Grande do Sul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1738110600
-        },
-        "league": {
-          "id": 477,
-          "name": "Gaúcho - 1",
-          "logo": "https://media.api-sports.io/football/leagues/477.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2232,
-            "name": "Sao Jose",
-            "logo": "https://media.api-sports.io/football/teams/2232.png",
-            "winner": false
-          },
-          "away": {
-            "id": 119,
-            "name": "Internacional",
-            "logo": "https://media.api-sports.io/football/teams/119.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1452,5 +2042,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:12.093Z"
+  "lastUpdated": "2025-04-01T14:59:09.749Z"
 }

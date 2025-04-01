@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1213985,
-          "date": "2025-03-30T13:00:00+00:00",
-          "venue": {
-            "id": 682,
-            "name": "Stadium de Toulouse",
-            "city": "Toulouse"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743339600
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 96,
-            "name": "Toulouse",
-            "logo": "https://media.api-sports.io/football/teams/96.png",
-            "winner": null
-          },
-          "away": {
-            "id": 106,
-            "name": "Stade Brestois 29",
-            "logo": "https://media.api-sports.io/football/teams/106.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1213990,
@@ -386,9 +327,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1214019,
+          "date": "2025-04-27T15:15:00+00:00",
+          "venue": {
+            "id": 662,
+            "name": "Stade de la Beaujoire - Louis Fonteneau",
+            "city": "Nantes"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745766900
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 83,
+            "name": "Nantes",
+            "logo": "https://media.api-sports.io/football/teams/83.png",
+            "winner": null
+          },
+          "away": {
+            "id": 96,
+            "name": "Toulouse",
+            "logo": "https://media.api-sports.io/football/teams/96.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213985,
+          "date": "2025-03-30T13:00:00+00:00",
+          "venue": {
+            "id": 682,
+            "name": "Stadium de Toulouse",
+            "city": "Toulouse"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743339600
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 96,
+            "name": "Toulouse",
+            "logo": "https://media.api-sports.io/football/teams/96.png",
+            "winner": false
+          },
+          "away": {
+            "id": 106,
+            "name": "Stade Brestois 29",
+            "logo": "https://media.api-sports.io/football/teams/106.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213978,
@@ -919,65 +978,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213903,
-          "date": "2025-01-18T20:05:00+00:00",
-          "venue": {
-            "id": 666,
-            "name": "Groupama Stadium",
-            "city": "Décines-Charpieu"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 2
-          },
-          "timestamp": 1737230700
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 80,
-            "name": "Lyon",
-            "logo": "https://media.api-sports.io/football/teams/80.png",
-            "winner": null
-          },
-          "away": {
-            "id": 96,
-            "name": "Toulouse",
-            "logo": "https://media.api-sports.io/football/teams/96.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1274,5 +1274,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:39.541Z"
+  "lastUpdated": "2025-04-01T14:53:32.909Z"
 }

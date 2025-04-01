@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-09-11",
-          "end": "2024-12-04",
+          "end": "2025-04-02",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -184,12 +184,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1214786,
-          "date": "2025-03-29T19:00:00+00:00",
+          "id": 1214788,
+          "date": "2025-04-06T13:00:00+00:00",
           "venue": {
-            "id": 1422,
-            "name": "Stadion Mladost",
-            "city": "Kruševac"
+            "id": 1415,
+            "name": "Stadion Čika Dača",
+            "city": "Kragujevac"
           },
           "status": {
             "long": "Not Started",
@@ -197,7 +197,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743274800
+          "timestamp": 1743944400
         },
         "league": {
           "id": 286,
@@ -206,15 +206,15 @@
         },
         "teams": {
           "home": {
-            "id": 2655,
-            "name": "Napredak",
-            "logo": "https://media.api-sports.io/football/teams/2655.png",
-            "winner": null
-          },
-          "away": {
             "id": 2644,
             "name": "Radnicki 1923",
             "logo": "https://media.api-sports.io/football/teams/2644.png",
+            "winner": null
+          },
+          "away": {
+            "id": 573,
+            "name": "FK Partizan",
+            "logo": "https://media.api-sports.io/football/teams/573.png",
             "winner": null
           }
         },
@@ -243,6 +243,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1214786,
+          "date": "2025-03-29T19:00:00+00:00",
+          "venue": {
+            "id": 1422,
+            "name": "Stadion Mladost",
+            "city": "Kruševac"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743274800
+        },
+        "league": {
+          "id": 286,
+          "name": "Super Liga",
+          "logo": "https://media.api-sports.io/football/leagues/286.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2655,
+            "name": "Napredak",
+            "logo": "https://media.api-sports.io/football/teams/2655.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2644,
+            "name": "Radnicki 1923",
+            "logo": "https://media.api-sports.io/football/teams/2644.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1214771,
@@ -773,65 +832,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337074,
-          "date": "2025-01-19T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Mardan Stadyumu",
-            "city": "Antalya"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1737244800
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2644,
-            "name": "Radnicki 1923",
-            "logo": "https://media.api-sports.io/football/teams/2644.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2011,
-            "name": "Nizhny Novgorod",
-            "logo": "https://media.api-sports.io/football/teams/2011.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1128,5 +1128,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:39:03.507Z"
+  "lastUpdated": "2025-04-01T14:55:59.437Z"
 }

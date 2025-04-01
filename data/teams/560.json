@@ -222,65 +222,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1210589,
-          "date": "2025-03-29T18:00:00+00:00",
-          "venue": {
-            "id": 2497,
-            "name": "Stadion Juliska",
-            "city": "Praha"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743271200
-        },
-        "league": {
-          "id": 345,
-          "name": "Czech Liga",
-          "logo": "https://media.api-sports.io/football/leagues/345.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3715,
-            "name": "Dukla Praha",
-            "logo": "https://media.api-sports.io/football/teams/3715.png",
-            "winner": null
-          },
-          "away": {
-            "id": 560,
-            "name": "Slavia Praha",
-            "logo": "https://media.api-sports.io/football/teams/560.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1210600,
           "date": "2025-04-05T17:00:00+00:00",
           "venue": {
@@ -517,6 +458,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1210589,
+          "date": "2025-03-29T18:00:00+00:00",
+          "venue": {
+            "id": 2497,
+            "name": "Stadion Juliska",
+            "city": "Praha"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743271200
+        },
+        "league": {
+          "id": 345,
+          "name": "Czech Liga",
+          "logo": "https://media.api-sports.io/football/leagues/345.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3715,
+            "name": "Dukla Praha",
+            "logo": "https://media.api-sports.io/football/teams/3715.png",
+            "winner": null
+          },
+          "away": {
+            "id": 560,
+            "name": "Slavia Praha",
+            "logo": "https://media.api-sports.io/football/teams/560.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1210582,
@@ -1047,65 +1047,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337084,
-          "date": "2025-01-19T14:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1737297000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 560,
-            "name": "Slavia Praha",
-            "logo": "https://media.api-sports.io/football/teams/560.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1599,
-            "name": "Philadelphia Union",
-            "logo": "https://media.api-sports.io/football/teams/1599.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1402,5 +1343,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:00.376Z"
+  "lastUpdated": "2025-04-01T14:54:55.120Z"
 }

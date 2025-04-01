@@ -274,7 +274,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -300,70 +300,11 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1356819,
-          "date": "2025-03-30T11:45:00+00:00",
-          "venue": {
-            "id": 170,
-            "name": "Stadyen Tarpeda",
-            "city": "Zhodino"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743335100
-        },
-        "league": {
-          "id": 116,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
-        },
-        "teams": {
-          "home": {
-            "id": 385,
-            "name": "Torpedo Zhodino",
-            "logo": "https://media.api-sports.io/football/teams/385.png",
-            "winner": null
-          },
-          "away": {
-            "id": 394,
-            "name": "Dinamo Minsk",
-            "logo": "https://media.api-sports.io/football/teams/394.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1356828,
-          "date": "2025-04-05T15:45:00+00:00",
+          "date": "2025-04-05T16:45:00+00:00",
           "venue": {
             "id": 2606,
-            "name": "Stadyen Dynama",
+            "name": "Stadyen Dynama-Juni",
             "city": "Minsk"
           },
           "status": {
@@ -372,7 +313,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743867900
+          "timestamp": 1743871500
         },
         "league": {
           "id": 116,
@@ -415,9 +356,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1356836,
+          "date": "2025-04-10T22:00:00+00:00",
+          "venue": {
+            "id": 168,
+            "name": "Stadyen Junatsva",
+            "city": "Mozyr"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744322400
+        },
+        "league": {
+          "id": 116,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
+        },
+        "teams": {
+          "home": {
+            "id": 751,
+            "name": "Slavia Mozyr",
+            "logo": "https://media.api-sports.io/football/teams/751.png",
+            "winner": null
+          },
+          "away": {
+            "id": 394,
+            "name": "Dinamo Minsk",
+            "logo": "https://media.api-sports.io/football/teams/394.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356843,
+          "date": "2025-04-17T22:00:00+00:00",
+          "venue": {
+            "id": 2606,
+            "name": "Stadyen Dynama",
+            "city": "Minsk"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744927200
+        },
+        "league": {
+          "id": 116,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
+        },
+        "teams": {
+          "home": {
+            "id": 394,
+            "name": "Dinamo Minsk",
+            "logo": "https://media.api-sports.io/football/teams/394.png",
+            "winner": null
+          },
+          "away": {
+            "id": 388,
+            "name": "Bate Borisov",
+            "logo": "https://media.api-sports.io/football/teams/388.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1356819,
+          "date": "2025-03-30T11:45:00+00:00",
+          "venue": {
+            "id": 170,
+            "name": "Stadyen Tarpeda",
+            "city": "Zhodino"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743335100
+        },
+        "league": {
+          "id": 116,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
+        },
+        "teams": {
+          "home": {
+            "id": 385,
+            "name": "Torpedo Zhodino",
+            "logo": "https://media.api-sports.io/football/teams/385.png",
+            "winner": null
+          },
+          "away": {
+            "id": 394,
+            "name": "Dinamo Minsk",
+            "logo": "https://media.api-sports.io/football/teams/394.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365976,
@@ -657,7 +775,7 @@
       {
         "fixture": {
           "id": 1350830,
-          "date": "2025-02-15T12:00:00+00:00",
+          "date": "2025-02-15T08:30:00+00:00",
           "venue": {
             "id": null,
             "name": "Stadyen Dynama-Juni",
@@ -669,7 +787,7 @@
             "elapsed": 90,
             "extra": 1
           },
-          "timestamp": 1739620800
+          "timestamp": 1739608200
         },
         "league": {
           "id": 667,
@@ -948,65 +1066,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1179344,
-          "date": "2024-12-07T11:30:00+00:00",
-          "venue": {
-            "id": 160,
-            "name": "Stadyen DASK Brestski",
-            "city": "Brest"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1733571000
-        },
-        "league": {
-          "id": 116,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
-        },
-        "teams": {
-          "home": {
-            "id": 386,
-            "name": "Dinamo Brest",
-            "logo": "https://media.api-sports.io/football/teams/386.png",
-            "winner": null
-          },
-          "away": {
-            "id": 394,
-            "name": "Dinamo Minsk",
-            "logo": "https://media.api-sports.io/football/teams/394.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1024,12 +1083,12 @@
       "name": "Dinamo Minsk",
       "logo": "https://media.api-sports.io/football/teams/394.png"
     },
-    "form": "W",
+    "form": "WD",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "wins": {
         "home": 1,
@@ -1038,8 +1097,8 @@
       },
       "draws": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       },
       "loses": {
         "home": 0,
@@ -1057,7 +1116,7 @@
         "average": {
           "home": "1.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.5"
         },
         "minute": {
           "0-15": {
@@ -1096,23 +1155,23 @@
         "under_over": {
           "0.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       },
@@ -1164,23 +1223,23 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       }
@@ -1212,13 +1271,13 @@
     },
     "clean_sheet": {
       "home": 1,
-      "away": 0,
-      "total": 1
+      "away": 1,
+      "total": 2
     },
     "failed_to_score": {
       "home": 0,
-      "away": 0,
-      "total": 0
+      "away": 1,
+      "total": 1
     },
     "penalty": {
       "scored": {
@@ -1234,7 +1293,7 @@
     "lineups": [
       {
         "formation": "4-1-4-1",
-        "played": 1
+        "played": 2
       }
     ],
     "cards": {
@@ -1248,7 +1307,7 @@
           "percentage": null
         },
         "31-45": {
-          "total": 2,
+          "total": 3,
           "percentage": "100.00%"
         },
         "46-60": {
@@ -1308,5 +1367,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:57.817Z"
+  "lastUpdated": "2025-04-01T14:54:52.524Z"
 }

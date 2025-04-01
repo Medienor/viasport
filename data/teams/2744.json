@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -221,67 +221,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1353235,
-          "date": "2025-03-29T15:45:00+00:00",
-          "venue": {
-            "id": 857,
-            "name": "Naghsh-e-Jahan Stadium",
-            "city": "Isfahan"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743263100
-        },
-        "league": {
-          "id": 290,
-          "name": "Persian Gulf Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/290.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2744,
-            "name": "Sepahan FC",
-            "logo": "https://media.api-sports.io/football/teams/2744.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2734,
-            "name": "Foolad FC",
-            "logo": "https://media.api-sports.io/football/teams/2734.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1353243,
-          "date": "2025-04-04T14:30:00+00:00",
+          "date": "2025-04-05T14:30:00+00:00",
           "venue": {
             "id": 1738,
             "name": "Imam Khomeini Stadium",
@@ -293,7 +234,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743777000
+          "timestamp": 1743863400
         },
         "league": {
           "id": 290,
@@ -340,7 +281,7 @@
       {
         "fixture": {
           "id": 1361644,
-          "date": "2025-04-10T14:15:00+00:00",
+          "date": "2025-04-11T14:15:00+00:00",
           "venue": {
             "id": 857,
             "name": "Naghsh-e-Jahan Stadium",
@@ -352,7 +293,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744294500
+          "timestamp": 1744380900
         },
         "league": {
           "id": 290,
@@ -399,7 +340,7 @@
       {
         "fixture": {
           "id": 1361652,
-          "date": "2025-04-17T14:30:00+00:00",
+          "date": "2025-04-18T14:30:00+00:00",
           "venue": {
             "id": 845,
             "name": "Azadi Stadium",
@@ -411,7 +352,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744900200
+          "timestamp": 1744986600
         },
         "league": {
           "id": 290,
@@ -516,6 +457,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1353235,
+          "date": "2025-03-30T15:45:00+00:00",
+          "venue": {
+            "id": 857,
+            "name": "Naghsh-e-Jahan Stadium",
+            "city": "Isfahan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743349500
+        },
+        "league": {
+          "id": 290,
+          "name": "Persian Gulf Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/290.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2744,
+            "name": "Sepahan FC",
+            "logo": "https://media.api-sports.io/football/teams/2744.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2734,
+            "name": "Foolad FC",
+            "logo": "https://media.api-sports.io/football/teams/2734.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1353220,
@@ -1046,65 +1046,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1313169,
-          "date": "2025-01-02T14:30:00+00:00",
-          "venue": {
-            "id": 854,
-            "name": "Shahr-e Qods Stadium",
-            "city": "Shahr-e Qods"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1735828200
-        },
-        "league": {
-          "id": 290,
-          "name": "Persian Gulf Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/290.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2733,
-            "name": "Esteghlal FC",
-            "logo": "https://media.api-sports.io/football/teams/2733.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2744,
-            "name": "Sepahan FC",
-            "logo": "https://media.api-sports.io/football/teams/2744.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1401,5 +1342,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:41:46.715Z"
+  "lastUpdated": "2025-04-01T14:58:43.377Z"
 }

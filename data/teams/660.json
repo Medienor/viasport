@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -185,65 +185,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1325406,
-          "date": "2025-03-28T19:15:00+00:00",
-          "venue": {
-            "id": 1545,
-            "name": "Rheinpark Stadion",
-            "city": "Vaduz"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743189300
-        },
-        "league": {
-          "id": 208,
-          "name": "Challenge League",
-          "logo": "https://media.api-sports.io/football/leagues/208.png"
-        },
-        "teams": {
-          "home": {
-            "id": 660,
-            "name": "FC Vaduz",
-            "logo": "https://media.api-sports.io/football/teams/660.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4269,
-            "name": "Stade Lausanne-Ouchy",
-            "logo": "https://media.api-sports.io/football/teams/4269.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1325411,
@@ -838,6 +779,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1325406,
+          "date": "2025-03-28T19:15:00+00:00",
+          "venue": {
+            "id": 1545,
+            "name": "Rheinpark Stadion",
+            "city": "Vaduz"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743189300
+        },
+        "league": {
+          "id": 208,
+          "name": "Challenge League",
+          "logo": "https://media.api-sports.io/football/leagues/208.png"
+        },
+        "teams": {
+          "home": {
+            "id": 660,
+            "name": "FC Vaduz",
+            "logo": "https://media.api-sports.io/football/teams/660.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4269,
+            "name": "Stade Lausanne-Ouchy",
+            "logo": "https://media.api-sports.io/football/teams/4269.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1325400,
           "date": "2025-03-16T13:15:00+00:00",
           "venue": {
@@ -1366,65 +1366,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1333129,
-          "date": "2025-01-08T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Schützenwiese - Platz 3",
-            "city": "Winterthur"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 11
-          },
-          "timestamp": 1736294400
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2180,
-            "name": "FC Winterthur",
-            "logo": "https://media.api-sports.io/football/teams/2180.png",
-            "winner": true
-          },
-          "away": {
-            "id": 660,
-            "name": "FC Vaduz",
-            "logo": "https://media.api-sports.io/football/teams/660.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1721,5 +1662,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:48.009Z"
+  "lastUpdated": "2025-04-01T14:55:43.943Z"
 }

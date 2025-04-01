@@ -225,10 +225,10 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": true,
             "players": true,
@@ -265,12 +265,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1351043,
-          "date": "2025-03-29T23:00:00+00:00",
+          "id": 1361861,
+          "date": "2025-04-04T00:30:00+00:00",
           "venue": {
-            "id": null,
-            "name": "Estadio Jornalista Mário Filho",
-            "city": "Rio de Janeiro, Rio de Janeiro"
+            "id": 1649,
+            "name": "Estadio Polideportivo de Pueblo Nuevo",
+            "city": "San Cristóbal"
           },
           "status": {
             "long": "Not Started",
@@ -278,24 +278,24 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743289200
+          "timestamp": 1743726600
         },
         "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
         },
         "teams": {
           "home": {
-            "id": 127,
-            "name": "Flamengo",
-            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "id": 2807,
+            "name": "Deportivo Tachira FC",
+            "logo": "https://media.api-sports.io/football/teams/2807.png",
             "winner": null
           },
           "away": {
-            "id": 119,
-            "name": "Internacional",
-            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
             "winner": null
           }
         },
@@ -324,12 +324,12 @@
       },
       {
         "fixture": {
-          "id": 1361861,
-          "date": "2025-04-04T00:30:00+00:00",
+          "id": 1351060,
+          "date": "2025-04-06T21:30:00+00:00",
           "venue": {
-            "id": 1649,
-            "name": "Estadio Polideportivo de Pueblo Nuevo",
-            "city": "San Cristóbal"
+            "id": 281,
+            "name": "Estádio Manoel Barradas",
+            "city": "Salvador, Bahia"
           },
           "status": {
             "long": "Not Started",
@@ -337,18 +337,18 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743726600
+          "timestamp": 1743975000
         },
         "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
         },
         "teams": {
           "home": {
-            "id": 2807,
-            "name": "Deportivo Tachira FC",
-            "logo": "https://media.api-sports.io/football/teams/2807.png",
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
             "winner": null
           },
           "away": {
@@ -442,6 +442,301 @@
       },
       {
         "fixture": {
+          "id": 1351069,
+          "date": "2025-04-13T20:30:00+00:00",
+          "venue": {
+            "id": 241,
+            "name": "Arena do Grêmio",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744576200
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 130,
+            "name": "Gremio",
+            "logo": "https://media.api-sports.io/football/teams/130.png",
+            "winner": null
+          },
+          "away": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351073,
+          "date": "2025-04-17T00:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744849800
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          },
+          "away": {
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351084,
+          "date": "2025-04-19T21:30:00+00:00",
+          "venue": {
+            "id": 19377,
+            "name": "Estádio São Januário",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745098200
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": null
+          },
+          "away": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351093,
+          "date": "2025-04-27T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745780400
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          },
+          "away": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351108,
+          "date": "2025-05-04T21:30:00+00:00",
+          "venue": {
+            "id": 234,
+            "name": "Estádio Governador Magalhães Pinto",
+            "city": "Belo Horizonte, Minas Gerais"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746394200
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 135,
+            "name": "Cruzeiro",
+            "logo": "https://media.api-sports.io/football/teams/135.png",
+            "winner": null
+          },
+          "away": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1361963,
           "date": "2025-05-08T00:30:00+00:00",
           "venue": {
@@ -473,6 +768,65 @@
             "id": 127,
             "name": "Flamengo",
             "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351113,
+          "date": "2025-05-11T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746921600
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          },
+          "away": {
+            "id": 118,
+            "name": "Bahia",
+            "logo": "https://media.api-sports.io/football/teams/118.png",
             "winner": null
           }
         },
@@ -560,6 +914,124 @@
       },
       {
         "fixture": {
+          "id": 1351123,
+          "date": "2025-05-18T21:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747603800
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          },
+          "away": {
+            "id": 120,
+            "name": "Botafogo",
+            "logo": "https://media.api-sports.io/football/teams/120.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351135,
+          "date": "2025-05-25T19:00:00+00:00",
+          "venue": {
+            "id": 258,
+            "name": "Allianz Parque",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748199600
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 121,
+            "name": "Palmeiras",
+            "logo": "https://media.api-sports.io/football/teams/121.png",
+            "winner": null
+          },
+          "away": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1361994,
           "date": "2025-05-29T00:30:00+00:00",
           "venue": {
@@ -591,6 +1063,65 @@
             "id": 2807,
             "name": "Deportivo Tachira FC",
             "logo": "https://media.api-sports.io/football/teams/2807.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351143,
+          "date": "2025-06-01T21:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748813400
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          },
+          "away": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
             "winner": null
           }
         },
@@ -796,6 +1327,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1351043,
+          "date": "2025-03-30T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743292800
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360053,
@@ -1326,65 +1916,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1321212,
-          "date": "2025-02-02T19:00:00+00:00",
-          "venue": {
-            "id": 262,
-            "name": "Estádio Estadual Jornalista Edgar Augusto Proença",
-            "city": "Belém, Pará"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738522800
-        },
-        "league": {
-          "id": 632,
-          "name": "Supercopa do Brasil",
-          "logo": "https://media.api-sports.io/football/leagues/632.png"
-        },
-        "teams": {
-          "home": {
-            "id": 120,
-            "name": "Botafogo",
-            "logo": "https://media.api-sports.io/football/teams/120.png",
-            "winner": false
-          },
-          "away": {
-            "id": 127,
-            "name": "Flamengo",
-            "logo": "https://media.api-sports.io/football/teams/127.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1686,5 +2217,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:14.641Z"
+  "lastUpdated": "2025-04-01T14:59:12.266Z"
 }

@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1366038,
-          "date": "2025-03-28T12:00:00+00:00",
-          "venue": {
-            "id": 617,
-            "name": "Tammelan Stadion",
-            "city": "Tampere"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743163200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1163,
-            "name": "Ilves",
-            "logo": "https://media.api-sports.io/football/teams/1163.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2082,
-            "name": "Gnistan",
-            "logo": "https://media.api-sports.io/football/teams/2082.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1342666,
@@ -1366,9 +1307,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1342784,
+          "date": "2025-08-18T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Raatti Tekonurmi",
+            "city": "Oulu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755529200
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2077,
+            "name": "AC Oulu",
+            "logo": "https://media.api-sports.io/football/teams/2077.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1163,
+            "name": "Ilves",
+            "logo": "https://media.api-sports.io/football/teams/1163.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366038,
+          "date": "2025-03-28T12:00:00+00:00",
+          "venue": {
+            "id": 617,
+            "name": "Tammelan Stadion",
+            "city": "Tampere"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743163200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1163,
+            "name": "Ilves",
+            "logo": "https://media.api-sports.io/football/teams/1163.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2082,
+            "name": "Gnistan",
+            "logo": "https://media.api-sports.io/football/teams/2082.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1355242,
@@ -1899,65 +1958,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1301244,
-          "date": "2024-10-04T15:00:00+00:00",
-          "venue": {
-            "id": 19205,
-            "name": "Lemonsoft Stadion",
-            "city": "Vaasa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1728054000
-        },
-        "league": {
-          "id": 244,
-          "name": "Veikkausliiga",
-          "logo": "https://media.api-sports.io/football/leagues/244.png"
-        },
-        "teams": {
-          "home": {
-            "id": 650,
-            "name": "VPS",
-            "logo": "https://media.api-sports.io/football/teams/650.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1163,
-            "name": "Ilves",
-            "logo": "https://media.api-sports.io/football/teams/1163.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2254,5 +2254,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:55.961Z"
+  "lastUpdated": "2025-04-01T14:55:51.646Z"
 }

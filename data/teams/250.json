@@ -227,65 +227,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220295,
-          "date": "2025-03-29T15:00:00+00:00",
-          "venue": {
-            "id": 11913,
-            "name": "The SMISA Stadium",
-            "city": "Paisley"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743260400
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 251,
-            "name": "ST Mirren",
-            "logo": "https://media.api-sports.io/football/teams/251.png",
-            "winner": null
-          },
-          "away": {
-            "id": 250,
-            "name": "Kilmarnock",
-            "logo": "https://media.api-sports.io/football/teams/250.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220298,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -404,6 +345,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220295,
+          "date": "2025-03-29T15:00:00+00:00",
+          "venue": {
+            "id": 11913,
+            "name": "The SMISA Stadium",
+            "city": "Paisley"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743260400
+        },
+        "league": {
+          "id": 179,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/179.png"
+        },
+        "teams": {
+          "home": {
+            "id": 251,
+            "name": "ST Mirren",
+            "logo": "https://media.api-sports.io/football/teams/251.png",
+            "winner": true
+          },
+          "away": {
+            "id": 250,
+            "name": "Kilmarnock",
+            "logo": "https://media.api-sports.io/football/teams/250.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220287,
@@ -934,65 +934,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220239,
-          "date": "2025-01-05T15:00:00+00:00",
-          "venue": {
-            "id": 19215,
-            "name": "The BBSP Stadium Rugby Park",
-            "city": "Kilmarnock"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1736089200
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 250,
-            "name": "Kilmarnock",
-            "logo": "https://media.api-sports.io/football/teams/250.png",
-            "winner": false
-          },
-          "away": {
-            "id": 902,
-            "name": "Ross County",
-            "logo": "https://media.api-sports.io/football/teams/902.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1289,5 +1230,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:30.205Z"
+  "lastUpdated": "2025-04-01T14:54:24.266Z"
 }

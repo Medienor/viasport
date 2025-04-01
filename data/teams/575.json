@@ -151,65 +151,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360696,
-          "date": "2025-03-30T16:00:00+00:00",
-          "venue": {
-            "id": 19785,
-            "name": "OPAP Arena",
-            "city": "Athens"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743350400
-        },
-        "league": {
-          "id": 197,
-          "name": "Super League 1",
-          "logo": "https://media.api-sports.io/football/leagues/197.png"
-        },
-        "teams": {
-          "home": {
-            "id": 575,
-            "name": "AEK Athens FC",
-            "logo": "https://media.api-sports.io/football/teams/575.png",
-            "winner": null
-          },
-          "away": {
-            "id": 619,
-            "name": "PAOK",
-            "logo": "https://media.api-sports.io/football/teams/619.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1347942,
           "date": "2025-04-02T17:30:00+00:00",
           "venue": {
@@ -564,6 +505,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360696,
+          "date": "2025-03-30T16:00:00+00:00",
+          "venue": {
+            "id": 19785,
+            "name": "OPAP Arena",
+            "city": "Athens"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743350400
+        },
+        "league": {
+          "id": 197,
+          "name": "Super League 1",
+          "logo": "https://media.api-sports.io/football/leagues/197.png"
+        },
+        "teams": {
+          "home": {
+            "id": 575,
+            "name": "AEK Athens FC",
+            "logo": "https://media.api-sports.io/football/teams/575.png",
+            "winner": false
+          },
+          "away": {
+            "id": 619,
+            "name": "PAOK",
+            "logo": "https://media.api-sports.io/football/teams/619.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1250680,
@@ -1094,65 +1094,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1250622,
-          "date": "2025-01-12T18:30:00+00:00",
-          "venue": {
-            "id": 19785,
-            "name": "OPAP Arena",
-            "city": "Athens"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1736706600
-        },
-        "league": {
-          "id": 197,
-          "name": "Super League 1",
-          "logo": "https://media.api-sports.io/football/leagues/197.png"
-        },
-        "teams": {
-          "home": {
-            "id": 575,
-            "name": "AEK Athens FC",
-            "logo": "https://media.api-sports.io/football/teams/575.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2095,
-            "name": "Kallithea",
-            "logo": "https://media.api-sports.io/football/teams/2095.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1449,5 +1390,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:40.486Z"
+  "lastUpdated": "2025-04-01T14:55:36.211Z"
 }

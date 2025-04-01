@@ -115,65 +115,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1326309,
-          "date": "2025-03-29T23:30:00+00:00",
-          "venue": {
-            "id": 1612,
-            "name": "Toyota Stadium",
-            "city": "Frisco, Texas"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743291000
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1597,
-            "name": "FC Dallas",
-            "logo": "https://media.api-sports.io/football/teams/1597.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1611,
-            "name": "Sporting Kansas City",
-            "logo": "https://media.api-sports.io/football/teams/1611.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1326318,
           "date": "2025-04-05T23:30:00+00:00",
           "venue": {
@@ -1292,9 +1233,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1326599,
+          "date": "2025-08-17T00:30:00+00:00",
+          "venue": {
+            "id": 11535,
+            "name": "Q2 Stadium",
+            "city": "Austin, Texas"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755390600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16489,
+            "name": "Austin",
+            "logo": "https://media.api-sports.io/football/teams/16489.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1597,
+            "name": "FC Dallas",
+            "logo": "https://media.api-sports.io/football/teams/1597.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1326309,
+          "date": "2025-03-30T00:30:00+00:00",
+          "venue": {
+            "id": 1612,
+            "name": "Toyota Stadium",
+            "city": "Frisco, Texas"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743294600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1597,
+            "name": "FC Dallas",
+            "logo": "https://media.api-sports.io/football/teams/1597.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1326299,
@@ -1825,65 +1884,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1151241,
-          "date": "2024-10-20T01:00:00+00:00",
-          "venue": {
-            "id": 1612,
-            "name": "Toyota Stadium",
-            "city": "Frisco, Texas"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1729386000
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1597,
-            "name": "FC Dallas",
-            "logo": "https://media.api-sports.io/football/teams/1597.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1611,
-            "name": "Sporting Kansas City",
-            "logo": "https://media.api-sports.io/football/teams/1611.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1901,17 +1901,17 @@
       "name": "FC Dallas",
       "logo": "https://media.api-sports.io/football/teams/1597.png"
     },
-    "form": "WDLLW",
+    "form": "WDLLWW",
     "fixtures": {
       "played": {
-        "home": 2,
+        "home": 3,
         "away": 3,
-        "total": 5
+        "total": 6
       },
       "wins": {
-        "home": 0,
+        "home": 1,
         "away": 2,
-        "total": 2
+        "total": 3
       },
       "draws": {
         "home": 0,
@@ -1927,14 +1927,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 1,
+          "home": 3,
           "away": 6,
-          "total": 7
+          "total": 9
         },
         "average": {
-          "home": "0.5",
+          "home": "1.0",
           "away": "2.0",
-          "total": "1.4"
+          "total": "1.5"
         },
         "minute": {
           "0-15": {
@@ -1946,20 +1946,20 @@
             "percentage": null
           },
           "31-45": {
-            "total": 2,
-            "percentage": "28.57%"
+            "total": 4,
+            "percentage": "44.44%"
           },
           "46-60": {
             "total": 3,
-            "percentage": "42.86%"
+            "percentage": "33.33%"
           },
           "61-75": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "11.11%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "11.11%"
           },
           "91-105": {
             "total": null,
@@ -1972,66 +1972,66 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
+            "over": 5,
             "under": 1
           },
           "1.5": {
-            "over": 2,
+            "over": 3,
             "under": 3
           },
           "2.5": {
             "over": 1,
-            "under": 4
+            "under": 5
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
+          "home": 5,
           "away": 4,
-          "total": 8
+          "total": 9
         },
         "average": {
-          "home": "2.0",
+          "home": "1.7",
           "away": "1.3",
-          "total": "1.6"
+          "total": "1.5"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "11.11%"
           },
           "16-30": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "11.11%"
           },
           "31-45": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": 2,
+            "percentage": "22.22%"
           },
           "46-60": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "11.11%"
           },
           "61-75": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "11.11%"
           },
           "76-90": {
             "total": 2,
-            "percentage": "25.00%"
+            "percentage": "22.22%"
           },
           "91-105": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "11.11%"
           },
           "106-120": {
             "total": null,
@@ -2040,24 +2040,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
+            "over": 5,
             "under": 1
           },
           "1.5": {
             "over": 2,
-            "under": 3
+            "under": 4
           },
           "2.5": {
             "over": 2,
-            "under": 3
+            "under": 4
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           }
         }
       }
@@ -2069,7 +2069,7 @@
         "loses": 2
       },
       "wins": {
-        "home": null,
+        "home": "2-1",
         "away": "1-2"
       },
       "loses": {
@@ -2078,7 +2078,7 @@
       },
       "goals": {
         "for": {
-          "home": 1,
+          "home": 2,
           "away": 3
         },
         "against": {
@@ -2103,10 +2103,10 @@
         "percentage": "0%"
       },
       "missed": {
-        "total": 1,
+        "total": 2,
         "percentage": "100.00%"
       },
-      "total": 1
+      "total": 2
     },
     "lineups": [
       {
@@ -2115,6 +2115,10 @@
       },
       {
         "formation": "4-3-1-2",
+        "played": 1
+      },
+      {
+        "formation": "4-3-2-1",
         "played": 1
       }
     ],
@@ -2125,28 +2129,28 @@
           "percentage": null
         },
         "16-30": {
-          "total": 2,
-          "percentage": "16.67%"
+          "total": 3,
+          "percentage": "21.43%"
         },
         "31-45": {
           "total": 1,
-          "percentage": "8.33%"
+          "percentage": "7.14%"
         },
         "46-60": {
           "total": 1,
-          "percentage": "8.33%"
+          "percentage": "7.14%"
         },
         "61-75": {
-          "total": 3,
-          "percentage": "25.00%"
+          "total": 4,
+          "percentage": "28.57%"
         },
         "76-90": {
           "total": 3,
-          "percentage": "25.00%"
+          "percentage": "21.43%"
         },
         "91-105": {
           "total": 2,
-          "percentage": "16.67%"
+          "percentage": "14.29%"
         },
         "106-120": {
           "total": null,
@@ -2189,5 +2193,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:47.329Z"
+  "lastUpdated": "2025-04-01T14:59:45.897Z"
 }

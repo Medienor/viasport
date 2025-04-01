@@ -190,65 +190,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220291,
-          "date": "2025-03-29T15:00:00+00:00",
-          "venue": {
-            "id": 1386,
-            "name": "Celtic Park",
-            "city": "Glasgow"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743260400
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 247,
-            "name": "Celtic",
-            "logo": "https://media.api-sports.io/football/teams/247.png",
-            "winner": null
-          },
-          "away": {
-            "id": 254,
-            "name": "Heart Of Midlothian",
-            "logo": "https://media.api-sports.io/football/teams/254.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220301,
           "date": "2025-04-06T11:00:00+00:00",
           "venue": {
@@ -367,6 +308,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220291,
+          "date": "2025-03-29T15:00:00+00:00",
+          "venue": {
+            "id": 1386,
+            "name": "Celtic Park",
+            "city": "Glasgow"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743260400
+        },
+        "league": {
+          "id": 179,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/179.png"
+        },
+        "teams": {
+          "home": {
+            "id": 247,
+            "name": "Celtic",
+            "logo": "https://media.api-sports.io/football/teams/247.png",
+            "winner": true
+          },
+          "away": {
+            "id": 254,
+            "name": "Heart Of Midlothian",
+            "logo": "https://media.api-sports.io/football/teams/254.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220284,
@@ -897,65 +897,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220249,
-          "date": "2025-02-05T19:45:00+00:00",
-          "venue": {
-            "id": 1386,
-            "name": "Celtic Park",
-            "city": "Glasgow"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738784700
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 247,
-            "name": "Celtic",
-            "logo": "https://media.api-sports.io/football/teams/247.png",
-            "winner": true
-          },
-          "away": {
-            "id": 253,
-            "name": "Dundee",
-            "logo": "https://media.api-sports.io/football/teams/253.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 6,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 6,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1252,5 +1193,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:30.135Z"
+  "lastUpdated": "2025-04-01T14:54:24.310Z"
 }

@@ -190,65 +190,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361668,
-          "date": "2025-03-30T12:30:00+00:00",
-          "venue": {
-            "id": 1761,
-            "name": "Lavanttal Arena",
-            "city": "Wolfsberg"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743337800
-        },
-        "league": {
-          "id": 218,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/218.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1025,
-            "name": "Wolfsberger AC",
-            "logo": "https://media.api-sports.io/football/teams/1025.png",
-            "winner": null
-          },
-          "away": {
-            "id": 637,
-            "name": "Sturm Graz",
-            "logo": "https://media.api-sports.io/football/teams/637.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361671,
           "date": "2025-04-04T17:30:00+00:00",
           "venue": {
@@ -370,9 +311,9 @@
           "id": 1361678,
           "date": "2025-04-20T12:30:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 150,
+            "name": "Merkur Arena",
+            "city": "Graz"
           },
           "status": {
             "long": "Not Started",
@@ -780,6 +721,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361668,
+          "date": "2025-03-30T12:30:00+00:00",
+          "venue": {
+            "id": 1761,
+            "name": "Lavanttal Arena",
+            "city": "Wolfsberg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743337800
+        },
+        "league": {
+          "id": 218,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/218.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1025,
+            "name": "Wolfsberger AC",
+            "logo": "https://media.api-sports.io/football/teams/1025.png",
+            "winner": null
+          },
+          "away": {
+            "id": 637,
+            "name": "Sturm Graz",
+            "logo": "https://media.api-sports.io/football/teams/637.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365894,
@@ -1310,65 +1310,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299092,
-          "date": "2025-01-21T17:45:00+00:00",
-          "venue": {
-            "id": 879,
-            "name": "Gewiss Stadium",
-            "city": "Bergamo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737481500
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 499,
-            "name": "Atalanta",
-            "logo": "https://media.api-sports.io/football/teams/499.png",
-            "winner": true
-          },
-          "away": {
-            "id": 637,
-            "name": "Sturm Graz",
-            "logo": "https://media.api-sports.io/football/teams/637.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1665,5 +1606,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:05.440Z"
+  "lastUpdated": "2025-04-01T14:55:00.193Z"
 }

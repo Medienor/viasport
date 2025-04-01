@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360697,
-          "date": "2025-03-30T18:00:00+00:00",
-          "venue": {
-            "id": 775,
-            "name": "Stadio Georgios Karaiskáki",
-            "city": "Piraeus"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743357600
-        },
-        "league": {
-          "id": 197,
-          "name": "Super League 1",
-          "logo": "https://media.api-sports.io/football/leagues/197.png"
-        },
-        "teams": {
-          "home": {
-            "id": 553,
-            "name": "Olympiakos Piraeus",
-            "logo": "https://media.api-sports.io/football/teams/553.png",
-            "winner": null
-          },
-          "away": {
-            "id": 617,
-            "name": "Panathinaikos",
-            "logo": "https://media.api-sports.io/football/teams/617.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1347942,
           "date": "2025-04-02T17:30:00+00:00",
           "venue": {
@@ -565,6 +506,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360697,
+          "date": "2025-03-30T18:00:00+00:00",
+          "venue": {
+            "id": 775,
+            "name": "Stadio Georgios Karaiskáki",
+            "city": "Piraeus"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743357600
+        },
+        "league": {
+          "id": 197,
+          "name": "Super League 1",
+          "logo": "https://media.api-sports.io/football/leagues/197.png"
+        },
+        "teams": {
+          "home": {
+            "id": 553,
+            "name": "Olympiakos Piraeus",
+            "logo": "https://media.api-sports.io/football/teams/553.png",
+            "winner": true
+          },
+          "away": {
+            "id": 617,
+            "name": "Panathinaikos",
+            "logo": "https://media.api-sports.io/football/teams/617.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1353197,
@@ -1095,65 +1095,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1250645,
-          "date": "2025-02-02T14:30:00+00:00",
-          "venue": {
-            "id": 773,
-            "name": "Stadio Levadias",
-            "city": "Levadia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738506600
-        },
-        "league": {
-          "id": 197,
-          "name": "Super League 1",
-          "logo": "https://media.api-sports.io/football/leagues/197.png"
-        },
-        "teams": {
-          "home": {
-            "id": 957,
-            "name": "Levadiakos",
-            "logo": "https://media.api-sports.io/football/teams/957.png",
-            "winner": false
-          },
-          "away": {
-            "id": 553,
-            "name": "Olympiakos Piraeus",
-            "logo": "https://media.api-sports.io/football/teams/553.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1450,5 +1391,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:22.922Z"
+  "lastUpdated": "2025-04-01T14:55:18.049Z"
 }

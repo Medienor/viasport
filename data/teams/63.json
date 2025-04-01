@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-02",
-          "end": "2025-03-29",
+          "end": "2025-04-26",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1216303,
-          "date": "2025-03-29T15:00:00+00:00",
-          "venue": {
-            "id": 546,
-            "name": "Elland Road",
-            "city": "Leeds, West Yorkshire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743260400
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 63,
-            "name": "Leeds",
-            "logo": "https://media.api-sports.io/football/teams/63.png",
-            "winner": null
-          },
-          "away": {
-            "id": 76,
-            "name": "Swansea",
-            "logo": "https://media.api-sports.io/football/teams/76.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1216314,
@@ -624,6 +565,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216303,
+          "date": "2025-03-29T15:00:00+00:00",
+          "venue": {
+            "id": 546,
+            "name": "Elland Road",
+            "city": "Leeds, West Yorkshire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743260400
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 63,
+            "name": "Leeds",
+            "logo": "https://media.api-sports.io/football/teams/63.png",
+            "winner": null
+          },
+          "away": {
+            "id": 76,
+            "name": "Swansea",
+            "logo": "https://media.api-sports.io/football/teams/76.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216295,
@@ -1154,65 +1154,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216194,
-          "date": "2025-02-01T15:00:00+00:00",
-          "venue": {
-            "id": 546,
-            "name": "Elland Road",
-            "city": "Leeds, West Yorkshire"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738422000
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 63,
-            "name": "Leeds",
-            "logo": "https://media.api-sports.io/football/teams/63.png",
-            "winner": true
-          },
-          "away": {
-            "id": 43,
-            "name": "Cardiff",
-            "logo": "https://media.api-sports.io/football/teams/43.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 7,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 7,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1509,5 +1450,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:22.755Z"
+  "lastUpdated": "2025-04-01T14:54:16.689Z"
 }

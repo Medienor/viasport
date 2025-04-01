@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -147,67 +147,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1353231,
-          "date": "2025-03-28T15:45:00+00:00",
-          "venue": {
-            "id": 1738,
-            "name": "Imam Khomeini Stadium",
-            "city": "Arak"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743176700
-        },
-        "league": {
-          "id": 290,
-          "name": "Persian Gulf Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/290.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2703,
-            "name": "Aluminium Arak",
-            "logo": "https://media.api-sports.io/football/teams/2703.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2737,
-            "name": "Tractor Sazi",
-            "logo": "https://media.api-sports.io/football/teams/2737.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1353236,
-          "date": "2025-04-02T15:15:00+00:00",
+          "date": "2025-04-03T15:15:00+00:00",
           "venue": {
             "id": 21440,
             "name": "Yadegar-e-Imam Stadium",
@@ -219,7 +160,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743606900
+          "timestamp": 1743693300
         },
         "league": {
           "id": 290,
@@ -266,7 +207,7 @@
       {
         "fixture": {
           "id": 1361643,
-          "date": "2025-04-10T14:15:00+00:00",
+          "date": "2025-04-11T14:15:00+00:00",
           "venue": {
             "id": 2754,
             "name": "Nasiri Stadium",
@@ -278,7 +219,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744294500
+          "timestamp": 1744380900
         },
         "league": {
           "id": 290,
@@ -325,7 +266,7 @@
       {
         "fixture": {
           "id": 1362299,
-          "date": "2025-04-17T13:30:00+00:00",
+          "date": "2025-04-18T13:30:00+00:00",
           "venue": {
             "id": 21440,
             "name": "Yadegar-e-Imam Stadium",
@@ -337,7 +278,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744896600
+          "timestamp": 1744983000
         },
         "league": {
           "id": 290,
@@ -384,7 +325,7 @@
       {
         "fixture": {
           "id": 1352892,
-          "date": "2025-04-24T16:00:00+00:00",
+          "date": "2025-04-25T16:00:00+00:00",
           "venue": {
             "id": 20462,
             "name": "Foolad Sport Complex",
@@ -396,7 +337,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745510400
+          "timestamp": 1745596800
         },
         "league": {
           "id": 290,
@@ -442,6 +383,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1353231,
+          "date": "2025-03-29T15:45:00+00:00",
+          "venue": {
+            "id": 1738,
+            "name": "Imam Khomeini Stadium",
+            "city": "Arak"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743263100
+        },
+        "league": {
+          "id": 290,
+          "name": "Persian Gulf Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/290.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2703,
+            "name": "Aluminium Arak",
+            "logo": "https://media.api-sports.io/football/teams/2703.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2737,
+            "name": "Tractor Sazi",
+            "logo": "https://media.api-sports.io/football/teams/2737.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1353227,
@@ -972,65 +972,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1327825,
-          "date": "2025-01-21T11:30:00+00:00",
-          "venue": {
-            "id": 21440,
-            "name": "Yadegar-e-Imam Stadium",
-            "city": "Tabriz"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1737459000
-        },
-        "league": {
-          "id": 290,
-          "name": "Persian Gulf Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/290.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2737,
-            "name": "Tractor Sazi",
-            "logo": "https://media.api-sports.io/football/teams/2737.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2706,
-            "name": "Mes Rafsanjan",
-            "logo": "https://media.api-sports.io/football/teams/2706.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1327,5 +1268,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:41:57.048Z"
+  "lastUpdated": "2025-04-01T14:58:54.628Z"
 }

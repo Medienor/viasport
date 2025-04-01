@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -112,65 +112,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1238103,
-          "date": "2025-03-28T13:00:00+00:00",
-          "venue": {
-            "id": 19220,
-            "name": "Corendon Airlines Park",
-            "city": "Antalya"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743166800
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1005,
-            "name": "Antalyaspor",
-            "logo": "https://media.api-sports.io/football/teams/1005.png",
-            "winner": null
-          },
-          "away": {
-            "id": 996,
-            "name": "Alanyaspor",
-            "logo": "https://media.api-sports.io/football/teams/996.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1238116,
@@ -229,9 +170,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1238134,
+          "date": "2025-04-19T22:00:00+00:00",
+          "venue": {
+            "id": 19219,
+            "name": "GAIN Park Stadium",
+            "city": "Antalya"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745100000
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 996,
+            "name": "Alanyaspor",
+            "logo": "https://media.api-sports.io/football/teams/996.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3603,
+            "name": "Samsunspor",
+            "logo": "https://media.api-sports.io/football/teams/3603.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238103,
+          "date": "2025-03-28T13:00:00+00:00",
+          "venue": {
+            "id": 19220,
+            "name": "Corendon Airlines Park",
+            "city": "Antalya"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743166800
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1005,
+            "name": "Antalyaspor",
+            "logo": "https://media.api-sports.io/football/teams/1005.png",
+            "winner": true
+          },
+          "away": {
+            "id": 996,
+            "name": "Alanyaspor",
+            "logo": "https://media.api-sports.io/football/teams/996.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238099,
@@ -762,65 +821,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1238032,
-          "date": "2025-01-25T13:00:00+00:00",
-          "venue": {
-            "id": 21379,
-            "name": "GAIN Park Stadium",
-            "city": "Antalya"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1737810000
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 996,
-            "name": "Alanyaspor",
-            "logo": "https://media.api-sports.io/football/teams/996.png",
-            "winner": true
-          },
-          "away": {
-            "id": 564,
-            "name": "Istanbul Basaksehir",
-            "logo": "https://media.api-sports.io/football/teams/564.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1117,5 +1117,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:39:56.992Z"
+  "lastUpdated": "2025-04-01T14:56:53.207Z"
 }

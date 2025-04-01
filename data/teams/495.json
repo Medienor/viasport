@@ -116,65 +116,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223890,
-          "date": "2025-03-29T17:00:00+00:00",
-          "venue": {
-            "id": 909,
-            "name": "Allianz Stadium",
-            "city": "Torino"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743267600
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 496,
-            "name": "Juventus",
-            "logo": "https://media.api-sports.io/football/teams/496.png",
-            "winner": null
-          },
-          "away": {
-            "id": 495,
-            "name": "Genoa",
-            "logo": "https://media.api-sports.io/football/teams/495.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223898,
           "date": "2025-04-04T18:45:00+00:00",
           "venue": {
@@ -647,6 +588,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1223890,
+          "date": "2025-03-29T17:00:00+00:00",
+          "venue": {
+            "id": 909,
+            "name": "Allianz Stadium",
+            "city": "Torino"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743267600
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 496,
+            "name": "Juventus",
+            "logo": "https://media.api-sports.io/football/teams/496.png",
+            "winner": true
+          },
+          "away": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media.api-sports.io/football/teams/495.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1223878,
@@ -1177,65 +1177,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1223787,
-          "date": "2025-01-12T11:30:00+00:00",
-          "venue": {
-            "id": 905,
-            "name": "Stadio Comunale Luigi Ferraris",
-            "city": "Genova"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1736681400
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 495,
-            "name": "Genoa",
-            "logo": "https://media.api-sports.io/football/teams/495.png",
-            "winner": true
-          },
-          "away": {
-            "id": 523,
-            "name": "Parma",
-            "logo": "https://media.api-sports.io/football/teams/523.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1532,5 +1473,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:16.939Z"
+  "lastUpdated": "2025-04-01T14:53:09.110Z"
 }

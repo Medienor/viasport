@@ -185,65 +185,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360213,
-          "date": "2025-03-29T17:15:00+00:00",
-          "venue": {
-            "id": 868,
-            "name": "Sammy Ofer Stadium",
-            "city": "Haifa"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743268500
-        },
-        "league": {
-          "id": 383,
-          "name": "Ligat Ha'al",
-          "logo": "https://media.api-sports.io/football/leagues/383.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2253,
-            "name": "Hapoel Haifa",
-            "logo": "https://media.api-sports.io/football/teams/2253.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4195,
-            "name": "Maccabi Haifa",
-            "logo": "https://media.api-sports.io/football/teams/4195.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1360216,
           "date": "2025-04-07T17:30:00+00:00",
           "venue": {
@@ -539,6 +480,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360213,
+          "date": "2025-03-29T17:15:00+00:00",
+          "venue": {
+            "id": 868,
+            "name": "Sammy Ofer Stadium",
+            "city": "Haifa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743268500
+        },
+        "league": {
+          "id": 383,
+          "name": "Ligat Ha'al",
+          "logo": "https://media.api-sports.io/football/leagues/383.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2253,
+            "name": "Hapoel Haifa",
+            "logo": "https://media.api-sports.io/football/teams/2253.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4195,
+            "name": "Maccabi Haifa",
+            "logo": "https://media.api-sports.io/football/teams/4195.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360211,
@@ -1069,65 +1069,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1215017,
-          "date": "2025-01-18T15:30:00+00:00",
-          "venue": {
-            "id": 3403,
-            "name": "Acre Municipal Stadium",
-            "city": "Accre"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1737214200
-        },
-        "league": {
-          "id": 383,
-          "name": "Ligat Ha'al",
-          "logo": "https://media.api-sports.io/football/leagues/383.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4481,
-            "name": "Bnei Sakhnin",
-            "logo": "https://media.api-sports.io/football/teams/4481.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4195,
-            "name": "Maccabi Haifa",
-            "logo": "https://media.api-sports.io/football/teams/4195.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1424,5 +1365,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:39:13.635Z"
+  "lastUpdated": "2025-04-01T14:56:09.677Z"
 }

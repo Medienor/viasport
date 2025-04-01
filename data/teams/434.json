@@ -188,65 +188,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334434,
-          "date": "2025-03-30T20:30:00+00:00",
-          "venue": {
-            "id": 77,
-            "name": "Estadio Juan Carmelo Zerillo",
-            "city": "La Plata, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743366600
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 434,
-            "name": "Gimnasia L.P.",
-            "logo": "https://media.api-sports.io/football/teams/434.png",
-            "winner": null
-          },
-          "away": {
-            "id": 474,
-            "name": "Sarmiento Junin",
-            "logo": "https://media.api-sports.io/football/teams/474.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334455,
           "date": "2025-04-05T21:00:00+00:00",
           "venue": {
@@ -483,6 +424,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334434,
+          "date": "2025-03-30T19:00:00+00:00",
+          "venue": {
+            "id": 77,
+            "name": "Estadio Juan Carmelo Zerillo",
+            "city": "La Plata, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743361200
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 434,
+            "name": "Gimnasia L.P.",
+            "logo": "https://media.api-sports.io/football/teams/434.png",
+            "winner": null
+          },
+          "away": {
+            "id": 474,
+            "name": "Sarmiento Junin",
+            "logo": "https://media.api-sports.io/football/teams/474.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334416,
@@ -1013,65 +1013,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334299,
-          "date": "2025-01-29T20:00:00+00:00",
-          "venue": {
-            "id": 77,
-            "name": "Estadio Juan Carmelo Zerillo",
-            "city": "La Plata, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738180800
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 434,
-            "name": "Gimnasia L.P.",
-            "logo": "https://media.api-sports.io/football/teams/434.png",
-            "winner": false
-          },
-          "away": {
-            "id": 460,
-            "name": "San Lorenzo",
-            "logo": "https://media.api-sports.io/football/teams/460.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1368,5 +1309,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:35.101Z"
+  "lastUpdated": "2025-04-01T14:54:29.307Z"
 }

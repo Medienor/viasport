@@ -225,65 +225,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334431,
-          "date": "2025-03-27T18:30:00+00:00",
-          "venue": {
-            "id": 33,
-            "name": "Estadio José María Minella",
-            "city": "Mar del Plata, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743100200
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 463,
-            "name": "Aldosivi",
-            "logo": "https://media.api-sports.io/football/teams/463.png",
-            "winner": null
-          },
-          "away": {
-            "id": 441,
-            "name": "Union Santa Fe",
-            "logo": "https://media.api-sports.io/football/teams/441.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362101,
           "date": "2025-04-01T22:00:00+00:00",
           "venue": {
@@ -492,6 +433,65 @@
             "id": 441,
             "name": "Union Santa Fe",
             "logo": "https://media.api-sports.io/football/teams/441.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1334475,
+          "date": "2025-04-19T00:30:00+00:00",
+          "venue": {
+            "id": 1933,
+            "name": "Estadio 15 de Abril",
+            "city": "Ciudad de Santa Fe, Provincia de Santa Fe"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745022600
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 441,
+            "name": "Union Santa Fe",
+            "logo": "https://media.api-sports.io/football/teams/441.png",
+            "winner": null
+          },
+          "away": {
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
             "winner": null
           }
         },
@@ -815,6 +815,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334431,
+          "date": "2025-03-27T18:30:00+00:00",
+          "venue": {
+            "id": 33,
+            "name": "Estadio José María Minella",
+            "city": "Mar del Plata, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743100200
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 463,
+            "name": "Aldosivi",
+            "logo": "https://media.api-sports.io/football/teams/463.png",
+            "winner": true
+          },
+          "away": {
+            "id": 441,
+            "name": "Union Santa Fe",
+            "logo": "https://media.api-sports.io/football/teams/441.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334378,
@@ -1345,65 +1404,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334301,
-          "date": "2025-01-29T22:15:00+00:00",
-          "venue": {
-            "id": 1933,
-            "name": "Estadio 15 de Abril",
-            "city": "Ciudad de Santa Fe, Provincia de Santa Fe"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738188900
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 441,
-            "name": "Union Santa Fe",
-            "logo": "https://media.api-sports.io/football/teams/441.png",
-            "winner": null
-          },
-          "away": {
-            "id": 451,
-            "name": "Boca Juniors",
-            "logo": "https://media.api-sports.io/football/teams/451.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1700,5 +1700,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:40.169Z"
+  "lastUpdated": "2025-04-01T14:54:34.580Z"
 }

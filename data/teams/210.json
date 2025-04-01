@@ -154,65 +154,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213675,
-          "date": "2025-03-30T10:15:00+00:00",
-          "venue": {
-            "id": 1154,
-            "name": "Stadion Galgenwaard",
-            "city": "Utrecht"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743329700
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 207,
-            "name": "Utrecht",
-            "logo": "https://media.api-sports.io/football/teams/207.png",
-            "winner": null
-          },
-          "away": {
-            "id": 210,
-            "name": "Heerenveen",
-            "logo": "https://media.api-sports.io/football/teams/210.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213691,
           "date": "2025-04-04T18:00:00+00:00",
           "venue": {
@@ -626,6 +567,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213675,
+          "date": "2025-03-30T10:15:00+00:00",
+          "venue": {
+            "id": 1154,
+            "name": "Stadion Galgenwaard",
+            "city": "Utrecht"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743329700
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 207,
+            "name": "Utrecht",
+            "logo": "https://media.api-sports.io/football/teams/207.png",
+            "winner": true
+          },
+          "away": {
+            "id": 210,
+            "name": "Heerenveen",
+            "logo": "https://media.api-sports.io/football/teams/210.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213673,
@@ -1156,65 +1156,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1333107,
-          "date": "2025-01-06T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Oliva Nova Golf & Beach Resort Campo 1",
-            "city": "Oliva"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1736121600
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 185,
-            "name": "SC Paderborn 07",
-            "logo": "https://media.api-sports.io/football/teams/185.png",
-            "winner": null
-          },
-          "away": {
-            "id": 210,
-            "name": "Heerenveen",
-            "logo": "https://media.api-sports.io/football/teams/210.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1511,5 +1452,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:07.676Z"
+  "lastUpdated": "2025-04-01T14:54:01.101Z"
 }

@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213680,
-          "date": "2025-03-29T15:30:00+00:00",
-          "venue": {
-            "id": 1139,
-            "name": "Rat Verlegh Stadion",
-            "city": "Breda"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743262200
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 203,
-            "name": "NAC Breda",
-            "logo": "https://media.api-sports.io/football/teams/203.png",
-            "winner": null
-          },
-          "away": {
-            "id": 202,
-            "name": "Groningen",
-            "logo": "https://media.api-sports.io/football/teams/202.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213684,
           "date": "2025-04-06T14:45:00+00:00",
           "venue": {
@@ -566,6 +507,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213680,
+          "date": "2025-03-29T15:30:00+00:00",
+          "venue": {
+            "id": 1139,
+            "name": "Rat Verlegh Stadion",
+            "city": "Breda"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1743262200
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 203,
+            "name": "NAC Breda",
+            "logo": "https://media.api-sports.io/football/teams/203.png",
+            "winner": null
+          },
+          "away": {
+            "id": 202,
+            "name": "Groningen",
+            "logo": "https://media.api-sports.io/football/teams/202.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365872,
@@ -1096,65 +1096,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213600,
-          "date": "2025-01-12T15:45:00+00:00",
-          "venue": {
-            "id": 1139,
-            "name": "Rat Verlegh Stadion",
-            "city": "Breda"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1736696700
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 203,
-            "name": "NAC Breda",
-            "logo": "https://media.api-sports.io/football/teams/203.png",
-            "winner": false
-          },
-          "away": {
-            "id": 210,
-            "name": "Heerenveen",
-            "logo": "https://media.api-sports.io/football/teams/210.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1451,5 +1392,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:05.241Z"
+  "lastUpdated": "2025-04-01T14:53:58.497Z"
 }

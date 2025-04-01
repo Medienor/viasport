@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -261,65 +261,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1278773,
-          "date": "2025-03-29T19:30:00+00:00",
-          "venue": {
-            "id": 30,
-            "name": "Centre d'Entrenament de la FAF 1",
-            "city": "Santa Coloma"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743276600
-        },
-        "league": {
-          "id": 312,
-          "name": "1a Divisió",
-          "logo": "https://media.api-sports.io/football/leagues/312.png"
-        },
-        "teams": {
-          "home": {
-            "id": 703,
-            "name": "UE Santa Coloma",
-            "logo": "https://media.api-sports.io/football/teams/703.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3342,
-            "name": "Inter Club d'Escaldes",
-            "logo": "https://media.api-sports.io/football/teams/3342.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1278779,
@@ -617,6 +558,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1278773,
+          "date": "2025-03-29T19:30:00+00:00",
+          "venue": {
+            "id": 30,
+            "name": "Centre d'Entrenament de la FAF 1",
+            "city": "Santa Coloma"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743276600
+        },
+        "league": {
+          "id": 312,
+          "name": "1a Divisió",
+          "logo": "https://media.api-sports.io/football/leagues/312.png"
+        },
+        "teams": {
+          "home": {
+            "id": 703,
+            "name": "UE Santa Coloma",
+            "logo": "https://media.api-sports.io/football/teams/703.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3342,
+            "name": "Inter Club d'Escaldes",
+            "logo": "https://media.api-sports.io/football/teams/3342.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334942,
@@ -1147,65 +1147,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1318064,
-          "date": "2025-01-11T19:30:00+00:00",
-          "venue": {
-            "id": 30,
-            "name": "Centre d'Entrenament de la FAF 1",
-            "city": "Santa Coloma"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 2
-          },
-          "timestamp": 1736623800
-        },
-        "league": {
-          "id": 655,
-          "name": "Copa Constitució",
-          "logo": "https://media.api-sports.io/football/leagues/655.png"
-        },
-        "teams": {
-          "home": {
-            "id": 703,
-            "name": "UE Santa Coloma",
-            "logo": "https://media.api-sports.io/football/teams/703.png",
-            "winner": true
-          },
-          "away": {
-            "id": 24515,
-            "name": "City Escaldes",
-            "logo": "https://media.api-sports.io/football/teams/24515.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1502,5 +1443,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:12.945Z"
+  "lastUpdated": "2025-04-01T14:55:07.718Z"
 }

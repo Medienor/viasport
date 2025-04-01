@@ -220,67 +220,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1335614,
-          "date": "2025-03-29T15:30:00+00:00",
-          "venue": {
-            "id": 18680,
-            "name": "Stadion Mitar Mićo Goliš",
-            "city": "Petrovac na Moru"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743262200
-        },
-        "league": {
-          "id": 355,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/355.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3741,
-            "name": "Petrovac",
-            "logo": "https://media.api-sports.io/football/teams/3741.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3745,
-            "name": "Dečić",
-            "logo": "https://media.api-sports.io/football/teams/3745.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1335623,
-          "date": "2025-04-02T14:00:00+00:00",
+          "date": "2025-04-02T16:30:00+00:00",
           "venue": {
             "id": 1096,
             "name": "Stadion FK Mladost",
@@ -292,7 +233,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743602400
+          "timestamp": 1743611400
         },
         "league": {
           "id": 355,
@@ -339,7 +280,7 @@
       {
         "fixture": {
           "id": 1335625,
-          "date": "2025-04-06T14:00:00+00:00",
+          "date": "2025-04-06T13:00:00+00:00",
           "venue": {
             "id": 1096,
             "name": "Stadion FK Mladost",
@@ -351,7 +292,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743948000
+          "timestamp": 1743944400
         },
         "league": {
           "id": 355,
@@ -869,6 +810,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1335614,
+          "date": "2025-03-29T15:30:00+00:00",
+          "venue": {
+            "id": 18680,
+            "name": "Stadion Mitar Mićo Goliš",
+            "city": "Petrovac na Moru"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743262200
+        },
+        "league": {
+          "id": 355,
+          "name": "First League",
+          "logo": "https://media.api-sports.io/football/leagues/355.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3741,
+            "name": "Petrovac",
+            "logo": "https://media.api-sports.io/football/teams/3741.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3745,
+            "name": "Dečić",
+            "logo": "https://media.api-sports.io/football/teams/3745.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1335591,
@@ -1399,65 +1399,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1223501,
-          "date": "2024-11-10T13:30:00+00:00",
-          "venue": {
-            "id": 2527,
-            "name": "Stadion Tuško Polje",
-            "city": "Tuzi"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1731245400
-        },
-        "league": {
-          "id": 355,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/355.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3745,
-            "name": "Dečić",
-            "logo": "https://media.api-sports.io/football/teams/3745.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3747,
-            "name": "Jedinstvo",
-            "logo": "https://media.api-sports.io/football/teams/3747.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1754,5 +1695,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:15.436Z"
+  "lastUpdated": "2025-04-01T14:55:10.298Z"
 }

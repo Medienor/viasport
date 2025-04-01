@@ -77,7 +77,7 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
+              "events": true,
               "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
@@ -90,6 +90,43 @@
             "injuries": false,
             "predictions": true,
             "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 105,
+        "name": "NM Cupen",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/105.png"
+      },
+      "country": {
+        "name": "Norway",
+        "code": "NO",
+        "flag": "https://media.api-sports.io/flags/no.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-26",
+          "end": "2025-04-13",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
           }
         }
       ]
@@ -1643,5 +1680,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:35:46.324Z"
+  "lastUpdated": "2025-04-01T14:52:38.454Z"
 }

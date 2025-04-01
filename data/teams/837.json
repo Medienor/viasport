@@ -111,65 +111,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1340919,
-          "date": "2025-03-29T07:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "TEDA Football Stadium",
-            "city": "Tianjin"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743233400
-        },
-        "league": {
-          "id": 169,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/169.png"
-        },
-        "teams": {
-          "home": {
-            "id": 837,
-            "name": "Tianjin Teda",
-            "logo": "https://media.api-sports.io/football/teams/837.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1431,
-            "name": "Qingdao Jonoon",
-            "logo": "https://media.api-sports.io/football/teams/1431.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1340929,
           "date": "2025-04-02T11:35:00+00:00",
           "venue": {
@@ -1288,15 +1229,133 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1341076,
+          "date": "2025-08-30T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Huanglong Sports Centre",
+            "city": "Hangzhou"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756551600
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 848,
+            "name": "Hangzhou Greentown",
+            "logo": "https://media.api-sports.io/football/teams/848.png",
+            "winner": null
+          },
+          "away": {
+            "id": 837,
+            "name": "Tianjin Teda",
+            "logo": "https://media.api-sports.io/football/teams/837.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
       {
         "fixture": {
+          "id": 1340919,
+          "date": "2025-03-29T07:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "TEDA Football Stadium",
+            "city": "Tianjin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743233400
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 837,
+            "name": "Tianjin Teda",
+            "logo": "https://media.api-sports.io/football/teams/837.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1431,
+            "name": "Qingdao Jonoon",
+            "logo": "https://media.api-sports.io/football/teams/1431.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1340914,
           "date": "2025-03-02T10:30:00+00:00",
           "venue": {
-            "id": null,
+            "id": 21696,
             "name": "Wuliangye Sports Center Stadium",
             "city": "Chengdu"
           },
@@ -1821,65 +1880,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1251015,
-          "date": "2024-08-22T11:35:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "SAIC Motor Pudong Arena",
-            "city": "Shanghai"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1724326500
-        },
-        "league": {
-          "id": 171,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/171.png"
-        },
-        "teams": {
-          "home": {
-            "id": 836,
-            "name": "SHANGHAI SIPG",
-            "logo": "https://media.api-sports.io/football/teams/836.png",
-            "winner": true
-          },
-          "away": {
-            "id": 837,
-            "name": "Tianjin Teda",
-            "logo": "https://media.api-sports.io/football/teams/837.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1897,17 +1897,17 @@
       "name": "Tianjin Teda",
       "logo": "https://media.api-sports.io/football/teams/837.png"
     },
-    "form": "DW",
+    "form": "DWW",
     "fixtures": {
       "played": {
+        "home": 2,
+        "away": 1,
+        "total": 3
+      },
+      "wins": {
         "home": 1,
         "away": 1,
         "total": 2
-      },
-      "wins": {
-        "home": 0,
-        "away": 1,
-        "total": 1
       },
       "draws": {
         "home": 1,
@@ -1923,23 +1923,23 @@
     "goals": {
       "for": {
         "total": {
-          "home": 2,
+          "home": 3,
           "away": 2,
-          "total": 4
+          "total": 5
         },
         "average": {
-          "home": "2.0",
+          "home": "1.5",
           "away": "2.0",
-          "total": "2.0"
+          "total": "1.7"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "25.00%"
+            "percentage": "20.00%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "31-45": {
             "total": null,
@@ -1947,7 +1947,7 @@
           },
           "46-60": {
             "total": 1,
-            "percentage": "25.00%"
+            "percentage": "20.00%"
           },
           "61-75": {
             "total": null,
@@ -1955,11 +1955,11 @@
           },
           "76-90": {
             "total": 1,
-            "percentage": "25.00%"
+            "percentage": "20.00%"
           },
           "91-105": {
             "total": 1,
-            "percentage": "25.00%"
+            "percentage": "20.00%"
           },
           "106-120": {
             "total": null,
@@ -1968,24 +1968,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 3,
             "under": 0
           },
           "1.5": {
             "over": 2,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       },
@@ -1996,9 +1996,9 @@
           "total": 3
         },
         "average": {
-          "home": "2.0",
+          "home": "1.0",
           "away": "1.0",
-          "total": "1.5"
+          "total": "1.0"
         },
         "minute": {
           "0-15": {
@@ -2037,23 +2037,23 @@
         "under_over": {
           "0.5": {
             "over": 2,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 1,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       }
@@ -2065,7 +2065,7 @@
         "loses": 0
       },
       "wins": {
-        "home": null,
+        "home": "1-0",
         "away": "1-2"
       },
       "loses": {
@@ -2084,9 +2084,9 @@
       }
     },
     "clean_sheet": {
-      "home": 0,
+      "home": 1,
       "away": 0,
-      "total": 0
+      "total": 1
     },
     "failed_to_score": {
       "home": 0,
@@ -2099,15 +2099,15 @@
         "percentage": "0%"
       },
       "missed": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 1,
+        "percentage": "100.00%"
       },
-      "total": 0
+      "total": 1
     },
     "lineups": [
       {
         "formation": "4-2-3-1",
-        "played": 1
+        "played": 2
       },
       {
         "formation": "4-4-2",
@@ -2129,20 +2129,20 @@
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "14.29%"
         },
         "61-75": {
           "total": 1,
-          "percentage": "20.00%"
+          "percentage": "14.29%"
         },
         "76-90": {
           "total": 2,
-          "percentage": "40.00%"
+          "percentage": "28.57%"
         },
         "91-105": {
-          "total": 2,
-          "percentage": "40.00%"
+          "total": 3,
+          "percentage": "42.86%"
         },
         "106-120": {
           "total": null,
@@ -2185,5 +2185,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:32.334Z"
+  "lastUpdated": "2025-04-01T14:59:30.666Z"
 }

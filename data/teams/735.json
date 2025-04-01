@@ -113,65 +113,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361758,
-          "date": "2025-03-29T15:00:00+00:00",
-          "venue": {
-            "id": 181,
-            "name": "Olympisch Stadion",
-            "city": "Anvers"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743260400
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 263,
-            "name": "Beerschot Wilrijk",
-            "logo": "https://media.api-sports.io/football/teams/263.png",
-            "winner": null
-          },
-          "away": {
-            "id": 735,
-            "name": "St. Truiden",
-            "logo": "https://media.api-sports.io/football/teams/735.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361761,
           "date": "2025-04-06T14:00:00+00:00",
           "venue": {
@@ -467,6 +408,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361758,
+          "date": "2025-03-29T15:00:00+00:00",
+          "venue": {
+            "id": 181,
+            "name": "Olympisch Stadion",
+            "city": "Anvers"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743260400
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 263,
+            "name": "Beerschot Wilrijk",
+            "logo": "https://media.api-sports.io/football/teams/263.png",
+            "winner": false
+          },
+          "away": {
+            "id": 735,
+            "name": "St. Truiden",
+            "logo": "https://media.api-sports.io/football/teams/735.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213439,
@@ -997,65 +997,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213366,
-          "date": "2025-01-11T15:00:00+00:00",
-          "venue": {
-            "id": 195,
-            "name": "Het Kuipje",
-            "city": "Westerlo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1736607600
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 261,
-            "name": "KVC Westerlo",
-            "logo": "https://media.api-sports.io/football/teams/261.png",
-            "winner": false
-          },
-          "away": {
-            "id": 735,
-            "name": "St. Truiden",
-            "logo": "https://media.api-sports.io/football/teams/735.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1352,5 +1293,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:15.251Z"
+  "lastUpdated": "2025-04-01T14:54:08.865Z"
 }

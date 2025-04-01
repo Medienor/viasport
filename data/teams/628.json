@@ -187,65 +187,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1210593,
-          "date": "2025-03-30T16:30:00+00:00",
-          "venue": {
-            "id": 19513,
-            "name": "epet ARENA",
-            "city": "Praha"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743352200
-        },
-        "league": {
-          "id": 345,
-          "name": "Czech Liga",
-          "logo": "https://media.api-sports.io/football/leagues/345.png"
-        },
-        "teams": {
-          "home": {
-            "id": 628,
-            "name": "Sparta Praha",
-            "logo": "https://media.api-sports.io/football/teams/628.png",
-            "winner": null
-          },
-          "away": {
-            "id": 567,
-            "name": "Plzen",
-            "logo": "https://media.api-sports.io/football/teams/567.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1210597,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -482,6 +423,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1210593,
+          "date": "2025-03-30T16:30:00+00:00",
+          "venue": {
+            "id": 19513,
+            "name": "epet ARENA",
+            "city": "Praha"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743352200
+        },
+        "league": {
+          "id": 345,
+          "name": "Czech Liga",
+          "logo": "https://media.api-sports.io/football/leagues/345.png"
+        },
+        "teams": {
+          "home": {
+            "id": 628,
+            "name": "Sparta Praha",
+            "logo": "https://media.api-sports.io/football/teams/628.png",
+            "winner": false
+          },
+          "away": {
+            "id": 567,
+            "name": "Plzen",
+            "logo": "https://media.api-sports.io/football/teams/567.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1210583,
@@ -1012,65 +1012,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1344692,
-          "date": "2025-01-23T10:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737626400
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 628,
-            "name": "Sparta Praha",
-            "logo": "https://media.api-sports.io/football/teams/628.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3548,
-            "name": "Podbrezová",
-            "logo": "https://media.api-sports.io/football/teams/3548.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1367,5 +1308,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:05.428Z"
+  "lastUpdated": "2025-04-01T14:55:00.257Z"
 }

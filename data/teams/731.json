@@ -151,65 +151,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1217856,
-          "date": "2025-03-30T16:30:00+00:00",
-          "venue": {
-            "id": 1480,
-            "name": "Estadio El Alcoraz",
-            "city": "Huesca"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743352200
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 726,
-            "name": "Huesca",
-            "logo": "https://media.api-sports.io/football/teams/726.png",
-            "winner": null
-          },
-          "away": {
-            "id": 731,
-            "name": "Sporting Gijon",
-            "logo": "https://media.api-sports.io/football/teams/731.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1217867,
           "date": "2025-04-05T19:00:00+00:00",
           "venue": {
@@ -325,9 +266,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1217894,
+          "date": "2025-04-18T17:00:00+00:00",
+          "venue": {
+            "id": 1495,
+            "name": "Estadio Municipal El Molinón",
+            "city": "Gijón"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744995600
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 731,
+            "name": "Sporting Gijon",
+            "logo": "https://media.api-sports.io/football/teams/731.png",
+            "winner": null
+          },
+          "away": {
+            "id": 799,
+            "name": "Mirandes",
+            "logo": "https://media.api-sports.io/football/teams/799.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1217897,
+          "date": "2025-04-25T18:30:00+00:00",
+          "venue": {
+            "id": 11915,
+            "name": "Estadio Nuevo Mirandilla",
+            "city": "Cádiz"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745605800
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 724,
+            "name": "Cadiz",
+            "logo": "https://media.api-sports.io/football/teams/724.png",
+            "winner": null
+          },
+          "away": {
+            "id": 731,
+            "name": "Sporting Gijon",
+            "logo": "https://media.api-sports.io/football/teams/731.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217856,
+          "date": "2025-03-30T16:30:00+00:00",
+          "venue": {
+            "id": 1480,
+            "name": "Estadio El Alcoraz",
+            "city": "Huesca"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743352200
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 726,
+            "name": "Huesca",
+            "logo": "https://media.api-sports.io/football/teams/726.png",
+            "winner": true
+          },
+          "away": {
+            "id": 731,
+            "name": "Sporting Gijon",
+            "logo": "https://media.api-sports.io/football/teams/731.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217844,
@@ -858,65 +976,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217747,
-          "date": "2025-01-18T17:30:00+00:00",
-          "venue": {
-            "id": 1495,
-            "name": "Estadio Municipal El Molinón",
-            "city": "Gijón"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737221400
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 731,
-            "name": "Sporting Gijon",
-            "logo": "https://media.api-sports.io/football/teams/731.png",
-            "winner": null
-          },
-          "away": {
-            "id": 797,
-            "name": "Elche",
-            "logo": "https://media.api-sports.io/football/teams/797.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1213,5 +1272,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:27.292Z"
+  "lastUpdated": "2025-04-01T14:59:25.525Z"
 }

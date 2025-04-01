@@ -133,6 +133,43 @@
     },
     {
       "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 30,
         "name": "World Cup - Qualification Asia",
         "type": "Cup",
@@ -181,6 +218,7 @@
     2022,
     2023,
     2024,
+    2025,
     2026
   ],
   "fixtures": {
@@ -1071,5 +1109,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:39:54.451Z"
+  "lastUpdated": "2025-04-01T14:56:50.638Z"
 }

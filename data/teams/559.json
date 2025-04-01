@@ -262,65 +262,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360137,
-          "date": "2025-03-30T17:30:00+00:00",
-          "venue": {
-            "id": 1326,
-            "name": "Arena Naţională",
-            "city": "Bucureşti"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743355800
-        },
-        "league": {
-          "id": 283,
-          "name": "Liga I",
-          "logo": "https://media.api-sports.io/football/leagues/283.png"
-        },
-        "teams": {
-          "home": {
-            "id": 635,
-            "name": "Dinamo Bucuresti",
-            "logo": "https://media.api-sports.io/football/teams/635.png",
-            "winner": null
-          },
-          "away": {
-            "id": 559,
-            "name": "FCSB",
-            "logo": "https://media.api-sports.io/football/teams/559.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1360140,
           "date": "2025-04-05T18:15:00+00:00",
           "venue": {
@@ -436,9 +377,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1360146,
+          "date": "2025-04-18T22:00:00+00:00",
+          "venue": {
+            "id": 1326,
+            "name": "Arena Naţională",
+            "city": "Bucureşti"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745013600
+        },
+        "league": {
+          "id": 283,
+          "name": "Liga I",
+          "logo": "https://media.api-sports.io/football/leagues/283.png"
+        },
+        "teams": {
+          "home": {
+            "id": 559,
+            "name": "FCSB",
+            "logo": "https://media.api-sports.io/football/teams/559.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2246,
+            "name": "CFR 1907 Cluj",
+            "logo": "https://media.api-sports.io/football/teams/2246.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360137,
+          "date": "2025-03-30T17:30:00+00:00",
+          "venue": {
+            "id": 1326,
+            "name": "Arena Naţională",
+            "city": "Bucureşti"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743355800
+        },
+        "league": {
+          "id": 283,
+          "name": "Liga I",
+          "logo": "https://media.api-sports.io/football/leagues/283.png"
+        },
+        "teams": {
+          "home": {
+            "id": 635,
+            "name": "Dinamo Bucuresti",
+            "logo": "https://media.api-sports.io/football/teams/635.png",
+            "winner": false
+          },
+          "away": {
+            "id": 559,
+            "name": "FCSB",
+            "logo": "https://media.api-sports.io/football/teams/559.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360136,
@@ -969,65 +1028,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220558,
-          "date": "2025-02-09T18:00:00+00:00",
-          "venue": {
-            "id": 1326,
-            "name": "Arena Naţională",
-            "city": "Bucureşti"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1739124000
-        },
-        "league": {
-          "id": 283,
-          "name": "Liga I",
-          "logo": "https://media.api-sports.io/football/leagues/283.png"
-        },
-        "teams": {
-          "home": {
-            "id": 559,
-            "name": "FCSB",
-            "logo": "https://media.api-sports.io/football/teams/559.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2585,
-            "name": "Sepsi OSK Sfantu Gheorghe",
-            "logo": "https://media.api-sports.io/football/teams/2585.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1324,5 +1324,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:00.346Z"
+  "lastUpdated": "2025-04-01T14:54:55.096Z"
 }

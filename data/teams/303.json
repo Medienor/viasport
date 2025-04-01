@@ -59,6 +59,43 @@
     },
     {
       "league": {
+        "id": 101,
+        "name": "J-League Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/101.png"
+      },
+      "country": {
+        "name": "Japan",
+        "code": "JP",
+        "flag": "https://media.api-sports.io/flags/jp.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-20",
+          "end": "2025-04-16",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 667,
         "name": "Friendlies Clubs",
         "type": "Cup",
@@ -112,65 +149,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1324021,
-          "date": "2025-03-29T06:00:00+00:00",
-          "venue": {
-            "id": 20417,
-            "name": "Best Denki Stadium",
-            "city": "Fukuoka"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743228000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 316,
-            "name": "Avispa Fukuoka",
-            "logo": "https://media.api-sports.io/football/teams/316.png",
-            "winner": null
-          },
-          "away": {
-            "id": 303,
-            "name": "Machida Zelvia",
-            "logo": "https://media.api-sports.io/football/teams/303.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1324029,
@@ -263,6 +241,65 @@
             "id": 294,
             "name": "Kawasaki Frontale",
             "logo": "https://media.api-sports.io/football/teams/294.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1366880,
+          "date": "2025-04-09T10:00:00+00:00",
+          "venue": {
+            "id": 19675,
+            "name": "JIT Recycle Ink Stadium",
+            "city": "Kofu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744192800
+        },
+        "league": {
+          "id": 101,
+          "name": "J-League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/101.png"
+        },
+        "teams": {
+          "home": {
+            "id": 308,
+            "name": "Ventforet Kofu",
+            "logo": "https://media.api-sports.io/football/teams/308.png",
+            "winner": null
+          },
+          "away": {
+            "id": 303,
+            "name": "Machida Zelvia",
+            "logo": "https://media.api-sports.io/football/teams/303.png",
             "winner": null
           }
         },
@@ -1296,6 +1333,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1324021,
+          "date": "2025-03-29T06:00:00+00:00",
+          "venue": {
+            "id": 20417,
+            "name": "Best Denki Stadium",
+            "city": "Fukuoka"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743228000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 316,
+            "name": "Avispa Fukuoka",
+            "logo": "https://media.api-sports.io/football/teams/316.png",
+            "winner": null
+          },
+          "away": {
+            "id": 303,
+            "name": "Machida Zelvia",
+            "logo": "https://media.api-sports.io/football/teams/303.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1324004,
           "date": "2025-03-15T05:00:00+00:00",
           "venue": {
@@ -1824,65 +1920,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1166487,
-          "date": "2024-11-09T05:00:00+00:00",
-          "venue": {
-            "id": 951,
-            "name": "Japan National Stadium",
-            "city": "Tokyo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1731128400
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 303,
-            "name": "Machida Zelvia",
-            "logo": "https://media.api-sports.io/football/teams/303.png",
-            "winner": true
-          },
-          "away": {
-            "id": 292,
-            "name": "FC Tokyo",
-            "logo": "https://media.api-sports.io/football/teams/292.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1900,12 +1937,12 @@
       "name": "Machida Zelvia",
       "logo": "https://media.api-sports.io/football/teams/303.png"
     },
-    "form": "LWLWWW",
+    "form": "LWLWWWD",
     "fixtures": {
       "played": {
         "home": 3,
-        "away": 3,
-        "total": 6
+        "away": 4,
+        "total": 7
       },
       "wins": {
         "home": 1,
@@ -1914,8 +1951,8 @@
       },
       "draws": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       },
       "loses": {
         "home": 2,
@@ -1927,22 +1964,22 @@
       "for": {
         "total": {
           "home": 2,
-          "away": 5,
-          "total": 7
+          "away": 7,
+          "total": 9
         },
         "average": {
           "home": "0.7",
-          "away": "1.7",
-          "total": "1.2"
+          "away": "1.8",
+          "total": "1.3"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": 2,
+            "percentage": "20.00%"
           },
           "16-30": {
             "total": 2,
-            "percentage": "28.57%"
+            "percentage": "20.00%"
           },
           "31-45": {
             "total": null,
@@ -1950,15 +1987,15 @@
           },
           "46-60": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "10.00%"
           },
           "61-75": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": 2,
+            "percentage": "20.00%"
           },
           "76-90": {
-            "total": 2,
-            "percentage": "28.57%"
+            "total": 3,
+            "percentage": "30.00%"
           },
           "91-105": {
             "total": null,
@@ -1971,46 +2008,46 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 6,
             "under": 1
           },
           "1.5": {
-            "over": 2,
+            "over": 3,
             "under": 4
           },
           "2.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       },
       "against": {
         "total": {
           "home": 3,
-          "away": 1,
-          "total": 4
+          "away": 3,
+          "total": 6
         },
         "average": {
           "home": "1.0",
-          "away": "0.3",
-          "total": "0.7"
+          "away": "0.8",
+          "total": "0.9"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "25.00%"
+            "percentage": "20.00%"
           },
           "16-30": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": 2,
+            "percentage": "40.00%"
           },
           "31-45": {
             "total": null,
@@ -2018,7 +2055,7 @@
           },
           "46-60": {
             "total": 1,
-            "percentage": "25.00%"
+            "percentage": "20.00%"
           },
           "61-75": {
             "total": null,
@@ -2026,7 +2063,7 @@
           },
           "76-90": {
             "total": 1,
-            "percentage": "25.00%"
+            "percentage": "20.00%"
           },
           "91-105": {
             "total": null,
@@ -2039,31 +2076,31 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 4,
             "under": 3
           },
           "1.5": {
-            "over": 1,
+            "over": 2,
             "under": 5
           },
           "2.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 3,
         "draws": 0,
         "loses": 1
       },
@@ -2082,7 +2119,7 @@
         },
         "against": {
           "home": 2,
-          "away": 1
+          "away": 2
         }
       }
     },
@@ -2110,7 +2147,7 @@
     "lineups": [
       {
         "formation": "3-4-2-1",
-        "played": 6
+        "played": 7
       }
     ],
     "cards": {
@@ -2120,16 +2157,16 @@
           "percentage": null
         },
         "16-30": {
-          "total": 2,
-          "percentage": "15.38%"
+          "total": 3,
+          "percentage": "21.43%"
         },
         "31-45": {
           "total": 2,
-          "percentage": "15.38%"
+          "percentage": "14.29%"
         },
         "46-60": {
           "total": 4,
-          "percentage": "30.77%"
+          "percentage": "28.57%"
         },
         "61-75": {
           "total": null,
@@ -2137,7 +2174,7 @@
         },
         "76-90": {
           "total": 5,
-          "percentage": "38.46%"
+          "percentage": "35.71%"
         },
         "91-105": {
           "total": null,
@@ -2184,5 +2221,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:44.790Z"
+  "lastUpdated": "2025-04-01T14:59:43.370Z"
 }

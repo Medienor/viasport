@@ -116,65 +116,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361771,
-          "date": "2025-03-29T17:15:00+00:00",
-          "venue": {
-            "id": 192,
-            "name": "Stade Maurice Dufrasne",
-            "city": "Luik"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743268500
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 733,
-            "name": "Standard Liege",
-            "logo": "https://media.api-sports.io/football/teams/733.png",
-            "winner": null
-          },
-          "away": {
-            "id": 266,
-            "name": "KV Mechelen",
-            "logo": "https://media.api-sports.io/football/teams/266.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361773,
           "date": "2025-04-04T18:45:00+00:00",
           "venue": {
@@ -708,6 +649,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361771,
+          "date": "2025-03-29T17:15:00+00:00",
+          "venue": {
+            "id": 192,
+            "name": "Stade Maurice Dufrasne",
+            "city": "Luik"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743268500
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 733,
+            "name": "Standard Liege",
+            "logo": "https://media.api-sports.io/football/teams/733.png",
+            "winner": null
+          },
+          "away": {
+            "id": 266,
+            "name": "KV Mechelen",
+            "logo": "https://media.api-sports.io/football/teams/266.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1213440,
           "date": "2025-03-16T17:30:00+00:00",
           "venue": {
@@ -1236,65 +1236,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213365,
-          "date": "2025-01-12T18:15:00+00:00",
-          "venue": {
-            "id": 176,
-            "name": "Jan Breydelstadion",
-            "city": "Brugge"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1736705700
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 741,
-            "name": "Cercle Brugge",
-            "logo": "https://media.api-sports.io/football/teams/741.png",
-            "winner": true
-          },
-          "away": {
-            "id": 266,
-            "name": "KV Mechelen",
-            "logo": "https://media.api-sports.io/football/teams/266.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1591,5 +1532,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:12.748Z"
+  "lastUpdated": "2025-04-01T14:54:06.357Z"
 }

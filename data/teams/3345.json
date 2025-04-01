@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1278774,
-          "date": "2025-03-30T14:00:00+00:00",
-          "venue": {
-            "id": 30,
-            "name": "Centre d'Entrenament de la FAF 1",
-            "city": "Santa Coloma"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743343200
-        },
-        "league": {
-          "id": 312,
-          "name": "1a Divisió",
-          "logo": "https://media.api-sports.io/football/leagues/312.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3345,
-            "name": "Atlètic Club d'Escaldes",
-            "logo": "https://media.api-sports.io/football/teams/3345.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3352,
-            "name": "Penya Encarnada",
-            "logo": "https://media.api-sports.io/football/teams/3352.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1278780,
@@ -506,6 +447,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1278774,
+          "date": "2025-03-30T14:00:00+00:00",
+          "venue": {
+            "id": 30,
+            "name": "Centre d'Entrenament de la FAF 1",
+            "city": "Santa Coloma"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743343200
+        },
+        "league": {
+          "id": 312,
+          "name": "1a Divisió",
+          "logo": "https://media.api-sports.io/football/leagues/312.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3345,
+            "name": "Atlètic Club d'Escaldes",
+            "logo": "https://media.api-sports.io/football/teams/3345.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3352,
+            "name": "Penya Encarnada",
+            "logo": "https://media.api-sports.io/football/teams/3352.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334977,
@@ -1036,65 +1036,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1318068,
-          "date": "2025-01-12T15:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Camp de Futbol La Massana",
-            "city": "La Massana"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1736694000
-        },
-        "league": {
-          "id": 655,
-          "name": "Copa Constitució",
-          "logo": "https://media.api-sports.io/football/leagues/655.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3345,
-            "name": "Atlètic Club d'Escaldes",
-            "logo": "https://media.api-sports.io/football/teams/3345.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3344,
-            "name": "Ordino",
-            "logo": "https://media.api-sports.io/football/teams/3344.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1391,5 +1332,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:39:03.515Z"
+  "lastUpdated": "2025-04-01T14:55:59.453Z"
 }

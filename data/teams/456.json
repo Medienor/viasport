@@ -264,65 +264,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334441,
-          "date": "2025-03-30T18:00:00+00:00",
-          "venue": {
-            "id": 45,
-            "name": "Estadio Julio César Villagra",
-            "city": "Ciudad de Córdoba, Provincia de Córdoba"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743357600
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 440,
-            "name": "Belgrano Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/440.png",
-            "winner": null
-          },
-          "away": {
-            "id": 456,
-            "name": "Talleres Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/456.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361863,
           "date": "2025-04-03T00:30:00+00:00",
           "venue": {
@@ -856,6 +797,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1334441,
+          "date": "2025-03-30T18:00:00+00:00",
+          "venue": {
+            "id": 45,
+            "name": "Estadio Julio César Villagra",
+            "city": "Ciudad de Córdoba, Provincia de Córdoba"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743357600
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 440,
+            "name": "Belgrano Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/440.png",
+            "winner": null
+          },
+          "away": {
+            "id": 456,
+            "name": "Talleres Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/456.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1334320,
           "date": "2025-03-22T20:00:00+00:00",
           "venue": {
@@ -1384,65 +1384,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334286,
-          "date": "2025-01-25T20:00:00+00:00",
-          "venue": {
-            "id": 103,
-            "name": "Estadio Pedro Bidegaín",
-            "city": "Capital Federal, Ciudad de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737835200
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 460,
-            "name": "San Lorenzo",
-            "logo": "https://media.api-sports.io/football/teams/460.png",
-            "winner": true
-          },
-          "away": {
-            "id": 456,
-            "name": "Talleres Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/456.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1739,5 +1680,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:45.125Z"
+  "lastUpdated": "2025-04-01T14:54:39.607Z"
 }

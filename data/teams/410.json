@@ -188,65 +188,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213676,
-          "date": "2025-03-30T14:45:00+00:00",
-          "venue": {
-            "id": 1128,
-            "name": "Stadion Feijenoord",
-            "city": "Rotterdam"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743345900
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 209,
-            "name": "Feyenoord",
-            "logo": "https://media.api-sports.io/football/teams/209.png",
-            "winner": null
-          },
-          "away": {
-            "id": 410,
-            "name": "GO Ahead Eagles",
-            "logo": "https://media.api-sports.io/football/teams/410.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213689,
           "date": "2025-04-06T12:30:00+00:00",
           "venue": {
@@ -719,6 +660,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213676,
+          "date": "2025-03-30T14:45:00+00:00",
+          "venue": {
+            "id": 1128,
+            "name": "Stadion Feijenoord",
+            "city": "Rotterdam"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743345900
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 209,
+            "name": "Feyenoord",
+            "logo": "https://media.api-sports.io/football/teams/209.png",
+            "winner": true
+          },
+          "away": {
+            "id": 410,
+            "name": "GO Ahead Eagles",
+            "logo": "https://media.api-sports.io/football/teams/410.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213671,
@@ -1249,65 +1249,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213605,
-          "date": "2025-01-18T20:00:00+00:00",
-          "venue": {
-            "id": 1130,
-            "name": "De Adelaarshorst",
-            "city": "Deventer"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737230400
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 410,
-            "name": "GO Ahead Eagles",
-            "logo": "https://media.api-sports.io/football/teams/410.png",
-            "winner": true
-          },
-          "away": {
-            "id": 202,
-            "name": "Groningen",
-            "logo": "https://media.api-sports.io/football/teams/202.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1604,5 +1545,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:07.683Z"
+  "lastUpdated": "2025-04-01T14:54:01.161Z"
 }

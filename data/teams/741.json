@@ -189,65 +189,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361759,
-          "date": "2025-03-30T14:00:00+00:00",
-          "venue": {
-            "id": 182,
-            "name": "Guldensporenstadion",
-            "city": "Kortrijk"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743343200
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 734,
-            "name": "Kortrijk",
-            "logo": "https://media.api-sports.io/football/teams/734.png",
-            "winner": null
-          },
-          "away": {
-            "id": 741,
-            "name": "Cercle Brugge",
-            "logo": "https://media.api-sports.io/football/teams/741.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361760,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -543,6 +484,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361759,
+          "date": "2025-03-30T14:00:00+00:00",
+          "venue": {
+            "id": 182,
+            "name": "Guldensporenstadion",
+            "city": "Kortrijk"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743343200
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 734,
+            "name": "Kortrijk",
+            "logo": "https://media.api-sports.io/football/teams/734.png",
+            "winner": null
+          },
+          "away": {
+            "id": 741,
+            "name": "Cercle Brugge",
+            "logo": "https://media.api-sports.io/football/teams/741.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213434,
@@ -1073,65 +1073,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213384,
-          "date": "2025-01-25T17:15:00+00:00",
-          "venue": {
-            "id": 177,
-            "name": "Stade du Pays de Charleroi",
-            "city": "Charleroi"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737825300
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 736,
-            "name": "Charleroi",
-            "logo": "https://media.api-sports.io/football/teams/736.png",
-            "winner": null
-          },
-          "away": {
-            "id": 741,
-            "name": "Cercle Brugge",
-            "logo": "https://media.api-sports.io/football/teams/741.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1428,5 +1369,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:15.266Z"
+  "lastUpdated": "2025-04-01T14:54:08.867Z"
 }

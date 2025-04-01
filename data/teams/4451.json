@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -184,7 +184,7 @@
         {
           "year": 2024,
           "start": "2024-10-12",
-          "end": "2025-04-09",
+          "end": "2025-04-16",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -200,7 +200,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -263,8 +263,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1288905,
-          "date": "2025-03-29T10:00:00+00:00",
+          "id": 1366893,
+          "date": "2025-04-09T12:00:00+00:00",
           "venue": {
             "id": 3384,
             "name": "Mong Kok Stadium",
@@ -276,24 +276,24 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743242400
+          "timestamp": 1744200000
         },
         "league": {
-          "id": 380,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/380.png"
+          "id": 1160,
+          "name": "Sapling Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1160.png"
         },
         "teams": {
           "home": {
-            "id": 4451,
-            "name": "Eastern",
-            "logo": "https://media.api-sports.io/football/teams/4451.png",
+            "id": 4456,
+            "name": "Southern District",
+            "logo": "https://media.api-sports.io/football/teams/4456.png",
             "winner": null
           },
           "away": {
-            "id": 4462,
-            "name": "Hong Kong FC",
-            "logo": "https://media.api-sports.io/football/teams/4462.png",
+            "id": 4451,
+            "name": "Eastern",
+            "logo": "https://media.api-sports.io/football/teams/4451.png",
             "winner": null
           }
         },
@@ -735,6 +735,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1288905,
+          "date": "2025-03-29T10:00:00+00:00",
+          "venue": {
+            "id": 3384,
+            "name": "Mong Kok Stadium",
+            "city": "Hong Kong"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743242400
+        },
+        "league": {
+          "id": 380,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/380.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4451,
+            "name": "Eastern",
+            "logo": "https://media.api-sports.io/football/teams/4451.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4462,
+            "name": "Hong Kong FC",
+            "logo": "https://media.api-sports.io/football/teams/4462.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1311713,
@@ -1265,65 +1324,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1318672,
-          "date": "2025-01-30T07:00:00+00:00",
-          "venue": {
-            "id": 3384,
-            "name": "Mong Kok Stadium",
-            "city": "Hong Kong"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738220400
-        },
-        "league": {
-          "id": 716,
-          "name": "Senior Shield",
-          "logo": "https://media.api-sports.io/football/leagues/716.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4451,
-            "name": "Eastern",
-            "logo": "https://media.api-sports.io/football/teams/4451.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4207,
-            "name": "Warriors",
-            "logo": "https://media.api-sports.io/football/teams/4207.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1620,5 +1620,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:04.596Z"
+  "lastUpdated": "2025-04-01T14:59:02.214Z"
 }

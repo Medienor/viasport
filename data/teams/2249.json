@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -184,65 +184,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1349660,
-          "date": "2025-03-29T14:00:00+00:00",
-          "venue": {
-            "id": 1360,
-            "name": "Campo Sportivo di Fiorentino Federico Crescentini",
-            "city": "Fiorentino"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743256800
-        },
-        "league": {
-          "id": 404,
-          "name": "Campionato",
-          "logo": "https://media.api-sports.io/football/leagues/404.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2249,
-            "name": "La Fiorita",
-            "logo": "https://media.api-sports.io/football/teams/2249.png",
-            "winner": null
-          },
-          "away": {
-            "id": 22179,
-            "name": "San Marino Academy",
-            "logo": "https://media.api-sports.io/football/teams/22179.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1338998,
@@ -422,6 +363,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1349660,
+          "date": "2025-03-29T14:00:00+00:00",
+          "venue": {
+            "id": 1360,
+            "name": "Campo Sportivo di Fiorentino Federico Crescentini",
+            "city": "Fiorentino"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743256800
+        },
+        "league": {
+          "id": 404,
+          "name": "Campionato",
+          "logo": "https://media.api-sports.io/football/leagues/404.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2249,
+            "name": "La Fiorita",
+            "logo": "https://media.api-sports.io/football/teams/2249.png",
+            "winner": true
+          },
+          "away": {
+            "id": 22179,
+            "name": "San Marino Academy",
+            "logo": "https://media.api-sports.io/football/teams/22179.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1349657,
@@ -952,65 +952,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1319965,
-          "date": "2025-01-22T20:15:00+00:00",
-          "venue": {
-            "id": 2932,
-            "name": "Stadio Fonte Dell'Ovo",
-            "city": "Città di San Marino"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1737576900
-        },
-        "league": {
-          "id": 404,
-          "name": "Campionato",
-          "logo": "https://media.api-sports.io/football/leagues/404.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5297,
-            "name": "Cailungo",
-            "logo": "https://media.api-sports.io/football/teams/5297.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2249,
-            "name": "La Fiorita",
-            "logo": "https://media.api-sports.io/football/teams/2249.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1307,5 +1248,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:58.438Z"
+  "lastUpdated": "2025-04-01T14:55:54.229Z"
 }

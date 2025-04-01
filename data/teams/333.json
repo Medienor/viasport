@@ -77,10 +77,10 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": true,
             "players": true,
@@ -88,6 +88,43 @@
             "top_assists": true,
             "top_cards": true,
             "injuries": true,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 105,
+        "name": "NM Cupen",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/105.png"
+      },
+      "country": {
+        "name": "Norway",
+        "code": "NO",
+        "flag": "https://media.api-sports.io/flags/no.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-26",
+          "end": "2025-04-13",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
             "predictions": true,
             "odds": false
           }
@@ -109,65 +146,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1342191,
-          "date": "2025-03-30T15:00:00+00:00",
-          "venue": {
-            "id": 1184,
-            "name": "Aker Stadion",
-            "city": "Molde"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743346800
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 329,
-            "name": "Molde",
-            "logo": "https://media.api-sports.io/football/teams/329.png",
-            "winner": null
-          },
-          "away": {
-            "id": 333,
-            "name": "Sarpsborg 08 FF",
-            "logo": "https://media.api-sports.io/football/teams/333.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1342200,
@@ -350,7 +328,7 @@
           "id": 1342224,
           "date": "2025-05-04T15:00:00+00:00",
           "venue": {
-            "id": null,
+            "id": 21732,
             "name": "Lyse Arena",
             "city": "Stavanger"
           },
@@ -1288,9 +1266,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1342353,
+          "date": "2025-09-14T15:00:00+00:00",
+          "venue": {
+            "id": 1193,
+            "name": "Sarpsborg Stadion",
+            "city": "Sarpsborg"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757862000
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 333,
+            "name": "Sarpsborg 08 FF",
+            "logo": "https://media.api-sports.io/football/teams/333.png",
+            "winner": null
+          },
+          "away": {
+            "id": 332,
+            "name": "Sandefjord",
+            "logo": "https://media.api-sports.io/football/teams/332.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1342191,
+          "date": "2025-03-30T15:00:00+00:00",
+          "venue": {
+            "id": 1184,
+            "name": "Aker Stadion",
+            "city": "Molde"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743346800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 329,
+            "name": "Molde",
+            "logo": "https://media.api-sports.io/football/teams/329.png",
+            "winner": false
+          },
+          "away": {
+            "id": 333,
+            "name": "Sarpsborg 08 FF",
+            "logo": "https://media.api-sports.io/football/teams/333.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365951,
@@ -1821,65 +1917,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1164547,
-          "date": "2024-11-23T16:00:00+00:00",
-          "venue": {
-            "id": 1190,
-            "name": "Lerkendal Stadion",
-            "city": "Trondheim"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1732377600
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 331,
-            "name": "Rosenborg",
-            "logo": "https://media.api-sports.io/football/teams/331.png",
-            "winner": null
-          },
-          "away": {
-            "id": 333,
-            "name": "Sarpsborg 08 FF",
-            "logo": "https://media.api-sports.io/football/teams/333.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1897,17 +1934,17 @@
       "name": "Sarpsborg 08 FF",
       "logo": "https://media.api-sports.io/football/teams/333.png"
     },
-    "form": null,
+    "form": "W",
     "fixtures": {
       "played": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       },
       "wins": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       },
       "draws": {
         "home": 0,
@@ -1924,18 +1961,18 @@
       "for": {
         "total": {
           "home": 0,
-          "away": 0,
-          "total": 0
+          "away": 2,
+          "total": 2
         },
         "average": {
           "home": "0.0",
-          "away": "0.0",
-          "total": "0.0"
+          "away": "2.0",
+          "total": "2.0"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "16-30": {
             "total": null,
@@ -1950,8 +1987,8 @@
             "percentage": null
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "76-90": {
             "total": null,
@@ -1968,24 +2005,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       },
@@ -2037,36 +2074,36 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 0,
+        "wins": 1,
         "draws": 0,
         "loses": 0
       },
       "wins": {
         "home": null,
-        "away": null
+        "away": "0-2"
       },
       "loses": {
         "home": null,
@@ -2075,7 +2112,7 @@
       "goals": {
         "for": {
           "home": 0,
-          "away": 0
+          "away": 2
         },
         "against": {
           "home": 0,
@@ -2085,8 +2122,8 @@
     },
     "clean_sheet": {
       "home": 0,
-      "away": 0,
-      "total": 0
+      "away": 1,
+      "total": 1
     },
     "failed_to_score": {
       "home": 0,
@@ -2095,16 +2132,21 @@
     },
     "penalty": {
       "scored": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 1,
+        "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 0
+      "total": 1
     },
-    "lineups": [],
+    "lineups": [
+      {
+        "formation": "4-2-3-1",
+        "played": 1
+      }
+    ],
     "cards": {
       "yellow": {
         "0-15": {
@@ -2112,8 +2154,8 @@
           "percentage": null
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "31-45": {
           "total": null,
@@ -2132,8 +2174,8 @@
           "percentage": null
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "106-120": {
           "total": null,
@@ -2176,5 +2218,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:35:38.863Z"
+  "lastUpdated": "2025-04-01T14:52:30.837Z"
 }

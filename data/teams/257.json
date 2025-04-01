@@ -263,65 +263,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220292,
-          "date": "2025-03-29T17:30:00+00:00",
-          "venue": {
-            "id": 20420,
-            "name": "The Scot Foam Stadium at Dens Park",
-            "city": "Dundee"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743269400
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 253,
-            "name": "Dundee",
-            "logo": "https://media.api-sports.io/football/teams/253.png",
-            "winner": null
-          },
-          "away": {
-            "id": 257,
-            "name": "Rangers",
-            "logo": "https://media.api-sports.io/football/teams/257.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220299,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -558,6 +499,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220292,
+          "date": "2025-03-29T17:30:00+00:00",
+          "venue": {
+            "id": 20420,
+            "name": "The Scot Foam Stadium at Dens Park",
+            "city": "Dundee"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743269400
+        },
+        "league": {
+          "id": 179,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/179.png"
+        },
+        "teams": {
+          "home": {
+            "id": 253,
+            "name": "Dundee",
+            "logo": "https://media.api-sports.io/football/teams/253.png",
+            "winner": false
+          },
+          "away": {
+            "id": 257,
+            "name": "Rangers",
+            "logo": "https://media.api-sports.io/football/teams/257.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220284,
@@ -1088,65 +1088,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220250,
-          "date": "2025-01-26T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "CalForth Construction Arena at Tannadice Park",
-            "city": "Dundee"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737892800
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1386,
-            "name": "Dundee Utd",
-            "logo": "https://media.api-sports.io/football/teams/1386.png",
-            "winner": false
-          },
-          "away": {
-            "id": 257,
-            "name": "Rangers",
-            "logo": "https://media.api-sports.io/football/teams/257.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1443,5 +1384,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:35.166Z"
+  "lastUpdated": "2025-04-01T14:54:29.326Z"
 }

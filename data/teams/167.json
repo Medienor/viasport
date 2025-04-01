@@ -191,65 +191,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1224213,
-          "date": "2025-03-29T14:30:00+00:00",
-          "venue": {
-            "id": 724,
-            "name": "PreZero Arena",
-            "city": "Sinsheim"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743258600
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 167,
-            "name": "1899 Hoffenheim",
-            "logo": "https://media.api-sports.io/football/teams/167.png",
-            "winner": null
-          },
-          "away": {
-            "id": 170,
-            "name": "FC Augsburg",
-            "logo": "https://media.api-sports.io/football/teams/170.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1224218,
           "date": "2025-04-05T13:30:00+00:00",
           "venue": {
@@ -663,6 +604,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1224213,
+          "date": "2025-03-29T14:30:00+00:00",
+          "venue": {
+            "id": 724,
+            "name": "PreZero Arena",
+            "city": "Sinsheim"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743258600
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 167,
+            "name": "1899 Hoffenheim",
+            "logo": "https://media.api-sports.io/football/teams/167.png",
+            "winner": null
+          },
+          "away": {
+            "id": 170,
+            "name": "FC Augsburg",
+            "logo": "https://media.api-sports.io/football/teams/170.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1224208,
@@ -1193,65 +1193,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299244,
-          "date": "2025-01-23T17:45:00+00:00",
-          "venue": {
-            "id": 724,
-            "name": "PreZero Arena",
-            "city": "Sinsheim"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737654300
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 167,
-            "name": "1899 Hoffenheim",
-            "logo": "https://media.api-sports.io/football/teams/167.png",
-            "winner": false
-          },
-          "away": {
-            "id": 47,
-            "name": "Tottenham",
-            "logo": "https://media.api-sports.io/football/teams/47.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1548,5 +1489,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:26.880Z"
+  "lastUpdated": "2025-04-01T14:53:19.897Z"
 }

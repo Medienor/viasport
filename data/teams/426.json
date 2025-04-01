@@ -148,65 +148,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213677,
-          "date": "2025-03-29T17:45:00+00:00",
-          "venue": {
-            "id": 1129,
-            "name": "Fortuna Sittard Stadion",
-            "city": "Sittard"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743270300
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 205,
-            "name": "Fortuna Sittard",
-            "logo": "https://media.api-sports.io/football/teams/205.png",
-            "winner": null
-          },
-          "away": {
-            "id": 426,
-            "name": "Sparta Rotterdam",
-            "logo": "https://media.api-sports.io/football/teams/426.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213692,
           "date": "2025-04-06T12:30:00+00:00",
           "venue": {
@@ -620,6 +561,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213677,
+          "date": "2025-03-29T17:45:00+00:00",
+          "venue": {
+            "id": 1129,
+            "name": "Fortuna Sittard Stadion",
+            "city": "Sittard"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743270300
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 205,
+            "name": "Fortuna Sittard",
+            "logo": "https://media.api-sports.io/football/teams/205.png",
+            "winner": false
+          },
+          "away": {
+            "id": 426,
+            "name": "Sparta Rotterdam",
+            "logo": "https://media.api-sports.io/football/teams/426.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365863,
@@ -1150,65 +1150,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213599,
-          "date": "2025-01-11T15:30:00+00:00",
-          "venue": {
-            "id": 11906,
-            "name": "Asito Stadion",
-            "city": "Almelo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1736609400
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 206,
-            "name": "Heracles",
-            "logo": "https://media.api-sports.io/football/teams/206.png",
-            "winner": null
-          },
-          "away": {
-            "id": 426,
-            "name": "Sparta Rotterdam",
-            "logo": "https://media.api-sports.io/football/teams/426.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1505,5 +1446,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:10.175Z"
+  "lastUpdated": "2025-04-01T14:54:03.731Z"
 }

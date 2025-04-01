@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -221,67 +221,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1356783,
-          "date": "2025-03-29T14:30:00+00:00",
-          "venue": {
-            "id": 2354,
-            "name": "Futbalový štadión MFK Ružomberok",
-            "city": "Ružomberok"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743258600
-        },
-        "league": {
-          "id": 332,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/332.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3549,
-            "name": "Ružomberok",
-            "logo": "https://media.api-sports.io/football/teams/3549.png",
-            "winner": null
-          },
-          "away": {
-            "id": 10542,
-            "name": "Skalica",
-            "logo": "https://media.api-sports.io/football/teams/10542.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362898,
-          "date": "2025-04-02T16:00:00+00:00",
+          "date": "2025-04-01T16:00:00+00:00",
           "venue": {
             "id": 2354,
             "name": "Futbalový štadión MFK Ružomberok",
@@ -293,7 +234,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743609600
+          "timestamp": 1743523200
         },
         "league": {
           "id": 680,
@@ -458,7 +399,7 @@
       {
         "fixture": {
           "id": 1362899,
-          "date": "2025-04-15T16:00:00+00:00",
+          "date": "2025-04-16T16:00:00+00:00",
           "venue": {
             "id": 7233,
             "name": "Štadión SNP Štiavničky",
@@ -470,7 +411,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744732800
+          "timestamp": 1744819200
         },
         "league": {
           "id": 680,
@@ -519,9 +460,9 @@
           "id": 1356791,
           "date": "2025-04-19T16:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 7241,
+            "name": "Mestský štadión",
+            "city": "Skalica"
           },
           "status": {
             "long": "Not Started",
@@ -811,6 +752,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1356783,
+          "date": "2025-03-29T14:30:00+00:00",
+          "venue": {
+            "id": 2354,
+            "name": "Futbalový štadión MFK Ružomberok",
+            "city": "Ružomberok"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743258600
+        },
+        "league": {
+          "id": 332,
+          "name": "Super Liga",
+          "logo": "https://media.api-sports.io/football/leagues/332.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3549,
+            "name": "Ružomberok",
+            "logo": "https://media.api-sports.io/football/teams/3549.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10542,
+            "name": "Skalica",
+            "logo": "https://media.api-sports.io/football/teams/10542.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1356780,
@@ -1286,7 +1286,7 @@
       {
         "fixture": {
           "id": 1339621,
-          "date": "2025-01-25T00:00:00+00:00",
+          "date": "2025-01-25T08:00:00+00:00",
           "venue": {
             "id": 12023,
             "name": "S&B Sport Football Complex",
@@ -1298,7 +1298,7 @@
             "elapsed": 90,
             "extra": 3
           },
-          "timestamp": 1737763200
+          "timestamp": 1737792000
         },
         "league": {
           "id": 667,
@@ -1331,65 +1331,6 @@
           "fulltime": {
             "home": 1,
             "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1336839,
-          "date": "2025-01-17T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737072000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3549,
-            "name": "Ružomberok",
-            "logo": "https://media.api-sports.io/football/teams/3549.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4134,
-            "name": "Pohronie",
-            "logo": "https://media.api-sports.io/football/teams/4134.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
           },
           "extratime": {
             "home": null,
@@ -1696,5 +1637,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:30.505Z"
+  "lastUpdated": "2025-04-01T14:55:25.698Z"
 }

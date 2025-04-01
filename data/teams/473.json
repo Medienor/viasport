@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334433,
-          "date": "2025-03-28T00:00:00+00:00",
-          "venue": {
-            "id": 83,
-            "name": "Estadio Juan Bautista Gargantini",
-            "city": "Mendoza, Provincia de Mendoza"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743120000
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 473,
-            "name": "Independ. Rivadavia",
-            "logo": "https://media.api-sports.io/football/teams/473.png",
-            "winner": null
-          },
-          "away": {
-            "id": 436,
-            "name": "Racing Club",
-            "logo": "https://media.api-sports.io/football/teams/436.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334456,
           "date": "2025-04-05T18:30:00+00:00",
           "venue": {
@@ -302,6 +243,65 @@
             "id": 473,
             "name": "Independ. Rivadavia",
             "logo": "https://media.api-sports.io/football/teams/473.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1330777,
+          "date": "2025-04-15T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744754400
+        },
+        "league": {
+          "id": 130,
+          "name": "Copa Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/130.png"
+        },
+        "teams": {
+          "home": {
+            "id": 473,
+            "name": "Independ. Rivadavia",
+            "logo": "https://media.api-sports.io/football/teams/473.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1936,
+            "name": "CA Estudiantes",
+            "logo": "https://media.api-sports.io/football/teams/1936.png",
             "winner": null
           }
         },
@@ -448,6 +448,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334433,
+          "date": "2025-03-28T00:00:00+00:00",
+          "venue": {
+            "id": 83,
+            "name": "Estadio Juan Bautista Gargantini",
+            "city": "Mendoza, Provincia de Mendoza"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743120000
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 473,
+            "name": "Independ. Rivadavia",
+            "logo": "https://media.api-sports.io/football/teams/473.png",
+            "winner": true
+          },
+          "away": {
+            "id": 436,
+            "name": "Racing Club",
+            "logo": "https://media.api-sports.io/football/teams/436.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334417,
@@ -978,65 +1037,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334279,
-          "date": "2025-01-24T00:30:00+00:00",
-          "venue": {
-            "id": 93,
-            "name": "Estadio Marcelo Alberto Bielsa",
-            "city": "Rosario, Provincia de Santa Fe"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737678600
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 457,
-            "name": "Newells Old Boys",
-            "logo": "https://media.api-sports.io/football/teams/457.png",
-            "winner": false
-          },
-          "away": {
-            "id": 473,
-            "name": "Independ. Rivadavia",
-            "logo": "https://media.api-sports.io/football/teams/473.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1333,5 +1333,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:47.541Z"
+  "lastUpdated": "2025-04-01T14:54:42.187Z"
 }

@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1326310,
-          "date": "2025-03-29T23:30:00+00:00",
-          "venue": {
-            "id": 1617,
-            "name": "Allianz Field",
-            "city": "Saint Paul, Minnesota"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743291000
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1612,
-            "name": "Minnesota United FC",
-            "logo": "https://media.api-sports.io/football/teams/1612.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1606,
-            "name": "Real Salt Lake",
-            "logo": "https://media.api-sports.io/football/teams/1606.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1326317,
@@ -1366,9 +1307,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1326589,
+          "date": "2025-08-10T22:00:00+00:00",
+          "venue": {
+            "id": 21544,
+            "name": "Sports Illustrated Stadium",
+            "city": "Harrison, New Jersey"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754863200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1606,
+            "name": "Real Salt Lake",
+            "logo": "https://media.api-sports.io/football/teams/1606.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1326310,
+          "date": "2025-03-30T00:30:00+00:00",
+          "venue": {
+            "id": 1617,
+            "name": "Allianz Field",
+            "city": "Saint Paul, Minnesota"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743294600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1612,
+            "name": "Minnesota United FC",
+            "logo": "https://media.api-sports.io/football/teams/1612.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1606,
+            "name": "Real Salt Lake",
+            "logo": "https://media.api-sports.io/football/teams/1606.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1326299,
@@ -1899,65 +1958,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1346341,
-          "date": "2025-02-05T18:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1738778400
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 20787,
-            "name": "St. Louis City",
-            "logo": "https://media.api-sports.io/football/teams/20787.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1606,
-            "name": "Real Salt Lake",
-            "logo": "https://media.api-sports.io/football/teams/1606.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1975,12 +1975,12 @@
       "name": "Real Salt Lake",
       "logo": "https://media.api-sports.io/football/teams/1606.png"
     },
-    "form": "LWLWL",
+    "form": "LWLWLL",
     "fixtures": {
       "played": {
         "home": 3,
-        "away": 2,
-        "total": 5
+        "away": 3,
+        "total": 6
       },
       "wins": {
         "home": 1,
@@ -1994,8 +1994,8 @@
       },
       "loses": {
         "home": 2,
-        "away": 1,
-        "total": 3
+        "away": 2,
+        "total": 4
       }
     },
     "goals": {
@@ -2007,8 +2007,8 @@
         },
         "average": {
           "home": "1.0",
-          "away": "1.0",
-          "total": "1.0"
+          "away": "0.7",
+          "total": "0.8"
         },
         "minute": {
           "0-15": {
@@ -2047,65 +2047,65 @@
         "under_over": {
           "0.5": {
             "over": 3,
-            "under": 2
+            "under": 3
           },
           "1.5": {
             "over": 2,
-            "under": 3
+            "under": 4
           },
           "2.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           }
         }
       },
       "against": {
         "total": {
           "home": 4,
-          "away": 5,
-          "total": 9
+          "away": 7,
+          "total": 11
         },
         "average": {
           "home": "1.3",
-          "away": "2.5",
+          "away": "2.3",
           "total": "1.8"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "10.00%"
+            "percentage": "8.33%"
           },
           "16-30": {
-            "total": 2,
-            "percentage": "20.00%"
+            "total": 3,
+            "percentage": "25.00%"
           },
           "31-45": {
             "total": 1,
-            "percentage": "10.00%"
+            "percentage": "8.33%"
           },
           "46-60": {
-            "total": 1,
-            "percentage": "10.00%"
+            "total": 2,
+            "percentage": "16.67%"
           },
           "61-75": {
             "total": 2,
-            "percentage": "20.00%"
+            "percentage": "16.67%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "10.00%"
+            "percentage": "8.33%"
           },
           "91-105": {
             "total": 2,
-            "percentage": "20.00%"
+            "percentage": "16.67%"
           },
           "106-120": {
             "total": null,
@@ -2114,24 +2114,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
+            "over": 5,
             "under": 1
           },
           "1.5": {
-            "over": 2,
+            "over": 3,
             "under": 3
           },
           "2.5": {
             "over": 2,
-            "under": 3
+            "under": 4
           },
           "3.5": {
             "over": 1,
-            "under": 4
+            "under": 5
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           }
         }
       }
@@ -2168,8 +2168,8 @@
     },
     "failed_to_score": {
       "home": 1,
-      "away": 1,
-      "total": 2
+      "away": 2,
+      "total": 3
     },
     "penalty": {
       "scored": {
@@ -2185,7 +2185,7 @@
     "lineups": [
       {
         "formation": "4-2-3-1",
-        "played": 4
+        "played": 5
       },
       {
         "formation": "4-4-2",
@@ -2200,7 +2200,7 @@
         },
         "16-30": {
           "total": 1,
-          "percentage": "8.33%"
+          "percentage": "7.14%"
         },
         "31-45": {
           "total": null,
@@ -2208,19 +2208,19 @@
         },
         "46-60": {
           "total": 3,
-          "percentage": "25.00%"
+          "percentage": "21.43%"
         },
         "61-75": {
-          "total": 4,
-          "percentage": "33.33%"
+          "total": 5,
+          "percentage": "35.71%"
         },
         "76-90": {
           "total": 2,
-          "percentage": "16.67%"
+          "percentage": "14.29%"
         },
         "91-105": {
-          "total": 2,
-          "percentage": "16.67%"
+          "total": 3,
+          "percentage": "21.43%"
         },
         "106-120": {
           "total": null,
@@ -2263,5 +2263,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:52.496Z"
+  "lastUpdated": "2025-04-01T14:59:51.100Z"
 }

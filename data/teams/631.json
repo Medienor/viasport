@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361730,
-          "date": "2025-03-30T16:30:00+00:00",
-          "venue": {
-            "id": 12455,
-            "name": "Cegeka Arena",
-            "city": "Genk"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743352200
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 742,
-            "name": "Genk",
-            "logo": "https://media.api-sports.io/football/teams/742.png",
-            "winner": null
-          },
-          "away": {
-            "id": 631,
-            "name": "Gent",
-            "logo": "https://media.api-sports.io/football/teams/631.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361731,
           "date": "2025-04-05T18:45:00+00:00",
           "venue": {
@@ -745,6 +686,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361730,
+          "date": "2025-03-30T16:30:00+00:00",
+          "venue": {
+            "id": 12455,
+            "name": "Cegeka Arena",
+            "city": "Genk"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743352200
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 742,
+            "name": "Genk",
+            "logo": "https://media.api-sports.io/football/teams/742.png",
+            "winner": true
+          },
+          "away": {
+            "id": 631,
+            "name": "Gent",
+            "logo": "https://media.api-sports.io/football/teams/631.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1213436,
           "date": "2025-03-16T17:30:00+00:00",
           "venue": {
@@ -1273,65 +1273,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213381,
-          "date": "2025-01-26T18:15:00+00:00",
-          "venue": {
-            "id": 186,
-            "name": "King Power at Den Dreef Stadion",
-            "city": "Heverlee"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737915300
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 260,
-            "name": "OH Leuven",
-            "logo": "https://media.api-sports.io/football/teams/260.png",
-            "winner": null
-          },
-          "away": {
-            "id": 631,
-            "name": "Gent",
-            "logo": "https://media.api-sports.io/football/teams/631.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1628,5 +1569,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:12.748Z"
+  "lastUpdated": "2025-04-01T14:54:06.298Z"
 }

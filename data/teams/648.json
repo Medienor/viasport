@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -183,65 +183,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1261111,
-          "date": "2025-03-30T14:00:00+00:00",
-          "venue": {
-            "id": 4134,
-            "name": "Zirə qəsəbə stadionu",
-            "city": "Zirya"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743343200
-        },
-        "league": {
-          "id": 419,
-          "name": "Premyer Liqa",
-          "logo": "https://media.api-sports.io/football/leagues/419.png"
-        },
-        "teams": {
-          "home": {
-            "id": 648,
-            "name": "Zira",
-            "logo": "https://media.api-sports.io/football/teams/648.png",
-            "winner": null
-          },
-          "away": {
-            "id": 666,
-            "name": "Keshla FC",
-            "logo": "https://media.api-sports.io/football/teams/666.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1261112,
@@ -359,9 +300,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1261123,
+          "date": "2025-04-17T22:00:00+00:00",
+          "venue": {
+            "id": 4134,
+            "name": "Zirə qəsəbə stadionu",
+            "city": "Zirya"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744927200
+        },
+        "league": {
+          "id": 419,
+          "name": "Premyer Liqa",
+          "logo": "https://media.api-sports.io/football/leagues/419.png"
+        },
+        "teams": {
+          "home": {
+            "id": 648,
+            "name": "Zira",
+            "logo": "https://media.api-sports.io/football/teams/648.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5503,
+            "name": "Sumqayıt",
+            "logo": "https://media.api-sports.io/football/teams/5503.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1261111,
+          "date": "2025-03-30T14:00:00+00:00",
+          "venue": {
+            "id": 4134,
+            "name": "Zirə qəsəbə stadionu",
+            "city": "Zirya"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743343200
+        },
+        "league": {
+          "id": 419,
+          "name": "Premyer Liqa",
+          "logo": "https://media.api-sports.io/football/leagues/419.png"
+        },
+        "teams": {
+          "home": {
+            "id": 648,
+            "name": "Zira",
+            "logo": "https://media.api-sports.io/football/teams/648.png",
+            "winner": true
+          },
+          "away": {
+            "id": 666,
+            "name": "Keshla FC",
+            "logo": "https://media.api-sports.io/football/teams/666.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1261105,
@@ -892,65 +951,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1261071,
-          "date": "2025-01-24T10:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Şamaxı şəhər stadionu",
-            "city": "Shamakhi"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737712800
-        },
-        "league": {
-          "id": 419,
-          "name": "Premyer Liqa",
-          "logo": "https://media.api-sports.io/football/leagues/419.png"
-        },
-        "teams": {
-          "home": {
-            "id": 666,
-            "name": "Keshla FC",
-            "logo": "https://media.api-sports.io/football/teams/666.png",
-            "winner": false
-          },
-          "away": {
-            "id": 648,
-            "name": "Zira",
-            "logo": "https://media.api-sports.io/football/teams/648.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1247,5 +1247,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:25.386Z"
+  "lastUpdated": "2025-04-01T14:55:20.507Z"
 }

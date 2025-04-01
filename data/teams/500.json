@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223894,
-          "date": "2025-03-29T14:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadio Pier Luigi Penzo",
-            "city": "Venezia"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743256800
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 517,
-            "name": "Venezia",
-            "logo": "https://media.api-sports.io/football/teams/517.png",
-            "winner": null
-          },
-          "away": {
-            "id": 500,
-            "name": "Bologna",
-            "logo": "https://media.api-sports.io/football/teams/500.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1355083,
           "date": "2025-04-01T19:00:00+00:00",
           "venue": {
@@ -803,6 +744,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1223894,
+          "date": "2025-03-29T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadio Pierluigi Penzo",
+            "city": "Venice"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743256800
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 517,
+            "name": "Venezia",
+            "logo": "https://media.api-sports.io/football/teams/517.png",
+            "winner": false
+          },
+          "away": {
+            "id": 500,
+            "name": "Bologna",
+            "logo": "https://media.api-sports.io/football/teams/500.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1223876,
           "date": "2025-03-16T14:00:00+00:00",
           "venue": {
@@ -1161,7 +1161,7 @@
           "date": "2025-02-09T17:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Ettore Giardiniero - Via del Mare",
+            "name": "Via del Mare",
             "city": "Lecce"
           },
           "status": {
@@ -1321,65 +1321,6 @@
           "fulltime": {
             "home": 2,
             "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1299125,
-          "date": "2025-01-29T20:00:00+00:00",
-          "venue": {
-            "id": 1293,
-            "name": "Estádio José Alvalade",
-            "city": "Lisboa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738180800
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 228,
-            "name": "Sporting CP",
-            "logo": "https://media.api-sports.io/football/teams/228.png",
-            "winner": null
-          },
-          "away": {
-            "id": 500,
-            "name": "Bologna",
-            "logo": "https://media.api-sports.io/football/teams/500.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
           },
           "extratime": {
             "home": null,
@@ -1686,5 +1627,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:19.397Z"
+  "lastUpdated": "2025-04-01T14:53:11.612Z"
 }

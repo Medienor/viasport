@@ -297,65 +297,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334436,
-          "date": "2025-03-29T00:30:00+00:00",
-          "venue": {
-            "id": 115,
-            "name": "Estadio José Amalfitani",
-            "city": "Capital Federal, Ciudad de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743208200
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 438,
-            "name": "Velez Sarsfield",
-            "logo": "https://media.api-sports.io/football/teams/438.png",
-            "winner": null
-          },
-          "away": {
-            "id": 476,
-            "name": "Deportivo Riestra",
-            "logo": "https://media.api-sports.io/football/teams/476.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361871,
           "date": "2025-04-02T22:00:00+00:00",
           "venue": {
@@ -948,6 +889,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1334436,
+          "date": "2025-03-29T00:30:00+00:00",
+          "venue": {
+            "id": 115,
+            "name": "Estadio José Amalfitani",
+            "city": "Capital Federal, Ciudad de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743208200
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 438,
+            "name": "Velez Sarsfield",
+            "logo": "https://media.api-sports.io/football/teams/438.png",
+            "winner": false
+          },
+          "away": {
+            "id": 476,
+            "name": "Deportivo Riestra",
+            "logo": "https://media.api-sports.io/football/teams/476.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1334426,
           "date": "2025-03-18T00:15:00+00:00",
           "venue": {
@@ -1476,65 +1476,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334297,
-          "date": "2025-01-29T00:30:00+00:00",
-          "venue": {
-            "id": 115,
-            "name": "Estadio José Amalfitani",
-            "city": "Capital Federal, Ciudad de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1738110600
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 438,
-            "name": "Velez Sarsfield",
-            "logo": "https://media.api-sports.io/football/teams/438.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1064,
-            "name": "Platense",
-            "logo": "https://media.api-sports.io/football/teams/1064.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1831,5 +1772,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:37.664Z"
+  "lastUpdated": "2025-04-01T14:54:31.912Z"
 }

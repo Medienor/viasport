@@ -153,71 +153,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334438,
-          "date": "2025-03-29T19:30:00+00:00",
-          "venue": {
-            "id": 84,
-            "name": "Estadio Juan Domingo Perón",
-            "city": "Ciudad de Córdoba, Provincia de Córdoba"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743276600
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 478,
-            "name": "Instituto Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/478.png",
-            "winner": null
-          },
-          "away": {
-            "id": 461,
-            "name": "San Martin S.J.",
-            "logo": "https://media.api-sports.io/football/teams/461.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1330801,
-          "date": "2025-04-02T20:00:00+00:00",
+          "date": "2025-04-03T21:45:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 71,
+            "name": "Estadio Ciudad de Caseros",
+            "city": "Caseros, Provincia de Buenos Aires"
           },
           "status": {
             "long": "Not Started",
@@ -225,7 +166,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743624000
+          "timestamp": 1743716700
         },
         "league": {
           "id": 130,
@@ -507,6 +448,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334438,
+          "date": "2025-03-29T19:30:00+00:00",
+          "venue": {
+            "id": 84,
+            "name": "Estadio Juan Domingo Perón",
+            "city": "Ciudad de Córdoba, Provincia de Córdoba"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743276600
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 478,
+            "name": "Instituto Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/478.png",
+            "winner": true
+          },
+          "away": {
+            "id": 461,
+            "name": "San Martin S.J.",
+            "logo": "https://media.api-sports.io/football/teams/461.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334422,
@@ -1037,65 +1037,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334288,
-          "date": "2025-01-25T22:15:00+00:00",
-          "venue": {
-            "id": 84,
-            "name": "Estadio Juan Domingo Perón",
-            "city": "Ciudad de Córdoba, Provincia de Córdoba"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737843300
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 478,
-            "name": "Instituto Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/478.png",
-            "winner": true
-          },
-          "away": {
-            "id": 434,
-            "name": "Gimnasia L.P.",
-            "logo": "https://media.api-sports.io/football/teams/434.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1392,5 +1333,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:47.597Z"
+  "lastUpdated": "2025-04-01T14:54:42.199Z"
 }

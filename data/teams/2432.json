@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334427,
-          "date": "2025-03-27T21:00:00+00:00",
-          "venue": {
-            "id": 44,
-            "name": "Estadio Claudio Fabián Tapia",
-            "city": "Capital Federal, Ciudad de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743109200
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2432,
-            "name": "Barracas Central",
-            "logo": "https://media.api-sports.io/football/teams/2432.png",
-            "winner": null
-          },
-          "away": {
-            "id": 450,
-            "name": "Estudiantes L.P.",
-            "logo": "https://media.api-sports.io/football/teams/450.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334447,
           "date": "2025-04-06T21:00:00+00:00",
           "venue": {
@@ -302,6 +243,65 @@
             "id": 452,
             "name": "Tigre",
             "logo": "https://media.api-sports.io/football/teams/452.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1330793,
+          "date": "2025-04-16T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744840800
+        },
+        "league": {
+          "id": 130,
+          "name": "Copa Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/130.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2432,
+            "name": "Barracas Central",
+            "logo": "https://media.api-sports.io/football/teams/2432.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1067,
+            "name": "Defensores De Belgrano",
+            "logo": "https://media.api-sports.io/football/teams/1067.png",
             "winner": null
           }
         },
@@ -448,6 +448,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334427,
+          "date": "2025-03-27T21:00:00+00:00",
+          "venue": {
+            "id": 38,
+            "name": "Estadio Julio Humberto Grondona",
+            "city": "Avellaneda, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743109200
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2432,
+            "name": "Barracas Central",
+            "logo": "https://media.api-sports.io/football/teams/2432.png",
+            "winner": true
+          },
+          "away": {
+            "id": 450,
+            "name": "Estudiantes L.P.",
+            "logo": "https://media.api-sports.io/football/teams/450.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334421,
@@ -978,65 +1037,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334281,
-          "date": "2025-01-24T20:00:00+00:00",
-          "venue": {
-            "id": 38,
-            "name": "Estadio Julio Humberto Grondona",
-            "city": "Avellaneda, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737748800
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2432,
-            "name": "Barracas Central",
-            "logo": "https://media.api-sports.io/football/teams/2432.png",
-            "winner": false
-          },
-          "away": {
-            "id": 436,
-            "name": "Racing Club",
-            "logo": "https://media.api-sports.io/football/teams/436.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1333,5 +1333,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:50.033Z"
+  "lastUpdated": "2025-04-01T14:54:44.743Z"
 }

@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1213982,
-          "date": "2025-03-30T15:15:00+00:00",
-          "venue": {
-            "id": 636,
-            "name": "Stade de l'Abbé Deschamps",
-            "city": "Auxerre"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743347700
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 108,
-            "name": "Auxerre",
-            "logo": "https://media.api-sports.io/football/teams/108.png",
-            "winner": null
-          },
-          "away": {
-            "id": 82,
-            "name": "Montpellier",
-            "logo": "https://media.api-sports.io/football/teams/82.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1213998,
@@ -386,9 +327,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1214021,
+          "date": "2025-04-27T15:15:00+00:00",
+          "venue": {
+            "id": 654,
+            "name": "Stade Bollaert-Delelis",
+            "city": "Lens"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745766900
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 116,
+            "name": "Lens",
+            "logo": "https://media.api-sports.io/football/teams/116.png",
+            "winner": null
+          },
+          "away": {
+            "id": 108,
+            "name": "Auxerre",
+            "logo": "https://media.api-sports.io/football/teams/108.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213982,
+          "date": "2025-03-30T15:15:00+00:00",
+          "venue": {
+            "id": 636,
+            "name": "Stade de l'Abbé Deschamps",
+            "city": "Auxerre"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743347700
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 108,
+            "name": "Auxerre",
+            "logo": "https://media.api-sports.io/football/teams/108.png",
+            "winner": true
+          },
+          "away": {
+            "id": 82,
+            "name": "Montpellier",
+            "logo": "https://media.api-sports.io/football/teams/82.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213973,
@@ -454,7 +513,7 @@
           "date": "2025-03-09T16:15:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stade Auguste-Delaune",
+            "name": "Stade Auguste Delaune",
             "city": "Reims"
           },
           "status": {
@@ -919,65 +978,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213893,
-          "date": "2025-01-10T20:05:00+00:00",
-          "venue": {
-            "id": 636,
-            "name": "Stade de l'Abbé Deschamps",
-            "city": "Auxerre"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 11
-          },
-          "timestamp": 1736539500
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 108,
-            "name": "Auxerre",
-            "logo": "https://media.api-sports.io/football/teams/108.png",
-            "winner": null
-          },
-          "away": {
-            "id": 79,
-            "name": "Lille",
-            "logo": "https://media.api-sports.io/football/teams/79.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1274,5 +1274,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:39.549Z"
+  "lastUpdated": "2025-04-01T14:53:32.891Z"
 }

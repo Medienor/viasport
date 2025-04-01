@@ -77,8 +77,8 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
+              "events": true,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -87,6 +87,43 @@
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 105,
+        "name": "NM Cupen",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/105.png"
+      },
+      "country": {
+        "name": "Norway",
+        "code": "NO",
+        "flag": "https://media.api-sports.io/flags/no.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-26",
+          "end": "2025-04-13",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": false
@@ -109,65 +146,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1343462,
-          "date": "2025-03-31T16:30:00+00:00",
-          "venue": {
-            "id": 11953,
-            "name": "SmartDok Arena",
-            "city": "Alta"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743438600
-        },
-        "league": {
-          "id": 474,
-          "name": "2. Division - Group 2",
-          "logo": "https://media.api-sports.io/football/leagues/474.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6965,
-            "name": "Alta",
-            "logo": "https://media.api-sports.io/football/teams/6965.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2145,
-            "name": "Levanger",
-            "logo": "https://media.api-sports.io/football/teams/2145.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1343467,
@@ -1288,9 +1266,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1343600,
+          "date": "2025-09-20T14:00:00+00:00",
+          "venue": {
+            "id": 1952,
+            "name": "TOBB ARENA Levanger",
+            "city": "Levanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1758376800
+        },
+        "league": {
+          "id": 474,
+          "name": "2. Division - Group 2",
+          "logo": "https://media.api-sports.io/football/leagues/474.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2145,
+            "name": "Levanger",
+            "logo": "https://media.api-sports.io/football/teams/2145.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7033,
+            "name": "Stjørdals-Blink",
+            "logo": "https://media.api-sports.io/football/teams/7033.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1343462,
+          "date": "2025-03-31T16:30:00+00:00",
+          "venue": {
+            "id": 11953,
+            "name": "SmartDok Arena",
+            "city": "Alta"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 12
+          },
+          "timestamp": 1743438600
+        },
+        "league": {
+          "id": 474,
+          "name": "2. Division - Group 2",
+          "logo": "https://media.api-sports.io/football/leagues/474.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6965,
+            "name": "Alta",
+            "logo": "https://media.api-sports.io/football/teams/6965.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2145,
+            "name": "Levanger",
+            "logo": "https://media.api-sports.io/football/teams/2145.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365965,
@@ -1821,65 +1917,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1152087,
-          "date": "2024-10-21T17:00:00+00:00",
-          "venue": {
-            "id": 5124,
-            "name": "Melløs Stadion",
-            "city": "Moss"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1729530000
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7012,
-            "name": "Moss",
-            "logo": "https://media.api-sports.io/football/teams/7012.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2145,
-            "name": "Levanger",
-            "logo": "https://media.api-sports.io/football/teams/2145.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1897,12 +1934,12 @@
       "name": "Levanger",
       "logo": "https://media.api-sports.io/football/teams/2145.png"
     },
-    "form": null,
+    "form": "L",
     "fixtures": {
       "played": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       },
       "wins": {
         "home": 0,
@@ -1916,21 +1953,21 @@
       },
       "loses": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       }
     },
     "goals": {
       "for": {
         "total": {
           "home": 0,
-          "away": 0,
-          "total": 0
+          "away": 3,
+          "total": 3
         },
         "average": {
           "home": "0.0",
-          "away": "0.0",
-          "total": "0.0"
+          "away": "3.0",
+          "total": "3.0"
         },
         "minute": {
           "0-15": {
@@ -1942,8 +1979,8 @@
             "percentage": null
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "100.00%"
           },
           "46-60": {
             "total": null,
@@ -1968,37 +2005,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "2.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       },
       "against": {
         "total": {
           "home": 0,
-          "away": 0,
-          "total": 0
+          "away": 4,
+          "total": 4
         },
         "average": {
           "home": "0.0",
-          "away": "0.0",
-          "total": "0.0"
+          "away": "4.0",
+          "total": "4.0"
         },
         "minute": {
           "0-15": {
@@ -2006,24 +2043,24 @@
             "percentage": null
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "40.00%"
           },
           "91-105": {
             "total": null,
@@ -2036,24 +2073,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "2.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "3.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       }
@@ -2062,7 +2099,7 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 0
+        "loses": 1
       },
       "wins": {
         "home": null,
@@ -2070,16 +2107,16 @@
       },
       "loses": {
         "home": null,
-        "away": null
+        "away": "4-3"
       },
       "goals": {
         "for": {
           "home": 0,
-          "away": 0
+          "away": 3
         },
         "against": {
           "home": 0,
-          "away": 0
+          "away": 4
         }
       }
     },
@@ -2112,16 +2149,16 @@
           "percentage": null
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "31-45": {
           "total": null,
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "61-75": {
           "total": null,
@@ -2176,5 +2213,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:35:46.370Z"
+  "lastUpdated": "2025-04-01T14:52:38.452Z"
 }

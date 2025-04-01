@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-03",
-          "end": "2025-04-26",
+          "end": "2025-05-10",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -224,65 +224,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1351553,
-          "date": "2025-03-29T16:00:00+00:00",
-          "venue": {
-            "id": 1092,
-            "name": "Stadionul Orăşenesc",
-            "city": "Hînceşti"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743264000
-        },
-        "league": {
-          "id": 394,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/394.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2271,
-            "name": "Petrocub",
-            "logo": "https://media.api-sports.io/football/teams/2271.png",
-            "winner": null
-          },
-          "away": {
-            "id": 568,
-            "name": "Sheriff Tiraspol",
-            "logo": "https://media.api-sports.io/football/teams/568.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1357118,
@@ -641,6 +582,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1351553,
+          "date": "2025-03-29T16:00:00+00:00",
+          "venue": {
+            "id": 1092,
+            "name": "Stadionul Orăşenesc",
+            "city": "Hînceşti"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743264000
+        },
+        "league": {
+          "id": 394,
+          "name": "Super Liga",
+          "logo": "https://media.api-sports.io/football/leagues/394.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2271,
+            "name": "Petrocub",
+            "logo": "https://media.api-sports.io/football/teams/2271.png",
+            "winner": null
+          },
+          "away": {
+            "id": 568,
+            "name": "Sheriff Tiraspol",
+            "logo": "https://media.api-sports.io/football/teams/568.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1366024,
           "date": "2025-03-22T13:00:00+00:00",
           "venue": {
@@ -681,8 +681,8 @@
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 2,
+            "away": 0
           },
           "fulltime": {
             "home": 2,
@@ -1169,65 +1169,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1239665,
-          "date": "2024-10-19T15:00:00+00:00",
-          "venue": {
-            "id": 1092,
-            "name": "Stadionul Orăşenesc",
-            "city": "Hînceşti"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1729350000
-        },
-        "league": {
-          "id": 394,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/394.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2271,
-            "name": "Petrocub",
-            "logo": "https://media.api-sports.io/football/teams/2271.png",
-            "winner": null
-          },
-          "away": {
-            "id": 568,
-            "name": "Sheriff Tiraspol",
-            "logo": "https://media.api-sports.io/football/teams/568.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1524,5 +1465,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:22.904Z"
+  "lastUpdated": "2025-04-01T14:55:17.996Z"
 }

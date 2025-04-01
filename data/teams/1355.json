@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-02",
-          "end": "2025-03-29",
+          "end": "2025-04-26",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1216306,
-          "date": "2025-03-29T15:00:00+00:00",
-          "venue": {
-            "id": 573,
-            "name": "Fratton Park",
-            "city": "Portsmouth"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743260400
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1355,
-            "name": "Portsmouth",
-            "logo": "https://media.api-sports.io/football/teams/1355.png",
-            "winner": null
-          },
-          "away": {
-            "id": 67,
-            "name": "Blackburn",
-            "logo": "https://media.api-sports.io/football/teams/67.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1216315,
@@ -624,6 +565,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216306,
+          "date": "2025-03-29T15:00:00+00:00",
+          "venue": {
+            "id": 573,
+            "name": "Fratton Park",
+            "city": "Portsmouth"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743260400
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1355,
+            "name": "Portsmouth",
+            "logo": "https://media.api-sports.io/football/teams/1355.png",
+            "winner": true
+          },
+          "away": {
+            "id": 67,
+            "name": "Blackburn",
+            "logo": "https://media.api-sports.io/football/teams/67.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216294,
@@ -1154,65 +1154,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216046,
-          "date": "2025-01-28T19:45:00+00:00",
-          "venue": {
-            "id": 573,
-            "name": "Fratton Park",
-            "city": "Portsmouth"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738093500
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1355,
-            "name": "Portsmouth",
-            "logo": "https://media.api-sports.io/football/teams/1355.png",
-            "winner": false
-          },
-          "away": {
-            "id": 58,
-            "name": "Millwall",
-            "logo": "https://media.api-sports.io/football/teams/58.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1509,5 +1450,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:27.688Z"
+  "lastUpdated": "2025-04-01T14:54:21.781Z"
 }

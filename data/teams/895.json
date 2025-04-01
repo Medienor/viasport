@@ -109,65 +109,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223886,
-          "date": "2025-03-29T14:00:00+00:00",
-          "venue": {
-            "id": 892,
-            "name": "Stadio Giuseppe Sinigaglia",
-            "city": "Como"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743256800
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 895,
-            "name": "Como",
-            "logo": "https://media.api-sports.io/football/teams/895.png",
-            "winner": null
-          },
-          "away": {
-            "id": 511,
-            "name": "Empoli",
-            "logo": "https://media.api-sports.io/football/teams/511.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223901,
           "date": "2025-04-05T13:00:00+00:00",
           "venue": {
@@ -640,6 +581,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1223886,
+          "date": "2025-03-29T14:00:00+00:00",
+          "venue": {
+            "id": 892,
+            "name": "Stadio Giuseppe Sinigaglia",
+            "city": "Como"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743256800
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 895,
+            "name": "Como",
+            "logo": "https://media.api-sports.io/football/teams/895.png",
+            "winner": null
+          },
+          "away": {
+            "id": 511,
+            "name": "Empoli",
+            "logo": "https://media.api-sports.io/football/teams/511.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1223879,
@@ -1170,65 +1170,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1223776,
-          "date": "2025-01-14T17:30:00+00:00",
-          "venue": {
-            "id": 892,
-            "name": "Stadio Giuseppe Sinigaglia",
-            "city": "Como"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1736875800
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 895,
-            "name": "Como",
-            "logo": "https://media.api-sports.io/football/teams/895.png",
-            "winner": false
-          },
-          "away": {
-            "id": 489,
-            "name": "AC Milan",
-            "logo": "https://media.api-sports.io/football/teams/489.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1525,5 +1466,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:24.301Z"
+  "lastUpdated": "2025-04-01T14:53:17.130Z"
 }

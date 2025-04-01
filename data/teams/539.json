@@ -116,65 +116,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1217852,
-          "date": "2025-03-29T20:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "UD Almería Stadium",
-            "city": "Almería"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743278400
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 723,
-            "name": "Almeria",
-            "logo": "https://media.api-sports.io/football/teams/723.png",
-            "winner": null
-          },
-          "away": {
-            "id": 539,
-            "name": "Levante",
-            "logo": "https://media.api-sports.io/football/teams/539.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1217866,
           "date": "2025-04-06T14:15:00+00:00",
           "venue": {
@@ -290,9 +231,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1217890,
+          "date": "2025-04-19T16:30:00+00:00",
+          "venue": {
+            "id": 1482,
+            "name": "Estadio Ciudad de Valencia",
+            "city": "Valencia"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745080200
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 539,
+            "name": "Levante",
+            "logo": "https://media.api-sports.io/football/teams/539.png",
+            "winner": null
+          },
+          "away": {
+            "id": 732,
+            "name": "Zaragoza",
+            "logo": "https://media.api-sports.io/football/teams/732.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1217905,
+          "date": "2025-04-26T14:15:00+00:00",
+          "venue": {
+            "id": 1490,
+            "name": "Estadio Nuevo Carlos Tartiere",
+            "city": "Oviedo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745676900
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 718,
+            "name": "Oviedo",
+            "logo": "https://media.api-sports.io/football/teams/718.png",
+            "winner": null
+          },
+          "away": {
+            "id": 539,
+            "name": "Levante",
+            "logo": "https://media.api-sports.io/football/teams/539.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217852,
+          "date": "2025-03-29T20:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "UD Almeria Stadium",
+            "city": "Almeria"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743278400
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 723,
+            "name": "Almeria",
+            "logo": "https://media.api-sports.io/football/teams/723.png",
+            "winner": true
+          },
+          "away": {
+            "id": 539,
+            "name": "Levante",
+            "logo": "https://media.api-sports.io/football/teams/539.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217848,
@@ -823,65 +941,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217749,
-          "date": "2025-01-18T20:00:00+00:00",
-          "venue": {
-            "id": 1482,
-            "name": "Estadio Ciudad de Valencia",
-            "city": "Valencia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737230400
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 539,
-            "name": "Levante",
-            "logo": "https://media.api-sports.io/football/teams/539.png",
-            "winner": true
-          },
-          "away": {
-            "id": 715,
-            "name": "Granada CF",
-            "logo": "https://media.api-sports.io/football/teams/715.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1178,5 +1237,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:22.225Z"
+  "lastUpdated": "2025-04-01T14:59:20.348Z"
 }

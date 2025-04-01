@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-02",
-          "end": "2025-03-29",
+          "end": "2025-04-26",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1216299,
-          "date": "2025-03-29T15:00:00+00:00",
-          "venue": {
-            "id": 512,
-            "name": "Turf Moor",
-            "city": "Burnley"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743260400
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 44,
-            "name": "Burnley",
-            "logo": "https://media.api-sports.io/football/teams/44.png",
-            "winner": null
-          },
-          "away": {
-            "id": 56,
-            "name": "Bristol City",
-            "logo": "https://media.api-sports.io/football/teams/56.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1216312,
@@ -624,6 +565,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216299,
+          "date": "2025-03-29T15:00:00+00:00",
+          "venue": {
+            "id": 512,
+            "name": "Turf Moor",
+            "city": "Burnley"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743260400
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 44,
+            "name": "Burnley",
+            "logo": "https://media.api-sports.io/football/teams/44.png",
+            "winner": true
+          },
+          "away": {
+            "id": 56,
+            "name": "Bristol City",
+            "logo": "https://media.api-sports.io/football/teams/56.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216288,
@@ -1154,65 +1154,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216179,
-          "date": "2025-01-25T15:00:00+00:00",
-          "venue": {
-            "id": 20106,
-            "name": "Ashton Gate Stadium",
-            "city": "Bristol"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737817200
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 56,
-            "name": "Bristol City",
-            "logo": "https://media.api-sports.io/football/teams/56.png",
-            "winner": true
-          },
-          "away": {
-            "id": 67,
-            "name": "Blackburn",
-            "logo": "https://media.api-sports.io/football/teams/67.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1509,5 +1450,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:20.324Z"
+  "lastUpdated": "2025-04-01T14:54:14.150Z"
 }

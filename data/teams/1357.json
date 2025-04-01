@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-02",
-          "end": "2025-03-29",
+          "end": "2025-04-26",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1216310,
-          "date": "2025-03-29T12:30:00+00:00",
-          "venue": {
-            "id": 596,
-            "name": "Vicarage Road",
-            "city": "Watford"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743251400
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 38,
-            "name": "Watford",
-            "logo": "https://media.api-sports.io/football/teams/38.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1357,
-            "name": "Plymouth",
-            "logo": "https://media.api-sports.io/football/teams/1357.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1216317,
@@ -624,6 +565,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216310,
+          "date": "2025-03-29T12:30:00+00:00",
+          "venue": {
+            "id": 596,
+            "name": "Vicarage Road",
+            "city": "Watford"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743251400
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 38,
+            "name": "Watford",
+            "logo": "https://media.api-sports.io/football/teams/38.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1357,
+            "name": "Plymouth",
+            "logo": "https://media.api-sports.io/football/teams/1357.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216293,
@@ -1154,65 +1154,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334968,
-          "date": "2025-02-09T15:00:00+00:00",
-          "venue": {
-            "id": 571,
-            "name": "Home Park",
-            "city": "Plymouth"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1739113200
-        },
-        "league": {
-          "id": 45,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/45.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1357,
-            "name": "Plymouth",
-            "logo": "https://media.api-sports.io/football/teams/1357.png",
-            "winner": true
-          },
-          "away": {
-            "id": 40,
-            "name": "Liverpool",
-            "logo": "https://media.api-sports.io/football/teams/40.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1509,5 +1450,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:30.154Z"
+  "lastUpdated": "2025-04-01T14:54:24.283Z"
 }

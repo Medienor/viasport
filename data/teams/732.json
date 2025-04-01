@@ -113,65 +113,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1217857,
-          "date": "2025-03-29T17:30:00+00:00",
-          "venue": {
-            "id": 3516,
-            "name": "Campos de Sport de El Sardinero",
-            "city": "Santander"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743269400
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4665,
-            "name": "Racing Santander",
-            "logo": "https://media.api-sports.io/football/teams/4665.png",
-            "winner": null
-          },
-          "away": {
-            "id": 732,
-            "name": "Zaragoza",
-            "logo": "https://media.api-sports.io/football/teams/732.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1217872,
           "date": "2025-04-06T12:00:00+00:00",
           "venue": {
@@ -287,9 +228,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1217890,
+          "date": "2025-04-19T16:30:00+00:00",
+          "venue": {
+            "id": 1482,
+            "name": "Estadio Ciudad de Valencia",
+            "city": "Valencia"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745080200
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 539,
+            "name": "Levante",
+            "logo": "https://media.api-sports.io/football/teams/539.png",
+            "winner": null
+          },
+          "away": {
+            "id": 732,
+            "name": "Zaragoza",
+            "logo": "https://media.api-sports.io/football/teams/732.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1217904,
+          "date": "2025-04-27T19:00:00+00:00",
+          "venue": {
+            "id": 1493,
+            "name": "Estadio de la Romareda",
+            "city": "Zaragoza"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745780400
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 732,
+            "name": "Zaragoza",
+            "logo": "https://media.api-sports.io/football/teams/732.png",
+            "winner": null
+          },
+          "away": {
+            "id": 726,
+            "name": "Huesca",
+            "logo": "https://media.api-sports.io/football/teams/726.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217857,
+          "date": "2025-03-29T17:30:00+00:00",
+          "venue": {
+            "id": 3516,
+            "name": "Campos de Sport de El Sardinero",
+            "city": "Santander"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743269400
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4665,
+            "name": "Racing Santander",
+            "logo": "https://media.api-sports.io/football/teams/4665.png",
+            "winner": true
+          },
+          "away": {
+            "id": 732,
+            "name": "Zaragoza",
+            "logo": "https://media.api-sports.io/football/teams/732.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217849,
@@ -355,8 +473,8 @@
           "date": "2025-03-15T17:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "UD Almería Stadium",
-            "city": "Almería"
+            "name": "UD Almeria Stadium",
+            "city": "Almeria"
           },
           "status": {
             "long": "Match Finished",
@@ -820,65 +938,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217751,
-          "date": "2025-01-19T17:30:00+00:00",
-          "venue": {
-            "id": 1493,
-            "name": "Estadio de la Romareda",
-            "city": "Zaragoza"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737307800
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 732,
-            "name": "Zaragoza",
-            "logo": "https://media.api-sports.io/football/teams/732.png",
-            "winner": null
-          },
-          "away": {
-            "id": 719,
-            "name": "Tenerife",
-            "logo": "https://media.api-sports.io/football/teams/719.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1175,5 +1234,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:27.300Z"
+  "lastUpdated": "2025-04-01T14:59:25.578Z"
 }

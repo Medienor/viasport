@@ -36,7 +36,7 @@
         {
           "year": 2024,
           "start": "2024-09-04",
-          "end": "2025-03-26",
+          "end": "2025-04-26",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -104,65 +104,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1328625,
-          "date": "2025-03-29T13:00:00+00:00",
-          "venue": {
-            "id": 5125,
-            "name": "Koteng Arena",
-            "city": "Trondheim"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743253200
-        },
-        "league": {
-          "id": 725,
-          "name": "Toppserien",
-          "logo": "https://media.api-sports.io/football/leagues/725.png"
-        },
-        "teams": {
-          "home": {
-            "id": 15956,
-            "name": "Rosenborg W",
-            "logo": "https://media.api-sports.io/football/teams/15956.png",
-            "winner": null
-          },
-          "away": {
-            "id": 22858,
-            "name": "Bodø / Glimt",
-            "logo": "https://media.api-sports.io/football/teams/22858.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1328627,
@@ -1283,9 +1224,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1328722,
+          "date": "2025-10-02T16:00:00+00:00",
+          "venue": {
+            "id": 5125,
+            "name": "Koteng Arena",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1759420800
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18379,
+            "name": "Røa",
+            "logo": "https://media.api-sports.io/football/teams/18379.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1328625,
+          "date": "2025-03-29T13:00:00+00:00",
+          "venue": {
+            "id": 5125,
+            "name": "Koteng Arena",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743253200
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15956,
+            "name": "Rosenborg W",
+            "logo": "https://media.api-sports.io/football/teams/15956.png",
+            "winner": true
+          },
+          "away": {
+            "id": 22858,
+            "name": "Bodø / Glimt",
+            "logo": "https://media.api-sports.io/football/teams/22858.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1328621,
@@ -1816,65 +1875,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1301167,
-          "date": "2024-09-07T18:30:00+00:00",
-          "venue": {
-            "id": 503,
-            "name": "Meadow Park",
-            "city": "Borehamwood, Hertfordshire"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1725733800
-        },
-        "league": {
-          "id": 525,
-          "name": "UEFA Champions League Women",
-          "logo": "https://media.api-sports.io/football/leagues/525.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1850,
-            "name": "Arsenal W",
-            "logo": "https://media.api-sports.io/football/teams/1850.png",
-            "winner": true
-          },
-          "away": {
-            "id": 15956,
-            "name": "Rosenborg W",
-            "logo": "https://media.api-sports.io/football/teams/15956.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1892,17 +1892,17 @@
       "name": "Rosenborg W",
       "logo": "https://media.api-sports.io/football/teams/15956.png"
     },
-    "form": "L",
+    "form": "LW",
     "fixtures": {
       "played": {
-        "home": 0,
+        "home": 1,
         "away": 1,
-        "total": 1
+        "total": 2
       },
       "wins": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "draws": {
         "home": 0,
@@ -1918,14 +1918,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 0,
+          "home": 2,
           "away": 0,
-          "total": 0
+          "total": 2
         },
         "average": {
-          "home": "0.0",
+          "home": "2.0",
           "away": "0.0",
-          "total": "0.0"
+          "total": "1.0"
         },
         "minute": {
           "0-15": {
@@ -1941,16 +1941,16 @@
             "percentage": null
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "91-105": {
             "total": null,
@@ -1963,37 +1963,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 1
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       },
       "against": {
         "total": {
-          "home": 0,
+          "home": 1,
           "away": 3,
-          "total": 3
+          "total": 4
         },
         "average": {
-          "home": "0.0",
+          "home": "1.0",
           "away": "3.0",
-          "total": "3.0"
+          "total": "2.0"
         },
         "minute": {
           "0-15": {
@@ -2002,15 +2002,15 @@
           },
           "16-30": {
             "total": 1,
-            "percentage": "33.33%"
+            "percentage": "25.00%"
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "66.67%"
+            "total": 3,
+            "percentage": "75.00%"
           },
           "61-75": {
             "total": null,
@@ -2031,24 +2031,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "1.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       }
@@ -2060,7 +2060,7 @@
         "loses": 1
       },
       "wins": {
-        "home": null,
+        "home": "2-1",
         "away": null
       },
       "loses": {
@@ -2069,11 +2069,11 @@
       },
       "goals": {
         "for": {
-          "home": 0,
+          "home": 2,
           "away": 0
         },
         "against": {
-          "home": 0,
+          "home": 1,
           "away": 3
         }
       }
@@ -2171,5 +2171,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:35:51.799Z"
+  "lastUpdated": "2025-04-01T14:52:43.649Z"
 }

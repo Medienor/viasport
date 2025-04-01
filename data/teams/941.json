@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1280806,
-          "date": "2025-03-30T04:00:00+00:00",
-          "venue": {
-            "id": 20806,
-            "name": "Industree Group Stadium",
-            "city": "Gosford"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743307200
-        },
-        "league": {
-          "id": 188,
-          "name": "A-League",
-          "logo": "https://media.api-sports.io/football/leagues/188.png"
-        },
-        "teams": {
-          "home": {
-            "id": 941,
-            "name": "Central Coast Mariners",
-            "logo": "https://media.api-sports.io/football/teams/941.png",
-            "winner": null
-          },
-          "away": {
-            "id": 940,
-            "name": "Perth Glory",
-            "logo": "https://media.api-sports.io/football/teams/940.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1280810,
           "date": "2025-04-05T06:00:00+00:00",
           "venue": {
@@ -447,6 +388,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1280806,
+          "date": "2025-03-30T04:00:00+00:00",
+          "venue": {
+            "id": 20806,
+            "name": "Industree Group Stadium",
+            "city": "Gosford"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743307200
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 941,
+            "name": "Central Coast Mariners",
+            "logo": "https://media.api-sports.io/football/teams/941.png",
+            "winner": true
+          },
+          "away": {
+            "id": 940,
+            "name": "Perth Glory",
+            "logo": "https://media.api-sports.io/football/teams/940.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1280800,
@@ -977,65 +977,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1280757,
-          "date": "2025-01-25T04:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Apollo Projects Stadium",
-            "city": "Christchurch"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737777600
-        },
-        "league": {
-          "id": 188,
-          "name": "A-League",
-          "logo": "https://media.api-sports.io/football/leagues/188.png"
-        },
-        "teams": {
-          "home": {
-            "id": 942,
-            "name": "Wellington Phoenix",
-            "logo": "https://media.api-sports.io/football/teams/942.png",
-            "winner": null
-          },
-          "away": {
-            "id": 941,
-            "name": "Central Coast Mariners",
-            "logo": "https://media.api-sports.io/football/teams/941.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1332,5 +1273,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:41:44.167Z"
+  "lastUpdated": "2025-04-01T14:58:40.703Z"
 }

@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -222,65 +222,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1358549,
-          "date": "2025-03-29T19:00:00+00:00",
-          "venue": {
-            "id": 3429,
-            "name": "Al Hasan Stadium",
-            "city": "Irbid"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743274800
-        },
-        "league": {
-          "id": 387,
-          "name": "League",
-          "logo": "https://media.api-sports.io/football/leagues/387.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4532,
-            "name": "Al Hussein",
-            "logo": "https://media.api-sports.io/football/teams/4532.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4535,
-            "name": "Al Salt",
-            "logo": "https://media.api-sports.io/football/teams/4535.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1358555,
@@ -637,6 +578,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1358549,
+          "date": "2025-03-29T19:00:00+00:00",
+          "venue": {
+            "id": 3429,
+            "name": "Al Hasan Stadium",
+            "city": "Irbid"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743274800
+        },
+        "league": {
+          "id": 387,
+          "name": "League",
+          "logo": "https://media.api-sports.io/football/leagues/387.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4532,
+            "name": "Al Hussein",
+            "logo": "https://media.api-sports.io/football/teams/4532.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4535,
+            "name": "Al Salt",
+            "logo": "https://media.api-sports.io/football/teams/4535.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1356737,
@@ -1167,65 +1167,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1304370,
-          "date": "2024-12-09T16:00:00+00:00",
-          "venue": {
-            "id": 3429,
-            "name": "Al Hasan Stadium",
-            "city": "Irbid"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1733760000
-        },
-        "league": {
-          "id": 387,
-          "name": "League",
-          "logo": "https://media.api-sports.io/football/leagues/387.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4532,
-            "name": "Al Hussein",
-            "logo": "https://media.api-sports.io/football/teams/4532.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4539,
-            "name": "Shabab Al Ordon",
-            "logo": "https://media.api-sports.io/football/teams/4539.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1522,5 +1463,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:04.618Z"
+  "lastUpdated": "2025-04-01T14:59:02.213Z"
 }

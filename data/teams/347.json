@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -147,65 +147,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1203183,
-          "date": "2025-03-29T19:15:00+00:00",
-          "venue": {
-            "id": 18628,
-            "name": "Tarczyński Arena",
-            "city": "Wrocław"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743275700
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 337,
-            "name": "Slask Wroclaw",
-            "logo": "https://media.api-sports.io/football/teams/337.png",
-            "winner": null
-          },
-          "away": {
-            "id": 347,
-            "name": "Lech Poznan",
-            "logo": "https://media.api-sports.io/football/teams/347.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1203186,
@@ -385,6 +326,65 @@
       },
       {
         "fixture": {
+          "id": 1203218,
+          "date": "2025-04-27T15:30:00+00:00",
+          "venue": {
+            "id": 20753,
+            "name": "Stadion Radomiaka",
+            "city": "Radom"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745767800
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4248,
+            "name": "Radomiak Radom",
+            "logo": "https://media.api-sports.io/football/teams/4248.png",
+            "winner": null
+          },
+          "away": {
+            "id": 347,
+            "name": "Lech Poznan",
+            "logo": "https://media.api-sports.io/football/teams/347.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203250,
           "date": "2025-05-24T15:30:00+00:00",
           "venue": {
@@ -446,12 +446,71 @@
     "past": [
       {
         "fixture": {
+          "id": 1203183,
+          "date": "2025-03-29T19:15:00+00:00",
+          "venue": {
+            "id": 18628,
+            "name": "Tarczyński Arena",
+            "city": "Wrocław"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743275700
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 337,
+            "name": "Slask Wroclaw",
+            "logo": "https://media.api-sports.io/football/teams/337.png",
+            "winner": true
+          },
+          "away": {
+            "id": 347,
+            "name": "Lech Poznan",
+            "logo": "https://media.api-sports.io/football/teams/347.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203167,
           "date": "2025-03-16T19:15:00+00:00",
           "venue": {
             "id": null,
             "name": "Chorten Arena",
-            "city": "Białystok"
+            "city": "Bialystok"
           },
           "status": {
             "long": "Match Finished",
@@ -974,65 +1033,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1203103,
-          "date": "2024-12-06T19:30:00+00:00",
-          "venue": {
-            "id": 18625,
-            "name": "Stadion im. Ernesta Pohla",
-            "city": "Zabrze"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1733513400
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 340,
-            "name": "Gornik Zabrze",
-            "logo": "https://media.api-sports.io/football/teams/340.png",
-            "winner": true
-          },
-          "away": {
-            "id": 347,
-            "name": "Lech Poznan",
-            "logo": "https://media.api-sports.io/football/teams/347.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1329,5 +1329,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:55.269Z"
+  "lastUpdated": "2025-04-01T14:53:48.470Z"
 }

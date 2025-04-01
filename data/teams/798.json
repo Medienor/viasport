@@ -149,65 +149,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208753,
-          "date": "2025-03-30T16:30:00+00:00",
-          "venue": {
-            "id": 1497,
-            "name": "Estadio de Mestalla",
-            "city": "Valencia"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743352200
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 532,
-            "name": "Valencia",
-            "logo": "https://media.api-sports.io/football/teams/532.png",
-            "winner": null
-          },
-          "away": {
-            "id": 798,
-            "name": "Mallorca",
-            "logo": "https://media.api-sports.io/football/teams/798.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208761,
           "date": "2025-04-05T16:30:00+00:00",
           "venue": {
@@ -323,9 +264,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1208781,
+          "date": "2025-04-19T16:30:00+00:00",
+          "venue": {
+            "id": 19940,
+            "name": "Estadi Mallorca Son Moix",
+            "city": "Palma de Mallorca"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745080200
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 798,
+            "name": "Mallorca",
+            "logo": "https://media.api-sports.io/football/teams/798.png",
+            "winner": null
+          },
+          "away": {
+            "id": 537,
+            "name": "Leganes",
+            "logo": "https://media.api-sports.io/football/teams/537.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208753,
+          "date": "2025-03-30T16:30:00+00:00",
+          "venue": {
+            "id": 1497,
+            "name": "Estadio de Mestalla",
+            "city": "Valencia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1743352200
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 532,
+            "name": "Valencia",
+            "logo": "https://media.api-sports.io/football/teams/532.png",
+            "winner": true
+          },
+          "away": {
+            "id": 798,
+            "name": "Mallorca",
+            "logo": "https://media.api-sports.io/football/teams/798.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1212937,
@@ -856,65 +915,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1251557,
-          "date": "2025-01-09T19:00:00+00:00",
-          "venue": {
-            "id": 1364,
-            "name": "King Abdullah Sports City",
-            "city": "Jeddah"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1736449200
-        },
-        "league": {
-          "id": 556,
-          "name": "Super Cup",
-          "logo": "https://media.api-sports.io/football/leagues/556.png"
-        },
-        "teams": {
-          "home": {
-            "id": 541,
-            "name": "Real Madrid",
-            "logo": "https://media.api-sports.io/football/teams/541.png",
-            "winner": true
-          },
-          "away": {
-            "id": 798,
-            "name": "Mallorca",
-            "logo": "https://media.api-sports.io/football/teams/798.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1211,5 +1211,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:14.426Z"
+  "lastUpdated": "2025-04-01T14:53:06.476Z"
 }

@@ -265,65 +265,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1224210,
-          "date": "2025-03-29T14:30:00+00:00",
-          "venue": {
-            "id": 700,
-            "name": "Allianz Arena",
-            "city": "München"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743258600
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 157,
-            "name": "Bayern München",
-            "logo": "https://media.api-sports.io/football/teams/157.png",
-            "winner": null
-          },
-          "away": {
-            "id": 186,
-            "name": "FC St. Pauli",
-            "logo": "https://media.api-sports.io/football/teams/186.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1224222,
           "date": "2025-04-04T18:30:00+00:00",
           "venue": {
@@ -1034,6 +975,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1224210,
+          "date": "2025-03-29T14:30:00+00:00",
+          "venue": {
+            "id": 700,
+            "name": "Allianz Arena",
+            "city": "München"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743258600
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 157,
+            "name": "Bayern München",
+            "logo": "https://media.api-sports.io/football/teams/157.png",
+            "winner": true
+          },
+          "away": {
+            "id": 186,
+            "name": "FC St. Pauli",
+            "logo": "https://media.api-sports.io/football/teams/186.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1224206,
           "date": "2025-03-15T14:30:00+00:00",
           "venue": {
@@ -1562,65 +1562,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224155,
-          "date": "2025-02-07T19:30:00+00:00",
-          "venue": {
-            "id": 700,
-            "name": "Allianz Arena",
-            "city": "München"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1738956600
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 157,
-            "name": "Bayern München",
-            "logo": "https://media.api-sports.io/football/teams/157.png",
-            "winner": true
-          },
-          "away": {
-            "id": 162,
-            "name": "Werder Bremen",
-            "logo": "https://media.api-sports.io/football/teams/162.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1917,5 +1858,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:24.405Z"
+  "lastUpdated": "2025-04-01T14:53:17.167Z"
 }

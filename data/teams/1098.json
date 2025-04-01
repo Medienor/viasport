@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -167,6 +167,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 10,
+        "name": "Friendlies",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-04",
+          "end": "2025-11-18",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -175,7 +212,8 @@
     2021,
     2022,
     2023,
-    2024
+    2024,
+    2025
   ],
   "fixtures": {
     "upcoming": [
@@ -1420,5 +1458,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:39:39.157Z"
+  "lastUpdated": "2025-04-01T14:56:35.224Z"
 }

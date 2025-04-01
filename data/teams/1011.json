@@ -185,65 +185,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1327723,
-          "date": "2025-03-29T17:00:00+00:00",
-          "venue": {
-            "id": 10500,
-            "name": "Stadion Wankdorf",
-            "city": "Bern"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743267600
-        },
-        "league": {
-          "id": 207,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/207.png"
-        },
-        "teams": {
-          "home": {
-            "id": 565,
-            "name": "BSC Young Boys",
-            "logo": "https://media.api-sports.io/football/teams/565.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1011,
-            "name": "FC ST. Gallen",
-            "logo": "https://media.api-sports.io/football/teams/1011.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1327733,
           "date": "2025-04-03T18:30:00+00:00",
           "venue": {
@@ -480,6 +421,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1327723,
+          "date": "2025-03-29T17:00:00+00:00",
+          "venue": {
+            "id": 10500,
+            "name": "Stadion Wankdorf",
+            "city": "Bern"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743267600
+        },
+        "league": {
+          "id": 207,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/207.png"
+        },
+        "teams": {
+          "home": {
+            "id": 565,
+            "name": "BSC Young Boys",
+            "logo": "https://media.api-sports.io/football/teams/565.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1011,
+            "name": "FC ST. Gallen",
+            "logo": "https://media.api-sports.io/football/teams/1011.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365865,
@@ -1010,65 +1010,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1222588,
-          "date": "2025-01-26T13:15:00+00:00",
-          "venue": {
-            "id": 1543,
-            "name": "kybunpark",
-            "city": "St. Gallen"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737897300
-        },
-        "league": {
-          "id": 207,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/207.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1011,
-            "name": "FC ST. Gallen",
-            "logo": "https://media.api-sports.io/football/teams/1011.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1014,
-            "name": "Lausanne",
-            "logo": "https://media.api-sports.io/football/teams/1014.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1365,5 +1306,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:55.930Z"
+  "lastUpdated": "2025-04-01T14:55:51.695Z"
 }

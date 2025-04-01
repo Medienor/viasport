@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-02",
-          "end": "2025-03-29",
+          "end": "2025-04-26",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1216304,
-          "date": "2025-03-29T15:00:00+00:00",
-          "venue": {
-            "id": 558,
-            "name": "Riverside Stadium",
-            "city": "Middlesbrough"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743260400
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 70,
-            "name": "Middlesbrough",
-            "logo": "https://media.api-sports.io/football/teams/70.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1338,
-            "name": "Oxford United",
-            "logo": "https://media.api-sports.io/football/teams/1338.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1216316,
@@ -624,6 +565,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216304,
+          "date": "2025-03-29T15:00:00+00:00",
+          "venue": {
+            "id": 558,
+            "name": "Riverside Stadium",
+            "city": "Middlesbrough"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743260400
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 70,
+            "name": "Middlesbrough",
+            "logo": "https://media.api-sports.io/football/teams/70.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1338,
+            "name": "Oxford United",
+            "logo": "https://media.api-sports.io/football/teams/1338.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216292,
@@ -1154,65 +1154,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216188,
-          "date": "2025-01-25T12:30:00+00:00",
-          "venue": {
-            "id": 588,
-            "name": "bet365 Stadium",
-            "city": "Stoke-on-Trent, Staffordshire"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737808200
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 75,
-            "name": "Stoke City",
-            "logo": "https://media.api-sports.io/football/teams/75.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1338,
-            "name": "Oxford United",
-            "logo": "https://media.api-sports.io/football/teams/1338.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1509,5 +1450,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:27.686Z"
+  "lastUpdated": "2025-04-01T14:54:21.835Z"
 }

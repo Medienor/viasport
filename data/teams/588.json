@@ -187,67 +187,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362825,
-          "date": "2025-03-28T15:30:00+00:00",
-          "venue": {
-            "id": 202,
-            "name": "Stadion Bijeli Brijeg",
-            "city": "Mostar"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743175800
-        },
-        "league": {
-          "id": 315,
-          "name": "Premijer Liga",
-          "logo": "https://media.api-sports.io/football/leagues/315.png"
-        },
-        "teams": {
-          "home": {
-            "id": 588,
-            "name": "Zrinjski",
-            "logo": "https://media.api-sports.io/football/teams/588.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3360,
-            "name": "Sloboda Tuzla",
-            "logo": "https://media.api-sports.io/football/teams/3360.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362829,
-          "date": "2025-04-05T13:00:00+00:00",
+          "date": "2025-04-06T17:45:00+00:00",
           "venue": {
             "id": 202,
             "name": "Stadion Bijeli Brijeg",
@@ -259,7 +200,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743858000
+          "timestamp": 1743961500
         },
         "league": {
           "id": 315,
@@ -838,6 +779,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362825,
+          "date": "2025-03-28T15:30:00+00:00",
+          "venue": {
+            "id": 202,
+            "name": "Stadion Bijeli Brijeg",
+            "city": "Mostar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1743175800
+        },
+        "league": {
+          "id": 315,
+          "name": "Premijer Liga",
+          "logo": "https://media.api-sports.io/football/leagues/315.png"
+        },
+        "teams": {
+          "home": {
+            "id": 588,
+            "name": "Zrinjski",
+            "logo": "https://media.api-sports.io/football/teams/588.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3360,
+            "name": "Sloboda Tuzla",
+            "logo": "https://media.api-sports.io/football/teams/3360.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1226601,
           "date": "2025-03-16T18:45:00+00:00",
           "venue": {
@@ -1366,65 +1366,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1339443,
-          "date": "2025-01-18T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737158400
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 588,
-            "name": "Zrinjski",
-            "logo": "https://media.api-sports.io/football/teams/588.png",
-            "winner": true
-          },
-          "away": {
-            "id": 6254,
-            "name": "Croatia Zmijavci",
-            "logo": "https://media.api-sports.io/football/teams/6254.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1721,5 +1662,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:42.954Z"
+  "lastUpdated": "2025-04-01T14:55:38.773Z"
 }

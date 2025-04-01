@@ -114,65 +114,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213683,
-          "date": "2025-03-29T17:45:00+00:00",
-          "venue": {
-            "id": 1159,
-            "name": "Koning Willem II Stadion",
-            "city": "Tilburg"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743270300
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 195,
-            "name": "Willem II",
-            "logo": "https://media.api-sports.io/football/teams/195.png",
-            "winner": null
-          },
-          "away": {
-            "id": 419,
-            "name": "Almere City FC",
-            "logo": "https://media.api-sports.io/football/teams/419.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213691,
           "date": "2025-04-04T18:00:00+00:00",
           "venue": {
@@ -586,6 +527,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213683,
+          "date": "2025-03-29T17:45:00+00:00",
+          "venue": {
+            "id": 1159,
+            "name": "Koning Willem II Stadion",
+            "city": "Tilburg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743270300
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 195,
+            "name": "Willem II",
+            "logo": "https://media.api-sports.io/football/teams/195.png",
+            "winner": false
+          },
+          "away": {
+            "id": 419,
+            "name": "Almere City FC",
+            "logo": "https://media.api-sports.io/football/teams/419.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213671,
@@ -1116,65 +1116,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213593,
-          "date": "2024-12-22T15:45:00+00:00",
-          "venue": {
-            "id": 1159,
-            "name": "Koning Willem II Stadion",
-            "city": "Tilburg"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1734882300
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 195,
-            "name": "Willem II",
-            "logo": "https://media.api-sports.io/football/teams/195.png",
-            "winner": true
-          },
-          "away": {
-            "id": 413,
-            "name": "NEC Nijmegen",
-            "logo": "https://media.api-sports.io/football/teams/413.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1471,5 +1412,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:02.759Z"
+  "lastUpdated": "2025-04-01T14:53:56.025Z"
 }

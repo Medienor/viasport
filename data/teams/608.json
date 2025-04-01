@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -222,65 +222,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1202777,
-          "date": "2025-03-30T14:00:00+00:00",
-          "venue": {
-            "id": 413,
-            "name": "Stadion Poljud",
-            "city": "Split"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743343200
-        },
-        "league": {
-          "id": 210,
-          "name": "HNL",
-          "logo": "https://media.api-sports.io/football/leagues/210.png"
-        },
-        "teams": {
-          "home": {
-            "id": 608,
-            "name": "HNK Hajduk Split",
-            "logo": "https://media.api-sports.io/football/teams/608.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1475,
-            "name": "Sibenik",
-            "logo": "https://media.api-sports.io/football/teams/1475.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1202786,
@@ -816,6 +757,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1202777,
+          "date": "2025-03-30T14:00:00+00:00",
+          "venue": {
+            "id": 413,
+            "name": "Stadion Poljud",
+            "city": "Split"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743343200
+        },
+        "league": {
+          "id": 210,
+          "name": "HNL",
+          "logo": "https://media.api-sports.io/football/leagues/210.png"
+        },
+        "teams": {
+          "home": {
+            "id": 608,
+            "name": "HNK Hajduk Split",
+            "logo": "https://media.api-sports.io/football/teams/608.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1475,
+            "name": "Sibenik",
+            "logo": "https://media.api-sports.io/football/teams/1475.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1202776,
           "date": "2025-03-16T16:45:00+00:00",
           "venue": {
@@ -1344,65 +1344,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1336781,
-          "date": "2025-01-15T10:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1736935200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5275,
-            "name": "Real Murcia",
-            "logo": "https://media.api-sports.io/football/teams/5275.png",
-            "winner": true
-          },
-          "away": {
-            "id": 608,
-            "name": "HNK Hajduk Split",
-            "logo": "https://media.api-sports.io/football/teams/608.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1699,5 +1640,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:42.985Z"
+  "lastUpdated": "2025-04-01T14:55:38.698Z"
 }

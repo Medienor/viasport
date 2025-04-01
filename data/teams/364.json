@@ -151,10 +151,10 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": true,
             "players": true,
@@ -183,65 +183,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1341946,
-          "date": "2025-03-29T14:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "3Arena",
-            "city": "Stockholm"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743256800
-        },
-        "league": {
-          "id": 113,
-          "name": "Allsvenskan",
-          "logo": "https://media.api-sports.io/football/leagues/113.png"
-        },
-        "teams": {
-          "home": {
-            "id": 364,
-            "name": "Djurgardens IF",
-            "logo": "https://media.api-sports.io/football/teams/364.png",
-            "winner": null
-          },
-          "away": {
-            "id": 375,
-            "name": "Malmo FF",
-            "logo": "https://media.api-sports.io/football/teams/375.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1341960,
@@ -894,7 +835,7 @@
       {
         "fixture": {
           "id": 1342033,
-          "date": "2025-05-26T17:10:00+00:00",
+          "date": "2025-05-25T14:30:00+00:00",
           "venue": {
             "id": null,
             "name": "3Arena",
@@ -906,7 +847,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1748279400
+          "timestamp": 1748183400
         },
         "league": {
           "id": 113,
@@ -1011,6 +952,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1341946,
+          "date": "2025-03-29T14:00:00+00:00",
+          "venue": {
+            "id": 1506,
+            "name": "3Arena",
+            "city": "Stockholm"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743256800
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": false
+          },
+          "away": {
+            "id": 375,
+            "name": "Malmo FF",
+            "logo": "https://media.api-sports.io/football/teams/375.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365902,
@@ -1541,65 +1541,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299387,
-          "date": "2024-12-19T20:00:00+00:00",
-          "venue": {
-            "id": 1506,
-            "name": "Tele2 Arena",
-            "city": "Stockholm"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1734638400
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 364,
-            "name": "Djurgardens IF",
-            "logo": "https://media.api-sports.io/football/teams/364.png",
-            "winner": true
-          },
-          "away": {
-            "id": 339,
-            "name": "Legia Warszawa",
-            "logo": "https://media.api-sports.io/football/teams/339.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1617,12 +1558,12 @@
       "name": "Djurgardens IF",
       "logo": "https://media.api-sports.io/football/teams/364.png"
     },
-    "form": null,
+    "form": "L",
     "fixtures": {
       "played": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "wins": {
         "home": 0,
@@ -1635,9 +1576,9 @@
         "total": 0
       },
       "loses": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       }
     },
     "goals": {
@@ -1689,36 +1630,36 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       },
       "against": {
         "total": {
-          "home": 0,
+          "home": 1,
           "away": 0,
-          "total": 0
+          "total": 1
         },
         "average": {
-          "home": "0.0",
+          "home": "1.0",
           "away": "0.0",
-          "total": "0.0"
+          "total": "1.0"
         },
         "minute": {
           "0-15": {
@@ -1734,8 +1675,8 @@
             "percentage": null
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "100.00%"
           },
           "61-75": {
             "total": null,
@@ -1756,24 +1697,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       }
@@ -1782,14 +1723,14 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 0
+        "loses": 1
       },
       "wins": {
         "home": null,
         "away": null
       },
       "loses": {
-        "home": null,
+        "home": "0-1",
         "away": null
       },
       "goals": {
@@ -1798,7 +1739,7 @@
           "away": 0
         },
         "against": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       }
@@ -1809,9 +1750,9 @@
       "total": 0
     },
     "failed_to_score": {
-      "home": 0,
+      "home": 1,
       "away": 0,
-      "total": 0
+      "total": 1
     },
     "penalty": {
       "scored": {
@@ -1824,7 +1765,12 @@
       },
       "total": 0
     },
-    "lineups": [],
+    "lineups": [
+      {
+        "formation": "4-2-3-1",
+        "played": 1
+      }
+    ],
     "cards": {
       "yellow": {
         "0-15": {
@@ -1836,12 +1782,12 @@
           "percentage": null
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "61-75": {
           "total": null,
@@ -1896,5 +1842,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:35.510Z"
+  "lastUpdated": "2025-04-01T14:55:30.815Z"
 }

@@ -263,65 +263,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231400,
-          "date": "2025-03-29T18:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Jassim Bin Hamad Stadium",
-            "city": "Doha"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743271200
-        },
-        "league": {
-          "id": 305,
-          "name": "Stars League",
-          "logo": "https://media.api-sports.io/football/leagues/305.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2895,
-            "name": "Al Sadd",
-            "logo": "https://media.api-sports.io/football/teams/2895.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2900,
-            "name": "Al Wakrah",
-            "logo": "https://media.api-sports.io/football/teams/2900.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231408,
           "date": "2025-04-04T14:00:00+00:00",
           "venue": {
@@ -499,6 +440,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231400,
+          "date": "2025-03-29T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jassim Bin Hamad Stadium",
+            "city": "Doha"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 14
+          },
+          "timestamp": 1743271200
+        },
+        "league": {
+          "id": 305,
+          "name": "Stars League",
+          "logo": "https://media.api-sports.io/football/leagues/305.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2895,
+            "name": "Al Sadd",
+            "logo": "https://media.api-sports.io/football/teams/2895.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2900,
+            "name": "Al Wakrah",
+            "logo": "https://media.api-sports.io/football/teams/2900.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231396,
@@ -1029,65 +1029,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1289411,
-          "date": "2024-12-04T16:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Al Janoub Stadium",
-            "city": "Al Wakrah"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1733328000
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2900,
-            "name": "Al Wakrah",
-            "logo": "https://media.api-sports.io/football/teams/2900.png",
-            "winner": false
-          },
-          "away": {
-            "id": 12272,
-            "name": "Ravshan",
-            "logo": "https://media.api-sports.io/football/teams/12272.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1384,5 +1325,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:41:59.481Z"
+  "lastUpdated": "2025-04-01T14:58:57.175Z"
 }

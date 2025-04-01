@@ -151,65 +151,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1278517,
-          "date": "2025-03-31T16:00:00+00:00",
-          "venue": {
-            "id": 2,
-            "name": "Elbasan Arena",
-            "city": "Elbasan"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743436800
-        },
-        "league": {
-          "id": 310,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/310.png"
-        },
-        "teams": {
-          "home": {
-            "id": 20406,
-            "name": "AF Elbasani",
-            "logo": "https://media.api-sports.io/football/teams/20406.png",
-            "winner": null
-          },
-          "away": {
-            "id": 694,
-            "name": "Tirana",
-            "logo": "https://media.api-sports.io/football/teams/694.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1278519,
           "date": "2025-04-07T18:00:00+00:00",
           "venue": {
@@ -448,11 +389,70 @@
     "past": [
       {
         "fixture": {
+          "id": 1278517,
+          "date": "2025-03-31T16:00:00+00:00",
+          "venue": {
+            "id": 2,
+            "name": "Elbasan Arena",
+            "city": "Elbasan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743436800
+        },
+        "league": {
+          "id": 310,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/310.png"
+        },
+        "teams": {
+          "home": {
+            "id": 20406,
+            "name": "AF Elbasani",
+            "logo": "https://media.api-sports.io/football/teams/20406.png",
+            "winner": true
+          },
+          "away": {
+            "id": 694,
+            "name": "Tirana",
+            "logo": "https://media.api-sports.io/football/teams/694.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1278511,
           "date": "2025-03-26T17:00:00+00:00",
           "venue": {
             "id": 2,
-            "name": "Air Albania Stadium",
+            "name": "Arena Kombëtare",
             "city": "Tirana"
           },
           "status": {
@@ -976,65 +976,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1278466,
-          "date": "2025-01-25T12:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadiumi Adush Muçaj",
-            "city": "Ballsh"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737808200
-        },
-        "league": {
-          "id": 310,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/310.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3325,
-            "name": "Bylis",
-            "logo": "https://media.api-sports.io/football/teams/3325.png",
-            "winner": false
-          },
-          "away": {
-            "id": 694,
-            "name": "Tirana",
-            "logo": "https://media.api-sports.io/football/teams/694.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1331,5 +1272,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:53.326Z"
+  "lastUpdated": "2025-04-01T14:55:49.155Z"
 }

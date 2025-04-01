@@ -191,65 +191,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1224212,
-          "date": "2025-03-29T17:30:00+00:00",
-          "venue": {
-            "id": 10491,
-            "name": "Deutsche Bank Park",
-            "city": "Frankfurt am Main"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743269400
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 169,
-            "name": "Eintracht Frankfurt",
-            "logo": "https://media.api-sports.io/football/teams/169.png",
-            "winner": null
-          },
-          "away": {
-            "id": 172,
-            "name": "VfB Stuttgart",
-            "logo": "https://media.api-sports.io/football/teams/172.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1224220,
           "date": "2025-04-05T16:30:00+00:00",
           "venue": {
@@ -783,6 +724,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1224212,
+          "date": "2025-03-29T17:30:00+00:00",
+          "venue": {
+            "id": 10491,
+            "name": "Deutsche Bank Park",
+            "city": "Frankfurt am Main"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743269400
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 169,
+            "name": "Eintracht Frankfurt",
+            "logo": "https://media.api-sports.io/football/teams/169.png",
+            "winner": true
+          },
+          "away": {
+            "id": 172,
+            "name": "VfB Stuttgart",
+            "logo": "https://media.api-sports.io/football/teams/172.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1365869,
           "date": "2025-03-19T18:00:00+00:00",
           "venue": {
@@ -1311,65 +1311,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224149,
-          "date": "2025-02-02T14:30:00+00:00",
-          "venue": {
-            "id": 10491,
-            "name": "Deutsche Bank Park",
-            "city": "Frankfurt am Main"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738506600
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 169,
-            "name": "Eintracht Frankfurt",
-            "logo": "https://media.api-sports.io/football/teams/169.png",
-            "winner": null
-          },
-          "away": {
-            "id": 161,
-            "name": "VfL Wolfsburg",
-            "logo": "https://media.api-sports.io/football/teams/161.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1666,5 +1607,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:29.394Z"
+  "lastUpdated": "2025-04-01T14:53:22.778Z"
 }

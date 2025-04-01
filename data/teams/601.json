@@ -227,65 +227,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361669,
-          "date": "2025-03-30T12:30:00+00:00",
-          "venue": {
-            "id": 11873,
-            "name": "Hofmann Personal Stadion",
-            "city": "Linz"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743337800
-        },
-        "league": {
-          "id": 218,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/218.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1394,
-            "name": "FC BW Linz",
-            "logo": "https://media.api-sports.io/football/teams/1394.png",
-            "winner": null
-          },
-          "away": {
-            "id": 601,
-            "name": "Austria Vienna",
-            "logo": "https://media.api-sports.io/football/teams/601.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1349135,
           "date": "2025-04-02T18:30:00+00:00",
           "venue": {
@@ -466,9 +407,9 @@
           "id": 1361679,
           "date": "2025-04-20T15:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 136,
+            "name": "Generali Arena",
+            "city": "Wien"
           },
           "status": {
             "long": "Not Started",
@@ -876,6 +817,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361669,
+          "date": "2025-03-30T12:30:00+00:00",
+          "venue": {
+            "id": 11873,
+            "name": "Hofmann Personal Stadion",
+            "city": "Linz"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743337800
+        },
+        "league": {
+          "id": 218,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/218.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1394,
+            "name": "FC BW Linz",
+            "logo": "https://media.api-sports.io/football/teams/1394.png",
+            "winner": false
+          },
+          "away": {
+            "id": 601,
+            "name": "Austria Vienna",
+            "logo": "https://media.api-sports.io/football/teams/601.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365905,
@@ -1406,65 +1406,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1336808,
-          "date": "2025-01-16T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737028800
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2646,
-            "name": "TSC Backa Topola",
-            "logo": "https://media.api-sports.io/football/teams/2646.png",
-            "winner": null
-          },
-          "away": {
-            "id": 601,
-            "name": "Austria Vienna",
-            "logo": "https://media.api-sports.io/football/teams/601.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1761,5 +1702,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:42.987Z"
+  "lastUpdated": "2025-04-01T14:55:38.715Z"
 }

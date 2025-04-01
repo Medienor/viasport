@@ -147,65 +147,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1326305,
-          "date": "2025-03-29T23:30:00+00:00",
-          "venue": {
-            "id": 1898,
-            "name": "Mercedes-Benz Stadium",
-            "city": "Atlanta, Georgia"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743291000
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1608,
-            "name": "Atlanta United FC",
-            "logo": "https://media.api-sports.io/football/teams/1608.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1604,
-            "name": "New York City FC",
-            "logo": "https://media.api-sports.io/football/teams/1604.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1326318,
           "date": "2025-04-05T23:30:00+00:00",
           "venue": {
@@ -1324,9 +1265,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1326578,
+          "date": "2025-08-09T23:30:00+00:00",
+          "venue": {
+            "id": 310,
+            "name": "Stade Saputo",
+            "city": "Montreal, Quebec"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754782200
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1614,
+            "name": "CF Montreal",
+            "logo": "https://media.api-sports.io/football/teams/1614.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1326305,
+          "date": "2025-03-29T23:30:00+00:00",
+          "venue": {
+            "id": 1898,
+            "name": "Mercedes-Benz Stadium",
+            "city": "Atlanta, Georgia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743291000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1604,
+            "name": "New York City FC",
+            "logo": "https://media.api-sports.io/football/teams/1604.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1326289,
@@ -1857,65 +1916,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1339744,
-          "date": "2025-01-25T00:00:00+00:00",
-          "venue": {
-            "id": 6295,
-            "name": "Finley Stadium",
-            "city": "Chattanooga, Tennessee"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737763200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 9073,
-            "name": "Chattanooga",
-            "logo": "https://media.api-sports.io/football/teams/9073.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1608,
-            "name": "Atlanta United FC",
-            "logo": "https://media.api-sports.io/football/teams/1608.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1933,17 +1933,17 @@
       "name": "Atlanta United FC",
       "logo": "https://media.api-sports.io/football/teams/1608.png"
     },
-    "form": "WLDLD",
+    "form": "WLDLDW",
     "fixtures": {
       "played": {
-        "home": 3,
+        "home": 4,
         "away": 2,
-        "total": 5
+        "total": 6
       },
       "wins": {
-        "home": 1,
+        "home": 2,
         "away": 0,
-        "total": 1
+        "total": 2
       },
       "draws": {
         "home": 1,
@@ -1959,39 +1959,39 @@
     "goals": {
       "for": {
         "total": {
-          "home": 4,
+          "home": 8,
           "away": 2,
-          "total": 6
+          "total": 10
         },
         "average": {
-          "home": "1.3",
+          "home": "2.0",
           "away": "1.0",
-          "total": "1.2"
+          "total": "1.7"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "20.00%"
+            "percentage": "12.50%"
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": 2,
+            "percentage": "25.00%"
           },
           "46-60": {
             "total": 1,
-            "percentage": "20.00%"
+            "percentage": "12.50%"
           },
           "61-75": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": 2,
+            "percentage": "25.00%"
           },
           "76-90": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": 2,
+            "percentage": "25.00%"
           },
           "91-105": {
             "total": null,
@@ -2004,62 +2004,62 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 4,
             "under": 2
           },
           "1.5": {
-            "over": 2,
+            "over": 3,
             "under": 3
           },
           "2.5": {
-            "over": 1,
+            "over": 2,
             "under": 4
           },
           "3.5": {
-            "over": 0,
+            "over": 1,
             "under": 5
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           }
         }
       },
       "against": {
         "total": {
-          "home": 4,
+          "home": 7,
           "away": 4,
-          "total": 8
+          "total": 11
         },
         "average": {
-          "home": "1.3",
+          "home": "1.8",
           "away": "2.0",
-          "total": "1.6"
+          "total": "1.8"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "7.69%"
           },
           "16-30": {
             "total": 1,
-            "percentage": "11.11%"
+            "percentage": "7.69%"
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 3,
-            "percentage": "33.33%"
+            "total": 5,
+            "percentage": "38.46%"
           },
           "61-75": {
-            "total": 3,
-            "percentage": "33.33%"
+            "total": 4,
+            "percentage": "30.77%"
           },
           "76-90": {
             "total": 2,
-            "percentage": "22.22%"
+            "percentage": "15.38%"
           },
           "91-105": {
             "total": null,
@@ -2072,24 +2072,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
+            "over": 5,
             "under": 1
           },
           "1.5": {
-            "over": 4,
+            "over": 5,
             "under": 1
           },
           "2.5": {
-            "over": 0,
+            "over": 1,
             "under": 5
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           }
         }
       }
@@ -2101,7 +2101,7 @@
         "loses": 1
       },
       "wins": {
-        "home": "3-2",
+        "home": "4-3",
         "away": null
       },
       "loses": {
@@ -2110,11 +2110,11 @@
       },
       "goals": {
         "for": {
-          "home": 3,
+          "home": 4,
           "away": 2
         },
         "against": {
-          "home": 2,
+          "home": 3,
           "away": 2
         }
       }
@@ -2143,22 +2143,22 @@
     "lineups": [
       {
         "formation": "4-2-3-1",
-        "played": 5
+        "played": 6
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
           "total": 1,
-          "percentage": "7.69%"
+          "percentage": "7.14%"
         },
         "16-30": {
           "total": 1,
-          "percentage": "7.69%"
+          "percentage": "7.14%"
         },
         "31-45": {
           "total": 2,
-          "percentage": "15.38%"
+          "percentage": "14.29%"
         },
         "46-60": {
           "total": null,
@@ -2166,15 +2166,15 @@
         },
         "61-75": {
           "total": 3,
-          "percentage": "23.08%"
+          "percentage": "21.43%"
         },
         "76-90": {
           "total": 2,
-          "percentage": "15.38%"
+          "percentage": "14.29%"
         },
         "91-105": {
-          "total": 4,
-          "percentage": "30.77%"
+          "total": 5,
+          "percentage": "35.71%"
         },
         "106-120": {
           "total": null,
@@ -2217,5 +2217,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:42:52.456Z"
+  "lastUpdated": "2025-04-01T14:59:51.172Z"
 }

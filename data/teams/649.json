@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361622,
-          "date": "2025-03-29T11:00:00+00:00",
-          "venue": {
-            "id": 2696,
-            "name": "Myyrmäen jalkapallostadion",
-            "city": "Vantaa"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743246000
-        },
-        "league": {
-          "id": 899,
-          "name": "League Cup",
-          "logo": "https://media.api-sports.io/football/leagues/899.png"
-        },
-        "teams": {
-          "home": {
-            "id": 649,
-            "name": "HJK helsinki",
-            "logo": "https://media.api-sports.io/football/teams/649.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1164,
-            "name": "Inter Turku",
-            "logo": "https://media.api-sports.io/football/teams/1164.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1342666,
@@ -1404,9 +1345,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1342783,
+          "date": "2025-08-17T12:00:00+00:00",
+          "venue": {
+            "id": 614,
+            "name": "Tehtaan kenttä",
+            "city": "Valkeakoski"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755432000
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2080,
+            "name": "Haka",
+            "logo": "https://media.api-sports.io/football/teams/2080.png",
+            "winner": null
+          },
+          "away": {
+            "id": 649,
+            "name": "HJK helsinki",
+            "logo": "https://media.api-sports.io/football/teams/649.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361622,
+          "date": "2025-03-29T11:00:00+00:00",
+          "venue": {
+            "id": 2696,
+            "name": "Myyrmäen jalkapallostadion",
+            "city": "Vantaa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743246000
+        },
+        "league": {
+          "id": 899,
+          "name": "League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/899.png"
+        },
+        "teams": {
+          "home": {
+            "id": 649,
+            "name": "HJK helsinki",
+            "logo": "https://media.api-sports.io/football/teams/649.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1164,
+            "name": "Inter Turku",
+            "logo": "https://media.api-sports.io/football/teams/1164.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365927,
@@ -1937,65 +1996,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323946,
-          "date": "2025-01-17T12:00:00+00:00",
-          "venue": {
-            "id": 618,
-            "name": "Veritas Stadion",
-            "city": "Åbo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737115200
-        },
-        "league": {
-          "id": 899,
-          "name": "League Cup",
-          "logo": "https://media.api-sports.io/football/leagues/899.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1164,
-            "name": "Inter Turku",
-            "logo": "https://media.api-sports.io/football/teams/1164.png",
-            "winner": false
-          },
-          "away": {
-            "id": 649,
-            "name": "HJK helsinki",
-            "logo": "https://media.api-sports.io/football/teams/649.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2292,5 +2292,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:07.899Z"
+  "lastUpdated": "2025-04-01T14:55:02.686Z"
 }

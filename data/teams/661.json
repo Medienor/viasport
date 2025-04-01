@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -185,65 +185,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1350338,
-          "date": "2025-03-29T15:00:00+00:00",
-          "venue": {
-            "id": 21384,
-            "name": "LNK Sporta Parks",
-            "city": "Riga"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743260400
-        },
-        "league": {
-          "id": 365,
-          "name": "Virsliga",
-          "logo": "https://media.api-sports.io/football/leagues/365.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4160,
-            "name": "Rīgas FS",
-            "logo": "https://media.api-sports.io/football/teams/4160.png",
-            "winner": null
-          },
-          "away": {
-            "id": 661,
-            "name": "FK Liepaja",
-            "logo": "https://media.api-sports.io/football/teams/661.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1350342,
@@ -1364,9 +1305,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1350439,
+          "date": "2025-07-27T14:00:00+00:00",
+          "venue": {
+            "id": 1820,
+            "name": "Stadions Daugava",
+            "city": "Liepāja"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753624800
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 661,
+            "name": "FK Liepaja",
+            "logo": "https://media.api-sports.io/football/teams/661.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4135,
+            "name": "Auda",
+            "logo": "https://media.api-sports.io/football/teams/4135.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1350338,
+          "date": "2025-03-29T15:00:00+00:00",
+          "venue": {
+            "id": 21384,
+            "name": "LNK Sporta Parks",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743260400
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4160,
+            "name": "Rīgas FS",
+            "logo": "https://media.api-sports.io/football/teams/4160.png",
+            "winner": true
+          },
+          "away": {
+            "id": 661,
+            "name": "FK Liepaja",
+            "logo": "https://media.api-sports.io/football/teams/661.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1350335,
@@ -1897,65 +1956,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1179096,
-          "date": "2024-10-20T11:00:00+00:00",
-          "venue": {
-            "id": 3174,
-            "name": "J. Daliņa stadions",
-            "city": "Valmierā"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1729422000
-        },
-        "league": {
-          "id": 365,
-          "name": "Virsliga",
-          "logo": "https://media.api-sports.io/football/leagues/365.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4153,
-            "name": "Valmiera / BSS",
-            "logo": "https://media.api-sports.io/football/teams/4153.png",
-            "winner": false
-          },
-          "away": {
-            "id": 661,
-            "name": "FK Liepaja",
-            "logo": "https://media.api-sports.io/football/teams/661.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1973,12 +1973,12 @@
       "name": "FK Liepaja",
       "logo": "https://media.api-sports.io/football/teams/661.png"
     },
-    "form": "WDW",
+    "form": "WDWL",
     "fixtures": {
       "played": {
         "home": 3,
-        "away": 0,
-        "total": 3
+        "away": 1,
+        "total": 4
       },
       "wins": {
         "home": 2,
@@ -1992,34 +1992,34 @@
       },
       "loses": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       }
     },
     "goals": {
       "for": {
         "total": {
           "home": 8,
-          "away": 0,
-          "total": 8
+          "away": 1,
+          "total": 9
         },
         "average": {
           "home": "2.7",
-          "away": "0.0",
-          "total": "2.7"
+          "away": "1.0",
+          "total": "2.3"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": 2,
+            "percentage": "22.22%"
           },
           "16-30": {
             "total": 3,
-            "percentage": "37.50%"
+            "percentage": "33.33%"
           },
           "31-45": {
             "total": 2,
-            "percentage": "25.00%"
+            "percentage": "22.22%"
           },
           "46-60": {
             "total": null,
@@ -2027,11 +2027,11 @@
           },
           "61-75": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "11.11%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "11.11%"
           },
           "91-105": {
             "total": null,
@@ -2044,37 +2044,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 3,
             "under": 1
           },
           "1.5": {
             "over": 2,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 2,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 2,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           }
         }
       },
       "against": {
         "total": {
           "home": 1,
-          "away": 0,
-          "total": 1
+          "away": 4,
+          "total": 5
         },
         "average": {
           "home": "0.3",
-          "away": "0.0",
-          "total": "0.3"
+          "away": "4.0",
+          "total": "1.3"
         },
         "minute": {
           "0-15": {
@@ -2090,16 +2090,16 @@
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "100.00%"
+            "total": 4,
+            "percentage": "80.00%"
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "91-105": {
             "total": null,
@@ -2112,24 +2112,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 2
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 3
           },
           "2.5": {
-            "over": 0,
+            "over": 1,
             "under": 3
           },
           "3.5": {
-            "over": 0,
+            "over": 1,
             "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           }
         }
       }
@@ -2146,16 +2146,16 @@
       },
       "loses": {
         "home": null,
-        "away": null
+        "away": "4-1"
       },
       "goals": {
         "for": {
           "home": 4,
-          "away": 0
+          "away": 1
         },
         "against": {
           "home": 1,
-          "away": 0
+          "away": 4
         }
       }
     },
@@ -2189,27 +2189,27 @@
         },
         "16-30": {
           "total": 1,
-          "percentage": "50.00%"
+          "percentage": "20.00%"
         },
         "31-45": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": 2,
+          "percentage": "40.00%"
         },
         "46-60": {
           "total": null,
           "percentage": null
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "20.00%"
         },
         "76-90": {
           "total": null,
           "percentage": null
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "20.00%"
         },
         "106-120": {
           "total": null,
@@ -2252,5 +2252,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:47.954Z"
+  "lastUpdated": "2025-04-01T14:55:43.972Z"
 }

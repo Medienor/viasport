@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1224217,
-          "date": "2025-03-29T14:30:00+00:00",
-          "venue": {
-            "id": 725,
-            "name": "Holstein-Stadion",
-            "city": "Kiel"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743258600
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 191,
-            "name": "Holstein Kiel",
-            "logo": "https://media.api-sports.io/football/teams/191.png",
-            "winner": null
-          },
-          "away": {
-            "id": 162,
-            "name": "Werder Bremen",
-            "logo": "https://media.api-sports.io/football/teams/162.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1224223,
           "date": "2025-04-05T13:30:00+00:00",
           "venue": {
@@ -624,6 +565,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1224217,
+          "date": "2025-03-29T14:30:00+00:00",
+          "venue": {
+            "id": 725,
+            "name": "Holstein-Stadion",
+            "city": "Kiel"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743258600
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 191,
+            "name": "Holstein Kiel",
+            "logo": "https://media.api-sports.io/football/teams/191.png",
+            "winner": false
+          },
+          "away": {
+            "id": 162,
+            "name": "Werder Bremen",
+            "logo": "https://media.api-sports.io/football/teams/162.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365878,
@@ -1154,65 +1154,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224136,
-          "date": "2025-01-18T14:30:00+00:00",
-          "venue": {
-            "id": 725,
-            "name": "Holstein-Stadion",
-            "city": "Kiel"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 12
-          },
-          "timestamp": 1737210600
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 191,
-            "name": "Holstein Kiel",
-            "logo": "https://media.api-sports.io/football/teams/191.png",
-            "winner": false
-          },
-          "away": {
-            "id": 167,
-            "name": "1899 Hoffenheim",
-            "logo": "https://media.api-sports.io/football/teams/167.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1509,5 +1450,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:31.854Z"
+  "lastUpdated": "2025-04-01T14:53:25.367Z"
 }

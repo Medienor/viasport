@@ -259,65 +259,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334430,
-          "date": "2025-03-29T21:30:00+00:00",
-          "venue": {
-            "id": 2997,
-            "name": "Estadio Alfredo Terrera",
-            "city": "Santiago del Estero, Provincia de Santiago del Est"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743283800
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1065,
-            "name": "Central Cordoba de Santiago",
-            "logo": "https://media.api-sports.io/football/teams/1065.png",
-            "winner": null
-          },
-          "away": {
-            "id": 458,
-            "name": "Argentinos JRS",
-            "logo": "https://media.api-sports.io/football/teams/458.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361860,
           "date": "2025-04-03T22:00:00+00:00",
           "venue": {
@@ -496,7 +437,7 @@
       {
         "fixture": {
           "id": 1334461,
-          "date": "2025-04-14T22:00:00+00:00",
+          "date": "2025-04-14T21:00:00+00:00",
           "venue": {
             "id": 2997,
             "name": "Estadio Alfredo Terrera",
@@ -508,7 +449,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744668000
+          "timestamp": 1744664400
         },
         "league": {
           "id": 128,
@@ -849,6 +790,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334430,
+          "date": "2025-03-29T21:30:00+00:00",
+          "venue": {
+            "id": 2997,
+            "name": "Estadio Único Madre de Ciudades",
+            "city": "Santiago del Estero, Prov. de Santiago del Estero"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743283800
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": null
+          },
+          "away": {
+            "id": 458,
+            "name": "Argentinos JRS",
+            "logo": "https://media.api-sports.io/football/teams/458.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1330773,
@@ -1379,65 +1379,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334306,
-          "date": "2025-01-31T00:30:00+00:00",
-          "venue": {
-            "id": 2997,
-            "name": "Estadio Único Madre de Ciudades",
-            "city": "Santiago del Estero, Prov. de Santiago del Estero"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738283400
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1065,
-            "name": "Central Cordoba de Santiago",
-            "logo": "https://media.api-sports.io/football/teams/1065.png",
-            "winner": true
-          },
-          "away": {
-            "id": 455,
-            "name": "Atletico Tucuman",
-            "logo": "https://media.api-sports.io/football/teams/455.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1734,5 +1675,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:50.238Z"
+  "lastUpdated": "2025-04-01T14:54:44.700Z"
 }

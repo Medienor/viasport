@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1238109,
-          "date": "2025-03-28T17:30:00+00:00",
-          "venue": {
-            "id": 2385,
-            "name": "Grey Beton Bodrum Stadyumu",
-            "city": "Muğla"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743183000
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3583,
-            "name": "BB Bodrumspor",
-            "logo": "https://media.api-sports.io/football/teams/3583.png",
-            "winner": null
-          },
-          "away": {
-            "id": 611,
-            "name": "Fenerbahce",
-            "logo": "https://media.api-sports.io/football/teams/611.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1359787,
@@ -363,9 +304,186 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1238119,
+          "date": "2025-04-13T16:00:00+00:00",
+          "venue": {
+            "id": 20425,
+            "name": "BG Group 4 Eylül Stadyumu",
+            "city": "Sivas"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744560000
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1002,
+            "name": "Sivasspor",
+            "logo": "https://media.api-sports.io/football/teams/1002.png",
+            "winner": null
+          },
+          "away": {
+            "id": 611,
+            "name": "Fenerbahce",
+            "logo": "https://media.api-sports.io/football/teams/611.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238135,
+          "date": "2025-04-19T22:00:00+00:00",
+          "venue": {
+            "id": 1581,
+            "name": "Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745100000
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 611,
+            "name": "Fenerbahce",
+            "logo": "https://media.api-sports.io/football/teams/611.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1001,
+            "name": "Kayserispor",
+            "logo": "https://media.api-sports.io/football/teams/1001.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238109,
+          "date": "2025-03-28T17:30:00+00:00",
+          "venue": {
+            "id": 2385,
+            "name": "Grey Beton Bodrum Stadyumu",
+            "city": "Muğla"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743183000
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3583,
+            "name": "BB Bodrumspor",
+            "logo": "https://media.api-sports.io/football/teams/3583.png",
+            "winner": false
+          },
+          "away": {
+            "id": 611,
+            "name": "Fenerbahce",
+            "logo": "https://media.api-sports.io/football/teams/611.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 4
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238097,
@@ -608,8 +726,8 @@
           "date": "2025-02-24T17:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "RAMS Park",
-            "city": "İstanbul"
+            "name": "Rams Park Stadyumu",
+            "city": "Istanbul"
           },
           "status": {
             "long": "Match Finished",
@@ -886,65 +1004,6 @@
           "fulltime": {
             "home": 0,
             "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1327565,
-          "date": "2025-02-05T17:30:00+00:00",
-          "venue": {
-            "id": 1581,
-            "name": "Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1738776600
-        },
-        "league": {
-          "id": 206,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/206.png"
-        },
-        "teams": {
-          "home": {
-            "id": 611,
-            "name": "Fenerbahce",
-            "logo": "https://media.api-sports.io/football/teams/611.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1009,
-            "name": "Erzurum BB",
-            "logo": "https://media.api-sports.io/football/teams/1009.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 0
           },
           "extratime": {
             "home": null,
@@ -1251,5 +1310,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:05.408Z"
+  "lastUpdated": "2025-04-01T14:55:00.191Z"
 }

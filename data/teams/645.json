@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -224,65 +224,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1238102,
-          "date": "2025-03-29T17:30:00+00:00",
-          "venue": {
-            "id": 20423,
-            "name": "Tüpraş Stadyumu",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743269400
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 549,
-            "name": "Besiktas",
-            "logo": "https://media.api-sports.io/football/teams/549.png",
-            "winner": null
-          },
-          "away": {
-            "id": 645,
-            "name": "Galatasaray",
-            "logo": "https://media.api-sports.io/football/teams/645.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1359787,
@@ -341,17 +282,194 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1238123,
+          "date": "2025-04-11T17:00:00+00:00",
+          "venue": {
+            "id": 11925,
+            "name": "Samsun Yeni 19 Mayıs Stadyumu",
+            "city": "Samsun"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744390800
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3603,
+            "name": "Samsunspor",
+            "logo": "https://media.api-sports.io/football/teams/3603.png",
+            "winner": null
+          },
+          "away": {
+            "id": 645,
+            "name": "Galatasaray",
+            "logo": "https://media.api-sports.io/football/teams/645.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238131,
+          "date": "2025-04-19T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "RAMS Park",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745100000
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 645,
+            "name": "Galatasaray",
+            "logo": "https://media.api-sports.io/football/teams/645.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3583,
+            "name": "BB Bodrumspor",
+            "logo": "https://media.api-sports.io/football/teams/3583.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238102,
+          "date": "2025-03-29T17:30:00+00:00",
+          "venue": {
+            "id": 20423,
+            "name": "Tüpraş Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743269400
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 549,
+            "name": "Besiktas",
+            "logo": "https://media.api-sports.io/football/teams/549.png",
+            "winner": true
+          },
+          "away": {
+            "id": 645,
+            "name": "Galatasaray",
+            "logo": "https://media.api-sports.io/football/teams/645.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238096,
           "date": "2025-03-14T17:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "RAMS Park",
-            "city": "İstanbul"
+            "name": "Rams Park Stadyumu",
+            "city": "Istanbul"
           },
           "status": {
             "long": "Match Finished",
@@ -586,8 +704,8 @@
           "date": "2025-02-24T17:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "RAMS Park",
-            "city": "İstanbul"
+            "name": "Rams Park Stadyumu",
+            "city": "Istanbul"
           },
           "status": {
             "long": "Match Finished",
@@ -864,65 +982,6 @@
           "fulltime": {
             "home": 1,
             "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1327568,
-          "date": "2025-02-06T13:00:00+00:00",
-          "venue": {
-            "id": 2371,
-            "name": "Bolu Atatürk Stadyumu",
-            "city": "Bolu"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738846800
-        },
-        "league": {
-          "id": 206,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/206.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3569,
-            "name": "Boluspor",
-            "logo": "https://media.api-sports.io/football/teams/3569.png",
-            "winner": false
-          },
-          "away": {
-            "id": 645,
-            "name": "Galatasaray",
-            "logo": "https://media.api-sports.io/football/teams/645.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 4
           },
           "extratime": {
             "home": null,
@@ -1229,5 +1288,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:07.933Z"
+  "lastUpdated": "2025-04-01T14:55:02.708Z"
 }

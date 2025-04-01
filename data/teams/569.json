@@ -228,65 +228,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361729,
-          "date": "2025-03-30T11:30:00+00:00",
-          "venue": {
-            "id": 176,
-            "name": "Jan Breydelstadion",
-            "city": "Brugge"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743334200
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 569,
-            "name": "Club Brugge KV",
-            "logo": "https://media.api-sports.io/football/teams/569.png",
-            "winner": null
-          },
-          "away": {
-            "id": 554,
-            "name": "Anderlecht",
-            "logo": "https://media.api-sports.io/football/teams/554.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361732,
           "date": "2025-04-06T11:30:00+00:00",
           "venue": {
@@ -820,6 +761,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361729,
+          "date": "2025-03-30T11:30:00+00:00",
+          "venue": {
+            "id": 176,
+            "name": "Jan Breydelstadion",
+            "city": "Brugge"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743334200
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 569,
+            "name": "Club Brugge KV",
+            "logo": "https://media.api-sports.io/football/teams/569.png",
+            "winner": true
+          },
+          "away": {
+            "id": 554,
+            "name": "Anderlecht",
+            "logo": "https://media.api-sports.io/football/teams/554.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1365872,
           "date": "2025-03-20T00:00:00+00:00",
           "venue": {
@@ -1348,65 +1348,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345745,
-          "date": "2025-02-12T17:45:00+00:00",
-          "venue": {
-            "id": 176,
-            "name": "Jan Breydelstadion",
-            "city": "Brugge"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739382300
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 569,
-            "name": "Club Brugge KV",
-            "logo": "https://media.api-sports.io/football/teams/569.png",
-            "winner": true
-          },
-          "away": {
-            "id": 499,
-            "name": "Atalanta",
-            "logo": "https://media.api-sports.io/football/teams/499.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1703,5 +1644,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:12.668Z"
+  "lastUpdated": "2025-04-01T14:54:06.219Z"
 }

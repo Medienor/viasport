@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -143,65 +143,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1203182,
-          "date": "2025-03-28T17:00:00+00:00",
-          "venue": {
-            "id": 1255,
-            "name": "Stadion Miejski",
-            "city": "Gliwice"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743181200
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 349,
-            "name": "Piast Gliwice",
-            "logo": "https://media.api-sports.io/football/teams/349.png",
-            "winner": null
-          },
-          "away": {
-            "id": 6962,
-            "name": "Widzew Łódź",
-            "logo": "https://media.api-sports.io/football/teams/6962.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1203191,
@@ -381,6 +322,65 @@
       },
       {
         "fixture": {
+          "id": 1203212,
+          "date": "2025-04-27T12:45:00+00:00",
+          "venue": {
+            "id": 18625,
+            "name": "Stadion im. Ernesta Pohla",
+            "city": "Zabrze"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745757900
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 340,
+            "name": "Gornik Zabrze",
+            "logo": "https://media.api-sports.io/football/teams/340.png",
+            "winner": null
+          },
+          "away": {
+            "id": 6962,
+            "name": "Widzew Łódź",
+            "logo": "https://media.api-sports.io/football/teams/6962.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203255,
           "date": "2025-05-24T15:30:00+00:00",
           "venue": {
@@ -440,6 +440,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1203182,
+          "date": "2025-03-28T17:00:00+00:00",
+          "venue": {
+            "id": 1255,
+            "name": "Stadion Miejski",
+            "city": "Gliwice"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743181200
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 349,
+            "name": "Piast Gliwice",
+            "logo": "https://media.api-sports.io/football/teams/349.png",
+            "winner": false
+          },
+          "away": {
+            "id": 6962,
+            "name": "Widzew Łódź",
+            "logo": "https://media.api-sports.io/football/teams/6962.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1365900,
@@ -970,65 +1029,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1336855,
-          "date": "2025-01-17T12:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737117000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6962,
-            "name": "Widzew Łódź",
-            "logo": "https://media.api-sports.io/football/teams/6962.png",
-            "winner": false
-          },
-          "away": {
-            "id": 345,
-            "name": "Zaglebie Lubin",
-            "logo": "https://media.api-sports.io/football/teams/345.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 7
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 7
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1325,5 +1325,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:00.163Z"
+  "lastUpdated": "2025-04-01T14:53:53.458Z"
 }

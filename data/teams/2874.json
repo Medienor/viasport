@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-08-23",
-          "end": "2025-05-01",
+          "end": "2025-05-05",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -163,7 +163,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1335145,
-          "date": "2025-03-28T18:00:00+00:00",
-          "venue": {
-            "id": 1608,
-            "name": "Sharjah Stadium",
-            "city": "Sharjah"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743184800
-        },
-        "league": {
-          "id": 301,
-          "name": "Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/301.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2874,
-            "name": "Sharjah FC",
-            "logo": "https://media.api-sports.io/football/teams/2874.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2870,
-            "name": "Shabab Al Ahli Dubai",
-            "logo": "https://media.api-sports.io/football/teams/2870.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1362896,
@@ -425,6 +366,65 @@
       },
       {
         "fixture": {
+          "id": 1367118,
+          "date": "2025-04-22T13:55:00+00:00",
+          "venue": {
+            "id": 1608,
+            "name": "Sharjah Stadium",
+            "city": "Sharjah"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745330100
+        },
+        "league": {
+          "id": 301,
+          "name": "Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/301.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2874,
+            "name": "Sharjah FC",
+            "logo": "https://media.api-sports.io/football/teams/2874.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2879,
+            "name": "Ajman",
+            "logo": "https://media.api-sports.io/football/teams/2879.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1335123,
           "date": "2025-04-27T14:00:00+00:00",
           "venue": {
@@ -540,9 +540,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1367131,
+          "date": "2025-05-05T16:45:00+00:00",
+          "venue": {
+            "id": 1601,
+            "name": "Al Dhafra Stadium",
+            "city": "Madinat Zaid"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746463500
+        },
+        "league": {
+          "id": 301,
+          "name": "Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/301.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2875,
+            "name": "Al Wahda FC",
+            "logo": "https://media.api-sports.io/football/teams/2875.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2874,
+            "name": "Sharjah FC",
+            "logo": "https://media.api-sports.io/football/teams/2874.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1335145,
+          "date": "2025-03-28T18:00:00+00:00",
+          "venue": {
+            "id": 1608,
+            "name": "Sharjah Stadium",
+            "city": "Sharjah"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743184800
+        },
+        "league": {
+          "id": 301,
+          "name": "Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/301.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2874,
+            "name": "Sharjah FC",
+            "logo": "https://media.api-sports.io/football/teams/2874.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2870,
+            "name": "Shabab Al Ahli Dubai",
+            "logo": "https://media.api-sports.io/football/teams/2870.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1335168,
@@ -1073,65 +1191,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1315740,
-          "date": "2025-01-22T16:00:00+00:00",
-          "venue": {
-            "id": 1605,
-            "name": "Zabeel Stadium",
-            "city": "Dubai"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737561600
-        },
-        "league": {
-          "id": 301,
-          "name": "Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/301.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2872,
-            "name": "Al-Wasl FC",
-            "logo": "https://media.api-sports.io/football/teams/2872.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2874,
-            "name": "Sharjah FC",
-            "logo": "https://media.api-sports.io/football/teams/2874.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1428,5 +1487,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:41:59.523Z"
+  "lastUpdated": "2025-04-01T14:58:57.154Z"
 }

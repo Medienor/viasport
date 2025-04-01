@@ -116,65 +116,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361730,
-          "date": "2025-03-30T16:30:00+00:00",
-          "venue": {
-            "id": 12455,
-            "name": "Cegeka Arena",
-            "city": "Genk"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743352200
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 742,
-            "name": "Genk",
-            "logo": "https://media.api-sports.io/football/teams/742.png",
-            "winner": null
-          },
-          "away": {
-            "id": 631,
-            "name": "Gent",
-            "logo": "https://media.api-sports.io/football/teams/631.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361733,
           "date": "2025-04-06T16:30:00+00:00",
           "venue": {
@@ -708,6 +649,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361730,
+          "date": "2025-03-30T16:30:00+00:00",
+          "venue": {
+            "id": 12455,
+            "name": "Cegeka Arena",
+            "city": "Genk"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743352200
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 742,
+            "name": "Genk",
+            "logo": "https://media.api-sports.io/football/teams/742.png",
+            "winner": true
+          },
+          "away": {
+            "id": 631,
+            "name": "Gent",
+            "logo": "https://media.api-sports.io/football/teams/631.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1213435,
           "date": "2025-03-15T19:45:00+00:00",
           "venue": {
@@ -1236,65 +1236,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213374,
-          "date": "2025-01-18T17:15:00+00:00",
-          "venue": {
-            "id": 20336,
-            "name": "AFAS Stadion",
-            "city": "Malines"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737220500
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 266,
-            "name": "KV Mechelen",
-            "logo": "https://media.api-sports.io/football/teams/266.png",
-            "winner": false
-          },
-          "away": {
-            "id": 742,
-            "name": "Genk",
-            "logo": "https://media.api-sports.io/football/teams/742.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1591,5 +1532,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:17.800Z"
+  "lastUpdated": "2025-04-01T14:54:11.591Z"
 }

@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362762,
-          "date": "2025-03-30T14:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Ceres Park Vejlby",
-            "city": "Risskov"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743343200
-        },
-        "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
-        },
-        "teams": {
-          "home": {
-            "id": 406,
-            "name": "Aarhus",
-            "logo": "https://media.api-sports.io/football/teams/406.png",
-            "winner": null
-          },
-          "away": {
-            "id": 398,
-            "name": "FC Nordsjaelland",
-            "logo": "https://media.api-sports.io/football/teams/398.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362766,
           "date": "2025-04-06T16:00:00+00:00",
           "venue": {
@@ -333,9 +274,9 @@
           "id": 1362773,
           "date": "2025-04-18T17:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 443,
+            "name": "Brøndby Stadion",
+            "city": "Brøndby"
           },
           "status": {
             "long": "Not Started",
@@ -743,6 +684,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362762,
+          "date": "2025-03-30T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Vejlby Stadion",
+            "city": "Aarhus"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743343200
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 406,
+            "name": "Aarhus",
+            "logo": "https://media.api-sports.io/football/teams/406.png",
+            "winner": true
+          },
+          "away": {
+            "id": 398,
+            "name": "FC Nordsjaelland",
+            "logo": "https://media.api-sports.io/football/teams/398.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1205552,
@@ -1273,65 +1273,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1205520,
-          "date": "2024-12-02T18:00:00+00:00",
-          "venue": {
-            "id": 11600,
-            "name": "Parken",
-            "city": "København"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1733162400
-        },
-        "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
-        },
-        "teams": {
-          "home": {
-            "id": 400,
-            "name": "FC Copenhagen",
-            "logo": "https://media.api-sports.io/football/teams/400.png",
-            "winner": true
-          },
-          "away": {
-            "id": 398,
-            "name": "FC Nordsjaelland",
-            "logo": "https://media.api-sports.io/football/teams/398.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1628,5 +1569,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:52.832Z"
+  "lastUpdated": "2025-04-01T14:54:47.352Z"
 }

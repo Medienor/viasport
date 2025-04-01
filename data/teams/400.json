@@ -190,65 +190,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362764,
-          "date": "2025-03-31T17:00:00+00:00",
-          "venue": {
-            "id": 11600,
-            "name": "Parken",
-            "city": "København"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743440400
-        },
-        "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
-        },
-        "teams": {
-          "home": {
-            "id": 400,
-            "name": "FC Copenhagen",
-            "logo": "https://media.api-sports.io/football/teams/400.png",
-            "winner": null
-          },
-          "away": {
-            "id": 401,
-            "name": "Randers FC",
-            "logo": "https://media.api-sports.io/football/teams/401.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362766,
           "date": "2025-04-06T16:00:00+00:00",
           "venue": {
@@ -370,9 +311,9 @@
           "id": 1362772,
           "date": "2025-04-17T16:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 453,
+            "name": "MCH Arena",
+            "city": "Herning"
           },
           "status": {
             "long": "Not Started",
@@ -780,6 +721,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362764,
+          "date": "2025-03-31T17:00:00+00:00",
+          "venue": {
+            "id": 11600,
+            "name": "Parken",
+            "city": "København"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743440400
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 400,
+            "name": "FC Copenhagen",
+            "logo": "https://media.api-sports.io/football/teams/400.png",
+            "winner": true
+          },
+          "away": {
+            "id": 401,
+            "name": "Randers FC",
+            "logo": "https://media.api-sports.io/football/teams/401.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1205554,
@@ -1310,65 +1310,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345079,
-          "date": "2025-02-02T11:30:00+00:00",
-          "venue": {
-            "id": 1473,
-            "name": "Estadio Manuel Martínez Valero",
-            "city": "Elche"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1738495800
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 797,
-            "name": "Elche",
-            "logo": "https://media.api-sports.io/football/teams/797.png",
-            "winner": true
-          },
-          "away": {
-            "id": 400,
-            "name": "FC Copenhagen",
-            "logo": "https://media.api-sports.io/football/teams/400.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1665,5 +1606,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:52.693Z"
+  "lastUpdated": "2025-04-01T14:54:47.382Z"
 }

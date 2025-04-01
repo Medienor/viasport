@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -183,65 +183,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1203183,
-          "date": "2025-03-29T19:15:00+00:00",
-          "venue": {
-            "id": 18628,
-            "name": "Tarczyński Arena",
-            "city": "Wrocław"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743275700
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 337,
-            "name": "Slask Wroclaw",
-            "logo": "https://media.api-sports.io/football/teams/337.png",
-            "winner": null
-          },
-          "away": {
-            "id": 347,
-            "name": "Lech Poznan",
-            "logo": "https://media.api-sports.io/football/teams/347.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1203192,
@@ -482,11 +423,70 @@
     "past": [
       {
         "fixture": {
+          "id": 1203183,
+          "date": "2025-03-29T19:15:00+00:00",
+          "venue": {
+            "id": 18628,
+            "name": "Tarczyński Arena",
+            "city": "Wrocław"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743275700
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 337,
+            "name": "Slask Wroclaw",
+            "logo": "https://media.api-sports.io/football/teams/337.png",
+            "winner": true
+          },
+          "away": {
+            "id": 347,
+            "name": "Lech Poznan",
+            "logo": "https://media.api-sports.io/football/teams/347.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203173,
           "date": "2025-03-15T13:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadion Miejski im. Grzegorza Lato",
+            "name": "Stadion Stali Mielec",
             "city": "Mielec"
           },
           "status": {
@@ -1010,65 +1010,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337097,
-          "date": "2025-01-20T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Pinatar Arena Football Center",
-            "city": "San Pedro del Pinatar"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 2
-          },
-          "timestamp": 1737331200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 337,
-            "name": "Slask Wroclaw",
-            "logo": "https://media.api-sports.io/football/teams/337.png",
-            "winner": false
-          },
-          "away": {
-            "id": 677,
-            "name": "Olimpija Ljubljana",
-            "logo": "https://media.api-sports.io/football/teams/677.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1365,5 +1306,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:36:52.687Z"
+  "lastUpdated": "2025-04-01T14:53:45.663Z"
 }

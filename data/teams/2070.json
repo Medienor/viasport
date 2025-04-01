@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362792,
-          "date": "2025-03-28T18:00:00+00:00",
-          "venue": {
-            "id": 440,
-            "name": "Aalborg Portland Park",
-            "city": "Aalborg"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743184800
-        },
-        "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
-        },
-        "teams": {
-          "home": {
-            "id": 402,
-            "name": "Aalborg",
-            "logo": "https://media.api-sports.io/football/teams/402.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2070,
-            "name": "Viborg",
-            "logo": "https://media.api-sports.io/football/teams/2070.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362795,
           "date": "2025-04-06T12:00:00+00:00",
           "venue": {
@@ -333,9 +274,9 @@
           "id": 1362803,
           "date": "2025-04-17T12:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 462,
+            "name": "Vejle Stadion",
+            "city": "Vejle"
           },
           "status": {
             "long": "Not Started",
@@ -745,6 +686,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362792,
+          "date": "2025-03-28T18:00:00+00:00",
+          "venue": {
+            "id": 440,
+            "name": "Aalborg Portland Park",
+            "city": "Aalborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743184800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 402,
+            "name": "Aalborg",
+            "logo": "https://media.api-sports.io/football/teams/402.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1205554,
           "date": "2025-03-16T16:00:00+00:00",
           "venue": {
@@ -808,8 +808,8 @@
           "date": "2025-03-09T15:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Ceres Park Vejlby",
-            "city": "Risskov"
+            "name": "Vejlby Stadion",
+            "city": "Aarhus"
           },
           "status": {
             "long": "Match Finished",
@@ -1273,65 +1273,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1336937,
-          "date": "2025-01-18T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Viborg FF´s Anlæg Kunstgræsbanen",
-            "city": "Viborg"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1737158400
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2070,
-            "name": "Viborg",
-            "logo": "https://media.api-sports.io/football/teams/2070.png",
-            "winner": true
-          },
-          "away": {
-            "id": 402,
-            "name": "Aalborg",
-            "logo": "https://media.api-sports.io/football/teams/402.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1628,5 +1569,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:37:55.281Z"
+  "lastUpdated": "2025-04-01T14:54:50.050Z"
 }

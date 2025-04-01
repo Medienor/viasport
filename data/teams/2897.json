@@ -263,65 +263,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231399,
-          "date": "2025-03-29T18:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Al Thumama Stadium",
-            "city": "Doha"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743271200
-        },
-        "league": {
-          "id": 305,
-          "name": "Stars League",
-          "logo": "https://media.api-sports.io/football/leagues/305.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2896,
-            "name": "Al Ahli Doha",
-            "logo": "https://media.api-sports.io/football/teams/2896.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2897,
-            "name": "Al-Rayyan SC",
-            "logo": "https://media.api-sports.io/football/teams/2897.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231405,
           "date": "2025-04-05T16:15:00+00:00",
           "venue": {
@@ -499,6 +440,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231399,
+          "date": "2025-03-29T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Al Thumama Stadium",
+            "city": "Doha"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743271200
+        },
+        "league": {
+          "id": 305,
+          "name": "Stars League",
+          "logo": "https://media.api-sports.io/football/leagues/305.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2896,
+            "name": "Al Ahli Doha",
+            "logo": "https://media.api-sports.io/football/teams/2896.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2897,
+            "name": "Al-Rayyan SC",
+            "logo": "https://media.api-sports.io/football/teams/2897.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1352876,
@@ -1029,65 +1029,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231364,
-          "date": "2025-01-23T15:45:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Ahmad bin Ali Stadium",
-            "city": "Al-Rayyan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1737647100
-        },
-        "league": {
-          "id": 305,
-          "name": "Stars League",
-          "logo": "https://media.api-sports.io/football/leagues/305.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2897,
-            "name": "Al-Rayyan SC",
-            "logo": "https://media.api-sports.io/football/teams/2897.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2904,
-            "name": "Al-Duhail SC",
-            "logo": "https://media.api-sports.io/football/teams/2904.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1384,5 +1325,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:41:51.818Z"
+  "lastUpdated": "2025-04-01T14:58:49.432Z"
 }

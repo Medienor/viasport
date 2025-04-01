@@ -187,71 +187,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362826,
-          "date": "2025-03-29T15:00:00+00:00",
+          "id": 1366096,
+          "date": "2025-04-02T18:30:00+00:00",
           "venue": {
             "id": 199,
             "name": "Olimpijski Stadion Asim Ferhatović Hase",
             "city": "Sarajevo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743260400
-        },
-        "league": {
-          "id": 315,
-          "name": "Premijer Liga",
-          "logo": "https://media.api-sports.io/football/leagues/315.png"
-        },
-        "teams": {
-          "home": {
-            "id": 679,
-            "name": "FK Sarajevo",
-            "logo": "https://media.api-sports.io/football/teams/679.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3367,
-            "name": "Igman Konjic",
-            "logo": "https://media.api-sports.io/football/teams/3367.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1366096,
-          "date": "2025-04-02T18:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
           },
           "status": {
             "long": "Not Started",
@@ -309,7 +250,7 @@
           "date": "2025-04-05T13:00:00+00:00",
           "venue": {
             "id": 19942,
-            "name": "Stadion Perica-Pero Pavlović",
+            "name": "Stadion Perica-Pero Pavlovic",
             "city": "Gabela"
           },
           "status": {
@@ -426,9 +367,9 @@
           "id": 1366097,
           "date": "2025-04-15T16:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 2187,
+            "name": "Gradski Stadion",
+            "city": "Banja Luka"
           },
           "status": {
             "long": "Not Started",
@@ -954,6 +895,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362826,
+          "date": "2025-03-29T15:00:00+00:00",
+          "venue": {
+            "id": 199,
+            "name": "Olimpijski Stadion Asim Ferhatović Hase",
+            "city": "Sarajevo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743260400
+        },
+        "league": {
+          "id": 315,
+          "name": "Premijer Liga",
+          "logo": "https://media.api-sports.io/football/leagues/315.png"
+        },
+        "teams": {
+          "home": {
+            "id": 679,
+            "name": "FK Sarajevo",
+            "logo": "https://media.api-sports.io/football/teams/679.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3367,
+            "name": "Igman Konjic",
+            "logo": "https://media.api-sports.io/football/teams/3367.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1226574,
@@ -1484,65 +1484,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337104,
-          "date": "2025-01-21T00:00:00+00:00",
-          "venue": {
-            "id": 21160,
-            "name": "Arenaturist 1",
-            "city": "Medulin"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1737417600
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 679,
-            "name": "FK Sarajevo",
-            "logo": "https://media.api-sports.io/football/teams/679.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3719,
-            "name": "Slovácko",
-            "logo": "https://media.api-sports.io/football/teams/3719.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1839,5 +1780,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:50.866Z"
+  "lastUpdated": "2025-04-01T14:55:46.430Z"
 }

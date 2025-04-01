@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1231226,
-          "date": "2025-03-30T14:00:00+00:00",
-          "venue": {
-            "id": 1036,
-            "name": "Stade Émile Mayrisch",
-            "city": "Esch-sur-Alzette"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743343200
-        },
-        "league": {
-          "id": 261,
-          "name": "National Division",
-          "logo": "https://media.api-sports.io/football/leagues/261.png"
-        },
-        "teams": {
-          "home": {
-            "id": 626,
-            "name": "Fola Esch",
-            "logo": "https://media.api-sports.io/football/teams/626.png",
-            "winner": null
-          },
-          "away": {
-            "id": 578,
-            "name": "F91 Dudelange",
-            "logo": "https://media.api-sports.io/football/teams/578.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1231227,
@@ -744,6 +685,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1231226,
+          "date": "2025-03-30T14:00:00+00:00",
+          "venue": {
+            "id": 1036,
+            "name": "Stade Émile Mayrisch",
+            "city": "Esch-sur-Alzette"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743343200
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 626,
+            "name": "Fola Esch",
+            "logo": "https://media.api-sports.io/football/teams/626.png",
+            "winner": false
+          },
+          "away": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1231212,
           "date": "2025-03-16T15:00:00+00:00",
           "venue": {
@@ -1272,65 +1272,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231153,
-          "date": "2024-11-23T16:00:00+00:00",
-          "venue": {
-            "id": 1033,
-            "name": "Stade Jos Nosbaum",
-            "city": "Dudelange"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1732377600
-        },
-        "league": {
-          "id": 261,
-          "name": "National Division",
-          "logo": "https://media.api-sports.io/football/leagues/261.png"
-        },
-        "teams": {
-          "home": {
-            "id": 578,
-            "name": "F91 Dudelange",
-            "logo": "https://media.api-sports.io/football/teams/578.png",
-            "winner": true
-          },
-          "away": {
-            "id": 11907,
-            "name": "Swift Hesperange",
-            "logo": "https://media.api-sports.io/football/teams/11907.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1627,5 +1568,5 @@
       }
     }
   },
-  "lastUpdated": "2025-03-27T10:38:40.523Z"
+  "lastUpdated": "2025-04-01T14:55:36.216Z"
 }
