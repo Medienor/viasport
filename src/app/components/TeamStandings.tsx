@@ -12,11 +12,9 @@ interface TeamStandingsProps {
 }
 
 export default function TeamStandings({ teamId, seasons, teamName, hideSeasonSelector = false }: TeamStandingsProps) {
-  // Initialize with previous year as default since football seasons often span two years
-  const currentYear = new Date().getFullYear();
-  const defaultSeason = currentYear - 1;
-  
-  const [selectedSeason, setSelectedSeason] = useState<number>(defaultSeason);
+  // Initialize with the latest season from the provided seasons array
+  const latestSeason = Math.max(...seasons);
+  const [selectedSeason, setSelectedSeason] = useState<number>(latestSeason);
   const [standings, setStandings] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -29,41 +27,35 @@ export default function TeamStandings({ teamId, seasons, teamName, hideSeasonSel
       try {
         setLoading(true);
         
-        console.log(`Fetching leagues for team ${teamId}, season ${selectedSeason}`);
-        
-        // Add cache-control headers to the fetch request
+        // Try to fetch the selected season
         const response = await fetch(`/api/leagues?team=${teamId}&season=${selectedSeason}`, {
-          next: { revalidate: 86400 }, // 24 hours cache
+          next: { revalidate: 86400 },
           headers: {
             'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate'
           }
         });
         
-        if (!response.ok) {
-          throw new Error(`API responded with status: ${response.status}`);
-        }
-        
         const data = await response.json();
-        console.log('Team leagues data:', data);
         
-        if (data.response && data.response.length > 0) {
-          // Filter to only include league competitions (not cups)
-          const leagues = data.response.filter((league: any) => 
-            league.league && league.league.type === 'League'
-          );
+        // If no data for selected season, try the previous season
+        if (!data.response || data.response.length === 0) {
+          const prevSeasonResponse = await fetch(`/api/leagues?team=${teamId}&season=${selectedSeason - 1}`, {
+            next: { revalidate: 86400 },
+            headers: {
+              'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate'
+            }
+          });
           
-          setTeamLeagues(leagues);
+          const prevSeasonData = await prevSeasonResponse.json();
           
-          // Set the first league as selected
-          if (leagues.length > 0) {
-            setSelectedLeagueId(leagues[0].league.id);
-          } else {
-            setSelectedLeagueId(null);
+          if (prevSeasonData.response && prevSeasonData.response.length > 0) {
+            setSelectedSeason(selectedSeason - 1);
+            handleLeaguesData(prevSeasonData);
           }
         } else {
-          setTeamLeagues([]);
-          setSelectedLeagueId(null);
+          handleLeaguesData(data);
         }
+        
       } catch (error) {
         console.error('Error fetching team leagues:', error);
         setError((error as Error).message);
@@ -72,6 +64,28 @@ export default function TeamStandings({ teamId, seasons, teamName, hideSeasonSel
 
     fetchTeamLeagues();
   }, [teamId, selectedSeason]);
+
+  // Helper function to handle leagues data
+  const handleLeaguesData = (data: any) => {
+    if (data.response && data.response.length > 0) {
+      // Filter to only include league competitions (not cups)
+      const leagues = data.response.filter((league: any) => 
+        league.league && league.league.type === 'League'
+      );
+      
+      setTeamLeagues(leagues);
+      
+      // Set the first league as selected
+      if (leagues.length > 0) {
+        setSelectedLeagueId(leagues[0].league.id);
+      } else {
+        setSelectedLeagueId(null);
+      }
+    } else {
+      setTeamLeagues([]);
+      setSelectedLeagueId(null);
+    }
+  };
 
   // Then fetch the full standings for the selected league
   useEffect(() => {

@@ -1,8 +1,7 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-04-01T14:42:58.793Z
+// Last updated: 2025-04-02T11:01:10.359Z
 
 export const calendarData = {
-  "2025-03-25": [],
   "2025-03-26": [],
   "2025-03-27": [
     {
@@ -80,7 +79,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1224209,
-        "referee": "Sven Jablonski, Germany",
+        "referee": "S. Jablonski",
         "timezone": "UTC",
         "date": "2025-03-28T19:30:00+00:00",
         "timestamp": 1743190200,
@@ -362,7 +361,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1224210,
-        "referee": "Badstubner, Florian, Germany",
+        "referee": "F. Badstübner",
         "timezone": "UTC",
         "date": "2025-03-29T14:30:00+00:00",
         "timestamp": 1743258600,
@@ -432,7 +431,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1224213,
-        "referee": "Tobias Reichel, Germany",
+        "referee": "T. Reichel",
         "timezone": "UTC",
         "date": "2025-03-29T14:30:00+00:00",
         "timestamp": 1743258600,
@@ -502,7 +501,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1224215,
-        "referee": "Bastian Dankert, Germany",
+        "referee": "B. Dankert",
         "timezone": "UTC",
         "date": "2025-03-29T14:30:00+00:00",
         "timestamp": 1743258600,
@@ -572,7 +571,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1224216,
-        "referee": "Tobias Stieler, Germany",
+        "referee": "T. Stieler",
         "timezone": "UTC",
         "date": "2025-03-29T14:30:00+00:00",
         "timestamp": 1743258600,
@@ -642,7 +641,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1224217,
-        "referee": "Sascha Stegemann, Germany",
+        "referee": "S. Stegemann",
         "timezone": "UTC",
         "date": "2025-03-29T14:30:00+00:00",
         "timestamp": 1743258600,
@@ -922,7 +921,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1224212,
-        "referee": "Deniz Aytekin, Germany",
+        "referee": "D. Aytekin",
         "timezone": "UTC",
         "date": "2025-03-29T17:30:00+00:00",
         "timestamp": 1743269400,
@@ -1344,7 +1343,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1224214,
-        "referee": "Sören Storks, Germany",
+        "referee": "S. Storks",
         "timezone": "UTC",
         "date": "2025-03-30T13:30:00+00:00",
         "timestamp": 1743341400,
@@ -1484,7 +1483,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1224211,
-        "referee": "Daniel Schlager, Germany",
+        "referee": "D. Schlager",
         "timezone": "UTC",
         "date": "2025-03-30T15:30:00+00:00",
         "timestamp": 1743348600,
@@ -2118,13 +2117,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208314,
-        "referee": "J. Brooks",
+        "referee": "Brooks, John, England",
         "timezone": "UTC",
         "date": "2025-04-01T18:45:00+00:00",
         "timestamp": 1743533100,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1743533100,
+          "second": 1743536700
         },
         "venue": {
           "id": 494,
@@ -2132,10 +2131,10 @@ export const calendarData = {
           "city": "London"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
         }
       },
       "league": {
@@ -2153,27 +2152,27 @@ export const calendarData = {
           "id": 42,
           "name": "Arsenal",
           "logo": "https://media.api-sports.io/football/teams/42.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 36,
           "name": "Fulham",
           "logo": "https://media.api-sports.io/football/teams/36.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -2188,13 +2187,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208317,
-        "referee": "T. Harrington",
+        "referee": "Harrington, Tony, England",
         "timezone": "UTC",
         "date": "2025-04-01T18:45:00+00:00",
         "timestamp": 1743533100,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1743533100,
+          "second": 1743536700
         },
         "venue": {
           "id": 600,
@@ -2202,10 +2201,10 @@ export const calendarData = {
           "city": "Wolverhampton, West Midlands"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
         }
       },
       "league": {
@@ -2223,27 +2222,27 @@ export const calendarData = {
           "id": 39,
           "name": "Wolves",
           "logo": "https://media.api-sports.io/football/teams/39.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 48,
           "name": "West Ham",
           "logo": "https://media.api-sports.io/football/teams/48.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -2258,13 +2257,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208316,
-        "referee": "J. Gillett",
+        "referee": "Jarred Gillett, Australia",
         "timezone": "UTC",
         "date": "2025-04-01T19:00:00+00:00",
         "timestamp": 1743534000,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1743534000,
+          "second": 1743537600
         },
         "venue": {
           "id": 566,
@@ -2272,10 +2271,10 @@ export const calendarData = {
           "city": "Nottingham, Nottinghamshire"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
         }
       },
       "league": {
@@ -2293,27 +2292,27 @@ export const calendarData = {
           "id": 65,
           "name": "Nottingham Forest",
           "logo": "https://media.api-sports.io/football/teams/65.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 33,
           "name": "Manchester United",
           "logo": "https://media.api-sports.io/football/teams/33.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -5673,6 +5672,148 @@ export const calendarData = {
           "id": 541,
           "name": "Real Madrid",
           "logo": "https://media.api-sports.io/football/teams/541.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    }
+  ],
+  "2025-04-09": [
+    {
+      "fixture": {
+        "id": 1360762,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-04-09T19:00:00+00:00",
+        "timestamp": 1744225200,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": 671,
+          "name": "Parc des Princes",
+          "city": "Paris"
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 2,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null,
+        "season": 2024,
+        "round": "Quarter-finals",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 85,
+          "name": "Paris Saint Germain",
+          "logo": "https://media.api-sports.io/football/teams/85.png",
+          "winner": null
+        },
+        "away": {
+          "id": 66,
+          "name": "Aston Villa",
+          "logo": "https://media.api-sports.io/football/teams/66.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1360766,
+        "referee": null,
+        "timezone": "UTC",
+        "date": "2025-04-09T19:00:00+00:00",
+        "timestamp": 1744225200,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": 19939,
+          "name": "Estadi Olímpic Lluís Companys",
+          "city": "Barcelona"
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 2,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null,
+        "season": 2024,
+        "round": "Quarter-finals",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 529,
+          "name": "Barcelona",
+          "logo": "https://media.api-sports.io/football/teams/529.png",
+          "winner": null
+        },
+        "away": {
+          "id": 165,
+          "name": "Borussia Dortmund",
+          "logo": "https://media.api-sports.io/football/teams/165.png",
           "winner": null
         }
       },

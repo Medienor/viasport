@@ -21,9 +21,16 @@ export default async function TeamTablePage({ params }: { params: { slug: string
 
   // Get current season
   const currentYear = new Date().getFullYear();
-  // If we're in the latter half of the year, use current year, otherwise use previous year
-  const seasonStart = new Date().getMonth() >= 6 ? currentYear : currentYear - 1;
-  const seasonEnd = seasonStart + 1;
+  
+  // Generate available seasons based on league
+  const seasons = teamData.team.league_id === 103 || teamData.team.league_id === 104
+    ? [currentYear, currentYear + 1, currentYear + 2] // Norwegian leagues (single year format)
+    : [currentYear - 1, currentYear]; // Other leagues (split year format)
+
+  // Format the season display based on league type
+  const seasonDisplay = teamData.team.league_id === 103 || teamData.team.league_id === 104
+    ? `sesongen ${currentYear}`  // Norwegian leagues: just the year
+    : `sesongen ${currentYear-1}/${currentYear}`; // Other leagues: split year format
 
   const tabs = [
     { name: 'Oversikt', href: `/lag/${params.slug}` },
@@ -47,7 +54,7 @@ export default async function TeamTablePage({ params }: { params: { slug: string
             />
           </div>
           <h1 className="text-2xl font-bold">
-            {teamData.team.team.name} - Tabellplassering for sesongen {seasonStart}/{seasonEnd}
+            {teamData.team.team.name} - Tabellplassering for {seasonDisplay}
           </h1>
         </div>
         <TabNav tabs={tabs} />
@@ -56,7 +63,7 @@ export default async function TeamTablePage({ params }: { params: { slug: string
       {/* Team Standings Component */}
       <TeamStandings 
         teamId={teamId}
-        seasons={teamData.seasons}
+        seasons={seasons}
         teamName={teamData.team.team.name}
         hideSeasonSelector={false}
       />
