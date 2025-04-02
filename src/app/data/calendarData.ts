@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-04-02T17:07:07.367Z
+// Last updated: 2025-04-02T21:58:08.576Z
 
 export const calendarData = {
   "2025-03-26": [],
@@ -2329,13 +2329,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208313,
-        "referee": "R. Jones",
+        "referee": "Robert Jones, England",
         "timezone": "UTC",
         "date": "2025-04-02T18:45:00+00:00",
         "timestamp": 1743619500,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1743619500,
+          "second": 1743623100
         },
         "venue": {
           "id": 504,
@@ -2343,10 +2343,10 @@ export const calendarData = {
           "city": "Bournemouth, Dorset"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 8
         }
       },
       "league": {
@@ -2364,27 +2364,27 @@ export const calendarData = {
           "id": 35,
           "name": "Bournemouth",
           "logo": "https://media.api-sports.io/football/teams/35.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 57,
           "name": "Ipswich",
           "logo": "https://media.api-sports.io/football/teams/57.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "extratime": {
           "home": null,
@@ -2399,13 +2399,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208315,
-        "referee": "S. Attwell",
+        "referee": "Stuart Attwell, England",
         "timezone": "UTC",
         "date": "2025-04-02T18:45:00+00:00",
         "timestamp": 1743619500,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1743619500,
+          "second": 1743623100
         },
         "venue": {
           "id": 508,
@@ -2413,10 +2413,10 @@ export const calendarData = {
           "city": "Falmer, East Sussex"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 11
         }
       },
       "league": {
@@ -2434,27 +2434,27 @@ export const calendarData = {
           "id": 51,
           "name": "Brighton",
           "logo": "https://media.api-sports.io/football/teams/51.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 66,
           "name": "Aston Villa",
           "logo": "https://media.api-sports.io/football/teams/66.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 3
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         },
         "extratime": {
           "home": null,
@@ -2469,13 +2469,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208319,
-        "referee": "D. England",
+        "referee": "Darren England, England",
         "timezone": "UTC",
         "date": "2025-04-02T18:45:00+00:00",
         "timestamp": 1743619500,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1743619500,
+          "second": 1743623100
         },
         "venue": {
           "id": 555,
@@ -2483,10 +2483,10 @@ export const calendarData = {
           "city": "Manchester"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 4
         }
       },
       "league": {
@@ -2504,27 +2504,27 @@ export const calendarData = {
           "id": 50,
           "name": "Manchester City",
           "logo": "https://media.api-sports.io/football/teams/50.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 46,
           "name": "Leicester",
           "logo": "https://media.api-sports.io/football/teams/46.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -2539,13 +2539,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208320,
-        "referee": "P. Bankes",
+        "referee": "Peter Bankes, England",
         "timezone": "UTC",
         "date": "2025-04-02T18:45:00+00:00",
         "timestamp": 1743619500,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1743619500,
+          "second": 1743623100
         },
         "venue": {
           "id": 562,
@@ -2553,10 +2553,10 @@ export const calendarData = {
           "city": "Newcastle upon Tyne"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 10
         }
       },
       "league": {
@@ -2574,27 +2574,27 @@ export const calendarData = {
           "id": 34,
           "name": "Newcastle",
           "logo": "https://media.api-sports.io/football/teams/34.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 55,
           "name": "Brentford",
           "logo": "https://media.api-sports.io/football/teams/55.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -2609,13 +2609,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208321,
-        "referee": "A. Madley",
+        "referee": "Andy Madley, England",
         "timezone": "UTC",
         "date": "2025-04-02T18:45:00+00:00",
         "timestamp": 1743619500,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1743619500,
+          "second": 1743623100
         },
         "venue": {
           "id": 585,
@@ -2623,10 +2623,10 @@ export const calendarData = {
           "city": "Southampton, Hampshire"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 9
         }
       },
       "league": {
@@ -2654,17 +2654,17 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -2679,13 +2679,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208322,
-        "referee": "S. Barrott",
+        "referee": "Barrott, Samuel, England",
         "timezone": "UTC",
         "date": "2025-04-02T19:00:00+00:00",
         "timestamp": 1743620400,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1743620400,
+          "second": 1743624000
         },
         "venue": {
           "id": 550,
@@ -2693,10 +2693,10 @@ export const calendarData = {
           "city": "Liverpool"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
         }
       },
       "league": {
@@ -2714,27 +2714,27 @@ export const calendarData = {
           "id": 40,
           "name": "Liverpool",
           "logo": "https://media.api-sports.io/football/teams/40.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 45,
           "name": "Everton",
           "logo": "https://media.api-sports.io/football/teams/45.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "extratime": {
           "home": null,

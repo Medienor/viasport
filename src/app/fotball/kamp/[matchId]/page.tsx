@@ -9,7 +9,7 @@ import HeadToHeadFixtures from '@/app/components/HeadToHeadFixtures';
 import MatchHighlights from '@/app/components/MatchHighlights';
 import { formatMatchDateTime } from '@/utils/dateUtils';
 
-export const revalidate = 300; // 24 hours cache
+export const revalidate = 300; 
 
 // Initialize Supabase client with the working configuration
 const supabase = createClient(

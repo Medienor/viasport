@@ -94,7 +94,13 @@ export default function ClientLiveMatches({
 
   // Helper function to format match status
   const getMatchStatus = (fixture: any) => {
-    if (fixture.fixture?.status?.short === 'LIVE' || fixture.fixture?.status?.short === 'HT') {
+    if (fixture.fixture?.status?.short === 'FT') {
+      return (
+        <span className="text-gray-600 text-sm">
+          FERDIG
+        </span>
+      );
+    } else if (fixture.fixture?.status?.short === 'LIVE' || fixture.fixture?.status?.short === 'HT') {
       return (
         <span className={`text-white text-xs font-medium px-3 py-0.5 rounded-full flex items-center justify-center w-20 ${
           fixture.fixture?.status?.short === 'HT' ? 'bg-green-600' : 'bg-red-600'
@@ -104,7 +110,7 @@ export default function ClientLiveMatches({
           ) : (
             <span className="inline-flex items-center">
               <span className="w-1.5 h-1.5 bg-white bg-opacity-70 rounded-full animate-pulse mr-1.5"></span>
-              {fixture.fixture?.status?.elapsed || 0}&apos;
+              SPILLER NÅ
             </span>
           )}
         </span>
