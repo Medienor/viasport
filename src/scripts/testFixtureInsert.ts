@@ -105,8 +105,8 @@ const supabase = createClient(supabaseUrl, supabaseKey, {
 });
 
 const FINISHED_MATCH_STATUSES = ['FT', 'AET', 'PEN'];
-const MAX_REQUESTS_PER_MINUTE = 700; // Increased but still safe
-const DELAY_BETWEEN_REQUESTS = Math.ceil(60000 / MAX_REQUESTS_PER_MINUTE);
+const MAX_REQUESTS_PER_MINUTE = 700; // Increased from default to 700 (still safe under 900)
+const DELAY_BETWEEN_REQUESTS = Math.ceil(60000 / MAX_REQUESTS_PER_MINUTE); // This will automatically adjust to ~85ms between requests
 
 // Cache for head-to-head data to avoid duplicate API calls
 const h2hCache = new Map<string, any>();
@@ -175,6 +175,14 @@ async function fetchFixtureEvents(fixtureIds: number[]): Promise<Map<number, any
 
       const events = response.data.response;
       
+      // Add logging for empty events
+      if (!events || events.length === 0) {
+        console.warn(`Warning: No events found for finished fixture ${fixtureId}`);
+        // Skip adding empty events to the map
+        processedCount++;
+        continue;
+      }
+
       const eventCounts = {
         goals: events.filter((e: Event) => e.type === 'Goal').length,
         yellowCards: events.filter((e: Event) => e.type === 'Card' && e.detail === 'Yellow Card').length,
@@ -272,44 +280,70 @@ async function fetchAndInsertFixtures(leagueId: number, leagueName: string, seas
     const fixtures = response.data.response;
     console.log(`Found ${fixtures.length} fixtures for ${leagueName}`);
 
-    // Modify to include both finished and upcoming matches
-    const relevantFixtureIds = fixtures
-      .filter(f => [...FINISHED_MATCH_STATUSES, 'NS'].includes(f.fixture.status.short))
-      .map(f => f.fixture.id);
+    // Fetch all existing fixtures with pagination
+    let allExistingFixtures: any[] = [];
+    let page = 0;
+    const pageSize = 1000;
+    
+    while (true) {
+      const { data: existingFixturesPage, error } = await supabase
+        .from('fixtures')
+        .select('id, event_data, fixture_statistics, head_to_head, match_status')
+        .in('id', fixtures.map(f => f.fixture.id))
+        .range(page * pageSize, (page + 1) * pageSize - 1);
 
-    const { data: existingFixtures } = await supabase
-      .from('fixtures')
-      .select('id, event_data, fixture_statistics, head_to_head')
-      .in('id', relevantFixtureIds);
+      if (error) {
+        console.error('Error fetching fixtures from Supabase:', error);
+        break;
+      }
 
-    const existingEventIds = new Set(
-      existingFixtures
-        ?.filter(f => f.event_data)
-        .map(f => f.id)
-    );
+      if (!existingFixturesPage || existingFixturesPage.length === 0) {
+        break;
+      }
+
+      allExistingFixtures = [...allExistingFixtures, ...existingFixturesPage];
+      page++;
+    }
+
+    console.log(`Found ${allExistingFixtures.length} existing fixtures in Supabase`);
 
     const existingStatisticsIds = new Set(
-      existingFixtures
-        ?.filter(f => f.fixture_statistics)
+      allExistingFixtures
+        .filter(f => {
+          // Only consider it "existing" if it's finished AND has statistics
+          const isFinished = f.match_status === 'FT';
+          const hasStats = f.fixture_statistics !== null;
+          return isFinished && hasStats;
+        })
         .map(f => f.id)
     );
 
-    // For events and statistics, still use only finished matches
-    const fixturesNeedingEvents = relevantFixtureIds
-      .filter(id => !existingEventIds.has(id));
+    // Modify to separate finished and upcoming matches
+    const finishedFixtureIds = fixtures
+      .filter(f => FINISHED_MATCH_STATUSES.includes(f.fixture.status.short))
+      .map(f => f.fixture.id);
+
+    const upcomingFixtureIds = fixtures
+      .filter(f => f.fixture.status.short === 'NS')
+      .map(f => f.fixture.id);
+
+    // For events and statistics, only use finished matches
+    const fixturesNeedingEvents = finishedFixtureIds
+      .filter(id => !existingStatisticsIds.has(id));
     
-    const fixturesNeedingStatistics = relevantFixtureIds
+    const fixturesNeedingStatistics = finishedFixtureIds
       .filter(id => !existingStatisticsIds.has(id));
 
     // For H2H, use all relevant fixtures (finished + upcoming)
-    const fixturesNeedingH2H = relevantFixtureIds.filter(id => {
-      const fixture = existingFixtures?.find(f => f.id === id);
-      return !fixture?.head_to_head;
-    });
+    const fixturesNeedingH2H = [...finishedFixtureIds, ...upcomingFixtureIds]
+      .filter(id => {
+        const fixture = allExistingFixtures?.find(f => f.id === id);
+        return !fixture?.head_to_head;
+      });
 
-    console.log(`Found ${fixturesNeedingEvents.length} fixtures needing events`);
-    console.log(`Found ${fixturesNeedingStatistics.length} fixtures needing statistics`);
-    console.log(`Found ${fixturesNeedingH2H.length} fixtures needing H2H data`);
+    console.log(`Found ${fixturesNeedingEvents.length} finished fixtures needing events`);
+    console.log(`Found ${fixturesNeedingStatistics.length} finished fixtures needing statistics`);
+    console.log(`Found ${fixturesNeedingH2H.length} fixtures (finished + upcoming) needing H2H data`);
 
     // 5. Fetch events and statistics in bulk
     const eventMap = await fetchFixtureEvents(fixturesNeedingEvents);
