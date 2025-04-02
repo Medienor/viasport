@@ -9,9 +9,9 @@ import HeadToHeadFixtures from '@/app/components/HeadToHeadFixtures';
 import MatchHighlights from '@/app/components/MatchHighlights';
 import { formatMatchDateTime } from '@/utils/dateUtils';
 
-export const revalidate = 300; 
+export const revalidate = 86400;
 
-// Initialize Supabase client with the working configuration
+// Initialize Supabase client with the working configuration LOL FUCK YOU
 const supabase = createClient(
   'https://cdynfbwdwdfsiwkgixua.supabase.co',
   process.env.SUPABASE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNkeW5mYndkd2Rmc2l3a2dpeHVhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MjU3ODQwMSwiZXhwIjoyMDU4MTU0NDAxfQ.5V7CbSCE4lb3FbJUa3kgipRPWXG4LeVRCf7eeLSrSoI',
