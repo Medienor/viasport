@@ -188,65 +188,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1219215,
-          "date": "2025-04-02T11:00:00+00:00",
-          "venue": {
-            "id": 1712,
-            "name": "Khon Kaen Stadium",
-            "city": "Khon Kaen"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743591600
-        },
-        "league": {
-          "id": 296,
-          "name": "Thai League 1",
-          "logo": "https://media.api-sports.io/football/leagues/296.png"
-        },
-        "teams": {
-          "home": {
-            "id": 10086,
-            "name": "Khon Kaen United",
-            "logo": "https://media.api-sports.io/football/teams/10086.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2786,
-            "name": "Muangthong United",
-            "logo": "https://media.api-sports.io/football/teams/2786.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1219150,
           "date": "2025-04-05T12:00:00+00:00",
           "venue": {
@@ -542,6 +483,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1219215,
+          "date": "2025-04-02T11:00:00+00:00",
+          "venue": {
+            "id": 1712,
+            "name": "Khon Kaen Stadium",
+            "city": "Khon Kaen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743591600
+        },
+        "league": {
+          "id": 296,
+          "name": "Thai League 1",
+          "logo": "https://media.api-sports.io/football/leagues/296.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10086,
+            "name": "Khon Kaen United",
+            "logo": "https://media.api-sports.io/football/teams/10086.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2786,
+            "name": "Muangthong United",
+            "logo": "https://media.api-sports.io/football/teams/2786.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1219143,
@@ -1072,65 +1072,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1316632,
-          "date": "2025-01-29T12:00:00+00:00",
-          "venue": {
-            "id": 4814,
-            "name": "Nakhon Pathom Municipality Sport School Stadium",
-            "city": "Nakhon Pathom"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1738152000
-        },
-        "league": {
-          "id": 298,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/298.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6578,
-            "name": "Nakhon Pathom",
-            "logo": "https://media.api-sports.io/football/teams/6578.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2786,
-            "name": "Muangthong United",
-            "logo": "https://media.api-sports.io/football/teams/2786.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1427,5 +1368,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:58:57.166Z"
+  "lastUpdated": "2025-04-03T19:22:50.543Z"
 }

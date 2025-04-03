@@ -278,43 +278,6 @@
           }
         }
       ]
-    },
-    {
-      "league": {
-        "id": 1178,
-        "name": "Super Copa International",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/1178.png"
-      },
-      "country": {
-        "name": "Argentina",
-        "code": "AR",
-        "flag": "https://media.api-sports.io/flags/ar.svg"
-      },
-      "seasons": [
-        {
-          "year": 2025,
-          "start": "2025-03-05",
-          "end": "2025-03-05",
-          "current": true,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": false,
-            "top_scorers": false,
-            "top_assists": false,
-            "top_cards": false,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
     }
   ],
   "seasons": [
@@ -332,65 +295,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361859,
-          "date": "2025-04-03T00:30:00+00:00",
-          "venue": {
-            "id": 1242,
-            "name": "Estadio Monumental",
-            "city": "Lima"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743640200
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2540,
-            "name": "Universitario",
-            "logo": "https://media.api-sports.io/football/teams/2540.png",
-            "winner": null
-          },
-          "away": {
-            "id": 435,
-            "name": "River Plate",
-            "logo": "https://media.api-sports.io/football/teams/435.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1334454,
@@ -1103,6 +1007,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361859,
+          "date": "2025-04-03T00:30:00+00:00",
+          "venue": {
+            "id": 1242,
+            "name": "Estadio Monumental",
+            "city": "Lima"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743640200
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2540,
+            "name": "Universitario",
+            "logo": "https://media.api-sports.io/football/teams/2540.png",
+            "winner": false
+          },
+          "away": {
+            "id": 435,
+            "name": "River Plate",
+            "logo": "https://media.api-sports.io/football/teams/435.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1334435,
           "date": "2025-03-30T00:00:00+00:00",
           "venue": {
@@ -1631,65 +1594,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334310,
-          "date": "2025-02-02T20:00:00+00:00",
-          "venue": {
-            "id": 103,
-            "name": "Estadio Pedro Bidegaín",
-            "city": "Capital Federal, Ciudad de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738526400
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 460,
-            "name": "San Lorenzo",
-            "logo": "https://media.api-sports.io/football/teams/460.png",
-            "winner": null
-          },
-          "away": {
-            "id": 435,
-            "name": "River Plate",
-            "logo": "https://media.api-sports.io/football/teams/435.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1986,5 +1890,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:54:31.937Z"
+  "lastUpdated": "2025-04-03T19:18:26.287Z"
 }

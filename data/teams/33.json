@@ -301,65 +301,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208316,
-          "date": "2025-04-01T19:00:00+00:00",
-          "venue": {
-            "id": 566,
-            "name": "The City Ground",
-            "city": "Nottingham, Nottinghamshire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743534000
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 65,
-            "name": "Nottingham Forest",
-            "logo": "https://media.api-sports.io/football/teams/65.png",
-            "winner": null
-          },
-          "away": {
-            "id": 33,
-            "name": "Manchester United",
-            "logo": "https://media.api-sports.io/football/teams/33.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208330,
           "date": "2025-04-06T15:30:00+00:00",
           "venue": {
@@ -1129,6 +1070,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1208316,
+          "date": "2025-04-01T19:00:00+00:00",
+          "venue": {
+            "id": 566,
+            "name": "The City Ground",
+            "city": "Nottingham, Nottinghamshire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743534000
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 65,
+            "name": "Nottingham Forest",
+            "logo": "https://media.api-sports.io/football/teams/65.png",
+            "winner": true
+          },
+          "away": {
+            "id": 33,
+            "name": "Manchester United",
+            "logo": "https://media.api-sports.io/football/teams/33.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1208309,
           "date": "2025-03-16T19:00:00+00:00",
           "venue": {
@@ -1657,65 +1657,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299259,
-          "date": "2025-01-30T20:00:00+00:00",
-          "venue": {
-            "id": 1326,
-            "name": "Arena Naţională",
-            "city": "Bucureşti"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738267200
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 559,
-            "name": "FCSB",
-            "logo": "https://media.api-sports.io/football/teams/559.png",
-            "winner": false
-          },
-          "away": {
-            "id": 33,
-            "name": "Manchester United",
-            "logo": "https://media.api-sports.io/football/teams/33.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2012,5 +1953,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:46.141Z"
+  "lastUpdated": "2025-04-03T19:16:30.006Z"
 }

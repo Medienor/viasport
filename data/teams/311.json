@@ -115,65 +115,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1324026,
-          "date": "2025-04-02T10:00:00+00:00",
-          "venue": {
-            "id": 952,
-            "name": "Denka Big Swan Stadium",
-            "city": "Niigata"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743588000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 311,
-            "name": "Albirex Niigata",
-            "logo": "https://media.api-sports.io/football/teams/311.png",
-            "winner": null
-          },
-          "away": {
-            "id": 316,
-            "name": "Avispa Fukuoka",
-            "logo": "https://media.api-sports.io/football/teams/316.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1324038,
           "date": "2025-04-06T05:00:00+00:00",
           "venue": {
@@ -1292,9 +1233,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1324216,
+          "date": "2025-08-23T10:00:00+00:00",
+          "venue": {
+            "id": 952,
+            "name": "Denka Big Swan Stadium",
+            "city": "Niigata"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755943200
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 311,
+            "name": "Albirex Niigata",
+            "logo": "https://media.api-sports.io/football/teams/311.png",
+            "winner": null
+          },
+          "away": {
+            "id": 290,
+            "name": "Kashima",
+            "logo": "https://media.api-sports.io/football/teams/290.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1324026,
+          "date": "2025-04-02T10:00:00+00:00",
+          "venue": {
+            "id": 952,
+            "name": "Denka Big Swan Stadium",
+            "city": "Niigata"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743588000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 311,
+            "name": "Albirex Niigata",
+            "logo": "https://media.api-sports.io/football/teams/311.png",
+            "winner": false
+          },
+          "away": {
+            "id": 316,
+            "name": "Avispa Fukuoka",
+            "logo": "https://media.api-sports.io/football/teams/316.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1324016,
@@ -1825,65 +1884,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1166485,
-          "date": "2024-11-09T06:00:00+00:00",
-          "venue": {
-            "id": 965,
-            "name": "SANKYO FRONTIER Kashiwa Stadium",
-            "city": "Kashiwa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1731132000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 281,
-            "name": "Kashiwa Reysol",
-            "logo": "https://media.api-sports.io/football/teams/281.png",
-            "winner": null
-          },
-          "away": {
-            "id": 311,
-            "name": "Albirex Niigata",
-            "logo": "https://media.api-sports.io/football/teams/311.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1901,12 +1901,12 @@
       "name": "Albirex Niigata",
       "logo": "https://media.api-sports.io/football/teams/311.png"
     },
-    "form": "DLLDDLD",
+    "form": "DLLDDLDL",
     "fixtures": {
       "played": {
-        "home": 3,
+        "home": 4,
         "away": 4,
-        "total": 7
+        "total": 8
       },
       "wins": {
         "home": 0,
@@ -1919,9 +1919,9 @@
         "total": 4
       },
       "loses": {
-        "home": 0,
+        "home": 1,
         "away": 3,
-        "total": 3
+        "total": 4
       }
     },
     "goals": {
@@ -1932,9 +1932,9 @@
           "total": 9
         },
         "average": {
-          "home": "2.3",
+          "home": "1.8",
           "away": "0.5",
-          "total": "1.3"
+          "total": "1.1"
         },
         "minute": {
           "0-15": {
@@ -1973,65 +1973,65 @@
         "under_over": {
           "0.5": {
             "over": 5,
-            "under": 2
+            "under": 3
           },
           "1.5": {
             "over": 3,
-            "under": 4
+            "under": 5
           },
           "2.5": {
             "over": 1,
-            "under": 6
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           },
           "4.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           }
         }
       },
       "against": {
         "total": {
-          "home": 7,
+          "home": 8,
           "away": 6,
-          "total": 13
+          "total": 14
         },
         "average": {
-          "home": "2.3",
+          "home": "2.0",
           "away": "1.5",
-          "total": "1.9"
+          "total": "1.8"
         },
         "minute": {
           "0-15": {
             "total": 2,
-            "percentage": "16.67%"
+            "percentage": "15.38%"
           },
           "16-30": {
             "total": 2,
-            "percentage": "16.67%"
+            "percentage": "15.38%"
           },
           "31-45": {
             "total": 1,
-            "percentage": "8.33%"
+            "percentage": "7.69%"
           },
           "46-60": {
-            "total": 1,
-            "percentage": "8.33%"
+            "total": 2,
+            "percentage": "15.38%"
           },
           "61-75": {
             "total": 3,
-            "percentage": "25.00%"
+            "percentage": "23.08%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "8.33%"
+            "percentage": "7.69%"
           },
           "91-105": {
             "total": 2,
-            "percentage": "16.67%"
+            "percentage": "15.38%"
           },
           "106-120": {
             "total": null,
@@ -2040,24 +2040,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 7,
+            "over": 8,
             "under": 0
           },
           "1.5": {
             "over": 5,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 1,
-            "under": 6
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           },
           "4.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           }
         }
       }
@@ -2073,7 +2073,7 @@
         "away": null
       },
       "loses": {
-        "home": null,
+        "home": "0-1",
         "away": "2-0"
       },
       "goals": {
@@ -2093,9 +2093,9 @@
       "total": 0
     },
     "failed_to_score": {
-      "home": 0,
+      "home": 1,
       "away": 2,
-      "total": 2
+      "total": 3
     },
     "penalty": {
       "scored": {
@@ -2111,7 +2111,7 @@
     "lineups": [
       {
         "formation": "4-4-2",
-        "played": 6
+        "played": 7
       },
       {
         "formation": "3-4-2-1",
@@ -2193,5 +2193,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:43.465Z"
+  "lastUpdated": "2025-04-03T19:23:37.114Z"
 }

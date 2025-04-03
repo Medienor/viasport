@@ -108,65 +108,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1340928,
-          "date": "2025-04-02T11:35:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Jinan Olympic Sports Center",
-            "city": "Jinan"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743593700
-        },
-        "league": {
-          "id": 169,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/169.png"
-        },
-        "teams": {
-          "home": {
-            "id": 844,
-            "name": "Shandong Luneng",
-            "logo": "https://media.api-sports.io/football/teams/844.png",
-            "winner": null
-          },
-          "away": {
-            "id": 5648,
-            "name": "Chengdu Better City",
-            "logo": "https://media.api-sports.io/football/teams/5648.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1340935,
           "date": "2025-04-06T11:00:00+00:00",
           "venue": {
@@ -1285,9 +1226,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1341084,
+          "date": "2025-09-12T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Wuliangye Sports Center Stadium",
+            "city": "Chengdu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757676900
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5648,
+            "name": "Chengdu Better City",
+            "logo": "https://media.api-sports.io/football/teams/5648.png",
+            "winner": null
+          },
+          "away": {
+            "id": 834,
+            "name": "Changchun Yatai",
+            "logo": "https://media.api-sports.io/football/teams/834.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1340928,
+          "date": "2025-04-02T11:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jinan Olympic Sports Center",
+            "city": "Jinan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743593700
+        },
+        "league": {
+          "id": 169,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/169.png"
+        },
+        "teams": {
+          "home": {
+            "id": 844,
+            "name": "Shandong Luneng",
+            "logo": "https://media.api-sports.io/football/teams/844.png",
+            "winner": false
+          },
+          "away": {
+            "id": 5648,
+            "name": "Chengdu Better City",
+            "logo": "https://media.api-sports.io/football/teams/5648.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1340922,
@@ -1818,65 +1877,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1294670,
-          "date": "2024-09-24T11:35:00+00:00",
-          "venue": {
-            "id": 359,
-            "name": "Jinan Olympic Sports Center Stadium",
-            "city": "Ji'nan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1727177700
-        },
-        "league": {
-          "id": 171,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/171.png"
-        },
-        "teams": {
-          "home": {
-            "id": 844,
-            "name": "Shandong Luneng",
-            "logo": "https://media.api-sports.io/football/teams/844.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5648,
-            "name": "Chengdu Better City",
-            "logo": "https://media.api-sports.io/football/teams/5648.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1894,17 +1894,17 @@
       "name": "Chengdu Better City",
       "logo": "https://media.api-sports.io/football/teams/5648.png"
     },
-    "form": "WLD",
+    "form": "WLDW",
     "fixtures": {
       "played": {
         "home": 2,
-        "away": 1,
-        "total": 3
+        "away": 2,
+        "total": 4
       },
       "wins": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "draws": {
         "home": 0,
@@ -1921,38 +1921,38 @@
       "for": {
         "total": {
           "home": 2,
-          "away": 1,
-          "total": 3
+          "away": 4,
+          "total": 6
         },
         "average": {
           "home": "1.0",
-          "away": "1.0",
-          "total": "1.0"
+          "away": "2.0",
+          "total": "1.5"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "16.67%"
           },
           "16-30": {
             "total": 1,
-            "percentage": "33.33%"
+            "percentage": "16.67%"
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 1,
+            "total": 2,
             "percentage": "33.33%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "16.67%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "33.33%"
+            "percentage": "16.67%"
           },
           "91-105": {
             "total": null,
@@ -1965,24 +1965,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 4,
             "under": 0
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 3
           },
           "2.5": {
-            "over": 0,
+            "over": 1,
             "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           }
         }
       },
@@ -1994,8 +1994,8 @@
         },
         "average": {
           "home": "1.0",
-          "away": "1.0",
-          "total": "1.0"
+          "away": "0.5",
+          "total": "0.8"
         },
         "minute": {
           "0-15": {
@@ -2034,23 +2034,23 @@
         "under_over": {
           "0.5": {
             "over": 2,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 1,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           }
         }
       }
@@ -2058,12 +2058,12 @@
     "biggest": {
       "streak": {
         "wins": 1,
-        "draws": 0,
+        "draws": 1,
         "loses": 1
       },
       "wins": {
         "home": "1-0",
-        "away": null
+        "away": "0-3"
       },
       "loses": {
         "home": "1-2",
@@ -2072,7 +2072,7 @@
       "goals": {
         "for": {
           "home": 1,
-          "away": 1
+          "away": 3
         },
         "against": {
           "home": 2,
@@ -2082,8 +2082,8 @@
     },
     "clean_sheet": {
       "home": 1,
-      "away": 0,
-      "total": 1
+      "away": 1,
+      "total": 2
     },
     "failed_to_score": {
       "home": 0,
@@ -2109,25 +2109,29 @@
       {
         "formation": "3-4-2-1",
         "played": 1
+      },
+      {
+        "formation": "5-4-1",
+        "played": 1
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
           "total": 2,
-          "percentage": "28.57%"
+          "percentage": "20.00%"
         },
         "16-30": {
-          "total": 2,
-          "percentage": "28.57%"
+          "total": 3,
+          "percentage": "30.00%"
         },
         "31-45": {
           "total": null,
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "20.00%"
         },
         "61-75": {
           "total": null,
@@ -2135,11 +2139,11 @@
         },
         "76-90": {
           "total": 1,
-          "percentage": "14.29%"
+          "percentage": "10.00%"
         },
         "91-105": {
           "total": 2,
-          "percentage": "28.57%"
+          "percentage": "20.00%"
         },
         "106-120": {
           "total": null,
@@ -2182,5 +2186,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:35.825Z"
+  "lastUpdated": "2025-04-03T19:23:29.295Z"
 }

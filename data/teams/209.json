@@ -228,65 +228,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213659,
-          "date": "2025-04-02T18:00:00+00:00",
-          "venue": {
-            "id": 1128,
-            "name": "Stadion Feijenoord",
-            "city": "Rotterdam"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743616800
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 209,
-            "name": "Feyenoord",
-            "logo": "https://media.api-sports.io/football/teams/209.png",
-            "winner": null
-          },
-          "away": {
-            "id": 202,
-            "name": "Groningen",
-            "logo": "https://media.api-sports.io/football/teams/202.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213686,
           "date": "2025-04-05T14:30:00+00:00",
           "venue": {
@@ -700,6 +641,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213659,
+          "date": "2025-04-02T18:00:00+00:00",
+          "venue": {
+            "id": 1128,
+            "name": "Stadion Feijenoord",
+            "city": "Rotterdam"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743616800
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 209,
+            "name": "Feyenoord",
+            "logo": "https://media.api-sports.io/football/teams/209.png",
+            "winner": true
+          },
+          "away": {
+            "id": 202,
+            "name": "Groningen",
+            "logo": "https://media.api-sports.io/football/teams/202.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213676,
@@ -1230,65 +1230,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213633,
-          "date": "2025-02-08T20:00:00+00:00",
-          "venue": {
-            "id": 1128,
-            "name": "Stadion Feijenoord",
-            "city": "Rotterdam"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1739044800
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 209,
-            "name": "Feyenoord",
-            "logo": "https://media.api-sports.io/football/teams/209.png",
-            "winner": true
-          },
-          "away": {
-            "id": 426,
-            "name": "Sparta Rotterdam",
-            "logo": "https://media.api-sports.io/football/teams/426.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1585,5 +1526,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:53:58.519Z"
+  "lastUpdated": "2025-04-03T19:17:52.602Z"
 }

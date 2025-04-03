@@ -262,65 +262,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361570,
-          "date": "2025-04-02T16:30:00+00:00",
-          "venue": {
-            "id": 432,
-            "name": "Neo GSP",
-            "city": "Levkosía"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743611400
-        },
-        "league": {
-          "id": 318,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/318.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2247,
-            "name": "Apoel Nicosia",
-            "logo": "https://media.api-sports.io/football/teams/2247.png",
-            "winner": null
-          },
-          "away": {
-            "id": 614,
-            "name": "AEK Larnaca",
-            "logo": "https://media.api-sports.io/football/teams/614.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361571,
           "date": "2025-04-06T15:00:00+00:00",
           "venue": {
@@ -498,6 +439,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361570,
+          "date": "2025-04-02T16:30:00+00:00",
+          "venue": {
+            "id": 432,
+            "name": "Neo GSP",
+            "city": "Levkosía"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743611400
+        },
+        "league": {
+          "id": 318,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/318.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2247,
+            "name": "Apoel Nicosia",
+            "logo": "https://media.api-sports.io/football/teams/2247.png",
+            "winner": false
+          },
+          "away": {
+            "id": 614,
+            "name": "AEK Larnaca",
+            "logo": "https://media.api-sports.io/football/teams/614.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361565,
@@ -1028,65 +1028,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224427,
-          "date": "2025-02-03T18:00:00+00:00",
-          "venue": {
-            "id": 431,
-            "name": "Stadio Antonis Papadopoulos",
-            "city": "Larnaca"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1738605600
-        },
-        "league": {
-          "id": 318,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/318.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2269,
-            "name": "Anorthosis",
-            "logo": "https://media.api-sports.io/football/teams/2269.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2247,
-            "name": "Apoel Nicosia",
-            "logo": "https://media.api-sports.io/football/teams/2247.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1383,5 +1324,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:07.758Z"
+  "lastUpdated": "2025-04-03T19:19:02.303Z"
 }

@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -147,65 +147,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1339000,
-          "date": "2025-04-02T18:45:00+00:00",
-          "venue": {
-            "id": 2932,
-            "name": "Stadio Fonte Dell'Ovo",
-            "city": "Città di San Marino"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743619500
-        },
-        "league": {
-          "id": 729,
-          "name": "Coppa Titano",
-          "logo": "https://media.api-sports.io/football/leagues/729.png"
-        },
-        "teams": {
-          "home": {
-            "id": 700,
-            "name": "Tre Penne",
-            "logo": "https://media.api-sports.io/football/teams/700.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2260,
-            "name": "Tre Fiori",
-            "logo": "https://media.api-sports.io/football/teams/2260.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361255,
@@ -326,6 +267,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1339000,
+          "date": "2025-04-02T18:45:00+00:00",
+          "venue": {
+            "id": 2932,
+            "name": "Stadio Fonte Dell'Ovo",
+            "city": "Città di San Marino"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743619500
+        },
+        "league": {
+          "id": 729,
+          "name": "Coppa Titano",
+          "logo": "https://media.api-sports.io/football/leagues/729.png"
+        },
+        "teams": {
+          "home": {
+            "id": 700,
+            "name": "Tre Penne",
+            "logo": "https://media.api-sports.io/football/teams/700.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2260,
+            "name": "Tre Fiori",
+            "logo": "https://media.api-sports.io/football/teams/2260.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1349662,
@@ -856,65 +856,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1319972,
-          "date": "2025-01-26T17:00:00+00:00",
-          "venue": {
-            "id": 2932,
-            "name": "Stadio Fonte Dell'Ovo",
-            "city": "Città di San Marino"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737910800
-        },
-        "league": {
-          "id": 404,
-          "name": "Campionato",
-          "logo": "https://media.api-sports.io/football/leagues/404.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5306,
-            "name": "Pennarossa",
-            "logo": "https://media.api-sports.io/football/teams/5306.png",
-            "winner": null
-          },
-          "away": {
-            "id": 700,
-            "name": "Tre Penne",
-            "logo": "https://media.api-sports.io/football/teams/700.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1211,5 +1152,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:49.109Z"
+  "lastUpdated": "2025-04-03T19:19:41.485Z"
 }

@@ -78,7 +78,7 @@
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": false,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -179,6 +179,65 @@
             "id": 330,
             "name": "ODD Ballklubb",
             "logo": "https://media.api-sports.io/football/teams/330.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1367217,
+          "date": "2025-04-13T14:00:00+00:00",
+          "venue": {
+            "id": 5136,
+            "name": "Skjetten Stadion",
+            "city": "Skjetten"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744552800
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7025,
+            "name": "Skjetten",
+            "logo": "https://media.api-sports.io/football/teams/7025.png",
+            "winner": null
+          },
+          "away": {
+            "id": 321,
+            "name": "Lillestrom",
+            "logo": "https://media.api-sports.io/football/teams/321.png",
             "winner": null
           }
         },
@@ -1623,5 +1682,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:25.829Z"
+  "lastUpdated": "2025-04-03T19:16:09.535Z"
 }

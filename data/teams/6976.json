@@ -78,7 +78,7 @@
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": false,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -204,11 +204,70 @@
       },
       {
         "fixture": {
+          "id": 1367200,
+          "date": "2025-04-13T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744552800
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 20854,
+            "name": "Eiger",
+            "logo": "https://media.api-sports.io/football/teams/20854.png",
+            "winner": null
+          },
+          "away": {
+            "id": 6976,
+            "name": "Egersund",
+            "logo": "https://media.api-sports.io/football/teams/6976.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342442,
           "date": "2025-04-21T15:00:00+00:00",
           "venue": {
             "id": 5094,
-            "name": "Egersund Idrettsparken",
+            "name": "B&G-banen",
             "city": "Egersund"
           },
           "status": {
@@ -1620,5 +1679,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:40.964Z"
+  "lastUpdated": "2025-04-03T19:16:24.989Z"
 }

@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -260,65 +260,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1348104,
-          "date": "2025-04-02T10:00:00+00:00",
-          "venue": {
-            "id": 1559,
-            "name": "Khao Kradong Stadium",
-            "city": "Buriram"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743588000
-        },
-        "league": {
-          "id": 1129,
-          "name": "ASEAN Club Championship",
-          "logo": "https://media.api-sports.io/football/leagues/1129.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2780,
-            "name": "Buriram United",
-            "logo": "https://media.api-sports.io/football/teams/2780.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2769,
-            "name": "Bangkok Glass",
-            "logo": "https://media.api-sports.io/football/teams/2769.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1219156,
@@ -793,6 +734,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1348104,
+          "date": "2025-04-02T12:30:00+00:00",
+          "venue": {
+            "id": 1559,
+            "name": "Khao Kradong Stadium",
+            "city": "Buriram"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743597000
+        },
+        "league": {
+          "id": 1129,
+          "name": "ASEAN Club Championship",
+          "logo": "https://media.api-sports.io/football/leagues/1129.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2780,
+            "name": "Buriram United",
+            "logo": "https://media.api-sports.io/football/teams/2780.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2769,
+            "name": "Bangkok Glass",
+            "logo": "https://media.api-sports.io/football/teams/2769.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1219141,
@@ -1323,65 +1323,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1288393,
-          "date": "2025-02-12T12:00:00+00:00",
-          "venue": {
-            "id": 1559,
-            "name": "Chang Arena",
-            "city": "Buriram"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 11
-          },
-          "timestamp": 1739361600
-        },
-        "league": {
-          "id": 17,
-          "name": "AFC Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/17.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2780,
-            "name": "Buriram United",
-            "logo": "https://media.api-sports.io/football/teams/2780.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2767,
-            "name": "Ulsan Hyundai FC",
-            "logo": "https://media.api-sports.io/football/teams/2767.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1678,5 +1619,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:58:45.893Z"
+  "lastUpdated": "2025-04-03T19:22:40.342Z"
 }

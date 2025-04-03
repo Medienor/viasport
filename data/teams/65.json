@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208316,
-          "date": "2025-04-01T19:00:00+00:00",
-          "venue": {
-            "id": 566,
-            "name": "The City Ground",
-            "city": "Nottingham, Nottinghamshire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743534000
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 65,
-            "name": "Nottingham Forest",
-            "logo": "https://media.api-sports.io/football/teams/65.png",
-            "winner": null
-          },
-          "away": {
-            "id": 33,
-            "name": "Manchester United",
-            "logo": "https://media.api-sports.io/football/teams/33.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208323,
           "date": "2025-04-05T16:30:00+00:00",
           "venue": {
@@ -683,6 +624,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208316,
+          "date": "2025-04-01T19:00:00+00:00",
+          "venue": {
+            "id": 566,
+            "name": "The City Ground",
+            "city": "Nottingham, Nottinghamshire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743534000
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 65,
+            "name": "Nottingham Forest",
+            "logo": "https://media.api-sports.io/football/teams/65.png",
+            "winner": true
+          },
+          "away": {
+            "id": 33,
+            "name": "Manchester United",
+            "logo": "https://media.api-sports.io/football/teams/33.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208308,
@@ -1213,65 +1213,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1318864,
-          "date": "2025-01-11T15:00:00+00:00",
-          "venue": {
-            "id": 566,
-            "name": "The City Ground",
-            "city": "Nottingham, Nottinghamshire"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1736607600
-        },
-        "league": {
-          "id": 45,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/45.png"
-        },
-        "teams": {
-          "home": {
-            "id": 65,
-            "name": "Nottingham Forest",
-            "logo": "https://media.api-sports.io/football/teams/65.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1359,
-            "name": "Luton",
-            "logo": "https://media.api-sports.io/football/teams/1359.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1568,5 +1509,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:56.280Z"
+  "lastUpdated": "2025-04-03T19:16:40.278Z"
 }

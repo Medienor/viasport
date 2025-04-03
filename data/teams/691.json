@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -184,65 +184,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1357116,
-          "date": "2025-04-03T15:00:00+00:00",
-          "venue": {
-            "id": 1092,
-            "name": "Stadionul Orăşenesc",
-            "city": "Hînceşti"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743692400
-        },
-        "league": {
-          "id": 674,
-          "name": "Cupa",
-          "logo": "https://media.api-sports.io/football/leagues/674.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2271,
-            "name": "Petrocub",
-            "logo": "https://media.api-sports.io/football/teams/2271.png",
-            "winner": null
-          },
-          "away": {
-            "id": 691,
-            "name": "Milsami Orhei",
-            "logo": "https://media.api-sports.io/football/teams/691.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1360751,
@@ -540,6 +481,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1357116,
+          "date": "2025-04-03T15:00:00+00:00",
+          "venue": {
+            "id": 1092,
+            "name": "Stadionul Orăşenesc",
+            "city": "Hînceşti"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743692400
+        },
+        "league": {
+          "id": 674,
+          "name": "Cupa",
+          "logo": "https://media.api-sports.io/football/leagues/674.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2271,
+            "name": "Petrocub",
+            "logo": "https://media.api-sports.io/football/teams/2271.png",
+            "winner": true
+          },
+          "away": {
+            "id": 691,
+            "name": "Milsami Orhei",
+            "logo": "https://media.api-sports.io/football/teams/691.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1351555,
@@ -1070,65 +1070,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1239669,
-          "date": "2024-10-26T11:00:00+00:00",
-          "venue": {
-            "id": 4063,
-            "name": "Stadion Dinamo",
-            "city": "Tighina"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1729940400
-        },
-        "league": {
-          "id": 394,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/394.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5376,
-            "name": "Floreşti",
-            "logo": "https://media.api-sports.io/football/teams/5376.png",
-            "winner": false
-          },
-          "away": {
-            "id": 691,
-            "name": "Milsami Orhei",
-            "logo": "https://media.api-sports.io/football/teams/691.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 5
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 5
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1425,5 +1366,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:46.481Z"
+  "lastUpdated": "2025-04-03T19:19:41.439Z"
 }

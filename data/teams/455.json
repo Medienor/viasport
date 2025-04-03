@@ -190,65 +190,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1330789,
-          "date": "2025-04-02T19:00:00+00:00",
-          "venue": {
-            "id": 41,
-            "name": "Estadio Nuevo Monumental",
-            "city": "Rafaela, Provincia de Santa Fe"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743620400
-        },
-        "league": {
-          "id": 130,
-          "name": "Copa Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/130.png"
-        },
-        "teams": {
-          "home": {
-            "id": 455,
-            "name": "Atletico Tucuman",
-            "logo": "https://media.api-sports.io/football/teams/455.png",
-            "winner": null
-          },
-          "away": {
-            "id": 464,
-            "name": "All Boys",
-            "logo": "https://media.api-sports.io/football/teams/464.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334451,
           "date": "2025-04-08T00:00:00+00:00",
           "venue": {
@@ -485,6 +426,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1330789,
+          "date": "2025-04-02T19:00:00+00:00",
+          "venue": {
+            "id": 41,
+            "name": "Estadio Nuevo Monumental",
+            "city": "Rafaela, Provincia de Santa Fe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743620400
+        },
+        "league": {
+          "id": 130,
+          "name": "Copa Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/130.png"
+        },
+        "teams": {
+          "home": {
+            "id": 455,
+            "name": "Atletico Tucuman",
+            "logo": "https://media.api-sports.io/football/teams/455.png",
+            "winner": true
+          },
+          "away": {
+            "id": 464,
+            "name": "All Boys",
+            "logo": "https://media.api-sports.io/football/teams/464.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334437,
@@ -1015,65 +1015,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334306,
-          "date": "2025-01-31T00:30:00+00:00",
-          "venue": {
-            "id": 2997,
-            "name": "Estadio Único Madre de Ciudades",
-            "city": "Santiago del Estero, Prov. de Santiago del Estero"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738283400
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1065,
-            "name": "Central Cordoba de Santiago",
-            "logo": "https://media.api-sports.io/football/teams/1065.png",
-            "winner": true
-          },
-          "away": {
-            "id": 455,
-            "name": "Atletico Tucuman",
-            "logo": "https://media.api-sports.io/football/teams/455.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1370,5 +1311,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:54:39.622Z"
+  "lastUpdated": "2025-04-03T19:18:34.288Z"
 }

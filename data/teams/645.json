@@ -190,8 +190,8 @@
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": false,
             "players": true,
@@ -224,65 +224,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1359787,
-          "date": "2025-04-02T17:45:00+00:00",
-          "venue": {
-            "id": 1581,
-            "name": "Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743615900
-        },
-        "league": {
-          "id": 206,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/206.png"
-        },
-        "teams": {
-          "home": {
-            "id": 611,
-            "name": "Fenerbahce",
-            "logo": "https://media.api-sports.io/football/teams/611.png",
-            "winner": null
-          },
-          "away": {
-            "id": 645,
-            "name": "Galatasaray",
-            "logo": "https://media.api-sports.io/football/teams/645.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1238123,
@@ -405,6 +346,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1359787,
+          "date": "2025-04-02T17:45:00+00:00",
+          "venue": {
+            "id": 1581,
+            "name": "Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743615900
+        },
+        "league": {
+          "id": 206,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/206.png"
+        },
+        "teams": {
+          "home": {
+            "id": 611,
+            "name": "Fenerbahce",
+            "logo": "https://media.api-sports.io/football/teams/611.png",
+            "winner": false
+          },
+          "away": {
+            "id": 645,
+            "name": "Galatasaray",
+            "logo": "https://media.api-sports.io/football/teams/645.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1238102,
           "date": "2025-03-29T17:30:00+00:00",
           "venue": {
@@ -468,8 +468,8 @@
           "date": "2025-03-14T17:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Rams Park Stadyumu",
-            "city": "Istanbul"
+            "name": "RAMS Park",
+            "city": "İstanbul"
           },
           "status": {
             "long": "Match Finished",
@@ -704,8 +704,8 @@
           "date": "2025-02-24T17:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Rams Park Stadyumu",
-            "city": "Istanbul"
+            "name": "RAMS Park",
+            "city": "İstanbul"
           },
           "status": {
             "long": "Match Finished",
@@ -923,65 +923,6 @@
           "fulltime": {
             "home": 4,
             "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1238054,
-          "date": "2025-02-09T16:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "RAMS Park",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1739116800
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 645,
-            "name": "Galatasaray",
-            "logo": "https://media.api-sports.io/football/teams/645.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3563,
-            "name": "Adana Demirspor",
-            "logo": "https://media.api-sports.io/football/teams/3563.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
           },
           "extratime": {
             "home": null,
@@ -1288,5 +1229,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:02.708Z"
+  "lastUpdated": "2025-04-03T19:17:21.534Z"
 }

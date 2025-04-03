@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1347942,
-          "date": "2025-04-02T17:30:00+00:00",
-          "venue": {
-            "id": 19785,
-            "name": "OPAP Arena",
-            "city": "Athens"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743615000
-        },
-        "league": {
-          "id": 199,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/199.png"
-        },
-        "teams": {
-          "home": {
-            "id": 575,
-            "name": "AEK Athens FC",
-            "logo": "https://media.api-sports.io/football/teams/575.png",
-            "winner": null
-          },
-          "away": {
-            "id": 553,
-            "name": "Olympiakos Piraeus",
-            "logo": "https://media.api-sports.io/football/teams/553.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1360698,
           "date": "2025-04-06T16:30:00+00:00",
           "venue": {
@@ -506,6 +447,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1347942,
+          "date": "2025-04-02T17:30:00+00:00",
+          "venue": {
+            "id": 19785,
+            "name": "OPAP Arena",
+            "city": "Athens"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743615000
+        },
+        "league": {
+          "id": 199,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/199.png"
+        },
+        "teams": {
+          "home": {
+            "id": 575,
+            "name": "AEK Athens FC",
+            "logo": "https://media.api-sports.io/football/teams/575.png",
+            "winner": true
+          },
+          "away": {
+            "id": 553,
+            "name": "Olympiakos Piraeus",
+            "logo": "https://media.api-sports.io/football/teams/553.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360697,
@@ -1036,65 +1036,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334039,
-          "date": "2025-02-05T17:30:00+00:00",
-          "venue": {
-            "id": 775,
-            "name": "Stadio Georgios Karaiskáki",
-            "city": "Piraeus"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738776600
-        },
-        "league": {
-          "id": 199,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/199.png"
-        },
-        "teams": {
-          "home": {
-            "id": 553,
-            "name": "Olympiakos Piraeus",
-            "logo": "https://media.api-sports.io/football/teams/553.png",
-            "winner": true
-          },
-          "away": {
-            "id": 617,
-            "name": "Panathinaikos",
-            "logo": "https://media.api-sports.io/football/teams/617.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1391,5 +1332,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:18.049Z"
+  "lastUpdated": "2025-04-03T19:19:10.135Z"
 }

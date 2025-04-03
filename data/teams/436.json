@@ -300,65 +300,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361865,
-          "date": "2025-04-02T00:30:00+00:00",
-          "venue": {
-            "id": 225,
-            "name": "Estádio Governador Plácido Aderaldo Castelo",
-            "city": "Fortaleza, Ceará"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743553800
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": null
-          },
-          "away": {
-            "id": 436,
-            "name": "Racing Club",
-            "logo": "https://media.api-sports.io/football/teams/436.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334442,
           "date": "2025-04-06T23:15:00+00:00",
           "venue": {
@@ -831,6 +772,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361865,
+          "date": "2025-04-02T00:30:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743553800
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": false
+          },
+          "away": {
+            "id": 436,
+            "name": "Racing Club",
+            "logo": "https://media.api-sports.io/football/teams/436.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334433,
@@ -1361,65 +1361,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334337,
-          "date": "2025-02-12T01:15:00+00:00",
-          "venue": {
-            "id": 112,
-            "name": "Estadio José Dellagiovanna",
-            "city": "San Fernando, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739322900
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 452,
-            "name": "Tigre",
-            "logo": "https://media.api-sports.io/football/teams/452.png",
-            "winner": true
-          },
-          "away": {
-            "id": 436,
-            "name": "Racing Club",
-            "logo": "https://media.api-sports.io/football/teams/436.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1716,5 +1657,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:54:31.881Z"
+  "lastUpdated": "2025-04-03T19:18:26.301Z"
 }

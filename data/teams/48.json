@@ -227,65 +227,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208317,
-          "date": "2025-04-01T18:45:00+00:00",
-          "venue": {
-            "id": 600,
-            "name": "Molineux Stadium",
-            "city": "Wolverhampton, West Midlands"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743533100
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 39,
-            "name": "Wolves",
-            "logo": "https://media.api-sports.io/football/teams/39.png",
-            "winner": null
-          },
-          "away": {
-            "id": 48,
-            "name": "West Ham",
-            "logo": "https://media.api-sports.io/football/teams/48.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208332,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -937,6 +878,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1208317,
+          "date": "2025-04-01T18:45:00+00:00",
+          "venue": {
+            "id": 600,
+            "name": "Molineux Stadium",
+            "city": "Wolverhampton, West Midlands"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743533100
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 39,
+            "name": "Wolves",
+            "logo": "https://media.api-sports.io/football/teams/39.png",
+            "winner": true
+          },
+          "away": {
+            "id": 48,
+            "name": "West Ham",
+            "logo": "https://media.api-sports.io/football/teams/48.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1208306,
           "date": "2025-03-15T15:00:00+00:00",
           "venue": {
@@ -1465,65 +1465,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1318841,
-          "date": "2025-01-10T20:00:00+00:00",
-          "venue": {
-            "id": 495,
-            "name": "Villa Park",
-            "city": "Birmingham"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1736539200
-        },
-        "league": {
-          "id": 45,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/45.png"
-        },
-        "teams": {
-          "home": {
-            "id": 66,
-            "name": "Aston Villa",
-            "logo": "https://media.api-sports.io/football/teams/66.png",
-            "winner": true
-          },
-          "away": {
-            "id": 48,
-            "name": "West Ham",
-            "logo": "https://media.api-sports.io/football/teams/48.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1820,5 +1761,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:51.257Z"
+  "lastUpdated": "2025-04-03T19:16:35.092Z"
 }

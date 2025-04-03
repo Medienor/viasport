@@ -78,7 +78,7 @@
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": false,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -173,6 +173,65 @@
             "id": 7006,
             "name": "Lyn",
             "logo": "https://media.api-sports.io/football/teams/7006.png",
+            "winner": null
+          },
+          "away": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1367205,
+          "date": "2025-04-13T14:00:00+00:00",
+          "venue": {
+            "id": 1186,
+            "name": "Optime Arena",
+            "city": "Notodden"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744552800
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2161,
+            "name": "Notodden",
+            "logo": "https://media.api-sports.io/football/teams/2161.png",
             "winner": null
           },
           "away": {
@@ -1623,5 +1682,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:33.371Z"
+  "lastUpdated": "2025-04-03T19:16:17.406Z"
 }

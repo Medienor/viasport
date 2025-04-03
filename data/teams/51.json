@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208315,
-          "date": "2025-04-02T18:45:00+00:00",
-          "venue": {
-            "id": 508,
-            "name": "American Express Stadium",
-            "city": "Falmer, East Sussex"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743619500
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 51,
-            "name": "Brighton",
-            "logo": "https://media.api-sports.io/football/teams/51.png",
-            "winner": null
-          },
-          "away": {
-            "id": 66,
-            "name": "Aston Villa",
-            "logo": "https://media.api-sports.io/football/teams/66.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208325,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -683,6 +624,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208315,
+          "date": "2025-04-02T18:45:00+00:00",
+          "venue": {
+            "id": 508,
+            "name": "American Express Stadium",
+            "city": "Falmer, East Sussex"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1743619500
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 51,
+            "name": "Brighton",
+            "logo": "https://media.api-sports.io/football/teams/51.png",
+            "winner": false
+          },
+          "away": {
+            "id": 66,
+            "name": "Aston Villa",
+            "logo": "https://media.api-sports.io/football/teams/66.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208310,
@@ -1213,65 +1213,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208226,
-          "date": "2025-01-16T19:30:00+00:00",
-          "venue": {
-            "id": 545,
-            "name": "Portman Road",
-            "city": "Ipswich, Suffolk"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737055800
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 57,
-            "name": "Ipswich",
-            "logo": "https://media.api-sports.io/football/teams/57.png",
-            "winner": false
-          },
-          "away": {
-            "id": 51,
-            "name": "Brighton",
-            "logo": "https://media.api-sports.io/football/teams/51.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1568,5 +1509,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:53.693Z"
+  "lastUpdated": "2025-04-03T19:16:37.536Z"
 }

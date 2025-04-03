@@ -189,65 +189,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362900,
-          "date": "2025-04-02T16:00:00+00:00",
-          "venue": {
-            "id": 7243,
-            "name": "Štadión Pasienky",
-            "city": "Bratislava"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743609600
-        },
-        "league": {
-          "id": 680,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/680.png"
-        },
-        "teams": {
-          "home": {
-            "id": 656,
-            "name": "Slovan Bratislava",
-            "logo": "https://media.api-sports.io/football/teams/656.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1120,
-            "name": "Spartak Trnava",
-            "logo": "https://media.api-sports.io/football/teams/1120.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1356756,
           "date": "2025-04-05T16:00:00+00:00",
           "venue": {
@@ -720,6 +661,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362900,
+          "date": "2025-04-02T16:00:00+00:00",
+          "venue": {
+            "id": 11914,
+            "name": "Štadión Tehelné pole",
+            "city": "Bratislava"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743609600
+        },
+        "league": {
+          "id": 680,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/680.png"
+        },
+        "teams": {
+          "home": {
+            "id": 656,
+            "name": "Slovan Bratislava",
+            "logo": "https://media.api-sports.io/football/teams/656.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1120,
+            "name": "Spartak Trnava",
+            "logo": "https://media.api-sports.io/football/teams/1120.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1356752,
@@ -1250,65 +1250,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299116,
-          "date": "2025-01-29T20:00:00+00:00",
-          "venue": {
-            "id": 700,
-            "name": "Allianz Arena",
-            "city": "München"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738180800
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 157,
-            "name": "Bayern München",
-            "logo": "https://media.api-sports.io/football/teams/157.png",
-            "winner": true
-          },
-          "away": {
-            "id": 656,
-            "name": "Slovan Bratislava",
-            "logo": "https://media.api-sports.io/football/teams/656.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1605,5 +1546,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:02.728Z"
+  "lastUpdated": "2025-04-03T19:18:57.242Z"
 }

@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-08-16",
-          "end": "2025-03-29",
+          "end": "2025-04-05",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -144,14 +144,74 @@
     2024
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1367467,
+          "date": "2025-04-06T11:45:00+00:00",
+          "venue": {
+            "id": 12090,
+            "name": "Tony Bezzina Stadium",
+            "city": "Paola"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743939900
+        },
+        "league": {
+          "id": 393,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/393.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4625,
+            "name": "Floriana",
+            "logo": "https://media.api-sports.io/football/teams/4625.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4628,
+            "name": "Sliema Wanderers",
+            "logo": "https://media.api-sports.io/football/teams/4628.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
       {
         "fixture": {
           "id": 1328282,
           "date": "2025-03-29T13:00:00+00:00",
           "venue": {
-            "id": 12090,
+            "id": 11543,
             "name": "Gozo Stadium",
             "city": "Gozo"
           },
@@ -1031,5 +1091,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:56:09.669Z"
+  "lastUpdated": "2025-04-03T19:20:04.752Z"
 }

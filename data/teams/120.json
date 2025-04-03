@@ -339,65 +339,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361857,
-          "date": "2025-04-03T00:30:00+00:00",
-          "venue": {
-            "id": 316,
-            "name": "Estadio Nacional Julio Martínez Prádanos",
-            "city": "Santiago de Chile"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743640200
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2323,
-            "name": "Universidad de Chile",
-            "logo": "https://media.api-sports.io/football/teams/2323.png",
-            "winner": null
-          },
-          "away": {
-            "id": 120,
-            "name": "Botafogo",
-            "logo": "https://media.api-sports.io/football/teams/120.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1351054,
           "date": "2025-04-06T00:00:00+00:00",
           "venue": {
@@ -1403,6 +1344,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361857,
+          "date": "2025-04-03T00:30:00+00:00",
+          "venue": {
+            "id": 316,
+            "name": "Estadio Nacional Julio Martínez Prádanos",
+            "city": "Santiago de Chile"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743640200
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2323,
+            "name": "Universidad de Chile",
+            "logo": "https://media.api-sports.io/football/teams/2323.png",
+            "winner": true
+          },
+          "away": {
+            "id": 120,
+            "name": "Botafogo",
+            "logo": "https://media.api-sports.io/football/teams/120.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351045,
           "date": "2025-03-30T19:00:00+00:00",
           "venue": {
@@ -1931,65 +1931,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1321212,
-          "date": "2025-02-02T19:00:00+00:00",
-          "venue": {
-            "id": 262,
-            "name": "Estádio Estadual Jornalista Edgar Augusto Proença",
-            "city": "Belém, Pará"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738522800
-        },
-        "league": {
-          "id": 632,
-          "name": "Supercopa do Brasil",
-          "logo": "https://media.api-sports.io/football/leagues/632.png"
-        },
-        "teams": {
-          "home": {
-            "id": 120,
-            "name": "Botafogo",
-            "logo": "https://media.api-sports.io/football/teams/120.png",
-            "winner": false
-          },
-          "away": {
-            "id": 127,
-            "name": "Flamengo",
-            "logo": "https://media.api-sports.io/football/teams/127.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2307,5 +2248,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:09.795Z"
+  "lastUpdated": "2025-04-03T19:23:03.369Z"
 }

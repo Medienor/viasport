@@ -224,65 +224,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1359790,
-          "date": "2025-04-02T18:00:00+00:00",
-          "venue": {
-            "id": 423,
-            "name": "Stadion HNK Rijeka",
-            "city": "Rijeka"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743616800
-        },
-        "league": {
-          "id": 212,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/212.png"
-        },
-        "teams": {
-          "home": {
-            "id": 561,
-            "name": "HNK Rijeka",
-            "logo": "https://media.api-sports.io/football/teams/561.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1016,
-            "name": "Istra 1961",
-            "logo": "https://media.api-sports.io/football/teams/1016.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1202785,
           "date": "2025-04-06T14:00:00+00:00",
           "venue": {
@@ -816,6 +757,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1359790,
+          "date": "2025-04-02T18:00:00+00:00",
+          "venue": {
+            "id": 423,
+            "name": "Stadion HNK Rijeka",
+            "city": "Rijeka"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743616800
+        },
+        "league": {
+          "id": 212,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/212.png"
+        },
+        "teams": {
+          "home": {
+            "id": 561,
+            "name": "HNK Rijeka",
+            "logo": "https://media.api-sports.io/football/teams/561.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1016,
+            "name": "Istra 1961",
+            "logo": "https://media.api-sports.io/football/teams/1016.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1202778,
           "date": "2025-03-29T17:45:00+00:00",
           "venue": {
@@ -1344,65 +1344,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1344774,
-          "date": "2025-01-27T10:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737972000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 561,
-            "name": "HNK Rijeka",
-            "logo": "https://media.api-sports.io/football/teams/561.png",
-            "winner": true
-          },
-          "away": {
-            "id": 6246,
-            "name": "Opatija",
-            "logo": "https://media.api-sports.io/football/teams/6246.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1699,5 +1640,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:17.988Z"
+  "lastUpdated": "2025-04-03T19:19:10.170Z"
 }

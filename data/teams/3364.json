@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -258,65 +258,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1366096,
-          "date": "2025-04-02T18:30:00+00:00",
-          "venue": {
-            "id": 199,
-            "name": "Olimpijski Stadion Asim Ferhatović Hase",
-            "city": "Sarajevo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743618600
-        },
-        "league": {
-          "id": 314,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/314.png"
-        },
-        "teams": {
-          "home": {
-            "id": 679,
-            "name": "FK Sarajevo",
-            "logo": "https://media.api-sports.io/football/teams/679.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3364,
-            "name": "Borac Banja Luka",
-            "logo": "https://media.api-sports.io/football/teams/3364.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1362829,
@@ -970,6 +911,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1366096,
+          "date": "2025-04-02T18:30:00+00:00",
+          "venue": {
+            "id": 199,
+            "name": "Olimpijski Stadion Asim Ferhatović Hase",
+            "city": "Sarajevo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743618600
+        },
+        "league": {
+          "id": 314,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/314.png"
+        },
+        "teams": {
+          "home": {
+            "id": 679,
+            "name": "FK Sarajevo",
+            "logo": "https://media.api-sports.io/football/teams/679.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3364,
+            "name": "Borac Banja Luka",
+            "logo": "https://media.api-sports.io/football/teams/3364.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1362824,
           "date": "2025-03-29T19:45:00+00:00",
           "venue": {
@@ -1498,65 +1498,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1325913,
-          "date": "2025-02-20T17:45:00+00:00",
-          "venue": {
-            "id": 1442,
-            "name": "Stadion Stožice",
-            "city": "Ljubljana"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1740073500
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 677,
-            "name": "Olimpija Ljubljana",
-            "logo": "https://media.api-sports.io/football/teams/677.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3364,
-            "name": "Borac Banja Luka",
-            "logo": "https://media.api-sports.io/football/teams/3364.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1853,5 +1794,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:10.231Z"
+  "lastUpdated": "2025-04-03T19:19:04.954Z"
 }

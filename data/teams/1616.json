@@ -183,65 +183,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361466,
-          "date": "2025-04-03T03:30:00+00:00",
-          "venue": {
-            "id": 19419,
-            "name": "BMO Stadium",
-            "city": "Los Angeles, California"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743651000
-        },
-        "league": {
-          "id": 16,
-          "name": "CONCACAF Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/16.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1616,
-            "name": "Los Angeles FC",
-            "logo": "https://media.api-sports.io/football/teams/1616.png",
-            "winner": null
-          },
-          "away": {
-            "id": 9568,
-            "name": "Inter Miami",
-            "logo": "https://media.api-sports.io/football/teams/9568.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1326324,
           "date": "2025-04-06T00:30:00+00:00",
           "venue": {
@@ -1360,9 +1301,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1326568,
+          "date": "2025-07-26T02:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753497000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1617,
+            "name": "Portland Timbers",
+            "logo": "https://media.api-sports.io/football/teams/1617.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361466,
+          "date": "2025-04-03T03:30:00+00:00",
+          "venue": {
+            "id": 19419,
+            "name": "BMO Stadium",
+            "city": "Los Angeles, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743651000
+        },
+        "league": {
+          "id": 16,
+          "name": "CONCACAF Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/16.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": true
+          },
+          "away": {
+            "id": 9568,
+            "name": "Inter Miami",
+            "logo": "https://media.api-sports.io/football/teams/9568.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1326714,
@@ -1893,65 +1952,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1321843,
-          "date": "2025-02-19T03:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Dick's Sporting Goods Park",
-            "city": "Commerce City, Colorado"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1739934000
-        },
-        "league": {
-          "id": 16,
-          "name": "CONCACAF Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/16.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1610,
-            "name": "Colorado Rapids",
-            "logo": "https://media.api-sports.io/football/teams/1610.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1616,
-            "name": "Los Angeles FC",
-            "logo": "https://media.api-sports.io/football/teams/1616.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2257,5 +2257,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:56.639Z"
+  "lastUpdated": "2025-04-03T19:23:49.974Z"
 }

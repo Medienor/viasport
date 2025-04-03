@@ -184,65 +184,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1352882,
-          "date": "2025-04-02T14:00:00+00:00",
-          "venue": {
-            "id": 4654,
-            "name": "Kotaik Stadium",
-            "city": "Abovian"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743602400
-        },
-        "league": {
-          "id": 709,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/709.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3684,
-            "name": "FC Noah",
-            "logo": "https://media.api-sports.io/football/teams/3684.png",
-            "winner": null
-          },
-          "away": {
-            "id": 688,
-            "name": "Gandzasar",
-            "logo": "https://media.api-sports.io/football/teams/688.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1360687,
           "date": "2025-04-06T15:00:00+00:00",
           "venue": {
@@ -420,6 +361,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1352882,
+          "date": "2025-04-02T14:00:00+00:00",
+          "venue": {
+            "id": 4654,
+            "name": "Kotaik Stadium",
+            "city": "Abovian"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1743602400
+        },
+        "league": {
+          "id": 709,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/709.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3684,
+            "name": "FC Noah",
+            "logo": "https://media.api-sports.io/football/teams/3684.png",
+            "winner": true
+          },
+          "away": {
+            "id": 688,
+            "name": "Gandzasar",
+            "logo": "https://media.api-sports.io/football/teams/688.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360682,
@@ -950,65 +950,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1285924,
-          "date": "2024-12-15T13:00:00+00:00",
-          "venue": {
-            "id": 121,
-            "name": "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
-            "city": "Yerevan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1734267600
-        },
-        "league": {
-          "id": 342,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/342.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3684,
-            "name": "FC Noah",
-            "logo": "https://media.api-sports.io/football/teams/3684.png",
-            "winner": true
-          },
-          "away": {
-            "id": 6287,
-            "name": "West Armenia",
-            "logo": "https://media.api-sports.io/football/teams/6287.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 7,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 7,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1305,5 +1246,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:56:04.520Z"
+  "lastUpdated": "2025-04-03T19:19:56.794Z"
 }

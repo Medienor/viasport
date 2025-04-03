@@ -115,7 +115,7 @@
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": false,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -216,6 +216,65 @@
             "id": 2153,
             "name": "Raufoss",
             "logo": "https://media.api-sports.io/football/teams/2153.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1367206,
+          "date": "2025-04-12T13:00:00+00:00",
+          "venue": {
+            "id": 5160,
+            "name": "Åssiden Stadion",
+            "city": "Drammen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744462800
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7051,
+            "name": "Åssiden IF",
+            "logo": "https://media.api-sports.io/football/teams/7051.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2152,
+            "name": "Mjondalen",
+            "logo": "https://media.api-sports.io/football/teams/2152.png",
             "winner": null
           }
         },
@@ -1660,5 +1719,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:38.520Z"
+  "lastUpdated": "2025-04-03T19:16:22.447Z"
 }

@@ -185,65 +185,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360330,
-          "date": "2025-04-03T14:00:00+00:00",
-          "venue": {
-            "id": 1442,
-            "name": "Stadion Stožice",
-            "city": "Ljubljana"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743688800
-        },
-        "league": {
-          "id": 375,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/375.png"
-        },
-        "teams": {
-          "home": {
-            "id": 677,
-            "name": "Olimpija Ljubljana",
-            "logo": "https://media.api-sports.io/football/teams/677.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4366,
-            "name": "Beltinci",
-            "logo": "https://media.api-sports.io/football/teams/4366.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220737,
           "date": "2025-04-06T13:00:00+00:00",
           "venue": {
@@ -363,7 +304,7 @@
       {
         "fixture": {
           "id": 1220746,
-          "date": "2025-04-11T22:00:00+00:00",
+          "date": "2025-04-12T13:00:00+00:00",
           "venue": {
             "id": 3348,
             "name": "Športni park Lendava",
@@ -375,7 +316,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744408800
+          "timestamp": 1744462800
         },
         "league": {
           "id": 373,
@@ -480,6 +421,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360330,
+          "date": "2025-04-03T14:00:00+00:00",
+          "venue": {
+            "id": 1442,
+            "name": "Stadion Stožice",
+            "city": "Ljubljana"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1743688800
+        },
+        "league": {
+          "id": 375,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/375.png"
+        },
+        "teams": {
+          "home": {
+            "id": 677,
+            "name": "Olimpija Ljubljana",
+            "logo": "https://media.api-sports.io/football/teams/677.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4366,
+            "name": "Beltinci",
+            "logo": "https://media.api-sports.io/football/teams/4366.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 4,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220728,
@@ -1010,65 +1010,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1325912,
-          "date": "2025-02-13T20:00:00+00:00",
-          "venue": {
-            "id": 2187,
-            "name": "Gradski Stadion",
-            "city": "Banja Luka"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1739476800
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3364,
-            "name": "Borac Banja Luka",
-            "logo": "https://media.api-sports.io/football/teams/3364.png",
-            "winner": true
-          },
-          "away": {
-            "id": 677,
-            "name": "Olimpija Ljubljana",
-            "logo": "https://media.api-sports.io/football/teams/677.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1365,5 +1306,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:46.504Z"
+  "lastUpdated": "2025-04-03T19:19:38.982Z"
 }

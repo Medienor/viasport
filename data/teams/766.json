@@ -1,0 +1,1691 @@
+{
+  "team": {
+    "team": {
+      "id": 766,
+      "name": "Halmstad",
+      "code": "HAL",
+      "country": "Sweden",
+      "founded": 1914,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/766.png"
+    },
+    "venue": {
+      "id": 1512,
+      "name": "Örjans Vall",
+      "address": "Laxövägen",
+      "city": "Halmstad",
+      "capacity": 15500,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1512.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 115,
+        "name": "Svenska Cupen",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/115.png"
+      },
+      "country": {
+        "name": "Sweden",
+        "code": "SE",
+        "flag": "https://media.api-sports.io/flags/se.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-05-14",
+          "end": "2025-05-29",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "country": {
+        "name": "World",
+        "code": null,
+        "flag": null
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-01-03",
+          "end": "2025-04-12",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 113,
+        "name": "Allsvenskan",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/113.png"
+      },
+      "country": {
+        "name": "Sweden",
+        "code": "SE",
+        "flag": "https://media.api-sports.io/flags/se.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-29",
+          "end": "2025-11-09",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": true,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1341954,
+          "date": "2025-04-05T13:00:00+00:00",
+          "venue": {
+            "id": 1509,
+            "name": "Gamla Ullevi",
+            "city": "Göteborg"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743858000
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 366,
+            "name": "IFK Goteborg",
+            "logo": "https://media.api-sports.io/football/teams/366.png",
+            "winner": null
+          },
+          "away": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341968,
+          "date": "2025-04-14T17:00:00+00:00",
+          "venue": {
+            "id": 1512,
+            "name": "Örjans Vall",
+            "city": "Halmstad"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744650000
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2174,
+            "name": "Osters IF",
+            "logo": "https://media.api-sports.io/football/teams/2174.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341972,
+          "date": "2025-04-19T13:00:00+00:00",
+          "venue": {
+            "id": 11553,
+            "name": "PlatinumCars Arena",
+            "city": "Norrköping"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745067600
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 378,
+            "name": "IFK Norrkoping",
+            "logo": "https://media.api-sports.io/football/teams/378.png",
+            "winner": null
+          },
+          "away": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341981,
+          "date": "2025-04-23T17:00:00+00:00",
+          "venue": {
+            "id": 1512,
+            "name": "Örjans Vall",
+            "city": "Halmstad"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745427600
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2240,
+            "name": "Mjallby AIF",
+            "logo": "https://media.api-sports.io/football/teams/2240.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341989,
+          "date": "2025-04-27T14:30:00+00:00",
+          "venue": {
+            "id": 1524,
+            "name": "Studenternas IP",
+            "city": "Uppsala"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745764200
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 370,
+            "name": "Sirius",
+            "logo": "https://media.api-sports.io/football/teams/370.png",
+            "winner": null
+          },
+          "away": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1341995,
+          "date": "2025-05-03T15:30:00+00:00",
+          "venue": {
+            "id": 1512,
+            "name": "Örjans Vall",
+            "city": "Halmstad"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746286200
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2163,
+            "name": "IFK Varnamo",
+            "logo": "https://media.api-sports.io/football/teams/2163.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342002,
+          "date": "2025-05-10T13:00:00+00:00",
+          "venue": {
+            "id": 1503,
+            "name": "Grimsta IP",
+            "city": "Stockholm"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746882000
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 371,
+            "name": "IF Brommapojkarna",
+            "logo": "https://media.api-sports.io/football/teams/371.png",
+            "winner": null
+          },
+          "away": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342012,
+          "date": "2025-05-14T17:00:00+00:00",
+          "venue": {
+            "id": 1512,
+            "name": "Örjans Vall",
+            "city": "Halmstad"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747242000
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2170,
+            "name": "Gais",
+            "logo": "https://media.api-sports.io/football/teams/2170.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342021,
+          "date": "2025-05-18T14:30:00+00:00",
+          "venue": {
+            "id": 1518,
+            "name": "Eleda Stadion",
+            "city": "Malmö"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747578600
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 375,
+            "name": "Malmo FF",
+            "logo": "https://media.api-sports.io/football/teams/375.png",
+            "winner": null
+          },
+          "away": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342029,
+          "date": "2025-05-25T12:00:00+00:00",
+          "venue": {
+            "id": 1512,
+            "name": "Örjans Vall",
+            "city": "Halmstad"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748174400
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": null
+          },
+          "away": {
+            "id": 372,
+            "name": "IF Elfsborg",
+            "logo": "https://media.api-sports.io/football/teams/372.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1342039,
+          "date": "2025-06-01T12:00:00+00:00",
+          "venue": {
+            "id": 1512,
+            "name": "Örjans Vall",
+            "city": "Halmstad"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748779200
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": null
+          },
+          "away": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1341951,
+          "date": "2025-03-30T14:30:00+00:00",
+          "venue": {
+            "id": 1512,
+            "name": "Örjans Vall",
+            "city": "Halmstad"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743345000
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2172,
+            "name": "Degerfors IF",
+            "logo": "https://media.api-sports.io/football/teams/2172.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1365979,
+          "date": "2025-03-23T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "TBC",
+            "city": "TBC"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742731200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6692,
+            "name": "Oskarshamns AIK",
+            "logo": "https://media.api-sports.io/football/teams/6692.png",
+            "winner": true
+          },
+          "away": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1366017,
+          "date": "2025-03-21T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742565600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 374,
+            "name": "Kalmar FF",
+            "logo": "https://media.api-sports.io/football/teams/374.png",
+            "winner": false
+          },
+          "away": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1350877,
+          "date": "2025-03-15T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Vångavallen, D-plan",
+            "city": "Trelleborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1742040000
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 369,
+            "name": "trelleborgs FF",
+            "logo": "https://media.api-sports.io/football/teams/369.png",
+            "winner": null
+          },
+          "away": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1320439,
+          "date": "2025-03-02T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Strandvallen Konstgräs",
+            "city": "Sölvesborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1740916800
+        },
+        "league": {
+          "id": 115,
+          "name": "Svenska Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/115.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2240,
+            "name": "Mjallby AIF",
+            "logo": "https://media.api-sports.io/football/teams/2240.png",
+            "winner": true
+          },
+          "away": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1320423,
+          "date": "2025-02-24T17:30:00+00:00",
+          "venue": {
+            "id": 1511,
+            "name": "Bravida Arena",
+            "city": "Göteborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1740418200
+        },
+        "league": {
+          "id": 115,
+          "name": "Svenska Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/115.png"
+        },
+        "teams": {
+          "home": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2176,
+            "name": "Landskrona BoIS",
+            "logo": "https://media.api-sports.io/football/teams/2176.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1320407,
+          "date": "2025-02-16T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Söndrums IP konstgräs",
+            "city": "Halmstad"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739707200
+        },
+        "league": {
+          "id": 115,
+          "name": "Svenska Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/115.png"
+        },
+        "teams": {
+          "home": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": true
+          },
+          "away": {
+            "id": 813,
+            "name": "gefle IF",
+            "logo": "https://media.api-sports.io/football/teams/813.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346000,
+          "date": "2025-02-10T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Campo AGS 1",
+            "city": "L'Alfàs del Pi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1739199600
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": true
+          },
+          "away": {
+            "id": 405,
+            "name": "Odense",
+            "logo": "https://media.api-sports.io/football/teams/405.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1346308,
+          "date": "2025-02-04T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Campo AGS 1",
+            "city": "L'Alfàs del Pi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1738666800
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2070,
+            "name": "Viborg",
+            "logo": "https://media.api-sports.io/football/teams/2070.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1344816,
+          "date": "2025-01-30T00:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Söndrums IP konstgräs",
+            "city": "Halmstad"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1738195200
+        },
+        "league": {
+          "id": 667,
+          "name": "Friendlies Clubs",
+          "logo": "https://media.api-sports.io/football/leagues/667.png"
+        },
+        "teams": {
+          "home": {
+            "id": 766,
+            "name": "Halmstad",
+            "logo": "https://media.api-sports.io/football/teams/766.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2168,
+            "name": "Angelholms FF",
+            "logo": "https://media.api-sports.io/football/teams/2168.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": 113,
+      "name": "Allsvenskan",
+      "country": "Sweden",
+      "logo": "https://media.api-sports.io/football/leagues/113.png",
+      "flag": "https://media.api-sports.io/flags/se.svg",
+      "season": 2025
+    },
+    "team": {
+      "id": 766,
+      "name": "Halmstad",
+      "logo": "https://media.api-sports.io/football/teams/766.png"
+    },
+    "form": "L",
+    "fixtures": {
+      "played": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 1,
+        "away": 0,
+        "total": 1
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 0,
+          "away": 0,
+          "total": 0
+        },
+        "average": {
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 0,
+            "under": 1
+          },
+          "1.5": {
+            "over": 0,
+            "under": 1
+          },
+          "2.5": {
+            "over": 0,
+            "under": 1
+          },
+          "3.5": {
+            "over": 0,
+            "under": 1
+          },
+          "4.5": {
+            "over": 0,
+            "under": 1
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 5,
+          "away": 0,
+          "total": 5
+        },
+        "average": {
+          "home": "5.0",
+          "away": "0.0",
+          "total": "5.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": 2,
+            "percentage": "40.00%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "20.00%"
+          },
+          "76-90": {
+            "total": 1,
+            "percentage": "20.00%"
+          },
+          "91-105": {
+            "total": 1,
+            "percentage": "20.00%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 1,
+            "under": 0
+          },
+          "1.5": {
+            "over": 1,
+            "under": 0
+          },
+          "2.5": {
+            "over": 1,
+            "under": 0
+          },
+          "3.5": {
+            "over": 1,
+            "under": 0
+          },
+          "4.5": {
+            "over": 1,
+            "under": 0
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 0,
+        "loses": 1
+      },
+      "wins": {
+        "home": null,
+        "away": null
+      },
+      "loses": {
+        "home": "0-5",
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 0,
+          "away": 0
+        },
+        "against": {
+          "home": 5,
+          "away": 0
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 1,
+      "away": 0,
+      "total": 1
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [
+      {
+        "formation": "3-4-3",
+        "played": 1
+      }
+    ],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": 2,
+          "percentage": "100.00%"
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-04-03T19:18:02.669Z"
+}

@@ -188,65 +188,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1357113,
-          "date": "2025-04-02T16:00:00+00:00",
-          "venue": {
-            "id": 20760,
-            "name": "Stadion Śląski",
-            "city": "Chorzów"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743609600
-        },
-        "league": {
-          "id": 108,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/108.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6953,
-            "name": "Ruch Chorzów",
-            "logo": "https://media.api-sports.io/football/teams/6953.png",
-            "winner": null
-          },
-          "away": {
-            "id": 339,
-            "name": "Legia Warszawa",
-            "logo": "https://media.api-sports.io/football/teams/339.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1203184,
           "date": "2025-04-06T12:45:00+00:00",
           "venue": {
@@ -660,6 +601,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1357113,
+          "date": "2025-04-02T16:00:00+00:00",
+          "venue": {
+            "id": 20760,
+            "name": "Stadion Śląski",
+            "city": "Chorzów"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743609600
+        },
+        "league": {
+          "id": 108,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/108.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6953,
+            "name": "Ruch Chorzów",
+            "logo": "https://media.api-sports.io/football/teams/6953.png",
+            "winner": false
+          },
+          "away": {
+            "id": 339,
+            "name": "Legia Warszawa",
+            "logo": "https://media.api-sports.io/football/teams/339.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1203180,
@@ -1190,65 +1190,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1203117,
-          "date": "2025-02-02T16:30:00+00:00",
-          "venue": {
-            "id": 1253,
-            "name": "Stadion Miejski Legii Warszawa im. Marszałka Józefa Piłsudskiego",
-            "city": "Warszawa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738513800
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 339,
-            "name": "Legia Warszawa",
-            "logo": "https://media.api-sports.io/football/teams/339.png",
-            "winner": null
-          },
-          "away": {
-            "id": 346,
-            "name": "Korona Kielce",
-            "logo": "https://media.api-sports.io/football/teams/346.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1545,5 +1486,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:53:45.627Z"
+  "lastUpdated": "2025-04-03T19:17:39.748Z"
 }

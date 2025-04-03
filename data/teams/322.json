@@ -78,7 +78,7 @@
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": false,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -207,12 +207,71 @@
       },
       {
         "fixture": {
+          "id": 1367183,
+          "date": "2025-04-13T14:00:00+00:00",
+          "venue": {
+            "id": 20667,
+            "name": "Havstein kunstgress",
+            "city": "Trondheim"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744552800
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 23421,
+            "name": "Sverresborg",
+            "logo": "https://media.api-sports.io/football/teams/23421.png",
+            "winner": null
+          },
+          "away": {
+            "id": 322,
+            "name": "Ranheim",
+            "logo": "https://media.api-sports.io/football/teams/322.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342445,
           "date": "2025-04-21T15:00:00+00:00",
           "venue": {
             "id": 1188,
-            "name": "EXTRA Arena",
-            "city": "Ranheim"
+            "name": "Frøya Storhall",
+            "city": "Sistranda"
           },
           "status": {
             "long": "Not Started",
@@ -1623,5 +1682,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:33.327Z"
+  "lastUpdated": "2025-04-03T19:16:17.421Z"
 }

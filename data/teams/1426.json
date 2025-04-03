@@ -183,65 +183,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1214523,
-          "date": "2025-04-03T16:30:00+00:00",
-          "venue": {
-            "id": 297,
-            "name": "Vivacom Arena - Georgi Asparuhov",
-            "city": "Sofia"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743697800
-        },
-        "league": {
-          "id": 172,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/172.png"
-        },
-        "teams": {
-          "home": {
-            "id": 646,
-            "name": "Levski Sofia",
-            "logo": "https://media.api-sports.io/football/teams/646.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1426,
-            "name": "CSKA 1948",
-            "logo": "https://media.api-sports.io/football/teams/1426.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1214531,
           "date": "2025-04-07T17:00:00+00:00",
           "venue": {
@@ -419,6 +360,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1214523,
+          "date": "2025-04-03T16:30:00+00:00",
+          "venue": {
+            "id": 297,
+            "name": "Vivacom Arena - Georgi Asparuhov",
+            "city": "Sofia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743697800
+        },
+        "league": {
+          "id": 172,
+          "name": "First League",
+          "logo": "https://media.api-sports.io/football/leagues/172.png"
+        },
+        "teams": {
+          "home": {
+            "id": 646,
+            "name": "Levski Sofia",
+            "logo": "https://media.api-sports.io/football/teams/646.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1426,
+            "name": "CSKA 1948",
+            "logo": "https://media.api-sports.io/football/teams/1426.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1214515,
@@ -949,65 +949,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1344689,
-          "date": "2025-01-23T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Mardan 2. Stadı",
-            "city": "Antalya"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737590400
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1426,
-            "name": "CSKA 1948",
-            "logo": "https://media.api-sports.io/football/teams/1426.png",
-            "winner": false
-          },
-          "away": {
-            "id": 282,
-            "name": "Sanfrecce Hiroshima",
-            "logo": "https://media.api-sports.io/football/teams/282.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1304,5 +1245,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:54.211Z"
+  "lastUpdated": "2025-04-03T19:19:46.534Z"
 }

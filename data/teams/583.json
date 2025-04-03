@@ -188,65 +188,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1366542,
-          "date": "2025-04-01T18:45:00+00:00",
-          "venue": {
-            "id": 1971,
-            "name": "Windsor Park",
-            "city": "Belfast"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743533100
-        },
-        "league": {
-          "id": 408,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/408.png"
-        },
-        "teams": {
-          "home": {
-            "id": 583,
-            "name": "Linfield",
-            "logo": "https://media.api-sports.io/football/teams/583.png",
-            "winner": null
-          },
-          "away": {
-            "id": 697,
-            "name": "Crusaders FC",
-            "logo": "https://media.api-sports.io/football/teams/697.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1366545,
           "date": "2025-04-05T12:00:00+00:00",
           "venue": {
@@ -483,6 +424,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366542,
+          "date": "2025-04-01T18:45:00+00:00",
+          "venue": {
+            "id": 1971,
+            "name": "Windsor Park",
+            "city": "Belfast"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743533100
+        },
+        "league": {
+          "id": 408,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/408.png"
+        },
+        "teams": {
+          "home": {
+            "id": 583,
+            "name": "Linfield",
+            "logo": "https://media.api-sports.io/football/teams/583.png",
+            "winner": true
+          },
+          "away": {
+            "id": 697,
+            "name": "Crusaders FC",
+            "logo": "https://media.api-sports.io/football/teams/697.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1222044,
@@ -1013,65 +1013,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1222005,
-          "date": "2025-01-18T15:00:00+00:00",
-          "venue": {
-            "id": 4040,
-            "name": "Shamrock Park",
-            "city": "Portadown"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737212400
-        },
-        "league": {
-          "id": 408,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/408.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5348,
-            "name": "Portadown",
-            "logo": "https://media.api-sports.io/football/teams/5348.png",
-            "winner": false
-          },
-          "away": {
-            "id": 583,
-            "name": "Linfield",
-            "logo": "https://media.api-sports.io/football/teams/583.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1368,5 +1309,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:36.269Z"
+  "lastUpdated": "2025-04-03T19:19:28.556Z"
 }

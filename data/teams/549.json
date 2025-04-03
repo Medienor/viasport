@@ -153,8 +153,8 @@
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": false,
             "players": true,
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1359788,
-          "date": "2025-04-03T17:30:00+00:00",
-          "venue": {
-            "id": 20423,
-            "name": "Tüpraş Stadyumu",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743701400
-        },
-        "league": {
-          "id": 206,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/206.png"
-        },
-        "teams": {
-          "home": {
-            "id": 549,
-            "name": "Besiktas",
-            "logo": "https://media.api-sports.io/football/teams/549.png",
-            "winner": null
-          },
-          "away": {
-            "id": 994,
-            "name": "Goztepe",
-            "logo": "https://media.api-sports.io/football/teams/994.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1238117,
@@ -587,7 +528,7 @@
           "date": "2025-03-15T17:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Medas Konya Büyüksehir Belediyesi Stadium",
+            "name": "Medaş Konya Büyükşehir Stadyumu",
             "city": "Konya"
           },
           "status": {
@@ -1348,5 +1289,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:15.484Z"
+  "lastUpdated": "2025-04-03T19:17:19.070Z"
 }

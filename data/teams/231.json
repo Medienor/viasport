@@ -110,65 +110,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231971,
-          "date": "2025-04-02T19:15:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estádio do Sport Lisboa e Benfica",
-            "city": "Lisboa"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743621300
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 211,
-            "name": "Benfica",
-            "logo": "https://media.api-sports.io/football/teams/211.png",
-            "winner": null
-          },
-          "away": {
-            "id": 231,
-            "name": "Farense",
-            "logo": "https://media.api-sports.io/football/teams/231.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231980,
           "date": "2025-04-07T17:45:00+00:00",
           "venue": {
@@ -523,6 +464,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231971,
+          "date": "2025-04-02T19:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estádio da Luz",
+            "city": "Lisbon"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743621300
+        },
+        "league": {
+          "id": 94,
+          "name": "Primeira Liga",
+          "logo": "https://media.api-sports.io/football/leagues/94.png"
+        },
+        "teams": {
+          "home": {
+            "id": 211,
+            "name": "Benfica",
+            "logo": "https://media.api-sports.io/football/teams/211.png",
+            "winner": true
+          },
+          "away": {
+            "id": 231,
+            "name": "Farense",
+            "logo": "https://media.api-sports.io/football/teams/231.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231960,
@@ -1053,65 +1053,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1316616,
-          "date": "2025-01-14T20:15:00+00:00",
-          "venue": {
-            "id": 1290,
-            "name": "Estádio de São Lúis",
-            "city": "Faro"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1736885700
-        },
-        "league": {
-          "id": 96,
-          "name": "Taça de Portugal",
-          "logo": "https://media.api-sports.io/football/leagues/96.png"
-        },
-        "teams": {
-          "home": {
-            "id": 231,
-            "name": "Farense",
-            "logo": "https://media.api-sports.io/football/teams/231.png",
-            "winner": false
-          },
-          "away": {
-            "id": 211,
-            "name": "Benfica",
-            "logo": "https://media.api-sports.io/football/teams/211.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1408,5 +1349,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:53:40.679Z"
+  "lastUpdated": "2025-04-03T19:17:34.722Z"
 }

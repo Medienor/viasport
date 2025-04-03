@@ -191,65 +191,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362101,
-          "date": "2025-04-01T22:00:00+00:00",
-          "venue": {
-            "id": 1933,
-            "name": "Estadio 15 de Abril",
-            "city": "Ciudad de Santa Fe, Provincia de Santa Fe"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743544800
-        },
-        "league": {
-          "id": 11,
-          "name": "CONMEBOL Sudamericana",
-          "logo": "https://media.api-sports.io/football/leagues/11.png"
-        },
-        "teams": {
-          "home": {
-            "id": 441,
-            "name": "Union Santa Fe",
-            "logo": "https://media.api-sports.io/football/teams/441.png",
-            "winner": null
-          },
-          "away": {
-            "id": 135,
-            "name": "Cruzeiro",
-            "logo": "https://media.api-sports.io/football/teams/135.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1351059,
           "date": "2025-04-06T21:30:00+00:00",
           "venue": {
@@ -1196,6 +1137,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362101,
+          "date": "2025-04-01T22:00:00+00:00",
+          "venue": {
+            "id": 1933,
+            "name": "Estadio 15 de Abril",
+            "city": "Ciudad de Santa Fe, Provincia de Santa Fe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743544800
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 441,
+            "name": "Union Santa Fe",
+            "logo": "https://media.api-sports.io/football/teams/441.png",
+            "winner": true
+          },
+          "away": {
+            "id": 135,
+            "name": "Cruzeiro",
+            "logo": "https://media.api-sports.io/football/teams/135.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351048,
           "date": "2025-03-29T21:30:00+00:00",
           "venue": {
@@ -1724,65 +1724,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1320721,
-          "date": "2025-01-22T22:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Arena BRB Mané Garrincha",
-            "city": "Brasília, Distrito Federal"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1737583200
-        },
-        "league": {
-          "id": 629,
-          "name": "Mineiro - 1",
-          "logo": "https://media.api-sports.io/football/leagues/629.png"
-        },
-        "teams": {
-          "home": {
-            "id": 13975,
-            "name": "Athletic Club",
-            "logo": "https://media.api-sports.io/football/teams/13975.png",
-            "winner": true
-          },
-          "away": {
-            "id": 135,
-            "name": "Cruzeiro",
-            "logo": "https://media.api-sports.io/football/teams/135.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2079,5 +2020,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:15.071Z"
+  "lastUpdated": "2025-04-03T19:23:08.544Z"
 }

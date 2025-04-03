@@ -259,65 +259,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1327729,
-          "date": "2025-04-01T18:30:00+00:00",
-          "venue": {
-            "id": 4859,
-            "name": "Stade Municipal",
-            "city": "Yverdon-les-Bains"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743532200
-        },
-        "league": {
-          "id": 207,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/207.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6653,
-            "name": "Yverdon Sport",
-            "logo": "https://media.api-sports.io/football/teams/6653.png",
-            "winner": null
-          },
-          "away": {
-            "id": 606,
-            "name": "FC Lugano",
-            "logo": "https://media.api-sports.io/football/teams/606.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1327738,
           "date": "2025-04-06T14:30:00+00:00",
           "venue": {
@@ -495,6 +436,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1327729,
+          "date": "2025-04-01T18:30:00+00:00",
+          "venue": {
+            "id": 4859,
+            "name": "Stade Municipal",
+            "city": "Yverdon-les-Bains"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743532200
+        },
+        "league": {
+          "id": 207,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/207.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6653,
+            "name": "Yverdon Sport",
+            "logo": "https://media.api-sports.io/football/teams/6653.png",
+            "winner": false
+          },
+          "away": {
+            "id": 606,
+            "name": "FC Lugano",
+            "logo": "https://media.api-sports.io/football/teams/606.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1327724,
@@ -1025,65 +1025,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1222600,
-          "date": "2025-02-05T19:30:00+00:00",
-          "venue": {
-            "id": 1543,
-            "name": "kybunpark",
-            "city": "St. Gallen"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738783800
-        },
-        "league": {
-          "id": 207,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/207.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1011,
-            "name": "FC ST. Gallen",
-            "logo": "https://media.api-sports.io/football/teams/1011.png",
-            "winner": true
-          },
-          "away": {
-            "id": 606,
-            "name": "FC Lugano",
-            "logo": "https://media.api-sports.io/football/teams/606.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1380,5 +1321,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:54:57.688Z"
+  "lastUpdated": "2025-04-03T19:18:52.030Z"
 }

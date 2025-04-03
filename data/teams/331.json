@@ -284,6 +284,65 @@
       },
       {
         "fixture": {
+          "id": 1367231,
+          "date": "2025-04-13T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744552800
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25916,
+            "name": "Rindal",
+            "logo": "https://media.api-sports.io/football/teams/25916.png",
+            "winner": null
+          },
+          "away": {
+            "id": 331,
+            "name": "Rosenborg",
+            "logo": "https://media.api-sports.io/football/teams/331.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342203,
           "date": "2025-04-21T12:30:00+00:00",
           "venue": {
@@ -1343,65 +1402,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1342350,
-          "date": "2025-09-14T15:00:00+00:00",
-          "venue": {
-            "id": 12130,
-            "name": "Haugesund Sparebank Arena",
-            "city": "Haugesund"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1757862000
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 328,
-            "name": "Haugesund",
-            "logo": "https://media.api-sports.io/football/teams/328.png",
-            "winner": null
-          },
-          "away": {
-            "id": 331,
-            "name": "Rosenborg",
-            "logo": "https://media.api-sports.io/football/teams/331.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ],
     "past": [
@@ -2295,5 +2295,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:28.369Z"
+  "lastUpdated": "2025-04-03T19:16:11.970Z"
 }

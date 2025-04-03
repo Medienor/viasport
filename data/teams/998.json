@@ -153,8 +153,8 @@
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": false,
             "players": true,
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1359785,
-          "date": "2025-04-02T14:45:00+00:00",
-          "venue": {
-            "id": 20189,
-            "name": "Papara Park",
-            "city": "Trabzon"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743605100
-        },
-        "league": {
-          "id": 206,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/206.png"
-        },
-        "teams": {
-          "home": {
-            "id": 998,
-            "name": "Trabzonspor",
-            "logo": "https://media.api-sports.io/football/teams/998.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3583,
-            "name": "BB Bodrumspor",
-            "logo": "https://media.api-sports.io/football/teams/3583.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1238113,
@@ -608,7 +549,7 @@
           "date": "2025-03-03T13:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Medas Konya Büyüksehir Belediyesi Stadium",
+            "name": "Medaş Konya Büyükşehir Stadyumu",
             "city": "Konya"
           },
           "status": {
@@ -1310,5 +1251,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:20.650Z"
+  "lastUpdated": "2025-04-03T19:17:24.045Z"
 }

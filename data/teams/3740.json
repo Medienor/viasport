@@ -145,71 +145,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1335619,
-          "date": "2025-04-02T13:00:00+00:00",
-          "venue": {
-            "id": 2522,
-            "name": "Stadion SRC Topolica",
-            "city": "Bar"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743598800
-        },
-        "league": {
-          "id": 355,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/355.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3740,
-            "name": "Mornar",
-            "logo": "https://media.api-sports.io/football/teams/3740.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3741,
-            "name": "Petrovac",
-            "logo": "https://media.api-sports.io/football/teams/3741.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1335628,
           "date": "2025-04-06T13:00:00+00:00",
           "venue": {
             "id": 2533,
-            "name": "Stadion Olympic",
-            "city": "Ulcinj"
+            "name": "Trening kamp FSCG Stari Aerodrom",
+            "city": "Podgorica"
           },
           "status": {
             "long": "Not Started",
@@ -735,6 +676,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1335619,
+          "date": "2025-04-02T13:00:00+00:00",
+          "venue": {
+            "id": 2532,
+            "name": "DG Arena",
+            "city": "Podgorica"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743598800
+        },
+        "league": {
+          "id": 355,
+          "name": "First League",
+          "logo": "https://media.api-sports.io/football/leagues/355.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3740,
+            "name": "Mornar",
+            "logo": "https://media.api-sports.io/football/teams/3740.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3741,
+            "name": "Petrovac",
+            "logo": "https://media.api-sports.io/football/teams/3741.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1335618,
@@ -1265,65 +1265,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1316382,
-          "date": "2024-11-27T12:00:00+00:00",
-          "venue": {
-            "id": 2522,
-            "name": "Stadion SRC Topolica",
-            "city": "Bar"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1732708800
-        },
-        "league": {
-          "id": 723,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/723.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3740,
-            "name": "Mornar",
-            "logo": "https://media.api-sports.io/football/teams/3740.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3744,
-            "name": "Bokelj",
-            "logo": "https://media.api-sports.io/football/teams/3744.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1620,5 +1561,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:56:04.540Z"
+  "lastUpdated": "2025-04-03T19:19:59.374Z"
 }

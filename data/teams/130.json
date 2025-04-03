@@ -191,65 +191,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362099,
-          "date": "2025-04-03T00:30:00+00:00",
-          "venue": {
-            "id": 20705,
-            "name": "Estadio ueno Defensores del Chaco",
-            "city": "Asunción"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743640200
-        },
-        "league": {
-          "id": 11,
-          "name": "CONMEBOL Sudamericana",
-          "logo": "https://media.api-sports.io/football/leagues/11.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1183,
-            "name": "Sportivo Luqueno",
-            "logo": "https://media.api-sports.io/football/teams/1183.png",
-            "winner": null
-          },
-          "away": {
-            "id": 130,
-            "name": "Gremio",
-            "logo": "https://media.api-sports.io/football/teams/130.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1351061,
           "date": "2025-04-05T21:30:00+00:00",
           "venue": {
@@ -1137,6 +1078,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362099,
+          "date": "2025-04-03T00:30:00+00:00",
+          "venue": {
+            "id": 20705,
+            "name": "Estadio ueno Defensores del Chaco",
+            "city": "Asunción"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743640200
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1183,
+            "name": "Sportivo Luqueno",
+            "logo": "https://media.api-sports.io/football/teams/1183.png",
+            "winner": false
+          },
+          "away": {
+            "id": 130,
+            "name": "Gremio",
+            "logo": "https://media.api-sports.io/football/teams/130.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351049,
           "date": "2025-03-29T21:30:00+00:00",
           "venue": {
@@ -1665,65 +1665,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1322103,
-          "date": "2025-02-06T01:00:00+00:00",
-          "venue": {
-            "id": 248,
-            "name": "Estádio Alfredo Jaconi",
-            "city": "Caxias do Sul, Rio Grande do Sul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738803600
-        },
-        "league": {
-          "id": 477,
-          "name": "Gaúcho - 1",
-          "logo": "https://media.api-sports.io/football/leagues/477.png"
-        },
-        "teams": {
-          "home": {
-            "id": 152,
-            "name": "Juventude",
-            "logo": "https://media.api-sports.io/football/teams/152.png",
-            "winner": true
-          },
-          "away": {
-            "id": 130,
-            "name": "Gremio",
-            "logo": "https://media.api-sports.io/football/teams/130.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2020,5 +1961,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:12.326Z"
+  "lastUpdated": "2025-04-03T19:23:05.914Z"
 }

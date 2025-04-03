@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208321,
-          "date": "2025-04-02T18:45:00+00:00",
-          "venue": {
-            "id": 585,
-            "name": "St. Mary's Stadium",
-            "city": "Southampton, Hampshire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743619500
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 41,
-            "name": "Southampton",
-            "logo": "https://media.api-sports.io/football/teams/41.png",
-            "winner": null
-          },
-          "away": {
-            "id": 52,
-            "name": "Crystal Palace",
-            "logo": "https://media.api-sports.io/football/teams/52.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208325,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -744,6 +685,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1208321,
+          "date": "2025-04-02T18:45:00+00:00",
+          "venue": {
+            "id": 585,
+            "name": "St. Mary's Stadium",
+            "city": "Southampton, Hampshire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743619500
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 41,
+            "name": "Southampton",
+            "logo": "https://media.api-sports.io/football/teams/41.png",
+            "winner": null
+          },
+          "away": {
+            "id": 52,
+            "name": "Crystal Palace",
+            "logo": "https://media.api-sports.io/football/teams/52.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1357106,
           "date": "2025-03-29T12:15:00+00:00",
           "venue": {
@@ -1272,65 +1272,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208242,
-          "date": "2025-01-18T15:00:00+00:00",
-          "venue": {
-            "id": 598,
-            "name": "London Stadium",
-            "city": "London"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737212400
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 48,
-            "name": "West Ham",
-            "logo": "https://media.api-sports.io/football/teams/48.png",
-            "winner": false
-          },
-          "away": {
-            "id": 52,
-            "name": "Crystal Palace",
-            "logo": "https://media.api-sports.io/football/teams/52.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1627,5 +1568,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:53.711Z"
+  "lastUpdated": "2025-04-03T19:16:37.572Z"
 }

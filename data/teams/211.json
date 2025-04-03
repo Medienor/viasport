@@ -265,65 +265,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231971,
-          "date": "2025-04-02T19:15:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estádio do Sport Lisboa e Benfica",
-            "city": "Lisboa"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743621300
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 211,
-            "name": "Benfica",
-            "logo": "https://media.api-sports.io/football/teams/211.png",
-            "winner": null
-          },
-          "away": {
-            "id": 231,
-            "name": "Farense",
-            "logo": "https://media.api-sports.io/football/teams/231.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231977,
           "date": "2025-04-06T19:30:00+00:00",
           "venue": {
@@ -975,6 +916,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1231971,
+          "date": "2025-04-02T19:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estádio da Luz",
+            "city": "Lisbon"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743621300
+        },
+        "league": {
+          "id": 94,
+          "name": "Primeira Liga",
+          "logo": "https://media.api-sports.io/football/leagues/94.png"
+        },
+        "teams": {
+          "home": {
+            "id": 211,
+            "name": "Benfica",
+            "logo": "https://media.api-sports.io/football/teams/211.png",
+            "winner": true
+          },
+          "away": {
+            "id": 231,
+            "name": "Farense",
+            "logo": "https://media.api-sports.io/football/teams/231.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1231943,
           "date": "2025-03-28T20:15:00+00:00",
           "venue": {
@@ -1503,65 +1503,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345749,
-          "date": "2025-02-12T20:00:00+00:00",
-          "venue": {
-            "id": 20470,
-            "name": "Stade Louis-II",
-            "city": "Monaco"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739390400
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 91,
-            "name": "Monaco",
-            "logo": "https://media.api-sports.io/football/teams/91.png",
-            "winner": false
-          },
-          "away": {
-            "id": 211,
-            "name": "Benfica",
-            "logo": "https://media.api-sports.io/football/teams/211.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1858,5 +1799,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:53:35.553Z"
+  "lastUpdated": "2025-04-03T19:17:29.252Z"
 }

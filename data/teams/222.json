@@ -112,65 +112,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231967,
-          "date": "2025-04-01T19:15:00+00:00",
-          "venue": {
-            "id": 1267,
-            "name": "Estádio do Bessa Século XXI",
-            "city": "Porto"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743534900
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 222,
-            "name": "Boavista",
-            "logo": "https://media.api-sports.io/football/teams/222.png",
-            "winner": null
-          },
-          "away": {
-            "id": 762,
-            "name": "GIL Vicente",
-            "logo": "https://media.api-sports.io/football/teams/762.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231978,
           "date": "2025-04-07T19:15:00+00:00",
           "venue": {
@@ -525,6 +466,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231967,
+          "date": "2025-04-01T19:15:00+00:00",
+          "venue": {
+            "id": 1267,
+            "name": "Estádio do Bessa Século XXI",
+            "city": "Porto"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743534900
+        },
+        "league": {
+          "id": 94,
+          "name": "Primeira Liga",
+          "logo": "https://media.api-sports.io/football/leagues/94.png"
+        },
+        "teams": {
+          "home": {
+            "id": 222,
+            "name": "Boavista",
+            "logo": "https://media.api-sports.io/football/teams/222.png",
+            "winner": false
+          },
+          "away": {
+            "id": 762,
+            "name": "GIL Vicente",
+            "logo": "https://media.api-sports.io/football/teams/762.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231958,
@@ -1055,65 +1055,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231875,
-          "date": "2025-01-04T20:30:00+00:00",
-          "venue": {
-            "id": 1267,
-            "name": "Estádio do Bessa Século XXI",
-            "city": "Porto"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 12
-          },
-          "timestamp": 1736022600
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 222,
-            "name": "Boavista",
-            "logo": "https://media.api-sports.io/football/teams/222.png",
-            "winner": false
-          },
-          "away": {
-            "id": 240,
-            "name": "Arouca",
-            "logo": "https://media.api-sports.io/football/teams/240.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1410,5 +1351,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:53:38.072Z"
+  "lastUpdated": "2025-04-03T19:17:32.149Z"
 }

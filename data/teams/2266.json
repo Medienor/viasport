@@ -223,65 +223,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1366556,
-          "date": "2025-04-01T18:45:00+00:00",
-          "venue": {
-            "id": 12606,
-            "name": "Loughview Leisure Arena",
-            "city": "Carrickfergus"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743533100
-        },
-        "league": {
-          "id": 408,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/408.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5350,
-            "name": "Carrick Rangers",
-            "logo": "https://media.api-sports.io/football/teams/5350.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2266,
-            "name": "Cliftonville FC",
-            "logo": "https://media.api-sports.io/football/teams/2266.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1366559,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -577,6 +518,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366556,
+          "date": "2025-04-01T18:45:00+00:00",
+          "venue": {
+            "id": 12606,
+            "name": "Loughview Leisure Arena",
+            "city": "Carrickfergus"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743533100
+        },
+        "league": {
+          "id": 408,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/408.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5350,
+            "name": "Carrick Rangers",
+            "logo": "https://media.api-sports.io/football/teams/5350.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2266,
+            "name": "Cliftonville FC",
+            "logo": "https://media.api-sports.io/football/teams/2266.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1357055,
@@ -1107,65 +1107,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1221964,
-          "date": "2025-02-12T19:45:00+00:00",
-          "venue": {
-            "id": 1169,
-            "name": "Solitude",
-            "city": "Belfast"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1739389500
-        },
-        "league": {
-          "id": 408,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/408.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2266,
-            "name": "Cliftonville FC",
-            "logo": "https://media.api-sports.io/football/teams/2266.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5350,
-            "name": "Carrick Rangers",
-            "logo": "https://media.api-sports.io/football/teams/5350.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1462,5 +1403,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:56.827Z"
+  "lastUpdated": "2025-04-03T19:19:49.039Z"
 }

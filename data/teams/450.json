@@ -278,6 +278,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 1178,
+        "name": "Super Copa International",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1178.png"
+      },
+      "country": {
+        "name": "Argentina",
+        "code": "AR",
+        "flag": "https://media.api-sports.io/flags/ar.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-07-05",
+          "end": "2025-07-05",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -295,65 +332,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361856,
-          "date": "2025-04-01T22:00:00+00:00",
-          "venue": {
-            "id": 1654,
-            "name": "Estadio Polideportivo Misael Delgado",
-            "city": "Valencia"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743544800
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2810,
-            "name": "Carabobo FC",
-            "logo": "https://media.api-sports.io/football/teams/2810.png",
-            "winner": null
-          },
-          "away": {
-            "id": 450,
-            "name": "Estudiantes L.P.",
-            "logo": "https://media.api-sports.io/football/teams/450.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1334448,
@@ -889,6 +867,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361856,
+          "date": "2025-04-01T22:00:00+00:00",
+          "venue": {
+            "id": 1654,
+            "name": "Estadio Polideportivo Misael Delgado",
+            "city": "Valencia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743544800
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2810,
+            "name": "Carabobo FC",
+            "logo": "https://media.api-sports.io/football/teams/2810.png",
+            "winner": false
+          },
+          "away": {
+            "id": 450,
+            "name": "Estudiantes L.P.",
+            "logo": "https://media.api-sports.io/football/teams/450.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1334427,
           "date": "2025-03-27T21:00:00+00:00",
           "venue": {
@@ -1417,65 +1454,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334317,
-          "date": "2025-02-03T22:15:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estadio Jorge Luis Hirschi",
-            "city": "La Plata, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738620900
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 450,
-            "name": "Estudiantes L.P.",
-            "logo": "https://media.api-sports.io/football/teams/450.png",
-            "winner": true
-          },
-          "away": {
-            "id": 436,
-            "name": "Racing Club",
-            "logo": "https://media.api-sports.io/football/teams/436.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1772,5 +1750,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:54:37.066Z"
+  "lastUpdated": "2025-04-03T19:18:31.711Z"
 }

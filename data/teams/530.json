@@ -228,65 +228,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1350689,
-          "date": "2025-04-02T19:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Riyadh Air Metropolitano",
-            "city": "Madrid"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743622200
-        },
-        "league": {
-          "id": 143,
-          "name": "Copa del Rey",
-          "logo": "https://media.api-sports.io/football/leagues/143.png"
-        },
-        "teams": {
-          "home": {
-            "id": 530,
-            "name": "Atletico Madrid",
-            "logo": "https://media.api-sports.io/football/teams/530.png",
-            "winner": null
-          },
-          "away": {
-            "id": 529,
-            "name": "Barcelona",
-            "logo": "https://media.api-sports.io/football/teams/529.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208760,
           "date": "2025-04-06T14:15:00+00:00",
           "venue": {
@@ -641,6 +582,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1350689,
+          "date": "2025-04-02T19:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Wanda Metropolitano",
+            "city": "Madrid"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743622200
+        },
+        "league": {
+          "id": 143,
+          "name": "Copa del Rey",
+          "logo": "https://media.api-sports.io/football/leagues/143.png"
+        },
+        "teams": {
+          "home": {
+            "id": 530,
+            "name": "Atletico Madrid",
+            "logo": "https://media.api-sports.io/football/teams/530.png",
+            "winner": false
+          },
+          "away": {
+            "id": 529,
+            "name": "Barcelona",
+            "logo": "https://media.api-sports.io/football/teams/529.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1212938,
@@ -1171,65 +1171,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1338616,
-          "date": "2025-02-04T20:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Riyadh Air Metropolitano",
-            "city": "Madrid"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1738701000
-        },
-        "league": {
-          "id": 143,
-          "name": "Copa del Rey",
-          "logo": "https://media.api-sports.io/football/leagues/143.png"
-        },
-        "teams": {
-          "home": {
-            "id": 530,
-            "name": "Atletico Madrid",
-            "logo": "https://media.api-sports.io/football/teams/530.png",
-            "winner": true
-          },
-          "away": {
-            "id": 546,
-            "name": "Getafe",
-            "logo": "https://media.api-sports.io/football/teams/546.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1526,5 +1467,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:56.263Z"
+  "lastUpdated": "2025-04-03T19:16:40.000Z"
 }

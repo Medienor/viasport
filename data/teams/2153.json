@@ -78,7 +78,7 @@
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": false,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -146,12 +146,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1342433,
-          "date": "2025-04-01T17:00:00+00:00",
+          "id": 1342437,
+          "date": "2025-04-05T14:00:00+00:00",
           "venue": {
-            "id": 1189,
-            "name": "NAMMO stadion",
-            "city": "Raufoss"
+            "id": 1183,
+            "name": "Consto Arena",
+            "city": "Mjøndalen"
           },
           "status": {
             "long": "Not Started",
@@ -159,7 +159,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743526800
+          "timestamp": 1743861600
         },
         "league": {
           "id": 104,
@@ -168,15 +168,15 @@
         },
         "teams": {
           "home": {
-            "id": 2153,
-            "name": "Raufoss",
-            "logo": "https://media.api-sports.io/football/teams/2153.png",
+            "id": 2152,
+            "name": "Mjondalen",
+            "logo": "https://media.api-sports.io/football/teams/2152.png",
             "winner": null
           },
           "away": {
-            "id": 7012,
-            "name": "Moss",
-            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "id": 2153,
+            "name": "Raufoss",
+            "logo": "https://media.api-sports.io/football/teams/2153.png",
             "winner": null
           }
         },
@@ -205,12 +205,12 @@
       },
       {
         "fixture": {
-          "id": 1342437,
-          "date": "2025-04-05T14:00:00+00:00",
+          "id": 1367213,
+          "date": "2025-04-12T13:00:00+00:00",
           "venue": {
-            "id": 1183,
-            "name": "Consto Arena",
-            "city": "Mjøndalen"
+            "id": 19953,
+            "name": "OBOS-bana",
+            "city": "Brumunddal"
           },
           "status": {
             "long": "Not Started",
@@ -218,18 +218,18 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743861600
+          "timestamp": 1744462800
         },
         "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
         },
         "teams": {
           "home": {
-            "id": 2152,
-            "name": "Mjondalen",
-            "logo": "https://media.api-sports.io/football/teams/2152.png",
+            "id": 6972,
+            "name": "Brumunddal",
+            "logo": "https://media.api-sports.io/football/teams/6972.png",
             "winner": null
           },
           "away": {
@@ -797,6 +797,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1342433,
+          "date": "2025-04-01T17:00:00+00:00",
+          "venue": {
+            "id": 1189,
+            "name": "NAMMO stadion",
+            "city": "Raufoss"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743526800
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2153,
+            "name": "Raufoss",
+            "logo": "https://media.api-sports.io/football/teams/2153.png",
+            "winner": true
+          },
+          "away": {
+            "id": 7012,
+            "name": "Moss",
+            "logo": "https://media.api-sports.io/football/teams/7012.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1365984,
           "date": "2025-03-23T13:00:00+00:00",
           "venue": {
@@ -1325,65 +1384,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1152107,
-          "date": "2024-11-09T15:00:00+00:00",
-          "venue": {
-            "id": 1189,
-            "name": "NAMMO stadion",
-            "city": "Raufoss"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1731164400
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2153,
-            "name": "Raufoss",
-            "logo": "https://media.api-sports.io/football/teams/2153.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2152,
-            "name": "Mjondalen",
-            "logo": "https://media.api-sports.io/football/teams/2152.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1401,17 +1401,17 @@
       "name": "Raufoss",
       "logo": "https://media.api-sports.io/football/teams/2153.png"
     },
-    "form": null,
+    "form": "W",
     "fixtures": {
       "played": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "wins": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "draws": {
         "home": 0,
@@ -1427,14 +1427,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 0,
+          "home": 3,
           "away": 0,
-          "total": 0
+          "total": 3
         },
         "average": {
-          "home": "0.0",
+          "home": "3.0",
           "away": "0.0",
-          "total": "0.0"
+          "total": "3.0"
         },
         "minute": {
           "0-15": {
@@ -1442,12 +1442,12 @@
             "percentage": null
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "25.00%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "25.00%"
           },
           "46-60": {
             "total": null,
@@ -1458,12 +1458,12 @@
             "percentage": null
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "25.00%"
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "25.00%"
           },
           "106-120": {
             "total": null,
@@ -1472,37 +1472,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "2.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       },
       "against": {
         "total": {
-          "home": 0,
+          "home": 2,
           "away": 0,
-          "total": 0
+          "total": 2
         },
         "average": {
-          "home": "0.0",
+          "home": "2.0",
           "away": "0.0",
-          "total": "0.0"
+          "total": "2.0"
         },
         "minute": {
           "0-15": {
@@ -1526,8 +1526,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "100.00%"
           },
           "91-105": {
             "total": null,
@@ -1540,36 +1540,36 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 0,
+        "wins": 1,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": null,
+        "home": "3-2",
         "away": null
       },
       "loses": {
@@ -1578,11 +1578,11 @@
       },
       "goals": {
         "for": {
-          "home": 0,
+          "home": 3,
           "away": 0
         },
         "against": {
-          "home": 0,
+          "home": 2,
           "away": 0
         }
       }
@@ -1599,14 +1599,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 1,
+        "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 0
+      "total": 1
     },
     "lineups": [],
     "cards": {
@@ -1624,20 +1624,20 @@
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "25.00%"
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "50.00%"
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "25.00%"
         },
         "106-120": {
           "total": null,
@@ -1658,8 +1658,8 @@
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "100.00%"
         },
         "61-75": {
           "total": null,
@@ -1680,5 +1680,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:38.454Z"
+  "lastUpdated": "2025-04-03T19:16:22.414Z"
 }

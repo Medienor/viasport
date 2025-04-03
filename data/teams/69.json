@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216301,
-          "date": "2025-04-02T18:45:00+00:00",
-          "venue": {
-            "id": 527,
-            "name": "Pride Park Stadium",
-            "city": "Derby"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743619500
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 69,
-            "name": "Derby",
-            "logo": "https://media.api-sports.io/football/teams/69.png",
-            "winner": null
-          },
-          "away": {
-            "id": 59,
-            "name": "Preston",
-            "logo": "https://media.api-sports.io/football/teams/59.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216321,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -624,6 +565,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216301,
+          "date": "2025-04-02T18:45:00+00:00",
+          "venue": {
+            "id": 527,
+            "name": "Pride Park Stadium",
+            "city": "Derby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743619500
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 69,
+            "name": "Derby",
+            "logo": "https://media.api-sports.io/football/teams/69.png",
+            "winner": true
+          },
+          "away": {
+            "id": 59,
+            "name": "Preston",
+            "logo": "https://media.api-sports.io/football/teams/59.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216293,
@@ -1154,65 +1154,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216181,
-          "date": "2025-01-25T15:00:00+00:00",
-          "venue": {
-            "id": 516,
-            "name": "Cardiff City Stadium",
-            "city": "Caerdydd"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737817200
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 43,
-            "name": "Cardiff",
-            "logo": "https://media.api-sports.io/football/teams/43.png",
-            "winner": true
-          },
-          "away": {
-            "id": 69,
-            "name": "Derby",
-            "logo": "https://media.api-sports.io/football/teams/69.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1509,5 +1450,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:54:16.699Z"
+  "lastUpdated": "2025-04-03T19:18:10.734Z"
 }

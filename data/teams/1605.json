@@ -189,65 +189,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361464,
-          "date": "2025-04-02T03:15:00+00:00",
-          "venue": {
-            "id": 1616,
-            "name": "Dignity Health Sports Park",
-            "city": "Carson, California"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743563700
-        },
-        "league": {
-          "id": 16,
-          "name": "CONCACAF Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/16.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1605,
-            "name": "Los Angeles Galaxy",
-            "logo": "https://media.api-sports.io/football/teams/1605.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2279,
-            "name": "Tigres UANL",
-            "logo": "https://media.api-sports.io/football/teams/2279.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1326317,
           "date": "2025-04-05T20:30:00+00:00",
           "venue": {
@@ -1366,9 +1307,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1326567,
+          "date": "2025-07-26T00:30:00+00:00",
+          "venue": {
+            "id": 19418,
+            "name": "Shell Energy Stadium",
+            "city": "Houston, Texas"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753489800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1600,
+            "name": "Houston Dynamo",
+            "logo": "https://media.api-sports.io/football/teams/1600.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1605,
+            "name": "Los Angeles Galaxy",
+            "logo": "https://media.api-sports.io/football/teams/1605.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361464,
+          "date": "2025-04-02T03:15:00+00:00",
+          "venue": {
+            "id": 1616,
+            "name": "Dignity Health Sports Park",
+            "city": "Carson, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743563700
+        },
+        "league": {
+          "id": 16,
+          "name": "CONCACAF Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/16.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1605,
+            "name": "Los Angeles Galaxy",
+            "logo": "https://media.api-sports.io/football/teams/1605.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2279,
+            "name": "Tigres UANL",
+            "logo": "https://media.api-sports.io/football/teams/2279.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1326312,
@@ -1899,65 +1958,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1346040,
-          "date": "2025-02-12T19:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Empire Polo Club Field 2",
-            "city": "Indio, California"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739386800
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1605,
-            "name": "Los Angeles Galaxy",
-            "logo": "https://media.api-sports.io/football/teams/1605.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1612,
-            "name": "Minnesota United FC",
-            "logo": "https://media.api-sports.io/football/teams/1612.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2267,5 +2267,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:51.063Z"
+  "lastUpdated": "2025-04-03T19:23:44.780Z"
 }

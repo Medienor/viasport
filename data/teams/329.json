@@ -322,6 +322,65 @@
       },
       {
         "fixture": {
+          "id": 1367232,
+          "date": "2025-04-13T14:00:00+00:00",
+          "venue": {
+            "id": 21734,
+            "name": "Elnesvågen stadion",
+            "city": "Elnesvågen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744552800
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25910,
+            "name": "Elnesvågen",
+            "logo": "https://media.api-sports.io/football/teams/25910.png",
+            "winner": null
+          },
+          "away": {
+            "id": 329,
+            "name": "Molde",
+            "logo": "https://media.api-sports.io/football/teams/329.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342209,
           "date": "2025-04-21T17:15:00+00:00",
           "venue": {
@@ -1381,65 +1440,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1342352,
-          "date": "2025-09-14T15:00:00+00:00",
-          "venue": {
-            "id": 1184,
-            "name": "Aker Stadion",
-            "city": "Molde"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1757862000
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 329,
-            "name": "Molde",
-            "logo": "https://media.api-sports.io/football/teams/329.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2149,
-            "name": "Fredrikstad",
-            "logo": "https://media.api-sports.io/football/teams/2149.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ],
     "past": [
@@ -2333,5 +2333,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:28.275Z"
+  "lastUpdated": "2025-04-03T19:16:12.101Z"
 }

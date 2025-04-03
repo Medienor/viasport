@@ -264,65 +264,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1315262,
-          "date": "2025-04-02T15:00:00+00:00",
-          "venue": {
-            "id": 20124,
-            "name": "Arena Lviv",
-            "city": "Lviv"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743606000
-        },
-        "league": {
-          "id": 335,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/335.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3632,
-            "name": "Ruh Lviv",
-            "logo": "https://media.api-sports.io/football/teams/3632.png",
-            "winner": null
-          },
-          "away": {
-            "id": 572,
-            "name": "Dynamo Kyiv",
-            "logo": "https://media.api-sports.io/football/teams/572.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1221043,
           "date": "2025-04-06T12:30:00+00:00",
           "venue": {
@@ -500,6 +441,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1315262,
+          "date": "2025-04-02T15:00:00+00:00",
+          "venue": {
+            "id": 20124,
+            "name": "Arena Lviv",
+            "city": "Lviv"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743606000
+        },
+        "league": {
+          "id": 335,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/335.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3632,
+            "name": "Ruh Lviv",
+            "logo": "https://media.api-sports.io/football/teams/3632.png",
+            "winner": false
+          },
+          "away": {
+            "id": 572,
+            "name": "Dynamo Kyiv",
+            "logo": "https://media.api-sports.io/football/teams/572.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1221035,
@@ -1030,65 +1030,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299256,
-          "date": "2025-01-30T20:00:00+00:00",
-          "venue": {
-            "id": 720,
-            "name": "Volksparkstadion",
-            "city": "Hamburg"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738267200
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 572,
-            "name": "Dynamo Kyiv",
-            "logo": "https://media.api-sports.io/football/teams/572.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4160,
-            "name": "Rīgas FS",
-            "logo": "https://media.api-sports.io/football/teams/4160.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1385,5 +1326,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:54:57.686Z"
+  "lastUpdated": "2025-04-03T19:18:52.172Z"
 }

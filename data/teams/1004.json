@@ -1,0 +1,1181 @@
+{
+  "team": {
+    "team": {
+      "id": 1004,
+      "name": "Kasimpasa",
+      "code": "KAS",
+      "country": "Turkey",
+      "founded": 1921,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/1004.png"
+    },
+    "venue": {
+      "id": 1585,
+      "name": "Recep Tayyip Erdoğan Stadyumu",
+      "address": "Tepebaşı Caddesi, Kasımpaşa, Beyoğlu",
+      "city": "İstanbul",
+      "capacity": 14234,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1585.png"
+    }
+  },
+  "leagues": [
+    {
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/203.png"
+      },
+      "country": {
+        "name": "Turkey",
+        "code": "TR",
+        "flag": "https://media.api-sports.io/flags/tr.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-08-09",
+          "end": "2025-06-01",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": true,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": true,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 206,
+        "name": "Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/206.png"
+      },
+      "country": {
+        "name": "Turkey",
+        "code": "TR",
+        "flag": "https://media.api-sports.io/flags/tr.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2024-09-10",
+          "end": "2025-04-01",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "fixtures": {
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1238117,
+          "date": "2025-04-07T17:00:00+00:00",
+          "venue": {
+            "id": 1585,
+            "name": "Recep Tayyip Erdoğan Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744045200
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": null
+          },
+          "away": {
+            "id": 549,
+            "name": "Besiktas",
+            "logo": "https://media.api-sports.io/football/teams/549.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238121,
+          "date": "2025-04-13T13:00:00+00:00",
+          "venue": {
+            "id": 19613,
+            "name": "RHG Enertürk Enerji Stadyumu",
+            "city": "Kayseri"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744549200
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1001,
+            "name": "Kayserispor",
+            "logo": "https://media.api-sports.io/football/teams/1001.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238133,
+          "date": "2025-04-19T22:00:00+00:00",
+          "venue": {
+            "id": 1585,
+            "name": "Recep Tayyip Erdoğan Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745100000
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1002,
+            "name": "Sivasspor",
+            "logo": "https://media.api-sports.io/football/teams/1002.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
+    "past": [
+      {
+        "fixture": {
+          "id": 1238107,
+          "date": "2025-03-29T13:00:00+00:00",
+          "venue": {
+            "id": 11925,
+            "name": "Samsun Yeni 19 Mayıs Stadyumu",
+            "city": "Samsun"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743253200
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3603,
+            "name": "Samsunspor",
+            "logo": "https://media.api-sports.io/football/teams/3603.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238099,
+          "date": "2025-03-15T13:00:00+00:00",
+          "venue": {
+            "id": 1585,
+            "name": "Recep Tayyip Erdoğan Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1742043600
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": true
+          },
+          "away": {
+            "id": 996,
+            "name": "Alanyaspor",
+            "logo": "https://media.api-sports.io/football/teams/996.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238091,
+          "date": "2025-03-07T17:30:00+00:00",
+          "venue": {
+            "id": 2385,
+            "name": "Grey Beton Bodrum Stadyumu",
+            "city": "Muğla"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1741368600
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3583,
+            "name": "BB Bodrumspor",
+            "logo": "https://media.api-sports.io/football/teams/3583.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238080,
+          "date": "2025-03-02T13:00:00+00:00",
+          "venue": {
+            "id": 1585,
+            "name": "Recep Tayyip Erdoğan Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1740920400
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": null
+          },
+          "away": {
+            "id": 645,
+            "name": "Galatasaray",
+            "logo": "https://media.api-sports.io/football/teams/645.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1327578,
+          "date": "2025-02-27T13:00:00+00:00",
+          "venue": {
+            "id": 1585,
+            "name": "Recep Tayyip Erdoğan Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1740661200
+        },
+        "league": {
+          "id": 206,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/206.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": false
+          },
+          "away": {
+            "id": 994,
+            "name": "Goztepe",
+            "logo": "https://media.api-sports.io/football/teams/994.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238067,
+          "date": "2025-02-22T13:00:00+00:00",
+          "venue": {
+            "id": 19220,
+            "name": "Corendon Airlines Park",
+            "city": "Antalya"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1740229200
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1005,
+            "name": "Antalyaspor",
+            "logo": "https://media.api-sports.io/football/teams/1005.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238063,
+          "date": "2025-02-16T16:00:00+00:00",
+          "venue": {
+            "id": 1581,
+            "name": "Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1739721600
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 611,
+            "name": "Fenerbahce",
+            "logo": "https://media.api-sports.io/football/teams/611.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238051,
+          "date": "2025-02-09T10:30:00+00:00",
+          "venue": {
+            "id": 1585,
+            "name": "Recep Tayyip Erdoğan Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1739097000
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1007,
+            "name": "Rizespor",
+            "logo": "https://media.api-sports.io/football/teams/1007.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1327566,
+          "date": "2025-02-06T10:00:00+00:00",
+          "venue": {
+            "id": 20746,
+            "name": "Esenyurt Necmi Kadıoğlu Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1738836000
+        },
+        "league": {
+          "id": 206,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/206.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3578,
+            "name": "İstanbulspor",
+            "logo": "https://media.api-sports.io/football/teams/3578.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238042,
+          "date": "2025-02-02T10:30:00+00:00",
+          "venue": {
+            "id": 11924,
+            "name": "Yeni Adana Stadyumu",
+            "city": "Adana"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1738492200
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3563,
+            "name": "Adana Demirspor",
+            "logo": "https://media.api-sports.io/football/teams/3563.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "league": {
+      "id": null,
+      "name": null,
+      "country": null,
+      "logo": null,
+      "flag": null,
+      "season": null
+    },
+    "team": {
+      "id": 1004,
+      "name": "Kasimpasa",
+      "logo": "https://media.api-sports.io/football/teams/1004.png"
+    },
+    "form": null,
+    "fixtures": {
+      "played": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "wins": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "draws": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      },
+      "loses": {
+        "home": 0,
+        "away": 0,
+        "total": 0
+      }
+    },
+    "goals": {
+      "for": {
+        "total": {
+          "home": 0,
+          "away": 0,
+          "total": 0
+        },
+        "average": {
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 0,
+            "under": 0
+          },
+          "1.5": {
+            "over": 0,
+            "under": 0
+          },
+          "2.5": {
+            "over": 0,
+            "under": 0
+          },
+          "3.5": {
+            "over": 0,
+            "under": 0
+          },
+          "4.5": {
+            "over": 0,
+            "under": 0
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 0,
+          "away": 0,
+          "total": 0
+        },
+        "average": {
+          "home": "0.0",
+          "away": "0.0",
+          "total": "0.0"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": null,
+            "percentage": null
+          },
+          "46-60": {
+            "total": null,
+            "percentage": null
+          },
+          "61-75": {
+            "total": null,
+            "percentage": null
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 0,
+            "under": 0
+          },
+          "1.5": {
+            "over": 0,
+            "under": 0
+          },
+          "2.5": {
+            "over": 0,
+            "under": 0
+          },
+          "3.5": {
+            "over": 0,
+            "under": 0
+          },
+          "4.5": {
+            "over": 0,
+            "under": 0
+          }
+        }
+      }
+    },
+    "biggest": {
+      "streak": {
+        "wins": 0,
+        "draws": 0,
+        "loses": 0
+      },
+      "wins": {
+        "home": null,
+        "away": null
+      },
+      "loses": {
+        "home": null,
+        "away": null
+      },
+      "goals": {
+        "for": {
+          "home": 0,
+          "away": 0
+        },
+        "against": {
+          "home": 0,
+          "away": 0
+        }
+      }
+    },
+    "clean_sheet": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "failed_to_score": {
+      "home": 0,
+      "away": 0,
+      "total": 0
+    },
+    "penalty": {
+      "scored": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "missed": {
+        "total": 0,
+        "percentage": "0%"
+      },
+      "total": 0
+    },
+    "lineups": [],
+    "cards": {
+      "yellow": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      },
+      "red": {
+        "0-15": {
+          "total": null,
+          "percentage": null
+        },
+        "16-30": {
+          "total": null,
+          "percentage": null
+        },
+        "31-45": {
+          "total": null,
+          "percentage": null
+        },
+        "46-60": {
+          "total": null,
+          "percentage": null
+        },
+        "61-75": {
+          "total": null,
+          "percentage": null
+        },
+        "76-90": {
+          "total": null,
+          "percentage": null
+        },
+        "91-105": {
+          "total": null,
+          "percentage": null
+        },
+        "106-120": {
+          "total": null,
+          "percentage": null
+        }
+      }
+    }
+  },
+  "lastUpdated": "2025-04-03T19:17:24.014Z"
+}

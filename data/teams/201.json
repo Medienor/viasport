@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213657,
-          "date": "2025-04-01T18:00:00+00:00",
-          "venue": {
-            "id": 1119,
-            "name": "AFAS Stadion",
-            "city": "Alkmaar"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743530400
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 201,
-            "name": "AZ Alkmaar",
-            "logo": "https://media.api-sports.io/football/teams/201.png",
-            "winner": null
-          },
-          "away": {
-            "id": 417,
-            "name": "Waalwijk",
-            "logo": "https://media.api-sports.io/football/teams/417.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213686,
           "date": "2025-04-05T14:30:00+00:00",
           "venue": {
@@ -684,6 +625,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213657,
+          "date": "2025-04-01T18:00:00+00:00",
+          "venue": {
+            "id": 1119,
+            "name": "AFAS Stadion",
+            "city": "Alkmaar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743530400
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 201,
+            "name": "AZ Alkmaar",
+            "logo": "https://media.api-sports.io/football/teams/201.png",
+            "winner": null
+          },
+          "away": {
+            "id": 417,
+            "name": "Waalwijk",
+            "logo": "https://media.api-sports.io/football/teams/417.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213679,
@@ -1214,65 +1214,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1338277,
-          "date": "2025-02-06T19:00:00+00:00",
-          "venue": {
-            "id": 1119,
-            "name": "AFAS Stadion",
-            "city": "Alkmaar"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738868400
-        },
-        "league": {
-          "id": 90,
-          "name": "KNVB Beker",
-          "logo": "https://media.api-sports.io/football/leagues/90.png"
-        },
-        "teams": {
-          "home": {
-            "id": 201,
-            "name": "AZ Alkmaar",
-            "logo": "https://media.api-sports.io/football/teams/201.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1272,
-            "name": "Quick Boys",
-            "logo": "https://media.api-sports.io/football/teams/1272.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1569,5 +1510,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:53:55.922Z"
+  "lastUpdated": "2025-04-03T19:17:49.968Z"
 }

@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1356371,
-          "date": "2025-04-02T13:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Liv Bona Dea Arena",
-            "city": "Baku"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743598800
-        },
-        "league": {
-          "id": 420,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/420.png"
-        },
-        "teams": {
-          "home": {
-            "id": 11238,
-            "name": "Araz",
-            "logo": "https://media.api-sports.io/football/teams/11238.png",
-            "winner": null
-          },
-          "away": {
-            "id": 556,
-            "name": "Qarabag",
-            "logo": "https://media.api-sports.io/football/teams/556.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1261112,
@@ -484,6 +425,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1356371,
+          "date": "2025-04-02T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Liv Bona Dea Arena",
+            "city": "Baku"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743598800
+        },
+        "league": {
+          "id": 420,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/420.png"
+        },
+        "teams": {
+          "home": {
+            "id": 11238,
+            "name": "Araz",
+            "logo": "https://media.api-sports.io/football/teams/11238.png",
+            "winner": true
+          },
+          "away": {
+            "id": 556,
+            "name": "Qarabag",
+            "logo": "https://media.api-sports.io/football/teams/556.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1261107,
@@ -1014,65 +1014,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1261072,
-          "date": "2025-02-02T15:00:00+00:00",
-          "venue": {
-            "id": 4134,
-            "name": "Zirə qəsəbə stadionu",
-            "city": "Zirya"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738508400
-        },
-        "league": {
-          "id": 419,
-          "name": "Premyer Liqa",
-          "logo": "https://media.api-sports.io/football/leagues/419.png"
-        },
-        "teams": {
-          "home": {
-            "id": 648,
-            "name": "Zira",
-            "logo": "https://media.api-sports.io/football/teams/648.png",
-            "winner": true
-          },
-          "away": {
-            "id": 556,
-            "name": "Qarabag",
-            "logo": "https://media.api-sports.io/football/teams/556.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1369,5 +1310,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:54:52.505Z"
+  "lastUpdated": "2025-04-03T19:18:47.061Z"
 }

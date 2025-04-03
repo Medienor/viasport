@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1324023,
-          "date": "2025-04-02T10:00:00+00:00",
-          "venue": {
-            "id": 960,
-            "name": "Ajinomoto Stadium",
-            "city": "Chōfu"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743588000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 306,
-            "name": "Tokyo Verdy",
-            "logo": "https://media.api-sports.io/football/teams/306.png",
-            "winner": null
-          },
-          "away": {
-            "id": 292,
-            "name": "FC Tokyo",
-            "logo": "https://media.api-sports.io/football/teams/292.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1324035,
           "date": "2025-04-05T05:00:00+00:00",
           "venue": {
@@ -1329,9 +1270,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1324214,
+          "date": "2025-08-23T10:00:00+00:00",
+          "venue": {
+            "id": 960,
+            "name": "Ajinomoto Stadium",
+            "city": "Chōfu"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755943200
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 306,
+            "name": "Tokyo Verdy",
+            "logo": "https://media.api-sports.io/football/teams/306.png",
+            "winner": null
+          },
+          "away": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1324023,
+          "date": "2025-04-02T10:00:00+00:00",
+          "venue": {
+            "id": 960,
+            "name": "Ajinomoto Stadium",
+            "city": "Chōfu"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743588000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 306,
+            "name": "Tokyo Verdy",
+            "logo": "https://media.api-sports.io/football/teams/306.png",
+            "winner": null
+          },
+          "away": {
+            "id": 292,
+            "name": "FC Tokyo",
+            "logo": "https://media.api-sports.io/football/teams/292.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1324014,
@@ -1862,65 +1921,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1166494,
-          "date": "2024-11-30T05:00:00+00:00",
-          "venue": {
-            "id": 960,
-            "name": "Ajinomoto Stadium",
-            "city": "Chōfu"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1732942800
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 306,
-            "name": "Tokyo Verdy",
-            "logo": "https://media.api-sports.io/football/teams/306.png",
-            "winner": false
-          },
-          "away": {
-            "id": 294,
-            "name": "Kawasaki Frontale",
-            "logo": "https://media.api-sports.io/football/teams/294.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 5
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 5
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1938,12 +1938,12 @@
       "name": "Tokyo Verdy",
       "logo": "https://media.api-sports.io/football/teams/306.png"
     },
-    "form": "LLWLDWD",
+    "form": "LLWLDWDD",
     "fixtures": {
       "played": {
-        "home": 3,
+        "home": 4,
         "away": 4,
-        "total": 7
+        "total": 8
       },
       "wins": {
         "home": 1,
@@ -1951,9 +1951,9 @@
         "total": 2
       },
       "draws": {
-        "home": 0,
+        "home": 1,
         "away": 2,
-        "total": 2
+        "total": 3
       },
       "loses": {
         "home": 2,
@@ -1964,35 +1964,35 @@
     "goals": {
       "for": {
         "total": {
-          "home": 2,
+          "home": 4,
           "away": 3,
-          "total": 5
+          "total": 7
         },
         "average": {
-          "home": "0.7",
+          "home": "1.0",
           "away": "0.8",
-          "total": "0.7"
+          "total": "0.9"
         },
         "minute": {
           "0-15": {
             "total": 2,
-            "percentage": "40.00%"
+            "percentage": "28.57%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "14.29%"
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "14.29%"
           },
           "61-75": {
             "total": 3,
-            "percentage": "60.00%"
+            "percentage": "42.86%"
           },
           "76-90": {
             "total": null,
@@ -2009,37 +2009,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 4,
             "under": 4
           },
           "1.5": {
-            "over": 2,
+            "over": 3,
             "under": 5
           },
           "2.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           },
           "3.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           },
           "4.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           }
         }
       },
       "against": {
         "total": {
-          "home": 3,
+          "home": 5,
           "away": 6,
-          "total": 9
+          "total": 11
         },
         "average": {
-          "home": "1.0",
+          "home": "1.3",
           "away": "1.5",
-          "total": "1.3"
+          "total": "1.4"
         },
         "minute": {
           "0-15": {
@@ -2048,23 +2048,23 @@
           },
           "16-30": {
             "total": 3,
-            "percentage": "33.33%"
+            "percentage": "30.00%"
           },
           "31-45": {
-            "total": 3,
-            "percentage": "33.33%"
+            "total": 4,
+            "percentage": "40.00%"
           },
           "46-60": {
             "total": 1,
-            "percentage": "11.11%"
+            "percentage": "10.00%"
           },
           "61-75": {
             "total": 1,
-            "percentage": "11.11%"
+            "percentage": "10.00%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "11.11%"
+            "percentage": "10.00%"
           },
           "91-105": {
             "total": null,
@@ -2077,24 +2077,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 6,
             "under": 2
           },
           "1.5": {
-            "over": 2,
+            "over": 3,
             "under": 5
           },
           "2.5": {
             "over": 1,
-            "under": 6
+            "under": 7
           },
           "3.5": {
             "over": 1,
-            "under": 6
+            "under": 7
           },
           "4.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           }
         }
       }
@@ -2119,7 +2119,7 @@
           "away": 2
         },
         "against": {
-          "home": 1,
+          "home": 2,
           "away": 4
         }
       }
@@ -2148,7 +2148,7 @@
     "lineups": [
       {
         "formation": "3-4-2-1",
-        "played": 7
+        "played": 8
       }
     ],
     "cards": {
@@ -2159,27 +2159,27 @@
         },
         "16-30": {
           "total": 1,
-          "percentage": "10.00%"
+          "percentage": "8.33%"
         },
         "31-45": {
           "total": 3,
-          "percentage": "30.00%"
+          "percentage": "25.00%"
         },
         "46-60": {
-          "total": 1,
-          "percentage": "10.00%"
+          "total": 3,
+          "percentage": "25.00%"
         },
         "61-75": {
           "total": 2,
-          "percentage": "20.00%"
+          "percentage": "16.67%"
         },
         "76-90": {
           "total": 1,
-          "percentage": "10.00%"
+          "percentage": "8.33%"
         },
         "91-105": {
           "total": 2,
-          "percentage": "20.00%"
+          "percentage": "16.67%"
         },
         "106-120": {
           "total": null,
@@ -2222,5 +2222,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:43.420Z"
+  "lastUpdated": "2025-04-03T19:23:37.014Z"
 }

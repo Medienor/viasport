@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -149,65 +149,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1359900,
-          "date": "2025-04-02T17:00:00+00:00",
-          "venue": {
-            "id": 1966,
-            "name": "Stadiumi Loro Boriçi",
-            "city": "Shkodër"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743613200
-        },
-        "league": {
-          "id": 707,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/707.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3339,
-            "name": "Vllaznia Shkodër",
-            "logo": "https://media.api-sports.io/football/teams/3339.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3326,
-            "name": "Dinamo Tirana",
-            "logo": "https://media.api-sports.io/football/teams/3326.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1278523,
@@ -446,6 +387,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1359900,
+          "date": "2025-04-02T17:00:00+00:00",
+          "venue": {
+            "id": 1966,
+            "name": "Stadiumi Loro Boriçi",
+            "city": "Shkodër"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743613200
+        },
+        "league": {
+          "id": 707,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/707.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3339,
+            "name": "Vllaznia Shkodër",
+            "logo": "https://media.api-sports.io/football/teams/3339.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3326,
+            "name": "Dinamo Tirana",
+            "logo": "https://media.api-sports.io/football/teams/3326.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1278514,
@@ -976,65 +976,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1338281,
-          "date": "2025-02-05T16:00:00+00:00",
-          "venue": {
-            "id": 2,
-            "name": "Elbasan Arena",
-            "city": "Elbasan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738771200
-        },
-        "league": {
-          "id": 707,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/707.png"
-        },
-        "teams": {
-          "home": {
-            "id": 20406,
-            "name": "AF Elbasani",
-            "logo": "https://media.api-sports.io/football/teams/20406.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3339,
-            "name": "Vllaznia Shkodër",
-            "logo": "https://media.api-sports.io/football/teams/3339.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1331,5 +1272,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:59.451Z"
+  "lastUpdated": "2025-04-03T19:19:51.686Z"
 }

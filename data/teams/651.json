@@ -227,65 +227,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1355642,
-          "date": "2025-04-02T17:45:00+00:00",
-          "venue": {
-            "id": 799,
-            "name": "Groupama Aréna",
-            "city": "Budapest"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743615900
-        },
-        "league": {
-          "id": 273,
-          "name": "Magyar Kupa",
-          "logo": "https://media.api-sports.io/football/leagues/273.png"
-        },
-        "teams": {
-          "home": {
-            "id": 651,
-            "name": "Ferencvarosi TC",
-            "logo": "https://media.api-sports.io/football/teams/651.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2255,
-            "name": "Ujpest",
-            "logo": "https://media.api-sports.io/football/teams/2255.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1211470,
           "date": "2025-04-06T17:00:00+00:00",
           "venue": {
@@ -463,6 +404,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1355642,
+          "date": "2025-04-02T17:45:00+00:00",
+          "venue": {
+            "id": 799,
+            "name": "Groupama Aréna",
+            "city": "Budapest"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743615900
+        },
+        "league": {
+          "id": 273,
+          "name": "Magyar Kupa",
+          "logo": "https://media.api-sports.io/football/leagues/273.png"
+        },
+        "teams": {
+          "home": {
+            "id": 651,
+            "name": "Ferencvarosi TC",
+            "logo": "https://media.api-sports.io/football/teams/651.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2255,
+            "name": "Ujpest",
+            "logo": "https://media.api-sports.io/football/teams/2255.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1211465,
@@ -993,65 +993,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1211353,
-          "date": "2025-02-05T18:30:00+00:00",
-          "venue": {
-            "id": 818,
-            "name": "ZTE-Aréna",
-            "city": "Zalaegerszeg"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1738780200
-        },
-        "league": {
-          "id": 271,
-          "name": "NB I",
-          "logo": "https://media.api-sports.io/football/leagues/271.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2414,
-            "name": "Zalaegerszegi TE",
-            "logo": "https://media.api-sports.io/football/teams/2414.png",
-            "winner": null
-          },
-          "away": {
-            "id": 651,
-            "name": "Ferencvarosi TC",
-            "logo": "https://media.api-sports.io/football/teams/651.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1348,5 +1289,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:02.713Z"
+  "lastUpdated": "2025-04-03T19:18:57.170Z"
 }

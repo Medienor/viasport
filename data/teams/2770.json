@@ -262,65 +262,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1219218,
-          "date": "2025-04-02T11:00:00+00:00",
-          "venue": {
-            "id": 19788,
-            "name": "Ratchaburi Stadium",
-            "city": "Ratchaburi"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743591600
-        },
-        "league": {
-          "id": 296,
-          "name": "Thai League 1",
-          "logo": "https://media.api-sports.io/football/leagues/296.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2776,
-            "name": "Ratchaburi",
-            "logo": "https://media.api-sports.io/football/teams/2776.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2770,
-            "name": "Bangkok United",
-            "logo": "https://media.api-sports.io/football/teams/2770.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1219150,
           "date": "2025-04-05T12:00:00+00:00",
           "venue": {
@@ -616,6 +557,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1219218,
+          "date": "2025-04-02T11:00:00+00:00",
+          "venue": {
+            "id": 19788,
+            "name": "Ratchaburi Stadium",
+            "city": "Ratchaburi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743591600
+        },
+        "league": {
+          "id": 296,
+          "name": "Thai League 1",
+          "logo": "https://media.api-sports.io/football/leagues/296.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2776,
+            "name": "Ratchaburi",
+            "logo": "https://media.api-sports.io/football/teams/2776.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2770,
+            "name": "Bangkok United",
+            "logo": "https://media.api-sports.io/football/teams/2770.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1219257,
@@ -1146,65 +1146,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1316625,
-          "date": "2025-01-29T11:00:00+00:00",
-          "venue": {
-            "id": 1553,
-            "name": "Thammasat Stadium",
-            "city": "Pathum Thani"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738148400
-        },
-        "league": {
-          "id": 298,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/298.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2770,
-            "name": "Bangkok United",
-            "logo": "https://media.api-sports.io/football/teams/2770.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2796,
-            "name": "Nong Bua Pitchaya",
-            "logo": "https://media.api-sports.io/football/teams/2796.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1501,5 +1442,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:58:46.921Z"
+  "lastUpdated": "2025-04-03T19:22:40.243Z"
 }

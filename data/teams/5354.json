@@ -257,65 +257,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1366540,
-          "date": "2025-04-01T18:45:00+00:00",
-          "venue": {
-            "id": 4043,
-            "name": "Stangmore Park",
-            "city": "Dungannon"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743533100
-        },
-        "league": {
-          "id": 408,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/408.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5351,
-            "name": "Dungannon Swifts",
-            "logo": "https://media.api-sports.io/football/teams/5351.png",
-            "winner": null
-          },
-          "away": {
-            "id": 5354,
-            "name": "Larne",
-            "logo": "https://media.api-sports.io/football/teams/5354.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1366544,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -552,6 +493,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366540,
+          "date": "2025-04-01T18:45:00+00:00",
+          "venue": {
+            "id": 4043,
+            "name": "Stangmore Park",
+            "city": "Dungannon"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743533100
+        },
+        "league": {
+          "id": 408,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/408.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5351,
+            "name": "Dungannon Swifts",
+            "logo": "https://media.api-sports.io/football/teams/5351.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5354,
+            "name": "Larne",
+            "logo": "https://media.api-sports.io/football/teams/5354.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1222045,
@@ -1082,65 +1082,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1222023,
-          "date": "2025-02-15T17:30:00+00:00",
-          "venue": {
-            "id": 4040,
-            "name": "Shamrock Park",
-            "city": "Portadown"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739640600
-        },
-        "league": {
-          "id": 408,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/408.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5348,
-            "name": "Portadown",
-            "logo": "https://media.api-sports.io/football/teams/5348.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5354,
-            "name": "Larne",
-            "logo": "https://media.api-sports.io/football/teams/5354.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1437,5 +1378,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:12.884Z"
+  "lastUpdated": "2025-04-03T19:19:07.402Z"
 }

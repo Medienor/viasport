@@ -450,6 +450,65 @@
       },
       {
         "fixture": {
+          "id": 1213974,
+          "date": "2025-03-16T16:15:00+00:00",
+          "venue": {
+            "id": 20107,
+            "name": "Stade de la Mosson-Mondial 98",
+            "city": "Montpellier"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1742141700
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 82,
+            "name": "Montpellier",
+            "logo": "https://media.api-sports.io/football/teams/82.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1063,
+            "name": "Saint Etienne",
+            "logo": "https://media.api-sports.io/football/teams/1063.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1213963,
           "date": "2025-03-09T16:15:00+00:00",
           "venue": {
@@ -749,8 +808,8 @@
           "date": "2025-02-01T20:05:00+00:00",
           "venue": {
             "id": null,
-            "name": "Decathlon Arena - Stade Pierre Mauroy",
-            "city": "Lille"
+            "name": "Decathlon Arena - Stade Pierre-Mauroy",
+            "city": "Villeneuve d'Ascq"
           },
           "status": {
             "long": "Match Finished",
@@ -908,65 +967,6 @@
           },
           "fulltime": {
             "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1213898,
-          "date": "2025-01-12T19:45:00+00:00",
-          "venue": {
-            "id": 671,
-            "name": "Parc des Princes",
-            "city": "Paris"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1736711100
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 85,
-            "name": "Paris Saint Germain",
-            "logo": "https://media.api-sports.io/football/teams/85.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1063,
-            "name": "Saint Etienne",
-            "logo": "https://media.api-sports.io/football/teams/1063.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
             "away": 1
           },
           "extratime": {
@@ -1274,5 +1274,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:53:35.610Z"
+  "lastUpdated": "2025-04-03T19:17:18.994Z"
 }

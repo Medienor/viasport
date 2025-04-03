@@ -227,65 +227,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1355644,
-          "date": "2025-04-02T15:00:00+00:00",
-          "venue": {
-            "id": 816,
-            "name": "Várkerti Stadion",
-            "city": "Kisvárda"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743606000
-        },
-        "league": {
-          "id": 273,
-          "name": "Magyar Kupa",
-          "logo": "https://media.api-sports.io/football/leagues/273.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2394,
-            "name": "Kisvarda FC",
-            "logo": "https://media.api-sports.io/football/teams/2394.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2390,
-            "name": "Paks",
-            "logo": "https://media.api-sports.io/football/teams/2390.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1211913,
           "date": "2025-04-05T15:00:00+00:00",
           "venue": {
@@ -463,6 +404,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1355644,
+          "date": "2025-04-02T15:00:00+00:00",
+          "venue": {
+            "id": 816,
+            "name": "Várkerti Stadion",
+            "city": "Kisvárda"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743606000
+        },
+        "league": {
+          "id": 273,
+          "name": "Magyar Kupa",
+          "logo": "https://media.api-sports.io/football/leagues/273.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2394,
+            "name": "Kisvarda FC",
+            "logo": "https://media.api-sports.io/football/teams/2394.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2390,
+            "name": "Paks",
+            "logo": "https://media.api-sports.io/football/teams/2390.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1211463,
@@ -993,65 +993,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1211426,
-          "date": "2025-02-01T13:30:00+00:00",
-          "venue": {
-            "id": 809,
-            "name": "Paksi FC Stadion",
-            "city": "Paks"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738416600
-        },
-        "league": {
-          "id": 271,
-          "name": "NB I",
-          "logo": "https://media.api-sports.io/football/leagues/271.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2390,
-            "name": "Paks",
-            "logo": "https://media.api-sports.io/football/teams/2390.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2402,
-            "name": "Gyori ETO FC",
-            "logo": "https://media.api-sports.io/football/teams/2402.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1348,5 +1289,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:23.164Z"
+  "lastUpdated": "2025-04-03T19:19:18.087Z"
 }

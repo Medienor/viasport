@@ -78,7 +78,7 @@
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": false,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -207,12 +207,71 @@
       },
       {
         "fixture": {
+          "id": 1367189,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 12747,
+            "name": "Sparebank 1 Bana",
+            "city": "Volda"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16226,
+            "name": "Volda",
+            "logo": "https://media.api-sports.io/football/teams/16226.png",
+            "winner": null
+          },
+          "away": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342445,
           "date": "2025-04-21T15:00:00+00:00",
           "venue": {
             "id": 1188,
-            "name": "EXTRA Arena",
-            "city": "Ranheim"
+            "name": "Frøya Storhall",
+            "city": "Sistranda"
           },
           "status": {
             "long": "Not Started",
@@ -1623,5 +1682,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:35.886Z"
+  "lastUpdated": "2025-04-03T19:16:19.956Z"
 }

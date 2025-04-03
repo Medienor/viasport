@@ -225,65 +225,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1341143,
-          "date": "2025-04-01T15:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Batumi Arena",
-            "city": "Batumi"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743519600
-        },
-        "league": {
-          "id": 327,
-          "name": "Erovnuli Liga",
-          "logo": "https://media.api-sports.io/football/leagues/327.png"
-        },
-        "teams": {
-          "home": {
-            "id": 705,
-            "name": "Dinamo Batumi",
-            "logo": "https://media.api-sports.io/football/teams/705.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2262,
-            "name": "Dinamo Tbilisi",
-            "logo": "https://media.api-sports.io/football/teams/2262.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1341166,
           "date": "2025-04-05T11:00:00+00:00",
           "venue": {
@@ -1402,9 +1343,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1341263,
+          "date": "2025-09-20T11:00:00+00:00",
+          "venue": {
+            "id": 691,
+            "name": "Boris Paichadze Dinamo Arena",
+            "city": "Tbilisi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1758366000
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2262,
+            "name": "Dinamo Tbilisi",
+            "logo": "https://media.api-sports.io/football/teams/2262.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3502,
+            "name": "Saburtalo",
+            "logo": "https://media.api-sports.io/football/teams/3502.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1341143,
+          "date": "2025-04-01T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Batumi Arena",
+            "city": "Batumi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743519600
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 705,
+            "name": "Dinamo Batumi",
+            "logo": "https://media.api-sports.io/football/teams/705.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2262,
+            "name": "Dinamo Tbilisi",
+            "logo": "https://media.api-sports.io/football/teams/2262.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1341162,
@@ -1935,65 +1994,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1163267,
-          "date": "2024-11-27T10:00:00+00:00",
-          "venue": {
-            "id": 691,
-            "name": "Boris Paichadze Dinamo Arena",
-            "city": "Tbilisi"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1732701600
-        },
-        "league": {
-          "id": 327,
-          "name": "Erovnuli Liga",
-          "logo": "https://media.api-sports.io/football/leagues/327.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2262,
-            "name": "Dinamo Tbilisi",
-            "logo": "https://media.api-sports.io/football/teams/2262.png",
-            "winner": false
-          },
-          "away": {
-            "id": 705,
-            "name": "Dinamo Batumi",
-            "logo": "https://media.api-sports.io/football/teams/705.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2011,12 +2011,12 @@
       "name": "Dinamo Tbilisi",
       "logo": "https://media.api-sports.io/football/teams/2262.png"
     },
-    "form": "WDDW",
+    "form": "WDDWL",
     "fixtures": {
       "played": {
         "home": 2,
-        "away": 2,
-        "total": 4
+        "away": 3,
+        "total": 5
       },
       "wins": {
         "home": 2,
@@ -2030,8 +2030,8 @@
       },
       "loses": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       }
     },
     "goals": {
@@ -2043,8 +2043,8 @@
         },
         "average": {
           "home": "1.5",
-          "away": "0.5",
-          "total": "1.0"
+          "away": "0.3",
+          "total": "0.8"
         },
         "minute": {
           "0-15": {
@@ -2083,45 +2083,45 @@
         "under_over": {
           "0.5": {
             "over": 3,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 1,
-            "under": 3
+            "under": 4
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 5
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 5
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 5
           }
         }
       },
       "against": {
         "total": {
           "home": 1,
-          "away": 1,
-          "total": 2
+          "away": 2,
+          "total": 3
         },
         "average": {
           "home": "0.5",
-          "away": "0.5",
-          "total": "0.5"
+          "away": "0.7",
+          "total": "0.6"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "50.00%"
+            "percentage": "33.33%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "33.33%"
           },
           "31-45": {
             "total": null,
@@ -2129,7 +2129,7 @@
           },
           "46-60": {
             "total": 1,
-            "percentage": "50.00%"
+            "percentage": "33.33%"
           },
           "61-75": {
             "total": null,
@@ -2150,24 +2150,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 3,
             "under": 2
           },
           "1.5": {
             "over": 0,
-            "under": 4
+            "under": 5
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 5
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 5
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 5
           }
         }
       }
@@ -2184,7 +2184,7 @@
       },
       "loses": {
         "home": null,
-        "away": null
+        "away": "1-0"
       },
       "goals": {
         "for": {
@@ -2204,8 +2204,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 2,
+      "total": 2
     },
     "penalty": {
       "scored": {
@@ -2231,23 +2231,23 @@
         },
         "31-45": {
           "total": 3,
-          "percentage": "21.43%"
+          "percentage": "18.75%"
         },
         "46-60": {
-          "total": 5,
-          "percentage": "35.71%"
+          "total": 6,
+          "percentage": "37.50%"
         },
         "61-75": {
           "total": 3,
-          "percentage": "21.43%"
+          "percentage": "18.75%"
         },
         "76-90": {
-          "total": 2,
-          "percentage": "14.29%"
+          "total": 3,
+          "percentage": "18.75%"
         },
         "91-105": {
           "total": 1,
-          "percentage": "7.14%"
+          "percentage": "6.25%"
         },
         "106-120": {
           "total": null,
@@ -2290,5 +2290,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:56.801Z"
+  "lastUpdated": "2025-04-03T19:19:49.164Z"
 }

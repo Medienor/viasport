@@ -226,65 +226,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361865,
-          "date": "2025-04-02T00:30:00+00:00",
-          "venue": {
-            "id": 225,
-            "name": "Estádio Governador Plácido Aderaldo Castelo",
-            "city": "Fortaleza, Ceará"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743553800
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": null
-          },
-          "away": {
-            "id": 436,
-            "name": "Racing Club",
-            "logo": "https://media.api-sports.io/football/teams/436.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1351057,
           "date": "2025-04-06T21:30:00+00:00",
           "venue": {
@@ -1231,6 +1172,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361865,
+          "date": "2025-04-02T00:30:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743553800
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": false
+          },
+          "away": {
+            "id": 436,
+            "name": "Racing Club",
+            "logo": "https://media.api-sports.io/football/teams/436.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351051,
           "date": "2025-03-29T21:30:00+00:00",
           "venue": {
@@ -1759,65 +1759,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337233,
-          "date": "2025-02-12T00:30:00+00:00",
-          "venue": {
-            "id": 12657,
-            "name": "Estádio Governador Alberto Tavares Silva",
-            "city": "Teresina, Piauí"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1739320200
-        },
-        "league": {
-          "id": 612,
-          "name": "Copa do Nordeste",
-          "logo": "https://media.api-sports.io/football/leagues/612.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1203,
-            "name": "Altos",
-            "logo": "https://media.api-sports.io/football/teams/1203.png",
-            "winner": true
-          },
-          "away": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2114,5 +2055,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:17.597Z"
+  "lastUpdated": "2025-04-03T19:23:11.016Z"
 }

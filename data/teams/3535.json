@@ -200,7 +200,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -257,77 +257,19 @@
     2021,
     2022,
     2023,
-    2024
+    2024,
+    2025
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1367266,
-          "date": "2025-04-03T15:35:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Jaber Al-Mubarak Al-Hamad Stadium",
-            "city": "Kuwait City"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743694500
-        },
-        "league": {
-          "id": 330,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/330.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3535,
-            "name": "Al Kuwait",
-            "logo": "https://media.api-sports.io/football/teams/3535.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3539,
-            "name": "Al Tadhamon",
-            "logo": "https://media.api-sports.io/football/teams/3539.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1367455,
           "date": "2025-04-12T17:30:00+00:00",
           "venue": {
             "id": null,
-            "name": null,
-            "city": null
+            "name": "Ali Sabah Al Salem Stadium",
+            "city": "Kuwait City"
           },
           "status": {
             "long": "Not Started",
@@ -617,6 +559,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1367266,
+          "date": "2025-04-03T15:35:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jaber Al-Mubarak Al-Hamad Stadium",
+            "city": "Kuwait City"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1743694500
+        },
+        "league": {
+          "id": 330,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/330.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3535,
+            "name": "Al Kuwait",
+            "logo": "https://media.api-sports.io/football/teams/3535.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3539,
+            "name": "Al Tadhamon",
+            "logo": "https://media.api-sports.io/football/teams/3539.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1333483,
@@ -1147,65 +1148,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1333452,
-          "date": "2025-01-20T14:45:00+00:00",
-          "venue": {
-            "id": 2351,
-            "name": "Khaitan Stadium",
-            "city": "Kuwait City"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737384300
-        },
-        "league": {
-          "id": 330,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/330.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3545,
-            "name": "Khaitan",
-            "logo": "https://media.api-sports.io/football/teams/3545.png",
-            "winner": false
-          },
-          "away": {
-            "id": 3535,
-            "name": "Al Kuwait",
-            "logo": "https://media.api-sports.io/football/teams/3535.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1502,5 +1444,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:58:59.705Z"
+  "lastUpdated": "2025-04-03T19:22:53.045Z"
 }

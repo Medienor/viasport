@@ -189,65 +189,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1338292,
-          "date": "2025-04-01T15:00:00+00:00",
-          "venue": {
-            "id": 120,
-            "name": "Yerevan Football Academy",
-            "city": "Yerevan"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743519600
-        },
-        "league": {
-          "id": 709,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/709.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3683,
-            "name": "Ararat-Armenia",
-            "logo": "https://media.api-sports.io/football/teams/3683.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2276,
-            "name": "FC Urartu",
-            "logo": "https://media.api-sports.io/football/teams/2276.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1360685,
           "date": "2025-04-05T15:00:00+00:00",
           "venue": {
@@ -366,6 +307,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1338292,
+          "date": "2025-04-01T15:00:00+00:00",
+          "venue": {
+            "id": 120,
+            "name": "Yerevan Football Academy",
+            "city": "Yerevan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743519600
+        },
+        "league": {
+          "id": 709,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/709.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3683,
+            "name": "Ararat-Armenia",
+            "logo": "https://media.api-sports.io/football/teams/3683.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2276,
+            "name": "FC Urartu",
+            "logo": "https://media.api-sports.io/football/teams/2276.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1355052,
@@ -896,65 +896,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1312859,
-          "date": "2024-11-28T10:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Junior Sport Stadium",
-            "city": "Yerevan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1732788000
-        },
-        "league": {
-          "id": 342,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/342.png"
-        },
-        "teams": {
-          "home": {
-            "id": 688,
-            "name": "Gandzasar",
-            "logo": "https://media.api-sports.io/football/teams/688.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2276,
-            "name": "FC Urartu",
-            "logo": "https://media.api-sports.io/football/teams/2276.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1251,5 +1192,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:56.949Z"
+  "lastUpdated": "2025-04-03T19:19:51.695Z"
 }

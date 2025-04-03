@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-16",
-          "end": "2025-03-29",
+          "end": "2025-04-05",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -218,14 +218,74 @@
     2024
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1367465,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 2614,
+            "name": "Ta'Qali National Stadium",
+            "city": "Ta'Qali"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 393,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/393.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2277,
+            "name": "Birkirkara",
+            "logo": "https://media.api-sports.io/football/teams/2277.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4626,
+            "name": "Hamrun Spartans",
+            "logo": "https://media.api-sports.io/football/teams/4626.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
       {
         "fixture": {
           "id": 1328284,
           "date": "2025-03-31T13:00:00+00:00",
           "venue": {
-            "id": 2614,
+            "id": 11543,
             "name": "Gozo Stadium",
             "city": "Gozo"
           },
@@ -1105,5 +1165,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:12.909Z"
+  "lastUpdated": "2025-04-03T19:19:07.470Z"
 }

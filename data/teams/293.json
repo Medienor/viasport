@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1324029,
-          "date": "2025-04-02T10:00:00+00:00",
-          "venue": {
-            "id": 18623,
-            "name": "Panasonic Stadium Suita",
-            "city": "Suita"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743588000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 293,
-            "name": "Gamba Osaka",
-            "logo": "https://media.api-sports.io/football/teams/293.png",
-            "winner": null
-          },
-          "away": {
-            "id": 303,
-            "name": "Machida Zelvia",
-            "logo": "https://media.api-sports.io/football/teams/303.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1324033,
           "date": "2025-04-06T06:00:00+00:00",
           "venue": {
@@ -1329,9 +1270,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1324251,
+          "date": "2025-08-20T10:00:00+00:00",
+          "venue": {
+            "id": 968,
+            "name": "Machida Gion Stadium",
+            "city": "Tokyo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755684000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 303,
+            "name": "Machida Zelvia",
+            "logo": "https://media.api-sports.io/football/teams/303.png",
+            "winner": null
+          },
+          "away": {
+            "id": 293,
+            "name": "Gamba Osaka",
+            "logo": "https://media.api-sports.io/football/teams/293.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1324029,
+          "date": "2025-04-02T10:00:00+00:00",
+          "venue": {
+            "id": 18623,
+            "name": "Panasonic Stadium Suita",
+            "city": "Suita"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743588000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 293,
+            "name": "Gamba Osaka",
+            "logo": "https://media.api-sports.io/football/teams/293.png",
+            "winner": false
+          },
+          "away": {
+            "id": 303,
+            "name": "Machida Zelvia",
+            "logo": "https://media.api-sports.io/football/teams/303.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1324016,
@@ -1862,65 +1921,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1339798,
-          "date": "2025-01-28T03:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1738035000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 293,
-            "name": "Gamba Osaka",
-            "logo": "https://media.api-sports.io/football/teams/293.png",
-            "winner": false
-          },
-          "away": {
-            "id": 287,
-            "name": "Urawa",
-            "logo": "https://media.api-sports.io/football/teams/287.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1938,12 +1938,12 @@
       "name": "Gamba Osaka",
       "logo": "https://media.api-sports.io/football/teams/293.png"
     },
-    "form": "LWLWWLD",
+    "form": "LWLWWLDL",
     "fixtures": {
       "played": {
-        "home": 3,
+        "home": 4,
         "away": 4,
-        "total": 7
+        "total": 8
       },
       "wins": {
         "home": 2,
@@ -1956,9 +1956,9 @@
         "total": 1
       },
       "loses": {
-        "home": 1,
+        "home": 2,
         "away": 2,
-        "total": 3
+        "total": 4
       }
     },
     "goals": {
@@ -1969,9 +1969,9 @@
           "total": 9
         },
         "average": {
-          "home": "1.7",
+          "home": "1.3",
           "away": "1.0",
-          "total": "1.3"
+          "total": "1.1"
         },
         "minute": {
           "0-15": {
@@ -2010,65 +2010,65 @@
         "under_over": {
           "0.5": {
             "over": 5,
-            "under": 2
+            "under": 3
           },
           "1.5": {
             "over": 3,
-            "under": 4
+            "under": 5
           },
           "2.5": {
             "over": 1,
-            "under": 6
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           },
           "4.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           }
         }
       },
       "against": {
         "total": {
-          "home": 6,
+          "home": 7,
           "away": 7,
-          "total": 13
+          "total": 14
         },
         "average": {
-          "home": "2.0",
+          "home": "1.8",
           "away": "1.8",
-          "total": "1.9"
+          "total": "1.8"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "7.69%"
+            "percentage": "7.14%"
           },
           "16-30": {
             "total": 2,
-            "percentage": "15.38%"
+            "percentage": "14.29%"
           },
           "31-45": {
-            "total": 1,
-            "percentage": "7.69%"
+            "total": 2,
+            "percentage": "14.29%"
           },
           "46-60": {
             "total": 3,
-            "percentage": "23.08%"
+            "percentage": "21.43%"
           },
           "61-75": {
             "total": 3,
-            "percentage": "23.08%"
+            "percentage": "21.43%"
           },
           "76-90": {
             "total": 2,
-            "percentage": "15.38%"
+            "percentage": "14.29%"
           },
           "91-105": {
             "total": 1,
-            "percentage": "7.69%"
+            "percentage": "7.14%"
           },
           "106-120": {
             "total": null,
@@ -2077,24 +2077,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 6,
             "under": 2
           },
           "1.5": {
             "over": 4,
-            "under": 3
+            "under": 4
           },
           "2.5": {
             "over": 2,
-            "under": 5
+            "under": 6
           },
           "3.5": {
             "over": 1,
-            "under": 6
+            "under": 7
           },
           "4.5": {
             "over": 1,
-            "under": 6
+            "under": 7
           }
         }
       }
@@ -2102,7 +2102,7 @@
     "biggest": {
       "streak": {
         "wins": 2,
-        "draws": 0,
+        "draws": 1,
         "loses": 1
       },
       "wins": {
@@ -2130,9 +2130,9 @@
       "total": 2
     },
     "failed_to_score": {
-      "home": 0,
+      "home": 1,
       "away": 2,
-      "total": 2
+      "total": 3
     },
     "penalty": {
       "scored": {
@@ -2149,6 +2149,10 @@
       {
         "formation": "4-2-3-1",
         "played": 7
+      },
+      {
+        "formation": "4-3-1-2",
+        "played": 1
       }
     ],
     "cards": {
@@ -2222,5 +2226,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:40.901Z"
+  "lastUpdated": "2025-04-03T19:23:34.515Z"
 }

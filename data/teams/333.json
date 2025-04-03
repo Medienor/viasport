@@ -207,6 +207,65 @@
       },
       {
         "fixture": {
+          "id": 1367229,
+          "date": "2025-04-13T14:00:00+00:00",
+          "venue": {
+            "id": 5142,
+            "name": "Bellevue",
+            "city": "Moss"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744552800
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7031,
+            "name": "Sprint-Jeløy",
+            "logo": "https://media.api-sports.io/football/teams/7031.png",
+            "winner": null
+          },
+          "away": {
+            "id": 333,
+            "name": "Sarpsborg 08 FF",
+            "logo": "https://media.api-sports.io/football/teams/333.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342207,
           "date": "2025-04-21T15:00:00+00:00",
           "venue": {
@@ -1266,65 +1325,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1342353,
-          "date": "2025-09-14T15:00:00+00:00",
-          "venue": {
-            "id": 1193,
-            "name": "Sarpsborg Stadion",
-            "city": "Sarpsborg"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1757862000
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 333,
-            "name": "Sarpsborg 08 FF",
-            "logo": "https://media.api-sports.io/football/teams/333.png",
-            "winner": null
-          },
-          "away": {
-            "id": 332,
-            "name": "Sandefjord",
-            "logo": "https://media.api-sports.io/football/teams/332.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ],
     "past": [
@@ -2218,5 +2218,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:30.837Z"
+  "lastUpdated": "2025-04-03T19:16:14.894Z"
 }

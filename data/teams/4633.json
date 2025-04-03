@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -184,65 +184,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1357120,
-          "date": "2025-04-02T13:00:00+00:00",
-          "venue": {
-            "id": 2615,
-            "name": "Stadionul Zimbru",
-            "city": "Chişinău"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743598800
-        },
-        "league": {
-          "id": 674,
-          "name": "Cupa",
-          "logo": "https://media.api-sports.io/football/leagues/674.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4633,
-            "name": "Zimbru",
-            "logo": "https://media.api-sports.io/football/teams/4633.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4637,
-            "name": "Saxan",
-            "logo": "https://media.api-sports.io/football/teams/4637.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1360752,
@@ -540,6 +481,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1357120,
+          "date": "2025-04-02T13:00:00+00:00",
+          "venue": {
+            "id": 2615,
+            "name": "Stadionul Zimbru",
+            "city": "Chişinău"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743598800
+        },
+        "league": {
+          "id": 674,
+          "name": "Cupa",
+          "logo": "https://media.api-sports.io/football/leagues/674.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4633,
+            "name": "Zimbru",
+            "logo": "https://media.api-sports.io/football/teams/4633.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4637,
+            "name": "Saxan",
+            "logo": "https://media.api-sports.io/football/teams/4637.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1351554,
@@ -1070,65 +1070,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1239673,
-          "date": "2024-11-03T14:00:00+00:00",
-          "venue": {
-            "id": 2615,
-            "name": "Stadionul Zimbru",
-            "city": "Chişinău"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1730642400
-        },
-        "league": {
-          "id": 394,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/394.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4633,
-            "name": "Zimbru",
-            "logo": "https://media.api-sports.io/football/teams/4633.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5375,
-            "name": "Dacia-Buiucani",
-            "logo": "https://media.api-sports.io/football/teams/5375.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1425,5 +1366,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:56:12.235Z"
+  "lastUpdated": "2025-04-03T19:20:04.733Z"
 }

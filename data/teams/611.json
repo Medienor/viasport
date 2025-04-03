@@ -153,8 +153,8 @@
             "fixtures": {
               "events": true,
               "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": false,
             "players": true,
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1359787,
-          "date": "2025-04-02T17:45:00+00:00",
-          "venue": {
-            "id": 1581,
-            "name": "Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743615900
-        },
-        "league": {
-          "id": 206,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/206.png"
-        },
-        "teams": {
-          "home": {
-            "id": 611,
-            "name": "Fenerbahce",
-            "logo": "https://media.api-sports.io/football/teams/611.png",
-            "winner": null
-          },
-          "away": {
-            "id": 645,
-            "name": "Galatasaray",
-            "logo": "https://media.api-sports.io/football/teams/645.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1238113,
@@ -425,6 +366,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1359787,
+          "date": "2025-04-02T17:45:00+00:00",
+          "venue": {
+            "id": 1581,
+            "name": "Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743615900
+        },
+        "league": {
+          "id": 206,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/206.png"
+        },
+        "teams": {
+          "home": {
+            "id": 611,
+            "name": "Fenerbahce",
+            "logo": "https://media.api-sports.io/football/teams/611.png",
+            "winner": false
+          },
+          "away": {
+            "id": 645,
+            "name": "Galatasaray",
+            "logo": "https://media.api-sports.io/football/teams/645.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238109,
@@ -726,8 +726,8 @@
           "date": "2025-02-24T17:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Rams Park Stadyumu",
-            "city": "Istanbul"
+            "name": "RAMS Park",
+            "city": "İstanbul"
           },
           "status": {
             "long": "Match Finished",
@@ -945,65 +945,6 @@
           "fulltime": {
             "home": 3,
             "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1238049,
-          "date": "2025-02-09T13:00:00+00:00",
-          "venue": {
-            "id": 21379,
-            "name": "GAIN Park Stadium",
-            "city": "Antalya"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1739106000
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 996,
-            "name": "Alanyaspor",
-            "logo": "https://media.api-sports.io/football/teams/996.png",
-            "winner": false
-          },
-          "away": {
-            "id": 611,
-            "name": "Fenerbahce",
-            "logo": "https://media.api-sports.io/football/teams/611.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
           },
           "extratime": {
             "home": null,
@@ -1310,5 +1251,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:00.191Z"
+  "lastUpdated": "2025-04-03T19:17:21.590Z"
 }

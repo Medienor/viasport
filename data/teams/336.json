@@ -225,7 +225,7 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
+              "events": true,
               "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
@@ -294,65 +294,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1210376,
-          "date": "2025-04-02T19:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Chorten Arena",
-            "city": "Białystok"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743620400
-        },
-        "league": {
-          "id": 727,
-          "name": "Super Cup",
-          "logo": "https://media.api-sports.io/football/leagues/727.png"
-        },
-        "teams": {
-          "home": {
-            "id": 336,
-            "name": "Jagiellonia",
-            "logo": "https://media.api-sports.io/football/teams/336.png",
-            "winner": null
-          },
-          "away": {
-            "id": 338,
-            "name": "Wisla Krakow",
-            "logo": "https://media.api-sports.io/football/teams/338.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1203185,
@@ -770,6 +711,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1210376,
+          "date": "2025-04-02T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Chorten Arena",
+            "city": "Białystok"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743620400
+        },
+        "league": {
+          "id": 727,
+          "name": "Super Cup",
+          "logo": "https://media.api-sports.io/football/leagues/727.png"
+        },
+        "teams": {
+          "home": {
+            "id": 336,
+            "name": "Jagiellonia",
+            "logo": "https://media.api-sports.io/football/teams/336.png",
+            "winner": true
+          },
+          "away": {
+            "id": 338,
+            "name": "Wisla Krakow",
+            "logo": "https://media.api-sports.io/football/teams/338.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203179,
           "date": "2025-03-29T16:30:00+00:00",
           "venue": {
@@ -834,7 +834,7 @@
           "venue": {
             "id": null,
             "name": "Chorten Arena",
-            "city": "Bialystok"
+            "city": "Białystok"
           },
           "status": {
             "long": "Match Finished",
@@ -1069,8 +1069,8 @@
           "date": "2025-03-02T16:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Bialystok City Stadium",
-            "city": "Bialystok"
+            "name": "Chorten Arena",
+            "city": "Białystok"
           },
           "status": {
             "long": "Match Finished",
@@ -1288,65 +1288,6 @@
           "fulltime": {
             "home": 3,
             "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1203133,
-          "date": "2025-02-16T16:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Bialystok City Stadium",
-            "city": "Bialystok"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1739723400
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 336,
-            "name": "Jagiellonia",
-            "logo": "https://media.api-sports.io/football/teams/336.png",
-            "winner": true
-          },
-          "away": {
-            "id": 14562,
-            "name": "Motor Lublin",
-            "logo": "https://media.api-sports.io/football/teams/14562.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
           },
           "extratime": {
             "home": null,
@@ -1653,5 +1594,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:53:45.867Z"
+  "lastUpdated": "2025-04-03T19:17:39.795Z"
 }

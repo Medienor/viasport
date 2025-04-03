@@ -227,65 +227,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362094,
-          "date": "2025-04-03T00:30:00+00:00",
-          "venue": {
-            "id": 281,
-            "name": "Estádio Manoel Barradas",
-            "city": "Salvador, Bahia"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743640200
-        },
-        "league": {
-          "id": 11,
-          "name": "CONMEBOL Sudamericana",
-          "logo": "https://media.api-sports.io/football/leagues/11.png"
-        },
-        "teams": {
-          "home": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1157,
-            "name": "Universidad Catolica",
-            "logo": "https://media.api-sports.io/football/teams/1157.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1351060,
           "date": "2025-04-06T21:30:00+00:00",
           "venue": {
@@ -1173,6 +1114,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362094,
+          "date": "2025-04-03T00:30:00+00:00",
+          "venue": {
+            "id": 281,
+            "name": "Estádio Manoel Barradas",
+            "city": "Salvador, Bahia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743640200
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1157,
+            "name": "Universidad Catolica",
+            "logo": "https://media.api-sports.io/football/teams/1157.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351052,
           "date": "2025-03-29T21:30:00+00:00",
           "venue": {
@@ -1701,65 +1701,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1349605,
-          "date": "2025-02-25T22:00:00+00:00",
-          "venue": {
-            "id": 265,
-            "name": "Estádio Governador João Castelo",
-            "city": "São Luís, Maranhão"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1740520800
-        },
-        "league": {
-          "id": 73,
-          "name": "Copa Do Brasil",
-          "logo": "https://media.api-sports.io/football/leagues/73.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7832,
-            "name": "Maranhão",
-            "logo": "https://media.api-sports.io/football/teams/7832.png",
-            "winner": false
-          },
-          "away": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2056,5 +1997,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:15.158Z"
+  "lastUpdated": "2025-04-03T19:23:08.550Z"
 }

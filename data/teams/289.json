@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1324025,
-          "date": "2025-04-02T10:00:00+00:00",
-          "venue": {
-            "id": 11579,
-            "name": "NHK Spring Mitsuzawa Football Stadium",
-            "city": "Yokohama"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743588000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 307,
-            "name": "Yokohama FC",
-            "logo": "https://media.api-sports.io/football/teams/307.png",
-            "winner": null
-          },
-          "away": {
-            "id": 289,
-            "name": "Vissel Kobe",
-            "logo": "https://media.api-sports.io/football/teams/289.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1324038,
           "date": "2025-04-06T05:00:00+00:00",
           "venue": {
@@ -1329,9 +1270,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1324250,
+          "date": "2025-08-20T10:00:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755684000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": null
+          },
+          "away": {
+            "id": 289,
+            "name": "Vissel Kobe",
+            "logo": "https://media.api-sports.io/football/teams/289.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1324025,
+          "date": "2025-04-02T10:00:00+00:00",
+          "venue": {
+            "id": 11579,
+            "name": "NHK Spring Mitsuzawa Football Stadium",
+            "city": "Yokohama"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 14
+          },
+          "timestamp": 1743588000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 307,
+            "name": "Yokohama FC",
+            "logo": "https://media.api-sports.io/football/teams/307.png",
+            "winner": false
+          },
+          "away": {
+            "id": 289,
+            "name": "Vissel Kobe",
+            "logo": "https://media.api-sports.io/football/teams/289.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1324013,
@@ -1397,8 +1456,8 @@
           "date": "2025-03-16T06:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Lemon Gas Stadium Hiratsuka",
-            "city": "Hiratsuka"
+            "name": "Shonan BMW Stadium Hiratsuka",
+            "city": "Kanagawa"
           },
           "status": {
             "long": "Match Finished",
@@ -1862,65 +1921,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1321678,
-          "date": "2025-02-08T04:35:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Japan National Stadium",
-            "city": "Tokyo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1738989300
-        },
-        "league": {
-          "id": 548,
-          "name": "Super Cup",
-          "logo": "https://media.api-sports.io/football/leagues/548.png"
-        },
-        "teams": {
-          "home": {
-            "id": 289,
-            "name": "Vissel Kobe",
-            "logo": "https://media.api-sports.io/football/teams/289.png",
-            "winner": false
-          },
-          "away": {
-            "id": 282,
-            "name": "Sanfrecce Hiroshima",
-            "logo": "https://media.api-sports.io/football/teams/282.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1938,17 +1938,17 @@
       "name": "Vissel Kobe",
       "logo": "https://media.api-sports.io/football/teams/289.png"
     },
-    "form": "DDDLWL",
+    "form": "DDDLWLW",
     "fixtures": {
       "played": {
         "home": 3,
-        "away": 3,
-        "total": 6
+        "away": 4,
+        "total": 7
       },
       "wins": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 2,
+        "total": 2
       },
       "draws": {
         "home": 2,
@@ -1965,13 +1965,13 @@
       "for": {
         "total": {
           "home": 1,
-          "away": 4,
-          "total": 5
+          "away": 5,
+          "total": 6
         },
         "average": {
           "home": "0.3",
           "away": "1.3",
-          "total": "0.8"
+          "total": "0.9"
         },
         "minute": {
           "0-15": {
@@ -1980,19 +1980,19 @@
           },
           "16-30": {
             "total": 1,
-            "percentage": "20.00%"
+            "percentage": "16.67%"
           },
           "31-45": {
             "total": 2,
-            "percentage": "40.00%"
+            "percentage": "33.33%"
           },
           "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": 2,
+            "percentage": "33.33%"
           },
           "76-90": {
             "total": null,
@@ -2000,7 +2000,7 @@
           },
           "91-105": {
             "total": 1,
-            "percentage": "20.00%"
+            "percentage": "16.67%"
           },
           "106-120": {
             "total": null,
@@ -2009,24 +2009,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 4,
             "under": 3
           },
           "1.5": {
             "over": 2,
-            "under": 4
+            "under": 5
           },
           "2.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       },
@@ -2038,8 +2038,8 @@
         },
         "average": {
           "home": "0.7",
-          "away": "1.3",
-          "total": "1.0"
+          "away": "1.0",
+          "total": "0.9"
         },
         "minute": {
           "0-15": {
@@ -2078,23 +2078,23 @@
         "under_over": {
           "0.5": {
             "over": 5,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 1,
-            "under": 5
+            "under": 6
           },
           "2.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       }
@@ -2126,8 +2126,8 @@
     },
     "clean_sheet": {
       "home": 1,
-      "away": 0,
-      "total": 1
+      "away": 1,
+      "total": 2
     },
     "failed_to_score": {
       "home": 2,
@@ -2148,7 +2148,7 @@
     "lineups": [
       {
         "formation": "4-3-3",
-        "played": 6
+        "played": 7
       }
     ],
     "cards": {
@@ -2222,5 +2222,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:58:38.211Z"
+  "lastUpdated": "2025-04-03T19:22:32.512Z"
 }

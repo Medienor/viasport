@@ -207,6 +207,65 @@
       },
       {
         "fixture": {
+          "id": 1367185,
+          "date": "2025-04-13T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744552800
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7044,
+            "name": "Verdal",
+            "logo": "https://media.api-sports.io/football/teams/7044.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2145,
+            "name": "Levanger",
+            "logo": "https://media.api-sports.io/football/teams/2145.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1343475,
           "date": "2025-04-21T15:00:00+00:00",
           "venue": {
@@ -1266,65 +1325,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1343600,
-          "date": "2025-09-20T14:00:00+00:00",
-          "venue": {
-            "id": 1952,
-            "name": "TOBB ARENA Levanger",
-            "city": "Levanger"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1758376800
-        },
-        "league": {
-          "id": 474,
-          "name": "2. Division - Group 2",
-          "logo": "https://media.api-sports.io/football/leagues/474.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2145,
-            "name": "Levanger",
-            "logo": "https://media.api-sports.io/football/teams/2145.png",
-            "winner": null
-          },
-          "away": {
-            "id": 7033,
-            "name": "Stjørdals-Blink",
-            "logo": "https://media.api-sports.io/football/teams/7033.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ],
     "past": [
@@ -2213,5 +2213,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:38.452Z"
+  "lastUpdated": "2025-04-03T19:16:22.404Z"
 }

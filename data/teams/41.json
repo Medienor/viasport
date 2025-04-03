@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208321,
-          "date": "2025-04-02T18:45:00+00:00",
-          "venue": {
-            "id": 585,
-            "name": "St. Mary's Stadium",
-            "city": "Southampton, Hampshire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743619500
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 41,
-            "name": "Southampton",
-            "logo": "https://media.api-sports.io/football/teams/41.png",
-            "winner": null
-          },
-          "away": {
-            "id": 52,
-            "name": "Crystal Palace",
-            "logo": "https://media.api-sports.io/football/teams/52.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208331,
           "date": "2025-04-06T13:00:00+00:00",
           "venue": {
@@ -683,6 +624,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208321,
+          "date": "2025-04-02T18:45:00+00:00",
+          "venue": {
+            "id": 585,
+            "name": "St. Mary's Stadium",
+            "city": "Southampton, Hampshire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743619500
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 41,
+            "name": "Southampton",
+            "logo": "https://media.api-sports.io/football/teams/41.png",
+            "winner": null
+          },
+          "away": {
+            "id": 52,
+            "name": "Crystal Palace",
+            "logo": "https://media.api-sports.io/football/teams/52.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208312,
@@ -1213,65 +1213,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208232,
-          "date": "2025-01-16T20:00:00+00:00",
-          "venue": {
-            "id": 556,
-            "name": "Old Trafford",
-            "city": "Manchester"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737057600
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 33,
-            "name": "Manchester United",
-            "logo": "https://media.api-sports.io/football/teams/33.png",
-            "winner": true
-          },
-          "away": {
-            "id": 41,
-            "name": "Southampton",
-            "logo": "https://media.api-sports.io/football/teams/41.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1568,5 +1509,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:48.725Z"
+  "lastUpdated": "2025-04-03T19:16:32.457Z"
 }

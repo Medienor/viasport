@@ -143,7 +143,8 @@
     2024
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1367253,
@@ -154,10 +155,10 @@
             "city": "Baghdād"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
           },
           "timestamp": 1743694200
         },
@@ -171,27 +172,27 @@
             "id": 8009,
             "name": "Al Quwa Al Jawiya",
             "logo": "https://media.api-sports.io/football/teams/8009.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 11072,
             "name": "Naft Al-Janoob",
             "logo": "https://media.api-sports.io/football/teams/11072.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 2,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 2,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -202,9 +203,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1366244,
@@ -735,65 +734,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1339882,
-          "date": "2025-01-25T14:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Al-Najaf International Stadium",
-            "city": "Najaf"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1737813600
-        },
-        "league": {
-          "id": 542,
-          "name": "Iraqi League",
-          "logo": "https://media.api-sports.io/football/leagues/542.png"
-        },
-        "teams": {
-          "home": {
-            "id": 11066,
-            "name": "Al Najaf",
-            "logo": "https://media.api-sports.io/football/teams/11066.png",
-            "winner": true
-          },
-          "away": {
-            "id": 8009,
-            "name": "Al Quwa Al Jawiya",
-            "logo": "https://media.api-sports.io/football/teams/8009.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1090,5 +1030,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:04.687Z"
+  "lastUpdated": "2025-04-03T19:22:58.215Z"
 }

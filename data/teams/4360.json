@@ -258,12 +258,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360328,
-          "date": "2025-04-02T17:00:00+00:00",
+          "id": 1220733,
+          "date": "2025-04-06T15:30:00+00:00",
           "venue": {
-            "id": 1441,
-            "name": "Ljudski vrt",
-            "city": "Maribor"
+            "id": 1442,
+            "name": "Stadion Stožice",
+            "city": "Ljubljana"
           },
           "status": {
             "long": "Not Started",
@@ -271,18 +271,18 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743613200
+          "timestamp": 1743953400
         },
         "league": {
-          "id": 375,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/375.png"
+          "id": 373,
+          "name": "1. SNL",
+          "logo": "https://media.api-sports.io/football/leagues/373.png"
         },
         "teams": {
           "home": {
-            "id": 552,
-            "name": "Maribor",
-            "logo": "https://media.api-sports.io/football/teams/552.png",
+            "id": 4359,
+            "name": "Bravo",
+            "logo": "https://media.api-sports.io/football/teams/4359.png",
             "winner": null
           },
           "away": {
@@ -317,12 +317,12 @@
       },
       {
         "fixture": {
-          "id": 1220733,
-          "date": "2025-04-06T15:30:00+00:00",
+          "id": 1220742,
+          "date": "2025-04-09T15:00:00+00:00",
           "venue": {
-            "id": 1442,
-            "name": "Stadion Stožice",
-            "city": "Ljubljana"
+            "id": 1441,
+            "name": "Ljudski vrt",
+            "city": "Maribor"
           },
           "status": {
             "long": "Not Started",
@@ -330,7 +330,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743953400
+          "timestamp": 1744210800
         },
         "league": {
           "id": 373,
@@ -339,9 +339,9 @@
         },
         "teams": {
           "home": {
-            "id": 4359,
-            "name": "Bravo",
-            "logo": "https://media.api-sports.io/football/teams/4359.png",
+            "id": 552,
+            "name": "Maribor",
+            "logo": "https://media.api-sports.io/football/teams/552.png",
             "winner": null
           },
           "away": {
@@ -436,7 +436,7 @@
       {
         "fixture": {
           "id": 1220744,
-          "date": "2025-04-11T22:00:00+00:00",
+          "date": "2025-04-13T15:30:00+00:00",
           "venue": {
             "id": 3332,
             "name": "Stadion Z'dežele",
@@ -448,7 +448,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744408800
+          "timestamp": 1744558200
         },
         "league": {
           "id": 373,
@@ -612,6 +612,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360328,
+          "date": "2025-04-02T17:00:00+00:00",
+          "venue": {
+            "id": 1441,
+            "name": "Ljudski vrt",
+            "city": "Maribor"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743613200
+        },
+        "league": {
+          "id": 375,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/375.png"
+        },
+        "teams": {
+          "home": {
+            "id": 552,
+            "name": "Maribor",
+            "logo": "https://media.api-sports.io/football/teams/552.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4360,
+            "name": "Celje",
+            "logo": "https://media.api-sports.io/football/teams/4360.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220732,
@@ -1142,65 +1201,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1325900,
-          "date": "2025-02-13T17:45:00+00:00",
-          "venue": {
-            "id": 3332,
-            "name": "Stadion Z'dežele",
-            "city": "Celje"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739468700
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4360,
-            "name": "Celje",
-            "logo": "https://media.api-sports.io/football/teams/4360.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2247,
-            "name": "Apoel Nicosia",
-            "logo": "https://media.api-sports.io/football/teams/2247.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1497,5 +1497,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:55:12.906Z"
+  "lastUpdated": "2025-04-03T19:19:07.442Z"
 }

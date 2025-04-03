@@ -261,65 +261,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362093,
-          "date": "2025-04-01T22:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estadio Víctor Agustín Ugarte de Potosí",
-            "city": "Potosí"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743544800
-        },
-        "league": {
-          "id": 11,
-          "name": "CONMEBOL Sudamericana",
-          "logo": "https://media.api-sports.io/football/leagues/11.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3706,
-            "name": "Nacional Potosí",
-            "logo": "https://media.api-sports.io/football/teams/3706.png",
-            "winner": null
-          },
-          "away": {
-            "id": 453,
-            "name": "Independiente",
-            "logo": "https://media.api-sports.io/football/teams/453.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334449,
           "date": "2025-04-06T18:30:00+00:00",
           "venue": {
@@ -792,6 +733,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362093,
+          "date": "2025-04-01T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Victor Agustín Ugarte",
+            "city": "Potosi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743544800
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3706,
+            "name": "Nacional Potosí",
+            "logo": "https://media.api-sports.io/football/teams/3706.png",
+            "winner": true
+          },
+          "away": {
+            "id": 453,
+            "name": "Independiente",
+            "logo": "https://media.api-sports.io/football/teams/453.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334440,
@@ -1322,65 +1322,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334331,
-          "date": "2025-02-08T23:15:00+00:00",
-          "venue": {
-            "id": 19570,
-            "name": "Estadio Mâs Monumental",
-            "city": "Capital Federal, Ciudad de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1739056500
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 435,
-            "name": "River Plate",
-            "logo": "https://media.api-sports.io/football/teams/435.png",
-            "winner": true
-          },
-          "away": {
-            "id": 453,
-            "name": "Independiente",
-            "logo": "https://media.api-sports.io/football/teams/453.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1677,5 +1618,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:54:37.094Z"
+  "lastUpdated": "2025-04-03T19:18:31.591Z"
 }

@@ -190,65 +190,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208317,
-          "date": "2025-04-01T18:45:00+00:00",
-          "venue": {
-            "id": 600,
-            "name": "Molineux Stadium",
-            "city": "Wolverhampton, West Midlands"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743533100
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 39,
-            "name": "Wolves",
-            "logo": "https://media.api-sports.io/football/teams/39.png",
-            "winner": null
-          },
-          "away": {
-            "id": 48,
-            "name": "West Ham",
-            "logo": "https://media.api-sports.io/football/teams/48.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208328,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -721,6 +662,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208317,
+          "date": "2025-04-01T18:45:00+00:00",
+          "venue": {
+            "id": 600,
+            "name": "Molineux Stadium",
+            "city": "Wolverhampton, West Midlands"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743533100
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 39,
+            "name": "Wolves",
+            "logo": "https://media.api-sports.io/football/teams/39.png",
+            "winner": true
+          },
+          "away": {
+            "id": 48,
+            "name": "West Ham",
+            "logo": "https://media.api-sports.io/football/teams/48.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208312,
@@ -1251,65 +1251,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208231,
-          "date": "2025-01-15T19:30:00+00:00",
-          "venue": {
-            "id": 562,
-            "name": "St. James' Park",
-            "city": "Newcastle upon Tyne"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1736969400
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 34,
-            "name": "Newcastle",
-            "logo": "https://media.api-sports.io/football/teams/34.png",
-            "winner": true
-          },
-          "away": {
-            "id": 39,
-            "name": "Wolves",
-            "logo": "https://media.api-sports.io/football/teams/39.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1606,5 +1547,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:48.732Z"
+  "lastUpdated": "2025-04-03T19:16:32.476Z"
 }

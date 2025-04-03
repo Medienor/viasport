@@ -115,65 +115,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1324024,
-          "date": "2025-04-02T10:00:00+00:00",
-          "venue": {
-            "id": 20516,
-            "name": "Uvance Todoroki Stadium by Fujitsu",
-            "city": "Kawasaki"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743588000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 294,
-            "name": "Kawasaki Frontale",
-            "logo": "https://media.api-sports.io/football/teams/294.png",
-            "winner": null
-          },
-          "away": {
-            "id": 284,
-            "name": "Shonan Bellmare",
-            "logo": "https://media.api-sports.io/football/teams/284.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1324037,
           "date": "2025-04-06T06:00:00+00:00",
           "venue": {
@@ -1292,9 +1233,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1324220,
+          "date": "2025-08-23T10:00:00+00:00",
+          "venue": {
+            "id": 957,
+            "name": "City Light Stadium",
+            "city": "Okayama"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755943200
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 310,
+            "name": "Fagiano Okayama",
+            "logo": "https://media.api-sports.io/football/teams/310.png",
+            "winner": null
+          },
+          "away": {
+            "id": 284,
+            "name": "Shonan Bellmare",
+            "logo": "https://media.api-sports.io/football/teams/284.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1324024,
+          "date": "2025-04-02T10:00:00+00:00",
+          "venue": {
+            "id": 20516,
+            "name": "Uvance Todoroki Stadium by Fujitsu",
+            "city": "Kawasaki"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743588000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 294,
+            "name": "Kawasaki Frontale",
+            "logo": "https://media.api-sports.io/football/teams/294.png",
+            "winner": true
+          },
+          "away": {
+            "id": 284,
+            "name": "Shonan Bellmare",
+            "logo": "https://media.api-sports.io/football/teams/284.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1324017,
@@ -1419,8 +1478,8 @@
           "date": "2025-03-16T06:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Lemon Gas Stadium Hiratsuka",
-            "city": "Hiratsuka"
+            "name": "Shonan BMW Stadium Hiratsuka",
+            "city": "Kanagawa"
           },
           "status": {
             "long": "Match Finished",
@@ -1596,8 +1655,8 @@
           "date": "2025-02-26T10:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Lemon Gas Stadium Hiratsuka",
-            "city": "Hiratsuka"
+            "name": "Shonan BMW Stadium Hiratsuka",
+            "city": "Kanagawa"
           },
           "status": {
             "long": "Match Finished",
@@ -1714,8 +1773,8 @@
           "date": "2025-02-15T06:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Lemon Gas Stadium Hiratsuka",
-            "city": "Hiratsuka"
+            "name": "Shonan BMW Stadium Hiratsuka",
+            "city": "Kanagawa"
           },
           "status": {
             "long": "Match Finished",
@@ -1825,65 +1884,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1166496,
-          "date": "2024-11-30T05:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Lemon Gas Stadium Hiratsuka",
-            "city": "Hiratsuka"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1732942800
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 284,
-            "name": "Shonan Bellmare",
-            "logo": "https://media.api-sports.io/football/teams/284.png",
-            "winner": false
-          },
-          "away": {
-            "id": 296,
-            "name": "Yokohama F. Marinos",
-            "logo": "https://media.api-sports.io/football/teams/296.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1901,12 +1901,12 @@
       "name": "Shonan Bellmare",
       "logo": "https://media.api-sports.io/football/teams/284.png"
     },
-    "form": "WWWDDLL",
+    "form": "WWWDDLLL",
     "fixtures": {
       "played": {
         "home": 3,
-        "away": 4,
-        "total": 7
+        "away": 5,
+        "total": 8
       },
       "wins": {
         "home": 2,
@@ -1920,8 +1920,8 @@
       },
       "loses": {
         "home": 1,
-        "away": 1,
-        "total": 2
+        "away": 2,
+        "total": 3
       }
     },
     "goals": {
@@ -1933,8 +1933,8 @@
         },
         "average": {
           "home": "1.3",
-          "away": "0.8",
-          "total": "1.0"
+          "away": "0.6",
+          "total": "0.9"
         },
         "minute": {
           "0-15": {
@@ -1973,57 +1973,57 @@
         "under_over": {
           "0.5": {
             "over": 5,
-            "under": 2
+            "under": 3
           },
           "1.5": {
             "over": 2,
-            "under": 5
+            "under": 6
           },
           "2.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           },
           "3.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           },
           "4.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           }
         }
       },
       "against": {
         "total": {
           "home": 3,
-          "away": 5,
-          "total": 8
+          "away": 7,
+          "total": 10
         },
         "average": {
           "home": "1.0",
-          "away": "1.3",
-          "total": "1.1"
+          "away": "1.4",
+          "total": "1.3"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "12.50%"
           },
           "16-30": {
             "total": 2,
-            "percentage": "28.57%"
+            "percentage": "25.00%"
           },
           "31-45": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "12.50%"
           },
           "46-60": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": 2,
+            "percentage": "25.00%"
           },
           "61-75": {
             "total": 2,
-            "percentage": "28.57%"
+            "percentage": "25.00%"
           },
           "76-90": {
             "total": null,
@@ -2040,24 +2040,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 6,
             "under": 2
           },
           "1.5": {
-            "over": 2,
+            "over": 3,
             "under": 5
           },
           "2.5": {
             "over": 1,
-            "under": 6
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           },
           "4.5": {
             "over": 0,
-            "under": 7
+            "under": 8
           }
         }
       }
@@ -2094,8 +2094,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 2,
-      "total": 2
+      "away": 3,
+      "total": 3
     },
     "penalty": {
       "scored": {
@@ -2112,29 +2112,33 @@
       {
         "formation": "3-1-4-2",
         "played": 7
+      },
+      {
+        "formation": "5-3-2",
+        "played": 1
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
           "total": 1,
-          "percentage": "16.67%"
+          "percentage": "12.50%"
         },
         "16-30": {
-          "total": 1,
-          "percentage": "16.67%"
+          "total": 2,
+          "percentage": "25.00%"
         },
         "31-45": {
           "total": 1,
-          "percentage": "16.67%"
+          "percentage": "12.50%"
         },
         "46-60": {
           "total": 2,
-          "percentage": "33.33%"
+          "percentage": "25.00%"
         },
         "61-75": {
-          "total": 1,
-          "percentage": "16.67%"
+          "total": 2,
+          "percentage": "25.00%"
         },
         "76-90": {
           "total": null,
@@ -2185,5 +2189,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:38.386Z"
+  "lastUpdated": "2025-04-03T19:23:32.015Z"
 }

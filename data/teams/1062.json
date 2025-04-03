@@ -228,65 +228,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362107,
-          "date": "2025-04-02T00:30:00+00:00",
-          "venue": {
-            "id": 1233,
-            "name": "Estadio Inca Garcilaso de la Vega",
-            "city": "Cusco"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743553800
-        },
-        "league": {
-          "id": 11,
-          "name": "CONMEBOL Sudamericana",
-          "logo": "https://media.api-sports.io/football/leagues/11.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2562,
-            "name": "Cienciano",
-            "logo": "https://media.api-sports.io/football/teams/2562.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1062,
-            "name": "Atletico-MG",
-            "logo": "https://media.api-sports.io/football/teams/1062.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1351058,
           "date": "2025-04-06T19:00:00+00:00",
           "venue": {
@@ -349,8 +290,8 @@
           "id": 1362123,
           "date": "2025-04-11T00:30:00+00:00",
           "venue": {
-            "id": 21427,
-            "name": "Arena MRV",
+            "id": 234,
+            "name": "Estádio Governador Magalhães Pinto",
             "city": "Belo Horizonte, Minas Gerais"
           },
           "status": {
@@ -1233,6 +1174,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362107,
+          "date": "2025-04-02T00:30:00+00:00",
+          "venue": {
+            "id": 1233,
+            "name": "Estadio Inca Garcilaso de la Vega",
+            "city": "Cusco"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743553800
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2562,
+            "name": "Cienciano",
+            "logo": "https://media.api-sports.io/football/teams/2562.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1062,
+            "name": "Atletico-MG",
+            "logo": "https://media.api-sports.io/football/teams/1062.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351049,
           "date": "2025-03-29T21:30:00+00:00",
           "venue": {
@@ -1761,65 +1761,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1320749,
-          "date": "2025-02-05T00:30:00+00:00",
-          "venue": {
-            "id": 234,
-            "name": "Estádio Governador Magalhães Pinto",
-            "city": "Belo Horizonte, Minas Gerais"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1738715400
-        },
-        "league": {
-          "id": 629,
-          "name": "Mineiro - 1",
-          "logo": "https://media.api-sports.io/football/leagues/629.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1062,
-            "name": "Atletico-MG",
-            "logo": "https://media.api-sports.io/football/teams/1062.png",
-            "winner": true
-          },
-          "away": {
-            "id": 13975,
-            "name": "Athletic Club",
-            "logo": "https://media.api-sports.io/football/teams/13975.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2116,5 +2057,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:59:17.615Z"
+  "lastUpdated": "2025-04-03T19:23:11.262Z"
 }

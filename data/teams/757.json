@@ -78,7 +78,7 @@
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": false,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -173,6 +173,65 @@
             "id": 758,
             "name": "Sogndal",
             "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": null
+          },
+          "away": {
+            "id": 757,
+            "name": "Aalesund",
+            "logo": "https://media.api-sports.io/football/teams/757.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1367233,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Fjordlaks Arena Kunstgress",
+            "city": "Ålesund"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25917,
+            "name": "Rollon",
+            "logo": "https://media.api-sports.io/football/teams/25917.png",
             "winner": null
           },
           "away": {
@@ -1623,5 +1682,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:35.935Z"
+  "lastUpdated": "2025-04-03T19:16:19.869Z"
 }

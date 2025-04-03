@@ -207,6 +207,65 @@
       },
       {
         "fixture": {
+          "id": 1367199,
+          "date": "2025-04-13T14:00:00+00:00",
+          "venue": {
+            "id": 5156,
+            "name": "Lassa idrettspark",
+            "city": "Stavanger"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744552800
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7046,
+            "name": "Vidar",
+            "logo": "https://media.api-sports.io/football/teams/7046.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2146,
+            "name": "Sandnes ULF",
+            "logo": "https://media.api-sports.io/football/teams/2146.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1343292,
           "date": "2025-04-21T11:00:00+00:00",
           "venue": {
@@ -1266,65 +1325,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1343422,
-          "date": "2025-09-20T14:00:00+00:00",
-          "venue": {
-            "id": 18639,
-            "name": "Cemo Arena Flekkerøy",
-            "city": "Kristiansand"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1758376800
-        },
-        "league": {
-          "id": 473,
-          "name": "2. Division - Group 1",
-          "logo": "https://media.api-sports.io/football/leagues/473.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6982,
-            "name": "Flekkerøy",
-            "logo": "https://media.api-sports.io/football/teams/6982.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2146,
-            "name": "Sandnes ULF",
-            "logo": "https://media.api-sports.io/football/teams/2146.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ],
     "past": [
@@ -2213,5 +2213,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-01T14:52:38.504Z"
+  "lastUpdated": "2025-04-03T19:16:22.445Z"
 }

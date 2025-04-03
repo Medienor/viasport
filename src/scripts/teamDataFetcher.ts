@@ -36,10 +36,11 @@ export const MAJOR_LEAGUES = [
   { id: 61, name: 'Ligue 1' },
 
   // Other Major European Leagues
+  { id: 203, name: 'Süper Lig' }, // Turkey
   { id: 94, name: 'Primeira Liga' }, // Portugal
   { id: 106, name: 'Ekstraklasa' }, // Poland
   { id: 88, name: 'Eredivisie' }, // Netherlands
-  { id: 144, name: 'Allsvenskan' }, // Sweden
+  { id: 113, name: 'Allsvenskan' }, // Sweden
   { id: 40, name: 'Championship' }, // English Second Tier
   { id: 179, name: 'Superliga' }, // Denmark
   { id: 128, name: 'Veikkausliiga' }, // Finland
