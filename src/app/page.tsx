@@ -5,7 +5,7 @@ import LiveNowWrapper from './components/LiveNowWrapper';
 import FixturesSection from './components/FixturesSection';
 
 // Set page-level revalidation time (24 hours = 86400 seconds)
-export const revalidate = 86400;
+export const revalidate = 3600;
 
 export default function Home() {
   return (

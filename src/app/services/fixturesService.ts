@@ -9,19 +9,29 @@ function logDisabledCall<T>(functionName: string, ...args: any[]): T {
   return (functionName === 'fetchFixtureById' ? null : []) as T;
 }
 
+// Add this helper function at the top of the file
+function getNorwegianDate(date?: Date): Date {
+  const now = date || new Date();
+  return new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Oslo' }));
+}
+
 /**
  * Fetch fixtures by date
  * @param date Date in YYYY-MM-DD format
  * @returns Array of fixtures for the specified date
  */
 export async function fetchFixturesByDate(date: string): Promise<Fixture[]> {
+  // Ensure the date is in Norwegian timezone
+  const norwegianDate = getNorwegianDate(new Date(date));
+  const formattedDate = norwegianDate.toISOString().split('T')[0];
+
   // Skip API call if disabled
   if (DISABLE_API_CALLS) {
-    return logDisabledCall<Fixture[]>('fetchFixturesByDate', { date });
+    return logDisabledCall<Fixture[]>('fetchFixturesByDate', { date: formattedDate });
   }
 
   try {
-    const response = await fetch(`${BASE_URL}/fixtures?date=${date}`, {
+    const response = await fetch(`${BASE_URL}/fixtures?date=${formattedDate}`, {
       headers
     });
     
@@ -32,13 +42,13 @@ export async function fetchFixturesByDate(date: string): Promise<Fixture[]> {
     const data = await response.json();
     
     if (data.errors && Object.keys(data.errors).length > 0) {
-      console.error(`API Error for fixtures on ${date}:`, data.errors);
+      console.error(`API Error for fixtures on ${formattedDate}:`, data.errors);
       return [];
     }
     
     return data.response;
   } catch (error) {
-    console.error(`Error fetching fixtures for date ${date}:`, error);
+    console.error(`Error fetching fixtures for date ${formattedDate}:`, error);
     return [];
   }
 }

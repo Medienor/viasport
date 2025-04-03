@@ -22,6 +22,16 @@ const weekdayToUrl: { [key: string]: string } = {
   'søndag': 'sondag'
 };
 
+function formatNorwegianDate(date: Date): string {
+  return date.toLocaleDateString('no-NO', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'Europe/Oslo'
+  });
+}
+
 export default function ClientFixturesSection({
   fixtures,
   formattedDates,
@@ -67,9 +77,11 @@ export default function ClientFixturesSection({
     
     let title = '';
     if (dateKey === 'today') {
-      title = `Kommende kamper i dag, ${dateString}`;
+      title = `Kommende kamper i dag, ${formatNorwegianDate(new Date())}`;
     } else if (dateKey === 'day1') {
-      title = `Kommende kamper i morgen, ${dateString}`;
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      title = `Kommende kamper i morgen, ${formatNorwegianDate(tomorrow)}`;
     } else {
       title = `Kommende kamper ${dateString}`;
     }

@@ -1,13 +1,12 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-04-02T21:58:08.576Z
+// Last updated: 2025-04-03T12:00:26.638Z
 
 export const calendarData = {
-  "2025-03-26": [],
   "2025-03-27": [
     {
       "fixture": {
         "id": 1208729,
-        "referee": "Busquets Ferrer, Mateo, Spain",
+        "referee": "Mateo Busquets",
         "timezone": "UTC",
         "date": "2025-03-27T20:00:00+00:00",
         "timestamp": 1743105600,
@@ -151,7 +150,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208751,
-        "referee": "Adrian Cordero Vega, Spain",
+        "referee": "Adrián Cordero",
         "timezone": "UTC",
         "date": "2025-03-29T13:00:00+00:00",
         "timestamp": 1743253200,
@@ -221,7 +220,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223886,
-        "referee": "Maurizio Mariani, Italy",
+        "referee": "M. Mariani",
         "timezone": "UTC",
         "date": "2025-03-29T14:00:00+00:00",
         "timestamp": 1743256800,
@@ -291,7 +290,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223894,
-        "referee": "Marco Di Bello, Italy",
+        "referee": "M. Di Bello",
         "timezone": "UTC",
         "date": "2025-03-29T14:00:00+00:00",
         "timestamp": 1743256800,
@@ -301,8 +300,8 @@ export const calendarData = {
         },
         "venue": {
           "id": null,
-          "name": "Stadio Pierluigi Penzo",
-          "city": "Venice"
+          "name": "Stadio Pier Luigi Penzo",
+          "city": "Venezia"
         },
         "status": {
           "long": "Match Finished",
@@ -711,7 +710,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1212938,
-        "referee": "Javier Alberola Rojas, Spain",
+        "referee": "Javier Alberola",
         "timezone": "UTC",
         "date": "2025-03-29T15:15:00+00:00",
         "timestamp": 1743261300,
@@ -781,7 +780,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223890,
-        "referee": "Antonio Rapuano, Italy",
+        "referee": "A. Rapuano",
         "timezone": "UTC",
         "date": "2025-03-29T17:00:00+00:00",
         "timestamp": 1743267600,
@@ -851,7 +850,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208752,
-        "referee": "José Luis Munuera Montero, Spain",
+        "referee": "José Munuera",
         "timezone": "UTC",
         "date": "2025-03-29T17:30:00+00:00",
         "timestamp": 1743269400,
@@ -991,7 +990,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223892,
-        "referee": "Gianluca Manganiello, Italy",
+        "referee": "G. Manganiello",
         "timezone": "UTC",
         "date": "2025-03-29T19:45:00+00:00",
         "timestamp": 1743277500,
@@ -1001,7 +1000,7 @@ export const calendarData = {
         },
         "venue": {
           "id": null,
-          "name": "Via del Mare",
+          "name": "Stadio Ettore Giardiniero - Via del Mare",
           "city": "Lecce"
         },
         "status": {
@@ -1061,7 +1060,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208754,
-        "referee": "Pablo Gonzalez Fuertes, Spain",
+        "referee": "Pablo González",
         "timezone": "UTC",
         "date": "2025-03-29T20:00:00+00:00",
         "timestamp": 1743278400,
@@ -1133,7 +1132,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223885,
-        "referee": "Francesco Fourneau, Italy",
+        "referee": "F. Fourneau",
         "timezone": "UTC",
         "date": "2025-03-30T10:30:00+00:00",
         "timestamp": 1743330600,
@@ -1203,7 +1202,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208750,
-        "referee": "Isidro Diaz de Mera Escuderos, Spain",
+        "referee": "Isidro Díaz de Mera",
         "timezone": "UTC",
         "date": "2025-03-30T12:00:00+00:00",
         "timestamp": 1743336000,
@@ -1273,7 +1272,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223887,
-        "referee": "Doveri, Daniele, Italy",
+        "referee": "D. Doveri",
         "timezone": "UTC",
         "date": "2025-03-30T13:00:00+00:00",
         "timestamp": 1743339600,
@@ -1413,7 +1412,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208747,
-        "referee": "Pulido Santana, Juan Luis, Spain",
+        "referee": "Juan Pulido",
         "timezone": "UTC",
         "date": "2025-03-30T14:15:00+00:00",
         "timestamp": 1743344100,
@@ -1553,7 +1552,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223889,
-        "referee": "Chiffi, Daniele, Italy",
+        "referee": "D. Chiffi",
         "timezone": "UTC",
         "date": "2025-03-30T16:00:00+00:00",
         "timestamp": 1743350400,
@@ -1623,7 +1622,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208746,
-        "referee": "Guillermo Cuadra Fernandez, Spain",
+        "referee": "Guillermo Cuadra",
         "timezone": "UTC",
         "date": "2025-03-30T16:30:00+00:00",
         "timestamp": 1743352200,
@@ -1693,7 +1692,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208753,
-        "referee": "Francisco Hernandez Maeso, Spain",
+        "referee": "Francisco Hernández",
         "timezone": "UTC",
         "date": "2025-03-30T16:30:00+00:00",
         "timestamp": 1743352200,
@@ -1763,7 +1762,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223893,
-        "referee": "Simone Sozza, Italy",
+        "referee": "S. Sozza",
         "timezone": "UTC",
         "date": "2025-03-30T18:45:00+00:00",
         "timestamp": 1743360300,
@@ -1833,7 +1832,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208748,
-        "referee": "Busquets Ferrer, Mateo, Spain",
+        "referee": "Mateo Busquets",
         "timezone": "UTC",
         "date": "2025-03-30T19:00:00+00:00",
         "timestamp": 1743361200,
@@ -1905,7 +1904,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223888,
-        "referee": "Juan Luca Sacchi, Italy",
+        "referee": "J. Sacchi",
         "timezone": "UTC",
         "date": "2025-03-31T16:30:00+00:00",
         "timestamp": 1743438600,
@@ -1975,7 +1974,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1223891,
-        "referee": "Massa, Davide, Italy",
+        "referee": "D. Massa",
         "timezone": "UTC",
         "date": "2025-03-31T18:45:00+00:00",
         "timestamp": 1743446700,
@@ -2045,7 +2044,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1208749,
-        "referee": "Juan Martinez Munuera, Spain",
+        "referee": "Juan Martínez",
         "timezone": "UTC",
         "date": "2025-03-31T19:00:00+00:00",
         "timestamp": 1743447600,
@@ -2055,7 +2054,7 @@ export const calendarData = {
         },
         "venue": {
           "id": null,
-          "name": "Municipal de Balaidos",
+          "name": "Estadio Abanca-Balaídos",
           "city": "Vigo"
         },
         "status": {
@@ -5840,5 +5839,6 @@ export const calendarData = {
         }
       }
     }
-  ]
+  ],
+  "2025-04-10": []
 };
