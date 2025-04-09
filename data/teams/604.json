@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -259,65 +259,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1360217,
-          "date": "2025-04-05T17:00:00+00:00",
-          "venue": {
-            "id": 10592,
-            "name": "Bloomfield Stadium",
-            "city": "Tel-Aviv"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743872400
-        },
-        "league": {
-          "id": 383,
-          "name": "Ligat Ha'al",
-          "logo": "https://media.api-sports.io/football/leagues/383.png"
-        },
-        "teams": {
-          "home": {
-            "id": 604,
-            "name": "Maccabi Tel Aviv",
-            "logo": "https://media.api-sports.io/football/teams/604.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4505,
-            "name": "Maccabi Netanya",
-            "logo": "https://media.api-sports.io/football/teams/4505.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1360220,
@@ -556,6 +497,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360217,
+          "date": "2025-04-05T17:00:00+00:00",
+          "venue": {
+            "id": 10592,
+            "name": "Bloomfield Stadium",
+            "city": "Tel-Aviv"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743872400
+        },
+        "league": {
+          "id": 383,
+          "name": "Ligat Ha'al",
+          "logo": "https://media.api-sports.io/football/leagues/383.png"
+        },
+        "teams": {
+          "home": {
+            "id": 604,
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media.api-sports.io/football/teams/604.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4505,
+            "name": "Maccabi Netanya",
+            "logo": "https://media.api-sports.io/football/teams/4505.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360214,
@@ -1086,65 +1086,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1215021,
-          "date": "2025-01-27T18:30:00+00:00",
-          "venue": {
-            "id": 868,
-            "name": "Sammy Ofer Stadium",
-            "city": "Haifa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 18
-          },
-          "timestamp": 1738002600
-        },
-        "league": {
-          "id": 383,
-          "name": "Ligat Ha'al",
-          "logo": "https://media.api-sports.io/football/leagues/383.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4195,
-            "name": "Maccabi Haifa",
-            "logo": "https://media.api-sports.io/football/teams/4195.png",
-            "winner": null
-          },
-          "away": {
-            "id": 604,
-            "name": "Maccabi Tel Aviv",
-            "logo": "https://media.api-sports.io/football/teams/604.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1441,5 +1382,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:52.101Z"
+  "lastUpdated": "2025-04-07T12:47:59.184Z"
 }

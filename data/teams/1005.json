@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-09-10",
-          "end": "2025-04-01",
+          "end": "2025-04-21",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -113,65 +113,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1238115,
-          "date": "2025-04-05T16:00:00+00:00",
-          "venue": {
-            "id": 19220,
-            "name": "Corendon Airlines Park",
-            "city": "Antalya"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743868800
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1005,
-            "name": "Antalyaspor",
-            "logo": "https://media.api-sports.io/football/teams/1005.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3603,
-            "name": "Samsunspor",
-            "logo": "https://media.api-sports.io/football/teams/3603.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1238127,
@@ -233,6 +174,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238115,
+          "date": "2025-04-05T16:00:00+00:00",
+          "venue": {
+            "id": 19220,
+            "name": "Corendon Airlines Park",
+            "city": "Antalya"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743868800
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1005,
+            "name": "Antalyaspor",
+            "logo": "https://media.api-sports.io/football/teams/1005.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3603,
+            "name": "Samsunspor",
+            "logo": "https://media.api-sports.io/football/teams/3603.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238103,
@@ -298,8 +298,8 @@
           "date": "2025-03-14T17:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "RAMS Park",
-            "city": "İstanbul"
+            "name": "Rams Park Stadyumu",
+            "city": "Istanbul"
           },
           "status": {
             "long": "Match Finished",
@@ -763,65 +763,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1238045,
-          "date": "2025-02-01T10:30:00+00:00",
-          "venue": {
-            "id": 8392,
-            "name": "Mersin Stadyumu",
-            "city": "Mersin"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738405800
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3575,
-            "name": "Hatayspor",
-            "logo": "https://media.api-sports.io/football/teams/3575.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1005,
-            "name": "Antalyaspor",
-            "logo": "https://media.api-sports.io/football/teams/1005.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1118,5 +1059,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:24.038Z"
+  "lastUpdated": "2025-04-07T12:46:31.663Z"
 }

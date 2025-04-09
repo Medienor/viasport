@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-09-10",
-          "end": "2025-04-01",
+          "end": "2025-04-21",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -113,65 +113,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1238115,
-          "date": "2025-04-05T16:00:00+00:00",
-          "venue": {
-            "id": 19220,
-            "name": "Corendon Airlines Park",
-            "city": "Antalya"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743868800
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1005,
-            "name": "Antalyaspor",
-            "logo": "https://media.api-sports.io/football/teams/1005.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3603,
-            "name": "Samsunspor",
-            "logo": "https://media.api-sports.io/football/teams/3603.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1238123,
@@ -292,6 +233,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238115,
+          "date": "2025-04-05T16:00:00+00:00",
+          "venue": {
+            "id": 19220,
+            "name": "Corendon Airlines Park",
+            "city": "Antalya"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743868800
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1005,
+            "name": "Antalyaspor",
+            "logo": "https://media.api-sports.io/football/teams/1005.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3603,
+            "name": "Samsunspor",
+            "logo": "https://media.api-sports.io/football/teams/3603.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238107,
@@ -593,7 +593,7 @@
           "date": "2025-02-16T13:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Medaş Konya Büyükşehir Stadyumu",
+            "name": "Medas Konya Büyüksehir Belediyesi Stadium",
             "city": "Konya"
           },
           "status": {
@@ -812,65 +812,6 @@
           "fulltime": {
             "home": 2,
             "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1238028,
-          "date": "2025-01-18T16:00:00+00:00",
-          "venue": {
-            "id": 20423,
-            "name": "Tüpraş Stadyumu",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737216000
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 549,
-            "name": "Besiktas",
-            "logo": "https://media.api-sports.io/football/teams/549.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3603,
-            "name": "Samsunspor",
-            "logo": "https://media.api-sports.io/football/teams/3603.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
           },
           "extratime": {
             "home": null,
@@ -1177,5 +1118,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:29.134Z"
+  "lastUpdated": "2025-04-07T12:46:36.698Z"
 }

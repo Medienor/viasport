@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220297,
-          "date": "2025-04-06T13:30:00+00:00",
-          "venue": {
-            "id": 1393,
-            "name": "Tynecastle Park",
-            "city": "Edinburgh"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743946200
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 254,
-            "name": "Heart Of Midlothian",
-            "logo": "https://media.api-sports.io/football/teams/254.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1386,
-            "name": "Dundee Utd",
-            "logo": "https://media.api-sports.io/football/teams/1386.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220304,
           "date": "2025-04-12T14:00:00+00:00",
           "venue": {
@@ -271,6 +212,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220297,
+          "date": "2025-04-06T13:30:00+00:00",
+          "venue": {
+            "id": 1393,
+            "name": "Tynecastle Park",
+            "city": "Edinburgh"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743946200
+        },
+        "league": {
+          "id": 179,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/179.png"
+        },
+        "teams": {
+          "home": {
+            "id": 254,
+            "name": "Heart Of Midlothian",
+            "logo": "https://media.api-sports.io/football/teams/254.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1386,
+            "name": "Dundee Utd",
+            "logo": "https://media.api-sports.io/football/teams/1386.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220294,
@@ -801,65 +801,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220247,
-          "date": "2025-01-11T15:00:00+00:00",
-          "venue": {
-            "id": 11913,
-            "name": "The SMISA Stadium",
-            "city": "Paisley"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1736607600
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 251,
-            "name": "ST Mirren",
-            "logo": "https://media.api-sports.io/football/teams/251.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1386,
-            "name": "Dundee Utd",
-            "logo": "https://media.api-sports.io/football/teams/1386.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1156,5 +1097,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:23.636Z"
+  "lastUpdated": "2025-04-07T12:47:30.952Z"
 }

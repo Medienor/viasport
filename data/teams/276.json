@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -188,7 +188,7 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
+              "events": true,
               "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -258,65 +258,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1332710,
-          "date": "2025-04-05T19:15:00+00:00",
-          "venue": {
-            "id": 820,
-            "name": "Kópavogsvöllur",
-            "city": "Kópavogur"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743880500
-        },
-        "league": {
-          "id": 164,
-          "name": "Úrvalsdeild",
-          "logo": "https://media.api-sports.io/football/leagues/164.png"
-        },
-        "teams": {
-          "home": {
-            "id": 276,
-            "name": "Breidablik",
-            "logo": "https://media.api-sports.io/football/teams/276.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3514,
-            "name": "Afturelding",
-            "logo": "https://media.api-sports.io/football/teams/3514.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1332719,
@@ -1437,9 +1378,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1332835,
+          "date": "2025-08-31T19:15:00+00:00",
+          "venue": {
+            "id": 831,
+            "name": "Víkingsvöllur",
+            "city": "Reykjavík"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756667700
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 278,
+            "name": "Vikingur Reykjavik",
+            "logo": "https://media.api-sports.io/football/teams/278.png",
+            "winner": null
+          },
+          "away": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1332710,
+          "date": "2025-04-05T19:15:00+00:00",
+          "venue": {
+            "id": 820,
+            "name": "Kópavogsvöllur",
+            "city": "Kópavogur"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743880500
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 276,
+            "name": "Breidablik",
+            "logo": "https://media.api-sports.io/football/teams/276.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3514,
+            "name": "Afturelding",
+            "logo": "https://media.api-sports.io/football/teams/3514.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1332709,
@@ -1970,65 +2029,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1306742,
-          "date": "2024-10-06T19:15:00+00:00",
-          "venue": {
-            "id": 820,
-            "name": "Kópavogsvöllur",
-            "city": "Kópavogur"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1728242100
-        },
-        "league": {
-          "id": 164,
-          "name": "Úrvalsdeild",
-          "logo": "https://media.api-sports.io/football/leagues/164.png"
-        },
-        "teams": {
-          "home": {
-            "id": 276,
-            "name": "Breidablik",
-            "logo": "https://media.api-sports.io/football/teams/276.png",
-            "winner": null
-          },
-          "away": {
-            "id": 274,
-            "name": "Valur Reykjavik",
-            "logo": "https://media.api-sports.io/football/teams/274.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2046,17 +2046,17 @@
       "name": "Breidablik",
       "logo": "https://media.api-sports.io/football/teams/276.png"
     },
-    "form": null,
+    "form": "W",
     "fixtures": {
       "played": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "wins": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "draws": {
         "home": 0,
@@ -2072,27 +2072,27 @@
     "goals": {
       "for": {
         "total": {
-          "home": 0,
+          "home": 2,
           "away": 0,
-          "total": 0
+          "total": 2
         },
         "average": {
-          "home": "0.0",
+          "home": "2.0",
           "away": "0.0",
-          "total": "0.0"
+          "total": "2.0"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "46-60": {
             "total": null,
@@ -2117,24 +2117,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       },
@@ -2186,35 +2186,35 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 0,
+        "wins": 1,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": null,
+        "home": "2-0",
         "away": null
       },
       "loses": {
@@ -2223,7 +2223,7 @@
       },
       "goals": {
         "for": {
-          "home": 0,
+          "home": 2,
           "away": 0
         },
         "against": {
@@ -2233,9 +2233,9 @@
       }
     },
     "clean_sheet": {
-      "home": 0,
+      "home": 1,
       "away": 0,
-      "total": 0
+      "total": 1
     },
     "failed_to_score": {
       "home": 0,
@@ -2244,14 +2244,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 0,
-        "percentage": "0%"
+        "total": 1,
+        "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 0
+      "total": 1
     },
     "lineups": [],
     "cards": {
@@ -2269,8 +2269,8 @@
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "100.00%"
         },
         "61-75": {
           "total": null,
@@ -2325,5 +2325,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:23.428Z"
+  "lastUpdated": "2025-04-07T12:48:29.749Z"
 }

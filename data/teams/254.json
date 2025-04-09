@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -227,65 +227,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220297,
-          "date": "2025-04-06T13:30:00+00:00",
-          "venue": {
-            "id": 1393,
-            "name": "Tynecastle Park",
-            "city": "Edinburgh"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743946200
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 254,
-            "name": "Heart Of Midlothian",
-            "logo": "https://media.api-sports.io/football/teams/254.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1386,
-            "name": "Dundee Utd",
-            "logo": "https://media.api-sports.io/football/teams/1386.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220306,
           "date": "2025-04-12T14:00:00+00:00",
           "venue": {
@@ -342,9 +283,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1360339,
+          "date": "2025-04-19T11:30:00+00:00",
+          "venue": {
+            "id": 2617,
+            "name": "Hampden Park",
+            "city": "Glasgow"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745062200
+        },
+        "league": {
+          "id": 181,
+          "name": "FA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/181.png"
+        },
+        "teams": {
+          "home": {
+            "id": 254,
+            "name": "Heart Of Midlothian",
+            "logo": "https://media.api-sports.io/football/teams/254.png",
+            "winner": null
+          },
+          "away": {
+            "id": 252,
+            "name": "Aberdeen",
+            "logo": "https://media.api-sports.io/football/teams/252.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220297,
+          "date": "2025-04-06T13:30:00+00:00",
+          "venue": {
+            "id": 1393,
+            "name": "Tynecastle Park",
+            "city": "Edinburgh"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743946200
+        },
+        "league": {
+          "id": 179,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/179.png"
+        },
+        "teams": {
+          "home": {
+            "id": 254,
+            "name": "Heart Of Midlothian",
+            "logo": "https://media.api-sports.io/football/teams/254.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1386,
+            "name": "Dundee Utd",
+            "logo": "https://media.api-sports.io/football/teams/1386.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220291,
@@ -875,65 +934,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1318879,
-          "date": "2025-01-17T19:45:00+00:00",
-          "venue": {
-            "id": 20428,
-            "name": "The Carnegie Fuels Stadium at Glebe Park",
-            "city": "Brechin"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1737143100
-        },
-        "league": {
-          "id": 181,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/181.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1390,
-            "name": "Brechin",
-            "logo": "https://media.api-sports.io/football/teams/1390.png",
-            "winner": false
-          },
-          "away": {
-            "id": 254,
-            "name": "Heart Of Midlothian",
-            "logo": "https://media.api-sports.io/football/teams/254.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1230,5 +1230,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:21.038Z"
+  "lastUpdated": "2025-04-07T12:47:28.366Z"
 }

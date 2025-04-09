@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-08-06",
-          "end": "2025-04-02",
+          "end": "2025-05-02",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -144,65 +144,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1203186,
-          "date": "2025-04-05T18:15:00+00:00",
-          "venue": {
-            "id": 20110,
-            "name": "Enea Stadion",
-            "city": "Poznań"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743876900
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 347,
-            "name": "Lech Poznan",
-            "logo": "https://media.api-sports.io/football/teams/347.png",
-            "winner": null
-          },
-          "away": {
-            "id": 346,
-            "name": "Korona Kielce",
-            "logo": "https://media.api-sports.io/football/teams/346.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1203196,
@@ -382,6 +323,65 @@
       },
       {
         "fixture": {
+          "id": 1203222,
+          "date": "2025-05-05T17:00:00+00:00",
+          "venue": {
+            "id": 21189,
+            "name": "Stadion Miejski",
+            "city": "Kielce"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746464400
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 346,
+            "name": "Korona Kielce",
+            "logo": "https://media.api-sports.io/football/teams/346.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3484,
+            "name": "GKS Katowice",
+            "logo": "https://media.api-sports.io/football/teams/3484.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203247,
           "date": "2025-05-24T15:30:00+00:00",
           "venue": {
@@ -441,6 +441,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1203186,
+          "date": "2025-04-05T18:15:00+00:00",
+          "venue": {
+            "id": 20110,
+            "name": "Enea Stadion",
+            "city": "Poznań"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743876900
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 347,
+            "name": "Lech Poznan",
+            "logo": "https://media.api-sports.io/football/teams/347.png",
+            "winner": true
+          },
+          "away": {
+            "id": 346,
+            "name": "Korona Kielce",
+            "logo": "https://media.api-sports.io/football/teams/346.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1203178,
@@ -624,7 +683,7 @@
           "date": "2025-03-01T13:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadion Miejski im. Grzegorza Lato",
+            "name": "Stadion Stali Mielec",
             "city": "Mielec"
           },
           "status": {
@@ -971,65 +1030,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337984,
-          "date": "2025-01-24T10:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1737712800
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4346,
-            "name": "Struga",
-            "logo": "https://media.api-sports.io/football/teams/4346.png",
-            "winner": true
-          },
-          "away": {
-            "id": 346,
-            "name": "Korona Kielce",
-            "logo": "https://media.api-sports.io/football/teams/346.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1326,5 +1326,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:42.449Z"
+  "lastUpdated": "2025-04-07T12:46:49.373Z"
 }

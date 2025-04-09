@@ -187,65 +187,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1210597,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 2495,
-            "name": "Městský stadion - Vítkovice Aréna",
-            "city": "Ostrava"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 345,
-          "name": "Czech Liga",
-          "logo": "https://media.api-sports.io/football/leagues/345.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3713,
-            "name": "Baník Ostrava",
-            "logo": "https://media.api-sports.io/football/teams/3713.png",
-            "winner": null
-          },
-          "away": {
-            "id": 628,
-            "name": "Sparta Praha",
-            "logo": "https://media.api-sports.io/football/teams/628.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361473,
           "date": "2025-04-09T17:00:00+00:00",
           "venue": {
@@ -423,6 +364,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1210597,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 2495,
+            "name": "Městský stadion - Vítkovice Aréna",
+            "city": "Ostrava"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 345,
+          "name": "Czech Liga",
+          "logo": "https://media.api-sports.io/football/leagues/345.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3713,
+            "name": "Baník Ostrava",
+            "logo": "https://media.api-sports.io/football/teams/3713.png",
+            "winner": null
+          },
+          "away": {
+            "id": 628,
+            "name": "Sparta Praha",
+            "logo": "https://media.api-sports.io/football/teams/628.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1210593,
@@ -953,65 +953,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299112,
-          "date": "2025-01-29T20:00:00+00:00",
-          "venue": {
-            "id": 699,
-            "name": "BayArena",
-            "city": "Leverkusen"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738180800
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 168,
-            "name": "Bayer Leverkusen",
-            "logo": "https://media.api-sports.io/football/teams/168.png",
-            "winner": true
-          },
-          "away": {
-            "id": 628,
-            "name": "Sparta Praha",
-            "logo": "https://media.api-sports.io/football/teams/628.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1308,5 +1249,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:54.728Z"
+  "lastUpdated": "2025-04-07T12:48:01.632Z"
 }

@@ -187,65 +187,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1327736,
-          "date": "2025-04-05T18:30:00+00:00",
-          "venue": {
-            "id": 10500,
-            "name": "Stadion Wankdorf",
-            "city": "Bern"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743877800
-        },
-        "league": {
-          "id": 207,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/207.png"
-        },
-        "teams": {
-          "home": {
-            "id": 565,
-            "name": "BSC Young Boys",
-            "logo": "https://media.api-sports.io/football/teams/565.png",
-            "winner": null
-          },
-          "away": {
-            "id": 6653,
-            "name": "Yverdon Sport",
-            "logo": "https://media.api-sports.io/football/teams/6653.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1327744,
           "date": "2025-04-13T14:30:00+00:00",
           "venue": {
@@ -364,6 +305,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1327736,
+          "date": "2025-04-05T18:30:00+00:00",
+          "venue": {
+            "id": 10500,
+            "name": "Stadion Wankdorf",
+            "city": "Bern"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743877800
+        },
+        "league": {
+          "id": 207,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/207.png"
+        },
+        "teams": {
+          "home": {
+            "id": 565,
+            "name": "BSC Young Boys",
+            "logo": "https://media.api-sports.io/football/teams/565.png",
+            "winner": null
+          },
+          "away": {
+            "id": 6653,
+            "name": "Yverdon Sport",
+            "logo": "https://media.api-sports.io/football/teams/6653.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1327728,
@@ -894,65 +894,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1222602,
-          "date": "2025-02-05T19:30:00+00:00",
-          "venue": {
-            "id": 10500,
-            "name": "Stadion Wankdorf",
-            "city": "Bern"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 2
-          },
-          "timestamp": 1738783800
-        },
-        "league": {
-          "id": 207,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/207.png"
-        },
-        "teams": {
-          "home": {
-            "id": 565,
-            "name": "BSC Young Boys",
-            "logo": "https://media.api-sports.io/football/teams/565.png",
-            "winner": true
-          },
-          "away": {
-            "id": 6653,
-            "name": "Yverdon Sport",
-            "logo": "https://media.api-sports.io/football/teams/6653.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 6,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 6,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1249,5 +1190,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:49.510Z"
+  "lastUpdated": "2025-04-07T12:47:56.419Z"
 }

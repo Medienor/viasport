@@ -189,65 +189,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1326317,
-          "date": "2025-04-05T20:30:00+00:00",
-          "venue": {
-            "id": 19223,
-            "name": "America First Field",
-            "city": "Sandy, Utah"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743885000
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1606,
-            "name": "Real Salt Lake",
-            "logo": "https://media.api-sports.io/football/teams/1606.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1605,
-            "name": "Los Angeles Galaxy",
-            "logo": "https://media.api-sports.io/football/teams/1605.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361465,
           "date": "2025-04-09T01:00:00+00:00",
           "venue": {
@@ -1366,9 +1307,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1326591,
+          "date": "2025-08-11T02:00:00+00:00",
+          "venue": {
+            "id": 1616,
+            "name": "Dignity Health Sports Park",
+            "city": "Carson, California"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754877600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1605,
+            "name": "Los Angeles Galaxy",
+            "logo": "https://media.api-sports.io/football/teams/1605.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1595,
+            "name": "Seattle Sounders",
+            "logo": "https://media.api-sports.io/football/teams/1595.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1326317,
+          "date": "2025-04-05T20:30:00+00:00",
+          "venue": {
+            "id": 19223,
+            "name": "America First Field",
+            "city": "Sandy, Utah"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743885000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1606,
+            "name": "Real Salt Lake",
+            "logo": "https://media.api-sports.io/football/teams/1606.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1605,
+            "name": "Los Angeles Galaxy",
+            "logo": "https://media.api-sports.io/football/teams/1605.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361464,
@@ -1899,65 +1958,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1346146,
-          "date": "2025-02-15T20:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Empire Polo Club",
-            "city": "Indio, California"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1739649600
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1605,
-            "name": "Los Angeles Galaxy",
-            "logo": "https://media.api-sports.io/football/teams/1605.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1607,
-            "name": "Chicago Fire",
-            "logo": "https://media.api-sports.io/football/teams/1607.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1975,12 +1975,12 @@
       "name": "Los Angeles Galaxy",
       "logo": "https://media.api-sports.io/football/teams/1605.png"
     },
-    "form": "LLLDDL",
+    "form": "LLLDDLL",
     "fixtures": {
       "played": {
         "home": 3,
-        "away": 3,
-        "total": 6
+        "away": 4,
+        "total": 7
       },
       "wins": {
         "home": 0,
@@ -1994,8 +1994,8 @@
       },
       "loses": {
         "home": 3,
-        "away": 1,
-        "total": 4
+        "away": 2,
+        "total": 5
       }
     },
     "goals": {
@@ -2007,8 +2007,8 @@
         },
         "average": {
           "home": "0.3",
-          "away": "1.3",
-          "total": "0.8"
+          "away": "1.0",
+          "total": "0.7"
         },
         "minute": {
           "0-15": {
@@ -2047,53 +2047,53 @@
         "under_over": {
           "0.5": {
             "over": 4,
-            "under": 2
+            "under": 3
           },
           "1.5": {
             "over": 1,
-            "under": 5
+            "under": 6
           },
           "2.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       },
       "against": {
         "total": {
           "home": 7,
-          "away": 5,
-          "total": 12
+          "away": 7,
+          "total": 14
         },
         "average": {
           "home": "2.3",
-          "away": "1.7",
+          "away": "1.8",
           "total": "2.0"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "8.33%"
+            "percentage": "7.14%"
           },
           "16-30": {
-            "total": 1,
-            "percentage": "8.33%"
+            "total": 3,
+            "percentage": "21.43%"
           },
           "31-45": {
             "total": 1,
-            "percentage": "8.33%"
+            "percentage": "7.14%"
           },
           "46-60": {
             "total": 3,
-            "percentage": "25.00%"
+            "percentage": "21.43%"
           },
           "61-75": {
             "total": null,
@@ -2101,11 +2101,11 @@
           },
           "76-90": {
             "total": 5,
-            "percentage": "41.67%"
+            "percentage": "35.71%"
           },
           "91-105": {
             "total": 1,
-            "percentage": "8.33%"
+            "percentage": "7.14%"
           },
           "106-120": {
             "total": null,
@@ -2114,24 +2114,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 6,
+            "over": 7,
             "under": 0
           },
           "1.5": {
-            "over": 5,
+            "over": 6,
             "under": 1
           },
           "2.5": {
             "over": 1,
-            "under": 5
+            "under": 6
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       }
@@ -2148,7 +2148,7 @@
       },
       "loses": {
         "home": "0-3",
-        "away": "2-1"
+        "away": "2-0"
       },
       "goals": {
         "for": {
@@ -2168,8 +2168,8 @@
     },
     "failed_to_score": {
       "home": 2,
-      "away": 0,
-      "total": 2
+      "away": 1,
+      "total": 3
     },
     "penalty": {
       "scored": {
@@ -2185,7 +2185,7 @@
     "lineups": [
       {
         "formation": "4-3-3",
-        "played": 3
+        "played": 4
       },
       {
         "formation": "4-2-3-1",
@@ -2204,23 +2204,23 @@
         },
         "16-30": {
           "total": 2,
-          "percentage": "18.18%"
+          "percentage": "15.38%"
         },
         "31-45": {
           "total": 2,
-          "percentage": "18.18%"
+          "percentage": "15.38%"
         },
         "46-60": {
           "total": 4,
-          "percentage": "36.36%"
+          "percentage": "30.77%"
         },
         "61-75": {
-          "total": 2,
-          "percentage": "18.18%"
+          "total": 3,
+          "percentage": "23.08%"
         },
         "76-90": {
-          "total": 1,
-          "percentage": "9.09%"
+          "total": 2,
+          "percentage": "15.38%"
         },
         "91-105": {
           "total": null,
@@ -2267,5 +2267,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:44.780Z"
+  "lastUpdated": "2025-04-07T12:52:48.202Z"
 }

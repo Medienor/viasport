@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -263,65 +263,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1231977,
-          "date": "2025-04-06T19:30:00+00:00",
-          "venue": {
-            "id": 1286,
-            "name": "Estádio Do Dragão",
-            "city": "Porto"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743967800
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 212,
-            "name": "FC Porto",
-            "logo": "https://media.api-sports.io/football/teams/212.png",
-            "winner": null
-          },
-          "away": {
-            "id": 211,
-            "name": "Benfica",
-            "logo": "https://media.api-sports.io/football/teams/211.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1231984,
@@ -796,6 +737,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231977,
+          "date": "2025-04-06T19:30:00+00:00",
+          "venue": {
+            "id": 1286,
+            "name": "Estádio Do Dragão",
+            "city": "Porto"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743967800
+        },
+        "league": {
+          "id": 94,
+          "name": "Primeira Liga",
+          "logo": "https://media.api-sports.io/football/leagues/94.png"
+        },
+        "teams": {
+          "home": {
+            "id": 212,
+            "name": "FC Porto",
+            "logo": "https://media.api-sports.io/football/teams/212.png",
+            "winner": false
+          },
+          "away": {
+            "id": 211,
+            "name": "Benfica",
+            "logo": "https://media.api-sports.io/football/teams/211.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231963,
@@ -1326,65 +1326,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231907,
-          "date": "2025-02-03T20:45:00+00:00",
-          "venue": {
-            "id": 1288,
-            "name": "Estádio do Rio Ave Futebol Clube",
-            "city": "Vila do Conde"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1738615500
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 226,
-            "name": "Rio Ave",
-            "logo": "https://media.api-sports.io/football/teams/226.png",
-            "winner": null
-          },
-          "away": {
-            "id": 212,
-            "name": "FC Porto",
-            "logo": "https://media.api-sports.io/football/teams/212.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1681,5 +1622,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:29.635Z"
+  "lastUpdated": "2025-04-07T12:46:36.670Z"
 }

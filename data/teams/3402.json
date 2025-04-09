@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -146,65 +146,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361573,
-          "date": "2025-04-06T16:00:00+00:00",
-          "venue": {
-            "id": 432,
-            "name": "Neo GSP",
-            "city": "Levkosía"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743955200
-        },
-        "league": {
-          "id": 318,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/318.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3402,
-            "name": "Omonia Nicosia",
-            "logo": "https://media.api-sports.io/football/teams/3402.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3408,
-            "name": "Aris",
-            "logo": "https://media.api-sports.io/football/teams/3408.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1364730,
@@ -325,6 +266,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361573,
+          "date": "2025-04-06T16:00:00+00:00",
+          "venue": {
+            "id": 432,
+            "name": "Neo GSP",
+            "city": "Levkosía"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1743955200
+        },
+        "league": {
+          "id": 318,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/318.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3402,
+            "name": "Omonia Nicosia",
+            "logo": "https://media.api-sports.io/football/teams/3402.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3408,
+            "name": "Aris",
+            "logo": "https://media.api-sports.io/football/teams/3408.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361568,
@@ -855,65 +855,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224430,
-          "date": "2025-02-07T17:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Katokopia Epistrofi - Glafkos Klirides",
-            "city": "Peristerona"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738947600
-        },
-        "league": {
-          "id": 318,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/318.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14126,
-            "name": "Omonia 29is Maiou",
-            "logo": "https://media.api-sports.io/football/teams/14126.png",
-            "winner": false
-          },
-          "away": {
-            "id": 3402,
-            "name": "Omonia Nicosia",
-            "logo": "https://media.api-sports.io/football/teams/3402.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1210,5 +1151,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:54.246Z"
+  "lastUpdated": "2025-04-07T12:49:00.484Z"
 }

@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-07-26",
-          "end": "2025-04-01",
+          "end": "2025-05-01",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -188,65 +188,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361671,
-          "date": "2025-04-04T17:30:00+00:00",
-          "venue": {
-            "id": 150,
-            "name": "Merkur Arena",
-            "city": "Graz"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743787800
-        },
-        "league": {
-          "id": 218,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/218.png"
-        },
-        "teams": {
-          "home": {
-            "id": 637,
-            "name": "Sturm Graz",
-            "logo": "https://media.api-sports.io/football/teams/637.png",
-            "winner": null
-          },
-          "away": {
-            "id": 781,
-            "name": "Rapid Vienna",
-            "logo": "https://media.api-sports.io/football/teams/781.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361675,
@@ -370,9 +311,9 @@
           "id": 1361682,
           "date": "2025-04-23T18:30:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 136,
+            "name": "Generali Arena",
+            "city": "Wien"
           },
           "status": {
             "long": "Not Started",
@@ -721,6 +662,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361671,
+          "date": "2025-04-04T17:30:00+00:00",
+          "venue": {
+            "id": 150,
+            "name": "Merkur Arena",
+            "city": "Graz"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743787800
+        },
+        "league": {
+          "id": 218,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/218.png"
+        },
+        "teams": {
+          "home": {
+            "id": 637,
+            "name": "Sturm Graz",
+            "logo": "https://media.api-sports.io/football/teams/637.png",
+            "winner": true
+          },
+          "away": {
+            "id": 781,
+            "name": "Rapid Vienna",
+            "logo": "https://media.api-sports.io/football/teams/781.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361668,
@@ -1251,65 +1251,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299124,
-          "date": "2025-01-29T20:00:00+00:00",
-          "venue": {
-            "id": 19258,
-            "name": "28 Black Arena",
-            "city": "Klagenfurt am Wörthersee"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738180800
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 637,
-            "name": "Sturm Graz",
-            "logo": "https://media.api-sports.io/football/teams/637.png",
-            "winner": true
-          },
-          "away": {
-            "id": 173,
-            "name": "RB Leipzig",
-            "logo": "https://media.api-sports.io/football/teams/173.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1606,5 +1547,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:54.676Z"
+  "lastUpdated": "2025-04-07T12:48:01.693Z"
 }

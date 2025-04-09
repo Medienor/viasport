@@ -101,7 +101,67 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
+      {
+        "fixture": {
+          "id": 1361026,
+          "date": "2025-04-06T19:00:00+00:00",
+          "venue": {
+            "id": 11546,
+            "name": "Stade El Bachir",
+            "city": "Mohammédia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743966000
+        },
+        "league": {
+          "id": 973,
+          "name": "CAF Cup of Nations - U17",
+          "logo": "https://media.api-sports.io/football/leagues/973.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21302,
+            "name": "Morocco U17",
+            "logo": "https://media.api-sports.io/football/teams/21302.png",
+            "winner": true
+          },
+          "away": {
+            "id": 25822,
+            "name": "Tanzania U17",
+            "logo": "https://media.api-sports.io/football/teams/25822.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361019,
@@ -112,10 +172,10 @@
             "city": "Mohammédia"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
           },
           "timestamp": 1743710400
         },
@@ -139,17 +199,17 @@
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -161,67 +221,6 @@
           }
         }
       },
-      {
-        "fixture": {
-          "id": 1361026,
-          "date": "2025-04-06T19:00:00+00:00",
-          "venue": {
-            "id": 11546,
-            "name": "Stade El Bachir",
-            "city": "Mohammédia"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743966000
-        },
-        "league": {
-          "id": 973,
-          "name": "CAF Cup of Nations - U17",
-          "logo": "https://media.api-sports.io/football/leagues/973.png"
-        },
-        "teams": {
-          "home": {
-            "id": 21302,
-            "name": "Morocco U17",
-            "logo": "https://media.api-sports.io/football/teams/21302.png",
-            "winner": null
-          },
-          "away": {
-            "id": 25822,
-            "name": "Tanzania U17",
-            "logo": "https://media.api-sports.io/football/teams/25822.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      }
-    ],
-    "past": [
       {
         "fixture": {
           "id": 1361008,
@@ -693,124 +692,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1025949,
-          "date": "2023-05-10T19:00:00+00:00",
-          "venue": {
-            "id": 16,
-            "name": "Stade Mohamed-Hamlaoui",
-            "city": "Constantine"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1683745200
-        },
-        "league": {
-          "id": 973,
-          "name": "CAF Cup of Nations - U17",
-          "logo": "https://media.api-sports.io/football/leagues/973.png"
-        },
-        "teams": {
-          "home": {
-            "id": 21302,
-            "name": "Morocco U17",
-            "logo": "https://media.api-sports.io/football/teams/21302.png",
-            "winner": true
-          },
-          "away": {
-            "id": 21295,
-            "name": "Algeria U17",
-            "logo": "https://media.api-sports.io/football/teams/21295.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1024690,
-          "date": "2023-05-06T19:00:00+00:00",
-          "venue": {
-            "id": 7,
-            "name": "Stade du 19 Mai 1956",
-            "city": "Annaba"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1683399600
-        },
-        "league": {
-          "id": 973,
-          "name": "CAF Cup of Nations - U17",
-          "logo": "https://media.api-sports.io/football/leagues/973.png"
-        },
-        "teams": {
-          "home": {
-            "id": 21301,
-            "name": "Zambia U17",
-            "logo": "https://media.api-sports.io/football/teams/21301.png",
-            "winner": true
-          },
-          "away": {
-            "id": 21302,
-            "name": "Morocco U17",
-            "logo": "https://media.api-sports.io/football/teams/21302.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1107,5 +988,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:17.343Z"
+  "lastUpdated": "2025-04-07T12:51:21.755Z"
 }

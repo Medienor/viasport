@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -181,65 +181,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1210597,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 2495,
-            "name": "Městský stadion - Vítkovice Aréna",
-            "city": "Ostrava"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 345,
-          "name": "Czech Liga",
-          "logo": "https://media.api-sports.io/football/leagues/345.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3713,
-            "name": "Baník Ostrava",
-            "logo": "https://media.api-sports.io/football/teams/3713.png",
-            "winner": null
-          },
-          "away": {
-            "id": 628,
-            "name": "Sparta Praha",
-            "logo": "https://media.api-sports.io/football/teams/628.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361474,
@@ -419,6 +360,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1210597,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 2495,
+            "name": "Městský stadion - Vítkovice Aréna",
+            "city": "Ostrava"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 345,
+          "name": "Czech Liga",
+          "logo": "https://media.api-sports.io/football/leagues/345.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3713,
+            "name": "Baník Ostrava",
+            "logo": "https://media.api-sports.io/football/teams/3713.png",
+            "winner": null
+          },
+          "away": {
+            "id": 628,
+            "name": "Sparta Praha",
+            "logo": "https://media.api-sports.io/football/teams/628.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1210592,
@@ -949,65 +949,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337978,
-          "date": "2025-01-24T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Gloria Sports Arena",
-            "city": "Belek"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737676800
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3713,
-            "name": "Baník Ostrava",
-            "logo": "https://media.api-sports.io/football/teams/3713.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3619,
-            "name": "Oleksandria",
-            "logo": "https://media.api-sports.io/football/teams/3619.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1304,5 +1245,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:56.847Z"
+  "lastUpdated": "2025-04-07T12:49:03.224Z"
 }

@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -189,65 +189,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1213684,
-          "date": "2025-04-06T14:45:00+00:00",
-          "venue": {
-            "id": 1117,
-            "name": "Johan Cruijff ArenA",
-            "city": "Amsterdam"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743950700
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 194,
-            "name": "Ajax",
-            "logo": "https://media.api-sports.io/football/teams/194.png",
-            "winner": null
-          },
-          "away": {
-            "id": 203,
-            "name": "NAC Breda",
-            "logo": "https://media.api-sports.io/football/teams/203.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1213701,
@@ -604,6 +545,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213684,
+          "date": "2025-04-06T14:45:00+00:00",
+          "venue": {
+            "id": 1117,
+            "name": "Johan Cruijff ArenA",
+            "city": "Amsterdam"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743950700
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 194,
+            "name": "Ajax",
+            "logo": "https://media.api-sports.io/football/teams/194.png",
+            "winner": true
+          },
+          "away": {
+            "id": 203,
+            "name": "NAC Breda",
+            "logo": "https://media.api-sports.io/football/teams/203.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213682,
@@ -1134,65 +1134,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213634,
-          "date": "2025-02-09T13:30:00+00:00",
-          "venue": {
-            "id": 1129,
-            "name": "Fortuna Sittard Stadion",
-            "city": "Sittard"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1739107800
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 205,
-            "name": "Fortuna Sittard",
-            "logo": "https://media.api-sports.io/football/teams/205.png",
-            "winner": false
-          },
-          "away": {
-            "id": 194,
-            "name": "Ajax",
-            "logo": "https://media.api-sports.io/football/teams/194.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1489,5 +1430,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:47.483Z"
+  "lastUpdated": "2025-04-07T12:46:54.597Z"
 }

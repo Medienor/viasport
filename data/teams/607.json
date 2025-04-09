@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-09-10",
-          "end": "2025-04-01",
+          "end": "2025-04-21",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -113,65 +113,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1238111,
-          "date": "2025-04-05T13:00:00+00:00",
-          "venue": {
-            "id": 1584,
-            "name": "Başakşehir Fatih Terim Stadyumu",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743858000
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 564,
-            "name": "Istanbul Basaksehir",
-            "logo": "https://media.api-sports.io/football/teams/564.png",
-            "winner": null
-          },
-          "away": {
-            "id": 607,
-            "name": "Konyaspor",
-            "logo": "https://media.api-sports.io/football/teams/607.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1238122,
@@ -289,9 +230,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1367754,
+          "date": "2025-04-21T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Medaş Konya Büyükşehir Stadyumu",
+            "city": "Konya"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745272800
+        },
+        "league": {
+          "id": 206,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/206.png"
+        },
+        "teams": {
+          "home": {
+            "id": 607,
+            "name": "Konyaspor",
+            "logo": "https://media.api-sports.io/football/teams/607.png",
+            "winner": null
+          },
+          "away": {
+            "id": 645,
+            "name": "Galatasaray",
+            "logo": "https://media.api-sports.io/football/teams/645.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238111,
+          "date": "2025-04-05T13:00:00+00:00",
+          "venue": {
+            "id": 1584,
+            "name": "Başakşehir Fatih Terim Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743858000
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 564,
+            "name": "Istanbul Basaksehir",
+            "logo": "https://media.api-sports.io/football/teams/564.png",
+            "winner": true
+          },
+          "away": {
+            "id": 607,
+            "name": "Konyaspor",
+            "logo": "https://media.api-sports.io/football/teams/607.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1359786,
@@ -357,7 +416,7 @@
           "date": "2025-03-28T17:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Medaş Konya Büyükşehir Stadyumu",
+            "name": "Medas Konya Büyüksehir Belediyesi Stadium",
             "city": "Konya"
           },
           "status": {
@@ -416,7 +475,7 @@
           "date": "2025-03-15T17:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Medaş Konya Büyükşehir Stadyumu",
+            "name": "Medas Konya Büyüksehir Belediyesi Stadium",
             "city": "Konya"
           },
           "status": {
@@ -534,7 +593,7 @@
           "date": "2025-03-03T13:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Medaş Konya Büyükşehir Stadyumu",
+            "name": "Medas Konya Büyüksehir Belediyesi Stadium",
             "city": "Konya"
           },
           "status": {
@@ -711,7 +770,7 @@
           "date": "2025-02-16T13:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Medaş Konya Büyükşehir Stadyumu",
+            "name": "Medas Konya Büyüksehir Belediyesi Stadium",
             "city": "Konya"
           },
           "status": {
@@ -812,65 +871,6 @@
           "fulltime": {
             "home": 3,
             "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1327570,
-          "date": "2025-02-04T15:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Medaş Konya Büyükşehir Stadyumu",
-            "city": "Konya"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1738681200
-        },
-        "league": {
-          "id": 206,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/206.png"
-        },
-        "teams": {
-          "home": {
-            "id": 607,
-            "name": "Konyaspor",
-            "logo": "https://media.api-sports.io/football/teams/607.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3588,
-            "name": "Eyüpspor",
-            "logo": "https://media.api-sports.io/football/teams/3588.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
           },
           "extratime": {
             "home": null,
@@ -1177,5 +1177,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:21.583Z"
+  "lastUpdated": "2025-04-07T12:46:29.097Z"
 }

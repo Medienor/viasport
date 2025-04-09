@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -227,65 +227,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220298,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 19215,
-            "name": "The BBSP Stadium Rugby Park",
-            "city": "Kilmarnock"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 250,
-            "name": "Kilmarnock",
-            "logo": "https://media.api-sports.io/football/teams/250.png",
-            "winner": null
-          },
-          "away": {
-            "id": 256,
-            "name": "Motherwell",
-            "logo": "https://media.api-sports.io/football/teams/256.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220303,
           "date": "2025-04-12T11:30:00+00:00",
           "venue": {
@@ -345,6 +286,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220298,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 19215,
+            "name": "The BBSP Stadium Rugby Park",
+            "city": "Kilmarnock"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 179,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/179.png"
+        },
+        "teams": {
+          "home": {
+            "id": 250,
+            "name": "Kilmarnock",
+            "logo": "https://media.api-sports.io/football/teams/250.png",
+            "winner": true
+          },
+          "away": {
+            "id": 256,
+            "name": "Motherwell",
+            "logo": "https://media.api-sports.io/football/teams/256.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220295,
@@ -875,65 +875,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220173,
-          "date": "2025-01-08T19:45:00+00:00",
-          "venue": {
-            "id": 19215,
-            "name": "The BBSP Stadium Rugby Park",
-            "city": "Kilmarnock"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1736365500
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 250,
-            "name": "Kilmarnock",
-            "logo": "https://media.api-sports.io/football/teams/250.png",
-            "winner": null
-          },
-          "away": {
-            "id": 256,
-            "name": "Motherwell",
-            "logo": "https://media.api-sports.io/football/teams/256.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1230,5 +1171,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:18.396Z"
+  "lastUpdated": "2025-04-07T12:47:25.894Z"
 }

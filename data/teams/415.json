@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -226,65 +226,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1213688,
-          "date": "2025-04-05T16:45:00+00:00",
-          "venue": {
-            "id": 1153,
-            "name": "De Grolsch Veste",
-            "city": "Enschede"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743871500
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 415,
-            "name": "Twente",
-            "logo": "https://media.api-sports.io/football/teams/415.png",
-            "winner": null
-          },
-          "away": {
-            "id": 205,
-            "name": "Fortuna Sittard",
-            "logo": "https://media.api-sports.io/football/teams/205.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1213698,
@@ -641,6 +582,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213688,
+          "date": "2025-04-05T16:45:00+00:00",
+          "venue": {
+            "id": 1153,
+            "name": "De Grolsch Veste",
+            "city": "Enschede"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743871500
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 415,
+            "name": "Twente",
+            "logo": "https://media.api-sports.io/football/teams/415.png",
+            "winner": null
+          },
+          "away": {
+            "id": 205,
+            "name": "Fortuna Sittard",
+            "logo": "https://media.api-sports.io/football/teams/205.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213678,
@@ -1171,65 +1171,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213623,
-          "date": "2025-02-02T13:30:00+00:00",
-          "venue": {
-            "id": 1130,
-            "name": "De Adelaarshorst",
-            "city": "Deventer"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1738503000
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 410,
-            "name": "GO Ahead Eagles",
-            "logo": "https://media.api-sports.io/football/teams/410.png",
-            "winner": null
-          },
-          "away": {
-            "id": 415,
-            "name": "Twente",
-            "logo": "https://media.api-sports.io/football/teams/415.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1526,5 +1467,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:55.079Z"
+  "lastUpdated": "2025-04-07T12:47:02.683Z"
 }

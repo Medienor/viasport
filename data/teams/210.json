@@ -154,65 +154,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213691,
-          "date": "2025-04-04T18:00:00+00:00",
-          "venue": {
-            "id": 1132,
-            "name": "Abe Lenstra Stadion",
-            "city": "Heerenveen"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743789600
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 210,
-            "name": "Heerenveen",
-            "logo": "https://media.api-sports.io/football/teams/210.png",
-            "winner": null
-          },
-          "away": {
-            "id": 195,
-            "name": "Willem II",
-            "logo": "https://media.api-sports.io/football/teams/195.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213700,
           "date": "2025-04-12T16:45:00+00:00",
           "venue": {
@@ -567,6 +508,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213691,
+          "date": "2025-04-04T18:00:00+00:00",
+          "venue": {
+            "id": 1132,
+            "name": "Abe Lenstra Stadion",
+            "city": "Heerenveen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743789600
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 210,
+            "name": "Heerenveen",
+            "logo": "https://media.api-sports.io/football/teams/210.png",
+            "winner": true
+          },
+          "away": {
+            "id": 195,
+            "name": "Willem II",
+            "logo": "https://media.api-sports.io/football/teams/195.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213675,
@@ -1097,65 +1097,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213600,
-          "date": "2025-01-12T15:45:00+00:00",
-          "venue": {
-            "id": 1139,
-            "name": "Rat Verlegh Stadion",
-            "city": "Breda"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1736696700
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 203,
-            "name": "NAC Breda",
-            "logo": "https://media.api-sports.io/football/teams/203.png",
-            "winner": false
-          },
-          "away": {
-            "id": 210,
-            "name": "Heerenveen",
-            "logo": "https://media.api-sports.io/football/teams/210.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1452,5 +1393,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:52.534Z"
+  "lastUpdated": "2025-04-07T12:47:00.014Z"
 }

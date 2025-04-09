@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220298,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 19215,
-            "name": "The BBSP Stadium Rugby Park",
-            "city": "Kilmarnock"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 250,
-            "name": "Kilmarnock",
-            "logo": "https://media.api-sports.io/football/teams/250.png",
-            "winner": null
-          },
-          "away": {
-            "id": 256,
-            "name": "Motherwell",
-            "logo": "https://media.api-sports.io/football/teams/256.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220306,
           "date": "2025-04-12T14:00:00+00:00",
           "venue": {
@@ -271,6 +212,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220298,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 19215,
+            "name": "The BBSP Stadium Rugby Park",
+            "city": "Kilmarnock"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 179,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/179.png"
+        },
+        "teams": {
+          "home": {
+            "id": 250,
+            "name": "Kilmarnock",
+            "logo": "https://media.api-sports.io/football/teams/250.png",
+            "winner": true
+          },
+          "away": {
+            "id": 256,
+            "name": "Motherwell",
+            "logo": "https://media.api-sports.io/football/teams/256.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220290,
@@ -801,65 +801,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220244,
-          "date": "2025-01-11T15:00:00+00:00",
-          "venue": {
-            "id": 1394,
-            "name": "Easter Road Stadium",
-            "city": "Edinburgh"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1736607600
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 249,
-            "name": "Hibernian",
-            "logo": "https://media.api-sports.io/football/teams/249.png",
-            "winner": true
-          },
-          "away": {
-            "id": 256,
-            "name": "Motherwell",
-            "logo": "https://media.api-sports.io/football/teams/256.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1156,5 +1097,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:21.006Z"
+  "lastUpdated": "2025-04-07T12:47:28.375Z"
 }

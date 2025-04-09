@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362797,
-          "date": "2025-04-06T14:00:00+00:00",
-          "venue": {
-            "id": 462,
-            "name": "Vejle Stadion",
-            "city": "Vejle"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743948000
-        },
-        "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
-        },
-        "teams": {
-          "home": {
-            "id": 395,
-            "name": "Vejle",
-            "logo": "https://media.api-sports.io/football/teams/395.png",
-            "winner": null
-          },
-          "away": {
-            "id": 402,
-            "name": "Aalborg",
-            "logo": "https://media.api-sports.io/football/teams/402.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362798,
           "date": "2025-04-11T17:00:00+00:00",
           "venue": {
@@ -686,6 +627,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362797,
+          "date": "2025-04-06T14:00:00+00:00",
+          "venue": {
+            "id": 462,
+            "name": "Vejle Stadion",
+            "city": "Vejle"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743948000
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 395,
+            "name": "Vejle",
+            "logo": "https://media.api-sports.io/football/teams/395.png",
+            "winner": null
+          },
+          "away": {
+            "id": 402,
+            "name": "Aalborg",
+            "logo": "https://media.api-sports.io/football/teams/402.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1362792,
           "date": "2025-03-28T18:00:00+00:00",
           "venue": {
@@ -1044,8 +1044,8 @@
           "date": "2025-02-23T13:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Ceres Park Vejlby",
-            "city": "Risskov"
+            "name": "Vejlby Stadion",
+            "city": "Aarhus"
           },
           "status": {
             "long": "Match Finished",
@@ -1204,65 +1204,6 @@
           "fulltime": {
             "home": 3,
             "away": 5
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1337956,
-          "date": "2025-01-24T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737720000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 402,
-            "name": "Aalborg",
-            "logo": "https://media.api-sports.io/football/teams/402.png",
-            "winner": true
-          },
-          "away": {
-            "id": 404,
-            "name": "AC Horsens",
-            "logo": "https://media.api-sports.io/football/teams/404.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 6,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 6,
-            "away": 1
           },
           "extratime": {
             "home": null,
@@ -1569,5 +1510,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:42.016Z"
+  "lastUpdated": "2025-04-07T12:47:48.754Z"
 }

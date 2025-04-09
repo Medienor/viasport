@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -189,65 +189,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1356829,
-          "date": "2025-04-04T14:15:00+00:00",
-          "venue": {
-            "id": 169,
-            "name": "Slutskyĭ Hosudarstvennyĭ Kolledz͡h",
-            "city": "Slutsk"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743776100
-        },
-        "league": {
-          "id": 116,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
-        },
-        "teams": {
-          "home": {
-            "id": 379,
-            "name": "FC Slutsk",
-            "logo": "https://media.api-sports.io/football/teams/379.png",
-            "winner": null
-          },
-          "away": {
-            "id": 385,
-            "name": "Torpedo Zhodino",
-            "logo": "https://media.api-sports.io/football/teams/385.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1356834,
           "date": "2025-04-12T13:00:00+00:00",
           "venue": {
@@ -310,9 +251,9 @@
           "id": 1360335,
           "date": "2025-04-14T22:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 170,
+            "name": "Stadyen Tarpeda",
+            "city": "Zhodino"
           },
           "status": {
             "long": "Not Started",
@@ -422,9 +363,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1356849,
+          "date": "2025-04-24T22:00:00+00:00",
+          "venue": {
+            "id": 170,
+            "name": "Stadyen Tarpeda",
+            "city": "Zhodino"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745532000
+        },
+        "league": {
+          "id": 116,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
+        },
+        "teams": {
+          "home": {
+            "id": 385,
+            "name": "Torpedo Zhodino",
+            "logo": "https://media.api-sports.io/football/teams/385.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7808,
+            "name": "MKK-Dnepr",
+            "logo": "https://media.api-sports.io/football/teams/7808.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1356829,
+          "date": "2025-04-04T14:15:00+00:00",
+          "venue": {
+            "id": 169,
+            "name": "Slutskyĭ Hosudarstvennyĭ Kolledz͡h",
+            "city": "Slutsk"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743776100
+        },
+        "league": {
+          "id": 116,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
+        },
+        "teams": {
+          "home": {
+            "id": 379,
+            "name": "FC Slutsk",
+            "logo": "https://media.api-sports.io/football/teams/379.png",
+            "winner": null
+          },
+          "away": {
+            "id": 385,
+            "name": "Torpedo Zhodino",
+            "logo": "https://media.api-sports.io/football/teams/385.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1356819,
@@ -955,65 +1014,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1179349,
-          "date": "2024-12-01T11:00:00+00:00",
-          "venue": {
-            "id": 168,
-            "name": "Stadyen Junatsva",
-            "city": "Mozyr"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1733050800
-        },
-        "league": {
-          "id": 116,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
-        },
-        "teams": {
-          "home": {
-            "id": 751,
-            "name": "Slavia Mozyr",
-            "logo": "https://media.api-sports.io/football/teams/751.png",
-            "winner": false
-          },
-          "away": {
-            "id": 385,
-            "name": "Torpedo Zhodino",
-            "logo": "https://media.api-sports.io/football/teams/385.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1031,12 +1031,12 @@
       "name": "Torpedo Zhodino",
       "logo": "https://media.api-sports.io/football/teams/385.png"
     },
-    "form": "DD",
+    "form": "DDD",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 1,
-        "total": 2
+        "away": 2,
+        "total": 3
       },
       "wins": {
         "home": 0,
@@ -1045,8 +1045,8 @@
       },
       "draws": {
         "home": 1,
-        "away": 1,
-        "total": 2
+        "away": 2,
+        "total": 3
       },
       "loses": {
         "home": 0,
@@ -1063,8 +1063,8 @@
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "0.5"
+          "away": "0.5",
+          "total": "0.3"
         },
         "minute": {
           "0-15": {
@@ -1103,23 +1103,23 @@
         "under_over": {
           "0.5": {
             "over": 1,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       },
@@ -1131,8 +1131,8 @@
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "0.5"
+          "away": "0.5",
+          "total": "0.3"
         },
         "minute": {
           "0-15": {
@@ -1171,23 +1171,23 @@
         "under_over": {
           "0.5": {
             "over": 1,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       }
@@ -1195,7 +1195,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 2,
+        "draws": 3,
         "loses": 0
       },
       "wins": {
@@ -1219,13 +1219,13 @@
     },
     "clean_sheet": {
       "home": 1,
-      "away": 0,
-      "total": 1
+      "away": 1,
+      "total": 2
     },
     "failed_to_score": {
       "home": 1,
-      "away": 0,
-      "total": 1
+      "away": 1,
+      "total": 2
     },
     "penalty": {
       "scored": {
@@ -1315,5 +1315,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:26.049Z"
+  "lastUpdated": "2025-04-07T12:48:32.275Z"
 }

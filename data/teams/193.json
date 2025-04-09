@@ -114,65 +114,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213685,
-          "date": "2025-04-05T19:00:00+00:00",
-          "venue": {
-            "id": 1141,
-            "name": "Yanmar Stadion",
-            "city": "Almere"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743879600
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 419,
-            "name": "Almere City FC",
-            "logo": "https://media.api-sports.io/football/teams/419.png",
-            "winner": null
-          },
-          "away": {
-            "id": 193,
-            "name": "PEC Zwolle",
-            "logo": "https://media.api-sports.io/football/teams/193.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213698,
           "date": "2025-04-13T12:30:00+00:00",
           "venue": {
@@ -527,6 +468,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213685,
+          "date": "2025-04-05T19:00:00+00:00",
+          "venue": {
+            "id": 1141,
+            "name": "Yanmar Stadion",
+            "city": "Almere"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743879600
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 419,
+            "name": "Almere City FC",
+            "logo": "https://media.api-sports.io/football/teams/419.png",
+            "winner": null
+          },
+          "away": {
+            "id": 193,
+            "name": "PEC Zwolle",
+            "logo": "https://media.api-sports.io/football/teams/193.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213681,
@@ -1057,65 +1057,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213601,
-          "date": "2025-01-11T19:00:00+00:00",
-          "venue": {
-            "id": 1160,
-            "name": "MAC³PARK Stadion",
-            "city": "Zwolle"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1736622000
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 193,
-            "name": "PEC Zwolle",
-            "logo": "https://media.api-sports.io/football/teams/193.png",
-            "winner": false
-          },
-          "away": {
-            "id": 413,
-            "name": "NEC Nijmegen",
-            "logo": "https://media.api-sports.io/football/teams/413.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1412,5 +1353,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:47.525Z"
+  "lastUpdated": "2025-04-07T12:46:54.519Z"
 }

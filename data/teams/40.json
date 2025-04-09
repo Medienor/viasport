@@ -190,65 +190,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208327,
-          "date": "2025-04-06T13:00:00+00:00",
-          "venue": {
-            "id": 535,
-            "name": "Craven Cottage",
-            "city": "London"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743944400
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 36,
-            "name": "Fulham",
-            "logo": "https://media.api-sports.io/football/teams/36.png",
-            "winner": null
-          },
-          "away": {
-            "id": 40,
-            "name": "Liverpool",
-            "logo": "https://media.api-sports.io/football/teams/40.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208337,
           "date": "2025-04-13T13:00:00+00:00",
           "venue": {
@@ -486,7 +427,7 @@
       {
         "fixture": {
           "id": 1208376,
-          "date": "2025-05-10T14:00:00+00:00",
+          "date": "2025-05-11T15:30:00+00:00",
           "venue": {
             "id": 550,
             "name": "Anfield",
@@ -498,7 +439,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1746885600
+          "timestamp": 1746977400
         },
         "league": {
           "id": 39,
@@ -662,6 +603,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208327,
+          "date": "2025-04-06T13:00:00+00:00",
+          "venue": {
+            "id": 535,
+            "name": "Craven Cottage",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743944400
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 36,
+            "name": "Fulham",
+            "logo": "https://media.api-sports.io/football/teams/36.png",
+            "winner": true
+          },
+          "away": {
+            "id": 40,
+            "name": "Liverpool",
+            "logo": "https://media.api-sports.io/football/teams/40.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208322,
@@ -1192,65 +1192,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334968,
-          "date": "2025-02-09T15:00:00+00:00",
-          "venue": {
-            "id": 571,
-            "name": "Home Park",
-            "city": "Plymouth"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1739113200
-        },
-        "league": {
-          "id": 45,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/45.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1357,
-            "name": "Plymouth",
-            "logo": "https://media.api-sports.io/football/teams/1357.png",
-            "winner": true
-          },
-          "away": {
-            "id": 40,
-            "name": "Liverpool",
-            "logo": "https://media.api-sports.io/football/teams/40.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1547,5 +1488,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:32.493Z"
+  "lastUpdated": "2025-04-07T12:45:39.977Z"
 }

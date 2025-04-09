@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -224,65 +224,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1356828,
-          "date": "2025-04-05T16:45:00+00:00",
-          "venue": {
-            "id": 2606,
-            "name": "Stadyen Dynama",
-            "city": "Minsk"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743871500
-        },
-        "league": {
-          "id": 116,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
-        },
-        "teams": {
-          "home": {
-            "id": 394,
-            "name": "Dinamo Minsk",
-            "logo": "https://media.api-sports.io/football/teams/394.png",
-            "winner": null
-          },
-          "away": {
-            "id": 387,
-            "name": "Neman",
-            "logo": "https://media.api-sports.io/football/teams/387.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1356835,
@@ -434,6 +375,65 @@
             "id": 387,
             "name": "Neman",
             "logo": "https://media.api-sports.io/football/teams/387.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356850,
+          "date": "2025-04-24T22:00:00+00:00",
+          "venue": {
+            "id": 10497,
+            "name": "Stadion Neman",
+            "city": "Grodno"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745532000
+        },
+        "league": {
+          "id": 116,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
+        },
+        "teams": {
+          "home": {
+            "id": 387,
+            "name": "Neman",
+            "logo": "https://media.api-sports.io/football/teams/387.png",
+            "winner": null
+          },
+          "away": {
+            "id": 386,
+            "name": "Dinamo Brest",
+            "logo": "https://media.api-sports.io/football/teams/386.png",
             "winner": null
           }
         },
@@ -1352,5 +1352,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:26.003Z"
+  "lastUpdated": "2025-04-07T12:48:32.231Z"
 }

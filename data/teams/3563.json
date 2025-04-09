@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-09-10",
-          "end": "2025-04-01",
+          "end": "2025-04-21",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -113,65 +113,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1238114,
-          "date": "2025-04-04T17:00:00+00:00",
-          "venue": {
-            "id": 11924,
-            "name": "Yeni Adana Stadyumu",
-            "city": "Adana"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743786000
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3563,
-            "name": "Adana Demirspor",
-            "logo": "https://media.api-sports.io/football/teams/3563.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1001,
-            "name": "Kayserispor",
-            "logo": "https://media.api-sports.io/football/teams/1001.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1238125,
@@ -292,6 +233,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238114,
+          "date": "2025-04-04T17:00:00+00:00",
+          "venue": {
+            "id": 11924,
+            "name": "Yeni Adana Stadyumu",
+            "city": "Adana"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743786000
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3563,
+            "name": "Adana Demirspor",
+            "logo": "https://media.api-sports.io/football/teams/3563.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1001,
+            "name": "Kayserispor",
+            "logo": "https://media.api-sports.io/football/teams/1001.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238101,
@@ -822,65 +822,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1238018,
-          "date": "2025-01-12T16:00:00+00:00",
-          "venue": {
-            "id": 2375,
-            "name": "Gaziantep Stadyumu",
-            "city": "Gaziantep"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1736697600
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3573,
-            "name": "Gazişehir Gaziantep",
-            "logo": "https://media.api-sports.io/football/teams/3573.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3563,
-            "name": "Adana Demirspor",
-            "logo": "https://media.api-sports.io/football/teams/3563.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1177,5 +1118,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:26.679Z"
+  "lastUpdated": "2025-04-07T12:46:34.172Z"
 }

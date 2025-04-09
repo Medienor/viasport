@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -221,65 +221,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1366559,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 1169,
-            "name": "Solitude",
-            "city": "Belfast"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 408,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/408.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2266,
-            "name": "Cliftonville FC",
-            "logo": "https://media.api-sports.io/football/teams/2266.png",
-            "winner": null
-          },
-          "away": {
-            "id": 668,
-            "name": "Ballymena United",
-            "logo": "https://media.api-sports.io/football/teams/668.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1366563,
@@ -518,6 +459,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366559,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 1169,
+            "name": "Solitude",
+            "city": "Belfast"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 408,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/408.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2266,
+            "name": "Cliftonville FC",
+            "logo": "https://media.api-sports.io/football/teams/2266.png",
+            "winner": true
+          },
+          "away": {
+            "id": 668,
+            "name": "Ballymena United",
+            "logo": "https://media.api-sports.io/football/teams/668.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1366556,
@@ -1048,65 +1048,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1222021,
-          "date": "2025-02-15T15:00:00+00:00",
-          "venue": {
-            "id": 1173,
-            "name": "Mourneview Park",
-            "city": "Lurgan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739631600
-        },
-        "league": {
-          "id": 408,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/408.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2275,
-            "name": "Glenavon FC",
-            "logo": "https://media.api-sports.io/football/teams/2275.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2266,
-            "name": "Cliftonville FC",
-            "logo": "https://media.api-sports.io/football/teams/2266.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1403,5 +1344,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:49.039Z"
+  "lastUpdated": "2025-04-07T12:48:55.285Z"
 }

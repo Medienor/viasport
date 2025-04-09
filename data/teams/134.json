@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -114,10 +114,10 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": true,
             "players": true,
@@ -152,65 +152,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1353263,
-          "date": "2025-04-05T00:00:00+00:00",
-          "venue": {
-            "id": 262,
-            "name": "Estádio Estadual Jornalista Edgar Augusto Proença",
-            "city": "Belém, Pará"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743811200
-        },
-        "league": {
-          "id": 72,
-          "name": "Serie B",
-          "logo": "https://media.api-sports.io/football/leagues/72.png"
-        },
-        "teams": {
-          "home": {
-            "id": 149,
-            "name": "Paysandu",
-            "logo": "https://media.api-sports.io/football/teams/149.png",
-            "winner": null
-          },
-          "away": {
-            "id": 134,
-            "name": "Atletico Paranaense",
-            "logo": "https://media.api-sports.io/football/teams/134.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1353270,
@@ -387,9 +328,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1353308,
+          "date": "2025-04-24T22:00:00+00:00",
+          "venue": {
+            "id": 5664,
+            "name": "Estádio Dr. Jorge Ismael de Biasi",
+            "city": "Novo Horizonte, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745532000
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7834,
+            "name": "Novorizontino",
+            "logo": "https://media.api-sports.io/football/teams/7834.png",
+            "winner": null
+          },
+          "away": {
+            "id": 134,
+            "name": "Atletico Paranaense",
+            "logo": "https://media.api-sports.io/football/teams/134.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1353263,
+          "date": "2025-04-05T00:00:00+00:00",
+          "venue": {
+            "id": 262,
+            "name": "Estádio Estadual Jornalista Edgar Augusto Proença",
+            "city": "Belém, Pará"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743811200
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 149,
+            "name": "Paysandu",
+            "logo": "https://media.api-sports.io/football/teams/149.png",
+            "winner": false
+          },
+          "away": {
+            "id": 134,
+            "name": "Atletico Paranaense",
+            "logo": "https://media.api-sports.io/football/teams/134.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360073,
@@ -920,65 +979,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1317099,
-          "date": "2025-02-06T23:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Ligga Arena",
-            "city": "Curitiba, Paraná"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738882800
-        },
-        "league": {
-          "id": 606,
-          "name": "Paranaense - 1",
-          "logo": "https://media.api-sports.io/football/leagues/606.png"
-        },
-        "teams": {
-          "home": {
-            "id": 134,
-            "name": "Atletico Paranaense",
-            "logo": "https://media.api-sports.io/football/teams/134.png",
-            "winner": true
-          },
-          "away": {
-            "id": 12941,
-            "name": "Independiente FSJ",
-            "logo": "https://media.api-sports.io/football/teams/12941.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1275,5 +1275,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:08.555Z"
+  "lastUpdated": "2025-04-07T12:52:12.402Z"
 }

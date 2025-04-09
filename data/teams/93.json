@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-11-15",
-          "end": "2025-04-02",
+          "end": "2025-05-23",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1213997,
-          "date": "2025-04-06T15:15:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stade Auguste-Delaune",
-            "city": "Reims"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743952500
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 93,
-            "name": "Reims",
-            "logo": "https://media.api-sports.io/football/teams/93.png",
-            "winner": null
-          },
-          "away": {
-            "id": 95,
-            "name": "Strasbourg",
-            "logo": "https://media.api-sports.io/football/teams/95.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1214006,
@@ -386,9 +327,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1367764,
+          "date": "2025-05-23T22:00:00+00:00",
+          "venue": {
+            "id": 20332,
+            "name": "Stade de France",
+            "city": "Saint-Denis"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748037600
+        },
+        "league": {
+          "id": 66,
+          "name": "Coupe de France",
+          "logo": "https://media.api-sports.io/football/leagues/66.png"
+        },
+        "teams": {
+          "home": {
+            "id": 85,
+            "name": "Paris Saint Germain",
+            "logo": "https://media.api-sports.io/football/teams/85.png",
+            "winner": null
+          },
+          "away": {
+            "id": 93,
+            "name": "Reims",
+            "logo": "https://media.api-sports.io/football/teams/93.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213997,
+          "date": "2025-04-06T15:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stade Auguste Delaune",
+            "city": "Reims"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1743952500
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 93,
+            "name": "Reims",
+            "logo": "https://media.api-sports.io/football/teams/93.png",
+            "winner": false
+          },
+          "away": {
+            "id": 95,
+            "name": "Strasbourg",
+            "logo": "https://media.api-sports.io/football/teams/95.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1355646,
@@ -454,7 +513,7 @@
           "date": "2025-03-29T16:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stade Auguste-Delaune",
+            "name": "Stade Auguste Delaune",
             "city": "Reims"
           },
           "status": {
@@ -572,7 +631,7 @@
           "date": "2025-03-09T16:15:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stade Auguste-Delaune",
+            "name": "Stade Auguste Delaune",
             "city": "Reims"
           },
           "status": {
@@ -749,7 +808,7 @@
           "date": "2025-02-16T16:15:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stade Auguste-Delaune",
+            "name": "Stade Auguste Delaune",
             "city": "Reims"
           },
           "status": {
@@ -867,7 +926,7 @@
           "date": "2025-02-02T16:15:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stade Auguste-Delaune",
+            "name": "Stade Auguste Delaune",
             "city": "Reims"
           },
           "status": {
@@ -909,65 +968,6 @@
           "fulltime": {
             "home": 1,
             "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1213916,
-          "date": "2025-01-25T20:05:00+00:00",
-          "venue": {
-            "id": 671,
-            "name": "Parc des Princes",
-            "city": "Paris"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737835500
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 85,
-            "name": "Paris Saint Germain",
-            "logo": "https://media.api-sports.io/football/teams/85.png",
-            "winner": null
-          },
-          "away": {
-            "id": 93,
-            "name": "Reims",
-            "logo": "https://media.api-sports.io/football/teams/93.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
           },
           "extratime": {
             "home": null,
@@ -1274,5 +1274,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:13.907Z"
+  "lastUpdated": "2025-04-07T12:46:21.363Z"
 }

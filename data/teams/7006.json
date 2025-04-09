@@ -145,65 +145,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1342434,
-          "date": "2025-04-06T15:00:00+00:00",
-          "venue": {
-            "id": 1179,
-            "name": "KFUM Arena",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743951600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7006,
-            "name": "Lyn",
-            "logo": "https://media.api-sports.io/football/teams/7006.png",
-            "winner": null
-          },
-          "away": {
-            "id": 323,
-            "name": "Stabaek",
-            "logo": "https://media.api-sports.io/football/teams/323.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1367227,
           "date": "2025-04-13T14:00:00+00:00",
           "venue": {
@@ -796,6 +737,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1342434,
+          "date": "2025-04-06T15:00:00+00:00",
+          "venue": {
+            "id": 1179,
+            "name": "KFUM Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743951600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7006,
+            "name": "Lyn",
+            "logo": "https://media.api-sports.io/football/teams/7006.png",
+            "winner": false
+          },
+          "away": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342429,
           "date": "2025-03-31T17:00:00+00:00",
           "venue": {
@@ -1324,65 +1324,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1152101,
-          "date": "2024-11-02T15:00:00+00:00",
-          "venue": {
-            "id": 12683,
-            "name": "Åsane Arena",
-            "city": "Bergen"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1730559600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2148,
-            "name": "Asane",
-            "logo": "https://media.api-sports.io/football/teams/2148.png",
-            "winner": true
-          },
-          "away": {
-            "id": 7006,
-            "name": "Lyn",
-            "logo": "https://media.api-sports.io/football/teams/7006.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1400,12 +1341,12 @@
       "name": "Lyn",
       "logo": "https://media.api-sports.io/football/teams/7006.png"
     },
-    "form": "W",
+    "form": "WL",
     "fixtures": {
       "played": {
-        "home": 0,
+        "home": 1,
         "away": 1,
-        "total": 1
+        "total": 2
       },
       "wins": {
         "home": 0,
@@ -1418,9 +1359,9 @@
         "total": 0
       },
       "loses": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       }
     },
     "goals": {
@@ -1433,7 +1374,7 @@
         "average": {
           "home": "0.0",
           "away": "3.0",
-          "total": "3.0"
+          "total": "1.5"
         },
         "minute": {
           "0-15": {
@@ -1472,36 +1413,36 @@
         "under_over": {
           "0.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       },
       "against": {
         "total": {
-          "home": 0,
+          "home": 1,
           "away": 0,
-          "total": 0
+          "total": 1
         },
         "average": {
-          "home": "0.0",
+          "home": "1.0",
           "away": "0.0",
-          "total": "0.0"
+          "total": "0.5"
         },
         "minute": {
           "0-15": {
@@ -1521,8 +1462,8 @@
             "percentage": null
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "100.00%"
           },
           "76-90": {
             "total": null,
@@ -1539,24 +1480,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 1
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       }
@@ -1572,7 +1513,7 @@
         "away": "0-3"
       },
       "loses": {
-        "home": null,
+        "home": "0-1",
         "away": null
       },
       "goals": {
@@ -1581,7 +1522,7 @@
           "away": 3
         },
         "against": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       }
@@ -1592,9 +1533,9 @@
       "total": 1
     },
     "failed_to_score": {
-      "home": 0,
+      "home": 1,
       "away": 0,
-      "total": 0
+      "total": 1
     },
     "penalty": {
       "scored": {
@@ -1679,5 +1620,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:24.931Z"
+  "lastUpdated": "2025-04-07T12:45:32.388Z"
 }

@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-08-06",
-          "end": "2025-04-02",
+          "end": "2025-05-02",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -150,7 +150,7 @@
           "date": "2025-04-07T17:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadion Miejski w Niepołomicach",
+            "name": "Stadion Miejski w Niepolomicach",
             "city": "Niepołomice"
           },
           "status": {
@@ -354,6 +354,65 @@
             "id": 348,
             "name": "Pogon Szczecin",
             "logo": "https://media.api-sports.io/football/teams/348.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203223,
+          "date": "2025-05-03T18:15:00+00:00",
+          "venue": {
+            "id": 20110,
+            "name": "Enea Stadion",
+            "city": "Poznań"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746296100
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 347,
+            "name": "Lech Poznan",
+            "logo": "https://media.api-sports.io/football/teams/347.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
             "winner": null
           }
         },
@@ -1326,5 +1385,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:44.965Z"
+  "lastUpdated": "2025-04-07T12:46:51.926Z"
 }

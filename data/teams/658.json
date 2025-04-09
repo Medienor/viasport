@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -188,65 +188,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1231229,
-          "date": "2025-04-05T16:00:00+00:00",
-          "venue": {
-            "id": 1039,
-            "name": "Stade Jos Haupert",
-            "city": "Niedercorn"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743868800
-        },
-        "league": {
-          "id": 261,
-          "name": "National Division",
-          "logo": "https://media.api-sports.io/football/leagues/261.png"
-        },
-        "teams": {
-          "home": {
-            "id": 658,
-            "name": "Progres Niederkorn",
-            "logo": "https://media.api-sports.io/football/teams/658.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2036,
-            "name": "UNA Strassen",
-            "logo": "https://media.api-sports.io/football/teams/2036.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1231241,
@@ -721,6 +662,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231229,
+          "date": "2025-04-05T16:00:00+00:00",
+          "venue": {
+            "id": 1039,
+            "name": "Stade Jos Haupert",
+            "city": "Niedercorn"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743868800
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 658,
+            "name": "Progres Niederkorn",
+            "logo": "https://media.api-sports.io/football/teams/658.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2036,
+            "name": "UNA Strassen",
+            "logo": "https://media.api-sports.io/football/teams/2036.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231224,
@@ -1251,65 +1251,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231164,
-          "date": "2024-12-11T19:00:00+00:00",
-          "venue": {
-            "id": 1039,
-            "name": "Stade Jos Haupert",
-            "city": "Niedercorn"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1733943600
-        },
-        "league": {
-          "id": 261,
-          "name": "National Division",
-          "logo": "https://media.api-sports.io/football/leagues/261.png"
-        },
-        "teams": {
-          "home": {
-            "id": 658,
-            "name": "Progres Niederkorn",
-            "logo": "https://media.api-sports.io/football/teams/658.png",
-            "winner": null
-          },
-          "away": {
-            "id": 11907,
-            "name": "Swift Hesperange",
-            "logo": "https://media.api-sports.io/football/teams/11907.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1606,5 +1547,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:36.398Z"
+  "lastUpdated": "2025-04-07T12:48:42.511Z"
 }

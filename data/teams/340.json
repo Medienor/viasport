@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-08-06",
-          "end": "2025-04-02",
+          "end": "2025-05-02",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -144,65 +144,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1203184,
-          "date": "2025-04-06T12:45:00+00:00",
-          "venue": {
-            "id": 18625,
-            "name": "Stadion im. Ernesta Pohla",
-            "city": "Zabrze"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743943500
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 340,
-            "name": "Gornik Zabrze",
-            "logo": "https://media.api-sports.io/football/teams/340.png",
-            "winner": null
-          },
-          "away": {
-            "id": 339,
-            "name": "Legia Warszawa",
-            "logo": "https://media.api-sports.io/football/teams/339.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1203195,
@@ -382,6 +323,65 @@
       },
       {
         "fixture": {
+          "id": 1203221,
+          "date": "2025-05-04T15:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Chorten Arena",
+            "city": "Białystok"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746372600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 336,
+            "name": "Jagiellonia",
+            "logo": "https://media.api-sports.io/football/teams/336.png",
+            "winner": null
+          },
+          "away": {
+            "id": 340,
+            "name": "Gornik Zabrze",
+            "logo": "https://media.api-sports.io/football/teams/340.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203247,
           "date": "2025-05-24T15:30:00+00:00",
           "venue": {
@@ -441,6 +441,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1203184,
+          "date": "2025-04-06T12:45:00+00:00",
+          "venue": {
+            "id": 18625,
+            "name": "Stadion im. Ernesta Pohla",
+            "city": "Zabrze"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743943500
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 340,
+            "name": "Gornik Zabrze",
+            "logo": "https://media.api-sports.io/football/teams/340.png",
+            "winner": false
+          },
+          "away": {
+            "id": 339,
+            "name": "Legia Warszawa",
+            "logo": "https://media.api-sports.io/football/teams/339.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1203176,
@@ -971,65 +1030,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337966,
-          "date": "2025-01-24T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "TBC",
-            "city": "TBC"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737676800
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 340,
-            "name": "Gornik Zabrze",
-            "logo": "https://media.api-sports.io/football/teams/340.png",
-            "winner": null
-          },
-          "away": {
-            "id": 6501,
-            "name": "Veres Rivne",
-            "logo": "https://media.api-sports.io/football/teams/6501.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1326,5 +1326,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:39.757Z"
+  "lastUpdated": "2025-04-07T12:46:46.905Z"
 }

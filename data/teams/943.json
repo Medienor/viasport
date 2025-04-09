@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1280812,
-          "date": "2025-04-05T08:35:00+00:00",
-          "venue": {
-            "id": 123,
-            "name": "Coopers Stadium",
-            "city": "Adelaide"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743842100
-        },
-        "league": {
-          "id": 188,
-          "name": "A-League",
-          "logo": "https://media.api-sports.io/football/leagues/188.png"
-        },
-        "teams": {
-          "home": {
-            "id": 948,
-            "name": "Adelaide United",
-            "logo": "https://media.api-sports.io/football/teams/948.png",
-            "winner": null
-          },
-          "away": {
-            "id": 943,
-            "name": "Sydney",
-            "logo": "https://media.api-sports.io/football/teams/943.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361477,
           "date": "2025-04-09T12:00:00+00:00",
           "venue": {
@@ -565,6 +506,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1280812,
+          "date": "2025-04-05T08:35:00+00:00",
+          "venue": {
+            "id": 123,
+            "name": "Coopers Stadium",
+            "city": "Adelaide"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743842100
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 948,
+            "name": "Adelaide United",
+            "logo": "https://media.api-sports.io/football/teams/948.png",
+            "winner": false
+          },
+          "away": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1280804,
@@ -1095,65 +1095,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1280756,
-          "date": "2025-01-24T08:35:00+00:00",
-          "venue": {
-            "id": 20807,
-            "name": "AAMI Park",
-            "city": "Melbourne"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737707700
-        },
-        "league": {
-          "id": 188,
-          "name": "A-League",
-          "logo": "https://media.api-sports.io/football/leagues/188.png"
-        },
-        "teams": {
-          "home": {
-            "id": 944,
-            "name": "Melbourne Victory",
-            "logo": "https://media.api-sports.io/football/teams/944.png",
-            "winner": true
-          },
-          "away": {
-            "id": 943,
-            "name": "Sydney",
-            "logo": "https://media.api-sports.io/football/teams/943.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1450,5 +1391,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:47.895Z"
+  "lastUpdated": "2025-04-07T12:51:51.629Z"
 }

@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -147,7 +147,7 @@
         {
           "year": 2024,
           "start": "2024-08-31",
-          "end": "2025-04-02",
+          "end": "2025-05-16",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1360698,
-          "date": "2025-04-06T16:30:00+00:00",
-          "venue": {
-            "id": 780,
-            "name": "Stadio Toumbas",
-            "city": "Thessaloníki"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743957000
-        },
-        "league": {
-          "id": 197,
-          "name": "Super League 1",
-          "logo": "https://media.api-sports.io/football/leagues/197.png"
-        },
-        "teams": {
-          "home": {
-            "id": 619,
-            "name": "PAOK",
-            "logo": "https://media.api-sports.io/football/teams/619.png",
-            "winner": null
-          },
-          "away": {
-            "id": 553,
-            "name": "Olympiakos Piraeus",
-            "logo": "https://media.api-sports.io/football/teams/553.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1360700,
@@ -484,6 +425,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360698,
+          "date": "2025-04-06T16:30:00+00:00",
+          "venue": {
+            "id": 780,
+            "name": "Stadio Toumbas",
+            "city": "Thessaloníki"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743957000
+        },
+        "league": {
+          "id": 197,
+          "name": "Super League 1",
+          "logo": "https://media.api-sports.io/football/leagues/197.png"
+        },
+        "teams": {
+          "home": {
+            "id": 619,
+            "name": "PAOK",
+            "logo": "https://media.api-sports.io/football/teams/619.png",
+            "winner": true
+          },
+          "away": {
+            "id": 553,
+            "name": "Olympiakos Piraeus",
+            "logo": "https://media.api-sports.io/football/teams/553.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360696,
@@ -1014,65 +1014,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299266,
-          "date": "2025-01-30T20:00:00+00:00",
-          "venue": {
-            "id": 1491,
-            "name": "Reale Arena",
-            "city": "Donostia-San Sebastián"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738267200
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 548,
-            "name": "Real Sociedad",
-            "logo": "https://media.api-sports.io/football/teams/548.png",
-            "winner": true
-          },
-          "away": {
-            "id": 619,
-            "name": "PAOK",
-            "logo": "https://media.api-sports.io/football/teams/619.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1369,5 +1310,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:54.705Z"
+  "lastUpdated": "2025-04-07T12:48:01.764Z"
 }

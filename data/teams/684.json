@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -227,67 +227,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231233,
-          "date": "2025-04-06T14:00:00+00:00",
-          "venue": {
-            "id": 1037,
-            "name": "Stade de la Frontière",
-            "city": "Esch-sur-Alzette"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743948000
-        },
-        "league": {
-          "id": 261,
-          "name": "National Division",
-          "logo": "https://media.api-sports.io/football/leagues/261.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2034,
-            "name": "AS Jeunesse Esch",
-            "logo": "https://media.api-sports.io/football/teams/2034.png",
-            "winner": null
-          },
-          "away": {
-            "id": 684,
-            "name": "FC Differdange 03",
-            "logo": "https://media.api-sports.io/football/teams/684.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231236,
-          "date": "2025-04-13T14:00:00+00:00",
+          "date": "2025-04-12T15:00:00+00:00",
           "venue": {
             "id": 1031,
             "name": "Stade Parc des Sports",
@@ -299,7 +240,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744552800
+          "timestamp": 1744470000
         },
         "league": {
           "id": 261,
@@ -758,6 +699,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231233,
+          "date": "2025-04-06T14:00:00+00:00",
+          "venue": {
+            "id": 1037,
+            "name": "Stade de la Frontière",
+            "city": "Esch-sur-Alzette"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743948000
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2034,
+            "name": "AS Jeunesse Esch",
+            "logo": "https://media.api-sports.io/football/teams/2034.png",
+            "winner": false
+          },
+          "away": {
+            "id": 684,
+            "name": "FC Differdange 03",
+            "logo": "https://media.api-sports.io/football/teams/684.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231221,
@@ -1288,65 +1288,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231169,
-          "date": "2024-12-07T16:00:00+00:00",
-          "venue": {
-            "id": 11049,
-            "name": "Stade Achille Hammerel",
-            "city": "Luxembourg"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1733587200
-        },
-        "league": {
-          "id": 261,
-          "name": "National Division",
-          "logo": "https://media.api-sports.io/football/leagues/261.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2030,
-            "name": "Racing FC Union Luxembourg",
-            "logo": "https://media.api-sports.io/football/teams/2030.png",
-            "winner": true
-          },
-          "away": {
-            "id": 684,
-            "name": "FC Differdange 03",
-            "logo": "https://media.api-sports.io/football/teams/684.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1643,5 +1584,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:57.167Z"
+  "lastUpdated": "2025-04-07T12:48:04.285Z"
 }

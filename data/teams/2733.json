@@ -147,65 +147,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1353236,
-          "date": "2025-04-04T14:45:00+00:00",
-          "venue": {
-            "id": 21440,
-            "name": "Yadegar-e-Imam Stadium",
-            "city": "Tabriz"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743777900
-        },
-        "league": {
-          "id": 290,
-          "name": "Persian Gulf Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/290.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2737,
-            "name": "Tractor Sazi",
-            "logo": "https://media.api-sports.io/football/teams/2737.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2733,
-            "name": "Esteghlal FC",
-            "logo": "https://media.api-sports.io/football/teams/2733.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361639,
           "date": "2025-04-10T14:30:00+00:00",
           "venue": {
@@ -442,6 +383,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1353236,
+          "date": "2025-04-04T15:00:00+00:00",
+          "venue": {
+            "id": 21440,
+            "name": "Yadegar-e-Imam Stadium",
+            "city": "Tabriz"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743778800
+        },
+        "league": {
+          "id": 290,
+          "name": "Persian Gulf Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/290.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2737,
+            "name": "Tractor Sazi",
+            "logo": "https://media.api-sports.io/football/teams/2737.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2733,
+            "name": "Esteghlal FC",
+            "logo": "https://media.api-sports.io/football/teams/2733.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1353230,
@@ -972,65 +972,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1327836,
-          "date": "2025-01-30T13:30:00+00:00",
-          "venue": {
-            "id": 854,
-            "name": "Shahr-e Qods Stadium",
-            "city": "Shahr-e Qods"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1738243800
-        },
-        "league": {
-          "id": 290,
-          "name": "Persian Gulf Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/290.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2733,
-            "name": "Esteghlal FC",
-            "logo": "https://media.api-sports.io/football/teams/2733.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2739,
-            "name": "Esteghlal Khuzestan",
-            "logo": "https://media.api-sports.io/football/teams/2739.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1327,5 +1268,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:37.631Z"
+  "lastUpdated": "2025-04-07T12:51:41.502Z"
 }

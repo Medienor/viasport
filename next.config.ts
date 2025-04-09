@@ -11,24 +11,19 @@ const nextConfig: NextConfig = {
       'media-1.api-sports.io',
       'media.api-sports.io',
       'i.ytimg.com',
+      'image.assets.pressassociation.io',
+      'uk1.sportal365images.com',
     ],
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'crests.football-data.org',
-        pathname: '**',
-      },
-      {
-        protocol: 'https',
-        hostname: '*.api-sports.io',
-        pathname: '**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'i.ytimg.com',
+        hostname: '**',
         pathname: '**',
       },
     ],
+    // This is a more permissive approach that allows images from any domain
+    // Use with caution as it reduces security
+    unoptimized: true,
   },
   // Add these options to ignore type and lint errors during build
   typescript: {

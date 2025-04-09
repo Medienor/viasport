@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1362796,
-          "date": "2025-04-06T12:00:00+00:00",
-          "venue": {
-            "id": 459,
-            "name": "JYSK park",
-            "city": "Silkeborg"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743940800
-        },
-        "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2073,
-            "name": "Silkeborg",
-            "logo": "https://media.api-sports.io/football/teams/2073.png",
-            "winner": null
-          },
-          "away": {
-            "id": 625,
-            "name": "Lyngby",
-            "logo": "https://media.api-sports.io/football/teams/625.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1362799,
@@ -758,6 +699,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362796,
+          "date": "2025-04-06T12:00:00+00:00",
+          "venue": {
+            "id": 459,
+            "name": "JYSK park",
+            "city": "Silkeborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743940800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2073,
+            "name": "Silkeborg",
+            "logo": "https://media.api-sports.io/football/teams/2073.png",
+            "winner": true
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1362793,
@@ -1288,65 +1288,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1344780,
-          "date": "2025-01-29T10:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1738144800
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5275,
-            "name": "Real Murcia",
-            "logo": "https://media.api-sports.io/football/teams/5275.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2073,
-            "name": "Silkeborg",
-            "logo": "https://media.api-sports.io/football/teams/2073.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1643,5 +1584,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:44.531Z"
+  "lastUpdated": "2025-04-07T12:47:51.226Z"
 }

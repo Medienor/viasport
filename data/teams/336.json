@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-08-06",
-          "end": "2025-04-02",
+          "end": "2025-05-02",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -226,7 +226,7 @@
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": false,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -294,65 +294,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1203185,
-          "date": "2025-04-06T10:15:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Chorten Arena",
-            "city": "Białystok"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743934500
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 336,
-            "name": "Jagiellonia",
-            "logo": "https://media.api-sports.io/football/teams/336.png",
-            "winner": null
-          },
-          "away": {
-            "id": 349,
-            "name": "Piast Gliwice",
-            "logo": "https://media.api-sports.io/football/teams/349.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361284,
@@ -650,6 +591,65 @@
       },
       {
         "fixture": {
+          "id": 1203221,
+          "date": "2025-05-04T15:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Chorten Arena",
+            "city": "Białystok"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746372600
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 336,
+            "name": "Jagiellonia",
+            "logo": "https://media.api-sports.io/football/teams/336.png",
+            "winner": null
+          },
+          "away": {
+            "id": 340,
+            "name": "Gornik Zabrze",
+            "logo": "https://media.api-sports.io/football/teams/340.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203248,
           "date": "2025-05-24T15:30:00+00:00",
           "venue": {
@@ -709,6 +709,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1203185,
+          "date": "2025-04-06T10:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Chorten Arena",
+            "city": "Bialystok"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743934500
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 336,
+            "name": "Jagiellonia",
+            "logo": "https://media.api-sports.io/football/teams/336.png",
+            "winner": null
+          },
+          "away": {
+            "id": 349,
+            "name": "Piast Gliwice",
+            "logo": "https://media.api-sports.io/football/teams/349.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1210376,
@@ -834,7 +893,7 @@
           "venue": {
             "id": null,
             "name": "Chorten Arena",
-            "city": "Białystok"
+            "city": "Bialystok"
           },
           "status": {
             "long": "Match Finished",
@@ -1069,8 +1128,8 @@
           "date": "2025-03-02T16:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Chorten Arena",
-            "city": "Białystok"
+            "name": "Bialystok City Stadium",
+            "city": "Bialystok"
           },
           "status": {
             "long": "Match Finished",
@@ -1229,65 +1288,6 @@
           "fulltime": {
             "home": 2,
             "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1325907,
-          "date": "2025-02-20T20:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Chorten Arena",
-            "city": "Białystok"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1740081600
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 336,
-            "name": "Jagiellonia",
-            "logo": "https://media.api-sports.io/football/teams/336.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2646,
-            "name": "TSC Backa Topola",
-            "logo": "https://media.api-sports.io/football/teams/2646.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
           },
           "extratime": {
             "home": null,
@@ -1594,5 +1594,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:39.795Z"
+  "lastUpdated": "2025-04-07T12:46:46.863Z"
 }

@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-09-18",
-          "end": "2025-02-26",
+          "end": "2025-04-23",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -182,65 +182,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1359834,
-          "date": "2025-04-06T13:00:00+00:00",
-          "venue": {
-            "id": 3324,
-            "name": "Gradski Stadion",
-            "city": "Kavadarci"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743944400
-        },
-        "league": {
-          "id": 371,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/371.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4348,
-            "name": "Tikveš",
-            "logo": "https://media.api-sports.io/football/teams/4348.png",
-            "winner": null
-          },
-          "away": {
-            "id": 609,
-            "name": "Shkendija",
-            "logo": "https://media.api-sports.io/football/teams/609.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1359837,
@@ -656,6 +597,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1359834,
+          "date": "2025-04-06T13:00:00+00:00",
+          "venue": {
+            "id": 3324,
+            "name": "Gradski Stadion",
+            "city": "Kavadarci"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743944400
+        },
+        "league": {
+          "id": 371,
+          "name": "First League",
+          "logo": "https://media.api-sports.io/football/leagues/371.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4348,
+            "name": "Tikveš",
+            "logo": "https://media.api-sports.io/football/teams/4348.png",
+            "winner": false
+          },
+          "away": {
+            "id": 609,
+            "name": "Shkendija",
+            "logo": "https://media.api-sports.io/football/teams/609.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1359826,
@@ -1186,65 +1186,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337141,
-          "date": "2025-01-22T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1737504000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4348,
-            "name": "Tikveš",
-            "logo": "https://media.api-sports.io/football/teams/4348.png",
-            "winner": false
-          },
-          "away": {
-            "id": 609,
-            "name": "Shkendija",
-            "logo": "https://media.api-sports.io/football/teams/609.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1541,5 +1482,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:20:01.916Z"
+  "lastUpdated": "2025-04-07T12:49:08.333Z"
 }

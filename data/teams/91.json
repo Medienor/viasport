@@ -184,7 +184,7 @@
         {
           "year": 2024,
           "start": "2024-11-15",
-          "end": "2025-04-02",
+          "end": "2025-05-23",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1213992,
-          "date": "2025-04-05T17:00:00+00:00",
-          "venue": {
-            "id": 641,
-            "name": "Stade Francis-Le Blé",
-            "city": "Brest"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743872400
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 106,
-            "name": "Stade Brestois 29",
-            "logo": "https://media.api-sports.io/football/teams/106.png",
-            "winner": null
-          },
-          "away": {
-            "id": 91,
-            "name": "Monaco",
-            "logo": "https://media.api-sports.io/football/teams/91.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1214007,
@@ -463,6 +404,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213992,
+          "date": "2025-04-05T17:00:00+00:00",
+          "venue": {
+            "id": 641,
+            "name": "Stade Francis-Le Blé",
+            "city": "Brest"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743872400
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 106,
+            "name": "Stade Brestois 29",
+            "logo": "https://media.api-sports.io/football/teams/106.png",
+            "winner": true
+          },
+          "away": {
+            "id": 91,
+            "name": "Monaco",
+            "logo": "https://media.api-sports.io/football/teams/91.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213989,
@@ -705,8 +705,8 @@
           "date": "2025-02-22T16:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Decathlon Arena - Stade Pierre-Mauroy",
-            "city": "Villeneuve d'Ascq"
+            "name": "Decathlon Arena - Stade Pierre Mauroy",
+            "city": "Lille"
           },
           "status": {
             "long": "Match Finished",
@@ -983,65 +983,6 @@
           "fulltime": {
             "home": 4,
             "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1213926,
-          "date": "2025-02-01T18:00:00+00:00",
-          "venue": {
-            "id": 20470,
-            "name": "Stade Louis-II",
-            "city": "Monaco"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738432800
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 91,
-            "name": "Monaco",
-            "logo": "https://media.api-sports.io/football/teams/91.png",
-            "winner": true
-          },
-          "away": {
-            "id": 108,
-            "name": "Auxerre",
-            "logo": "https://media.api-sports.io/football/teams/108.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 2
           },
           "extratime": {
             "home": null,
@@ -1348,5 +1289,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:13.969Z"
+  "lastUpdated": "2025-04-07T12:46:21.336Z"
 }

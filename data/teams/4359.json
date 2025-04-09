@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -183,65 +183,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220733,
-          "date": "2025-04-06T15:30:00+00:00",
-          "venue": {
-            "id": 1442,
-            "name": "Stadion Stožice",
-            "city": "Ljubljana"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743953400
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4359,
-            "name": "Bravo",
-            "logo": "https://media.api-sports.io/football/teams/4359.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4360,
-            "name": "Celje",
-            "logo": "https://media.api-sports.io/football/teams/4360.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220738,
           "date": "2025-04-10T14:00:00+00:00",
           "venue": {
@@ -304,8 +245,8 @@
           "id": 1220743,
           "date": "2025-04-13T18:15:00+00:00",
           "venue": {
-            "id": 11939,
-            "name": "Športni Park Šiška",
+            "id": 1442,
+            "name": "Stadion Stožice",
             "city": "Ljubljana"
           },
           "status": {
@@ -361,7 +302,7 @@
       {
         "fixture": {
           "id": 1220748,
-          "date": "2025-04-18T22:00:00+00:00",
+          "date": "2025-04-19T15:30:00+00:00",
           "venue": {
             "id": 3346,
             "name": "ŠRC Bonifika",
@@ -373,7 +314,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745013600
+          "timestamp": 1745076600
         },
         "league": {
           "id": 373,
@@ -419,6 +360,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220733,
+          "date": "2025-04-06T15:30:00+00:00",
+          "venue": {
+            "id": 1442,
+            "name": "Stadion Stožice",
+            "city": "Ljubljana"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743953400
+        },
+        "league": {
+          "id": 373,
+          "name": "1. SNL",
+          "logo": "https://media.api-sports.io/football/leagues/373.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4359,
+            "name": "Bravo",
+            "logo": "https://media.api-sports.io/football/teams/4359.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4360,
+            "name": "Celje",
+            "logo": "https://media.api-sports.io/football/teams/4360.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220728,
@@ -949,65 +949,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220688,
-          "date": "2025-02-01T14:00:00+00:00",
-          "venue": {
-            "id": 3332,
-            "name": "Stadion Z'dežele",
-            "city": "Celje"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738418400
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4360,
-            "name": "Celje",
-            "logo": "https://media.api-sports.io/football/teams/4360.png",
-            "winner": false
-          },
-          "away": {
-            "id": 4359,
-            "name": "Bravo",
-            "logo": "https://media.api-sports.io/football/teams/4359.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1304,5 +1245,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:20:01.933Z"
+  "lastUpdated": "2025-04-07T12:49:08.280Z"
 }

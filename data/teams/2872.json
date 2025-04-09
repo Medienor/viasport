@@ -502,6 +502,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362897,
+          "date": "2025-04-02T16:30:00+00:00",
+          "venue": {
+            "id": 7142,
+            "name": "Al Maktoum Stadium",
+            "city": "Dubai"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743611400
+        },
+        "league": {
+          "id": 560,
+          "name": "Presidents Cup",
+          "logo": "https://media.api-sports.io/football/leagues/560.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2872,
+            "name": "Al-Wasl FC",
+            "logo": "https://media.api-sports.io/football/teams/2872.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2870,
+            "name": "Shabab Al Ahli Dubai",
+            "logo": "https://media.api-sports.io/football/teams/2870.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1335143,
           "date": "2025-03-28T18:00:00+00:00",
           "venue": {
@@ -1030,65 +1089,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1315755,
-          "date": "2025-02-09T13:20:00+00:00",
-          "venue": {
-            "id": 3711,
-            "name": "Saqr bin Mohammad al Qassimi Stadium",
-            "city": "Khor Fakkan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739107200
-        },
-        "league": {
-          "id": 301,
-          "name": "Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/301.png"
-        },
-        "teams": {
-          "home": {
-            "id": 9140,
-            "name": "Dibba Al Hisn",
-            "logo": "https://media.api-sports.io/football/teams/9140.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2872,
-            "name": "Al-Wasl FC",
-            "logo": "https://media.api-sports.io/football/teams/2872.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1385,5 +1385,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:42.839Z"
+  "lastUpdated": "2025-04-07T12:51:46.503Z"
 }

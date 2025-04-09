@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-10-09",
-          "end": "2025-04-02",
+          "end": "2025-04-25",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -105,65 +105,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1217863,
-          "date": "2025-04-05T16:30:00+00:00",
-          "venue": {
-            "id": 3976,
-            "name": "Estadio Municipal Cartagonova",
-            "city": "Cartagena"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743870600
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5262,
-            "name": "FC Cartagena",
-            "logo": "https://media.api-sports.io/football/teams/5262.png",
-            "winner": null
-          },
-          "away": {
-            "id": 9692,
-            "name": "Eldense",
-            "logo": "https://media.api-sports.io/football/teams/9692.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1217877,
@@ -284,6 +225,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217863,
+          "date": "2025-04-05T16:30:00+00:00",
+          "venue": {
+            "id": 3976,
+            "name": "Estadio Municipal Cartagonova",
+            "city": "Cartagena"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743870600
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5262,
+            "name": "FC Cartagena",
+            "logo": "https://media.api-sports.io/football/teams/5262.png",
+            "winner": false
+          },
+          "away": {
+            "id": 9692,
+            "name": "Eldense",
+            "logo": "https://media.api-sports.io/football/teams/9692.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217858,
@@ -814,65 +814,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217762,
-          "date": "2025-01-25T20:00:00+00:00",
-          "venue": {
-            "id": 1496,
-            "name": "Estadio Heliodoro Rodríguez Lopéz",
-            "city": "Tenerife"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737835200
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 719,
-            "name": "Tenerife",
-            "logo": "https://media.api-sports.io/football/teams/719.png",
-            "winner": false
-          },
-          "away": {
-            "id": 9692,
-            "name": "Eldense",
-            "logo": "https://media.api-sports.io/football/teams/9692.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1169,5 +1110,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:24.203Z"
+  "lastUpdated": "2025-04-07T12:52:27.853Z"
 }

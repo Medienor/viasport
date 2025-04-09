@@ -261,65 +261,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334449,
-          "date": "2025-04-06T18:30:00+00:00",
-          "venue": {
-            "id": 88,
-            "name": "Estadio Ciudad de Lanús - Néstor Díaz Pérez",
-            "city": "Lanús, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743964200
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 446,
-            "name": "Lanus",
-            "logo": "https://media.api-sports.io/football/teams/446.png",
-            "winner": null
-          },
-          "away": {
-            "id": 453,
-            "name": "Independiente",
-            "logo": "https://media.api-sports.io/football/teams/453.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362109,
           "date": "2025-04-08T22:00:00+00:00",
           "venue": {
@@ -463,6 +404,65 @@
             "id": 455,
             "name": "Atletico Tucuman",
             "logo": "https://media.api-sports.io/football/teams/455.png",
+            "winner": null
+          },
+          "away": {
+            "id": 453,
+            "name": "Independiente",
+            "logo": "https://media.api-sports.io/football/teams/453.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1362124,
+          "date": "2025-04-22T22:00:00+00:00",
+          "venue": {
+            "id": 20705,
+            "name": "Estadio ueno Defensores del Chaco",
+            "city": "Asunción"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745359200
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1174,
+            "name": "Club Guarani",
+            "logo": "https://media.api-sports.io/football/teams/1174.png",
             "winner": null
           },
           "away": {
@@ -735,12 +735,71 @@
     "past": [
       {
         "fixture": {
+          "id": 1334449,
+          "date": "2025-04-06T18:30:00+00:00",
+          "venue": {
+            "id": 88,
+            "name": "Estadio Ciudad de Lanús - Néstor Díaz Pérez",
+            "city": "Lanús, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743964200
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 446,
+            "name": "Lanus",
+            "logo": "https://media.api-sports.io/football/teams/446.png",
+            "winner": null
+          },
+          "away": {
+            "id": 453,
+            "name": "Independiente",
+            "logo": "https://media.api-sports.io/football/teams/453.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1362093,
           "date": "2025-04-01T22:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estadio Victor Agustín Ugarte",
-            "city": "Potosi"
+            "name": "Estadio Víctor Agustín Ugarte de Potosí",
+            "city": "Potosí"
           },
           "status": {
             "long": "Match Finished",
@@ -1263,65 +1322,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334345,
-          "date": "2025-02-12T23:00:00+00:00",
-          "venue": {
-            "id": 7131,
-            "name": "Estadio Libertadores de América",
-            "city": "Avellaneda, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739401200
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 453,
-            "name": "Independiente",
-            "logo": "https://media.api-sports.io/football/teams/453.png",
-            "winner": true
-          },
-          "away": {
-            "id": 438,
-            "name": "Velez Sarsfield",
-            "logo": "https://media.api-sports.io/football/teams/438.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1618,5 +1618,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:31.591Z"
+  "lastUpdated": "2025-04-07T12:47:38.517Z"
 }

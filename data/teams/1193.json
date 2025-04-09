@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -114,10 +114,10 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": true,
             "players": true,
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1353269,
-          "date": "2025-04-06T22:00:00+00:00",
-          "venue": {
-            "id": 5650,
-            "name": "Estádio Municipal General Raulino de Oliveira",
-            "city": "Volta Redonda, Rio de Janeiro"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743976800
-        },
-        "league": {
-          "id": 72,
-          "name": "Serie B",
-          "logo": "https://media.api-sports.io/football/leagues/72.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7814,
-            "name": "Volta Redonda",
-            "logo": "https://media.api-sports.io/football/teams/7814.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1353272,
@@ -385,9 +326,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1353302,
+          "date": "2025-04-24T22:00:00+00:00",
+          "venue": {
+            "id": 235,
+            "name": "Arena Pantanal",
+            "city": "Cuiabá, Mato Grosso"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745532000
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1193,
+            "name": "Cuiaba",
+            "logo": "https://media.api-sports.io/football/teams/1193.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7826,
+            "name": "Ferroviária",
+            "logo": "https://media.api-sports.io/football/teams/7826.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1353269,
+          "date": "2025-04-06T22:00:00+00:00",
+          "venue": {
+            "id": 5650,
+            "name": "Estádio Municipal General Raulino de Oliveira",
+            "city": "Volta Redonda, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743976800
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7814,
+            "name": "Volta Redonda",
+            "logo": "https://media.api-sports.io/football/teams/7814.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1193,
+            "name": "Cuiaba",
+            "logo": "https://media.api-sports.io/football/teams/1193.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1362078,
@@ -918,65 +977,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323158,
-          "date": "2025-01-18T19:30:00+00:00",
-          "venue": {
-            "id": 235,
-            "name": "Arena Pantanal",
-            "city": "Cuiabá, Mato Grosso"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737228600
-        },
-        "league": {
-          "id": 630,
-          "name": "Matogrossense",
-          "logo": "https://media.api-sports.io/football/leagues/630.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2215,
-            "name": "Mixto",
-            "logo": "https://media.api-sports.io/football/teams/2215.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1273,5 +1273,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:11.027Z"
+  "lastUpdated": "2025-04-07T12:52:14.904Z"
 }

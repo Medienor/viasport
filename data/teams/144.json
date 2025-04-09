@@ -151,10 +151,10 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": true,
             "players": true,
@@ -399,6 +399,65 @@
             "id": 1193,
             "name": "Cuiaba",
             "logo": "https://media.api-sports.io/football/teams/1193.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1353306,
+          "date": "2025-04-24T22:00:00+00:00",
+          "venue": {
+            "id": 20767,
+            "name": "Estádio Municipal Carlos Zamith",
+            "city": "Manaus, Amazonas"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745532000
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10862,
+            "name": "Amazonas",
+            "logo": "https://media.api-sports.io/football/teams/10862.png",
+            "winner": null
+          },
+          "away": {
+            "id": 144,
+            "name": "Atletico Goianiense",
+            "logo": "https://media.api-sports.io/football/teams/144.png",
             "winner": null
           }
         },
@@ -1312,5 +1371,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:08.562Z"
+  "lastUpdated": "2025-04-07T12:52:12.480Z"
 }

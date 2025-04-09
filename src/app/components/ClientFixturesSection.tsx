@@ -70,197 +70,120 @@ export default function ClientFixturesSection({
     return `${nameSlug}-${id}`;
   };
 
-  // Render a fixtures table for a specific date
+  // Group fixtures by league
+  const groupFixturesByLeague = (dateFixtures: any[]) => {
+    return dateFixtures.reduce((acc, fixture) => {
+      const leagueId = fixture.league.id;
+      if (!acc[leagueId]) {
+        acc[leagueId] = {
+          league: fixture.league,
+          fixtures: []
+        };
+      }
+      acc[leagueId].fixtures.push(fixture);
+      return acc;
+    }, {});
+  };
+
   const renderFixturesTable = (dateKey: string) => {
     const dateFixtures = fixtures[dateKey] || [];
-    const dateString = formattedDates[dateKey] || '';
-    
-    let title = '';
-    if (dateKey === 'today') {
-      title = `Kommende kamper i dag, ${formatNorwegianDate(new Date())}`;
-    } else if (dateKey === 'day1') {
-      const tomorrow = new Date();
-      tomorrow.setDate(tomorrow.getDate() + 1);
-      title = `Kommende kamper i morgen, ${formatNorwegianDate(tomorrow)}`;
-    } else {
-      title = `Kommende kamper ${dateString}`;
-    }
+    const groupedFixtures = groupFixturesByLeague(dateFixtures);
     
     return (
-      <div className="mb-10">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
+      <div className="mb-6">
+        <h2 className="text-xl font-semibold text-gray-900 mb-4">
+          {dateKey === 'today' 
+            ? 'Kamper i dag'
+            : dateKey === 'day1'
+              ? 'Kamper i morgen'
+              : `Kamper ${formattedDates[dateKey]}`}
+        </h2>
         
-        {dateFixtures.length > 0 ? (
-          <div className="bg-white shadow overflow-hidden sm:rounded-lg">
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Tid
-                    </th>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Liga
-                    </th>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Hjemmelag
-                    </th>
-                    <th scope="col" className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      
-                    </th>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Bortelag
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
-                  {dateFixtures.map((fixture: any) => (
-                    <tr 
-                      key={fixture.fixture.id} 
-                      className={`hover:bg-gray-50 cursor-pointer ${
-                        isPopularLeague(fixture.league?.id) ? 'bg-blue-50' : ''
-                      }`}
-                      onClick={() => router.push(`/fotball/kamp/${fixture.fixture.id}`)}
-                    >
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        {fixture.formattedTime}
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="flex items-center">
-                          {fixture.league?.logo && (
-                            <div className="flex-shrink-0 h-6 w-6 relative">
-                              <Image
-                                src={fixture.league.logo}
-                                alt={fixture.league?.name || 'League'}
-                                fill
-                                className="object-contain"
-                              />
-                            </div>
-                          )}
-                          <div className={`ml-3 text-sm ${
-                            isPopularLeague(fixture.league?.id) ? 'font-semibold text-blue-800' : 'text-gray-900'
-                          }`}>
-                            <Link 
-                              href={`/fotball/liga/${createLeagueSlug(fixture.league?.name || '', fixture.league?.id)}`}
-                              className={`text-sm ${isPopularLeague(fixture.league?.id) 
-                                ? 'font-semibold text-blue-600' 
-                                : 'text-gray-900'}`}
-                              onClick={(e) => e.stopPropagation()}
-                            >
-                              {fixture.league?.name || 'Unknown League'}
-                            </Link>
-                          </div>
+        <div className="space-y-4">
+          {Object.values(groupedFixtures).map((group: any) => (
+            <div key={group.league.id} className="bg-white rounded-lg overflow-hidden">
+              {/* League header */}
+              <div className="bg-gray-50 px-4 py-2 flex items-center">
+                <Image
+                  src={group.league.logo}
+                  alt={group.league.name}
+                  width={20}
+                  height={20}
+                  className="mr-2"
+                />
+                <span className="font-medium text-gray-900">{group.league.name}</span>
+              </div>
+              
+              {/* Fixtures */}
+              <div className="divide-y divide-gray-100">
+                {group.fixtures.map((fixture: any) => (
+                  <Link
+                    key={fixture.fixture.id}
+                    href={`/fotball/kamp/${fixture.fixture.id}`}
+                    className="flex items-center px-4 py-3 hover:bg-gray-50"
+                  >
+                    {/* Match time/status */}
+                    <div className="w-16 text-sm text-gray-600">
+                      {fixture.formattedTime}
+                    </div>
+                    
+                    {/* Teams and score */}
+                    <div className="flex-1 flex items-center justify-between">
+                      <div className="flex items-center space-x-4 flex-1">
+                        {/* Home team */}
+                        <div className="flex items-center space-x-2 w-[45%] justify-end">
+                          <span className="text-right">{fixture.teams.home.name}</span>
+                          <Image
+                            src={fixture.teams.home.logo}
+                            alt={fixture.teams.home.name}
+                            width={24}
+                            height={24}
+                            className="min-w-[24px]"
+                          />
                         </div>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="flex items-center">
-                          {fixture.teams?.home?.logo && (
-                            <div className="flex-shrink-0 h-6 w-6 relative">
-                              <Image
-                                src={fixture.teams.home.logo}
-                                alt={fixture.teams?.home?.name || 'Home team'}
-                                fill
-                                className="object-contain"
-                              />
-                            </div>
+
+                        {/* Score */}
+                        <div className="w-[10%] text-center font-medium">
+                          {fixture.fixture.status.short === 'FT' ? (
+                            <span>{fixture.score.fulltime.home} - {fixture.score.fulltime.away}</span>
+                          ) : (
+                            <span>-</span>
                           )}
-                          <div className="ml-3 text-sm font-medium text-gray-900">
-                            <Link 
-                              href={`/lag/${createTeamSlug(fixture.teams?.home?.name || '', fixture.teams?.home?.id)}`}
-                              className="text-sm font-medium text-gray-900 hover:text-blue-600"
-                              onClick={(e) => e.stopPropagation()}
-                            >
-                              {fixture.teams?.home?.name || 'Home Team'}
-                            </Link>
-                          </div>
                         </div>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-center">
-                        <span className="text-gray-500">vs</span>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="flex items-center">
-                          {fixture.teams?.away?.logo && (
-                            <div className="flex-shrink-0 h-6 w-6 relative">
-                              <Image
-                                src={fixture.teams.away.logo}
-                                alt={fixture.teams?.away?.name || 'Away team'}
-                                fill
-                                className="object-contain"
-                              />
-                            </div>
-                          )}
-                          <div className="ml-3 text-sm font-medium text-gray-900">
-                            <Link 
-                              href={`/lag/${createTeamSlug(fixture.teams?.away?.name || '', fixture.teams?.away?.id)}`}
-                              className="text-sm font-medium text-gray-900 hover:text-blue-600"
-                              onClick={(e) => e.stopPropagation()}
-                            >
-                              {fixture.teams?.away?.name || 'Away Team'}
-                            </Link>
-                          </div>
+
+                        {/* Away team */}
+                        <div className="flex items-center space-x-2 w-[45%]">
+                          <Image
+                            src={fixture.teams.away.logo}
+                            alt={fixture.teams.away.name}
+                            width={24}
+                            height={24}
+                            className="min-w-[24px]"
+                          />
+                          <span>{fixture.teams.away.name}</span>
                         </div>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
-            <div className="px-6 py-4 border-t border-gray-200 bg-gray-50">
-              <Link 
-                href={dateKey === 'today' 
-                  ? "/fotball/i-dag"
-                  : dateKey === 'day1' 
-                    ? "/fotball/i-morgen" 
-                    : (() => {
-                        // Get the weekday from the formatted date
-                        const weekday = formattedDates[dateKey].split(' ')[0].toLowerCase();
-                        // Return the URL-friendly weekday path
-                        return `/fotball/${weekdayToUrl[weekday] || ''}`;
-                      })()
-                } 
-                className="text-blue-600 font-medium hover:text-blue-500"
-              >
-                Se alle kamper {dateKey === 'today' 
-                  ? 'i dag' 
-                  : dateKey === 'day1' 
-                    ? 'i morgen' 
-                    : formattedDates[dateKey]} 
-                {totalFixtureCount[dateKey] > MAX_FIXTURES_PER_DAY && 
-                  ` (${totalFixtureCount[dateKey] - MAX_FIXTURES_PER_DAY} flere)`
-                }
-                <span aria-hidden="true"> →</span>
-              </Link>
+          ))}
+          
+          {dateFixtures.length === 0 && (
+            <div className="text-center py-8 bg-white rounded-lg">
+              <p className="text-gray-500">Ingen kamper denne dagen</p>
             </div>
-          </div>
-        ) : (
-          <div className="p-8 text-center text-gray-500 bg-white shadow rounded-lg">
-            <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-            <p className="mt-2">
-              {dateKey === 'today' 
-                ? 'Ingen kommende kamper i dag.'
-                : dateKey === 'day1'
-                  ? 'Ingen kommende kamper i morgen.'
-                  : `Ingen kommende kamper ${dateString}.`
-              }
-            </p>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     );
   };
 
   return (
-    <>
+    <div className="space-y-6">
       {renderFixturesTable('today')}
       {renderFixturesTable('day1')}
-      {renderFixturesTable('day2')}
-      {renderFixturesTable('day3')}
-      {renderFixturesTable('day4')}
-      {renderFixturesTable('day5')}
-      {renderFixturesTable('day6')}
-    </>
+    </div>
   );
 } 

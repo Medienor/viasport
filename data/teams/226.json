@@ -296,9 +296,9 @@
           "id": 1355648,
           "date": "2025-04-23T15:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 1283,
+            "name": "Estádio da Capital do Móvel",
+            "city": "Paços de Ferreira"
           },
           "status": {
             "long": "Not Started",
@@ -529,6 +529,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1355647,
+          "date": "2025-04-03T19:15:00+00:00",
+          "venue": {
+            "id": 1293,
+            "name": "Estádio José Alvalade",
+            "city": "Lisboa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743707700
+        },
+        "league": {
+          "id": 96,
+          "name": "Taça de Portugal",
+          "logo": "https://media.api-sports.io/football/leagues/96.png"
+        },
+        "teams": {
+          "home": {
+            "id": 228,
+            "name": "Sporting CP",
+            "logo": "https://media.api-sports.io/football/teams/228.png",
+            "winner": true
+          },
+          "away": {
+            "id": 226,
+            "name": "Rio Ave",
+            "logo": "https://media.api-sports.io/football/teams/226.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231966,
@@ -1059,65 +1118,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231892,
-          "date": "2025-01-25T15:30:00+00:00",
-          "venue": {
-            "id": 1290,
-            "name": "Estádio de São Lúis",
-            "city": "Faro"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737819000
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 231,
-            "name": "Farense",
-            "logo": "https://media.api-sports.io/football/teams/231.png",
-            "winner": false
-          },
-          "away": {
-            "id": 226,
-            "name": "Rio Ave",
-            "logo": "https://media.api-sports.io/football/teams/226.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1414,5 +1414,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:32.157Z"
+  "lastUpdated": "2025-04-07T12:46:39.198Z"
 }

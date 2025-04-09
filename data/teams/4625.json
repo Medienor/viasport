@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-08-16",
-          "end": "2025-04-05",
+          "end": "2025-04-21",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -147,8 +147,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1367467,
-          "date": "2025-04-06T11:45:00+00:00",
+          "id": 1368176,
+          "date": "2025-04-12T11:45:00+00:00",
           "venue": {
             "id": 12090,
             "name": "Tony Bezzina Stadium",
@@ -160,7 +160,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743939900
+          "timestamp": 1744458300
         },
         "league": {
           "id": 393,
@@ -175,9 +175,68 @@
             "winner": null
           },
           "away": {
-            "id": 4628,
-            "name": "Sliema Wanderers",
-            "logo": "https://media.api-sports.io/football/teams/4628.png",
+            "id": 14507,
+            "name": "Marsaxlokk",
+            "logo": "https://media.api-sports.io/football/teams/14507.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1368184,
+          "date": "2025-04-21T17:00:00+00:00",
+          "venue": {
+            "id": 2614,
+            "name": "Ta'Qali National Stadium",
+            "city": "Ta'Qali"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745254800
+        },
+        "league": {
+          "id": 393,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/393.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4625,
+            "name": "Floriana",
+            "logo": "https://media.api-sports.io/football/teams/4625.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4626,
+            "name": "Hamrun Spartans",
+            "logo": "https://media.api-sports.io/football/teams/4626.png",
             "winner": null
           }
         },
@@ -206,6 +265,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1367467,
+          "date": "2025-04-06T11:45:00+00:00",
+          "venue": {
+            "id": 12090,
+            "name": "Tony Bezzina Stadium",
+            "city": "Paola"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743939900
+        },
+        "league": {
+          "id": 393,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/393.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4625,
+            "name": "Floriana",
+            "logo": "https://media.api-sports.io/football/teams/4625.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4628,
+            "name": "Sliema Wanderers",
+            "logo": "https://media.api-sports.io/football/teams/4628.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1328282,
@@ -736,65 +854,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1328241,
-          "date": "2025-02-02T13:00:00+00:00",
-          "venue": {
-            "id": 12090,
-            "name": "Tony Bezzina Stadium",
-            "city": "Paola"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738501200
-        },
-        "league": {
-          "id": 393,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/393.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4625,
-            "name": "Floriana",
-            "logo": "https://media.api-sports.io/football/teams/4625.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4622,
-            "name": "Zabbar St. Patrick",
-            "logo": "https://media.api-sports.io/football/teams/4622.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1091,5 +1150,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:20:04.752Z"
+  "lastUpdated": "2025-04-07T12:49:10.862Z"
 }

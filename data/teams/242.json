@@ -110,65 +110,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231972,
-          "date": "2025-04-05T17:00:00+00:00",
-          "venue": {
-            "id": 1275,
-            "name": "Estádio Municipal de Arouca",
-            "city": "Arouca"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743872400
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 240,
-            "name": "Arouca",
-            "logo": "https://media.api-sports.io/football/teams/240.png",
-            "winner": null
-          },
-          "away": {
-            "id": 242,
-            "name": "Famalicao",
-            "logo": "https://media.api-sports.io/football/teams/242.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231987,
           "date": "2025-04-12T14:30:00+00:00",
           "venue": {
@@ -405,6 +346,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231972,
+          "date": "2025-04-05T17:00:00+00:00",
+          "venue": {
+            "id": 1275,
+            "name": "Estádio Municipal de Arouca",
+            "city": "Arouca"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743872400
+        },
+        "league": {
+          "id": 94,
+          "name": "Primeira Liga",
+          "logo": "https://media.api-sports.io/football/leagues/94.png"
+        },
+        "teams": {
+          "home": {
+            "id": 240,
+            "name": "Arouca",
+            "logo": "https://media.api-sports.io/football/teams/240.png",
+            "winner": false
+          },
+          "away": {
+            "id": 242,
+            "name": "Famalicao",
+            "logo": "https://media.api-sports.io/football/teams/242.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231969,
@@ -935,65 +935,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231886,
-          "date": "2025-01-17T20:15:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estádio da Luz",
-            "city": "Lisbon"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1737144900
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 211,
-            "name": "Benfica",
-            "logo": "https://media.api-sports.io/football/teams/211.png",
-            "winner": true
-          },
-          "away": {
-            "id": 242,
-            "name": "Famalicao",
-            "logo": "https://media.api-sports.io/football/teams/242.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1290,5 +1231,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:37.166Z"
+  "lastUpdated": "2025-04-07T12:46:44.313Z"
 }

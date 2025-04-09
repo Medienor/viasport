@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -185,65 +185,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1362831,
-          "date": "2025-04-05T18:45:00+00:00",
-          "venue": {
-            "id": 19942,
-            "name": "Stadion Perica-Pero Pavlović",
-            "city": "Gabela"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743878700
-        },
-        "league": {
-          "id": 315,
-          "name": "Premijer Liga",
-          "logo": "https://media.api-sports.io/football/leagues/315.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3356,
-            "name": "GOŠK Gabela",
-            "logo": "https://media.api-sports.io/football/teams/3356.png",
-            "winner": null
-          },
-          "away": {
-            "id": 679,
-            "name": "FK Sarajevo",
-            "logo": "https://media.api-sports.io/football/teams/679.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1362835,
@@ -838,6 +779,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362831,
+          "date": "2025-04-05T18:45:00+00:00",
+          "venue": {
+            "id": 19942,
+            "name": "Stadion Perica-Pero Pavlović",
+            "city": "Gabela"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743878700
+        },
+        "league": {
+          "id": 315,
+          "name": "Premijer Liga",
+          "logo": "https://media.api-sports.io/football/leagues/315.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3356,
+            "name": "GOŠK Gabela",
+            "logo": "https://media.api-sports.io/football/teams/3356.png",
+            "winner": false
+          },
+          "away": {
+            "id": 679,
+            "name": "FK Sarajevo",
+            "logo": "https://media.api-sports.io/football/teams/679.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1366096,
           "date": "2025-04-02T18:30:00+00:00",
           "venue": {
@@ -1366,65 +1366,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323914,
-          "date": "2025-02-09T14:15:00+00:00",
-          "venue": {
-            "id": 199,
-            "name": "Olimpijski Stadion Asim Ferhatović Hase",
-            "city": "Sarajevo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1739110500
-        },
-        "league": {
-          "id": 314,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/314.png"
-        },
-        "teams": {
-          "home": {
-            "id": 679,
-            "name": "FK Sarajevo",
-            "logo": "https://media.api-sports.io/football/teams/679.png",
-            "winner": true
-          },
-          "away": {
-            "id": 8504,
-            "name": "Sloga Doboj",
-            "logo": "https://media.api-sports.io/football/teams/8504.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1721,5 +1662,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:39.028Z"
+  "lastUpdated": "2025-04-07T12:48:45.037Z"
 }

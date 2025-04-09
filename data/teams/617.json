@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -147,7 +147,7 @@
         {
           "year": 2024,
           "start": "2024-08-31",
-          "end": "2025-04-02",
+          "end": "2025-05-16",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1360699,
-          "date": "2025-04-06T18:30:00+00:00",
-          "venue": {
-            "id": 761,
-            "name": "Olympiako Stadio Spyros Louis",
-            "city": "Athens"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743964200
-        },
-        "league": {
-          "id": 197,
-          "name": "Super League 1",
-          "logo": "https://media.api-sports.io/football/leagues/197.png"
-        },
-        "teams": {
-          "home": {
-            "id": 617,
-            "name": "Panathinaikos",
-            "logo": "https://media.api-sports.io/football/teams/617.png",
-            "winner": null
-          },
-          "away": {
-            "id": 575,
-            "name": "AEK Athens FC",
-            "logo": "https://media.api-sports.io/football/teams/575.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1360700,
@@ -484,6 +425,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360699,
+          "date": "2025-04-06T18:30:00+00:00",
+          "venue": {
+            "id": 761,
+            "name": "Olympiako Stadio Spyros Louis",
+            "city": "Athens"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743964200
+        },
+        "league": {
+          "id": 197,
+          "name": "Super League 1",
+          "logo": "https://media.api-sports.io/football/leagues/197.png"
+        },
+        "teams": {
+          "home": {
+            "id": 617,
+            "name": "Panathinaikos",
+            "logo": "https://media.api-sports.io/football/teams/617.png",
+            "winner": true
+          },
+          "away": {
+            "id": 575,
+            "name": "AEK Athens FC",
+            "logo": "https://media.api-sports.io/football/teams/575.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360697,
@@ -1014,65 +1014,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1250651,
-          "date": "2025-02-09T17:30:00+00:00",
-          "venue": {
-            "id": 765,
-            "name": "Stadio Harilaou Kleánthis Vikelídis",
-            "city": "Thessaloníki"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739122200
-        },
-        "league": {
-          "id": 197,
-          "name": "Super League 1",
-          "logo": "https://media.api-sports.io/football/leagues/197.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1123,
-            "name": "Aris Thessalonikis",
-            "logo": "https://media.api-sports.io/football/teams/1123.png",
-            "winner": true
-          },
-          "away": {
-            "id": 617,
-            "name": "Panathinaikos",
-            "logo": "https://media.api-sports.io/football/teams/617.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1369,5 +1310,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:12.770Z"
+  "lastUpdated": "2025-04-07T12:48:19.466Z"
 }

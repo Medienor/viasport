@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1351060,
-          "date": "2025-04-06T21:30:00+00:00",
-          "venue": {
-            "id": 281,
-            "name": "Estádio Manoel Barradas",
-            "city": "Salvador, Bahia"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743975000
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": null
-          },
-          "away": {
-            "id": 127,
-            "name": "Flamengo",
-            "logo": "https://media.api-sports.io/football/teams/127.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1362111,
@@ -1114,6 +1055,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1351060,
+          "date": "2025-04-06T21:30:00+00:00",
+          "venue": {
+            "id": 281,
+            "name": "Estádio Manoel Barradas",
+            "city": "Salvador, Bahia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743975000
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": false
+          },
+          "away": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1362094,
           "date": "2025-04-03T00:30:00+00:00",
           "venue": {
@@ -1642,65 +1642,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1354189,
-          "date": "2025-03-01T21:30:00+00:00",
-          "venue": {
-            "id": 7041,
-            "name": "Estádio Antônio de Figueiredo Carneiro",
-            "city": "Alagoinhas, Bahia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1740864600
-        },
-        "league": {
-          "id": 602,
-          "name": "Baiano - 1",
-          "logo": "https://media.api-sports.io/football/leagues/602.png"
-        },
-        "teams": {
-          "home": {
-            "id": 9997,
-            "name": "Atlético Alagoinhas",
-            "logo": "https://media.api-sports.io/football/teams/9997.png",
-            "winner": false
-          },
-          "away": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1997,5 +1938,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:08.550Z"
+  "lastUpdated": "2025-04-07T12:52:12.441Z"
 }

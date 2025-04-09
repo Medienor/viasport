@@ -189,65 +189,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1351054,
-          "date": "2025-04-06T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estádio Olímpico Nilton Santos",
-            "city": "Rio de Janeiro"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743897600
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 120,
-            "name": "Botafogo",
-            "logo": "https://media.api-sports.io/football/teams/120.png",
-            "winner": null
-          },
-          "away": {
-            "id": 152,
-            "name": "Juventude",
-            "logo": "https://media.api-sports.io/football/teams/152.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1351072,
           "date": "2025-04-12T19:00:00+00:00",
           "venue": {
@@ -781,6 +722,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1351054,
+          "date": "2025-04-06T00:00:00+00:00",
+          "venue": {
+            "id": 218,
+            "name": "Estádio Olímpico Nilton Santos",
+            "city": "Rio de Janeiro"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743897600
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 120,
+            "name": "Botafogo",
+            "logo": "https://media.api-sports.io/football/teams/120.png",
+            "winner": true
+          },
+          "away": {
+            "id": 152,
+            "name": "Juventude",
+            "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351052,
           "date": "2025-03-29T21:30:00+00:00",
           "venue": {
@@ -1309,65 +1309,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1322086,
-          "date": "2025-01-25T19:30:00+00:00",
-          "venue": {
-            "id": 244,
-            "name": "Estádio José Pinheiro Borda",
-            "city": "Porto Alegre, Rio Grande do Sul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737833400
-        },
-        "league": {
-          "id": 477,
-          "name": "Gaúcho - 1",
-          "logo": "https://media.api-sports.io/football/leagues/477.png"
-        },
-        "teams": {
-          "home": {
-            "id": 119,
-            "name": "Internacional",
-            "logo": "https://media.api-sports.io/football/teams/119.png",
-            "winner": true
-          },
-          "away": {
-            "id": 152,
-            "name": "Juventude",
-            "logo": "https://media.api-sports.io/football/teams/152.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1664,5 +1605,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:11.034Z"
+  "lastUpdated": "2025-04-07T12:52:14.984Z"
 }

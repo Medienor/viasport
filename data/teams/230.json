@@ -114,65 +114,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231974,
-          "date": "2025-04-04T19:15:00+00:00",
-          "venue": {
-            "id": 1272,
-            "name": "Estádio Clube Desportivo das Aves",
-            "city": "Vila das Aves"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743794100
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 21595,
-            "name": "AVS",
-            "logo": "https://media.api-sports.io/football/teams/21595.png",
-            "winner": null
-          },
-          "away": {
-            "id": 230,
-            "name": "Estoril",
-            "logo": "https://media.api-sports.io/football/teams/230.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231987,
           "date": "2025-04-12T14:30:00+00:00",
           "venue": {
@@ -468,6 +409,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231974,
+          "date": "2025-04-04T19:15:00+00:00",
+          "venue": {
+            "id": 1272,
+            "name": "Estádio Clube Desportivo das Aves",
+            "city": "Vila das Aves"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743794100
+        },
+        "league": {
+          "id": 94,
+          "name": "Primeira Liga",
+          "logo": "https://media.api-sports.io/football/leagues/94.png"
+        },
+        "teams": {
+          "home": {
+            "id": 21595,
+            "name": "AVS",
+            "logo": "https://media.api-sports.io/football/teams/21595.png",
+            "winner": false
+          },
+          "away": {
+            "id": 230,
+            "name": "Estoril",
+            "logo": "https://media.api-sports.io/football/teams/230.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231963,
@@ -998,65 +998,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231884,
-          "date": "2025-01-18T15:30:00+00:00",
-          "venue": {
-            "id": 1289,
-            "name": "Estádio de São Miguel",
-            "city": "Ponta Delgada, Ilha de São Miguel, Açores"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737214200
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 227,
-            "name": "Santa Clara",
-            "logo": "https://media.api-sports.io/football/teams/227.png",
-            "winner": false
-          },
-          "away": {
-            "id": 230,
-            "name": "Estoril",
-            "logo": "https://media.api-sports.io/football/teams/230.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1353,5 +1294,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:34.613Z"
+  "lastUpdated": "2025-04-07T12:46:41.808Z"
 }

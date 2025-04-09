@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-16",
-          "end": "2025-04-05",
+          "end": "2025-04-21",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -221,8 +221,67 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1367465,
-          "date": "2025-04-05T14:00:00+00:00",
+          "id": 1368177,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 12090,
+            "name": "Tony Bezzina Stadium",
+            "city": "Paola"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 393,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/393.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4627,
+            "name": "Mosta",
+            "logo": "https://media.api-sports.io/football/teams/4627.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4626,
+            "name": "Hamrun Spartans",
+            "logo": "https://media.api-sports.io/football/teams/4626.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1368184,
+          "date": "2025-04-21T17:00:00+00:00",
           "venue": {
             "id": 2614,
             "name": "Ta'Qali National Stadium",
@@ -234,7 +293,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743861600
+          "timestamp": 1745254800
         },
         "league": {
           "id": 393,
@@ -243,9 +302,9 @@
         },
         "teams": {
           "home": {
-            "id": 2277,
-            "name": "Birkirkara",
-            "logo": "https://media.api-sports.io/football/teams/2277.png",
+            "id": 4625,
+            "name": "Floriana",
+            "logo": "https://media.api-sports.io/football/teams/4625.png",
             "winner": null
           },
           "away": {
@@ -280,6 +339,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1367465,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 2614,
+            "name": "Ta'Qali National Stadium",
+            "city": "Ta'Qali"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 393,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/393.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2277,
+            "name": "Birkirkara",
+            "logo": "https://media.api-sports.io/football/teams/2277.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4626,
+            "name": "Hamrun Spartans",
+            "logo": "https://media.api-sports.io/football/teams/4626.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1328284,
@@ -810,65 +928,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1328239,
-          "date": "2025-02-01T14:00:00+00:00",
-          "venue": {
-            "id": 12090,
-            "name": "Tony Bezzina Stadium",
-            "city": "Paola"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738418400
-        },
-        "league": {
-          "id": 393,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/393.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4626,
-            "name": "Hamrun Spartans",
-            "logo": "https://media.api-sports.io/football/teams/4626.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2277,
-            "name": "Birkirkara",
-            "logo": "https://media.api-sports.io/football/teams/2277.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1165,5 +1224,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:07.470Z"
+  "lastUpdated": "2025-04-07T12:48:14.437Z"
 }

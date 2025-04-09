@@ -258,65 +258,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1288908,
-          "date": "2025-04-05T07:00:00+00:00",
-          "venue": {
-            "id": 12557,
-            "name": "Aberdeen Sports Ground",
-            "city": "Hong Kong"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743836400
-        },
-        "league": {
-          "id": 380,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/380.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4456,
-            "name": "Southern District",
-            "logo": "https://media.api-sports.io/football/teams/4456.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4207,
-            "name": "Warriors",
-            "logo": "https://media.api-sports.io/football/teams/4207.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1288913,
           "date": "2025-04-12T10:00:00+00:00",
           "venue": {
@@ -730,6 +671,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1288908,
+          "date": "2025-04-05T07:00:00+00:00",
+          "venue": {
+            "id": 12557,
+            "name": "Aberdeen Sports Ground",
+            "city": "Hong Kong"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743836400
+        },
+        "league": {
+          "id": 380,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/380.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4456,
+            "name": "Southern District",
+            "logo": "https://media.api-sports.io/football/teams/4456.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4207,
+            "name": "Warriors",
+            "logo": "https://media.api-sports.io/football/teams/4207.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1288907,
@@ -1260,65 +1260,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1288878,
-          "date": "2025-01-19T07:00:00+00:00",
-          "venue": {
-            "id": 3391,
-            "name": "Tsing Yi Sports Ground",
-            "city": "Tsing Yi"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1737270000
-        },
-        "league": {
-          "id": 380,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/380.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4459,
-            "name": "Rangers",
-            "logo": "https://media.api-sports.io/football/teams/4459.png",
-            "winner": false
-          },
-          "away": {
-            "id": 4207,
-            "name": "Warriors",
-            "logo": "https://media.api-sports.io/football/teams/4207.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1615,5 +1556,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:55.539Z"
+  "lastUpdated": "2025-04-07T12:51:59.689Z"
 }

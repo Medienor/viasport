@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -184,7 +184,7 @@
         {
           "year": 2024,
           "start": "2024-09-24",
-          "end": "2025-04-02",
+          "end": "2025-05-24",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -221,71 +221,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361255,
-          "date": "2025-04-06T13:00:00+00:00",
-          "venue": {
-            "id": 4007,
-            "name": "Stadio di Domagnano",
-            "city": "Domagnano"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743944400
-        },
-        "league": {
-          "id": 404,
-          "name": "Campionato",
-          "logo": "https://media.api-sports.io/football/leagues/404.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5308,
-            "name": "Virtus",
-            "logo": "https://media.api-sports.io/football/teams/5308.png",
-            "winner": null
-          },
-          "away": {
-            "id": 700,
-            "name": "Tre Penne",
-            "logo": "https://media.api-sports.io/football/teams/700.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361264,
           "date": "2025-04-13T13:00:00+00:00",
           "venue": {
             "id": 19065,
-            "name": "Campo Faetano",
-            "city": "Faetano"
+            "name": "Stadio di Dogana Ezio Conti",
+            "city": "Dogana"
           },
           "status": {
             "long": "Not Started",
@@ -336,9 +277,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1367766,
+          "date": "2025-05-24T18:45:00+00:00",
+          "venue": {
+            "id": 2616,
+            "name": "Stadio Olimpico di Serravalle",
+            "city": "Serravalle"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748112300
+        },
+        "league": {
+          "id": 729,
+          "name": "Coppa Titano",
+          "logo": "https://media.api-sports.io/football/leagues/729.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5308,
+            "name": "Virtus",
+            "logo": "https://media.api-sports.io/football/teams/5308.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2260,
+            "name": "Tre Fiori",
+            "logo": "https://media.api-sports.io/football/teams/2260.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361255,
+          "date": "2025-04-06T13:00:00+00:00",
+          "venue": {
+            "id": 4007,
+            "name": "Stadio di Domagnano",
+            "city": "Domagnano"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743944400
+        },
+        "league": {
+          "id": 404,
+          "name": "Campionato",
+          "logo": "https://media.api-sports.io/football/leagues/404.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5308,
+            "name": "Virtus",
+            "logo": "https://media.api-sports.io/football/teams/5308.png",
+            "winner": true
+          },
+          "away": {
+            "id": 700,
+            "name": "Tre Penne",
+            "logo": "https://media.api-sports.io/football/teams/700.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1349663,
@@ -869,65 +928,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1319970,
-          "date": "2025-01-25T14:00:00+00:00",
-          "venue": {
-            "id": 2932,
-            "name": "Stadio Fonte Dell'Ovo",
-            "city": "Città di San Marino"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737813600
-        },
-        "league": {
-          "id": 404,
-          "name": "Campionato",
-          "logo": "https://media.api-sports.io/football/leagues/404.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5302,
-            "name": "Juvenes / Dogana",
-            "logo": "https://media.api-sports.io/football/teams/5302.png",
-            "winner": false
-          },
-          "away": {
-            "id": 5308,
-            "name": "Virtus",
-            "logo": "https://media.api-sports.io/football/teams/5308.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1224,5 +1224,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:07.470Z"
+  "lastUpdated": "2025-04-07T12:48:14.401Z"
 }

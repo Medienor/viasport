@@ -151,10 +151,10 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
-              "statistics_fixtures": false,
-              "statistics_players": false
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
             },
             "standings": true,
             "players": true,
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1353265,
-          "date": "2025-04-05T00:00:00+00:00",
-          "venue": {
-            "id": 233,
-            "name": "Estádio Heriberto Hülse",
-            "city": "Criciúma, Santa Catarina"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743811200
-        },
-        "league": {
-          "id": 72,
-          "name": "Serie B",
-          "logo": "https://media.api-sports.io/football/leagues/72.png"
-        },
-        "teams": {
-          "home": {
-            "id": 140,
-            "name": "Criciuma",
-            "logo": "https://media.api-sports.io/football/teams/140.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1223,
-            "name": "Operario-PR",
-            "logo": "https://media.api-sports.io/football/teams/1223.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1353270,
@@ -422,9 +363,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1353305,
+          "date": "2025-04-24T22:00:00+00:00",
+          "venue": {
+            "id": 233,
+            "name": "Estádio Heriberto Hülse",
+            "city": "Criciúma, Santa Catarina"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745532000
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 140,
+            "name": "Criciuma",
+            "logo": "https://media.api-sports.io/football/teams/140.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1198,
+            "name": "remo",
+            "logo": "https://media.api-sports.io/football/teams/1198.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1353265,
+          "date": "2025-04-05T00:00:00+00:00",
+          "venue": {
+            "id": 233,
+            "name": "Estádio Heriberto Hülse",
+            "city": "Criciúma, Santa Catarina"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743811200
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 140,
+            "name": "Criciuma",
+            "logo": "https://media.api-sports.io/football/teams/140.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1223,
+            "name": "Operario-PR",
+            "logo": "https://media.api-sports.io/football/teams/1223.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1355036,
@@ -955,65 +1014,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1318988,
-          "date": "2025-01-30T00:00:00+00:00",
-          "venue": {
-            "id": 233,
-            "name": "Estádio Heriberto Hülse",
-            "city": "Criciúma, Santa Catarina"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 2
-          },
-          "timestamp": 1738195200
-        },
-        "league": {
-          "id": 604,
-          "name": "Catarinense - 1",
-          "logo": "https://media.api-sports.io/football/leagues/604.png"
-        },
-        "teams": {
-          "home": {
-            "id": 140,
-            "name": "Criciuma",
-            "logo": "https://media.api-sports.io/football/teams/140.png",
-            "winner": true
-          },
-          "away": {
-            "id": 795,
-            "name": "Joinville",
-            "logo": "https://media.api-sports.io/football/teams/795.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1310,5 +1310,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:08.566Z"
+  "lastUpdated": "2025-04-07T12:52:12.400Z"
 }

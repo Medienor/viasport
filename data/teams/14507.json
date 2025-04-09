@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-08-16",
-          "end": "2025-04-05",
+          "end": "2025-04-21",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -143,12 +143,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1367464,
-          "date": "2025-04-04T18:15:00+00:00",
+          "id": 1368176,
+          "date": "2025-04-12T11:45:00+00:00",
           "venue": {
-            "id": 2614,
-            "name": "Ta'Qali National Stadium",
-            "city": "Ta'Qali"
+            "id": 12090,
+            "name": "Tony Bezzina Stadium",
+            "city": "Paola"
           },
           "status": {
             "long": "Not Started",
@@ -156,7 +156,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743790500
+          "timestamp": 1744458300
         },
         "league": {
           "id": 393,
@@ -165,9 +165,9 @@
         },
         "teams": {
           "home": {
-            "id": 4627,
-            "name": "Mosta",
-            "logo": "https://media.api-sports.io/football/teams/4627.png",
+            "id": 4625,
+            "name": "Floriana",
+            "logo": "https://media.api-sports.io/football/teams/4625.png",
             "winner": null
           },
           "away": {
@@ -199,9 +199,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1368180,
+          "date": "2025-04-19T11:45:00+00:00",
+          "venue": {
+            "id": 2614,
+            "name": "Ta'Qali National Stadium",
+            "city": "Ta'Qali"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745063100
+        },
+        "league": {
+          "id": 393,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/393.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14507,
+            "name": "Marsaxlokk",
+            "logo": "https://media.api-sports.io/football/teams/14507.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4628,
+            "name": "Sliema Wanderers",
+            "logo": "https://media.api-sports.io/football/teams/4628.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1367464,
+          "date": "2025-04-04T18:15:00+00:00",
+          "venue": {
+            "id": 2614,
+            "name": "Ta'Qali National Stadium",
+            "city": "Ta'Qali"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1743790500
+        },
+        "league": {
+          "id": 393,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/393.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4627,
+            "name": "Mosta",
+            "logo": "https://media.api-sports.io/football/teams/4627.png",
+            "winner": false
+          },
+          "away": {
+            "id": 14507,
+            "name": "Marsaxlokk",
+            "logo": "https://media.api-sports.io/football/teams/14507.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1328285,
@@ -732,65 +850,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1328232,
-          "date": "2025-01-19T15:15:00+00:00",
-          "venue": {
-            "id": 12090,
-            "name": "Tony Bezzina Stadium",
-            "city": "Paola"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737299700
-        },
-        "league": {
-          "id": 393,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/393.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14507,
-            "name": "Marsaxlokk",
-            "logo": "https://media.api-sports.io/football/teams/14507.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4622,
-            "name": "Zabbar St. Patrick",
-            "logo": "https://media.api-sports.io/football/teams/4622.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1087,5 +1146,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:20:07.348Z"
+  "lastUpdated": "2025-04-07T12:49:13.568Z"
 }

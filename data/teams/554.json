@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361733,
-          "date": "2025-04-06T16:30:00+00:00",
-          "venue": {
-            "id": 174,
-            "name": "Lotto Park",
-            "city": "Brussel"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743957000
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 554,
-            "name": "Anderlecht",
-            "logo": "https://media.api-sports.io/football/teams/554.png",
-            "winner": null
-          },
-          "away": {
-            "id": 742,
-            "name": "Genk",
-            "logo": "https://media.api-sports.io/football/teams/742.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361734,
@@ -684,6 +625,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361733,
+          "date": "2025-04-06T16:30:00+00:00",
+          "venue": {
+            "id": 174,
+            "name": "Lotto Park",
+            "city": "Brussel"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743957000
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 554,
+            "name": "Anderlecht",
+            "logo": "https://media.api-sports.io/football/teams/554.png",
+            "winner": false
+          },
+          "away": {
+            "id": 742,
+            "name": "Genk",
+            "logo": "https://media.api-sports.io/football/teams/742.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361729,
@@ -1214,65 +1214,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334533,
-          "date": "2025-02-06T19:45:00+00:00",
-          "venue": {
-            "id": 175,
-            "name": "Bosuilstadion",
-            "city": "Deurne"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738871100
-        },
-        "league": {
-          "id": 147,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/147.png"
-        },
-        "teams": {
-          "home": {
-            "id": 740,
-            "name": "Antwerp",
-            "logo": "https://media.api-sports.io/football/teams/740.png",
-            "winner": null
-          },
-          "away": {
-            "id": 554,
-            "name": "Anderlecht",
-            "logo": "https://media.api-sports.io/football/teams/554.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1569,5 +1510,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:10.131Z"
+  "lastUpdated": "2025-04-07T12:48:17.024Z"
 }

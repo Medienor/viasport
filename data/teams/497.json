@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1223903,
-          "date": "2025-04-06T18:45:00+00:00",
-          "venue": {
-            "id": 910,
-            "name": "Stadio Olimpico",
-            "city": "Roma"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743965100
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 497,
-            "name": "AS Roma",
-            "logo": "https://media.api-sports.io/football/teams/497.png",
-            "winner": null
-          },
-          "away": {
-            "id": 496,
-            "name": "Juventus",
-            "logo": "https://media.api-sports.io/football/teams/496.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1223911,
@@ -627,11 +568,70 @@
     "past": [
       {
         "fixture": {
+          "id": 1223903,
+          "date": "2025-04-06T18:45:00+00:00",
+          "venue": {
+            "id": 910,
+            "name": "Stadio Olimpico",
+            "city": "Roma"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743965100
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 497,
+            "name": "AS Roma",
+            "logo": "https://media.api-sports.io/football/teams/497.png",
+            "winner": null
+          },
+          "away": {
+            "id": 496,
+            "name": "Juventus",
+            "logo": "https://media.api-sports.io/football/teams/496.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1223892,
           "date": "2025-03-29T19:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Ettore Giardiniero - Via del Mare",
+            "name": "Via del Mare",
             "city": "Lecce"
           },
           "status": {
@@ -1155,65 +1155,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345761,
-          "date": "2025-02-13T20:00:00+00:00",
-          "venue": {
-            "id": 1286,
-            "name": "Estádio Do Dragão",
-            "city": "Porto"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739476800
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 212,
-            "name": "FC Porto",
-            "logo": "https://media.api-sports.io/football/teams/212.png",
-            "winner": null
-          },
-          "away": {
-            "id": 497,
-            "name": "AS Roma",
-            "logo": "https://media.api-sports.io/football/teams/497.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1510,5 +1451,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:52.988Z"
+  "lastUpdated": "2025-04-07T12:46:00.410Z"
 }

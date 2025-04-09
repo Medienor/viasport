@@ -296,65 +296,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1252645,
-          "date": "2025-04-04T18:00:00+00:00",
-          "venue": {
-            "id": 20744,
-            "name": "Kingdom Arena",
-            "city": "Riyadh"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743789600
-        },
-        "league": {
-          "id": 307,
-          "name": "Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/307.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2932,
-            "name": "Al-Hilal Saudi FC",
-            "logo": "https://media.api-sports.io/football/teams/2932.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2939,
-            "name": "Al-Nassr",
-            "logo": "https://media.api-sports.io/football/teams/2939.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1252654,
           "date": "2025-04-11T18:00:00+00:00",
           "venue": {
@@ -827,6 +768,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1252645,
+          "date": "2025-04-04T18:00:00+00:00",
+          "venue": {
+            "id": 20744,
+            "name": "Kingdom Arena",
+            "city": "Riyadh"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 13
+          },
+          "timestamp": 1743789600
+        },
+        "league": {
+          "id": 307,
+          "name": "Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/307.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2932,
+            "name": "Al-Hilal Saudi FC",
+            "logo": "https://media.api-sports.io/football/teams/2932.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2939,
+            "name": "Al-Nassr",
+            "logo": "https://media.api-sports.io/football/teams/2939.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1252642,
@@ -1357,65 +1357,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1252585,
-          "date": "2025-02-08T17:00:00+00:00",
-          "venue": {
-            "id": 10516,
-            "name": "Prince Sultan bin Abdulaziz Sports City Stadium",
-            "city": "Abha"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1739034000
-        },
-        "league": {
-          "id": 307,
-          "name": "Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/307.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2956,
-            "name": "Damac",
-            "logo": "https://media.api-sports.io/football/teams/2956.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2932,
-            "name": "Al-Hilal Saudi FC",
-            "logo": "https://media.api-sports.io/football/teams/2932.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1712,5 +1653,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:45.410Z"
+  "lastUpdated": "2025-04-07T12:51:49.115Z"
 }

@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-08-16",
-          "end": "2025-04-01",
+          "end": "2025-05-24",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -263,65 +263,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1224222,
-          "date": "2025-04-04T18:30:00+00:00",
-          "venue": {
-            "id": 698,
-            "name": "WWK Arena",
-            "city": "Augsburg"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743791400
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 170,
-            "name": "FC Augsburg",
-            "logo": "https://media.api-sports.io/football/teams/170.png",
-            "winner": null
-          },
-          "away": {
-            "id": 157,
-            "name": "Bayern München",
-            "logo": "https://media.api-sports.io/football/teams/157.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1360333,
@@ -975,6 +916,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1224222,
+          "date": "2025-04-04T18:30:00+00:00",
+          "venue": {
+            "id": 698,
+            "name": "WWK Arena",
+            "city": "Augsburg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743791400
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 170,
+            "name": "FC Augsburg",
+            "logo": "https://media.api-sports.io/football/teams/170.png",
+            "winner": false
+          },
+          "away": {
+            "id": 157,
+            "name": "Bayern München",
+            "logo": "https://media.api-sports.io/football/teams/157.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1224210,
           "date": "2025-03-29T14:30:00+00:00",
           "venue": {
@@ -1503,65 +1503,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345751,
-          "date": "2025-02-12T20:00:00+00:00",
-          "venue": {
-            "id": 1386,
-            "name": "Celtic Park",
-            "city": "Glasgow"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1739390400
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 247,
-            "name": "Celtic",
-            "logo": "https://media.api-sports.io/football/teams/247.png",
-            "winner": false
-          },
-          "away": {
-            "id": 157,
-            "name": "Bayern München",
-            "logo": "https://media.api-sports.io/football/teams/157.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1858,5 +1799,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:00.965Z"
+  "lastUpdated": "2025-04-07T12:46:08.426Z"
 }

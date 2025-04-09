@@ -185,65 +185,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1341959,
-          "date": "2025-04-06T14:30:00+00:00",
-          "venue": {
-            "id": 1505,
-            "name": "Stora Valla",
-            "city": "Degerfors"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743949800
-        },
-        "league": {
-          "id": 113,
-          "name": "Allsvenskan",
-          "logo": "https://media.api-sports.io/football/leagues/113.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2172,
-            "name": "Degerfors IF",
-            "logo": "https://media.api-sports.io/football/teams/2172.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2163,
-            "name": "IFK Varnamo",
-            "logo": "https://media.api-sports.io/football/teams/2163.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1341965,
           "date": "2025-04-13T12:00:00+00:00",
           "venue": {
@@ -836,6 +777,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1341959,
+          "date": "2025-04-06T14:30:00+00:00",
+          "venue": {
+            "id": 1505,
+            "name": "Stora Valla",
+            "city": "Degerfors"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743949800
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2172,
+            "name": "Degerfors IF",
+            "logo": "https://media.api-sports.io/football/teams/2172.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2163,
+            "name": "IFK Varnamo",
+            "logo": "https://media.api-sports.io/football/teams/2163.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1341952,
           "date": "2025-03-31T17:00:00+00:00",
           "venue": {
@@ -1364,65 +1364,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1316122,
-          "date": "2024-11-24T14:00:00+00:00",
-          "venue": {
-            "id": 1937,
-            "name": "Finnvedsvallen",
-            "city": "Värnamo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1732456800
-        },
-        "league": {
-          "id": 113,
-          "name": "Allsvenskan",
-          "logo": "https://media.api-sports.io/football/leagues/113.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2163,
-            "name": "IFK Varnamo",
-            "logo": "https://media.api-sports.io/football/teams/2163.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2176,
-            "name": "Landskrona BoIS",
-            "logo": "https://media.api-sports.io/football/teams/2176.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1440,12 +1381,12 @@
       "name": "IFK Varnamo",
       "logo": "https://media.api-sports.io/football/teams/2163.png"
     },
-    "form": "L",
+    "form": "LL",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "wins": {
         "home": 0,
@@ -1459,8 +1400,8 @@
       },
       "loses": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       }
     },
     "goals": {
@@ -1473,12 +1414,12 @@
         "average": {
           "home": "1.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.5"
         },
         "minute": {
           "0-15": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "16-30": {
             "total": null,
@@ -1490,7 +1431,7 @@
           },
           "46-60": {
             "total": 1,
-            "percentage": "100.00%"
+            "percentage": "50.00%"
           },
           "61-75": {
             "total": null,
@@ -1512,36 +1453,36 @@
         "under_over": {
           "0.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       },
       "against": {
         "total": {
           "home": 2,
-          "away": 0,
-          "total": 2
+          "away": 1,
+          "total": 3
         },
         "average": {
           "home": "2.0",
-          "away": "0.0",
-          "total": "2.0"
+          "away": "1.0",
+          "total": "1.5"
         },
         "minute": {
           "0-15": {
@@ -1579,24 +1520,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "1.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       }
@@ -1605,7 +1546,7 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 2
       },
       "wins": {
         "home": null,
@@ -1613,7 +1554,7 @@
       },
       "loses": {
         "home": "1-2",
-        "away": null
+        "away": "1-0"
       },
       "goals": {
         "for": {
@@ -1622,7 +1563,7 @@
         },
         "against": {
           "home": 2,
-          "away": 0
+          "away": 1
         }
       }
     },
@@ -1633,8 +1574,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 0,
-      "total": 0
+      "away": 1,
+      "total": 1
     },
     "penalty": {
       "scored": {
@@ -1650,14 +1591,14 @@
     "lineups": [
       {
         "formation": "4-3-3",
-        "played": 1
+        "played": 2
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "33.33%"
         },
         "16-30": {
           "total": null,
@@ -1669,19 +1610,19 @@
         },
         "46-60": {
           "total": 1,
-          "percentage": "33.33%"
+          "percentage": "16.67%"
         },
         "61-75": {
           "total": 1,
-          "percentage": "33.33%"
+          "percentage": "16.67%"
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "16.67%"
         },
         "91-105": {
           "total": 1,
-          "percentage": "33.33%"
+          "percentage": "16.67%"
         },
         "106-120": {
           "total": null,
@@ -1702,8 +1643,8 @@
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "100.00%"
         },
         "61-75": {
           "total": null,
@@ -1724,5 +1665,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:02.791Z"
+  "lastUpdated": "2025-04-07T12:47:10.404Z"
 }

@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-11-15",
-          "end": "2025-04-02",
+          "end": "2025-05-23",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1213998,
-          "date": "2025-04-06T15:15:00+00:00",
-          "venue": {
-            "id": 680,
-            "name": "Roazhon Park",
-            "city": "Rennes"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743952500
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 94,
-            "name": "Rennes",
-            "logo": "https://media.api-sports.io/football/teams/94.png",
-            "winner": null
-          },
-          "away": {
-            "id": 108,
-            "name": "Auxerre",
-            "logo": "https://media.api-sports.io/football/teams/108.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1214000,
@@ -389,6 +330,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213998,
+          "date": "2025-04-06T15:15:00+00:00",
+          "venue": {
+            "id": 680,
+            "name": "Roazhon Park",
+            "city": "Rennes"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743952500
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 94,
+            "name": "Rennes",
+            "logo": "https://media.api-sports.io/football/teams/94.png",
+            "winner": false
+          },
+          "away": {
+            "id": 108,
+            "name": "Auxerre",
+            "logo": "https://media.api-sports.io/football/teams/108.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213981,
@@ -919,65 +919,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213908,
-          "date": "2025-01-18T18:00:00+00:00",
-          "venue": {
-            "id": 680,
-            "name": "Roazhon Park",
-            "city": "Rennes"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737223200
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 94,
-            "name": "Rennes",
-            "logo": "https://media.api-sports.io/football/teams/94.png",
-            "winner": false
-          },
-          "away": {
-            "id": 106,
-            "name": "Stade Brestois 29",
-            "logo": "https://media.api-sports.io/football/teams/106.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1274,5 +1215,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:16.584Z"
+  "lastUpdated": "2025-04-07T12:46:23.856Z"
 }

@@ -1,113 +1,75 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-// Simple in-memory cache
-interface CachedData {
-  data: YouTubeSearchResponse;
-  timestamp: number;
-}
+// Cache duration: 24 hours in milliseconds
+const CACHE_DURATION = 86400000;
 
-interface YouTubeSearchResponse {
-  items?: YouTubeVideoItem[];
-  [key: string]: unknown;
-}
-
-interface YouTubeVideoItem {
-  snippet: {
-    title: string;
-    [key: string]: unknown;
-  };
-  [key: string]: unknown;
-}
-
-const cache: Record<string, CachedData> = {};
-const CACHE_DURATION = 3600000; // 1 hour in milliseconds
+// In-memory cache
+const cache: Record<string, { data: any, timestamp: number }> = {};
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
-  const query = searchParams.get('q');
+  const query = searchParams.get('q') || 'eliteserien';
   const maxResults = searchParams.get('maxResults') || '5';
-  const status = searchParams.get('status');
   
-  if (!query) {
-    return NextResponse.json({ error: 'Query parameter is required' }, { status: 400 });
-  }
-  
-  // Calculate date for filtering (3 months ago)
-  const threeMonthsAgo = new Date();
-  threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 3);
-  const publishedAfter = threeMonthsAgo.toISOString();
-  
-  // Create a cache key from the request parameters
-  const cacheKey = `${query}-${status}-${maxResults}-${publishedAfter}`;
+  // Create a cache key based on the query parameters
+  const cacheKey = `${query}-${maxResults}`;
   
   // Check if we have a valid cached response
   const now = Date.now();
   if (cache[cacheKey] && (now - cache[cacheKey].timestamp) < CACHE_DURATION) {
-    console.log(`Returning cached result for "${query}" (${status})`);
+    console.log(`Using cached result for "${query}" (${now - cache[cacheKey].timestamp}ms old)`);
     return NextResponse.json(cache[cacheKey].data);
   }
   
-  console.log(`YouTube API Request - Query: "${query}", Status: ${status}, MaxResults: ${maxResults}, PublishedAfter: ${publishedAfter}`);
-  
+  // If no valid cache, make a request to YouTube API
   try {
-    const response = await fetch(
-      `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&maxResults=${maxResults}&type=video&order=viewCount&videoDuration=medium&relevanceLanguage=en&videoDefinition=high&videoEmbeddable=true&videoSyndicated=true&publishedAfter=${publishedAfter}&key=${process.env.YOUTUBE_API_KEY}`,
-      { next: { revalidate: 3600 } } // Cache for 1 hour
-    );
-
-    const data = await response.json();
+    console.log(`Fetching new results for "${query}"`);
     
-    // Double check the videos can be embedded by fetching video details
-    if (data.items && data.items.length > 0) {
-      const videoIds = data.items.map((item: any) => item.id.videoId).join(',');
-      const videoDetailsResponse = await fetch(
-        `https://www.googleapis.com/youtube/v3/videos?part=status,contentDetails,statistics&id=${videoIds}&key=${process.env.YOUTUBE_API_KEY}`
-      );
-      const videoDetails = await videoDetailsResponse.json();
-
-      // Filter out any videos that are not embeddable or are region restricted
-      const embeddableVideos = data.items.filter((item: any) => {
-        const videoDetail = videoDetails.items.find((v: any) => v.id === item.id.videoId);
-        return videoDetail && 
-               videoDetail.status.embeddable === true && 
-               !videoDetail.contentDetails.regionRestriction;
-      }).sort((a: any, b: any) => {
-        const videoA = videoDetails.items.find((v: any) => v.id === a.id.videoId);
-        const videoB = videoDetails.items.find((v: any) => v.id === b.id.videoId);
-        return Number(videoB.statistics.viewCount) - Number(videoA.statistics.viewCount);
-      });
-
-      data.items = embeddableVideos;
+    // Choose the appropriate API key based on the query
+    let apiKey;
+    if (query.toLowerCase().includes('eliteserien') || 
+        query.toLowerCase().includes('premier league') ||
+        query.toLowerCase().includes('channel:')) {
+      apiKey = process.env.YOUTUBE_ELITESERIEN_API_KEY;
+      console.log('Using dedicated football videos API key');
+    } else {
+      apiKey = process.env.YOUTUBE_API_KEY;
     }
     
-    // Log the number of results
+    if (!apiKey) {
+      throw new Error('YouTube API key is not configured');
+    }
+    
+    const youtubeUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(query)}&maxResults=${maxResults}&key=${apiKey}&type=video&order=date`;
+    
+    const response = await fetch(youtubeUrl);
+    
+    if (!response.ok) {
+      const errorData = await response.json();
+      console.error('YouTube API Error:', errorData);
+      throw new Error(`YouTube API error: ${errorData.error?.message || response.status}`);
+    }
+    
+    const data = await response.json();
     console.log(`YouTube API returned ${data.items?.length || 0} videos`);
     
-    // For live matches, prioritize videos with "LIVE" in the title
-    if (status === 'LIVE' && data.items && data.items.length > 0) {
-      data.items.sort((a: YouTubeVideoItem, b: YouTubeVideoItem) => {
-        const aIsLive = a.snippet.title.toUpperCase().includes('LIVE');
-        const bIsLive = b.snippet.title.toUpperCase().includes('LIVE');
-        
-        if (aIsLive && !bIsLive) return -1;
-        if (!aIsLive && bIsLive) return 1;
-        return 0;
-      });
-      console.log('Sorted results to prioritize LIVE videos');
-    }
+    // Cache the response
+    cache[cacheKey] = {
+      data: data,
+      timestamp: now
+    };
     
-    // Before returning the response, cache it
-    if (data && data.items) {
-      cache[cacheKey] = {
-        data: data,
-        timestamp: now
-      };
-      console.log(`Cached result for "${query}" (${status})`);
-    }
-    
+    console.log(`Cached new result for "${query}"`);
     return NextResponse.json(data);
-  } catch (error) {
-    console.error('YouTube API Error:', error);
+  } catch (err) {
+    console.error('YouTube API Error:', err);
+    
+    // If we have an expired cache, use it as fallback
+    if (cache[cacheKey]) {
+      console.log(`Using expired cache as fallback for "${query}"`);
+      return NextResponse.json(cache[cacheKey].data);
+    }
+    
     return NextResponse.json({ error: 'Failed to fetch videos' }, { status: 500 });
   }
 } 

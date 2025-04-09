@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -219,65 +219,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361571,
-          "date": "2025-04-06T15:00:00+00:00",
-          "venue": {
-            "id": 7134,
-            "name": "Stadio Stelios Kyriakides",
-            "city": "Paphos"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743951600
-        },
-        "league": {
-          "id": 318,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/318.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3403,
-            "name": "Pafos",
-            "logo": "https://media.api-sports.io/football/teams/3403.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2247,
-            "name": "Apoel Nicosia",
-            "logo": "https://media.api-sports.io/football/teams/2247.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1364732,
           "date": "2025-04-13T16:00:00+00:00",
           "venue": {
@@ -396,6 +337,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361571,
+          "date": "2025-04-06T15:00:00+00:00",
+          "venue": {
+            "id": 7134,
+            "name": "Stadio Stelios Kyriakides",
+            "city": "Paphos"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743951600
+        },
+        "league": {
+          "id": 318,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/318.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3403,
+            "name": "Pafos",
+            "logo": "https://media.api-sports.io/football/teams/3403.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2247,
+            "name": "Apoel Nicosia",
+            "logo": "https://media.api-sports.io/football/teams/2247.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361569,
@@ -926,65 +926,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224439,
-          "date": "2025-02-16T15:00:00+00:00",
-          "venue": {
-            "id": 7134,
-            "name": "Stadio Stelios Kyriakides",
-            "city": "Paphos"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739718000
-        },
-        "league": {
-          "id": 318,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/318.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3403,
-            "name": "Pafos",
-            "logo": "https://media.api-sports.io/football/teams/3403.png",
-            "winner": true
-          },
-          "away": {
-            "id": 602,
-            "name": "Apollon Limassol",
-            "logo": "https://media.api-sports.io/football/teams/602.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1281,5 +1222,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:18.097Z"
+  "lastUpdated": "2025-04-07T12:48:24.802Z"
 }

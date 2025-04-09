@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-12-03",
-          "end": "2025-04-23",
+          "end": "2025-04-22",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -178,7 +178,8 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1367391,
@@ -189,10 +190,10 @@
             "city": "Malishevë"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
           },
           "timestamp": 1743771600
         },
@@ -206,27 +207,27 @@
             "id": 15576,
             "name": "Malisheva",
             "logo": "https://media.api-sports.io/football/teams/15576.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 680,
             "name": "Prishtina",
             "logo": "https://media.api-sports.io/football/teams/680.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -237,9 +238,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1366523,
@@ -770,65 +769,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345270,
-          "date": "2025-02-07T11:00:00+00:00",
-          "venue": {
-            "id": 20315,
-            "name": "Stadiumi me bar sintetik Gjilan",
-            "city": "Gnjilane"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738926000
-        },
-        "league": {
-          "id": 664,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/664.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14281,
-            "name": "Drita",
-            "logo": "https://media.api-sports.io/football/teams/14281.png",
-            "winner": true
-          },
-          "away": {
-            "id": 15576,
-            "name": "Malisheva",
-            "logo": "https://media.api-sports.io/football/teams/15576.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1125,5 +1065,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:20:07.479Z"
+  "lastUpdated": "2025-04-07T12:49:13.558Z"
 }

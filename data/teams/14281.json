@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-12-03",
-          "end": "2025-04-23",
+          "end": "2025-04-22",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -142,65 +142,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1367390,
-          "date": "2025-04-04T13:00:00+00:00",
-          "venue": {
-            "id": 3160,
-            "name": "Stadiumi Rexhep Rexhepi",
-            "city": "Glogovac"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743771600
-        },
-        "league": {
-          "id": 664,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/664.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4132,
-            "name": "Feronikeli",
-            "logo": "https://media.api-sports.io/football/teams/4132.png",
-            "winner": null
-          },
-          "away": {
-            "id": 14281,
-            "name": "Drita",
-            "logo": "https://media.api-sports.io/football/teams/14281.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1359803,
@@ -259,9 +200,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1359804,
+          "date": "2025-04-22T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745359200
+        },
+        "league": {
+          "id": 665,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/665.png"
+        },
+        "teams": {
+          "home": {
+            "id": 680,
+            "name": "Prishtina",
+            "logo": "https://media.api-sports.io/football/teams/680.png",
+            "winner": null
+          },
+          "away": {
+            "id": 14281,
+            "name": "Drita",
+            "logo": "https://media.api-sports.io/football/teams/14281.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1367390,
+          "date": "2025-04-04T13:00:00+00:00",
+          "venue": {
+            "id": 3160,
+            "name": "Stadiumi Rexhep Rexhepi",
+            "city": "Glogovac"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743771600
+        },
+        "league": {
+          "id": 664,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/664.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4132,
+            "name": "Feronikeli",
+            "logo": "https://media.api-sports.io/football/teams/4132.png",
+            "winner": false
+          },
+          "away": {
+            "id": 14281,
+            "name": "Drita",
+            "logo": "https://media.api-sports.io/football/teams/14281.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1366522,
@@ -792,65 +851,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1325299,
-          "date": "2024-12-22T12:00:00+00:00",
-          "venue": {
-            "id": 20315,
-            "name": "Stadiumi me bar sintetik Gjilan",
-            "city": "Gnjilane"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1734868800
-        },
-        "league": {
-          "id": 664,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/664.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14281,
-            "name": "Drita",
-            "logo": "https://media.api-sports.io/football/teams/14281.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4132,
-            "name": "Feronikeli",
-            "logo": "https://media.api-sports.io/football/teams/4132.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1147,5 +1147,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:20:07.459Z"
+  "lastUpdated": "2025-04-07T12:49:13.477Z"
 }

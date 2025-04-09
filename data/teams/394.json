@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -300,65 +300,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1356828,
-          "date": "2025-04-05T16:45:00+00:00",
-          "venue": {
-            "id": 2606,
-            "name": "Stadyen Dynama",
-            "city": "Minsk"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743871500
-        },
-        "league": {
-          "id": 116,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
-        },
-        "teams": {
-          "home": {
-            "id": 394,
-            "name": "Dinamo Minsk",
-            "logo": "https://media.api-sports.io/football/teams/394.png",
-            "winner": null
-          },
-          "away": {
-            "id": 387,
-            "name": "Neman",
-            "logo": "https://media.api-sports.io/football/teams/387.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1356836,
           "date": "2025-04-13T12:10:00+00:00",
           "venue": {
@@ -449,6 +390,65 @@
             "id": 388,
             "name": "Bate Borisov",
             "logo": "https://media.api-sports.io/football/teams/388.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1356853,
+          "date": "2025-04-24T22:00:00+00:00",
+          "venue": {
+            "id": 163,
+            "name": "Stadion FK Minsk",
+            "city": "Minsk"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745532000
+        },
+        "league": {
+          "id": 116,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
+        },
+        "teams": {
+          "home": {
+            "id": 380,
+            "name": "FC Minsk",
+            "logo": "https://media.api-sports.io/football/teams/380.png",
+            "winner": null
+          },
+          "away": {
+            "id": 394,
+            "name": "Dinamo Minsk",
+            "logo": "https://media.api-sports.io/football/teams/394.png",
             "winner": null
           }
         },
@@ -1367,5 +1367,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:46.957Z"
+  "lastUpdated": "2025-04-07T12:47:53.645Z"
 }

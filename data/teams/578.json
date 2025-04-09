@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1231227,
-          "date": "2025-04-06T14:00:00+00:00",
-          "venue": {
-            "id": 1042,
-            "name": "Stade Jos Becker",
-            "city": "Hostert"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743948000
-        },
-        "league": {
-          "id": 261,
-          "name": "National Division",
-          "logo": "https://media.api-sports.io/football/leagues/261.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2040,
-            "name": "US Hostert",
-            "logo": "https://media.api-sports.io/football/teams/2040.png",
-            "winner": null
-          },
-          "away": {
-            "id": 578,
-            "name": "F91 Dudelange",
-            "logo": "https://media.api-sports.io/football/teams/578.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1231242,
@@ -683,6 +624,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231227,
+          "date": "2025-04-06T14:00:00+00:00",
+          "venue": {
+            "id": 1042,
+            "name": "Stade Jos Becker",
+            "city": "Hostert"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743948000
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2040,
+            "name": "US Hostert",
+            "logo": "https://media.api-sports.io/football/teams/2040.png",
+            "winner": null
+          },
+          "away": {
+            "id": 578,
+            "name": "F91 Dudelange",
+            "logo": "https://media.api-sports.io/football/teams/578.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231226,
@@ -1213,65 +1213,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231160,
-          "date": "2024-11-30T15:00:00+00:00",
-          "venue": {
-            "id": 11215,
-            "name": "Stade Communal",
-            "city": "Mondercange"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1732978800
-        },
-        "league": {
-          "id": 261,
-          "name": "National Division",
-          "logo": "https://media.api-sports.io/football/leagues/261.png"
-        },
-        "teams": {
-          "home": {
-            "id": 15886,
-            "name": "Mondercange",
-            "logo": "https://media.api-sports.io/football/teams/15886.png",
-            "winner": false
-          },
-          "away": {
-            "id": 578,
-            "name": "F91 Dudelange",
-            "logo": "https://media.api-sports.io/football/teams/578.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1568,5 +1509,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:28.555Z"
+  "lastUpdated": "2025-04-07T12:48:34.849Z"
 }

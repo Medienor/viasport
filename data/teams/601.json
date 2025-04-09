@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-07-26",
-          "end": "2025-04-01",
+          "end": "2025-05-01",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361673,
-          "date": "2025-04-06T15:00:00+00:00",
-          "venue": {
-            "id": 136,
-            "name": "Generali Arena",
-            "city": "Wien"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743951600
-        },
-        "league": {
-          "id": 218,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/218.png"
-        },
-        "teams": {
-          "home": {
-            "id": 601,
-            "name": "Austria Vienna",
-            "logo": "https://media.api-sports.io/football/teams/601.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1025,
-            "name": "Wolfsberger AC",
-            "logo": "https://media.api-sports.io/football/teams/1025.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361676,
@@ -407,9 +348,9 @@
           "id": 1361682,
           "date": "2025-04-23T18:30:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 136,
+            "name": "Generali Arena",
+            "city": "Wien"
           },
           "status": {
             "long": "Not Started",
@@ -758,6 +699,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361673,
+          "date": "2025-04-06T15:00:00+00:00",
+          "venue": {
+            "id": 136,
+            "name": "Generali Arena",
+            "city": "Wien"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743951600
+        },
+        "league": {
+          "id": 218,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/218.png"
+        },
+        "teams": {
+          "home": {
+            "id": 601,
+            "name": "Austria Vienna",
+            "logo": "https://media.api-sports.io/football/teams/601.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1025,
+            "name": "Wolfsberger AC",
+            "logo": "https://media.api-sports.io/football/teams/1025.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1349135,
@@ -1288,65 +1288,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1314333,
-          "date": "2025-02-01T17:15:00+00:00",
-          "venue": {
-            "id": 150,
-            "name": "Merkur Arena",
-            "city": "Graz"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738430100
-        },
-        "league": {
-          "id": 220,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/220.png"
-        },
-        "teams": {
-          "home": {
-            "id": 637,
-            "name": "Sturm Graz",
-            "logo": "https://media.api-sports.io/football/teams/637.png",
-            "winner": false
-          },
-          "away": {
-            "id": 601,
-            "name": "Austria Vienna",
-            "logo": "https://media.api-sports.io/football/teams/601.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1643,5 +1584,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:31.409Z"
+  "lastUpdated": "2025-04-07T12:48:37.413Z"
 }

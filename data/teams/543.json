@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-10-09",
-          "end": "2025-04-02",
+          "end": "2025-04-25",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -149,65 +149,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1208755,
-          "date": "2025-04-05T19:00:00+00:00",
-          "venue": {
-            "id": 19939,
-            "name": "Estadi Olímpic Lluís Companys",
-            "city": "Barcelona"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743879600
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 529,
-            "name": "Barcelona",
-            "logo": "https://media.api-sports.io/football/teams/529.png",
-            "winner": null
-          },
-          "away": {
-            "id": 543,
-            "name": "Real Betis",
-            "logo": "https://media.api-sports.io/football/teams/543.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361284,
@@ -505,6 +446,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208755,
+          "date": "2025-04-05T19:00:00+00:00",
+          "venue": {
+            "id": 19939,
+            "name": "Estadi Olímpic Lluís Companys",
+            "city": "Barcelona"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743879600
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 529,
+            "name": "Barcelona",
+            "logo": "https://media.api-sports.io/football/teams/529.png",
+            "winner": null
+          },
+          "away": {
+            "id": 543,
+            "name": "Real Betis",
+            "logo": "https://media.api-sports.io/football/teams/543.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208748,
@@ -1035,65 +1035,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1325898,
-          "date": "2025-02-13T20:00:00+00:00",
-          "venue": {
-            "id": 20727,
-            "name": "Planet Group Arena",
-            "city": "Gent"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739476800
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 631,
-            "name": "Gent",
-            "logo": "https://media.api-sports.io/football/teams/631.png",
-            "winner": false
-          },
-          "away": {
-            "id": 543,
-            "name": "Real Betis",
-            "logo": "https://media.api-sports.io/football/teams/543.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1390,5 +1331,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:45.265Z"
+  "lastUpdated": "2025-04-07T12:45:52.843Z"
 }

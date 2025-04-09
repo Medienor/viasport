@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -147,7 +147,7 @@
         {
           "year": 2024,
           "start": "2024-09-10",
-          "end": "2025-04-01",
+          "end": "2025-04-21",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1238113,
-          "date": "2025-04-06T16:00:00+00:00",
-          "venue": {
-            "id": 1581,
-            "name": "Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743955200
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 611,
-            "name": "Fenerbahce",
-            "logo": "https://media.api-sports.io/football/teams/611.png",
-            "winner": null
-          },
-          "away": {
-            "id": 998,
-            "name": "Trabzonspor",
-            "logo": "https://media.api-sports.io/football/teams/998.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1238124,
@@ -363,9 +304,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1367907,
+          "date": "2025-04-21T22:00:00+00:00",
+          "venue": {
+            "id": 20189,
+            "name": "Papara Park",
+            "city": "Trabzon"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745272800
+        },
+        "league": {
+          "id": 206,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/206.png"
+        },
+        "teams": {
+          "home": {
+            "id": 998,
+            "name": "Trabzonspor",
+            "logo": "https://media.api-sports.io/football/teams/998.png",
+            "winner": null
+          },
+          "away": {
+            "id": 994,
+            "name": "Goztepe",
+            "logo": "https://media.api-sports.io/football/teams/994.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238113,
+          "date": "2025-04-06T16:00:00+00:00",
+          "venue": {
+            "id": 1581,
+            "name": "Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743955200
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 611,
+            "name": "Fenerbahce",
+            "logo": "https://media.api-sports.io/football/teams/611.png",
+            "winner": true
+          },
+          "away": {
+            "id": 998,
+            "name": "Trabzonspor",
+            "logo": "https://media.api-sports.io/football/teams/998.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238106,
@@ -549,7 +608,7 @@
           "date": "2025-03-03T13:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Medaş Konya Büyükşehir Stadyumu",
+            "name": "Medas Konya Büyüksehir Belediyesi Stadium",
             "city": "Konya"
           },
           "status": {
@@ -896,65 +955,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1238044,
-          "date": "2025-02-01T13:00:00+00:00",
-          "venue": {
-            "id": 19613,
-            "name": "RHG Enertürk Enerji Stadyumu",
-            "city": "Kayseri"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738414800
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1001,
-            "name": "Kayserispor",
-            "logo": "https://media.api-sports.io/football/teams/1001.png",
-            "winner": null
-          },
-          "away": {
-            "id": 998,
-            "name": "Trabzonspor",
-            "logo": "https://media.api-sports.io/football/teams/998.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1251,5 +1251,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:24.045Z"
+  "lastUpdated": "2025-04-07T12:46:31.534Z"
 }

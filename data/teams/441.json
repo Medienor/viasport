@@ -225,65 +225,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334444,
-          "date": "2025-04-06T18:30:00+00:00",
-          "venue": {
-            "id": 1933,
-            "name": "Estadio 15 de Abril",
-            "city": "Ciudad de Santa Fe, Provincia de Santa Fe"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743964200
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 441,
-            "name": "Union Santa Fe",
-            "logo": "https://media.api-sports.io/football/teams/441.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1065,
-            "name": "Central Cordoba de Santiago",
-            "logo": "https://media.api-sports.io/football/teams/1065.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362116,
           "date": "2025-04-09T22:00:00+00:00",
           "venue": {
@@ -756,6 +697,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334444,
+          "date": "2025-04-06T18:30:00+00:00",
+          "venue": {
+            "id": 1933,
+            "name": "Estadio 15 de Abril",
+            "city": "Ciudad de Santa Fe, Provincia de Santa Fe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743964200
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 441,
+            "name": "Union Santa Fe",
+            "logo": "https://media.api-sports.io/football/teams/441.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1065,
+            "name": "Central Cordoba de Santiago",
+            "logo": "https://media.api-sports.io/football/teams/1065.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1362101,
@@ -1286,65 +1286,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334328,
-          "date": "2025-02-08T01:15:00+00:00",
-          "venue": {
-            "id": 1933,
-            "name": "Estadio 15 de Abril",
-            "city": "Ciudad de Santa Fe, Provincia de Santa Fe"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738977300
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 441,
-            "name": "Union Santa Fe",
-            "logo": "https://media.api-sports.io/football/teams/441.png",
-            "winner": false
-          },
-          "away": {
-            "id": 458,
-            "name": "Argentinos JRS",
-            "logo": "https://media.api-sports.io/football/teams/458.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1641,5 +1582,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:29.018Z"
+  "lastUpdated": "2025-04-07T12:47:36.048Z"
 }

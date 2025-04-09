@@ -112,65 +112,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223897,
-          "date": "2025-04-06T13:00:00+00:00",
-          "venue": {
-            "id": 20109,
-            "name": "Stadio Carlo Castellani – Computer Gross Arena",
-            "city": "Empoli"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743944400
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 511,
-            "name": "Empoli",
-            "logo": "https://media.api-sports.io/football/teams/511.png",
-            "winner": null
-          },
-          "away": {
-            "id": 490,
-            "name": "Cagliari",
-            "logo": "https://media.api-sports.io/football/teams/490.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223912,
           "date": "2025-04-14T18:45:00+00:00",
           "venue": {
@@ -643,6 +584,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1223897,
+          "date": "2025-04-06T13:00:00+00:00",
+          "venue": {
+            "id": 20109,
+            "name": "Stadio Carlo Castellani – Computer Gross Arena",
+            "city": "Empoli"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743944400
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 511,
+            "name": "Empoli",
+            "logo": "https://media.api-sports.io/football/teams/511.png",
+            "winner": null
+          },
+          "away": {
+            "id": 490,
+            "name": "Cagliari",
+            "logo": "https://media.api-sports.io/football/teams/490.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1355083,
@@ -1173,65 +1173,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1223806,
-          "date": "2025-01-25T19:45:00+00:00",
-          "venue": {
-            "id": 20109,
-            "name": "Stadio Carlo Castellani – Computer Gross Arena",
-            "city": "Empoli"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737834300
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 511,
-            "name": "Empoli",
-            "logo": "https://media.api-sports.io/football/teams/511.png",
-            "winner": null
-          },
-          "away": {
-            "id": 500,
-            "name": "Bologna",
-            "logo": "https://media.api-sports.io/football/teams/500.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1528,5 +1469,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:58.296Z"
+  "lastUpdated": "2025-04-07T12:46:05.761Z"
 }

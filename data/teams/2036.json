@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -184,65 +184,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1231229,
-          "date": "2025-04-05T16:00:00+00:00",
-          "venue": {
-            "id": 1039,
-            "name": "Stade Jos Haupert",
-            "city": "Niedercorn"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743868800
-        },
-        "league": {
-          "id": 261,
-          "name": "National Division",
-          "logo": "https://media.api-sports.io/football/leagues/261.png"
-        },
-        "teams": {
-          "home": {
-            "id": 658,
-            "name": "Progres Niederkorn",
-            "logo": "https://media.api-sports.io/football/teams/658.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2036,
-            "name": "UNA Strassen",
-            "logo": "https://media.api-sports.io/football/teams/2036.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1231240,
@@ -717,6 +658,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231229,
+          "date": "2025-04-05T16:00:00+00:00",
+          "venue": {
+            "id": 1039,
+            "name": "Stade Jos Haupert",
+            "city": "Niedercorn"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743868800
+        },
+        "league": {
+          "id": 261,
+          "name": "National Division",
+          "logo": "https://media.api-sports.io/football/leagues/261.png"
+        },
+        "teams": {
+          "home": {
+            "id": 658,
+            "name": "Progres Niederkorn",
+            "logo": "https://media.api-sports.io/football/teams/658.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2036,
+            "name": "UNA Strassen",
+            "logo": "https://media.api-sports.io/football/teams/2036.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231225,
@@ -1247,65 +1247,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231168,
-          "date": "2024-12-08T14:00:00+00:00",
-          "venue": {
-            "id": 1034,
-            "name": "Complexe Sportif Jean Wirtz",
-            "city": "Strossen"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1733666400
-        },
-        "league": {
-          "id": 261,
-          "name": "National Division",
-          "logo": "https://media.api-sports.io/football/leagues/261.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2036,
-            "name": "UNA Strassen",
-            "logo": "https://media.api-sports.io/football/teams/2036.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2038,
-            "name": "Victoria Rosport",
-            "logo": "https://media.api-sports.io/football/teams/2038.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1602,5 +1543,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:46.547Z"
+  "lastUpdated": "2025-04-07T12:48:52.749Z"
 }

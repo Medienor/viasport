@@ -89,7 +89,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,65 +110,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1358583,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 7810,
-            "name": "TALCO Arena",
-            "city": "Tursunzoda"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 571,
-          "name": "Vysshaya Liga",
-          "logo": "https://media.api-sports.io/football/leagues/571.png"
-        },
-        "teams": {
-          "home": {
-            "id": 12268,
-            "name": "Regar-TadAZ",
-            "logo": "https://media.api-sports.io/football/teams/12268.png",
-            "winner": null
-          },
-          "away": {
-            "id": 12272,
-            "name": "Ravshan",
-            "logo": "https://media.api-sports.io/football/teams/12272.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1358591,
@@ -1235,6 +1176,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1358583,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 7810,
+            "name": "TALCO Arena",
+            "city": "Tursunzoda"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 571,
+          "name": "Vysshaya Liga",
+          "logo": "https://media.api-sports.io/football/leagues/571.png"
+        },
+        "teams": {
+          "home": {
+            "id": 12268,
+            "name": "Regar-TadAZ",
+            "logo": "https://media.api-sports.io/football/teams/12268.png",
+            "winner": false
+          },
+          "away": {
+            "id": 12272,
+            "name": "Ravshan",
+            "logo": "https://media.api-sports.io/football/teams/12272.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1358879,
           "date": "2025-03-29T10:00:00+00:00",
           "venue": {
@@ -1763,65 +1763,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1192002,
-          "date": "2024-10-27T10:00:00+00:00",
-          "venue": {
-            "id": 5728,
-            "name": "Stadion Farkhar",
-            "city": "Parkhar"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1730023200
-        },
-        "league": {
-          "id": 571,
-          "name": "Vysshaya Liga",
-          "logo": "https://media.api-sports.io/football/leagues/571.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8041,
-            "name": "Khosilot Farkhor",
-            "logo": "https://media.api-sports.io/football/teams/8041.png",
-            "winner": false
-          },
-          "away": {
-            "id": 12272,
-            "name": "Ravshan",
-            "logo": "https://media.api-sports.io/football/teams/12272.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1839,17 +1780,17 @@
       "name": "Ravshan",
       "logo": "https://media.api-sports.io/football/teams/12272.png"
     },
-    "form": "DLW",
+    "form": "DLWW",
     "fixtures": {
       "played": {
         "home": 2,
-        "away": 1,
-        "total": 3
+        "away": 2,
+        "total": 4
       },
       "wins": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "draws": {
         "home": 1,
@@ -1866,38 +1807,38 @@
       "for": {
         "total": {
           "home": 5,
-          "away": 0,
-          "total": 5
+          "away": 2,
+          "total": 7
         },
         "average": {
           "home": "2.5",
-          "away": "0.0",
-          "total": "1.7"
+          "away": "1.0",
+          "total": "1.8"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "20.00%"
+            "percentage": "14.29%"
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": 2,
+            "percentage": "28.57%"
           },
           "46-60": {
             "total": 2,
-            "percentage": "40.00%"
+            "percentage": "28.57%"
           },
           "61-75": {
             "total": 1,
-            "percentage": "20.00%"
+            "percentage": "14.29%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "14.29%"
           },
           "91-105": {
             "total": null,
@@ -1910,24 +1851,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 3,
             "under": 1
           },
           "1.5": {
-            "over": 1,
+            "over": 2,
             "under": 2
           },
           "2.5": {
             "over": 1,
-            "under": 2
+            "under": 3
           },
           "3.5": {
             "over": 1,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           }
         }
       },
@@ -1939,8 +1880,8 @@
         },
         "average": {
           "home": "1.0",
-          "away": "1.0",
-          "total": "1.0"
+          "away": "0.5",
+          "total": "0.8"
         },
         "minute": {
           "0-15": {
@@ -1979,23 +1920,23 @@
         "under_over": {
           "0.5": {
             "over": 3,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           }
         }
       }
@@ -2008,7 +1949,7 @@
       },
       "wins": {
         "home": "4-1",
-        "away": null
+        "away": "0-2"
       },
       "loses": {
         "home": null,
@@ -2017,7 +1958,7 @@
       "goals": {
         "for": {
           "home": 4,
-          "away": 0
+          "away": 2
         },
         "against": {
           "home": 1,
@@ -2027,8 +1968,8 @@
     },
     "clean_sheet": {
       "home": 0,
-      "away": 0,
-      "total": 0
+      "away": 1,
+      "total": 1
     },
     "failed_to_score": {
       "home": 0,
@@ -2037,14 +1978,14 @@
     },
     "penalty": {
       "scored": {
-        "total": 1,
+        "total": 2,
         "percentage": "100.00%"
       },
       "missed": {
         "total": 0,
         "percentage": "0%"
       },
-      "total": 1
+      "total": 2
     },
     "lineups": [],
     "cards": {
@@ -2118,5 +2059,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:00.800Z"
+  "lastUpdated": "2025-04-07T12:52:04.835Z"
 }

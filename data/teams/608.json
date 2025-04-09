@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -147,7 +147,7 @@
         {
           "year": 2024,
           "start": "2024-08-27",
-          "end": "2025-04-02",
+          "end": "2025-05-28",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -222,65 +222,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1202786,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 426,
-            "name": "Gradski Stadion",
-            "city": "Koprivnica"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 210,
-          "name": "HNL",
-          "logo": "https://media.api-sports.io/football/leagues/210.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1018,
-            "name": "NK Slaven Belupo",
-            "logo": "https://media.api-sports.io/football/teams/1018.png",
-            "winner": null
-          },
-          "away": {
-            "id": 608,
-            "name": "HNK Hajduk Split",
-            "logo": "https://media.api-sports.io/football/teams/608.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1202788,
@@ -755,6 +696,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1202786,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 426,
+            "name": "Gradski Stadion",
+            "city": "Koprivnica"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 210,
+          "name": "HNL",
+          "logo": "https://media.api-sports.io/football/leagues/210.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1018,
+            "name": "NK Slaven Belupo",
+            "logo": "https://media.api-sports.io/football/teams/1018.png",
+            "winner": false
+          },
+          "away": {
+            "id": 608,
+            "name": "HNK Hajduk Split",
+            "logo": "https://media.api-sports.io/football/teams/608.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1202777,
@@ -1285,65 +1285,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1202741,
-          "date": "2025-01-26T16:30:00+00:00",
-          "venue": {
-            "id": 413,
-            "name": "Stadion Poljud",
-            "city": "Split"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737909000
-        },
-        "league": {
-          "id": 210,
-          "name": "HNL",
-          "logo": "https://media.api-sports.io/football/leagues/210.png"
-        },
-        "teams": {
-          "home": {
-            "id": 608,
-            "name": "HNK Hajduk Split",
-            "logo": "https://media.api-sports.io/football/teams/608.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1018,
-            "name": "NK Slaven Belupo",
-            "logo": "https://media.api-sports.io/football/teams/1018.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1640,5 +1581,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:31.411Z"
+  "lastUpdated": "2025-04-07T12:48:37.458Z"
 }

@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361731,
-          "date": "2025-04-05T18:45:00+00:00",
-          "venue": {
-            "id": 20727,
-            "name": "Planet Group Arena",
-            "city": "Gent"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743878700
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 631,
-            "name": "Gent",
-            "logo": "https://media.api-sports.io/football/teams/631.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1393,
-            "name": "Union St. Gilloise",
-            "logo": "https://media.api-sports.io/football/teams/1393.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361735,
@@ -684,6 +625,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361731,
+          "date": "2025-04-05T18:45:00+00:00",
+          "venue": {
+            "id": 20727,
+            "name": "Planet Group Arena",
+            "city": "Gent"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743878700
+        },
+        "league": {
+          "id": 144,
+          "name": "Jupiler Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/144.png"
+        },
+        "teams": {
+          "home": {
+            "id": 631,
+            "name": "Gent",
+            "logo": "https://media.api-sports.io/football/teams/631.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1393,
+            "name": "Union St. Gilloise",
+            "logo": "https://media.api-sports.io/football/teams/1393.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361730,
@@ -1214,65 +1214,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213387,
-          "date": "2025-02-02T17:30:00+00:00",
-          "venue": {
-            "id": 20727,
-            "name": "Planet Group Arena",
-            "city": "Gent"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738517400
-        },
-        "league": {
-          "id": 144,
-          "name": "Jupiler Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/144.png"
-        },
-        "teams": {
-          "home": {
-            "id": 631,
-            "name": "Gent",
-            "logo": "https://media.api-sports.io/football/teams/631.png",
-            "winner": true
-          },
-          "away": {
-            "id": 554,
-            "name": "Anderlecht",
-            "logo": "https://media.api-sports.io/football/teams/554.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1569,5 +1510,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:33.881Z"
+  "lastUpdated": "2025-04-07T12:48:39.925Z"
 }

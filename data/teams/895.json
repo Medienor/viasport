@@ -109,65 +109,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223901,
-          "date": "2025-04-05T13:00:00+00:00",
-          "venue": {
-            "id": 12086,
-            "name": "U-Power Stadium",
-            "city": "Monza"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743858000
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1579,
-            "name": "Monza",
-            "logo": "https://media.api-sports.io/football/teams/1579.png",
-            "winner": null
-          },
-          "away": {
-            "id": 895,
-            "name": "Como",
-            "logo": "https://media.api-sports.io/football/teams/895.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223906,
           "date": "2025-04-13T16:00:00+00:00",
           "venue": {
@@ -581,6 +522,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1223901,
+          "date": "2025-04-05T13:00:00+00:00",
+          "venue": {
+            "id": 12086,
+            "name": "U-Power Stadium",
+            "city": "Monza"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743858000
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1579,
+            "name": "Monza",
+            "logo": "https://media.api-sports.io/football/teams/1579.png",
+            "winner": false
+          },
+          "away": {
+            "id": 895,
+            "name": "Como",
+            "logo": "https://media.api-sports.io/football/teams/895.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1223886,
@@ -1111,65 +1111,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1223798,
-          "date": "2025-01-20T19:45:00+00:00",
-          "venue": {
-            "id": 892,
-            "name": "Stadio Giuseppe Sinigaglia",
-            "city": "Como"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737402300
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 895,
-            "name": "Como",
-            "logo": "https://media.api-sports.io/football/teams/895.png",
-            "winner": true
-          },
-          "away": {
-            "id": 494,
-            "name": "Udinese",
-            "logo": "https://media.api-sports.io/football/teams/494.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1466,5 +1407,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:00.974Z"
+  "lastUpdated": "2025-04-07T12:46:08.442Z"
 }

@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -188,124 +188,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361866,
-          "date": "2025-04-03T22:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Casa de Apostas Arena Fonte Nova",
-            "city": "Salvador, Bahia"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743717600
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 118,
-            "name": "Bahia",
-            "logo": "https://media.api-sports.io/football/teams/118.png",
-            "winner": null
-          },
-          "away": {
-            "id": 119,
-            "name": "Internacional",
-            "logo": "https://media.api-sports.io/football/teams/119.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1351056,
-          "date": "2025-04-06T23:30:00+00:00",
-          "venue": {
-            "id": 10494,
-            "name": "Estádio Urbano Caldeira",
-            "city": "Santos, São Paulo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743982200
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 128,
-            "name": "Santos",
-            "logo": "https://media.api-sports.io/football/teams/128.png",
-            "winner": null
-          },
-          "away": {
-            "id": 118,
-            "name": "Bahia",
-            "logo": "https://media.api-sports.io/football/teams/118.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361883,
@@ -1195,12 +1077,130 @@
     "past": [
       {
         "fixture": {
-          "id": 1351050,
-          "date": "2025-03-30T23:00:00+00:00",
+          "id": 1351056,
+          "date": "2025-04-06T23:30:00+00:00",
+          "venue": {
+            "id": 10494,
+            "name": "Estádio Urbano Caldeira",
+            "city": "Santos, São Paulo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743982200
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 128,
+            "name": "Santos",
+            "logo": "https://media.api-sports.io/football/teams/128.png",
+            "winner": null
+          },
+          "away": {
+            "id": 118,
+            "name": "Bahia",
+            "logo": "https://media.api-sports.io/football/teams/118.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361866,
+          "date": "2025-04-03T22:00:00+00:00",
           "venue": {
             "id": null,
             "name": "Casa de Apostas Arena Fonte Nova",
             "city": "Salvador, Bahia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743717600
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 118,
+            "name": "Bahia",
+            "logo": "https://media.api-sports.io/football/teams/118.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1351050,
+          "date": "2025-03-30T23:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Arena Fonte Nova",
+            "city": "Salvador"
           },
           "status": {
             "long": "Match Finished",
@@ -1494,8 +1494,8 @@
           "date": "2025-03-14T00:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Arena Fonte Nova",
-            "city": "Salvador"
+            "name": "Casa de Apostas Arena Fonte Nova",
+            "city": "Salvador, Bahia"
           },
           "status": {
             "long": "Match Finished",
@@ -1653,124 +1653,6 @@
           },
           "fulltime": {
             "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1354191,
-          "date": "2025-03-01T19:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Casa de Apostas Arena Fonte Nova",
-            "city": "Salvador, Bahia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1740855600
-        },
-        "league": {
-          "id": 602,
-          "name": "Baiano - 1",
-          "logo": "https://media.api-sports.io/football/leagues/602.png"
-        },
-        "teams": {
-          "home": {
-            "id": 118,
-            "name": "Bahia",
-            "logo": "https://media.api-sports.io/football/teams/118.png",
-            "winner": false
-          },
-          "away": {
-            "id": 7831,
-            "name": "Jacuipense",
-            "logo": "https://media.api-sports.io/football/teams/7831.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1327683,
-          "date": "2025-02-26T00:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Casa de Apostas Arena Fonte Nova",
-            "city": "Salvador, Bahia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1740529800
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 118,
-            "name": "Bahia",
-            "logo": "https://media.api-sports.io/football/teams/118.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3711,
-            "name": "The Strongest",
-            "logo": "https://media.api-sports.io/football/teams/3711.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
             "away": 0
           },
           "extratime": {
@@ -2078,5 +1960,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:03.232Z"
+  "lastUpdated": "2025-04-07T12:52:07.322Z"
 }

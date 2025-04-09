@@ -226,65 +226,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1358554,
-          "date": "2025-04-04T13:00:00+00:00",
-          "venue": {
-            "id": 3432,
-            "name": "King Abdullah International Stadium",
-            "city": "Amman"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743771600
-        },
-        "league": {
-          "id": 387,
-          "name": "League",
-          "logo": "https://media.api-sports.io/football/leagues/387.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4537,
-            "name": "Al Wihdat",
-            "logo": "https://media.api-sports.io/football/teams/4537.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4539,
-            "name": "Shabab Al Ordon",
-            "logo": "https://media.api-sports.io/football/teams/4539.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1333280,
           "date": "2025-04-08T16:45:00+00:00",
           "venue": {
@@ -345,7 +286,7 @@
       {
         "fixture": {
           "id": 1358561,
-          "date": "2025-04-12T16:45:00+00:00",
+          "date": "2025-04-12T18:00:00+00:00",
           "venue": {
             "id": 3433,
             "name": "Aqaba Development Stadium",
@@ -357,7 +298,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744476300
+          "timestamp": 1744480800
         },
         "league": {
           "id": 387,
@@ -580,6 +521,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1358554,
+          "date": "2025-04-04T13:00:00+00:00",
+          "venue": {
+            "id": 3432,
+            "name": "King Abdullah International Stadium",
+            "city": "Amman"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1743771600
+        },
+        "league": {
+          "id": 387,
+          "name": "League",
+          "logo": "https://media.api-sports.io/football/leagues/387.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4537,
+            "name": "Al Wihdat",
+            "logo": "https://media.api-sports.io/football/teams/4537.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4539,
+            "name": "Shabab Al Ordon",
+            "logo": "https://media.api-sports.io/football/teams/4539.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1358550,
@@ -1110,65 +1110,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323380,
-          "date": "2024-12-23T16:45:00+00:00",
-          "venue": {
-            "id": 3429,
-            "name": "Al Hasan Stadium",
-            "city": "Irbid"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1734972300
-        },
-        "league": {
-          "id": 863,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/863.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4537,
-            "name": "Al Wihdat",
-            "logo": "https://media.api-sports.io/football/teams/4537.png",
-            "winner": true
-          },
-          "away": {
-            "id": 17469,
-            "name": "Sama Al Sarhan",
-            "logo": "https://media.api-sports.io/football/teams/17469.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1465,5 +1406,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:58.295Z"
+  "lastUpdated": "2025-04-07T12:52:02.232Z"
 }

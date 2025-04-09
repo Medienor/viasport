@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -183,65 +183,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1261112,
-          "date": "2025-04-06T15:30:00+00:00",
-          "venue": {
-            "id": 5799,
-            "name": "Tofiq Bəhramov adına Respublika stadionu",
-            "city": "Baku"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743953400
-        },
-        "league": {
-          "id": 419,
-          "name": "Premyer Liqa",
-          "logo": "https://media.api-sports.io/football/leagues/419.png"
-        },
-        "teams": {
-          "home": {
-            "id": 556,
-            "name": "Qarabag",
-            "logo": "https://media.api-sports.io/football/teams/556.png",
-            "winner": null
-          },
-          "away": {
-            "id": 648,
-            "name": "Zira",
-            "logo": "https://media.api-sports.io/football/teams/648.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1261121,
@@ -359,9 +300,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1261130,
+          "date": "2025-04-24T22:00:00+00:00",
+          "venue": {
+            "id": 4125,
+            "name": "Şəhər stadionu",
+            "city": "Gəncə"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745532000
+        },
+        "league": {
+          "id": 419,
+          "name": "Premyer Liqa",
+          "logo": "https://media.api-sports.io/football/leagues/419.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5490,
+            "name": "Kapaz",
+            "logo": "https://media.api-sports.io/football/teams/5490.png",
+            "winner": null
+          },
+          "away": {
+            "id": 648,
+            "name": "Zira",
+            "logo": "https://media.api-sports.io/football/teams/648.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1261112,
+          "date": "2025-04-06T15:30:00+00:00",
+          "venue": {
+            "id": 5799,
+            "name": "Tofiq Bəhramov adına Respublika stadionu",
+            "city": "Baku"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1743953400
+        },
+        "league": {
+          "id": 419,
+          "name": "Premyer Liqa",
+          "logo": "https://media.api-sports.io/football/leagues/419.png"
+        },
+        "teams": {
+          "home": {
+            "id": 556,
+            "name": "Qarabag",
+            "logo": "https://media.api-sports.io/football/teams/556.png",
+            "winner": true
+          },
+          "away": {
+            "id": 648,
+            "name": "Zira",
+            "logo": "https://media.api-sports.io/football/teams/648.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1261111,
@@ -892,65 +951,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1261072,
-          "date": "2025-02-02T15:00:00+00:00",
-          "venue": {
-            "id": 4134,
-            "name": "Zirə qəsəbə stadionu",
-            "city": "Zirya"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738508400
-        },
-        "league": {
-          "id": 419,
-          "name": "Premyer Liqa",
-          "logo": "https://media.api-sports.io/football/leagues/419.png"
-        },
-        "teams": {
-          "home": {
-            "id": 648,
-            "name": "Zira",
-            "logo": "https://media.api-sports.io/football/teams/648.png",
-            "winner": true
-          },
-          "away": {
-            "id": 556,
-            "name": "Qarabag",
-            "logo": "https://media.api-sports.io/football/teams/556.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1247,5 +1247,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:12.696Z"
+  "lastUpdated": "2025-04-07T12:48:19.462Z"
 }

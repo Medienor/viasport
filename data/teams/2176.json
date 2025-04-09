@@ -148,65 +148,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1341717,
-          "date": "2025-04-05T13:00:00+00:00",
-          "venue": {
-            "id": 1523,
-            "name": "Jämtkraft Arena",
-            "city": "Östersund"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743858000
-        },
-        "league": {
-          "id": 114,
-          "name": "Superettan",
-          "logo": "https://media.api-sports.io/football/leagues/114.png"
-        },
-        "teams": {
-          "home": {
-            "id": 376,
-            "name": "Ostersunds FK",
-            "logo": "https://media.api-sports.io/football/teams/376.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2176,
-            "name": "Landskrona BoIS",
-            "logo": "https://media.api-sports.io/football/teams/2176.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1341724,
           "date": "2025-04-12T13:00:00+00:00",
           "venue": {
@@ -917,6 +858,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1341717,
+          "date": "2025-04-05T13:00:00+00:00",
+          "venue": {
+            "id": 1523,
+            "name": "Jämtkraft Arena",
+            "city": "Östersund"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1743858000
+        },
+        "league": {
+          "id": 114,
+          "name": "Superettan",
+          "logo": "https://media.api-sports.io/football/leagues/114.png"
+        },
+        "teams": {
+          "home": {
+            "id": 376,
+            "name": "Ostersunds FK",
+            "logo": "https://media.api-sports.io/football/teams/376.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2176,
+            "name": "Landskrona BoIS",
+            "logo": "https://media.api-sports.io/football/teams/2176.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1341710,
           "date": "2025-03-30T11:00:00+00:00",
           "venue": {
@@ -1445,65 +1445,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1316122,
-          "date": "2024-11-24T14:00:00+00:00",
-          "venue": {
-            "id": 1937,
-            "name": "Finnvedsvallen",
-            "city": "Värnamo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1732456800
-        },
-        "league": {
-          "id": 113,
-          "name": "Allsvenskan",
-          "logo": "https://media.api-sports.io/football/leagues/113.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2163,
-            "name": "IFK Varnamo",
-            "logo": "https://media.api-sports.io/football/teams/2163.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2176,
-            "name": "Landskrona BoIS",
-            "logo": "https://media.api-sports.io/football/teams/2176.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1521,12 +1462,12 @@
       "name": "Landskrona BoIS",
       "logo": "https://media.api-sports.io/football/teams/2176.png"
     },
-    "form": "D",
+    "form": "DD",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "wins": {
         "home": 0,
@@ -1535,8 +1476,8 @@
       },
       "draws": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "loses": {
         "home": 0,
@@ -1548,13 +1489,13 @@
       "for": {
         "total": {
           "home": 2,
-          "away": 0,
-          "total": 2
+          "away": 3,
+          "total": 5
         },
         "average": {
           "home": "2.0",
-          "away": "0.0",
-          "total": "2.0"
+          "away": "3.0",
+          "total": "2.5"
         },
         "minute": {
           "0-15": {
@@ -1567,23 +1508,23 @@
           },
           "31-45": {
             "total": 1,
-            "percentage": "50.00%"
+            "percentage": "20.00%"
           },
           "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "76-90": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": 2,
+            "percentage": "40.00%"
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "106-120": {
             "total": null,
@@ -1592,37 +1533,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "1.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "2.5": {
-            "over": 0,
+            "over": 1,
             "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       },
       "against": {
         "total": {
           "home": 2,
-          "away": 0,
-          "total": 2
+          "away": 3,
+          "total": 5
         },
         "average": {
           "home": "2.0",
-          "away": "0.0",
-          "total": "2.0"
+          "away": "3.0",
+          "total": "2.5"
         },
         "minute": {
           "0-15": {
@@ -1630,8 +1571,8 @@
             "percentage": null
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "40.00%"
           },
           "31-45": {
             "total": null,
@@ -1643,15 +1584,15 @@
           },
           "61-75": {
             "total": 1,
-            "percentage": "50.00%"
+            "percentage": "20.00%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "91-105": {
             "total": 1,
-            "percentage": "50.00%"
+            "percentage": "20.00%"
           },
           "106-120": {
             "total": null,
@@ -1660,24 +1601,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "1.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "2.5": {
-            "over": 0,
+            "over": 1,
             "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       }
@@ -1685,7 +1626,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
+        "draws": 2,
         "loses": 0
       },
       "wins": {
@@ -1699,11 +1640,11 @@
       "goals": {
         "for": {
           "home": 2,
-          "away": 0
+          "away": 3
         },
         "against": {
           "home": 2,
-          "away": 0
+          "away": 3
         }
       }
     },
@@ -1731,7 +1672,7 @@
     "lineups": [
       {
         "formation": "4-1-4-1",
-        "played": 1
+        "played": 2
       }
     ],
     "cards": {
@@ -1741,8 +1682,8 @@
           "percentage": null
         },
         "16-30": {
-          "total": 1,
-          "percentage": "50.00%"
+          "total": 2,
+          "percentage": "40.00%"
         },
         "31-45": {
           "total": null,
@@ -1750,15 +1691,15 @@
         },
         "46-60": {
           "total": 1,
-          "percentage": "50.00%"
+          "percentage": "20.00%"
         },
         "61-75": {
           "total": null,
           "percentage": null
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 2,
+          "percentage": "40.00%"
         },
         "91-105": {
           "total": null,
@@ -1805,5 +1746,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:05.227Z"
+  "lastUpdated": "2025-04-07T12:47:13.045Z"
 }

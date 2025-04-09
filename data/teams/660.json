@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -185,65 +185,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1325416,
-          "date": "2025-04-06T12:15:00+00:00",
-          "venue": {
-            "id": 1545,
-            "name": "Rheinpark Stadion",
-            "city": "Vaduz"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743941700
-        },
-        "league": {
-          "id": 208,
-          "name": "Challenge League",
-          "logo": "https://media.api-sports.io/football/leagues/208.png"
-        },
-        "teams": {
-          "home": {
-            "id": 660,
-            "name": "FC Vaduz",
-            "logo": "https://media.api-sports.io/football/teams/660.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1015,
-            "name": "Neuchatel Xamax FC",
-            "logo": "https://media.api-sports.io/football/teams/1015.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1325417,
@@ -718,6 +659,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1325416,
+          "date": "2025-04-06T12:15:00+00:00",
+          "venue": {
+            "id": 1545,
+            "name": "Rheinpark Stadion",
+            "city": "Vaduz"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743941700
+        },
+        "league": {
+          "id": 208,
+          "name": "Challenge League",
+          "logo": "https://media.api-sports.io/football/leagues/208.png"
+        },
+        "teams": {
+          "home": {
+            "id": 660,
+            "name": "FC Vaduz",
+            "logo": "https://media.api-sports.io/football/teams/660.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1015,
+            "name": "Neuchatel Xamax FC",
+            "logo": "https://media.api-sports.io/football/teams/1015.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1325411,
@@ -1248,65 +1248,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1325365,
-          "date": "2025-01-24T19:15:00+00:00",
-          "venue": {
-            "id": 1544,
-            "name": "Stockhorn Arena",
-            "city": "Thun"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1737746100
-        },
-        "league": {
-          "id": 208,
-          "name": "Challenge League",
-          "logo": "https://media.api-sports.io/football/leagues/208.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1012,
-            "name": "FC Thun",
-            "logo": "https://media.api-sports.io/football/teams/1012.png",
-            "winner": true
-          },
-          "away": {
-            "id": 660,
-            "name": "FC Vaduz",
-            "logo": "https://media.api-sports.io/football/teams/660.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1603,5 +1544,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:36.456Z"
+  "lastUpdated": "2025-04-07T12:48:42.558Z"
 }

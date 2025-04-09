@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -261,65 +261,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1342199,
-          "date": "2025-04-06T15:00:00+00:00",
-          "venue": {
-            "id": 20418,
-            "name": "Jotun Arena",
-            "city": "Sandefjord"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743951600
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 332,
-            "name": "Sandefjord",
-            "logo": "https://media.api-sports.io/football/teams/332.png",
-            "winner": null
-          },
-          "away": {
-            "id": 329,
-            "name": "Molde",
-            "logo": "https://media.api-sports.io/football/teams/329.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1367232,
@@ -1440,9 +1381,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1342352,
+          "date": "2025-09-14T15:00:00+00:00",
+          "venue": {
+            "id": 1184,
+            "name": "Aker Stadion",
+            "city": "Molde"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1757862000
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 329,
+            "name": "Molde",
+            "logo": "https://media.api-sports.io/football/teams/329.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2149,
+            "name": "Fredrikstad",
+            "logo": "https://media.api-sports.io/football/teams/2149.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1342199,
+          "date": "2025-04-06T15:00:00+00:00",
+          "venue": {
+            "id": 20418,
+            "name": "Jotun Arena",
+            "city": "Sandefjord"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743951600
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 332,
+            "name": "Sandefjord",
+            "logo": "https://media.api-sports.io/football/teams/332.png",
+            "winner": true
+          },
+          "away": {
+            "id": 329,
+            "name": "Molde",
+            "logo": "https://media.api-sports.io/football/teams/329.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1342191,
@@ -1973,65 +2032,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299395,
-          "date": "2024-12-19T20:00:00+00:00",
-          "venue": {
-            "id": 1184,
-            "name": "Aker Stadion",
-            "city": "Molde"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1734638400
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 329,
-            "name": "Molde",
-            "logo": "https://media.api-sports.io/football/teams/329.png",
-            "winner": true
-          },
-          "away": {
-            "id": 640,
-            "name": "Mlada Boleslav",
-            "logo": "https://media.api-sports.io/football/teams/640.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2049,12 +2049,12 @@
       "name": "Molde",
       "logo": "https://media.api-sports.io/football/teams/329.png"
     },
-    "form": "L",
+    "form": "LL",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "wins": {
         "home": 0,
@@ -2068,8 +2068,8 @@
       },
       "loses": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       }
     },
     "goals": {
@@ -2121,49 +2121,49 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       },
       "against": {
         "total": {
           "home": 2,
-          "away": 0,
-          "total": 2
+          "away": 3,
+          "total": 5
         },
         "average": {
           "home": "2.0",
-          "away": "0.0",
-          "total": "2.0"
+          "away": "3.0",
+          "total": "2.5"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "50.00%"
+            "percentage": "20.00%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "46-60": {
             "total": null,
@@ -2171,11 +2171,11 @@
           },
           "61-75": {
             "total": 1,
-            "percentage": "50.00%"
+            "percentage": "20.00%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "91-105": {
             "total": null,
@@ -2188,24 +2188,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "1.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "2.5": {
-            "over": 0,
+            "over": 1,
             "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       }
@@ -2214,7 +2214,7 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 1
+        "loses": 2
       },
       "wins": {
         "home": null,
@@ -2222,7 +2222,7 @@
       },
       "loses": {
         "home": "0-2",
-        "away": null
+        "away": "3-0"
       },
       "goals": {
         "for": {
@@ -2231,7 +2231,7 @@
         },
         "against": {
           "home": 2,
-          "away": 0
+          "away": 3
         }
       }
     },
@@ -2242,8 +2242,8 @@
     },
     "failed_to_score": {
       "home": 1,
-      "away": 0,
-      "total": 1
+      "away": 1,
+      "total": 2
     },
     "penalty": {
       "scored": {
@@ -2259,7 +2259,7 @@
     "lineups": [
       {
         "formation": "4-4-2",
-        "played": 1
+        "played": 2
       }
     ],
     "cards": {
@@ -2274,23 +2274,23 @@
         },
         "31-45": {
           "total": 1,
-          "percentage": "33.33%"
+          "percentage": "16.67%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "16.67%"
         },
         "61-75": {
-          "total": 1,
+          "total": 2,
           "percentage": "33.33%"
         },
         "76-90": {
           "total": 1,
-          "percentage": "33.33%"
+          "percentage": "16.67%"
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "16.67%"
         },
         "106-120": {
           "total": null,
@@ -2333,5 +2333,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:12.101Z"
+  "lastUpdated": "2025-04-07T12:45:19.570Z"
 }

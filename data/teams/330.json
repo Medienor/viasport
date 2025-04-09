@@ -149,67 +149,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1342436,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 1182,
-            "name": "Åråsen Stadion",
-            "city": "Kjeller"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 321,
-            "name": "Lillestrom",
-            "logo": "https://media.api-sports.io/football/teams/321.png",
-            "winner": null
-          },
-          "away": {
-            "id": 330,
-            "name": "ODD Ballklubb",
-            "logo": "https://media.api-sports.io/football/teams/330.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1367210,
-          "date": "2025-04-13T14:00:00+00:00",
+          "date": "2025-04-13T12:00:00+00:00",
           "venue": {
             "id": null,
             "name": "Flint ESSO Arena A KG",
@@ -221,7 +162,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744552800
+          "timestamp": 1744545600
         },
         "league": {
           "id": 105,
@@ -800,6 +741,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1342436,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 1182,
+            "name": "Åråsen Stadion",
+            "city": "Kjeller"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 321,
+            "name": "Lillestrom",
+            "logo": "https://media.api-sports.io/football/teams/321.png",
+            "winner": true
+          },
+          "away": {
+            "id": 330,
+            "name": "ODD Ballklubb",
+            "logo": "https://media.api-sports.io/football/teams/330.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342428,
           "date": "2025-03-31T17:00:00+00:00",
           "venue": {
@@ -1328,65 +1328,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1164557,
-          "date": "2024-12-01T16:00:00+00:00",
-          "venue": {
-            "id": 12130,
-            "name": "Haugesund Sparebank Arena",
-            "city": "Haugesund"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1733068800
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 328,
-            "name": "Haugesund",
-            "logo": "https://media.api-sports.io/football/teams/328.png",
-            "winner": true
-          },
-          "away": {
-            "id": 330,
-            "name": "ODD Ballklubb",
-            "logo": "https://media.api-sports.io/football/teams/330.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1404,12 +1345,12 @@
       "name": "ODD Ballklubb",
       "logo": "https://media.api-sports.io/football/teams/330.png"
     },
-    "form": "W",
+    "form": "WL",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "wins": {
         "home": 1,
@@ -1423,8 +1364,8 @@
       },
       "loses": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       }
     },
     "goals": {
@@ -1437,7 +1378,7 @@
         "average": {
           "home": "2.0",
           "away": "0.0",
-          "total": "2.0"
+          "total": "1.0"
         },
         "minute": {
           "0-15": {
@@ -1476,35 +1417,35 @@
         "under_over": {
           "0.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       },
       "against": {
         "total": {
           "home": 1,
-          "away": 0,
-          "total": 1
+          "away": 1,
+          "total": 2
         },
         "average": {
           "home": "1.0",
-          "away": "0.0",
+          "away": "1.0",
           "total": "1.0"
         },
         "minute": {
@@ -1518,7 +1459,7 @@
           },
           "31-45": {
             "total": 1,
-            "percentage": "100.00%"
+            "percentage": "50.00%"
           },
           "46-60": {
             "total": null,
@@ -1529,8 +1470,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "91-105": {
             "total": null,
@@ -1543,24 +1484,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       }
@@ -1577,7 +1518,7 @@
       },
       "loses": {
         "home": null,
-        "away": null
+        "away": "1-0"
       },
       "goals": {
         "for": {
@@ -1586,7 +1527,7 @@
         },
         "against": {
           "home": 1,
-          "away": 0
+          "away": 1
         }
       }
     },
@@ -1597,8 +1538,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 0,
-      "total": 0
+      "away": 1,
+      "total": 1
     },
     "penalty": {
       "scored": {
@@ -1615,8 +1556,8 @@
     "cards": {
       "yellow": {
         "0-15": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "33.33%"
         },
         "16-30": {
           "total": null,
@@ -1635,12 +1576,12 @@
           "percentage": null
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "33.33%"
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "33.33%"
         },
         "106-120": {
           "total": null,
@@ -1683,5 +1624,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:12.110Z"
+  "lastUpdated": "2025-04-07T12:45:19.510Z"
 }

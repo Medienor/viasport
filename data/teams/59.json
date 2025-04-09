@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216318,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 574,
-            "name": "Deepdale",
-            "city": "Preston"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 59,
-            "name": "Preston",
-            "logo": "https://media.api-sports.io/football/teams/59.png",
-            "winner": null
-          },
-          "away": {
-            "id": 75,
-            "name": "Stoke City",
-            "logo": "https://media.api-sports.io/football/teams/75.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216327,
           "date": "2025-04-08T18:45:00+00:00",
           "venue": {
@@ -565,6 +506,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216318,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 574,
+            "name": "Deepdale",
+            "city": "Preston"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 59,
+            "name": "Preston",
+            "logo": "https://media.api-sports.io/football/teams/59.png",
+            "winner": null
+          },
+          "away": {
+            "id": 75,
+            "name": "Stoke City",
+            "logo": "https://media.api-sports.io/football/teams/75.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216301,
@@ -1095,65 +1095,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216235,
-          "date": "2025-02-15T12:30:00+00:00",
-          "venue": {
-            "id": 574,
-            "name": "Deepdale",
-            "city": "Preston"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1739622600
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 59,
-            "name": "Preston",
-            "logo": "https://media.api-sports.io/football/teams/59.png",
-            "winner": null
-          },
-          "away": {
-            "id": 44,
-            "name": "Burnley",
-            "logo": "https://media.api-sports.io/football/teams/44.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1450,5 +1391,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:07.946Z"
+  "lastUpdated": "2025-04-07T12:47:15.602Z"
 }

@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216318,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 574,
-            "name": "Deepdale",
-            "city": "Preston"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 59,
-            "name": "Preston",
-            "logo": "https://media.api-sports.io/football/teams/59.png",
-            "winner": null
-          },
-          "away": {
-            "id": 75,
-            "name": "Stoke City",
-            "logo": "https://media.api-sports.io/football/teams/75.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216329,
           "date": "2025-04-08T18:45:00+00:00",
           "venue": {
@@ -449,7 +390,7 @@
       {
         "fixture": {
           "id": 1216382,
-          "date": "2025-04-26T14:00:00+00:00",
+          "date": "2025-04-25T19:00:00+00:00",
           "venue": {
             "id": 588,
             "name": "bet365 Stadium",
@@ -461,7 +402,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745676000
+          "timestamp": 1745607600
         },
         "league": {
           "id": 40,
@@ -566,6 +507,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216318,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 574,
+            "name": "Deepdale",
+            "city": "Preston"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 59,
+            "name": "Preston",
+            "logo": "https://media.api-sports.io/football/teams/59.png",
+            "winner": null
+          },
+          "away": {
+            "id": 75,
+            "name": "Stoke City",
+            "logo": "https://media.api-sports.io/football/teams/75.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216308,
@@ -1096,65 +1096,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216193,
-          "date": "2025-02-01T15:00:00+00:00",
-          "venue": {
-            "id": 12051,
-            "name": "The MKM Stadium",
-            "city": "Hull"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738422000
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 64,
-            "name": "Hull City",
-            "logo": "https://media.api-sports.io/football/teams/64.png",
-            "winner": false
-          },
-          "away": {
-            "id": 75,
-            "name": "Stoke City",
-            "logo": "https://media.api-sports.io/football/teams/75.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1451,5 +1392,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:13.215Z"
+  "lastUpdated": "2025-04-07T12:47:20.835Z"
 }

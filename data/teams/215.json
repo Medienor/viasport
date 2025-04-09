@@ -150,65 +150,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231973,
-          "date": "2025-04-06T14:30:00+00:00",
-          "venue": {
-            "id": 2811,
-            "name": "Estádio Cidade de Barcelos",
-            "city": "Barcelos"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743949800
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 762,
-            "name": "GIL Vicente",
-            "logo": "https://media.api-sports.io/football/teams/762.png",
-            "winner": null
-          },
-          "away": {
-            "id": 215,
-            "name": "Moreirense",
-            "logo": "https://media.api-sports.io/football/teams/215.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231982,
           "date": "2025-04-13T19:30:00+00:00",
           "venue": {
@@ -504,6 +445,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231973,
+          "date": "2025-04-06T14:30:00+00:00",
+          "venue": {
+            "id": 2811,
+            "name": "Estádio Cidade de Barcelos",
+            "city": "Barcelos"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1743949800
+        },
+        "league": {
+          "id": 94,
+          "name": "Primeira Liga",
+          "logo": "https://media.api-sports.io/football/leagues/94.png"
+        },
+        "teams": {
+          "home": {
+            "id": 762,
+            "name": "GIL Vicente",
+            "logo": "https://media.api-sports.io/football/teams/762.png",
+            "winner": false
+          },
+          "away": {
+            "id": 215,
+            "name": "Moreirense",
+            "logo": "https://media.api-sports.io/football/teams/215.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231970,
@@ -1034,65 +1034,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231888,
-          "date": "2025-01-19T15:30:00+00:00",
-          "venue": {
-            "id": 1280,
-            "name": "Parque Desportivo Comendador Joaquim de Almeida Freitas",
-            "city": "Moreira de Cónegos"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 11
-          },
-          "timestamp": 1737300600
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 215,
-            "name": "Moreirense",
-            "logo": "https://media.api-sports.io/football/teams/215.png",
-            "winner": null
-          },
-          "away": {
-            "id": 231,
-            "name": "Farense",
-            "logo": "https://media.api-sports.io/football/teams/231.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1389,5 +1330,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:29.114Z"
+  "lastUpdated": "2025-04-07T12:46:36.733Z"
 }

@@ -148,65 +148,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223899,
-          "date": "2025-04-06T10:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadio Ettore Giardiniero - Via del Mare",
-            "city": "Lecce"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743935400
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 867,
-            "name": "Lecce",
-            "logo": "https://media.api-sports.io/football/teams/867.png",
-            "winner": null
-          },
-          "away": {
-            "id": 517,
-            "name": "Venezia",
-            "logo": "https://media.api-sports.io/football/teams/517.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223914,
           "date": "2025-04-12T13:00:00+00:00",
           "venue": {
@@ -622,12 +563,71 @@
     "past": [
       {
         "fixture": {
+          "id": 1223899,
+          "date": "2025-04-06T10:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Via del Mare",
+            "city": "Lecce"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743935400
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 867,
+            "name": "Lecce",
+            "logo": "https://media.api-sports.io/football/teams/867.png",
+            "winner": null
+          },
+          "away": {
+            "id": 517,
+            "name": "Venezia",
+            "logo": "https://media.api-sports.io/football/teams/517.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1223894,
           "date": "2025-03-29T14:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Pier Luigi Penzo",
-            "city": "Venezia"
+            "name": "Stadio Pierluigi Penzo",
+            "city": "Venice"
           },
           "status": {
             "long": "Match Finished",
@@ -803,8 +803,8 @@
           "date": "2025-03-16T11:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Pier Luigi Penzo",
-            "city": "Venezia"
+            "name": "Stadio Pierluigi Penzo",
+            "city": "Venice"
           },
           "status": {
             "long": "Match Finished",
@@ -980,8 +980,8 @@
           "date": "2025-02-22T14:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Pier Luigi Penzo",
-            "city": "Venezia"
+            "name": "Stadio Pierluigi Penzo",
+            "city": "Venice"
           },
           "status": {
             "long": "Match Finished",
@@ -1098,8 +1098,8 @@
           "date": "2025-02-09T11:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Pier Luigi Penzo",
-            "city": "Venezia"
+            "name": "Stadio Pierluigi Penzo",
+            "city": "Venice"
           },
           "status": {
             "long": "Match Finished",
@@ -1140,65 +1140,6 @@
           "fulltime": {
             "home": 0,
             "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1223824,
-          "date": "2025-02-01T14:00:00+00:00",
-          "venue": {
-            "id": 20416,
-            "name": "Bluenergy Stadium",
-            "city": "Udine"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738418400
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 494,
-            "name": "Udinese",
-            "logo": "https://media.api-sports.io/football/teams/494.png",
-            "winner": true
-          },
-          "away": {
-            "id": 517,
-            "name": "Venezia",
-            "logo": "https://media.api-sports.io/football/teams/517.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
           },
           "extratime": {
             "home": null,
@@ -1505,5 +1446,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:58.448Z"
+  "lastUpdated": "2025-04-07T12:46:05.670Z"
 }

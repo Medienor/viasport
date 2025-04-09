@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -147,7 +147,7 @@
         {
           "year": 2024,
           "start": "2024-08-03",
-          "end": "2025-04-02",
+          "end": "2025-04-23",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -225,65 +225,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1221045,
-          "date": "2025-04-06T10:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "CSC Nika",
-            "city": "Oleksandriia"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743933600
-        },
-        "league": {
-          "id": 333,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/333.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3619,
-            "name": "Oleksandria",
-            "logo": "https://media.api-sports.io/football/teams/3619.png",
-            "winner": null
-          },
-          "away": {
-            "id": 6489,
-            "name": "Kryvbas KR",
-            "logo": "https://media.api-sports.io/football/teams/6489.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1221054,
           "date": "2025-04-12T10:00:00+00:00",
           "venue": {
@@ -344,7 +285,7 @@
       {
         "fixture": {
           "id": 1221064,
-          "date": "2025-04-18T22:00:00+00:00",
+          "date": "2025-04-20T10:00:00+00:00",
           "venue": {
             "id": null,
             "name": "Stadion Hirnyk",
@@ -356,7 +297,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745013600
+          "timestamp": 1745143200
         },
         "league": {
           "id": 333,
@@ -399,9 +340,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1221070,
+          "date": "2025-04-25T22:00:00+00:00",
+          "venue": {
+            "id": 12063,
+            "name": "Cherkasy Arena",
+            "city": "Cherkasy"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745618400
+        },
+        "league": {
+          "id": 333,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/333.png"
+        },
+        "teams": {
+          "home": {
+            "id": 17161,
+            "name": "LNZ Cherkasy",
+            "logo": "https://media.api-sports.io/football/teams/17161.png",
+            "winner": null
+          },
+          "away": {
+            "id": 6489,
+            "name": "Kryvbas KR",
+            "logo": "https://media.api-sports.io/football/teams/6489.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1221045,
+          "date": "2025-04-06T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "CSC Nika Stadium",
+            "city": "Oleksandria"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743933600
+        },
+        "league": {
+          "id": 333,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/333.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3619,
+            "name": "Oleksandria",
+            "logo": "https://media.api-sports.io/football/teams/3619.png",
+            "winner": true
+          },
+          "away": {
+            "id": 6489,
+            "name": "Kryvbas KR",
+            "logo": "https://media.api-sports.io/football/teams/6489.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1221040,
@@ -932,65 +991,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220999,
-          "date": "2024-12-14T13:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadion Hirnyk",
-            "city": "Kryvyi Rih"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1734183000
-        },
-        "league": {
-          "id": 333,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/333.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6489,
-            "name": "Kryvbas KR",
-            "logo": "https://media.api-sports.io/football/teams/6489.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3617,
-            "name": "Karpaty",
-            "logo": "https://media.api-sports.io/football/teams/3617.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1287,5 +1287,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:20.754Z"
+  "lastUpdated": "2025-04-07T12:48:27.219Z"
 }

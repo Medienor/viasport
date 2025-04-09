@@ -218,65 +218,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1326328,
-          "date": "2025-04-06T23:00:00+00:00",
-          "venue": {
-            "id": 20764,
-            "name": "Chase Stadium",
-            "city": "Fort Lauderdale, Florida"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743980400
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 9568,
-            "name": "Inter Miami",
-            "logo": "https://media.api-sports.io/football/teams/9568.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1601,
-            "name": "Toronto FC",
-            "logo": "https://media.api-sports.io/football/teams/1601.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361467,
           "date": "2025-04-10T00:00:00+00:00",
           "venue": {
@@ -1395,9 +1336,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1326555,
+          "date": "2025-07-19T23:30:00+00:00",
+          "venue": {
+            "id": 21544,
+            "name": "Sports Illustrated Stadium",
+            "city": "Harrison, New Jersey"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1752967800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": null
+          },
+          "away": {
+            "id": 9568,
+            "name": "Inter Miami",
+            "logo": "https://media.api-sports.io/football/teams/9568.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1326328,
+          "date": "2025-04-06T23:00:00+00:00",
+          "venue": {
+            "id": 20764,
+            "name": "Chase Stadium",
+            "city": "Fort Lauderdale, Florida"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743980400
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9568,
+            "name": "Inter Miami",
+            "logo": "https://media.api-sports.io/football/teams/9568.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1601,
+            "name": "Toronto FC",
+            "logo": "https://media.api-sports.io/football/teams/1601.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361466,
@@ -1928,65 +1987,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1322490,
-          "date": "2025-02-20T01:00:00+00:00",
-          "venue": {
-            "id": 1615,
-            "name": "Children's Mercy Park",
-            "city": "Kansas City, Kansas"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1740013200
-        },
-        "league": {
-          "id": 16,
-          "name": "CONCACAF Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/16.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1611,
-            "name": "Sporting Kansas City",
-            "logo": "https://media.api-sports.io/football/teams/1611.png",
-            "winner": false
-          },
-          "away": {
-            "id": 9568,
-            "name": "Inter Miami",
-            "logo": "https://media.api-sports.io/football/teams/9568.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2004,12 +2004,12 @@
       "name": "Inter Miami",
       "logo": "https://media.api-sports.io/football/teams/9568.png"
     },
-    "form": "DWWWW",
+    "form": "DWWWWD",
     "fixtures": {
       "played": {
-        "home": 3,
+        "home": 4,
         "away": 2,
-        "total": 5
+        "total": 6
       },
       "wins": {
         "home": 2,
@@ -2017,9 +2017,9 @@
         "total": 4
       },
       "draws": {
-        "home": 1,
+        "home": 2,
         "away": 0,
-        "total": 1
+        "total": 2
       },
       "loses": {
         "home": 0,
@@ -2030,31 +2030,31 @@
     "goals": {
       "for": {
         "total": {
-          "home": 5,
+          "home": 6,
           "away": 6,
-          "total": 11
+          "total": 12
         },
         "average": {
-          "home": "1.7",
+          "home": "1.5",
           "away": "3.0",
-          "total": "2.2"
+          "total": "2.0"
         },
         "minute": {
           "0-15": {
             "total": 2,
-            "percentage": "18.18%"
+            "percentage": "16.67%"
           },
           "16-30": {
             "total": 2,
-            "percentage": "18.18%"
+            "percentage": "16.67%"
           },
           "31-45": {
             "total": 1,
-            "percentage": "9.09%"
+            "percentage": "8.33%"
           },
           "46-60": {
-            "total": 3,
-            "percentage": "27.27%"
+            "total": 4,
+            "percentage": "33.33%"
           },
           "61-75": {
             "total": null,
@@ -2062,11 +2062,11 @@
           },
           "76-90": {
             "total": 2,
-            "percentage": "18.18%"
+            "percentage": "16.67%"
           },
           "91-105": {
             "total": 1,
-            "percentage": "9.09%"
+            "percentage": "8.33%"
           },
           "106-120": {
             "total": null,
@@ -2075,32 +2075,32 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 6,
             "under": 0
           },
           "1.5": {
             "over": 4,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 1,
-            "under": 4
+            "under": 5
           },
           "3.5": {
             "over": 1,
-            "under": 4
+            "under": 5
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           }
         }
       },
       "against": {
         "total": {
-          "home": 3,
+          "home": 4,
           "away": 2,
-          "total": 5
+          "total": 6
         },
         "average": {
           "home": "1.0",
@@ -2110,19 +2110,19 @@
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "20.00%"
+            "percentage": "16.67%"
           },
           "16-30": {
             "total": 1,
-            "percentage": "20.00%"
+            "percentage": "16.67%"
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "20.00%"
+            "total": 2,
+            "percentage": "33.33%"
           },
           "61-75": {
             "total": null,
@@ -2130,7 +2130,7 @@
           },
           "76-90": {
             "total": 2,
-            "percentage": "40.00%"
+            "percentage": "33.33%"
           },
           "91-105": {
             "total": null,
@@ -2143,31 +2143,31 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
+            "over": 5,
             "under": 1
           },
           "1.5": {
             "over": 1,
-            "under": 4
+            "under": 5
           },
           "2.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           },
           "3.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           },
           "4.5": {
             "over": 0,
-            "under": 5
+            "under": 6
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 0,
+        "wins": 4,
         "draws": 1,
         "loses": 0
       },
@@ -2214,7 +2214,7 @@
     "lineups": [
       {
         "formation": "4-4-2",
-        "played": 2
+        "played": 3
       },
       {
         "formation": "4-2-3-1",
@@ -2229,31 +2229,31 @@
       "yellow": {
         "0-15": {
           "total": 1,
-          "percentage": "5.56%"
+          "percentage": "5.26%"
         },
         "16-30": {
           "total": 3,
-          "percentage": "16.67%"
+          "percentage": "15.79%"
         },
         "31-45": {
           "total": 3,
-          "percentage": "16.67%"
+          "percentage": "15.79%"
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "5.26%"
         },
         "61-75": {
           "total": 1,
-          "percentage": "5.56%"
+          "percentage": "5.26%"
         },
         "76-90": {
           "total": 2,
-          "percentage": "11.11%"
+          "percentage": "10.53%"
         },
         "91-105": {
           "total": 8,
-          "percentage": "44.44%"
+          "percentage": "42.11%"
         },
         "106-120": {
           "total": null,
@@ -2296,5 +2296,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:49.938Z"
+  "lastUpdated": "2025-04-07T12:52:53.243Z"
 }

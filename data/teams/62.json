@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216316,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 569,
-            "name": "The Kassam Stadium",
-            "city": "Oxford, Oxfordshire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1338,
-            "name": "Oxford United",
-            "logo": "https://media.api-sports.io/football/teams/1338.png",
-            "winner": null
-          },
-          "away": {
-            "id": 62,
-            "name": "Sheffield Utd",
-            "logo": "https://media.api-sports.io/football/teams/62.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216328,
           "date": "2025-04-08T18:45:00+00:00",
           "venue": {
@@ -448,7 +389,7 @@
       {
         "fixture": {
           "id": 1216382,
-          "date": "2025-04-26T14:00:00+00:00",
+          "date": "2025-04-25T19:00:00+00:00",
           "venue": {
             "id": 588,
             "name": "bet365 Stadium",
@@ -460,7 +401,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745676000
+          "timestamp": 1745607600
         },
         "league": {
           "id": 40,
@@ -565,6 +506,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216316,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 569,
+            "name": "The Kassam Stadium",
+            "city": "Oxford, Oxfordshire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1338,
+            "name": "Oxford United",
+            "logo": "https://media.api-sports.io/football/teams/1338.png",
+            "winner": true
+          },
+          "away": {
+            "id": 62,
+            "name": "Sheffield Utd",
+            "logo": "https://media.api-sports.io/football/teams/62.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216307,
@@ -1095,65 +1095,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216192,
-          "date": "2025-02-01T15:00:00+00:00",
-          "venue": {
-            "id": 527,
-            "name": "Pride Park Stadium",
-            "city": "Derby"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738422000
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 69,
-            "name": "Derby",
-            "logo": "https://media.api-sports.io/football/teams/69.png",
-            "winner": false
-          },
-          "away": {
-            "id": 62,
-            "name": "Sheffield Utd",
-            "logo": "https://media.api-sports.io/football/teams/62.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1450,5 +1391,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:10.706Z"
+  "lastUpdated": "2025-04-07T12:47:18.297Z"
 }

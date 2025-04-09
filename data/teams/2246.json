@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-07-10",
-          "end": "2025-04-02",
+          "end": "2025-04-22",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -306,7 +306,7 @@
       {
         "fixture": {
           "id": 1360146,
-          "date": "2025-04-18T22:00:00+00:00",
+          "date": "2025-04-20T17:00:00+00:00",
           "venue": {
             "id": 1326,
             "name": "Arena Naţională",
@@ -318,7 +318,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745013600
+          "timestamp": 1745168400
         },
         "league": {
           "id": 283,
@@ -330,6 +330,124 @@
             "id": 559,
             "name": "FCSB",
             "logo": "https://media.api-sports.io/football/teams/559.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2246,
+            "name": "CFR 1907 Cluj",
+            "logo": "https://media.api-sports.io/football/teams/2246.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1367922,
+          "date": "2025-04-22T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745359200
+        },
+        "league": {
+          "id": 285,
+          "name": "Cupa României",
+          "logo": "https://media.api-sports.io/football/leagues/285.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2246,
+            "name": "CFR 1907 Cluj",
+            "logo": "https://media.api-sports.io/football/teams/2246.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2596,
+            "name": "Farul Constanta",
+            "logo": "https://media.api-sports.io/football/teams/2596.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1360150,
+          "date": "2025-04-28T17:30:00+00:00",
+          "venue": {
+            "id": 19612,
+            "name": "Stadionul Arcul de Triumf",
+            "city": "București"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745861400
+        },
+        "league": {
+          "id": 283,
+          "name": "Liga I",
+          "logo": "https://media.api-sports.io/football/leagues/283.png"
+        },
+        "teams": {
+          "home": {
+            "id": 635,
+            "name": "Dinamo Bucuresti",
+            "logo": "https://media.api-sports.io/football/teams/635.png",
             "winner": null
           },
           "away": {
@@ -1249,5 +1367,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:46.561Z"
+  "lastUpdated": "2025-04-07T12:48:52.674Z"
 }

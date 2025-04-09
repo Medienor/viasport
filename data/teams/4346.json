@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -147,7 +147,7 @@
         {
           "year": 2024,
           "start": "2024-09-18",
-          "end": "2025-02-26",
+          "end": "2025-04-23",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -221,12 +221,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1359830,
-          "date": "2025-04-06T13:00:00+00:00",
+          "id": 1367729,
+          "date": "2025-04-09T13:00:00+00:00",
           "venue": {
-            "id": 3323,
-            "name": "Gradska Plaža Stadium",
-            "city": "Struga"
+            "id": 1046,
+            "name": "Ecolog Arena",
+            "city": "Tetovo"
           },
           "status": {
             "long": "Not Started",
@@ -234,24 +234,24 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743944400
+          "timestamp": 1744203600
         },
         "league": {
-          "id": 371,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/371.png"
+          "id": 756,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/756.png"
         },
         "teams": {
           "home": {
-            "id": 4346,
-            "name": "Struga",
-            "logo": "https://media.api-sports.io/football/teams/4346.png",
+            "id": 609,
+            "name": "Shkendija",
+            "logo": "https://media.api-sports.io/football/teams/609.png",
             "winner": null
           },
           "away": {
-            "id": 693,
-            "name": "Pelister",
-            "logo": "https://media.api-sports.io/football/teams/693.png",
+            "id": 4346,
+            "name": "Struga",
+            "logo": "https://media.api-sports.io/football/teams/4346.png",
             "winner": null
           }
         },
@@ -370,6 +370,65 @@
             "id": 4338,
             "name": "KF Gostivari",
             "logo": "https://media.api-sports.io/football/teams/4338.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1367728,
+          "date": "2025-04-23T13:00:00+00:00",
+          "venue": {
+            "id": 3323,
+            "name": "Gradska Plaža Stadium",
+            "city": "Struga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745413200
+        },
+        "league": {
+          "id": 756,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/756.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4346,
+            "name": "Struga",
+            "logo": "https://media.api-sports.io/football/teams/4346.png",
+            "winner": null
+          },
+          "away": {
+            "id": 609,
+            "name": "Shkendija",
+            "logo": "https://media.api-sports.io/football/teams/609.png",
             "winner": null
           }
         },
@@ -693,6 +752,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1359830,
+          "date": "2025-04-05T13:00:00+00:00",
+          "venue": {
+            "id": 3323,
+            "name": "Gradska Plaža Stadium",
+            "city": "Struga"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743858000
+        },
+        "league": {
+          "id": 371,
+          "name": "First League",
+          "logo": "https://media.api-sports.io/football/leagues/371.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4346,
+            "name": "Struga",
+            "logo": "https://media.api-sports.io/football/teams/4346.png",
+            "winner": true
+          },
+          "away": {
+            "id": 693,
+            "name": "Pelister",
+            "logo": "https://media.api-sports.io/football/teams/693.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1359829,
@@ -1223,65 +1341,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1339789,
-          "date": "2025-01-27T14:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737988200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4346,
-            "name": "Struga",
-            "logo": "https://media.api-sports.io/football/teams/4346.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4554,
-            "name": "Kyzyl-Zhar",
-            "logo": "https://media.api-sports.io/football/teams/4554.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1578,5 +1637,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:04.819Z"
+  "lastUpdated": "2025-04-07T12:48:11.890Z"
 }

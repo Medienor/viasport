@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216315,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 559,
-            "name": "The Den",
-            "city": "London"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 58,
-            "name": "Millwall",
-            "logo": "https://media.api-sports.io/football/teams/58.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1355,
-            "name": "Portsmouth",
-            "logo": "https://media.api-sports.io/football/teams/1355.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216331,
           "date": "2025-04-09T19:00:00+00:00",
           "venue": {
@@ -565,6 +506,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216315,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 559,
+            "name": "The Den",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 58,
+            "name": "Millwall",
+            "logo": "https://media.api-sports.io/football/teams/58.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1355,
+            "name": "Portsmouth",
+            "logo": "https://media.api-sports.io/football/teams/1355.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216306,
@@ -1095,65 +1095,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216199,
-          "date": "2025-02-01T15:00:00+00:00",
-          "venue": {
-            "id": 573,
-            "name": "Fratton Park",
-            "city": "Portsmouth"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738422000
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1355,
-            "name": "Portsmouth",
-            "logo": "https://media.api-sports.io/football/teams/1355.png",
-            "winner": null
-          },
-          "away": {
-            "id": 44,
-            "name": "Burnley",
-            "logo": "https://media.api-sports.io/football/teams/44.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1450,5 +1391,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:15.910Z"
+  "lastUpdated": "2025-04-07T12:47:23.323Z"
 }

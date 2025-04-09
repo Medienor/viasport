@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216311,
-          "date": "2025-04-04T19:00:00+00:00",
-          "venue": {
-            "id": 500,
-            "name": "Ewood Park",
-            "city": "Blackburn, Lancashire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743793200
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 67,
-            "name": "Blackburn",
-            "logo": "https://media.api-sports.io/football/teams/67.png",
-            "winner": null
-          },
-          "away": {
-            "id": 70,
-            "name": "Middlesbrough",
-            "logo": "https://media.api-sports.io/football/teams/70.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216325,
           "date": "2025-04-08T19:00:00+00:00",
           "venue": {
@@ -565,6 +506,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216311,
+          "date": "2025-04-04T19:00:00+00:00",
+          "venue": {
+            "id": 500,
+            "name": "Ewood Park",
+            "city": "Blackburn, Lancashire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743793200
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 67,
+            "name": "Blackburn",
+            "logo": "https://media.api-sports.io/football/teams/67.png",
+            "winner": false
+          },
+          "away": {
+            "id": 70,
+            "name": "Middlesbrough",
+            "logo": "https://media.api-sports.io/football/teams/70.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216304,
@@ -1095,65 +1095,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216195,
-          "date": "2025-02-03T20:00:00+00:00",
-          "venue": {
-            "id": 558,
-            "name": "Riverside Stadium",
-            "city": "Middlesbrough"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738612800
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 70,
-            "name": "Middlesbrough",
-            "logo": "https://media.api-sports.io/football/teams/70.png",
-            "winner": false
-          },
-          "away": {
-            "id": 746,
-            "name": "Sunderland",
-            "logo": "https://media.api-sports.io/football/teams/746.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1450,5 +1391,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:13.308Z"
+  "lastUpdated": "2025-04-07T12:47:20.873Z"
 }

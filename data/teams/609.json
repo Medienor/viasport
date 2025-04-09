@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-09-18",
-          "end": "2025-02-26",
+          "end": "2025-04-23",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -188,12 +188,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1359834,
-          "date": "2025-04-06T13:00:00+00:00",
+          "id": 1367729,
+          "date": "2025-04-09T13:00:00+00:00",
           "venue": {
-            "id": 3324,
-            "name": "Gradski Stadion",
-            "city": "Kavadarci"
+            "id": 1046,
+            "name": "Ecolog Arena",
+            "city": "Tetovo"
           },
           "status": {
             "long": "Not Started",
@@ -201,24 +201,24 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1743944400
+          "timestamp": 1744203600
         },
         "league": {
-          "id": 371,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/371.png"
+          "id": 756,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/756.png"
         },
         "teams": {
           "home": {
-            "id": 4348,
-            "name": "Tikveš",
-            "logo": "https://media.api-sports.io/football/teams/4348.png",
-            "winner": null
-          },
-          "away": {
             "id": 609,
             "name": "Shkendija",
             "logo": "https://media.api-sports.io/football/teams/609.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4346,
+            "name": "Struga",
+            "logo": "https://media.api-sports.io/football/teams/4346.png",
             "winner": null
           }
         },
@@ -331,6 +331,65 @@
             "id": 17660,
             "name": "Besa Dobërdoll",
             "logo": "https://media.api-sports.io/football/teams/17660.png",
+            "winner": null
+          },
+          "away": {
+            "id": 609,
+            "name": "Shkendija",
+            "logo": "https://media.api-sports.io/football/teams/609.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1367728,
+          "date": "2025-04-23T13:00:00+00:00",
+          "venue": {
+            "id": 3323,
+            "name": "Gradska Plaža Stadium",
+            "city": "Struga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745413200
+        },
+        "league": {
+          "id": 756,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/756.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4346,
+            "name": "Struga",
+            "logo": "https://media.api-sports.io/football/teams/4346.png",
             "winner": null
           },
           "away": {
@@ -660,6 +719,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1359834,
+          "date": "2025-04-06T13:00:00+00:00",
+          "venue": {
+            "id": 3324,
+            "name": "Gradski Stadion",
+            "city": "Kavadarci"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743944400
+        },
+        "league": {
+          "id": 371,
+          "name": "First League",
+          "logo": "https://media.api-sports.io/football/leagues/371.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4348,
+            "name": "Tikveš",
+            "logo": "https://media.api-sports.io/football/teams/4348.png",
+            "winner": false
+          },
+          "away": {
+            "id": 609,
+            "name": "Shkendija",
+            "logo": "https://media.api-sports.io/football/teams/609.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1359825,
@@ -1190,65 +1308,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345118,
-          "date": "2025-02-03T14:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Limak Arcadia Atlantis Football Center",
-            "city": "Serik"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738593000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 609,
-            "name": "Shkendija",
-            "logo": "https://media.api-sports.io/football/teams/609.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1027,
-            "name": "SKN ST. Polten",
-            "logo": "https://media.api-sports.io/football/teams/1027.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1545,5 +1604,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:31.414Z"
+  "lastUpdated": "2025-04-07T12:48:37.476Z"
 }

@@ -183,7 +183,8 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1214794,
@@ -194,10 +195,10 @@
             "city": "Beograd"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
           },
           "timestamp": 1743951600
         },
@@ -211,27 +212,27 @@
             "id": 598,
             "name": "FK Crvena Zvezda",
             "logo": "https://media.api-sports.io/football/teams/598.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 2633,
             "name": "OFK Beograd",
             "logo": "https://media.api-sports.io/football/teams/2633.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 3,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 3,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -242,9 +243,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1366861,
@@ -775,65 +774,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1214726,
-          "date": "2025-02-08T15:00:00+00:00",
-          "venue": {
-            "id": 1406,
-            "name": "Stadion Rajko Mitić",
-            "city": "Beograd"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1739026800
-        },
-        "league": {
-          "id": 286,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/286.png"
-        },
-        "teams": {
-          "home": {
-            "id": 598,
-            "name": "FK Crvena Zvezda",
-            "logo": "https://media.api-sports.io/football/teams/598.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2644,
-            "name": "Radnicki 1923",
-            "logo": "https://media.api-sports.io/football/teams/2644.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 6,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 6,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1130,5 +1070,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:52.037Z"
+  "lastUpdated": "2025-04-07T12:47:59.231Z"
 }

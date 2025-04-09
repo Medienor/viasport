@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -186,65 +186,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1366545,
-          "date": "2025-04-05T12:00:00+00:00",
-          "venue": {
-            "id": 1971,
-            "name": "Windsor Park",
-            "city": "Belfast"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743854400
-        },
-        "league": {
-          "id": 408,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/408.png"
-        },
-        "teams": {
-          "home": {
-            "id": 583,
-            "name": "Linfield",
-            "logo": "https://media.api-sports.io/football/teams/583.png",
-            "winner": null
-          },
-          "away": {
-            "id": 5352,
-            "name": "Glentoran",
-            "logo": "https://media.api-sports.io/football/teams/5352.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1366548,
@@ -424,6 +365,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366545,
+          "date": "2025-04-05T12:00:00+00:00",
+          "venue": {
+            "id": 1971,
+            "name": "Windsor Park",
+            "city": "Belfast"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743854400
+        },
+        "league": {
+          "id": 408,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/408.png"
+        },
+        "teams": {
+          "home": {
+            "id": 583,
+            "name": "Linfield",
+            "logo": "https://media.api-sports.io/football/teams/583.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5352,
+            "name": "Glentoran",
+            "logo": "https://media.api-sports.io/football/teams/5352.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1366542,
@@ -954,65 +954,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1222010,
-          "date": "2025-01-25T17:30:00+00:00",
-          "venue": {
-            "id": 1971,
-            "name": "Windsor Park",
-            "city": "Belfast"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 13
-          },
-          "timestamp": 1737826200
-        },
-        "league": {
-          "id": 408,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/408.png"
-        },
-        "teams": {
-          "home": {
-            "id": 583,
-            "name": "Linfield",
-            "logo": "https://media.api-sports.io/football/teams/583.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2266,
-            "name": "Cliftonville FC",
-            "logo": "https://media.api-sports.io/football/teams/2266.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1309,5 +1250,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:28.556Z"
+  "lastUpdated": "2025-04-07T12:48:34.799Z"
 }

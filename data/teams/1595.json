@@ -226,65 +226,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1326715,
-          "date": "2025-04-06T02:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Snapdragon Stadium",
-            "city": "San Diego, California"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743906600
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 25484,
-            "name": "San Diego",
-            "logo": "https://media.api-sports.io/football/teams/25484.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1595,
-            "name": "Seattle Sounders",
-            "logo": "https://media.api-sports.io/football/teams/1595.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1326336,
           "date": "2025-04-13T00:30:00+00:00",
           "venue": {
@@ -1403,9 +1344,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1326570,
+          "date": "2025-07-26T23:30:00+00:00",
+          "venue": {
+            "id": 1898,
+            "name": "Mercedes-Benz Stadium",
+            "city": "Atlanta, Georgia"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1753572600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1608,
+            "name": "Atlanta United FC",
+            "logo": "https://media.api-sports.io/football/teams/1608.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1595,
+            "name": "Seattle Sounders",
+            "logo": "https://media.api-sports.io/football/teams/1595.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1326715,
+          "date": "2025-04-06T02:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Snapdragon Stadium",
+            "city": "San Diego, California"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743906600
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25484,
+            "name": "San Diego",
+            "logo": "https://media.api-sports.io/football/teams/25484.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1595,
+            "name": "Seattle Sounders",
+            "logo": "https://media.api-sports.io/football/teams/1595.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1326313,
@@ -1589,8 +1648,8 @@
           "date": "2025-03-12T00:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estadio Azteca",
-            "city": "Mexico City"
+            "name": "Estadio Olímpico Universitario",
+            "city": "D.F."
           },
           "status": {
             "long": "Match Finished",
@@ -1936,65 +1995,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1322498,
-          "date": "2025-02-20T01:00:00+00:00",
-          "venue": {
-            "id": 2456,
-            "name": "Estadio Pensativo",
-            "city": "Antigua"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1740013200
-        },
-        "league": {
-          "id": 16,
-          "name": "CONCACAF Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/16.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3656,
-            "name": "Antigua GFC",
-            "logo": "https://media.api-sports.io/football/teams/3656.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1595,
-            "name": "Seattle Sounders",
-            "logo": "https://media.api-sports.io/football/teams/1595.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2012,12 +2012,12 @@
       "name": "Seattle Sounders",
       "logo": "https://media.api-sports.io/football/teams/1595.png"
     },
-    "form": "DLWLDD",
+    "form": "DLWLDDL",
     "fixtures": {
       "played": {
         "home": 3,
-        "away": 3,
-        "total": 6
+        "away": 4,
+        "total": 7
       },
       "wins": {
         "home": 1,
@@ -2031,8 +2031,8 @@
       },
       "loses": {
         "home": 0,
-        "away": 2,
-        "total": 2
+        "away": 3,
+        "total": 3
       }
     },
     "goals": {
@@ -2045,7 +2045,7 @@
         "average": {
           "home": "2.3",
           "away": "0.3",
-          "total": "1.3"
+          "total": "1.1"
         },
         "minute": {
           "0-15": {
@@ -2084,53 +2084,53 @@
         "under_over": {
           "0.5": {
             "over": 3,
-            "under": 3
+            "under": 4
           },
           "1.5": {
             "over": 2,
-            "under": 4
+            "under": 5
           },
           "2.5": {
             "over": 1,
-            "under": 5
+            "under": 6
           },
           "3.5": {
             "over": 1,
-            "under": 5
+            "under": 6
           },
           "4.5": {
             "over": 1,
-            "under": 5
+            "under": 6
           }
         }
       },
       "against": {
         "total": {
           "home": 4,
-          "away": 4,
-          "total": 8
+          "away": 7,
+          "total": 11
         },
         "average": {
           "home": "1.3",
-          "away": "1.3",
-          "total": "1.3"
+          "away": "1.8",
+          "total": "1.6"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": 2,
+            "percentage": "22.22%"
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": 3,
-            "percentage": "50.00%"
+            "total": 4,
+            "percentage": "44.44%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "11.11%"
           },
           "61-75": {
             "total": null,
@@ -2138,11 +2138,11 @@
           },
           "76-90": {
             "total": 1,
-            "percentage": "16.67%"
+            "percentage": "11.11%"
           },
           "91-105": {
             "total": 1,
-            "percentage": "16.67%"
+            "percentage": "11.11%"
           },
           "106-120": {
             "total": null,
@@ -2151,24 +2151,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 6,
             "under": 1
           },
           "1.5": {
-            "over": 3,
+            "over": 4,
             "under": 3
           },
           "2.5": {
-            "over": 0,
+            "over": 1,
             "under": 6
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       }
@@ -2176,7 +2176,7 @@
     "biggest": {
       "streak": {
         "wins": 1,
-        "draws": 1,
+        "draws": 2,
         "loses": 1
       },
       "wins": {
@@ -2185,7 +2185,7 @@
       },
       "loses": {
         "home": null,
-        "away": "2-0"
+        "away": "3-0"
       },
       "goals": {
         "for": {
@@ -2194,7 +2194,7 @@
         },
         "against": {
           "home": 2,
-          "away": 2
+          "away": 3
         }
       }
     },
@@ -2205,8 +2205,8 @@
     },
     "failed_to_score": {
       "home": 1,
-      "away": 2,
-      "total": 3
+      "away": 3,
+      "total": 4
     },
     "penalty": {
       "scored": {
@@ -2222,7 +2222,7 @@
     "lineups": [
       {
         "formation": "3-4-3",
-        "played": 4
+        "played": 5
       },
       {
         "formation": "4-2-3-1",
@@ -2233,11 +2233,11 @@
       "yellow": {
         "0-15": {
           "total": 2,
-          "percentage": "28.57%"
+          "percentage": "25.00%"
         },
         "16-30": {
           "total": 1,
-          "percentage": "14.29%"
+          "percentage": "12.50%"
         },
         "31-45": {
           "total": null,
@@ -2245,19 +2245,19 @@
         },
         "46-60": {
           "total": 1,
-          "percentage": "14.29%"
+          "percentage": "12.50%"
         },
         "61-75": {
-          "total": 1,
-          "percentage": "14.29%"
+          "total": 2,
+          "percentage": "25.00%"
         },
         "76-90": {
           "total": 1,
-          "percentage": "14.29%"
+          "percentage": "12.50%"
         },
         "91-105": {
           "total": 1,
-          "percentage": "14.29%"
+          "percentage": "12.50%"
         },
         "106-120": {
           "total": null,
@@ -2300,5 +2300,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:39.541Z"
+  "lastUpdated": "2025-04-07T12:52:43.213Z"
 }

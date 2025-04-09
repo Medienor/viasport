@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1280810,
-          "date": "2025-04-05T06:00:00+00:00",
-          "venue": {
-            "id": 20807,
-            "name": "AAMI Park",
-            "city": "Melbourne"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743832800
-        },
-        "league": {
-          "id": 188,
-          "name": "A-League",
-          "logo": "https://media.api-sports.io/football/leagues/188.png"
-        },
-        "teams": {
-          "home": {
-            "id": 945,
-            "name": "Melbourne City",
-            "logo": "https://media.api-sports.io/football/teams/945.png",
-            "winner": null
-          },
-          "away": {
-            "id": 941,
-            "name": "Central Coast Mariners",
-            "logo": "https://media.api-sports.io/football/teams/941.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1280817,
           "date": "2025-04-12T09:35:00+00:00",
           "venue": {
@@ -388,6 +329,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1280810,
+          "date": "2025-04-05T06:00:00+00:00",
+          "venue": {
+            "id": 20807,
+            "name": "AAMI Park",
+            "city": "Melbourne"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743832800
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 945,
+            "name": "Melbourne City",
+            "logo": "https://media.api-sports.io/football/teams/945.png",
+            "winner": true
+          },
+          "away": {
+            "id": 941,
+            "name": "Central Coast Mariners",
+            "logo": "https://media.api-sports.io/football/teams/941.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1280806,
@@ -918,65 +918,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1280748,
-          "date": "2025-01-29T08:00:00+00:00",
-          "venue": {
-            "id": 21100,
-            "name": "Ironbark Fields",
-            "city": "Melbourne"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738137600
-        },
-        "league": {
-          "id": 188,
-          "name": "A-League",
-          "logo": "https://media.api-sports.io/football/leagues/188.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7573,
-            "name": "Western United",
-            "logo": "https://media.api-sports.io/football/teams/7573.png",
-            "winner": null
-          },
-          "away": {
-            "id": 941,
-            "name": "Central Coast Mariners",
-            "logo": "https://media.api-sports.io/football/teams/941.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1273,5 +1214,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:35.068Z"
+  "lastUpdated": "2025-04-07T12:51:38.999Z"
 }

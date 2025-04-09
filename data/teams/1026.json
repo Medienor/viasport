@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-07-26",
-          "end": "2025-04-01",
+          "end": "2025-05-01",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361701,
-          "date": "2025-04-05T15:00:00+00:00",
-          "venue": {
-            "id": 143,
-            "name": "Raiffeisen Arena",
-            "city": "Linz"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743865200
-        },
-        "league": {
-          "id": 218,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/218.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1026,
-            "name": "Lask Linz",
-            "logo": "https://media.api-sports.io/football/teams/1026.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4256,
-            "name": "Grazer AK",
-            "logo": "https://media.api-sports.io/football/teams/4256.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361705,
@@ -466,9 +407,9 @@
           "id": 1361714,
           "date": "2025-04-26T15:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 143,
+            "name": "Raiffeisen Arena",
+            "city": "Linz"
           },
           "status": {
             "long": "Not Started",
@@ -758,6 +699,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361701,
+          "date": "2025-04-05T15:00:00+00:00",
+          "venue": {
+            "id": 143,
+            "name": "Raiffeisen Arena",
+            "city": "Linz"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743865200
+        },
+        "league": {
+          "id": 218,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/218.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1026,
+            "name": "Lask Linz",
+            "logo": "https://media.api-sports.io/football/teams/1026.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4256,
+            "name": "Grazer AK",
+            "logo": "https://media.api-sports.io/football/teams/4256.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361698,
@@ -1288,65 +1288,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337114,
-          "date": "2025-01-21T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Raiffeisen Arena",
-            "city": "Linz"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1737417600
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1026,
-            "name": "Lask Linz",
-            "logo": "https://media.api-sports.io/football/teams/1026.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1023,
-            "name": "Admira Wacker",
-            "logo": "https://media.api-sports.io/football/teams/1023.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1643,5 +1584,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:15.410Z"
+  "lastUpdated": "2025-04-07T12:48:22.062Z"
 }

@@ -297,65 +297,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334447,
-          "date": "2025-04-06T21:00:00+00:00",
-          "venue": {
-            "id": 46,
-            "name": "Estadio Alberto José Armando",
-            "city": "Ciudad de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743973200
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 451,
-            "name": "Boca Juniors",
-            "logo": "https://media.api-sports.io/football/teams/451.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2432,
-            "name": "Barracas Central",
-            "logo": "https://media.api-sports.io/football/teams/2432.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334457,
           "date": "2025-04-12T23:30:00+00:00",
           "venue": {
@@ -505,6 +446,65 @@
             "id": 451,
             "name": "Boca Juniors",
             "logo": "https://media.api-sports.io/football/teams/451.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1367656,
+          "date": "2025-06-06T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749247200
+        },
+        "league": {
+          "id": 130,
+          "name": "Copa Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/130.png"
+        },
+        "teams": {
+          "home": {
+            "id": 451,
+            "name": "Boca Juniors",
+            "logo": "https://media.api-sports.io/football/teams/451.png",
+            "winner": null
+          },
+          "away": {
+            "id": 455,
+            "name": "Atletico Tucuman",
+            "logo": "https://media.api-sports.io/football/teams/455.png",
             "winner": null
           }
         },
@@ -710,6 +710,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334447,
+          "date": "2025-04-06T21:00:00+00:00",
+          "venue": {
+            "id": 46,
+            "name": "Estadio Alberto José Armando",
+            "city": "Ciudad de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743973200
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 451,
+            "name": "Boca Juniors",
+            "logo": "https://media.api-sports.io/football/teams/451.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2432,
+            "name": "Barracas Central",
+            "logo": "https://media.api-sports.io/football/teams/2432.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334428,
@@ -1240,65 +1299,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334311,
-          "date": "2025-02-02T22:15:00+00:00",
-          "venue": {
-            "id": 46,
-            "name": "Estadio Alberto José Armando",
-            "city": "Ciudad de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738534500
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 451,
-            "name": "Boca Juniors",
-            "logo": "https://media.api-sports.io/football/teams/451.png",
-            "winner": true
-          },
-          "away": {
-            "id": 445,
-            "name": "Huracan",
-            "logo": "https://media.api-sports.io/football/teams/445.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1595,5 +1595,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:31.526Z"
+  "lastUpdated": "2025-04-07T12:47:38.592Z"
 }

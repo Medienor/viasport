@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216313,
-          "date": "2025-04-05T11:30:00+00:00",
-          "venue": {
-            "id": 11896,
-            "name": "The Coventry Building Society Arena",
-            "city": "Coventry, West Midlands"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743852600
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1346,
-            "name": "Coventry",
-            "logo": "https://media.api-sports.io/football/teams/1346.png",
-            "winner": null
-          },
-          "away": {
-            "id": 44,
-            "name": "Burnley",
-            "logo": "https://media.api-sports.io/football/teams/44.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216332,
           "date": "2025-04-08T18:45:00+00:00",
           "venue": {
@@ -448,7 +389,7 @@
       {
         "fixture": {
           "id": 1216380,
-          "date": "2025-04-26T14:00:00+00:00",
+          "date": "2025-04-26T11:30:00+00:00",
           "venue": {
             "id": 20414,
             "name": "MATRADE Loftus Road",
@@ -460,7 +401,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745676000
+          "timestamp": 1745667000
         },
         "league": {
           "id": 40,
@@ -565,6 +506,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216313,
+          "date": "2025-04-05T11:30:00+00:00",
+          "venue": {
+            "id": 11896,
+            "name": "The Coventry Building Society Arena",
+            "city": "Coventry, West Midlands"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743852600
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1346,
+            "name": "Coventry",
+            "logo": "https://media.api-sports.io/football/teams/1346.png",
+            "winner": false
+          },
+          "away": {
+            "id": 44,
+            "name": "Burnley",
+            "logo": "https://media.api-sports.io/football/teams/44.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216299,
@@ -1095,65 +1095,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334971,
-          "date": "2025-02-08T15:00:00+00:00",
-          "venue": {
-            "id": 585,
-            "name": "St. Mary's Stadium",
-            "city": "Southampton, Hampshire"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739026800
-        },
-        "league": {
-          "id": 45,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/45.png"
-        },
-        "teams": {
-          "home": {
-            "id": 41,
-            "name": "Southampton",
-            "logo": "https://media.api-sports.io/football/teams/41.png",
-            "winner": false
-          },
-          "away": {
-            "id": 44,
-            "name": "Burnley",
-            "logo": "https://media.api-sports.io/football/teams/44.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1450,5 +1391,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:08.138Z"
+  "lastUpdated": "2025-04-07T12:47:15.583Z"
 }

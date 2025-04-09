@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-09-10",
-          "end": "2025-04-01",
+          "end": "2025-04-21",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1238111,
-          "date": "2025-04-05T13:00:00+00:00",
-          "venue": {
-            "id": 1584,
-            "name": "Başakşehir Fatih Terim Stadyumu",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743858000
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 564,
-            "name": "Istanbul Basaksehir",
-            "logo": "https://media.api-sports.io/football/teams/564.png",
-            "winner": null
-          },
-          "away": {
-            "id": 607,
-            "name": "Konyaspor",
-            "logo": "https://media.api-sports.io/football/teams/607.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1238120,
@@ -329,6 +270,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238111,
+          "date": "2025-04-05T13:00:00+00:00",
+          "venue": {
+            "id": 1584,
+            "name": "Başakşehir Fatih Terim Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743858000
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 564,
+            "name": "Istanbul Basaksehir",
+            "logo": "https://media.api-sports.io/football/teams/564.png",
+            "winner": true
+          },
+          "away": {
+            "id": 607,
+            "name": "Konyaspor",
+            "logo": "https://media.api-sports.io/football/teams/607.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238108,
@@ -859,65 +859,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1238032,
-          "date": "2025-01-25T13:00:00+00:00",
-          "venue": {
-            "id": 21379,
-            "name": "GAIN Park Stadium",
-            "city": "Antalya"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1737810000
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 996,
-            "name": "Alanyaspor",
-            "logo": "https://media.api-sports.io/football/teams/996.png",
-            "winner": true
-          },
-          "away": {
-            "id": 564,
-            "name": "Istanbul Basaksehir",
-            "logo": "https://media.api-sports.io/football/teams/564.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1214,5 +1155,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:19.082Z"
+  "lastUpdated": "2025-04-07T12:46:26.625Z"
 }

@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -220,65 +220,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1210600,
-          "date": "2025-04-05T17:00:00+00:00",
-          "venue": {
-            "id": 18856,
-            "name": "Fortuna Arena",
-            "city": "Praha"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743872400
-        },
-        "league": {
-          "id": 345,
-          "name": "Czech Liga",
-          "logo": "https://media.api-sports.io/football/leagues/345.png"
-        },
-        "teams": {
-          "home": {
-            "id": 560,
-            "name": "Slavia Praha",
-            "logo": "https://media.api-sports.io/football/teams/560.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3723,
-            "name": "Hradec Králové",
-            "logo": "https://media.api-sports.io/football/teams/3723.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361475,
@@ -458,6 +399,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1210600,
+          "date": "2025-04-05T17:00:00+00:00",
+          "venue": {
+            "id": 18856,
+            "name": "Fortuna Arena",
+            "city": "Praha"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743872400
+        },
+        "league": {
+          "id": 345,
+          "name": "Czech Liga",
+          "logo": "https://media.api-sports.io/football/leagues/345.png"
+        },
+        "teams": {
+          "home": {
+            "id": 560,
+            "name": "Slavia Praha",
+            "logo": "https://media.api-sports.io/football/teams/560.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3723,
+            "name": "Hradec Králové",
+            "logo": "https://media.api-sports.io/football/teams/3723.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1210589,
@@ -988,65 +988,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299251,
-          "date": "2025-01-23T20:00:00+00:00",
-          "venue": {
-            "id": 780,
-            "name": "Stadio Toumbas",
-            "city": "Thessaloníki"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737662400
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 619,
-            "name": "PAOK",
-            "logo": "https://media.api-sports.io/football/teams/619.png",
-            "winner": true
-          },
-          "away": {
-            "id": 560,
-            "name": "Slavia Praha",
-            "logo": "https://media.api-sports.io/football/teams/560.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1343,5 +1284,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:49.565Z"
+  "lastUpdated": "2025-04-07T12:47:56.697Z"
 }

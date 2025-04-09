@@ -191,65 +191,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1351059,
-          "date": "2025-04-06T21:30:00+00:00",
-          "venue": {
-            "id": 244,
-            "name": "Estádio José Pinheiro Borda",
-            "city": "Porto Alegre, Rio Grande do Sul"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743975000
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 119,
-            "name": "Internacional",
-            "logo": "https://media.api-sports.io/football/teams/119.png",
-            "winner": null
-          },
-          "away": {
-            "id": 135,
-            "name": "Cruzeiro",
-            "logo": "https://media.api-sports.io/football/teams/135.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362117,
           "date": "2025-04-10T00:30:00+00:00",
           "venue": {
@@ -1137,6 +1078,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1351059,
+          "date": "2025-04-06T21:30:00+00:00",
+          "venue": {
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743975000
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": true
+          },
+          "away": {
+            "id": 135,
+            "name": "Cruzeiro",
+            "logo": "https://media.api-sports.io/football/teams/135.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1362101,
           "date": "2025-04-01T22:00:00+00:00",
           "venue": {
@@ -1665,65 +1665,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1320729,
-          "date": "2025-01-25T19:30:00+00:00",
-          "venue": {
-            "id": 234,
-            "name": "Estádio Governador Magalhães Pinto",
-            "city": "Belo Horizonte, Minas Gerais"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737833400
-        },
-        "league": {
-          "id": 629,
-          "name": "Mineiro - 1",
-          "logo": "https://media.api-sports.io/football/leagues/629.png"
-        },
-        "teams": {
-          "home": {
-            "id": 135,
-            "name": "Cruzeiro",
-            "logo": "https://media.api-sports.io/football/teams/135.png",
-            "winner": null
-          },
-          "away": {
-            "id": 13086,
-            "name": "Betim",
-            "logo": "https://media.api-sports.io/football/teams/13086.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2020,5 +1961,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:08.544Z"
+  "lastUpdated": "2025-04-07T12:52:12.479Z"
 }

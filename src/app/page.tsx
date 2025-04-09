@@ -1,124 +1,148 @@
 import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import LiveNowWrapper from './components/LiveNowWrapper';
-import FixturesSection from './components/FixturesSection';
+import SimpleTeamStandings from './components/SimpleTeamStandings';
+import EnhancedFixturesSectionWrapper from './components/EnhancedFixturesSectionWrapper';
+import LatestNews from './components/LatestNews';
+import EliteserienVideos from './components/EliteserienVideos';
 
 // Set page-level revalidation time (24 hours = 86400 seconds)
-export const revalidate = 3600;
+export const revalidate = 300;
+
+// Popular leagues data
+const popularLeagues = [
+  { id: 39, name: 'Premier League', logo: '/league-logos/premier-league.png' },
+  { id: 103, name: 'Eliteserien', logo: '/league-logos/eliteserien.png' },
+  { id: 2, name: 'Champions League', logo: '/league-logos/champions-league.png' },
+  { id: 140, name: 'La Liga', logo: '/league-logos/la-liga.png' },
+  { id: 135, name: 'Serie A', logo: '/league-logos/serie-a.png' },
+  { id: 78, name: 'Bundesliga', logo: '/league-logos/bundesliga.png' },
+  { id: 61, name: 'Ligue 1', logo: '/league-logos/ligue-1.png' },
+  { id: 3, name: 'Europa League', logo: '/league-logos/europa-league.png' }
+];
+
+// Additional leagues for the dropdown
+const additionalLeagues = [
+  { id: 179, name: 'OBOS-ligaen', logo: '/league-logos/obos-ligaen.png' },
+  { id: 71, name: 'Eredivisie', logo: '/league-logos/eredivisie.png' },
+  { id: 40, name: 'Championship', logo: '/league-logos/championship.png' },
+  { id: 253, name: 'MLS', logo: '/league-logos/mls.png' },
+  { id: 94, name: 'Primeira Liga', logo: '/league-logos/primeira-liga.png' },
+  { id: 144, name: 'Superliga', logo: '/league-logos/superliga.png' }
+];
+
+// Helper function to create league URL
+const createLeagueUrl = (name: string, id: number) => {
+  const slug = name.toLowerCase().replace(/\s+/g, '-');
+  return `/fotball/liga/${slug}-${id}`;
+};
 
 export default function Home() {
   return (
     <div className="bg-gray-50">
-      {/* Hero section with background image and overlay */}
-      <div className="relative">
-        {/* Background image */}
-        <div className="absolute inset-0 z-0">
-          <Image 
-            src="/bg2-img.jpg" 
-            alt="Football stadium" 
-            fill 
-            className="object-cover"
-            priority
-          />
-          {/* Updated gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#204028] via-[#204028]/80 to-transparent"></div>
-        </div>
-        
-        {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-8 lg:py-40 text-white">
-          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl drop-shadow-lg">
-            Velkommen til ViaSport
-          </h1>
-          <p className="mt-6 text-xl max-w-3xl text-white/90 drop-shadow-md">
-            Din ultimate destinasjon for fotballkalendere, kampinformasjon og lagstatistikk. Følg favorittlagene dine og hold deg oppdatert på alle fotballbegivenheter.
-          </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Link 
-              href="/fotball" 
-              className="px-8 py-3 text-base font-medium rounded-md text-white bg-[#204028] hover:bg-[#2a532f] transition-colors border border-white/20 text-lg min-w-[160px] text-center"
-            >
-              Fotball
-            </Link>
-            <Link 
-              href="/fotball/liga" 
-              className="px-8 py-3 text-base font-medium rounded-md text-white hover:bg-white/10 transition-colors border border-white/20 text-lg min-w-[160px] text-center"
-            >
-              Ligaer
-            </Link>
-          </div>
-        </div>
-      </div>
+      {/* Three-column layout */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          {/* Left Sidebar - Popular Leagues */}
+          <div className="lg:col-span-3 order-3 lg:order-1">
+            <div className="lg:sticky lg:top-20 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto">
+              <div className="bg-white shadow rounded-lg overflow-hidden mb-6">
+                <div className="p-4 border-b">
+                  <h2 className="text-lg font-semibold">Populære ligaer</h2>
+                </div>
+                <div className="divide-y">
+                  {popularLeagues.map(league => (
+                    <Link 
+                      key={league.id}
+                      href={createLeagueUrl(league.name, league.id)}
+                      className="flex items-center p-2 hover:bg-gray-50 rounded-md"
+                    >
+                      <div className="relative w-5 h-5 mr-3">
+                        <Image 
+                          src={`https://media.api-sports.io/football/leagues/${league.id}.png`}
+                          alt={league.name} 
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <span className="text-sm">{league.name}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              
+              <div className="mt-4 pt-4 border-t">
+                <Link 
+                  href="/fotball/liga" 
+                  className="flex items-center text-sm text-gray-600 hover:text-gray-900 p-2 hover:bg-gray-50 rounded-md"
+                >
+                  <span>Se alle ligaer</span>
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    className="h-4 w-4 ml-1" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
 
-      {/* Live Matches Section - LiveNowWrapper now handles visibility */}
-      <Suspense fallback={<LiveMatchesSkeleton />}>
-        <LiveNowWrapper />
-      </Suspense>
-
-      {/* Fixtures Sections */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <Suspense fallback={<FixturesSkeleton />}>
-          <FixturesSection />
-        </Suspense>
-      </div>
-
-      {/* About ViaSport section */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">Om ViaSport.no</h2>
-            <div className="mt-2 h-1 w-20 bg-blue-600 mx-auto"></div>
-          </div>
-          
-          <div className="max-w-4xl mx-auto text-gray-700 space-y-6">
-            <p className="text-lg">
-              ViaSport har som mål å være den ultimate guiden for deg som ønsker å følge med på fotballkamper og annen sport på TV og strømmetjenester. Vi gir deg en komplett oversikt over kamptider, kanaler og hvor du kan se dine favorittlag spille.
-            </p>
-            
-            <p>
-              Vår tjeneste gjør det enkelt å finne ut når og hvor kampene sendes, enten det er i dag, i morgen eller lenger fram i tid. Du kan enkelt navigere gjennom vår kalender for å planlegge din sportsopplevelse flere uker og måneder framover.
-            </p>
-            
-            <p>
-              I tillegg til kampinformasjon tilbyr vi også statistikk, tabeller og nyheter om lagene og ligaene du er interessert i. Alt samlet på ett sted for å gi deg den beste opplevelsen som sportsentusiast.
-            </p>
-            
-            <p>
-              For deg som befinner deg utenfor Norge, inkluderer vi også informasjon om internasjonale strømmetjenester hvor kampene kan sees. Vi jobber kontinuerlig med å forbedre tjenesten vår og setter stor pris på tilbakemeldinger fra våre brukere.
-            </p>
-            
-            <div className="mt-10 flex justify-center space-x-6">
-              <Link href="/om-oss" className="text-blue-600 hover:text-blue-800 font-medium">
-                Les mer om oss
-              </Link>
-              <Link href="/kontakt" className="text-blue-600 hover:text-blue-800 font-medium">
-                Kontakt oss
-              </Link>
-              <Link href="/personvern" className="text-blue-600 hover:text-blue-800 font-medium">
-                Personvern
-              </Link>
+              {/* Latest News Section */}
+              <div className="mt-6 pt-4 border-t">
+                <h2 className="text-lg font-semibold mb-4">Siste nyheter</h2>
+                <Suspense fallback={<div className="animate-pulse space-y-4">
+                  {[...Array(3)].map((_, i) => (
+                    <div key={i} className="flex space-x-3">
+                      <div className="rounded bg-gray-200 h-16 w-16"></div>
+                      <div className="flex-1 space-y-2 py-1">
+                        <div className="h-4 bg-gray-200 rounded w-3/4"></div>
+                        <div className="h-3 bg-gray-200 rounded w-full"></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>}>
+                  <LatestNews />
+                </Suspense>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
-// Skeleton loaders for suspense boundaries
-function LiveMatchesSkeleton() {
-  return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
-      <div className="flex justify-between items-center mb-4">
-        <div className="h-8 bg-gray-200 rounded w-64"></div>
-        <div className="h-8 bg-gray-200 rounded w-32"></div>
-      </div>
-      <div className="bg-white shadow rounded-lg p-6">
-        <div className="animate-pulse space-y-4">
-          <div className="h-4 bg-gray-200 rounded w-1/4"></div>
-          <div className="h-10 bg-gray-200 rounded"></div>
-          <div className="h-10 bg-gray-200 rounded"></div>
-          <div className="h-10 bg-gray-200 rounded"></div>
+          {/* Center Column - Fixtures */}
+          <div className="lg:col-span-6 order-1 lg:order-2">
+            <div className="bg-white shadow rounded-lg overflow-hidden">
+              <Suspense fallback={<FixturesSkeleton />}>
+                <EnhancedFixturesSectionWrapper />
+              </Suspense>
+            </div>
+          </div>
+
+          {/* Right Sidebar - Premier League Table */}
+          <div className="lg:col-span-3 order-2 lg:order-3">
+            <div className="lg:sticky lg:top-20 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto">
+              <div className="bg-white shadow rounded-lg overflow-hidden">
+                <div className="p-4 border-b">
+                  <h2 className="text-lg font-semibold">Tabellplassering</h2>
+                </div>
+                <SimpleTeamStandings leagueId={39} />
+              </div>
+            </div>
+          </div>
+          
+          {/* Full-width Eliteserien Videos section at the bottom */}
+          <div className="lg:col-span-12 mt-8 order-4">
+            <div className="bg-white shadow rounded-lg p-4">
+              <h2 className="text-lg font-semibold mb-4">Høydepunkter fra Eliteserien</h2>
+              <Suspense fallback={<div className="animate-pulse grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[...Array(4)].map((_, i) => (
+                  <div key={i} className="bg-gray-200 rounded-lg h-48"></div>
+                ))}
+              </div>}>
+                <EliteserienVideos />
+              </Suspense>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -127,17 +151,29 @@ function LiveMatchesSkeleton() {
 
 function FixturesSkeleton() {
   return (
-    <div className="space-y-8">
-      {[...Array(3)].map((_, i) => (
-        <div key={i} className="bg-white shadow rounded-lg p-6">
-          <div className="animate-pulse space-y-4">
-            <div className="h-6 bg-gray-200 rounded w-1/3"></div>
-            <div className="space-y-2">
-              {[...Array(5)].map((_, j) => (
-                <div key={j} className="h-10 bg-gray-200 rounded"></div>
-              ))}
-            </div>
-          </div>
+    <div className="animate-pulse p-4">
+      {[...Array(5)].map((_, i) => (
+        <div key={i} className="flex items-center space-x-4 py-3">
+          <div className="w-16 h-4 bg-gray-200 rounded"></div>
+          <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
+          <div className="flex-1 h-4 bg-gray-200 rounded"></div>
+          <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
+          <div className="flex-1 h-4 bg-gray-200 rounded"></div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function TableSkeleton() {
+  return (
+    <div className="animate-pulse space-y-2">
+      {[...Array(5)].map((_, i) => (
+        <div key={i} className="flex items-center space-x-2 py-2">
+          <div className="w-6 h-4 bg-gray-200 rounded"></div>
+          <div className="w-6 h-6 bg-gray-200 rounded"></div>
+          <div className="flex-1 h-4 bg-gray-200 rounded"></div>
+          <div className="w-8 h-4 bg-gray-200 rounded"></div>
         </div>
       ))}
     </div>

@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -146,65 +146,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361572,
-          "date": "2025-04-06T15:00:00+00:00",
-          "venue": {
-            "id": 19616,
-            "name": "Alphamega Stadium",
-            "city": "Kolossi"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743951600
-        },
-        "league": {
-          "id": 318,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/318.png"
-        },
-        "teams": {
-          "home": {
-            "id": 602,
-            "name": "Apollon Limassol",
-            "logo": "https://media.api-sports.io/football/teams/602.png",
-            "winner": null
-          },
-          "away": {
-            "id": 614,
-            "name": "AEK Larnaca",
-            "logo": "https://media.api-sports.io/football/teams/614.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1364732,
@@ -325,6 +266,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361572,
+          "date": "2025-04-06T15:00:00+00:00",
+          "venue": {
+            "id": 19616,
+            "name": "Alphamega Stadium",
+            "city": "Kolossi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743951600
+        },
+        "league": {
+          "id": 318,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/318.png"
+        },
+        "teams": {
+          "home": {
+            "id": 602,
+            "name": "Apollon Limassol",
+            "logo": "https://media.api-sports.io/football/teams/602.png",
+            "winner": null
+          },
+          "away": {
+            "id": 614,
+            "name": "AEK Larnaca",
+            "logo": "https://media.api-sports.io/football/teams/614.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361570,
@@ -855,65 +855,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1333807,
-          "date": "2025-01-29T16:30:00+00:00",
-          "venue": {
-            "id": 2214,
-            "name": "Stadio Tasos Markou",
-            "city": "Paralímni"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738168200
-        },
-        "league": {
-          "id": 321,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/321.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3399,
-            "name": "Enosis",
-            "logo": "https://media.api-sports.io/football/teams/3399.png",
-            "winner": false
-          },
-          "away": {
-            "id": 614,
-            "name": "AEK Larnaca",
-            "logo": "https://media.api-sports.io/football/teams/614.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1210,5 +1151,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:33.925Z"
+  "lastUpdated": "2025-04-07T12:48:39.915Z"
 }

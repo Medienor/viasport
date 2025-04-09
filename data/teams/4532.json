@@ -224,65 +224,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1358555,
-          "date": "2025-04-04T16:45:00+00:00",
-          "venue": {
-            "id": 988,
-            "name": "Amman International Stadium",
-            "city": "Amman"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743785100
-        },
-        "league": {
-          "id": 387,
-          "name": "League",
-          "logo": "https://media.api-sports.io/football/leagues/387.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4531,
-            "name": "Al Faisaly",
-            "logo": "https://media.api-sports.io/football/teams/4531.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4532,
-            "name": "Al Hussein",
-            "logo": "https://media.api-sports.io/football/teams/4532.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1333281,
           "date": "2025-04-08T14:00:00+00:00",
           "venue": {
@@ -578,6 +519,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1358555,
+          "date": "2025-04-04T16:45:00+00:00",
+          "venue": {
+            "id": 988,
+            "name": "Amman International Stadium",
+            "city": "Amman"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743785100
+        },
+        "league": {
+          "id": 387,
+          "name": "League",
+          "logo": "https://media.api-sports.io/football/leagues/387.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4531,
+            "name": "Al Faisaly",
+            "logo": "https://media.api-sports.io/football/teams/4531.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4532,
+            "name": "Al Hussein",
+            "logo": "https://media.api-sports.io/football/teams/4532.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1358549,
@@ -1108,65 +1108,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1319345,
-          "date": "2024-12-14T16:00:00+00:00",
-          "venue": {
-            "id": 3435,
-            "name": "Prince Mohammed Stadium",
-            "city": "Zarqa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1734192000
-        },
-        "league": {
-          "id": 863,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/863.png"
-        },
-        "teams": {
-          "home": {
-            "id": 17472,
-            "name": "Al Arabi",
-            "logo": "https://media.api-sports.io/football/teams/17472.png",
-            "winner": false
-          },
-          "away": {
-            "id": 4532,
-            "name": "Al Hussein",
-            "logo": "https://media.api-sports.io/football/teams/4532.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1463,5 +1404,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:55.572Z"
+  "lastUpdated": "2025-04-07T12:51:59.635Z"
 }

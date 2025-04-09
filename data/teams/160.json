@@ -36,7 +36,7 @@
         {
           "year": 2024,
           "start": "2024-08-16",
-          "end": "2025-04-01",
+          "end": "2025-05-24",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -114,65 +114,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1224221,
-          "date": "2025-04-05T13:30:00+00:00",
-          "venue": {
-            "id": 12717,
-            "name": "Europa-Park Stadion",
-            "city": "Freiburg im Breisgau"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743859800
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 160,
-            "name": "SC Freiburg",
-            "logo": "https://media.api-sports.io/football/teams/160.png",
-            "winner": null
-          },
-          "away": {
-            "id": 165,
-            "name": "Borussia Dortmund",
-            "logo": "https://media.api-sports.io/football/teams/165.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1224233,
@@ -529,6 +470,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1224221,
+          "date": "2025-04-05T13:30:00+00:00",
+          "venue": {
+            "id": 12717,
+            "name": "Europa-Park Stadion",
+            "city": "Freiburg im Breisgau"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743859800
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 160,
+            "name": "SC Freiburg",
+            "logo": "https://media.api-sports.io/football/teams/160.png",
+            "winner": false
+          },
+          "away": {
+            "id": 165,
+            "name": "Borussia Dortmund",
+            "logo": "https://media.api-sports.io/football/teams/165.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1224214,
@@ -1059,65 +1059,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224129,
-          "date": "2025-01-18T14:30:00+00:00",
-          "venue": {
-            "id": 20473,
-            "name": "MHPArena",
-            "city": "Stuttgart"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737210600
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 172,
-            "name": "VfB Stuttgart",
-            "logo": "https://media.api-sports.io/football/teams/172.png",
-            "winner": true
-          },
-          "away": {
-            "id": 160,
-            "name": "SC Freiburg",
-            "logo": "https://media.api-sports.io/football/teams/160.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1414,5 +1355,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:00.917Z"
+  "lastUpdated": "2025-04-07T12:46:08.356Z"
 }

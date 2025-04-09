@@ -116,65 +116,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223898,
-          "date": "2025-04-04T18:45:00+00:00",
-          "venue": {
-            "id": 905,
-            "name": "Stadio Comunale Luigi Ferraris",
-            "city": "Genova"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743792300
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 495,
-            "name": "Genoa",
-            "logo": "https://media.api-sports.io/football/teams/495.png",
-            "winner": null
-          },
-          "away": {
-            "id": 494,
-            "name": "Udinese",
-            "logo": "https://media.api-sports.io/football/teams/494.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223908,
           "date": "2025-04-13T13:00:00+00:00",
           "venue": {
@@ -588,6 +529,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1223898,
+          "date": "2025-04-04T18:45:00+00:00",
+          "venue": {
+            "id": 905,
+            "name": "Stadio Comunale Luigi Ferraris",
+            "city": "Genova"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743792300
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media.api-sports.io/football/teams/495.png",
+            "winner": true
+          },
+          "away": {
+            "id": 494,
+            "name": "Udinese",
+            "logo": "https://media.api-sports.io/football/teams/494.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1223890,
@@ -1118,65 +1118,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1223804,
-          "date": "2025-01-17T19:45:00+00:00",
-          "venue": {
-            "id": 910,
-            "name": "Stadio Olimpico",
-            "city": "Roma"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737143100
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 497,
-            "name": "AS Roma",
-            "logo": "https://media.api-sports.io/football/teams/497.png",
-            "winner": true
-          },
-          "away": {
-            "id": 495,
-            "name": "Genoa",
-            "logo": "https://media.api-sports.io/football/teams/495.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1473,5 +1414,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:52.987Z"
+  "lastUpdated": "2025-04-07T12:46:00.482Z"
 }

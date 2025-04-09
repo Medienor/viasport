@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-10-09",
-          "end": "2025-04-02",
+          "end": "2025-04-25",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -110,65 +110,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1208762,
-          "date": "2025-04-06T16:30:00+00:00",
-          "venue": {
-            "id": 1492,
-            "name": "Estadio Municipal José Zorrilla",
-            "city": "Valladolid"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743957000
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 720,
-            "name": "Valladolid",
-            "logo": "https://media.api-sports.io/football/teams/720.png",
-            "winner": null
-          },
-          "away": {
-            "id": 546,
-            "name": "Getafe",
-            "logo": "https://media.api-sports.io/football/teams/546.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1208765,
@@ -348,6 +289,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208762,
+          "date": "2025-04-06T16:30:00+00:00",
+          "venue": {
+            "id": 1492,
+            "name": "Estadio Municipal José Zorrilla",
+            "city": "Valladolid"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743957000
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 720,
+            "name": "Valladolid",
+            "logo": "https://media.api-sports.io/football/teams/720.png",
+            "winner": false
+          },
+          "away": {
+            "id": 546,
+            "name": "Getafe",
+            "logo": "https://media.api-sports.io/football/teams/546.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208751,
@@ -878,65 +878,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1212929,
-          "date": "2025-01-17T20:00:00+00:00",
-          "venue": {
-            "id": 1474,
-            "name": "RCDE Stadium",
-            "city": "Cornella de Llobregat"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737144000
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 540,
-            "name": "Espanyol",
-            "logo": "https://media.api-sports.io/football/teams/540.png",
-            "winner": true
-          },
-          "away": {
-            "id": 720,
-            "name": "Valladolid",
-            "logo": "https://media.api-sports.io/football/teams/720.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1233,5 +1174,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:47.868Z"
+  "lastUpdated": "2025-04-07T12:45:55.409Z"
 }

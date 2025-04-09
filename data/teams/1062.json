@@ -228,65 +228,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1351058,
-          "date": "2025-04-06T19:00:00+00:00",
-          "venue": {
-            "id": 234,
-            "name": "Estádio Governador Magalhães Pinto",
-            "city": "Belo Horizonte, Minas Gerais"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743966000
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1062,
-            "name": "Atletico-MG",
-            "logo": "https://media.api-sports.io/football/teams/1062.png",
-            "winner": null
-          },
-          "away": {
-            "id": 126,
-            "name": "Sao Paulo",
-            "logo": "https://media.api-sports.io/football/teams/126.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362123,
           "date": "2025-04-11T00:30:00+00:00",
           "venue": {
@@ -1174,6 +1115,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1351058,
+          "date": "2025-04-06T19:00:00+00:00",
+          "venue": {
+            "id": 234,
+            "name": "Estádio Governador Magalhães Pinto",
+            "city": "Belo Horizonte, Minas Gerais"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1743966000
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1062,
+            "name": "Atletico-MG",
+            "logo": "https://media.api-sports.io/football/teams/1062.png",
+            "winner": null
+          },
+          "away": {
+            "id": 126,
+            "name": "Sao Paulo",
+            "logo": "https://media.api-sports.io/football/teams/126.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1362107,
           "date": "2025-04-02T00:30:00+00:00",
           "venue": {
@@ -1702,65 +1702,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1320754,
-          "date": "2025-02-09T19:00:00+00:00",
-          "venue": {
-            "id": 234,
-            "name": "Estádio Governador Magalhães Pinto",
-            "city": "Belo Horizonte, Minas Gerais"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739127600
-        },
-        "league": {
-          "id": 629,
-          "name": "Mineiro - 1",
-          "logo": "https://media.api-sports.io/football/leagues/629.png"
-        },
-        "teams": {
-          "home": {
-            "id": 135,
-            "name": "Cruzeiro",
-            "logo": "https://media.api-sports.io/football/teams/135.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1062,
-            "name": "Atletico-MG",
-            "logo": "https://media.api-sports.io/football/teams/1062.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2057,5 +1998,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:11.262Z"
+  "lastUpdated": "2025-04-07T12:52:15.134Z"
 }

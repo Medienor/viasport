@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -301,6 +301,65 @@
             "id": 5503,
             "name": "Sumqayıt",
             "logo": "https://media.api-sports.io/football/teams/5503.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1261131,
+          "date": "2025-04-24T22:00:00+00:00",
+          "venue": {
+            "id": 4135,
+            "name": "Kapital Bank Arena",
+            "city": "Sumqayıt"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745532000
+        },
+        "league": {
+          "id": 419,
+          "name": "Premyer Liqa",
+          "logo": "https://media.api-sports.io/football/leagues/419.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5503,
+            "name": "Sumqayıt",
+            "logo": "https://media.api-sports.io/football/teams/5503.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2270,
+            "name": "Neftchi Baku",
+            "logo": "https://media.api-sports.io/football/teams/2270.png",
             "winner": null
           }
         },
@@ -1214,5 +1273,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:20:04.724Z"
+  "lastUpdated": "2025-04-07T12:49:10.825Z"
 }

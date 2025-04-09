@@ -262,65 +262,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1219156,
-          "date": "2025-04-06T11:00:00+00:00",
-          "venue": {
-            "id": 1834,
-            "name": "Thung Talay Luang Stadium",
-            "city": "Sukhothai"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743937200
-        },
-        "league": {
-          "id": 296,
-          "name": "Thai League 1",
-          "logo": "https://media.api-sports.io/football/leagues/296.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2783,
-            "name": "Sukhothai FC",
-            "logo": "https://media.api-sports.io/football/teams/2783.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2780,
-            "name": "Buriram United",
-            "logo": "https://media.api-sports.io/football/teams/2780.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1347919,
           "date": "2025-04-09T12:00:00+00:00",
           "venue": {
@@ -617,7 +558,7 @@
       {
         "fixture": {
           "id": 1219284,
-          "date": "2025-04-27T11:00:00+00:00",
+          "date": "2025-04-30T11:00:00+00:00",
           "venue": {
             "id": 1559,
             "name": "Chang Arena",
@@ -629,7 +570,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745751600
+          "timestamp": 1746010800
         },
         "league": {
           "id": 296,
@@ -734,6 +675,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1219156,
+          "date": "2025-04-06T11:00:00+00:00",
+          "venue": {
+            "id": 1834,
+            "name": "Thung Talay Luang Stadium",
+            "city": "Sukhothai"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743937200
+        },
+        "league": {
+          "id": 296,
+          "name": "Thai League 1",
+          "logo": "https://media.api-sports.io/football/leagues/296.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2783,
+            "name": "Sukhothai FC",
+            "logo": "https://media.api-sports.io/football/teams/2783.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2780,
+            "name": "Buriram United",
+            "logo": "https://media.api-sports.io/football/teams/2780.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1348104,
@@ -1264,65 +1264,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1288398,
-          "date": "2025-02-18T10:00:00+00:00",
-          "venue": {
-            "id": 1010,
-            "name": "Gwangju World Cup Stadium",
-            "city": "Gwangju"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739872800
-        },
-        "league": {
-          "id": 17,
-          "name": "AFC Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/17.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2759,
-            "name": "Gwangju FC",
-            "logo": "https://media.api-sports.io/football/teams/2759.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2780,
-            "name": "Buriram United",
-            "logo": "https://media.api-sports.io/football/teams/2780.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1619,5 +1560,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:40.342Z"
+  "lastUpdated": "2025-04-07T12:51:44.029Z"
 }

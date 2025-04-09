@@ -148,65 +148,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1342434,
-          "date": "2025-04-06T15:00:00+00:00",
-          "venue": {
-            "id": 1179,
-            "name": "KFUM Arena",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743951600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7006,
-            "name": "Lyn",
-            "logo": "https://media.api-sports.io/football/teams/7006.png",
-            "winner": null
-          },
-          "away": {
-            "id": 323,
-            "name": "Stabaek",
-            "logo": "https://media.api-sports.io/football/teams/323.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1367205,
           "date": "2025-04-13T14:00:00+00:00",
           "venue": {
@@ -799,6 +740,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1342434,
+          "date": "2025-04-06T15:00:00+00:00",
+          "venue": {
+            "id": 1179,
+            "name": "KFUM Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743951600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7006,
+            "name": "Lyn",
+            "logo": "https://media.api-sports.io/football/teams/7006.png",
+            "winner": false
+          },
+          "away": {
+            "id": 323,
+            "name": "Stabaek",
+            "logo": "https://media.api-sports.io/football/teams/323.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342430,
           "date": "2025-03-31T17:00:00+00:00",
           "venue": {
@@ -1327,65 +1327,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1152108,
-          "date": "2024-11-09T15:00:00+00:00",
-          "venue": {
-            "id": 1196,
-            "name": "Nadderud Stadion",
-            "city": "Bærum"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1731164400
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 323,
-            "name": "Stabaek",
-            "logo": "https://media.api-sports.io/football/teams/323.png",
-            "winner": false
-          },
-          "away": {
-            "id": 757,
-            "name": "Aalesund",
-            "logo": "https://media.api-sports.io/football/teams/757.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1403,17 +1344,17 @@
       "name": "Stabaek",
       "logo": "https://media.api-sports.io/football/teams/323.png"
     },
-    "form": "D",
+    "form": "DW",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "wins": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       },
       "draws": {
         "home": 1,
@@ -1430,12 +1371,12 @@
       "for": {
         "total": {
           "home": 1,
-          "away": 0,
-          "total": 1
+          "away": 1,
+          "total": 2
         },
         "average": {
           "home": "1.0",
-          "away": "0.0",
+          "away": "1.0",
           "total": "1.0"
         },
         "minute": {
@@ -1456,7 +1397,7 @@
             "percentage": null
           },
           "61-75": {
-            "total": 1,
+            "total": 2,
             "percentage": "100.00%"
           },
           "76-90": {
@@ -1474,24 +1415,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       },
@@ -1504,7 +1445,7 @@
         "average": {
           "home": "1.0",
           "away": "0.0",
-          "total": "1.0"
+          "total": "0.5"
         },
         "minute": {
           "0-15": {
@@ -1543,23 +1484,23 @@
         "under_over": {
           "0.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       }
@@ -1572,7 +1513,7 @@
       },
       "wins": {
         "home": null,
-        "away": null
+        "away": "0-1"
       },
       "loses": {
         "home": null,
@@ -1581,7 +1522,7 @@
       "goals": {
         "for": {
           "home": 1,
-          "away": 0
+          "away": 1
         },
         "against": {
           "home": 1,
@@ -1591,8 +1532,8 @@
     },
     "clean_sheet": {
       "home": 0,
-      "away": 0,
-      "total": 0
+      "away": 1,
+      "total": 1
     },
     "failed_to_score": {
       "home": 0,
@@ -1618,8 +1559,8 @@
           "percentage": null
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "31-45": {
           "total": null,
@@ -1631,7 +1572,7 @@
         },
         "61-75": {
           "total": 1,
-          "percentage": "100.00%"
+          "percentage": "50.00%"
         },
         "76-90": {
           "total": null,
@@ -1682,5 +1623,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:17.406Z"
+  "lastUpdated": "2025-04-07T12:45:24.622Z"
 }

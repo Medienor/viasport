@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362765,
-          "date": "2025-04-04T17:00:00+00:00",
-          "venue": {
-            "id": 457,
-            "name": "Cepheus Park Randers",
-            "city": "Randers"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743786000
-        },
-        "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
-        },
-        "teams": {
-          "home": {
-            "id": 401,
-            "name": "Randers FC",
-            "logo": "https://media.api-sports.io/football/teams/401.png",
-            "winner": null
-          },
-          "away": {
-            "id": 397,
-            "name": "FC Midtjylland",
-            "logo": "https://media.api-sports.io/football/teams/397.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362770,
           "date": "2025-04-13T16:00:00+00:00",
           "venue": {
@@ -392,9 +333,9 @@
           "id": 1362777,
           "date": "2025-04-25T17:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 457,
+            "name": "Cepheus Park Randers",
+            "city": "Randers"
           },
           "status": {
             "long": "Not Started",
@@ -684,6 +625,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362765,
+          "date": "2025-04-04T17:00:00+00:00",
+          "venue": {
+            "id": 457,
+            "name": "Cepheus Park Randers",
+            "city": "Randers"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 13
+          },
+          "timestamp": 1743786000
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 401,
+            "name": "Randers FC",
+            "logo": "https://media.api-sports.io/football/teams/401.png",
+            "winner": true
+          },
+          "away": {
+            "id": 397,
+            "name": "FC Midtjylland",
+            "logo": "https://media.api-sports.io/football/teams/397.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1362764,
@@ -1214,65 +1214,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337953,
-          "date": "2025-01-24T11:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737716400
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 401,
-            "name": "Randers FC",
-            "logo": "https://media.api-sports.io/football/teams/401.png",
-            "winner": null
-          },
-          "away": {
-            "id": 399,
-            "name": "Vendsyssel FF",
-            "logo": "https://media.api-sports.io/football/teams/399.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1569,5 +1510,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:41.772Z"
+  "lastUpdated": "2025-04-07T12:47:48.649Z"
 }

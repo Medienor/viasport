@@ -143,65 +143,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231976,
-          "date": "2025-04-06T14:30:00+00:00",
-          "venue": {
-            "id": 1281,
-            "name": "Estádio da Madeira",
-            "city": "Ilha da Madeira"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743949800
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 225,
-            "name": "Nacional",
-            "logo": "https://media.api-sports.io/football/teams/225.png",
-            "winner": null
-          },
-          "away": {
-            "id": 15130,
-            "name": "Estrela",
-            "logo": "https://media.api-sports.io/football/teams/15130.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231981,
           "date": "2025-04-13T14:30:00+00:00",
           "venue": {
@@ -497,6 +438,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231976,
+          "date": "2025-04-06T17:00:00+00:00",
+          "venue": {
+            "id": 1281,
+            "name": "Estádio da Madeira",
+            "city": "Ilha da Madeira"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743958800
+        },
+        "league": {
+          "id": 94,
+          "name": "Primeira Liga",
+          "logo": "https://media.api-sports.io/football/leagues/94.png"
+        },
+        "teams": {
+          "home": {
+            "id": 225,
+            "name": "Nacional",
+            "logo": "https://media.api-sports.io/football/teams/225.png",
+            "winner": false
+          },
+          "away": {
+            "id": 15130,
+            "name": "Estrela",
+            "logo": "https://media.api-sports.io/football/teams/15130.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231964,
@@ -1027,65 +1027,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231887,
-          "date": "2025-01-19T18:00:00+00:00",
-          "venue": {
-            "id": 19187,
-            "name": "Estádio José Gomes",
-            "city": "Amadora"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 11
-          },
-          "timestamp": 1737309600
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 15130,
-            "name": "Estrela",
-            "logo": "https://media.api-sports.io/football/teams/15130.png",
-            "winner": false
-          },
-          "away": {
-            "id": 217,
-            "name": "SC Braga",
-            "logo": "https://media.api-sports.io/football/teams/217.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1382,5 +1323,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:37.200Z"
+  "lastUpdated": "2025-04-07T12:46:44.257Z"
 }

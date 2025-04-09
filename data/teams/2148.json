@@ -148,67 +148,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1342441,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 12683,
-            "name": "Åsane Arena",
-            "city": "Bergen"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2148,
-            "name": "Asane",
-            "logo": "https://media.api-sports.io/football/teams/2148.png",
-            "winner": null
-          },
-          "away": {
-            "id": 6976,
-            "name": "Egersund",
-            "logo": "https://media.api-sports.io/football/teams/6976.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1367195,
-          "date": "2025-04-13T14:00:00+00:00",
+          "date": "2025-04-12T12:00:00+00:00",
           "venue": {
             "id": null,
             "name": "Follese Tertnes Holding Arena",
@@ -220,7 +161,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744552800
+          "timestamp": 1744459200
         },
         "league": {
           "id": 105,
@@ -799,6 +740,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1342441,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 12683,
+            "name": "Åsane Arena",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2148,
+            "name": "Asane",
+            "logo": "https://media.api-sports.io/football/teams/2148.png",
+            "winner": false
+          },
+          "away": {
+            "id": 6976,
+            "name": "Egersund",
+            "logo": "https://media.api-sports.io/football/teams/6976.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342427,
           "date": "2025-03-31T17:00:00+00:00",
           "venue": {
@@ -1327,65 +1327,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1152089,
-          "date": "2024-10-26T14:00:00+00:00",
-          "venue": {
-            "id": 1195,
-            "name": "Fosshaugane Campus",
-            "city": "Sogndal"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1729951200
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 758,
-            "name": "Sogndal",
-            "logo": "https://media.api-sports.io/football/teams/758.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2148,
-            "name": "Asane",
-            "logo": "https://media.api-sports.io/football/teams/2148.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1403,12 +1344,12 @@
       "name": "Asane",
       "logo": "https://media.api-sports.io/football/teams/2148.png"
     },
-    "form": "D",
+    "form": "DL",
     "fixtures": {
       "played": {
-        "home": 0,
+        "home": 1,
         "away": 1,
-        "total": 1
+        "total": 2
       },
       "wins": {
         "home": 0,
@@ -1421,9 +1362,9 @@
         "total": 1
       },
       "loses": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       }
     },
     "goals": {
@@ -1436,7 +1377,7 @@
         "average": {
           "home": "0.0",
           "away": "1.0",
-          "total": "1.0"
+          "total": "0.5"
         },
         "minute": {
           "0-15": {
@@ -1475,36 +1416,36 @@
         "under_over": {
           "0.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       },
       "against": {
         "total": {
-          "home": 0,
+          "home": 2,
           "away": 1,
-          "total": 1
+          "total": 3
         },
         "average": {
-          "home": "0.0",
+          "home": "2.0",
           "away": "1.0",
-          "total": "1.0"
+          "total": "1.5"
         },
         "minute": {
           "0-15": {
@@ -1516,8 +1457,8 @@
             "percentage": null
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "100.00%"
           },
           "46-60": {
             "total": null,
@@ -1542,24 +1483,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       }
@@ -1575,7 +1516,7 @@
         "away": null
       },
       "loses": {
-        "home": null,
+        "home": "0-2",
         "away": null
       },
       "goals": {
@@ -1584,7 +1525,7 @@
           "away": 1
         },
         "against": {
-          "home": 0,
+          "home": 2,
           "away": 1
         }
       }
@@ -1595,9 +1536,9 @@
       "total": 0
     },
     "failed_to_score": {
-      "home": 0,
+      "home": 1,
       "away": 0,
-      "total": 0
+      "total": 1
     },
     "penalty": {
       "scored": {
@@ -1618,20 +1559,20 @@
           "percentage": null
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "16.67%"
         },
         "31-45": {
-          "total": 1,
-          "percentage": "33.33%"
+          "total": 3,
+          "percentage": "50.00%"
         },
         "46-60": {
           "total": 1,
-          "percentage": "33.33%"
+          "percentage": "16.67%"
         },
         "61-75": {
           "total": 1,
-          "percentage": "33.33%"
+          "percentage": "16.67%"
         },
         "76-90": {
           "total": null,
@@ -1682,5 +1623,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:22.500Z"
+  "lastUpdated": "2025-04-07T12:45:29.767Z"
 }

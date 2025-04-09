@@ -149,65 +149,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1326323,
-          "date": "2025-04-05T23:30:00+00:00",
-          "venue": {
-            "id": 1620,
-            "name": "Subaru Park",
-            "city": "Chester, Pennsylvania"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743895800
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1599,
-            "name": "Philadelphia Union",
-            "logo": "https://media.api-sports.io/football/teams/1599.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1598,
-            "name": "Orlando City SC",
-            "logo": "https://media.api-sports.io/football/teams/1598.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1326332,
           "date": "2025-04-12T20:30:00+00:00",
           "venue": {
@@ -1326,9 +1267,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1326597,
+          "date": "2025-08-16T23:30:00+00:00",
+          "venue": {
+            "id": 20500,
+            "name": "Inter&Co Stadium",
+            "city": "Orlando, Florida"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755387000
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1598,
+            "name": "Orlando City SC",
+            "logo": "https://media.api-sports.io/football/teams/1598.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1611,
+            "name": "Sporting Kansas City",
+            "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1326323,
+          "date": "2025-04-05T23:30:00+00:00",
+          "venue": {
+            "id": 1620,
+            "name": "Subaru Park",
+            "city": "Chester, Pennsylvania"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743895800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1599,
+            "name": "Philadelphia Union",
+            "logo": "https://media.api-sports.io/football/teams/1599.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1598,
+            "name": "Orlando City SC",
+            "logo": "https://media.api-sports.io/football/teams/1598.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1326312,
@@ -1859,65 +1918,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1312282,
-          "date": "2024-10-27T23:30:00+00:00",
-          "venue": {
-            "id": 20500,
-            "name": "Inter&Co Stadium",
-            "city": "Orlando, Florida"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1730071800
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1598,
-            "name": "Orlando City SC",
-            "logo": "https://media.api-sports.io/football/teams/1598.png",
-            "winner": true
-          },
-          "away": {
-            "id": 18310,
-            "name": "Charlotte",
-            "logo": "https://media.api-sports.io/football/teams/18310.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1935,12 +1935,12 @@
       "name": "Orlando City SC",
       "logo": "https://media.api-sports.io/football/teams/1598.png"
     },
-    "form": "LWLDWW",
+    "form": "LWLDWWD",
     "fixtures": {
       "played": {
         "home": 3,
-        "away": 3,
-        "total": 6
+        "away": 4,
+        "total": 7
       },
       "wins": {
         "home": 2,
@@ -1949,8 +1949,8 @@
       },
       "draws": {
         "home": 0,
-        "away": 1,
-        "total": 1
+        "away": 2,
+        "total": 2
       },
       "loses": {
         "home": 1,
@@ -1967,8 +1967,8 @@
         },
         "average": {
           "home": "3.3",
-          "away": "1.7",
-          "total": "2.5"
+          "away": "1.3",
+          "total": "2.1"
         },
         "minute": {
           "0-15": {
@@ -2007,23 +2007,23 @@
         "under_over": {
           "0.5": {
             "over": 6,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 5,
-            "under": 1
+            "under": 2
           },
           "2.5": {
             "over": 2,
-            "under": 4
+            "under": 5
           },
           "3.5": {
             "over": 2,
-            "under": 4
+            "under": 5
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       },
@@ -2035,8 +2035,8 @@
         },
         "average": {
           "home": "2.3",
-          "away": "1.7",
-          "total": "2.0"
+          "away": "1.3",
+          "total": "1.7"
         },
         "minute": {
           "0-15": {
@@ -2075,30 +2075,30 @@
         "under_over": {
           "0.5": {
             "over": 6,
-            "under": 0
+            "under": 1
           },
           "1.5": {
             "over": 4,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 1,
-            "under": 5
+            "under": 6
           },
           "3.5": {
             "over": 1,
-            "under": 5
+            "under": 6
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 1,
+        "wins": 2,
         "draws": 1,
         "loses": 1
       },
@@ -2123,13 +2123,13 @@
     },
     "clean_sheet": {
       "home": 0,
-      "away": 0,
-      "total": 0
+      "away": 1,
+      "total": 1
     },
     "failed_to_score": {
       "home": 0,
-      "away": 0,
-      "total": 0
+      "away": 1,
+      "total": 1
     },
     "penalty": {
       "scored": {
@@ -2146,6 +2146,10 @@
       {
         "formation": "4-2-3-1",
         "played": 6
+      },
+      {
+        "formation": "3-4-2-1",
+        "played": 1
       }
     ],
     "cards": {
@@ -2159,24 +2163,24 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "10.00%"
+          "total": 2,
+          "percentage": "13.33%"
         },
         "46-60": {
-          "total": 3,
-          "percentage": "30.00%"
+          "total": 5,
+          "percentage": "33.33%"
         },
         "61-75": {
-          "total": 3,
-          "percentage": "30.00%"
+          "total": 4,
+          "percentage": "26.67%"
         },
         "76-90": {
           "total": 2,
-          "percentage": "20.00%"
+          "percentage": "13.33%"
         },
         "91-105": {
-          "total": 1,
-          "percentage": "10.00%"
+          "total": 2,
+          "percentage": "13.33%"
         },
         "106-120": {
           "total": null,
@@ -2219,5 +2223,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:39.555Z"
+  "lastUpdated": "2025-04-07T12:52:43.175Z"
 }

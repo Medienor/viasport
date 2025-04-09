@@ -265,65 +265,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231977,
-          "date": "2025-04-06T19:30:00+00:00",
-          "venue": {
-            "id": 1286,
-            "name": "Estádio Do Dragão",
-            "city": "Porto"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743967800
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 212,
-            "name": "FC Porto",
-            "logo": "https://media.api-sports.io/football/teams/212.png",
-            "winner": null
-          },
-          "away": {
-            "id": 211,
-            "name": "Benfica",
-            "logo": "https://media.api-sports.io/football/teams/211.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1355268,
           "date": "2025-04-09T19:45:00+00:00",
           "venue": {
@@ -505,8 +446,8 @@
           "date": "2025-04-23T15:00:00+00:00",
           "venue": {
             "id": null,
-            "name": null,
-            "city": null
+            "name": "Estádio do Sport Lisboa e Benfica",
+            "city": "Lisboa"
           },
           "status": {
             "long": "Not Started",
@@ -914,6 +855,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231977,
+          "date": "2025-04-06T19:30:00+00:00",
+          "venue": {
+            "id": 1286,
+            "name": "Estádio Do Dragão",
+            "city": "Porto"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743967800
+        },
+        "league": {
+          "id": 94,
+          "name": "Primeira Liga",
+          "logo": "https://media.api-sports.io/football/leagues/94.png"
+        },
+        "teams": {
+          "home": {
+            "id": 212,
+            "name": "FC Porto",
+            "logo": "https://media.api-sports.io/football/teams/212.png",
+            "winner": false
+          },
+          "away": {
+            "id": 211,
+            "name": "Benfica",
+            "logo": "https://media.api-sports.io/football/teams/211.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231971,
@@ -1444,65 +1444,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231923,
-          "date": "2025-02-15T18:00:00+00:00",
-          "venue": {
-            "id": 1289,
-            "name": "Estádio de São Miguel",
-            "city": "Ponta Delgada, Ilha de São Miguel, Açores"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739642400
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 227,
-            "name": "Santa Clara",
-            "logo": "https://media.api-sports.io/football/teams/227.png",
-            "winner": false
-          },
-          "away": {
-            "id": 211,
-            "name": "Benfica",
-            "logo": "https://media.api-sports.io/football/teams/211.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1799,5 +1740,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:29.252Z"
+  "lastUpdated": "2025-04-07T12:46:36.704Z"
 }

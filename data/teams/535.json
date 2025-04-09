@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-10-09",
-          "end": "2025-04-02",
+          "end": "2025-04-25",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -189,65 +189,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1217871,
-          "date": "2025-04-06T16:30:00+00:00",
-          "venue": {
-            "id": 1483,
-            "name": "Estadio La Rosaleda",
-            "city": "Málaga"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743957000
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 535,
-            "name": "Malaga",
-            "logo": "https://media.api-sports.io/football/teams/535.png",
-            "winner": null
-          },
-          "away": {
-            "id": 713,
-            "name": "Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/713.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1217878,
@@ -427,6 +368,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217871,
+          "date": "2025-04-06T16:30:00+00:00",
+          "venue": {
+            "id": 1483,
+            "name": "Estadio La Rosaleda",
+            "city": "Málaga"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743957000
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 535,
+            "name": "Malaga",
+            "logo": "https://media.api-sports.io/football/teams/535.png",
+            "winner": false
+          },
+          "away": {
+            "id": 713,
+            "name": "Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/713.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217861,
@@ -669,8 +669,8 @@
           "date": "2025-03-01T20:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "UD Almería Stadium",
-            "city": "Almería"
+            "name": "UD Almeria Stadium",
+            "city": "Almeria"
           },
           "status": {
             "long": "Match Finished",
@@ -947,65 +947,6 @@
           "fulltime": {
             "home": 2,
             "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1217757,
-          "date": "2025-01-26T17:30:00+00:00",
-          "venue": {
-            "id": 1483,
-            "name": "Estadio La Rosaleda",
-            "city": "Málaga"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737912600
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 535,
-            "name": "Malaga",
-            "logo": "https://media.api-sports.io/football/teams/535.png",
-            "winner": false
-          },
-          "away": {
-            "id": 732,
-            "name": "Zaragoza",
-            "logo": "https://media.api-sports.io/football/teams/732.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
           },
           "extratime": {
             "home": null,
@@ -1312,5 +1253,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:13.803Z"
+  "lastUpdated": "2025-04-07T12:52:17.552Z"
 }

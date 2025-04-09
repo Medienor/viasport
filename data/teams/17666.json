@@ -147,7 +147,7 @@
         {
           "year": 2024,
           "start": "2024-09-21",
-          "end": "2025-04-21",
+          "end": "2025-04-25",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -214,65 +214,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1355618,
-          "date": "2025-04-05T16:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stād al-Bahrayn al-Watanī",
-            "city": "Riffa"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743868800
-        },
-        "league": {
-          "id": 417,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/417.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5482,
-            "name": "Al Riffa",
-            "logo": "https://media.api-sports.io/football/teams/5482.png",
-            "winner": null
-          },
-          "away": {
-            "id": 17666,
-            "name": "Khalidiya",
-            "logo": "https://media.api-sports.io/football/teams/17666.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1355726,
@@ -449,9 +390,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1367915,
+          "date": "2025-04-25T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745618400
+        },
+        "league": {
+          "id": 417,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/417.png"
+        },
+        "teams": {
+          "home": {
+            "id": 17666,
+            "name": "Khalidiya",
+            "logo": "https://media.api-sports.io/football/teams/17666.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5488,
+            "name": "Muharraq",
+            "logo": "https://media.api-sports.io/football/teams/5488.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1355618,
+          "date": "2025-04-05T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stād al-Bahrayn al-Watanī",
+            "city": "Riffa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 13
+          },
+          "timestamp": 1743868800
+        },
+        "league": {
+          "id": 417,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/417.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5482,
+            "name": "Al Riffa",
+            "logo": "https://media.api-sports.io/football/teams/5482.png",
+            "winner": null
+          },
+          "away": {
+            "id": 17666,
+            "name": "Khalidiya",
+            "logo": "https://media.api-sports.io/football/teams/17666.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1303980,
@@ -982,65 +1041,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1304006,
-          "date": "2025-01-10T16:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Sheikh Ali bin Mohammed Al Khalifa Stadium",
-            "city": "Muharraq"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 12
-          },
-          "timestamp": 1736524800
-        },
-        "league": {
-          "id": 417,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/417.png"
-        },
-        "teams": {
-          "home": {
-            "id": 17666,
-            "name": "Khalidiya",
-            "logo": "https://media.api-sports.io/football/teams/17666.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5582,
-            "name": "Bahrain SC",
-            "logo": "https://media.api-sports.io/football/teams/5582.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1337,5 +1337,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:00.761Z"
+  "lastUpdated": "2025-04-07T12:52:04.806Z"
 }

@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -224,65 +224,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1351057,
-          "date": "2025-04-06T21:30:00+00:00",
-          "venue": {
-            "id": 5676,
-            "name": "Estádio José Maria de Campos Maia",
-            "city": "Mirassol, São Paulo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743975000
-        },
-        "league": {
-          "id": 71,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/71.png"
-        },
-        "teams": {
-          "home": {
-            "id": 7848,
-            "name": "Mirassol",
-            "logo": "https://media.api-sports.io/football/teams/7848.png",
-            "winner": null
-          },
-          "away": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361880,
@@ -1172,6 +1113,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1351057,
+          "date": "2025-04-06T21:30:00+00:00",
+          "venue": {
+            "id": 5676,
+            "name": "Estádio José Maria de Campos Maia",
+            "city": "Mirassol, São Paulo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743975000
+        },
+        "league": {
+          "id": 71,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/71.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7848,
+            "name": "Mirassol",
+            "logo": "https://media.api-sports.io/football/teams/7848.png",
+            "winner": null
+          },
+          "away": {
+            "id": 154,
+            "name": "Fortaleza EC",
+            "logo": "https://media.api-sports.io/football/teams/154.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1361865,
           "date": "2025-04-02T00:30:00+00:00",
           "venue": {
@@ -1700,65 +1700,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337240,
-          "date": "2025-02-20T00:30:00+00:00",
-          "venue": {
-            "id": 225,
-            "name": "Estádio Governador Plácido Aderaldo Castelo",
-            "city": "Fortaleza, Ceará"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1740011400
-        },
-        "league": {
-          "id": 612,
-          "name": "Copa do Nordeste",
-          "logo": "https://media.api-sports.io/football/leagues/612.png"
-        },
-        "teams": {
-          "home": {
-            "id": 154,
-            "name": "Fortaleza EC",
-            "logo": "https://media.api-sports.io/football/teams/154.png",
-            "winner": false
-          },
-          "away": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2055,5 +1996,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:11.016Z"
+  "lastUpdated": "2025-04-07T12:52:14.978Z"
 }

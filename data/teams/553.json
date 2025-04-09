@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-31",
-          "end": "2025-04-02",
+          "end": "2025-05-16",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1360698,
-          "date": "2025-04-06T16:30:00+00:00",
-          "venue": {
-            "id": 780,
-            "name": "Stadio Toumbas",
-            "city": "Thessaloníki"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743957000
-        },
-        "league": {
-          "id": 197,
-          "name": "Super League 1",
-          "logo": "https://media.api-sports.io/football/leagues/197.png"
-        },
-        "teams": {
-          "home": {
-            "id": 619,
-            "name": "PAOK",
-            "logo": "https://media.api-sports.io/football/teams/619.png",
-            "winner": null
-          },
-          "away": {
-            "id": 553,
-            "name": "Olympiakos Piraeus",
-            "logo": "https://media.api-sports.io/football/teams/553.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1360701,
@@ -444,9 +385,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1367763,
+          "date": "2025-05-16T22:00:00+00:00",
+          "venue": {
+            "id": 761,
+            "name": "Olympiako Stadio Spyros Louis",
+            "city": "Athens"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747432800
+        },
+        "league": {
+          "id": 199,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/199.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1124,
+            "name": "OFI",
+            "logo": "https://media.api-sports.io/football/teams/1124.png",
+            "winner": null
+          },
+          "away": {
+            "id": 553,
+            "name": "Olympiakos Piraeus",
+            "logo": "https://media.api-sports.io/football/teams/553.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360698,
+          "date": "2025-04-06T16:30:00+00:00",
+          "venue": {
+            "id": 780,
+            "name": "Stadio Toumbas",
+            "city": "Thessaloníki"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743957000
+        },
+        "league": {
+          "id": 197,
+          "name": "Super League 1",
+          "logo": "https://media.api-sports.io/football/leagues/197.png"
+        },
+        "teams": {
+          "home": {
+            "id": 619,
+            "name": "PAOK",
+            "logo": "https://media.api-sports.io/football/teams/619.png",
+            "winner": true
+          },
+          "away": {
+            "id": 553,
+            "name": "Olympiakos Piraeus",
+            "logo": "https://media.api-sports.io/football/teams/553.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1347942,
@@ -977,65 +1036,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1250654,
-          "date": "2025-02-09T15:00:00+00:00",
-          "venue": {
-            "id": 775,
-            "name": "Stadio Georgios Karaiskáki",
-            "city": "Piraeus"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1739113200
-        },
-        "league": {
-          "id": 197,
-          "name": "Super League 1",
-          "logo": "https://media.api-sports.io/football/leagues/197.png"
-        },
-        "teams": {
-          "home": {
-            "id": 553,
-            "name": "Olympiakos Piraeus",
-            "logo": "https://media.api-sports.io/football/teams/553.png",
-            "winner": null
-          },
-          "away": {
-            "id": 955,
-            "name": "Asteras Tripolis",
-            "logo": "https://media.api-sports.io/football/teams/955.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1332,5 +1332,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:10.135Z"
+  "lastUpdated": "2025-04-07T12:48:16.936Z"
 }

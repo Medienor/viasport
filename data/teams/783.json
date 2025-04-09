@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -188,65 +188,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1327735,
-          "date": "2025-04-05T16:00:00+00:00",
-          "venue": {
-            "id": 1547,
-            "name": "Stadion Schützenwiese",
-            "city": "Winterthur"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743868800
-        },
-        "league": {
-          "id": 207,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/207.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2180,
-            "name": "FC Winterthur",
-            "logo": "https://media.api-sports.io/football/teams/2180.png",
-            "winner": null
-          },
-          "away": {
-            "id": 783,
-            "name": "FC Zurich",
-            "logo": "https://media.api-sports.io/football/teams/783.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1327742,
           "date": "2025-04-12T18:30:00+00:00",
           "venue": {
@@ -365,6 +306,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1327735,
+          "date": "2025-04-05T16:00:00+00:00",
+          "venue": {
+            "id": 1547,
+            "name": "Stadion Schützenwiese",
+            "city": "Winterthur"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743868800
+        },
+        "league": {
+          "id": 207,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/207.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2180,
+            "name": "FC Winterthur",
+            "logo": "https://media.api-sports.io/football/teams/2180.png",
+            "winner": null
+          },
+          "away": {
+            "id": 783,
+            "name": "FC Zurich",
+            "logo": "https://media.api-sports.io/football/teams/783.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1327731,
@@ -895,65 +895,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1222601,
-          "date": "2025-02-06T19:30:00+00:00",
-          "venue": {
-            "id": 1547,
-            "name": "Stadion Schützenwiese",
-            "city": "Winterthur"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738870200
-        },
-        "league": {
-          "id": 207,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/207.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2180,
-            "name": "FC Winterthur",
-            "logo": "https://media.api-sports.io/football/teams/2180.png",
-            "winner": false
-          },
-          "away": {
-            "id": 783,
-            "name": "FC Zurich",
-            "logo": "https://media.api-sports.io/football/teams/783.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1250,5 +1191,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:44.054Z"
+  "lastUpdated": "2025-04-07T12:48:50.073Z"
 }

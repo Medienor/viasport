@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-07-10",
-          "end": "2025-04-02",
+          "end": "2025-04-22",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -304,7 +304,7 @@
       {
         "fixture": {
           "id": 1360147,
-          "date": "2025-04-18T22:00:00+00:00",
+          "date": "2025-04-21T18:00:00+00:00",
           "venue": {
             "id": 19612,
             "name": "Stadionul Arcul de Triumf",
@@ -316,7 +316,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745013600
+          "timestamp": 1745258400
         },
         "league": {
           "id": 283,
@@ -328,6 +328,65 @@
             "id": 635,
             "name": "Dinamo Bucuresti",
             "logo": "https://media.api-sports.io/football/teams/635.png",
+            "winner": null
+          },
+          "away": {
+            "id": 632,
+            "name": "Universitatea Craiova",
+            "logo": "https://media.api-sports.io/football/teams/632.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1360151,
+          "date": "2025-04-26T17:00:00+00:00",
+          "venue": {
+            "id": 1913,
+            "name": "Cluj Arena",
+            "city": "Cluj-Napoca"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745686800
+        },
+        "league": {
+          "id": 283,
+          "name": "Liga I",
+          "logo": "https://media.api-sports.io/football/leagues/283.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2599,
+            "name": "Universitatea Cluj",
+            "logo": "https://media.api-sports.io/football/teams/2599.png",
             "winner": null
           },
           "away": {
@@ -1247,5 +1306,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:33.924Z"
+  "lastUpdated": "2025-04-07T12:48:40.074Z"
 }

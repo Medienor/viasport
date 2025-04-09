@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-10-09",
-          "end": "2025-04-02",
+          "end": "2025-04-25",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -107,65 +107,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1217872,
-          "date": "2025-04-06T12:00:00+00:00",
-          "venue": {
-            "id": 1493,
-            "name": "Estadio de la Romareda",
-            "city": "Zaragoza"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743940800
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 732,
-            "name": "Zaragoza",
-            "logo": "https://media.api-sports.io/football/teams/732.png",
-            "winner": null
-          },
-          "away": {
-            "id": 799,
-            "name": "Mirandes",
-            "logo": "https://media.api-sports.io/football/teams/799.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1217881,
@@ -286,6 +227,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217872,
+          "date": "2025-04-06T12:00:00+00:00",
+          "venue": {
+            "id": 1493,
+            "name": "Estadio de la Romareda",
+            "city": "Zaragoza"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743940800
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 732,
+            "name": "Zaragoza",
+            "logo": "https://media.api-sports.io/football/teams/732.png",
+            "winner": true
+          },
+          "away": {
+            "id": 799,
+            "name": "Mirandes",
+            "logo": "https://media.api-sports.io/football/teams/799.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217851,
@@ -816,65 +816,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217753,
-          "date": "2025-01-27T19:30:00+00:00",
-          "venue": {
-            "id": 11915,
-            "name": "Estadio Nuevo Mirandilla",
-            "city": "Cádiz"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738006200
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 724,
-            "name": "Cadiz",
-            "logo": "https://media.api-sports.io/football/teams/724.png",
-            "winner": true
-          },
-          "away": {
-            "id": 799,
-            "name": "Mirandes",
-            "logo": "https://media.api-sports.io/football/teams/799.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1171,5 +1112,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:21.595Z"
+  "lastUpdated": "2025-04-07T12:52:25.365Z"
 }

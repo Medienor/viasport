@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216322,
-          "date": "2025-04-05T11:30:00+00:00",
-          "venue": {
-            "id": 597,
-            "name": "The Hawthorns",
-            "city": "West Bromwich"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743852600
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 60,
-            "name": "West Brom",
-            "logo": "https://media.api-sports.io/football/teams/60.png",
-            "winner": null
-          },
-          "away": {
-            "id": 746,
-            "name": "Sunderland",
-            "logo": "https://media.api-sports.io/football/teams/746.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216324,
           "date": "2025-04-08T18:45:00+00:00",
           "venue": {
@@ -566,6 +507,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216322,
+          "date": "2025-04-05T11:30:00+00:00",
+          "venue": {
+            "id": 597,
+            "name": "The Hawthorns",
+            "city": "West Bromwich"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743852600
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 60,
+            "name": "West Brom",
+            "logo": "https://media.api-sports.io/football/teams/60.png",
+            "winner": false
+          },
+          "away": {
+            "id": 746,
+            "name": "Sunderland",
+            "logo": "https://media.api-sports.io/football/teams/746.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216305,
@@ -1096,65 +1096,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216198,
-          "date": "2025-02-01T12:30:00+00:00",
-          "venue": {
-            "id": 571,
-            "name": "Home Park",
-            "city": "Plymouth"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1738413000
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1357,
-            "name": "Plymouth",
-            "logo": "https://media.api-sports.io/football/teams/1357.png",
-            "winner": true
-          },
-          "away": {
-            "id": 60,
-            "name": "West Brom",
-            "logo": "https://media.api-sports.io/football/teams/60.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1451,5 +1392,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:08.222Z"
+  "lastUpdated": "2025-04-07T12:47:15.629Z"
 }

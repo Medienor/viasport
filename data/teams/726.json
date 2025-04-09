@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-10-09",
-          "end": "2025-04-02",
+          "end": "2025-04-25",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -108,65 +108,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1217862,
-          "date": "2025-04-06T16:30:00+00:00",
-          "venue": {
-            "id": 6674,
-            "name": "Estadio Municipal de El Plantío",
-            "city": "Burgos"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743957000
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 9580,
-            "name": "Burgos",
-            "logo": "https://media.api-sports.io/football/teams/9580.png",
-            "winner": null
-          },
-          "away": {
-            "id": 726,
-            "name": "Huesca",
-            "logo": "https://media.api-sports.io/football/teams/726.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1217878,
@@ -346,6 +287,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217862,
+          "date": "2025-04-06T16:30:00+00:00",
+          "venue": {
+            "id": 6674,
+            "name": "Estadio Municipal de El Plantío",
+            "city": "Burgos"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1743957000
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9580,
+            "name": "Burgos",
+            "logo": "https://media.api-sports.io/football/teams/9580.png",
+            "winner": true
+          },
+          "away": {
+            "id": 726,
+            "name": "Huesca",
+            "logo": "https://media.api-sports.io/football/teams/726.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217856,
@@ -876,65 +876,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217759,
-          "date": "2025-01-25T17:30:00+00:00",
-          "venue": {
-            "id": 1480,
-            "name": "Estadio El Alcoraz",
-            "city": "Huesca"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1737826200
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 726,
-            "name": "Huesca",
-            "logo": "https://media.api-sports.io/football/teams/726.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5262,
-            "name": "FC Cartagena",
-            "logo": "https://media.api-sports.io/football/teams/5262.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1231,5 +1172,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:19.138Z"
+  "lastUpdated": "2025-04-07T12:52:22.746Z"
 }

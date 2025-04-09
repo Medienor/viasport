@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220301,
-          "date": "2025-04-06T11:00:00+00:00",
-          "venue": {
-            "id": 1403,
-            "name": "McDiarmid Park",
-            "city": "Perth"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743937200
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 258,
-            "name": "ST Johnstone",
-            "logo": "https://media.api-sports.io/football/teams/258.png",
-            "winner": null
-          },
-          "away": {
-            "id": 247,
-            "name": "Celtic",
-            "logo": "https://media.api-sports.io/football/teams/247.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220304,
           "date": "2025-04-12T14:00:00+00:00",
           "venue": {
@@ -268,9 +209,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1360340,
+          "date": "2025-04-20T14:00:00+00:00",
+          "venue": {
+            "id": 2617,
+            "name": "Hampden Park",
+            "city": "Glasgow"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745157600
+        },
+        "league": {
+          "id": 181,
+          "name": "FA Cup",
+          "logo": "https://media.api-sports.io/football/leagues/181.png"
+        },
+        "teams": {
+          "home": {
+            "id": 258,
+            "name": "ST Johnstone",
+            "logo": "https://media.api-sports.io/football/teams/258.png",
+            "winner": null
+          },
+          "away": {
+            "id": 247,
+            "name": "Celtic",
+            "logo": "https://media.api-sports.io/football/teams/247.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220301,
+          "date": "2025-04-06T11:00:00+00:00",
+          "venue": {
+            "id": 1403,
+            "name": "McDiarmid Park",
+            "city": "Perth"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743937200
+        },
+        "league": {
+          "id": 179,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/179.png"
+        },
+        "teams": {
+          "home": {
+            "id": 258,
+            "name": "ST Johnstone",
+            "logo": "https://media.api-sports.io/football/teams/258.png",
+            "winner": true
+          },
+          "away": {
+            "id": 247,
+            "name": "Celtic",
+            "logo": "https://media.api-sports.io/football/teams/247.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220293,
@@ -801,65 +860,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220253,
-          "date": "2025-01-25T15:00:00+00:00",
-          "venue": {
-            "id": 1403,
-            "name": "McDiarmid Park",
-            "city": "Perth"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737817200
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 258,
-            "name": "ST Johnstone",
-            "logo": "https://media.api-sports.io/football/teams/258.png",
-            "winner": true
-          },
-          "away": {
-            "id": 256,
-            "name": "Motherwell",
-            "logo": "https://media.api-sports.io/football/teams/256.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1156,5 +1156,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:23.801Z"
+  "lastUpdated": "2025-04-07T12:47:31.008Z"
 }

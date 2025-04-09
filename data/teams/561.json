@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -147,7 +147,7 @@
         {
           "year": 2024,
           "start": "2024-08-27",
-          "end": "2025-04-02",
+          "end": "2025-05-28",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -222,65 +222,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1202785,
-          "date": "2025-04-06T14:00:00+00:00",
-          "venue": {
-            "id": 417,
-            "name": "Stadion Kranjčevićeva",
-            "city": "Zagreb"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743948000
-        },
-        "league": {
-          "id": 210,
-          "name": "HNL",
-          "logo": "https://media.api-sports.io/football/leagues/210.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1017,
-            "name": "NK Lokomotiva Zagreb",
-            "logo": "https://media.api-sports.io/football/teams/1017.png",
-            "winner": null
-          },
-          "away": {
-            "id": 561,
-            "name": "HNK Rijeka",
-            "logo": "https://media.api-sports.io/football/teams/561.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1202789,
@@ -637,6 +578,65 @@
       },
       {
         "fixture": {
+          "id": 1367761,
+          "date": "2025-05-13T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747173600
+        },
+        "league": {
+          "id": 212,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/212.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1018,
+            "name": "NK Slaven Belupo",
+            "logo": "https://media.api-sports.io/football/teams/1018.png",
+            "winner": null
+          },
+          "away": {
+            "id": 561,
+            "name": "HNK Rijeka",
+            "logo": "https://media.api-sports.io/football/teams/561.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1202821,
           "date": "2025-05-17T17:00:00+00:00",
           "venue": {
@@ -752,9 +752,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1367762,
+          "date": "2025-05-28T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748469600
+        },
+        "league": {
+          "id": 212,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/212.png"
+        },
+        "teams": {
+          "home": {
+            "id": 561,
+            "name": "HNK Rijeka",
+            "logo": "https://media.api-sports.io/football/teams/561.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1018,
+            "name": "NK Slaven Belupo",
+            "logo": "https://media.api-sports.io/football/teams/1018.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1202785,
+          "date": "2025-04-06T14:00:00+00:00",
+          "venue": {
+            "id": 417,
+            "name": "Stadion Kranjčevićeva",
+            "city": "Zagreb"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743948000
+        },
+        "league": {
+          "id": 210,
+          "name": "HNL",
+          "logo": "https://media.api-sports.io/football/leagues/210.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1017,
+            "name": "NK Lokomotiva Zagreb",
+            "logo": "https://media.api-sports.io/football/teams/1017.png",
+            "winner": false
+          },
+          "away": {
+            "id": 561,
+            "name": "HNK Rijeka",
+            "logo": "https://media.api-sports.io/football/teams/561.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1359790,
@@ -1285,65 +1403,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1202744,
-          "date": "2025-02-01T16:30:00+00:00",
-          "venue": {
-            "id": 428,
-            "name": "Stadion Anđelko Herjavec",
-            "city": "Varaždin"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1738427400
-        },
-        "league": {
-          "id": 210,
-          "name": "HNL",
-          "logo": "https://media.api-sports.io/football/leagues/210.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1483,
-            "name": "NK Varazdin",
-            "logo": "https://media.api-sports.io/football/teams/1483.png",
-            "winner": true
-          },
-          "away": {
-            "id": 561,
-            "name": "HNK Rijeka",
-            "logo": "https://media.api-sports.io/football/teams/561.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1640,5 +1699,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:10.170Z"
+  "lastUpdated": "2025-04-07T12:48:16.915Z"
 }

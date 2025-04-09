@@ -189,65 +189,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1356756,
-          "date": "2025-04-05T16:00:00+00:00",
-          "venue": {
-            "id": 2359,
-            "name": "Štadión Pod Dubňom",
-            "city": "Žilina"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743868800
-        },
-        "league": {
-          "id": 332,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/332.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3554,
-            "name": "Žilina",
-            "logo": "https://media.api-sports.io/football/teams/3554.png",
-            "winner": null
-          },
-          "away": {
-            "id": 656,
-            "name": "Slovan Bratislava",
-            "logo": "https://media.api-sports.io/football/teams/656.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1356758,
           "date": "2025-04-12T16:00:00+00:00",
           "venue": {
@@ -661,6 +602,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1356756,
+          "date": "2025-04-05T16:00:00+00:00",
+          "venue": {
+            "id": 2359,
+            "name": "Štadión Pod Dubňom",
+            "city": "Žilina"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 1
+          },
+          "timestamp": 1743868800
+        },
+        "league": {
+          "id": 332,
+          "name": "Super Liga",
+          "logo": "https://media.api-sports.io/football/leagues/332.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3554,
+            "name": "Žilina",
+            "logo": "https://media.api-sports.io/football/teams/3554.png",
+            "winner": false
+          },
+          "away": {
+            "id": 656,
+            "name": "Slovan Bratislava",
+            "logo": "https://media.api-sports.io/football/teams/656.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1362900,
@@ -1191,65 +1191,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1314057,
-          "date": "2025-02-04T17:00:00+00:00",
-          "venue": {
-            "id": 11914,
-            "name": "Štadión Tehelné pole",
-            "city": "Bratislava"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 2
-          },
-          "timestamp": 1738688400
-        },
-        "league": {
-          "id": 680,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/680.png"
-        },
-        "teams": {
-          "home": {
-            "id": 656,
-            "name": "Slovan Bratislava",
-            "logo": "https://media.api-sports.io/football/teams/656.png",
-            "winner": true
-          },
-          "away": {
-            "id": 655,
-            "name": "AS Trencin",
-            "logo": "https://media.api-sports.io/football/teams/655.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1546,5 +1487,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:57.242Z"
+  "lastUpdated": "2025-04-07T12:48:04.230Z"
 }

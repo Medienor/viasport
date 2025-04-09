@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-10-09",
-          "end": "2025-04-02",
+          "end": "2025-04-25",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1208760,
-          "date": "2025-04-06T14:15:00+00:00",
-          "venue": {
-            "id": 1494,
-            "name": "Estadio Ramón Sánchez Pizjuán",
-            "city": "Sevilla"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743948900
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 536,
-            "name": "Sevilla",
-            "logo": "https://media.api-sports.io/football/teams/536.png",
-            "winner": null
-          },
-          "away": {
-            "id": 530,
-            "name": "Atletico Madrid",
-            "logo": "https://media.api-sports.io/football/teams/530.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1208772,
@@ -389,6 +330,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208760,
+          "date": "2025-04-06T14:15:00+00:00",
+          "venue": {
+            "id": 1494,
+            "name": "Estadio Ramón Sánchez Pizjuán",
+            "city": "Sevilla"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743948900
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 536,
+            "name": "Sevilla",
+            "logo": "https://media.api-sports.io/football/teams/536.png",
+            "winner": false
+          },
+          "away": {
+            "id": 530,
+            "name": "Atletico Madrid",
+            "logo": "https://media.api-sports.io/football/teams/530.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208748,
@@ -919,65 +919,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208665,
-          "date": "2025-01-18T13:00:00+00:00",
-          "venue": {
-            "id": 1478,
-            "name": "Estadi Municipal de Montilivi",
-            "city": "Girona"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737205200
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 547,
-            "name": "Girona",
-            "logo": "https://media.api-sports.io/football/teams/547.png",
-            "winner": false
-          },
-          "away": {
-            "id": 536,
-            "name": "Sevilla",
-            "logo": "https://media.api-sports.io/football/teams/536.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1274,5 +1215,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:42.723Z"
+  "lastUpdated": "2025-04-07T12:45:50.249Z"
 }

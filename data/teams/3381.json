@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -183,65 +183,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1362832,
-          "date": "2025-04-04T16:00:00+00:00",
-          "venue": {
-            "id": 2184,
-            "name": "Stadion Tušanj",
-            "city": "Tuzla"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743782400
-        },
-        "league": {
-          "id": 315,
-          "name": "Premijer Liga",
-          "logo": "https://media.api-sports.io/football/leagues/315.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3360,
-            "name": "Sloboda Tuzla",
-            "logo": "https://media.api-sports.io/football/teams/3360.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3381,
-            "name": "Velež",
-            "logo": "https://media.api-sports.io/football/teams/3381.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1362834,
@@ -777,6 +718,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362832,
+          "date": "2025-04-04T16:00:00+00:00",
+          "venue": {
+            "id": 2184,
+            "name": "Stadion Tušanj",
+            "city": "Tuzla"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743782400
+        },
+        "league": {
+          "id": 315,
+          "name": "Premijer Liga",
+          "logo": "https://media.api-sports.io/football/leagues/315.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3360,
+            "name": "Sloboda Tuzla",
+            "logo": "https://media.api-sports.io/football/teams/3360.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3381,
+            "name": "Velež",
+            "logo": "https://media.api-sports.io/football/teams/3381.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1362822,
           "date": "2025-03-28T17:30:00+00:00",
           "venue": {
@@ -1305,65 +1305,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1344904,
-          "date": "2025-02-01T10:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Titanic Hotel Spor Kompleks Field 1",
-            "city": "Antalya"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1738404000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 341,
-            "name": "Wisla Plock",
-            "logo": "https://media.api-sports.io/football/teams/341.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3381,
-            "name": "Velež",
-            "logo": "https://media.api-sports.io/football/teams/3381.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1660,5 +1601,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:54.275Z"
+  "lastUpdated": "2025-04-07T12:49:00.481Z"
 }

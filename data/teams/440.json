@@ -149,65 +149,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334448,
-          "date": "2025-04-04T22:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estadio Jorge Luis Hirschi",
-            "city": "La Plata, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743804000
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 450,
-            "name": "Estudiantes L.P.",
-            "logo": "https://media.api-sports.io/football/teams/450.png",
-            "winner": null
-          },
-          "away": {
-            "id": 440,
-            "name": "Belgrano Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/440.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334457,
           "date": "2025-04-12T23:30:00+00:00",
           "venue": {
@@ -385,6 +326,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334448,
+          "date": "2025-04-04T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jorge Luis Hirschi",
+            "city": "La Plata, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743804000
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 450,
+            "name": "Estudiantes L.P.",
+            "logo": "https://media.api-sports.io/football/teams/450.png",
+            "winner": false
+          },
+          "away": {
+            "id": 440,
+            "name": "Belgrano Cordoba",
+            "logo": "https://media.api-sports.io/football/teams/440.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334441,
@@ -915,65 +915,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334304,
-          "date": "2025-01-30T22:15:00+00:00",
-          "venue": {
-            "id": 99,
-            "name": "Estadio Presidente Juan Domingo Perón",
-            "city": "Avellaneda, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1738275300
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 436,
-            "name": "Racing Club",
-            "logo": "https://media.api-sports.io/football/teams/436.png",
-            "winner": true
-          },
-          "away": {
-            "id": 440,
-            "name": "Belgrano Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/440.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1270,5 +1211,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:28.961Z"
+  "lastUpdated": "2025-04-07T12:47:36.013Z"
 }

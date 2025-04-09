@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -224,65 +224,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1196670,
-          "date": "2025-04-06T10:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Jalan Besar Stadium",
-            "city": "Singapore"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743933600
-        },
-        "league": {
-          "id": 368,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/368.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4208,
-            "name": "Young Lions",
-            "logo": "https://media.api-sports.io/football/teams/4208.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4204,
-            "name": "Home United",
-            "logo": "https://media.api-sports.io/football/teams/4204.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361477,
           "date": "2025-04-09T12:00:00+00:00",
           "venue": {
@@ -343,7 +284,7 @@
       {
         "fixture": {
           "id": 1196673,
-          "date": "2025-04-13T10:00:00+00:00",
+          "date": "2025-04-12T10:00:00+00:00",
           "venue": {
             "id": 3205,
             "name": "Bishan Stadium",
@@ -355,7 +296,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744538400
+          "timestamp": 1744452000
         },
         "league": {
           "id": 368,
@@ -550,6 +491,65 @@
             "id": 4204,
             "name": "Home United",
             "logo": "https://media.api-sports.io/football/teams/4204.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1196633,
+          "date": "2025-04-30T11:45:00+00:00",
+          "venue": {
+            "id": 3205,
+            "name": "Bishan Stadium",
+            "city": "Singapore"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746013500
+        },
+        "league": {
+          "id": 368,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/368.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4204,
+            "name": "Home United",
+            "logo": "https://media.api-sports.io/football/teams/4204.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4208,
+            "name": "Young Lions",
+            "logo": "https://media.api-sports.io/football/teams/4208.png",
             "winner": null
           }
         },
@@ -873,6 +873,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1196670,
+          "date": "2025-04-06T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jalan Besar Stadium",
+            "city": "Singapore"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743933600
+        },
+        "league": {
+          "id": 368,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/368.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4208,
+            "name": "Young Lions",
+            "logo": "https://media.api-sports.io/football/teams/4208.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4204,
+            "name": "Home United",
+            "logo": "https://media.api-sports.io/football/teams/4204.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 8
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 4
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 8
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1333514,
@@ -1403,65 +1462,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1333502,
-          "date": "2025-02-16T10:00:00+00:00",
-          "venue": {
-            "id": 3205,
-            "name": "Bishan Stadium",
-            "city": "Singapore"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739700000
-        },
-        "league": {
-          "id": 959,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/959.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4204,
-            "name": "Home United",
-            "logo": "https://media.api-sports.io/football/teams/4204.png",
-            "winner": true
-          },
-          "away": {
-            "id": 10077,
-            "name": "Tanjong Pagar",
-            "logo": "https://media.api-sports.io/football/teams/10077.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1758,5 +1758,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:53.038Z"
+  "lastUpdated": "2025-04-07T12:51:57.187Z"
 }

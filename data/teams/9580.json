@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-10-09",
-          "end": "2025-04-02",
+          "end": "2025-04-25",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -105,65 +105,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1217862,
-          "date": "2025-04-06T16:30:00+00:00",
-          "venue": {
-            "id": 6674,
-            "name": "Estadio Municipal de El Plantío",
-            "city": "Burgos"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743957000
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 9580,
-            "name": "Burgos",
-            "logo": "https://media.api-sports.io/football/teams/9580.png",
-            "winner": null
-          },
-          "away": {
-            "id": 726,
-            "name": "Huesca",
-            "logo": "https://media.api-sports.io/football/teams/726.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1217879,
@@ -284,6 +225,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217862,
+          "date": "2025-04-06T16:30:00+00:00",
+          "venue": {
+            "id": 6674,
+            "name": "Estadio Municipal de El Plantío",
+            "city": "Burgos"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1743957000
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9580,
+            "name": "Burgos",
+            "logo": "https://media.api-sports.io/football/teams/9580.png",
+            "winner": true
+          },
+          "away": {
+            "id": 726,
+            "name": "Huesca",
+            "logo": "https://media.api-sports.io/football/teams/726.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217858,
@@ -814,65 +814,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217768,
-          "date": "2025-02-01T15:15:00+00:00",
-          "venue": {
-            "id": 1495,
-            "name": "Estadio Municipal El Molinón",
-            "city": "Gijón"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738422900
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 731,
-            "name": "Sporting Gijon",
-            "logo": "https://media.api-sports.io/football/teams/731.png",
-            "winner": true
-          },
-          "away": {
-            "id": 9580,
-            "name": "Burgos",
-            "logo": "https://media.api-sports.io/football/teams/9580.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1169,5 +1110,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:24.206Z"
+  "lastUpdated": "2025-04-07T12:52:27.820Z"
 }

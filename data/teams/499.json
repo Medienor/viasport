@@ -226,65 +226,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223895,
-          "date": "2025-04-06T16:00:00+00:00",
-          "venue": {
-            "id": 879,
-            "name": "Gewiss Stadium",
-            "city": "Bergamo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743955200
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 499,
-            "name": "Atalanta",
-            "logo": "https://media.api-sports.io/football/teams/499.png",
-            "winner": null
-          },
-          "away": {
-            "id": 487,
-            "name": "Lazio",
-            "logo": "https://media.api-sports.io/football/teams/487.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223905,
           "date": "2025-04-13T10:30:00+00:00",
           "venue": {
@@ -698,6 +639,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1223895,
+          "date": "2025-04-06T16:00:00+00:00",
+          "venue": {
+            "id": 879,
+            "name": "Gewiss Stadium",
+            "city": "Bergamo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743955200
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 499,
+            "name": "Atalanta",
+            "logo": "https://media.api-sports.io/football/teams/499.png",
+            "winner": false
+          },
+          "away": {
+            "id": 487,
+            "name": "Lazio",
+            "logo": "https://media.api-sports.io/football/teams/487.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1223887,
@@ -1228,65 +1228,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323909,
-          "date": "2025-02-04T20:00:00+00:00",
-          "venue": {
-            "id": 879,
-            "name": "Gewiss Stadium",
-            "city": "Bergamo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738699200
-        },
-        "league": {
-          "id": 137,
-          "name": "Coppa Italia",
-          "logo": "https://media.api-sports.io/football/leagues/137.png"
-        },
-        "teams": {
-          "home": {
-            "id": 499,
-            "name": "Atalanta",
-            "logo": "https://media.api-sports.io/football/teams/499.png",
-            "winner": false
-          },
-          "away": {
-            "id": 500,
-            "name": "Bologna",
-            "logo": "https://media.api-sports.io/football/teams/500.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1583,5 +1524,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:55.540Z"
+  "lastUpdated": "2025-04-07T12:46:02.903Z"
 }

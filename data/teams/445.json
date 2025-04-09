@@ -227,65 +227,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334443,
-          "date": "2025-04-05T21:00:00+00:00",
-          "venue": {
-            "id": 82,
-            "name": "Estadio Tomás Adolfo Ducó",
-            "city": "Capital Federal, Ciudad de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743886800
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 445,
-            "name": "Huracan",
-            "logo": "https://media.api-sports.io/football/teams/445.png",
-            "winner": null
-          },
-          "away": {
-            "id": 463,
-            "name": "Aldosivi",
-            "logo": "https://media.api-sports.io/football/teams/463.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362112,
           "date": "2025-04-09T22:00:00+00:00",
           "venue": {
@@ -758,6 +699,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334443,
+          "date": "2025-04-05T21:00:00+00:00",
+          "venue": {
+            "id": 82,
+            "name": "Estadio Tomás Adolfo Ducó",
+            "city": "Capital Federal, Ciudad de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743886800
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 445,
+            "name": "Huracan",
+            "logo": "https://media.api-sports.io/football/teams/445.png",
+            "winner": null
+          },
+          "away": {
+            "id": 463,
+            "name": "Aldosivi",
+            "logo": "https://media.api-sports.io/football/teams/463.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1362096,
@@ -1288,65 +1288,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334326,
-          "date": "2025-02-07T23:00:00+00:00",
-          "venue": {
-            "id": 82,
-            "name": "Estadio Tomás Adolfo Ducó",
-            "city": "Capital Federal, Ciudad de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1738969200
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 445,
-            "name": "Huracan",
-            "logo": "https://media.api-sports.io/football/teams/445.png",
-            "winner": true
-          },
-          "away": {
-            "id": 452,
-            "name": "Tigre",
-            "logo": "https://media.api-sports.io/football/teams/452.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1643,5 +1584,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:28.959Z"
+  "lastUpdated": "2025-04-07T12:47:36.017Z"
 }

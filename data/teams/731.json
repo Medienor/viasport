@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-10-09",
-          "end": "2025-04-02",
+          "end": "2025-04-25",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -149,65 +149,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1217867,
-          "date": "2025-04-05T19:00:00+00:00",
-          "venue": {
-            "id": 1495,
-            "name": "Estadio Municipal El Molinón",
-            "city": "Gijón"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743879600
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 731,
-            "name": "Sporting Gijon",
-            "logo": "https://media.api-sports.io/football/teams/731.png",
-            "winner": null
-          },
-          "away": {
-            "id": 719,
-            "name": "Tenerife",
-            "logo": "https://media.api-sports.io/football/teams/719.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1217877,
@@ -387,6 +328,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217867,
+          "date": "2025-04-05T19:00:00+00:00",
+          "venue": {
+            "id": 1495,
+            "name": "Estadio Municipal El Molinón",
+            "city": "Gijón"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743879600
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 731,
+            "name": "Sporting Gijon",
+            "logo": "https://media.api-sports.io/football/teams/731.png",
+            "winner": false
+          },
+          "away": {
+            "id": 719,
+            "name": "Tenerife",
+            "logo": "https://media.api-sports.io/football/teams/719.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217856,
@@ -917,65 +917,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217756,
-          "date": "2025-01-26T13:00:00+00:00",
-          "venue": {
-            "id": 1479,
-            "name": "Estadio Nuevo Los Cármenes",
-            "city": "Granada"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737896400
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 715,
-            "name": "Granada CF",
-            "logo": "https://media.api-sports.io/football/teams/715.png",
-            "winner": true
-          },
-          "away": {
-            "id": 731,
-            "name": "Sporting Gijon",
-            "logo": "https://media.api-sports.io/football/teams/731.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1272,5 +1213,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:18.992Z"
+  "lastUpdated": "2025-04-07T12:52:22.680Z"
 }

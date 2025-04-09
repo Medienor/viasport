@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -184,7 +184,7 @@
         {
           "year": 2024,
           "start": "2024-12-03",
-          "end": "2025-04-23",
+          "end": "2025-04-22",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -215,7 +215,8 @@
     2024
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1367392,
@@ -226,10 +227,10 @@
             "city": "Suva Reka"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
           },
           "timestamp": 1743858000
         },
@@ -243,27 +244,27 @@
             "id": 12733,
             "name": "Ballkani",
             "logo": "https://media.api-sports.io/football/teams/12733.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 22817,
             "name": "Suhareka",
             "logo": "https://media.api-sports.io/football/teams/22817.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 2,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 3,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -274,9 +275,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1366525,
@@ -807,65 +806,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1321765,
-          "date": "2024-12-14T12:00:00+00:00",
-          "venue": {
-            "id": 8093,
-            "name": "Stadiumi i qytetit Suharekë",
-            "city": "Suva Reka"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 13
-          },
-          "timestamp": 1734177600
-        },
-        "league": {
-          "id": 664,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/664.png"
-        },
-        "teams": {
-          "home": {
-            "id": 12733,
-            "name": "Ballkani",
-            "logo": "https://media.api-sports.io/football/teams/12733.png",
-            "winner": true
-          },
-          "away": {
-            "id": 14395,
-            "name": "Llapi",
-            "logo": "https://media.api-sports.io/football/teams/14395.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1162,5 +1102,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:07.666Z"
+  "lastUpdated": "2025-04-07T12:48:14.397Z"
 }

@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -329,6 +329,65 @@
             "id": 2253,
             "name": "Hapoel Haifa",
             "logo": "https://media.api-sports.io/football/teams/2253.png",
+            "winner": null
+          },
+          "away": {
+            "id": 563,
+            "name": "Hapoel Beer Sheva",
+            "logo": "https://media.api-sports.io/football/teams/563.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1361486,
+          "date": "2025-04-22T17:30:00+00:00",
+          "venue": {
+            "id": 866,
+            "name": "Teddi Malcha Stadium",
+            "city": "Jerusalem"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745343000
+        },
+        "league": {
+          "id": 384,
+          "name": "State Cup",
+          "logo": "https://media.api-sports.io/football/leagues/384.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4501,
+            "name": "Hapoel Tel Aviv",
+            "logo": "https://media.api-sports.io/football/teams/4501.png",
             "winner": null
           },
           "away": {
@@ -1366,5 +1425,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:26.050Z"
+  "lastUpdated": "2025-04-07T12:48:32.299Z"
 }

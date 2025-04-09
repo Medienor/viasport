@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -261,65 +261,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1278779,
-          "date": "2025-04-06T16:30:00+00:00",
-          "venue": {
-            "id": 30,
-            "name": "Centre d'Entrenament de la FAF 1",
-            "city": "Santa Coloma"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743957000
-        },
-        "league": {
-          "id": 312,
-          "name": "1a Divisió",
-          "logo": "https://media.api-sports.io/football/leagues/312.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3352,
-            "name": "Penya Encarnada",
-            "logo": "https://media.api-sports.io/football/teams/3352.png",
-            "winner": null
-          },
-          "away": {
-            "id": 703,
-            "name": "UE Santa Coloma",
-            "logo": "https://media.api-sports.io/football/teams/703.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1278784,
@@ -558,6 +499,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1278779,
+          "date": "2025-04-06T16:30:00+00:00",
+          "venue": {
+            "id": 30,
+            "name": "Centre d'Entrenament de la FAF 1",
+            "city": "Santa Coloma"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1743957000
+        },
+        "league": {
+          "id": 312,
+          "name": "1a Divisió",
+          "logo": "https://media.api-sports.io/football/leagues/312.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3352,
+            "name": "Penya Encarnada",
+            "logo": "https://media.api-sports.io/football/teams/3352.png",
+            "winner": null
+          },
+          "away": {
+            "id": 703,
+            "name": "UE Santa Coloma",
+            "logo": "https://media.api-sports.io/football/teams/703.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1278773,
@@ -1088,65 +1088,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1278735,
-          "date": "2025-01-19T12:30:00+00:00",
-          "venue": {
-            "id": 30,
-            "name": "Centre d'Entrenament de la FAF 1",
-            "city": "Santa Coloma"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737289800
-        },
-        "league": {
-          "id": 312,
-          "name": "1a Divisió",
-          "logo": "https://media.api-sports.io/football/leagues/312.png"
-        },
-        "teams": {
-          "home": {
-            "id": 703,
-            "name": "UE Santa Coloma",
-            "logo": "https://media.api-sports.io/football/teams/703.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3353,
-            "name": "Ranger's",
-            "logo": "https://media.api-sports.io/football/teams/3353.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1443,5 +1384,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:59.760Z"
+  "lastUpdated": "2025-04-07T12:48:06.761Z"
 }

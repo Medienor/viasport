@@ -188,65 +188,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1219266,
-          "date": "2025-04-05T12:00:00+00:00",
-          "venue": {
-            "id": 1561,
-            "name": "PAT Stadium",
-            "city": "Bangkok"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743854400
-        },
-        "league": {
-          "id": 296,
-          "name": "Thai League 1",
-          "logo": "https://media.api-sports.io/football/leagues/296.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2789,
-            "name": "Port FC",
-            "logo": "https://media.api-sports.io/football/teams/2789.png",
-            "winner": null
-          },
-          "away": {
-            "id": 10088,
-            "name": "Uthai Thani",
-            "logo": "https://media.api-sports.io/football/teams/10088.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1219217,
           "date": "2025-04-10T11:00:00+00:00",
           "venue": {
@@ -484,7 +425,7 @@
       {
         "fixture": {
           "id": 1219283,
-          "date": "2025-04-27T11:00:00+00:00",
+          "date": "2025-04-30T11:00:00+00:00",
           "venue": {
             "id": 1561,
             "name": "PAT Stadium",
@@ -496,7 +437,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745751600
+          "timestamp": 1746010800
         },
         "league": {
           "id": 296,
@@ -542,6 +483,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1219266,
+          "date": "2025-04-05T12:00:00+00:00",
+          "venue": {
+            "id": 1561,
+            "name": "PAT Stadium",
+            "city": "Bangkok"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1743854400
+        },
+        "league": {
+          "id": 296,
+          "name": "Thai League 1",
+          "logo": "https://media.api-sports.io/football/leagues/296.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2789,
+            "name": "Port FC",
+            "logo": "https://media.api-sports.io/football/teams/2789.png",
+            "winner": null
+          },
+          "away": {
+            "id": 10088,
+            "name": "Uthai Thani",
+            "logo": "https://media.api-sports.io/football/teams/10088.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1219254,
@@ -1072,65 +1072,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1219202,
-          "date": "2025-02-02T12:00:00+00:00",
-          "venue": {
-            "id": 1559,
-            "name": "Chang Arena",
-            "city": "Buriram"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738497600
-        },
-        "league": {
-          "id": 296,
-          "name": "Thai League 1",
-          "logo": "https://media.api-sports.io/football/leagues/296.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2780,
-            "name": "Buriram United",
-            "logo": "https://media.api-sports.io/football/teams/2780.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2789,
-            "name": "Port FC",
-            "logo": "https://media.api-sports.io/football/teams/2789.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1427,5 +1368,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:50.438Z"
+  "lastUpdated": "2025-04-07T12:51:54.101Z"
 }

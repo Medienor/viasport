@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-08-06",
-          "end": "2025-04-02",
+          "end": "2025-05-02",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -143,65 +143,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1203189,
-          "date": "2025-04-05T12:45:00+00:00",
-          "venue": {
-            "id": 20753,
-            "name": "Stadion Radomiaka",
-            "city": "Radom"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743857100
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4248,
-            "name": "Radomiak Radom",
-            "logo": "https://media.api-sports.io/football/teams/4248.png",
-            "winner": null
-          },
-          "away": {
-            "id": 345,
-            "name": "Zaglebie Lubin",
-            "logo": "https://media.api-sports.io/football/teams/345.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1203201,
@@ -381,6 +322,65 @@
       },
       {
         "fixture": {
+          "id": 1203224,
+          "date": "2025-05-04T10:15:00+00:00",
+          "venue": {
+            "id": 1255,
+            "name": "Stadion Miejski",
+            "city": "Gliwice"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746353700
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 349,
+            "name": "Piast Gliwice",
+            "logo": "https://media.api-sports.io/football/teams/349.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4248,
+            "name": "Radomiak Radom",
+            "logo": "https://media.api-sports.io/football/teams/4248.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203254,
           "date": "2025-05-24T15:30:00+00:00",
           "venue": {
@@ -440,6 +440,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1203189,
+          "date": "2025-04-05T12:45:00+00:00",
+          "venue": {
+            "id": 20753,
+            "name": "Stadion Radomiaka",
+            "city": "Radom"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743857100
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4248,
+            "name": "Radomiak Radom",
+            "logo": "https://media.api-sports.io/football/teams/4248.png",
+            "winner": false
+          },
+          "away": {
+            "id": 345,
+            "name": "Zaglebie Lubin",
+            "logo": "https://media.api-sports.io/football/teams/345.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1203178,
@@ -859,8 +918,8 @@
           "date": "2025-02-02T13:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Chorten Arena",
-            "city": "Białystok"
+            "name": "Bialystok City Stadium",
+            "city": "Bialystok"
           },
           "status": {
             "long": "Match Finished",
@@ -960,65 +1019,6 @@
           "fulltime": {
             "home": 1,
             "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1344667,
-          "date": "2025-01-22T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "TBC",
-            "city": "TBC"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737547200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4248,
-            "name": "Radomiak Radom",
-            "logo": "https://media.api-sports.io/football/teams/4248.png",
-            "winner": false
-          },
-          "away": {
-            "id": 341,
-            "name": "Wisla Plock",
-            "logo": "https://media.api-sports.io/football/teams/341.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 4
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 4
           },
           "extratime": {
             "home": null,
@@ -1325,5 +1325,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:47.480Z"
+  "lastUpdated": "2025-04-07T12:46:55.021Z"
 }

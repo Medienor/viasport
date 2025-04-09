@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-11-15",
-          "end": "2025-04-02",
+          "end": "2025-05-23",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1213993,
-          "date": "2025-04-06T15:15:00+00:00",
-          "venue": {
-            "id": 20107,
-            "name": "Stade de la Mosson-Mondial 98",
-            "city": "Montpellier"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743952500
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 82,
-            "name": "Montpellier",
-            "logo": "https://media.api-sports.io/football/teams/82.png",
-            "winner": null
-          },
-          "away": {
-            "id": 111,
-            "name": "LE Havre",
-            "logo": "https://media.api-sports.io/football/teams/111.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1214005,
@@ -391,6 +332,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1213993,
+          "date": "2025-04-06T15:15:00+00:00",
+          "venue": {
+            "id": 20107,
+            "name": "Stade de la Mosson-Mondial 98",
+            "city": "Montpellier"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743952500
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 82,
+            "name": "Montpellier",
+            "logo": "https://media.api-sports.io/football/teams/82.png",
+            "winner": false
+          },
+          "away": {
+            "id": 111,
+            "name": "LE Havre",
+            "logo": "https://media.api-sports.io/football/teams/111.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1213982,
           "date": "2025-03-30T15:15:00+00:00",
           "venue": {
@@ -513,8 +513,8 @@
           "date": "2025-03-08T18:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Decathlon Arena - Stade Pierre-Mauroy",
-            "city": "Villeneuve d'Ascq"
+            "name": "Decathlon Arena - Stade Pierre Mauroy",
+            "city": "Lille"
           },
           "status": {
             "long": "Match Finished",
@@ -919,65 +919,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213905,
-          "date": "2025-01-17T18:00:00+00:00",
-          "venue": {
-            "id": 20107,
-            "name": "Stade de la Mosson-Mondial 98",
-            "city": "Montpellier"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1737136800
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 82,
-            "name": "Montpellier",
-            "logo": "https://media.api-sports.io/football/teams/82.png",
-            "winner": true
-          },
-          "away": {
-            "id": 91,
-            "name": "Monaco",
-            "logo": "https://media.api-sports.io/football/teams/91.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1274,5 +1215,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:11.402Z"
+  "lastUpdated": "2025-04-07T12:46:18.846Z"
 }

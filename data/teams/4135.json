@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1350344,
-          "date": "2025-04-04T15:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadionā Esplanāde",
-            "city": "Daugavpils"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743778800
-        },
-        "league": {
-          "id": 365,
-          "name": "Virsliga",
-          "logo": "https://media.api-sports.io/football/leagues/365.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4149,
-            "name": "BFC Daugavpils",
-            "logo": "https://media.api-sports.io/football/teams/4149.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4135,
-            "name": "Auda",
-            "logo": "https://media.api-sports.io/football/teams/4135.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1350348,
@@ -1366,9 +1307,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1350446,
+          "date": "2025-08-03T17:00:00+00:00",
+          "venue": {
+            "id": 2611,
+            "name": "Stadions Skonto",
+            "city": "Riga"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1754240400
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4135,
+            "name": "Auda",
+            "logo": "https://media.api-sports.io/football/teams/4135.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4159,
+            "name": "Metta / LU",
+            "logo": "https://media.api-sports.io/football/teams/4159.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1350344,
+          "date": "2025-04-04T15:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadionā Esplanāde",
+            "city": "Daugavpils"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743778800
+        },
+        "league": {
+          "id": 365,
+          "name": "Virsliga",
+          "logo": "https://media.api-sports.io/football/leagues/365.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4149,
+            "name": "BFC Daugavpils",
+            "logo": "https://media.api-sports.io/football/teams/4149.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4135,
+            "name": "Auda",
+            "logo": "https://media.api-sports.io/football/teams/4135.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1350340,
@@ -1899,65 +1958,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1179104,
-          "date": "2024-11-03T11:00:00+00:00",
-          "venue": {
-            "id": 11629,
-            "name": "Tukuma pilsētas stadions",
-            "city": "Tukums"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 2
-          },
-          "timestamp": 1730631600
-        },
-        "league": {
-          "id": 365,
-          "name": "Virsliga",
-          "logo": "https://media.api-sports.io/football/leagues/365.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4144,
-            "name": "Tukums",
-            "logo": "https://media.api-sports.io/football/teams/4144.png",
-            "winner": false
-          },
-          "away": {
-            "id": 4135,
-            "name": "Auda",
-            "logo": "https://media.api-sports.io/football/teams/4135.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1975,12 +1975,12 @@
       "name": "Auda",
       "logo": "https://media.api-sports.io/football/teams/4135.png"
     },
-    "form": "LDWW",
+    "form": "LDWWL",
     "fixtures": {
       "played": {
         "home": 3,
-        "away": 1,
-        "total": 4
+        "away": 2,
+        "total": 5
       },
       "wins": {
         "home": 2,
@@ -1994,21 +1994,21 @@
       },
       "loses": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       }
     },
     "goals": {
       "for": {
         "total": {
           "home": 4,
-          "away": 2,
-          "total": 6
+          "away": 3,
+          "total": 7
         },
         "average": {
           "home": "1.3",
-          "away": "2.0",
-          "total": "1.5"
+          "away": "1.5",
+          "total": "1.4"
         },
         "minute": {
           "0-15": {
@@ -2017,7 +2017,7 @@
           },
           "16-30": {
             "total": 1,
-            "percentage": "16.67%"
+            "percentage": "14.29%"
           },
           "31-45": {
             "total": null,
@@ -2025,15 +2025,15 @@
           },
           "46-60": {
             "total": 2,
-            "percentage": "33.33%"
+            "percentage": "28.57%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "14.29%"
           },
           "76-90": {
             "total": 3,
-            "percentage": "50.00%"
+            "percentage": "42.86%"
           },
           "91-105": {
             "total": null,
@@ -2046,58 +2046,58 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
+            "over": 5,
             "under": 0
           },
           "1.5": {
             "over": 2,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 5
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 5
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 5
           }
         }
       },
       "against": {
         "total": {
           "home": 2,
-          "away": 2,
-          "total": 4
+          "away": 4,
+          "total": 6
         },
         "average": {
           "home": "0.7",
           "away": "2.0",
-          "total": "1.0"
+          "total": "1.2"
         },
         "minute": {
           "0-15": {
             "total": 2,
-            "percentage": "50.00%"
+            "percentage": "33.33%"
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "16.67%"
           },
           "46-60": {
-            "total": 1,
-            "percentage": "25.00%"
+            "total": 2,
+            "percentage": "33.33%"
           },
           "61-75": {
             "total": 1,
-            "percentage": "25.00%"
+            "percentage": "16.67%"
           },
           "76-90": {
             "total": null,
@@ -2114,31 +2114,31 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 3,
             "under": 2
           },
           "1.5": {
-            "over": 2,
+            "over": 3,
             "under": 2
           },
           "2.5": {
             "over": 0,
-            "under": 4
+            "under": 5
           },
           "3.5": {
             "over": 0,
-            "under": 4
+            "under": 5
           },
           "4.5": {
             "over": 0,
-            "under": 4
+            "under": 5
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 0,
+        "wins": 2,
         "draws": 1,
         "loses": 1
       },
@@ -2148,7 +2148,7 @@
       },
       "loses": {
         "home": "1-2",
-        "away": null
+        "away": "2-1"
       },
       "goals": {
         "for": {
@@ -2187,23 +2187,23 @@
       "yellow": {
         "0-15": {
           "total": 1,
-          "percentage": "14.29%"
+          "percentage": "9.09%"
         },
         "16-30": {
-          "total": 1,
-          "percentage": "14.29%"
+          "total": 2,
+          "percentage": "18.18%"
         },
         "31-45": {
-          "total": 2,
-          "percentage": "28.57%"
+          "total": 4,
+          "percentage": "36.36%"
         },
         "46-60": {
           "total": 2,
-          "percentage": "28.57%"
+          "percentage": "18.18%"
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "9.09%"
         },
         "76-90": {
           "total": null,
@@ -2211,7 +2211,7 @@
         },
         "91-105": {
           "total": 1,
-          "percentage": "14.29%"
+          "percentage": "9.09%"
         },
         "106-120": {
           "total": null,
@@ -2254,5 +2254,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:20:01.974Z"
+  "lastUpdated": "2025-04-07T12:49:08.233Z"
 }

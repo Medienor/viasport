@@ -112,65 +112,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223899,
-          "date": "2025-04-06T10:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadio Ettore Giardiniero - Via del Mare",
-            "city": "Lecce"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743935400
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 867,
-            "name": "Lecce",
-            "logo": "https://media.api-sports.io/football/teams/867.png",
-            "winner": null
-          },
-          "away": {
-            "id": 517,
-            "name": "Venezia",
-            "logo": "https://media.api-sports.io/football/teams/517.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223910,
           "date": "2025-04-12T18:45:00+00:00",
           "venue": {
@@ -586,11 +527,70 @@
     "past": [
       {
         "fixture": {
+          "id": 1223899,
+          "date": "2025-04-06T10:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Via del Mare",
+            "city": "Lecce"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743935400
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 867,
+            "name": "Lecce",
+            "logo": "https://media.api-sports.io/football/teams/867.png",
+            "winner": null
+          },
+          "away": {
+            "id": 517,
+            "name": "Venezia",
+            "logo": "https://media.api-sports.io/football/teams/517.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1223892,
           "date": "2025-03-29T19:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Ettore Giardiniero - Via del Mare",
+            "name": "Via del Mare",
             "city": "Lecce"
           },
           "status": {
@@ -708,7 +708,7 @@
           "date": "2025-03-08T17:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Ettore Giardiniero - Via del Mare",
+            "name": "Via del Mare",
             "city": "Lecce"
           },
           "status": {
@@ -826,7 +826,7 @@
           "date": "2025-02-21T19:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Ettore Giardiniero - Via del Mare",
+            "name": "Via del Mare",
             "city": "Lecce"
           },
           "status": {
@@ -944,7 +944,7 @@
           "date": "2025-02-09T17:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Ettore Giardiniero - Via del Mare",
+            "name": "Via del Mare",
             "city": "Lecce"
           },
           "status": {
@@ -1062,7 +1062,7 @@
           "date": "2025-01-26T17:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Ettore Giardiniero - Via del Mare",
+            "name": "Via del Mare",
             "city": "Lecce"
           },
           "status": {
@@ -1104,65 +1104,6 @@
           "fulltime": {
             "home": 0,
             "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1223797,
-          "date": "2025-01-19T14:00:00+00:00",
-          "venue": {
-            "id": 12275,
-            "name": "Unipol Domus",
-            "city": "Cagliari"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737295200
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 490,
-            "name": "Cagliari",
-            "logo": "https://media.api-sports.io/football/teams/490.png",
-            "winner": true
-          },
-          "away": {
-            "id": 867,
-            "name": "Lecce",
-            "logo": "https://media.api-sports.io/football/teams/867.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
           },
           "extratime": {
             "home": null,
@@ -1469,5 +1410,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:58.391Z"
+  "lastUpdated": "2025-04-07T12:46:05.698Z"
 }

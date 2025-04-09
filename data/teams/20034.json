@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -147,7 +147,7 @@
         {
           "year": 2024,
           "start": "2024-07-10",
-          "end": "2025-04-02",
+          "end": "2025-04-22",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -251,65 +251,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361806,
-          "date": "2025-04-05T08:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Complexul Sportiv Corvinul 1921 Hunedoara",
-            "city": "Hunedoara"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743840000
-        },
-        "league": {
-          "id": 284,
-          "name": "Liga II",
-          "logo": "https://media.api-sports.io/football/leagues/284.png"
-        },
-        "teams": {
-          "home": {
-            "id": 20034,
-            "name": "Corvinul Hunedoara",
-            "logo": "https://media.api-sports.io/football/teams/20034.png",
-            "winner": null
-          },
-          "away": {
-            "id": 6910,
-            "name": "U Craiova 1948",
-            "logo": "https://media.api-sports.io/football/teams/6910.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1362904,
@@ -607,6 +548,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361806,
+          "date": "2025-04-05T08:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Complexul Sportiv Corvinul 1921 Hunedoara",
+            "city": "Hunedoara"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743840000
+        },
+        "league": {
+          "id": 284,
+          "name": "Liga II",
+          "logo": "https://media.api-sports.io/football/leagues/284.png"
+        },
+        "teams": {
+          "home": {
+            "id": 20034,
+            "name": "Corvinul Hunedoara",
+            "logo": "https://media.api-sports.io/football/teams/20034.png",
+            "winner": true
+          },
+          "away": {
+            "id": 6910,
+            "name": "U Craiova 1948",
+            "logo": "https://media.api-sports.io/football/teams/6910.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1262772,
@@ -1137,65 +1137,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1262581,
-          "date": "2024-11-06T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Complexul Sportiv Corvinul 1921 Hunedoara",
-            "city": "Hunedoara"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1730894400
-        },
-        "league": {
-          "id": 284,
-          "name": "Liga II",
-          "logo": "https://media.api-sports.io/football/leagues/284.png"
-        },
-        "teams": {
-          "home": {
-            "id": 20034,
-            "name": "Corvinul Hunedoara",
-            "logo": "https://media.api-sports.io/football/teams/20034.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2608,
-            "name": "CS Afumati",
-            "logo": "https://media.api-sports.io/football/teams/2608.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1492,5 +1433,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:20.928Z"
+  "lastUpdated": "2025-04-07T12:48:27.278Z"
 }

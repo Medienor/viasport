@@ -36,7 +36,7 @@
         {
           "year": 2024,
           "start": "2024-08-16",
-          "end": "2025-04-01",
+          "end": "2025-05-24",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1224223,
-          "date": "2025-04-05T13:30:00+00:00",
-          "venue": {
-            "id": 11899,
-            "name": "MEWA ARENA",
-            "city": "Mainz"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743859800
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 164,
-            "name": "FSV Mainz 05",
-            "logo": "https://media.api-sports.io/football/teams/164.png",
-            "winner": null
-          },
-          "away": {
-            "id": 191,
-            "name": "Holstein Kiel",
-            "logo": "https://media.api-sports.io/football/teams/191.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1224235,
@@ -565,6 +506,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1224223,
+          "date": "2025-04-05T13:30:00+00:00",
+          "venue": {
+            "id": 11899,
+            "name": "MEWA ARENA",
+            "city": "Mainz"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743859800
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 164,
+            "name": "FSV Mainz 05",
+            "logo": "https://media.api-sports.io/football/teams/164.png",
+            "winner": null
+          },
+          "away": {
+            "id": 191,
+            "name": "Holstein Kiel",
+            "logo": "https://media.api-sports.io/football/teams/191.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1224217,
@@ -1095,65 +1095,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224142,
-          "date": "2025-01-24T19:30:00+00:00",
-          "venue": {
-            "id": 752,
-            "name": "Volkswagen Arena",
-            "city": "Wolfsburg"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737747000
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 161,
-            "name": "VfL Wolfsburg",
-            "logo": "https://media.api-sports.io/football/teams/161.png",
-            "winner": null
-          },
-          "away": {
-            "id": 191,
-            "name": "Holstein Kiel",
-            "logo": "https://media.api-sports.io/football/teams/191.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1450,5 +1391,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:08.853Z"
+  "lastUpdated": "2025-04-07T12:46:16.142Z"
 }

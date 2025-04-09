@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1278780,
-          "date": "2025-04-06T09:00:00+00:00",
-          "venue": {
-            "id": 30,
-            "name": "Centre d'Entrenament de la FAF 1",
-            "city": "Santa Coloma"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743930000
-        },
-        "league": {
-          "id": 312,
-          "name": "1a Divisió",
-          "logo": "https://media.api-sports.io/football/leagues/312.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3351,
-            "name": "La Massana",
-            "logo": "https://media.api-sports.io/football/teams/3351.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3345,
-            "name": "Atlètic Club d'Escaldes",
-            "logo": "https://media.api-sports.io/football/teams/3345.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1278785,
@@ -447,6 +388,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1278780,
+          "date": "2025-04-06T09:00:00+00:00",
+          "venue": {
+            "id": 30,
+            "name": "Centre d'Entrenament de la FAF 1",
+            "city": "Santa Coloma"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743930000
+        },
+        "league": {
+          "id": 312,
+          "name": "1a Divisió",
+          "logo": "https://media.api-sports.io/football/leagues/312.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3351,
+            "name": "La Massana",
+            "logo": "https://media.api-sports.io/football/teams/3351.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3345,
+            "name": "Atlètic Club d'Escaldes",
+            "logo": "https://media.api-sports.io/football/teams/3345.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1278774,
@@ -977,65 +977,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1278734,
-          "date": "2025-01-19T10:00:00+00:00",
-          "venue": {
-            "id": 30,
-            "name": "Centre d'Entrenament de la FAF 1",
-            "city": "Santa Coloma"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737280800
-        },
-        "league": {
-          "id": 312,
-          "name": "1a Divisió",
-          "logo": "https://media.api-sports.io/football/leagues/312.png"
-        },
-        "teams": {
-          "home": {
-            "id": 19196,
-            "name": "Pas de la Casa",
-            "logo": "https://media.api-sports.io/football/teams/19196.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3345,
-            "name": "Atlètic Club d'Escaldes",
-            "logo": "https://media.api-sports.io/football/teams/3345.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1332,5 +1273,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:54.233Z"
+  "lastUpdated": "2025-04-07T12:49:00.446Z"
 }

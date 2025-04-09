@@ -116,65 +116,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213689,
-          "date": "2025-04-06T12:30:00+00:00",
-          "venue": {
-            "id": 1130,
-            "name": "De Adelaarshorst",
-            "city": "Deventer"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743942600
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 410,
-            "name": "GO Ahead Eagles",
-            "logo": "https://media.api-sports.io/football/teams/410.png",
-            "winner": null
-          },
-          "away": {
-            "id": 207,
-            "name": "Utrecht",
-            "logo": "https://media.api-sports.io/football/teams/207.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213693,
           "date": "2025-04-13T10:15:00+00:00",
           "venue": {
@@ -529,6 +470,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213689,
+          "date": "2025-04-06T12:30:00+00:00",
+          "venue": {
+            "id": 1130,
+            "name": "De Adelaarshorst",
+            "city": "Deventer"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743942600
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 410,
+            "name": "GO Ahead Eagles",
+            "logo": "https://media.api-sports.io/football/teams/410.png",
+            "winner": null
+          },
+          "away": {
+            "id": 207,
+            "name": "Utrecht",
+            "logo": "https://media.api-sports.io/football/teams/207.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213675,
@@ -1059,65 +1059,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213604,
-          "date": "2025-01-18T17:45:00+00:00",
-          "venue": {
-            "id": 1154,
-            "name": "Stadion Galgenwaard",
-            "city": "Utrecht"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1737222300
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 207,
-            "name": "Utrecht",
-            "logo": "https://media.api-sports.io/football/teams/207.png",
-            "winner": null
-          },
-          "away": {
-            "id": 201,
-            "name": "AZ Alkmaar",
-            "logo": "https://media.api-sports.io/football/teams/201.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1414,5 +1355,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:52.492Z"
+  "lastUpdated": "2025-04-07T12:47:00.086Z"
 }

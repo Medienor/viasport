@@ -185,65 +185,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1326320,
-          "date": "2025-04-05T23:30:00+00:00",
-          "venue": {
-            "id": 19229,
-            "name": "TQL Stadium",
-            "city": "Cincinnati, Ohio"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743895800
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2242,
-            "name": "FC Cincinnati",
-            "logo": "https://media.api-sports.io/football/teams/2242.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1609,
-            "name": "New England Revolution",
-            "logo": "https://media.api-sports.io/football/teams/1609.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1326333,
           "date": "2025-04-12T23:30:00+00:00",
           "venue": {
@@ -1362,9 +1303,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1326603,
+          "date": "2025-08-17T02:30:00+00:00",
+          "venue": {
+            "id": 1748,
+            "name": "Providence Park",
+            "city": "Portland, Oregon"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755397800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1617,
+            "name": "Portland Timbers",
+            "logo": "https://media.api-sports.io/football/teams/1617.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2242,
+            "name": "FC Cincinnati",
+            "logo": "https://media.api-sports.io/football/teams/2242.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1326320,
+          "date": "2025-04-05T23:30:00+00:00",
+          "venue": {
+            "id": 19229,
+            "name": "TQL Stadium",
+            "city": "Cincinnati, Ohio"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1743895800
+        },
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "logo": "https://media.api-sports.io/football/leagues/253.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2242,
+            "name": "FC Cincinnati",
+            "logo": "https://media.api-sports.io/football/teams/2242.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1326311,
@@ -1548,8 +1607,8 @@
           "date": "2025-03-12T02:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estadio Universitario (UANL)",
-            "city": "Monterrey"
+            "name": "Estadio Universitario",
+            "city": "San Nicolás de los Garza"
           },
           "status": {
             "long": "Match Finished",
@@ -1895,65 +1954,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1322502,
-          "date": "2025-02-20T03:00:00+00:00",
-          "venue": {
-            "id": 19208,
-            "name": "Estadio José de la Paz Herrera Uclés",
-            "city": "Tegucigalpa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 2
-          },
-          "timestamp": 1740020400
-        },
-        "league": {
-          "id": 16,
-          "name": "CONCACAF Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/16.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1055,
-            "name": "CD Motagua",
-            "logo": "https://media.api-sports.io/football/teams/1055.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2242,
-            "name": "FC Cincinnati",
-            "logo": "https://media.api-sports.io/football/teams/2242.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1971,17 +1971,17 @@
       "name": "FC Cincinnati",
       "logo": "https://media.api-sports.io/football/teams/2242.png"
     },
-    "form": "WLWLDW",
+    "form": "WLWLDWW",
     "fixtures": {
       "played": {
-        "home": 3,
+        "home": 4,
         "away": 3,
-        "total": 6
+        "total": 7
       },
       "wins": {
-        "home": 2,
+        "home": 3,
         "away": 1,
-        "total": 3
+        "total": 4
       },
       "draws": {
         "home": 1,
@@ -1997,12 +1997,12 @@
     "goals": {
       "for": {
         "total": {
-          "home": 5,
+          "home": 6,
           "away": 3,
-          "total": 8
+          "total": 9
         },
         "average": {
-          "home": "1.7",
+          "home": "1.5",
           "away": "1.0",
           "total": "1.3"
         },
@@ -2017,23 +2017,23 @@
           },
           "31-45": {
             "total": 1,
-            "percentage": "11.11%"
+            "percentage": "10.00%"
           },
           "46-60": {
             "total": 1,
-            "percentage": "11.11%"
+            "percentage": "10.00%"
           },
           "61-75": {
-            "total": 4,
-            "percentage": "44.44%"
+            "total": 5,
+            "percentage": "50.00%"
           },
           "76-90": {
             "total": 2,
-            "percentage": "22.22%"
+            "percentage": "20.00%"
           },
           "91-105": {
             "total": 1,
-            "percentage": "11.11%"
+            "percentage": "10.00%"
           },
           "106-120": {
             "total": null,
@@ -2042,24 +2042,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 6,
             "under": 1
           },
           "1.5": {
             "over": 3,
-            "under": 3
+            "under": 4
           },
           "2.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       },
@@ -2070,9 +2070,9 @@
           "total": 9
         },
         "average": {
-          "home": "0.7",
+          "home": "0.5",
           "away": "2.3",
-          "total": "1.5"
+          "total": "1.3"
         },
         "minute": {
           "0-15": {
@@ -2111,23 +2111,23 @@
         "under_over": {
           "0.5": {
             "over": 4,
-            "under": 2
+            "under": 3
           },
           "1.5": {
             "over": 3,
-            "under": 3
+            "under": 4
           },
           "2.5": {
             "over": 1,
-            "under": 5
+            "under": 6
           },
           "3.5": {
             "over": 1,
-            "under": 5
+            "under": 6
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       }
@@ -2158,9 +2158,9 @@
       }
     },
     "clean_sheet": {
-      "home": 2,
+      "home": 3,
       "away": 0,
-      "total": 2
+      "total": 3
     },
     "failed_to_score": {
       "home": 0,
@@ -2180,15 +2180,15 @@
     },
     "lineups": [
       {
+        "formation": "3-4-2-1",
+        "played": 2
+      },
+      {
         "formation": "4-2-3-1",
         "played": 2
       },
       {
         "formation": "5-3-2",
-        "played": 1
-      },
-      {
-        "formation": "3-4-2-1",
         "played": 1
       },
       {
@@ -2203,28 +2203,28 @@
     "cards": {
       "yellow": {
         "0-15": {
-          "total": 1,
-          "percentage": "9.09%"
+          "total": 2,
+          "percentage": "15.38%"
         },
         "16-30": {
           "total": 1,
-          "percentage": "9.09%"
+          "percentage": "7.69%"
         },
         "31-45": {
-          "total": 1,
-          "percentage": "9.09%"
+          "total": 2,
+          "percentage": "15.38%"
         },
         "46-60": {
           "total": 1,
-          "percentage": "9.09%"
+          "percentage": "7.69%"
         },
         "61-75": {
           "total": 3,
-          "percentage": "27.27%"
+          "percentage": "23.08%"
         },
         "76-90": {
           "total": 4,
-          "percentage": "36.36%"
+          "percentage": "30.77%"
         },
         "91-105": {
           "total": null,
@@ -2271,5 +2271,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:49.910Z"
+  "lastUpdated": "2025-04-07T12:52:53.154Z"
 }

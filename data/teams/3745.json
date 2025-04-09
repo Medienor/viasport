@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -218,65 +218,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1335625,
-          "date": "2025-04-06T13:00:00+00:00",
-          "venue": {
-            "id": 2527,
-            "name": "Stadion Tuško Polje",
-            "city": "Tuzi"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743944400
-        },
-        "league": {
-          "id": 355,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/355.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3745,
-            "name": "Dečić",
-            "logo": "https://media.api-sports.io/football/teams/3745.png",
-            "winner": null
-          },
-          "away": {
-            "id": 673,
-            "name": "Sutjeska",
-            "logo": "https://media.api-sports.io/football/teams/673.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1335632,
@@ -751,6 +692,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1335625,
+          "date": "2025-04-06T13:00:00+00:00",
+          "venue": {
+            "id": 2527,
+            "name": "Stadion Tuško Polje",
+            "city": "Tuzi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743944400
+        },
+        "league": {
+          "id": 355,
+          "name": "First League",
+          "logo": "https://media.api-sports.io/football/leagues/355.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3745,
+            "name": "Dečić",
+            "logo": "https://media.api-sports.io/football/teams/3745.png",
+            "winner": false
+          },
+          "away": {
+            "id": 673,
+            "name": "Sutjeska",
+            "logo": "https://media.api-sports.io/football/teams/673.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1335623,
@@ -1281,65 +1281,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1223502,
-          "date": "2024-12-01T13:00:00+00:00",
-          "venue": {
-            "id": 1095,
-            "name": "Stadion Pod Goricom",
-            "city": "Podgorica"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1733058000
-        },
-        "league": {
-          "id": 355,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/355.png"
-        },
-        "teams": {
-          "home": {
-            "id": 579,
-            "name": "Buducnost Podgorica",
-            "logo": "https://media.api-sports.io/football/teams/579.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3745,
-            "name": "Dečić",
-            "logo": "https://media.api-sports.io/football/teams/3745.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1636,5 +1577,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:04.802Z"
+  "lastUpdated": "2025-04-07T12:48:11.828Z"
 }

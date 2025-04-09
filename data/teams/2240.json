@@ -148,65 +148,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1341958,
-          "date": "2025-04-06T14:30:00+00:00",
-          "venue": {
-            "id": 1519,
-            "name": "Strandvallen",
-            "city": "Sölvesborg"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743949800
-        },
-        "league": {
-          "id": 113,
-          "name": "Allsvenskan",
-          "logo": "https://media.api-sports.io/football/leagues/113.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2240,
-            "name": "Mjallby AIF",
-            "logo": "https://media.api-sports.io/football/teams/2240.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2170,
-            "name": "Gais",
-            "logo": "https://media.api-sports.io/football/teams/2170.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1341962,
           "date": "2025-04-12T13:00:00+00:00",
           "venue": {
@@ -858,6 +799,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1341958,
+          "date": "2025-04-06T14:30:00+00:00",
+          "venue": {
+            "id": 1519,
+            "name": "Strandvallen",
+            "city": "Sölvesborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743949800
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2240,
+            "name": "Mjallby AIF",
+            "logo": "https://media.api-sports.io/football/teams/2240.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2170,
+            "name": "Gais",
+            "logo": "https://media.api-sports.io/football/teams/2170.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1341949,
           "date": "2025-03-30T12:00:00+00:00",
           "venue": {
@@ -1386,65 +1386,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1336868,
-          "date": "2025-01-17T00:00:00+00:00",
-          "venue": {
-            "id": 1519,
-            "name": "Strandvallen",
-            "city": "Sölvesborg"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1737072000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2240,
-            "name": "Mjallby AIF",
-            "logo": "https://media.api-sports.io/football/teams/2240.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2067,
-            "name": "Roskilde",
-            "logo": "https://media.api-sports.io/football/teams/2067.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1462,12 +1403,12 @@
       "name": "Mjallby AIF",
       "logo": "https://media.api-sports.io/football/teams/2240.png"
     },
-    "form": "D",
+    "form": "DD",
     "fixtures": {
       "played": {
-        "home": 0,
+        "home": 1,
         "away": 1,
-        "total": 1
+        "total": 2
       },
       "wins": {
         "home": 0,
@@ -1475,9 +1416,9 @@
         "total": 0
       },
       "draws": {
-        "home": 0,
+        "home": 1,
         "away": 1,
-        "total": 1
+        "total": 2
       },
       "loses": {
         "home": 0,
@@ -1488,14 +1429,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 0,
+          "home": 1,
           "away": 2,
-          "total": 2
+          "total": 3
         },
         "average": {
-          "home": "0.0",
+          "home": "1.0",
           "away": "2.0",
-          "total": "2.0"
+          "total": "1.5"
         },
         "minute": {
           "0-15": {
@@ -1504,7 +1445,7 @@
           },
           "16-30": {
             "total": 2,
-            "percentage": "100.00%"
+            "percentage": "66.67%"
           },
           "31-45": {
             "total": null,
@@ -1523,8 +1464,8 @@
             "percentage": null
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "33.33%"
           },
           "106-120": {
             "total": null,
@@ -1533,37 +1474,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "1.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       },
       "against": {
         "total": {
-          "home": 0,
+          "home": 1,
           "away": 2,
-          "total": 2
+          "total": 3
         },
         "average": {
-          "home": "0.0",
+          "home": "1.0",
           "away": "2.0",
-          "total": "2.0"
+          "total": "1.5"
         },
         "minute": {
           "0-15": {
@@ -1580,15 +1521,15 @@
           },
           "46-60": {
             "total": 1,
-            "percentage": "50.00%"
+            "percentage": "33.33%"
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": 1,
-            "percentage": "50.00%"
+            "total": 2,
+            "percentage": "66.67%"
           },
           "91-105": {
             "total": null,
@@ -1601,24 +1542,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "1.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       }
@@ -1626,7 +1567,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 1,
+        "draws": 2,
         "loses": 0
       },
       "wins": {
@@ -1639,11 +1580,11 @@
       },
       "goals": {
         "for": {
-          "home": 0,
+          "home": 1,
           "away": 2
         },
         "against": {
-          "home": 0,
+          "home": 1,
           "away": 2
         }
       }
@@ -1673,6 +1614,10 @@
       {
         "formation": "3-5-2",
         "played": 1
+      },
+      {
+        "formation": "3-4-3",
+        "played": 1
       }
     ],
     "cards": {
@@ -1686,16 +1631,16 @@
           "percentage": null
         },
         "31-45": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "46-60": {
           "total": null,
           "percentage": null
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "76-90": {
           "total": null,
@@ -1746,5 +1691,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:05.494Z"
+  "lastUpdated": "2025-04-07T12:47:13.051Z"
 }

@@ -147,7 +147,7 @@
         {
           "year": 2024,
           "start": "2024-08-27",
-          "end": "2025-04-02",
+          "end": "2025-05-28",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1202783,
-          "date": "2025-04-05T16:45:00+00:00",
-          "venue": {
-            "id": 416,
-            "name": "Stadion Aldo Drosina",
-            "city": "Pula"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743871500
-        },
-        "league": {
-          "id": 210,
-          "name": "HNL",
-          "logo": "https://media.api-sports.io/football/leagues/210.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1016,
-            "name": "Istra 1961",
-            "logo": "https://media.api-sports.io/football/teams/1016.png",
-            "winner": null
-          },
-          "away": {
-            "id": 620,
-            "name": "Dinamo Zagreb",
-            "logo": "https://media.api-sports.io/football/teams/620.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1202791,
@@ -758,6 +699,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1202783,
+          "date": "2025-04-05T16:45:00+00:00",
+          "venue": {
+            "id": 416,
+            "name": "Stadion Aldo Drosina",
+            "city": "Pula"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743871500
+        },
+        "league": {
+          "id": 210,
+          "name": "HNL",
+          "logo": "https://media.api-sports.io/football/leagues/210.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1016,
+            "name": "Istra 1961",
+            "logo": "https://media.api-sports.io/football/teams/1016.png",
+            "winner": true
+          },
+          "away": {
+            "id": 620,
+            "name": "Dinamo Zagreb",
+            "logo": "https://media.api-sports.io/football/teams/620.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1202780,
@@ -1288,65 +1288,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1202746,
-          "date": "2025-02-02T14:00:00+00:00",
-          "venue": {
-            "id": 20730,
-            "name": "Opus Arena",
-            "city": "Osijek"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1738504800
-        },
-        "league": {
-          "id": 210,
-          "name": "HNL",
-          "logo": "https://media.api-sports.io/football/leagues/210.png"
-        },
-        "teams": {
-          "home": {
-            "id": 616,
-            "name": "NK Osijek",
-            "logo": "https://media.api-sports.io/football/teams/616.png",
-            "winner": true
-          },
-          "away": {
-            "id": 620,
-            "name": "Dinamo Zagreb",
-            "logo": "https://media.api-sports.io/football/teams/620.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1643,5 +1584,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:54.668Z"
+  "lastUpdated": "2025-04-07T12:48:01.709Z"
 }

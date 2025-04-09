@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -181,7 +181,8 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1214788,
@@ -192,10 +193,10 @@
             "city": "Kragujevac"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
           },
           "timestamp": 1743944400
         },
@@ -209,27 +210,27 @@
             "id": 2644,
             "name": "Radnicki 1923",
             "logo": "https://media.api-sports.io/football/teams/2644.png",
-            "winner": null
+            "winner": false
           },
           "away": {
             "id": 573,
             "name": "FK Partizan",
             "logo": "https://media.api-sports.io/football/teams/573.png",
-            "winner": null
+            "winner": true
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -240,9 +241,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1214786,
@@ -773,65 +772,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337980,
-          "date": "2025-01-24T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Limak Arcadia Atlantis Football Center",
-            "city": "Serik"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1737676800
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2644,
-            "name": "Radnicki 1923",
-            "logo": "https://media.api-sports.io/football/teams/2644.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2392,
-            "name": "Debreceni VSC",
-            "logo": "https://media.api-sports.io/football/teams/2392.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1128,5 +1068,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:51.640Z"
+  "lastUpdated": "2025-04-07T12:48:57.880Z"
 }

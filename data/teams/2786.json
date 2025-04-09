@@ -188,65 +188,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1219150,
-          "date": "2025-04-05T12:00:00+00:00",
-          "venue": {
-            "id": 1553,
-            "name": "Thammasat Stadium",
-            "city": "Pathum Thani"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743854400
-        },
-        "league": {
-          "id": 296,
-          "name": "Thai League 1",
-          "logo": "https://media.api-sports.io/football/leagues/296.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2770,
-            "name": "Bangkok United",
-            "logo": "https://media.api-sports.io/football/teams/2770.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2786,
-            "name": "Muangthong United",
-            "logo": "https://media.api-sports.io/football/teams/2786.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1347916,
           "date": "2025-04-09T11:00:00+00:00",
           "venue": {
@@ -307,7 +248,7 @@
       {
         "fixture": {
           "id": 1219164,
-          "date": "2025-04-13T12:00:00+00:00",
+          "date": "2025-04-13T11:00:00+00:00",
           "venue": {
             "id": 12709,
             "name": "Thunder Dome Stadium",
@@ -319,7 +260,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744545600
+          "timestamp": 1744542000
         },
         "league": {
           "id": 296,
@@ -483,6 +424,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1219150,
+          "date": "2025-04-05T12:00:00+00:00",
+          "venue": {
+            "id": 1553,
+            "name": "Thammasat Stadium",
+            "city": "Pathum Thani"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743854400
+        },
+        "league": {
+          "id": 296,
+          "name": "Thai League 1",
+          "logo": "https://media.api-sports.io/football/leagues/296.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2770,
+            "name": "Bangkok United",
+            "logo": "https://media.api-sports.io/football/teams/2770.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2786,
+            "name": "Muangthong United",
+            "logo": "https://media.api-sports.io/football/teams/2786.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1219215,
@@ -1013,65 +1013,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1219204,
-          "date": "2025-02-02T12:00:00+00:00",
-          "venue": {
-            "id": 1834,
-            "name": "Thung Talay Luang Stadium",
-            "city": "Sukhothai"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738497600
-        },
-        "league": {
-          "id": 296,
-          "name": "Thai League 1",
-          "logo": "https://media.api-sports.io/football/leagues/296.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2783,
-            "name": "Sukhothai FC",
-            "logo": "https://media.api-sports.io/football/teams/2783.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2786,
-            "name": "Muangthong United",
-            "logo": "https://media.api-sports.io/football/teams/2786.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1368,5 +1309,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:50.543Z"
+  "lastUpdated": "2025-04-07T12:51:54.121Z"
 }

@@ -114,65 +114,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223904,
-          "date": "2025-04-06T13:00:00+00:00",
-          "venue": {
-            "id": 943,
-            "name": "Stadio Olimpico Grande Torino",
-            "city": "Torino"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743944400
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 503,
-            "name": "Torino",
-            "logo": "https://media.api-sports.io/football/teams/503.png",
-            "winner": null
-          },
-          "away": {
-            "id": 504,
-            "name": "Verona",
-            "logo": "https://media.api-sports.io/football/teams/504.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223906,
           "date": "2025-04-13T16:00:00+00:00",
           "venue": {
@@ -586,6 +527,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1223904,
+          "date": "2025-04-06T13:00:00+00:00",
+          "venue": {
+            "id": 943,
+            "name": "Stadio Olimpico Grande Torino",
+            "city": "Torino"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743944400
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 503,
+            "name": "Torino",
+            "logo": "https://media.api-sports.io/football/teams/503.png",
+            "winner": null
+          },
+          "away": {
+            "id": 504,
+            "name": "Verona",
+            "logo": "https://media.api-sports.io/football/teams/504.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1223891,
@@ -1116,65 +1116,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1223799,
-          "date": "2025-01-19T11:30:00+00:00",
-          "venue": {
-            "id": 902,
-            "name": "Stadio Artemio Franchi",
-            "city": "Firenze"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737286200
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 502,
-            "name": "Fiorentina",
-            "logo": "https://media.api-sports.io/football/teams/502.png",
-            "winner": null
-          },
-          "away": {
-            "id": 503,
-            "name": "Torino",
-            "logo": "https://media.api-sports.io/football/teams/503.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1471,5 +1412,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:55.648Z"
+  "lastUpdated": "2025-04-07T12:46:02.921Z"
 }

@@ -185,65 +185,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1342437,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 1183,
-            "name": "Consto Arena",
-            "city": "Mjøndalen"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2152,
-            "name": "Mjondalen",
-            "logo": "https://media.api-sports.io/football/teams/2152.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2153,
-            "name": "Raufoss",
-            "logo": "https://media.api-sports.io/football/teams/2153.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1367206,
           "date": "2025-04-12T13:00:00+00:00",
           "venue": {
@@ -836,6 +777,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1342437,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 1183,
+            "name": "Consto Arena",
+            "city": "Mjøndalen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 104,
+          "name": "1. Division",
+          "logo": "https://media.api-sports.io/football/leagues/104.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2152,
+            "name": "Mjondalen",
+            "logo": "https://media.api-sports.io/football/teams/2152.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2153,
+            "name": "Raufoss",
+            "logo": "https://media.api-sports.io/football/teams/2153.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342426,
           "date": "2025-03-31T17:00:00+00:00",
           "venue": {
@@ -1364,65 +1364,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1316633,
-          "date": "2024-11-24T17:00:00+00:00",
-          "venue": {
-            "id": 1183,
-            "name": "Consto Arena",
-            "city": "Mjøndalen"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1732467600
-        },
-        "league": {
-          "id": 1054,
-          "name": "2. Division - Play-offs",
-          "logo": "https://media.api-sports.io/football/leagues/1054.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2152,
-            "name": "Mjondalen",
-            "logo": "https://media.api-sports.io/football/teams/2152.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2151,
-            "name": "jerv",
-            "logo": "https://media.api-sports.io/football/teams/2151.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1719,5 +1660,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:22.447Z"
+  "lastUpdated": "2025-04-07T12:45:29.783Z"
 }

@@ -126,7 +126,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1358586,
-          "date": "2025-04-06T12:00:00+00:00",
-          "venue": {
-            "id": 7811,
-            "name": "Stadion Central&apos;nyj im. Uktama Mamatova",
-            "city": "Kolkhozabad"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743940800
-        },
-        "league": {
-          "id": 571,
-          "name": "Vysshaya Liga",
-          "logo": "https://media.api-sports.io/football/leagues/571.png"
-        },
-        "teams": {
-          "home": {
-            "id": 12269,
-            "name": "Panjsher",
-            "logo": "https://media.api-sports.io/football/teams/12269.png",
-            "winner": null
-          },
-          "away": {
-            "id": 8012,
-            "name": "Istiqlol",
-            "logo": "https://media.api-sports.io/football/teams/8012.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1358589,
@@ -1276,6 +1217,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1358586,
+          "date": "2025-04-06T12:00:00+00:00",
+          "venue": {
+            "id": 21416,
+            "name": "Republican Central Stadium",
+            "city": "Dushanbe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743940800
+        },
+        "league": {
+          "id": 571,
+          "name": "Vysshaya Liga",
+          "logo": "https://media.api-sports.io/football/leagues/571.png"
+        },
+        "teams": {
+          "home": {
+            "id": 12269,
+            "name": "Panjsher",
+            "logo": "https://media.api-sports.io/football/teams/12269.png",
+            "winner": false
+          },
+          "away": {
+            "id": 8012,
+            "name": "Istiqlol",
+            "logo": "https://media.api-sports.io/football/teams/8012.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1358580,
           "date": "2025-03-29T13:00:00+00:00",
           "venue": {
@@ -1804,65 +1804,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1191977,
-          "date": "2024-11-14T09:30:00+00:00",
-          "venue": {
-            "id": 21416,
-            "name": "Republican Central Stadium",
-            "city": "Dushanbe"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1731576600
-        },
-        "league": {
-          "id": 571,
-          "name": "Vysshaya Liga",
-          "logo": "https://media.api-sports.io/football/leagues/571.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8041,
-            "name": "Khosilot Farkhor",
-            "logo": "https://media.api-sports.io/football/teams/8041.png",
-            "winner": null
-          },
-          "away": {
-            "id": 8012,
-            "name": "Istiqlol",
-            "logo": "https://media.api-sports.io/football/teams/8012.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1880,17 +1821,17 @@
       "name": "Istiqlol",
       "logo": "https://media.api-sports.io/football/teams/8012.png"
     },
-    "form": "WWD",
+    "form": "WWDW",
     "fixtures": {
       "played": {
         "home": 2,
-        "away": 1,
-        "total": 3
+        "away": 2,
+        "total": 4
       },
       "wins": {
         "home": 1,
-        "away": 1,
-        "total": 2
+        "away": 2,
+        "total": 3
       },
       "draws": {
         "home": 1,
@@ -1907,38 +1848,38 @@
       "for": {
         "total": {
           "home": 2,
-          "away": 2,
-          "total": 4
+          "away": 5,
+          "total": 7
         },
         "average": {
           "home": "1.0",
-          "away": "2.0",
-          "total": "1.3"
+          "away": "2.5",
+          "total": "1.8"
         },
         "minute": {
           "0-15": {
             "total": 2,
-            "percentage": "100.00%"
+            "percentage": "40.00%"
           },
           "16-30": {
             "total": null,
             "percentage": null
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "61-75": {
             "total": null,
             "percentage": null
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "91-105": {
             "total": null,
@@ -1951,24 +1892,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 3,
+            "over": 4,
             "under": 0
           },
           "1.5": {
-            "over": 1,
+            "over": 2,
             "under": 2
           },
           "2.5": {
-            "over": 0,
+            "over": 1,
             "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           }
         }
       },
@@ -1980,8 +1921,8 @@
         },
         "average": {
           "home": "0.5",
-          "away": "1.0",
-          "total": "0.7"
+          "away": "0.5",
+          "total": "0.5"
         },
         "minute": {
           "0-15": {
@@ -2020,23 +1961,23 @@
         "under_over": {
           "0.5": {
             "over": 2,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "2.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "3.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           },
           "4.5": {
             "over": 0,
-            "under": 3
+            "under": 4
           }
         }
       }
@@ -2044,12 +1985,12 @@
     "biggest": {
       "streak": {
         "wins": 2,
-        "draws": 0,
+        "draws": 1,
         "loses": 0
       },
       "wins": {
         "home": "1-0",
-        "away": "1-2"
+        "away": "0-3"
       },
       "loses": {
         "home": null,
@@ -2058,7 +1999,7 @@
       "goals": {
         "for": {
           "home": 1,
-          "away": 2
+          "away": 3
         },
         "against": {
           "home": 1,
@@ -2068,8 +2009,8 @@
     },
     "clean_sheet": {
       "home": 1,
-      "away": 0,
-      "total": 1
+      "away": 1,
+      "total": 2
     },
     "failed_to_score": {
       "home": 0,
@@ -2129,8 +2070,8 @@
           "percentage": null
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "100.00%"
         },
         "31-45": {
           "total": null,
@@ -2159,5 +2100,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:58.210Z"
+  "lastUpdated": "2025-04-07T12:52:02.310Z"
 }

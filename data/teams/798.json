@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-10-09",
-          "end": "2025-04-02",
+          "end": "2025-04-25",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -147,65 +147,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1208761,
-          "date": "2025-04-05T16:30:00+00:00",
-          "venue": {
-            "id": 19940,
-            "name": "Estadi Mallorca Son Moix",
-            "city": "Palma de Mallorca"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743870600
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 798,
-            "name": "Mallorca",
-            "logo": "https://media.api-sports.io/football/teams/798.png",
-            "winner": null
-          },
-          "away": {
-            "id": 538,
-            "name": "Celta Vigo",
-            "logo": "https://media.api-sports.io/football/teams/538.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1208771,
@@ -323,9 +264,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1208784,
+          "date": "2025-04-22T19:30:00+00:00",
+          "venue": {
+            "id": 19939,
+            "name": "Estadi Olímpic Lluís Companys",
+            "city": "Barcelona"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745350200
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 529,
+            "name": "Barcelona",
+            "logo": "https://media.api-sports.io/football/teams/529.png",
+            "winner": null
+          },
+          "away": {
+            "id": 798,
+            "name": "Mallorca",
+            "logo": "https://media.api-sports.io/football/teams/798.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208761,
+          "date": "2025-04-05T16:30:00+00:00",
+          "venue": {
+            "id": 19940,
+            "name": "Estadi Mallorca Son Moix",
+            "city": "Palma de Mallorca"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743870600
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 798,
+            "name": "Mallorca",
+            "logo": "https://media.api-sports.io/football/teams/798.png",
+            "winner": false
+          },
+          "away": {
+            "id": 538,
+            "name": "Celta Vigo",
+            "logo": "https://media.api-sports.io/football/teams/538.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208753,
@@ -856,65 +915,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208670,
-          "date": "2025-01-20T20:00:00+00:00",
-          "venue": {
-            "id": 1498,
-            "name": "Estadio de la Cerámica",
-            "city": "Villarreal"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1737403200
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 533,
-            "name": "Villarreal",
-            "logo": "https://media.api-sports.io/football/teams/533.png",
-            "winner": true
-          },
-          "away": {
-            "id": 798,
-            "name": "Mallorca",
-            "logo": "https://media.api-sports.io/football/teams/798.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 4,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1211,5 +1211,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:50.428Z"
+  "lastUpdated": "2025-04-07T12:45:57.883Z"
 }

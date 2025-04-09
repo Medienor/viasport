@@ -147,65 +147,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1340739,
-          "date": "2025-04-05T07:30:00+00:00",
-          "venue": {
-            "id": 1008,
-            "name": "Daejeon World Cup Stadium",
-            "city": "Daejeon"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743838200
-        },
-        "league": {
-          "id": 292,
-          "name": "K League 1",
-          "logo": "https://media.api-sports.io/football/leagues/292.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2750,
-            "name": "Daejeon Citizen",
-            "logo": "https://media.api-sports.io/football/teams/2750.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2762,
-            "name": "Jeonbuk Motors",
-            "logo": "https://media.api-sports.io/football/teams/2762.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1340747,
           "date": "2025-04-13T07:30:00+00:00",
           "venue": {
@@ -1324,9 +1265,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1340853,
+          "date": "2025-08-16T10:00:00+00:00",
+          "venue": {
+            "id": 1015,
+            "name": "Jeonju World Cup Stadium",
+            "city": "Jeonju"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1755338400
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2747,
+            "name": "Daegu FC",
+            "logo": "https://media.api-sports.io/football/teams/2747.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1340739,
+          "date": "2025-04-05T07:30:00+00:00",
+          "venue": {
+            "id": 1008,
+            "name": "Daejeon World Cup Stadium",
+            "city": "Daejeon"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743838200
+        },
+        "league": {
+          "id": 292,
+          "name": "K League 1",
+          "logo": "https://media.api-sports.io/football/leagues/292.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2750,
+            "name": "Daejeon Citizen",
+            "logo": "https://media.api-sports.io/football/teams/2750.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2762,
+            "name": "Jeonbuk Motors",
+            "logo": "https://media.api-sports.io/football/teams/2762.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1340736,
@@ -1857,65 +1916,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1322666,
-          "date": "2025-02-13T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "BG Stadium",
-            "city": "Pathum Thani"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739448000
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2789,
-            "name": "Port FC",
-            "logo": "https://media.api-sports.io/football/teams/2789.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2762,
-            "name": "Jeonbuk Motors",
-            "logo": "https://media.api-sports.io/football/teams/2762.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1933,17 +1933,17 @@
       "name": "Jeonbuk Motors",
       "logo": "https://media.api-sports.io/football/teams/2762.png"
     },
-    "form": "WDLLDW",
+    "form": "WDLLDWW",
     "fixtures": {
       "played": {
         "home": 4,
-        "away": 2,
-        "total": 6
+        "away": 3,
+        "total": 7
       },
       "wins": {
         "home": 1,
-        "away": 1,
-        "total": 2
+        "away": 2,
+        "total": 3
       },
       "draws": {
         "home": 2,
@@ -1960,13 +1960,13 @@
       "for": {
         "total": {
           "home": 6,
-          "away": 1,
-          "total": 7
+          "away": 3,
+          "total": 9
         },
         "average": {
           "home": "1.5",
-          "away": "0.5",
-          "total": "1.2"
+          "away": "1.0",
+          "total": "1.3"
         },
         "minute": {
           "0-15": {
@@ -1975,23 +1975,23 @@
           },
           "16-30": {
             "total": 3,
-            "percentage": "42.86%"
+            "percentage": "33.33%"
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 2,
-            "percentage": "28.57%"
+            "total": 3,
+            "percentage": "33.33%"
           },
           "61-75": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "11.11%"
           },
           "76-90": {
-            "total": 1,
-            "percentage": "14.29%"
+            "total": 2,
+            "percentage": "22.22%"
           },
           "91-105": {
             "total": null,
@@ -2004,24 +2004,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 4,
+            "over": 5,
             "under": 2
           },
           "1.5": {
-            "over": 3,
+            "over": 4,
             "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       },
@@ -2033,8 +2033,8 @@
         },
         "average": {
           "home": "1.5",
-          "away": "0.5",
-          "total": "1.2"
+          "away": "0.3",
+          "total": "1.0"
         },
         "minute": {
           "0-15": {
@@ -2073,23 +2073,23 @@
         "under_over": {
           "0.5": {
             "over": 5,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 2,
-            "under": 4
+            "under": 5
           },
           "2.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "3.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           },
           "4.5": {
             "over": 0,
-            "under": 6
+            "under": 7
           }
         }
       }
@@ -2102,7 +2102,7 @@
       },
       "wins": {
         "home": "2-1",
-        "away": "0-1"
+        "away": "0-2"
       },
       "loses": {
         "home": "0-1",
@@ -2111,7 +2111,7 @@
       "goals": {
         "for": {
           "home": 2,
-          "away": 1
+          "away": 2
         },
         "against": {
           "home": 2,
@@ -2121,8 +2121,8 @@
     },
     "clean_sheet": {
       "home": 0,
-      "away": 1,
-      "total": 1
+      "away": 2,
+      "total": 2
     },
     "failed_to_score": {
       "home": 1,
@@ -2148,37 +2148,41 @@
       {
         "formation": "4-2-3-1",
         "played": 1
+      },
+      {
+        "formation": "3-4-3",
+        "played": 1
       }
     ],
     "cards": {
       "yellow": {
         "0-15": {
           "total": 1,
-          "percentage": "8.33%"
+          "percentage": "7.14%"
         },
         "16-30": {
-          "total": 1,
-          "percentage": "8.33%"
+          "total": 2,
+          "percentage": "14.29%"
         },
         "31-45": {
           "total": 1,
-          "percentage": "8.33%"
+          "percentage": "7.14%"
         },
         "46-60": {
-          "total": 3,
-          "percentage": "25.00%"
+          "total": 4,
+          "percentage": "28.57%"
         },
         "61-75": {
           "total": 1,
-          "percentage": "8.33%"
+          "percentage": "7.14%"
         },
         "76-90": {
           "total": 3,
-          "percentage": "25.00%"
+          "percentage": "21.43%"
         },
         "91-105": {
           "total": 2,
-          "percentage": "16.67%"
+          "percentage": "14.29%"
         },
         "106-120": {
           "total": null,
@@ -2221,5 +2225,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:50.388Z"
+  "lastUpdated": "2025-04-07T12:51:54.176Z"
 }

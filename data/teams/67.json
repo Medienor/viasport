@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216311,
-          "date": "2025-04-04T19:00:00+00:00",
-          "venue": {
-            "id": 500,
-            "name": "Ewood Park",
-            "city": "Blackburn, Lancashire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743793200
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 67,
-            "name": "Blackburn",
-            "logo": "https://media.api-sports.io/football/teams/67.png",
-            "winner": null
-          },
-          "away": {
-            "id": 70,
-            "name": "Middlesbrough",
-            "logo": "https://media.api-sports.io/football/teams/70.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216323,
           "date": "2025-04-08T18:45:00+00:00",
           "venue": {
@@ -566,6 +507,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216311,
+          "date": "2025-04-04T19:00:00+00:00",
+          "venue": {
+            "id": 500,
+            "name": "Ewood Park",
+            "city": "Blackburn, Lancashire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743793200
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 67,
+            "name": "Blackburn",
+            "logo": "https://media.api-sports.io/football/teams/67.png",
+            "winner": false
+          },
+          "away": {
+            "id": 70,
+            "name": "Middlesbrough",
+            "logo": "https://media.api-sports.io/football/teams/70.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216306,
@@ -1096,65 +1096,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216210,
-          "date": "2025-02-04T19:45:00+00:00",
-          "venue": {
-            "id": 20414,
-            "name": "MATRADE Loftus Road",
-            "city": "London"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738698300
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 72,
-            "name": "QPR",
-            "logo": "https://media.api-sports.io/football/teams/72.png",
-            "winner": true
-          },
-          "away": {
-            "id": 67,
-            "name": "Blackburn",
-            "logo": "https://media.api-sports.io/football/teams/67.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1451,5 +1392,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:10.730Z"
+  "lastUpdated": "2025-04-07T12:47:18.226Z"
 }

@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -184,7 +184,7 @@
         {
           "year": 2024,
           "start": "2024-11-15",
-          "end": "2025-04-02",
+          "end": "2025-05-23",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1213994,
-          "date": "2025-04-05T19:05:00+00:00",
-          "venue": {
-            "id": 666,
-            "name": "Groupama Stadium",
-            "city": "Décines-Charpieu"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743879900
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 80,
-            "name": "Lyon",
-            "logo": "https://media.api-sports.io/football/teams/80.png",
-            "winner": null
-          },
-          "away": {
-            "id": 79,
-            "name": "Lille",
-            "logo": "https://media.api-sports.io/football/teams/79.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361282,
@@ -581,6 +522,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213994,
+          "date": "2025-04-05T19:05:00+00:00",
+          "venue": {
+            "id": 666,
+            "name": "Groupama Stadium",
+            "city": "Décines-Charpieu"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743879900
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 80,
+            "name": "Lyon",
+            "logo": "https://media.api-sports.io/football/teams/80.png",
+            "winner": true
+          },
+          "away": {
+            "id": 79,
+            "name": "Lille",
+            "logo": "https://media.api-sports.io/football/teams/79.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213984,
@@ -1111,65 +1111,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213918,
-          "date": "2025-02-02T19:45:00+00:00",
-          "venue": {
-            "id": 667,
-            "name": "Orange Vélodrome",
-            "city": "Marseille"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738525500
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 81,
-            "name": "Marseille",
-            "logo": "https://media.api-sports.io/football/teams/81.png",
-            "winner": true
-          },
-          "away": {
-            "id": 80,
-            "name": "Lyon",
-            "logo": "https://media.api-sports.io/football/teams/80.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1466,5 +1407,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:11.338Z"
+  "lastUpdated": "2025-04-07T12:46:18.862Z"
 }

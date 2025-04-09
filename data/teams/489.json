@@ -227,65 +227,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223900,
-          "date": "2025-04-05T18:45:00+00:00",
-          "venue": {
-            "id": 907,
-            "name": "Stadio Giuseppe Meazza",
-            "city": "Milano"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743878700
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 489,
-            "name": "AC Milan",
-            "logo": "https://media.api-sports.io/football/teams/489.png",
-            "winner": null
-          },
-          "away": {
-            "id": 502,
-            "name": "Fiorentina",
-            "logo": "https://media.api-sports.io/football/teams/502.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223913,
           "date": "2025-04-11T18:45:00+00:00",
           "venue": {
@@ -760,6 +701,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1223900,
+          "date": "2025-04-05T18:45:00+00:00",
+          "venue": {
+            "id": 907,
+            "name": "Stadio Giuseppe Meazza",
+            "city": "Milano"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743878700
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 489,
+            "name": "AC Milan",
+            "logo": "https://media.api-sports.io/football/teams/489.png",
+            "winner": null
+          },
+          "away": {
+            "id": 502,
+            "name": "Fiorentina",
+            "logo": "https://media.api-sports.io/football/teams/502.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1355085,
           "date": "2025-04-02T19:00:00+00:00",
           "venue": {
@@ -941,7 +941,7 @@
           "date": "2025-03-08T17:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Ettore Giardiniero - Via del Mare",
+            "name": "Via del Mare",
             "city": "Lecce"
           },
           "status": {
@@ -1288,65 +1288,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345747,
-          "date": "2025-02-12T20:00:00+00:00",
-          "venue": {
-            "id": 1128,
-            "name": "Stadion Feijenoord",
-            "city": "Rotterdam"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739390400
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 209,
-            "name": "Feyenoord",
-            "logo": "https://media.api-sports.io/football/teams/209.png",
-            "winner": true
-          },
-          "away": {
-            "id": 489,
-            "name": "AC Milan",
-            "logo": "https://media.api-sports.io/football/teams/489.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1643,5 +1584,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:50.409Z"
+  "lastUpdated": "2025-04-07T12:45:57.916Z"
 }

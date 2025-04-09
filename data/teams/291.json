@@ -115,65 +115,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1324040,
-          "date": "2025-04-06T06:00:00+00:00",
-          "venue": {
-            "id": 20557,
-            "name": "Edion Peace Wing Hiroshima",
-            "city": "Hiroshima"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743919200
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 282,
-            "name": "Sanfrecce Hiroshima",
-            "logo": "https://media.api-sports.io/football/teams/282.png",
-            "winner": null
-          },
-          "away": {
-            "id": 291,
-            "name": "Cerezo Osaka",
-            "logo": "https://media.api-sports.io/football/teams/291.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1324049,
           "date": "2025-04-12T06:00:00+00:00",
           "venue": {
@@ -1297,6 +1238,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1324040,
+          "date": "2025-04-06T06:00:00+00:00",
+          "venue": {
+            "id": 20557,
+            "name": "Edion Peace Wing Hiroshima",
+            "city": "Hiroshima"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743919200
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 282,
+            "name": "Sanfrecce Hiroshima",
+            "logo": "https://media.api-sports.io/football/teams/282.png",
+            "winner": true
+          },
+          "away": {
+            "id": 291,
+            "name": "Cerezo Osaka",
+            "logo": "https://media.api-sports.io/football/teams/291.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1324030,
           "date": "2025-04-02T10:00:00+00:00",
           "venue": {
@@ -1825,65 +1825,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1166506,
-          "date": "2024-12-08T05:00:00+00:00",
-          "venue": {
-            "id": 960,
-            "name": "Ajinomoto Stadium",
-            "city": "Chōfu"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1733634000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 292,
-            "name": "FC Tokyo",
-            "logo": "https://media.api-sports.io/football/teams/292.png",
-            "winner": true
-          },
-          "away": {
-            "id": 291,
-            "name": "Cerezo Osaka",
-            "logo": "https://media.api-sports.io/football/teams/291.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1901,12 +1842,12 @@
       "name": "Cerezo Osaka",
       "logo": "https://media.api-sports.io/football/teams/291.png"
     },
-    "form": "WLLDDLDW",
+    "form": "WLLDDLDWL",
     "fixtures": {
       "played": {
         "home": 4,
-        "away": 4,
-        "total": 8
+        "away": 5,
+        "total": 9
       },
       "wins": {
         "home": 1,
@@ -1920,30 +1861,30 @@
       },
       "loses": {
         "home": 1,
-        "away": 2,
-        "total": 3
+        "away": 3,
+        "total": 4
       }
     },
     "goals": {
       "for": {
         "total": {
           "home": 5,
-          "away": 8,
-          "total": 13
+          "away": 9,
+          "total": 14
         },
         "average": {
           "home": "1.3",
-          "away": "2.0",
+          "away": "1.8",
           "total": "1.6"
         },
         "minute": {
           "0-15": {
-            "total": 4,
-            "percentage": "30.77%"
+            "total": 5,
+            "percentage": "35.71%"
           },
           "16-30": {
             "total": 1,
-            "percentage": "7.69%"
+            "percentage": "7.14%"
           },
           "31-45": {
             "total": null,
@@ -1951,11 +1892,11 @@
           },
           "46-60": {
             "total": 5,
-            "percentage": "38.46%"
+            "percentage": "35.71%"
           },
           "61-75": {
             "total": 1,
-            "percentage": "7.69%"
+            "percentage": "7.14%"
           },
           "76-90": {
             "total": null,
@@ -1963,75 +1904,7 @@
           },
           "91-105": {
             "total": 2,
-            "percentage": "15.38%"
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 7,
-            "under": 1
-          },
-          "1.5": {
-            "over": 3,
-            "under": 5
-          },
-          "2.5": {
-            "over": 1,
-            "under": 7
-          },
-          "3.5": {
-            "over": 1,
-            "under": 7
-          },
-          "4.5": {
-            "over": 1,
-            "under": 7
-          }
-        }
-      },
-      "against": {
-        "total": {
-          "home": 5,
-          "away": 8,
-          "total": 13
-        },
-        "average": {
-          "home": "1.3",
-          "away": "2.0",
-          "total": "1.6"
-        },
-        "minute": {
-          "0-15": {
-            "total": null,
-            "percentage": null
-          },
-          "16-30": {
-            "total": 2,
-            "percentage": "15.38%"
-          },
-          "31-45": {
-            "total": 3,
-            "percentage": "23.08%"
-          },
-          "46-60": {
-            "total": 3,
-            "percentage": "23.08%"
-          },
-          "61-75": {
-            "total": 3,
-            "percentage": "23.08%"
-          },
-          "76-90": {
-            "total": 2,
-            "percentage": "15.38%"
-          },
-          "91-105": {
-            "total": null,
-            "percentage": null
+            "percentage": "14.29%"
           },
           "106-120": {
             "total": null,
@@ -2041,23 +1914,91 @@
         "under_over": {
           "0.5": {
             "over": 8,
+            "under": 1
+          },
+          "1.5": {
+            "over": 3,
+            "under": 6
+          },
+          "2.5": {
+            "over": 1,
+            "under": 8
+          },
+          "3.5": {
+            "over": 1,
+            "under": 8
+          },
+          "4.5": {
+            "over": 1,
+            "under": 8
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 5,
+          "away": 10,
+          "total": 15
+        },
+        "average": {
+          "home": "1.3",
+          "away": "2.0",
+          "total": "1.7"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": 3,
+            "percentage": "21.43%"
+          },
+          "31-45": {
+            "total": 3,
+            "percentage": "21.43%"
+          },
+          "46-60": {
+            "total": 3,
+            "percentage": "21.43%"
+          },
+          "61-75": {
+            "total": 3,
+            "percentage": "21.43%"
+          },
+          "76-90": {
+            "total": 2,
+            "percentage": "14.29%"
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 9,
             "under": 0
           },
           "1.5": {
-            "over": 5,
+            "over": 6,
             "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 8
+            "under": 9
           },
           "3.5": {
             "over": 0,
-            "under": 8
+            "under": 9
           },
           "4.5": {
             "over": 0,
-            "under": 8
+            "under": 9
           }
         }
       }
@@ -2115,7 +2056,7 @@
       },
       {
         "formation": "4-3-3",
-        "played": 3
+        "played": 4
       }
     ],
     "cards": {
@@ -2125,8 +2066,8 @@
           "percentage": null
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "11.11%"
         },
         "31-45": {
           "total": null,
@@ -2134,19 +2075,19 @@
         },
         "46-60": {
           "total": 1,
-          "percentage": "12.50%"
+          "percentage": "11.11%"
         },
         "61-75": {
           "total": 2,
-          "percentage": "25.00%"
+          "percentage": "22.22%"
         },
         "76-90": {
           "total": 4,
-          "percentage": "50.00%"
+          "percentage": "44.44%"
         },
         "91-105": {
           "total": 1,
-          "percentage": "12.50%"
+          "percentage": "11.11%"
         },
         "106-120": {
           "total": null,
@@ -2189,5 +2130,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:23:34.483Z"
+  "lastUpdated": "2025-04-07T12:52:38.024Z"
 }

@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -185,65 +185,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220737,
-          "date": "2025-04-06T13:00:00+00:00",
-          "venue": {
-            "id": 18694,
-            "name": "Nogometni stadion Ajdovščina",
-            "city": "Ajdovščina"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743944400
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14007,
-            "name": "Primorje",
-            "logo": "https://media.api-sports.io/football/teams/14007.png",
-            "winner": null
-          },
-          "away": {
-            "id": 677,
-            "name": "Olimpija Ljubljana",
-            "logo": "https://media.api-sports.io/football/teams/677.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220739,
           "date": "2025-04-09T15:00:00+00:00",
           "venue": {
@@ -363,7 +304,7 @@
       {
         "fixture": {
           "id": 1220750,
-          "date": "2025-04-18T22:00:00+00:00",
+          "date": "2025-04-19T18:15:00+00:00",
           "venue": {
             "id": 1442,
             "name": "Stadion Stožice",
@@ -375,7 +316,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745013600
+          "timestamp": 1745086500
         },
         "league": {
           "id": 373,
@@ -421,6 +362,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220737,
+          "date": "2025-04-06T13:00:00+00:00",
+          "venue": {
+            "id": 18694,
+            "name": "Nogometni stadion Ajdovščina",
+            "city": "Ajdovščina"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743944400
+        },
+        "league": {
+          "id": 373,
+          "name": "1. SNL",
+          "logo": "https://media.api-sports.io/football/leagues/373.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14007,
+            "name": "Primorje",
+            "logo": "https://media.api-sports.io/football/teams/14007.png",
+            "winner": false
+          },
+          "away": {
+            "id": 677,
+            "name": "Olimpija Ljubljana",
+            "logo": "https://media.api-sports.io/football/teams/677.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360330,
@@ -951,65 +951,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220701,
-          "date": "2025-02-16T16:30:00+00:00",
-          "venue": {
-            "id": 1442,
-            "name": "Stadion Stožice",
-            "city": "Ljubljana"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 2
-          },
-          "timestamp": 1739723400
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 677,
-            "name": "Olimpija Ljubljana",
-            "logo": "https://media.api-sports.io/football/teams/677.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4376,
-            "name": "Nafta",
-            "logo": "https://media.api-sports.io/football/teams/4376.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1306,5 +1247,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:38.982Z"
+  "lastUpdated": "2025-04-07T12:48:45.036Z"
 }

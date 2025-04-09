@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -258,65 +258,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1362829,
-          "date": "2025-04-06T17:45:00+00:00",
-          "venue": {
-            "id": 202,
-            "name": "Stadion Bijeli Brijeg",
-            "city": "Mostar"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743961500
-        },
-        "league": {
-          "id": 315,
-          "name": "Premijer Liga",
-          "logo": "https://media.api-sports.io/football/leagues/315.png"
-        },
-        "teams": {
-          "home": {
-            "id": 588,
-            "name": "Zrinjski",
-            "logo": "https://media.api-sports.io/football/teams/588.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3364,
-            "name": "Borac Banja Luka",
-            "logo": "https://media.api-sports.io/football/teams/3364.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1362839,
@@ -911,6 +852,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362829,
+          "date": "2025-04-06T17:45:00+00:00",
+          "venue": {
+            "id": 202,
+            "name": "Stadion Bijeli Brijeg",
+            "city": "Mostar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743961500
+        },
+        "league": {
+          "id": 315,
+          "name": "Premijer Liga",
+          "logo": "https://media.api-sports.io/football/leagues/315.png"
+        },
+        "teams": {
+          "home": {
+            "id": 588,
+            "name": "Zrinjski",
+            "logo": "https://media.api-sports.io/football/teams/588.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3364,
+            "name": "Borac Banja Luka",
+            "logo": "https://media.api-sports.io/football/teams/3364.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1366096,
           "date": "2025-04-02T18:30:00+00:00",
           "venue": {
@@ -1439,65 +1439,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1226584,
-          "date": "2025-02-23T18:45:00+00:00",
-          "venue": {
-            "id": 2187,
-            "name": "Gradski Stadion",
-            "city": "Banja Luka"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1740336300
-        },
-        "league": {
-          "id": 315,
-          "name": "Premijer Liga",
-          "logo": "https://media.api-sports.io/football/leagues/315.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3364,
-            "name": "Borac Banja Luka",
-            "logo": "https://media.api-sports.io/football/teams/3364.png",
-            "winner": true
-          },
-          "away": {
-            "id": 14146,
-            "name": "Posušje",
-            "logo": "https://media.api-sports.io/football/teams/14146.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1794,5 +1735,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:04.954Z"
+  "lastUpdated": "2025-04-07T12:48:11.889Z"
 }

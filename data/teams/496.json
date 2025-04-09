@@ -265,65 +265,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223903,
-          "date": "2025-04-06T18:45:00+00:00",
-          "venue": {
-            "id": 910,
-            "name": "Stadio Olimpico",
-            "city": "Roma"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743965100
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 497,
-            "name": "AS Roma",
-            "logo": "https://media.api-sports.io/football/teams/497.png",
-            "winner": null
-          },
-          "away": {
-            "id": 496,
-            "name": "Juventus",
-            "logo": "https://media.api-sports.io/football/teams/496.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223910,
           "date": "2025-04-12T18:45:00+00:00",
           "venue": {
@@ -916,6 +857,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1223903,
+          "date": "2025-04-06T18:45:00+00:00",
+          "venue": {
+            "id": 910,
+            "name": "Stadio Olimpico",
+            "city": "Roma"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743965100
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 497,
+            "name": "AS Roma",
+            "logo": "https://media.api-sports.io/football/teams/497.png",
+            "winner": null
+          },
+          "away": {
+            "id": 496,
+            "name": "Juventus",
+            "logo": "https://media.api-sports.io/football/teams/496.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1223890,
           "date": "2025-03-29T17:00:00+00:00",
           "venue": {
@@ -1444,65 +1444,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299120,
-          "date": "2025-01-29T20:00:00+00:00",
-          "venue": {
-            "id": 909,
-            "name": "Allianz Stadium",
-            "city": "Torino"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738180800
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 496,
-            "name": "Juventus",
-            "logo": "https://media.api-sports.io/football/teams/496.png",
-            "winner": false
-          },
-          "away": {
-            "id": 211,
-            "name": "Benfica",
-            "logo": "https://media.api-sports.io/football/teams/211.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1799,5 +1740,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:52.899Z"
+  "lastUpdated": "2025-04-07T12:46:00.393Z"
 }

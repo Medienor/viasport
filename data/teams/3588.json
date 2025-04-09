@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-09-10",
-          "end": "2025-04-01",
+          "end": "2025-04-21",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -113,65 +113,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1238118,
-          "date": "2025-04-06T13:00:00+00:00",
-          "venue": {
-            "id": 8392,
-            "name": "Mersin Stadyumu",
-            "city": "Mersin"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743944400
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3575,
-            "name": "Hatayspor",
-            "logo": "https://media.api-sports.io/football/teams/3575.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3588,
-            "name": "Eyüpspor",
-            "logo": "https://media.api-sports.io/football/teams/3588.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1238125,
@@ -292,6 +233,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238118,
+          "date": "2025-04-06T13:00:00+00:00",
+          "venue": {
+            "id": 8392,
+            "name": "Mersin Stadyumu",
+            "city": "Mersin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743944400
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3575,
+            "name": "Hatayspor",
+            "logo": "https://media.api-sports.io/football/teams/3575.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3588,
+            "name": "Eyüpspor",
+            "logo": "https://media.api-sports.io/football/teams/3588.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238108,
@@ -822,65 +822,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1238041,
-          "date": "2025-01-31T17:00:00+00:00",
-          "venue": {
-            "id": 1585,
-            "name": "Recep Tayyip Erdoğan Stadyumu",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 11
-          },
-          "timestamp": 1738342800
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3588,
-            "name": "Eyüpspor",
-            "logo": "https://media.api-sports.io/football/teams/3588.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1002,
-            "name": "Sivasspor",
-            "logo": "https://media.api-sports.io/football/teams/1002.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1177,5 +1118,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:29.171Z"
+  "lastUpdated": "2025-04-07T12:46:36.711Z"
 }

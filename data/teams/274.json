@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -151,7 +151,7 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
+              "events": true,
               "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -183,65 +183,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1332711,
-          "date": "2025-04-06T14:00:00+00:00",
-          "venue": {
-            "id": 20547,
-            "name": "N1-völlurinn Hlíðarenda",
-            "city": "Reykjavík"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743948000
-        },
-        "league": {
-          "id": 164,
-          "name": "Úrvalsdeild",
-          "logo": "https://media.api-sports.io/football/leagues/164.png"
-        },
-        "teams": {
-          "home": {
-            "id": 274,
-            "name": "Valur Reykjavik",
-            "logo": "https://media.api-sports.io/football/teams/274.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4165,
-            "name": "Vestri",
-            "logo": "https://media.api-sports.io/football/teams/4165.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1332721,
@@ -1362,9 +1303,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1332834,
+          "date": "2025-08-31T19:15:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lambhagavöllurinn",
+            "city": "Reykjavík"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756667700
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2117,
+            "name": "Fram Reykjavik",
+            "logo": "https://media.api-sports.io/football/teams/2117.png",
+            "winner": null
+          },
+          "away": {
+            "id": 274,
+            "name": "Valur Reykjavik",
+            "logo": "https://media.api-sports.io/football/teams/274.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1332711,
+          "date": "2025-04-06T14:00:00+00:00",
+          "venue": {
+            "id": 20547,
+            "name": "N1-völlurinn Hlíðarenda",
+            "city": "Reykjavík"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743948000
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 274,
+            "name": "Valur Reykjavik",
+            "logo": "https://media.api-sports.io/football/teams/274.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4165,
+            "name": "Vestri",
+            "logo": "https://media.api-sports.io/football/teams/4165.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1364214,
@@ -1895,65 +1954,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1320113,
-          "date": "2025-01-11T12:00:00+00:00",
-          "venue": {
-            "id": 20547,
-            "name": "N1-völlurinn Hlíðarenda",
-            "city": "Reykjavík"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1736596800
-        },
-        "league": {
-          "id": 814,
-          "name": "Reykjavik Cup",
-          "logo": "https://media.api-sports.io/football/leagues/814.png"
-        },
-        "teams": {
-          "home": {
-            "id": 274,
-            "name": "Valur Reykjavik",
-            "logo": "https://media.api-sports.io/football/teams/274.png",
-            "winner": true
-          },
-          "away": {
-            "id": 829,
-            "name": "Throttur Reykjavik",
-            "logo": "https://media.api-sports.io/football/teams/829.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1971,12 +1971,12 @@
       "name": "Valur Reykjavik",
       "logo": "https://media.api-sports.io/football/teams/274.png"
     },
-    "form": null,
+    "form": "D",
     "fixtures": {
       "played": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "wins": {
         "home": 0,
@@ -1984,9 +1984,9 @@
         "total": 0
       },
       "draws": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "loses": {
         "home": 0,
@@ -1997,14 +1997,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 0,
+          "home": 1,
           "away": 0,
-          "total": 0
+          "total": 1
         },
         "average": {
-          "home": "0.0",
+          "home": "1.0",
           "away": "0.0",
-          "total": "0.0"
+          "total": "1.0"
         },
         "minute": {
           "0-15": {
@@ -2020,12 +2020,12 @@
             "percentage": null
           },
           "46-60": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "76-90": {
             "total": null,
@@ -2042,37 +2042,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       },
       "against": {
         "total": {
-          "home": 0,
+          "home": 1,
           "away": 0,
-          "total": 0
+          "total": 1
         },
         "average": {
-          "home": "0.0",
+          "home": "1.0",
           "away": "0.0",
-          "total": "0.0"
+          "total": "1.0"
         },
         "minute": {
           "0-15": {
@@ -2110,24 +2110,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       }
@@ -2135,7 +2135,7 @@
     "biggest": {
       "streak": {
         "wins": 0,
-        "draws": 0,
+        "draws": 1,
         "loses": 0
       },
       "wins": {
@@ -2148,11 +2148,11 @@
       },
       "goals": {
         "for": {
-          "home": 0,
+          "home": 1,
           "away": 0
         },
         "against": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       }
@@ -2194,20 +2194,20 @@
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "33.33%"
         },
         "61-75": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "33.33%"
         },
         "76-90": {
           "total": null,
           "percentage": null
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "33.33%"
         },
         "106-120": {
           "total": null,
@@ -2250,5 +2250,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:20.762Z"
+  "lastUpdated": "2025-04-07T12:48:27.238Z"
 }

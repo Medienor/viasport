@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216319,
-          "date": "2025-04-05T14:00:00+00:00",
-          "venue": {
-            "id": 20414,
-            "name": "MATRADE Loftus Road",
-            "city": "London"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743861600
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 72,
-            "name": "QPR",
-            "logo": "https://media.api-sports.io/football/teams/72.png",
-            "winner": null
-          },
-          "away": {
-            "id": 43,
-            "name": "Cardiff",
-            "logo": "https://media.api-sports.io/football/teams/43.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216327,
           "date": "2025-04-08T18:45:00+00:00",
           "venue": {
@@ -565,6 +506,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216319,
+          "date": "2025-04-05T14:00:00+00:00",
+          "venue": {
+            "id": 20414,
+            "name": "MATRADE Loftus Road",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743861600
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 72,
+            "name": "QPR",
+            "logo": "https://media.api-sports.io/football/teams/72.png",
+            "winner": null
+          },
+          "away": {
+            "id": 43,
+            "name": "Cardiff",
+            "logo": "https://media.api-sports.io/football/teams/43.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216300,
@@ -1095,65 +1095,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216220,
-          "date": "2025-02-11T19:45:00+00:00",
-          "venue": {
-            "id": 573,
-            "name": "Fratton Park",
-            "city": "Portsmouth"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739303100
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1355,
-            "name": "Portsmouth",
-            "logo": "https://media.api-sports.io/football/teams/1355.png",
-            "winner": true
-          },
-          "away": {
-            "id": 43,
-            "name": "Cardiff",
-            "logo": "https://media.api-sports.io/football/teams/43.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1450,5 +1391,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:05.452Z"
+  "lastUpdated": "2025-04-07T12:47:12.996Z"
 }

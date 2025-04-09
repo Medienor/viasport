@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -184,7 +184,7 @@
         {
           "year": 2024,
           "start": "2024-07-10",
-          "end": "2025-04-02",
+          "end": "2025-04-22",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -262,65 +262,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360140,
-          "date": "2025-04-05T18:15:00+00:00",
-          "venue": {
-            "id": 1326,
-            "name": "Arena Naţională",
-            "city": "Bucureşti"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743876900
-        },
-        "league": {
-          "id": 283,
-          "name": "Liga I",
-          "logo": "https://media.api-sports.io/football/leagues/283.png"
-        },
-        "teams": {
-          "home": {
-            "id": 559,
-            "name": "FCSB",
-            "logo": "https://media.api-sports.io/football/teams/559.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2599,
-            "name": "Universitatea Cluj",
-            "logo": "https://media.api-sports.io/football/teams/2599.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1360143,
           "date": "2025-04-13T18:00:00+00:00",
           "venue": {
@@ -381,7 +322,7 @@
       {
         "fixture": {
           "id": 1360146,
-          "date": "2025-04-18T22:00:00+00:00",
+          "date": "2025-04-20T17:00:00+00:00",
           "venue": {
             "id": 1326,
             "name": "Arena Naţională",
@@ -393,7 +334,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745013600
+          "timestamp": 1745168400
         },
         "league": {
           "id": 283,
@@ -436,9 +377,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1360149,
+          "date": "2025-04-27T18:00:00+00:00",
+          "venue": {
+            "id": 19516,
+            "name": "Superbet Arena-Giulești",
+            "city": "București"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745776800
+        },
+        "league": {
+          "id": 283,
+          "name": "Liga I",
+          "logo": "https://media.api-sports.io/football/leagues/283.png"
+        },
+        "teams": {
+          "home": {
+            "id": 6231,
+            "name": "Rapid",
+            "logo": "https://media.api-sports.io/football/teams/6231.png",
+            "winner": null
+          },
+          "away": {
+            "id": 559,
+            "name": "FCSB",
+            "logo": "https://media.api-sports.io/football/teams/559.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360140,
+          "date": "2025-04-05T18:15:00+00:00",
+          "venue": {
+            "id": 1326,
+            "name": "Arena Naţională",
+            "city": "Bucureşti"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743876900
+        },
+        "league": {
+          "id": 283,
+          "name": "Liga I",
+          "logo": "https://media.api-sports.io/football/leagues/283.png"
+        },
+        "teams": {
+          "home": {
+            "id": 559,
+            "name": "FCSB",
+            "logo": "https://media.api-sports.io/football/teams/559.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2599,
+            "name": "Universitatea Cluj",
+            "logo": "https://media.api-sports.io/football/teams/2599.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360137,
@@ -969,65 +1028,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345765,
-          "date": "2025-02-13T20:00:00+00:00",
-          "venue": {
-            "id": 780,
-            "name": "Stadio Toumbas",
-            "city": "Thessaloníki"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739476800
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 619,
-            "name": "PAOK",
-            "logo": "https://media.api-sports.io/football/teams/619.png",
-            "winner": false
-          },
-          "away": {
-            "id": 559,
-            "name": "FCSB",
-            "logo": "https://media.api-sports.io/football/teams/559.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1324,5 +1324,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:46.987Z"
+  "lastUpdated": "2025-04-07T12:47:53.680Z"
 }

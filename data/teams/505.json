@@ -265,65 +265,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223902,
-          "date": "2025-04-05T16:00:00+00:00",
-          "venue": {
-            "id": 921,
-            "name": "Stadio Ennio Tardini",
-            "city": "Parma"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743868800
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 523,
-            "name": "Parma",
-            "logo": "https://media.api-sports.io/football/teams/523.png",
-            "winner": null
-          },
-          "away": {
-            "id": 505,
-            "name": "Inter",
-            "logo": "https://media.api-sports.io/football/teams/505.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1360333,
           "date": "2025-04-08T19:00:00+00:00",
           "venue": {
@@ -1093,6 +1034,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1223902,
+          "date": "2025-04-05T16:00:00+00:00",
+          "venue": {
+            "id": 921,
+            "name": "Stadio Ennio Tardini",
+            "city": "Parma"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743868800
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 523,
+            "name": "Parma",
+            "logo": "https://media.api-sports.io/football/teams/523.png",
+            "winner": null
+          },
+          "away": {
+            "id": 505,
+            "name": "Inter",
+            "logo": "https://media.api-sports.io/football/teams/505.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1355085,
           "date": "2025-04-02T19:00:00+00:00",
           "venue": {
@@ -1621,65 +1621,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1223839,
-          "date": "2025-02-16T19:45:00+00:00",
-          "venue": {
-            "id": 909,
-            "name": "Allianz Stadium",
-            "city": "Torino"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739735100
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 496,
-            "name": "Juventus",
-            "logo": "https://media.api-sports.io/football/teams/496.png",
-            "winner": true
-          },
-          "away": {
-            "id": 505,
-            "name": "Inter",
-            "logo": "https://media.api-sports.io/football/teams/505.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1976,5 +1917,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:58.289Z"
+  "lastUpdated": "2025-04-07T12:46:05.948Z"
 }

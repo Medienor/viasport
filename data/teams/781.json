@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-07-26",
-          "end": "2025-04-01",
+          "end": "2025-05-01",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -225,65 +225,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361671,
-          "date": "2025-04-04T17:30:00+00:00",
-          "venue": {
-            "id": 150,
-            "name": "Merkur Arena",
-            "city": "Graz"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743787800
-        },
-        "league": {
-          "id": 218,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/218.png"
-        },
-        "teams": {
-          "home": {
-            "id": 637,
-            "name": "Sturm Graz",
-            "logo": "https://media.api-sports.io/football/teams/637.png",
-            "winner": null
-          },
-          "away": {
-            "id": 781,
-            "name": "Rapid Vienna",
-            "logo": "https://media.api-sports.io/football/teams/781.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361290,
@@ -525,9 +466,9 @@
           "id": 1361681,
           "date": "2025-04-23T16:30:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 11873,
+            "name": "Hofmann Personal Stadion",
+            "city": "Linz"
           },
           "status": {
             "long": "Not Started",
@@ -876,6 +817,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361671,
+          "date": "2025-04-04T17:30:00+00:00",
+          "venue": {
+            "id": 150,
+            "name": "Merkur Arena",
+            "city": "Graz"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1743787800
+        },
+        "league": {
+          "id": 218,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/218.png"
+        },
+        "teams": {
+          "home": {
+            "id": 637,
+            "name": "Sturm Graz",
+            "logo": "https://media.api-sports.io/football/teams/637.png",
+            "winner": true
+          },
+          "away": {
+            "id": 781,
+            "name": "Rapid Vienna",
+            "logo": "https://media.api-sports.io/football/teams/781.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1361670,
@@ -1406,65 +1406,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1344887,
-          "date": "2025-02-01T00:00:00+00:00",
-          "venue": {
-            "id": 19958,
-            "name": "Körner Trainingszentrum powered by Varta",
-            "city": "Wien"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1738368000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 781,
-            "name": "Rapid Vienna",
-            "logo": "https://media.api-sports.io/football/teams/781.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1404,
-            "name": "SKU Amstetten",
-            "logo": "https://media.api-sports.io/football/teams/1404.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1761,5 +1702,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:15.493Z"
+  "lastUpdated": "2025-04-07T12:48:22.252Z"
 }

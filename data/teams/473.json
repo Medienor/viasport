@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334456,
-          "date": "2025-04-05T18:30:00+00:00",
-          "venue": {
-            "id": 80,
-            "name": "Estadio Malvinas Argentinas",
-            "city": "Mendoza, Provincia de Mendoza"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743877800
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 439,
-            "name": "Godoy Cruz",
-            "logo": "https://media.api-sports.io/football/teams/439.png",
-            "winner": null
-          },
-          "away": {
-            "id": 473,
-            "name": "Independ. Rivadavia",
-            "logo": "https://media.api-sports.io/football/teams/473.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334463,
           "date": "2025-04-11T22:00:00+00:00",
           "venue": {
@@ -448,6 +389,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334456,
+          "date": "2025-04-05T18:30:00+00:00",
+          "venue": {
+            "id": 80,
+            "name": "Estadio Malvinas Argentinas",
+            "city": "Mendoza, Provincia de Mendoza"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743877800
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 439,
+            "name": "Godoy Cruz",
+            "logo": "https://media.api-sports.io/football/teams/439.png",
+            "winner": null
+          },
+          "away": {
+            "id": 473,
+            "name": "Independ. Rivadavia",
+            "logo": "https://media.api-sports.io/football/teams/473.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334433,
@@ -978,65 +978,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334296,
-          "date": "2025-01-29T00:30:00+00:00",
-          "venue": {
-            "id": 83,
-            "name": "Estadio Juan Bautista Gargantini",
-            "city": "Mendoza, Provincia de Mendoza"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738110600
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 473,
-            "name": "Independ. Rivadavia",
-            "logo": "https://media.api-sports.io/football/teams/473.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2432,
-            "name": "Barracas Central",
-            "logo": "https://media.api-sports.io/football/teams/2432.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1333,5 +1274,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:18:36.752Z"
+  "lastUpdated": "2025-04-07T12:47:43.611Z"
 }

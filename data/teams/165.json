@@ -36,7 +36,7 @@
         {
           "year": 2024,
           "start": "2024-08-16",
-          "end": "2025-04-01",
+          "end": "2025-05-24",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -189,65 +189,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1224221,
-          "date": "2025-04-05T13:30:00+00:00",
-          "venue": {
-            "id": 12717,
-            "name": "Europa-Park Stadion",
-            "city": "Freiburg im Breisgau"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743859800
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 160,
-            "name": "SC Freiburg",
-            "logo": "https://media.api-sports.io/football/teams/160.png",
-            "winner": null
-          },
-          "away": {
-            "id": 165,
-            "name": "Borussia Dortmund",
-            "logo": "https://media.api-sports.io/football/teams/165.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1360766,
@@ -901,6 +842,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1224221,
+          "date": "2025-04-05T13:30:00+00:00",
+          "venue": {
+            "id": 12717,
+            "name": "Europa-Park Stadion",
+            "city": "Freiburg im Breisgau"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1743859800
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 160,
+            "name": "SC Freiburg",
+            "logo": "https://media.api-sports.io/football/teams/160.png",
+            "winner": false
+          },
+          "away": {
+            "id": 165,
+            "name": "Borussia Dortmund",
+            "logo": "https://media.api-sports.io/football/teams/165.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1224211,
           "date": "2025-03-30T15:30:00+00:00",
           "venue": {
@@ -1429,65 +1429,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345739,
-          "date": "2025-02-11T20:00:00+00:00",
-          "venue": {
-            "id": 1293,
-            "name": "Estádio José Alvalade",
-            "city": "Lisboa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739304000
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 228,
-            "name": "Sporting CP",
-            "logo": "https://media.api-sports.io/football/teams/228.png",
-            "winner": false
-          },
-          "away": {
-            "id": 165,
-            "name": "Borussia Dortmund",
-            "logo": "https://media.api-sports.io/football/teams/165.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1784,5 +1725,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:03.595Z"
+  "lastUpdated": "2025-04-07T12:46:11.049Z"
 }

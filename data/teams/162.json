@@ -36,7 +36,7 @@
         {
           "year": 2024,
           "start": "2024-08-16",
-          "end": "2025-04-01",
+          "end": "2025-05-24",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -152,65 +152,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1224220,
-          "date": "2025-04-05T16:30:00+00:00",
-          "venue": {
-            "id": 755,
-            "name": "Weserstadion",
-            "city": "Bremen"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743870600
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 162,
-            "name": "Werder Bremen",
-            "logo": "https://media.api-sports.io/football/teams/162.png",
-            "winner": null
-          },
-          "away": {
-            "id": 169,
-            "name": "Eintracht Frankfurt",
-            "logo": "https://media.api-sports.io/football/teams/169.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1224228,
@@ -567,6 +508,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1224220,
+          "date": "2025-04-05T16:30:00+00:00",
+          "venue": {
+            "id": 755,
+            "name": "Weserstadion",
+            "city": "Bremen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743870600
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 162,
+            "name": "Werder Bremen",
+            "logo": "https://media.api-sports.io/football/teams/162.png",
+            "winner": true
+          },
+          "away": {
+            "id": 169,
+            "name": "Eintracht Frankfurt",
+            "logo": "https://media.api-sports.io/football/teams/169.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1224217,
@@ -1097,65 +1097,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224138,
-          "date": "2025-01-25T14:30:00+00:00",
-          "venue": {
-            "id": 19381,
-            "name": "SIGNAL IDUNA PARK",
-            "city": "Dortmund"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737815400
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 165,
-            "name": "Borussia Dortmund",
-            "logo": "https://media.api-sports.io/football/teams/165.png",
-            "winner": null
-          },
-          "away": {
-            "id": 162,
-            "name": "Werder Bremen",
-            "logo": "https://media.api-sports.io/football/teams/162.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1452,5 +1393,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:17:03.470Z"
+  "lastUpdated": "2025-04-07T12:46:10.953Z"
 }

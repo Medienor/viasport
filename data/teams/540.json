@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-10-09",
-          "end": "2025-04-02",
+          "end": "2025-04-25",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -114,65 +114,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1212939,
-          "date": "2025-04-04T19:00:00+00:00",
-          "venue": {
-            "id": 1488,
-            "name": "Estadio de Vallecas",
-            "city": "Madrid"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743793200
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 728,
-            "name": "Rayo Vallecano",
-            "logo": "https://media.api-sports.io/football/teams/728.png",
-            "winner": null
-          },
-          "away": {
-            "id": 540,
-            "name": "Espanyol",
-            "logo": "https://media.api-sports.io/football/teams/540.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1212940,
@@ -411,6 +352,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1212939,
+          "date": "2025-04-04T19:00:00+00:00",
+          "venue": {
+            "id": 1488,
+            "name": "Estadio de Vallecas",
+            "city": "Madrid"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1743793200
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 728,
+            "name": "Rayo Vallecano",
+            "logo": "https://media.api-sports.io/football/teams/728.png",
+            "winner": false
+          },
+          "away": {
+            "id": 540,
+            "name": "Espanyol",
+            "logo": "https://media.api-sports.io/football/teams/540.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1212938,
@@ -941,65 +941,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1212928,
-          "date": "2025-01-11T17:30:00+00:00",
-          "venue": {
-            "id": 1474,
-            "name": "RCDE Stadium",
-            "city": "Cornella de Llobregat"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1736616600
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 540,
-            "name": "Espanyol",
-            "logo": "https://media.api-sports.io/football/teams/540.png",
-            "winner": null
-          },
-          "away": {
-            "id": 537,
-            "name": "Leganes",
-            "logo": "https://media.api-sports.io/football/teams/537.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1296,5 +1237,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:45.355Z"
+  "lastUpdated": "2025-04-07T12:45:52.742Z"
 }

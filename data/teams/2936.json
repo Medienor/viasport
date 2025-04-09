@@ -222,65 +222,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1252648,
-          "date": "2025-04-04T14:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Ar-Rass Stadium",
-            "city": "Rass"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743777000
-        },
-        "league": {
-          "id": 307,
-          "name": "Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/307.png"
-        },
-        "teams": {
-          "home": {
-            "id": 10509,
-            "name": "Al Kholood",
-            "logo": "https://media.api-sports.io/football/teams/10509.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2936,
-            "name": "Al Taawon",
-            "logo": "https://media.api-sports.io/football/teams/2936.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361269,
           "date": "2025-04-08T18:00:00+00:00",
           "venue": {
@@ -637,6 +578,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1252648,
+          "date": "2025-04-04T14:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Al-Hazem Club Stadium",
+            "city": "Ar Rass"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743777000
+        },
+        "league": {
+          "id": 307,
+          "name": "Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/307.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10509,
+            "name": "Al Kholood",
+            "logo": "https://media.api-sports.io/football/teams/10509.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2936,
+            "name": "Al Taawon",
+            "logo": "https://media.api-sports.io/football/teams/2936.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1252642,
           "date": "2025-03-15T19:00:00+00:00",
           "venue": {
@@ -818,8 +818,8 @@
           "date": "2025-03-01T19:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Al Fateh Club Stadium",
-            "city": "Al-Hofuf"
+            "name": "Prince Abdullah bin Jalawi Stadium",
+            "city": "Al-Ahsa"
           },
           "status": {
             "long": "Match Finished",
@@ -1165,65 +1165,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1252572,
-          "date": "2025-01-31T13:45:00+00:00",
-          "venue": {
-            "id": 1367,
-            "name": "Al Majma'ah Sports City Stadium",
-            "city": "Al Majma'ah"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738331100
-        },
-        "league": {
-          "id": 307,
-          "name": "Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/307.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2944,
-            "name": "Al-Fayha",
-            "logo": "https://media.api-sports.io/football/teams/2944.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2936,
-            "name": "Al Taawon",
-            "logo": "https://media.api-sports.io/football/teams/2936.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1520,5 +1461,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:53.066Z"
+  "lastUpdated": "2025-04-07T12:51:57.049Z"
 }

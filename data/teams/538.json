@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-10-09",
-          "end": "2025-04-02",
+          "end": "2025-04-25",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -112,65 +112,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1208761,
-          "date": "2025-04-05T16:30:00+00:00",
-          "venue": {
-            "id": 19940,
-            "name": "Estadi Mallorca Son Moix",
-            "city": "Palma de Mallorca"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743870600
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 798,
-            "name": "Mallorca",
-            "logo": "https://media.api-sports.io/football/teams/798.png",
-            "winner": null
-          },
-          "away": {
-            "id": 538,
-            "name": "Celta Vigo",
-            "logo": "https://media.api-sports.io/football/teams/538.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1212940,
@@ -352,11 +293,70 @@
     "past": [
       {
         "fixture": {
+          "id": 1208761,
+          "date": "2025-04-05T16:30:00+00:00",
+          "venue": {
+            "id": 19940,
+            "name": "Estadi Mallorca Son Moix",
+            "city": "Palma de Mallorca"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1743870600
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 798,
+            "name": "Mallorca",
+            "logo": "https://media.api-sports.io/football/teams/798.png",
+            "winner": false
+          },
+          "away": {
+            "id": 538,
+            "name": "Celta Vigo",
+            "logo": "https://media.api-sports.io/football/teams/538.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1208749,
           "date": "2025-03-31T19:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estadio Abanca-Balaídos",
+            "name": "Municipal de Balaidos",
             "city": "Vigo"
           },
           "status": {
@@ -474,7 +474,7 @@
           "date": "2025-03-08T13:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estadio Abanca-Balaídos",
+            "name": "Municipal de Balaidos",
             "city": "Vigo"
           },
           "status": {
@@ -592,7 +592,7 @@
           "date": "2025-02-21T20:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estadio Abanca-Balaídos",
+            "name": "Municipal de Balaidos",
             "city": "Vigo"
           },
           "status": {
@@ -710,7 +710,7 @@
           "date": "2025-02-08T13:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estadio Abanca-Balaídos",
+            "name": "Municipal de Balaidos",
             "city": "Vigo"
           },
           "status": {
@@ -870,65 +870,6 @@
           "fulltime": {
             "home": 1,
             "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208667,
-          "date": "2025-01-19T13:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estadio Abanca-Balaídos",
-            "city": "Vigo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737291600
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 538,
-            "name": "Celta Vigo",
-            "logo": "https://media.api-sports.io/football/teams/538.png",
-            "winner": false
-          },
-          "away": {
-            "id": 531,
-            "name": "Athletic Club",
-            "logo": "https://media.api-sports.io/football/teams/531.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
           },
           "extratime": {
             "home": null,
@@ -1235,5 +1176,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:16:45.258Z"
+  "lastUpdated": "2025-04-07T12:45:52.910Z"
 }

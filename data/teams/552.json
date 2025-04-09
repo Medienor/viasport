@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": true,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -227,65 +227,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220734,
-          "date": "2025-04-06T18:15:00+00:00",
-          "venue": {
-            "id": 1440,
-            "name": "Športni Park",
-            "city": "Domžale"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743963300
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 615,
-            "name": "NK Domzale",
-            "logo": "https://media.api-sports.io/football/teams/615.png",
-            "winner": null
-          },
-          "away": {
-            "id": 552,
-            "name": "Maribor",
-            "logo": "https://media.api-sports.io/football/teams/552.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220742,
           "date": "2025-04-09T15:00:00+00:00",
           "venue": {
@@ -348,8 +289,8 @@
           "id": 1220743,
           "date": "2025-04-13T18:15:00+00:00",
           "venue": {
-            "id": 11939,
-            "name": "Športni Park Šiška",
+            "id": 1442,
+            "name": "Stadion Stožice",
             "city": "Ljubljana"
           },
           "status": {
@@ -404,8 +345,67 @@
       },
       {
         "fixture": {
+          "id": 1220731,
+          "date": "2025-04-16T15:30:00+00:00",
+          "venue": {
+            "id": 3348,
+            "name": "Športni park Lendava",
+            "city": "Lendava"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744817400
+        },
+        "league": {
+          "id": 373,
+          "name": "1. SNL",
+          "logo": "https://media.api-sports.io/football/leagues/373.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4376,
+            "name": "Nafta",
+            "logo": "https://media.api-sports.io/football/teams/4376.png",
+            "winner": null
+          },
+          "away": {
+            "id": 552,
+            "name": "Maribor",
+            "logo": "https://media.api-sports.io/football/teams/552.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1220752,
-          "date": "2025-04-18T22:00:00+00:00",
+          "date": "2025-04-21T15:30:00+00:00",
           "venue": {
             "id": 3201,
             "name": "Mestni Štadion Fazanerija",
@@ -417,7 +417,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745013600
+          "timestamp": 1745249400
         },
         "league": {
           "id": 373,
@@ -463,6 +463,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220734,
+          "date": "2025-04-06T18:15:00+00:00",
+          "venue": {
+            "id": 1440,
+            "name": "Športni Park",
+            "city": "Domžale"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1743963300
+        },
+        "league": {
+          "id": 373,
+          "name": "1. SNL",
+          "logo": "https://media.api-sports.io/football/leagues/373.png"
+        },
+        "teams": {
+          "home": {
+            "id": 615,
+            "name": "NK Domzale",
+            "logo": "https://media.api-sports.io/football/teams/615.png",
+            "winner": true
+          },
+          "away": {
+            "id": 552,
+            "name": "Maribor",
+            "logo": "https://media.api-sports.io/football/teams/552.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360328,
@@ -993,65 +1052,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220689,
-          "date": "2025-02-01T16:30:00+00:00",
-          "venue": {
-            "id": 1441,
-            "name": "Ljudski vrt",
-            "city": "Maribor"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738427400
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 552,
-            "name": "Maribor",
-            "logo": "https://media.api-sports.io/football/teams/552.png",
-            "winner": true
-          },
-          "away": {
-            "id": 615,
-            "name": "NK Domzale",
-            "logo": "https://media.api-sports.io/football/teams/615.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1348,5 +1348,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:19:10.209Z"
+  "lastUpdated": "2025-04-07T12:48:16.868Z"
 }

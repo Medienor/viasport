@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -185,65 +185,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1196667,
-          "date": "2025-04-04T11:45:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Jalan Besar Stadium",
-            "city": "Singapore"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1743767100
-        },
-        "league": {
-          "id": 368,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/368.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4206,
-            "name": "Tampines Rovers",
-            "logo": "https://media.api-sports.io/football/teams/4206.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4203,
-            "name": "Geylang International",
-            "logo": "https://media.api-sports.io/football/teams/4203.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1196672,
@@ -718,6 +659,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1196667,
+          "date": "2025-04-04T11:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jalan Besar Stadium",
+            "city": "Singapore"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1743767100
+        },
+        "league": {
+          "id": 368,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/368.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4206,
+            "name": "Tampines Rovers",
+            "logo": "https://media.api-sports.io/football/teams/4206.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4203,
+            "name": "Geylang International",
+            "logo": "https://media.api-sports.io/football/teams/4203.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 3,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1333512,
@@ -1248,65 +1248,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1289407,
-          "date": "2024-12-04T12:00:00+00:00",
-          "venue": {
-            "id": 3384,
-            "name": "Mong Kok Stadium",
-            "city": "Hong Kong"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1733313600
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4207,
-            "name": "Warriors",
-            "logo": "https://media.api-sports.io/football/teams/4207.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4206,
-            "name": "Tampines Rovers",
-            "logo": "https://media.api-sports.io/football/teams/4206.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1603,5 +1544,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-03T19:22:55.734Z"
+  "lastUpdated": "2025-04-07T12:51:59.708Z"
 }
