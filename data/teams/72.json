@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1216333,
-          "date": "2025-04-09T18:45:00+00:00",
-          "venue": {
-            "id": 569,
-            "name": "The Kassam Stadium",
-            "city": "Oxford, Oxfordshire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744224300
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1338,
-            "name": "Oxford United",
-            "logo": "https://media.api-sports.io/football/teams/1338.png",
-            "winner": null
-          },
-          "away": {
-            "id": 72,
-            "name": "QPR",
-            "logo": "https://media.api-sports.io/football/teams/72.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1216343,
@@ -506,6 +447,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216333,
+          "date": "2025-04-09T18:45:00+00:00",
+          "venue": {
+            "id": 569,
+            "name": "The Kassam Stadium",
+            "city": "Oxford, Oxfordshire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 13
+          },
+          "timestamp": 1744224300
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1338,
+            "name": "Oxford United",
+            "logo": "https://media.api-sports.io/football/teams/1338.png",
+            "winner": false
+          },
+          "away": {
+            "id": 72,
+            "name": "QPR",
+            "logo": "https://media.api-sports.io/football/teams/72.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216319,
@@ -1036,65 +1036,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216210,
-          "date": "2025-02-04T19:45:00+00:00",
-          "venue": {
-            "id": 20414,
-            "name": "MATRADE Loftus Road",
-            "city": "London"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738698300
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 72,
-            "name": "QPR",
-            "logo": "https://media.api-sports.io/football/teams/72.png",
-            "winner": true
-          },
-          "away": {
-            "id": 67,
-            "name": "Blackburn",
-            "logo": "https://media.api-sports.io/football/teams/67.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1391,5 +1332,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:47:20.736Z"
+  "lastUpdated": "2025-04-10T19:41:23.363Z"
 }

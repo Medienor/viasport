@@ -152,7 +152,7 @@
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": false,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -222,65 +222,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1332715,
-          "date": "2025-04-07T19:15:00+00:00",
-          "venue": {
-            "id": 829,
-            "name": "Samsung völlurinn",
-            "city": "Garðabær"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744053300
-        },
-        "league": {
-          "id": 164,
-          "name": "Úrvalsdeild",
-          "logo": "https://media.api-sports.io/football/leagues/164.png"
-        },
-        "teams": {
-          "home": {
-            "id": 275,
-            "name": "Stjarnan",
-            "logo": "https://media.api-sports.io/football/teams/275.png",
-            "winner": null
-          },
-          "away": {
-            "id": 270,
-            "name": "FH hafnarfjordur",
-            "logo": "https://media.api-sports.io/football/teams/270.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1332720,
@@ -1401,9 +1342,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1332833,
+          "date": "2025-08-31T17:00:00+00:00",
+          "venue": {
+            "id": 829,
+            "name": "Samsung völlurinn",
+            "city": "Garðabær"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756659600
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 275,
+            "name": "Stjarnan",
+            "logo": "https://media.api-sports.io/football/teams/275.png",
+            "winner": null
+          },
+          "away": {
+            "id": 272,
+            "name": "KA Akureyri",
+            "logo": "https://media.api-sports.io/football/teams/272.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1332715,
+          "date": "2025-04-07T19:15:00+00:00",
+          "venue": {
+            "id": 829,
+            "name": "Samsung völlurinn",
+            "city": "Garðabær"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1744053300
+        },
+        "league": {
+          "id": 164,
+          "name": "Úrvalsdeild",
+          "logo": "https://media.api-sports.io/football/leagues/164.png"
+        },
+        "teams": {
+          "home": {
+            "id": 275,
+            "name": "Stjarnan",
+            "logo": "https://media.api-sports.io/football/teams/275.png",
+            "winner": true
+          },
+          "away": {
+            "id": 270,
+            "name": "FH hafnarfjordur",
+            "logo": "https://media.api-sports.io/football/teams/270.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1320816,
@@ -1934,65 +1993,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1306739,
-          "date": "2024-09-30T19:15:00+00:00",
-          "venue": {
-            "id": 829,
-            "name": "Samsung völlurinn",
-            "city": "Garðabær"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1727723700
-        },
-        "league": {
-          "id": 164,
-          "name": "Úrvalsdeild",
-          "logo": "https://media.api-sports.io/football/leagues/164.png"
-        },
-        "teams": {
-          "home": {
-            "id": 275,
-            "name": "Stjarnan",
-            "logo": "https://media.api-sports.io/football/teams/275.png",
-            "winner": true
-          },
-          "away": {
-            "id": 827,
-            "name": "IA Akranes",
-            "logo": "https://media.api-sports.io/football/teams/827.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2010,17 +2010,17 @@
       "name": "Stjarnan",
       "logo": "https://media.api-sports.io/football/teams/275.png"
     },
-    "form": null,
+    "form": "W",
     "fixtures": {
       "played": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "wins": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "total": 0
+        "total": 1
       },
       "draws": {
         "home": 0,
@@ -2036,14 +2036,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 0,
+          "home": 2,
           "away": 0,
-          "total": 0
+          "total": 2
         },
         "average": {
-          "home": "0.0",
+          "home": "2.0",
           "away": "0.0",
-          "total": "0.0"
+          "total": "2.0"
         },
         "minute": {
           "0-15": {
@@ -2063,8 +2063,8 @@
             "percentage": null
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "100.00%"
           },
           "76-90": {
             "total": null,
@@ -2081,37 +2081,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "1.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "2.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       },
       "against": {
         "total": {
-          "home": 0,
+          "home": 1,
           "away": 0,
-          "total": 0
+          "total": 1
         },
         "average": {
-          "home": "0.0",
+          "home": "1.0",
           "away": "0.0",
-          "total": "0.0"
+          "total": "1.0"
         },
         "minute": {
           "0-15": {
@@ -2135,8 +2135,8 @@
             "percentage": null
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "100.00%"
           },
           "91-105": {
             "total": null,
@@ -2149,36 +2149,36 @@
         },
         "under_over": {
           "0.5": {
-            "over": 0,
+            "over": 1,
             "under": 0
           },
           "1.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           },
           "4.5": {
             "over": 0,
-            "under": 0
+            "under": 1
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 0,
+        "wins": 1,
         "draws": 0,
         "loses": 0
       },
       "wins": {
-        "home": null,
+        "home": "2-1",
         "away": null
       },
       "loses": {
@@ -2187,11 +2187,11 @@
       },
       "goals": {
         "for": {
-          "home": 0,
+          "home": 2,
           "away": 0
         },
         "against": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       }
@@ -2241,8 +2241,8 @@
           "percentage": null
         },
         "76-90": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "100.00%"
         },
         "91-105": {
           "total": null,
@@ -2289,5 +2289,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:48:29.723Z"
+  "lastUpdated": "2025-04-10T19:42:33.719Z"
 }

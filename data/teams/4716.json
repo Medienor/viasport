@@ -110,65 +110,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231980,
-          "date": "2025-04-07T17:45:00+00:00",
-          "venue": {
-            "id": 1290,
-            "name": "Estádio de São Lúis",
-            "city": "Faro"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744047900
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 231,
-            "name": "Farense",
-            "logo": "https://media.api-sports.io/football/teams/231.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4716,
-            "name": "Casa Pia",
-            "logo": "https://media.api-sports.io/football/teams/4716.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231984,
           "date": "2025-04-12T19:30:00+00:00",
           "venue": {
@@ -464,6 +405,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231980,
+          "date": "2025-04-07T17:45:00+00:00",
+          "venue": {
+            "id": 1290,
+            "name": "Estádio de São Lúis",
+            "city": "Faro"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1744047900
+        },
+        "league": {
+          "id": 94,
+          "name": "Primeira Liga",
+          "logo": "https://media.api-sports.io/football/leagues/94.png"
+        },
+        "teams": {
+          "home": {
+            "id": 231,
+            "name": "Farense",
+            "logo": "https://media.api-sports.io/football/teams/231.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4716,
+            "name": "Casa Pia",
+            "logo": "https://media.api-sports.io/football/teams/4716.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231966,
@@ -994,65 +994,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231885,
-          "date": "2025-01-20T20:15:00+00:00",
-          "venue": {
-            "id": 1267,
-            "name": "Estádio do Bessa Século XXI",
-            "city": "Porto"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737404100
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 222,
-            "name": "Boavista",
-            "logo": "https://media.api-sports.io/football/teams/222.png",
-            "winner": false
-          },
-          "away": {
-            "id": 4716,
-            "name": "Casa Pia",
-            "logo": "https://media.api-sports.io/football/teams/4716.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1349,5 +1290,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:46:44.380Z"
+  "lastUpdated": "2025-04-10T19:40:46.729Z"
 }

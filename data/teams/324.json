@@ -150,65 +150,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1342315,
-          "date": "2025-04-10T17:00:00+00:00",
-          "venue": {
-            "id": 1176,
-            "name": "Brann Stadion",
-            "city": "Bergen"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744304400
-        },
-        "league": {
-          "id": 103,
-          "name": "Eliteserien",
-          "logo": "https://media.api-sports.io/football/leagues/103.png"
-        },
-        "teams": {
-          "home": {
-            "id": 319,
-            "name": "Brann",
-            "logo": "https://media.api-sports.io/football/teams/319.png",
-            "winner": null
-          },
-          "away": {
-            "id": 324,
-            "name": "Stromsgodset",
-            "logo": "https://media.api-sports.io/football/teams/324.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1367237,
           "date": "2025-04-13T14:00:00+00:00",
           "venue": {
@@ -1327,9 +1268,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1342358,
+          "date": "2025-09-21T15:00:00+00:00",
+          "venue": {
+            "id": 1199,
+            "name": "Marienlyst Stadion",
+            "city": "Drammen"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1758466800
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 324,
+            "name": "Stromsgodset",
+            "logo": "https://media.api-sports.io/football/teams/324.png",
+            "winner": null
+          },
+          "away": {
+            "id": 333,
+            "name": "Sarpsborg 08 FF",
+            "logo": "https://media.api-sports.io/football/teams/333.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1342315,
+          "date": "2025-04-10T17:00:00+00:00",
+          "venue": {
+            "id": 1176,
+            "name": "Brann Stadion",
+            "city": "Bergen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744304400
+        },
+        "league": {
+          "id": 103,
+          "name": "Eliteserien",
+          "logo": "https://media.api-sports.io/football/leagues/103.png"
+        },
+        "teams": {
+          "home": {
+            "id": 319,
+            "name": "Brann",
+            "logo": "https://media.api-sports.io/football/teams/319.png",
+            "winner": true
+          },
+          "away": {
+            "id": 324,
+            "name": "Stromsgodset",
+            "logo": "https://media.api-sports.io/football/teams/324.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1342197,
@@ -1860,65 +1919,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1344850,
-          "date": "2025-01-31T14:00:00+00:00",
-          "venue": {
-            "id": 11311,
-            "name": "LSK-hallen",
-            "city": "Lillestrøm"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738332000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 321,
-            "name": "Lillestrom",
-            "logo": "https://media.api-sports.io/football/teams/321.png",
-            "winner": false
-          },
-          "away": {
-            "id": 324,
-            "name": "Stromsgodset",
-            "logo": "https://media.api-sports.io/football/teams/324.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1936,12 +1936,12 @@
       "name": "Stromsgodset",
       "logo": "https://media.api-sports.io/football/teams/324.png"
     },
-    "form": "LW",
+    "form": "LWL",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 1,
-        "total": 2
+        "away": 2,
+        "total": 3
       },
       "wins": {
         "home": 0,
@@ -1955,38 +1955,38 @@
       },
       "loses": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       }
     },
     "goals": {
       "for": {
         "total": {
           "home": 1,
-          "away": 5,
-          "total": 6
+          "away": 6,
+          "total": 7
         },
         "average": {
           "home": "1.0",
-          "away": "5.0",
-          "total": "3.0"
+          "away": "3.0",
+          "total": "2.3"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "16.67%"
+            "percentage": "14.29%"
           },
           "16-30": {
             "total": 1,
-            "percentage": "16.67%"
+            "percentage": "14.29%"
           },
           "31-45": {
             "total": null,
             "percentage": null
           },
           "46-60": {
-            "total": 1,
-            "percentage": "16.67%"
+            "total": 2,
+            "percentage": "28.57%"
           },
           "61-75": {
             "total": null,
@@ -1994,11 +1994,79 @@
           },
           "76-90": {
             "total": 2,
-            "percentage": "33.33%"
+            "percentage": "28.57%"
           },
           "91-105": {
             "total": 1,
-            "percentage": "16.67%"
+            "percentage": "14.29%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 3,
+            "under": 0
+          },
+          "1.5": {
+            "over": 1,
+            "under": 2
+          },
+          "2.5": {
+            "over": 1,
+            "under": 2
+          },
+          "3.5": {
+            "over": 1,
+            "under": 2
+          },
+          "4.5": {
+            "over": 1,
+            "under": 2
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 2,
+          "away": 2,
+          "total": 4
+        },
+        "average": {
+          "home": "2.0",
+          "away": "1.0",
+          "total": "1.3"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "46-60": {
+            "total": 2,
+            "percentage": "50.00%"
+          },
+          "61-75": {
+            "total": 1,
+            "percentage": "25.00%"
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": null,
+            "percentage": null
           },
           "106-120": {
             "total": null,
@@ -2008,98 +2076,30 @@
         "under_over": {
           "0.5": {
             "over": 2,
-            "under": 0
-          },
-          "1.5": {
-            "over": 1,
-            "under": 1
-          },
-          "2.5": {
-            "over": 1,
-            "under": 1
-          },
-          "3.5": {
-            "over": 1,
-            "under": 1
-          },
-          "4.5": {
-            "over": 1,
-            "under": 1
-          }
-        }
-      },
-      "against": {
-        "total": {
-          "home": 2,
-          "away": 0,
-          "total": 2
-        },
-        "average": {
-          "home": "2.0",
-          "away": "0.0",
-          "total": "1.0"
-        },
-        "minute": {
-          "0-15": {
-            "total": null,
-            "percentage": null
-          },
-          "16-30": {
-            "total": null,
-            "percentage": null
-          },
-          "31-45": {
-            "total": 1,
-            "percentage": "50.00%"
-          },
-          "46-60": {
-            "total": 1,
-            "percentage": "50.00%"
-          },
-          "61-75": {
-            "total": null,
-            "percentage": null
-          },
-          "76-90": {
-            "total": null,
-            "percentage": null
-          },
-          "91-105": {
-            "total": null,
-            "percentage": null
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 1,
             "under": 1
           },
           "1.5": {
-            "over": 1,
+            "over": 2,
             "under": 1
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       }
     },
     "biggest": {
       "streak": {
-        "wins": 0,
+        "wins": 1,
         "draws": 0,
         "loses": 1
       },
@@ -2109,7 +2109,7 @@
       },
       "loses": {
         "home": "1-2",
-        "away": null
+        "away": "2-1"
       },
       "goals": {
         "for": {
@@ -2118,7 +2118,7 @@
         },
         "against": {
           "home": 2,
-          "away": 0
+          "away": 2
         }
       }
     },
@@ -2146,7 +2146,7 @@
     "lineups": [
       {
         "formation": "4-2-3-1",
-        "played": 2
+        "played": 3
       }
     ],
     "cards": {
@@ -2160,24 +2160,24 @@
           "percentage": null
         },
         "31-45": {
-          "total": 1,
-          "percentage": "14.29%"
+          "total": 2,
+          "percentage": "25.00%"
         },
         "46-60": {
           "total": 1,
-          "percentage": "14.29%"
+          "percentage": "12.50%"
         },
         "61-75": {
           "total": 1,
-          "percentage": "14.29%"
+          "percentage": "12.50%"
         },
         "76-90": {
           "total": 1,
-          "percentage": "14.29%"
+          "percentage": "12.50%"
         },
         "91-105": {
           "total": 3,
-          "percentage": "42.86%"
+          "percentage": "37.50%"
         },
         "106-120": {
           "total": null,
@@ -2220,5 +2220,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:45:17.100Z"
+  "lastUpdated": "2025-04-10T19:39:18.949Z"
 }

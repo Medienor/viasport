@@ -185,65 +185,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360141,
-          "date": "2025-04-07T17:30:00+00:00",
-          "venue": {
-            "id": 1311,
-            "name": "Stadionul Dr. Constantin Rădulescu",
-            "city": "Cluj-Napoca"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744047000
-        },
-        "league": {
-          "id": 283,
-          "name": "Liga I",
-          "logo": "https://media.api-sports.io/football/leagues/283.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2246,
-            "name": "CFR 1907 Cluj",
-            "logo": "https://media.api-sports.io/football/teams/2246.png",
-            "winner": null
-          },
-          "away": {
-            "id": 632,
-            "name": "Universitatea Craiova",
-            "logo": "https://media.api-sports.io/football/teams/632.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1360143,
           "date": "2025-04-13T18:00:00+00:00",
           "venue": {
@@ -421,6 +362,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360141,
+          "date": "2025-04-07T17:30:00+00:00",
+          "venue": {
+            "id": 1311,
+            "name": "Stadionul Dr. Constantin Rădulescu",
+            "city": "Cluj-Napoca"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744047000
+        },
+        "league": {
+          "id": 283,
+          "name": "Liga I",
+          "logo": "https://media.api-sports.io/football/leagues/283.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2246,
+            "name": "CFR 1907 Cluj",
+            "logo": "https://media.api-sports.io/football/teams/2246.png",
+            "winner": true
+          },
+          "away": {
+            "id": 632,
+            "name": "Universitatea Craiova",
+            "logo": "https://media.api-sports.io/football/teams/632.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360139,
@@ -951,65 +951,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220549,
-          "date": "2025-02-02T15:15:00+00:00",
-          "venue": {
-            "id": 12282,
-            "name": "Complex Sportiv Craiova",
-            "city": "Craiova"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1738509300
-        },
-        "league": {
-          "id": 283,
-          "name": "Liga I",
-          "logo": "https://media.api-sports.io/football/leagues/283.png"
-        },
-        "teams": {
-          "home": {
-            "id": 632,
-            "name": "Universitatea Craiova",
-            "logo": "https://media.api-sports.io/football/teams/632.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2583,
-            "name": "Politehnica Iasi",
-            "logo": "https://media.api-sports.io/football/teams/2583.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1306,5 +1247,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:48:40.074Z"
+  "lastUpdated": "2025-04-10T19:42:43.966Z"
 }

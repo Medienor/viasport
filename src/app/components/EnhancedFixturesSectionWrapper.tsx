@@ -97,14 +97,15 @@ async function fetchFixturesFromSupabase(date: Date) {
         away_team_id,
         status,
         score,
+        goals,
         league,
         teams,
         match_status
       `)
-      .eq('match_status', 'NS')
+      .in('match_status', ['NS', 'FT', '1H', '2H', 'HT']) // Include all relevant match statuses
       .gte('date', startOfDay.toISOString())
       .lt('date', endOfDay.toISOString())
-      .in('league_id', leagueIds) // Filter by the leagues we're interested in
+      .in('league_id', leagueIds)
       .order('date', { ascending: true });
       // Remove the limit to get all fixtures
 
@@ -144,6 +145,7 @@ async function fetchFixturesFromSupabase(date: Date) {
             logo: `https://media.api-sports.io/football/teams/${fixture.away_team_id}.png`
           }
         },
+        goals: fixture.goals || { home: null, away: null }, // Add goals data
         formattedTime: new Date(fixture.date).toLocaleTimeString('no-NO', { 
           hour: '2-digit', 
           minute: '2-digit' 

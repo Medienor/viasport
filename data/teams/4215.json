@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -224,65 +224,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1367660,
-          "date": "2025-04-08T22:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744149600
-        },
-        "league": {
-          "id": 802,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/802.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4215,
-            "name": "Nasaf",
-            "logo": "https://media.api-sports.io/football/teams/4215.png",
-            "winner": null
-          },
-          "away": {
-            "id": 23393,
-            "name": "Navoiy Football Academy",
-            "logo": "https://media.api-sports.io/football/teams/23393.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1348899,
@@ -459,6 +400,65 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1348916,
+          "date": "2025-04-26T22:00:00+00:00",
+          "venue": {
+            "id": 3215,
+            "name": "Markaziy Stadion",
+            "city": "Qarshi"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745704800
+        },
+        "league": {
+          "id": 369,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/369.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4215,
+            "name": "Nasaf",
+            "logo": "https://media.api-sports.io/football/teams/4215.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4221,
+            "name": "Qizilqum",
+            "logo": "https://media.api-sports.io/football/teams/4221.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
@@ -468,8 +468,8 @@
           "date": "2025-04-05T15:15:00+00:00",
           "venue": {
             "id": 3221,
-            "name": "Stadion G'uzor",
-            "city": "G'uzor"
+            "name": "Markaziy Stadion",
+            "city": "Qarshi"
           },
           "status": {
             "long": "Match Finished",
@@ -999,7 +999,7 @@
           "date": "2024-12-04T16:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Rashid Stadium",
+            "name": "Al-Rashid Stadium",
             "city": "Dubai"
           },
           "status": {
@@ -1347,5 +1347,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:51:59.672Z"
+  "lastUpdated": "2025-04-10T19:46:05.621Z"
 }

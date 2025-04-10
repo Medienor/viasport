@@ -151,67 +151,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1278519,
-          "date": "2025-04-07T18:00:00+00:00",
-          "venue": {
-            "id": 4,
-            "name": "Stadiumi Selman Stërmasi",
-            "city": "Tirana"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744048800
-        },
-        "league": {
-          "id": 310,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/310.png"
-        },
-        "teams": {
-          "home": {
-            "id": 694,
-            "name": "Tirana",
-            "logo": "https://media.api-sports.io/football/teams/694.png",
-            "winner": null
-          },
-          "away": {
-            "id": 708,
-            "name": "Partizani",
-            "logo": "https://media.api-sports.io/football/teams/708.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1278526,
-          "date": "2025-04-12T14:00:00+00:00",
+          "date": "2025-04-12T13:30:00+00:00",
           "venue": {
             "id": 2155,
             "name": "Stadiumi Skënderbeu",
@@ -223,7 +164,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744466400
+          "timestamp": 1744464600
         },
         "league": {
           "id": 310,
@@ -387,6 +328,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1278519,
+          "date": "2025-04-07T18:00:00+00:00",
+          "venue": {
+            "id": 4,
+            "name": "Arena Kombëtare",
+            "city": "Tirana"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744048800
+        },
+        "league": {
+          "id": 310,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/310.png"
+        },
+        "teams": {
+          "home": {
+            "id": 694,
+            "name": "Tirana",
+            "logo": "https://media.api-sports.io/football/teams/694.png",
+            "winner": true
+          },
+          "away": {
+            "id": 708,
+            "name": "Partizani",
+            "logo": "https://media.api-sports.io/football/teams/708.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1278517,
@@ -917,65 +917,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1278472,
-          "date": "2025-02-01T15:30:00+00:00",
-          "venue": {
-            "id": 2159,
-            "name": "Stadiumi Niko Dovana",
-            "city": "Durrës"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1738423800
-        },
-        "league": {
-          "id": 310,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/310.png"
-        },
-        "teams": {
-          "home": {
-            "id": 694,
-            "name": "Tirana",
-            "logo": "https://media.api-sports.io/football/teams/694.png",
-            "winner": null
-          },
-          "away": {
-            "id": 20406,
-            "name": "AF Elbasani",
-            "logo": "https://media.api-sports.io/football/teams/20406.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1272,5 +1213,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:48:47.599Z"
+  "lastUpdated": "2025-04-10T19:42:51.626Z"
 }

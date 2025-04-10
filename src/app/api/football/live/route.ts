@@ -68,9 +68,22 @@ export async function GET() {
       });
       
       if (finishedResponse.ok) {
-        finishedMatchesCache = await finishedResponse.json();
+        const data = await finishedResponse.json();
+        console.log('Finished matches API Response:', {
+          totalMatches: data?.response?.length,
+          matches: data?.response?.map((m: any) => ({
+            id: m.fixture.id,
+            teams: `${m.teams.home.name} vs ${m.teams.away.name}`,
+            status: m.fixture.status,
+            league: m.league.id,
+            score: `${m.goals.home}-${m.goals.away}`
+          }))
+        });
+        
+        finishedMatchesCache = data;
         lastFinishedUpdate = now;
-        console.log(`Updated finished matches cache with ${finishedMatchesCache?.response?.length || 0} matches`);
+        console.log(`Updated finished matches cache at ${new Date(lastFinishedUpdate).toISOString()}`);
+        console.log(`Next update will be at ${new Date(lastFinishedUpdate + 60 * 60 * 1000).toISOString()}`);
       } else {
         console.error('Failed to fetch finished matches:', await finishedResponse.text());
       }

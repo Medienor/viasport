@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -220,65 +220,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361269,
-          "date": "2025-04-08T18:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Al Taawoun Club Stadium",
-            "city": "Buraidah"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744135200
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2936,
-            "name": "Al Taawon",
-            "logo": "https://media.api-sports.io/football/teams/2936.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2874,
-            "name": "Sharjah FC",
-            "logo": "https://media.api-sports.io/football/teams/2874.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1252660,
@@ -578,12 +519,71 @@
     "past": [
       {
         "fixture": {
+          "id": 1361269,
+          "date": "2025-04-08T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "King Abdullah Sport City Stadium",
+            "city": "Buraidah"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1744135200
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2936,
+            "name": "Al Taawon",
+            "logo": "https://media.api-sports.io/football/teams/2936.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2874,
+            "name": "Sharjah FC",
+            "logo": "https://media.api-sports.io/football/teams/2874.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1252648,
           "date": "2025-04-04T14:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Al-Hazem Club Stadium",
-            "city": "Ar Rass"
+            "name": "Ar-Rass Stadium",
+            "city": "Rass"
           },
           "status": {
             "long": "Match Finished",
@@ -759,7 +759,7 @@
           "date": "2025-03-04T16:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Yadegar-e-Imam Stadium",
+            "name": "Sahand Arena",
             "city": "Tabriz"
           },
           "status": {
@@ -818,8 +818,8 @@
           "date": "2025-03-01T19:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Prince Abdullah bin Jalawi Stadium",
-            "city": "Al-Ahsa"
+            "name": "Al Fateh Club Stadium",
+            "city": "Al-Hofuf"
           },
           "status": {
             "long": "Match Finished",
@@ -1055,7 +1055,7 @@
           "venue": {
             "id": null,
             "name": "Khalifa International Stadium",
-            "city": "Ar-Rayyan"
+            "city": "Doha"
           },
           "status": {
             "long": "Match Finished",
@@ -1095,65 +1095,6 @@
           },
           "fulltime": {
             "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1252582,
-          "date": "2025-02-06T17:00:00+00:00",
-          "venue": {
-            "id": 1377,
-            "name": "King Abdullah Sport City Stadium",
-            "city": "Buraidah"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 12
-          },
-          "timestamp": 1738861200
-        },
-        "league": {
-          "id": 307,
-          "name": "Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/307.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2936,
-            "name": "Al Taawon",
-            "logo": "https://media.api-sports.io/football/teams/2936.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2938,
-            "name": "Al-Ittihad FC",
-            "logo": "https://media.api-sports.io/football/teams/2938.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
             "away": 2
           },
           "extratime": {
@@ -1461,5 +1402,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:51:57.049Z"
+  "lastUpdated": "2025-04-10T19:46:02.963Z"
 }

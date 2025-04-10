@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -147,7 +147,7 @@
         {
           "year": 2024,
           "start": "2024-09-13",
-          "end": "2025-04-07",
+          "end": "2025-04-12",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -180,8 +180,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1367329,
-          "date": "2025-04-07T14:00:00+00:00",
+          "id": 1369534,
+          "date": "2025-04-12T14:00:00+00:00",
           "venue": {
             "id": 20465,
             "name": "Vivekananda Yuba Bharati Krirangan Stadium",
@@ -193,7 +193,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744034400
+          "timestamp": 1744466400
         },
         "league": {
           "id": 323,
@@ -208,9 +208,9 @@
             "winner": null
           },
           "away": {
-            "id": 3476,
-            "name": "Jamshedpur",
-            "logo": "https://media.api-sports.io/football/teams/3476.png",
+            "id": 3472,
+            "name": "Bengaluru",
+            "logo": "https://media.api-sports.io/football/teams/3472.png",
             "winner": null
           }
         },
@@ -239,6 +239,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1367329,
+          "date": "2025-04-07T14:00:00+00:00",
+          "venue": {
+            "id": 20465,
+            "name": "Vivekananda Yuba Bharati Krirangan Stadium",
+            "city": "Kolkata"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744034400
+        },
+        "league": {
+          "id": 323,
+          "name": "Indian Super League",
+          "logo": "https://media.api-sports.io/football/leagues/323.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15516,
+            "name": "ATK Mohun Bagan",
+            "logo": "https://media.api-sports.io/football/teams/15516.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3476,
+            "name": "Jamshedpur",
+            "logo": "https://media.api-sports.io/football/teams/3476.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1367328,
@@ -769,65 +828,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1312145,
-          "date": "2025-01-17T14:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "JRD Tata Sports Complex Stadium",
-            "city": "Jamshedpur"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737122400
-        },
-        "league": {
-          "id": 323,
-          "name": "Indian Super League",
-          "logo": "https://media.api-sports.io/football/leagues/323.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3476,
-            "name": "Jamshedpur",
-            "logo": "https://media.api-sports.io/football/teams/3476.png",
-            "winner": null
-          },
-          "away": {
-            "id": 15516,
-            "name": "ATK Mohun Bagan",
-            "logo": "https://media.api-sports.io/football/teams/15516.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1124,5 +1124,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:52:04.775Z"
+  "lastUpdated": "2025-04-10T19:46:11.184Z"
 }

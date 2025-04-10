@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1216332,
-          "date": "2025-04-08T18:45:00+00:00",
-          "venue": {
-            "id": 527,
-            "name": "Pride Park Stadium",
-            "city": "Derby"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744137900
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 69,
-            "name": "Derby",
-            "logo": "https://media.api-sports.io/football/teams/69.png",
-            "winner": null
-          },
-          "away": {
-            "id": 44,
-            "name": "Burnley",
-            "logo": "https://media.api-sports.io/football/teams/44.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1216335,
@@ -506,6 +447,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216332,
+          "date": "2025-04-08T18:45:00+00:00",
+          "venue": {
+            "id": 527,
+            "name": "Pride Park Stadium",
+            "city": "Derby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1744137900
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 69,
+            "name": "Derby",
+            "logo": "https://media.api-sports.io/football/teams/69.png",
+            "winner": null
+          },
+          "away": {
+            "id": 44,
+            "name": "Burnley",
+            "logo": "https://media.api-sports.io/football/teams/44.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216313,
@@ -1036,65 +1036,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216223,
-          "date": "2025-02-12T19:45:00+00:00",
-          "venue": {
-            "id": 512,
-            "name": "Turf Moor",
-            "city": "Burnley"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739389500
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 44,
-            "name": "Burnley",
-            "logo": "https://media.api-sports.io/football/teams/44.png",
-            "winner": true
-          },
-          "away": {
-            "id": 64,
-            "name": "Hull City",
-            "logo": "https://media.api-sports.io/football/teams/64.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1391,5 +1332,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:47:15.583Z"
+  "lastUpdated": "2025-04-10T19:41:17.944Z"
 }

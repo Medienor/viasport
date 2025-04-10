@@ -191,65 +191,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360766,
-          "date": "2025-04-09T19:00:00+00:00",
-          "venue": {
-            "id": 19939,
-            "name": "Estadi Olímpic Lluís Companys",
-            "city": "Barcelona"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744225200
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 529,
-            "name": "Barcelona",
-            "logo": "https://media.api-sports.io/football/teams/529.png",
-            "winner": null
-          },
-          "away": {
-            "id": 165,
-            "name": "Borussia Dortmund",
-            "logo": "https://media.api-sports.io/football/teams/165.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1224229,
           "date": "2025-04-12T16:30:00+00:00",
           "venue": {
@@ -842,6 +783,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1360766,
+          "date": "2025-04-09T19:00:00+00:00",
+          "venue": {
+            "id": 19939,
+            "name": "Estadi Olímpic Lluís Companys",
+            "city": "Barcelona"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744225200
+        },
+        "league": {
+          "id": 2,
+          "name": "UEFA Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/2.png"
+        },
+        "teams": {
+          "home": {
+            "id": 529,
+            "name": "Barcelona",
+            "logo": "https://media.api-sports.io/football/teams/529.png",
+            "winner": true
+          },
+          "away": {
+            "id": 165,
+            "name": "Borussia Dortmund",
+            "logo": "https://media.api-sports.io/football/teams/165.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1224221,
           "date": "2025-04-05T13:30:00+00:00",
           "venue": {
@@ -1023,8 +1023,8 @@
           "date": "2025-03-12T17:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Decathlon Arena - Stade Pierre-Mauroy",
-            "city": "Villeneuve d'Ascq"
+            "name": "Decathlon Arena - Stade Pierre Mauroy",
+            "city": "Lille"
           },
           "status": {
             "long": "Match Finished",
@@ -1370,65 +1370,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224171,
-          "date": "2025-02-15T14:30:00+00:00",
-          "venue": {
-            "id": 751,
-            "name": "Vonovia Ruhrstadion",
-            "city": "Bochum"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739629800
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 176,
-            "name": "VfL Bochum",
-            "logo": "https://media.api-sports.io/football/teams/176.png",
-            "winner": true
-          },
-          "away": {
-            "id": 165,
-            "name": "Borussia Dortmund",
-            "logo": "https://media.api-sports.io/football/teams/165.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1725,5 +1666,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:46:11.049Z"
+  "lastUpdated": "2025-04-10T19:40:13.487Z"
 }

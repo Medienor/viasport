@@ -152,7 +152,7 @@
           "coverage": {
             "fixtures": {
               "events": true,
-              "lineups": false,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -161,6 +161,43 @@
             "top_scorers": true,
             "top_assists": true,
             "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 167,
+        "name": "Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/167.png"
+      },
+      "country": {
+        "name": "Iceland",
+        "code": "IS",
+        "flag": "https://media.api-sports.io/flags/is.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-03-28",
+          "end": "2025-04-19",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
             "injuries": false,
             "predictions": true,
             "odds": true
@@ -210,6 +247,65 @@
             "id": 271,
             "name": "KR Reykjavik",
             "logo": "https://media.api-sports.io/football/teams/271.png",
+            "winner": null
+          },
+          "away": {
+            "id": 274,
+            "name": "Valur Reykjavik",
+            "logo": "https://media.api-sports.io/football/teams/274.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1369264,
+          "date": "2025-04-19T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stakkavíkurvöllur",
+            "city": "Grindavík"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745067600
+        },
+        "league": {
+          "id": 167,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/167.png"
+        },
+        "teams": {
+          "home": {
+            "id": 277,
+            "name": "Grindavik",
+            "logo": "https://media.api-sports.io/football/teams/277.png",
             "winner": null
           },
           "away": {
@@ -1303,65 +1399,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1332834,
-          "date": "2025-08-31T19:15:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Lambhagavöllurinn",
-            "city": "Reykjavík"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1756667700
-        },
-        "league": {
-          "id": 164,
-          "name": "Úrvalsdeild",
-          "logo": "https://media.api-sports.io/football/leagues/164.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2117,
-            "name": "Fram Reykjavik",
-            "logo": "https://media.api-sports.io/football/teams/2117.png",
-            "winner": null
-          },
-          "away": {
-            "id": 274,
-            "name": "Valur Reykjavik",
-            "logo": "https://media.api-sports.io/football/teams/274.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ],
     "past": [
@@ -2250,5 +2287,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:48:27.238Z"
+  "lastUpdated": "2025-04-10T19:42:31.146Z"
 }

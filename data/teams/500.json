@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223896,
-          "date": "2025-04-07T18:45:00+00:00",
-          "venue": {
-            "id": 881,
-            "name": "Stadio Renato Dall'Ara",
-            "city": "Bologna"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744051500
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 500,
-            "name": "Bologna",
-            "logo": "https://media.api-sports.io/football/teams/500.png",
-            "winner": null
-          },
-          "away": {
-            "id": 492,
-            "name": "Napoli",
-            "logo": "https://media.api-sports.io/football/teams/492.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223905,
           "date": "2025-04-13T10:30:00+00:00",
           "venue": {
@@ -685,6 +626,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1223896,
+          "date": "2025-04-07T18:45:00+00:00",
+          "venue": {
+            "id": 881,
+            "name": "Stadio Renato Dall'Ara",
+            "city": "Bologna"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744051500
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 500,
+            "name": "Bologna",
+            "logo": "https://media.api-sports.io/football/teams/500.png",
+            "winner": null
+          },
+          "away": {
+            "id": 492,
+            "name": "Napoli",
+            "logo": "https://media.api-sports.io/football/teams/492.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1355083,
           "date": "2025-04-01T19:00:00+00:00",
           "venue": {
@@ -748,8 +748,8 @@
           "date": "2025-03-29T14:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Pierluigi Penzo",
-            "city": "Venice"
+            "name": "Stadio Pier Luigi Penzo",
+            "city": "Venezia"
           },
           "status": {
             "long": "Match Finished",
@@ -1161,7 +1161,7 @@
           "date": "2025-02-09T17:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Via del Mare",
+            "name": "Stadio Ettore Giardiniero - Via del Mare",
             "city": "Lecce"
           },
           "status": {
@@ -1203,65 +1203,6 @@
           "fulltime": {
             "home": 0,
             "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1323909,
-          "date": "2025-02-04T20:00:00+00:00",
-          "venue": {
-            "id": 879,
-            "name": "Gewiss Stadium",
-            "city": "Bergamo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738699200
-        },
-        "league": {
-          "id": 137,
-          "name": "Coppa Italia",
-          "logo": "https://media.api-sports.io/football/leagues/137.png"
-        },
-        "teams": {
-          "home": {
-            "id": 499,
-            "name": "Atalanta",
-            "logo": "https://media.api-sports.io/football/teams/499.png",
-            "winner": false
-          },
-          "away": {
-            "id": 500,
-            "name": "Bologna",
-            "logo": "https://media.api-sports.io/football/teams/500.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
           },
           "extratime": {
             "home": null,
@@ -1568,5 +1509,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:46:02.933Z"
+  "lastUpdated": "2025-04-10T19:40:05.641Z"
 }

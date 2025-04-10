@@ -185,65 +185,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1355652,
-          "date": "2025-04-09T16:00:00+00:00",
-          "venue": {
-            "id": 286,
-            "name": "Stadion Ticha",
-            "city": "Varna"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744214400
-        },
-        "league": {
-          "id": 174,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/174.png"
-        },
-        "teams": {
-          "home": {
-            "id": 851,
-            "name": "Cherno More Varna",
-            "logo": "https://media.api-sports.io/football/teams/851.png",
-            "winner": null
-          },
-          "away": {
-            "id": 853,
-            "name": "CSKA Sofia",
-            "logo": "https://media.api-sports.io/football/teams/853.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1214540,
           "date": "2025-04-13T14:30:00+00:00",
           "venue": {
@@ -421,6 +362,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1355652,
+          "date": "2025-04-09T16:00:00+00:00",
+          "venue": {
+            "id": 286,
+            "name": "Stadion Ticha",
+            "city": "Varna"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744214400
+        },
+        "league": {
+          "id": 174,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/174.png"
+        },
+        "teams": {
+          "home": {
+            "id": 851,
+            "name": "Cherno More Varna",
+            "logo": "https://media.api-sports.io/football/teams/851.png",
+            "winner": null
+          },
+          "away": {
+            "id": 853,
+            "name": "CSKA Sofia",
+            "logo": "https://media.api-sports.io/football/teams/853.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1214537,
@@ -951,65 +951,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1214480,
-          "date": "2025-02-15T10:30:00+00:00",
-          "venue": {
-            "id": 19902,
-            "name": "Nikola Shterev-Starika Complex",
-            "city": "Plovdiv"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1739615400
-        },
-        "league": {
-          "id": 172,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/172.png"
-        },
-        "teams": {
-          "home": {
-            "id": 17306,
-            "name": "Levski Krumovgrad",
-            "logo": "https://media.api-sports.io/football/teams/17306.png",
-            "winner": null
-          },
-          "away": {
-            "id": 851,
-            "name": "Cherno More Varna",
-            "logo": "https://media.api-sports.io/football/teams/851.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1306,5 +1247,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:48:50.198Z"
+  "lastUpdated": "2025-04-10T19:42:54.165Z"
 }

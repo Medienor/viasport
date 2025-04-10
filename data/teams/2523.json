@@ -184,65 +184,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1315681,
-          "date": "2025-04-10T12:15:00+00:00",
-          "venue": {
-            "id": 1050,
-            "name": "Stadium Sultan Ibrahim Larkin",
-            "city": "Nusajaya"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744287300
-        },
-        "league": {
-          "id": 278,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/278.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2523,
-            "name": "Johor Darul Takzim FC",
-            "logo": "https://media.api-sports.io/football/teams/2523.png",
-            "winner": null
-          },
-          "away": {
-            "id": 10107,
-            "name": "Kelantan United",
-            "logo": "https://media.api-sports.io/football/teams/10107.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1315691,
           "date": "2025-04-16T12:15:00+00:00",
           "venue": {
@@ -361,6 +302,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1315681,
+          "date": "2025-04-10T12:15:00+00:00",
+          "venue": {
+            "id": 1050,
+            "name": "Stadium Sultan Ibrahim Larkin",
+            "city": "Nusajaya"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744287300
+        },
+        "league": {
+          "id": 278,
+          "name": "Super League",
+          "logo": "https://media.api-sports.io/football/leagues/278.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2523,
+            "name": "Johor Darul Takzim FC",
+            "logo": "https://media.api-sports.io/football/teams/2523.png",
+            "winner": true
+          },
+          "away": {
+            "id": 10107,
+            "name": "Kelantan United",
+            "logo": "https://media.api-sports.io/football/teams/10107.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 9,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 5,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 9,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1315668,
@@ -891,65 +891,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1315654,
-          "date": "2025-01-25T13:00:00+00:00",
-          "venue": {
-            "id": 18519,
-            "name": "Sultan Mizan Zainal Abidin Stadium",
-            "city": "Kuala Terengganu"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1737810000
-        },
-        "league": {
-          "id": 278,
-          "name": "Super League",
-          "logo": "https://media.api-sports.io/football/leagues/278.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2518,
-            "name": "Terengganu",
-            "logo": "https://media.api-sports.io/football/teams/2518.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2523,
-            "name": "Johor Darul Takzim FC",
-            "logo": "https://media.api-sports.io/football/teams/2523.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1246,5 +1187,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:51:38.941Z"
+  "lastUpdated": "2025-04-10T19:45:45.003Z"
 }

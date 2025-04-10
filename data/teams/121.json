@@ -191,65 +191,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361885,
-          "date": "2025-04-10T00:30:00+00:00",
-          "venue": {
-            "id": 258,
-            "name": "Allianz Parque",
-            "city": "São Paulo, São Paulo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744245000
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 121,
-            "name": "Palmeiras",
-            "logo": "https://media.api-sports.io/football/teams/121.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1176,
-            "name": "Cerro Porteno",
-            "logo": "https://media.api-sports.io/football/teams/1176.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1351065,
           "date": "2025-04-12T21:30:00+00:00",
           "venue": {
@@ -1196,6 +1137,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361885,
+          "date": "2025-04-10T00:30:00+00:00",
+          "venue": {
+            "id": 258,
+            "name": "Allianz Parque",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744245000
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 121,
+            "name": "Palmeiras",
+            "logo": "https://media.api-sports.io/football/teams/121.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1176,
+            "name": "Cerro Porteno",
+            "logo": "https://media.api-sports.io/football/teams/1176.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351062,
           "date": "2025-04-06T21:30:00+00:00",
           "venue": {
@@ -1724,65 +1724,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1319829,
-          "date": "2025-02-16T21:30:00+00:00",
-          "venue": {
-            "id": 258,
-            "name": "Allianz Parque",
-            "city": "São Paulo, São Paulo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739741400
-        },
-        "league": {
-          "id": 475,
-          "name": "Paulista - A1",
-          "logo": "https://media.api-sports.io/football/leagues/475.png"
-        },
-        "teams": {
-          "home": {
-            "id": 121,
-            "name": "Palmeiras",
-            "logo": "https://media.api-sports.io/football/teams/121.png",
-            "winner": null
-          },
-          "away": {
-            "id": 126,
-            "name": "Sao Paulo",
-            "logo": "https://media.api-sports.io/football/teams/126.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2108,5 +2049,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:52:07.296Z"
+  "lastUpdated": "2025-04-10T19:46:13.848Z"
 }

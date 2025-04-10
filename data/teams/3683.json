@@ -151,7 +151,7 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
+              "events": true,
               "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
@@ -163,7 +163,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -221,71 +221,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1338290,
-          "date": "2025-04-09T15:00:00+00:00",
+          "id": 1367887,
+          "date": "2025-04-15T14:30:00+00:00",
           "venue": {
             "id": 121,
             "name": "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
             "city": "Yerevan"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744210800
-        },
-        "league": {
-          "id": 654,
-          "name": "Super Cup",
-          "logo": "https://media.api-sports.io/football/leagues/654.png"
-        },
-        "teams": {
-          "home": {
-            "id": 709,
-            "name": "Pyunik Yerevan",
-            "logo": "https://media.api-sports.io/football/teams/709.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3683,
-            "name": "Ararat-Armenia",
-            "logo": "https://media.api-sports.io/football/teams/3683.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1367887,
-          "date": "2025-04-15T14:30:00+00:00",
-          "venue": {
-            "id": 4654,
-            "name": "Kotaik Stadium",
-            "city": "Abovian"
           },
           "status": {
             "long": "Not Started",
@@ -575,6 +516,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1338290,
+          "date": "2025-04-09T15:00:00+00:00",
+          "venue": {
+            "id": 121,
+            "name": "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
+            "city": "Yerevan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744210800
+        },
+        "league": {
+          "id": 654,
+          "name": "Super Cup",
+          "logo": "https://media.api-sports.io/football/leagues/654.png"
+        },
+        "teams": {
+          "home": {
+            "id": 709,
+            "name": "Pyunik Yerevan",
+            "logo": "https://media.api-sports.io/football/teams/709.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3683,
+            "name": "Ararat-Armenia",
+            "logo": "https://media.api-sports.io/football/teams/3683.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360685,
@@ -1105,65 +1105,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1350804,
-          "date": "2025-02-11T09:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "TBC",
-            "city": "TBC"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1739264400
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3412,
-            "name": "Ethnikos Achna",
-            "logo": "https://media.api-sports.io/football/teams/3412.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3683,
-            "name": "Ararat-Armenia",
-            "logo": "https://media.api-sports.io/football/teams/3683.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1460,5 +1401,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:49:02.925Z"
+  "lastUpdated": "2025-04-10T19:43:07.129Z"
 }

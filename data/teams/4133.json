@@ -147,12 +147,12 @@
         {
           "year": 2025,
           "start": "2025-04-07",
-          "end": "2025-04-07",
+          "end": "2025-04-20",
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
+              "events": true,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -163,7 +163,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -188,65 +188,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1358909,
-          "date": "2025-04-07T17:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Gundadalur",
-            "city": null
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744047000
-        },
-        "league": {
-          "id": 491,
-          "name": "Løgmanssteypid",
-          "logo": "https://media.api-sports.io/football/leagues/491.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4133,
-            "name": "HB",
-            "logo": "https://media.api-sports.io/football/teams/4133.png",
-            "winner": null
-          },
-          "away": {
-            "id": 701,
-            "name": "KI Klaksvik",
-            "logo": "https://media.api-sports.io/football/teams/701.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1335708,
@@ -544,6 +485,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1358909,
+          "date": "2025-04-07T17:30:00+00:00",
+          "venue": {
+            "id": 609,
+            "name": "Gundadalur",
+            "city": "Tórshavn, Streymoy"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744047000
+        },
+        "league": {
+          "id": 491,
+          "name": "Løgmanssteypid",
+          "logo": "https://media.api-sports.io/football/leagues/491.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4133,
+            "name": "HB",
+            "logo": "https://media.api-sports.io/football/teams/4133.png",
+            "winner": false
+          },
+          "away": {
+            "id": 701,
+            "name": "KI Klaksvik",
+            "logo": "https://media.api-sports.io/football/teams/701.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1335704,
@@ -1074,65 +1074,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1168173,
-          "date": "2024-09-22T16:00:00+00:00",
-          "venue": {
-            "id": 609,
-            "name": "Gundadalur",
-            "city": "Tórshavn, Streymoy"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1727020800
-        },
-        "league": {
-          "id": 367,
-          "name": "Meistaradeildin",
-          "logo": "https://media.api-sports.io/football/leagues/367.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4133,
-            "name": "HB",
-            "logo": "https://media.api-sports.io/football/teams/4133.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4191,
-            "name": "Skála",
-            "logo": "https://media.api-sports.io/football/teams/4191.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1429,5 +1370,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:49:05.660Z"
+  "lastUpdated": "2025-04-10T19:43:09.606Z"
 }

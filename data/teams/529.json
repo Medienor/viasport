@@ -190,65 +190,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360766,
-          "date": "2025-04-09T19:00:00+00:00",
-          "venue": {
-            "id": 19939,
-            "name": "Estadi Olímpic Lluís Companys",
-            "city": "Barcelona"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744225200
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 529,
-            "name": "Barcelona",
-            "logo": "https://media.api-sports.io/football/teams/529.png",
-            "winner": null
-          },
-          "away": {
-            "id": 165,
-            "name": "Borussia Dortmund",
-            "logo": "https://media.api-sports.io/football/teams/165.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208769,
           "date": "2025-04-12T19:00:00+00:00",
           "venue": {
@@ -541,9 +482,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1208795,
+          "date": "2025-05-04T12:00:00+00:00",
+          "venue": {
+            "id": 1492,
+            "name": "Estadio Municipal José Zorrilla",
+            "city": "Valladolid"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746360000
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 720,
+            "name": "Valladolid",
+            "logo": "https://media.api-sports.io/football/teams/720.png",
+            "winner": null
+          },
+          "away": {
+            "id": 529,
+            "name": "Barcelona",
+            "logo": "https://media.api-sports.io/football/teams/529.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360766,
+          "date": "2025-04-09T19:00:00+00:00",
+          "venue": {
+            "id": 19939,
+            "name": "Estadi Olímpic Lluís Companys",
+            "city": "Barcelona"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744225200
+        },
+        "league": {
+          "id": 2,
+          "name": "UEFA Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/2.png"
+        },
+        "teams": {
+          "home": {
+            "id": 529,
+            "name": "Barcelona",
+            "logo": "https://media.api-sports.io/football/teams/529.png",
+            "winner": true
+          },
+          "away": {
+            "id": 165,
+            "name": "Borussia Dortmund",
+            "logo": "https://media.api-sports.io/football/teams/165.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208755,
@@ -904,8 +963,8 @@
           "date": "2025-03-05T20:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estádio do Sport Lisboa e Benfica",
-            "city": "Lisboa"
+            "name": "Estádio da Luz",
+            "city": "Lisbon"
           },
           "status": {
             "long": "Match Finished",
@@ -1064,65 +1123,6 @@
           "fulltime": {
             "home": 4,
             "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1208714,
-          "date": "2025-02-22T20:00:00+00:00",
-          "venue": {
-            "id": 1481,
-            "name": "Estadio de Gran Canaria",
-            "city": "Las Palmas de Gran Canaria"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1740254400
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 534,
-            "name": "Las Palmas",
-            "logo": "https://media.api-sports.io/football/teams/534.png",
-            "winner": false
-          },
-          "away": {
-            "id": 529,
-            "name": "Barcelona",
-            "logo": "https://media.api-sports.io/football/teams/529.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
           },
           "extratime": {
             "home": null,
@@ -1429,5 +1429,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:45:47.692Z"
+  "lastUpdated": "2025-04-10T19:39:49.654Z"
 }

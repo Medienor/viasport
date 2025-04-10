@@ -188,7 +188,7 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
+              "events": true,
               "lineups": false,
               "statistics_fixtures": false,
               "statistics_players": false
@@ -200,7 +200,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -262,65 +262,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1338290,
-          "date": "2025-04-09T15:00:00+00:00",
-          "venue": {
-            "id": 121,
-            "name": "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
-            "city": "Yerevan"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744210800
-        },
-        "league": {
-          "id": 654,
-          "name": "Super Cup",
-          "logo": "https://media.api-sports.io/football/leagues/654.png"
-        },
-        "teams": {
-          "home": {
-            "id": 709,
-            "name": "Pyunik Yerevan",
-            "logo": "https://media.api-sports.io/football/teams/709.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3683,
-            "name": "Ararat-Armenia",
-            "logo": "https://media.api-sports.io/football/teams/3683.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1366100,
@@ -385,9 +326,9 @@
           "id": 1367887,
           "date": "2025-04-15T14:30:00+00:00",
           "venue": {
-            "id": 4654,
-            "name": "Kotaik Stadium",
-            "city": "Abovian"
+            "id": 121,
+            "name": "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
+            "city": "Yerevan"
           },
           "status": {
             "long": "Not Started",
@@ -501,7 +442,7 @@
       {
         "fixture": {
           "id": 1368304,
-          "date": "2025-04-24T12:00:00+00:00",
+          "date": "2025-04-23T12:00:00+00:00",
           "venue": {
             "id": null,
             "name": "Junior Sport Stadium",
@@ -513,7 +454,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745496000
+          "timestamp": 1745409600
         },
         "league": {
           "id": 342,
@@ -677,6 +618,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1338290,
+          "date": "2025-04-09T15:00:00+00:00",
+          "venue": {
+            "id": 121,
+            "name": "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
+            "city": "Yerevan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744210800
+        },
+        "league": {
+          "id": 654,
+          "name": "Super Cup",
+          "logo": "https://media.api-sports.io/football/leagues/654.png"
+        },
+        "teams": {
+          "home": {
+            "id": 709,
+            "name": "Pyunik Yerevan",
+            "logo": "https://media.api-sports.io/football/teams/709.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3683,
+            "name": "Ararat-Armenia",
+            "logo": "https://media.api-sports.io/football/teams/3683.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 3
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360684,
@@ -1207,65 +1207,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1346007,
-          "date": "2025-02-11T07:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Emirates Palace Stadium",
-            "city": "Abu Dhabi"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1739257200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 709,
-            "name": "Pyunik Yerevan",
-            "logo": "https://media.api-sports.io/football/teams/709.png",
-            "winner": false
-          },
-          "away": {
-            "id": 596,
-            "name": "Zenit",
-            "logo": "https://media.api-sports.io/football/teams/596.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1562,5 +1503,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:48:09.287Z"
+  "lastUpdated": "2025-04-10T19:42:12.546Z"
 }

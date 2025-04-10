@@ -110,7 +110,7 @@
         {
           "year": 2024,
           "start": "2024-08-10",
-          "end": "2025-04-06",
+          "end": "2025-04-13",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -163,7 +163,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -219,12 +219,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1359801,
-          "date": "2025-04-08T22:00:00+00:00",
+          "id": 1369428,
+          "date": "2025-04-13T13:00:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 20315,
+            "name": "Stadiumi me bar sintetik Gjilan",
+            "city": "Gnjilane"
           },
           "status": {
             "long": "Not Started",
@@ -232,24 +232,24 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744149600
+          "timestamp": 1744549200
         },
         "league": {
-          "id": 665,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/665.png"
+          "id": 664,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/664.png"
         },
         "teams": {
           "home": {
-            "id": 14395,
-            "name": "Llapi",
-            "logo": "https://media.api-sports.io/football/teams/14395.png",
+            "id": 12772,
+            "name": "Gjilani",
+            "logo": "https://media.api-sports.io/football/teams/12772.png",
             "winner": null
           },
           "away": {
-            "id": 14392,
-            "name": "Drenica Skënderaj",
-            "logo": "https://media.api-sports.io/football/teams/14392.png",
+            "id": 14395,
+            "name": "Llapi",
+            "logo": "https://media.api-sports.io/football/teams/14395.png",
             "winner": null
           }
         },
@@ -337,6 +337,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1359801,
+          "date": "2025-04-10T13:00:00+00:00",
+          "venue": {
+            "id": 11084,
+            "name": "Stadiumi Zahir Pajaziti",
+            "city": "Besiana, Podujevo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744290000
+        },
+        "league": {
+          "id": 665,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/665.png"
+        },
+        "teams": {
+          "home": {
+            "id": 14395,
+            "name": "Llapi",
+            "logo": "https://media.api-sports.io/football/teams/14395.png",
+            "winner": true
+          },
+          "away": {
+            "id": 14392,
+            "name": "Drenica Skënderaj",
+            "logo": "https://media.api-sports.io/football/teams/14392.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1367394,
@@ -867,65 +926,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1321730,
-          "date": "2025-02-12T11:30:00+00:00",
-          "venue": {
-            "id": 11084,
-            "name": "Stadiumi Zahir Pajaziti",
-            "city": "Besiana, Podujevo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739359800
-        },
-        "league": {
-          "id": 665,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/665.png"
-        },
-        "teams": {
-          "home": {
-            "id": 14395,
-            "name": "Llapi",
-            "logo": "https://media.api-sports.io/football/teams/14395.png",
-            "winner": true
-          },
-          "away": {
-            "id": 14396,
-            "name": "Vushtrria",
-            "logo": "https://media.api-sports.io/football/teams/14396.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1222,5 +1222,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:48:27.277Z"
+  "lastUpdated": "2025-04-10T19:42:31.178Z"
 }

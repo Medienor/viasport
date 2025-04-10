@@ -263,124 +263,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1214531,
-          "date": "2025-04-07T17:00:00+00:00",
-          "venue": {
-            "id": 296,
-            "name": "Stadion Vitosha",
-            "city": "Bistrica"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744045200
-        },
-        "league": {
-          "id": 172,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/172.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1426,
-            "name": "CSKA 1948",
-            "logo": "https://media.api-sports.io/football/teams/1426.png",
-            "winner": null
-          },
-          "away": {
-            "id": 566,
-            "name": "Ludogorets",
-            "logo": "https://media.api-sports.io/football/teams/566.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1355650,
-          "date": "2025-04-10T16:00:00+00:00",
-          "venue": {
-            "id": 285,
-            "name": "Stadion Hristo Botev",
-            "city": "Vratsa"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744300800
-        },
-        "league": {
-          "id": 174,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/174.png"
-        },
-        "teams": {
-          "home": {
-            "id": 859,
-            "name": "Botev Vratsa",
-            "logo": "https://media.api-sports.io/football/teams/859.png",
-            "winner": null
-          },
-          "away": {
-            "id": 566,
-            "name": "Ludogorets",
-            "logo": "https://media.api-sports.io/football/teams/566.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1214546,
           "date": "2025-04-14T17:00:00+00:00",
           "venue": {
@@ -558,6 +440,124 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1355650,
+          "date": "2025-04-10T16:00:00+00:00",
+          "venue": {
+            "id": 285,
+            "name": "Stadion Hristo Botev",
+            "city": "Vratsa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744300800
+        },
+        "league": {
+          "id": 174,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/174.png"
+        },
+        "teams": {
+          "home": {
+            "id": 859,
+            "name": "Botev Vratsa",
+            "logo": "https://media.api-sports.io/football/teams/859.png",
+            "winner": false
+          },
+          "away": {
+            "id": 566,
+            "name": "Ludogorets",
+            "logo": "https://media.api-sports.io/football/teams/566.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1214531,
+          "date": "2025-04-07T17:00:00+00:00",
+          "venue": {
+            "id": 296,
+            "name": "Stadion Vitosha",
+            "city": "Bistrica"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744045200
+        },
+        "league": {
+          "id": 172,
+          "name": "First League",
+          "logo": "https://media.api-sports.io/football/leagues/172.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1426,
+            "name": "CSKA 1948",
+            "logo": "https://media.api-sports.io/football/teams/1426.png",
+            "winner": false
+          },
+          "away": {
+            "id": 566,
+            "name": "Ludogorets",
+            "logo": "https://media.api-sports.io/football/teams/566.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1214530,
@@ -1029,124 +1029,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1316579,
-          "date": "2025-02-04T16:00:00+00:00",
-          "venue": {
-            "id": 19922,
-            "name": "Stadion Hristo Botev",
-            "city": "Plovdiv"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738684800
-        },
-        "league": {
-          "id": 656,
-          "name": "Super Cup",
-          "logo": "https://media.api-sports.io/football/leagues/656.png"
-        },
-        "teams": {
-          "home": {
-            "id": 566,
-            "name": "Ludogorets",
-            "logo": "https://media.api-sports.io/football/teams/566.png",
-            "winner": true
-          },
-          "away": {
-            "id": 634,
-            "name": "Botev Plovdiv",
-            "logo": "https://media.api-sports.io/football/teams/634.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1299261,
-          "date": "2025-01-30T20:00:00+00:00",
-          "venue": {
-            "id": 666,
-            "name": "Groupama Stadium",
-            "city": "Décines-Charpieu"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738267200
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 80,
-            "name": "Lyon",
-            "logo": "https://media.api-sports.io/football/teams/80.png",
-            "winner": null
-          },
-          "away": {
-            "id": 566,
-            "name": "Ludogorets",
-            "logo": "https://media.api-sports.io/football/teams/566.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1443,5 +1325,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:47:56.416Z"
+  "lastUpdated": "2025-04-10T19:41:59.593Z"
 }

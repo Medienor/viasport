@@ -265,65 +265,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1355268,
-          "date": "2025-04-09T19:45:00+00:00",
-          "venue": {
-            "id": 2811,
-            "name": "Estádio Cidade de Barcelos",
-            "city": "Barcelos"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744227900
-        },
-        "league": {
-          "id": 96,
-          "name": "Taça de Portugal",
-          "logo": "https://media.api-sports.io/football/leagues/96.png"
-        },
-        "teams": {
-          "home": {
-            "id": 15128,
-            "name": "Tirsense",
-            "logo": "https://media.api-sports.io/football/teams/15128.png",
-            "winner": null
-          },
-          "away": {
-            "id": 211,
-            "name": "Benfica",
-            "logo": "https://media.api-sports.io/football/teams/211.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231986,
           "date": "2025-04-13T17:00:00+00:00",
           "venue": {
@@ -857,6 +798,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1355268,
+          "date": "2025-04-09T19:45:00+00:00",
+          "venue": {
+            "id": 2811,
+            "name": "Estádio Cidade de Barcelos",
+            "city": "Barcelos"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1744227900
+        },
+        "league": {
+          "id": 96,
+          "name": "Taça de Portugal",
+          "logo": "https://media.api-sports.io/football/leagues/96.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15128,
+            "name": "Tirsense",
+            "logo": "https://media.api-sports.io/football/teams/15128.png",
+            "winner": false
+          },
+          "away": {
+            "id": 211,
+            "name": "Benfica",
+            "logo": "https://media.api-sports.io/football/teams/211.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1231977,
           "date": "2025-04-06T19:30:00+00:00",
           "venue": {
@@ -920,8 +920,8 @@
           "date": "2025-04-02T19:15:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estádio da Luz",
-            "city": "Lisbon"
+            "name": "Estádio do Sport Lisboa e Benfica",
+            "city": "Lisboa"
           },
           "status": {
             "long": "Match Finished",
@@ -1156,8 +1156,8 @@
           "date": "2025-03-08T18:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estádio da Luz",
-            "city": "Lisbon"
+            "name": "Estádio do Sport Lisboa e Benfica",
+            "city": "Lisboa"
           },
           "status": {
             "long": "Match Finished",
@@ -1215,8 +1215,8 @@
           "date": "2025-03-05T20:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estádio do Sport Lisboa e Benfica",
-            "city": "Lisboa"
+            "name": "Estádio da Luz",
+            "city": "Lisbon"
           },
           "status": {
             "long": "Match Finished",
@@ -1333,8 +1333,8 @@
           "date": "2025-02-22T18:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estádio da Luz",
-            "city": "Lisbon"
+            "name": "Estádio do Sport Lisboa e Benfica",
+            "city": "Lisboa"
           },
           "status": {
             "long": "Match Finished",
@@ -1375,65 +1375,6 @@
           "fulltime": {
             "home": 3,
             "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1345750,
-          "date": "2025-02-18T20:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estádio do Sport Lisboa e Benfica",
-            "city": "Lisboa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1739908800
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 211,
-            "name": "Benfica",
-            "logo": "https://media.api-sports.io/football/teams/211.png",
-            "winner": null
-          },
-          "away": {
-            "id": 91,
-            "name": "Monaco",
-            "logo": "https://media.api-sports.io/football/teams/91.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 3
           },
           "extratime": {
             "home": null,
@@ -1740,5 +1681,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:46:36.704Z"
+  "lastUpdated": "2025-04-10T19:40:38.992Z"
 }

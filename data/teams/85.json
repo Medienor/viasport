@@ -265,65 +265,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360762,
-          "date": "2025-04-09T19:00:00+00:00",
-          "venue": {
-            "id": 671,
-            "name": "Parc des Princes",
-            "city": "Paris"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744225200
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 85,
-            "name": "Paris Saint Germain",
-            "logo": "https://media.api-sports.io/football/teams/85.png",
-            "winner": null
-          },
-          "away": {
-            "id": 66,
-            "name": "Aston Villa",
-            "logo": "https://media.api-sports.io/football/teams/66.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1360763,
           "date": "2025-04-15T19:00:00+00:00",
           "venue": {
@@ -796,6 +737,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360762,
+          "date": "2025-04-09T19:00:00+00:00",
+          "venue": {
+            "id": 671,
+            "name": "Parc des Princes",
+            "city": "Paris"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744225200
+        },
+        "league": {
+          "id": 2,
+          "name": "UEFA Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/2.png"
+        },
+        "teams": {
+          "home": {
+            "id": 85,
+            "name": "Paris Saint Germain",
+            "logo": "https://media.api-sports.io/football/teams/85.png",
+            "winner": true
+          },
+          "away": {
+            "id": 66,
+            "name": "Aston Villa",
+            "logo": "https://media.api-sports.io/football/teams/66.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213996,
@@ -1326,65 +1326,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345738,
-          "date": "2025-02-19T20:00:00+00:00",
-          "venue": {
-            "id": 671,
-            "name": "Parc des Princes",
-            "city": "Paris"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1739995200
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 85,
-            "name": "Paris Saint Germain",
-            "logo": "https://media.api-sports.io/football/teams/85.png",
-            "winner": true
-          },
-          "away": {
-            "id": 106,
-            "name": "Stade Brestois 29",
-            "logo": "https://media.api-sports.io/football/teams/106.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 7,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 7,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1681,5 +1622,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:46:21.362Z"
+  "lastUpdated": "2025-04-10T19:40:23.659Z"
 }

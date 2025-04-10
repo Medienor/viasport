@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1366884,
-          "date": "2025-04-09T10:00:00+00:00",
-          "venue": {
-            "id": 971,
-            "name": "ND Soft Stadium",
-            "city": "Tendo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744192800
-        },
-        "league": {
-          "id": 101,
-          "name": "J-League Cup",
-          "logo": "https://media.api-sports.io/football/leagues/101.png"
-        },
-        "teams": {
-          "home": {
-            "id": 312,
-            "name": "Montedio Yamagata",
-            "logo": "https://media.api-sports.io/football/teams/312.png",
-            "winner": null
-          },
-          "away": {
-            "id": 302,
-            "name": "Kyoto Sanga",
-            "logo": "https://media.api-sports.io/football/teams/302.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1324047,
           "date": "2025-04-12T07:00:00+00:00",
           "venue": {
@@ -1334,6 +1275,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1366884,
+          "date": "2025-04-09T10:00:00+00:00",
+          "venue": {
+            "id": 971,
+            "name": "ND Soft Stadium",
+            "city": "Tendo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1744192800
+        },
+        "league": {
+          "id": 101,
+          "name": "J-League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/101.png"
+        },
+        "teams": {
+          "home": {
+            "id": 312,
+            "name": "Montedio Yamagata",
+            "logo": "https://media.api-sports.io/football/teams/312.png",
+            "winner": false
+          },
+          "away": {
+            "id": 302,
+            "name": "Kyoto Sanga",
+            "logo": "https://media.api-sports.io/football/teams/302.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1324032,
           "date": "2025-04-06T06:00:00+00:00",
           "venue": {
@@ -1862,65 +1862,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323960,
-          "date": "2025-02-15T05:00:00+00:00",
-          "venue": {
-            "id": 957,
-            "name": "JFE Harenokuni Stadium",
-            "city": "Okayama"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1739595600
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 310,
-            "name": "Fagiano Okayama",
-            "logo": "https://media.api-sports.io/football/teams/310.png",
-            "winner": true
-          },
-          "away": {
-            "id": 302,
-            "name": "Kyoto Sanga",
-            "logo": "https://media.api-sports.io/football/teams/302.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1976,7 +1917,7 @@
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "10.00%"
           },
           "16-30": {
             "total": null,
@@ -1984,23 +1925,23 @@
           },
           "31-45": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "10.00%"
           },
           "46-60": {
             "total": 3,
-            "percentage": "42.86%"
+            "percentage": "30.00%"
           },
           "61-75": {
             "total": 2,
-            "percentage": "28.57%"
+            "percentage": "20.00%"
           },
           "76-90": {
-            "total": null,
-            "percentage": null
+            "total": 2,
+            "percentage": "20.00%"
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "10.00%"
           },
           "106-120": {
             "total": null,
@@ -2044,15 +1985,15 @@
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "10.00%"
+            "percentage": "9.09%"
           },
           "16-30": {
             "total": 3,
-            "percentage": "30.00%"
+            "percentage": "27.27%"
           },
           "31-45": {
             "total": 1,
-            "percentage": "10.00%"
+            "percentage": "9.09%"
           },
           "46-60": {
             "total": null,
@@ -2060,15 +2001,15 @@
           },
           "61-75": {
             "total": 2,
-            "percentage": "20.00%"
+            "percentage": "18.18%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "10.00%"
+            "percentage": "9.09%"
           },
           "91-105": {
-            "total": 2,
-            "percentage": "20.00%"
+            "total": 3,
+            "percentage": "27.27%"
           },
           "106-120": {
             "total": null,
@@ -2222,5 +2163,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:52:40.688Z"
+  "lastUpdated": "2025-04-10T19:46:48.903Z"
 }

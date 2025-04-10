@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361269,
-          "date": "2025-04-08T18:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Al Taawoun Club Stadium",
-            "city": "Buraidah"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744135200
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2936,
-            "name": "Al Taawon",
-            "logo": "https://media.api-sports.io/football/teams/2936.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2874,
-            "name": "Sharjah FC",
-            "logo": "https://media.api-sports.io/football/teams/2874.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1361270,
@@ -545,6 +486,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361269,
+          "date": "2025-04-08T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "King Abdullah Sport City Stadium",
+            "city": "Buraidah"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1744135200
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2936,
+            "name": "Al Taawon",
+            "logo": "https://media.api-sports.io/football/teams/2936.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2874,
+            "name": "Sharjah FC",
+            "logo": "https://media.api-sports.io/football/teams/2874.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1335145,
           "date": "2025-03-28T18:00:00+00:00",
           "venue": {
@@ -726,7 +726,7 @@
           "date": "2025-03-05T16:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Rashid Stadium",
+            "name": "Al-Rashid Stadium",
             "city": "Dubai"
           },
           "status": {
@@ -1073,65 +1073,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1313527,
-          "date": "2025-01-27T14:30:00+00:00",
-          "venue": {
-            "id": 1600,
-            "name": "Hazza Bin Zayed Stadium",
-            "city": "Al Ain"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1737988200
-        },
-        "league": {
-          "id": 560,
-          "name": "Presidents Cup",
-          "logo": "https://media.api-sports.io/football/leagues/560.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2877,
-            "name": "Baniyas SC",
-            "logo": "https://media.api-sports.io/football/teams/2877.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2874,
-            "name": "Sharjah FC",
-            "logo": "https://media.api-sports.io/football/teams/2874.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1428,5 +1369,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:51:54.146Z"
+  "lastUpdated": "2025-04-10T19:46:00.435Z"
 }

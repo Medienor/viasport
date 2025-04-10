@@ -263,65 +263,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1341173,
-          "date": "2025-04-10T17:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Batumi Arena",
-            "city": "Batumi"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744304400
-        },
-        "league": {
-          "id": 327,
-          "name": "Erovnuli Liga",
-          "logo": "https://media.api-sports.io/football/leagues/327.png"
-        },
-        "teams": {
-          "home": {
-            "id": 705,
-            "name": "Dinamo Batumi",
-            "logo": "https://media.api-sports.io/football/teams/705.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3511,
-            "name": "Telavi",
-            "logo": "https://media.api-sports.io/football/teams/3511.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1341174,
           "date": "2025-04-14T17:00:00+00:00",
           "venue": {
@@ -382,7 +323,7 @@
       {
         "fixture": {
           "id": 1341180,
-          "date": "2025-04-19T12:00:00+00:00",
+          "date": "2025-04-19T13:00:00+00:00",
           "venue": {
             "id": 2308,
             "name": "Saragbo Baza Parki-Arena",
@@ -394,7 +335,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745064000
+          "timestamp": 1745067600
         },
         "league": {
           "id": 327,
@@ -795,7 +736,7 @@
       {
         "fixture": {
           "id": 1341217,
-          "date": "2025-05-19T11:00:00+00:00",
+          "date": "2025-05-21T16:00:00+00:00",
           "venue": {
             "id": 2310,
             "name": "Stadioni Givi Chokheli",
@@ -807,7 +748,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1747652400
+          "timestamp": 1747843200
         },
         "league": {
           "id": 327,
@@ -1440,9 +1381,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1341272,
+          "date": "2025-10-04T11:00:00+00:00",
+          "venue": {
+            "id": 2308,
+            "name": "Saragbo Baza Parki-Arena",
+            "city": "Poti"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1759575600
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3507,
+            "name": "Kolkheti Poti",
+            "logo": "https://media.api-sports.io/football/teams/3507.png",
+            "winner": null
+          },
+          "away": {
+            "id": 705,
+            "name": "Dinamo Batumi",
+            "logo": "https://media.api-sports.io/football/teams/705.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1341173,
+          "date": "2025-04-10T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Batumi Arena",
+            "city": "Batumi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744304400
+        },
+        "league": {
+          "id": 327,
+          "name": "Erovnuli Liga",
+          "logo": "https://media.api-sports.io/football/leagues/327.png"
+        },
+        "teams": {
+          "home": {
+            "id": 705,
+            "name": "Dinamo Batumi",
+            "logo": "https://media.api-sports.io/football/teams/705.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3511,
+            "name": "Telavi",
+            "logo": "https://media.api-sports.io/football/teams/3511.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1341167,
@@ -1973,65 +2032,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345789,
-          "date": "2025-02-04T13:45:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Calista Sports Center - Field B",
-            "city": "Belek"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1738676700
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6496,
-            "name": "Polessya",
-            "logo": "https://media.api-sports.io/football/teams/6496.png",
-            "winner": true
-          },
-          "away": {
-            "id": 705,
-            "name": "Dinamo Batumi",
-            "logo": "https://media.api-sports.io/football/teams/705.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2328,5 +2328,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:48:06.752Z"
+  "lastUpdated": "2025-04-10T19:42:09.964Z"
 }

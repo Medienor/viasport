@@ -188,65 +188,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361288,
-          "date": "2025-04-10T16:45:00+00:00",
-          "venue": {
-            "id": 1253,
-            "name": "Stadion Miejski Legii Warszawa im. Marszałka Józefa Piłsudskiego",
-            "city": "Warszawa"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744303500
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 339,
-            "name": "Legia Warszawa",
-            "logo": "https://media.api-sports.io/football/teams/339.png",
-            "winner": null
-          },
-          "away": {
-            "id": 49,
-            "name": "Chelsea",
-            "logo": "https://media.api-sports.io/football/teams/49.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1203198,
           "date": "2025-04-13T18:15:00+00:00",
           "venue": {
@@ -660,6 +601,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361288,
+          "date": "2025-04-10T16:45:00+00:00",
+          "venue": {
+            "id": 1253,
+            "name": "Stadion Miejski Legii Warszawa im. Marszałka Józefa Piłsudskiego",
+            "city": "Warszawa"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744303500
+        },
+        "league": {
+          "id": 848,
+          "name": "UEFA Europa Conference League",
+          "logo": "https://media.api-sports.io/football/leagues/848.png"
+        },
+        "teams": {
+          "home": {
+            "id": 339,
+            "name": "Legia Warszawa",
+            "logo": "https://media.api-sports.io/football/teams/339.png",
+            "winner": false
+          },
+          "away": {
+            "id": 49,
+            "name": "Chelsea",
+            "logo": "https://media.api-sports.io/football/teams/49.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1203184,
@@ -1190,65 +1190,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1203136,
-          "date": "2025-02-15T19:15:00+00:00",
-          "venue": {
-            "id": 1253,
-            "name": "Stadion Miejski Legii Warszawa im. Marszałka Józefa Piłsudskiego",
-            "city": "Warszawa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739646900
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 339,
-            "name": "Legia Warszawa",
-            "logo": "https://media.api-sports.io/football/teams/339.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3490,
-            "name": "Puszcza Niepołomice",
-            "logo": "https://media.api-sports.io/football/teams/3490.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1545,5 +1486,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:46:46.921Z"
+  "lastUpdated": "2025-04-10T19:40:49.231Z"
 }

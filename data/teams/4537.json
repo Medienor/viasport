@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -224,65 +224,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1333280,
-          "date": "2025-04-08T16:45:00+00:00",
-          "venue": {
-            "id": 3429,
-            "name": "Al Hasan Stadium",
-            "city": "Irbid"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744130700
-        },
-        "league": {
-          "id": 387,
-          "name": "League",
-          "logo": "https://media.api-sports.io/football/leagues/387.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4536,
-            "name": "Al Sareeh",
-            "logo": "https://media.api-sports.io/football/teams/4536.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4537,
-            "name": "Al Wihdat",
-            "logo": "https://media.api-sports.io/football/teams/4537.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1358561,
@@ -521,6 +462,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1333280,
+          "date": "2025-04-08T16:45:00+00:00",
+          "venue": {
+            "id": 3429,
+            "name": "Al Hasan Stadium",
+            "city": "Irbid"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744130700
+        },
+        "league": {
+          "id": 387,
+          "name": "League",
+          "logo": "https://media.api-sports.io/football/leagues/387.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4536,
+            "name": "Al Sareeh",
+            "logo": "https://media.api-sports.io/football/teams/4536.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4537,
+            "name": "Al Wihdat",
+            "logo": "https://media.api-sports.io/football/teams/4537.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1358554,
@@ -822,7 +822,7 @@
           "date": "2025-02-19T16:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Rashid Stadium",
+            "name": "Al-Rashid Stadium",
             "city": "Dubai"
           },
           "status": {
@@ -1041,65 +1041,6 @@
           "fulltime": {
             "home": 1,
             "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1304363,
-          "date": "2024-12-27T14:00:00+00:00",
-          "venue": {
-            "id": 3429,
-            "name": "Al Hasan Stadium",
-            "city": "Irbid"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1735308000
-        },
-        "league": {
-          "id": 387,
-          "name": "League",
-          "logo": "https://media.api-sports.io/football/leagues/387.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4537,
-            "name": "Al Wihdat",
-            "logo": "https://media.api-sports.io/football/teams/4537.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4533,
-            "name": "Al Jazeera",
-            "logo": "https://media.api-sports.io/football/teams/4533.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
           },
           "extratime": {
             "home": null,
@@ -1406,5 +1347,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:52:02.232Z"
+  "lastUpdated": "2025-04-10T19:46:08.549Z"
 }

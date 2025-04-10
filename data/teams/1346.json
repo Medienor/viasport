@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1216331,
-          "date": "2025-04-09T19:00:00+00:00",
-          "venue": {
-            "id": 11896,
-            "name": "The Coventry Building Society Arena",
-            "city": "Coventry, West Midlands"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744225200
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1346,
-            "name": "Coventry",
-            "logo": "https://media.api-sports.io/football/teams/1346.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1355,
-            "name": "Portsmouth",
-            "logo": "https://media.api-sports.io/football/teams/1355.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1216337,
@@ -506,6 +447,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216331,
+          "date": "2025-04-09T19:00:00+00:00",
+          "venue": {
+            "id": 11896,
+            "name": "The Coventry Building Society Arena",
+            "city": "Coventry, West Midlands"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744225200
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1346,
+            "name": "Coventry",
+            "logo": "https://media.api-sports.io/football/teams/1346.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1355,
+            "name": "Portsmouth",
+            "logo": "https://media.api-sports.io/football/teams/1355.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216313,
@@ -1036,65 +1036,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334964,
-          "date": "2025-02-08T15:00:00+00:00",
-          "venue": {
-            "id": 11896,
-            "name": "The Coventry Building Society Arena",
-            "city": "Coventry, West Midlands"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1739026800
-        },
-        "league": {
-          "id": 45,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/45.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1346,
-            "name": "Coventry",
-            "logo": "https://media.api-sports.io/football/teams/1346.png",
-            "winner": false
-          },
-          "away": {
-            "id": 57,
-            "name": "Ipswich",
-            "logo": "https://media.api-sports.io/football/teams/57.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1391,5 +1332,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:47:23.345Z"
+  "lastUpdated": "2025-04-10T19:41:25.896Z"
 }

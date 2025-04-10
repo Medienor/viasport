@@ -93,6 +93,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 256,
+        "name": "USL League Two",
+        "type": "League",
+        "logo": "https://media.api-sports.io/football/leagues/256.png"
+      },
+      "country": {
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-05-03",
+          "end": "2025-07-14",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": true,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -469,6 +506,65 @@
       },
       {
         "fixture": {
+          "id": 1368437,
+          "date": "2025-05-23T23:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Joanne Merrill Field",
+            "city": "Nashua, New Hampshire"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748041200
+        },
+        "league": {
+          "id": 256,
+          "name": "USL League Two",
+          "logo": "https://media.api-sports.io/football/leagues/256.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4034,
+            "name": "Black Rock",
+            "logo": "https://media.api-sports.io/football/teams/4034.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1326433,
           "date": "2025-05-25T00:30:00+00:00",
           "venue": {
@@ -494,6 +590,65 @@
             "id": 1611,
             "name": "Sporting Kansas City",
             "logo": "https://media.api-sports.io/football/teams/1611.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1368457,
+          "date": "2025-05-28T23:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748473200
+        },
+        "league": {
+          "id": 256,
+          "name": "USL League Two",
+          "logo": "https://media.api-sports.io/football/leagues/256.png"
+        },
+        "teams": {
+          "home": {
+            "id": 9071,
+            "name": "Boston City",
+            "logo": "https://media.api-sports.io/football/teams/9071.png",
             "winner": null
           },
           "away": {
@@ -587,6 +742,65 @@
       },
       {
         "fixture": {
+          "id": 1368466,
+          "date": "2025-05-31T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748728800
+        },
+        "league": {
+          "id": 256,
+          "name": "USL League Two",
+          "logo": "https://media.api-sports.io/football/leagues/256.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4034,
+            "name": "Black Rock",
+            "logo": "https://media.api-sports.io/football/teams/4034.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1326457,
           "date": "2025-05-31T23:30:00+00:00",
           "venue": {
@@ -618,6 +832,242 @@
             "id": 1609,
             "name": "New England Revolution",
             "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1368498,
+          "date": "2025-06-06T23:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749252600
+        },
+        "league": {
+          "id": 256,
+          "name": "USL League Two",
+          "logo": "https://media.api-sports.io/football/leagues/256.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4100,
+            "name": "Western Mass Pioneers",
+            "logo": "https://media.api-sports.io/football/teams/4100.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1368508,
+          "date": "2025-06-08T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749409200
+        },
+        "league": {
+          "id": 256,
+          "name": "USL League Two",
+          "logo": "https://media.api-sports.io/football/leagues/256.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18884,
+            "name": "Blackwatch Rush",
+            "logo": "https://media.api-sports.io/football/teams/18884.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1368519,
+          "date": "2025-06-11T23:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749682800
+        },
+        "league": {
+          "id": 256,
+          "name": "USL League Two",
+          "logo": "https://media.api-sports.io/football/leagues/256.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": null
+          },
+          "away": {
+            "id": 9071,
+            "name": "Boston City",
+            "logo": "https://media.api-sports.io/football/teams/9071.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1368527,
+          "date": "2025-06-14T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1749927600
+        },
+        "league": {
+          "id": 256,
+          "name": "USL League Two",
+          "logo": "https://media.api-sports.io/football/leagues/256.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1609,
+            "name": "New England Revolution",
+            "logo": "https://media.api-sports.io/football/teams/1609.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4031,
+            "name": "AC Connecticut",
+            "logo": "https://media.api-sports.io/football/teams/4031.png",
             "winner": null
           }
         },
@@ -705,12 +1155,12 @@
       },
       {
         "fixture": {
-          "id": 1326486,
-          "date": "2025-06-25T23:30:00+00:00",
+          "id": 1368545,
+          "date": "2025-06-18T23:00:00+00:00",
           "venue": {
-            "id": 1618,
-            "name": "Gillette Stadium",
-            "city": "Foxborough, Massachusetts"
+            "id": null,
+            "name": null,
+            "city": null
           },
           "status": {
             "long": "Not Started",
@@ -718,136 +1168,18 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1750894200
+          "timestamp": 1750287600
         },
         "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
+          "id": 256,
+          "name": "USL League Two",
+          "logo": "https://media.api-sports.io/football/leagues/256.png"
         },
         "teams": {
           "home": {
-            "id": 1609,
-            "name": "New England Revolution",
-            "logo": "https://media.api-sports.io/football/teams/1609.png",
-            "winner": null
-          },
-          "away": {
-            "id": 9569,
-            "name": "Nashville SC",
-            "logo": "https://media.api-sports.io/football/teams/9569.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1326498,
-          "date": "2025-06-28T23:30:00+00:00",
-          "venue": {
-            "id": 1618,
-            "name": "Gillette Stadium",
-            "city": "Foxborough, Massachusetts"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1751153400
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1609,
-            "name": "New England Revolution",
-            "logo": "https://media.api-sports.io/football/teams/1609.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1610,
-            "name": "Colorado Rapids",
-            "logo": "https://media.api-sports.io/football/teams/1610.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1326520,
-          "date": "2025-07-06T02:30:00+00:00",
-          "venue": {
-            "id": 1748,
-            "name": "Providence Park",
-            "city": "Portland, Oregon"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1751769000
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1617,
-            "name": "Portland Timbers",
-            "logo": "https://media.api-sports.io/football/teams/1617.png",
+            "id": 4031,
+            "name": "AC Connecticut",
+            "logo": "https://media.api-sports.io/football/teams/4031.png",
             "winner": null
           },
           "away": {
@@ -882,12 +1214,12 @@
       },
       {
         "fixture": {
-          "id": 1326523,
-          "date": "2025-07-09T23:30:00+00:00",
+          "id": 1368559,
+          "date": "2025-06-21T22:00:00+00:00",
           "venue": {
-            "id": 1618,
-            "name": "Gillette Stadium",
-            "city": "Foxborough, Massachusetts"
+            "id": null,
+            "name": null,
+            "city": null
           },
           "status": {
             "long": "Not Started",
@@ -895,12 +1227,12 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1752103800
+          "timestamp": 1750543200
         },
         "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
+          "id": 256,
+          "name": "USL League Two",
+          "logo": "https://media.api-sports.io/football/leagues/256.png"
         },
         "teams": {
           "home": {
@@ -910,9 +1242,9 @@
             "winner": null
           },
           "away": {
-            "id": 9568,
-            "name": "Inter Miami",
-            "logo": "https://media.api-sports.io/football/teams/9568.png",
+            "id": 4082,
+            "name": "Seacoast United Phantoms",
+            "logo": "https://media.api-sports.io/football/teams/4082.png",
             "winner": null
           }
         },
@@ -941,12 +1273,12 @@
       },
       {
         "fixture": {
-          "id": 1326530,
-          "date": "2025-07-13T00:30:00+00:00",
+          "id": 1368579,
+          "date": "2025-06-25T23:00:00+00:00",
           "venue": {
-            "id": 11535,
-            "name": "Q2 Stadium",
-            "city": "Austin, Texas"
+            "id": null,
+            "name": null,
+            "city": null
           },
           "status": {
             "long": "Not Started",
@@ -954,319 +1286,24 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1752366600
+          "timestamp": 1750892400
         },
         "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
+          "id": 256,
+          "name": "USL League Two",
+          "logo": "https://media.api-sports.io/football/leagues/256.png"
         },
         "teams": {
           "home": {
-            "id": 16489,
-            "name": "Austin",
-            "logo": "https://media.api-sports.io/football/teams/16489.png",
+            "id": 18884,
+            "name": "Blackwatch Rush",
+            "logo": "https://media.api-sports.io/football/teams/18884.png",
             "winner": null
           },
           "away": {
             "id": 1609,
             "name": "New England Revolution",
             "logo": "https://media.api-sports.io/football/teams/1609.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1326541,
-          "date": "2025-07-16T23:30:00+00:00",
-          "venue": {
-            "id": 21544,
-            "name": "Sports Illustrated Stadium",
-            "city": "Harrison, New Jersey"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1752708600
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1602,
-            "name": "New York Red Bulls",
-            "logo": "https://media.api-sports.io/football/teams/1602.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1609,
-            "name": "New England Revolution",
-            "logo": "https://media.api-sports.io/football/teams/1609.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1326554,
-          "date": "2025-07-19T23:30:00+00:00",
-          "venue": {
-            "id": 1618,
-            "name": "Gillette Stadium",
-            "city": "Foxborough, Massachusetts"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1752967800
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1609,
-            "name": "New England Revolution",
-            "logo": "https://media.api-sports.io/football/teams/1609.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1598,
-            "name": "Orlando City SC",
-            "logo": "https://media.api-sports.io/football/teams/1598.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1326565,
-          "date": "2025-07-25T23:30:00+00:00",
-          "venue": {
-            "id": 1618,
-            "name": "Gillette Stadium",
-            "city": "Foxborough, Massachusetts"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1753486200
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1609,
-            "name": "New England Revolution",
-            "logo": "https://media.api-sports.io/football/teams/1609.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1614,
-            "name": "CF Montreal",
-            "logo": "https://media.api-sports.io/football/teams/1614.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1326579,
-          "date": "2025-08-09T23:30:00+00:00",
-          "venue": {
-            "id": 1618,
-            "name": "Gillette Stadium",
-            "city": "Foxborough, Massachusetts"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1754782200
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1609,
-            "name": "New England Revolution",
-            "logo": "https://media.api-sports.io/football/teams/1609.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1615,
-            "name": "DC United",
-            "logo": "https://media.api-sports.io/football/teams/1615.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1326595,
-          "date": "2025-08-16T23:30:00+00:00",
-          "venue": {
-            "id": 1618,
-            "name": "Gillette Stadium",
-            "city": "Foxborough, Massachusetts"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1755387000
-        },
-        "league": {
-          "id": 253,
-          "name": "Major League Soccer",
-          "logo": "https://media.api-sports.io/football/leagues/253.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1609,
-            "name": "New England Revolution",
-            "logo": "https://media.api-sports.io/football/teams/1609.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1616,
-            "name": "Los Angeles FC",
-            "logo": "https://media.api-sports.io/football/teams/1616.png",
             "winner": null
           }
         },
@@ -2189,5 +2226,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:52:48.138Z"
+  "lastUpdated": "2025-04-10T19:46:56.537Z"
 }

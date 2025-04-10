@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1261114,
-          "date": "2025-04-07T14:00:00+00:00",
-          "venue": {
-            "id": 7512,
-            "name": "Liv Bona Dea Arena",
-            "city": "Baku"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744034400
-        },
-        "league": {
-          "id": 419,
-          "name": "Premyer Liqa",
-          "logo": "https://media.api-sports.io/football/leagues/419.png"
-        },
-        "teams": {
-          "home": {
-            "id": 11238,
-            "name": "Araz",
-            "logo": "https://media.api-sports.io/football/teams/11238.png",
-            "winner": null
-          },
-          "away": {
-            "id": 5503,
-            "name": "Sumqayıt",
-            "logo": "https://media.api-sports.io/football/teams/5503.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1261120,
           "date": "2025-04-12T15:15:00+00:00",
           "venue": {
@@ -271,7 +212,7 @@
       {
         "fixture": {
           "id": 1261123,
-          "date": "2025-04-17T22:00:00+00:00",
+          "date": "2025-04-20T15:00:00+00:00",
           "venue": {
             "id": 4134,
             "name": "Zirə qəsəbə stadionu",
@@ -283,7 +224,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744927200
+          "timestamp": 1745161200
         },
         "league": {
           "id": 419,
@@ -330,10 +271,10 @@
       {
         "fixture": {
           "id": 1261131,
-          "date": "2025-04-24T22:00:00+00:00",
+          "date": "2025-04-28T16:00:00+00:00",
           "venue": {
-            "id": 4135,
-            "name": "Kapital Bank Arena",
+            "id": 4130,
+            "name": "Mehdi Hüseynzadə adına Sumqayıt şəhər stadionu",
             "city": "Sumqayıt"
           },
           "status": {
@@ -342,7 +283,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745532000
+          "timestamp": 1745856000
         },
         "league": {
           "id": 419,
@@ -385,9 +326,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1261132,
+          "date": "2025-05-04T14:00:00+00:00",
+          "venue": {
+            "id": 5799,
+            "name": "Tofiq Bəhramov adına Respublika stadionu",
+            "city": "Baku"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746367200
+        },
+        "league": {
+          "id": 419,
+          "name": "Premyer Liqa",
+          "logo": "https://media.api-sports.io/football/leagues/419.png"
+        },
+        "teams": {
+          "home": {
+            "id": 556,
+            "name": "Qarabag",
+            "logo": "https://media.api-sports.io/football/teams/556.png",
+            "winner": null
+          },
+          "away": {
+            "id": 5503,
+            "name": "Sumqayıt",
+            "logo": "https://media.api-sports.io/football/teams/5503.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1261114,
+          "date": "2025-04-07T14:00:00+00:00",
+          "venue": {
+            "id": 7512,
+            "name": "Liv Bona Dea Arena",
+            "city": "Baku"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744034400
+        },
+        "league": {
+          "id": 419,
+          "name": "Premyer Liqa",
+          "logo": "https://media.api-sports.io/football/leagues/419.png"
+        },
+        "teams": {
+          "home": {
+            "id": 11238,
+            "name": "Araz",
+            "logo": "https://media.api-sports.io/football/teams/11238.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5503,
+            "name": "Sumqayıt",
+            "logo": "https://media.api-sports.io/football/teams/5503.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1261109,
@@ -918,65 +977,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1261074,
-          "date": "2025-02-01T14:30:00+00:00",
-          "venue": {
-            "id": 4130,
-            "name": "Mehdi Hüseynzadə adına Sumqayıt şəhər stadionu",
-            "city": "Sumqayıt"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738420200
-        },
-        "league": {
-          "id": 419,
-          "name": "Premyer Liqa",
-          "logo": "https://media.api-sports.io/football/leagues/419.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5503,
-            "name": "Sumqayıt",
-            "logo": "https://media.api-sports.io/football/teams/5503.png",
-            "winner": null
-          },
-          "away": {
-            "id": 11238,
-            "name": "Araz",
-            "logo": "https://media.api-sports.io/football/teams/11238.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1273,5 +1273,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:49:10.825Z"
+  "lastUpdated": "2025-04-10T19:43:15.041Z"
 }

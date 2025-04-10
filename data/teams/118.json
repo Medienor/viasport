@@ -190,65 +190,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361883,
-          "date": "2025-04-09T22:00:00+00:00",
-          "venue": {
-            "id": 1639,
-            "name": "Estadio Gran Parque Central",
-            "city": "Montevideo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744236000
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2356,
-            "name": "Club Nacional",
-            "logo": "https://media.api-sports.io/football/teams/2356.png",
-            "winner": null
-          },
-          "away": {
-            "id": 118,
-            "name": "Bahia",
-            "logo": "https://media.api-sports.io/football/teams/118.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1351070,
           "date": "2025-04-13T19:00:00+00:00",
           "venue": {
@@ -1077,6 +1018,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361883,
+          "date": "2025-04-09T22:00:00+00:00",
+          "venue": {
+            "id": 1639,
+            "name": "Estadio Gran Parque Central",
+            "city": "Montevideo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744236000
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2356,
+            "name": "Club Nacional",
+            "logo": "https://media.api-sports.io/football/teams/2356.png",
+            "winner": false
+          },
+          "away": {
+            "id": 118,
+            "name": "Bahia",
+            "logo": "https://media.api-sports.io/football/teams/118.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351056,
           "date": "2025-04-06T23:30:00+00:00",
           "venue": {
@@ -1140,8 +1140,8 @@
           "date": "2025-04-03T22:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Casa de Apostas Arena Fonte Nova",
-            "city": "Salvador, Bahia"
+            "name": "Arena Fonte Nova",
+            "city": "Salvador"
           },
           "status": {
             "long": "Match Finished",
@@ -1199,8 +1199,8 @@
           "date": "2025-03-30T23:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Arena Fonte Nova",
-            "city": "Salvador"
+            "name": "Casa de Apostas Arena Fonte Nova",
+            "city": "Salvador, Bahia"
           },
           "status": {
             "long": "Match Finished",
@@ -1494,8 +1494,8 @@
           "date": "2025-03-14T00:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "Casa de Apostas Arena Fonte Nova",
-            "city": "Salvador, Bahia"
+            "name": "Arena Fonte Nova",
+            "city": "Salvador"
           },
           "status": {
             "long": "Match Finished",
@@ -1595,65 +1595,6 @@
           "fulltime": {
             "home": 0,
             "away": 5
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1355041,
-          "date": "2025-03-07T00:30:00+00:00",
-          "venue": {
-            "id": 1624,
-            "name": "Estadio Centenario",
-            "city": "Montevideo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1741307400
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2361,
-            "name": "Boston River",
-            "logo": "https://media.api-sports.io/football/teams/2361.png",
-            "winner": null
-          },
-          "away": {
-            "id": 118,
-            "name": "Bahia",
-            "logo": "https://media.api-sports.io/football/teams/118.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
           },
           "extratime": {
             "home": null,
@@ -1960,5 +1901,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:52:07.322Z"
+  "lastUpdated": "2025-04-10T19:46:13.767Z"
 }

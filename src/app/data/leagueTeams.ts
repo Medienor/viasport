@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-04-10T14:05:10.214Z
+// Last updated: 2025-04-10T20:26:35.826Z
 
 export const leagueTeamsData = {
   "2": [

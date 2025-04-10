@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -188,7 +188,7 @@
       {
         "fixture": {
           "id": 1196672,
-          "date": "2025-04-12T10:00:00+00:00",
+          "date": "2025-04-11T11:45:00+00:00",
           "venue": {
             "id": 3204,
             "name": "Jurong East Stadium",
@@ -200,7 +200,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744452000
+          "timestamp": 1744371900
         },
         "league": {
           "id": 368,
@@ -212,6 +212,65 @@
             "id": 10077,
             "name": "Tanjong Pagar",
             "logo": "https://media.api-sports.io/football/teams/10077.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4206,
+            "name": "Tampines Rovers",
+            "logo": "https://media.api-sports.io/football/teams/4206.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1367321,
+          "date": "2025-04-16T11:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jalan Besar Stadium",
+            "city": "Singapore"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744803900
+        },
+        "league": {
+          "id": 959,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/959.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2769,
+            "name": "Bangkok Glass",
+            "logo": "https://media.api-sports.io/football/teams/2769.png",
             "winner": null
           },
           "away": {
@@ -305,65 +364,6 @@
       },
       {
         "fixture": {
-          "id": 1367320,
-          "date": "2025-04-22T11:45:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1745322300
-        },
-        "league": {
-          "id": 959,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/959.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4206,
-            "name": "Tampines Rovers",
-            "logo": "https://media.api-sports.io/football/teams/4206.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2769,
-            "name": "Bangkok Glass",
-            "logo": "https://media.api-sports.io/football/teams/2769.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1196683,
           "date": "2025-05-02T11:45:00+00:00",
           "venue": {
@@ -389,65 +389,6 @@
             "id": 4205,
             "name": "Hougang United",
             "logo": "https://media.api-sports.io/football/teams/4205.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4206,
-            "name": "Tampines Rovers",
-            "logo": "https://media.api-sports.io/football/teams/4206.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1367321,
-          "date": "2025-05-06T11:45:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746531900
-        },
-        "league": {
-          "id": 959,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/959.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2769,
-            "name": "Bangkok Glass",
-            "logo": "https://media.api-sports.io/football/teams/2769.png",
             "winner": null
           },
           "away": {
@@ -631,6 +572,65 @@
             "id": 4204,
             "name": "Home United",
             "logo": "https://media.api-sports.io/football/teams/4204.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1367320,
+          "date": "2025-05-27T11:45:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jalan Besar Stadium",
+            "city": "Singapore"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748346300
+        },
+        "league": {
+          "id": 959,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/959.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4206,
+            "name": "Tampines Rovers",
+            "logo": "https://media.api-sports.io/football/teams/4206.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2769,
+            "name": "Bangkok Glass",
+            "logo": "https://media.api-sports.io/football/teams/2769.png",
             "winner": null
           }
         },
@@ -1544,5 +1544,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:51:59.708Z"
+  "lastUpdated": "2025-04-10T19:46:05.563Z"
 }

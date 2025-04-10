@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -189,65 +189,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1353262,
-          "date": "2025-04-07T22:00:00+00:00",
-          "venue": {
-            "id": 211,
-            "name": "Estádio Antônio Accioly",
-            "city": "Goiânia, Goiás"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744063200
-        },
-        "league": {
-          "id": 72,
-          "name": "Serie B",
-          "logo": "https://media.api-sports.io/football/leagues/72.png"
-        },
-        "teams": {
-          "home": {
-            "id": 144,
-            "name": "Atletico Goianiense",
-            "logo": "https://media.api-sports.io/football/teams/144.png",
-            "winner": null
-          },
-          "away": {
-            "id": 13975,
-            "name": "Athletic Club",
-            "logo": "https://media.api-sports.io/football/teams/13975.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1353279,
@@ -486,6 +427,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1353262,
+          "date": "2025-04-07T22:00:00+00:00",
+          "venue": {
+            "id": 211,
+            "name": "Estádio Antônio Accioly",
+            "city": "Goiânia, Goiás"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744063200
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 144,
+            "name": "Atletico Goianiense",
+            "logo": "https://media.api-sports.io/football/teams/144.png",
+            "winner": true
+          },
+          "away": {
+            "id": 13975,
+            "name": "Athletic Club",
+            "logo": "https://media.api-sports.io/football/teams/13975.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 4,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 4,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1359700,
@@ -1016,65 +1016,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1318173,
-          "date": "2025-02-09T19:00:00+00:00",
-          "venue": {
-            "id": 240,
-            "name": "Estádio de Hailé Pinheiro",
-            "city": "Goiânia, Goiás"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739127600
-        },
-        "league": {
-          "id": 628,
-          "name": "Goiano - 1",
-          "logo": "https://media.api-sports.io/football/leagues/628.png"
-        },
-        "teams": {
-          "home": {
-            "id": 151,
-            "name": "Goias",
-            "logo": "https://media.api-sports.io/football/teams/151.png",
-            "winner": false
-          },
-          "away": {
-            "id": 144,
-            "name": "Atletico Goianiense",
-            "logo": "https://media.api-sports.io/football/teams/144.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1371,5 +1312,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:52:12.480Z"
+  "lastUpdated": "2025-04-10T19:46:19.346Z"
 }

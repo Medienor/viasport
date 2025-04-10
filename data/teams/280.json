@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1366881,
-          "date": "2025-04-09T10:00:00+00:00",
-          "venue": {
-            "id": 963,
-            "name": "Yamaha Stadium",
-            "city": "Iwata"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744192800
-        },
-        "league": {
-          "id": 101,
-          "name": "J-League Cup",
-          "logo": "https://media.api-sports.io/football/leagues/101.png"
-        },
-        "teams": {
-          "home": {
-            "id": 280,
-            "name": "Jubilo Iwata",
-            "logo": "https://media.api-sports.io/football/teams/280.png",
-            "winner": null
-          },
-          "away": {
-            "id": 283,
-            "name": "Shimizu S-pulse",
-            "logo": "https://media.api-sports.io/football/teams/283.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1324597,
           "date": "2025-04-13T06:00:00+00:00",
           "venue": {
@@ -1329,9 +1270,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1324791,
+          "date": "2025-08-31T10:00:00+00:00",
+          "venue": {
+            "id": 20498,
+            "name": "Resonac Dome Oita",
+            "city": "Oita"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756634400
+        },
+        "league": {
+          "id": 99,
+          "name": "J2 League",
+          "logo": "https://media.api-sports.io/football/leagues/99.png"
+        },
+        "teams": {
+          "home": {
+            "id": 298,
+            "name": "Oita Trinita",
+            "logo": "https://media.api-sports.io/football/teams/298.png",
+            "winner": null
+          },
+          "away": {
+            "id": 280,
+            "name": "Jubilo Iwata",
+            "logo": "https://media.api-sports.io/football/teams/280.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366881,
+          "date": "2025-04-09T10:00:00+00:00",
+          "venue": {
+            "id": 963,
+            "name": "Yamaha Stadium",
+            "city": "Iwata"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744192800
+        },
+        "league": {
+          "id": 101,
+          "name": "J-League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/101.png"
+        },
+        "teams": {
+          "home": {
+            "id": 280,
+            "name": "Jubilo Iwata",
+            "logo": "https://media.api-sports.io/football/teams/280.png",
+            "winner": true
+          },
+          "away": {
+            "id": 283,
+            "name": "Shimizu S-pulse",
+            "logo": "https://media.api-sports.io/football/teams/283.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1324584,
@@ -1862,65 +1921,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1349257,
-          "date": "2025-02-16T02:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Yamaha Okubo Ground",
-            "city": "Iwata"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1739671200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 280,
-            "name": "Jubilo Iwata",
-            "logo": "https://media.api-sports.io/football/teams/280.png",
-            "winner": null
-          },
-          "away": {
-            "id": 7150,
-            "name": "Veertien Mie",
-            "logo": "https://media.api-sports.io/football/teams/7150.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2217,5 +2217,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:52:35.475Z"
+  "lastUpdated": "2025-04-10T19:46:43.525Z"
 }

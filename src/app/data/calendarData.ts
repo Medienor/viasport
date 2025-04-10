@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-04-10T14:05:13.890Z
+// Last updated: 2025-04-10T20:26:39.176Z
 
 export const calendarData = {
   "2025-04-03": [
@@ -14156,7 +14156,7 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1361269,
-        "referee": "Fu Ming",
+        "referee": "Ming Fu, China",
         "timezone": "UTC",
         "date": "2025-04-08T18:00:00+00:00",
         "timestamp": 1744135200,
@@ -14166,7 +14166,7 @@ export const calendarData = {
         },
         "venue": {
           "id": null,
-          "name": "Al Taawoun Club Stadium",
+          "name": "King Abdullah Sport City Stadium",
           "city": "Buraidah"
         },
         "status": {
@@ -15560,13 +15560,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1361276,
-        "referee": "M. Oliver",
+        "referee": "Michael Oliver, England",
         "timezone": "UTC",
         "date": "2025-04-10T16:45:00+00:00",
         "timestamp": 1744303500,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1744303500,
+          "second": 1744307100
         },
         "venue": {
           "id": 1175,
@@ -15574,10 +15574,10 @@ export const calendarData = {
           "city": "Bodø"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 4
         }
       },
       "league": {
@@ -15595,27 +15595,27 @@ export const calendarData = {
           "id": 327,
           "name": "Bodo/Glimt",
           "logo": "https://media.api-sports.io/football/teams/327.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 487,
           "name": "Lazio",
           "logo": "https://media.api-sports.io/football/teams/487.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -15630,13 +15630,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1361288,
-        "referee": "S. Gözübüyük",
+        "referee": "Serdar Gozubuyuk, Netherlands",
         "timezone": "UTC",
         "date": "2025-04-10T16:45:00+00:00",
         "timestamp": 1744303500,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1744303500,
+          "second": 1744307100
         },
         "venue": {
           "id": 1253,
@@ -15644,10 +15644,10 @@ export const calendarData = {
           "city": "Warszawa"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 4
         }
       },
       "league": {
@@ -15665,27 +15665,27 @@ export const calendarData = {
           "id": 339,
           "name": "Legia Warszawa",
           "logo": "https://media.api-sports.io/football/teams/339.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 49,
           "name": "Chelsea",
           "logo": "https://media.api-sports.io/football/teams/49.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 3
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         },
         "extratime": {
           "home": null,
@@ -15700,13 +15700,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1342306,
-        "referee": null,
+        "referee": "Aslam, Mohammad Usman, Norway",
         "timezone": "UTC",
         "date": "2025-04-10T17:00:00+00:00",
         "timestamp": 1744304400,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1744304400,
+          "second": 1744308000
         },
         "venue": {
           "id": 21732,
@@ -15714,10 +15714,10 @@ export const calendarData = {
           "city": "Stavanger"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 6
         }
       },
       "league": {
@@ -15735,27 +15735,27 @@ export const calendarData = {
           "id": 759,
           "name": "Viking",
           "logo": "https://media.api-sports.io/football/teams/759.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 320,
           "name": "Kristiansund BK",
           "logo": "https://media.api-sports.io/football/teams/320.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -15770,13 +15770,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1342315,
-        "referee": null,
+        "referee": "Kringstad, Sigurd Smehus, Norway",
         "timezone": "UTC",
         "date": "2025-04-10T17:00:00+00:00",
         "timestamp": 1744304400,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1744304400,
+          "second": 1744308000
         },
         "venue": {
           "id": 1176,
@@ -15784,10 +15784,10 @@ export const calendarData = {
           "city": "Bergen"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 7
         }
       },
       "league": {
@@ -15805,27 +15805,27 @@ export const calendarData = {
           "id": 319,
           "name": "Brann",
           "logo": "https://media.api-sports.io/football/teams/319.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 324,
           "name": "Stromsgodset",
           "logo": "https://media.api-sports.io/football/teams/324.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -15840,13 +15840,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1361278,
-        "referee": "S. Marciniak",
+        "referee": "Szymon Marciniak, Poland",
         "timezone": "UTC",
         "date": "2025-04-10T19:00:00+00:00",
         "timestamp": 1744311600,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1744311600,
+          "second": 1744315200
         },
         "venue": {
           "id": 593,
@@ -15854,9 +15854,9 @@ export const calendarData = {
           "city": "London"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 70,
           "extra": null
         }
       },
@@ -15885,13 +15885,13 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fulltime": {
           "home": null,
@@ -15910,13 +15910,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1361280,
-        "referee": "I. Kovács",
+        "referee": "Istvan Kovacs, Romania",
         "timezone": "UTC",
         "date": "2025-04-10T19:00:00+00:00",
         "timestamp": 1744311600,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1744311600,
+          "second": 1744315200
         },
         "venue": {
           "id": 1401,
@@ -15924,9 +15924,9 @@ export const calendarData = {
           "city": "Glasgow"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 67,
           "extra": null
         }
       },
@@ -15955,13 +15955,13 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
           "home": null,
@@ -15980,13 +15980,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1361282,
-        "referee": "G. Nyberg",
+        "referee": "Glenn Nyberg, Sweden",
         "timezone": "UTC",
         "date": "2025-04-10T19:00:00+00:00",
         "timestamp": 1744311600,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1744311600,
+          "second": 1744315200
         },
         "venue": {
           "id": 666,
@@ -15994,9 +15994,9 @@ export const calendarData = {
           "city": "Décines-Charpieu"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 66,
           "extra": null
         }
       },
@@ -16025,13 +16025,13 @@ export const calendarData = {
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fulltime": {
           "home": null,
@@ -16050,13 +16050,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1361284,
-        "referee": "A. Taylor",
+        "referee": "Anthony Taylor, England",
         "timezone": "UTC",
         "date": "2025-04-10T19:00:00+00:00",
         "timestamp": 1744311600,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1744311600,
+          "second": 1744315200
         },
         "venue": {
           "id": 1489,
@@ -16064,9 +16064,9 @@ export const calendarData = {
           "city": "Sevilla"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 65,
           "extra": null
         }
       },
@@ -16085,23 +16085,23 @@ export const calendarData = {
           "id": 543,
           "name": "Real Betis",
           "logo": "https://media.api-sports.io/football/teams/543.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 336,
           "name": "Jagiellonia",
           "logo": "https://media.api-sports.io/football/teams/336.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fulltime": {
           "home": null,
@@ -16120,13 +16120,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1361286,
-        "referee": "F. Zwayer",
+        "referee": "Felix Zwayer, Germany",
         "timezone": "UTC",
         "date": "2025-04-10T19:00:00+00:00",
         "timestamp": 1744311600,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1744311600,
+          "second": 1744315200
         },
         "venue": {
           "id": 3332,
@@ -16134,9 +16134,9 @@ export const calendarData = {
           "city": "Celje"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 69,
           "extra": null
         }
       },
@@ -16155,23 +16155,23 @@ export const calendarData = {
           "id": 4360,
           "name": "Celje",
           "logo": "https://media.api-sports.io/football/teams/4360.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 502,
           "name": "Fiorentina",
           "logo": "https://media.api-sports.io/football/teams/502.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fulltime": {
           "home": null,
@@ -16190,13 +16190,13 @@ export const calendarData = {
     {
       "fixture": {
         "id": 1361290,
-        "referee": "T. Stieler",
+        "referee": "Tobias Stieler, Germany",
         "timezone": "UTC",
         "date": "2025-04-10T19:00:00+00:00",
         "timestamp": 1744311600,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1744311600,
+          "second": 1744315200
         },
         "venue": {
           "id": null,
@@ -16204,9 +16204,9 @@ export const calendarData = {
           "city": "Stockholm"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 66,
           "extra": null
         }
       },
@@ -16225,23 +16225,23 @@ export const calendarData = {
           "id": 364,
           "name": "Djurgardens IF",
           "logo": "https://media.api-sports.io/football/teams/364.png",
-          "winner": null
+          "winner": false
         },
         "away": {
           "id": 781,
           "name": "Rapid Vienna",
           "logo": "https://media.api-sports.io/football/teams/781.png",
-          "winner": null
+          "winner": true
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
           "home": null,

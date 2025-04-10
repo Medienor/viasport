@@ -146,65 +146,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1203188,
-          "date": "2025-04-07T17:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadion Miejski w Niepolomicach",
-            "city": "Niepołomice"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744045200
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3490,
-            "name": "Puszcza Niepołomice",
-            "logo": "https://media.api-sports.io/football/teams/3490.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3491,
-            "name": "Raków Częstochowa",
-            "logo": "https://media.api-sports.io/football/teams/3491.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1203194,
           "date": "2025-04-12T12:45:00+00:00",
           "venue": {
@@ -500,6 +441,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1203188,
+          "date": "2025-04-07T17:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Marshal Jozef Pilsudski Stadium",
+            "city": "Krakow"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744045200
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3491,
+            "name": "Raków Częstochowa",
+            "logo": "https://media.api-sports.io/football/teams/3491.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1357112,
@@ -1030,65 +1030,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1339765,
-          "date": "2025-01-26T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadion Czarni Staniątki",
-            "city": "Staniątki"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737849600
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3490,
-            "name": "Puszcza Niepołomice",
-            "logo": "https://media.api-sports.io/football/teams/3490.png",
-            "winner": true
-          },
-          "away": {
-            "id": 20830,
-            "name": "Jarosław",
-            "logo": "https://media.api-sports.io/football/teams/20830.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1385,5 +1326,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:46:51.926Z"
+  "lastUpdated": "2025-04-10T19:40:54.364Z"
 }

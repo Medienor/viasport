@@ -147,12 +147,12 @@
         {
           "year": 2025,
           "start": "2025-04-07",
-          "end": "2025-04-07",
+          "end": "2025-04-20",
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
+              "events": true,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -163,7 +163,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1358908,
-          "date": "2025-04-07T17:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "á Dungasandi",
-            "city": null
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744047000
-        },
-        "league": {
-          "id": 491,
-          "name": "Løgmanssteypid",
-          "logo": "https://media.api-sports.io/football/leagues/491.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4174,
-            "name": "07 Vestur",
-            "logo": "https://media.api-sports.io/football/teams/4174.png",
-            "winner": null
-          },
-          "away": {
-            "id": 678,
-            "name": "B36 Torshavn",
-            "logo": "https://media.api-sports.io/football/teams/678.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1335708,
@@ -338,6 +279,65 @@
             "id": 4186,
             "name": "B68",
             "logo": "https://media.api-sports.io/football/teams/4186.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1369267,
+          "date": "2025-04-21T14:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745244000
+        },
+        "league": {
+          "id": 491,
+          "name": "Løgmanssteypid",
+          "logo": "https://media.api-sports.io/football/leagues/491.png"
+        },
+        "teams": {
+          "home": {
+            "id": 701,
+            "name": "KI Klaksvik",
+            "logo": "https://media.api-sports.io/football/teams/701.png",
+            "winner": null
+          },
+          "away": {
+            "id": 678,
+            "name": "B36 Torshavn",
+            "logo": "https://media.api-sports.io/football/teams/678.png",
             "winner": null
           }
         },
@@ -543,6 +543,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1358908,
+          "date": "2025-04-07T17:30:00+00:00",
+          "venue": {
+            "id": 3188,
+            "name": "á Dungasandi",
+            "city": "Sørvágur, Vágar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744047000
+        },
+        "league": {
+          "id": 491,
+          "name": "Løgmanssteypid",
+          "logo": "https://media.api-sports.io/football/leagues/491.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4174,
+            "name": "07 Vestur",
+            "logo": "https://media.api-sports.io/football/teams/4174.png",
+            "winner": false
+          },
+          "away": {
+            "id": 678,
+            "name": "B36 Torshavn",
+            "logo": "https://media.api-sports.io/football/teams/678.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1335705,
@@ -1073,65 +1132,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1168171,
-          "date": "2024-09-21T17:30:00+00:00",
-          "venue": {
-            "id": 3188,
-            "name": "á Dungasandi",
-            "city": "Sørvágur, Vágar"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1726939800
-        },
-        "league": {
-          "id": 367,
-          "name": "Meistaradeildin",
-          "logo": "https://media.api-sports.io/football/leagues/367.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4174,
-            "name": "07 Vestur",
-            "logo": "https://media.api-sports.io/football/teams/4174.png",
-            "winner": false
-          },
-          "away": {
-            "id": 678,
-            "name": "B36 Torshavn",
-            "logo": "https://media.api-sports.io/football/teams/678.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1428,5 +1428,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:48:45.124Z"
+  "lastUpdated": "2025-04-10T19:42:49.047Z"
 }

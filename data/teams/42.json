@@ -237,7 +237,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -262,65 +262,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1360764,
-          "date": "2025-04-08T19:00:00+00:00",
-          "venue": {
-            "id": 494,
-            "name": "Emirates Stadium",
-            "city": "London"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744138800
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 42,
-            "name": "Arsenal",
-            "logo": "https://media.api-sports.io/football/teams/42.png",
-            "winner": null
-          },
-          "away": {
-            "id": 541,
-            "name": "Real Madrid",
-            "logo": "https://media.api-sports.io/football/teams/541.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1208334,
@@ -795,6 +736,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360764,
+          "date": "2025-04-08T19:00:00+00:00",
+          "venue": {
+            "id": 494,
+            "name": "Emirates Stadium",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744138800
+        },
+        "league": {
+          "id": 2,
+          "name": "UEFA Champions League",
+          "logo": "https://media.api-sports.io/football/leagues/2.png"
+        },
+        "teams": {
+          "home": {
+            "id": 42,
+            "name": "Arsenal",
+            "logo": "https://media.api-sports.io/football/teams/42.png",
+            "winner": true
+          },
+          "away": {
+            "id": 541,
+            "name": "Real Madrid",
+            "logo": "https://media.api-sports.io/football/teams/541.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208326,
@@ -1325,65 +1325,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1327989,
-          "date": "2025-02-05T20:00:00+00:00",
-          "venue": {
-            "id": 562,
-            "name": "St. James' Park",
-            "city": "Newcastle upon Tyne"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738785600
-        },
-        "league": {
-          "id": 48,
-          "name": "League Cup",
-          "logo": "https://media.api-sports.io/football/leagues/48.png"
-        },
-        "teams": {
-          "home": {
-            "id": 34,
-            "name": "Newcastle",
-            "logo": "https://media.api-sports.io/football/teams/34.png",
-            "winner": true
-          },
-          "away": {
-            "id": 42,
-            "name": "Arsenal",
-            "logo": "https://media.api-sports.io/football/teams/42.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1680,5 +1621,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:45:40.037Z"
+  "lastUpdated": "2025-04-10T19:39:41.964Z"
 }

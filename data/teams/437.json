@@ -225,65 +225,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1330784,
-          "date": "2025-04-09T19:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estadio Único de San Nicolás",
-            "city": "San Nicolás de los Arroyos"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744225200
-        },
-        "league": {
-          "id": 130,
-          "name": "Copa Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/130.png"
-        },
-        "teams": {
-          "home": {
-            "id": 437,
-            "name": "Rosario Central",
-            "logo": "https://media.api-sports.io/football/teams/437.png",
-            "winner": null
-          },
-          "away": {
-            "id": 483,
-            "name": "Los Andes",
-            "logo": "https://media.api-sports.io/football/teams/483.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334466,
           "date": "2025-04-15T23:00:00+00:00",
           "venue": {
@@ -399,9 +340,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1334497,
+          "date": "2025-04-26T20:00:00+00:00",
+          "venue": {
+            "id": 103,
+            "name": "Estadio Pedro Bidegaín",
+            "city": "Capital Federal, Ciudad de Buenos Aires"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745697600
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 460,
+            "name": "San Lorenzo",
+            "logo": "https://media.api-sports.io/football/teams/460.png",
+            "winner": null
+          },
+          "away": {
+            "id": 437,
+            "name": "Rosario Central",
+            "logo": "https://media.api-sports.io/football/teams/437.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1330784,
+          "date": "2025-04-09T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Único de San Nicolás",
+            "city": "San Nicolás de los Arroyos"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744225200
+        },
+        "league": {
+          "id": 130,
+          "name": "Copa Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/130.png"
+        },
+        "teams": {
+          "home": {
+            "id": 437,
+            "name": "Rosario Central",
+            "logo": "https://media.api-sports.io/football/teams/437.png",
+            "winner": true
+          },
+          "away": {
+            "id": 483,
+            "name": "Los Andes",
+            "logo": "https://media.api-sports.io/football/teams/483.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334453,
@@ -932,65 +991,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334308,
-          "date": "2025-02-01T22:00:00+00:00",
-          "venue": {
-            "id": 104,
-            "name": "Estadio Ingeniero Hilario Sánchez",
-            "city": "San Juan, Provincia de San Juan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738447200
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 461,
-            "name": "San Martin S.J.",
-            "logo": "https://media.api-sports.io/football/teams/461.png",
-            "winner": null
-          },
-          "away": {
-            "id": 437,
-            "name": "Rosario Central",
-            "logo": "https://media.api-sports.io/football/teams/437.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1287,5 +1287,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:47:33.527Z"
+  "lastUpdated": "2025-04-10T19:41:36.418Z"
 }

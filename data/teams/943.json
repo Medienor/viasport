@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -150,65 +150,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361477,
-          "date": "2025-04-09T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Jalan Besar Stadium",
-            "city": "Singapore"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744200000
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4204,
-            "name": "Home United",
-            "logo": "https://media.api-sports.io/football/teams/4204.png",
-            "winner": null
-          },
-          "away": {
-            "id": 943,
-            "name": "Sydney",
-            "logo": "https://media.api-sports.io/football/teams/943.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1280816,
@@ -506,6 +447,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361477,
+          "date": "2025-04-09T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jalan Besar Stadium",
+            "city": "Singapore"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744200000
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4204,
+            "name": "Home United",
+            "logo": "https://media.api-sports.io/football/teams/4204.png",
+            "winner": true
+          },
+          "away": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1280812,
@@ -1036,65 +1036,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1280765,
-          "date": "2025-02-01T06:00:00+00:00",
-          "venue": {
-            "id": 20808,
-            "name": "Allianz Stadium",
-            "city": "Sydney"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738389600
-        },
-        "league": {
-          "id": 188,
-          "name": "A-League",
-          "logo": "https://media.api-sports.io/football/leagues/188.png"
-        },
-        "teams": {
-          "home": {
-            "id": 943,
-            "name": "Sydney",
-            "logo": "https://media.api-sports.io/football/teams/943.png",
-            "winner": true
-          },
-          "away": {
-            "id": 948,
-            "name": "Adelaide United",
-            "logo": "https://media.api-sports.io/football/teams/948.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1391,5 +1332,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:51:51.629Z"
+  "lastUpdated": "2025-04-10T19:45:57.894Z"
 }

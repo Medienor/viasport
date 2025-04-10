@@ -261,65 +261,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362109,
-          "date": "2025-04-08T22:00:00+00:00",
-          "venue": {
-            "id": 7131,
-            "name": "Estadio Libertadores de América",
-            "city": "Avellaneda, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744149600
-        },
-        "league": {
-          "id": 11,
-          "name": "CONMEBOL Sudamericana",
-          "logo": "https://media.api-sports.io/football/leagues/11.png"
-        },
-        "teams": {
-          "home": {
-            "id": 453,
-            "name": "Independiente",
-            "logo": "https://media.api-sports.io/football/teams/453.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2361,
-            "name": "Boston River",
-            "logo": "https://media.api-sports.io/football/teams/2361.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334469,
           "date": "2025-04-13T21:00:00+00:00",
           "venue": {
@@ -735,6 +676,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362109,
+          "date": "2025-04-08T22:00:00+00:00",
+          "venue": {
+            "id": 7131,
+            "name": "Estadio Libertadores de América",
+            "city": "Avellaneda, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1744149600
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 453,
+            "name": "Independiente",
+            "logo": "https://media.api-sports.io/football/teams/453.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2361,
+            "name": "Boston River",
+            "logo": "https://media.api-sports.io/football/teams/2361.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1334449,
           "date": "2025-04-06T18:30:00+00:00",
           "venue": {
@@ -798,8 +798,8 @@
           "date": "2025-04-01T22:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Estadio Víctor Agustín Ugarte de Potosí",
-            "city": "Potosí"
+            "name": "Estadio Victor Agustín Ugarte",
+            "city": "Potosi"
           },
           "status": {
             "long": "Match Finished",
@@ -1263,65 +1263,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334364,
-          "date": "2025-02-17T22:15:00+00:00",
-          "venue": {
-            "id": 97,
-            "name": "Estadio Ciudad de Vicente López",
-            "city": "Vicente López, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739830500
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1064,
-            "name": "Platense",
-            "logo": "https://media.api-sports.io/football/teams/1064.png",
-            "winner": null
-          },
-          "away": {
-            "id": 453,
-            "name": "Independiente",
-            "logo": "https://media.api-sports.io/football/teams/453.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1618,5 +1559,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:47:38.517Z"
+  "lastUpdated": "2025-04-10T19:41:41.618Z"
 }

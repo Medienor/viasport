@@ -191,65 +191,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362120,
-          "date": "2025-04-09T00:30:00+00:00",
-          "venue": {
-            "id": 19377,
-            "name": "Estádio São Januário",
-            "city": "Rio de Janeiro, Rio de Janeiro"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744158600
-        },
-        "league": {
-          "id": 11,
-          "name": "CONMEBOL Sudamericana",
-          "logo": "https://media.api-sports.io/football/leagues/11.png"
-        },
-        "teams": {
-          "home": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2827,
-            "name": "Puerto Cabello",
-            "logo": "https://media.api-sports.io/football/teams/2827.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1351064,
           "date": "2025-04-13T00:00:00+00:00",
           "venue": {
@@ -372,7 +313,7 @@
           "date": "2025-04-19T21:30:00+00:00",
           "venue": {
             "id": 19377,
-            "name": "Estádio São Januário",
+            "name": "Estadio Jornalista Mário Filho",
             "city": "Rio de Janeiro, Rio de Janeiro"
           },
           "status": {
@@ -1019,6 +960,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362120,
+          "date": "2025-04-09T00:30:00+00:00",
+          "venue": {
+            "id": 19377,
+            "name": "Estádio São Januário",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744158600
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 133,
+            "name": "Vasco DA Gama",
+            "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2827,
+            "name": "Puerto Cabello",
+            "logo": "https://media.api-sports.io/football/teams/2827.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351055,
           "date": "2025-04-05T21:30:00+00:00",
           "venue": {
@@ -1547,65 +1547,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1318023,
-          "date": "2025-02-10T23:00:00+00:00",
-          "venue": {
-            "id": 8290,
-            "name": "Estádio Lourival Gomes de Almeida",
-            "city": "Saquarema, Rio de Janeiro"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739228400
-        },
-        "league": {
-          "id": 624,
-          "name": "Carioca - 1",
-          "logo": "https://media.api-sports.io/football/leagues/624.png"
-        },
-        "teams": {
-          "home": {
-            "id": 13115,
-            "name": "Sampaio Corrêa RJ",
-            "logo": "https://media.api-sports.io/football/teams/13115.png",
-            "winner": null
-          },
-          "away": {
-            "id": 133,
-            "name": "Vasco DA Gama",
-            "logo": "https://media.api-sports.io/football/teams/133.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1923,5 +1864,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:52:09.836Z"
+  "lastUpdated": "2025-04-10T19:46:16.583Z"
 }

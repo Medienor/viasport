@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362767,
-          "date": "2025-04-07T17:00:00+00:00",
-          "venue": {
-            "id": 443,
-            "name": "Brøndby Stadion",
-            "city": "Brøndby"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744045200
-        },
-        "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
-        },
-        "teams": {
-          "home": {
-            "id": 407,
-            "name": "Brondby",
-            "logo": "https://media.api-sports.io/football/teams/407.png",
-            "winner": null
-          },
-          "away": {
-            "id": 406,
-            "name": "Aarhus",
-            "logo": "https://media.api-sports.io/football/teams/406.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362769,
           "date": "2025-04-13T14:00:00+00:00",
           "venue": {
@@ -393,8 +334,8 @@
           "date": "2025-04-27T14:00:00+00:00",
           "venue": {
             "id": null,
-            "name": null,
-            "city": null
+            "name": "Ceres Park Vejlby",
+            "city": "Risskov"
           },
           "status": {
             "long": "Not Started",
@@ -686,12 +627,71 @@
     "past": [
       {
         "fixture": {
+          "id": 1362767,
+          "date": "2025-04-07T17:00:00+00:00",
+          "venue": {
+            "id": 443,
+            "name": "Brøndby Stadion",
+            "city": "Brøndby"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1744045200
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 407,
+            "name": "Brondby",
+            "logo": "https://media.api-sports.io/football/teams/407.png",
+            "winner": true
+          },
+          "away": {
+            "id": 406,
+            "name": "Aarhus",
+            "logo": "https://media.api-sports.io/football/teams/406.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1362762,
           "date": "2025-03-30T14:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Vejlby Stadion",
-            "city": "Aarhus"
+            "name": "Ceres Park Vejlby",
+            "city": "Risskov"
           },
           "status": {
             "long": "Match Finished",
@@ -867,8 +867,8 @@
           "date": "2025-03-09T15:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Vejlby Stadion",
-            "city": "Aarhus"
+            "name": "Ceres Park Vejlby",
+            "city": "Risskov"
           },
           "status": {
             "long": "Match Finished",
@@ -985,8 +985,8 @@
           "date": "2025-02-23T13:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Vejlby Stadion",
-            "city": "Aarhus"
+            "name": "Ceres Park Vejlby",
+            "city": "Risskov"
           },
           "status": {
             "long": "Match Finished",
@@ -1204,65 +1204,6 @@
           "fulltime": {
             "home": 1,
             "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1339780,
-          "date": "2025-01-26T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Complejo Deportivo Arroyo Enmedio",
-            "city": "Estepona"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737849600
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 406,
-            "name": "Aarhus",
-            "logo": "https://media.api-sports.io/football/teams/406.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1599,
-            "name": "Philadelphia Union",
-            "logo": "https://media.api-sports.io/football/teams/1599.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
           },
           "extratime": {
             "home": null,
@@ -1569,5 +1510,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:47:48.648Z"
+  "lastUpdated": "2025-04-10T19:41:51.977Z"
 }

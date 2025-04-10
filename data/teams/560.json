@@ -222,65 +222,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361475,
-          "date": "2025-04-08T16:00:00+00:00",
-          "venue": {
-            "id": 18856,
-            "name": "Fortuna Arena",
-            "city": "Praha"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744128000
-        },
-        "league": {
-          "id": 347,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/347.png"
-        },
-        "teams": {
-          "home": {
-            "id": 560,
-            "name": "Slavia Praha",
-            "logo": "https://media.api-sports.io/football/teams/560.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2250,
-            "name": "Sigma Olomouc",
-            "logo": "https://media.api-sports.io/football/teams/2250.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1210609,
           "date": "2025-04-12T14:00:00+00:00",
           "venue": {
@@ -399,6 +340,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361475,
+          "date": "2025-04-08T16:00:00+00:00",
+          "venue": {
+            "id": 18856,
+            "name": "Fortuna Arena",
+            "city": "Praha"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1744128000
+        },
+        "league": {
+          "id": 347,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/347.png"
+        },
+        "teams": {
+          "home": {
+            "id": 560,
+            "name": "Slavia Praha",
+            "logo": "https://media.api-sports.io/football/teams/560.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2250,
+            "name": "Sigma Olomouc",
+            "logo": "https://media.api-sports.io/football/teams/2250.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1210600,
@@ -929,65 +929,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299269,
-          "date": "2025-01-30T20:00:00+00:00",
-          "venue": {
-            "id": 18856,
-            "name": "Fortuna Arena",
-            "city": "Praha"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738267200
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 560,
-            "name": "Slavia Praha",
-            "logo": "https://media.api-sports.io/football/teams/560.png",
-            "winner": null
-          },
-          "away": {
-            "id": 375,
-            "name": "Malmo FF",
-            "logo": "https://media.api-sports.io/football/teams/375.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1284,5 +1225,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:47:56.697Z"
+  "lastUpdated": "2025-04-10T19:41:59.669Z"
 }

@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -222,65 +222,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361477,
-          "date": "2025-04-09T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Jalan Besar Stadium",
-            "city": "Singapore"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744200000
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4204,
-            "name": "Home United",
-            "logo": "https://media.api-sports.io/football/teams/4204.png",
-            "winner": null
-          },
-          "away": {
-            "id": 943,
-            "name": "Sydney",
-            "logo": "https://media.api-sports.io/football/teams/943.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1196673,
@@ -401,12 +342,12 @@
       },
       {
         "fixture": {
-          "id": 1367322,
+          "id": 1367323,
           "date": "2025-04-22T11:45:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 3206,
+            "name": "Jalan Besar Stadium",
+            "city": "Singapore"
           },
           "status": {
             "long": "Not Started",
@@ -423,15 +364,15 @@
         },
         "teams": {
           "home": {
-            "id": 4204,
-            "name": "Home United",
-            "logo": "https://media.api-sports.io/football/teams/4204.png",
-            "winner": null
-          },
-          "away": {
             "id": 4202,
             "name": "DPMM FC",
             "logo": "https://media.api-sports.io/football/teams/4202.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4204,
+            "name": "Home United",
+            "logo": "https://media.api-sports.io/football/teams/4204.png",
             "winner": null
           }
         },
@@ -461,7 +402,7 @@
       {
         "fixture": {
           "id": 1196679,
-          "date": "2025-04-25T11:45:00+00:00",
+          "date": "2025-04-27T11:45:00+00:00",
           "venue": {
             "id": 3204,
             "name": "Jurong East Stadium",
@@ -473,7 +414,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745581500
+          "timestamp": 1745754300
         },
         "league": {
           "id": 368,
@@ -637,12 +578,12 @@
       },
       {
         "fixture": {
-          "id": 1367323,
+          "id": 1367322,
           "date": "2025-05-06T11:45:00+00:00",
           "venue": {
-            "id": null,
-            "name": null,
-            "city": null
+            "id": 3205,
+            "name": "Bishan Stadium",
+            "city": "Singapore"
           },
           "status": {
             "long": "Not Started",
@@ -659,15 +600,15 @@
         },
         "teams": {
           "home": {
-            "id": 4202,
-            "name": "DPMM FC",
-            "logo": "https://media.api-sports.io/football/teams/4202.png",
-            "winner": null
-          },
-          "away": {
             "id": 4204,
             "name": "Home United",
             "logo": "https://media.api-sports.io/football/teams/4204.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4202,
+            "name": "DPMM FC",
+            "logo": "https://media.api-sports.io/football/teams/4202.png",
             "winner": null
           }
         },
@@ -873,6 +814,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361477,
+          "date": "2025-04-09T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Jalan Besar Stadium",
+            "city": "Singapore"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744200000
+        },
+        "league": {
+          "id": 18,
+          "name": "AFC Cup",
+          "logo": "https://media.api-sports.io/football/leagues/18.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4204,
+            "name": "Home United",
+            "logo": "https://media.api-sports.io/football/teams/4204.png",
+            "winner": true
+          },
+          "away": {
+            "id": 943,
+            "name": "Sydney",
+            "logo": "https://media.api-sports.io/football/teams/943.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1196670,
@@ -1116,7 +1116,7 @@
           "venue": {
             "id": null,
             "name": "Jalan Besar Stadium",
-            "city": "Singapore"
+            "city": "Singapore City"
           },
           "status": {
             "long": "Match Finished",
@@ -1393,65 +1393,6 @@
           "fulltime": {
             "home": 1,
             "away": 5
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1322669,
-          "date": "2025-02-20T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Jalan Besar Stadium",
-            "city": "Singapore"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1740052800
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4204,
-            "name": "Home United",
-            "logo": "https://media.api-sports.io/football/teams/4204.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2786,
-            "name": "Muangthong United",
-            "logo": "https://media.api-sports.io/football/teams/2786.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
           },
           "extratime": {
             "home": null,
@@ -1758,5 +1699,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:51:57.187Z"
+  "lastUpdated": "2025-04-10T19:46:03.077Z"
 }

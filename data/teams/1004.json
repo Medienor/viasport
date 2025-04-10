@@ -115,65 +115,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1238117,
-          "date": "2025-04-07T17:00:00+00:00",
-          "venue": {
-            "id": 1585,
-            "name": "Recep Tayyip Erdoğan Stadyumu",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744045200
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1004,
-            "name": "Kasimpasa",
-            "logo": "https://media.api-sports.io/football/teams/1004.png",
-            "winner": null
-          },
-          "away": {
-            "id": 549,
-            "name": "Besiktas",
-            "logo": "https://media.api-sports.io/football/teams/549.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1238121,
           "date": "2025-04-13T13:00:00+00:00",
           "venue": {
@@ -292,6 +233,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238117,
+          "date": "2025-04-07T17:00:00+00:00",
+          "venue": {
+            "id": 1585,
+            "name": "Recep Tayyip Erdoğan Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744045200
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1004,
+            "name": "Kasimpasa",
+            "logo": "https://media.api-sports.io/football/teams/1004.png",
+            "winner": null
+          },
+          "away": {
+            "id": 549,
+            "name": "Besiktas",
+            "logo": "https://media.api-sports.io/football/teams/549.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238107,
@@ -822,65 +822,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1238042,
-          "date": "2025-02-02T10:30:00+00:00",
-          "venue": {
-            "id": 11924,
-            "name": "Yeni Adana Stadyumu",
-            "city": "Adana"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738492200
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3563,
-            "name": "Adana Demirspor",
-            "logo": "https://media.api-sports.io/football/teams/3563.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1004,
-            "name": "Kasimpasa",
-            "logo": "https://media.api-sports.io/football/teams/1004.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 5
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 5
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1177,5 +1118,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:46:31.530Z"
+  "lastUpdated": "2025-04-10T19:40:33.911Z"
 }

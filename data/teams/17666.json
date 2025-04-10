@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -200,7 +200,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -214,65 +214,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1355726,
-          "date": "2025-04-10T16:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Khalifa Sports City Stadium",
-            "city": "Manama"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744300800
-        },
-        "league": {
-          "id": 1049,
-          "name": "King's Cup",
-          "logo": "https://media.api-sports.io/football/leagues/1049.png"
-        },
-        "teams": {
-          "home": {
-            "id": 17666,
-            "name": "Khalidiya",
-            "logo": "https://media.api-sports.io/football/teams/17666.png",
-            "winner": null
-          },
-          "away": {
-            "id": 5488,
-            "name": "Muharraq",
-            "logo": "https://media.api-sports.io/football/teams/5488.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1355624,
@@ -452,6 +393,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1355726,
+          "date": "2025-04-10T16:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Khalifa Sports City Stadium",
+            "city": "Manama"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1744300800
+        },
+        "league": {
+          "id": 1049,
+          "name": "King's Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1049.png"
+        },
+        "teams": {
+          "home": {
+            "id": 17666,
+            "name": "Khalidiya",
+            "logo": "https://media.api-sports.io/football/teams/17666.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5488,
+            "name": "Muharraq",
+            "logo": "https://media.api-sports.io/football/teams/5488.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1355618,
@@ -753,7 +753,7 @@
           "date": "2025-02-18T14:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Yadegar-e-Imam Stadium",
+            "name": "Sahand Arena",
             "city": "Tabriz"
           },
           "status": {
@@ -812,7 +812,7 @@
           "date": "2025-02-11T14:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stād al-Bahrayn al-Watanī",
+            "name": "Bahrain National Stadium",
             "city": "Riffa"
           },
           "status": {
@@ -972,65 +972,6 @@
           "fulltime": {
             "home": 1,
             "away": 6
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1304016,
-          "date": "2025-01-18T16:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stād al-Bahrayn al-Watanī",
-            "city": "Riffa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1737216000
-        },
-        "league": {
-          "id": 417,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/417.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5479,
-            "name": "Al Najma",
-            "logo": "https://media.api-sports.io/football/teams/5479.png",
-            "winner": false
-          },
-          "away": {
-            "id": 17666,
-            "name": "Khalidiya",
-            "logo": "https://media.api-sports.io/football/teams/17666.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
           },
           "extratime": {
             "home": null,
@@ -1337,5 +1278,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:52:04.806Z"
+  "lastUpdated": "2025-04-10T19:46:11.260Z"
 }

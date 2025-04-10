@@ -174,23 +174,41 @@ export default function EnhancedFixturesSection({
   };
 
   // Check if a match is currently live or finished based on API data
-  const getMatchStatus = (fixture: any): { isLive: boolean; isFinished: boolean } => {
+  const getMatchStatus = (fixture: any) => {
     const fixtureId = fixture.fixture.id;
-    const matchData = liveMatches[fixtureId];
+    const liveMatch = liveMatches[fixtureId];
     
-    if (!matchData) return { isLive: false, isFinished: false };
+    console.log('Match status check:', {
+      fixtureId,
+      hasLiveData: !!liveMatch,
+      liveMatchData: liveMatch,
+      timestamp: new Date().toISOString()
+    });
     
-    // Consider more statuses for 'live' if needed (e.g., ET, P)
-    const isLive = ['1H', 'HT', '2H', 'ET', 'P', 'LIVE', 'SUSP', 'INT'].includes(matchData.status.short);
-    const isFinished = ['FT', 'AET', 'PEN'].includes(matchData.status.short);
+    // Only check live API data for status
+    const isFinished = liveMatch?.status.short === 'FT';
+    const isLive = liveMatch && ['1H', 'HT', '2H', 'ET', 'P', 'LIVE'].includes(liveMatch.status.short);
     
     return { isLive, isFinished };
   };
 
   // Get live match data if available
-  const getMatchData = (fixture: any): LiveMatch | null => {
+  const getMatchData = (fixture: any) => {
     const fixtureId = fixture.fixture.id;
-    return liveMatches[fixtureId] || null;
+    const liveMatch = liveMatches[fixtureId];
+    
+    // Only return data if we have live match data
+    if (liveMatch) {
+      return {
+        id: fixtureId,
+        status: liveMatch.status,
+        goals: liveMatch.goals,
+        lastUpdated: Date.now()
+      };
+    }
+    
+    // If no live data, return null (will show original fixture time)
+    return null;
   };
 
   const getFixturesToDisplay = () => {
@@ -309,12 +327,25 @@ export default function EnhancedFixturesSection({
                   const streamingProviders = getStreamingProviders(fixture.league.id);
                   const hasStreamingProviders = streamingProviders.length > 0;
                   
-                  // Debug output for each fixture
-                  console.log(`Fixture ${fixture.fixture.id}:`, { 
-                    isLive, 
-                    isFinished, 
-                    matchData, 
-                    fixtureTime: fixture.formattedTime 
+                  // Debug logging
+                  console.log('Fixture Data:', {
+                    id: fixture.fixture.id,
+                    teams: `${fixture.teams.home.name} vs ${fixture.teams.away.name}`,
+                    status: {
+                      fixtureStatus: fixture.fixture?.status,
+                      directStatus: fixture.status,
+                      matchStatus: fixture.match_status,
+                      liveMatchStatus: liveMatches[fixture.fixture.id]?.status
+                    },
+                    goals: {
+                      fixtureGoals: fixture.goals,
+                      liveMatchGoals: liveMatches[fixture.fixture.id]?.goals
+                    },
+                    computed: {
+                      isLive,
+                      isFinished,
+                      matchData
+                    }
                   });
                   
                   return (

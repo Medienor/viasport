@@ -301,65 +301,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1335148,
-          "date": "2025-04-07T16:30:00+00:00",
-          "venue": {
-            "id": 8344,
-            "name": "Rashid Stadium",
-            "city": "Dubai"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744043400
-        },
-        "league": {
-          "id": 301,
-          "name": "Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/301.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2870,
-            "name": "Shabab Al Ahli Dubai",
-            "logo": "https://media.api-sports.io/football/teams/2870.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2865,
-            "name": "Al Ain",
-            "logo": "https://media.api-sports.io/football/teams/2865.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361953,
           "date": "2025-04-12T13:55:00+00:00",
           "venue": {
@@ -714,6 +655,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1335148,
+          "date": "2025-04-07T16:30:00+00:00",
+          "venue": {
+            "id": 8344,
+            "name": "Rashid Stadium",
+            "city": "Dubai"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744043400
+        },
+        "league": {
+          "id": 301,
+          "name": "Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/301.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2870,
+            "name": "Shabab Al Ahli Dubai",
+            "logo": "https://media.api-sports.io/football/teams/2870.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2865,
+            "name": "Al Ain",
+            "logo": "https://media.api-sports.io/football/teams/2865.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1335144,
@@ -1244,65 +1244,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1313525,
-          "date": "2025-01-25T16:00:00+00:00",
-          "venue": {
-            "id": 1605,
-            "name": "Zabeel Stadium",
-            "city": "Dubai"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 10
-          },
-          "timestamp": 1737820800
-        },
-        "league": {
-          "id": 560,
-          "name": "Presidents Cup",
-          "logo": "https://media.api-sports.io/football/leagues/560.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2865,
-            "name": "Al Ain",
-            "logo": "https://media.api-sports.io/football/teams/2865.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2871,
-            "name": "Al-Jazira",
-            "logo": "https://media.api-sports.io/football/teams/2871.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1599,5 +1540,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:51:44.044Z"
+  "lastUpdated": "2025-04-10T19:45:50.226Z"
 }

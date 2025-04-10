@@ -73,7 +73,7 @@
         {
           "year": 2024,
           "start": "2024-08-10",
-          "end": "2025-04-06",
+          "end": "2025-04-13",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -126,7 +126,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -178,7 +178,67 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1369427,
+          "date": "2025-04-13T13:00:00+00:00",
+          "venue": {
+            "id": 12497,
+            "name": "Stadiumi Liman Gegaj",
+            "city": "Malishevë"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744549200
+        },
+        "league": {
+          "id": 664,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/664.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15576,
+            "name": "Malisheva",
+            "logo": "https://media.api-sports.io/football/teams/15576.png",
+            "winner": null
+          },
+          "away": {
+            "id": 14281,
+            "name": "Drita",
+            "logo": "https://media.api-sports.io/football/teams/14281.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
       {
         "fixture": {
@@ -1065,5 +1125,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:49:13.558Z"
+  "lastUpdated": "2025-04-10T19:43:17.696Z"
 }

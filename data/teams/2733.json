@@ -147,65 +147,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361639,
-          "date": "2025-04-10T14:30:00+00:00",
-          "venue": {
-            "id": 845,
-            "name": "Azadi Stadium",
-            "city": "Teheran"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744295400
-        },
-        "league": {
-          "id": 290,
-          "name": "Persian Gulf Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/290.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2733,
-            "name": "Esteghlal FC",
-            "logo": "https://media.api-sports.io/football/teams/2733.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2734,
-            "name": "Foolad FC",
-            "logo": "https://media.api-sports.io/football/teams/2734.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361648,
           "date": "2025-04-16T14:30:00+00:00",
           "venue": {
@@ -325,7 +266,7 @@
       {
         "fixture": {
           "id": 1361637,
-          "date": "2025-04-25T16:00:00+00:00",
+          "date": "2025-04-26T16:00:00+00:00",
           "venue": {
             "id": 845,
             "name": "Azadi Stadium",
@@ -337,7 +278,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745596800
+          "timestamp": 1745683200
         },
         "league": {
           "id": 495,
@@ -383,6 +324,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361639,
+          "date": "2025-04-10T14:30:00+00:00",
+          "venue": {
+            "id": 845,
+            "name": "Azadi Stadium",
+            "city": "Teheran"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1744295400
+        },
+        "league": {
+          "id": 290,
+          "name": "Persian Gulf Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/290.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2733,
+            "name": "Esteghlal FC",
+            "logo": "https://media.api-sports.io/football/teams/2733.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2734,
+            "name": "Foolad FC",
+            "logo": "https://media.api-sports.io/football/teams/2734.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1353236,
@@ -913,65 +913,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1288383,
-          "date": "2025-02-03T16:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Azadi Stadium",
-            "city": "Teheran"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 12
-          },
-          "timestamp": 1738598400
-        },
-        "league": {
-          "id": 17,
-          "name": "AFC Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/17.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2733,
-            "name": "Esteghlal FC",
-            "logo": "https://media.api-sports.io/football/teams/2733.png",
-            "winner": null
-          },
-          "away": {
-            "id": 5242,
-            "name": "Al Shorta",
-            "logo": "https://media.api-sports.io/football/teams/5242.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1268,5 +1209,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:51:41.502Z"
+  "lastUpdated": "2025-04-10T19:45:47.490Z"
 }

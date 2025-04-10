@@ -115,65 +115,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1366882,
-          "date": "2025-04-09T10:00:00+00:00",
-          "venue": {
-            "id": 969,
-            "name": "Sunpro Alwin Stadium",
-            "city": "Matsumoto"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744192800
-        },
-        "league": {
-          "id": 101,
-          "name": "J-League Cup",
-          "logo": "https://media.api-sports.io/football/leagues/101.png"
-        },
-        "teams": {
-          "home": {
-            "id": 304,
-            "name": "Matsumoto Yamaga",
-            "logo": "https://media.api-sports.io/football/teams/304.png",
-            "winner": null
-          },
-          "away": {
-            "id": 311,
-            "name": "Albirex Niigata",
-            "logo": "https://media.api-sports.io/football/teams/311.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1324045,
           "date": "2025-04-13T05:00:00+00:00",
           "venue": {
@@ -1297,6 +1238,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1366882,
+          "date": "2025-04-09T10:00:00+00:00",
+          "venue": {
+            "id": 969,
+            "name": "Sunpro Alwin Stadium",
+            "city": "Matsumoto"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744192800
+        },
+        "league": {
+          "id": 101,
+          "name": "J-League Cup",
+          "logo": "https://media.api-sports.io/football/leagues/101.png"
+        },
+        "teams": {
+          "home": {
+            "id": 304,
+            "name": "Matsumoto Yamaga",
+            "logo": "https://media.api-sports.io/football/teams/304.png",
+            "winner": false
+          },
+          "away": {
+            "id": 311,
+            "name": "Albirex Niigata",
+            "logo": "https://media.api-sports.io/football/teams/311.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1324038,
           "date": "2025-04-06T05:00:00+00:00",
           "venue": {
@@ -1825,65 +1825,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1166505,
-          "date": "2024-12-08T05:00:00+00:00",
-          "venue": {
-            "id": 980,
-            "name": "Saitama Stadium 2002",
-            "city": "Saitama"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1733634000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 287,
-            "name": "Urawa",
-            "logo": "https://media.api-sports.io/football/teams/287.png",
-            "winner": null
-          },
-          "away": {
-            "id": 311,
-            "name": "Albirex Niigata",
-            "logo": "https://media.api-sports.io/football/teams/311.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2197,5 +2138,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:52:40.611Z"
+  "lastUpdated": "2025-04-10T19:46:49.058Z"
 }

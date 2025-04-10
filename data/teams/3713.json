@@ -183,65 +183,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361474,
-          "date": "2025-04-09T14:30:00+00:00",
-          "venue": {
-            "id": 434,
-            "name": "Stadion Střelnice",
-            "city": "Jablonec nad Nisou"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744209000
-        },
-        "league": {
-          "id": 347,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/347.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1122,
-            "name": "FK Jablonec",
-            "logo": "https://media.api-sports.io/football/teams/1122.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3713,
-            "name": "Baník Ostrava",
-            "logo": "https://media.api-sports.io/football/teams/3713.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1210603,
           "date": "2025-04-12T17:00:00+00:00",
           "venue": {
@@ -360,6 +301,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361474,
+          "date": "2025-04-09T14:30:00+00:00",
+          "venue": {
+            "id": 434,
+            "name": "Stadion Střelnice",
+            "city": "Jablonec nad Nisou"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744209000
+        },
+        "league": {
+          "id": 347,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/347.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1122,
+            "name": "FK Jablonec",
+            "logo": "https://media.api-sports.io/football/teams/1122.png",
+            "winner": false
+          },
+          "away": {
+            "id": 3713,
+            "name": "Baník Ostrava",
+            "logo": "https://media.api-sports.io/football/teams/3713.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1210597,
@@ -890,65 +890,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1210535,
-          "date": "2025-02-01T15:00:00+00:00",
-          "venue": {
-            "id": 2493,
-            "name": "Stadion u Nisy",
-            "city": "Liberec"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738422000
-        },
-        "league": {
-          "id": 345,
-          "name": "Czech Liga",
-          "logo": "https://media.api-sports.io/football/leagues/345.png"
-        },
-        "teams": {
-          "home": {
-            "id": 782,
-            "name": "Slovan Liberec",
-            "logo": "https://media.api-sports.io/football/teams/782.png",
-            "winner": false
-          },
-          "away": {
-            "id": 3713,
-            "name": "Baník Ostrava",
-            "logo": "https://media.api-sports.io/football/teams/3713.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1245,5 +1186,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:49:03.224Z"
+  "lastUpdated": "2025-04-10T19:43:07.028Z"
 }

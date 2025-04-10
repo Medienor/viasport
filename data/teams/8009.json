@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": false
+            "odds": true
           }
         }
       ]
@@ -143,7 +143,8 @@
     2024
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1368290,
@@ -154,10 +155,10 @@
             "city": "Baghdād"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
           },
           "timestamp": 1744302600
         },
@@ -171,27 +172,27 @@
             "id": 8009,
             "name": "Al Quwa Al Jawiya",
             "logo": "https://media.api-sports.io/football/teams/8009.png",
-            "winner": null
+            "winner": false
           },
           "away": {
             "id": 8010,
             "name": "Al Zawra'a",
             "logo": "https://media.api-sports.io/football/teams/8010.png",
-            "winner": null
+            "winner": true
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -202,9 +203,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1367253,
@@ -735,65 +734,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1340248,
-          "date": "2025-01-30T16:30:00+00:00",
-          "venue": {
-            "id": 5710,
-            "name": "Al-Shaab Stadium",
-            "city": "Bagdad"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1738254600
-        },
-        "league": {
-          "id": 542,
-          "name": "Iraqi League",
-          "logo": "https://media.api-sports.io/football/leagues/542.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8009,
-            "name": "Al Quwa Al Jawiya",
-            "logo": "https://media.api-sports.io/football/teams/8009.png",
-            "winner": false
-          },
-          "away": {
-            "id": 5242,
-            "name": "Al Shorta",
-            "logo": "https://media.api-sports.io/football/teams/5242.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1090,5 +1030,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:52:02.182Z"
+  "lastUpdated": "2025-04-10T19:46:08.270Z"
 }

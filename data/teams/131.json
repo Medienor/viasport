@@ -191,65 +191,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362113,
-          "date": "2025-04-09T00:30:00+00:00",
-          "venue": {
-            "id": 368,
-            "name": "Estadio Olímpico Pascual Guerrero",
-            "city": "Santiago de Cali"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744158600
-        },
-        "league": {
-          "id": 11,
-          "name": "CONMEBOL Sudamericana",
-          "logo": "https://media.api-sports.io/football/leagues/11.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1138,
-            "name": "America de Cali",
-            "logo": "https://media.api-sports.io/football/teams/1138.png",
-            "winner": null
-          },
-          "away": {
-            "id": 131,
-            "name": "Corinthians",
-            "logo": "https://media.api-sports.io/football/teams/131.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1351065,
           "date": "2025-04-12T21:30:00+00:00",
           "venue": {
@@ -1078,6 +1019,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362113,
+          "date": "2025-04-09T00:30:00+00:00",
+          "venue": {
+            "id": 368,
+            "name": "Estadio Olímpico Pascual Guerrero",
+            "city": "Santiago de Cali"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 26
+          },
+          "timestamp": 1744158600
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1138,
+            "name": "America de Cali",
+            "logo": "https://media.api-sports.io/football/teams/1138.png",
+            "winner": null
+          },
+          "away": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351055,
           "date": "2025-04-05T21:30:00+00:00",
           "venue": {
@@ -1200,8 +1200,8 @@
           "date": "2025-03-30T23:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Arena Fonte Nova",
-            "city": "Salvador"
+            "name": "Casa de Apostas Arena Fonte Nova",
+            "city": "Salvador, Bahia"
           },
           "status": {
             "long": "Match Finished",
@@ -1606,65 +1606,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1325644,
-          "date": "2025-02-27T00:30:00+00:00",
-          "venue": {
-            "id": 11531,
-            "name": "Neo Química Arena",
-            "city": "São Paulo, São Paulo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1740616200
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 131,
-            "name": "Corinthians",
-            "logo": "https://media.api-sports.io/football/teams/131.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2840,
-            "name": "UCV",
-            "logo": "https://media.api-sports.io/football/teams/2840.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1986,5 +1927,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-07T12:52:09.843Z"
+  "lastUpdated": "2025-04-10T19:46:16.644Z"
 }
