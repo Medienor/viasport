@@ -6,7 +6,7 @@
   "scripts": {
     "prefetch-players": "npx ts-node-esm --project tsconfig.scripts.json scripts/fetchNorwegianPlayers.ts",
     "prefetch-teams": "node scripts/fetchLeagueTeams.js",
-    "prefetch-calendar": "node scripts/fetchCalendarData.js",
+    "prefetch-calendar": "npx tsx scripts/fetchCalendarData.ts",
     "prefetch-leagues": "node scripts/fetchLeaguesData.js",
     "prefetch-top-players": "node scripts/fetchTopPlayersData.js",
     "generate-search-index": "node scripts/generateSearchIndex.js",
@@ -38,7 +38,6 @@
     "react-dom": "^19.0.0",
     "supabase": "^2.20.5",
     "ts-node": "^10.9.2",
-    "tsx": "^4.19.3",
     "zustand": "^5.0.3"
   },
   "devDependencies": {
@@ -51,6 +50,7 @@
     "eslint-config-next": "15.1.7",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
+    "tsx": "^4.19.3",
     "typescript": "^5"
   }
 }

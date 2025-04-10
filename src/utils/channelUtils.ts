@@ -2,42 +2,50 @@ interface StreamingProvider {
   name: string;
   icon: string;
   package?: string;
+  url: string;
 }
 
 export const STREAMING_PROVIDERS = {
   TV2_PLAY_PREMIUM: {
     name: 'TV 2 Play Premium',
     icon: '/images/channels/tv2play.png',
-    package: 'TV 2 Play Premium'
+    package: 'TV 2 Play Premium',
+    url: 'https://play.tv2.no/sport'
   },
   TV2_PLAY_BASIC: {
     name: 'TV 2 Play',
     icon: '/images/channels/tv2play.png',
-    package: 'Basic'
+    package: 'Basic',
+    url: 'https://play.tv2.no/sport'
   },
   VIAPLAY_TOTAL: {
     name: 'Viaplay Total',
     icon: '/images/channels/viaplay.jpg',
-    package: 'V Premium / Viaplay Total'
+    package: 'V Premium / Viaplay Total',
+    url: 'https://viaplay.no/sport'
   },
   VIAPLAY_MEDIUM: {
     name: 'Viaplay Medium',
     icon: '/images/channels/viaplay.jpg',
-    package: 'V Sport med Viaplay Medium'
+    package: 'V Sport med Viaplay Medium',
+    url: 'https://viaplay.no/sport'
   },
   NRK: {
     name: 'NRK',
     icon: '/images/channels/nrk.png',
-    package: 'Basic'
+    package: 'Basic',
+    url: 'https://www.nrk.no/sport/'
   },
   VG: {
     name: 'VG',
-    icon: '/images/channels/vg.png'
+    icon: '/images/channels/vg.png',
+    url: 'https://tv.vg.no/kategori/3/sport'
   },
   MAX_SPORT: {
     name: 'Max Sport',
     icon: '/images/channels/max.png',
-    package: 'Max Sport'
+    package: 'Max Sport',
+    url: 'https://www.maxsport.no'
   }
 };
 

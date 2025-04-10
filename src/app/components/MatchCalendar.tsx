@@ -9,17 +9,11 @@ import { calendarData as calendarDataImport } from '@/app/data/calendarData';
 import { topPlayersData } from '../data/topPlayersData';
 import { createPlayerSlug } from '@/lib/utils';
 import PreventAutoScroll from './PreventAutoScroll';
+import { MAJOR_LEAGUES } from '@/app/data/majorLeagues';
+import { getStreamingProviders } from '@/utils/channelUtils';
 
 // Add this line to prevent static rendering
 export const dynamic = 'force-dynamic';
-
-const LEAGUES = [
-  { id: 39, name: 'Premier League', logo: 'https://media.api-sports.io/football/leagues/39.png' },
-  { id: 2, name: 'Champions League', logo: 'https://media.api-sports.io/football/leagues/2.png' },
-  { id: 140, name: 'La Liga', logo: 'https://media.api-sports.io/football/leagues/140.png' },
-  { id: 135, name: 'Serie A', logo: 'https://media.api-sports.io/football/leagues/135.png' },
-  { id: 78, name: 'Bundesliga', logo: 'https://media.api-sports.io/football/leagues/78.png' },
-];
 
 interface CalendarDataType {
   [key: string]: Fixture[];
@@ -150,6 +144,23 @@ interface TopPlayer {
   statistics: TopPlayerStatistics[];
 }
 
+// When using the league logo, generate it from the ID
+const getLeagueLogo = (leagueId: number) => `https://media.api-sports.io/football/leagues/${leagueId}.png`;
+
+// Add the LiveMatch interface
+interface LiveMatch {
+  id: number;
+  status: {
+    short: string;
+    elapsed: number | null;
+  };
+  goals: {
+    home: number | null;
+    away: number | null;
+  };
+  lastUpdated: number;
+}
+
 export default function MatchCalendar({ currentMatchId = "" }) {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState(new Date());
@@ -158,12 +169,19 @@ export default function MatchCalendar({ currentMatchId = "" }) {
   const [loading, setLoading] = useState(true);
   const lastFetchTime = useRef<{ [key: string]: number }>({});
   const MIN_FETCH_INTERVAL = 300000; // 5 minutes between updates
-  const [loadingPlayers, setLoadingPlayers] = useState(true);
   const [expandedLeagues, setExpandedLeagues] = useState<{[key: number]: boolean}>({});
   const [leagueTeams, setLeagueTeams] = useState<{[key: number]: TeamData[]}>(leagueTeamsData);
-  const [topPlayers, setTopPlayers] = useState<TopPlayer[]>([]);
-  const [playerCategory, setPlayerCategory] = useState<'scorers' | 'assists' | 'redcards'>('scorers');
-  const [playerCategoryTitle, setPlayerCategoryTitle] = useState('Toppscorere Premier League');
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  // Add new states for live match tracking
+  const [liveMatches, setLiveMatches] = useState<{[key: number]: LiveMatch}>({});
+  const [isLoadingLiveData, setIsLoadingLiveData] = useState<boolean>(false);
+
+  // Add this state for real-time match time
+  const [currentTime, setCurrentTime] = useState<Date>(new Date());
 
   // First, let's modify the days generation in the useMemo hook to include league information
   const days = useMemo(() => {
@@ -192,7 +210,7 @@ export default function MatchCalendar({ currentMatchId = "" }) {
         const leagueIds = [...new Set(calendarData[dateStr].map(match => match.league?.id).filter(Boolean))];
         
         // Find corresponding league data - ONLY for Premier League (39) and Champions League (2)
-        leaguesWithMatches.push(...LEAGUES.filter(league => 
+        leaguesWithMatches.push(...MAJOR_LEAGUES.filter(league => 
           leagueIds.includes(league.id) && [39, 2].includes(league.id)
         ));
       }
@@ -232,7 +250,7 @@ export default function MatchCalendar({ currentMatchId = "" }) {
             const fixtures = data.response || [];
             // Filter for our leagues
             const filteredFixtures = fixtures.filter((fixture: ApiFixture) => 
-              LEAGUES.some(league => league.id === fixture.league.id)
+              MAJOR_LEAGUES.some(league => league.id === fixture.league.id)
             );
             updatedCounts[dateStr] = filteredFixtures.length;
             lastFetchTime.current[dateStr] = now;
@@ -284,7 +302,7 @@ export default function MatchCalendar({ currentMatchId = "" }) {
           
           // Filter to only include matches from our selected leagues
           const filteredFixtures = fixtures.filter((fixture: ApiFixture) => 
-            LEAGUES.some(league => league.id === fixture.league.id)
+            MAJOR_LEAGUES.some(league => league.id === fixture.league.id)
           );
           
           setMatches(filteredFixtures);
@@ -303,7 +321,7 @@ export default function MatchCalendar({ currentMatchId = "" }) {
 
   // Group matches by league - add debug log
   const matchesByLeague = useMemo(() => {
-    const grouped = LEAGUES.map(league => ({
+    const grouped = MAJOR_LEAGUES.map(league => ({
       ...league,
       matches: matches.filter(match => match.league.id === league.id)
     })).filter(league => league.matches.length > 0);
@@ -312,122 +330,180 @@ export default function MatchCalendar({ currentMatchId = "" }) {
     return grouped;
   }, [matches]);
 
-  // Only fetch teams if they're not in the pre-fetched data
-  useEffect(() => {
-    async function fetchMissingTeams() {
-      console.log('Checking for missing teams data...');
-      
-      // Log the pre-fetched data
-      for (const league of LEAGUES) {
-        const teamsCount = leagueTeams[league.id]?.length || 0;
-        console.log(`Pre-fetched data for league ${league.id} (${league.name}): ${teamsCount} teams`);
-      }
-      
-      const updatedTeams = { ...leagueTeams };
-      let needsUpdate = false;
-      
-      for (const league of LEAGUES) {
-        // Only fetch if we don't have data for this league
-        if (!updatedTeams[league.id] || updatedTeams[league.id].length === 0) {
-          console.log(`No pre-fetched data for league ${league.id}, fetching from API...`);
-          try {
-            const response = await fetch(`/api/football/teams/${league.id}`);
-            
-            if (response.ok) {
-              const data = await response.json();
-              
-              if (data.response && Array.isArray(data.response)) {
-                console.log(`Fetched ${data.response.length} teams for league ${league.id} from API`);
-                updatedTeams[league.id] = data.response;
-                needsUpdate = true;
-              }
-            }
-          } catch (error) {
-            console.error(`Error fetching teams for league ${league.id}:`, error);
-          }
-        } else {
-          console.log(`Using pre-fetched data for league ${league.id} (${league.name}): ${updatedTeams[league.id].length} teams`);
-        }
-      }
-      
-      // Only update state if we fetched new data
-      if (needsUpdate) {
-        console.log('Updating state with newly fetched teams data');
-        setLeagueTeams(updatedTeams);
-      } else {
-        console.log('No new data fetched, using pre-fetched data only');
-      }
-    }
-    
-    fetchMissingTeams();
-  }, [leagueTeams]);
-  
-  // Function to toggle league expansion
-  const toggleLeague = (leagueId: number) => {
-    setExpandedLeagues(prev => ({
-      ...prev,
-      [leagueId]: !prev[leagueId]
-    }));
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setIsDragging(true);
+    setStartX(e.pageX - (scrollRef.current?.offsetLeft || 0));
+    setScrollLeft(scrollRef.current?.scrollLeft || 0);
   };
 
-  // Replace the useEffect for fetching top players with this
-  useEffect(() => {
-    // Use the prefetched data instead of making an API call
-    if (topPlayersData && topPlayersData[39]) { // 39 is Premier League
-      const leagueData = topPlayersData[39];
-      const categoryData = leagueData.categories[playerCategory] || [];
-      
-      setPlayerCategoryTitle(`${playerCategory === 'scorers' ? 'Toppscorere' : 
-                          playerCategory === 'assists' ? 'Flest assists' : 
-                          'Flest røde kort'} ${leagueData.name}`);
-      
-      // Cast the data to the TopPlayer[] type since we know the structure is compatible
-      setTopPlayers(categoryData as unknown as TopPlayer[]);
-      setLoadingPlayers(false);
-    } else {
-      // Fallback to API if prefetched data is not available
-      async function fetchTopPlayers() {
-        try {
-          setLoadingPlayers(true);
-          
-          let endpoint = '/api/football/players/topscorers';
-          let title = 'Toppscorere Premier League';
-          
-          if (playerCategory === 'assists') {
-            endpoint = '/api/football/players/topassists';
-            title = 'Flest assists Premier League';
-          } else if (playerCategory === 'redcards') {
-            endpoint = '/api/football/players/topredcards';
-            title = 'Flest røde kort Premier League';
-          }
-          
-          setPlayerCategoryTitle(title);
-          
-          const response = await fetch(`${endpoint}?league=39&season=2023`);
-          
-          if (!response.ok) {
-            throw new Error(`API responded with status: ${response.status}`);
-          }
-          
-          const data = await response.json();
-          
-          if (data.response && Array.isArray(data.response)) {
-            // Cast the API response to the TopPlayer[] type
-            setTopPlayers(data.response.slice(0, 5) as unknown as TopPlayer[]);
-          }
-        } catch (error) {
-          console.error('Error fetching top players:', error);
-        } finally {
-          setLoadingPlayers(false);
-        }
-      }
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
 
-      fetchTopPlayers();
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - (scrollRef.current?.offsetLeft || 0);
+    const walk = (x - startX) * 2; // Multiply by 2 for faster scrolling
+    if (scrollRef.current) {
+      scrollRef.current.scrollLeft = scrollLeft - walk;
     }
-  }, [playerCategory]);
+  };
+
+  // Fetch match data from our server endpoint
+  const fetchMatchData = async () => {
+    try {
+      setIsLoadingLiveData(true);
+      
+      const response = await fetch('/api/football/live');
+      
+      if (!response.ok) {
+        throw new Error('Failed to fetch match data');
+      }
+      
+      const data = await response.json();
+      const newLiveMatchesMap: {[key: number]: LiveMatch} = {};
+      const now = Date.now();
+      
+      // Process live matches
+      data.live?.forEach((match: any) => {
+        if (MAJOR_LEAGUES.some(league => league.id === match.league.id)) {
+          newLiveMatchesMap[match.fixture.id] = {
+            id: match.fixture.id,
+            status: {
+              short: match.fixture.status.short,
+              elapsed: match.fixture.status.elapsed
+            },
+            goals: {
+              home: match.goals.home,
+              away: match.goals.away
+            },
+            lastUpdated: now
+          };
+        }
+      });
+      
+      // Process finished matches
+      data.finished?.forEach((match: any) => {
+        if (MAJOR_LEAGUES.some(league => league.id === match.league.id)) {
+          newLiveMatchesMap[match.fixture.id] = {
+            id: match.fixture.id,
+            status: {
+              short: match.fixture.status.short,
+              elapsed: null
+            },
+            goals: {
+              home: match.goals.home,
+              away: match.goals.away
+            },
+            lastUpdated: now
+          };
+        }
+      });
+      
+      setLiveMatches(newLiveMatchesMap);
+      
+    } catch (error) {
+      console.error('Error fetching match data:', error);
+    } finally {
+      setIsLoadingLiveData(false);
+    }
+  };
+
+  // Update current time and fetch data periodically
+  useEffect(() => {
+    // Initial fetch
+    fetchMatchData();
+    
+    // Set up interval for regular updates
+    const interval = setInterval(() => {
+      fetchMatchData();
+    }, 60000); // Check every minute
+    
+    return () => clearInterval(interval);
+  }, []);
+
+  // Add this useEffect for the real-time timer
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000); // Update every second
+
+    return () => clearInterval(timer);
+  }, []);
+
+  // Modify the getMatchStatus function to use real-time elapsed minutes
+  const getMatchStatus = (match: any) => {
+    const fixtureId = match.fixture?.id;
+    const liveData = liveMatches[fixtureId];
+    const matchDate = new Date(match.fixture?.date || '');
+    const now = new Date();
+    const isToday = matchDate.toDateString() === now.toDateString();
+    
+    // Check if match is finished either from live data or original fixture data
+    const isFinished = liveData?.status.short === 'FT' || 
+                      match.fixture?.status?.short === 'FT' || 
+                      match.status?.short === 'FT';  // Add this check
+
+    // For today's finished matches or past matches, show the score
+    if (isFinished) {
+      return {
+        displayTime: null,
+        isLive: false,
+        isPastMatch: false,
+        isFinished: true,
+        score: liveData ? 
+          `${liveData.goals.home} - ${liveData.goals.away}` : 
+          `${match.goals?.home || 0} - ${match.goals?.away || 0}`  // Add fallback to 0
+      };
+    }
+
+    if (!liveData) return { 
+      displayTime: matchDate.toLocaleTimeString('no-NO', { 
+        hour: '2-digit', 
+        minute: '2-digit' 
+      }),
+      isLive: false,
+      isPastMatch: false,
+      isFinished: false,
+      score: null
+    };
+
+    const isLive = ['1H', 'HT', '2H', 'ET', 'P', 'LIVE', 'SUSP', 'INT'].includes(liveData.status.short);
+    
+    let displayTime = liveData.status.short;
+    if (isLive && liveData.status.elapsed !== null && liveData.status.short !== 'HT') {
+      const elapsedSeconds = Math.floor((currentTime.getTime() - liveData.lastUpdated) / 1000);
+      const additionalMinutes = Math.floor(elapsedSeconds / 60);
+      const totalElapsed = liveData.status.elapsed + additionalMinutes;
+      displayTime = `${totalElapsed}'`;
+    }
+
+    return {
+      displayTime: isLive ? 
+        liveData.status.short === 'HT' ? 'Pause' : displayTime : 
+        matchDate.toLocaleTimeString('no-NO', { 
+          hour: '2-digit', 
+          minute: '2-digit' 
+        }),
+      isLive,
+      isPastMatch: false,
+      isFinished: false,
+      score: isLive ? `${liveData.goals.home} - ${liveData.goals.away}` : null
+    };
+  };
+
+  // In your render method, before rendering matchesByLeague
+  const allLiveMatches = matchesByLeague.flatMap(league => 
+    league.matches.filter(match => {
+      const isLive = liveMatches[match.fixture?.id]?.status.short && 
+        ['1H', 'HT', '2H', 'ET', 'P', 'LIVE', 'SUSP', 'INT'].includes(liveMatches[match.fixture?.id]?.status.short);
+      return isLive;
+    })
+  );
 
   return (
-    <div className="bg-gray-50 p-4 rounded-lg">
+    <div className="bg-gray-50 md:p-4 rounded-lg">
       <PreventAutoScroll />
       <div className="bg-white rounded-lg shadow-md overflow-hidden">
         {/* Calendar navigation */}
@@ -445,8 +521,15 @@ export default function MatchCalendar({ currentMatchId = "" }) {
             </svg>
           </button>
 
-          {/* Days */}
-          <div className="flex-1 flex overflow-x-auto hide-scrollbar">
+          {/* Days - now with drag functionality */}
+          <div 
+            ref={scrollRef}
+            className="flex-1 flex overflow-x-auto hide-scrollbar cursor-grab active:cursor-grabbing"
+            onMouseDown={handleMouseDown}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseUp}
+            onMouseMove={handleMouseMove}
+          >
             {days.map(day => (
               <button 
                 key={day.id}
@@ -468,7 +551,7 @@ export default function MatchCalendar({ currentMatchId = "" }) {
                       >
                         <div className="relative w-3.5 h-3.5">
                           <Image 
-                            src={league.logo}
+                            src={getLeagueLogo(league.id)}
                             alt={league.name}
                             fill
                             className="object-contain"
@@ -506,348 +589,298 @@ export default function MatchCalendar({ currentMatchId = "" }) {
 
         {/* Matches list */}
         <div className="divide-y divide-gray-100">
-          {loading ? (
-            <div className="p-8 text-center">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900 mx-auto"></div>
-              <p className="mt-2 text-gray-600">Laster kamper...</p>
+          {/* Live Matches Section */}
+          {allLiveMatches.length > 0 && (
+            <div className="border-t first:border-t-0">
+              <div className="flex items-center px-3 py-2 bg-red-50">
+                <div className="flex items-center">
+                  <span className="h-1.5 w-1.5 bg-red-500 rounded-full mr-2 animate-pulse"></span>
+                  <span className="text-sm font-medium text-red-700">Spiller nå</span>
+                </div>
+              </div>
+              <div className="divide-y divide-gray-100">
+                {allLiveMatches.map(match => {
+                  const streamingProviders = getStreamingProviders(match.league.id);
+                  const hasStreamingProviders = streamingProviders.length > 0;
+                  const status = getMatchStatus(match);
+                  const { displayTime, isLive, score, isPastMatch } = status;
+
+                  return (
+                    <Link 
+                      key={`live-${match.fixture?.id || match.id}`}
+                      href={`/fotball/kamp/${match.fixture?.id || match.id}`}
+                      className={`block hover:bg-gray-50 transition-colors py-[15px] px-3 ${
+                        currentMatchId === (match.fixture?.id || match.id).toString()
+                          ? 'bg-gray-50' 
+                          : ''
+                      }`}
+                    >
+                      <div className="flex items-center gap-2">
+                        {/* Home Team */}
+                        <div className="flex items-center flex-1 min-w-0">
+                          <div className="relative w-5 h-5 flex-shrink-0">
+                            <Image 
+                              src={match.teams?.home.logo} 
+                              alt={match.teams?.home.name} 
+                              fill
+                              className="object-contain"
+                              unoptimized
+                            />
+                          </div>
+                          <span className="ml-2 text-sm truncate">
+                            {match.teams?.home.name}
+                          </span>
+                        </div>
+
+                        {/* Match Time/Score with TV icon */}
+                        <div className="flex-shrink-0 flex items-center gap-2">
+                          <div className="text-center flex items-center gap-2">
+                            {/* Score display - Always show score for past matches */}
+                            {(isLive || score || isPastMatch) && (
+                              <span className={`text-xs lg:text-sm font-bold ${isLive ? 'text-red-600' : 'text-gray-800'}`}>
+                                {score}
+                              </span>
+                            )}
+
+                            {/* Time display - Only show for live/upcoming matches */}
+                            {!isPastMatch && displayTime && (
+                              isLive ? (
+                                <div className="flex flex-col items-center">
+                                  <span className="inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] lg:text-xs font-semibold bg-red-100 text-red-700 border border-red-200/80">
+                                    <span className="h-1.5 w-1.5 bg-red-500 rounded-full mr-1 animate-pulse"></span>
+                                    {displayTime}
+                                  </span>
+                                </div>
+                              ) : (
+                                <span className="text-sm font-medium text-gray-500 lg:text-gray-600">
+                                  {displayTime}
+                                </span>
+                              )
+                            )}
+                          </div>
+                          
+                          {/* Only show TV icon if match is upcoming (not past, not live, not finished) and has streaming providers */}
+                          {hasStreamingProviders && !status.isPastMatch && !status.isLive && !status.isFinished && (
+                            <div className="ml-1 lg:ml-2 relative group flex-shrink-0">
+                              <div className="text-gray-400 hover:text-gray-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 lg:h-5 lg:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                              </div>
+                              
+                              <div className="absolute z-20 right-0 w-44 p-2 mt-1 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 text-xs border border-gray-200">
+                                <div className="font-medium mb-1">Se kampen på:</div>
+                                <div className="space-y-1">
+                                  {streamingProviders.map((provider, index) => (
+                                    <div key={index} className="flex items-center">
+                                      <div className="relative h-3 w-3 mr-1">
+                                        <Image
+                                          src={provider.icon}
+                                          alt={provider.name}
+                                          fill
+                                          className="object-contain"
+                                          unoptimized
+                                        />
+                                      </div>
+                                      <span className="text-[11px]">{provider.name}</span>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                          )}
+                          {/* Keep the spacer div for consistent layout */}
+                          {(hasStreamingProviders || status.isPastMatch || status.isLive || status.isFinished) && 
+                            <div className="w-4 lg:w-5 ml-1 lg:ml-2 flex-shrink-0"></div>
+                          }
+                        </div>
+
+                        {/* Away Team */}
+                        <div className="flex items-center flex-1 min-w-0 justify-end">
+                          <span className="mr-2 text-sm truncate">
+                            {match.teams?.away.name}
+                          </span>
+                          <div className="relative w-5 h-5 flex-shrink-0">
+                            <Image 
+                              src={match.teams?.away.logo} 
+                              alt={match.teams?.away.name} 
+                              fill
+                              className="object-contain"
+                              unoptimized
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
-          ) : matchesByLeague.length > 0 ? (
-            matchesByLeague.map(league => (
-              <div key={league.id} className="p-4">
-                {/* League header */}
-                <div className="flex items-center mb-3">
-                  <div className="relative w-5 h-5 mr-2">
+          )}
+
+          {/* Regular Matches Section */}
+          {matchesByLeague.map((league, leagueIndex) => {
+            const nonLiveMatches = league.matches.filter(match => {
+              const isLive = liveMatches[match.fixture?.id]?.status.short && 
+                ['1H', 'HT', '2H', 'ET', 'P', 'LIVE', 'SUSP', 'INT'].includes(liveMatches[match.fixture?.id]?.status.short);
+              return !isLive;
+            });
+
+            if (nonLiveMatches.length === 0) return null;
+
+            // Get the date and time from the first match
+            const firstMatch = nonLiveMatches[0];
+            const matchDate = firstMatch?.fixture?.date?.split('T')[0] || 'no-date';
+            const matchTime = firstMatch?.fixture?.date?.split('T')[1]?.substring(0, 5) || '00:00';
+            const uniqueKey = `regular-${league.id}-${matchDate}-${matchTime}-${leagueIndex}`;
+
+            return (
+              <div key={uniqueKey} className="border-t first:border-t-0">
+                <div className="flex items-center px-3 py-2 bg-gray-50">
+                  <div className="relative w-4 h-4 mr-2">
                     <Image 
-                      src={league.logo}
+                      src={getLeagueLogo(league.id)}
                       alt={league.name}
                       fill
                       className="object-contain"
                     />
                   </div>
-                  <span className="text-sm font-medium text-gray-900">{league.name}</span>
+                  <span className="text-sm font-medium">{league.name}</span>
                 </div>
-                
-                {/* Matches grid with improved alignment and handling of long team names */}
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <div className="space-y-2">
-                    {league.matches.map((match: Fixture & { 
-                      fixture?: { 
-                        id: number;
-                        status: { short: string; elapsed: number | null };
-                        date: string;
-                      };
-                      teams?: {
-                        home: { name: string; logo: string };
-                        away: { name: string; logo: string };
-                      };
-                      goals?: {
-                        home: number | null;
-                        away: number | null;
-                      };
-                    }) => (
+                <div className="divide-y divide-gray-100">
+                  {nonLiveMatches.map((match: Fixture & { 
+                    fixture?: { 
+                      id: number;
+                      status: { short: string; elapsed: number | null };
+                      date: string;
+                    };
+                    teams?: {
+                      home: { name: string; logo: string };
+                      away: { name: string; logo: string };
+                    };
+                    goals?: {
+                      home: number | null;
+                      away: number | null;
+                    };
+                  }) => {
+                    const streamingProviders = getStreamingProviders(league.id);
+                    const hasStreamingProviders = streamingProviders.length > 0;
+                    const status = getMatchStatus(match);
+                    const { displayTime, isLive, score, isPastMatch } = status;
+
+                    return (
                       <Link 
-                        key={match.fixture?.id || match.id}
+                        key={`regular-${match.fixture?.id || match.id}`}
                         href={`/fotball/kamp/${match.fixture?.id || match.id}`}
-                        className={`block bg-white rounded-lg shadow-sm transition-colors ${
+                        className={`block hover:bg-gray-50 transition-colors py-[15px] px-3 ${
                           currentMatchId === (match.fixture?.id || match.id).toString()
-                            ? 'ring-1 ring-black ring-opacity-5' 
-                            : 'hover:bg-gray-50'
+                            ? 'bg-gray-50' 
+                            : ''
                         }`}
                       >
-                        <div className="p-3">
-                          <div className="grid grid-cols-11 items-center">
-                            {/* Home team - 4 columns with fixed width */}
-                            <div className="col-span-4 pr-2">
-                              <div className="flex items-center">
-                                <div className="relative w-6 h-6 flex-shrink-0">
-                                  <Image 
-                                    src={match.teams?.home.logo} 
-                                    alt={match.teams?.home.name} 
-                                    fill
-                                    className="object-contain"
-                                  />
-                                </div>
-                                <span className="ml-2 font-medium truncate max-w-[calc(100%-24px)]">
-                                  {match.teams?.home.name}
-                                </span>
-                              </div>
+                        <div className="flex items-center gap-2">
+                          {/* Home Team */}
+                          <div className="flex items-center flex-1 min-w-0">
+                            <div className="relative w-5 h-5 flex-shrink-0">
+                              <Image 
+                                src={match.teams?.home.logo} 
+                                alt={match.teams?.home.name} 
+                                fill
+                                className="object-contain"
+                                unoptimized
+                              />
                             </div>
-                            
-                            {/* Score/Time - 3 columns, centered with fixed width */}
-                            <div className="col-span-3 text-center px-2 border-l border-r border-gray-100">
-                              {match.fixture?.status?.short === 'NS' ? (
-                                <>
-                                  <div className="text-lg font-bold">
-                                    {new Date(match.fixture?.date).toLocaleTimeString('no-NO', { 
-                                      hour: '2-digit', 
-                                      minute: '2-digit' 
-                                    })}
+                            <span className="ml-2 text-sm truncate">
+                              {match.teams?.home.name}
+                            </span>
+                          </div>
+
+                          {/* Match Time/Score with TV icon */}
+                          <div className="flex-shrink-0 flex items-center gap-2">
+                            <div className="text-center flex items-center gap-2">
+                              {/* Score display - Always show score for past matches */}
+                              {(isLive || score || isPastMatch) && (
+                                <span className={`text-xs lg:text-sm font-bold ${isLive ? 'text-red-600' : 'text-gray-800'}`}>
+                                  {score}
+                                </span>
+                              )}
+
+                              {/* Time display - Only show for live/upcoming matches */}
+                              {!isPastMatch && displayTime && (
+                                isLive ? (
+                                  <div className="flex flex-col items-center">
+                                    <span className="inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] lg:text-xs font-semibold bg-red-100 text-red-700 border border-red-200/80">
+                                      <span className="h-1.5 w-1.5 bg-red-500 rounded-full mr-1 animate-pulse"></span>
+                                      {displayTime}
+                                    </span>
                                   </div>
-                                  <div className="text-xs text-gray-500">
-                                    {new Date(match.fixture?.date).toLocaleDateString('no-NO', { 
-                                      weekday: 'short',
-                                      day: 'numeric',
-                                      month: 'short'
-                                    })}
-                                  </div>
-                                </>
-                              ) : match.fixture?.status?.short && ['1H', '2H', 'HT'].includes(match.fixture.status.short) ? (
-                                <>
-                                  <div className="text-lg font-bold">
-                                    {match.goals?.home ?? 0} - {match.goals?.away ?? 0}
-                                  </div>
-                                  <div className="text-xs px-2 py-0.5 rounded bg-red-600 text-white flex items-center justify-center">
-                                    <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse mr-1"></span>
-                                    {match.fixture?.status?.elapsed}&apos;
-                                  </div>
-                                </>
-                              ) : (
-                                <>
-                                  <div className="text-lg font-bold">
-                                    {match.goals?.home ?? 0} - {match.goals?.away ?? 0}
-                                  </div>
-                                  <div className="text-xs px-2 py-0.5 rounded bg-gray-200 text-gray-800">
-                                    Slutt
-                                  </div>
-                                </>
+                                ) : (
+                                  <span className="text-sm font-medium text-gray-500 lg:text-gray-600">
+                                    {displayTime}
+                                  </span>
+                                )
                               )}
                             </div>
                             
-                            {/* Away team - 4 columns with fixed width */}
-                            <div className="col-span-4 pl-2">
-                              <div className="flex items-center justify-end">
-                                <span className="mr-2 font-medium truncate max-w-[calc(100%-24px)]">
-                                  {match.teams?.away.name}
-                                </span>
-                                <div className="relative w-6 h-6 flex-shrink-0">
-                                  <Image 
-                                    src={match.teams?.away.logo} 
-                                    alt={match.teams?.away.name} 
-                                    fill
-                                    className="object-contain"
-                                  />
+                            {/* Only show TV icon if match is upcoming (not past, not live, not finished) and has streaming providers */}
+                            {hasStreamingProviders && !status.isPastMatch && !status.isLive && !status.isFinished && (
+                              <div className="ml-1 lg:ml-2 relative group flex-shrink-0">
+                                <div className="text-gray-400 hover:text-gray-600">
+                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 lg:h-5 lg:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                  </svg>
+                                </div>
+                                
+                                <div className="absolute z-20 right-0 w-44 p-2 mt-1 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 text-xs border border-gray-200">
+                                  <div className="font-medium mb-1">Se kampen på:</div>
+                                  <div className="space-y-1">
+                                    {streamingProviders.map((provider, index) => (
+                                      <div key={index} className="flex items-center">
+                                        <div className="relative h-3 w-3 mr-1">
+                                          <Image
+                                            src={provider.icon}
+                                            alt={provider.name}
+                                            fill
+                                            className="object-contain"
+                                            unoptimized
+                                          />
+                                        </div>
+                                        <span className="text-[11px]">{provider.name}</span>
+                                      </div>
+                                    ))}
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))
-          ) : (
-            <div className="p-8 text-center">
-              <p className="text-gray-600">Ingen kamper på denne dagen</p>
-            </div>
-          )}
-        </div>
-        
-        {/* Top Players Section */}
-        <div className="mt-4">
-          <div className="bg-white rounded-lg shadow-md p-4">
-            <div className="flex justify-between items-center mb-3">
-              <h3 className="font-medium text-gray-700 text-sm">{playerCategoryTitle}</h3>
-              <div className="flex space-x-1">
-                <button 
-                  onClick={() => setPlayerCategory('scorers')}
-                  className={`px-2 py-1 text-xs rounded whitespace-nowrap ${
-                    playerCategory === 'scorers' 
-                      ? 'bg-[#142811] text-white' 
-                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                  }`}
-                >
-                  Mål
-                </button>
-                <button 
-                  onClick={() => setPlayerCategory('assists')}
-                  className={`px-2 py-1 text-xs rounded whitespace-nowrap ${
-                    playerCategory === 'assists' 
-                      ? 'bg-[#142811] text-white' 
-                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                  }`}
-                >
-                  Assists
-                </button>
-                <button 
-                  onClick={() => setPlayerCategory('redcards')}
-                  className={`px-2 py-1 text-xs rounded whitespace-nowrap ${
-                    playerCategory === 'redcards' 
-                      ? 'bg-[#142811] text-white' 
-                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                  }`}
-                >
-                  Røde kort
-                </button>
-              </div>
-            </div>
-            
-            {loadingPlayers ? (
-              <div className="p-4 text-center">
-                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-gray-900 mx-auto"></div>
-                <p className="mt-2 text-sm text-gray-600">Laster spillere...</p>
-              </div>
-            ) : topPlayers && topPlayers.length > 0 ? (
-              <div className="space-y-3">
-                {topPlayers.map((item, index) => {
-                  const player = item.player;
-                  const stats = item.statistics[0];
-                  
-                  // Create initials from name
-                  const nameParts = player.name ? player.name.split(' ') : ['?', '?'];
-                  const initials = nameParts.length >= 2 
-                    ? `${nameParts[0][0]}${nameParts[nameParts.length-1][0]}`.toUpperCase() 
-                    : nameParts[0].substring(0, 2).toUpperCase();
-                  
-                  // Determine what stat to show based on category
-                  let statDisplay = '';
-                  if (playerCategory === 'scorers') {
-                    statDisplay = `${stats.goals.total || 0} mål`;
-                  } else if (playerCategory === 'assists') {
-                    statDisplay = `${stats.goals.assists || 0} assists`;
-                  } else if (playerCategory === 'redcards') {
-                    statDisplay = `${stats.cards.red || 0} røde kort`;
-                  }
-                  
-                  return (
-                    <div key={player.id} className="flex items-center border-b border-gray-200 pb-2 last:border-0 last:pb-0">
-                      <div className="flex-shrink-0 w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center mr-2">
-                        <span className="text-xs font-bold text-gray-600">{index + 1}</span>
-                      </div>
-                      <Link 
-                        href={`/spillerprofil/${createPlayerSlug(player.name, player.id)}`}
-                        className="flex-grow flex items-center hover:bg-gray-50 rounded-md transition-colors p-1"
-                      >
-                        <div className="flex-shrink-0 w-12 h-12 relative bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
-                          {player.id ? (
-                            <Image
-                              src={`https://media.api-sports.io/football/players/${player.id}.png`}
-                              alt={player.name || 'Player'}
-                              fill
-                              className="object-cover"
-                              onError={(e) => {
-                                // If image fails to load, show initials instead
-                                e.currentTarget.style.display = 'none';
-                                // Add null check for parentElement
-                                if (e.currentTarget.parentElement) {
-                                  e.currentTarget.parentElement.innerHTML = `<span class="text-gray-600 font-medium">${initials}</span>`;
-                                }
-                              }}
-                            />
-                          ) : (
-                            <span className="text-gray-600 font-medium">{initials}</span>
-                          )}
-                        </div>
-                        <div className="ml-3 flex-grow">
-                          <div className="flex items-center">
-                            <span className="font-medium">{player.name?.split(' ').pop() || 'Unknown'}</span>
-                          </div>
-                          <div className="flex items-center text-xs text-gray-600">
-                            {stats.team?.logo && (
-                              <Image
-                                src={stats.team.logo}
-                                alt={stats.team?.name || 'Team logo'}
-                                width={16}
-                                height={16}
-                                className="mr-1"
-                              />
                             )}
-                            <span>{stats.team?.name || 'Unknown team'}</span>
+                            {/* Keep the spacer div for consistent layout */}
+                            {(hasStreamingProviders || status.isPastMatch || status.isLive || status.isFinished) && 
+                              <div className="w-4 lg:w-5 ml-1 lg:ml-2 flex-shrink-0"></div>
+                            }
                           </div>
-                        </div>
-                        <div className="flex-shrink-0 text-right">
-                          <div className="font-bold text-lg">
-                            {statDisplay}
+
+                          {/* Away Team */}
+                          <div className="flex items-center flex-1 min-w-0 justify-end">
+                            <span className="mr-2 text-sm truncate">
+                              {match.teams?.away.name}
+                            </span>
+                            <div className="relative w-5 h-5 flex-shrink-0">
+                              <Image 
+                                src={match.teams?.away.logo} 
+                                alt={match.teams?.away.name} 
+                                fill
+                                className="object-contain"
+                                unoptimized
+                              />
+                            </div>
                           </div>
                         </div>
                       </Link>
-                    </div>
-                  );
-                })}
-              </div>
-            ) : (
-              <p className="text-gray-600 text-center py-4">Ingen spillere funnet</p>
-            )}
-          </div>
-        </div>
-        
-        {/* Biggest Leagues Section */}
-        <div className="mt-4">
-          <div className="bg-white rounded-lg shadow-md p-4">
-            <h3 className="font-medium text-gray-700 mb-2">Største ligaer</h3>
-            
-            <div className="space-y-2">
-              {LEAGUES.map(league => (
-                <div key={league.id} className="border border-gray-200 rounded-lg overflow-hidden">
-                  <button 
-                    className="w-full flex items-center justify-between p-3 bg-gray-50 hover:bg-gray-100 transition-colors"
-                    onClick={() => toggleLeague(league.id)}
-                  >
-                    <div className="flex items-center">
-                      <div className="relative w-6 h-6 mr-2">
-                        <Image 
-                          src={league.logo}
-                          alt={league.name}
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-                      <span className="font-medium">{league.name}</span>
-                    </div>
-                    <svg 
-                      className={`w-5 h-5 text-gray-500 transition-transform ${expandedLeagues[league.id] ? 'transform rotate-180' : ''}`} 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  
-                  {expandedLeagues[league.id] && (
-                    <div className="p-3 bg-white border-t border-gray-200">
-                      {leagueTeams[league.id] ? (
-                        <div className="grid grid-cols-2 gap-2">
-                          {Array.isArray(leagueTeams[league.id]) && leagueTeams[league.id].length > 0 ? (
-                            leagueTeams[league.id].map(team => (
-                              <Link 
-                                key={team.team.id} 
-                                href={`/lag/${createPlayerSlug(team.team.name, team.team.id)}`}
-                                className="flex items-center p-2 rounded-md hover:bg-gray-50"
-                              >
-                                <div className="relative w-5 h-5 mr-2">
-                                  <Image 
-                                    src={team.team.logo}
-                                    alt={team.team.name}
-                                    fill
-                                    className="object-contain"
-                                  />
-                                </div>
-                                <span className="text-sm truncate">{team.team.name}</span>
-                              </Link>
-                            ))
-                          ) : (
-                            <div className="col-span-2 text-center py-2">
-                              <p className="text-sm text-gray-600">Ingen lag funnet</p>
-                              <p className="text-xs text-gray-500 mt-1">
-                                {JSON.stringify(leagueTeams[league.id])}
-                              </p>
-                            </div>
-                          )}
-                        </div>
-                      ) : (
-                        <div className="text-center py-4">
-                          <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-gray-900 mx-auto"></div>
-                          <p className="mt-2 text-sm text-gray-600">Laster lag...</p>
-                        </div>
-                      )}
-                    </div>
-                  )}
+                    );
+                  })}
                 </div>
-              ))}
-            </div>
-          </div>
+              </div>
+            );
+          })}
         </div>
         
         {/* Se kamper section */}
@@ -875,6 +908,7 @@ export default function MatchCalendar({ currentMatchId = "" }) {
           .hide-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
+            user-select: none;
           }
         `}</style>
       </div>

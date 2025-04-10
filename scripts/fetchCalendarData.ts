@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import fetch from 'node-fetch';
+import { MAJOR_LEAGUES } from '../src/scripts/teamDataFetcher';
 
 const API_KEY = '1a7dc8ba9cmshff75c6099ce0152p158153jsnac5252d21d90';
 const BASE_URL = 'https://api-football-v1.p.rapidapi.com/v3';
@@ -11,15 +12,25 @@ const headers = {
   'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
 };
 
-const LEAGUES = [
-  { id: 39, name: 'Premier League' },
-  { id: 2, name: 'Champions League' },
-  { id: 140, name: 'La Liga' },
-  { id: 135, name: 'Serie A' },
-  { id: 78, name: 'Bundesliga' },
-];
+// Define types for the API response
+interface ApiFixture {
+  league: {
+    id: number;
+    name: string;
+  };
+  // Add other fixture properties as needed
+}
 
-async function fetchMatchesForDate(date) {
+interface ApiResponse {
+  response: ApiFixture[];
+  errors?: Record<string, unknown>;
+}
+
+interface CalendarDataType {
+  [key: string]: ApiFixture[];
+}
+
+async function fetchMatchesForDate(date: Date): Promise<ApiFixture[]> {
   const dateStr = date.toISOString().split('T')[0];
   console.log(`Fetching matches for date: ${dateStr}...`);
   
@@ -32,16 +43,16 @@ async function fetchMatchesForDate(date) {
       throw new Error(`API error: ${response.status}`);
     }
     
-    const data = await response.json();
+    const data = await response.json() as ApiResponse;
     
     if (data.errors && Object.keys(data.errors).length > 0) {
       console.error(`API Error for date ${dateStr}:`, data.errors);
       return [];
     }
     
-    // Filter for our leagues
-    const fixtures = data.response.filter(fixture => 
-      LEAGUES.some(league => league.id === fixture.league.id)
+    // Filter for our major leagues
+    const fixtures = data.response.filter((fixture: ApiFixture) => 
+      MAJOR_LEAGUES.some(league => league.id === fixture.league.id)
     );
     
     console.log(`Found ${fixtures.length} matches for date ${dateStr}`);
@@ -52,8 +63,8 @@ async function fetchMatchesForDate(date) {
   }
 }
 
-async function fetchCalendarData() {
-  const calendarData = {};
+async function fetchCalendarData(): Promise<CalendarDataType> {
+  const calendarData: CalendarDataType = {};
   const today = new Date();
   
   // Fetch data for 15 days (7 days before today, today, and 7 days after today)

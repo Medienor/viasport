@@ -52,20 +52,35 @@ export default function EliteserienVideos() {
         console.log('EliteserienVideos: Starting to fetch videos');
         setLoading(true);
         
-        // Request more videos to ensure we have enough after filtering
+        // Add detailed error logging
         const response = await fetch('/api/youtube/search?q=eliteserien høydepunkter&maxResults=25');
-        console.log('EliteserienVideos: API response status:', response.status);
+        const responseText = await response.text(); // Get raw response text
         
-        if (!response.ok) {
-          throw new Error(`API error: ${response.status}`);
-        }
-        
-        const data = await response.json();
-        console.log('EliteserienVideos: API returned data:', {
-          itemsCount: data.items?.length || 0,
-          hasItems: Boolean(data.items),
-          error: data.error
+        console.log('EliteserienVideos: Full API Response:', {
+          status: response.status,
+          statusText: response.statusText,
+          headers: Object.fromEntries(response.headers.entries()),
+          body: responseText
         });
+
+        // Try to parse the response as JSON
+        let data;
+        try {
+          data = JSON.parse(responseText);
+        } catch (parseError) {
+          console.error('Failed to parse response as JSON:', parseError);
+          throw new Error(`API returned invalid JSON: ${responseText.slice(0, 200)}...`);
+        }
+
+        if (!response.ok) {
+          // Log more details about the error
+          console.error('API Error Details:', {
+            status: response.status,
+            statusText: response.statusText,
+            data: data
+          });
+          throw new Error(`API error: ${response.status}. Details: ${JSON.stringify(data)}`);
+        }
         
         // Store debug info
         setDebugInfo({
@@ -127,15 +142,27 @@ export default function EliteserienVideos() {
           setError('No videos found');
         }
       } catch (err) {
-        console.error('EliteserienVideos: Failed to fetch videos:', err);
-        setError(err instanceof Error ? err.message : 'Unknown error');
+        console.error('EliteserienVideos: Detailed error:', {
+          error: err,
+          message: err instanceof Error ? err.message : 'Unknown error',
+          stack: err instanceof Error ? err.stack : null
+        });
         
-        // Update debug info
+        setError(err instanceof Error ? 
+          `${err.message} (Check console for details)` : 
+          'Unknown error occurred'
+        );
+        
         setDebugInfo(prev => ({
           ...prev,
           error: {
             message: err instanceof Error ? err.message : 'Unknown error',
-            stack: err instanceof Error ? err.stack : null
+            stack: err instanceof Error ? err.stack : null,
+            timestamp: new Date().toISOString(),
+            responseInfo: {
+              status: err instanceof Error && 'status' in err ? err.status : null,
+              // Add any other relevant error information
+            }
           }
         }));
       } finally {

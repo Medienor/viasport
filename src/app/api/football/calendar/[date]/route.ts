@@ -1,5 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { BASE_URL, headers } from '@/app/services/sportApi';
+import { MAJOR_LEAGUES } from '@/scripts/teamDataFetcher';
+
+// Add interface for the match object
+interface ApiMatch {
+  league: {
+    id: number;
+    name: string;
+    // Add other league properties as needed
+  };
+  // Add other match properties as needed
+}
 
 export async function GET(
   request: NextRequest,
@@ -20,8 +31,13 @@ export async function GET(
 
     const data = await response.json();
     
-    // Return all matches for the day (including live ones)
-    return NextResponse.json({ response: data.response });
+    // Filter matches for major leagues with type annotation
+    const filteredMatches = data.response.filter((match: ApiMatch) => 
+      MAJOR_LEAGUES.some(league => league.id === match.league.id)
+    );
+    
+    // Return filtered matches for the day (including live ones)
+    return NextResponse.json({ response: filteredMatches });
   } catch (error) {
     console.error('Error in calendar API route:', error);
     return NextResponse.json(

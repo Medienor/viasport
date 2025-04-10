@@ -5,13 +5,14 @@ export async function GET(
   { params }: { params: { leagueId: string } }
 ) {
   try {
-    console.log(`API route: Fetching teams for league ${params.leagueId}`);
+    // Wait for params to be available
+    const leagueId = await params.leagueId;
     
-    const leagueId = parseInt(params.leagueId);
+    console.log(`API route: Fetching teams for league ${leagueId}`);
     
-    if (isNaN(leagueId)) {
+    if (isNaN(parseInt(leagueId))) {
       return NextResponse.json(
-        { success: false, message: 'Invalid league ID' },
+        { error: 'Invalid league ID' },
         { status: 400 }
       );
     }
@@ -57,9 +58,9 @@ export async function GET(
       response: teams
     });
   } catch (error) {
-    console.error(`Error in teams API route for league ${params.leagueId}:`, error);
+    console.error('Error fetching teams:', error);
     return NextResponse.json(
-      { success: false, message: 'Error fetching teams' },
+      { error: 'Failed to fetch teams' },
       { status: 500 }
     );
   }

@@ -6,8 +6,9 @@ import type { Fixture } from '@/types/fixtures';
 import MatchCalendar from '@/app/components/MatchCalendar';
 import PreventAutoScroll from '@/app/components/PreventAutoScroll';
 import HeadToHeadFixtures from '@/app/components/HeadToHeadFixtures';
-import MatchHighlights from '@/app/components/MatchHighlights';
 import { formatMatchDateTime } from '@/utils/dateUtils';
+import { getStreamingProviders } from '@/utils/channelUtils';
+import LeagueChannels from '@/app/components/LeagueChannels';
 
 export const revalidate = 86400;
 
@@ -147,6 +148,19 @@ function generateMatchSummary(match: any) {
 
 // Add this function to check if match is finished
 const isMatchFinished = (status: string) => ['FT', 'AET', 'PEN'].includes(status);
+
+// Keep the helper function
+const getTopScorer = (events: any[]) => {
+  const scorers = events
+    .filter(e => e.type === 'Goal')
+    .reduce((acc: any, goal: any) => {
+      acc[goal.player.name] = (acc[goal.player.name] || 0) + 1;
+      return acc;
+    }, {});
+  
+  return Object.entries(scorers)
+    .sort(([,a]: any, [,b]: any) => b - a)[0];
+};
 
 export default async function MatchPage({ params }: { params: { matchId: string } }) {
   // Await the params
@@ -337,16 +351,12 @@ export default async function MatchPage({ params }: { params: { matchId: string 
               </div>
             </div>
             
-            {/* Add MatchHighlights component here */}
-            <MatchHighlights 
-              homeTeam={match.teams.home.name}
-              awayTeam={match.teams.away.name}
-              matchDate={match.date}
-              matchStatus={match.status.short}
-              maxResults={5}
-              match={match}
+            {/* Add LeagueChannels right here, after the match header */}
+            <LeagueChannels 
+              leagueId={match.league.id} 
+              matchStatus={match.match_status} 
             />
-
+            
             {/* Match details */}
             <div className="bg-white rounded-lg shadow-md p-6">
               {isUpcoming && (
@@ -741,6 +751,149 @@ export default async function MatchPage({ params }: { params: { matchId: string 
 
                   {/* Head to head fixtures list */}
                   <HeadToHeadFixtures matches={match.head_to_head} />
+                </div>
+              )}
+
+              {/* About the match */}
+              <div className="bg-white rounded-lg mt-6">
+                <h2 className="text-lg font-semibold mb-4">Om kampen</h2>
+                
+                <div className="space-y-4 text-gray-700">
+                  {/* Match info paragraph */}
+                  <p>
+                    {match.teams.home.name} spiller hjemme mot {match.teams.away.name} på{' '}
+                    {match.venue?.name || 'ukjent arena'} {formatMatchDateTime(match.date).dayName}{' '}
+                    {formatMatchDateTime(match.date).fullDate} kl.{' '}
+                    {formatMatchDateTime(match.date).time}. 
+                    {match.league.round && (
+                      <> Dette er {match.league.round} av {match.league.name}.</>
+                    )}
+                  </p>
+
+                  {/* Lineups info */}
+                  <p>
+                    Forventet lagoppstilling blir tilgjengelig noen dager før kampstart, 
+                    mens den faktiske lagoppstillingen blir publisert cirka én time før avspark.
+                  </p>
+
+                  {/* Head to head info */}
+                  <p>
+                    {match.head_to_head && match.head_to_head.length > 0 ? (
+                      (() => {
+                        const h2hStats = match.head_to_head.reduce((stats, game) => {
+                          const homeTeamId = match.teams.home.id;
+                          if (game.teams.home.id === homeTeamId && game.goals.home > game.goals.away) {
+                            stats.homeWins++;
+                          } else if (game.teams.away.id === homeTeamId && game.goals.away > game.goals.home) {
+                            stats.homeWins++;
+                          } else if (game.goals.home === game.goals.away) {
+                            stats.draws++;
+                          } else {
+                            stats.awayWins++;
+                          }
+                          return stats;
+                        }, { homeWins: 0, draws: 0, awayWins: 0 });
+
+                        return (
+                          <>
+                            Lagene har møtt hverandre {match.head_to_head.length} ganger tidligere. {' '}
+                            {match.teams.home.name} har vunnet {h2hStats.homeWins} {h2hStats.homeWins === 1 ? 'kamp' : 'kamper'}, {' '}
+                            {match.teams.away.name} har vunnet {h2hStats.awayWins} {h2hStats.awayWins === 1 ? 'kamp' : 'kamper'}, 
+                            og {h2hStats.draws} {h2hStats.draws === 1 ? 'kamp har' : 'kamper har'} endt uavgjort.
+                          </>
+                        );
+                      })()
+                    ) : (
+                      <>Dette er første gang lagene møtes.</>
+                    )}
+                  </p>
+
+                  {/* Streaming info */}
+                  {getStreamingProviders(match.league.id).length > 0 && (
+                    <p>
+                      Se kampen på{' '}
+                      {getStreamingProviders(match.league.id)
+                        .map(provider => provider.name)
+                        .join(' / ')}.
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              {/* Q&A accordion */}
+              {match.match_status === 'FT' && (
+                <div className="bg-white rounded-lg mt-6">
+                  <h2 className="text-lg font-semibold mb-4">Spørsmål og svar</h2>
+                  
+                  <div className="divide-y">
+                    {/* Winner Question */}
+                    <details className="group">
+                      <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50">
+                        <span className="font-medium">
+                          Hvem vant mellom {match.teams.home.name} og {match.teams.away.name} {formatMatchDateTime(match.date).fullDate}?
+                        </span>
+                        <svg className="w-5 h-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </summary>
+                      <div className="p-4 bg-gray-50">
+                        {match.goals.home > match.goals.away ? (
+                          <p>{match.teams.home.name} vant {match.goals.home}-{match.goals.away} mot {match.teams.away.name}.</p>
+                        ) : match.goals.home < match.goals.away ? (
+                          <p>{match.teams.away.name} vant {match.goals.away}-{match.goals.home} mot {match.teams.home.name}.</p>
+                        ) : (
+                          <p>Kampen endte uavgjort {match.goals.home}-{match.goals.away}.</p>
+                        )}
+                      </div>
+                    </details>
+
+                    {/* Top Scorer Question */}
+                    {match.event_data && match.event_data.some(e => e.type === 'Goal') && (
+                      <details className="group">
+                        <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50">
+                          <span className="font-medium">Hvilken spiller scoret flest mål i kampen?</span>
+                          <svg className="w-5 h-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </summary>
+                        <div className="p-4 bg-gray-50">
+                          {(() => {
+                            const [topScorer, goals] = getTopScorer(match.event_data);
+                            return (
+                              <p>
+                                {topScorer} scoret {goals} {goals === 1 ? 'mål' : 'mål'} i kampen.
+                              </p>
+                            );
+                          })()}
+                        </div>
+                      </details>
+                    )}
+
+                    {/* All Scorers Question */}
+                    {match.event_data && match.event_data.some(e => e.type === 'Goal') && (
+                      <details className="group">
+                        <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50">
+                          <span className="font-medium">Hvem scoret målene i denne kampen?</span>
+                          <svg className="w-5 h-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </summary>
+                        <div className="p-4 bg-gray-50">
+                          <div className="space-y-2">
+                            {match.event_data
+                              .filter(e => e.type === 'Goal')
+                              .sort((a, b) => a.time.elapsed - b.time.elapsed)
+                              .map((goal, index) => (
+                                <p key={index}>
+                                  {goal.time.elapsed}' - {goal.player.name}
+                                  {goal.assist && ` (Assist: ${goal.assist.name})`}
+                                </p>
+                              ))}
+                          </div>
+                        </div>
+                      </details>
+                    )}
+                  </div>
                 </div>
               )}
             </div>
