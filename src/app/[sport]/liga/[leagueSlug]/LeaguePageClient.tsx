@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { ChevronRightIcon, HomeIcon } from '@heroicons/react/24/solid';
 import { BASE_URL, headers } from '@/app/services/sportApi';
 import { createPlayerSlug, createTeamSlugWithId } from '@/app/utils/slugUtils';
+import { getStreamingProviders } from '@/utils/channelUtils';
+import LeagueLatestVideo from '@/app/components/LeagueLatestVideo';
 
 // Format date
 function formatDate(dateString: string): string {
@@ -245,7 +247,7 @@ export default function LeaguePageClient({
             <div className="bg-white shadow rounded-lg overflow-hidden">
               <div className="px-4 py-3 border-b border-gray-200">
                 <h2 className="text-lg font-medium text-gray-900">
-                  Tabell {selectedSeason !== currentSeason ? `(${formatSeasonDisplay(selectedSeason)})` : ''}
+                  {leagueData.league?.name} Tabell {selectedSeason !== currentSeason ? `(${formatSeasonDisplay(selectedSeason)})` : ''}
                 </h2>
               </div>
               
@@ -278,7 +280,7 @@ export default function LeaguePageClient({
                       let borderColor = 'transparent';
                       
                       // Only apply borders for leagues we've configured
-                      if (leagueData.league.id === 39 || leagueData.league.id === 140 || leagueData.league.id === 103) {
+                      if (leagueData.league.id === 39 || leagueData.league.id === 140 || leagueData.league.id === 103 || leagueData.league.id === 725 || leagueData.league.id === 104) {
                         // Premier League specific rules (ID: 39)
                         if (leagueData.league.id === 39) {
                           // Champions League (top 4)
@@ -328,6 +330,32 @@ export default function LeaguePageClient({
                             borderColor = '#fb923c'; // orange-400 (lighter orange for relegation playoff)
                           }
                           // Direct relegation (bottom 2)
+                          else if (team.rank >= 15) { // Assuming 16-team league
+                            borderColor = '#ef4444'; // red-500
+                          }
+                        }
+                        // Toppserien specific rules (ID: 725)
+                        else if (leagueData.league.id === 725) {
+                          // Champions League qualification
+                          if (team.rank === 1) {
+                            borderColor = '#3b82f6'; // blue-500
+                          }
+                          // Relegation (bottom team)
+                          else if (team.rank === standings.length) {
+                            borderColor = '#ef4444'; // red-500
+                          }
+                        }
+                        // OBOS-ligaen specific rules (ID: 104)
+                        else if (leagueData.league.id === 104) {
+                          // Direct promotion (top 2)
+                          if (team.rank <= 2) {
+                            borderColor = '#3b82f6'; // blue-500
+                          }
+                          // Promotion playoff (3-6)
+                          else if (team.rank >= 3 && team.rank <= 6) {
+                            borderColor = '#f97316'; // orange-500
+                          }
+                          // Relegation (bottom 2)
                           else if (team.rank >= 15) { // Assuming 16-team league
                             borderColor = '#ef4444'; // red-500
                           }
@@ -382,47 +410,60 @@ export default function LeaguePageClient({
             </div>
             
             {/* Only show the legend box for configured leagues */}
-            {(leagueData.league.id === 39 || leagueData.league.id === 140 || leagueData.league.id === 103) && (
-              <div className="mt-4 border rounded-lg bg-gray-50 p-4 text-sm">
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <h3 className="font-medium mb-2">Kvalifisering/nedrykk</h3>
-                    <div className="space-y-2">
-                      <div className="flex items-center">
-                        <div className="w-4 h-4 bg-blue-500 mr-2"></div>
-                        <span>
-                          {leagueData.league.id === 103 ? 'Mesterligaen kvalifisering' : 'Mesterligaen gruppekamper'}
-                        </span>
-                      </div>
-                      <div className="flex items-center">
-                        <div className="w-4 h-4 bg-orange-500 mr-2"></div>
-                        <span>
-                          {leagueData.league.id === 103 ? 'Conference League kvalifisering' : 'Europaligaen gruppekamper'}
-                        </span>
-                      </div>
-                      {leagueData.league.id === 103 ? (
-                        <div className="flex items-center">
-                          <div className="w-4 h-4 bg-orange-400 mr-2"></div>
-                          <span>Nedrykkskamp</span>
-                        </div>
-                      ) : leagueData.league.id === 140 ? (
-                        <div className="flex items-center">
-                          <div className="w-4 h-4 bg-green-500 mr-2"></div>
-                          <span>Conference League kvalifisering</span>
-                        </div>
-                      ) : null}
-                      <div className="flex items-center">
-                        <div className="w-4 h-4 bg-red-500 mr-2"></div>
-                        <span>Nedrykk</span>
-                      </div>
+            {(leagueData.league.id === 39 || leagueData.league.id === 140 || leagueData.league.id === 103 || leagueData.league.id === 725 || leagueData.league.id === 104) && (
+              <>
+                <div className="mt-4 border rounded-lg bg-white p-4 text-sm">
+                  {/* Qualification/Relegation */}
+                  <div className="mb-6">
+                    <h3 className="font-medium mb-3">Kvalifisering/nedrykk</h3>
+                    <div className="space-y-3">
+                      {/* Add OBOS-specific rules */}
+                      {leagueData.league.id === 104 ? (
+                        <>
+                          <div className="flex items-center">
+                            <div className="w-4 h-4 bg-blue-500 mr-2 flex-shrink-0"></div>
+                            <span>Direkte opprykk til Eliteserien</span>
+                          </div>
+                          <div className="flex items-center">
+                            <div className="w-4 h-4 bg-orange-500 mr-2 flex-shrink-0"></div>
+                            <span>Kvalifisering til Eliteserien</span>
+                          </div>
+                          <div className="flex items-center">
+                            <div className="w-4 h-4 bg-red-500 mr-2 flex-shrink-0"></div>
+                            <span>Nedrykk til PostNord-ligaen</span>
+                          </div>
+                        </>
+                      ) : (
+                        <>
+                          <div className="flex items-center">
+                            <div className="w-4 h-4 bg-blue-500 mr-2 flex-shrink-0"></div>
+                            <span>Mesterligaen gruppekamper</span>
+                          </div>
+                          <div className="flex items-center">
+                            <div className="w-4 h-4 bg-orange-500 mr-2 flex-shrink-0"></div>
+                            <span>Europaligaen gruppekamper</span>
+                          </div>
+                          {leagueData.league.id === 140 && (
+                            <div className="flex items-center">
+                              <div className="w-4 h-4 bg-green-500 mr-2 flex-shrink-0"></div>
+                              <span>Conference League kvalifisering</span>
+                            </div>
+                          )}
+                          <div className="flex items-center">
+                            <div className="w-4 h-4 bg-red-500 mr-2 flex-shrink-0"></div>
+                            <span>Nedrykk</span>
+                          </div>
+                        </>
+                      )}
                     </div>
                   </div>
-                  
+
+                  {/* Form Guide */}
                   <div>
-                    <h3 className="font-medium mb-2">Siste fem kamper</h3>
-                    <div className="space-y-2">
+                    <h3 className="font-medium mb-3">Siste fem kamper</h3>
+                    <div className="space-y-3">
                       <div className="flex items-center">
-                        <div className="w-4 h-4 rounded-full bg-green-500 flex items-center justify-center text-white mr-2">
+                        <div className="w-4 h-4 rounded-full bg-green-500 flex items-center justify-center text-white mr-2 flex-shrink-0">
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-2 w-2" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
@@ -430,13 +471,13 @@ export default function LeaguePageClient({
                         <span>Seier</span>
                       </div>
                       <div className="flex items-center">
-                        <div className="w-4 h-4 rounded-full bg-gray-400 flex items-center justify-center text-white mr-2">
+                        <div className="w-4 h-4 rounded-full bg-gray-400 flex items-center justify-center text-white mr-2 flex-shrink-0">
                           <span className="text-[8px] font-bold">U</span>
                         </div>
                         <span>Uavgjort</span>
                       </div>
                       <div className="flex items-center">
-                        <div className="w-4 h-4 rounded-full bg-red-500 flex items-center justify-center text-white mr-2">
+                        <div className="w-4 h-4 rounded-full bg-red-500 flex items-center justify-center text-white mr-2 flex-shrink-0">
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-2 w-2" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
                           </svg>
@@ -446,8 +487,55 @@ export default function LeaguePageClient({
                     </div>
                   </div>
                 </div>
-              </div>
+
+                {/* Separate streaming providers box */}
+                {getStreamingProviders(leagueData.league?.id).length > 0 && (
+                  <div className="mt-4 border rounded-lg bg-white p-4 text-sm">
+                    <h3 className="font-medium mb-2">Se kampene på</h3>
+                    <div className="space-y-2">
+                      {getStreamingProviders(leagueData.league?.id).map((provider) => (
+                        <Link
+                          key={provider.name}
+                          href={provider.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center p-2 hover:bg-gray-50 rounded-lg transition-colors group border border-gray-100"
+                        >
+                          <div className="w-8 h-8 relative mr-3">
+                            <Image
+                              src={provider.icon}
+                              alt={provider.name}
+                              fill
+                              className="object-contain"
+                            />
+                          </div>
+                          <div className="flex-1">
+                            <span className="text-sm font-medium text-gray-900 group-hover:text-blue-600">
+                              {provider.name}
+                            </span>
+                            {provider.package && (
+                              <span className="block text-xs text-gray-500">
+                                {provider.package}
+                              </span>
+                            )}
+                          </div>
+                          <ChevronRightIcon className="w-5 h-5 text-gray-400 group-hover:text-blue-600" />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </>
             )}
+
+            {/* Video component - moved outside the condition */}
+            <div className="mt-4">
+              <LeagueLatestVideo 
+                leagueName={leagueData.league.name}
+                leagueId={leagueData.league.id}
+                leagueLogo={leagueData.league.logo}
+              />
+            </div>
           </div>
           
           {/* Right column - Fixtures and top scorers */}
@@ -455,7 +543,9 @@ export default function LeaguePageClient({
             {/* Upcoming fixtures */}
             <div className="bg-white shadow rounded-lg overflow-hidden mb-8">
               <div className="px-4 py-5 sm:px-6 border-b border-gray-200">
-                <h2 className="text-lg font-medium text-gray-900">Kommende kamper</h2>
+                <h2 className="text-lg font-medium text-gray-900">
+                  Kommende kamper for {leagueData.league?.name}
+                </h2>
               </div>
               
               {Object.keys(fixturesByDate).length > 0 ? (
@@ -669,6 +759,126 @@ export default function LeaguePageClient({
                   Ingen toppscorer-data tilgjengelig for denne sesongen.
                 </div>
               )}
+            </div>
+
+            {/* After the Toppscorere section */}
+            <div className="bg-white shadow rounded-lg overflow-hidden mt-8">
+              <div className="px-6 py-4 border-b border-gray-200">
+                <h2 className="text-lg font-medium text-gray-900">Mer om {leagueData.league?.name}</h2>
+              </div>
+              
+              <div className="p-6">
+                <article className="prose prose-sm max-w-none">
+                  {/* Only show streaming section if providers exist */}
+                  {getStreamingProviders(leagueData.league?.id).length > 0 && (
+                    <>
+                      <h3 className="text-xl font-semibold mb-4">Hvem sender {leagueData.league?.name} 2025?</h3>
+                      <p className="mb-6">
+                        {leagueData.league?.id === 103 ? (
+                          <>
+                            TV 2 har rettighetene til å sende Eliteserien frem til 2028. Du kan se alle kampene på TV 2 Play Premium. 
+                            I tillegg kan du se Eliteserien og mange andre store fotballigaer på Strim, som tilbyr en fleksibel 
+                            strømmeløsning for sport.
+                          </>
+                        ) : leagueData.league?.id === 39 ? (
+                          <>
+                            Viaplay har rettighetene til Premier League frem til 2028. Du kan se alle kampene med et 
+                            Viaplay Total-abonnement. Alternativt kan du se Premier League og andre store fotballigaer på Strim 
+                            med et Sport Premium-abonnement.
+                          </>
+                        ) : leagueData.league?.id === 140 ? (
+                          <>
+                            TV 2 har rettighetene til La Liga frem til 2026. Du kan se alle kampene på TV 2 Play Premium. 
+                            Du kan også se La Liga og andre store fotballigaer på Strim med et Sport Basis-abonnement.
+                          </>
+                        ) : (
+                          <>
+                            {getStreamingProviders(leagueData.league?.id).map(provider => provider.name).join(' og ')} 
+                            sender {leagueData.league?.name}. I tillegg kan du se mange store fotballigaer på Strim.
+                          </>
+                        )}
+                      </p>
+                      
+                      <h3 className="text-xl font-semibold mb-4 mt-8">Når starter {leagueData.league?.name} 2025?</h3>
+                      <p className="mb-6">
+                        {leagueData.league?.id === 103 ? (
+                          <>
+                            Eliteserien 2025 forventes å starte i april 2025. Tradisjonelt starter Eliteserien rundt påsketider, 
+                            vanligvis i begynnelsen av april. Den nøyaktige datoen for seriestart vil bli annonsert av Norges 
+                            Fotballforbund senere i 2024. Sesongen går vanligvis fra april til desember, med en kort pause 
+                            i forbindelse med internasjonale landslagssamlinger.
+                          </>
+                        ) : leagueData.league?.id === 39 ? (
+                          <>
+                            Premier League 2025/26-sesongen forventes å starte i august 2025. Premier League starter 
+                            tradisjonelt i midten av august og avsluttes i mai året etter. Den nøyaktige datoen for 
+                            seriestart vil bli annonsert av Premier League senere i 2024.
+                          </>
+                        ) : leagueData.league?.id === 140 ? (
+                          <>
+                            La Liga 2025/26-sesongen forventes å starte i august 2025. La Liga starter vanligvis 
+                            i midten av august og avsluttes i mai året etter. Den nøyaktige datoen for seriestart 
+                            vil bli annonsert av La Liga senere i 2024.
+                          </>
+                        ) : (
+                          <>
+                            {leagueData.league?.name} 2025/26-sesongen forventes å starte høsten 2025. Den nøyaktige 
+                            datoen for seriestart vil bli annonsert senere i 2024.
+                          </>
+                        )}
+                      </p>
+
+                      <h3 className="text-xl font-semibold mb-4 mt-8">Kommende kamper i {leagueData.league?.name}</h3>
+                      <p className="mb-6">
+                        {leagueData.league?.id === 103 ? (
+                          <>
+                            De neste rundene i Eliteserien byr på flere spennende oppgjør. Følg med på toppkampen mellom 
+                            lagene som kjemper om medaljer og europacupplasser, samt den intense bunnstriden der lag kjemper 
+                            for å unngå nedrykk. Alle kampene kan du se direkte på TV 2 Play Premium eller Strim.
+                          </>
+                        ) : leagueData.league?.id === 39 ? (
+                          <>
+                            Premier League fortsetter med flere høydepunkter i de kommende rundene. Følg med på kampen om 
+                            ligagullet, Champions League-plassene og den spennende bunnstriden. Du kan se alle kampene på 
+                            Viaplay Total eller Strim Sport Premium.
+                          </>
+                        ) : leagueData.league?.id === 140 ? (
+                          <>
+                            La Liga byr på flere spennende oppgjør i de kommende ukene. Følg med på topplagene som kjemper 
+                            om ligagull og Champions League-plasser, samt den intense kampen for å unngå nedrykk. Alle kampene 
+                            kan du se på TV 2 Play Premium eller Strim.
+                          </>
+                        ) : (
+                          <>
+                            De kommende rundene i {leagueData.league?.name} byr på flere spennende oppgjør. Følg med på 
+                            toppkampen og den intense bunnstriden gjennom hele sesongen.
+                          </>
+                        )}
+                      </p>
+
+                      <div className="bg-blue-50 p-4 rounded-lg mb-6">
+                        <h4 className="font-medium text-blue-900 mb-2">Se fotball på Strim</h4>
+                        <p className="text-blue-800 mb-4">
+                          Med Strim kan du se mange av de største fotballigaene samlet på ett sted:
+                        </p>
+                        <ul className="list-disc list-inside text-blue-800 mb-4">
+                          <li>Sport Basis inkluderer: Eliteserien, OBOS-ligaen, Toppserien, Champions League og La Liga</li>
+                          <li>Sport Premium inkluderer i tillegg: Premier League, Europa League, Conference League og Bundesliga</li>
+                        </ul>
+                        <Link 
+                          href="https://ion.strim.no/t/t?a=1587005581&as=1817929248&t=2&tk=1"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+                        >
+                          Gå til Strim
+                          <ChevronRightIcon className="ml-2 -mr-1 h-4 w-4" />
+                        </Link>
+                      </div>
+                    </>
+                  )}
+                </article>
+              </div>
             </div>
           </div>
         </div>

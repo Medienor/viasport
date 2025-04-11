@@ -57,7 +57,7 @@ export function getStreamingProviders(leagueId: number): StreamingProvider[] {
     case 104: // OBOS-ligaen
       return [STREAMING_PROVIDERS.TV2_PLAY_PREMIUM]; // 2022-2028
     case 725: // Toppserien
-      return [STREAMING_PROVIDERS.TV2_PLAY_PREMIUM, STREAMING_PROVIDERS.NRK]; // 2022-2028
+      return [STREAMING_PROVIDERS.TV2_PLAY_PREMIUM]; // TV2 has the rights
     
     // English Football
     case 39: // Premier League

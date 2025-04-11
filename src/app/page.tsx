@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import SimpleTeamStandings from './components/SimpleTeamStandings';
 import EnhancedFixturesSectionWrapper from './components/EnhancedFixturesSectionWrapper';
-import LatestNews from './components/LatestNews';
 import EliteserienVideos from './components/EliteserienVideos';
 
 // Set page-level revalidation time (24 hours = 86400 seconds)
@@ -87,24 +86,6 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
-              </div>
-
-              {/* Latest News Section */}
-              <div className="mt-6 pt-4 border-t">
-                <h2 className="text-lg font-semibold mb-4">Siste nyheter</h2>
-                <Suspense fallback={<div className="animate-pulse space-y-4">
-                  {[...Array(3)].map((_, i) => (
-                    <div key={i} className="flex space-x-3">
-                      <div className="rounded bg-gray-200 h-16 w-16"></div>
-                      <div className="flex-1 space-y-2 py-1">
-                        <div className="h-4 bg-gray-200 rounded w-3/4"></div>
-                        <div className="h-3 bg-gray-200 rounded w-full"></div>
-                      </div>
-                    </div>
-                  ))}
-                </div>}>
-                  <LatestNews />
-                </Suspense>
               </div>
             </div>
           </div>
