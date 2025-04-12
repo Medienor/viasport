@@ -167,6 +167,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 246,
+        "name": "Suomen Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/246.png"
+      },
+      "country": {
+        "name": "Finland",
+        "code": "FI",
+        "flag": "https://media.api-sports.io/flags/fi.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-09",
+          "end": "2025-04-22",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": true
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -189,12 +226,12 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1342673,
-          "date": "2025-04-11T15:00:00+00:00",
+          "id": 1367585,
+          "date": "2025-04-16T16:00:00+00:00",
           "venue": {
-            "id": 621,
-            "name": "Arto Tolsa Areena",
-            "city": "Kotka"
+            "id": 6366,
+            "name": "Pyynikin urheilukenttä",
+            "city": "Tampere"
           },
           "status": {
             "long": "Not Started",
@@ -202,18 +239,18 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744383600
+          "timestamp": 1744819200
         },
         "league": {
-          "id": 244,
-          "name": "Veikkausliiga",
-          "logo": "https://media.api-sports.io/football/leagues/244.png"
+          "id": 246,
+          "name": "Suomen Cup",
+          "logo": "https://media.api-sports.io/football/leagues/246.png"
         },
         "teams": {
           "home": {
-            "id": 2076,
-            "name": "Kooteepee",
-            "logo": "https://media.api-sports.io/football/teams/2076.png",
+            "id": 13571,
+            "name": "TP-T",
+            "logo": "https://media.api-sports.io/football/teams/13571.png",
             "winner": null
           },
           "away": {
@@ -1371,6 +1408,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1342673,
+          "date": "2025-04-11T15:00:00+00:00",
+          "venue": {
+            "id": 621,
+            "name": "Arto Tolsa Areena",
+            "city": "Kotka"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744383600
+        },
+        "league": {
+          "id": 244,
+          "name": "Veikkausliiga",
+          "logo": "https://media.api-sports.io/football/leagues/244.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2076,
+            "name": "Kooteepee",
+            "logo": "https://media.api-sports.io/football/teams/2076.png",
+            "winner": null
+          },
+          "away": {
+            "id": 650,
+            "name": "VPS",
+            "logo": "https://media.api-sports.io/football/teams/650.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342670,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -1899,65 +1995,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1336841,
-          "date": "2025-01-17T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Garam Masala Areena TN",
-            "city": "Oulu"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1737072000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2077,
-            "name": "AC Oulu",
-            "logo": "https://media.api-sports.io/football/teams/2077.png",
-            "winner": null
-          },
-          "away": {
-            "id": 650,
-            "name": "VPS",
-            "logo": "https://media.api-sports.io/football/teams/650.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1975,12 +2012,12 @@
       "name": "VPS",
       "logo": "https://media.api-sports.io/football/teams/650.png"
     },
-    "form": "W",
+    "form": "WD",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "wins": {
         "home": 1,
@@ -1989,8 +2026,8 @@
       },
       "draws": {
         "home": 0,
-        "away": 0,
-        "total": 0
+        "away": 1,
+        "total": 1
       },
       "loses": {
         "home": 0,
@@ -2002,80 +2039,12 @@
       "for": {
         "total": {
           "home": 4,
-          "away": 0,
-          "total": 4
+          "away": 2,
+          "total": 6
         },
         "average": {
           "home": "4.0",
-          "away": "0.0",
-          "total": "4.0"
-        },
-        "minute": {
-          "0-15": {
-            "total": null,
-            "percentage": null
-          },
-          "16-30": {
-            "total": null,
-            "percentage": null
-          },
-          "31-45": {
-            "total": null,
-            "percentage": null
-          },
-          "46-60": {
-            "total": 1,
-            "percentage": "25.00%"
-          },
-          "61-75": {
-            "total": 2,
-            "percentage": "50.00%"
-          },
-          "76-90": {
-            "total": null,
-            "percentage": null
-          },
-          "91-105": {
-            "total": 1,
-            "percentage": "25.00%"
-          },
-          "106-120": {
-            "total": null,
-            "percentage": null
-          }
-        },
-        "under_over": {
-          "0.5": {
-            "over": 1,
-            "under": 0
-          },
-          "1.5": {
-            "over": 1,
-            "under": 0
-          },
-          "2.5": {
-            "over": 1,
-            "under": 0
-          },
-          "3.5": {
-            "over": 1,
-            "under": 0
-          },
-          "4.5": {
-            "over": 0,
-            "under": 1
-          }
-        }
-      },
-      "against": {
-        "total": {
-          "home": 3,
-          "away": 0,
-          "total": 3
-        },
-        "average": {
-          "home": "3.0",
-          "away": "0.0",
+          "away": "2.0",
           "total": "3.0"
         },
         "minute": {
@@ -2088,20 +2057,88 @@
             "percentage": null
           },
           "31-45": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "46-60": {
+            "total": 1,
+            "percentage": "16.67%"
+          },
+          "61-75": {
             "total": 2,
-            "percentage": "66.67%"
+            "percentage": "33.33%"
+          },
+          "76-90": {
+            "total": null,
+            "percentage": null
+          },
+          "91-105": {
+            "total": 2,
+            "percentage": "33.33%"
+          },
+          "106-120": {
+            "total": null,
+            "percentage": null
+          }
+        },
+        "under_over": {
+          "0.5": {
+            "over": 2,
+            "under": 0
+          },
+          "1.5": {
+            "over": 2,
+            "under": 0
+          },
+          "2.5": {
+            "over": 1,
+            "under": 1
+          },
+          "3.5": {
+            "over": 1,
+            "under": 1
+          },
+          "4.5": {
+            "over": 0,
+            "under": 2
+          }
+        }
+      },
+      "against": {
+        "total": {
+          "home": 3,
+          "away": 2,
+          "total": 5
+        },
+        "average": {
+          "home": "3.0",
+          "away": "2.0",
+          "total": "2.5"
+        },
+        "minute": {
+          "0-15": {
+            "total": null,
+            "percentage": null
+          },
+          "16-30": {
+            "total": null,
+            "percentage": null
+          },
+          "31-45": {
+            "total": 3,
+            "percentage": "60.00%"
           },
           "46-60": {
             "total": null,
             "percentage": null
           },
           "61-75": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "33.33%"
+            "percentage": "20.00%"
           },
           "91-105": {
             "total": null,
@@ -2114,24 +2151,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "1.5": {
-            "over": 1,
+            "over": 2,
             "under": 0
           },
           "2.5": {
             "over": 1,
-            "under": 0
+            "under": 1
           },
           "3.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 0,
-            "under": 1
+            "under": 2
           }
         }
       }
@@ -2153,11 +2190,11 @@
       "goals": {
         "for": {
           "home": 4,
-          "away": 0
+          "away": 2
         },
         "against": {
           "home": 3,
-          "away": 0
+          "away": 2
         }
       }
     },
@@ -2182,7 +2219,12 @@
       },
       "total": 1
     },
-    "lineups": [],
+    "lineups": [
+      {
+        "formation": "3-4-1-2",
+        "played": 1
+      }
+    ],
     "cards": {
       "yellow": {
         "0-15": {
@@ -2190,16 +2232,16 @@
           "percentage": null
         },
         "16-30": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "31-45": {
           "total": null,
           "percentage": null
         },
         "46-60": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "50.00%"
         },
         "61-75": {
           "total": null,
@@ -2254,5 +2296,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:42:46.525Z"
+  "lastUpdated": "2025-04-12T08:32:12.727Z"
 }

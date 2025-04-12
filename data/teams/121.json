@@ -133,6 +133,43 @@
     },
     {
       "league": {
+        "id": 73,
+        "name": "Copa Do Brasil",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/73.png"
+      },
+      "country": {
+        "name": "Brazil",
+        "code": "BR",
+        "flag": "https://media.api-sports.io/flags/br.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-18",
+          "end": "2025-05-20",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 71,
         "name": "Serie A",
         "type": "League",
@@ -486,6 +523,65 @@
       },
       {
         "fixture": {
+          "id": 1370765,
+          "date": "2025-04-29T22:00:00+00:00",
+          "venue": {
+            "id": 225,
+            "name": "Estádio Governador Plácido Aderaldo Castelo",
+            "city": "Fortaleza, Ceará"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745964000
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 129,
+            "name": "Ceara",
+            "logo": "https://media.api-sports.io/football/teams/129.png",
+            "winner": null
+          },
+          "away": {
+            "id": 121,
+            "name": "Palmeiras",
+            "logo": "https://media.api-sports.io/football/teams/121.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351104,
           "date": "2025-05-04T19:00:00+00:00",
           "venue": {
@@ -753,6 +849,65 @@
             "id": 121,
             "name": "Palmeiras",
             "logo": "https://media.api-sports.io/football/teams/121.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1370766,
+          "date": "2025-05-20T22:00:00+00:00",
+          "venue": {
+            "id": 258,
+            "name": "Allianz Parque",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747778400
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 121,
+            "name": "Palmeiras",
+            "logo": "https://media.api-sports.io/football/teams/121.png",
+            "winner": null
+          },
+          "away": {
+            "id": 129,
+            "name": "Ceara",
+            "logo": "https://media.api-sports.io/football/teams/129.png",
             "winner": null
           }
         },
@@ -2049,5 +2204,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:13.848Z"
+  "lastUpdated": "2025-04-12T08:35:34.884Z"
 }

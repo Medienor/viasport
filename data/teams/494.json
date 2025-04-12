@@ -116,65 +116,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223913,
-          "date": "2025-04-11T18:45:00+00:00",
-          "venue": {
-            "id": 20416,
-            "name": "Bluenergy Stadium",
-            "city": "Udine"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744397100
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 494,
-            "name": "Udinese",
-            "logo": "https://media.api-sports.io/football/teams/494.png",
-            "winner": null
-          },
-          "away": {
-            "id": 489,
-            "name": "AC Milan",
-            "logo": "https://media.api-sports.io/football/teams/489.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223924,
           "date": "2025-04-21T10:30:00+00:00",
           "venue": {
@@ -531,6 +472,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1223913,
+          "date": "2025-04-11T18:45:00+00:00",
+          "venue": {
+            "id": 20416,
+            "name": "Bluenergy Stadium",
+            "city": "Udine"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744397100
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 494,
+            "name": "Udinese",
+            "logo": "https://media.api-sports.io/football/teams/494.png",
+            "winner": false
+          },
+          "away": {
+            "id": 489,
+            "name": "AC Milan",
+            "logo": "https://media.api-sports.io/football/teams/489.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1223898,
           "date": "2025-04-04T18:45:00+00:00",
           "venue": {
@@ -830,7 +830,7 @@
           "date": "2025-02-21T19:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stadio Ettore Giardiniero - Via del Mare",
+            "name": "Via del Mare",
             "city": "Lecce"
           },
           "status": {
@@ -1048,65 +1048,6 @@
           },
           "fulltime": {
             "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1223813,
-          "date": "2025-01-26T14:00:00+00:00",
-          "venue": {
-            "id": 20416,
-            "name": "Bluenergy Stadium",
-            "city": "Udine"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737900000
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 494,
-            "name": "Udinese",
-            "logo": "https://media.api-sports.io/football/teams/494.png",
-            "winner": false
-          },
-          "away": {
-            "id": 497,
-            "name": "AS Roma",
-            "logo": "https://media.api-sports.io/football/teams/497.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
             "away": 2
           },
           "extratime": {
@@ -1414,5 +1355,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:02.660Z"
+  "lastUpdated": "2025-04-12T08:29:30.603Z"
 }

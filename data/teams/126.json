@@ -133,6 +133,43 @@
     },
     {
       "league": {
+        "id": 73,
+        "name": "Copa Do Brasil",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/73.png"
+      },
+      "country": {
+        "name": "Brazil",
+        "code": "BR",
+        "flag": "https://media.api-sports.io/flags/br.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-18",
+          "end": "2025-05-20",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 71,
         "name": "Serie A",
         "type": "League",
@@ -189,65 +226,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361879,
-          "date": "2025-04-11T00:30:00+00:00",
-          "venue": {
-            "id": 20813,
-            "name": "MorumBIS",
-            "city": "São Paulo, São Paulo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744331400
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 126,
-            "name": "Sao Paulo",
-            "logo": "https://media.api-sports.io/football/teams/126.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2553,
-            "name": "Alianza Lima",
-            "logo": "https://media.api-sports.io/football/teams/2553.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1351066,
@@ -545,6 +523,65 @@
       },
       {
         "fixture": {
+          "id": 1370771,
+          "date": "2025-04-29T22:00:00+00:00",
+          "venue": {
+            "id": 20813,
+            "name": "MorumBIS",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745964000
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 126,
+            "name": "Sao Paulo",
+            "logo": "https://media.api-sports.io/football/teams/126.png",
+            "winner": null
+          },
+          "away": {
+            "id": 755,
+            "name": "Nautico Recife",
+            "logo": "https://media.api-sports.io/football/teams/755.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351106,
           "date": "2025-05-03T00:30:00+00:00",
           "venue": {
@@ -781,6 +818,65 @@
       },
       {
         "fixture": {
+          "id": 1370772,
+          "date": "2025-05-20T22:00:00+00:00",
+          "venue": {
+            "id": 12670,
+            "name": "Estádio Eládio de Barros Carvalho",
+            "city": "Recife, Pernambuco"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747778400
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 755,
+            "name": "Nautico Recife",
+            "logo": "https://media.api-sports.io/football/teams/755.png",
+            "winner": null
+          },
+          "away": {
+            "id": 126,
+            "name": "Sao Paulo",
+            "logo": "https://media.api-sports.io/football/teams/126.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351136,
           "date": "2025-05-24T21:30:00+00:00",
           "venue": {
@@ -958,6 +1054,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361879,
+          "date": "2025-04-11T00:30:00+00:00",
+          "venue": {
+            "id": 20813,
+            "name": "MorumBIS",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1744331400
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 126,
+            "name": "Sao Paulo",
+            "logo": "https://media.api-sports.io/football/teams/126.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2553,
+            "name": "Alianza Lima",
+            "logo": "https://media.api-sports.io/football/teams/2553.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1351058,
@@ -1488,65 +1643,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1319763,
-          "date": "2025-02-11T00:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Arena BRB Mané Garrincha",
-            "city": "Brasília, Distrito Federal"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1739233800
-        },
-        "league": {
-          "id": 475,
-          "name": "Paulista - A1",
-          "logo": "https://media.api-sports.io/football/leagues/475.png"
-        },
-        "teams": {
-          "home": {
-            "id": 126,
-            "name": "Sao Paulo",
-            "logo": "https://media.api-sports.io/football/teams/126.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1201,
-            "name": "Inter De Limeira",
-            "logo": "https://media.api-sports.io/football/teams/1201.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1860,5 +1956,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:16.649Z"
+  "lastUpdated": "2025-04-12T08:35:37.453Z"
 }

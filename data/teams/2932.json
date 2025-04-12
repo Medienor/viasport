@@ -200,7 +200,7 @@
             "top_cards": false,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -294,65 +294,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1252654,
-          "date": "2025-04-11T18:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "EGO Stadium",
-            "city": "Dammam"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744394400
-        },
-        "league": {
-          "id": 307,
-          "name": "Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/307.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2934,
-            "name": "Al-Ettifaq",
-            "logo": "https://media.api-sports.io/football/teams/2934.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2932,
-            "name": "Al-Hilal Saudi FC",
-            "logo": "https://media.api-sports.io/football/teams/2932.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1252664,
@@ -768,6 +709,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1252654,
+          "date": "2025-04-11T18:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "EGO Stadium",
+            "city": "Dammam"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 11
+          },
+          "timestamp": 1744394400
+        },
+        "league": {
+          "id": 307,
+          "name": "Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/307.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2934,
+            "name": "Al-Ettifaq",
+            "logo": "https://media.api-sports.io/football/teams/2934.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2932,
+            "name": "Al-Hilal Saudi FC",
+            "logo": "https://media.api-sports.io/football/teams/2932.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1252645,
@@ -1298,65 +1298,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1252595,
-          "date": "2025-02-14T17:00:00+00:00",
-          "venue": {
-            "id": 20744,
-            "name": "Kingdom Arena",
-            "city": "Riyadh"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 15
-          },
-          "timestamp": 1739552400
-        },
-        "league": {
-          "id": 307,
-          "name": "Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/307.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2932,
-            "name": "Al-Hilal Saudi FC",
-            "logo": "https://media.api-sports.io/football/teams/2932.png",
-            "winner": null
-          },
-          "away": {
-            "id": 10511,
-            "name": "Al Riyadh",
-            "logo": "https://media.api-sports.io/football/teams/10511.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1653,5 +1594,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:45:55.374Z"
+  "lastUpdated": "2025-04-12T08:35:16.904Z"
 }

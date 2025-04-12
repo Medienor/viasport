@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1324043,
-          "date": "2025-04-12T06:00:00+00:00",
-          "venue": {
-            "id": 960,
-            "name": "Ajinomoto Stadium",
-            "city": "Chōfu"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744437600
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 306,
-            "name": "Tokyo Verdy",
-            "logo": "https://media.api-sports.io/football/teams/306.png",
-            "winner": null
-          },
-          "away": {
-            "id": 289,
-            "name": "Vissel Kobe",
-            "logo": "https://media.api-sports.io/football/teams/289.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1324071,
           "date": "2025-04-16T10:00:00+00:00",
           "venue": {
@@ -1329,9 +1270,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1324231,
+          "date": "2025-08-30T10:00:00+00:00",
+          "venue": {
+            "id": 984,
+            "name": "NOEVIR Stadium Kobe",
+            "city": "Kobe"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756548000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 289,
+            "name": "Vissel Kobe",
+            "logo": "https://media.api-sports.io/football/teams/289.png",
+            "winner": null
+          },
+          "away": {
+            "id": 296,
+            "name": "Yokohama F. Marinos",
+            "logo": "https://media.api-sports.io/football/teams/296.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1324043,
+          "date": "2025-04-12T06:00:00+00:00",
+          "venue": {
+            "id": 960,
+            "name": "Ajinomoto Stadium",
+            "city": "Chōfu"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744437600
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 306,
+            "name": "Tokyo Verdy",
+            "logo": "https://media.api-sports.io/football/teams/306.png",
+            "winner": false
+          },
+          "away": {
+            "id": 289,
+            "name": "Vissel Kobe",
+            "logo": "https://media.api-sports.io/football/teams/289.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1324038,
@@ -1862,65 +1921,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323959,
-          "date": "2025-02-15T05:00:00+00:00",
-          "venue": {
-            "id": 984,
-            "name": "NOEVIR Stadium Kobe",
-            "city": "Kobe"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739595600
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 289,
-            "name": "Vissel Kobe",
-            "logo": "https://media.api-sports.io/football/teams/289.png",
-            "winner": null
-          },
-          "away": {
-            "id": 287,
-            "name": "Urawa",
-            "logo": "https://media.api-sports.io/football/teams/287.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2222,5 +2222,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:45:42.521Z"
+  "lastUpdated": "2025-04-12T08:35:04.444Z"
 }

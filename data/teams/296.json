@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1324051,
-          "date": "2025-04-12T05:00:00+00:00",
-          "venue": {
-            "id": 20417,
-            "name": "Best Denki Stadium",
-            "city": "Fukuoka"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744434000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 316,
-            "name": "Avispa Fukuoka",
-            "logo": "https://media.api-sports.io/football/teams/316.png",
-            "winner": null
-          },
-          "away": {
-            "id": 296,
-            "name": "Yokohama F. Marinos",
-            "logo": "https://media.api-sports.io/football/teams/296.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1324070,
           "date": "2025-04-16T10:00:00+00:00",
           "venue": {
@@ -1334,6 +1275,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1324051,
+          "date": "2025-04-12T05:00:00+00:00",
+          "venue": {
+            "id": 20417,
+            "name": "Best Denki Stadium",
+            "city": "Fukuoka"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744434000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 316,
+            "name": "Avispa Fukuoka",
+            "logo": "https://media.api-sports.io/football/teams/316.png",
+            "winner": true
+          },
+          "away": {
+            "id": 296,
+            "name": "Yokohama F. Marinos",
+            "logo": "https://media.api-sports.io/football/teams/296.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1324000,
           "date": "2025-04-09T10:00:00+00:00",
           "venue": {
@@ -1862,65 +1862,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323971,
-          "date": "2025-02-23T05:00:00+00:00",
-          "venue": {
-            "id": 20557,
-            "name": "Edion Peace Wing Hiroshima",
-            "city": "Hiroshima"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1740286800
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 282,
-            "name": "Sanfrecce Hiroshima",
-            "logo": "https://media.api-sports.io/football/teams/282.png",
-            "winner": true
-          },
-          "away": {
-            "id": 296,
-            "name": "Yokohama F. Marinos",
-            "logo": "https://media.api-sports.io/football/teams/296.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1980,11 +1921,11 @@
           },
           "16-30": {
             "total": 1,
-            "percentage": "33.33%"
+            "percentage": "16.67%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "16.67%"
           },
           "46-60": {
             "total": null,
@@ -1992,15 +1933,15 @@
           },
           "61-75": {
             "total": 1,
-            "percentage": "33.33%"
+            "percentage": "16.67%"
           },
           "76-90": {
-            "total": 1,
+            "total": 2,
             "percentage": "33.33%"
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "16.67%"
           },
           "106-120": {
             "total": null,
@@ -2044,31 +1985,31 @@
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "10.00%"
           },
           "16-30": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "10.00%"
           },
           "31-45": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "10.00%"
           },
           "46-60": {
             "total": 3,
-            "percentage": "37.50%"
+            "percentage": "30.00%"
           },
           "61-75": {
-            "total": 1,
-            "percentage": "12.50%"
+            "total": 2,
+            "percentage": "20.00%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "12.50%"
+            "percentage": "10.00%"
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "10.00%"
           },
           "106-120": {
             "total": null,
@@ -2230,5 +2171,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:45:42.343Z"
+  "lastUpdated": "2025-04-12T08:35:04.318Z"
 }

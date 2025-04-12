@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -354,6 +354,65 @@
             "id": 3491,
             "name": "Raków Częstochowa",
             "logo": "https://media.api-sports.io/football/teams/3491.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203237,
+          "date": "2025-05-10T18:15:00+00:00",
+          "venue": {
+            "id": 18633,
+            "name": "Miejski Stadion Piłkarski Raków",
+            "city": "Częstochowa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746900900
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3491,
+            "name": "Raków Częstochowa",
+            "logo": "https://media.api-sports.io/football/teams/3491.png",
+            "winner": null
+          },
+          "away": {
+            "id": 336,
+            "name": "Jagiellonia",
+            "logo": "https://media.api-sports.io/football/teams/336.png",
             "winner": null
           }
         },
@@ -1326,5 +1385,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:54.461Z"
+  "lastUpdated": "2025-04-12T08:30:22.708Z"
 }

@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { extractTeamId } from '@/utils/helpers';
 import { getTeamData, fetchTeamSquad } from '@/utils/api';
-import TabNav from '@/app/components/TabNav';
 import { createPlayerSlug } from '@/lib/api';
+import TeamHeaderNav from '@/app/components/TeamHeaderNav';
 
 // This enables static generation
 export const dynamic = 'force-static';
@@ -19,20 +19,21 @@ export default async function TeamSquadPage({ params }: { params: { slug: string
   }
 
   try {
-    const [squadData, teamData] = await Promise.all([
+    const [squadData, teamDataResult] = await Promise.all([
       fetchTeamSquad(teamId),
       getTeamData(teamId)
     ]);
 
+    const teamInfo = teamDataResult?.team?.team;
+
     console.log('Squad data:', squadData); // Debug log
-    console.log('Team data:', teamData);   // Debug log
+    console.log('Team data result:', teamDataResult);   // Debug log
     
-    if (!squadData?.response?.[0]?.players || !teamData?.team) {
-      console.error('Missing required data:', { squadData, teamData });
+    if (!squadData?.response?.[0]?.players || !teamInfo?.name || !teamInfo?.logo) {
+      console.error('Missing required data:', { squadData, teamInfo });
       return notFound();
     }
 
-    // Create the slug once and reuse it
     const slug = await Promise.resolve(params.slug);
     
     const tabs = [
@@ -43,7 +44,6 @@ export default async function TeamSquadPage({ params }: { params: { slug: string
       { name: 'Tabell', href: `/lag/${params.slug}/tabell` },
     ];
 
-    // Group players by position with Norwegian translations
     const players = squadData.response[0].players;
     const positionOrder = ['Goalkeeper', 'Defender', 'Midfielder', 'Attacker'];
     const positionTranslations: { [key: string]: string } = {
@@ -65,20 +65,13 @@ export default async function TeamSquadPage({ params }: { params: { slug: string
 
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="mb-8">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="relative h-16 w-16">
-              <Image
-                src={teamData.team.team.logo}
-                alt={teamData.team.team.name}
-                fill
-                className="object-contain"
-              />
-            </div>
-            <h1 className="text-2xl font-bold">{teamData.team.team.name} - Spillertropp</h1>
-          </div>
-          <TabNav tabs={tabs} />
-        </div>
+        <TeamHeaderNav
+          teamLogo={teamInfo.logo}
+          teamName={teamInfo.name}
+          tabs={tabs}
+        />
+
+        <h1 className="text-2xl font-bold mb-8 mt-4 lg:mt-0">Spillertropp</h1>
 
         <div className="mt-8">
           {positionOrder.map((position) => (
@@ -97,10 +90,10 @@ export default async function TeamSquadPage({ params }: { params: { slug: string
                       <div className="flex items-center space-x-4">
                         <div className="relative h-16 w-16 flex-shrink-0">
                           <Image
-                            src={player.photo}
+                            src={player.photo || '/images/player-placeholder.png'}
                             alt={player.name}
                             fill
-                            className="object-cover rounded-full"
+                            className="object-cover rounded-full bg-gray-100"
                           />
                         </div>
                         <div>
@@ -108,8 +101,8 @@ export default async function TeamSquadPage({ params }: { params: { slug: string
                             {player.name}
                           </h3>
                           <p className="text-sm text-gray-500">#{player.number || 'N/A'}</p>
-                          <p className="text-sm text-gray-500">{positionTranslations[position]}</p>
-                          <p className="text-sm text-gray-500">{player.nationality}</p>
+                          {player.age && <p className="text-sm text-gray-500">{player.age} år</p>}
+                          {player.nationality && <p className="text-sm text-gray-500">{player.nationality}</p>}
                         </div>
                       </div>
                     </Link>
@@ -118,6 +111,41 @@ export default async function TeamSquadPage({ params }: { params: { slug: string
               </div>
             )
           ))}
+          {Object.keys(playersByPosition).includes('Unknown') && playersByPosition['Unknown'].length > 0 && (
+             <div key="Unknown" className="mb-8">
+                <h2 className="text-xl font-semibold mb-4">
+                  {positionTranslations['Unknown']}
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {playersByPosition['Unknown'].map((player: any) => (
+                     <Link
+                      key={player.id}
+                      href={`/spillerprofil/${createPlayerSlug(player.name, player.id)}`}
+                      className="bg-white rounded-lg shadow p-4 hover:shadow-md transition-shadow"
+                    >
+                       <div className="flex items-center space-x-4">
+                        <div className="relative h-16 w-16 flex-shrink-0">
+                          <Image
+                            src={player.photo || '/images/player-placeholder.png'}
+                            alt={player.name}
+                            fill
+                            className="object-cover rounded-full bg-gray-100"
+                          />
+                        </div>
+                        <div>
+                          <h3 className="font-medium hover:text-blue-600 transition-colors">
+                            {player.name}
+                          </h3>
+                          <p className="text-sm text-gray-500">#{player.number || 'N/A'}</p>
+                          {player.age && <p className="text-sm text-gray-500">{player.age} år</p>}
+                          {player.nationality && <p className="text-sm text-gray-500">{player.nationality}</p>}
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+          )}
         </div>
       </div>
     );

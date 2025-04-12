@@ -263,65 +263,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1338879,
-          "date": "2025-04-11T18:45:00+00:00",
-          "venue": {
-            "id": 1684,
-            "name": "Park Hall Stadium",
-            "city": "Oswestry / Croesoswallt, Shropshire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744397100
-        },
-        "league": {
-          "id": 110,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/110.png"
-        },
-        "teams": {
-          "home": {
-            "id": 354,
-            "name": "The New Saints",
-            "logo": "https://media.api-sports.io/football/teams/354.png",
-            "winner": null
-          },
-          "away": {
-            "id": 352,
-            "name": "Bala Town",
-            "logo": "https://media.api-sports.io/football/teams/352.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1338883,
           "date": "2025-04-19T11:45:00+00:00",
           "venue": {
@@ -440,6 +381,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1338879,
+          "date": "2025-04-11T18:45:00+00:00",
+          "venue": {
+            "id": 1684,
+            "name": "Park Hall Stadium",
+            "city": "Oswestry / Croesoswallt, Shropshire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744397100
+        },
+        "league": {
+          "id": 110,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/110.png"
+        },
+        "teams": {
+          "home": {
+            "id": 354,
+            "name": "The New Saints",
+            "logo": "https://media.api-sports.io/football/teams/354.png",
+            "winner": true
+          },
+          "away": {
+            "id": 352,
+            "name": "Bala Town",
+            "logo": "https://media.api-sports.io/football/teams/352.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1338877,
@@ -970,65 +970,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1338860,
-          "date": "2025-02-08T12:15:00+00:00",
-          "venue": {
-            "id": 1684,
-            "name": "Park Hall Stadium",
-            "city": "Oswestry / Croesoswallt, Shropshire"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1739016900
-        },
-        "league": {
-          "id": 110,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/110.png"
-        },
-        "teams": {
-          "home": {
-            "id": 354,
-            "name": "The New Saints",
-            "logo": "https://media.api-sports.io/football/teams/354.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2191,
-            "name": "Penybont",
-            "logo": "https://media.api-sports.io/football/teams/2191.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1325,5 +1266,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:41:57.018Z"
+  "lastUpdated": "2025-04-12T08:31:23.584Z"
 }

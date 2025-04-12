@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -187,67 +187,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362835,
-          "date": "2025-04-11T16:00:00+00:00",
-          "venue": {
-            "id": 199,
-            "name": "Olimpijski Stadion Asim Ferhatović Hase",
-            "city": "Sarajevo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744387200
-        },
-        "league": {
-          "id": 315,
-          "name": "Premijer Liga",
-          "logo": "https://media.api-sports.io/football/leagues/315.png"
-        },
-        "teams": {
-          "home": {
-            "id": 679,
-            "name": "FK Sarajevo",
-            "logo": "https://media.api-sports.io/football/teams/679.png",
-            "winner": null
-          },
-          "away": {
-            "id": 588,
-            "name": "Zrinjski",
-            "logo": "https://media.api-sports.io/football/teams/588.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362843,
-          "date": "2025-04-19T13:00:00+00:00",
+          "date": "2025-04-19T15:30:00+00:00",
           "venue": {
             "id": 202,
             "name": "Stadion Bijeli Brijeg",
@@ -259,7 +200,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745067600
+          "timestamp": 1745076600
         },
         "league": {
           "id": 315,
@@ -718,6 +659,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362835,
+          "date": "2025-04-11T16:00:00+00:00",
+          "venue": {
+            "id": 199,
+            "name": "Olimpijski Stadion Asim Ferhatović Hase",
+            "city": "Sarajevo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744387200
+        },
+        "league": {
+          "id": 315,
+          "name": "Premijer Liga",
+          "logo": "https://media.api-sports.io/football/leagues/315.png"
+        },
+        "teams": {
+          "home": {
+            "id": 679,
+            "name": "FK Sarajevo",
+            "logo": "https://media.api-sports.io/football/teams/679.png",
+            "winner": null
+          },
+          "away": {
+            "id": 588,
+            "name": "Zrinjski",
+            "logo": "https://media.api-sports.io/football/teams/588.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1362829,
@@ -1248,65 +1248,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323915,
-          "date": "2025-02-07T12:00:00+00:00",
-          "venue": {
-            "id": 2190,
-            "name": "Gradski Stadion",
-            "city": "Konjic"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738929600
-        },
-        "league": {
-          "id": 314,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/314.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3367,
-            "name": "Igman Konjic",
-            "logo": "https://media.api-sports.io/football/teams/3367.png",
-            "winner": false
-          },
-          "away": {
-            "id": 588,
-            "name": "Zrinjski",
-            "logo": "https://media.api-sports.io/football/teams/588.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1603,5 +1544,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:42:41.450Z"
+  "lastUpdated": "2025-04-12T08:32:07.166Z"
 }

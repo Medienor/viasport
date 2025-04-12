@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -455,6 +455,65 @@
             "id": 339,
             "name": "Legia Warszawa",
             "logo": "https://media.api-sports.io/football/teams/339.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203233,
+          "date": "2025-05-11T15:30:00+00:00",
+          "venue": {
+            "id": 1253,
+            "name": "Stadion Miejski Legii Warszawa im. Marszałka Józefa Piłsudskiego",
+            "city": "Warszawa"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746977400
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 339,
+            "name": "Legia Warszawa",
+            "logo": "https://media.api-sports.io/football/teams/339.png",
+            "winner": null
+          },
+          "away": {
+            "id": 347,
+            "name": "Lech Poznan",
+            "logo": "https://media.api-sports.io/football/teams/347.png",
             "winner": null
           }
         },
@@ -1486,5 +1545,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:49.231Z"
+  "lastUpdated": "2025-04-12T08:30:17.523Z"
 }

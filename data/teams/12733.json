@@ -215,7 +215,8 @@
     2024
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1369425,
@@ -226,10 +227,10 @@
             "city": "Klinë"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
           },
           "timestamp": 1744376400
         },
@@ -243,27 +244,27 @@
             "id": 14393,
             "name": "Dukagjini",
             "logo": "https://media.api-sports.io/football/teams/14393.png",
-            "winner": null
+            "winner": false
           },
           "away": {
             "id": 12733,
             "name": "Ballkani",
             "logo": "https://media.api-sports.io/football/teams/12733.png",
-            "winner": null
+            "winner": true
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 5
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 2
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 5
           },
           "extratime": {
             "home": null,
@@ -274,9 +275,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1367392,
@@ -807,65 +806,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1325300,
-          "date": "2024-12-22T12:00:00+00:00",
-          "venue": {
-            "id": 8093,
-            "name": "Stadiumi i qytetit Suharekë",
-            "city": "Suva Reka"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 11
-          },
-          "timestamp": 1734868800
-        },
-        "league": {
-          "id": 664,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/664.png"
-        },
-        "teams": {
-          "home": {
-            "id": 22817,
-            "name": "Suhareka",
-            "logo": "https://media.api-sports.io/football/teams/22817.png",
-            "winner": false
-          },
-          "away": {
-            "id": 12733,
-            "name": "Ballkani",
-            "logo": "https://media.api-sports.io/football/teams/12733.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1162,5 +1102,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:42:17.982Z"
+  "lastUpdated": "2025-04-12T08:31:44.057Z"
 }

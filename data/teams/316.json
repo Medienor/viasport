@@ -115,65 +115,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1324051,
-          "date": "2025-04-12T05:00:00+00:00",
-          "venue": {
-            "id": 20417,
-            "name": "Best Denki Stadium",
-            "city": "Fukuoka"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744434000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 316,
-            "name": "Avispa Fukuoka",
-            "logo": "https://media.api-sports.io/football/teams/316.png",
-            "winner": null
-          },
-          "away": {
-            "id": 296,
-            "name": "Yokohama F. Marinos",
-            "logo": "https://media.api-sports.io/football/teams/296.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1366890,
           "date": "2025-04-16T10:00:00+00:00",
           "venue": {
@@ -1297,6 +1238,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1324051,
+          "date": "2025-04-12T05:00:00+00:00",
+          "venue": {
+            "id": 20417,
+            "name": "Best Denki Stadium",
+            "city": "Fukuoka"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744434000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 316,
+            "name": "Avispa Fukuoka",
+            "logo": "https://media.api-sports.io/football/teams/316.png",
+            "winner": true
+          },
+          "away": {
+            "id": 296,
+            "name": "Yokohama F. Marinos",
+            "logo": "https://media.api-sports.io/football/teams/296.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1324041,
           "date": "2025-04-06T05:00:00+00:00",
           "venue": {
@@ -1825,65 +1825,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323961,
-          "date": "2025-02-15T05:00:00+00:00",
-          "venue": {
-            "id": 20417,
-            "name": "Best Denki Stadium",
-            "city": "Fukuoka"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739595600
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 316,
-            "name": "Avispa Fukuoka",
-            "logo": "https://media.api-sports.io/football/teams/316.png",
-            "winner": false
-          },
-          "away": {
-            "id": 281,
-            "name": "Kashiwa Reysol",
-            "logo": "https://media.api-sports.io/football/teams/281.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2193,5 +2134,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:48.890Z"
+  "lastUpdated": "2025-04-12T08:36:08.046Z"
 }

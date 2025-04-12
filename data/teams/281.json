@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1324042,
-          "date": "2025-04-11T10:00:00+00:00",
-          "venue": {
-            "id": 960,
-            "name": "Japan National Stadium",
-            "city": "Tokyo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744365600
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 292,
-            "name": "FC Tokyo",
-            "logo": "https://media.api-sports.io/football/teams/292.png",
-            "winner": null
-          },
-          "away": {
-            "id": 281,
-            "name": "Kashiwa Reysol",
-            "logo": "https://media.api-sports.io/football/teams/281.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1366885,
           "date": "2025-04-16T10:00:00+00:00",
           "venue": {
@@ -1335,6 +1276,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1324042,
+          "date": "2025-04-11T10:00:00+00:00",
+          "venue": {
+            "id": 960,
+            "name": "Japan National Stadium",
+            "city": "Tokyo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744365600
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 292,
+            "name": "FC Tokyo",
+            "logo": "https://media.api-sports.io/football/teams/292.png",
+            "winner": null
+          },
+          "away": {
+            "id": 281,
+            "name": "Kashiwa Reysol",
+            "logo": "https://media.api-sports.io/football/teams/281.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1324033,
           "date": "2025-04-06T06:00:00+00:00",
           "venue": {
@@ -1863,65 +1863,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323961,
-          "date": "2025-02-15T05:00:00+00:00",
-          "venue": {
-            "id": 20417,
-            "name": "Best Denki Stadium",
-            "city": "Fukuoka"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739595600
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 316,
-            "name": "Avispa Fukuoka",
-            "logo": "https://media.api-sports.io/football/teams/316.png",
-            "winner": false
-          },
-          "away": {
-            "id": 281,
-            "name": "Kashiwa Reysol",
-            "logo": "https://media.api-sports.io/football/teams/281.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1939,12 +1880,12 @@
       "name": "Kashiwa Reysol",
       "logo": "https://media.api-sports.io/football/teams/281.png"
     },
-    "form": "WDWWLDDDW",
+    "form": "WDWWLDDDWD",
     "fixtures": {
       "played": {
         "home": 5,
-        "away": 4,
-        "total": 9
+        "away": 5,
+        "total": 10
       },
       "wins": {
         "home": 2,
@@ -1953,8 +1894,8 @@
       },
       "draws": {
         "home": 2,
-        "away": 2,
-        "total": 4
+        "away": 3,
+        "total": 5
       },
       "loses": {
         "home": 1,
@@ -1966,18 +1907,18 @@
       "for": {
         "total": {
           "home": 5,
-          "away": 5,
-          "total": 10
+          "away": 6,
+          "total": 11
         },
         "average": {
           "home": "1.0",
-          "away": "1.3",
+          "away": "1.2",
           "total": "1.1"
         },
         "minute": {
           "0-15": {
             "total": 2,
-            "percentage": "20.00%"
+            "percentage": "18.18%"
           },
           "16-30": {
             "total": null,
@@ -1985,23 +1926,23 @@
           },
           "31-45": {
             "total": 1,
-            "percentage": "10.00%"
+            "percentage": "9.09%"
           },
           "46-60": {
             "total": 1,
-            "percentage": "10.00%"
+            "percentage": "9.09%"
           },
           "61-75": {
             "total": 4,
-            "percentage": "40.00%"
+            "percentage": "36.36%"
           },
           "76-90": {
             "total": 1,
-            "percentage": "10.00%"
+            "percentage": "9.09%"
           },
           "91-105": {
-            "total": 1,
-            "percentage": "10.00%"
+            "total": 2,
+            "percentage": "18.18%"
           },
           "106-120": {
             "total": null,
@@ -2010,58 +1951,58 @@
         },
         "under_over": {
           "0.5": {
-            "over": 8,
+            "over": 9,
             "under": 1
           },
           "1.5": {
             "over": 2,
-            "under": 7
+            "under": 8
           },
           "2.5": {
             "over": 0,
-            "under": 9
+            "under": 10
           },
           "3.5": {
             "over": 0,
-            "under": 9
+            "under": 10
           },
           "4.5": {
             "over": 0,
-            "under": 9
+            "under": 10
           }
         }
       },
       "against": {
         "total": {
           "home": 5,
-          "away": 2,
-          "total": 7
+          "away": 3,
+          "total": 8
         },
         "average": {
           "home": "1.0",
-          "away": "0.5",
+          "away": "0.6",
           "total": "0.8"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "12.50%"
           },
           "16-30": {
             "total": 1,
-            "percentage": "14.29%"
+            "percentage": "12.50%"
           },
           "31-45": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "12.50%"
           },
           "46-60": {
             "total": 3,
-            "percentage": "42.86%"
+            "percentage": "37.50%"
           },
           "61-75": {
             "total": 2,
-            "percentage": "28.57%"
+            "percentage": "25.00%"
           },
           "76-90": {
             "total": null,
@@ -2078,24 +2019,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 6,
             "under": 4
           },
           "1.5": {
             "over": 1,
-            "under": 8
+            "under": 9
           },
           "2.5": {
             "over": 1,
-            "under": 8
+            "under": 9
           },
           "3.5": {
             "over": 0,
-            "under": 9
+            "under": 10
           },
           "4.5": {
             "over": 0,
-            "under": 9
+            "under": 10
           }
         }
       }
@@ -2149,7 +2090,7 @@
     "lineups": [
       {
         "formation": "3-4-2-1",
-        "played": 6
+        "played": 7
       },
       {
         "formation": "3-4-1-2",
@@ -2168,27 +2109,27 @@
         },
         "16-30": {
           "total": 1,
-          "percentage": "9.09%"
+          "percentage": "7.14%"
         },
         "31-45": {
           "total": 2,
-          "percentage": "18.18%"
+          "percentage": "14.29%"
         },
         "46-60": {
-          "total": 2,
-          "percentage": "18.18%"
+          "total": 3,
+          "percentage": "21.43%"
         },
         "61-75": {
           "total": 1,
-          "percentage": "9.09%"
+          "percentage": "7.14%"
         },
         "76-90": {
-          "total": 3,
-          "percentage": "27.27%"
+          "total": 5,
+          "percentage": "35.71%"
         },
         "91-105": {
           "total": 2,
-          "percentage": "18.18%"
+          "percentage": "14.29%"
         },
         "106-120": {
           "total": null,
@@ -2231,5 +2172,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:43.642Z"
+  "lastUpdated": "2025-04-12T08:36:02.546Z"
 }

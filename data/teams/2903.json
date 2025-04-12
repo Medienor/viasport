@@ -301,65 +301,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231413,
-          "date": "2025-04-11T15:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadium 974",
-            "city": "Doha"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744385400
-        },
-        "league": {
-          "id": 305,
-          "name": "Stars League",
-          "logo": "https://media.api-sports.io/football/leagues/305.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2900,
-            "name": "Al Wakrah",
-            "logo": "https://media.api-sports.io/football/teams/2900.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2903,
-            "name": "Al-Gharafa",
-            "logo": "https://media.api-sports.io/football/teams/2903.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231419,
           "date": "2025-04-18T15:30:00+00:00",
           "venue": {
@@ -419,6 +360,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231413,
+          "date": "2025-04-11T15:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadium 974",
+            "city": "Doha"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744385400
+        },
+        "league": {
+          "id": 305,
+          "name": "Stars League",
+          "logo": "https://media.api-sports.io/football/leagues/305.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2900,
+            "name": "Al Wakrah",
+            "logo": "https://media.api-sports.io/football/teams/2900.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2903,
+            "name": "Al-Gharafa",
+            "logo": "https://media.api-sports.io/football/teams/2903.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231406,
@@ -949,65 +949,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231366,
-          "date": "2025-01-22T15:45:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Thani Bin Jassim Stadium",
-            "city": "Ar-Rayyan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1737560700
-        },
-        "league": {
-          "id": 305,
-          "name": "Stars League",
-          "logo": "https://media.api-sports.io/football/leagues/305.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2903,
-            "name": "Al-Gharafa",
-            "logo": "https://media.api-sports.io/football/teams/2903.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2896,
-            "name": "Al Ahli Doha",
-            "logo": "https://media.api-sports.io/football/teams/2896.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1304,5 +1245,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:45:52.700Z"
+  "lastUpdated": "2025-04-12T08:35:14.334Z"
 }

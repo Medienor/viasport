@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1324048,
-          "date": "2025-04-12T05:00:00+00:00",
-          "venue": {
-            "id": 18623,
-            "name": "Panasonic Stadium Suita",
-            "city": "Suita"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744434000
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 293,
-            "name": "Gamba Osaka",
-            "logo": "https://media.api-sports.io/football/teams/293.png",
-            "winner": null
-          },
-          "away": {
-            "id": 288,
-            "name": "Nagoya Grampus",
-            "logo": "https://media.api-sports.io/football/teams/288.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1366886,
           "date": "2025-04-16T10:00:00+00:00",
           "venue": {
@@ -1329,9 +1270,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1324226,
+          "date": "2025-08-31T10:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Lemon Gas Stadium Hiratsuka",
+            "city": "Hiratsuka"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1756634400
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 284,
+            "name": "Shonan Bellmare",
+            "logo": "https://media.api-sports.io/football/teams/284.png",
+            "winner": null
+          },
+          "away": {
+            "id": 293,
+            "name": "Gamba Osaka",
+            "logo": "https://media.api-sports.io/football/teams/293.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1324048,
+          "date": "2025-04-12T05:00:00+00:00",
+          "venue": {
+            "id": 18623,
+            "name": "Panasonic Stadium Suita",
+            "city": "Suita"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744434000
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 293,
+            "name": "Gamba Osaka",
+            "logo": "https://media.api-sports.io/football/teams/293.png",
+            "winner": true
+          },
+          "away": {
+            "id": 288,
+            "name": "Nagoya Grampus",
+            "logo": "https://media.api-sports.io/football/teams/288.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1324033,
@@ -1862,65 +1921,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323952,
-          "date": "2025-02-14T10:00:00+00:00",
-          "venue": {
-            "id": 18623,
-            "name": "Panasonic Stadium Suita",
-            "city": "Suita"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 12
-          },
-          "timestamp": 1739527200
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 293,
-            "name": "Gamba Osaka",
-            "logo": "https://media.api-sports.io/football/teams/293.png",
-            "winner": false
-          },
-          "away": {
-            "id": 291,
-            "name": "Cerezo Osaka",
-            "logo": "https://media.api-sports.io/football/teams/291.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 5
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 5
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1938,17 +1938,17 @@
       "name": "Gamba Osaka",
       "logo": "https://media.api-sports.io/football/teams/293.png"
     },
-    "form": "LWLWWLDLL",
+    "form": "LWLWWLDLLW",
     "fixtures": {
       "played": {
-        "home": 4,
+        "home": 5,
         "away": 5,
-        "total": 9
+        "total": 10
       },
       "wins": {
-        "home": 2,
+        "home": 3,
         "away": 1,
-        "total": 3
+        "total": 4
       },
       "draws": {
         "home": 0,
@@ -1964,14 +1964,14 @@
     "goals": {
       "for": {
         "total": {
-          "home": 5,
+          "home": 7,
           "away": 4,
-          "total": 9
+          "total": 11
         },
         "average": {
-          "home": "1.3",
+          "home": "1.4",
           "away": "0.8",
-          "total": "1.0"
+          "total": "1.1"
         },
         "minute": {
           "0-15": {
@@ -1980,27 +1980,27 @@
           },
           "16-30": {
             "total": 1,
-            "percentage": "11.11%"
+            "percentage": "9.09%"
           },
           "31-45": {
             "total": 3,
-            "percentage": "33.33%"
+            "percentage": "27.27%"
           },
           "46-60": {
             "total": 2,
-            "percentage": "22.22%"
+            "percentage": "18.18%"
           },
           "61-75": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": 2,
+            "percentage": "18.18%"
           },
           "76-90": {
-            "total": 1,
-            "percentage": "11.11%"
+            "total": 2,
+            "percentage": "18.18%"
           },
           "91-105": {
             "total": 1,
-            "percentage": "11.11%"
+            "percentage": "9.09%"
           },
           "106-120": {
             "total": null,
@@ -2009,24 +2009,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 5,
+            "over": 6,
             "under": 4
           },
           "1.5": {
-            "over": 3,
+            "over": 4,
             "under": 6
           },
           "2.5": {
             "over": 1,
-            "under": 8
+            "under": 9
           },
           "3.5": {
             "over": 0,
-            "under": 9
+            "under": 10
           },
           "4.5": {
             "over": 0,
-            "under": 9
+            "under": 10
           }
         }
       },
@@ -2037,9 +2037,9 @@
           "total": 15
         },
         "average": {
-          "home": "1.8",
+          "home": "1.4",
           "away": "1.6",
-          "total": "1.7"
+          "total": "1.5"
         },
         "minute": {
           "0-15": {
@@ -2078,23 +2078,23 @@
         "under_over": {
           "0.5": {
             "over": 7,
-            "under": 2
+            "under": 3
           },
           "1.5": {
             "over": 4,
-            "under": 5
+            "under": 6
           },
           "2.5": {
             "over": 2,
-            "under": 7
+            "under": 8
           },
           "3.5": {
             "over": 1,
-            "under": 8
+            "under": 9
           },
           "4.5": {
             "over": 1,
-            "under": 8
+            "under": 9
           }
         }
       }
@@ -2103,10 +2103,10 @@
       "streak": {
         "wins": 2,
         "draws": 1,
-        "loses": 1
+        "loses": 2
       },
       "wins": {
-        "home": "2-1",
+        "home": "2-0",
         "away": "0-1"
       },
       "loses": {
@@ -2125,9 +2125,9 @@
       }
     },
     "clean_sheet": {
-      "home": 1,
+      "home": 2,
       "away": 1,
-      "total": 2
+      "total": 3
     },
     "failed_to_score": {
       "home": 1,
@@ -2148,7 +2148,7 @@
     "lineups": [
       {
         "formation": "4-2-3-1",
-        "played": 7
+        "played": 8
       },
       {
         "formation": "4-3-1-2",
@@ -2226,5 +2226,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:46.318Z"
+  "lastUpdated": "2025-04-12T08:36:05.060Z"
 }

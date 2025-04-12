@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -226,67 +226,8 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1238123,
-          "date": "2025-04-11T17:00:00+00:00",
-          "venue": {
-            "id": 11925,
-            "name": "Samsun Yeni 19 Mayıs Stadyumu",
-            "city": "Samsun"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744390800
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3603,
-            "name": "Samsunspor",
-            "logo": "https://media.api-sports.io/football/teams/3603.png",
-            "winner": null
-          },
-          "away": {
-            "id": 645,
-            "name": "Galatasaray",
-            "logo": "https://media.api-sports.io/football/teams/645.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1238131,
-          "date": "2025-04-19T22:00:00+00:00",
+          "date": "2025-04-18T17:00:00+00:00",
           "venue": {
             "id": null,
             "name": "RAMS Park",
@@ -298,7 +239,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745100000
+          "timestamp": 1744995600
         },
         "league": {
           "id": 203,
@@ -404,7 +345,7 @@
       {
         "fixture": {
           "id": 1238142,
-          "date": "2025-04-26T22:00:00+00:00",
+          "date": "2025-04-27T16:00:00+00:00",
           "venue": {
             "id": 1585,
             "name": "Recep Tayyip Erdoğan Stadyumu",
@@ -416,7 +357,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745704800
+          "timestamp": 1745769600
         },
         "league": {
           "id": 203,
@@ -462,6 +403,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238123,
+          "date": "2025-04-11T17:00:00+00:00",
+          "venue": {
+            "id": 11925,
+            "name": "Samsun Yeni 19 Mayıs Stadyumu",
+            "city": "Samsun"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744390800
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3603,
+            "name": "Samsunspor",
+            "logo": "https://media.api-sports.io/football/teams/3603.png",
+            "winner": false
+          },
+          "away": {
+            "id": 645,
+            "name": "Galatasaray",
+            "logo": "https://media.api-sports.io/football/teams/645.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1359787,
@@ -586,8 +586,8 @@
           "date": "2025-03-14T17:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "RAMS Park",
-            "city": "İstanbul"
+            "name": "Rams Park Stadyumu",
+            "city": "Istanbul"
           },
           "status": {
             "long": "Match Finished",
@@ -822,8 +822,8 @@
           "date": "2025-02-24T17:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "RAMS Park",
-            "city": "İstanbul"
+            "name": "Rams Park Stadyumu",
+            "city": "Istanbul"
           },
           "status": {
             "long": "Match Finished",
@@ -881,8 +881,8 @@
           "date": "2025-02-20T17:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "RAMS Park",
-            "city": "İstanbul"
+            "name": "Rams Park Stadyumu",
+            "city": "Istanbul"
           },
           "status": {
             "long": "Match Finished",
@@ -982,65 +982,6 @@
           "fulltime": {
             "home": 1,
             "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1345763,
-          "date": "2025-02-13T20:00:00+00:00",
-          "venue": {
-            "id": 1119,
-            "name": "AFAS Stadion",
-            "city": "Alkmaar"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739476800
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 201,
-            "name": "AZ Alkmaar",
-            "logo": "https://media.api-sports.io/football/teams/201.png",
-            "winner": true
-          },
-          "away": {
-            "id": 645,
-            "name": "Galatasaray",
-            "logo": "https://media.api-sports.io/football/teams/645.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
           },
           "extratime": {
             "home": null,
@@ -1347,5 +1288,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:31.415Z"
+  "lastUpdated": "2025-04-12T08:29:58.453Z"
 }

@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1214006,
-          "date": "2025-04-11T18:45:00+00:00",
-          "venue": {
-            "id": 654,
-            "name": "Stade Bollaert-Delelis",
-            "city": "Lens"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744397100
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 116,
-            "name": "Lens",
-            "logo": "https://media.api-sports.io/football/teams/116.png",
-            "winner": null
-          },
-          "away": {
-            "id": 93,
-            "name": "Reims",
-            "logo": "https://media.api-sports.io/football/teams/93.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1214014,
@@ -391,11 +332,70 @@
     "past": [
       {
         "fixture": {
+          "id": 1214006,
+          "date": "2025-04-11T18:45:00+00:00",
+          "venue": {
+            "id": 654,
+            "name": "Stade Bollaert-Delelis",
+            "city": "Lens"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744397100
+        },
+        "league": {
+          "id": 61,
+          "name": "Ligue 1",
+          "logo": "https://media.api-sports.io/football/leagues/61.png"
+        },
+        "teams": {
+          "home": {
+            "id": 116,
+            "name": "Lens",
+            "logo": "https://media.api-sports.io/football/teams/116.png",
+            "winner": false
+          },
+          "away": {
+            "id": 93,
+            "name": "Reims",
+            "logo": "https://media.api-sports.io/football/teams/93.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1213997,
           "date": "2025-04-06T15:15:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stade Auguste-Delaune",
+            "name": "Stade Auguste Delaune",
             "city": "Reims"
           },
           "status": {
@@ -513,7 +513,7 @@
           "date": "2025-03-29T16:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stade Auguste-Delaune",
+            "name": "Stade Auguste Delaune",
             "city": "Reims"
           },
           "status": {
@@ -631,7 +631,7 @@
           "date": "2025-03-09T16:15:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stade Auguste-Delaune",
+            "name": "Stade Auguste Delaune",
             "city": "Reims"
           },
           "status": {
@@ -808,7 +808,7 @@
           "date": "2025-02-16T16:15:00+00:00",
           "venue": {
             "id": null,
-            "name": "Stade Auguste-Delaune",
+            "name": "Stade Auguste Delaune",
             "city": "Reims"
           },
           "status": {
@@ -909,65 +909,6 @@
           "fulltime": {
             "home": 4,
             "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1213922,
-          "date": "2025-02-02T16:15:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stade Auguste-Delaune",
-            "city": "Reims"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738512900
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 93,
-            "name": "Reims",
-            "logo": "https://media.api-sports.io/football/teams/93.png",
-            "winner": false
-          },
-          "away": {
-            "id": 83,
-            "name": "Nantes",
-            "logo": "https://media.api-sports.io/football/teams/83.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
           },
           "extratime": {
             "home": null,
@@ -1274,5 +1215,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:23.724Z"
+  "lastUpdated": "2025-04-12T08:29:50.740Z"
 }

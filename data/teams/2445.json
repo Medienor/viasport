@@ -183,65 +183,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1268807,
-          "date": "2025-04-11T12:00:00+00:00",
-          "venue": {
-            "id": 1818,
-            "name": "Stadion Segiri",
-            "city": "Samarinda"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744372800
-        },
-        "league": {
-          "id": 274,
-          "name": "Liga 1",
-          "logo": "https://media.api-sports.io/football/leagues/274.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2442,
-            "name": "Pusamania Borneo",
-            "logo": "https://media.api-sports.io/football/teams/2442.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2445,
-            "name": "Persib Bandung",
-            "logo": "https://media.api-sports.io/football/teams/2445.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1268816,
           "date": "2025-04-18T12:00:00+00:00",
           "venue": {
@@ -596,6 +537,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1268807,
+          "date": "2025-04-11T12:00:00+00:00",
+          "venue": {
+            "id": 1818,
+            "name": "Stadion Segiri",
+            "city": "Samarinda"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1744372800
+        },
+        "league": {
+          "id": 274,
+          "name": "Liga 1",
+          "logo": "https://media.api-sports.io/football/leagues/274.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2442,
+            "name": "Pusamania Borneo",
+            "logo": "https://media.api-sports.io/football/teams/2442.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2445,
+            "name": "Persib Bandung",
+            "logo": "https://media.api-sports.io/football/teams/2445.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1268795,
@@ -1126,65 +1126,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1268715,
-          "date": "2025-01-11T06:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadion Lukas Enembe",
-            "city": "Jayapura"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 11
-          },
-          "timestamp": 1736577000
-        },
-        "league": {
-          "id": 274,
-          "name": "Liga 1",
-          "logo": "https://media.api-sports.io/football/leagues/274.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4232,
-            "name": "PSBS Biak Numfor",
-            "logo": "https://media.api-sports.io/football/teams/4232.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2445,
-            "name": "Persib Bandung",
-            "logo": "https://media.api-sports.io/football/teams/2445.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1481,5 +1422,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:45:57.918Z"
+  "lastUpdated": "2025-04-12T08:35:19.350Z"
 }

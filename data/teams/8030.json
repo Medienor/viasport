@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -147,7 +147,7 @@
         {
           "year": 2025,
           "start": "2024-09-28",
-          "end": "2025-04-06",
+          "end": "2025-04-13",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -179,14 +179,74 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [],
+    "upcoming": [
+      {
+        "fixture": {
+          "id": 1370651,
+          "date": "2025-04-13T11:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Biñan Football Stadium",
+            "city": "Biñan"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1744542000
+        },
+        "league": {
+          "id": 765,
+          "name": "PFL",
+          "logo": "https://media.api-sports.io/football/leagues/765.png"
+        },
+        "teams": {
+          "home": {
+            "id": 8030,
+            "name": "Kaya",
+            "logo": "https://media.api-sports.io/football/teams/8030.png",
+            "winner": null
+          },
+          "away": {
+            "id": 16193,
+            "name": "Stallion",
+            "logo": "https://media.api-sports.io/football/teams/16193.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      }
+    ],
     "past": [
       {
         "fixture": {
           "id": 1310769,
           "date": "2025-04-05T07:30:00+00:00",
           "venue": {
-            "id": 1244,
+            "id": null,
             "name": "Iloilo Sports Complex",
             "city": "Iloilo City"
           },
@@ -1066,5 +1126,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:11.290Z"
+  "lastUpdated": "2025-04-12T08:35:32.339Z"
 }

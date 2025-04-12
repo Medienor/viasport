@@ -281,6 +281,43 @@
     },
     {
       "league": {
+        "id": 73,
+        "name": "Copa Do Brasil",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/73.png"
+      },
+      "country": {
+        "name": "Brazil",
+        "code": "BR",
+        "flag": "https://media.api-sports.io/flags/br.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-18",
+          "end": "2025-05-20",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 71,
         "name": "Serie A",
         "type": "League",
@@ -634,6 +671,65 @@
       },
       {
         "fixture": {
+          "id": 1370751,
+          "date": "2025-04-29T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estádio Olímpico Nilton Santos",
+            "city": "Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745964000
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 120,
+            "name": "Botafogo",
+            "logo": "https://media.api-sports.io/football/teams/120.png",
+            "winner": null
+          },
+          "away": {
+            "id": 12921,
+            "name": "Capital Brasilia",
+            "logo": "https://media.api-sports.io/football/teams/12921.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351110,
           "date": "2025-05-04T00:00:00+00:00",
           "venue": {
@@ -836,6 +932,65 @@
             "id": 127,
             "name": "Flamengo",
             "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          },
+          "away": {
+            "id": 120,
+            "name": "Botafogo",
+            "logo": "https://media.api-sports.io/football/teams/120.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1370752,
+          "date": "2025-05-20T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747778400
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 12921,
+            "name": "Capital Brasilia",
+            "logo": "https://media.api-sports.io/football/teams/12921.png",
             "winner": null
           },
           "away": {
@@ -2130,5 +2285,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:13.881Z"
+  "lastUpdated": "2025-04-12T08:35:34.825Z"
 }

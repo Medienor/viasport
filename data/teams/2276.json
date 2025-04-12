@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1366098,
-          "date": "2025-04-11T12:00:00+00:00",
-          "venue": {
-            "id": 20559,
-            "name": "Armaviri Hakob Tonoyani Stadium",
-            "city": "Armavir"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744372800
-        },
-        "league": {
-          "id": 342,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/342.png"
-        },
-        "teams": {
-          "home": {
-            "id": 582,
-            "name": "Alashkert",
-            "logo": "https://media.api-sports.io/football/teams/582.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2276,
-            "name": "FC Urartu",
-            "logo": "https://media.api-sports.io/football/teams/2276.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1368301,
@@ -425,6 +366,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366098,
+          "date": "2025-04-11T12:00:00+00:00",
+          "venue": {
+            "id": 20559,
+            "name": "Armaviri Hakob Tonoyani Stadium",
+            "city": "Armavir"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1744372800
+        },
+        "league": {
+          "id": 342,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/342.png"
+        },
+        "teams": {
+          "home": {
+            "id": 582,
+            "name": "Alashkert",
+            "logo": "https://media.api-sports.io/football/teams/582.png",
+            "winner": null
+          },
+          "away": {
+            "id": 2276,
+            "name": "FC Urartu",
+            "logo": "https://media.api-sports.io/football/teams/2276.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360685,
@@ -955,65 +955,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1339821,
-          "date": "2025-01-29T14:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1738159200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 6786,
-            "name": "Akron",
-            "logo": "https://media.api-sports.io/football/teams/6786.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2276,
-            "name": "FC Urartu",
-            "logo": "https://media.api-sports.io/football/teams/2276.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1310,5 +1251,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:43:01.801Z"
+  "lastUpdated": "2025-04-12T08:32:28.059Z"
 }

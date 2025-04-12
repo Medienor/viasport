@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362798,
-          "date": "2025-04-11T17:00:00+00:00",
-          "venue": {
-            "id": 440,
-            "name": "Aalborg Portland Park",
-            "city": "Aalborg"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744390800
-        },
-        "league": {
-          "id": 119,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/119.png"
-        },
-        "teams": {
-          "home": {
-            "id": 402,
-            "name": "Aalborg",
-            "logo": "https://media.api-sports.io/football/teams/402.png",
-            "winner": null
-          },
-          "away": {
-            "id": 625,
-            "name": "Lyngby",
-            "logo": "https://media.api-sports.io/football/teams/625.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1362801,
           "date": "2025-04-16T17:00:00+00:00",
           "venue": {
@@ -625,6 +566,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362798,
+          "date": "2025-04-11T17:00:00+00:00",
+          "venue": {
+            "id": 440,
+            "name": "Aalborg Portland Park",
+            "city": "Aalborg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744390800
+        },
+        "league": {
+          "id": 119,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/119.png"
+        },
+        "teams": {
+          "home": {
+            "id": 402,
+            "name": "Aalborg",
+            "logo": "https://media.api-sports.io/football/teams/402.png",
+            "winner": null
+          },
+          "away": {
+            "id": 625,
+            "name": "Lyngby",
+            "logo": "https://media.api-sports.io/football/teams/625.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1362797,
@@ -1044,8 +1044,8 @@
           "date": "2025-02-23T13:00:00+00:00",
           "venue": {
             "id": null,
-            "name": "Ceres Park Vejlby",
-            "city": "Risskov"
+            "name": "Vejlby Stadion",
+            "city": "Aarhus"
           },
           "status": {
             "long": "Match Finished",
@@ -1145,65 +1145,6 @@
           "fulltime": {
             "home": 4,
             "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1344848,
-          "date": "2025-01-31T14:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738332000
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 402,
-            "name": "Aalborg",
-            "logo": "https://media.api-sports.io/football/teams/402.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1595,
-            "name": "Seattle Sounders",
-            "logo": "https://media.api-sports.io/football/teams/1595.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 5
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 5
           },
           "extratime": {
             "home": null,
@@ -1510,5 +1451,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:41:51.836Z"
+  "lastUpdated": "2025-04-12T08:31:18.560Z"
 }

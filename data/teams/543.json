@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -446,6 +446,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361284,
+          "date": "2025-04-10T19:00:00+00:00",
+          "venue": {
+            "id": 1489,
+            "name": "Estadio Benito Villamarín",
+            "city": "Sevilla"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1744311600
+        },
+        "league": {
+          "id": 848,
+          "name": "UEFA Europa Conference League",
+          "logo": "https://media.api-sports.io/football/leagues/848.png"
+        },
+        "teams": {
+          "home": {
+            "id": 543,
+            "name": "Real Betis",
+            "logo": "https://media.api-sports.io/football/teams/543.png",
+            "winner": true
+          },
+          "away": {
+            "id": 336,
+            "name": "Jagiellonia",
+            "logo": "https://media.api-sports.io/football/teams/336.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208755,
@@ -976,65 +1035,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208703,
-          "date": "2025-02-16T20:00:00+00:00",
-          "venue": {
-            "id": 1489,
-            "name": "Estadio Benito Villamarín",
-            "city": "Sevilla"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739736000
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 543,
-            "name": "Real Betis",
-            "logo": "https://media.api-sports.io/football/teams/543.png",
-            "winner": true
-          },
-          "away": {
-            "id": 548,
-            "name": "Real Sociedad",
-            "logo": "https://media.api-sports.io/football/teams/548.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1331,5 +1331,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:39:54.845Z"
+  "lastUpdated": "2025-04-12T08:29:22.958Z"
 }

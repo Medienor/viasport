@@ -664,6 +664,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361286,
+          "date": "2025-04-10T19:00:00+00:00",
+          "venue": {
+            "id": 3332,
+            "name": "Stadion Z'dežele",
+            "city": "Celje"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744311600
+        },
+        "league": {
+          "id": 848,
+          "name": "UEFA Europa Conference League",
+          "logo": "https://media.api-sports.io/football/leagues/848.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4360,
+            "name": "Celje",
+            "logo": "https://media.api-sports.io/football/teams/4360.png",
+            "winner": false
+          },
+          "away": {
+            "id": 502,
+            "name": "Fiorentina",
+            "logo": "https://media.api-sports.io/football/teams/502.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1223900,
           "date": "2025-04-05T18:45:00+00:00",
           "venue": {
@@ -963,7 +1022,7 @@
           "date": "2025-03-06T17:45:00+00:00",
           "venue": {
             "id": null,
-            "name": "Olympiako Stadio Spyros Louis",
+            "name": "Spiros Louis Olympic Stadium",
             "city": "Athens"
           },
           "status": {
@@ -1182,65 +1241,6 @@
           "fulltime": {
             "home": 0,
             "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1223829,
-          "date": "2025-02-10T19:45:00+00:00",
-          "venue": {
-            "id": 907,
-            "name": "Stadio Giuseppe Meazza",
-            "city": "Milano"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739216700
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 505,
-            "name": "Inter",
-            "logo": "https://media.api-sports.io/football/teams/505.png",
-            "winner": true
-          },
-          "away": {
-            "id": 502,
-            "name": "Fiorentina",
-            "logo": "https://media.api-sports.io/football/teams/502.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
           },
           "extratime": {
             "home": null,
@@ -1547,5 +1547,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:05.829Z"
+  "lastUpdated": "2025-04-12T08:29:33.112Z"
 }

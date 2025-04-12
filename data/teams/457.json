@@ -186,65 +186,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334459,
-          "date": "2025-04-12T00:00:00+00:00",
-          "venue": {
-            "id": 93,
-            "name": "Estadio Marcelo Alberto Bielsa",
-            "city": "Rosario, Provincia de Santa Fe"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744416000
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 457,
-            "name": "Newells Old Boys",
-            "logo": "https://media.api-sports.io/football/teams/457.png",
-            "winner": null
-          },
-          "away": {
-            "id": 458,
-            "name": "Argentinos JRS",
-            "logo": "https://media.api-sports.io/football/teams/458.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334475,
           "date": "2025-04-19T00:30:00+00:00",
           "venue": {
@@ -422,6 +363,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334459,
+          "date": "2025-04-12T00:00:00+00:00",
+          "venue": {
+            "id": 93,
+            "name": "Estadio Marcelo Alberto Bielsa",
+            "city": "Rosario, Provincia de Santa Fe"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1744416000
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 457,
+            "name": "Newells Old Boys",
+            "logo": "https://media.api-sports.io/football/teams/457.png",
+            "winner": null
+          },
+          "away": {
+            "id": 458,
+            "name": "Argentinos JRS",
+            "logo": "https://media.api-sports.io/football/teams/458.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334446,
@@ -952,65 +952,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334312,
-          "date": "2025-02-02T22:15:00+00:00",
-          "venue": {
-            "id": 93,
-            "name": "Estadio Marcelo Alberto Bielsa",
-            "city": "Rosario, Provincia de Santa Fe"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738534500
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 457,
-            "name": "Newells Old Boys",
-            "logo": "https://media.api-sports.io/football/teams/457.png",
-            "winner": true
-          },
-          "away": {
-            "id": 463,
-            "name": "Aldosivi",
-            "logo": "https://media.api-sports.io/football/teams/463.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1307,5 +1248,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:41:44.199Z"
+  "lastUpdated": "2025-04-12T08:31:11.064Z"
 }

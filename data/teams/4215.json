@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 830,
-        "name": "Super Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/830.png"
-      },
-      "country": {
-        "name": "Uzbekistan",
-        "code": "UZ",
-        "flag": "https://media.api-sports.io/flags/uz.svg"
-      },
-      "seasons": [
-        {
-          "year": 2023,
-          "start": "2024-05-29",
-          "end": "2024-05-29",
-          "current": true,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": false,
-            "top_scorers": false,
-            "top_assists": false,
-            "top_cards": false,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 18,
         "name": "AFC Cup",
         "type": "Cup",
@@ -90,6 +53,43 @@
             "injuries": false,
             "predictions": true,
             "odds": true
+          }
+        }
+      ]
+    },
+    {
+      "league": {
+        "id": 830,
+        "name": "Super Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/830.png"
+      },
+      "country": {
+        "name": "Uzbekistan",
+        "code": "UZ",
+        "flag": "https://media.api-sports.io/flags/uz.svg"
+      },
+      "seasons": [
+        {
+          "year": 2024,
+          "start": "2025-05-26",
+          "end": "2025-05-26",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
           }
         }
       ]
@@ -188,8 +188,8 @@
           "current": true,
           "coverage": {
             "fixtures": {
-              "events": false,
-              "lineups": false,
+              "events": true,
+              "lineups": true,
               "statistics_fixtures": false,
               "statistics_players": false
             },
@@ -289,8 +289,8 @@
           "date": "2025-04-19T14:00:00+00:00",
           "venue": {
             "id": 21660,
-            "name": "Tukimachi Stadioni",
-            "city": "Bukhara"
+            "name": "Stadion Majmuasi",
+            "city": "Tashkent"
           },
           "status": {
             "long": "Not Started",
@@ -459,9 +459,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1370785,
+          "date": "2025-05-26T22:00:00+00:00",
+          "venue": {
+            "id": 1648,
+            "name": "Milliy Stadion",
+            "city": "Tashkent"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748296800
+        },
+        "league": {
+          "id": 830,
+          "name": "Super Cup",
+          "logo": "https://media.api-sports.io/football/leagues/830.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4215,
+            "name": "Nasaf",
+            "logo": "https://media.api-sports.io/football/teams/4215.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4209,
+            "name": "Andijan",
+            "logo": "https://media.api-sports.io/football/teams/4209.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1367660,
+          "date": "2025-04-09T13:00:00+00:00",
+          "venue": {
+            "id": 3215,
+            "name": "Markaziy Stadion",
+            "city": "Qarshi"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1744203600
+        },
+        "league": {
+          "id": 802,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/802.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4215,
+            "name": "Nasaf",
+            "logo": "https://media.api-sports.io/football/teams/4215.png",
+            "winner": true
+          },
+          "away": {
+            "id": 23393,
+            "name": "Navoiy Football Academy",
+            "logo": "https://media.api-sports.io/football/teams/23393.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1348891,
@@ -992,65 +1110,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1289412,
-          "date": "2024-12-04T16:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Al-Rashid Stadium",
-            "city": "Dubai"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1733328000
-        },
-        "league": {
-          "id": 18,
-          "name": "AFC Cup",
-          "logo": "https://media.api-sports.io/football/leagues/18.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2870,
-            "name": "Shabab Al Ahli Dubai",
-            "logo": "https://media.api-sports.io/football/teams/2870.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4215,
-            "name": "Nasaf",
-            "logo": "https://media.api-sports.io/football/teams/4215.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1347,5 +1406,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:05.621Z"
+  "lastUpdated": "2025-04-12T08:35:27.340Z"
 }

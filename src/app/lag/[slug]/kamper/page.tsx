@@ -5,6 +5,7 @@ import { getTeamData, extractTeamId } from '@/utils/api';
 import TabNav from '@/app/components/TabNav';
 import { format } from 'date-fns';
 import { nb } from 'date-fns/locale';
+import TeamHeaderNav from '@/app/components/TeamHeaderNav';
 
 export const dynamic = 'force-static';
 export const revalidate = 86400; // 24 hours
@@ -33,23 +34,11 @@ export default async function TeamFixturesPage({ params }: { params: { slug: str
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {/* Team Header */}
-      <div className="mb-8">
-        <div className="flex items-center gap-4 mb-6">
-          <div className="relative h-16 w-16">
-            <Image
-              src={teamData.team.team.logo}
-              alt={teamData.team.team.name}
-              fill
-              className="object-contain"
-            />
-          </div>
-          <h1 className="text-2xl font-bold">{teamData.team.team.name} - Kommende kamper</h1>
-        </div>
-        <TabNav 
-          tabs={tabs} 
-        />
-      </div>
+      <TeamHeaderNav
+        teamLogo={teamData.team.team.logo}
+        teamName={`${teamData.team.team.name} - Kommende kamper`}
+        tabs={tabs}
+      />
 
       {/* Fixtures List */}
       <div className="space-y-2">

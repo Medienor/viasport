@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -463,6 +463,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361282,
+          "date": "2025-04-10T19:00:00+00:00",
+          "venue": {
+            "id": 666,
+            "name": "Groupama Stadium",
+            "city": "Décines-Charpieu"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744311600
+        },
+        "league": {
+          "id": 3,
+          "name": "UEFA Europa League",
+          "logo": "https://media.api-sports.io/football/leagues/3.png"
+        },
+        "teams": {
+          "home": {
+            "id": 80,
+            "name": "Lyon",
+            "logo": "https://media.api-sports.io/football/teams/80.png",
+            "winner": null
+          },
+          "away": {
+            "id": 33,
+            "name": "Manchester United",
+            "logo": "https://media.api-sports.io/football/teams/33.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213994,
@@ -993,65 +1052,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213933,
-          "date": "2025-02-09T14:00:00+00:00",
-          "venue": {
-            "id": 666,
-            "name": "Groupama Stadium",
-            "city": "Décines-Charpieu"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739109600
-        },
-        "league": {
-          "id": 61,
-          "name": "Ligue 1",
-          "logo": "https://media.api-sports.io/football/leagues/61.png"
-        },
-        "teams": {
-          "home": {
-            "id": 80,
-            "name": "Lyon",
-            "logo": "https://media.api-sports.io/football/teams/80.png",
-            "winner": true
-          },
-          "away": {
-            "id": 93,
-            "name": "Reims",
-            "logo": "https://media.api-sports.io/football/teams/93.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1348,5 +1348,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:21.102Z"
+  "lastUpdated": "2025-04-12T08:29:48.303Z"
 }

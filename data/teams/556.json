@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1261117,
-          "date": "2025-04-11T15:00:00+00:00",
-          "venue": {
-            "id": 12459,
-            "name": "ASCO Arena",
-            "city": "Baku"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744383600
-        },
-        "league": {
-          "id": 419,
-          "name": "Premyer Liqa",
-          "logo": "https://media.api-sports.io/football/leagues/419.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4199,
-            "name": "Səbail",
-            "logo": "https://media.api-sports.io/football/teams/4199.png",
-            "winner": null
-          },
-          "away": {
-            "id": 556,
-            "name": "Qarabag",
-            "logo": "https://media.api-sports.io/football/teams/556.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1261122,
@@ -484,6 +425,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1261117,
+          "date": "2025-04-11T15:00:00+00:00",
+          "venue": {
+            "id": 12459,
+            "name": "ASCO Arena",
+            "city": "Baku"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1744383600
+        },
+        "league": {
+          "id": 419,
+          "name": "Premyer Liqa",
+          "logo": "https://media.api-sports.io/football/leagues/419.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4199,
+            "name": "Səbail",
+            "logo": "https://media.api-sports.io/football/teams/4199.png",
+            "winner": false
+          },
+          "away": {
+            "id": 556,
+            "name": "Qarabag",
+            "logo": "https://media.api-sports.io/football/teams/556.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1261112,
@@ -1014,65 +1014,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1261077,
-          "date": "2025-02-11T15:00:00+00:00",
-          "venue": {
-            "id": 5799,
-            "name": "Tofiq Bəhramov adına Respublika stadionu",
-            "city": "Baku"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739286000
-        },
-        "league": {
-          "id": 419,
-          "name": "Premyer Liqa",
-          "logo": "https://media.api-sports.io/football/leagues/419.png"
-        },
-        "teams": {
-          "home": {
-            "id": 556,
-            "name": "Qarabag",
-            "logo": "https://media.api-sports.io/football/teams/556.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4199,
-            "name": "Səbail",
-            "logo": "https://media.api-sports.io/football/teams/4199.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 5,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 5,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1369,5 +1310,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:41:57.136Z"
+  "lastUpdated": "2025-04-12T08:31:23.568Z"
 }

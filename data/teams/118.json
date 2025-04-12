@@ -133,6 +133,43 @@
     },
     {
       "league": {
+        "id": 73,
+        "name": "Copa Do Brasil",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/73.png"
+      },
+      "country": {
+        "name": "Brazil",
+        "code": "BR",
+        "flag": "https://media.api-sports.io/flags/br.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-18",
+          "end": "2025-05-20",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 71,
         "name": "Serie A",
         "type": "League",
@@ -485,6 +522,65 @@
       },
       {
         "fixture": {
+          "id": 1370757,
+          "date": "2025-04-29T22:00:00+00:00",
+          "venue": {
+            "id": 260,
+            "name": "Estádio Leônidas Sodré de Castro",
+            "city": "Belém, Pará"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745964000
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 149,
+            "name": "Paysandu",
+            "logo": "https://media.api-sports.io/football/teams/149.png",
+            "winner": null
+          },
+          "away": {
+            "id": 118,
+            "name": "Bahia",
+            "logo": "https://media.api-sports.io/football/teams/118.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351110,
           "date": "2025-05-04T00:00:00+00:00",
           "venue": {
@@ -752,6 +848,65 @@
             "id": 136,
             "name": "Vitoria",
             "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1370758,
+          "date": "2025-05-20T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Casa de Apostas Arena Fonte Nova",
+            "city": "Salvador, Bahia"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747778400
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 118,
+            "name": "Bahia",
+            "logo": "https://media.api-sports.io/football/teams/118.png",
+            "winner": null
+          },
+          "away": {
+            "id": 149,
+            "name": "Paysandu",
+            "logo": "https://media.api-sports.io/football/teams/149.png",
             "winner": null
           }
         },
@@ -1901,5 +2056,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:13.767Z"
+  "lastUpdated": "2025-04-12T08:35:34.835Z"
 }

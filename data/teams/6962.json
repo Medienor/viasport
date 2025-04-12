@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -143,65 +143,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1203196,
-          "date": "2025-04-11T18:30:00+00:00",
-          "venue": {
-            "id": 21189,
-            "name": "Stadion Miejski",
-            "city": "Kielce"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744396200
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 346,
-            "name": "Korona Kielce",
-            "logo": "https://media.api-sports.io/football/teams/346.png",
-            "winner": null
-          },
-          "away": {
-            "id": 6962,
-            "name": "Widzew Łódź",
-            "logo": "https://media.api-sports.io/football/teams/6962.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1203209,
@@ -288,6 +229,65 @@
             "id": 340,
             "name": "Gornik Zabrze",
             "logo": "https://media.api-sports.io/football/teams/340.png",
+            "winner": null
+          },
+          "away": {
+            "id": 6962,
+            "name": "Widzew Łódź",
+            "logo": "https://media.api-sports.io/football/teams/6962.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203231,
+          "date": "2025-05-10T15:30:00+00:00",
+          "venue": {
+            "id": 1260,
+            "name": "Stadion Zagłębia Lubin",
+            "city": "Lubin"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746891000
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 345,
+            "name": "Zaglebie Lubin",
+            "logo": "https://media.api-sports.io/football/teams/345.png",
             "winner": null
           },
           "away": {
@@ -440,6 +440,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1203196,
+          "date": "2025-04-11T18:30:00+00:00",
+          "venue": {
+            "id": 21189,
+            "name": "Stadion Miejski",
+            "city": "Kielce"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1744396200
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 346,
+            "name": "Korona Kielce",
+            "logo": "https://media.api-sports.io/football/teams/346.png",
+            "winner": true
+          },
+          "away": {
+            "id": 6962,
+            "name": "Widzew Łódź",
+            "logo": "https://media.api-sports.io/football/teams/6962.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1203191,
@@ -970,65 +1029,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1203116,
-          "date": "2025-01-31T19:30:00+00:00",
-          "venue": {
-            "id": 20110,
-            "name": "Enea Stadion",
-            "city": "Poznań"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1738351800
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 347,
-            "name": "Lech Poznan",
-            "logo": "https://media.api-sports.io/football/teams/347.png",
-            "winner": true
-          },
-          "away": {
-            "id": 6962,
-            "name": "Widzew Łódź",
-            "logo": "https://media.api-sports.io/football/teams/6962.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1325,5 +1325,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:57.212Z"
+  "lastUpdated": "2025-04-12T08:30:25.418Z"
 }

@@ -184,65 +184,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1367861,
-          "date": "2025-04-11T19:00:00+00:00",
-          "venue": {
-            "id": 760,
-            "name": "Victoria Stadium",
-            "city": "Gibraltar"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744398000
-        },
-        "league": {
-          "id": 758,
-          "name": "Premier Division",
-          "logo": "https://media.api-sports.io/football/leagues/758.png"
-        },
-        "teams": {
-          "home": {
-            "id": 16135,
-            "name": "Magpies",
-            "logo": "https://media.api-sports.io/football/teams/16135.png",
-            "winner": null
-          },
-          "away": {
-            "id": 698,
-            "name": "St Joseph S Fc",
-            "logo": "https://media.api-sports.io/football/teams/698.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1367864,
           "date": "2025-04-19T14:30:00+00:00",
           "venue": {
@@ -420,6 +361,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1367861,
+          "date": "2025-04-11T19:00:00+00:00",
+          "venue": {
+            "id": 760,
+            "name": "Victoria Stadium",
+            "city": "Gibraltar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744398000
+        },
+        "league": {
+          "id": 758,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/758.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16135,
+            "name": "Magpies",
+            "logo": "https://media.api-sports.io/football/teams/16135.png",
+            "winner": false
+          },
+          "away": {
+            "id": 698,
+            "name": "St Joseph S Fc",
+            "logo": "https://media.api-sports.io/football/teams/698.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1367858,
@@ -950,65 +950,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1287784,
-          "date": "2024-12-07T18:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Europa Point Stadium",
-            "city": "Gibraltar"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1733596200
-        },
-        "league": {
-          "id": 758,
-          "name": "Premier Division",
-          "logo": "https://media.api-sports.io/football/leagues/758.png"
-        },
-        "teams": {
-          "home": {
-            "id": 16132,
-            "name": "Glacis United",
-            "logo": "https://media.api-sports.io/football/teams/16132.png",
-            "winner": false
-          },
-          "away": {
-            "id": 698,
-            "name": "St Joseph S Fc",
-            "logo": "https://media.api-sports.io/football/teams/698.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1305,5 +1246,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:42:51.673Z"
+  "lastUpdated": "2025-04-12T08:32:17.824Z"
 }

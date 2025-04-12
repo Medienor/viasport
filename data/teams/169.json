@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -606,6 +606,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361278,
+          "date": "2025-04-10T19:00:00+00:00",
+          "venue": {
+            "id": 593,
+            "name": "Tottenham Hotspur Stadium",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744311600
+        },
+        "league": {
+          "id": 3,
+          "name": "UEFA Europa League",
+          "logo": "https://media.api-sports.io/football/leagues/3.png"
+        },
+        "teams": {
+          "home": {
+            "id": 47,
+            "name": "Tottenham",
+            "logo": "https://media.api-sports.io/football/teams/47.png",
+            "winner": null
+          },
+          "away": {
+            "id": 169,
+            "name": "Eintracht Frankfurt",
+            "logo": "https://media.api-sports.io/football/teams/169.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1224220,
           "date": "2025-04-05T16:30:00+00:00",
           "venue": {
@@ -1134,65 +1193,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224166,
-          "date": "2025-02-16T16:30:00+00:00",
-          "venue": {
-            "id": 10491,
-            "name": "Deutsche Bank Park",
-            "city": "Frankfurt am Main"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739723400
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 169,
-            "name": "Eintracht Frankfurt",
-            "logo": "https://media.api-sports.io/football/teams/169.png",
-            "winner": true
-          },
-          "away": {
-            "id": 191,
-            "name": "Holstein Kiel",
-            "logo": "https://media.api-sports.io/football/teams/191.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1489,5 +1489,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:15.974Z"
+  "lastUpdated": "2025-04-12T08:29:43.272Z"
 }

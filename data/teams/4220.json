@@ -22,43 +22,6 @@
   "leagues": [
     {
       "league": {
-        "id": 830,
-        "name": "Super Cup",
-        "type": "Cup",
-        "logo": "https://media.api-sports.io/football/leagues/830.png"
-      },
-      "country": {
-        "name": "Uzbekistan",
-        "code": "UZ",
-        "flag": "https://media.api-sports.io/flags/uz.svg"
-      },
-      "seasons": [
-        {
-          "year": 2023,
-          "start": "2024-05-29",
-          "end": "2024-05-29",
-          "current": true,
-          "coverage": {
-            "fixtures": {
-              "events": true,
-              "lineups": true,
-              "statistics_fixtures": false,
-              "statistics_players": false
-            },
-            "standings": false,
-            "players": false,
-            "top_scorers": false,
-            "top_assists": false,
-            "top_cards": false,
-            "injuries": false,
-            "predictions": true,
-            "odds": false
-          }
-        }
-      ]
-    },
-    {
-      "league": {
         "id": 17,
         "name": "AFC Champions League",
         "type": "Cup",
@@ -462,6 +425,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1356381,
+          "date": "2025-04-09T14:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Majmuasi",
+            "city": "Tashkent"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1744209000
+        },
+        "league": {
+          "id": 802,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/802.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4220,
+            "name": "Pakhtakor",
+            "logo": "https://media.api-sports.io/football/teams/4220.png",
+            "winner": true
+          },
+          "away": {
+            "id": 4219,
+            "name": "Olmaliq",
+            "logo": "https://media.api-sports.io/football/teams/4219.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1348898,
@@ -992,65 +1014,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1336777,
-          "date": "2025-01-15T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Titanic Sports Center - Field 2",
-            "city": "Belek"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1736899200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4220,
-            "name": "Pakhtakor",
-            "logo": "https://media.api-sports.io/football/teams/4220.png",
-            "winner": false
-          },
-          "away": {
-            "id": 3716,
-            "name": "Karviná",
-            "logo": "https://media.api-sports.io/football/teams/3716.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1347,5 +1310,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:45:55.284Z"
+  "lastUpdated": "2025-04-12T08:35:16.857Z"
 }

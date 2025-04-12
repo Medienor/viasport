@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -175,7 +175,7 @@
       {
         "fixture": {
           "id": 1238129,
-          "date": "2025-04-19T22:00:00+00:00",
+          "date": "2025-04-20T13:00:00+00:00",
           "venue": {
             "id": 1580,
             "name": "Çaykur Didi Stadyumu",
@@ -187,7 +187,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745100000
+          "timestamp": 1745154000
         },
         "league": {
           "id": 203,
@@ -234,7 +234,7 @@
       {
         "fixture": {
           "id": 1238142,
-          "date": "2025-04-26T22:00:00+00:00",
+          "date": "2025-04-27T16:00:00+00:00",
           "venue": {
             "id": 1585,
             "name": "Recep Tayyip Erdoğan Stadyumu",
@@ -246,7 +246,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745704800
+          "timestamp": 1745769600
         },
         "league": {
           "id": 203,
@@ -264,6 +264,65 @@
             "id": 645,
             "name": "Galatasaray",
             "logo": "https://media.api-sports.io/football/teams/645.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238148,
+          "date": "2025-05-04T13:00:00+00:00",
+          "venue": {
+            "id": 11925,
+            "name": "Samsun Yeni 19 Mayıs Stadyumu",
+            "city": "Samsun"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746363600
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3603,
+            "name": "Samsunspor",
+            "logo": "https://media.api-sports.io/football/teams/3603.png",
+            "winner": null
+          },
+          "away": {
+            "id": 3588,
+            "name": "Eyüpspor",
+            "logo": "https://media.api-sports.io/football/teams/3588.png",
             "winner": null
           }
         },
@@ -1177,5 +1236,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:39.022Z"
+  "lastUpdated": "2025-04-12T08:30:07.303Z"
 }

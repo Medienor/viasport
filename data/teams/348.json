@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -354,6 +354,65 @@
             "id": 339,
             "name": "Legia Warszawa",
             "logo": "https://media.api-sports.io/football/teams/339.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1203236,
+          "date": "2025-05-10T12:45:00+00:00",
+          "venue": {
+            "id": 20753,
+            "name": "Stadion Radomiaka",
+            "city": "Radom"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746881100
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4248,
+            "name": "Radomiak Radom",
+            "logo": "https://media.api-sports.io/football/teams/4248.png",
+            "winner": null
+          },
+          "away": {
+            "id": 348,
+            "name": "Pogon Szczecin",
+            "logo": "https://media.api-sports.io/football/teams/348.png",
             "winner": null
           }
         },
@@ -1385,5 +1444,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:51.927Z"
+  "lastUpdated": "2025-04-12T08:30:20.008Z"
 }

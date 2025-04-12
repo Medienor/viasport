@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -175,7 +175,7 @@
       {
         "fixture": {
           "id": 1238137,
-          "date": "2025-04-26T22:00:00+00:00",
+          "date": "2025-04-26T13:00:00+00:00",
           "venue": {
             "id": 20425,
             "name": "BG Group 4 Eylül Stadyumu",
@@ -187,7 +187,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745704800
+          "timestamp": 1745672400
         },
         "league": {
           "id": 203,
@@ -205,6 +205,65 @@
             "id": 1005,
             "name": "Antalyaspor",
             "logo": "https://media.api-sports.io/football/teams/1005.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238150,
+          "date": "2025-05-02T17:00:00+00:00",
+          "venue": {
+            "id": 19220,
+            "name": "Corendon Airlines Park",
+            "city": "Antalya"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746205200
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1005,
+            "name": "Antalyaspor",
+            "logo": "https://media.api-sports.io/football/teams/1005.png",
+            "winner": null
+          },
+          "away": {
+            "id": 607,
+            "name": "Konyaspor",
+            "logo": "https://media.api-sports.io/football/teams/607.png",
             "winner": null
           }
         },
@@ -357,8 +416,8 @@
           "date": "2025-03-14T17:30:00+00:00",
           "venue": {
             "id": null,
-            "name": "RAMS Park",
-            "city": "İstanbul"
+            "name": "Rams Park Stadyumu",
+            "city": "Istanbul"
           },
           "status": {
             "long": "Match Finished",
@@ -1118,5 +1177,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:33.969Z"
+  "lastUpdated": "2025-04-12T08:30:00.956Z"
 }

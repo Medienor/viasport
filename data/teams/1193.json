@@ -73,7 +73,7 @@
         {
           "year": 2025,
           "start": "2025-02-18",
-          "end": "2025-03-14",
+          "end": "2025-05-20",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1353272,
-          "date": "2025-04-11T00:30:00+00:00",
-          "venue": {
-            "id": 235,
-            "name": "Arena Pantanal",
-            "city": "Cuiabá, Mato Grosso"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744331400
-        },
-        "league": {
-          "id": 72,
-          "name": "Serie B",
-          "logo": "https://media.api-sports.io/football/leagues/72.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": null
-          },
-          "away": {
-            "id": 145,
-            "name": "Avai",
-            "logo": "https://media.api-sports.io/football/teams/145.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1353282,
           "date": "2025-04-15T22:00:00+00:00",
           "venue": {
@@ -271,7 +212,7 @@
       {
         "fixture": {
           "id": 1353292,
-          "date": "2025-04-19T22:00:00+00:00",
+          "date": "2025-04-19T20:00:00+00:00",
           "venue": {
             "id": 211,
             "name": "Estádio Antônio Accioly",
@@ -283,7 +224,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745100000
+          "timestamp": 1745092800
         },
         "league": {
           "id": 72,
@@ -388,6 +329,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1353272,
+          "date": "2025-04-11T00:30:00+00:00",
+          "venue": {
+            "id": 235,
+            "name": "Arena Pantanal",
+            "city": "Cuiabá, Mato Grosso"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744331400
+        },
+        "league": {
+          "id": 72,
+          "name": "Serie B",
+          "logo": "https://media.api-sports.io/football/leagues/72.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1193,
+            "name": "Cuiaba",
+            "logo": "https://media.api-sports.io/football/teams/1193.png",
+            "winner": null
+          },
+          "away": {
+            "id": 145,
+            "name": "Avai",
+            "logo": "https://media.api-sports.io/football/teams/145.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1353269,
@@ -918,65 +918,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323165,
-          "date": "2025-01-26T20:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estádio Municipal Antônio Santo Renosto",
-            "city": "Primavera do Leste, Mato Grosso"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1737921600
-        },
-        "league": {
-          "id": 630,
-          "name": "Matogrossense",
-          "logo": "https://media.api-sports.io/football/leagues/630.png"
-        },
-        "teams": {
-          "home": {
-            "id": 22825,
-            "name": "Primavera MG",
-            "logo": "https://media.api-sports.io/football/teams/22825.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1193,
-            "name": "Cuiaba",
-            "logo": "https://media.api-sports.io/football/teams/1193.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1273,5 +1214,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:21.917Z"
+  "lastUpdated": "2025-04-12T08:35:42.369Z"
 }

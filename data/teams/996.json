@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -115,7 +115,7 @@
       {
         "fixture": {
           "id": 1238134,
-          "date": "2025-04-19T22:00:00+00:00",
+          "date": "2025-04-21T17:00:00+00:00",
           "venue": {
             "id": 19219,
             "name": "GAIN Park Stadium",
@@ -127,7 +127,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745100000
+          "timestamp": 1745254800
         },
         "league": {
           "id": 203,
@@ -174,7 +174,7 @@
       {
         "fixture": {
           "id": 1238141,
-          "date": "2025-04-26T22:00:00+00:00",
+          "date": "2025-04-27T13:00:00+00:00",
           "venue": {
             "id": 20189,
             "name": "Papara Park",
@@ -186,7 +186,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745704800
+          "timestamp": 1745758800
         },
         "league": {
           "id": 203,
@@ -204,6 +204,65 @@
             "id": 996,
             "name": "Alanyaspor",
             "logo": "https://media.api-sports.io/football/teams/996.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1238152,
+          "date": "2025-05-03T13:00:00+00:00",
+          "venue": {
+            "id": 19219,
+            "name": "GAIN Park Stadium",
+            "city": "Antalya"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746277200
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 996,
+            "name": "Alanyaspor",
+            "logo": "https://media.api-sports.io/football/teams/996.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1001,
+            "name": "Kayserispor",
+            "logo": "https://media.api-sports.io/football/teams/1001.png",
             "winner": null
           }
         },
@@ -1117,5 +1176,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:31.391Z"
+  "lastUpdated": "2025-04-12T08:29:58.465Z"
 }

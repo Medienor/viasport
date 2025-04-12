@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -144,65 +144,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1203196,
-          "date": "2025-04-11T18:30:00+00:00",
-          "venue": {
-            "id": 21189,
-            "name": "Stadion Miejski",
-            "city": "Kielce"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744396200
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 346,
-            "name": "Korona Kielce",
-            "logo": "https://media.api-sports.io/football/teams/346.png",
-            "winner": null
-          },
-          "away": {
-            "id": 6962,
-            "name": "Widzew Łódź",
-            "logo": "https://media.api-sports.io/football/teams/6962.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1203205,
@@ -382,6 +323,65 @@
       },
       {
         "fixture": {
+          "id": 1203232,
+          "date": "2025-05-11T10:15:00+00:00",
+          "venue": {
+            "id": 18627,
+            "name": "Polsat Plus Arena Gdańsk",
+            "city": "Gdańsk"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1746958500
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 343,
+            "name": "Lechia Gdansk",
+            "logo": "https://media.api-sports.io/football/teams/343.png",
+            "winner": null
+          },
+          "away": {
+            "id": 346,
+            "name": "Korona Kielce",
+            "logo": "https://media.api-sports.io/football/teams/346.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1203247,
           "date": "2025-05-24T15:30:00+00:00",
           "venue": {
@@ -441,6 +441,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1203196,
+          "date": "2025-04-11T18:30:00+00:00",
+          "venue": {
+            "id": 21189,
+            "name": "Stadion Miejski",
+            "city": "Kielce"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1744396200
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 346,
+            "name": "Korona Kielce",
+            "logo": "https://media.api-sports.io/football/teams/346.png",
+            "winner": true
+          },
+          "away": {
+            "id": 6962,
+            "name": "Widzew Łódź",
+            "logo": "https://media.api-sports.io/football/teams/6962.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1203186,
@@ -971,65 +1030,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1203117,
-          "date": "2025-02-02T16:30:00+00:00",
-          "venue": {
-            "id": 1253,
-            "name": "Stadion Miejski Legii Warszawa im. Marszałka Józefa Piłsudskiego",
-            "city": "Warszawa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738513800
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 339,
-            "name": "Legia Warszawa",
-            "logo": "https://media.api-sports.io/football/teams/339.png",
-            "winner": null
-          },
-          "away": {
-            "id": 346,
-            "name": "Korona Kielce",
-            "logo": "https://media.api-sports.io/football/teams/346.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1326,5 +1326,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:51.837Z"
+  "lastUpdated": "2025-04-12T08:30:20.079Z"
 }

@@ -207,6 +207,43 @@
     },
     {
       "league": {
+        "id": 73,
+        "name": "Copa Do Brasil",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/73.png"
+      },
+      "country": {
+        "name": "Brazil",
+        "code": "BR",
+        "flag": "https://media.api-sports.io/flags/br.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-18",
+          "end": "2025-05-20",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 71,
         "name": "Serie A",
         "type": "League",
@@ -560,6 +597,65 @@
       },
       {
         "fixture": {
+          "id": 1370769,
+          "date": "2025-04-29T22:00:00+00:00",
+          "venue": {
+            "id": 8247,
+            "name": "Estádio José Américo de Almeida Filho",
+            "city": "João Pessoa, Paraíba"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745964000
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1197,
+            "name": "Botafogo PB",
+            "logo": "https://media.api-sports.io/football/teams/1197.png",
+            "winner": null
+          },
+          "away": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351108,
           "date": "2025-05-04T21:30:00+00:00",
           "venue": {
@@ -827,6 +923,65 @@
             "id": 120,
             "name": "Botafogo",
             "logo": "https://media.api-sports.io/football/teams/120.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1370770,
+          "date": "2025-05-20T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747778400
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 127,
+            "name": "Flamengo",
+            "logo": "https://media.api-sports.io/football/teams/127.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1197,
+            "name": "Botafogo PB",
+            "logo": "https://media.api-sports.io/football/teams/1197.png",
             "winner": null
           }
         },
@@ -1216,7 +1371,7 @@
           "venue": {
             "id": null,
             "name": "Estadio Jornalista Mário Filho",
-            "city": "Rio de Janeiro"
+            "city": "Rio de Janeiro, Rio de Janeiro"
           },
           "status": {
             "long": "Match Finished",
@@ -2099,5 +2254,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:16.756Z"
+  "lastUpdated": "2025-04-12T08:35:37.428Z"
 }

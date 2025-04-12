@@ -181,65 +181,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1367861,
-          "date": "2025-04-11T19:00:00+00:00",
-          "venue": {
-            "id": 760,
-            "name": "Victoria Stadium",
-            "city": "Gibraltar"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744398000
-        },
-        "league": {
-          "id": 758,
-          "name": "Premier Division",
-          "logo": "https://media.api-sports.io/football/leagues/758.png"
-        },
-        "teams": {
-          "home": {
-            "id": 16135,
-            "name": "Magpies",
-            "logo": "https://media.api-sports.io/football/teams/16135.png",
-            "winner": null
-          },
-          "away": {
-            "id": 698,
-            "name": "St Joseph S Fc",
-            "logo": "https://media.api-sports.io/football/teams/698.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1367865,
           "date": "2025-04-19T17:30:00+00:00",
           "venue": {
@@ -417,6 +358,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1367861,
+          "date": "2025-04-11T19:00:00+00:00",
+          "venue": {
+            "id": 760,
+            "name": "Victoria Stadium",
+            "city": "Gibraltar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744398000
+        },
+        "league": {
+          "id": 758,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/758.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16135,
+            "name": "Magpies",
+            "logo": "https://media.api-sports.io/football/teams/16135.png",
+            "winner": false
+          },
+          "away": {
+            "id": 698,
+            "name": "St Joseph S Fc",
+            "logo": "https://media.api-sports.io/football/teams/698.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1367859,
@@ -947,65 +947,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334895,
-          "date": "2025-02-02T18:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Europa Point Stadium",
-            "city": "Gibraltar"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 11
-          },
-          "timestamp": 1738521000
-        },
-        "league": {
-          "id": 837,
-          "name": "Rock Cup",
-          "logo": "https://media.api-sports.io/football/leagues/837.png"
-        },
-        "teams": {
-          "home": {
-            "id": 16131,
-            "name": "Europa Point",
-            "logo": "https://media.api-sports.io/football/teams/16131.png",
-            "winner": false
-          },
-          "away": {
-            "id": 16135,
-            "name": "Magpies",
-            "logo": "https://media.api-sports.io/football/teams/16135.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1302,5 +1243,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:43:20.156Z"
+  "lastUpdated": "2025-04-12T08:32:45.808Z"
 }

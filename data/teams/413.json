@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213696,
-          "date": "2025-04-11T18:00:00+00:00",
-          "venue": {
-            "id": 1140,
-            "name": "Goffertstadion",
-            "city": "Nijmegen"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744394400
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 413,
-            "name": "NEC Nijmegen",
-            "logo": "https://media.api-sports.io/football/teams/413.png",
-            "winner": null
-          },
-          "away": {
-            "id": 417,
-            "name": "Waalwijk",
-            "logo": "https://media.api-sports.io/football/teams/417.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213710,
           "date": "2025-04-27T12:30:00+00:00",
           "venue": {
@@ -507,6 +448,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213696,
+          "date": "2025-04-11T18:00:00+00:00",
+          "venue": {
+            "id": 1140,
+            "name": "Goffertstadion",
+            "city": "Nijmegen"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1744394400
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 413,
+            "name": "NEC Nijmegen",
+            "logo": "https://media.api-sports.io/football/teams/413.png",
+            "winner": true
+          },
+          "away": {
+            "id": 417,
+            "name": "Waalwijk",
+            "logo": "https://media.api-sports.io/football/teams/417.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213692,
@@ -1037,65 +1037,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213606,
-          "date": "2025-01-19T15:45:00+00:00",
-          "venue": {
-            "id": 1140,
-            "name": "Goffertstadion",
-            "city": "Nijmegen"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1737301500
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 413,
-            "name": "NEC Nijmegen",
-            "logo": "https://media.api-sports.io/football/teams/413.png",
-            "winner": true
-          },
-          "away": {
-            "id": 205,
-            "name": "Fortuna Sittard",
-            "logo": "https://media.api-sports.io/football/teams/205.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1392,5 +1333,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:41:05.133Z"
+  "lastUpdated": "2025-04-12T08:30:32.907Z"
 }

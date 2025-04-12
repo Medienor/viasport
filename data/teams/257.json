@@ -241,6 +241,43 @@
           }
         }
       ]
+    },
+    {
+      "league": {
+        "id": 1127,
+        "name": "Chatham Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/1127.png"
+      },
+      "country": {
+        "name": "New-Zealand",
+        "code": "NZ",
+        "flag": "https://media.api-sports.io/flags/nz.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-04-24",
+          "end": "2025-04-24",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": false,
+              "lineups": false,
+              "statistics_fixtures": false,
+              "statistics_players": false
+            },
+            "standings": false,
+            "players": false,
+            "top_scorers": false,
+            "top_assists": false,
+            "top_cards": false,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
     }
   ],
   "seasons": [
@@ -378,9 +415,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1371229,
+          "date": "2025-04-24T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745532000
+        },
+        "league": {
+          "id": 1127,
+          "name": "Chatham Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1127.png"
+        },
+        "teams": {
+          "home": {
+            "id": 24266,
+            "name": "Motueka",
+            "logo": "https://media.api-sports.io/football/teams/24266.png",
+            "winner": null
+          },
+          "away": {
+            "id": 257,
+            "name": "Rangers",
+            "logo": "https://media.api-sports.io/football/teams/257.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361280,
+          "date": "2025-04-10T19:00:00+00:00",
+          "venue": {
+            "id": 1401,
+            "name": "Ibrox Stadium",
+            "city": "Glasgow"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 13
+          },
+          "timestamp": 1744311600
+        },
+        "league": {
+          "id": 3,
+          "name": "UEFA Europa League",
+          "logo": "https://media.api-sports.io/football/leagues/3.png"
+        },
+        "teams": {
+          "home": {
+            "id": 257,
+            "name": "Rangers",
+            "logo": "https://media.api-sports.io/football/teams/257.png",
+            "winner": null
+          },
+          "away": {
+            "id": 531,
+            "name": "Athletic Club",
+            "logo": "https://media.api-sports.io/football/teams/531.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220299,
@@ -911,65 +1066,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220258,
-          "date": "2025-02-02T15:00:00+00:00",
-          "venue": {
-            "id": 1401,
-            "name": "Ibrox Stadium",
-            "city": "Glasgow"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738508400
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 257,
-            "name": "Rangers",
-            "logo": "https://media.api-sports.io/football/teams/257.png",
-            "winner": true
-          },
-          "away": {
-            "id": 902,
-            "name": "Ross County",
-            "logo": "https://media.api-sports.io/football/teams/902.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1266,5 +1362,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:41:33.929Z"
+  "lastUpdated": "2025-04-12T08:31:00.827Z"
 }

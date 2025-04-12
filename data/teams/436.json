@@ -300,65 +300,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361881,
-          "date": "2025-04-10T22:00:00+00:00",
-          "venue": {
-            "id": 99,
-            "name": "Estadio Presidente Juan Domingo Perón",
-            "city": "Avellaneda, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744322400
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 436,
-            "name": "Racing Club",
-            "logo": "https://media.api-sports.io/football/teams/436.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1131,
-            "name": "Bucaramanga",
-            "logo": "https://media.api-sports.io/football/teams/1131.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334462,
           "date": "2025-04-14T18:30:00+00:00",
           "venue": {
@@ -713,6 +654,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361881,
+          "date": "2025-04-10T22:00:00+00:00",
+          "venue": {
+            "id": 99,
+            "name": "Estadio Presidente Juan Domingo Perón",
+            "city": "Avellaneda, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744322400
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 436,
+            "name": "Racing Club",
+            "logo": "https://media.api-sports.io/football/teams/436.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1131,
+            "name": "Bucaramanga",
+            "logo": "https://media.api-sports.io/football/teams/1131.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334442,
@@ -1243,65 +1243,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1320446,
-          "date": "2025-02-21T00:30:00+00:00",
-          "venue": {
-            "id": 99,
-            "name": "Estadio Presidente Juan Domingo Perón",
-            "city": "Avellaneda, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1740097800
-        },
-        "league": {
-          "id": 541,
-          "name": "CONMEBOL Recopa",
-          "logo": "https://media.api-sports.io/football/leagues/541.png"
-        },
-        "teams": {
-          "home": {
-            "id": 436,
-            "name": "Racing Club",
-            "logo": "https://media.api-sports.io/football/teams/436.png",
-            "winner": true
-          },
-          "away": {
-            "id": 120,
-            "name": "Botafogo",
-            "logo": "https://media.api-sports.io/football/teams/120.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1598,5 +1539,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:41:36.530Z"
+  "lastUpdated": "2025-04-12T08:31:03.305Z"
 }

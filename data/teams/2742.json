@@ -184,65 +184,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361646,
-          "date": "2025-04-11T14:30:00+00:00",
-          "venue": {
-            "id": 853,
-            "name": "Vatani Stadium",
-            "city": "Ghaemshahr"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744381800
-        },
-        "league": {
-          "id": 290,
-          "name": "Persian Gulf Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/290.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2719,
-            "name": "Nassaji Mazandaran",
-            "logo": "https://media.api-sports.io/football/teams/2719.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2742,
-            "name": "Persepolis FC",
-            "logo": "https://media.api-sports.io/football/teams/2742.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361652,
           "date": "2025-04-18T14:30:00+00:00",
           "venue": {
@@ -302,6 +243,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361646,
+          "date": "2025-04-11T14:30:00+00:00",
+          "venue": {
+            "id": 853,
+            "name": "Vatani Stadium",
+            "city": "Ghaemshahr"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 15
+          },
+          "timestamp": 1744381800
+        },
+        "league": {
+          "id": 290,
+          "name": "Persian Gulf Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/290.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2719,
+            "name": "Nassaji Mazandaran",
+            "logo": "https://media.api-sports.io/football/teams/2719.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2742,
+            "name": "Persepolis FC",
+            "logo": "https://media.api-sports.io/football/teams/2742.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1353242,
@@ -832,65 +832,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1327837,
-          "date": "2025-01-31T13:45:00+00:00",
-          "venue": {
-            "id": 19310,
-            "name": "Shohadaye Foolad Khoozestan",
-            "city": "Ahvaz"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738331100
-        },
-        "league": {
-          "id": 290,
-          "name": "Persian Gulf Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/290.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2734,
-            "name": "Foolad FC",
-            "logo": "https://media.api-sports.io/football/teams/2734.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2742,
-            "name": "Persepolis FC",
-            "logo": "https://media.api-sports.io/football/teams/2742.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1187,5 +1128,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:45:47.541Z"
+  "lastUpdated": "2025-04-12T08:35:09.387Z"
 }

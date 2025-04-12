@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1324049,
-          "date": "2025-04-12T06:00:00+00:00",
-          "venue": {
-            "id": 11583,
-            "name": "Yodoko Sakura Stadium",
-            "city": "Osaka"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744437600
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 291,
-            "name": "Cerezo Osaka",
-            "logo": "https://media.api-sports.io/football/teams/291.png",
-            "winner": null
-          },
-          "away": {
-            "id": 290,
-            "name": "Kashima",
-            "logo": "https://media.api-sports.io/football/teams/290.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1324061,
           "date": "2025-04-20T05:00:00+00:00",
           "venue": {
@@ -1275,6 +1216,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1324049,
+          "date": "2025-04-12T06:00:00+00:00",
+          "venue": {
+            "id": 11583,
+            "name": "Yodoko Sakura Stadium",
+            "city": "Osaka"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1744437600
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 291,
+            "name": "Cerezo Osaka",
+            "logo": "https://media.api-sports.io/football/teams/291.png",
+            "winner": true
+          },
+          "away": {
+            "id": 290,
+            "name": "Kashima",
+            "logo": "https://media.api-sports.io/football/teams/290.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1324032,
           "date": "2025-04-06T06:00:00+00:00",
           "venue": {
@@ -1803,65 +1803,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323958,
-          "date": "2025-02-15T06:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Shonan BMW Stadium Hiratsuka",
-            "city": "Kanagawa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739599200
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 284,
-            "name": "Shonan Bellmare",
-            "logo": "https://media.api-sports.io/football/teams/284.png",
-            "winner": true
-          },
-          "away": {
-            "id": 290,
-            "name": "Kashima",
-            "logo": "https://media.api-sports.io/football/teams/290.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2163,5 +2104,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:46.334Z"
+  "lastUpdated": "2025-04-12T08:36:05.461Z"
 }

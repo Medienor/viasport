@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -151,65 +151,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1208772,
-          "date": "2025-04-11T19:00:00+00:00",
-          "venue": {
-            "id": 1497,
-            "name": "Estadio de Mestalla",
-            "city": "Valencia"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744398000
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 532,
-            "name": "Valencia",
-            "logo": "https://media.api-sports.io/football/teams/532.png",
-            "winner": null
-          },
-          "away": {
-            "id": 536,
-            "name": "Sevilla",
-            "logo": "https://media.api-sports.io/football/teams/536.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1208780,
@@ -389,6 +330,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208772,
+          "date": "2025-04-11T19:00:00+00:00",
+          "venue": {
+            "id": 1497,
+            "name": "Estadio de Mestalla",
+            "city": "Valencia"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744398000
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 532,
+            "name": "Valencia",
+            "logo": "https://media.api-sports.io/football/teams/532.png",
+            "winner": true
+          },
+          "away": {
+            "id": 536,
+            "name": "Sevilla",
+            "logo": "https://media.api-sports.io/football/teams/536.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208760,
@@ -919,65 +919,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1212930,
-          "date": "2025-01-25T17:30:00+00:00",
-          "venue": {
-            "id": 1494,
-            "name": "Estadio Ramón Sánchez Pizjuán",
-            "city": "Sevilla"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737826200
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 536,
-            "name": "Sevilla",
-            "logo": "https://media.api-sports.io/football/teams/536.png",
-            "winner": null
-          },
-          "away": {
-            "id": 540,
-            "name": "Espanyol",
-            "logo": "https://media.api-sports.io/football/teams/540.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1274,5 +1215,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:39:52.395Z"
+  "lastUpdated": "2025-04-12T08:29:20.454Z"
 }

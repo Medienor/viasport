@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -485,6 +485,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361280,
+          "date": "2025-04-10T19:00:00+00:00",
+          "venue": {
+            "id": 1401,
+            "name": "Ibrox Stadium",
+            "city": "Glasgow"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 13
+          },
+          "timestamp": 1744311600
+        },
+        "league": {
+          "id": 3,
+          "name": "UEFA Europa League",
+          "logo": "https://media.api-sports.io/football/leagues/3.png"
+        },
+        "teams": {
+          "home": {
+            "id": 257,
+            "name": "Rangers",
+            "logo": "https://media.api-sports.io/football/teams/257.png",
+            "winner": null
+          },
+          "away": {
+            "id": 531,
+            "name": "Athletic Club",
+            "logo": "https://media.api-sports.io/football/teams/531.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208759,
@@ -1015,65 +1074,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208692,
-          "date": "2025-02-08T15:15:00+00:00",
-          "venue": {
-            "id": 1460,
-            "name": "San Mamés Barria",
-            "city": "Bilbao"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739027700
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 531,
-            "name": "Athletic Club",
-            "logo": "https://media.api-sports.io/football/teams/531.png",
-            "winner": true
-          },
-          "away": {
-            "id": 547,
-            "name": "Girona",
-            "logo": "https://media.api-sports.io/football/teams/547.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1370,5 +1370,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:39:49.740Z"
+  "lastUpdated": "2025-04-12T08:29:17.910Z"
 }

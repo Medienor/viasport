@@ -126,7 +126,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -760,6 +760,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1361290,
+          "date": "2025-04-10T19:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Tele2 Arena",
+            "city": "Stockholm"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744311600
+        },
+        "league": {
+          "id": 848,
+          "name": "UEFA Europa Conference League",
+          "logo": "https://media.api-sports.io/football/leagues/848.png"
+        },
+        "teams": {
+          "home": {
+            "id": 364,
+            "name": "Djurgardens IF",
+            "logo": "https://media.api-sports.io/football/teams/364.png",
+            "winner": false
+          },
+          "away": {
+            "id": 781,
+            "name": "Rapid Vienna",
+            "logo": "https://media.api-sports.io/football/teams/781.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1361671,
           "date": "2025-04-04T17:30:00+00:00",
           "venue": {
@@ -1288,65 +1347,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1218673,
-          "date": "2025-02-08T16:00:00+00:00",
-          "venue": {
-            "id": 145,
-            "name": "Allianz Stadion",
-            "city": "Wien"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739030400
-        },
-        "league": {
-          "id": 218,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/218.png"
-        },
-        "teams": {
-          "home": {
-            "id": 781,
-            "name": "Rapid Vienna",
-            "logo": "https://media.api-sports.io/football/teams/781.png",
-            "winner": false
-          },
-          "away": {
-            "id": 1025,
-            "name": "Wolfsberger AC",
-            "logo": "https://media.api-sports.io/football/teams/1025.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1643,5 +1643,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:42:26.049Z"
+  "lastUpdated": "2025-04-12T08:31:51.575Z"
 }

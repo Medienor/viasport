@@ -187,65 +187,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1196672,
-          "date": "2025-04-11T11:45:00+00:00",
-          "venue": {
-            "id": 3204,
-            "name": "Jurong East Stadium",
-            "city": "Singapore"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744371900
-        },
-        "league": {
-          "id": 368,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/368.png"
-        },
-        "teams": {
-          "home": {
-            "id": 10077,
-            "name": "Tanjong Pagar",
-            "logo": "https://media.api-sports.io/football/teams/10077.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4206,
-            "name": "Tampines Rovers",
-            "logo": "https://media.api-sports.io/football/teams/4206.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1367321,
           "date": "2025-04-16T11:45:00+00:00",
           "venue": {
@@ -659,6 +600,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1196672,
+          "date": "2025-04-11T11:45:00+00:00",
+          "venue": {
+            "id": 3204,
+            "name": "Jurong East Stadium",
+            "city": "Singapore"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744371900
+        },
+        "league": {
+          "id": 368,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/368.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10077,
+            "name": "Tanjong Pagar",
+            "logo": "https://media.api-sports.io/football/teams/10077.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4206,
+            "name": "Tampines Rovers",
+            "logo": "https://media.api-sports.io/football/teams/4206.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1196667,
@@ -1189,65 +1189,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1196647,
-          "date": "2025-01-25T10:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Jalan Besar Stadium",
-            "city": "Singapore"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737799200
-        },
-        "league": {
-          "id": 368,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/368.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4206,
-            "name": "Tampines Rovers",
-            "logo": "https://media.api-sports.io/football/teams/4206.png",
-            "winner": false
-          },
-          "away": {
-            "id": 4205,
-            "name": "Hougang United",
-            "logo": "https://media.api-sports.io/football/teams/4205.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1544,5 +1485,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:05.563Z"
+  "lastUpdated": "2025-04-12T08:35:27.145Z"
 }

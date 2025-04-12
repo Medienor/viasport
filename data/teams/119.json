@@ -96,6 +96,43 @@
     },
     {
       "league": {
+        "id": 73,
+        "name": "Copa Do Brasil",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/73.png"
+      },
+      "country": {
+        "name": "Brazil",
+        "code": "BR",
+        "flag": "https://media.api-sports.io/flags/br.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-18",
+          "end": "2025-05-20",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 71,
         "name": "Serie A",
         "type": "League",
@@ -152,65 +189,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1361882,
-          "date": "2025-04-10T22:00:00+00:00",
-          "venue": {
-            "id": 244,
-            "name": "Estádio José Pinheiro Borda",
-            "city": "Porto Alegre, Rio Grande do Sul"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744322400
-        },
-        "league": {
-          "id": 13,
-          "name": "CONMEBOL Libertadores",
-          "logo": "https://media.api-sports.io/football/leagues/13.png"
-        },
-        "teams": {
-          "home": {
-            "id": 119,
-            "name": "Internacional",
-            "logo": "https://media.api-sports.io/football/teams/119.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1137,
-            "name": "Atletico Nacional",
-            "logo": "https://media.api-sports.io/football/teams/1137.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1351071,
@@ -480,6 +458,65 @@
             "id": 152,
             "name": "Juventude",
             "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1370759,
+          "date": "2025-04-29T22:00:00+00:00",
+          "venue": {
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745964000
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          },
+          "away": {
+            "id": 13089,
+            "name": "Maracanã",
+            "logo": "https://media.api-sports.io/football/teams/13089.png",
             "winner": null
           }
         },
@@ -803,6 +840,65 @@
       },
       {
         "fixture": {
+          "id": 1370760,
+          "date": "2025-05-20T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": null
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747778400
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 13089,
+            "name": "Maracanã",
+            "logo": "https://media.api-sports.io/football/teams/13089.png",
+            "winner": null
+          },
+          "away": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351142,
           "date": "2025-05-25T19:00:00+00:00",
           "venue": {
@@ -1039,6 +1135,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361882,
+          "date": "2025-04-10T22:00:00+00:00",
+          "venue": {
+            "id": 244,
+            "name": "Estádio José Pinheiro Borda",
+            "city": "Porto Alegre, Rio Grande do Sul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744322400
+        },
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "logo": "https://media.api-sports.io/football/leagues/13.png"
+        },
+        "teams": {
+          "home": {
+            "id": 119,
+            "name": "Internacional",
+            "logo": "https://media.api-sports.io/football/teams/119.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1137,
+            "name": "Atletico Nacional",
+            "logo": "https://media.api-sports.io/football/teams/1137.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1351059,
@@ -1569,65 +1724,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1322109,
-          "date": "2025-02-09T00:00:00+00:00",
-          "venue": {
-            "id": 241,
-            "name": "Arena do Grêmio",
-            "city": "Porto Alegre, Rio Grande do Sul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1739059200
-        },
-        "league": {
-          "id": 477,
-          "name": "Gaúcho - 1",
-          "logo": "https://media.api-sports.io/football/leagues/477.png"
-        },
-        "teams": {
-          "home": {
-            "id": 130,
-            "name": "Gremio",
-            "logo": "https://media.api-sports.io/football/teams/130.png",
-            "winner": null
-          },
-          "away": {
-            "id": 119,
-            "name": "Internacional",
-            "logo": "https://media.api-sports.io/football/teams/119.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1924,5 +2020,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:14.008Z"
+  "lastUpdated": "2025-04-12T08:35:34.846Z"
 }

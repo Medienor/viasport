@@ -147,7 +147,7 @@
         {
           "year": 2025,
           "start": "2025-02-18",
-          "end": "2025-03-14",
+          "end": "2025-05-20",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -226,65 +226,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1362119,
-          "date": "2025-04-11T00:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estadio Jornalista Mário Filho",
-            "city": "Rio de Janeiro, Rio de Janeiro"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744331400
-        },
-        "league": {
-          "id": 11,
-          "name": "CONMEBOL Sudamericana",
-          "logo": "https://media.api-sports.io/football/leagues/11.png"
-        },
-        "teams": {
-          "home": {
-            "id": 124,
-            "name": "Fluminense",
-            "logo": "https://media.api-sports.io/football/teams/124.png",
-            "winner": null
-          },
-          "away": {
-            "id": 22266,
-            "name": "Gualberto Villarroel SJ",
-            "logo": "https://media.api-sports.io/football/teams/22266.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1351063,
@@ -582,6 +523,65 @@
       },
       {
         "fixture": {
+          "id": 1370755,
+          "date": "2025-04-29T22:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estadio Jornalista Mário Filho",
+            "city": "Rio de Janeiro, Rio de Janeiro"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745964000
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 124,
+            "name": "Fluminense",
+            "logo": "https://media.api-sports.io/football/teams/124.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1202,
+            "name": "Aparecidense",
+            "logo": "https://media.api-sports.io/football/teams/1202.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351103,
           "date": "2025-05-03T21:30:00+00:00",
           "venue": {
@@ -843,6 +843,65 @@
             "id": 152,
             "name": "Juventude",
             "logo": "https://media.api-sports.io/football/teams/152.png",
+            "winner": null
+          },
+          "away": {
+            "id": 124,
+            "name": "Fluminense",
+            "logo": "https://media.api-sports.io/football/teams/124.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1370756,
+          "date": "2025-05-20T22:00:00+00:00",
+          "venue": {
+            "id": 209,
+            "name": "Estádio Annibal Batista de Toledo",
+            "city": "Aparecida de Goiânia, Goiás"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747778400
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1202,
+            "name": "Aparecidense",
+            "logo": "https://media.api-sports.io/football/teams/1202.png",
             "winner": null
           },
           "away": {
@@ -1231,6 +1290,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362119,
+          "date": "2025-04-11T00:30:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Estádio do Maracanã",
+            "city": "Rio de Janeiro"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744331400
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 124,
+            "name": "Fluminense",
+            "logo": "https://media.api-sports.io/football/teams/124.png",
+            "winner": true
+          },
+          "away": {
+            "id": 22266,
+            "name": "Gualberto Villarroel SJ",
+            "logo": "https://media.api-sports.io/football/teams/22266.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1351053,
@@ -1761,65 +1879,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1318035,
-          "date": "2025-02-23T21:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Estadio Jornalista Mário Filho",
-            "city": "Rio de Janeiro, Rio de Janeiro"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1740346200
-        },
-        "league": {
-          "id": 624,
-          "name": "Carioca - 1",
-          "logo": "https://media.api-sports.io/football/leagues/624.png"
-        },
-        "teams": {
-          "home": {
-            "id": 124,
-            "name": "Fluminense",
-            "logo": "https://media.api-sports.io/football/teams/124.png",
-            "winner": true
-          },
-          "away": {
-            "id": 7854,
-            "name": "Bangu",
-            "logo": "https://media.api-sports.io/football/teams/7854.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2129,5 +2188,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:14.127Z"
+  "lastUpdated": "2025-04-12T08:35:34.847Z"
 }

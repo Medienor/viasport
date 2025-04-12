@@ -226,65 +226,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1356835,
-          "date": "2025-04-11T17:00:00+00:00",
-          "venue": {
-            "id": 10497,
-            "name": "Stadion Neman",
-            "city": "Grodno"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744390800
-        },
-        "league": {
-          "id": 116,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
-        },
-        "teams": {
-          "home": {
-            "id": 387,
-            "name": "Neman",
-            "logo": "https://media.api-sports.io/football/teams/387.png",
-            "winner": null
-          },
-          "away": {
-            "id": 379,
-            "name": "FC Slutsk",
-            "logo": "https://media.api-sports.io/football/teams/379.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1360337,
           "date": "2025-04-14T22:00:00+00:00",
           "venue": {
@@ -345,7 +286,7 @@
       {
         "fixture": {
           "id": 1356845,
-          "date": "2025-04-17T22:00:00+00:00",
+          "date": "2025-04-19T12:45:00+00:00",
           "venue": {
             "id": 7525,
             "name": "Stadyen Haradski",
@@ -357,7 +298,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1744927200
+          "timestamp": 1745066700
         },
         "league": {
           "id": 116,
@@ -459,9 +400,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1356828,
+          "date": "2025-06-17T22:00:00+00:00",
+          "venue": {
+            "id": 2606,
+            "name": "Stadyen Dynama",
+            "city": "Minsk"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": 3
+          },
+          "timestamp": 1750197600
+        },
+        "league": {
+          "id": 116,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
+        },
+        "teams": {
+          "home": {
+            "id": 394,
+            "name": "Dinamo Minsk",
+            "logo": "https://media.api-sports.io/football/teams/394.png",
+            "winner": null
+          },
+          "away": {
+            "id": 387,
+            "name": "Neman",
+            "logo": "https://media.api-sports.io/football/teams/387.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1356835,
+          "date": "2025-04-11T17:00:00+00:00",
+          "venue": {
+            "id": 10497,
+            "name": "Stadion Neman",
+            "city": "Grodno"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744390800
+        },
+        "league": {
+          "id": 116,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
+        },
+        "teams": {
+          "home": {
+            "id": 387,
+            "name": "Neman",
+            "logo": "https://media.api-sports.io/football/teams/387.png",
+            "winner": true
+          },
+          "away": {
+            "id": 379,
+            "name": "FC Slutsk",
+            "logo": "https://media.api-sports.io/football/teams/379.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1356820,
@@ -992,65 +1051,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1344781,
-          "date": "2025-01-29T11:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1738148400
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 387,
-            "name": "Neman",
-            "logo": "https://media.api-sports.io/football/teams/387.png",
-            "winner": true
-          },
-          "away": {
-            "id": 380,
-            "name": "FC Minsk",
-            "logo": "https://media.api-sports.io/football/teams/380.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1068,17 +1068,17 @@
       "name": "Neman",
       "logo": "https://media.api-sports.io/football/teams/387.png"
     },
-    "form": "WL",
+    "form": "WLW",
     "fixtures": {
       "played": {
+        "home": 3,
+        "away": 0,
+        "total": 3
+      },
+      "wins": {
         "home": 2,
         "away": 0,
         "total": 2
-      },
-      "wins": {
-        "home": 1,
-        "away": 0,
-        "total": 1
       },
       "draws": {
         "home": 0,
@@ -1094,23 +1094,23 @@
     "goals": {
       "for": {
         "total": {
-          "home": 3,
+          "home": 5,
           "away": 0,
-          "total": 3
+          "total": 5
         },
         "average": {
-          "home": "1.5",
+          "home": "1.7",
           "away": "0.0",
-          "total": "1.5"
+          "total": "1.7"
         },
         "minute": {
           "0-15": {
-            "total": 1,
-            "percentage": "33.33%"
+            "total": 2,
+            "percentage": "40.00%"
           },
           "16-30": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "20.00%"
           },
           "31-45": {
             "total": null,
@@ -1126,7 +1126,7 @@
           },
           "76-90": {
             "total": 2,
-            "percentage": "66.67%"
+            "percentage": "40.00%"
           },
           "91-105": {
             "total": null,
@@ -1139,37 +1139,37 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 1
           },
           "1.5": {
-            "over": 1,
+            "over": 2,
             "under": 1
           },
           "2.5": {
             "over": 1,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       },
       "against": {
         "total": {
-          "home": 1,
+          "home": 2,
           "away": 0,
-          "total": 1
+          "total": 2
         },
         "average": {
-          "home": "0.5",
+          "home": "0.7",
           "away": "0.0",
-          "total": "0.5"
+          "total": "0.7"
         },
         "minute": {
           "0-15": {
@@ -1190,15 +1190,15 @@
           },
           "61-75": {
             "total": 1,
-            "percentage": "100.00%"
+            "percentage": "50.00%"
           },
           "76-90": {
             "total": null,
             "percentage": null
           },
           "91-105": {
-            "total": null,
-            "percentage": null
+            "total": 1,
+            "percentage": "50.00%"
           },
           "106-120": {
             "total": null,
@@ -1207,24 +1207,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 1,
+            "over": 2,
             "under": 1
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       }
@@ -1233,7 +1233,7 @@
       "streak": {
         "wins": 1,
         "draws": 0,
-        "loses": 0
+        "loses": 1
       },
       "wins": {
         "home": "3-0",
@@ -1278,6 +1278,10 @@
     "lineups": [
       {
         "formation": "4-2-3-1",
+        "played": 1
+      },
+      {
+        "formation": "4-3-1-2",
         "played": 1
       }
     ],
@@ -1352,5 +1356,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:42:36.198Z"
+  "lastUpdated": "2025-04-12T08:32:01.745Z"
 }

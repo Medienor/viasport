@@ -200,7 +200,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -436,7 +436,7 @@
       {
         "fixture": {
           "id": 1369271,
-          "date": "2025-04-22T22:00:00+00:00",
+          "date": "2025-04-24T16:00:00+00:00",
           "venue": {
             "id": 3332,
             "name": "Stadion Z'dežele",
@@ -448,7 +448,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745359200
+          "timestamp": 1745510400
         },
         "league": {
           "id": 375,
@@ -553,6 +553,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361286,
+          "date": "2025-04-10T19:00:00+00:00",
+          "venue": {
+            "id": 3332,
+            "name": "Stadion Z'dežele",
+            "city": "Celje"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744311600
+        },
+        "league": {
+          "id": 848,
+          "name": "UEFA Europa Conference League",
+          "logo": "https://media.api-sports.io/football/leagues/848.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4360,
+            "name": "Celje",
+            "logo": "https://media.api-sports.io/football/teams/4360.png",
+            "winner": false
+          },
+          "away": {
+            "id": 502,
+            "name": "Fiorentina",
+            "logo": "https://media.api-sports.io/football/teams/502.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220733,
@@ -1083,65 +1142,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1325901,
-          "date": "2025-02-20T20:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Neo GSP",
-            "city": "Levkosía"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1740081600
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2247,
-            "name": "Apoel Nicosia",
-            "logo": "https://media.api-sports.io/football/teams/2247.png",
-            "winner": false
-          },
-          "away": {
-            "id": 4360,
-            "name": "Celje",
-            "logo": "https://media.api-sports.io/football/teams/4360.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1438,5 +1438,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:42:17.879Z"
+  "lastUpdated": "2025-04-12T08:31:44.013Z"
 }

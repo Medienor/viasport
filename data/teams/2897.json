@@ -263,65 +263,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231411,
-          "date": "2025-04-11T15:30:00+00:00",
-          "venue": {
-            "id": 1301,
-            "name": "Al-Khwar Stadium",
-            "city": "Al-Khor"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744385400
-        },
-        "league": {
-          "id": 305,
-          "name": "Stars League",
-          "logo": "https://media.api-sports.io/football/leagues/305.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2916,
-            "name": "Al Shamal",
-            "logo": "https://media.api-sports.io/football/teams/2916.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2897,
-            "name": "Al-Rayyan SC",
-            "logo": "https://media.api-sports.io/football/teams/2897.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231417,
           "date": "2025-04-18T15:30:00+00:00",
           "venue": {
@@ -381,6 +322,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231411,
+          "date": "2025-04-11T15:30:00+00:00",
+          "venue": {
+            "id": 1301,
+            "name": "Al-Khwar Stadium",
+            "city": "Al-Khor"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1744385400
+        },
+        "league": {
+          "id": 305,
+          "name": "Stars League",
+          "logo": "https://media.api-sports.io/football/leagues/305.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2916,
+            "name": "Al Shamal",
+            "logo": "https://media.api-sports.io/football/teams/2916.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2897,
+            "name": "Al-Rayyan SC",
+            "logo": "https://media.api-sports.io/football/teams/2897.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231405,
@@ -911,65 +911,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1288382,
-          "date": "2025-02-03T14:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Hazza Bin Zayed Stadium",
-            "city": "Al Ain"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1738591200
-        },
-        "league": {
-          "id": 17,
-          "name": "AFC Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/17.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2865,
-            "name": "Al Ain",
-            "logo": "https://media.api-sports.io/football/teams/2865.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2897,
-            "name": "Al-Rayyan SC",
-            "logo": "https://media.api-sports.io/football/teams/2897.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1266,5 +1207,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:45:52.694Z"
+  "lastUpdated": "2025-04-12T08:35:14.432Z"
 }

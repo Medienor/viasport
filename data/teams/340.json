@@ -89,7 +89,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -144,65 +144,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1203195,
-          "date": "2025-04-11T16:00:00+00:00",
-          "venue": {
-            "id": 1260,
-            "name": "Stadion Zagłębia Lubin",
-            "city": "Lubin"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744387200
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 345,
-            "name": "Zaglebie Lubin",
-            "logo": "https://media.api-sports.io/football/teams/345.png",
-            "winner": null
-          },
-          "away": {
-            "id": 340,
-            "name": "Gornik Zabrze",
-            "logo": "https://media.api-sports.io/football/teams/340.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1203208,
@@ -441,6 +382,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1203195,
+          "date": "2025-04-11T16:00:00+00:00",
+          "venue": {
+            "id": 1260,
+            "name": "Stadion Zagłębia Lubin",
+            "city": "Lubin"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1744387200
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 345,
+            "name": "Zaglebie Lubin",
+            "logo": "https://media.api-sports.io/football/teams/345.png",
+            "winner": true
+          },
+          "away": {
+            "id": 340,
+            "name": "Gornik Zabrze",
+            "logo": "https://media.api-sports.io/football/teams/340.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1203184,
@@ -971,65 +971,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1203114,
-          "date": "2025-02-02T11:15:00+00:00",
-          "venue": {
-            "id": 18625,
-            "name": "Stadion im. Ernesta Pohla",
-            "city": "Zabrze"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738494900
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 340,
-            "name": "Gornik Zabrze",
-            "logo": "https://media.api-sports.io/football/teams/340.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3490,
-            "name": "Puszcza Niepołomice",
-            "logo": "https://media.api-sports.io/football/teams/3490.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1326,5 +1267,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:49.181Z"
+  "lastUpdated": "2025-04-12T08:30:17.492Z"
 }

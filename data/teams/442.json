@@ -226,65 +226,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362111,
-          "date": "2025-04-10T22:00:00+00:00",
-          "venue": {
-            "id": 59,
-            "name": "Estadio Norberto Tito Tomaghello",
-            "city": "Florencio Varela, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744322400
-        },
-        "league": {
-          "id": 11,
-          "name": "CONMEBOL Sudamericana",
-          "logo": "https://media.api-sports.io/football/leagues/11.png"
-        },
-        "teams": {
-          "home": {
-            "id": 442,
-            "name": "Defensa Y Justicia",
-            "logo": "https://media.api-sports.io/football/teams/442.png",
-            "winner": null
-          },
-          "away": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1334460,
           "date": "2025-04-14T22:00:00+00:00",
           "venue": {
@@ -698,6 +639,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1362111,
+          "date": "2025-04-10T22:00:00+00:00",
+          "venue": {
+            "id": 59,
+            "name": "Estadio Norberto Tito Tomaghello",
+            "city": "Florencio Varela, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744322400
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 442,
+            "name": "Defensa Y Justicia",
+            "logo": "https://media.api-sports.io/football/teams/442.png",
+            "winner": null
+          },
+          "away": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334445,
@@ -1228,65 +1228,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334342,
-          "date": "2025-02-12T20:45:00+00:00",
-          "venue": {
-            "id": 93,
-            "name": "Estadio Marcelo Alberto Bielsa",
-            "city": "Rosario, Provincia de Santa Fe"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739393100
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 457,
-            "name": "Newells Old Boys",
-            "logo": "https://media.api-sports.io/football/teams/457.png",
-            "winner": false
-          },
-          "away": {
-            "id": 442,
-            "name": "Defensa Y Justicia",
-            "logo": "https://media.api-sports.io/football/teams/442.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1583,5 +1524,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:41:39.174Z"
+  "lastUpdated": "2025-04-12T08:31:05.996Z"
 }

@@ -147,7 +147,7 @@
         {
           "year": 2025,
           "start": "2025-02-18",
-          "end": "2025-03-14",
+          "end": "2025-05-20",
           "current": true,
           "coverage": {
             "fixtures": {
@@ -227,70 +227,11 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1362111,
-          "date": "2025-04-10T22:00:00+00:00",
-          "venue": {
-            "id": 59,
-            "name": "Estadio Norberto Tito Tomaghello",
-            "city": "Florencio Varela, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744322400
-        },
-        "league": {
-          "id": 11,
-          "name": "CONMEBOL Sudamericana",
-          "logo": "https://media.api-sports.io/football/leagues/11.png"
-        },
-        "teams": {
-          "home": {
-            "id": 442,
-            "name": "Defensa Y Justicia",
-            "logo": "https://media.api-sports.io/football/teams/442.png",
-            "winner": null
-          },
-          "away": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1351068,
           "date": "2025-04-13T23:30:00+00:00",
           "venue": {
-            "id": 21427,
-            "name": "Arena MRV",
+            "id": 234,
+            "name": "Estádio Governador Magalhães Pinto",
             "city": "Belo Horizonte, Minas Gerais"
           },
           "status": {
@@ -1055,6 +996,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1362111,
+          "date": "2025-04-10T22:00:00+00:00",
+          "venue": {
+            "id": 59,
+            "name": "Estadio Norberto Tito Tomaghello",
+            "city": "Florencio Varela, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744322400
+        },
+        "league": {
+          "id": 11,
+          "name": "CONMEBOL Sudamericana",
+          "logo": "https://media.api-sports.io/football/leagues/11.png"
+        },
+        "teams": {
+          "home": {
+            "id": 442,
+            "name": "Defensa Y Justicia",
+            "logo": "https://media.api-sports.io/football/teams/442.png",
+            "winner": null
+          },
+          "away": {
+            "id": 136,
+            "name": "Vitoria",
+            "logo": "https://media.api-sports.io/football/teams/136.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351060,
           "date": "2025-04-06T21:30:00+00:00",
           "venue": {
@@ -1583,65 +1583,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337248,
-          "date": "2025-03-06T00:30:00+00:00",
-          "venue": {
-            "id": 281,
-            "name": "Estádio Manoel Barradas",
-            "city": "Salvador, Bahia"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1741221000
-        },
-        "league": {
-          "id": 612,
-          "name": "Copa do Nordeste",
-          "logo": "https://media.api-sports.io/football/leagues/612.png"
-        },
-        "teams": {
-          "home": {
-            "id": 136,
-            "name": "Vitoria",
-            "logo": "https://media.api-sports.io/football/teams/136.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1203,
-            "name": "Altos",
-            "logo": "https://media.api-sports.io/football/teams/1203.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1938,5 +1879,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:19.257Z"
+  "lastUpdated": "2025-04-12T08:35:39.910Z"
 }

@@ -133,6 +133,43 @@
     },
     {
       "league": {
+        "id": 73,
+        "name": "Copa Do Brasil",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/73.png"
+      },
+      "country": {
+        "name": "Brazil",
+        "code": "BR",
+        "flag": "https://media.api-sports.io/flags/br.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-18",
+          "end": "2025-05-20",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 71,
         "name": "Serie A",
         "type": "League",
@@ -486,6 +523,65 @@
       },
       {
         "fixture": {
+          "id": 1370777,
+          "date": "2025-04-29T22:00:00+00:00",
+          "venue": {
+            "id": 5664,
+            "name": "Estádio Dr. Jorge Ismael de Biasi",
+            "city": "Novo Horizonte, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745964000
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 7834,
+            "name": "Novorizontino",
+            "logo": "https://media.api-sports.io/football/teams/7834.png",
+            "winner": null
+          },
+          "away": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1351105,
           "date": "2025-05-03T21:30:00+00:00",
           "venue": {
@@ -753,6 +849,65 @@
             "id": 128,
             "name": "Santos",
             "logo": "https://media.api-sports.io/football/teams/128.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1370778,
+          "date": "2025-05-20T22:00:00+00:00",
+          "venue": {
+            "id": 11531,
+            "name": "Neo Química Arena",
+            "city": "São Paulo, São Paulo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747778400
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 131,
+            "name": "Corinthians",
+            "logo": "https://media.api-sports.io/football/teams/131.png",
+            "winner": null
+          },
+          "away": {
+            "id": 7834,
+            "name": "Novorizontino",
+            "logo": "https://media.api-sports.io/football/teams/7834.png",
             "winner": null
           }
         },
@@ -1927,5 +2082,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:16.644Z"
+  "lastUpdated": "2025-04-12T08:35:37.467Z"
 }

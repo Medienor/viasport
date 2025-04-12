@@ -52,7 +52,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -187,65 +187,6 @@
   ],
   "fixtures": {
     "upcoming": [
-      {
-        "fixture": {
-          "id": 1224232,
-          "date": "2025-04-11T18:30:00+00:00",
-          "venue": {
-            "id": 752,
-            "name": "Volkswagen Arena",
-            "city": "Wolfsburg"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744396200
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 161,
-            "name": "VfL Wolfsburg",
-            "logo": "https://media.api-sports.io/football/teams/161.png",
-            "winner": null
-          },
-          "away": {
-            "id": 173,
-            "name": "RB Leipzig",
-            "logo": "https://media.api-sports.io/football/teams/173.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
       {
         "fixture": {
           "id": 1224236,
@@ -543,6 +484,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1224232,
+          "date": "2025-04-11T18:30:00+00:00",
+          "venue": {
+            "id": 752,
+            "name": "Volkswagen Arena",
+            "city": "Wolfsburg"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744396200
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 161,
+            "name": "VfL Wolfsburg",
+            "logo": "https://media.api-sports.io/football/teams/161.png",
+            "winner": false
+          },
+          "away": {
+            "id": 173,
+            "name": "RB Leipzig",
+            "logo": "https://media.api-sports.io/football/teams/173.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1224218,
@@ -1073,65 +1073,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1224156,
-          "date": "2025-02-09T16:30:00+00:00",
-          "venue": {
-            "id": 738,
-            "name": "Red Bull Arena",
-            "city": "Leipzig"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739118600
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 173,
-            "name": "RB Leipzig",
-            "logo": "https://media.api-sports.io/football/teams/173.png",
-            "winner": true
-          },
-          "away": {
-            "id": 186,
-            "name": "FC St. Pauli",
-            "logo": "https://media.api-sports.io/football/teams/186.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1428,5 +1369,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:40:16.110Z"
+  "lastUpdated": "2025-04-12T08:29:43.251Z"
 }

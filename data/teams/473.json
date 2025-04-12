@@ -153,65 +153,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1334463,
-          "date": "2025-04-11T22:00:00+00:00",
-          "venue": {
-            "id": 43,
-            "name": "Estadio Florencio Solá",
-            "city": "Lomas de Zamora, Provincia de Buenos Aires"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744408800
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 449,
-            "name": "Banfield",
-            "logo": "https://media.api-sports.io/football/teams/449.png",
-            "winner": null
-          },
-          "away": {
-            "id": 473,
-            "name": "Independ. Rivadavia",
-            "logo": "https://media.api-sports.io/football/teams/473.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1330777,
           "date": "2025-04-16T19:10:00+00:00",
           "venue": {
@@ -389,6 +330,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1334463,
+          "date": "2025-04-11T22:00:00+00:00",
+          "venue": {
+            "id": 43,
+            "name": "Estadio Florencio Solá",
+            "city": "Lomas de Zamora, Provincia de Buenos Aires"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744408800
+        },
+        "league": {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "logo": "https://media.api-sports.io/football/leagues/128.png"
+        },
+        "teams": {
+          "home": {
+            "id": 449,
+            "name": "Banfield",
+            "logo": "https://media.api-sports.io/football/teams/449.png",
+            "winner": null
+          },
+          "away": {
+            "id": 473,
+            "name": "Independ. Rivadavia",
+            "logo": "https://media.api-sports.io/football/teams/473.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1334456,
@@ -919,65 +919,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334318,
-          "date": "2025-02-04T00:30:00+00:00",
-          "venue": {
-            "id": 45,
-            "name": "Estadio Julio César Villagra",
-            "city": "Ciudad de Córdoba, Provincia de Córdoba"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 3
-          },
-          "timestamp": 1738629000
-        },
-        "league": {
-          "id": 128,
-          "name": "Liga Profesional Argentina",
-          "logo": "https://media.api-sports.io/football/leagues/128.png"
-        },
-        "teams": {
-          "home": {
-            "id": 440,
-            "name": "Belgrano Cordoba",
-            "logo": "https://media.api-sports.io/football/teams/440.png",
-            "winner": false
-          },
-          "away": {
-            "id": 473,
-            "name": "Independ. Rivadavia",
-            "logo": "https://media.api-sports.io/football/teams/473.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1274,5 +1215,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:41:46.809Z"
+  "lastUpdated": "2025-04-12T08:31:13.599Z"
 }

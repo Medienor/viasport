@@ -163,7 +163,7 @@
             "top_cards": true,
             "injuries": false,
             "predictions": true,
-            "odds": true
+            "odds": false
           }
         }
       ]
@@ -402,7 +402,7 @@
       {
         "fixture": {
           "id": 1196679,
-          "date": "2025-04-27T11:45:00+00:00",
+          "date": "2025-04-25T11:45:00+00:00",
           "venue": {
             "id": 3204,
             "name": "Jurong East Stadium",
@@ -414,7 +414,7 @@
             "elapsed": null,
             "extra": null
           },
-          "timestamp": 1745754300
+          "timestamp": 1745581500
         },
         "league": {
           "id": 368,
@@ -550,65 +550,6 @@
             "id": 4203,
             "name": "Geylang International",
             "logo": "https://media.api-sports.io/football/teams/4203.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
-          "id": 1367322,
-          "date": "2025-05-06T11:45:00+00:00",
-          "venue": {
-            "id": 3205,
-            "name": "Bishan Stadium",
-            "city": "Singapore"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1746531900
-        },
-        "league": {
-          "id": 959,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/959.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4204,
-            "name": "Home United",
-            "logo": "https://media.api-sports.io/football/teams/4204.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4202,
-            "name": "DPMM FC",
-            "logo": "https://media.api-sports.io/football/teams/4202.png",
             "winner": null
           }
         },
@@ -786,6 +727,65 @@
             "id": 4204,
             "name": "Home United",
             "logo": "https://media.api-sports.io/football/teams/4204.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1367322,
+          "date": "2025-05-27T11:45:00+00:00",
+          "venue": {
+            "id": 3205,
+            "name": "Bishan Stadium",
+            "city": "Singapore"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1748346300
+        },
+        "league": {
+          "id": 959,
+          "name": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/959.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4204,
+            "name": "Home United",
+            "logo": "https://media.api-sports.io/football/teams/4204.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4202,
+            "name": "DPMM FC",
+            "logo": "https://media.api-sports.io/football/teams/4202.png",
             "winner": null
           }
         },
@@ -1116,7 +1116,7 @@
           "venue": {
             "id": null,
             "name": "Jalan Besar Stadium",
-            "city": "Singapore City"
+            "city": "Singapore"
           },
           "status": {
             "long": "Match Finished",
@@ -1699,5 +1699,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:03.077Z"
+  "lastUpdated": "2025-04-12T08:35:24.623Z"
 }

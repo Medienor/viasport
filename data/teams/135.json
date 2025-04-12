@@ -133,6 +133,43 @@
     },
     {
       "league": {
+        "id": 73,
+        "name": "Copa Do Brasil",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/football/leagues/73.png"
+      },
+      "country": {
+        "name": "Brazil",
+        "code": "BR",
+        "flag": "https://media.api-sports.io/flags/br.svg"
+      },
+      "seasons": [
+        {
+          "year": 2025,
+          "start": "2025-02-18",
+          "end": "2025-05-20",
+          "current": true,
+          "coverage": {
+            "fixtures": {
+              "events": true,
+              "lineups": true,
+              "statistics_fixtures": true,
+              "statistics_players": true
+            },
+            "standings": false,
+            "players": true,
+            "top_scorers": true,
+            "top_assists": true,
+            "top_cards": true,
+            "injuries": false,
+            "predictions": true,
+            "odds": false
+          }
+        }
+      ]
+    },
+    {
+      "league": {
         "id": 71,
         "name": "Serie A",
         "type": "League",
@@ -371,9 +408,9 @@
           "id": 1362132,
           "date": "2025-04-25T00:30:00+00:00",
           "venue": {
-            "id": 316,
-            "name": "Estadio Nacional Julio Martínez Prádanos",
-            "city": "Santiago de Chile"
+            "id": 324,
+            "name": "Estadio Bicentenario Francisco Sánchez Rumoroso",
+            "city": "Coquimbo"
           },
           "status": {
             "long": "Not Started",
@@ -430,9 +467,9 @@
           "id": 1351098,
           "date": "2025-04-27T21:30:00+00:00",
           "venue": {
-            "id": 234,
-            "name": "Estádio Governador Magalhães Pinto",
-            "city": "Belo Horizonte, Minas Gerais"
+            "id": 278,
+            "name": "Estádio Municipal João Havelange",
+            "city": "Uberlândia, Minas Gerais"
           },
           "status": {
             "long": "Not Started",
@@ -458,6 +495,65 @@
             "id": 133,
             "name": "Vasco DA Gama",
             "logo": "https://media.api-sports.io/football/teams/133.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1370773,
+          "date": "2025-04-29T22:00:00+00:00",
+          "venue": {
+            "id": 234,
+            "name": "Estádio Governador Magalhães Pinto",
+            "city": "Belo Horizonte, Minas Gerais"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1745964000
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 135,
+            "name": "Cruzeiro",
+            "logo": "https://media.api-sports.io/football/teams/135.png",
+            "winner": null
+          },
+          "away": {
+            "id": 142,
+            "name": "Vila Nova",
+            "logo": "https://media.api-sports.io/football/teams/142.png",
             "winner": null
           }
         },
@@ -753,6 +849,65 @@
             "id": 1062,
             "name": "Atletico-MG",
             "logo": "https://media.api-sports.io/football/teams/1062.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
+          "id": 1370774,
+          "date": "2025-05-20T22:00:00+00:00",
+          "venue": {
+            "id": 280,
+            "name": "Estádio Onésio Brasileiro Alvarenga",
+            "city": "Goiânia, Goiás"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1747778400
+        },
+        "league": {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "logo": "https://media.api-sports.io/football/leagues/73.png"
+        },
+        "teams": {
+          "home": {
+            "id": 142,
+            "name": "Vila Nova",
+            "logo": "https://media.api-sports.io/football/teams/142.png",
+            "winner": null
+          },
+          "away": {
+            "id": 135,
+            "name": "Cruzeiro",
+            "logo": "https://media.api-sports.io/football/teams/135.png",
             "winner": null
           }
         },
@@ -1902,5 +2057,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-10T19:46:19.383Z"
+  "lastUpdated": "2025-04-12T08:35:39.897Z"
 }
