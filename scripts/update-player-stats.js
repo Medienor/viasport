@@ -6,11 +6,13 @@ import { createClient } from '@supabase/supabase-js';
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY; // Use Service Role Key for server-side updates
 const rapidApiKey = process.env.RAPIDAPI_KEY;
-const internalApiUrl = process.env.INTERNAL_LIVE_FIXTURES_URL; // e.g., 'https://your-app-domain.com/api/football/live'
 const rapidApiHost = 'api-football-v1.p.rapidapi.com';
 
-if (!supabaseUrl || !supabaseServiceKey || !rapidApiKey || !internalApiUrl) {
-  console.error('Missing required environment variables.');
+// Optional: Keep internal live API for potentially faster "live" signal?
+// const internalLiveFixturesUrl = process.env.INTERNAL_LIVE_FIXTURES_URL;
+
+if (!supabaseUrl || !supabaseServiceKey || !rapidApiKey) {
+  console.error('Missing required environment variables (SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, RAPIDAPI_KEY).');
   process.exit(1);
 }
 
@@ -18,39 +20,31 @@ if (!supabaseUrl || !supabaseServiceKey || !rapidApiKey || !internalApiUrl) {
 // Note: Using the Service Role Key bypasses RLS. Ensure this script runs in a secure environment.
 const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
+// --- Constants ---
+const MATCH_DURATION_BUFFER_MINUTES = 120; // Estimated max duration (90 min + 30 min extra time/stoppage)
+
 // --- Helper Functions ---
 
 /**
- * Fetches live fixture IDs from your internal API.
- * Assumes the API returns a structure like { live: [{ fixture: { id: 123 } }, ...] }
- * Adjust parsing based on your actual API response.
+ * Gets the start and end timestamps for the current day in UTC.
  */
-async function fetchLiveFixtureIds() {
-  console.log(`Fetching live fixtures from ${internalApiUrl}...`);
-  try {
-    const response = await fetch(internalApiUrl);
-    if (!response.ok) {
-      throw new Error(`Internal API request failed with status ${response.status}: ${await response.text()}`);
-    }
-    const data = await response.json();
-    // --- Adjust this parsing based on your actual API response ---
-    const liveIds = data?.live?.map(match => match?.fixture?.id).filter(id => id != null) || [];
-    // --- End adjustment section ---
-    console.log(`Found ${liveIds.length} live fixture IDs from internal API.`);
-    return new Set(liveIds); // Use a Set for efficient lookup
-  } catch (error) {
-    console.error('Error fetching live fixture IDs:', error);
-    return new Set(); // Return empty set on error
-  }
+function getTodayUTCRange() {
+  const now = new Date();
+  const startOfDay = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 0, 0, 0, 0));
+  const endOfDay = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 23, 59, 59, 999));
+  return {
+    startUTC: startOfDay.toISOString(),
+    endUTC: endOfDay.toISOString(),
+  };
 }
 
 /**
- * Fetches ALL fixture IDs stored in your Supabase table using pagination.
+ * Fetches fixtures from Supabase scheduled within a given UTC date range using pagination.
  */
-async function fetchSupabaseFixtureIds() {
-  console.log('Fetching ALL fixture IDs from Supabase (using pagination)...');
-  const allSupabaseIds = [];
-  const pageSize = 1000; // Supabase default limit
+async function fetchTodaysFixturesFromSupabase(startUTC, endUTC) {
+  console.log(`Fetching Supabase fixtures between ${startUTC} and ${endUTC}...`);
+  const allFixtures = [];
+  const pageSize = 1000;
   let page = 0;
   let fetchMore = true;
 
@@ -58,55 +52,44 @@ async function fetchSupabaseFixtureIds() {
     while (fetchMore) {
       const from = page * pageSize;
       const to = from + pageSize - 1;
-      console.log(`Fetching Supabase fixtures range: ${from} - ${to}`);
+      console.log(`Fetching fixtures range: ${from} - ${to}`);
 
+      // Select necessary fields: id, date (start time), and last update timestamp
       const { data, error, count } = await supabase
-        .from('fixtures') // Your table name
-        .select('id', { count: 'exact' }) // Select only the ID column, get total count on first query
-        .range(from, to); // Fetch the current page range
+        .from('fixtures')
+        .select('id, date, player_statistics_last_updated', { count: 'exact' })
+        .gte('date', startUTC)
+        .lt('date', endUTC)
+        .order('date', { ascending: true })
+        .range(from, to);
 
-      if (error) {
-        throw error;
-      }
+      if (error) throw error;
 
       if (data && data.length > 0) {
-        const supabaseIds = data.map(fixture => fixture.id).filter(id => id != null);
-        allSupabaseIds.push(...supabaseIds); // Add fetched IDs to the main list
-        console.log(`Fetched ${data.length} IDs. Total fetched so far: ${allSupabaseIds.length}`);
+        allFixtures.push(...data);
+        console.log(`Fetched ${data.length} fixtures. Total so far: ${allFixtures.length}`);
       } else {
-        // No more data returned, stop fetching
         fetchMore = false;
-        console.log('No more Supabase fixtures found.');
+        console.log('No more fixtures found in range.');
       }
 
-      // Optional: Log total count on the first iteration
-      if (page === 0 && count !== null) {
-          console.log(`Total fixtures count reported by Supabase: ${count}`);
-      }
-
-      // Check if we've fetched enough based on the count (if available)
-      // This is an optimization to potentially stop early if count is reliable
-      if (count !== null && allSupabaseIds.length >= count) {
+      if (page === 0 && count !== null) console.log(`Total fixtures count for today reported by Supabase: ${count}`);
+      if (count !== null && allFixtures.length >= count) {
           console.log('Fetched count matches total count. Stopping pagination.');
           fetchMore = false;
       }
 
-
-      page++; // Move to the next page for the next iteration
-
-      // Safety break: Add a limit to prevent infinite loops in unexpected scenarios
-      if (page > 200) { // Adjust limit based on expected max pages (e.g., 13000 / 1000 = 13 -> 20 pages is safe)
+      page++;
+      if (page > 200) { // Safety break
           console.warn("Pagination limit reached. Stopping fetch.");
           fetchMore = false;
       }
     }
-
-    console.log(`Finished fetching. Found ${allSupabaseIds.length} total fixture IDs in Supabase.`);
-    return new Set(allSupabaseIds); // Use a Set for efficient lookup
-
+    console.log(`Finished fetching. Found ${allFixtures.length} total fixtures for today.`);
+    return allFixtures;
   } catch (error) {
-    console.error('Error fetching Supabase fixture IDs with pagination:', error);
-    return new Set(); // Return empty set on error
+    console.error('Error fetching Supabase fixtures:', error);
+    return [];
   }
 }
 
@@ -126,53 +109,53 @@ async function fetchPlayerStats(fixtureId) {
     });
 
     if (!response.ok) {
-      // Handle rate limits specifically if possible (e.g., status 429)
-      if (response.status === 429) {
-         console.warn(`Rate limit hit for fixture ${fixtureId}. Skipping for now.`);
-         return null;
+       if (response.status === 429) {
+         console.warn(`Rate limit hit for player stats ${fixtureId}. Skipping for now.`);
+         return null; // Indicate rate limit hit
       }
-      throw new Error(`RapidAPI request for fixture ${fixtureId} failed with status ${response.status}: ${await response.text()}`);
+      console.error(`RapidAPI player stats request for fixture ${fixtureId} failed with status ${response.status}: ${await response.text()}`);
+      // Return null or an empty object depending on how you want to handle API errors downstream
+      return null; // Indicate fetch error
     }
 
     const data = await response.json();
-    // --- Adjust this if the structure is different ---
-    // Assuming the stats are directly in the response or within a specific key
-    const statsData = data?.response;
-    // --- End adjustment section ---
+    // Adjust based on the actual structure of the player stats response
+    const playerStats = data?.response;
 
-    if (!statsData || (Array.isArray(statsData) && statsData.length === 0)) {
-        console.log(`No player stats data returned for fixture ${fixtureId}.`);
-        return null; // Or return an empty object/array if preferred
+    if (!playerStats || (Array.isArray(playerStats) && playerStats.length === 0)) {
+        console.log(`No player stats data returned or found for fixture ${fixtureId}.`);
+        // Return an empty array/object or null if you want to store "no stats" explicitly
+        return []; // Represent no stats as an empty array
+    } else {
+        console.log(`Successfully fetched player stats for fixture ${fixtureId}.`);
     }
-
-    console.log(`Successfully fetched player stats for fixture ${fixtureId}.`);
-    return statsData;
+    return playerStats;
   } catch (error) {
     console.error(`Error fetching player stats for fixture ${fixtureId}:`, error);
-    return null; // Return null on error
+    return null; // Indicate fetch error
   }
 }
 
 /**
  * Updates a fixture in Supabase with player statistics.
  */
-async function updateFixtureStats(fixtureId, playerStats) {
-  console.log(`Updating Supabase for fixture ${fixtureId}...`);
+async function updateFixtureStats(fixtureId, stats) {
+  console.log(`Updating Supabase player stats for fixture ${fixtureId}...`);
   try {
     const { data, error } = await supabase
-      .from('fixtures') // Your table name
+      .from('fixtures')
       .update({
-        player_statistics: playerStats,
-        player_statistics_last_updated: new Date().toISOString(), // Use ISO string for timestamptz
+        player_statistics: stats, // Store the fetched stats (JSONB)
+        player_statistics_last_updated: new Date().toISOString(), // Update timestamp
       })
-      .eq('id', fixtureId); // Match the specific fixture ID
+      .eq('id', fixtureId);
 
-    if (error) {
-      throw error;
-    }
-    console.log(`Successfully updated fixture ${fixtureId} in Supabase.`);
+    if (error) throw error;
+    console.log(`Successfully updated player stats for fixture ${fixtureId} in Supabase.`);
+    return true; // Indicate success
   } catch (error) {
-    console.error(`Error updating Supabase for fixture ${fixtureId}:`, error);
+    console.error(`Error updating Supabase player stats for fixture ${fixtureId}:`, error);
+    return false; // Indicate failure
   }
 }
 
@@ -180,48 +163,81 @@ async function updateFixtureStats(fixtureId, playerStats) {
 async function runUpdate() {
   console.log('Starting player statistics update process...');
   const startTime = Date.now();
+  const now = new Date(); // Get current time once
 
-  const [liveFixtureIds, supabaseFixtureIds] = await Promise.all([
-    fetchLiveFixtureIds(),
-    fetchSupabaseFixtureIds(),
-  ]);
+  const { startUTC, endUTC } = getTodayUTCRange();
+  const todaysFixtures = await fetchTodaysFixturesFromSupabase(startUTC, endUTC);
 
-  if (liveFixtureIds.size === 0) {
-    console.log('No live fixtures found via internal API. Exiting.');
+  if (todaysFixtures.length === 0) {
+    console.log('No fixtures found scheduled for today. Exiting.');
     return;
   }
 
-  if (supabaseFixtureIds.size === 0) {
-    console.log('No fixtures found in Supabase. Exiting.');
-    return;
-  }
+  let fixturesToUpdate = 0;
+  let updatedCount = 0;
+  let skippedCount = 0;
+  let errorCount = 0;
 
-  // Find the intersection: fixtures that are live AND in our database
-  const fixturesToUpdate = [...liveFixtureIds].filter(id => supabaseFixtureIds.has(id));
+  console.log(`Processing ${todaysFixtures.length} fixtures for potential player stats updates...`);
 
-  if (fixturesToUpdate.length === 0) {
-    console.log('No currently live fixtures match those stored in Supabase. Exiting.');
-    return;
-  }
+  for (const fixture of todaysFixtures) {
+    const { id, date, player_statistics_last_updated } = fixture;
 
-  console.log(`Found ${fixturesToUpdate.length} live fixtures in Supabase to update: ${fixturesToUpdate.join(', ')}`);
-
-  // Process updates sequentially with a small delay to avoid hammering the API
-  for (const fixtureId of fixturesToUpdate) {
-    const playerStats = await fetchPlayerStats(fixtureId);
-
-    if (playerStats) {
-      await updateFixtureStats(fixtureId, playerStats);
-    } else {
-      console.log(`Skipping Supabase update for fixture ${fixtureId} due to missing stats data.`);
+    if (!date) {
+        console.log(`Skipping fixture ${id}: Missing date.`);
+        skippedCount++;
+        continue;
     }
 
-    // Add a small delay (e.g., 1 second) between RapidAPI calls
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const fixtureStartDate = new Date(date);
+    const estimatedEndTime = new Date(fixtureStartDate.getTime() + MATCH_DURATION_BUFFER_MINUTES * 60 * 1000);
+    const lastStatsUpdate = player_statistics_last_updated ? new Date(player_statistics_last_updated) : null;
+
+    // --- Filtering Logic ---
+    // 1. Skip if game hasn't started yet
+    if (now < fixtureStartDate) {
+        // console.log(`Skipping fixture ${id}: Start time ${fixtureStartDate.toISOString()} is in the future.`);
+        skippedCount++;
+        continue;
+    }
+
+    // 2. Skip if game is finished AND already updated after estimated end time
+    if (now > estimatedEndTime && lastStatsUpdate && lastStatsUpdate >= estimatedEndTime) {
+        console.log(`Skipping fixture ${id}: Game finished (${estimatedEndTime.toISOString()}) and stats updated after end (${lastStatsUpdate.toISOString()}).`);
+        skippedCount++;
+        continue;
+    }
+
+    // --- If not skipped, it's a target for fetching ---
+    console.log(`Fixture ${id}: Flagging for player stats update.`);
+    fixturesToUpdate++;
+
+    const stats = await fetchPlayerStats(id);
+
+    if (stats !== null) { // Check if fetch was successful (not null)
+      const success = await updateFixtureStats(id, stats);
+      if (success) {
+        updatedCount++;
+      } else {
+        errorCount++; // DB update failed
+      }
+    } else {
+      // Fetch failed (e.g., rate limit, API error, network error)
+      errorCount++;
+    }
+
+    // Delay between RapidAPI calls
+    await new Promise(resolve => setTimeout(resolve, 1100)); // Slightly over 1 sec delay
   }
 
   const endTime = Date.now();
-  console.log(`Player statistics update process finished in ${(endTime - startTime) / 1000} seconds.`);
+  console.log('--- Update Summary ---');
+  console.log(`Processed: ${todaysFixtures.length} fixtures`);
+  console.log(`Targeted:  ${fixturesToUpdate}`);
+  console.log(`Updated:   ${updatedCount}`);
+  console.log(`Skipped:   ${skippedCount}`);
+  console.log(`Errors:    ${errorCount}`);
+  console.log(`Player stats update process finished in ${(endTime - startTime) / 1000} seconds.`);
 }
 
 runUpdate().catch(error => {
