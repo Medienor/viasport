@@ -1,0 +1,34 @@
+name: Update Live Player Statistics
+
+on:
+  schedule:
+    # Runs every 5 minutes. Adjust the cron schedule as needed.
+    # Consider running it more frequently during peak match times
+    # and less frequently (or not at all) overnight.
+    # Example: Every 5 mins between 10:00 and 23:00 UTC: '*/5 10-23 * * *'
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # Allows manual triggering from the Actions tab
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4 # Use latest version
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4 # Use latest version
+        with:
+          node-version: '18' # Or your preferred Node.js version (18+ recommended for built-in fetch)
+          cache: 'npm' # Or 'yarn'
+
+      - name: Install dependencies
+        run: npm install # Or yarn install
+
+      - name: Run Player Stats Update Script
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+          INTERNAL_LIVE_FIXTURES_URL: ${{ secrets.INTERNAL_LIVE_FIXTURES_URL }} # e.g., https://your-app.com/api/football/live
+        run: node scripts/update-player-stats.js

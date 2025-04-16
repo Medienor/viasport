@@ -67,19 +67,21 @@ const createTeamSlug = (teamName: string, teamId: number) => {
   return `${teamName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}-${teamId}`;
 };
 
-export default function LineupComponent({ lineups, playerStats, eventData }: LineupComponentProps) {
+export default function LineupComponent({ lineups, playerStats = [], eventData }: LineupComponentProps) {
   const [flippedCards, setFlippedCards] = useState<{ [key: string]: boolean }>({});
 
-  // Calculate highest rating for each team
+  // Calculate highest rating for each team safely
   const teamHighestRatings = lineups.reduce((acc: { [key: number]: number }, team: TeamLineup) => {
     const allPlayers = [...team.startXI, ...team.substitutes];
     const ratings = allPlayers.map(({ player }) => {
-      const playerStat = playerStats
-        .find(teamStats => teamStats.team.id === team.team.id)?.players
-        .find(p => p.player.id === player.id);
-      return parseFloat(playerStat?.statistics[0]?.games?.rating || '0');
+      // --- Safely find player stats ---
+      const teamStats = playerStats?.find(ts => ts.team.id === team.team.id); // Check playerStats first
+      const playerStat = teamStats?.players?.find(p => p.player.id === player.id); // Then check teamStats and players
+      // --- End Safety Check ---
+      return parseFloat(playerStat?.statistics?.[0]?.games?.rating || '0'); // Optional chaining already helps here
     });
-    acc[team.team.id] = Math.max(...ratings);
+    // Ensure ratings array is not empty before using spread syntax
+    acc[team.team.id] = ratings.length > 0 ? Math.max(...ratings) : 0;
     return acc;
   }, {});
 
@@ -181,13 +183,15 @@ export default function LineupComponent({ lineups, playerStats, eventData }: Lin
   };
 
   const renderPlayerCard = (player: Player, position: any, team: TeamLineup, substituteInfo?: { subTime: number, otherPlayer: Player }) => {
+    // --- Safely find player stats with double optional chaining ---
     const playerStat = playerStats
-      .find(teamStats => teamStats.team.id === team.team.id)?.players
-      .find(p => p.player.id === player.id);
-    
-    const rating = parseFloat(playerStat?.statistics[0]?.games?.rating || '0');
-    const isHighestRated = rating === teamHighestRatings[team.team.id] && rating > 0;
-    const goalsScored = playerStat?.statistics[0]?.goals?.total || 0;
+      ?.find(teamStats => teamStats.team.id === team.team.id)?.players // Add ?. before players
+      ?.find(p => p.player.id === player.id); // Add ?. before find
+    // --- End Safety Check ---
+
+    const rating = parseFloat(playerStat?.statistics?.[0]?.games?.rating || '0'); // Use optional chaining here too
+    const isHighestRated = teamHighestRatings[team.team.id] !== undefined && rating === teamHighestRatings[team.team.id] && rating > 0; // Keep existing check
+    const goalsScored = playerStat?.statistics?.[0]?.goals?.total || 0; // Use optional chaining
     const cardKey = `${player.id}-${substituteInfo?.otherPlayer?.id || ''}`;
     const isFlipped = flippedCards[cardKey];
 
@@ -243,11 +247,12 @@ export default function LineupComponent({ lineups, playerStats, eventData }: Lin
 
     // For substituted player, get the substitute's stats
     const substituteStats = playerStats
-      .find(teamStats => teamStats.team.id === team.team.id)?.players
-      .find(p => p.player.id === substituteInfo.otherPlayer.id);
-    
-    const substituteGoals = substituteStats?.statistics[0]?.goals?.total || 0;
-    const substituteRating = parseFloat(substituteStats?.statistics[0]?.games?.rating || '0');
+      ?.find(teamStats => teamStats.team.id === team.team.id)?.players // Add ?. before players
+      ?.find(p => p.player.id === substituteInfo.otherPlayer.id); // Add ?. before find
+    // --- End Safety Check ---
+
+    const substituteGoals = substituteStats?.statistics?.[0]?.goals?.total || 0; // Use optional chaining
+    const substituteRating = parseFloat(substituteStats?.statistics?.[0]?.games?.rating || '0'); // Use optional chaining
 
     return (
       <div className="absolute transform -translate-x-1/2 -translate-y-1/2" style={position}>
@@ -359,10 +364,12 @@ export default function LineupComponent({ lineups, playerStats, eventData }: Lin
     const allPlayers = [...team.startXI, ...team.substitutes];
     const playerRatings = allPlayers
       .map(({ player }) => {
+        // --- Safely find player stats with double optional chaining ---
         const playerStat = playerStats
-          .find(teamStats => teamStats.team.id === team.team.id)?.players
-          .find(p => p.player.id === player.id);
-        return parseFloat(playerStat?.statistics[0]?.games?.rating || '0');
+          ?.find(teamStats => teamStats.team.id === team.team.id)?.players // Add ?. before players
+          ?.find(p => p.player.id === player.id); // Add ?. before find
+        // --- End Safety Check ---
+        return parseFloat(playerStat?.statistics?.[0]?.games?.rating || '0'); // Use optional chaining
       })
       .filter(rating => rating > 0); // Only include players who have ratings
 
@@ -476,12 +483,13 @@ export default function LineupComponent({ lineups, playerStats, eventData }: Lin
           <h3 className="text-lg font-semibold mb-3">Substitutes (Innbyttere)</h3>
           <div className="space-y-2">
             {playedSubstitutes.map(({ player }) => {
-              const playerStat = playerStats
-                .find(teamStats => teamStats.team.id === team.team.id)?.players
-                .find(p => p.player.id === player.id);
-              
-              const rating = parseFloat(playerStat?.statistics[0]?.games?.rating || '0');
-              const goalsScored = playerStat?.statistics[0]?.goals?.total || 0;
+              // --- Safely find player stats ---
+              const teamStats = playerStats?.find(ts => ts.team.id === team.team.id); // Check playerStats first
+              const playerStat = teamStats?.players?.find(p => p.player.id === player.id); // Then check teamStats and players
+              // --- End Safety Check ---
+
+              const rating = parseFloat(playerStat?.statistics?.[0]?.games?.rating || '0');
+              const goalsScored = playerStat?.statistics?.[0]?.goals?.total || 0;
               const { subIn, subOut } = getPlayerSubstitutionTime(player.id);
 
               return (
@@ -549,10 +557,12 @@ export default function LineupComponent({ lineups, playerStats, eventData }: Lin
           <h3 className="text-lg font-semibold mb-3">Bench (Benket)</h3>
           <div className="space-y-2">
             {benchedPlayers.map(({ player }) => {
-              const playerStat = playerStats
-                .find(teamStats => teamStats.team.id === team.team.id)?.players
-                .find(p => p.player.id === player.id);
-              
+              // --- Safely find player stats ---
+              // Note: Stats might not exist for benched players, but check anyway
+              const teamStats = playerStats?.find(ts => ts.team.id === team.team.id); // Check playerStats first
+              const playerStat = teamStats?.players?.find(p => p.player.id === player.id); // Then check teamStats and players
+              // --- End Safety Check ---
+
               return (
                 <Link 
                   href={`/spillerprofil/${player.id}`} 

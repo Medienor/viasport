@@ -1,0 +1,32 @@
+name: Update Fixture Events
+
+on:
+  schedule:
+    # Runs every 2 minutes. CRITICAL: Adjust based on RapidAPI limits and cost!
+    # Running too often for live games can quickly exhaust quotas.
+    # Maybe run less often (e.g., */5) normally, and trigger more often manually if needed?
+    - cron: '*/2 * * * *'
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  update-events:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # Or your preferred version
+          cache: 'npm' # Or 'yarn'
+
+      - name: Install dependencies
+        run: npm install # Or yarn install
+
+      - name: Run Fixture Event Update Script
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+        run: node scripts/update-fixture-events.js

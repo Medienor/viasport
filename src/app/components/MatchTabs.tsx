@@ -69,16 +69,23 @@ export default function MatchTabs({ activeTab = 'facts', onTabChange, match, chi
     { id: 'head-to-head', label: 'Oppgjør' },
   ];
 
-  // Filter tabs based on match status
-  // Assuming match status is available like match.status.short === 'NS'
+  // Filter tabs based on match status AND data availability
   const matchStatus = match?.status?.short; // Use optional chaining for safety
+  const hasLineups = match?.lineups && Array.isArray(match.lineups) && match.lineups.length > 0; // Check if lineup data exists
+
   const tabsToShow = allTabs.filter(tab => {
-    if (matchStatus === 'NS') {
-      // If match hasn't started, hide these specific tabs
-      return !['commentary', 'lineup', 'stats'].includes(tab.id);
+    // --- Updated Logic ---
+    // 1. Always hide 'commentary' and 'stats' if match hasn't started ('NS')
+    if (matchStatus === 'NS' && ['commentary', 'stats'].includes(tab.id)) {
+      return false;
     }
-    // Otherwise, show all tabs
+    // 2. Specifically hide 'lineup' ONLY if there's no lineup data
+    if (tab.id === 'lineup' && !hasLineups) {
+      return false;
+    }
+    // 3. Otherwise, show the tab
     return true;
+    // --- End Updated Logic ---
   });
 
   // Adjust selectedTab if the current one is hidden
