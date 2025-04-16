@@ -56,11 +56,16 @@ async function fetchLineups() {
     }
 
     // --- Query 2: Catch-Up Check ---
-    console.log(`2. Checking for fixtures started between ${catchUpThresholdTime.toISOString()} and ${now.toISOString()} that were missed.`);
+    console.log(`2. Checking for fixtures started between ${catchUpThresholdTime.toISOString()} and ${now.toISOString()} that were missed (including potentially delayed 'NS' status).`);
+
+    // Combine 'NS' with in-progress codes for the catch-up window
+    const catchUpStatusCodes = [...IN_PROGRESS_STATUS_CODES, 'NS'];
+
     const { data: catchUpMatches, error: catchUpError } = await supabase
       .from('fixtures')
       .select('id, date')
-      .in('status->>short', IN_PROGRESS_STATUS_CODES) // Match is in progress
+      // Use the combined list of statuses for the .in() filter
+      .in('status->>short', catchUpStatusCodes) // Match is in progress OR still NS
       .is('lineups_last_updated', null) // Still needs lineup update
       .gte('date', catchUpThresholdTime.toISOString()) // Started within last X hours
       .lt('date', now.toISOString()); // Started before now
