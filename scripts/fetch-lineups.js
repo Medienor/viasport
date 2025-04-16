@@ -27,18 +27,20 @@ async function fetchLineups() {
     const thresholdTime = new Date(now.getTime() + MINUTES_THRESHOLD * 60 * 1000);
 
     console.log(`Checking for fixtures between ${now.toISOString()} and ${thresholdTime.toISOString()}`);
+    console.log(`DEBUG: Attempting Supabase fetch from: ${SUPABASE_URL}`);
 
     const { data: matchesToUpdate, error: fetchError } = await supabase
       .from('fixtures')
       .select('id, date') // Select only needed columns
-      .eq('status', 'NS')
+      .eq('status->>short', 'NS')
       .is('lineups_last_updated', null)
       .lt('date', thresholdTime.toISOString())
       .gte('date', now.toISOString());
 
     if (fetchError) {
       console.error('🔴 Error fetching matches from Supabase:', fetchError.message);
-      throw fetchError; // Stop execution if we can't get matches
+      console.error('Fetch Error Details:', fetchError);
+      throw fetchError;
     }
 
     if (!matchesToUpdate || matchesToUpdate.length === 0) {
