@@ -115,65 +115,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1238127,
-          "date": "2025-04-12T16:00:00+00:00",
-          "venue": {
-            "id": 2385,
-            "name": "Grey Beton Bodrum Stadyumu",
-            "city": "Muğla"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744473600
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3583,
-            "name": "BB Bodrumspor",
-            "logo": "https://media.api-sports.io/football/teams/3583.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1005,
-            "name": "Antalyaspor",
-            "logo": "https://media.api-sports.io/football/teams/1005.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1238137,
           "date": "2025-04-26T13:00:00+00:00",
           "venue": {
@@ -292,6 +233,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238127,
+          "date": "2025-04-12T16:00:00+00:00",
+          "venue": {
+            "id": 2385,
+            "name": "Grey Beton Bodrum Stadyumu",
+            "city": "Muğla"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744473600
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3583,
+            "name": "BB Bodrumspor",
+            "logo": "https://media.api-sports.io/football/teams/3583.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1005,
+            "name": "Antalyaspor",
+            "logo": "https://media.api-sports.io/football/teams/1005.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238115,
@@ -822,65 +822,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1327573,
-          "date": "2025-02-05T12:30:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Grey Beton Bodrum Stadyumu",
-            "city": "Bodrum"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738758600
-        },
-        "league": {
-          "id": 206,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/206.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3583,
-            "name": "BB Bodrumspor",
-            "logo": "https://media.api-sports.io/football/teams/3583.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1005,
-            "name": "Antalyaspor",
-            "logo": "https://media.api-sports.io/football/teams/1005.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1177,5 +1118,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:00.956Z"
+  "lastUpdated": "2025-04-12T18:24:40.998Z"
 }

@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216342,
-          "date": "2025-04-12T14:00:00+00:00",
-          "venue": {
-            "id": 573,
-            "name": "Fratton Park",
-            "city": "Portsmouth"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744466400
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1355,
-            "name": "Portsmouth",
-            "logo": "https://media.api-sports.io/football/teams/1355.png",
-            "winner": null
-          },
-          "away": {
-            "id": 69,
-            "name": "Derby",
-            "logo": "https://media.api-sports.io/football/teams/69.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216350,
           "date": "2025-04-18T11:30:00+00:00",
           "venue": {
@@ -447,6 +388,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216342,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 573,
+            "name": "Fratton Park",
+            "city": "Portsmouth"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1355,
+            "name": "Portsmouth",
+            "logo": "https://media.api-sports.io/football/teams/1355.png",
+            "winner": null
+          },
+          "away": {
+            "id": 69,
+            "name": "Derby",
+            "logo": "https://media.api-sports.io/football/teams/69.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216332,
@@ -977,65 +977,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216217,
-          "date": "2025-02-11T19:45:00+00:00",
-          "venue": {
-            "id": 527,
-            "name": "Pride Park Stadium",
-            "city": "Derby"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739303100
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 69,
-            "name": "Derby",
-            "logo": "https://media.api-sports.io/football/teams/69.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1338,
-            "name": "Oxford United",
-            "logo": "https://media.api-sports.io/football/teams/1338.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1332,5 +1273,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:48.148Z"
+  "lastUpdated": "2025-04-12T18:25:27.486Z"
 }

@@ -148,65 +148,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1341963,
-          "date": "2025-04-12T15:30:00+00:00",
-          "venue": {
-            "id": 1507,
-            "name": "Borås Arena",
-            "city": "Borås"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744471800
-        },
-        "league": {
-          "id": 113,
-          "name": "Allsvenskan",
-          "logo": "https://media.api-sports.io/football/leagues/113.png"
-        },
-        "teams": {
-          "home": {
-            "id": 372,
-            "name": "IF Elfsborg",
-            "logo": "https://media.api-sports.io/football/teams/372.png",
-            "winner": null
-          },
-          "away": {
-            "id": 378,
-            "name": "IFK Norrkoping",
-            "logo": "https://media.api-sports.io/football/teams/378.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1341972,
           "date": "2025-04-19T13:00:00+00:00",
           "venue": {
@@ -740,6 +681,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1341963,
+          "date": "2025-04-12T15:30:00+00:00",
+          "venue": {
+            "id": 1507,
+            "name": "Borås Arena",
+            "city": "Borås"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744471800
+        },
+        "league": {
+          "id": 113,
+          "name": "Allsvenskan",
+          "logo": "https://media.api-sports.io/football/leagues/113.png"
+        },
+        "teams": {
+          "home": {
+            "id": 372,
+            "name": "IF Elfsborg",
+            "logo": "https://media.api-sports.io/football/teams/372.png",
+            "winner": true
+          },
+          "away": {
+            "id": 378,
+            "name": "IFK Norrkoping",
+            "logo": "https://media.api-sports.io/football/teams/378.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1341956,
           "date": "2025-04-06T12:00:00+00:00",
           "venue": {
@@ -1268,65 +1268,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337080,
-          "date": "2025-01-19T00:00:00+00:00",
-          "venue": {
-            "id": 11553,
-            "name": "PlatinumCars Arena",
-            "city": "Norrköping"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 2
-          },
-          "timestamp": 1737244800
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 378,
-            "name": "IFK Norrkoping",
-            "logo": "https://media.api-sports.io/football/teams/378.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2163,
-            "name": "IFK Varnamo",
-            "logo": "https://media.api-sports.io/football/teams/2163.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1632,5 +1573,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:40.510Z"
+  "lastUpdated": "2025-04-12T18:25:19.520Z"
 }

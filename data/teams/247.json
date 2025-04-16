@@ -190,65 +190,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220303,
-          "date": "2025-04-12T11:30:00+00:00",
-          "venue": {
-            "id": 1386,
-            "name": "Celtic Park",
-            "city": "Glasgow"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744457400
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 247,
-            "name": "Celtic",
-            "logo": "https://media.api-sports.io/football/teams/247.png",
-            "winner": null
-          },
-          "away": {
-            "id": 250,
-            "name": "Kilmarnock",
-            "logo": "https://media.api-sports.io/football/teams/250.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1360340,
           "date": "2025-04-20T14:00:00+00:00",
           "venue": {
@@ -308,6 +249,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220303,
+          "date": "2025-04-12T11:30:00+00:00",
+          "venue": {
+            "id": 1386,
+            "name": "Celtic Park",
+            "city": "Glasgow"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744457400
+        },
+        "league": {
+          "id": 179,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/179.png"
+        },
+        "teams": {
+          "home": {
+            "id": 247,
+            "name": "Celtic",
+            "logo": "https://media.api-sports.io/football/teams/247.png",
+            "winner": true
+          },
+          "away": {
+            "id": 250,
+            "name": "Kilmarnock",
+            "logo": "https://media.api-sports.io/football/teams/250.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 4,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220301,
@@ -838,65 +838,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345751,
-          "date": "2025-02-12T20:00:00+00:00",
-          "venue": {
-            "id": 1386,
-            "name": "Celtic Park",
-            "city": "Glasgow"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1739390400
-        },
-        "league": {
-          "id": 2,
-          "name": "UEFA Champions League",
-          "logo": "https://media.api-sports.io/football/leagues/2.png"
-        },
-        "teams": {
-          "home": {
-            "id": 247,
-            "name": "Celtic",
-            "logo": "https://media.api-sports.io/football/teams/247.png",
-            "winner": false
-          },
-          "away": {
-            "id": 157,
-            "name": "Bayern München",
-            "logo": "https://media.api-sports.io/football/teams/157.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1193,5 +1134,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:55.803Z"
+  "lastUpdated": "2025-04-12T18:25:35.147Z"
 }

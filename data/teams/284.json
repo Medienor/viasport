@@ -1179,6 +1179,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1324047,
+          "date": "2025-04-12T07:00:00+00:00",
+          "venue": {
+            "id": 967,
+            "name": "Sanga Stadium by Kyocera",
+            "city": "Kameoka"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744441200
+        },
+        "league": {
+          "id": 98,
+          "name": "J1 League",
+          "logo": "https://media.api-sports.io/football/leagues/98.png"
+        },
+        "teams": {
+          "home": {
+            "id": 302,
+            "name": "Kyoto Sanga",
+            "logo": "https://media.api-sports.io/football/teams/302.png",
+            "winner": true
+          },
+          "away": {
+            "id": 284,
+            "name": "Shonan Bellmare",
+            "logo": "https://media.api-sports.io/football/teams/284.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1324037,
           "date": "2025-04-06T06:00:00+00:00",
           "venue": {
@@ -1707,65 +1766,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1323958,
-          "date": "2025-02-15T06:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Shonan BMW Stadium Hiratsuka",
-            "city": "Kanagawa"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739599200
-        },
-        "league": {
-          "id": 98,
-          "name": "J1 League",
-          "logo": "https://media.api-sports.io/football/leagues/98.png"
-        },
-        "teams": {
-          "home": {
-            "id": 284,
-            "name": "Shonan Bellmare",
-            "logo": "https://media.api-sports.io/football/teams/284.png",
-            "winner": true
-          },
-          "away": {
-            "id": 290,
-            "name": "Kashima",
-            "logo": "https://media.api-sports.io/football/teams/290.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1783,12 +1783,12 @@
       "name": "Shonan Bellmare",
       "logo": "https://media.api-sports.io/football/teams/284.png"
     },
-    "form": "WWWDDLLLW",
+    "form": "WWWDDLLLWL",
     "fixtures": {
       "played": {
         "home": 4,
-        "away": 5,
-        "total": 9
+        "away": 6,
+        "total": 10
       },
       "wins": {
         "home": 3,
@@ -1802,8 +1802,8 @@
       },
       "loses": {
         "home": 1,
-        "away": 2,
-        "total": 3
+        "away": 3,
+        "total": 4
       }
     },
     "goals": {
@@ -1815,8 +1815,8 @@
         },
         "average": {
           "home": "1.5",
-          "away": "0.6",
-          "total": "1.0"
+          "away": "0.5",
+          "total": "0.9"
         },
         "minute": {
           "0-15": {
@@ -1855,57 +1855,57 @@
         "under_over": {
           "0.5": {
             "over": 6,
-            "under": 3
+            "under": 4
           },
           "1.5": {
             "over": 3,
-            "under": 6
+            "under": 7
           },
           "2.5": {
             "over": 0,
-            "under": 9
+            "under": 10
           },
           "3.5": {
             "over": 0,
-            "under": 9
+            "under": 10
           },
           "4.5": {
             "over": 0,
-            "under": 9
+            "under": 10
           }
         }
       },
       "against": {
         "total": {
           "home": 4,
-          "away": 7,
-          "total": 11
+          "away": 9,
+          "total": 13
         },
         "average": {
           "home": "1.0",
-          "away": "1.4",
-          "total": "1.2"
+          "away": "1.5",
+          "total": "1.3"
         },
         "minute": {
           "0-15": {
             "total": 1,
-            "percentage": "10.00%"
+            "percentage": "8.33%"
           },
           "16-30": {
             "total": 2,
-            "percentage": "20.00%"
+            "percentage": "16.67%"
           },
           "31-45": {
-            "total": 1,
-            "percentage": "10.00%"
+            "total": 2,
+            "percentage": "16.67%"
           },
           "46-60": {
             "total": 3,
-            "percentage": "30.00%"
+            "percentage": "25.00%"
           },
           "61-75": {
-            "total": 2,
-            "percentage": "20.00%"
+            "total": 3,
+            "percentage": "25.00%"
           },
           "76-90": {
             "total": null,
@@ -1913,7 +1913,7 @@
           },
           "91-105": {
             "total": 1,
-            "percentage": "10.00%"
+            "percentage": "8.33%"
           },
           "106-120": {
             "total": null,
@@ -1922,24 +1922,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 7,
+            "over": 8,
             "under": 2
           },
           "1.5": {
-            "over": 3,
+            "over": 4,
             "under": 6
           },
           "2.5": {
             "over": 1,
-            "under": 8
+            "under": 9
           },
           "3.5": {
             "over": 0,
-            "under": 9
+            "under": 10
           },
           "4.5": {
             "over": 0,
-            "under": 9
+            "under": 10
           }
         }
       }
@@ -1976,8 +1976,8 @@
     },
     "failed_to_score": {
       "home": 0,
-      "away": 3,
-      "total": 3
+      "away": 4,
+      "total": 4
     },
     "penalty": {
       "scored": {
@@ -1997,6 +1997,10 @@
       },
       {
         "formation": "5-3-2",
+        "played": 1
+      },
+      {
+        "formation": "3-4-2-1",
         "played": 1
       }
     ],
@@ -2071,5 +2075,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:36:02.563Z"
+  "lastUpdated": "2025-04-12T18:30:51.684Z"
 }

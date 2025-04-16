@@ -69,65 +69,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1328629,
-          "date": "2025-04-12T12:00:00+00:00",
-          "venue": {
-            "id": 1196,
-            "name": "Nadderud Stadion",
-            "city": "Bærum"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744459200
-        },
-        "league": {
-          "id": 725,
-          "name": "Toppserien",
-          "logo": "https://media.api-sports.io/football/leagues/725.png"
-        },
-        "teams": {
-          "home": {
-            "id": 15953,
-            "name": "Stabæk W",
-            "logo": "https://media.api-sports.io/football/teams/15953.png",
-            "winner": null
-          },
-          "away": {
-            "id": 15952,
-            "name": "Kolbotn W",
-            "logo": "https://media.api-sports.io/football/teams/15952.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1328633,
           "date": "2025-04-16T16:00:00+00:00",
           "venue": {
@@ -1246,9 +1187,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1328728,
+          "date": "2025-10-11T12:00:00+00:00",
+          "venue": {
+            "id": 5118,
+            "name": "Kringsjå kunstgress",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1760184000
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15955,
+            "name": "Lyn W",
+            "logo": "https://media.api-sports.io/football/teams/15955.png",
+            "winner": null
+          },
+          "away": {
+            "id": 15952,
+            "name": "Kolbotn W",
+            "logo": "https://media.api-sports.io/football/teams/15952.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1328629,
+          "date": "2025-04-12T12:00:00+00:00",
+          "venue": {
+            "id": 1196,
+            "name": "Nadderud Stadion",
+            "city": "Bærum"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1744459200
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15953,
+            "name": "Stabæk W",
+            "logo": "https://media.api-sports.io/football/teams/15953.png",
+            "winner": true
+          },
+          "away": {
+            "id": 15952,
+            "name": "Kolbotn W",
+            "logo": "https://media.api-sports.io/football/teams/15952.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1328623,
@@ -1779,65 +1838,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1151835,
-          "date": "2024-09-14T13:00:00+00:00",
-          "venue": {
-            "id": 5108,
-            "name": "Grorud stadion",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726318800
-        },
-        "league": {
-          "id": 725,
-          "name": "Toppserien",
-          "logo": "https://media.api-sports.io/football/leagues/725.png"
-        },
-        "teams": {
-          "home": {
-            "id": 15952,
-            "name": "Kolbotn W",
-            "logo": "https://media.api-sports.io/football/teams/15952.png",
-            "winner": false
-          },
-          "away": {
-            "id": 18380,
-            "name": "Brann W",
-            "logo": "https://media.api-sports.io/football/teams/18380.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 5
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 5
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1855,12 +1855,12 @@
       "name": "Kolbotn W",
       "logo": "https://media.api-sports.io/football/teams/15952.png"
     },
-    "form": "LL",
+    "form": "LLL",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 1,
-        "total": 2
+        "away": 2,
+        "total": 3
       },
       "wins": {
         "home": 0,
@@ -1874,8 +1874,8 @@
       },
       "loses": {
         "home": 1,
-        "away": 1,
-        "total": 2
+        "away": 2,
+        "total": 3
       }
     },
     "goals": {
@@ -1927,36 +1927,36 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       },
       "against": {
         "total": {
           "home": 2,
-          "away": 6,
-          "total": 8
+          "away": 7,
+          "total": 9
         },
         "average": {
           "home": "2.0",
-          "away": "6.0",
-          "total": "4.0"
+          "away": "3.5",
+          "total": "3.0"
         },
         "minute": {
           "0-15": {
@@ -1994,24 +1994,24 @@
         },
         "under_over": {
           "0.5": {
-            "over": 2,
+            "over": 3,
             "under": 0
           },
           "1.5": {
             "over": 2,
-            "under": 0
+            "under": 1
           },
           "2.5": {
             "over": 1,
-            "under": 1
+            "under": 2
           },
           "3.5": {
             "over": 1,
-            "under": 1
+            "under": 2
           },
           "4.5": {
             "over": 1,
-            "under": 1
+            "under": 2
           }
         }
       }
@@ -2020,7 +2020,7 @@
       "streak": {
         "wins": 0,
         "draws": 0,
-        "loses": 2
+        "loses": 3
       },
       "wins": {
         "home": null,
@@ -2048,8 +2048,8 @@
     },
     "failed_to_score": {
       "home": 1,
-      "away": 1,
-      "total": 2
+      "away": 2,
+      "total": 3
     },
     "penalty": {
       "scored": {
@@ -2134,5 +2134,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:29:02.721Z"
+  "lastUpdated": "2025-04-12T18:23:40.581Z"
 }

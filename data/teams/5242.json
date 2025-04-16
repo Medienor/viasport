@@ -181,7 +181,8 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1368296,
@@ -192,10 +193,10 @@
             "city": "Baghdād"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
           },
           "timestamp": 1744475400
         },
@@ -209,27 +210,27 @@
             "id": 5242,
             "name": "Al Shorta",
             "logo": "https://media.api-sports.io/football/teams/5242.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 11066,
             "name": "Al Najaf",
             "logo": "https://media.api-sports.io/football/teams/11066.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -240,9 +241,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1346831,
@@ -773,65 +772,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1350631,
-          "date": "2025-02-13T14:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Al-Shaab Stadium",
-            "city": "Baghdād"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739455200
-        },
-        "league": {
-          "id": 542,
-          "name": "Iraqi League",
-          "logo": "https://media.api-sports.io/football/leagues/542.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5242,
-            "name": "Al Shorta",
-            "logo": "https://media.api-sports.io/football/teams/5242.png",
-            "winner": true
-          },
-          "away": {
-            "id": 11064,
-            "name": "Al Kahrabaa",
-            "logo": "https://media.api-sports.io/football/teams/11064.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1128,5 +1068,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:35:16.857Z"
+  "lastUpdated": "2025-04-12T18:30:04.260Z"
 }

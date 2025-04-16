@@ -146,65 +146,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1203194,
-          "date": "2025-04-12T12:45:00+00:00",
-          "venue": {
-            "id": 2285,
-            "name": "Stadion ul. Bukowa",
-            "city": "Katowice"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744461900
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3484,
-            "name": "GKS Katowice",
-            "logo": "https://media.api-sports.io/football/teams/3484.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3490,
-            "name": "Puszcza Niepołomice",
-            "logo": "https://media.api-sports.io/football/teams/3490.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1203210,
           "date": "2025-04-19T12:45:00+00:00",
           "venue": {
@@ -500,6 +441,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1203194,
+          "date": "2025-04-12T12:45:00+00:00",
+          "venue": {
+            "id": 2285,
+            "name": "Stadion ul. Bukowa",
+            "city": "Katowice"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744461900
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3484,
+            "name": "GKS Katowice",
+            "logo": "https://media.api-sports.io/football/teams/3484.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3490,
+            "name": "Puszcza Niepołomice",
+            "logo": "https://media.api-sports.io/football/teams/3490.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1203187,
@@ -1030,65 +1030,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337965,
-          "date": "2025-01-24T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Miracle Resort Hotel Field 1",
-            "city": "Lara"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737676800
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3484,
-            "name": "GKS Katowice",
-            "logo": "https://media.api-sports.io/football/teams/3484.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1430,
-            "name": "Arda Kardzhali",
-            "logo": "https://media.api-sports.io/football/teams/1430.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1385,5 +1326,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:22.757Z"
+  "lastUpdated": "2025-04-12T18:25:01.584Z"
 }

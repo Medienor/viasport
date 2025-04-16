@@ -109,65 +109,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223914,
-          "date": "2025-04-12T13:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadio Pier Luigi Penzo",
-            "city": "Venezia"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744462800
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 517,
-            "name": "Venezia",
-            "logo": "https://media.api-sports.io/football/teams/517.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1579,
-            "name": "Monza",
-            "logo": "https://media.api-sports.io/football/teams/1579.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223921,
           "date": "2025-04-19T16:00:00+00:00",
           "venue": {
@@ -522,6 +463,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1223914,
+          "date": "2025-04-12T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadio Pier Luigi Penzo",
+            "city": "Venice"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1744462800
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 517,
+            "name": "Venezia",
+            "logo": "https://media.api-sports.io/football/teams/517.png",
+            "winner": true
+          },
+          "away": {
+            "id": 1579,
+            "name": "Monza",
+            "logo": "https://media.api-sports.io/football/teams/1579.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1223901,
@@ -1052,65 +1052,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1223807,
-          "date": "2025-01-27T19:45:00+00:00",
-          "venue": {
-            "id": 905,
-            "name": "Stadio Comunale Luigi Ferraris",
-            "city": "Genova"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738007100
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 495,
-            "name": "Genoa",
-            "logo": "https://media.api-sports.io/football/teams/495.png",
-            "winner": true
-          },
-          "away": {
-            "id": 1579,
-            "name": "Monza",
-            "logo": "https://media.api-sports.io/football/teams/1579.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1407,5 +1348,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:29:38.212Z"
+  "lastUpdated": "2025-04-12T18:24:17.517Z"
 }

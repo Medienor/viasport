@@ -148,65 +148,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1367202,
-          "date": "2025-04-12T11:00:00+00:00",
-          "venue": {
-            "id": 21766,
-            "name": "Karuss kunstgress",
-            "city": "Kristiansand"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744455600
-        },
-        "league": {
-          "id": 105,
-          "name": "NM Cupen",
-          "logo": "https://media.api-sports.io/football/leagues/105.png"
-        },
-        "teams": {
-          "home": {
-            "id": 25500,
-            "name": "Våg",
-            "logo": "https://media.api-sports.io/football/teams/25500.png",
-            "winner": null
-          },
-          "away": {
-            "id": 334,
-            "name": "Start",
-            "logo": "https://media.api-sports.io/football/teams/334.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1342448,
           "date": "2025-04-21T15:00:00+00:00",
           "venue": {
@@ -740,6 +681,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1367202,
+          "date": "2025-04-12T11:00:00+00:00",
+          "venue": {
+            "id": 21766,
+            "name": "Karuss kunstgress",
+            "city": "Kristiansand"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1744455600
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 25500,
+            "name": "Våg",
+            "logo": "https://media.api-sports.io/football/teams/25500.png",
+            "winner": false
+          },
+          "away": {
+            "id": 334,
+            "name": "Start",
+            "logo": "https://media.api-sports.io/football/teams/334.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342439,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -1268,65 +1268,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1152103,
-          "date": "2024-11-02T15:00:00+00:00",
-          "venue": {
-            "id": 1203,
-            "name": "Intility Arena",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1730559600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 326,
-            "name": "Valerenga",
-            "logo": "https://media.api-sports.io/football/teams/326.png",
-            "winner": null
-          },
-          "away": {
-            "id": 334,
-            "name": "Start",
-            "logo": "https://media.api-sports.io/football/teams/334.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1623,5 +1564,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:28:57.717Z"
+  "lastUpdated": "2025-04-12T18:23:35.479Z"
 }

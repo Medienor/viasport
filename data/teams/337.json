@@ -185,65 +185,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1203193,
-          "date": "2025-04-12T15:30:00+00:00",
-          "venue": {
-            "id": 1247,
-            "name": "Stadion Cracovii im. Józefa Piłsudskiego",
-            "city": "Kraków"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744471800
-        },
-        "league": {
-          "id": 106,
-          "name": "Ekstraklasa",
-          "logo": "https://media.api-sports.io/football/leagues/106.png"
-        },
-        "teams": {
-          "home": {
-            "id": 350,
-            "name": "Cracovia Krakow",
-            "logo": "https://media.api-sports.io/football/teams/350.png",
-            "winner": null
-          },
-          "away": {
-            "id": 337,
-            "name": "Slask Wroclaw",
-            "logo": "https://media.api-sports.io/football/teams/337.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1203210,
           "date": "2025-04-19T12:45:00+00:00",
           "venue": {
@@ -480,6 +421,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1203193,
+          "date": "2025-04-12T15:30:00+00:00",
+          "venue": {
+            "id": 1247,
+            "name": "Stadion Cracovii im. Józefa Piłsudskiego",
+            "city": "Kraków"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744471800
+        },
+        "league": {
+          "id": 106,
+          "name": "Ekstraklasa",
+          "logo": "https://media.api-sports.io/football/leagues/106.png"
+        },
+        "teams": {
+          "home": {
+            "id": 350,
+            "name": "Cracovia Krakow",
+            "logo": "https://media.api-sports.io/football/teams/350.png",
+            "winner": false
+          },
+          "away": {
+            "id": 337,
+            "name": "Slask Wroclaw",
+            "logo": "https://media.api-sports.io/football/teams/337.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1203192,
@@ -1010,65 +1010,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1339858,
-          "date": "2025-01-29T00:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "TBC",
-            "city": "TBC"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1738108800
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 337,
-            "name": "Slask Wroclaw",
-            "logo": "https://media.api-sports.io/football/teams/337.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3483,
-            "name": "Chrobry Głogów",
-            "logo": "https://media.api-sports.io/football/teams/3483.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1365,5 +1306,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:17.495Z"
+  "lastUpdated": "2025-04-12T18:24:56.251Z"
 }

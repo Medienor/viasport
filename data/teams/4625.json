@@ -147,65 +147,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1368176,
-          "date": "2025-04-12T11:45:00+00:00",
-          "venue": {
-            "id": 12090,
-            "name": "Tony Bezzina Stadium",
-            "city": "Paola"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744458300
-        },
-        "league": {
-          "id": 393,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/393.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4625,
-            "name": "Floriana",
-            "logo": "https://media.api-sports.io/football/teams/4625.png",
-            "winner": null
-          },
-          "away": {
-            "id": 14507,
-            "name": "Marsaxlokk",
-            "logo": "https://media.api-sports.io/football/teams/14507.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1368184,
           "date": "2025-04-21T17:00:00+00:00",
           "venue": {
@@ -265,6 +206,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1368176,
+          "date": "2025-04-12T11:45:00+00:00",
+          "venue": {
+            "id": 12090,
+            "name": "Tony Bezzina Stadium",
+            "city": "Paola"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744458300
+        },
+        "league": {
+          "id": 393,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/393.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4625,
+            "name": "Floriana",
+            "logo": "https://media.api-sports.io/football/teams/4625.png",
+            "winner": true
+          },
+          "away": {
+            "id": 14507,
+            "name": "Marsaxlokk",
+            "logo": "https://media.api-sports.io/football/teams/14507.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1367467,
@@ -795,65 +795,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334954,
-          "date": "2025-02-06T17:00:00+00:00",
-          "venue": {
-            "id": 12090,
-            "name": "Tony Bezzina Stadium",
-            "city": "Paola"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1738861200
-        },
-        "league": {
-          "id": 821,
-          "name": "FA Trophy",
-          "logo": "https://media.api-sports.io/football/leagues/821.png"
-        },
-        "teams": {
-          "home": {
-            "id": 16541,
-            "name": "Victoria Hotspurs",
-            "logo": "https://media.api-sports.io/football/teams/16541.png",
-            "winner": false
-          },
-          "away": {
-            "id": 4625,
-            "name": "Floriana",
-            "logo": "https://media.api-sports.io/football/teams/4625.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1150,5 +1091,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:32:40.755Z"
+  "lastUpdated": "2025-04-12T18:27:22.527Z"
 }

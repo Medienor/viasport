@@ -107,65 +107,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1328630,
-          "date": "2025-04-12T14:00:00+00:00",
-          "venue": {
-            "id": 1203,
-            "name": "Intility Arena",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744466400
-        },
-        "league": {
-          "id": 725,
-          "name": "Toppserien",
-          "logo": "https://media.api-sports.io/football/leagues/725.png"
-        },
-        "teams": {
-          "home": {
-            "id": 15535,
-            "name": "Vålerenga W",
-            "logo": "https://media.api-sports.io/football/teams/15535.png",
-            "winner": null
-          },
-          "away": {
-            "id": 15955,
-            "name": "Lyn W",
-            "logo": "https://media.api-sports.io/football/teams/15955.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1328635,
           "date": "2025-04-16T16:00:00+00:00",
           "venue": {
@@ -1284,9 +1225,127 @@
             "away": null
           }
         }
+      },
+      {
+        "fixture": {
+          "id": 1328731,
+          "date": "2025-10-11T12:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "timestamp": 1760184000
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15535,
+            "name": "Vålerenga W",
+            "logo": "https://media.api-sports.io/football/teams/15535.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18380,
+            "name": "Brann W",
+            "logo": "https://media.api-sports.io/football/teams/18380.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": null,
+            "away": null
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1328630,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 1203,
+            "name": "Intility Arena",
+            "city": "Oslo"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 725,
+          "name": "Toppserien",
+          "logo": "https://media.api-sports.io/football/leagues/725.png"
+        },
+        "teams": {
+          "home": {
+            "id": 15535,
+            "name": "Vålerenga W",
+            "logo": "https://media.api-sports.io/football/teams/15535.png",
+            "winner": true
+          },
+          "away": {
+            "id": 15955,
+            "name": "Lyn W",
+            "logo": "https://media.api-sports.io/football/teams/15955.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1328626,
@@ -1817,65 +1876,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1151852,
-          "date": "2024-10-20T12:00:00+00:00",
-          "venue": {
-            "id": 1203,
-            "name": "Intility Arena",
-            "city": "Oslo"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1729425600
-        },
-        "league": {
-          "id": 725,
-          "name": "Toppserien",
-          "logo": "https://media.api-sports.io/football/leagues/725.png"
-        },
-        "teams": {
-          "home": {
-            "id": 15535,
-            "name": "Vålerenga W",
-            "logo": "https://media.api-sports.io/football/teams/15535.png",
-            "winner": true
-          },
-          "away": {
-            "id": 15952,
-            "name": "Kolbotn W",
-            "logo": "https://media.api-sports.io/football/teams/15952.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -2172,5 +2172,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:29:02.723Z"
+  "lastUpdated": "2025-04-12T18:23:40.587Z"
 }

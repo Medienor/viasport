@@ -151,65 +151,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1278526,
-          "date": "2025-04-12T13:30:00+00:00",
-          "venue": {
-            "id": 2155,
-            "name": "Stadiumi Skënderbeu",
-            "city": "Korçë"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744464600
-        },
-        "league": {
-          "id": 310,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/310.png"
-        },
-        "teams": {
-          "home": {
-            "id": 605,
-            "name": "Skenderbeu Korce",
-            "logo": "https://media.api-sports.io/football/teams/605.png",
-            "winner": null
-          },
-          "away": {
-            "id": 694,
-            "name": "Tirana",
-            "logo": "https://media.api-sports.io/football/teams/694.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1278531,
           "date": "2025-04-19T13:30:00+00:00",
           "venue": {
@@ -328,6 +269,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1278526,
+          "date": "2025-04-12T13:30:00+00:00",
+          "venue": {
+            "id": 2155,
+            "name": "Stadiumi Skënderbeu",
+            "city": "Korçë"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744464600
+        },
+        "league": {
+          "id": 310,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/310.png"
+        },
+        "teams": {
+          "home": {
+            "id": 605,
+            "name": "Skenderbeu Korce",
+            "logo": "https://media.api-sports.io/football/teams/605.png",
+            "winner": null
+          },
+          "away": {
+            "id": 694,
+            "name": "Tirana",
+            "logo": "https://media.api-sports.io/football/teams/694.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1278519,
@@ -858,65 +858,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1278474,
-          "date": "2025-02-09T12:30:00+00:00",
-          "venue": {
-            "id": 19776,
-            "name": "Arena e Demave",
-            "city": "Tirana"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1739104200
-        },
-        "league": {
-          "id": 310,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/310.png"
-        },
-        "teams": {
-          "home": {
-            "id": 708,
-            "name": "Partizani",
-            "logo": "https://media.api-sports.io/football/teams/708.png",
-            "winner": null
-          },
-          "away": {
-            "id": 694,
-            "name": "Tirana",
-            "logo": "https://media.api-sports.io/football/teams/694.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1213,5 +1154,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:32:17.758Z"
+  "lastUpdated": "2025-04-12T18:26:59.530Z"
 }

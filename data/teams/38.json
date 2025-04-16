@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216346,
-          "date": "2025-04-12T14:00:00+00:00",
-          "venue": {
-            "id": 597,
-            "name": "The Hawthorns",
-            "city": "West Bromwich"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744466400
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 60,
-            "name": "West Brom",
-            "logo": "https://media.api-sports.io/football/teams/60.png",
-            "winner": null
-          },
-          "away": {
-            "id": 38,
-            "name": "Watford",
-            "logo": "https://media.api-sports.io/football/teams/38.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216358,
           "date": "2025-04-18T14:00:00+00:00",
           "venue": {
@@ -447,6 +388,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216346,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 597,
+            "name": "The Hawthorns",
+            "city": "West Bromwich"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 60,
+            "name": "West Brom",
+            "logo": "https://media.api-sports.io/football/teams/60.png",
+            "winner": true
+          },
+          "away": {
+            "id": 38,
+            "name": "Watford",
+            "logo": "https://media.api-sports.io/football/teams/38.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216330,
@@ -977,65 +977,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216222,
-          "date": "2025-02-11T19:45:00+00:00",
-          "venue": {
-            "id": 596,
-            "name": "Vicarage Road",
-            "city": "Watford"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739303100
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 38,
-            "name": "Watford",
-            "logo": "https://media.api-sports.io/football/teams/38.png",
-            "winner": false
-          },
-          "away": {
-            "id": 63,
-            "name": "Leeds",
-            "logo": "https://media.api-sports.io/football/teams/63.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 3
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1332,5 +1273,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:43.034Z"
+  "lastUpdated": "2025-04-12T18:25:22.395Z"
 }

@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216338,
-          "date": "2025-04-12T11:30:00+00:00",
-          "venue": {
-            "id": 546,
-            "name": "Elland Road",
-            "city": "Leeds, West Yorkshire"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744457400
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 63,
-            "name": "Leeds",
-            "logo": "https://media.api-sports.io/football/teams/63.png",
-            "winner": null
-          },
-          "away": {
-            "id": 59,
-            "name": "Preston",
-            "logo": "https://media.api-sports.io/football/teams/59.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216354,
           "date": "2025-04-18T14:00:00+00:00",
           "venue": {
@@ -447,6 +388,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216338,
+          "date": "2025-04-12T11:30:00+00:00",
+          "venue": {
+            "id": 546,
+            "name": "Elland Road",
+            "city": "Leeds, West Yorkshire"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744457400
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 63,
+            "name": "Leeds",
+            "logo": "https://media.api-sports.io/football/teams/63.png",
+            "winner": true
+          },
+          "away": {
+            "id": 59,
+            "name": "Preston",
+            "logo": "https://media.api-sports.io/football/teams/59.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216327,
@@ -977,65 +977,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216241,
-          "date": "2025-02-22T15:00:00+00:00",
-          "venue": {
-            "id": 11896,
-            "name": "The Coventry Building Society Arena",
-            "city": "Coventry, West Midlands"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1740236400
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1346,
-            "name": "Coventry",
-            "logo": "https://media.api-sports.io/football/teams/1346.png",
-            "winner": true
-          },
-          "away": {
-            "id": 59,
-            "name": "Preston",
-            "logo": "https://media.api-sports.io/football/teams/59.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1332,5 +1273,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:45.634Z"
+  "lastUpdated": "2025-04-12T18:25:24.942Z"
 }

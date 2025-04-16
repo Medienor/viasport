@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216344,
-          "date": "2025-04-12T14:00:00+00:00",
-          "venue": {
-            "id": 582,
-            "name": "Hillsborough",
-            "city": "Sheffield"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744466400
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 74,
-            "name": "Sheffield Wednesday",
-            "logo": "https://media.api-sports.io/football/teams/74.png",
-            "winner": null
-          },
-          "away": {
-            "id": 1338,
-            "name": "Oxford United",
-            "logo": "https://media.api-sports.io/football/teams/1338.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216356,
           "date": "2025-04-18T14:00:00+00:00",
           "venue": {
@@ -447,6 +388,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216344,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 582,
+            "name": "Hillsborough",
+            "city": "Sheffield"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 74,
+            "name": "Sheffield Wednesday",
+            "logo": "https://media.api-sports.io/football/teams/74.png",
+            "winner": false
+          },
+          "away": {
+            "id": 1338,
+            "name": "Oxford United",
+            "logo": "https://media.api-sports.io/football/teams/1338.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216323,
@@ -977,65 +977,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216221,
-          "date": "2025-02-12T19:45:00+00:00",
-          "venue": {
-            "id": 12273,
-            "name": "Swansea.com Stadium",
-            "city": "Swansea"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1739389500
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 76,
-            "name": "Swansea",
-            "logo": "https://media.api-sports.io/football/teams/76.png",
-            "winner": false
-          },
-          "away": {
-            "id": 74,
-            "name": "Sheffield Wednesday",
-            "logo": "https://media.api-sports.io/football/teams/74.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1332,5 +1273,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:50.728Z"
+  "lastUpdated": "2025-04-12T18:25:29.978Z"
 }

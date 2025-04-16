@@ -143,65 +143,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1368176,
-          "date": "2025-04-12T11:45:00+00:00",
-          "venue": {
-            "id": 12090,
-            "name": "Tony Bezzina Stadium",
-            "city": "Paola"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744458300
-        },
-        "league": {
-          "id": 393,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/393.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4625,
-            "name": "Floriana",
-            "logo": "https://media.api-sports.io/football/teams/4625.png",
-            "winner": null
-          },
-          "away": {
-            "id": 14507,
-            "name": "Marsaxlokk",
-            "logo": "https://media.api-sports.io/football/teams/14507.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1368180,
           "date": "2025-04-19T11:45:00+00:00",
           "venue": {
@@ -261,6 +202,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1368176,
+          "date": "2025-04-12T11:45:00+00:00",
+          "venue": {
+            "id": 12090,
+            "name": "Tony Bezzina Stadium",
+            "city": "Paola"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744458300
+        },
+        "league": {
+          "id": 393,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/393.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4625,
+            "name": "Floriana",
+            "logo": "https://media.api-sports.io/football/teams/4625.png",
+            "winner": true
+          },
+          "away": {
+            "id": 14507,
+            "name": "Marsaxlokk",
+            "logo": "https://media.api-sports.io/football/teams/14507.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1367464,
@@ -791,65 +791,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1328235,
-          "date": "2025-01-26T13:00:00+00:00",
-          "venue": {
-            "id": 12090,
-            "name": "Tony Bezzina Stadium",
-            "city": "Paola"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737896400
-        },
-        "league": {
-          "id": 393,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/393.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3884,
-            "name": "Hibernians",
-            "logo": "https://media.api-sports.io/football/teams/3884.png",
-            "winner": false
-          },
-          "away": {
-            "id": 14507,
-            "name": "Marsaxlokk",
-            "logo": "https://media.api-sports.io/football/teams/14507.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1146,5 +1087,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:32:43.267Z"
+  "lastUpdated": "2025-04-12T18:27:24.970Z"
 }

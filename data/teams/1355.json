@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216342,
-          "date": "2025-04-12T14:00:00+00:00",
-          "venue": {
-            "id": 573,
-            "name": "Fratton Park",
-            "city": "Portsmouth"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744466400
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1355,
-            "name": "Portsmouth",
-            "logo": "https://media.api-sports.io/football/teams/1355.png",
-            "winner": null
-          },
-          "away": {
-            "id": 69,
-            "name": "Derby",
-            "logo": "https://media.api-sports.io/football/teams/69.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216352,
           "date": "2025-04-18T14:00:00+00:00",
           "venue": {
@@ -447,6 +388,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216342,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 573,
+            "name": "Fratton Park",
+            "city": "Portsmouth"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 1355,
+            "name": "Portsmouth",
+            "logo": "https://media.api-sports.io/football/teams/1355.png",
+            "winner": null
+          },
+          "away": {
+            "id": 69,
+            "name": "Derby",
+            "logo": "https://media.api-sports.io/football/teams/69.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216331,
@@ -977,65 +977,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216220,
-          "date": "2025-02-11T19:45:00+00:00",
-          "venue": {
-            "id": 573,
-            "name": "Fratton Park",
-            "city": "Portsmouth"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1739303100
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1355,
-            "name": "Portsmouth",
-            "logo": "https://media.api-sports.io/football/teams/1355.png",
-            "winner": true
-          },
-          "away": {
-            "id": 43,
-            "name": "Cardiff",
-            "logo": "https://media.api-sports.io/football/teams/43.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1332,5 +1273,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:53.245Z"
+  "lastUpdated": "2025-04-12T18:25:32.640Z"
 }

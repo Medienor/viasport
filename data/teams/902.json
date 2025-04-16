@@ -150,7 +150,8 @@
     2024
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1220307,
@@ -161,10 +162,10 @@
             "city": "Paisley"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
           },
           "timestamp": 1744466400
         },
@@ -178,27 +179,27 @@
             "id": 251,
             "name": "ST Mirren",
             "logo": "https://media.api-sports.io/football/teams/251.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 902,
             "name": "Ross County",
             "logo": "https://media.api-sports.io/football/teams/902.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 2
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 1
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 3,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -209,9 +210,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1220300,
@@ -742,65 +741,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220246,
-          "date": "2025-01-11T12:30:00+00:00",
-          "venue": {
-            "id": 1402,
-            "name": "Global Energy Stadium",
-            "city": "Dingwall"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 12
-          },
-          "timestamp": 1736598600
-        },
-        "league": {
-          "id": 179,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/179.png"
-        },
-        "teams": {
-          "home": {
-            "id": 902,
-            "name": "Ross County",
-            "logo": "https://media.api-sports.io/football/teams/902.png",
-            "winner": false
-          },
-          "away": {
-            "id": 247,
-            "name": "Celtic",
-            "logo": "https://media.api-sports.io/football/teams/247.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1097,5 +1037,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:31:00.815Z"
+  "lastUpdated": "2025-04-12T18:25:40.288Z"
 }

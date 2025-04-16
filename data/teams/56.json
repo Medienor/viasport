@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1216343,
-          "date": "2025-04-12T14:00:00+00:00",
-          "venue": {
-            "id": 20414,
-            "name": "MATRADE Loftus Road",
-            "city": "London"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744466400
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 72,
-            "name": "QPR",
-            "logo": "https://media.api-sports.io/football/teams/72.png",
-            "winner": null
-          },
-          "away": {
-            "id": 56,
-            "name": "Bristol City",
-            "logo": "https://media.api-sports.io/football/teams/56.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1216348,
           "date": "2025-04-18T14:00:00+00:00",
           "venue": {
@@ -447,6 +388,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1216343,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 20414,
+            "name": "MATRADE Loftus Road",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 40,
+          "name": "Championship",
+          "logo": "https://media.api-sports.io/football/leagues/40.png"
+        },
+        "teams": {
+          "home": {
+            "id": 72,
+            "name": "QPR",
+            "logo": "https://media.api-sports.io/football/teams/72.png",
+            "winner": null
+          },
+          "away": {
+            "id": 56,
+            "name": "Bristol City",
+            "logo": "https://media.api-sports.io/football/teams/56.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1216324,
@@ -977,65 +977,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1216215,
-          "date": "2025-02-12T19:45:00+00:00",
-          "venue": {
-            "id": 20106,
-            "name": "Ashton Gate Stadium",
-            "city": "Bristol"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1739389500
-        },
-        "league": {
-          "id": 40,
-          "name": "Championship",
-          "logo": "https://media.api-sports.io/football/leagues/40.png"
-        },
-        "teams": {
-          "home": {
-            "id": 56,
-            "name": "Bristol City",
-            "logo": "https://media.api-sports.io/football/teams/56.png",
-            "winner": true
-          },
-          "away": {
-            "id": 75,
-            "name": "Stoke City",
-            "logo": "https://media.api-sports.io/football/teams/75.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1332,5 +1273,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:45.708Z"
+  "lastUpdated": "2025-04-12T18:25:24.937Z"
 }

@@ -115,65 +115,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1223909,
-          "date": "2025-04-12T16:00:00+00:00",
-          "venue": {
-            "id": 907,
-            "name": "Stadio Giuseppe Meazza",
-            "city": "Milano"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744473600
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 505,
-            "name": "Inter",
-            "logo": "https://media.api-sports.io/football/teams/505.png",
-            "winner": null
-          },
-          "away": {
-            "id": 490,
-            "name": "Cagliari",
-            "logo": "https://media.api-sports.io/football/teams/490.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1223916,
           "date": "2025-04-21T13:00:00+00:00",
           "venue": {
@@ -528,6 +469,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1223909,
+          "date": "2025-04-12T16:00:00+00:00",
+          "venue": {
+            "id": 907,
+            "name": "Stadio Giuseppe Meazza",
+            "city": "Milano"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744473600
+        },
+        "league": {
+          "id": 135,
+          "name": "Serie A",
+          "logo": "https://media.api-sports.io/football/leagues/135.png"
+        },
+        "teams": {
+          "home": {
+            "id": 505,
+            "name": "Inter",
+            "logo": "https://media.api-sports.io/football/teams/505.png",
+            "winner": true
+          },
+          "away": {
+            "id": 490,
+            "name": "Cagliari",
+            "logo": "https://media.api-sports.io/football/teams/490.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1223897,
@@ -1058,65 +1058,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1223812,
-          "date": "2025-01-24T19:45:00+00:00",
-          "venue": {
-            "id": 943,
-            "name": "Stadio Olimpico Grande Torino",
-            "city": "Torino"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1737747900
-        },
-        "league": {
-          "id": 135,
-          "name": "Serie A",
-          "logo": "https://media.api-sports.io/football/leagues/135.png"
-        },
-        "teams": {
-          "home": {
-            "id": 503,
-            "name": "Torino",
-            "logo": "https://media.api-sports.io/football/teams/503.png",
-            "winner": true
-          },
-          "away": {
-            "id": 490,
-            "name": "Cagliari",
-            "logo": "https://media.api-sports.io/football/teams/490.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1413,5 +1354,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:29:28.036Z"
+  "lastUpdated": "2025-04-12T18:24:06.691Z"
 }

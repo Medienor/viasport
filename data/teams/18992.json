@@ -68,65 +68,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1356253,
-          "date": "2025-04-12T14:00:00+00:00",
-          "venue": {
-            "id": 1187,
-            "name": "Skagerak Arena",
-            "city": "Skien"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744466400
-        },
-        "league": {
-          "id": 915,
-          "name": "1. Division Women",
-          "logo": "https://media.api-sports.io/football/leagues/915.png"
-        },
-        "teams": {
-          "home": {
-            "id": 22859,
-            "name": "Odd",
-            "logo": "https://media.api-sports.io/football/teams/22859.png",
-            "winner": null
-          },
-          "away": {
-            "id": 18992,
-            "name": "Åsane W",
-            "logo": "https://media.api-sports.io/football/teams/18992.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1356259,
           "date": "2025-04-20T12:00:00+00:00",
           "venue": {
@@ -1250,6 +1191,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1356253,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 1187,
+            "name": "Skagerak Arena",
+            "city": "Skien"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 2
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 915,
+          "name": "1. Division Women",
+          "logo": "https://media.api-sports.io/football/leagues/915.png"
+        },
+        "teams": {
+          "home": {
+            "id": 22859,
+            "name": "Odd",
+            "logo": "https://media.api-sports.io/football/teams/22859.png",
+            "winner": null
+          },
+          "away": {
+            "id": 18992,
+            "name": "Åsane W",
+            "logo": "https://media.api-sports.io/football/teams/18992.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1356250,
           "date": "2025-03-30T13:00:00+00:00",
           "venue": {
@@ -1778,65 +1778,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1151841,
-          "date": "2024-09-21T12:00:00+00:00",
-          "venue": {
-            "id": 5084,
-            "name": "Arna Idrettspark",
-            "city": "Indre Arna"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1726920000
-        },
-        "league": {
-          "id": 725,
-          "name": "Toppserien",
-          "logo": "https://media.api-sports.io/football/leagues/725.png"
-        },
-        "teams": {
-          "home": {
-            "id": 15954,
-            "name": "Arna-Bjørnar W",
-            "logo": "https://media.api-sports.io/football/teams/15954.png",
-            "winner": null
-          },
-          "away": {
-            "id": 18992,
-            "name": "Åsane W",
-            "logo": "https://media.api-sports.io/football/teams/18992.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1854,12 +1795,12 @@
       "name": "Åsane W",
       "logo": "https://media.api-sports.io/football/teams/18992.png"
     },
-    "form": "WD",
+    "form": "WDD",
     "fixtures": {
       "played": {
         "home": 1,
-        "away": 1,
-        "total": 2
+        "away": 2,
+        "total": 3
       },
       "wins": {
         "home": 0,
@@ -1868,8 +1809,8 @@
       },
       "draws": {
         "home": 1,
-        "away": 0,
-        "total": 1
+        "away": 1,
+        "total": 2
       },
       "loses": {
         "home": 0,
@@ -1886,8 +1827,8 @@
         },
         "average": {
           "home": "0.0",
-          "away": "1.0",
-          "total": "0.5"
+          "away": "0.5",
+          "total": "0.3"
         },
         "minute": {
           "0-15": {
@@ -1926,23 +1867,23 @@
         "under_over": {
           "0.5": {
             "over": 1,
-            "under": 1
+            "under": 2
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       },
@@ -1994,23 +1935,23 @@
         "under_over": {
           "0.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "1.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "2.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "3.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           },
           "4.5": {
             "over": 0,
-            "under": 2
+            "under": 3
           }
         }
       }
@@ -2042,13 +1983,13 @@
     },
     "clean_sheet": {
       "home": 1,
-      "away": 1,
-      "total": 2
+      "away": 2,
+      "total": 3
     },
     "failed_to_score": {
       "home": 1,
-      "away": 0,
-      "total": 1
+      "away": 1,
+      "total": 2
     },
     "penalty": {
       "scored": {
@@ -2078,19 +2019,19 @@
         },
         "46-60": {
           "total": 2,
-          "percentage": "40.00%"
+          "percentage": "33.33%"
         },
         "61-75": {
           "total": 3,
-          "percentage": "60.00%"
+          "percentage": "50.00%"
         },
         "76-90": {
           "total": null,
           "percentage": null
         },
         "91-105": {
-          "total": null,
-          "percentage": null
+          "total": 1,
+          "percentage": "16.67%"
         },
         "106-120": {
           "total": null,
@@ -2133,5 +2074,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:29:07.890Z"
+  "lastUpdated": "2025-04-12T18:23:45.816Z"
 }

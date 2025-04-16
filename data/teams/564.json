@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1238120,
-          "date": "2025-04-12T16:00:00+00:00",
-          "venue": {
-            "id": 20423,
-            "name": "Tüpraş Stadyumu",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744473600
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 549,
-            "name": "Besiktas",
-            "logo": "https://media.api-sports.io/football/teams/549.png",
-            "winner": null
-          },
-          "away": {
-            "id": 564,
-            "name": "Istanbul Basaksehir",
-            "logo": "https://media.api-sports.io/football/teams/564.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1238130,
           "date": "2025-04-20T10:30:00+00:00",
           "venue": {
@@ -329,6 +270,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238120,
+          "date": "2025-04-12T16:00:00+00:00",
+          "venue": {
+            "id": 20423,
+            "name": "Tüpraş Stadyumu",
+            "city": "İstanbul"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744473600
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 549,
+            "name": "Besiktas",
+            "logo": "https://media.api-sports.io/football/teams/549.png",
+            "winner": false
+          },
+          "away": {
+            "id": 564,
+            "name": "Istanbul Basaksehir",
+            "logo": "https://media.api-sports.io/football/teams/564.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238111,
@@ -859,65 +859,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1238039,
-          "date": "2025-02-01T16:00:00+00:00",
-          "venue": {
-            "id": 1584,
-            "name": "Başakşehir Fatih Terim Stadyumu",
-            "city": "İstanbul"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1738425600
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 564,
-            "name": "Istanbul Basaksehir",
-            "logo": "https://media.api-sports.io/football/teams/564.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3603,
-            "name": "Samsunspor",
-            "logo": "https://media.api-sports.io/football/teams/3603.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1214,5 +1155,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:29:55.965Z"
+  "lastUpdated": "2025-04-12T18:24:35.536Z"
 }

@@ -149,65 +149,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208771,
-          "date": "2025-04-12T12:00:00+00:00",
-          "venue": {
-            "id": 1491,
-            "name": "Reale Arena",
-            "city": "Donostia-San Sebastián"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744459200
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 548,
-            "name": "Real Sociedad",
-            "logo": "https://media.api-sports.io/football/teams/548.png",
-            "winner": null
-          },
-          "away": {
-            "id": 798,
-            "name": "Mallorca",
-            "logo": "https://media.api-sports.io/football/teams/798.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208781,
           "date": "2025-04-19T16:30:00+00:00",
           "venue": {
@@ -385,6 +326,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1208771,
+          "date": "2025-04-12T12:00:00+00:00",
+          "venue": {
+            "id": 1491,
+            "name": "Reale Arena",
+            "city": "Donostia-San Sebastián"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744459200
+        },
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "logo": "https://media.api-sports.io/football/leagues/140.png"
+        },
+        "teams": {
+          "home": {
+            "id": 548,
+            "name": "Real Sociedad",
+            "logo": "https://media.api-sports.io/football/teams/548.png",
+            "winner": false
+          },
+          "away": {
+            "id": 798,
+            "name": "Mallorca",
+            "logo": "https://media.api-sports.io/football/teams/798.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1208761,
@@ -915,65 +915,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208679,
-          "date": "2025-01-25T13:00:00+00:00",
-          "venue": {
-            "id": 19940,
-            "name": "Estadi Mallorca Son Moix",
-            "city": "Palma de Mallorca"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1737810000
-        },
-        "league": {
-          "id": 140,
-          "name": "La Liga",
-          "logo": "https://media.api-sports.io/football/leagues/140.png"
-        },
-        "teams": {
-          "home": {
-            "id": 798,
-            "name": "Mallorca",
-            "logo": "https://media.api-sports.io/football/teams/798.png",
-            "winner": false
-          },
-          "away": {
-            "id": 543,
-            "name": "Real Betis",
-            "logo": "https://media.api-sports.io/football/teams/543.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1270,5 +1211,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:29:27.984Z"
+  "lastUpdated": "2025-04-12T18:24:06.488Z"
 }

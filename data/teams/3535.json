@@ -264,65 +264,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1367455,
-          "date": "2025-04-12T14:20:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Ali Sabah Al Salem Stadium",
-            "city": "Kuwait City"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744467600
-        },
-        "league": {
-          "id": 720,
-          "name": "Emir Cup",
-          "logo": "https://media.api-sports.io/football/leagues/720.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3535,
-            "name": "Al Kuwait",
-            "logo": "https://media.api-sports.io/football/teams/3535.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2871,
-            "name": "Al-Jazira",
-            "logo": "https://media.api-sports.io/football/teams/2871.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1367269,
           "date": "2025-04-19T15:45:00+00:00",
           "venue": {
@@ -618,6 +559,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1367455,
+          "date": "2025-04-12T14:20:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Ali Sabah Al Salem Stadium",
+            "city": "Kuwait City"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": null
+          },
+          "timestamp": 1744467600
+        },
+        "league": {
+          "id": 720,
+          "name": "Emir Cup",
+          "logo": "https://media.api-sports.io/football/leagues/720.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3535,
+            "name": "Al Kuwait",
+            "logo": "https://media.api-sports.io/football/teams/3535.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2871,
+            "name": "Al-Jazira",
+            "logo": "https://media.api-sports.io/football/teams/2871.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": null,
+            "away": null
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1367266,
@@ -1148,65 +1148,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334106,
-          "date": "2025-01-24T14:50:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Jaber Al-Mubarak Al-Hamad Stadium",
-            "city": "Kuwait City"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1737730200
-        },
-        "league": {
-          "id": 719,
-          "name": "Super Cup",
-          "logo": "https://media.api-sports.io/football/leagues/719.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3535,
-            "name": "Al Kuwait",
-            "logo": "https://media.api-sports.io/football/teams/3535.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3538,
-            "name": "Al Salmiyah",
-            "logo": "https://media.api-sports.io/football/teams/3538.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1503,5 +1444,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:35:24.600Z"
+  "lastUpdated": "2025-04-12T18:30:12.661Z"
 }

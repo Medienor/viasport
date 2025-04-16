@@ -146,7 +146,8 @@
     2024
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1361260,
@@ -157,10 +158,10 @@
             "city": "Città di San Marino"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
           },
           "timestamp": 1744473600
         },
@@ -184,17 +185,17 @@
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 2,
+            "away": 2
           },
           "extratime": {
             "home": null,
@@ -205,9 +206,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1361255,
@@ -738,65 +737,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1319983,
-          "date": "2025-02-08T17:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadio di Dogana Ezio Conti",
-            "city": "Dogana"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739034000
-        },
-        "league": {
-          "id": 404,
-          "name": "Campionato",
-          "logo": "https://media.api-sports.io/football/leagues/404.png"
-        },
-        "teams": {
-          "home": {
-            "id": 700,
-            "name": "Tre Penne",
-            "logo": "https://media.api-sports.io/football/teams/700.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5297,
-            "name": "Cailungo",
-            "logo": "https://media.api-sports.io/football/teams/5297.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1093,5 +1033,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:32:17.780Z"
+  "lastUpdated": "2025-04-12T18:26:59.491Z"
 }

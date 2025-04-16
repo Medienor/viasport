@@ -7,7 +7,6 @@ import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import Providers from './providers'
 import ScrollToTop from './components/ScrollToTop';
-import ApiMonitor from './components/ApiMonitor';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,11 +19,11 @@ const geistMono = Geist_Mono({
 });
 
 // Initialize the Inter font with the subsets you need
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-});
+// const inter = Inter({
+//   subsets: ['latin'],
+//   display: 'swap',
+//   variable: '--font-inter',
+// });
 
 export const metadata: Metadata = {
   title: "ViaSport - Fotball på TV & Streaming",
@@ -49,7 +48,7 @@ export default function RootLayout({
   
   try {
     return (
-      <html lang="nb" className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased flex flex-col min-h-screen`}>
+      <html lang="nb" className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
         <head>
           {/* Move scripts outside of head */}
         </head>
@@ -81,7 +80,6 @@ export default function RootLayout({
             <Navbar />
             <main className="flex-grow">{children}</main>
             <Footer />
-            {process.env.NODE_ENV === 'development' && <ApiMonitor />}
           </Providers>
         </body>
       </html>

@@ -113,65 +113,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1217882,
-          "date": "2025-04-12T14:15:00+00:00",
-          "venue": {
-            "id": 1493,
-            "name": "Estadio de la Romareda",
-            "city": "Zaragoza"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744467300
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 732,
-            "name": "Zaragoza",
-            "logo": "https://media.api-sports.io/football/teams/732.png",
-            "winner": null
-          },
-          "away": {
-            "id": 545,
-            "name": "Eibar",
-            "logo": "https://media.api-sports.io/football/teams/545.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1217890,
           "date": "2025-04-19T16:30:00+00:00",
           "venue": {
@@ -349,6 +290,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217882,
+          "date": "2025-04-12T14:15:00+00:00",
+          "venue": {
+            "id": 1493,
+            "name": "Estadio de la Romareda",
+            "city": "Zaragoza"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744467300
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 732,
+            "name": "Zaragoza",
+            "logo": "https://media.api-sports.io/football/teams/732.png",
+            "winner": null
+          },
+          "away": {
+            "id": 545,
+            "name": "Eibar",
+            "logo": "https://media.api-sports.io/football/teams/545.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217872,
@@ -879,65 +879,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217769,
-          "date": "2025-02-02T17:30:00+00:00",
-          "venue": {
-            "id": 1493,
-            "name": "Estadio de la Romareda",
-            "city": "Zaragoza"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738517400
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 732,
-            "name": "Zaragoza",
-            "logo": "https://media.api-sports.io/football/teams/732.png",
-            "winner": null
-          },
-          "away": {
-            "id": 724,
-            "name": "Cadiz",
-            "logo": "https://media.api-sports.io/football/teams/724.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1234,5 +1175,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:35:50.100Z"
+  "lastUpdated": "2025-04-12T18:30:38.541Z"
 }

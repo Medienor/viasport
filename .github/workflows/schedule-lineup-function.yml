@@ -1,0 +1,33 @@
+# .github/workflows/schedule-lineup-function.yml
+
+name: Fetch Pre-Match Lineups
+
+on:
+  schedule:
+    # Runs every 5 minutes
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # Allows manual triggering from GitHub Actions tab
+
+jobs:
+  fetch-lineups:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4 # Checks out your code so the script can be run
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Use a recent LTS version of Node.js
+          cache: 'npm' # Cache npm dependencies
+
+      - name: Install dependencies
+        run: npm install @supabase/supabase-js # Install the Supabase client library
+
+      - name: Run lineup fetch script
+        run: node ./scripts/fetch-lineups.js # Path to the Node.js script we'll create next
+        env: # Make secrets available as environment variables to the script
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+          RAPIDAPI_HOST: ${{ secrets.RAPIDAPI_HOST }}

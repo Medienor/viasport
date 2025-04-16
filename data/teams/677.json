@@ -185,65 +185,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1220746,
-          "date": "2025-04-12T15:30:00+00:00",
-          "venue": {
-            "id": 3348,
-            "name": "Športni park Lendava",
-            "city": "Lendava"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744471800
-        },
-        "league": {
-          "id": 373,
-          "name": "1. SNL",
-          "logo": "https://media.api-sports.io/football/leagues/373.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4376,
-            "name": "Nafta",
-            "logo": "https://media.api-sports.io/football/teams/4376.png",
-            "winner": null
-          },
-          "away": {
-            "id": 677,
-            "name": "Olimpija Ljubljana",
-            "logo": "https://media.api-sports.io/football/teams/677.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1220750,
           "date": "2025-04-19T18:15:00+00:00",
           "venue": {
@@ -421,6 +362,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1220746,
+          "date": "2025-04-12T15:30:00+00:00",
+          "venue": {
+            "id": 3348,
+            "name": "Športni park Lendava",
+            "city": "Lendava"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744471800
+        },
+        "league": {
+          "id": 373,
+          "name": "1. SNL",
+          "logo": "https://media.api-sports.io/football/leagues/373.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4376,
+            "name": "Nafta",
+            "logo": "https://media.api-sports.io/football/teams/4376.png",
+            "winner": null
+          },
+          "away": {
+            "id": 677,
+            "name": "Olimpija Ljubljana",
+            "logo": "https://media.api-sports.io/football/teams/677.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1220739,
@@ -951,65 +951,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1315154,
-          "date": "2025-02-26T13:30:00+00:00",
-          "venue": {
-            "id": 19132,
-            "name": "Športni park Kodeljevo",
-            "city": "Ljubljana"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1740576600
-        },
-        "league": {
-          "id": 375,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/375.png"
-        },
-        "teams": {
-          "home": {
-            "id": 677,
-            "name": "Olimpija Ljubljana",
-            "logo": "https://media.api-sports.io/football/teams/677.png",
-            "winner": true
-          },
-          "away": {
-            "id": 4381,
-            "name": "Ilirija",
-            "logo": "https://media.api-sports.io/football/teams/4381.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1306,5 +1247,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:32:15.201Z"
+  "lastUpdated": "2025-04-12T18:26:56.980Z"
 }

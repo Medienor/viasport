@@ -146,65 +146,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1261118,
-          "date": "2025-04-12T13:00:00+00:00",
-          "venue": {
-            "id": 4131,
-            "name": "Şəhər stadionu",
-            "city": "Tovuz"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744462800
-        },
-        "league": {
-          "id": 419,
-          "name": "Premyer Liqa",
-          "logo": "https://media.api-sports.io/football/leagues/419.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5499,
-            "name": "Turan",
-            "logo": "https://media.api-sports.io/football/teams/5499.png",
-            "winner": null
-          },
-          "away": {
-            "id": 13976,
-            "name": "Sabah FA",
-            "logo": "https://media.api-sports.io/football/teams/13976.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1261126,
           "date": "2025-04-19T13:30:00+00:00",
           "venue": {
@@ -441,6 +382,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1261118,
+          "date": "2025-04-12T13:00:00+00:00",
+          "venue": {
+            "id": 4131,
+            "name": "Şəhər stadionu",
+            "city": "Tovuz"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744462800
+        },
+        "league": {
+          "id": 419,
+          "name": "Premyer Liqa",
+          "logo": "https://media.api-sports.io/football/leagues/419.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5499,
+            "name": "Turan",
+            "logo": "https://media.api-sports.io/football/teams/5499.png",
+            "winner": true
+          },
+          "away": {
+            "id": 13976,
+            "name": "Sabah FA",
+            "logo": "https://media.api-sports.io/football/teams/13976.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1261115,
@@ -971,65 +971,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1261078,
-          "date": "2025-02-09T13:00:00+00:00",
-          "venue": {
-            "id": 2783,
-            "name": "Bank Respublika Arena",
-            "city": "Masazir"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1739106000
-        },
-        "league": {
-          "id": 419,
-          "name": "Premyer Liqa",
-          "logo": "https://media.api-sports.io/football/leagues/419.png"
-        },
-        "teams": {
-          "home": {
-            "id": 13976,
-            "name": "Sabah FA",
-            "logo": "https://media.api-sports.io/football/teams/13976.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5499,
-            "name": "Turan",
-            "logo": "https://media.api-sports.io/football/teams/5499.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1326,5 +1267,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:32:43.270Z"
+  "lastUpdated": "2025-04-12T18:27:25.273Z"
 }

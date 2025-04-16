@@ -114,65 +114,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1231987,
-          "date": "2025-04-12T14:30:00+00:00",
-          "venue": {
-            "id": 1276,
-            "name": "Estádio Municipal 22 de Junho",
-            "city": "Vila Nova de Famalicão"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744468200
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 242,
-            "name": "Famalicao",
-            "logo": "https://media.api-sports.io/football/teams/242.png",
-            "winner": null
-          },
-          "away": {
-            "id": 230,
-            "name": "Estoril",
-            "logo": "https://media.api-sports.io/football/teams/230.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1231996,
           "date": "2025-04-19T17:00:00+00:00",
           "venue": {
@@ -409,6 +350,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1231987,
+          "date": "2025-04-12T14:30:00+00:00",
+          "venue": {
+            "id": 1276,
+            "name": "Estádio Municipal 22 de Junho",
+            "city": "Vila Nova de Famalicão"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744468200
+        },
+        "league": {
+          "id": 94,
+          "name": "Primeira Liga",
+          "logo": "https://media.api-sports.io/football/leagues/94.png"
+        },
+        "teams": {
+          "home": {
+            "id": 242,
+            "name": "Famalicao",
+            "logo": "https://media.api-sports.io/football/teams/242.png",
+            "winner": true
+          },
+          "away": {
+            "id": 230,
+            "name": "Estoril",
+            "logo": "https://media.api-sports.io/football/teams/230.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1231974,
@@ -939,65 +939,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1231891,
-          "date": "2025-01-26T15:30:00+00:00",
-          "venue": {
-            "id": 1274,
-            "name": "Estádio António Coimbra da Mota",
-            "city": "Estoril"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 11
-          },
-          "timestamp": 1737905400
-        },
-        "league": {
-          "id": 94,
-          "name": "Primeira Liga",
-          "logo": "https://media.api-sports.io/football/leagues/94.png"
-        },
-        "teams": {
-          "home": {
-            "id": 230,
-            "name": "Estoril",
-            "logo": "https://media.api-sports.io/football/teams/230.png",
-            "winner": true
-          },
-          "away": {
-            "id": 224,
-            "name": "Guimaraes",
-            "logo": "https://media.api-sports.io/football/teams/224.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1294,5 +1235,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:12.264Z"
+  "lastUpdated": "2025-04-12T18:24:51.204Z"
 }

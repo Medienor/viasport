@@ -189,65 +189,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1356834,
-          "date": "2025-04-12T13:00:00+00:00",
-          "venue": {
-            "id": 170,
-            "name": "Stadyen Tarpeda",
-            "city": "Zhodino"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744462800
-        },
-        "league": {
-          "id": 116,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/116.png"
-        },
-        "teams": {
-          "home": {
-            "id": 385,
-            "name": "Torpedo Zhodino",
-            "logo": "https://media.api-sports.io/football/teams/385.png",
-            "winner": null
-          },
-          "away": {
-            "id": 9419,
-            "name": "Arsenal",
-            "logo": "https://media.api-sports.io/football/teams/9419.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1360335,
           "date": "2025-04-16T14:30:00+00:00",
           "venue": {
@@ -425,6 +366,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1356834,
+          "date": "2025-04-12T13:00:00+00:00",
+          "venue": {
+            "id": 170,
+            "name": "Stadyen Tarpeda",
+            "city": "Zhodino"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744462800
+        },
+        "league": {
+          "id": 116,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/116.png"
+        },
+        "teams": {
+          "home": {
+            "id": 385,
+            "name": "Torpedo Zhodino",
+            "logo": "https://media.api-sports.io/football/teams/385.png",
+            "winner": true
+          },
+          "away": {
+            "id": 9419,
+            "name": "Arsenal",
+            "logo": "https://media.api-sports.io/football/teams/9419.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1356829,
@@ -955,65 +955,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1344772,
-          "date": "2025-01-27T09:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": null,
-            "city": null
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": null
-          },
-          "timestamp": 1737968400
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 385,
-            "name": "Torpedo Zhodino",
-            "logo": "https://media.api-sports.io/football/teams/385.png",
-            "winner": true
-          },
-          "away": {
-            "id": 380,
-            "name": "FC Minsk",
-            "logo": "https://media.api-sports.io/football/teams/380.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1315,5 +1256,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:32:01.890Z"
+  "lastUpdated": "2025-04-12T18:26:43.974Z"
 }

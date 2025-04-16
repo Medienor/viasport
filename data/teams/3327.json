@@ -226,65 +226,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1278527,
-          "date": "2025-04-12T13:30:00+00:00",
-          "venue": {
-            "id": 19776,
-            "name": "Arena e Demave",
-            "city": "Tirana"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744464600
-        },
-        "league": {
-          "id": 310,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/310.png"
-        },
-        "teams": {
-          "home": {
-            "id": 708,
-            "name": "Partizani",
-            "logo": "https://media.api-sports.io/football/teams/708.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3327,
-            "name": "Egnatia Rrogozhinë",
-            "logo": "https://media.api-sports.io/football/teams/3327.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1278530,
           "date": "2025-04-19T13:30:00+00:00",
           "venue": {
@@ -462,6 +403,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1278527,
+          "date": "2025-04-12T13:30:00+00:00",
+          "venue": {
+            "id": 19776,
+            "name": "Arena e Demave",
+            "city": "Tirana"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744464600
+        },
+        "league": {
+          "id": 310,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/310.png"
+        },
+        "teams": {
+          "home": {
+            "id": 708,
+            "name": "Partizani",
+            "logo": "https://media.api-sports.io/football/teams/708.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3327,
+            "name": "Egnatia Rrogozhinë",
+            "logo": "https://media.api-sports.io/football/teams/3327.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1278522,
@@ -992,65 +992,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1278485,
-          "date": "2025-02-22T16:00:00+00:00",
-          "venue": {
-            "id": 2155,
-            "name": "Stadiumi Skënderbeu",
-            "city": "Korçë"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1740240000
-        },
-        "league": {
-          "id": 310,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/310.png"
-        },
-        "teams": {
-          "home": {
-            "id": 605,
-            "name": "Skenderbeu Korce",
-            "logo": "https://media.api-sports.io/football/teams/605.png",
-            "winner": true
-          },
-          "away": {
-            "id": 3327,
-            "name": "Egnatia Rrogozhinë",
-            "logo": "https://media.api-sports.io/football/teams/3327.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1347,5 +1288,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:31:39.071Z"
+  "lastUpdated": "2025-04-12T18:26:20.937Z"
 }

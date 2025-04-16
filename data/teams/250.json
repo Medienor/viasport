@@ -224,7 +224,8 @@
     2024
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1220303,
@@ -235,10 +236,10 @@
             "city": "Glasgow"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
           },
           "timestamp": 1744457400
         },
@@ -252,27 +253,27 @@
             "id": 247,
             "name": "Celtic",
             "logo": "https://media.api-sports.io/football/teams/247.png",
-            "winner": null
+            "winner": true
           },
           "away": {
             "id": 250,
             "name": "Kilmarnock",
             "logo": "https://media.api-sports.io/football/teams/250.png",
-            "winner": null
+            "winner": false
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 5,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 4,
+            "away": 1
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 5,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -283,9 +284,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1220298,
@@ -816,65 +815,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1318884,
-          "date": "2025-01-18T17:30:00+00:00",
-          "venue": {
-            "id": 1386,
-            "name": "Celtic Park",
-            "city": "Glasgow"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737221400
-        },
-        "league": {
-          "id": 181,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/181.png"
-        },
-        "teams": {
-          "home": {
-            "id": 247,
-            "name": "Celtic",
-            "logo": "https://media.api-sports.io/football/teams/247.png",
-            "winner": true
-          },
-          "away": {
-            "id": 250,
-            "name": "Kilmarnock",
-            "logo": "https://media.api-sports.io/football/teams/250.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1171,5 +1111,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:55.706Z"
+  "lastUpdated": "2025-04-12T18:25:35.125Z"
 }

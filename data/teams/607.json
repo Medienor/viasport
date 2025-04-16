@@ -115,65 +115,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1238122,
-          "date": "2025-04-12T13:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Medas Konya Büyüksehir Stadyumu",
-            "city": "Konya"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744462800
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 607,
-            "name": "Konyaspor",
-            "logo": "https://media.api-sports.io/football/teams/607.png",
-            "winner": null
-          },
-          "away": {
-            "id": 994,
-            "name": "Goztepe",
-            "logo": "https://media.api-sports.io/football/teams/994.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1238136,
           "date": "2025-04-18T17:00:00+00:00",
           "venue": {
@@ -410,6 +351,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1238122,
+          "date": "2025-04-12T13:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Medas Konya Büyüksehir Stadyumu",
+            "city": "Konya"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744462800
+        },
+        "league": {
+          "id": 203,
+          "name": "Süper Lig",
+          "logo": "https://media.api-sports.io/football/leagues/203.png"
+        },
+        "teams": {
+          "home": {
+            "id": 607,
+            "name": "Konyaspor",
+            "logo": "https://media.api-sports.io/football/teams/607.png",
+            "winner": true
+          },
+          "away": {
+            "id": 994,
+            "name": "Goztepe",
+            "logo": "https://media.api-sports.io/football/teams/994.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1238111,
@@ -940,65 +940,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1238048,
-          "date": "2025-02-08T13:00:00+00:00",
-          "venue": {
-            "id": 19613,
-            "name": "RHG Enertürk Enerji Stadyumu",
-            "city": "Kayseri"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 11
-          },
-          "timestamp": 1739019600
-        },
-        "league": {
-          "id": 203,
-          "name": "Süper Lig",
-          "logo": "https://media.api-sports.io/football/leagues/203.png"
-        },
-        "teams": {
-          "home": {
-            "id": 1001,
-            "name": "Kayserispor",
-            "logo": "https://media.api-sports.io/football/teams/1001.png",
-            "winner": true
-          },
-          "away": {
-            "id": 607,
-            "name": "Konyaspor",
-            "logo": "https://media.api-sports.io/football/teams/607.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1295,5 +1236,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:29:58.497Z"
+  "lastUpdated": "2025-04-12T18:24:38.273Z"
 }

@@ -220,65 +220,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1335632,
-          "date": "2025-04-12T12:00:00+00:00",
-          "venue": {
-            "id": 2524,
-            "name": "Stadion u Parku",
-            "city": "Tivat"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744459200
-        },
-        "league": {
-          "id": 355,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/355.png"
-        },
-        "teams": {
-          "home": {
-            "id": 3742,
-            "name": "Arsenal Tivat",
-            "logo": "https://media.api-sports.io/football/teams/3742.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3745,
-            "name": "Dečić",
-            "logo": "https://media.api-sports.io/football/teams/3745.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1370673,
           "date": "2025-04-15T22:00:00+00:00",
           "venue": {
@@ -812,6 +753,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1335632,
+          "date": "2025-04-12T12:00:00+00:00",
+          "venue": {
+            "id": 2524,
+            "name": "Stadion u Parku",
+            "city": "Tivat"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744459200
+        },
+        "league": {
+          "id": 355,
+          "name": "First League",
+          "logo": "https://media.api-sports.io/football/leagues/355.png"
+        },
+        "teams": {
+          "home": {
+            "id": 3742,
+            "name": "Arsenal Tivat",
+            "logo": "https://media.api-sports.io/football/teams/3742.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3745,
+            "name": "Dečić",
+            "logo": "https://media.api-sports.io/football/teams/3745.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1335625,
           "date": "2025-04-06T13:00:00+00:00",
           "venue": {
@@ -1340,65 +1340,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1220863,
-          "date": "2024-12-07T12:00:00+00:00",
-          "venue": {
-            "id": 1098,
-            "name": "Stadion Kraj Bistrice",
-            "city": "Nikšić"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1733572800
-        },
-        "league": {
-          "id": 355,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/355.png"
-        },
-        "teams": {
-          "home": {
-            "id": 673,
-            "name": "Sutjeska",
-            "logo": "https://media.api-sports.io/football/teams/673.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3745,
-            "name": "Dečić",
-            "logo": "https://media.api-sports.io/football/teams/3745.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1695,5 +1636,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:31:41.573Z"
+  "lastUpdated": "2025-04-12T18:26:23.534Z"
 }

@@ -112,65 +112,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1217882,
-          "date": "2025-04-12T14:15:00+00:00",
-          "venue": {
-            "id": 1493,
-            "name": "Estadio de la Romareda",
-            "city": "Zaragoza"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744467300
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 732,
-            "name": "Zaragoza",
-            "logo": "https://media.api-sports.io/football/teams/732.png",
-            "winner": null
-          },
-          "away": {
-            "id": 545,
-            "name": "Eibar",
-            "logo": "https://media.api-sports.io/football/teams/545.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1217888,
           "date": "2025-04-21T18:30:00+00:00",
           "venue": {
@@ -348,6 +289,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1217882,
+          "date": "2025-04-12T14:15:00+00:00",
+          "venue": {
+            "id": 1493,
+            "name": "Estadio de la Romareda",
+            "city": "Zaragoza"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744467300
+        },
+        "league": {
+          "id": 141,
+          "name": "Segunda División",
+          "logo": "https://media.api-sports.io/football/leagues/141.png"
+        },
+        "teams": {
+          "home": {
+            "id": 732,
+            "name": "Zaragoza",
+            "logo": "https://media.api-sports.io/football/teams/732.png",
+            "winner": null
+          },
+          "away": {
+            "id": 545,
+            "name": "Eibar",
+            "logo": "https://media.api-sports.io/football/teams/545.png",
+            "winner": null
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1217864,
@@ -878,65 +878,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1217770,
-          "date": "2025-02-02T15:15:00+00:00",
-          "venue": {
-            "id": 1472,
-            "name": "Estadio Municipal de Ipurúa",
-            "city": "Eibar"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738509300
-        },
-        "league": {
-          "id": 141,
-          "name": "Segunda División",
-          "logo": "https://media.api-sports.io/football/leagues/141.png"
-        },
-        "teams": {
-          "home": {
-            "id": 545,
-            "name": "Eibar",
-            "logo": "https://media.api-sports.io/football/teams/545.png",
-            "winner": false
-          },
-          "away": {
-            "id": 544,
-            "name": "Deportivo La Coruna",
-            "logo": "https://media.api-sports.io/football/teams/544.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1233,5 +1174,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:35:44.910Z"
+  "lastUpdated": "2025-04-12T18:30:33.279Z"
 }

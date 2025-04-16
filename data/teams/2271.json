@@ -259,65 +259,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1360753,
-          "date": "2025-04-12T13:00:00+00:00",
-          "venue": {
-            "id": 1092,
-            "name": "Stadionul Orăşenesc",
-            "city": "Hînceşti"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744462800
-        },
-        "league": {
-          "id": 394,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/394.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2271,
-            "name": "Petrocub",
-            "logo": "https://media.api-sports.io/football/teams/2271.png",
-            "winner": null
-          },
-          "away": {
-            "id": 5380,
-            "name": "Spartanii Selemet",
-            "logo": "https://media.api-sports.io/football/teams/5380.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1357117,
           "date": "2025-04-16T12:00:00+00:00",
           "venue": {
@@ -495,6 +436,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1360753,
+          "date": "2025-04-12T13:00:00+00:00",
+          "venue": {
+            "id": 1092,
+            "name": "Stadionul Orăşenesc",
+            "city": "Hînceşti"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744462800
+        },
+        "league": {
+          "id": 394,
+          "name": "Super Liga",
+          "logo": "https://media.api-sports.io/football/leagues/394.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2271,
+            "name": "Petrocub",
+            "logo": "https://media.api-sports.io/football/teams/2271.png",
+            "winner": true
+          },
+          "away": {
+            "id": 5380,
+            "name": "Spartanii Selemet",
+            "logo": "https://media.api-sports.io/football/teams/5380.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1360752,
@@ -1025,65 +1025,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299370,
-          "date": "2024-12-12T17:45:00+00:00",
-          "venue": {
-            "id": 2615,
-            "name": "Stadionul Zimbru",
-            "city": "Chişinău"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1734025500
-        },
-        "league": {
-          "id": 848,
-          "name": "UEFA Europa Conference League",
-          "logo": "https://media.api-sports.io/football/leagues/848.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2271,
-            "name": "Petrocub",
-            "logo": "https://media.api-sports.io/football/teams/2271.png",
-            "winner": false
-          },
-          "away": {
-            "id": 543,
-            "name": "Real Betis",
-            "logo": "https://media.api-sports.io/football/teams/543.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1380,5 +1321,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:31:39.038Z"
+  "lastUpdated": "2025-04-12T18:26:20.878Z"
 }

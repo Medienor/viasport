@@ -298,65 +298,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1367862,
-          "date": "2025-04-12T14:30:00+00:00",
-          "venue": {
-            "id": 760,
-            "name": "Victoria Stadium",
-            "city": "Gibraltar"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744468200
-        },
-        "league": {
-          "id": 758,
-          "name": "Premier Division",
-          "logo": "https://media.api-sports.io/football/leagues/758.png"
-        },
-        "teams": {
-          "home": {
-            "id": 10125,
-            "name": "Europa",
-            "logo": "https://media.api-sports.io/football/teams/10125.png",
-            "winner": null
-          },
-          "away": {
-            "id": 667,
-            "name": "Lincoln Red Imps FC",
-            "logo": "https://media.api-sports.io/football/teams/667.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1367866,
           "date": "2025-04-20T14:30:00+00:00",
           "venue": {
@@ -534,6 +475,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1367862,
+          "date": "2025-04-12T14:30:00+00:00",
+          "venue": {
+            "id": 760,
+            "name": "Victoria Stadium",
+            "city": "Gibraltar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744468200
+        },
+        "league": {
+          "id": 758,
+          "name": "Premier Division",
+          "logo": "https://media.api-sports.io/football/leagues/758.png"
+        },
+        "teams": {
+          "home": {
+            "id": 10125,
+            "name": "Europa",
+            "logo": "https://media.api-sports.io/football/teams/10125.png",
+            "winner": false
+          },
+          "away": {
+            "id": 667,
+            "name": "Lincoln Red Imps FC",
+            "logo": "https://media.api-sports.io/football/teams/667.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 4
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 4
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1367858,
@@ -1064,65 +1064,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1287798,
-          "date": "2025-01-10T20:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Europa Point Stadium",
-            "city": "Gibraltar"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1736539200
-        },
-        "league": {
-          "id": 758,
-          "name": "Premier Division",
-          "logo": "https://media.api-sports.io/football/leagues/758.png"
-        },
-        "teams": {
-          "home": {
-            "id": 16134,
-            "name": "Lynx",
-            "logo": "https://media.api-sports.io/football/teams/16134.png",
-            "winner": false
-          },
-          "away": {
-            "id": 667,
-            "name": "Lincoln Red Imps FC",
-            "logo": "https://media.api-sports.io/football/teams/667.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 5
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 5
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1419,5 +1360,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:31:33.700Z"
+  "lastUpdated": "2025-04-12T18:26:15.749Z"
 }

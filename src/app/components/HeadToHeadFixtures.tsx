@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { createClient } from '@supabase/supabase-js';
+import { format, parseISO } from 'date-fns';
+import { nb } from 'date-fns/locale';
 
 // Initialize Supabase client with the same configuration
 const supabase = createClient(
@@ -12,7 +14,7 @@ const supabase = createClient(
 );
 
 interface HeadToHeadFixturesProps {
-  matches: any[]; // Type this properly based on your data structure
+  matches: any[];
 }
 
 async function checkFixtureExists(fixtureId: number) {
@@ -29,135 +31,43 @@ export default function HeadToHeadFixtures({ matches }: HeadToHeadFixturesProps)
   return (
     <div className="space-y-3">
       {matches
+        .filter(match => match.goals?.home !== null && match.goals?.away !== null)
         .sort((a, b) => new Date(b.fixture.date).getTime() - new Date(a.fixture.date).getTime())
-        .map((game) => {
-          const MatchContent = ({ children }: { children: React.ReactNode }) => {
-            const [exists, setExists] = useState<boolean | null>(null);
-
-            useEffect(() => {
-              const checkFixture = async () => {
-                const exists = await checkFixtureExists(game.fixture.id);
-                setExists(exists);
-              };
-              checkFixture();
-            }, []);
-
-            if (exists === null) return children;
-            if (exists) {
-              return (
-                <Link 
-                  href={`/fotball/kamp/${game.fixture.id}`} 
-                  className="block hover:bg-gray-100 transition-colors bg-gray-50 rounded"
-                >
-                  {children}
-                </Link>
-              );
-            }
-            return <div className="block bg-white rounded">{children}</div>;
-          };
-
-          return (
-            <MatchContent key={game.fixture.id}>
-              {/* Desktop version */}
-              <div className="hidden md:flex items-center justify-between px-2 py-3 text-sm">
-                <div className="text-gray-600 min-w-[200px]">
-                  {new Date(game.fixture.date).toLocaleDateString('no-NO', {
-                    day: 'numeric',
-                    month: 'short',
-                    year: 'numeric'
-                  })}
-                  <span className="mx-2">•</span>
-                  {game.league.name}
-                </div>
-
-                <div className="flex items-center justify-end w-[340px]">
-                  <div className="flex items-center justify-end w-[140px]">
-                    <span className="truncate">{game.teams.home.name}</span>
-                    <Image
-                      src={game.teams.home.logo}
-                      alt={game.teams.home.name}
-                      width={20}
-                      height={20}
-                      className="ml-2 flex-shrink-0"
-                    />
-                  </div>
-
-                  <div className="flex items-center justify-center w-[60px]">
-                    <span className={`${game.teams.home.winner ? 'text-green-600' : ''}`}>
-                      {game.goals.home}
-                    </span>
-                    <span className="mx-1 text-gray-400">-</span>
-                    <span className={`${game.teams.away.winner ? 'text-green-600' : ''}`}>
-                      {game.goals.away}
-                    </span>
-                  </div>
-
-                  <div className="flex items-center justify-start w-[140px]">
-                    <Image
-                      src={game.teams.away.logo}
-                      alt={game.teams.away.name}
-                      width={20}
-                      height={20}
-                      className="mr-2 flex-shrink-0"
-                    />
-                    <span className="truncate">{game.teams.away.name}</span>
-                  </div>
-                </div>
+        .map((match) => (
+          <div 
+            key={match.fixture.id}
+            className="block bg-gray-50 rounded-lg p-4"
+          >
+            <div className="text-xs text-gray-500 mb-2">
+              {format(parseISO(match.fixture.date), 'd. MMMM yyyy', { locale: nb })}
+              {match.league && ` • ${match.league.name}`}
+            </div>
+            
+            <div className="grid grid-cols-[1fr_80px_1fr] items-center">
+              <div className="flex items-center gap-3">
+                <img 
+                  src={match.teams.home.logo} 
+                  alt={match.teams.home.name}
+                  className="w-6 h-6 object-contain"
+                />
+                <span className="font-medium">{match.teams.home.name}</span>
               </div>
-
-              {/* Mobile version */}
-              <div className="md:hidden p-3">
-                <div className="space-y-3">
-                  {/* Date and league */}
-                  <div className="text-xs text-gray-600">
-                    {new Date(game.fixture.date).toLocaleDateString('no-NO', {
-                      day: 'numeric',
-                      month: 'short',
-                      year: 'numeric'
-                    })}
-                    <span className="mx-2">•</span>
-                    {game.league.name}
-                  </div>
-
-                  {/* Teams and score */}
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-2 flex-1">
-                      <Image
-                        src={game.teams.home.logo}
-                        alt={game.teams.home.name}
-                        width={20}
-                        height={20}
-                        className="flex-shrink-0"
-                      />
-                      <span className="truncate text-sm">{game.teams.home.name}</span>
-                    </div>
-
-                    <div className="flex items-center justify-center mx-4">
-                      <span className={`text-sm ${game.teams.home.winner ? 'text-green-600' : ''}`}>
-                        {game.goals.home}
-                      </span>
-                      <span className="mx-1 text-gray-400">-</span>
-                      <span className={`text-sm ${game.teams.away.winner ? 'text-green-600' : ''}`}>
-                        {game.goals.away}
-                      </span>
-                    </div>
-
-                    <div className="flex items-center space-x-2 flex-1 justify-end">
-                      <span className="truncate text-sm">{game.teams.away.name}</span>
-                      <Image
-                        src={game.teams.away.logo}
-                        alt={game.teams.away.name}
-                        width={20}
-                        height={20}
-                        className="flex-shrink-0"
-                      />
-                    </div>
-                  </div>
-                </div>
+              
+              <div className="font-semibold text-center">
+                {match.match_status === 'NS' ? '-' : `${match.goals.home} - ${match.goals.away}`}
               </div>
-            </MatchContent>
-          );
-        })}
+              
+              <div className="flex items-center gap-3 justify-end">
+                <span className="font-medium">{match.teams.away.name}</span>
+                <img 
+                  src={match.teams.away.logo} 
+                  alt={match.teams.away.name}
+                  className="w-6 h-6 object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        ))}
     </div>
   );
 } 

@@ -9,6 +9,14 @@ interface TeamStandingsProps {
   teamName: string;
   seasons: number[]; // All available season years, e.g., [2025, 2024]
   hideSeasonSelector?: boolean;
+  highlightTeams?: number[];
+  leagueId: number;
+  embedded?: boolean; // Add this prop to control styling
+  forcedLeagueDetails?: { // New optional prop
+    id: number;
+    name: string;
+    logo: string;
+  };
 }
 
 const norwegianLeagueIds = [103, 104]; // Eliteserien and OBOS-ligaen IDs
@@ -43,7 +51,11 @@ export default function TeamStandings({
   teamId,
   teamName,
   seasons, // Use this for dropdown AND initial determination
-  hideSeasonSelector = false
+  hideSeasonSelector = false,
+  highlightTeams,
+  leagueId,
+  embedded = false, // Default to false
+  forcedLeagueDetails // Destructure the new prop
 }: TeamStandingsProps) {
 
   const [selectedSeason, setSelectedSeason] = useState<number | null>(null); // Start as null
@@ -52,8 +64,12 @@ export default function TeamStandings({
   const [standingsData, setStandingsData] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true); // Loading includes initial season check
   const [error, setError] = useState<string | null>(null);
-  const [teamLeagues, setTeamLeagues] = useState<any[]>([]);
-  const [selectedLeagueId, setSelectedLeagueId] = useState<number | null>(null);
+  const [teamLeagues, setTeamLeagues] = useState<any[]>(() =>
+    forcedLeagueDetails ? [{ league: forcedLeagueDetails }] : []
+  );
+  const [selectedLeagueId, setSelectedLeagueId] = useState<number | null>(() =>
+    forcedLeagueDetails ? forcedLeagueDetails.id : null
+  );
   const [showForm, setShowForm] = useState(false);
 
   // --- Memoize validSortedSeasons ---
@@ -64,18 +80,7 @@ export default function TeamStandings({
 
   // --- Effect 1: Determine the correct initial season ---
   useEffect(() => {
-    // Prevent running if already determined or no seasons available
-    if (isInitialSeasonDetermined || validSortedSeasons.length === 0) {
-       if (validSortedSeasons.length === 0 && !isInitialSeasonDetermined) {
-           console.warn("[Effect 1] No seasons provided. Setting fallback.");
-           setSelectedSeason(new Date().getFullYear());
-           setIsInitialSeasonDetermined(true);
-           setLoading(false); // Stop loading if no seasons
-       }
-       return;
-    }
-
-    let isMounted = true; // Flag to prevent state updates on unmounted component
+    let isMounted = true;
     const determineInitialSeason = async () => {
       console.log("[Effect 1] Running: Determine Initial Season");
       setLoading(true);
@@ -137,146 +142,177 @@ export default function TeamStandings({
     determineInitialSeason();
 
     return () => {
-      isMounted = false; // Cleanup function to set flag on unmount
+      isMounted = false;
       console.log("[Effect 1] Cleanup");
     };
-  // Dependencies: Only run when these change. validSortedSeasons is now memoized.
   }, [isInitialSeasonDetermined, validSortedSeasons, teamId]);
 
 
   // --- Effect 2: Fetch Leagues for the selected season ---
-  const fetchTeamLeaguesCallback = useCallback(async () => {
-    // Only run if initial season is set and selectedSeason is not null
-    if (!isInitialSeasonDetermined || selectedSeason === null) {
-        console.log("[Effect 2] Skipping: Initial season not determined or selectedSeason is null.");
-        return;
-    }
+  useEffect(() => {
+    let isMounted = true; // Flag to track mount status
 
-    let isMounted = true;
-    console.log(`[Effect 2] Running: Fetching leagues for season ${selectedSeason}`);
-    setLoading(true); // Indicate loading leagues/standings
-    setError(null);
-    setStandingsData([]); // Clear old standings
-    setTeamLeagues([]); // Clear old leagues
-    setSelectedLeagueId(null); // Reset selected league
+    // Define the async function inside useEffect
+    async function fetchTeamLeagues() {
+        // If league details are forced, handle it and exit
+        if (forcedLeagueDetails) {
+            console.log(`[Effect 2] Skipping league fetch: League details forced to ID ${forcedLeagueDetails.id}`);
+            if (isMounted) { // Check before setting state
+                if (selectedLeagueId !== forcedLeagueDetails.id) {
+                    setSelectedLeagueId(forcedLeagueDetails.id);
+                }
+                if (teamLeagues.length !== 1 || teamLeagues[0]?.league?.id !== forcedLeagueDetails.id) {
+                    setTeamLeagues([{ league: forcedLeagueDetails }]);
+                }
+            }
+            return; // Exit async function
+        }
 
-    try {
-      const response = await fetch(`/api/leagues?team=${teamId}&season=${selectedSeason}`);
-       if (!isMounted) return;
+        // Only run if initial season is set and selectedSeason is not null
+        if (!isInitialSeasonDetermined || selectedSeason === null) {
+            console.log("[Effect 2] Skipping: Initial season not determined or selectedSeason is null.");
+            return; // Exit async function
+        }
 
-      if (!response.ok) throw new Error(`API responded with status: ${response.status}`);
-      const data = await response.json();
-      console.log(`[Effect 2] Leagues API response for season ${selectedSeason}:`, data);
-
-      if (data.response && data.response.length > 0) {
-        const leaguesWithStandings = data.response.filter((l: any) =>
-            l.league?.type === 'League' && l.seasons?.some((s: any) => s.year === selectedSeason && s.coverage?.standings === true)
-        );
-
+        console.log(`[Effect 2] Running: Fetching leagues for season ${selectedSeason}`);
+        // Set loading states immediately if mounted
         if (isMounted) {
-            if (leaguesWithStandings.length > 0) {
-                console.log(`[Effect 2] Found ${leaguesWithStandings.length} leagues with standings for season ${selectedSeason}.`);
-                setTeamLeagues(leaguesWithStandings);
-                // Automatically select the first league found
-                setSelectedLeagueId(leaguesWithStandings[0].league.id);
-                console.log(`[Effect 2] Auto-selecting league ID: ${leaguesWithStandings[0].league.id}`);
+            setLoading(true);
+            setError(null);
+            setStandingsData([]); // Clear old standings
+            setTeamLeagues([]); // Clear old leagues
+            setSelectedLeagueId(null); // Reset selected league
+        }
+
+        try {
+            const response = await fetch(`/api/leagues?team=${teamId}&season=${selectedSeason}`);
+            // Check mount status *after* await
+            if (!isMounted) return;
+
+            if (!response.ok) throw new Error(`API responded with status: ${response.status}`);
+            const data = await response.json();
+            console.log(`[Effect 2] Leagues API response for season ${selectedSeason}:`, data);
+
+            if (data.response && data.response.length > 0) {
+                const leaguesWithStandings = data.response.filter((l: any) =>
+                    l.league?.type === 'League' && l.seasons?.some((s: any) => s.year === selectedSeason && s.coverage?.standings === true)
+                );
+
+                if (isMounted) { // Check before setting state
+                    if (leaguesWithStandings.length > 0) {
+                        console.log(`[Effect 2] Found ${leaguesWithStandings.length} leagues with standings for season ${selectedSeason}.`);
+                        setTeamLeagues(leaguesWithStandings);
+                        // Automatically select the first league found
+                        setSelectedLeagueId(leaguesWithStandings[0].league.id);
+                        console.log(`[Effect 2] Auto-selecting league ID: ${leaguesWithStandings[0].league.id}`);
+                    } else {
+                        console.warn(`[Effect 2] No leagues of type 'League' with standings found for season ${selectedSeason}.`);
+                        setTeamLeagues([]);
+                        setSelectedLeagueId(null);
+                        setLoading(false); // Stop loading if no leagues found
+                    }
+                }
             } else {
-                console.warn(`[Effect 2] No leagues of type 'League' with standings found for season ${selectedSeason}.`);
-                setTeamLeagues([]);
-                setSelectedLeagueId(null);
-                setLoading(false); // Stop loading if no leagues found
+                 if (isMounted) { // Check before setting state
+                    console.warn(`[Effect 2] No leagues found at all for season ${selectedSeason}.`);
+                    setTeamLeagues([]);
+                    setSelectedLeagueId(null);
+                    setLoading(false); // Stop loading if no leagues found
+                 }
+            }
+        } catch (err: any) {
+            console.error(`[Effect 2] Error fetching leagues for season ${selectedSeason}:`, err);
+            if (isMounted) { // Check before setting state
+                setError(`Feil ved henting av ligadata: ${err.message}`);
+                setLoading(false); // Stop loading on error
             }
         }
-      } else {
-         if (isMounted) {
-            console.warn(`[Effect 2] No leagues found at all for season ${selectedSeason}.`);
-            setTeamLeagues([]);
-            setSelectedLeagueId(null);
-            setLoading(false); // Stop loading if no leagues found
-         }
-      }
-    } catch (err: any) {
-      console.error(`[Effect 2] Error fetching leagues for season ${selectedSeason}:`, err);
-       if (isMounted) {
-          setError(`Feil ved henting av ligadata: ${err.message}`);
-          setLoading(false); // Stop loading on error
-       }
+        // Note: setLoading(false) is handled by Effect 3 or if no leagues are found here.
     }
-    // Note: setLoading(false) is handled by Effect 3 or if no leagues are found here.
 
+    // Call the async function defined above
+    fetchTeamLeagues();
+
+    // Return the cleanup function for useEffect
     return () => {
-        isMounted = false;
-        console.log("[Effect 2] Cleanup");
+        isMounted = false; // Set flag on cleanup
+        console.log("[Effect 2] Cleanup: Component unmounted or dependencies changed");
     };
-  // Dependencies: Run when selectedSeason changes *after* initial determination
-  }, [selectedSeason, teamId, isInitialSeasonDetermined]);
 
-  useEffect(() => {
-      fetchTeamLeaguesCallback();
-  }, [fetchTeamLeaguesCallback]); // Effect wrapper for the callback
+  // Dependencies: Run when selectedSeason changes *after* initial determination, or if forced details change
+  }, [selectedSeason, teamId, isInitialSeasonDetermined, forcedLeagueDetails]); // Keep dependencies
 
 
   // --- Effect 3: Fetch Standings for the selected league and season ---
-  const fetchLeagueStandingsCallback = useCallback(async () => {
-    // Only run if a league and season are selected
-    if (selectedLeagueId === null || selectedSeason === null) {
-        console.log("[Effect 3] Skipping: No league or season selected.");
-        // Ensure loading is false if we skipped fetching leagues previously
-        if (teamLeagues.length === 0 && isInitialSeasonDetermined) {
-            setLoading(false);
-        }
-        return;
-    }
-
-    let isMounted = true;
-    console.log(`[Effect 3] Running: Fetching standings for league ${selectedLeagueId}, season ${selectedSeason}`);
-    setLoading(true); // Ensure loading is true while fetching standings
-    setError(null); // Clear previous errors specifically for standings fetch
-
-    try {
-      const response = await fetch(`/api/standings?league=${selectedLeagueId}&season=${selectedSeason}`);
-      if (!isMounted) return;
-
-      if (!response.ok) throw new Error(`API responded with status: ${response.status}`);
-      const data = await response.json();
-      console.log(`[Effect 3] Standings API response for league ${selectedLeagueId}, season ${selectedSeason}:`, data);
-
-      if (data.response && data.response.length > 0 && data.response[0].league?.standings) {
-         if (isMounted) {
-            // The standings seem to be nested: response[0].league.standings which is an array of arrays (groups)
-            const allStandings = data.response[0].league.standings; // This is likely Array<Array<Standing>>
-            console.log(`[Effect 3] Received standings data (potentially grouped):`, allStandings);
-            setStandingsData(allStandings); // Keep the grouped structure
-         }
-      } else {
-         if (isMounted) {
-            console.warn(`[Effect 3] No standings data found in response for league ${selectedLeagueId}, season ${selectedSeason}.`);
-            setStandingsData([]); // Clear standings if none found
-         }
-      }
-    } catch (err: any) {
-      console.error(`[Effect 3] Error fetching standings:`, err);
-       if (isMounted) {
-          setError(`Feil ved henting av tabelldata: ${err.message}`);
-          setStandingsData([]); // Clear standings on error
-       }
-    } finally {
-       if (isMounted) {
-          setLoading(false); // Stop loading *after* standings fetch attempt (success or fail)
-          console.log("[Effect 3] Fetch complete, setLoading(false)");
-       }
-    }
-
-     return () => {
-        isMounted = false;
-        console.log("[Effect 3] Cleanup");
-    };
-  // Dependencies: Run when selected league or season changes
-  }, [selectedLeagueId, selectedSeason]);
-
   useEffect(() => {
-      fetchLeagueStandingsCallback();
-  }, [fetchLeagueStandingsCallback]); // Effect wrapper for the callback
+    let isMounted = true; // Flag to track mount status
+
+    // Define the async function inside useEffect
+    async function fetchLeagueStandings() {
+        // Only run if a league and season are selected
+        if (selectedLeagueId === null || selectedSeason === null) {
+            console.log("[Effect 3] Skipping: No league or season selected.");
+            // Ensure loading is false if we skipped fetching leagues previously
+            // Check isMounted before setting state
+            if (teamLeagues.length === 0 && isInitialSeasonDetermined && isMounted) {
+                setLoading(false);
+            }
+            return; // Exit async function
+        }
+
+        console.log(`[Effect 3] Running: Fetching standings for league ${selectedLeagueId}, season ${selectedSeason}`);
+        if (isMounted) { // Check before setting state
+            setLoading(true); // Ensure loading is true while fetching standings
+            setError(null); // Clear previous errors specifically for standings fetch
+        }
+
+        try {
+            const response = await fetch(`/api/standings?league=${selectedLeagueId}&season=${selectedSeason}`);
+            // Check mount status *after* await
+            if (!isMounted) return;
+
+            if (!response.ok) throw new Error(`API responded with status: ${response.status}`);
+            const data = await response.json();
+            console.log(`[Effect 3] Standings API response for league ${selectedLeagueId}, season ${selectedSeason}:`, data);
+
+            if (data.response && data.response.length > 0 && data.response[0].league?.standings) {
+                if (isMounted) { // Check before setting state
+                    // The standings seem to be nested: response[0].league.standings which is an array of arrays (groups)
+                    const allStandings = data.response[0].league.standings; // This is likely Array<Array<Standing>>
+                    console.log(`[Effect 3] Received standings data (potentially grouped):`, allStandings);
+                    setStandingsData(allStandings); // Keep the grouped structure
+                }
+            } else {
+                if (isMounted) { // Check before setting state
+                    console.warn(`[Effect 3] No standings data found in response for league ${selectedLeagueId}, season ${selectedSeason}.`);
+                    setStandingsData([]); // Clear standings if none found
+                }
+            }
+        } catch (err: any) {
+            console.error(`[Effect 3] Error fetching standings:`, err);
+            if (isMounted) { // Check before setting state
+                setError(`Feil ved henting av tabelldata: ${err.message}`);
+                setStandingsData([]); // Clear standings on error
+            }
+        } finally {
+            if (isMounted) { // Check before setting state
+                setLoading(false); // Stop loading *after* standings fetch attempt (success or fail)
+                console.log("[Effect 3] Fetch complete, setLoading(false)");
+            }
+        }
+    }
+
+    // Call the async function defined above
+    fetchLeagueStandings();
+
+    // Return the cleanup function for useEffect
+    return () => {
+        isMounted = false; // Set flag on cleanup
+        console.log("[Effect 3] Cleanup: Component unmounted or dependencies changed");
+    };
+
+  // Dependencies: Run when selected league or season changes, include checks used in skip logic
+  }, [selectedLeagueId, selectedSeason, isInitialSeasonDetermined, teamLeagues.length]); // Added dependencies
 
 
   // Handler for season change
@@ -285,10 +321,13 @@ export default function TeamStandings({
     console.log(`Season changed to: ${newSeason}`);
     setSelectedSeason(newSeason);
     // Reset dependent states immediately for better UX
-    setSelectedLeagueId(null);
-    setTeamLeagues([]);
+    // If league is forced, keep it selected, otherwise reset
+    if (!forcedLeagueDetails) {
+        setSelectedLeagueId(null);
+        setTeamLeagues([]);
+    }
     setStandingsData([]);
-    setLoading(true); // Set loading true, Effect 2 will take over
+    setLoading(true);
     setError(null);
   };
 
@@ -324,31 +363,33 @@ export default function TeamStandings({
   }
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 md:p-6">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-4">
-        <h2 className="text-xl font-semibold text-gray-800">Tabell</h2>
-        {/* Season Selector */}
-        {!hideSeasonSelector && validSortedSeasons.length > 0 && (
+    <div className={`${!embedded ? 'bg-white rounded-lg shadow-md p-4 md:p-6' : ''}`}>
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
+        {/* Only show title when not embedded */}
+        {!embedded && <h2 className="text-xl font-semibold text-gray-800">Tabell</h2>}
+        
+        {/* Season selector - hide when embedded or hideSeasonSelector is true OR if league is forced */}
+        {!embedded && !hideSeasonSelector && !forcedLeagueDetails && validSortedSeasons.length > 0 && (
           <div className="flex items-center gap-2">
-             <label htmlFor="season-select" className="text-sm font-medium text-gray-700">Sesong:</label>
-             <select
-               id="season-select"
-               value={selectedSeason}
-               onChange={handleSeasonChange}
-               className="block w-full sm:w-auto pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm"
-             >
-               {validSortedSeasons.map(year => (
-                 <option key={year} value={year}>
-                   {formatSeasonDisplay(year)}
-                 </option>
-               ))}
-             </select>
+            <label htmlFor="season-select" className="text-sm font-medium text-gray-700">Sesong:</label>
+            <select
+              id="season-select"
+              value={selectedSeason}
+              onChange={handleSeasonChange}
+              className="block w-full sm:w-auto pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md shadow-sm"
+            >
+              {validSortedSeasons.map(year => (
+                <option key={year} value={year}>
+                  {formatSeasonDisplay(year)}
+                </option>
+              ))}
+            </select>
           </div>
         )}
       </div>
 
-       {/* League Selector (only if multiple leagues exist for the selected season) */}
-       {teamLeagues.length > 1 && (
+       {/* League Selector (only if multiple leagues exist AND league is NOT forced) */}
+       {!forcedLeagueDetails && teamLeagues.length > 1 && (
          <div className="mb-4">
            <label htmlFor="league-select" className="block text-sm font-medium text-gray-700 mb-1">Velg liga:</label>
            <select
@@ -473,7 +514,9 @@ export default function TeamStandings({
                           console.warn("Skipping rendering row due to missing standing/team data:", standing);
                           return null; // Skip this row
                         }
+                        
                         const isCurrentTeam = standing.team.id === teamId;
+                        const isHighlightedTeam = highlightTeams?.includes(standing.team.id);
                         const formTranslated = translateForm(standing.form);
 
                         // Determine rank background based on description
@@ -486,9 +529,13 @@ export default function TeamStandings({
                             else if (standing.description.includes('Relegation')) rankClass = 'bg-red-100 text-red-800';
                         }
 
-
                         return (
-                          <tr key={standing.team.id} className={`hover:bg-gray-50 ${isCurrentTeam ? 'bg-blue-50 font-semibold' : ''}`}>
+                          <tr key={standing.team.id} 
+                              className={`hover:bg-gray-50 ${
+                                isCurrentTeam ? 'bg-blue-50 font-semibold' : 
+                                isHighlightedTeam ? 'bg-yellow-50' : ''
+                              }`}
+                          >
                             {/* Rank */}
                             <td className="px-2 py-2 whitespace-nowrap text-center">
                                <span className={`inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-medium ${rankClass}`}>

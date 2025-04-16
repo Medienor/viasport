@@ -259,65 +259,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1214541,
-          "date": "2025-04-12T11:00:00+00:00",
-          "venue": {
-            "id": 19922,
-            "name": "Stadion Hristo Botev",
-            "city": "Plovdiv"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744455600
-        },
-        "league": {
-          "id": 172,
-          "name": "First League",
-          "logo": "https://media.api-sports.io/football/leagues/172.png"
-        },
-        "teams": {
-          "home": {
-            "id": 634,
-            "name": "Botev Plovdiv",
-            "logo": "https://media.api-sports.io/football/teams/634.png",
-            "winner": null
-          },
-          "away": {
-            "id": 856,
-            "name": "Septemvri Sofia",
-            "logo": "https://media.api-sports.io/football/teams/856.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1214552,
           "date": "2025-04-18T11:00:00+00:00",
           "venue": {
@@ -377,6 +318,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1214541,
+          "date": "2025-04-12T11:00:00+00:00",
+          "venue": {
+            "id": 19922,
+            "name": "Stadion Hristo Botev",
+            "city": "Plovdiv"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 5
+          },
+          "timestamp": 1744455600
+        },
+        "league": {
+          "id": 172,
+          "name": "First League",
+          "logo": "https://media.api-sports.io/football/leagues/172.png"
+        },
+        "teams": {
+          "home": {
+            "id": 634,
+            "name": "Botev Plovdiv",
+            "logo": "https://media.api-sports.io/football/teams/634.png",
+            "winner": true
+          },
+          "away": {
+            "id": 856,
+            "name": "Septemvri Sofia",
+            "logo": "https://media.api-sports.io/football/teams/856.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1214537,
@@ -907,65 +907,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1316579,
-          "date": "2025-02-04T16:00:00+00:00",
-          "venue": {
-            "id": 19922,
-            "name": "Stadion Hristo Botev",
-            "city": "Plovdiv"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738684800
-        },
-        "league": {
-          "id": 656,
-          "name": "Super Cup",
-          "logo": "https://media.api-sports.io/football/leagues/656.png"
-        },
-        "teams": {
-          "home": {
-            "id": 566,
-            "name": "Ludogorets",
-            "logo": "https://media.api-sports.io/football/teams/566.png",
-            "winner": true
-          },
-          "away": {
-            "id": 634,
-            "name": "Botev Plovdiv",
-            "logo": "https://media.api-sports.io/football/teams/634.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1262,5 +1203,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:31:49.065Z"
+  "lastUpdated": "2025-04-12T18:26:31.175Z"
 }

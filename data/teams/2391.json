@@ -189,65 +189,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1211477,
-          "date": "2025-04-12T12:15:00+00:00",
-          "venue": {
-            "id": 801,
-            "name": "ETO Park",
-            "city": "Győr"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744460100
-        },
-        "league": {
-          "id": 271,
-          "name": "NB I",
-          "logo": "https://media.api-sports.io/football/leagues/271.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2402,
-            "name": "Gyori ETO FC",
-            "logo": "https://media.api-sports.io/football/teams/2402.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2391,
-            "name": "Puskas Academy",
-            "logo": "https://media.api-sports.io/football/teams/2391.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1211483,
           "date": "2025-04-19T18:30:00+00:00",
           "venue": {
@@ -425,6 +366,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1211477,
+          "date": "2025-04-12T12:15:00+00:00",
+          "venue": {
+            "id": 801,
+            "name": "ETO Park",
+            "city": "Győr"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1744460100
+        },
+        "league": {
+          "id": 271,
+          "name": "NB I",
+          "logo": "https://media.api-sports.io/football/leagues/271.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2402,
+            "name": "Gyori ETO FC",
+            "logo": "https://media.api-sports.io/football/teams/2402.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2391,
+            "name": "Puskas Academy",
+            "logo": "https://media.api-sports.io/football/teams/2391.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1211472,
@@ -955,65 +955,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1211424,
-          "date": "2025-02-01T16:00:00+00:00",
-          "venue": {
-            "id": 798,
-            "name": "MOL Aréna Sóstó",
-            "city": "Székesfehérvár"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738425600
-        },
-        "league": {
-          "id": 271,
-          "name": "NB I",
-          "logo": "https://media.api-sports.io/football/leagues/271.png"
-        },
-        "teams": {
-          "home": {
-            "id": 610,
-            "name": "Fehérvár FC",
-            "logo": "https://media.api-sports.io/football/teams/610.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2391,
-            "name": "Puskas Academy",
-            "logo": "https://media.api-sports.io/football/teams/2391.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1310,5 +1251,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:32:28.091Z"
+  "lastUpdated": "2025-04-12T18:27:09.647Z"
 }

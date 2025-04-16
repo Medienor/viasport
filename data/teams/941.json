@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1280817,
-          "date": "2025-04-12T09:35:00+00:00",
-          "venue": {
-            "id": 127,
-            "name": "McDonald Jones Stadium",
-            "city": "Newcastle"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744450500
-        },
-        "league": {
-          "id": 188,
-          "name": "A-League",
-          "logo": "https://media.api-sports.io/football/leagues/188.png"
-        },
-        "teams": {
-          "home": {
-            "id": 946,
-            "name": "Newcastle Jets",
-            "logo": "https://media.api-sports.io/football/teams/946.png",
-            "winner": null
-          },
-          "away": {
-            "id": 941,
-            "name": "Central Coast Mariners",
-            "logo": "https://media.api-sports.io/football/teams/941.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1280825,
           "date": "2025-04-20T07:00:00+00:00",
           "venue": {
@@ -329,6 +270,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1280817,
+          "date": "2025-04-12T09:35:00+00:00",
+          "venue": {
+            "id": 127,
+            "name": "McDonald Jones Stadium",
+            "city": "Newcastle"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744450500
+        },
+        "league": {
+          "id": 188,
+          "name": "A-League",
+          "logo": "https://media.api-sports.io/football/leagues/188.png"
+        },
+        "teams": {
+          "home": {
+            "id": 946,
+            "name": "Newcastle Jets",
+            "logo": "https://media.api-sports.io/football/teams/946.png",
+            "winner": true
+          },
+          "away": {
+            "id": 941,
+            "name": "Central Coast Mariners",
+            "logo": "https://media.api-sports.io/football/teams/941.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 6,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 6,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1280810,
@@ -859,65 +859,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1280766,
-          "date": "2025-02-01T08:35:00+00:00",
-          "venue": {
-            "id": 20806,
-            "name": "Industree Group Stadium",
-            "city": "Gosford"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738398900
-        },
-        "league": {
-          "id": 188,
-          "name": "A-League",
-          "logo": "https://media.api-sports.io/football/leagues/188.png"
-        },
-        "teams": {
-          "home": {
-            "id": 941,
-            "name": "Central Coast Mariners",
-            "logo": "https://media.api-sports.io/football/teams/941.png",
-            "winner": null
-          },
-          "away": {
-            "id": 946,
-            "name": "Newcastle Jets",
-            "logo": "https://media.api-sports.io/football/teams/946.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1214,5 +1155,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:35:06.879Z"
+  "lastUpdated": "2025-04-12T18:29:53.422Z"
 }

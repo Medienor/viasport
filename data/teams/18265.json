@@ -140,7 +140,8 @@
     2025
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1370648,
@@ -151,10 +152,10 @@
             "city": "Talisay"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
           },
           "timestamp": 1744452000
         },
@@ -178,17 +179,17 @@
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 1
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 1
           },
           "extratime": {
             "home": null,
@@ -199,9 +200,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1310768,
@@ -732,65 +731,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1345734,
-          "date": "2025-02-02T10:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "UP Diliman Football Pitch",
-            "city": "Quezon City"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1738490400
-        },
-        "league": {
-          "id": 765,
-          "name": "PFL",
-          "logo": "https://media.api-sports.io/football/leagues/765.png"
-        },
-        "teams": {
-          "home": {
-            "id": 8030,
-            "name": "Kaya",
-            "logo": "https://media.api-sports.io/football/teams/8030.png",
-            "winner": true
-          },
-          "away": {
-            "id": 18265,
-            "name": "Dynamic Herb Cebu",
-            "logo": "https://media.api-sports.io/football/teams/18265.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 1
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 1
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1087,5 +1027,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:35:32.259Z"
+  "lastUpdated": "2025-04-12T18:30:20.175Z"
 }

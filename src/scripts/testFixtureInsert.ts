@@ -258,6 +258,96 @@ async function fetchFixtureStatistics(fixtureIds: number[]): Promise<Map<number,
   return statisticsMap;
 }
 
+async function fetchFixturePlayerStats(fixtureIds: number[]): Promise<Map<number, any>> {
+  const playerStatsMap = new Map();
+  let processedCount = 0;
+  
+  for (const fixtureId of fixtureIds) {
+    await rateLimiter.checkLimit();
+    
+    try {
+      const response = await axios.get(
+        'https://api-football-v1.p.rapidapi.com/v3/fixtures/players',
+        {
+          params: { fixture: fixtureId.toString() },
+          headers: {
+            'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com',
+            'X-RapidAPI-Key': RAPID_API_KEY
+          }
+        }
+      );
+
+      const playerStats = response.data.response;
+      
+      if (playerStats && playerStats.length > 0) {
+        playerStatsMap.set(fixtureId, {
+          player_statistics: playerStats,
+          player_statistics_last_updated: new Date().toISOString()
+        });
+      } else {
+        console.warn(`Warning: No player statistics found for fixture ${fixtureId}`);
+      }
+
+      processedCount++;
+      if (processedCount % 100 === 0) {
+        console.log(`Fetched player statistics for ${processedCount}/${fixtureIds.length} fixtures`);
+      }
+
+    } catch (error) {
+      console.error(`Error fetching player statistics for fixture ${fixtureId}:`, error);
+    }
+
+    await new Promise(resolve => setTimeout(resolve, DELAY_BETWEEN_REQUESTS));
+  }
+
+  return playerStatsMap;
+}
+
+async function fetchFixtureLineups(fixtureIds: number[]): Promise<Map<number, any>> {
+  const lineupsMap = new Map();
+  let processedCount = 0;
+  
+  for (const fixtureId of fixtureIds) {
+    await rateLimiter.checkLimit();
+    
+    try {
+      const response = await axios.get(
+        'https://api-football-v1.p.rapidapi.com/v3/fixtures/lineups',
+        {
+          params: { fixture: fixtureId.toString() },
+          headers: {
+            'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com',
+            'X-RapidAPI-Key': RAPID_API_KEY
+          }
+        }
+      );
+
+      const lineups = response.data.response;
+      
+      if (lineups && lineups.length > 0) {
+        lineupsMap.set(fixtureId, {
+          lineups: lineups,
+          lineups_last_updated: new Date().toISOString()
+        });
+      } else {
+        console.warn(`Warning: No lineups found for fixture ${fixtureId}`);
+      }
+
+      processedCount++;
+      if (processedCount % 100 === 0) {
+        console.log(`Fetched lineups for ${processedCount}/${fixtureIds.length} fixtures`);
+      }
+
+    } catch (error) {
+      console.error(`Error fetching lineups for fixture ${fixtureId}:`, error);
+    }
+
+    await new Promise(resolve => setTimeout(resolve, DELAY_BETWEEN_REQUESTS));
+  }
+
+  return lineupsMap;
+}
+
 async function fetchAndInsertFixtures(leagueId: number, leagueName: string, season: number) {
   console.log(`Processing ${leagueName} (${leagueId}) season ${season}...`);
   
@@ -288,7 +378,7 @@ async function fetchAndInsertFixtures(leagueId: number, leagueName: string, seas
     while (true) {
       const { data: existingFixturesPage, error } = await supabase
         .from('fixtures')
-        .select('id, event_data, fixture_statistics, head_to_head, match_status')
+        .select('id, event_data, fixture_statistics, head_to_head, match_status, player_statistics, lineups')
         .in('id', fixtures.map(f => f.fixture.id))
         .range(page * pageSize, (page + 1) * pageSize - 1);
 
@@ -341,13 +431,47 @@ async function fetchAndInsertFixtures(leagueId: number, leagueName: string, seas
         return !fixture?.head_to_head;
       });
 
+    // Add check for existing player statistics
+    const existingPlayerStatsIds = new Set(
+      allExistingFixtures
+        .filter(f => {
+          const isFinished = f.match_status === 'FT';
+          const hasPlayerStats = f.player_statistics !== null;
+          return isFinished && hasPlayerStats;
+        })
+        .map(f => f.id)
+    );
+
+    // Filter fixtures needing player statistics
+    const fixturesNeedingPlayerStats = finishedFixtureIds
+      .filter(id => !existingPlayerStatsIds.has(id));
+
+    // Add check for existing lineups
+    const existingLineupsIds = new Set(
+      allExistingFixtures
+        .filter(f => {
+          const isFinished = f.match_status === 'FT';
+          const hasLineups = f.lineups !== null;
+          return isFinished && hasLineups;
+        })
+        .map(f => f.id)
+    );
+
+    // Filter fixtures needing lineups
+    const fixturesNeedingLineups = finishedFixtureIds
+      .filter(id => !existingLineupsIds.has(id));
+
     console.log(`Found ${fixturesNeedingEvents.length} finished fixtures needing events`);
     console.log(`Found ${fixturesNeedingStatistics.length} finished fixtures needing statistics`);
     console.log(`Found ${fixturesNeedingH2H.length} fixtures (finished + upcoming) needing H2H data`);
+    console.log(`Found ${fixturesNeedingPlayerStats.length} finished fixtures needing player statistics`);
+    console.log(`Found ${fixturesNeedingLineups.length} finished fixtures needing lineups`);
 
     // 5. Fetch events and statistics in bulk
     const eventMap = await fetchFixtureEvents(fixturesNeedingEvents);
     const statisticsMap = await fetchFixtureStatistics(fixturesNeedingStatistics);
+    const playerStatsMap = await fetchFixturePlayerStats(fixturesNeedingPlayerStats);
+    const lineupsMap = await fetchFixtureLineups(fixturesNeedingLineups);
 
     // 6. Process all fixtures
     for (const fixture of fixtures) {
@@ -356,6 +480,8 @@ async function fetchAndInsertFixtures(leagueId: number, leagueName: string, seas
       // Get events and statistics if available
       const eventData = eventMap.get(fixture.fixture.id);
       const statisticsData = statisticsMap.get(fixture.fixture.id);
+      const playerStatsData = playerStatsMap.get(fixture.fixture.id);
+      const lineupsData = lineupsMap.get(fixture.fixture.id);
 
       // Get H2H data if needed
       let h2hData = null;
@@ -389,7 +515,9 @@ async function fetchAndInsertFixtures(leagueId: number, leagueName: string, seas
         updated_at: new Date().toISOString(),
         ...(eventData || {}),
         ...(statisticsData || {}),
-        ...(h2hData || {})
+        ...(h2hData || {}),
+        ...(playerStatsData || {}),
+        ...(lineupsData || {})
       };
 
       // Upsert the fixture

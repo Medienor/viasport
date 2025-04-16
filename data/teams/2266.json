@@ -223,65 +223,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1366563,
-          "date": "2025-04-12T14:00:00+00:00",
-          "venue": {
-            "id": 1169,
-            "name": "Solitude",
-            "city": "Belfast"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744466400
-        },
-        "league": {
-          "id": 408,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/408.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2266,
-            "name": "Cliftonville FC",
-            "logo": "https://media.api-sports.io/football/teams/2266.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2275,
-            "name": "Glenavon FC",
-            "logo": "https://media.api-sports.io/football/teams/2275.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1366566,
           "date": "2025-04-19T14:00:00+00:00",
           "venue": {
@@ -459,6 +400,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366563,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 1169,
+            "name": "Solitude",
+            "city": "Belfast"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 12
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 408,
+          "name": "Premiership",
+          "logo": "https://media.api-sports.io/football/leagues/408.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2266,
+            "name": "Cliftonville FC",
+            "logo": "https://media.api-sports.io/football/teams/2266.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2275,
+            "name": "Glenavon FC",
+            "logo": "https://media.api-sports.io/football/teams/2275.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1366559,
@@ -989,65 +989,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1222026,
-          "date": "2025-02-21T19:45:00+00:00",
-          "venue": {
-            "id": 1169,
-            "name": "Solitude",
-            "city": "Belfast"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1740167100
-        },
-        "league": {
-          "id": 408,
-          "name": "Premiership",
-          "logo": "https://media.api-sports.io/football/leagues/408.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2266,
-            "name": "Cliftonville FC",
-            "logo": "https://media.api-sports.io/football/teams/2266.png",
-            "winner": true
-          },
-          "away": {
-            "id": 5352,
-            "name": "Glentoran",
-            "logo": "https://media.api-sports.io/football/teams/5352.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1344,5 +1285,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:32:25.572Z"
+  "lastUpdated": "2025-04-12T18:27:07.177Z"
 }

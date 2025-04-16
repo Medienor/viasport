@@ -148,65 +148,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1367195,
-          "date": "2025-04-12T12:00:00+00:00",
-          "venue": {
-            "id": 21762,
-            "name": "Follese Tertnes Holding Arena",
-            "city": "Strusshamn"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744459200
-        },
-        "league": {
-          "id": 105,
-          "name": "NM Cupen",
-          "logo": "https://media.api-sports.io/football/leagues/105.png"
-        },
-        "teams": {
-          "home": {
-            "id": 22870,
-            "name": "Askøy",
-            "logo": "https://media.api-sports.io/football/teams/22870.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2148,
-            "name": "Asane",
-            "logo": "https://media.api-sports.io/football/teams/2148.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1342446,
           "date": "2025-04-21T15:00:00+00:00",
           "venue": {
@@ -740,6 +681,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1367195,
+          "date": "2025-04-12T12:00:00+00:00",
+          "venue": {
+            "id": 21762,
+            "name": "Follese Tertnes Holding Arena",
+            "city": "Strusshamn"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744459200
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 22870,
+            "name": "Askøy",
+            "logo": "https://media.api-sports.io/football/teams/22870.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2148,
+            "name": "Asane",
+            "logo": "https://media.api-sports.io/football/teams/2148.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 5
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 5
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342441,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -1268,65 +1268,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1152101,
-          "date": "2024-11-02T15:00:00+00:00",
-          "venue": {
-            "id": 12683,
-            "name": "Åsane Arena",
-            "city": "Bergen"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1730559600
-        },
-        "league": {
-          "id": 104,
-          "name": "1. Division",
-          "logo": "https://media.api-sports.io/football/leagues/104.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2148,
-            "name": "Asane",
-            "logo": "https://media.api-sports.io/football/teams/2148.png",
-            "winner": true
-          },
-          "away": {
-            "id": 7006,
-            "name": "Lyn",
-            "logo": "https://media.api-sports.io/football/teams/7006.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1623,5 +1564,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:29:00.286Z"
+  "lastUpdated": "2025-04-12T18:23:38.003Z"
 }

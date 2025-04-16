@@ -148,65 +148,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1367189,
-          "date": "2025-04-12T14:00:00+00:00",
-          "venue": {
-            "id": 12747,
-            "name": "Sparebank 1 Bana",
-            "city": "Volda"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744466400
-        },
-        "league": {
-          "id": 105,
-          "name": "NM Cupen",
-          "logo": "https://media.api-sports.io/football/leagues/105.png"
-        },
-        "teams": {
-          "home": {
-            "id": 16226,
-            "name": "Volda",
-            "logo": "https://media.api-sports.io/football/teams/16226.png",
-            "winner": null
-          },
-          "away": {
-            "id": 758,
-            "name": "Sogndal",
-            "logo": "https://media.api-sports.io/football/teams/758.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1342445,
           "date": "2025-04-21T15:00:00+00:00",
           "venue": {
@@ -740,6 +681,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1367189,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 12747,
+            "name": "Sparebank 1 Bana",
+            "city": "Volda"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 105,
+          "name": "NM Cupen",
+          "logo": "https://media.api-sports.io/football/leagues/105.png"
+        },
+        "teams": {
+          "home": {
+            "id": 16226,
+            "name": "Volda",
+            "logo": "https://media.api-sports.io/football/teams/16226.png",
+            "winner": false
+          },
+          "away": {
+            "id": 758,
+            "name": "Sogndal",
+            "logo": "https://media.api-sports.io/football/teams/758.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1342440,
           "date": "2025-04-05T14:00:00+00:00",
           "venue": {
@@ -1268,65 +1268,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1346317,
-          "date": "2025-02-04T15:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Nuevo Campo del Campoamor Golf Resort",
-            "city": "Orihuela"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 2
-          },
-          "timestamp": 1738681200
-        },
-        "league": {
-          "id": 667,
-          "name": "Friendlies Clubs",
-          "logo": "https://media.api-sports.io/football/leagues/667.png"
-        },
-        "teams": {
-          "home": {
-            "id": 758,
-            "name": "Sogndal",
-            "logo": "https://media.api-sports.io/football/teams/758.png",
-            "winner": false
-          },
-          "away": {
-            "id": 325,
-            "name": "Tromso",
-            "logo": "https://media.api-sports.io/football/teams/325.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1623,5 +1564,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:28:57.701Z"
+  "lastUpdated": "2025-04-12T18:23:35.293Z"
 }

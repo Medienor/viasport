@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1278527,
-          "date": "2025-04-12T13:30:00+00:00",
-          "venue": {
-            "id": 19776,
-            "name": "Arena e Demave",
-            "city": "Tirana"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744464600
-        },
-        "league": {
-          "id": 310,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/310.png"
-        },
-        "teams": {
-          "home": {
-            "id": 708,
-            "name": "Partizani",
-            "logo": "https://media.api-sports.io/football/teams/708.png",
-            "winner": null
-          },
-          "away": {
-            "id": 3327,
-            "name": "Egnatia Rrogozhinë",
-            "logo": "https://media.api-sports.io/football/teams/3327.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1278529,
           "date": "2025-04-19T13:30:00+00:00",
           "venue": {
@@ -388,6 +329,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1278527,
+          "date": "2025-04-12T13:30:00+00:00",
+          "venue": {
+            "id": 19776,
+            "name": "Arena e Demave",
+            "city": "Tirana"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744464600
+        },
+        "league": {
+          "id": 310,
+          "name": "Superliga",
+          "logo": "https://media.api-sports.io/football/leagues/310.png"
+        },
+        "teams": {
+          "home": {
+            "id": 708,
+            "name": "Partizani",
+            "logo": "https://media.api-sports.io/football/teams/708.png",
+            "winner": true
+          },
+          "away": {
+            "id": 3327,
+            "name": "Egnatia Rrogozhinë",
+            "logo": "https://media.api-sports.io/football/teams/3327.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1278519,
@@ -918,65 +918,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1278484,
-          "date": "2025-02-21T16:30:00+00:00",
-          "venue": {
-            "id": 19776,
-            "name": "Arena e Demave",
-            "city": "Tirana"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1740155400
-        },
-        "league": {
-          "id": 310,
-          "name": "Superliga",
-          "logo": "https://media.api-sports.io/football/leagues/310.png"
-        },
-        "teams": {
-          "home": {
-            "id": 708,
-            "name": "Partizani",
-            "logo": "https://media.api-sports.io/football/teams/708.png",
-            "winner": false
-          },
-          "away": {
-            "id": 3325,
-            "name": "Bylis",
-            "logo": "https://media.api-sports.io/football/teams/3325.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1273,5 +1214,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:32:20.318Z"
+  "lastUpdated": "2025-04-12T18:27:01.983Z"
 }

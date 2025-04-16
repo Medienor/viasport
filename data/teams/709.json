@@ -264,65 +264,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1366100,
-          "date": "2025-04-12T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Junior Sport Stadium",
-            "city": "Yerevan"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744459200
-        },
-        "league": {
-          "id": 342,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/342.png"
-        },
-        "teams": {
-          "home": {
-            "id": 688,
-            "name": "Gandzasar",
-            "logo": "https://media.api-sports.io/football/teams/688.png",
-            "winner": null
-          },
-          "away": {
-            "id": 709,
-            "name": "Pyunik Yerevan",
-            "logo": "https://media.api-sports.io/football/teams/709.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1367887,
           "date": "2025-04-15T14:30:00+00:00",
           "venue": {
@@ -618,6 +559,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1366100,
+          "date": "2025-04-12T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Junior Sport Stadium",
+            "city": "Yerevan"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1744459200
+        },
+        "league": {
+          "id": 342,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/342.png"
+        },
+        "teams": {
+          "home": {
+            "id": 688,
+            "name": "Gandzasar",
+            "logo": "https://media.api-sports.io/football/teams/688.png",
+            "winner": false
+          },
+          "away": {
+            "id": 709,
+            "name": "Pyunik Yerevan",
+            "logo": "https://media.api-sports.io/football/teams/709.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 3
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 3
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1338290,
@@ -1148,65 +1148,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1337503,
-          "date": "2025-02-25T10:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Junior Sport Stadium",
-            "city": "Yerevan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1740477600
-        },
-        "league": {
-          "id": 342,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/342.png"
-        },
-        "teams": {
-          "home": {
-            "id": 582,
-            "name": "Alashkert",
-            "logo": "https://media.api-sports.io/football/teams/582.png",
-            "winner": false
-          },
-          "away": {
-            "id": 709,
-            "name": "Pyunik Yerevan",
-            "logo": "https://media.api-sports.io/football/teams/709.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1503,5 +1444,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:31:39.014Z"
+  "lastUpdated": "2025-04-12T18:26:21.080Z"
 }

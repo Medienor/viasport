@@ -152,65 +152,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1261120,
-          "date": "2025-04-12T15:15:00+00:00",
-          "venue": {
-            "id": 4130,
-            "name": "Mehdi Hüseynzadə adına Sumqayıt şəhər stadionu",
-            "city": "Sumqayıt"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744470900
-        },
-        "league": {
-          "id": 419,
-          "name": "Premyer Liqa",
-          "logo": "https://media.api-sports.io/football/leagues/419.png"
-        },
-        "teams": {
-          "home": {
-            "id": 5503,
-            "name": "Sumqayıt",
-            "logo": "https://media.api-sports.io/football/teams/5503.png",
-            "winner": null
-          },
-          "away": {
-            "id": 666,
-            "name": "Keshla FC",
-            "logo": "https://media.api-sports.io/football/teams/666.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1261123,
           "date": "2025-04-20T15:00:00+00:00",
           "venue": {
@@ -388,6 +329,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1261120,
+          "date": "2025-04-12T15:15:00+00:00",
+          "venue": {
+            "id": 4130,
+            "name": "Mehdi Hüseynzadə adına Sumqayıt şəhər stadionu",
+            "city": "Sumqayıt"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 6
+          },
+          "timestamp": 1744470900
+        },
+        "league": {
+          "id": 419,
+          "name": "Premyer Liqa",
+          "logo": "https://media.api-sports.io/football/leagues/419.png"
+        },
+        "teams": {
+          "home": {
+            "id": 5503,
+            "name": "Sumqayıt",
+            "logo": "https://media.api-sports.io/football/teams/5503.png",
+            "winner": false
+          },
+          "away": {
+            "id": 666,
+            "name": "Keshla FC",
+            "logo": "https://media.api-sports.io/football/teams/666.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1261114,
@@ -918,65 +918,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1320012,
-          "date": "2025-02-05T14:30:00+00:00",
-          "venue": {
-            "id": 2783,
-            "name": "Bank Respublika Arena",
-            "city": "Masazir"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1738765800
-        },
-        "league": {
-          "id": 420,
-          "name": "Cup",
-          "logo": "https://media.api-sports.io/football/leagues/420.png"
-        },
-        "teams": {
-          "home": {
-            "id": 13976,
-            "name": "Sabah FA",
-            "logo": "https://media.api-sports.io/football/teams/13976.png",
-            "winner": null
-          },
-          "away": {
-            "id": 5503,
-            "name": "Sumqayıt",
-            "logo": "https://media.api-sports.io/football/teams/5503.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1273,5 +1214,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:32:40.726Z"
+  "lastUpdated": "2025-04-12T18:27:22.484Z"
 }

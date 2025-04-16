@@ -221,65 +221,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1368177,
-          "date": "2025-04-12T14:00:00+00:00",
-          "venue": {
-            "id": 12090,
-            "name": "Tony Bezzina Stadium",
-            "city": "Paola"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744466400
-        },
-        "league": {
-          "id": 393,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/393.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4627,
-            "name": "Mosta",
-            "logo": "https://media.api-sports.io/football/teams/4627.png",
-            "winner": null
-          },
-          "away": {
-            "id": 4626,
-            "name": "Hamrun Spartans",
-            "logo": "https://media.api-sports.io/football/teams/4626.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1368184,
           "date": "2025-04-21T17:00:00+00:00",
           "venue": {
@@ -339,6 +280,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1368177,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 12090,
+            "name": "Tony Bezzina Stadium",
+            "city": "Paola"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 393,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/393.png"
+        },
+        "teams": {
+          "home": {
+            "id": 4627,
+            "name": "Mosta",
+            "logo": "https://media.api-sports.io/football/teams/4627.png",
+            "winner": false
+          },
+          "away": {
+            "id": 4626,
+            "name": "Hamrun Spartans",
+            "logo": "https://media.api-sports.io/football/teams/4626.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1367465,
@@ -869,65 +869,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1334955,
-          "date": "2025-02-05T19:30:00+00:00",
-          "venue": {
-            "id": 2614,
-            "name": "Ta'Qali National Stadium",
-            "city": "Ta'Qali"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 8
-          },
-          "timestamp": 1738783800
-        },
-        "league": {
-          "id": 821,
-          "name": "FA Trophy",
-          "logo": "https://media.api-sports.io/football/leagues/821.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4622,
-            "name": "Zabbar St. Patrick",
-            "logo": "https://media.api-sports.io/football/teams/4622.png",
-            "winner": false
-          },
-          "away": {
-            "id": 4626,
-            "name": "Hamrun Spartans",
-            "logo": "https://media.api-sports.io/football/teams/4626.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1224,5 +1165,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:31:44.004Z"
+  "lastUpdated": "2025-04-12T18:26:26.048Z"
 }

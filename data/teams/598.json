@@ -186,65 +186,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1369490,
-          "date": "2025-04-12T14:00:00+00:00",
-          "venue": {
-            "id": 1406,
-            "name": "Stadion Rajko Mitić",
-            "city": "Beograd"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744466400
-        },
-        "league": {
-          "id": 286,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/286.png"
-        },
-        "teams": {
-          "home": {
-            "id": 598,
-            "name": "FK Crvena Zvezda",
-            "logo": "https://media.api-sports.io/football/teams/598.png",
-            "winner": null
-          },
-          "away": {
-            "id": 573,
-            "name": "FK Partizan",
-            "logo": "https://media.api-sports.io/football/teams/573.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1369493,
           "date": "2025-04-22T22:00:00+00:00",
           "venue": {
@@ -599,6 +540,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1369490,
+          "date": "2025-04-12T14:00:00+00:00",
+          "venue": {
+            "id": 1406,
+            "name": "Stadion Rajko Mitić",
+            "city": "Beograd"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 10
+          },
+          "timestamp": 1744466400
+        },
+        "league": {
+          "id": 286,
+          "name": "Super Liga",
+          "logo": "https://media.api-sports.io/football/leagues/286.png"
+        },
+        "teams": {
+          "home": {
+            "id": 598,
+            "name": "FK Crvena Zvezda",
+            "logo": "https://media.api-sports.io/football/teams/598.png",
+            "winner": true
+          },
+          "away": {
+            "id": 573,
+            "name": "FK Partizan",
+            "logo": "https://media.api-sports.io/football/teams/573.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 1
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 1
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1214794,
@@ -1129,65 +1129,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1214735,
-          "date": "2025-02-15T14:00:00+00:00",
-          "venue": {
-            "id": 1422,
-            "name": "Stadion Mladost",
-            "city": "Kruševac"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 1
-          },
-          "timestamp": 1739628000
-        },
-        "league": {
-          "id": 286,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/286.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2655,
-            "name": "Napredak",
-            "logo": "https://media.api-sports.io/football/teams/2655.png",
-            "winner": false
-          },
-          "away": {
-            "id": 598,
-            "name": "FK Crvena Zvezda",
-            "logo": "https://media.api-sports.io/football/teams/598.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 2
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1484,5 +1425,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:31:28.603Z"
+  "lastUpdated": "2025-04-12T18:26:10.208Z"
 }

@@ -301,65 +301,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1361953,
-          "date": "2025-04-12T13:55:00+00:00",
-          "venue": {
-            "id": 1600,
-            "name": "Hazza Bin Zayed Stadium",
-            "city": "Al Ain"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744466100
-        },
-        "league": {
-          "id": 301,
-          "name": "Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/301.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2865,
-            "name": "Al Ain",
-            "logo": "https://media.api-sports.io/football/teams/2865.png",
-            "winner": null
-          },
-          "away": {
-            "id": 9139,
-            "name": "Al Urooba",
-            "logo": "https://media.api-sports.io/football/teams/9139.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1367120,
           "date": "2025-04-22T16:45:00+00:00",
           "venue": {
@@ -655,6 +596,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1361953,
+          "date": "2025-04-12T13:55:00+00:00",
+          "venue": {
+            "id": 1600,
+            "name": "Hazza Bin Zayed Stadium",
+            "city": "Al Ain"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1744466100
+        },
+        "league": {
+          "id": 301,
+          "name": "Pro League",
+          "logo": "https://media.api-sports.io/football/leagues/301.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2865,
+            "name": "Al Ain",
+            "logo": "https://media.api-sports.io/football/teams/2865.png",
+            "winner": true
+          },
+          "away": {
+            "id": 9139,
+            "name": "Al Urooba",
+            "logo": "https://media.api-sports.io/football/teams/9139.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1335148,
@@ -1185,65 +1185,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1315743,
-          "date": "2025-01-30T13:15:00+00:00",
-          "venue": {
-            "id": 3711,
-            "name": "Saqr bin Mohammad al Qassimi Stadium",
-            "city": "Khor Fakkan"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1738242900
-        },
-        "league": {
-          "id": 301,
-          "name": "Pro League",
-          "logo": "https://media.api-sports.io/football/leagues/301.png"
-        },
-        "teams": {
-          "home": {
-            "id": 4912,
-            "name": "Khorfakkan",
-            "logo": "https://media.api-sports.io/football/teams/4912.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2865,
-            "name": "Al Ain",
-            "logo": "https://media.api-sports.io/football/teams/2865.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 2
-        },
-        "score": {
-          "halftime": {
-            "home": 2,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 2
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1540,5 +1481,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:35:11.859Z"
+  "lastUpdated": "2025-04-12T18:29:58.794Z"
 }

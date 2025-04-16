@@ -302,65 +302,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1208338,
-          "date": "2025-04-12T11:30:00+00:00",
-          "venue": {
-            "id": 555,
-            "name": "Etihad Stadium",
-            "city": "Manchester"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744457400
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 50,
-            "name": "Manchester City",
-            "logo": "https://media.api-sports.io/football/teams/50.png",
-            "winner": null
-          },
-          "away": {
-            "id": 52,
-            "name": "Crystal Palace",
-            "logo": "https://media.api-sports.io/football/teams/52.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1208346,
           "date": "2025-04-19T14:00:00+00:00",
           "venue": {
@@ -953,6 +894,65 @@
     "past": [
       {
         "fixture": {
+          "id": 1208338,
+          "date": "2025-04-12T11:30:00+00:00",
+          "venue": {
+            "id": 555,
+            "name": "Etihad Stadium",
+            "city": "Manchester"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
+          },
+          "timestamp": 1744457400
+        },
+        "league": {
+          "id": 39,
+          "name": "Premier League",
+          "logo": "https://media.api-sports.io/football/leagues/39.png"
+        },
+        "teams": {
+          "home": {
+            "id": 50,
+            "name": "Manchester City",
+            "logo": "https://media.api-sports.io/football/teams/50.png",
+            "winner": true
+          },
+          "away": {
+            "id": 52,
+            "name": "Crystal Palace",
+            "logo": "https://media.api-sports.io/football/teams/52.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 5,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 2
+          },
+          "fulltime": {
+            "home": 5,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+        "fixture": {
           "id": 1208330,
           "date": "2025-04-06T15:30:00+00:00",
           "venue": {
@@ -1481,65 +1481,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1208269,
-          "date": "2025-02-15T15:00:00+00:00",
-          "venue": {
-            "id": 555,
-            "name": "Etihad Stadium",
-            "city": "Manchester"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 4
-          },
-          "timestamp": 1739631600
-        },
-        "league": {
-          "id": 39,
-          "name": "Premier League",
-          "logo": "https://media.api-sports.io/football/leagues/39.png"
-        },
-        "teams": {
-          "home": {
-            "id": 50,
-            "name": "Manchester City",
-            "logo": "https://media.api-sports.io/football/teams/50.png",
-            "winner": true
-          },
-          "away": {
-            "id": 34,
-            "name": "Newcastle",
-            "logo": "https://media.api-sports.io/football/teams/34.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 4,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 3,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 4,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1836,5 +1777,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:29:15.480Z"
+  "lastUpdated": "2025-04-12T18:23:53.493Z"
 }

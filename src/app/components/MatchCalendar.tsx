@@ -11,9 +11,13 @@ import { createPlayerSlug } from '@/lib/utils';
 import PreventAutoScroll from './PreventAutoScroll';
 import { MAJOR_LEAGUES } from '@/app/data/majorLeagues';
 import { getStreamingProviders } from '@/utils/channelUtils';
+import { getMatchStatus } from '@/utils/matchUtils';
 
 // Add this line to prevent static rendering
 export const dynamic = 'force-dynamic';
+
+// Define the list of allowed league IDs
+const ALLOWED_LEAGUE_IDS = [39, 103, 2, 140, 135, 78];
 
 interface CalendarDataType {
   [key: string]: Fixture[];
@@ -203,16 +207,13 @@ export default function MatchCalendar({ currentMatchId = "" }) {
 
       const dateStr = date.toISOString().split('T')[0];
       
-      // Find leagues that have matches on this date
-      const leaguesWithMatches = [];
+      // Find if Premier League has matches on this date
+      let premierLeagueMatch = null;
       if (calendarData[dateStr] && calendarData[dateStr].length > 0) {
-        // Extract unique league IDs from matches on this date
         const leagueIds = [...new Set(calendarData[dateStr].map(match => match.league?.id).filter(Boolean))];
-        
-        // Find corresponding league data - ONLY for Premier League (39) and Champions League (2)
-        leaguesWithMatches.push(...MAJOR_LEAGUES.filter(league => 
-          leagueIds.includes(league.id) && [39, 2].includes(league.id)
-        ));
+        if (leagueIds.includes(39)) { // Check specifically for Premier League ID (39)
+          premierLeagueMatch = MAJOR_LEAGUES.find(league => league.id === 39);
+        }
       }
 
       daysArray.push({
@@ -221,7 +222,7 @@ export default function MatchCalendar({ currentMatchId = "" }) {
         date: date.getDate().toString(),
         isSelected: date.toDateString() === selectedDate.toDateString(),
         matchCount: matchCounts[dateStr] || 0,
-        leagues: leaguesWithMatches.slice(0, 3) // Limit to 3 leagues to avoid overcrowding
+        premierLeagueMatch: premierLeagueMatch // Store only the PL match data if found
       });
     }
     return daysArray;
@@ -248,9 +249,9 @@ export default function MatchCalendar({ currentMatchId = "" }) {
           if (response.ok) {
             const data = await response.json();
             const fixtures = data.response || [];
-            // Filter for our leagues
-            const filteredFixtures = fixtures.filter((fixture: ApiFixture) => 
-              MAJOR_LEAGUES.some(league => league.id === fixture.league.id)
+            // Filter for our allowed leagues
+            const filteredFixtures = fixtures.filter((fixture: ApiFixture) =>
+              ALLOWED_LEAGUE_IDS.includes(fixture.league.id) // Use ALLOWED_LEAGUE_IDS
             );
             updatedCounts[dateStr] = filteredFixtures.length;
             lastFetchTime.current[dateStr] = now;
@@ -300,9 +301,9 @@ export default function MatchCalendar({ currentMatchId = "" }) {
           const data = await response.json();
           const fixtures = data.response || [];
           
-          // Filter to only include matches from our selected leagues
-          const filteredFixtures = fixtures.filter((fixture: ApiFixture) => 
-            MAJOR_LEAGUES.some(league => league.id === fixture.league.id)
+          // Filter to only include matches from our allowed leagues
+          const filteredFixtures = fixtures.filter((fixture: ApiFixture) =>
+            ALLOWED_LEAGUE_IDS.includes(fixture.league.id) // Use ALLOWED_LEAGUE_IDS
           );
           
           setMatches(filteredFixtures);
@@ -321,12 +322,15 @@ export default function MatchCalendar({ currentMatchId = "" }) {
 
   // Group matches by league - add debug log
   const matchesByLeague = useMemo(() => {
-    const grouped = MAJOR_LEAGUES.map(league => ({
+    // Filter MAJOR_LEAGUES first to only include allowed ones
+    const allowedLeaguesDetails = MAJOR_LEAGUES.filter(league => ALLOWED_LEAGUE_IDS.includes(league.id));
+
+    const grouped = allowedLeaguesDetails.map(league => ({
       ...league,
       matches: matches.filter(match => match.league.id === league.id)
     })).filter(league => league.matches.length > 0);
-    
-    console.log('Grouped matches by league:', grouped);
+
+    console.log('Grouped matches by allowed league:', grouped);
     return grouped;
   }, [matches]);
 
@@ -367,7 +371,8 @@ export default function MatchCalendar({ currentMatchId = "" }) {
       
       // Process live matches
       data.live?.forEach((match: any) => {
-        if (MAJOR_LEAGUES.some(league => league.id === match.league.id)) {
+        // Filter for allowed leagues
+        if (ALLOWED_LEAGUE_IDS.includes(match.league.id)) { // Use ALLOWED_LEAGUE_IDS
           newLiveMatchesMap[match.fixture.id] = {
             id: match.fixture.id,
             status: {
@@ -385,7 +390,8 @@ export default function MatchCalendar({ currentMatchId = "" }) {
       
       // Process finished matches
       data.finished?.forEach((match: any) => {
-        if (MAJOR_LEAGUES.some(league => league.id === match.league.id)) {
+        // Filter for allowed leagues
+        if (ALLOWED_LEAGUE_IDS.includes(match.league.id)) { // Use ALLOWED_LEAGUE_IDS
           newLiveMatchesMap[match.fixture.id] = {
             id: match.fixture.id,
             status: {
@@ -432,64 +438,61 @@ export default function MatchCalendar({ currentMatchId = "" }) {
     return () => clearInterval(timer);
   }, []);
 
-  // Modify the getMatchStatus function to use real-time elapsed minutes
+  // Modify the getMatchStatus function for the new design
   const getMatchStatus = (match: any) => {
     const fixtureId = match.fixture?.id;
     const liveData = liveMatches[fixtureId];
     const matchDate = new Date(match.fixture?.date || '');
-    const now = new Date();
+    const now = currentTime; // Use the state currentTime for consistency
     const isToday = matchDate.toDateString() === now.toDateString();
-    
-    // Check if match is finished either from live data or original fixture data
-    const isFinished = liveData?.status.short === 'FT' || 
-                      match.fixture?.status?.short === 'FT' || 
-                      match.status?.short === 'FT';  // Add this check
 
-    // For today's finished matches or past matches, show the score
-    if (isFinished) {
-      return {
-        displayTime: null,
-        isLive: false,
-        isPastMatch: false,
-        isFinished: true,
-        score: liveData ? 
-          `${liveData.goals.home} - ${liveData.goals.away}` : 
-          `${match.goals?.home || 0} - ${match.goals?.away || 0}`  // Add fallback to 0
-      };
+    const originalStatusShort = match.fixture?.status?.short || match.status?.short;
+    const finalStatus = liveData?.status.short ?? originalStatusShort;
+    const isFinishedStatus = finalStatus === 'FT';
+
+    // Determine scores, prioritizing live data, then fixture data, then null
+    const homeScore = liveData ? liveData.goals.home : (match.goals?.home ?? null);
+    const awayScore = liveData ? liveData.goals.away : (match.goals?.away ?? null);
+
+    const isLive = liveData && ['1H', 'HT', '2H', 'ET', 'P', 'LIVE', 'SUSP', 'INT'].includes(liveData.status.short);
+
+    let displayStatus = finalStatus; // Default to the short status code (e.g., 'NS')
+    let kickOffTimeStr = null;
+    const isUpcoming = !isLive && !isFinishedStatus && ['NS', 'TBD', 'PST'].includes(finalStatus); // Define upcoming status
+
+    if (isFinishedStatus) {
+      displayStatus = 'FT';
+    } else if (isLive) {
+      if (liveData.status.short === 'HT') {
+        displayStatus = 'Pause';
+      } else if (liveData.status.elapsed !== null) {
+        const elapsedSeconds = Math.floor((now.getTime() - liveData.lastUpdated) / 1000);
+        const additionalMinutes = Math.max(0, Math.floor(elapsedSeconds / 60)); // Ensure non-negative
+        const totalElapsed = liveData.status.elapsed + additionalMinutes;
+        // Cap elapsed time if needed (e.g., at 90+ or 45+ for HT) - simplified for now
+        displayStatus = `${Math.min(totalElapsed, 90)}'`; // Basic capping at 90
+      } else {
+        displayStatus = liveData.status.short; // Fallback like 'LIVE'
+      }
+    } else if (isUpcoming) {
+      kickOffTimeStr = matchDate.toLocaleTimeString('no-NO', {
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+      displayStatus = kickOffTimeStr; // For upcoming, the primary display *is* the time
     }
-
-    if (!liveData) return { 
-      displayTime: matchDate.toLocaleTimeString('no-NO', { 
-        hour: '2-digit', 
-        minute: '2-digit' 
-      }),
-      isLive: false,
-      isPastMatch: false,
-      isFinished: false,
-      score: null
-    };
-
-    const isLive = ['1H', 'HT', '2H', 'ET', 'P', 'LIVE', 'SUSP', 'INT'].includes(liveData.status.short);
-    
-    let displayTime = liveData.status.short;
-    if (isLive && liveData.status.elapsed !== null && liveData.status.short !== 'HT') {
-      const elapsedSeconds = Math.floor((currentTime.getTime() - liveData.lastUpdated) / 1000);
-      const additionalMinutes = Math.floor(elapsedSeconds / 60);
-      const totalElapsed = liveData.status.elapsed + additionalMinutes;
-      displayTime = `${totalElapsed}'`;
-    }
+    // Handle other statuses like PST, SUSP, etc. if needed, currently falls back to finalStatus
 
     return {
-      displayTime: isLive ? 
-        liveData.status.short === 'HT' ? 'Pause' : displayTime : 
-        matchDate.toLocaleTimeString('no-NO', { 
-          hour: '2-digit', 
-          minute: '2-digit' 
-        }),
+      statusShort: finalStatus, // Raw status code
+      displayStatus: displayStatus, // Formatted status/time for display (FT, 45', Pause, 21:00)
       isLive,
-      isPastMatch: false,
-      isFinished: false,
-      score: isLive ? `${liveData.goals.home} - ${liveData.goals.away}` : null
+      isFinished: isFinishedStatus,
+      isUpcoming,
+      isToday,
+      homeScore, // Separate scores
+      awayScore,
+      kickOffTime: kickOffTimeStr // Formatted kick-off time string (or null)
     };
   };
 
@@ -503,13 +506,13 @@ export default function MatchCalendar({ currentMatchId = "" }) {
   );
 
   return (
-    <div className="bg-gray-50 md:p-4 rounded-lg">
+    <div className="bg-white rounded-lg">
       <PreventAutoScroll />
-      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+      <div className="bg-white rounded-lg shadow-sm border border-gray-200">
         {/* Calendar navigation */}
-        <div className="flex items-center border-b bg-gray-50">
+        <div className="flex items-center border-b border-gray-200">
           <button 
-            className="p-3 hover:bg-gray-100 transition-colors"
+            className="p-3 hover:bg-gray-100 transition-colors border-r border-gray-100"
             onClick={() => {
               const newDate = new Date(currentDate);
               newDate.setDate(currentDate.getDate() - 5);
@@ -533,39 +536,37 @@ export default function MatchCalendar({ currentMatchId = "" }) {
             {days.map(day => (
               <button 
                 key={day.id}
-                className={`flex-1 flex flex-col items-center py-2 px-4 min-w-[70px] relative transition-colors ${
+                className={`flex-1 flex flex-col items-center py-2 px-4 min-w-[70px] relative transition-colors border-r border-gray-100 last:border-r-0 ${
                   day.isSelected
-                    ? 'bg-[#142811] text-white border-b-2 border-green-500' 
+                    ? 'bg-gray-100 text-gray-900 border-b-2 border-blue-600'
                     : 'hover:bg-gray-100'
                 }`}
                 onClick={() => setSelectedDate(new Date(day.id))}
               >
-                {/* League logos */}
-                {day.leagues && day.leagues.length > 0 && (
-                  <div className="absolute top-1 right-1 flex space-x-1">
-                    {day.leagues.map(league => (
-                      <div 
-                        key={league.id} 
-                        className="relative w-5 h-5 bg-white rounded-full shadow-sm flex items-center justify-center overflow-hidden"
-                        style={{ boxShadow: '0 1px 2px rgba(0,0,0,0.1)' }}
-                      >
-                        <div className="relative w-3.5 h-3.5">
-                          <Image 
-                            src={getLeagueLogo(league.id)}
-                            alt={league.name}
-                            fill
-                            className="object-contain"
-                          />
-                        </div>
+                {/* Premier League icon */}
+                {day.premierLeagueMatch && (
+                  <div className="absolute top-1 right-1 flex space-x-1"> {/* Keep group for potential future use */}
+                    <div
+                      key={day.premierLeagueMatch.id}
+                      className="relative w-5 h-5 bg-white rounded-full shadow-sm flex items-center justify-center overflow-hidden"
+                      style={{ boxShadow: '0 1px 2px rgba(0,0,0,0.1)' }}
+                    >
+                      <div className="relative w-3.5 h-3.5">
+                        <Image
+                          src={getLeagueLogo(day.premierLeagueMatch.id)}
+                          alt={day.premierLeagueMatch.name}
+                          fill
+                          className="object-contain"
+                        />
                       </div>
-                    ))}
+                    </div>
                   </div>
                 )}
                 
                 <span className="text-xs">{day.label}</span>
                 <span className="text-xl font-bold my-1">{day.date}</span>
                 <span className={`text-xs ${
-                  day.isSelected ? 'text-green-300' : 'text-gray-500'
+                  day.isSelected ? 'text-blue-600' : 'text-gray-500'
                 }`}>
                   {day.matchCount} kamper
                 </span>
@@ -587,128 +588,99 @@ export default function MatchCalendar({ currentMatchId = "" }) {
           </button>
         </div>
 
-        {/* Matches list */}
-        <div className="divide-y divide-gray-100">
+        {/* Matches list - Remove outer divide-y */}
+        <div>
           {/* Live Matches Section */}
           {allLiveMatches.length > 0 && (
-            <div className="border-t first:border-t-0">
-              <div className="flex items-center px-3 py-2 bg-red-50">
+            <div>
+              <div className="flex items-center px-3 py-2 bg-red-50 border-b border-red-100"> {/* Added border */}
                 <div className="flex items-center">
                   <span className="h-1.5 w-1.5 bg-red-500 rounded-full mr-2 animate-pulse"></span>
                   <span className="text-sm font-medium text-red-700">Spiller nå</span>
                 </div>
               </div>
-              <div className="divide-y divide-gray-100">
+              {/* Remove inner divide-y */}
+              <div>
                 {allLiveMatches.map(match => {
                   const streamingProviders = getStreamingProviders(match.league.id);
                   const hasStreamingProviders = streamingProviders.length > 0;
                   const status = getMatchStatus(match);
-                  const { displayTime, isLive, score, isPastMatch } = status;
+                  const { displayStatus, isLive, isFinished, isUpcoming, isToday, homeScore, awayScore, kickOffTime } = status;
 
                   return (
-                    <Link 
+                    <Link
                       key={`live-${match.fixture?.id || match.id}`}
                       href={`/fotball/kamp/${match.fixture?.id || match.id}`}
-                      className={`block hover:bg-gray-50 transition-colors py-[15px] px-3 ${
-                        currentMatchId === (match.fixture?.id || match.id).toString()
-                          ? 'bg-gray-50' 
-                          : ''
+                      className={`block hover:bg-gray-50 transition-colors ${
+                        currentMatchId === (match.fixture?.id || match.id).toString() ? 'bg-gray-50' : ''
                       }`}
                     >
-                      <div className="flex items-center gap-2">
-                        {/* Home Team */}
-                        <div className="flex items-center flex-1 min-w-0">
-                          <div className="relative w-5 h-5 flex-shrink-0">
-                            <Image 
-                              src={match.teams?.home.logo} 
-                              alt={match.teams?.home.name} 
-                              fill
-                              className="object-contain"
-                              unoptimized
-                            />
-                          </div>
-                          <span className="ml-2 text-sm truncate">
-                            {match.teams?.home.name}
-                          </span>
-                        </div>
-
-                        {/* Match Time/Score with TV icon */}
-                        <div className="flex-shrink-0 flex items-center gap-2">
-                          <div className="text-center flex items-center gap-2">
-                            {/* Score display - Always show score for past matches */}
-                            {(isLive || score || isPastMatch) && (
-                              <span className={`text-xs lg:text-sm font-bold ${isLive ? 'text-red-600' : 'text-gray-800'}`}>
-                                {score}
-                              </span>
-                            )}
-
-                            {/* Time display - Only show for live/upcoming matches */}
-                            {!isPastMatch && displayTime && (
-                              isLive ? (
-                                <div className="flex flex-col items-center">
-                                  <span className="inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] lg:text-xs font-semibold bg-red-100 text-red-700 border border-red-200/80">
-                                    <span className="h-1.5 w-1.5 bg-red-500 rounded-full mr-1 animate-pulse"></span>
-                                    {displayTime}
-                                  </span>
-                                </div>
-                              ) : (
-                                <span className="text-sm font-medium text-gray-500 lg:text-gray-600">
-                                  {displayTime}
-                                </span>
-                              )
-                            )}
-                          </div>
-                          
-                          {/* Only show TV icon if match is upcoming (not past, not live, not finished) and has streaming providers */}
-                          {hasStreamingProviders && !status.isPastMatch && !status.isLive && !status.isFinished && (
-                            <div className="ml-1 lg:ml-2 relative group flex-shrink-0">
-                              <div className="text-gray-400 hover:text-gray-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 lg:h-5 lg:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
+                      {/* New Match Row Structure */}
+                      <div className="flex justify-between items-center px-3 py-3 border-b border-gray-100">
+                        {/* Left side: Teams and Scores */}
+                        <div className="flex-grow pr-4">
+                          {/* Home Team Row - Apply specific margin */}
+                          <div className="flex items-center justify-between mb-[13px]"> {/* Use arbitrary value */}
+                            <div className="flex items-center min-w-0"> {/* Ensure text truncates */}
+                              <div className="relative w-5 h-5 mr-2 flex-shrink-0">
+                                <Image src={match.teams?.home.logo} alt={match.teams?.home.name} fill className="object-contain" unoptimized />
                               </div>
-                              
-                              <div className="absolute z-20 right-0 w-44 p-2 mt-1 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 text-xs border border-gray-200">
-                                <div className="font-medium mb-1">Se kampen på:</div>
-                                <div className="space-y-1">
-                                  {streamingProviders.map((provider, index) => (
-                                    <div key={index} className="flex items-center">
-                                      <div className="relative h-3 w-3 mr-1">
-                                        <Image
-                                          src={provider.icon}
-                                          alt={provider.name}
-                                          fill
-                                          className="object-contain"
-                                          unoptimized
-                                        />
-                                      </div>
-                                      <span className="text-[11px]">{provider.name}</span>
-                                    </div>
-                                  ))}
-                                </div>
-                              </div>
+                              <span className="text-sm font-normal truncate">{match.teams?.home.name}</span>
                             </div>
-                          )}
-                          {/* Keep the spacer div for consistent layout */}
-                          {(hasStreamingProviders || status.isPastMatch || status.isLive || status.isFinished) && 
-                            <div className="w-4 lg:w-5 ml-1 lg:ml-2 flex-shrink-0"></div>
-                          }
+                            <span className={`text-sm font-bold ml-2 ${isLive ? 'text-red-600' : ''}`}>
+                              {homeScore !== null ? homeScore : ''}
+                            </span>
+                          </div>
+                          {/* Away Team Row */}
+                          <div className="flex items-center justify-between">
+                            <div className="flex items-center min-w-0"> {/* Ensure text truncates */}
+                              <div className="relative w-5 h-5 mr-2 flex-shrink-0">
+                                <Image src={match.teams?.away.logo} alt={match.teams?.away.name} fill className="object-contain" unoptimized />
+                              </div>
+                              <span className="text-sm font-normal truncate">{match.teams?.away.name}</span>
+                            </div>
+                            <span className={`text-sm font-bold ml-2 ${isLive ? 'text-red-600' : ''}`}>
+                              {awayScore !== null ? awayScore : ''}
+                            </span>
+                          </div>
                         </div>
 
-                        {/* Away Team */}
-                        <div className="flex items-center flex-1 min-w-0 justify-end">
-                          <span className="mr-2 text-sm truncate">
-                            {match.teams?.away.name}
-                          </span>
-                          <div className="relative w-5 h-5 flex-shrink-0">
-                            <Image 
-                              src={match.teams?.away.logo} 
-                              alt={match.teams?.away.name} 
-                              fill
-                              className="object-contain"
-                              unoptimized
-                            />
-                          </div>
+                        {/* Right side: Status/Time & TV Icon */}
+                        <div className="flex-shrink-0 text-center w-16">
+                           <span className={`block text-xs font-semibold ${isLive ? 'text-red-600' : 'text-gray-500'}`}>
+                             {displayStatus}
+                           </span>
+                           {/* TV Icon - Show only for upcoming matches with providers */}
+                           {isUpcoming && hasStreamingProviders && (
+                             <div className="mt-1 text-gray-400 flex justify-center relative group">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                {/* Enhanced Tooltip */}
+                                <div className="absolute z-20 left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-48 p-2 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200 text-xs border border-gray-200">
+                                  <div className="font-semibold mb-1 text-gray-800">Se kampen på:</div>
+                                  <div className="space-y-1">
+                                    {streamingProviders.map((provider) => (
+                                      <div key={provider.name} className="flex items-center">
+                                        <div className="relative h-4 w-4 mr-1.5 flex-shrink-0">
+                                          <Image
+                                            src={provider.icon}
+                                            alt={provider.name}
+                                            fill
+                                            className="object-contain"
+                                            unoptimized
+                                          />
+                                        </div>
+                                        <span className="text-[11px] text-gray-700">{provider.name}</span>
+                                        {provider.package && (
+                                          <span className="text-gray-500 ml-1 text-[10px]">({provider.package})</span>
+                                        )}
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+                             </div>
+                           )}
                         </div>
                       </div>
                     </Link>
@@ -720,123 +692,98 @@ export default function MatchCalendar({ currentMatchId = "" }) {
 
           {/* Regular Matches Section */}
           {matchesByLeague.map((league, leagueIndex) => {
-            const nonLiveMatches = league.matches.filter(match => {
-              const isLive = liveMatches[match.fixture?.id]?.status.short && 
-                ['1H', 'HT', '2H', 'ET', 'P', 'LIVE', 'SUSP', 'INT'].includes(liveMatches[match.fixture?.id]?.status.short);
-              return !isLive;
-            });
+            const nonLiveMatches = league.matches.filter(match => !liveMatches[match.fixture?.id]?.status.short || !['1H', 'HT', '2H', 'ET', 'P', 'LIVE', 'SUSP', 'INT'].includes(liveMatches[match.fixture?.id]?.status.short));
 
             if (nonLiveMatches.length === 0) return null;
 
-            // Get the date and time from the first match
             const firstMatch = nonLiveMatches[0];
             const matchDate = firstMatch?.fixture?.date?.split('T')[0] || 'no-date';
             const matchTime = firstMatch?.fixture?.date?.split('T')[1]?.substring(0, 5) || '00:00';
             const uniqueKey = `regular-${league.id}-${matchDate}-${matchTime}-${leagueIndex}`;
 
             return (
-              <div key={uniqueKey} className="border-t first:border-t-0">
-                <div className="flex items-center px-3 py-2 bg-gray-50">
+              <div key={uniqueKey}>
+                <div className="flex items-center px-3 py-2 bg-gray-50 border-b border-gray-100"> {/* Added border */}
                   <div className="relative w-4 h-4 mr-2">
-                    <Image 
-                      src={getLeagueLogo(league.id)}
-                      alt={league.name}
-                      fill
-                      className="object-contain"
-                    />
+                    <Image src={getLeagueLogo(league.id)} alt={league.name} fill className="object-contain" />
                   </div>
                   <span className="text-sm font-medium">{league.name}</span>
                 </div>
-                <div className="divide-y divide-gray-100">
-                  {nonLiveMatches.map((match: Fixture & { 
-                    fixture?: { 
-                      id: number;
-                      status: { short: string; elapsed: number | null };
-                      date: string;
-                    };
-                    teams?: {
-                      home: { name: string; logo: string };
-                      away: { name: string; logo: string };
-                    };
-                    goals?: {
-                      home: number | null;
-                      away: number | null;
-                    };
-                  }) => {
+                {/* Remove inner divide-y */}
+                <div>
+                  {nonLiveMatches.map((match: Fixture & { /* ... type ... */ }) => {
                     const streamingProviders = getStreamingProviders(league.id);
                     const hasStreamingProviders = streamingProviders.length > 0;
                     const status = getMatchStatus(match);
-                    const { displayTime, isLive, score, isPastMatch } = status;
+                    const { displayStatus, isLive, isFinished, isUpcoming, isToday, homeScore, awayScore, kickOffTime } = status;
+                    const rowBorderClass = 'border-gray-100';
 
                     return (
-                      <Link 
+                      <Link
                         key={`regular-${match.fixture?.id || match.id}`}
                         href={`/fotball/kamp/${match.fixture?.id || match.id}`}
-                        className={`block hover:bg-gray-50 transition-colors py-[15px] px-3 ${
-                          currentMatchId === (match.fixture?.id || match.id).toString()
-                            ? 'bg-gray-50' 
-                            : ''
+                        className={`block hover:bg-gray-50 transition-colors ${
+                          currentMatchId === (match.fixture?.id || match.id).toString() ? 'bg-gray-50' : ''
                         }`}
                       >
-                        <div className="flex items-center gap-2">
-                          {/* Home Team */}
-                          <div className="flex items-center flex-1 min-w-0">
-                            <div className="relative w-5 h-5 flex-shrink-0">
-                              <Image 
-                                src={match.teams?.home.logo} 
-                                alt={match.teams?.home.name} 
-                                fill
-                                className="object-contain"
-                                unoptimized
-                              />
+                        {/* Apply bottom border here */}
+                        <div className={`flex justify-between items-center px-3 py-3 border-b ${rowBorderClass}`}>
+                          {/* Left side: Teams and Scores - Add conditional border and adjust padding */}
+                          <div className={`flex-grow pr-4 ${isFinished ? 'border-r border-gray-100' : ''}`}>
+                            {/* Home Team Row */}
+                            <div className="flex items-center justify-between mb-[13px]">
+                              <div className="flex items-center min-w-0">
+                                <div className="relative w-5 h-5 mr-2 flex-shrink-0">
+                                  <Image src={match.teams?.home.logo} alt={match.teams?.home.name} fill className="object-contain" unoptimized />
+                                </div>
+                                <span className="text-sm font-normal truncate">{match.teams?.home.name}</span>
+                              </div>
+                              {/* Score display */}
+                              <span className={`text-sm ml-2 ${isFinished ? 'font-medium' : 'font-bold'}`}>
+                                {isFinished ? (homeScore !== null ? homeScore : '') : ''}
+                              </span>
                             </div>
-                            <span className="ml-2 text-sm truncate">
-                              {match.teams?.home.name}
-                            </span>
+                            {/* Away Team Row */}
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center min-w-0">
+                                <div className="relative w-5 h-5 mr-2 flex-shrink-0">
+                                  <Image src={match.teams?.away.logo} alt={match.teams?.away.name} fill className="object-contain" unoptimized />
+                                </div>
+                                <span className="text-sm font-normal truncate">{match.teams?.away.name}</span>
+                              </div>
+                              {/* Score display */}
+                              <span className={`text-sm ml-2 ${isFinished ? 'font-medium' : 'font-bold'}`}>
+                                {isFinished ? (awayScore !== null ? awayScore : '') : ''}
+                              </span>
+                            </div>
                           </div>
 
-                          {/* Match Time/Score with TV icon */}
-                          <div className="flex-shrink-0 flex items-center gap-2">
-                            <div className="text-center flex items-center gap-2">
-                              {/* Score display - Always show score for past matches */}
-                              {(isLive || score || isPastMatch) && (
-                                <span className={`text-xs lg:text-sm font-bold ${isLive ? 'text-red-600' : 'text-gray-800'}`}>
-                                  {score}
-                                </span>
-                              )}
-
-                              {/* Time display - Only show for live/upcoming matches */}
-                              {!isPastMatch && displayTime && (
-                                isLive ? (
-                                  <div className="flex flex-col items-center">
-                                    <span className="inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] lg:text-xs font-semibold bg-red-100 text-red-700 border border-red-200/80">
-                                      <span className="h-1.5 w-1.5 bg-red-500 rounded-full mr-1 animate-pulse"></span>
-                                      {displayTime}
-                                    </span>
-                                  </div>
-                                ) : (
-                                  <span className="text-sm font-medium text-gray-500 lg:text-gray-600">
-                                    {displayTime}
-                                  </span>
-                                )
-                              )}
-                            </div>
-                            
-                            {/* Only show TV icon if match is upcoming (not past, not live, not finished) and has streaming providers */}
-                            {hasStreamingProviders && !status.isPastMatch && !status.isLive && !status.isFinished && (
-                              <div className="ml-1 lg:ml-2 relative group flex-shrink-0">
-                                <div className="text-gray-400 hover:text-gray-600">
-                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 lg:h-5 lg:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                  </svg>
-                                </div>
-                                
-                                <div className="absolute z-20 right-0 w-44 p-2 mt-1 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 text-xs border border-gray-200">
-                                  <div className="font-medium mb-1">Se kampen på:</div>
+                          {/* Right side: Status/Time & TV Icon - Add padding */}
+                          <div className="flex-shrink-0 text-center w-16 pl-4"> {/* Added pl-4 */}
+                            {isFinished ? (
+                              // Updated FT styling
+                              <span className="block text-sm font-normal text-gray-500">FT</span>
+                            ) : isUpcoming ? (
+                              <>
+                                {isToday && <span className="block text-xs font-semibold text-gray-500">I dag</span>}
+                                <span className={`block text-sm font-medium ${isToday ? 'text-gray-900' : 'text-gray-700'}`}>{kickOffTime}</span>
+                              </>
+                            ) : (
+                              <span className="block text-xs font-semibold text-gray-500">{displayStatus}</span>
+                            )}
+                            {/* TV Icon - Show only for upcoming matches with providers */}
+                            {isUpcoming && hasStreamingProviders && (
+                              <div className="mt-1 text-gray-400 flex justify-center relative group">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                {/* Enhanced Tooltip */}
+                                <div className="absolute z-20 left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-48 p-2 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200 text-xs border border-gray-200">
+                                  <div className="font-semibold mb-1 text-gray-800">Se kampen på:</div>
                                   <div className="space-y-1">
-                                    {streamingProviders.map((provider, index) => (
-                                      <div key={index} className="flex items-center">
-                                        <div className="relative h-3 w-3 mr-1">
+                                    {streamingProviders.map((provider) => (
+                                      <div key={provider.name} className="flex items-center">
+                                        <div className="relative h-4 w-4 mr-1.5 flex-shrink-0">
                                           <Image
                                             src={provider.icon}
                                             alt={provider.name}
@@ -845,33 +792,16 @@ export default function MatchCalendar({ currentMatchId = "" }) {
                                             unoptimized
                                           />
                                         </div>
-                                        <span className="text-[11px]">{provider.name}</span>
+                                        <span className="text-[11px] text-gray-700">{provider.name}</span>
+                                        {provider.package && (
+                                          <span className="text-gray-500 ml-1 text-[10px]">({provider.package})</span>
+                                        )}
                                       </div>
                                     ))}
                                   </div>
                                 </div>
                               </div>
                             )}
-                            {/* Keep the spacer div for consistent layout */}
-                            {(hasStreamingProviders || status.isPastMatch || status.isLive || status.isFinished) && 
-                              <div className="w-4 lg:w-5 ml-1 lg:ml-2 flex-shrink-0"></div>
-                            }
-                          </div>
-
-                          {/* Away Team */}
-                          <div className="flex items-center flex-1 min-w-0 justify-end">
-                            <span className="mr-2 text-sm truncate">
-                              {match.teams?.away.name}
-                            </span>
-                            <div className="relative w-5 h-5 flex-shrink-0">
-                              <Image 
-                                src={match.teams?.away.logo} 
-                                alt={match.teams?.away.name} 
-                                fill
-                                className="object-contain"
-                                unoptimized
-                              />
-                            </div>
                           </div>
                         </div>
                       </Link>
@@ -883,21 +813,19 @@ export default function MatchCalendar({ currentMatchId = "" }) {
           })}
         </div>
         
-        {/* Se kamper section */}
-        <div className="mt-4">
-          <div className="bg-white rounded-lg shadow-md p-4">
+        {/* Se kamper section - Redesigned */}
+        <div className="bg-white rounded-b-lg"> {/* Ensure bottom rounding if needed, removed mt-4 */}
+          <div className="px-3 py-3 border-t border-gray-200"> {/* Adjusted padding */}
             <h3 className="font-medium text-gray-700 text-sm mb-2">Se kamper</h3>
-            <div className="py-1">
-              <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="/fotball/i-dag">I dag</Link>
-              <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="/fotball/i-morgen">I morgen</Link>
-              <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="/fotball/mandag">Mandag</Link>
-              <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="/fotball/tirsdag">Tirsdag</Link>
-              <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="/fotball/onsdag">Onsdag</Link>
-              <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="/fotball/torsdag">Torsdag</Link>
-              <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="/fotball/fredag">Fredag</Link>
-              <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="/fotball/lordag">Lørdag</Link>
-              <Link className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="/fotball/sondag">Søndag</Link>
-            </div>
+            <Link className="block text-sm text-gray-700 hover:underline py-1" href="/fotball/i-dag">I dag</Link>
+            <Link className="block text-sm text-gray-700 hover:underline py-1" href="/fotball/i-morgen">I morgen</Link>
+            <Link className="block text-sm text-gray-700 hover:underline py-1" href="/fotball/mandag">Mandag</Link>
+            <Link className="block text-sm text-gray-700 hover:underline py-1" href="/fotball/tirsdag">Tirsdag</Link>
+            <Link className="block text-sm text-gray-700 hover:underline py-1" href="/fotball/onsdag">Onsdag</Link>
+            <Link className="block text-sm text-gray-700 hover:underline py-1" href="/fotball/torsdag">Torsdag</Link>
+            <Link className="block text-sm text-gray-700 hover:underline py-1" href="/fotball/fredag">Fredag</Link>
+            <Link className="block text-sm text-gray-700 hover:underline py-1" href="/fotball/lordag">Lørdag</Link>
+            <Link className="block text-sm text-gray-700 hover:underline py-1" href="/fotball/sondag">Søndag</Link>
           </div>
         </div>
         

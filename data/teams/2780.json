@@ -262,65 +262,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1219219,
-          "date": "2025-04-12T12:00:00+00:00",
-          "venue": {
-            "id": 1559,
-            "name": "Khao Kradong Stadium",
-            "city": "Buriram"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744459200
-        },
-        "league": {
-          "id": 296,
-          "name": "Thai League 1",
-          "logo": "https://media.api-sports.io/football/leagues/296.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2780,
-            "name": "Buriram United",
-            "logo": "https://media.api-sports.io/football/teams/2780.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2769,
-            "name": "Bangkok Glass",
-            "logo": "https://media.api-sports.io/football/teams/2769.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1361479,
           "date": "2025-04-16T12:00:00+00:00",
           "venue": {
@@ -675,6 +616,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1219219,
+          "date": "2025-04-12T12:00:00+00:00",
+          "venue": {
+            "id": 1559,
+            "name": "Khao Kradong Stadium",
+            "city": "Buriram"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 9
+          },
+          "timestamp": 1744459200
+        },
+        "league": {
+          "id": 296,
+          "name": "Thai League 1",
+          "logo": "https://media.api-sports.io/football/leagues/296.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2780,
+            "name": "Buriram United",
+            "logo": "https://media.api-sports.io/football/teams/2780.png",
+            "winner": false
+          },
+          "away": {
+            "id": 2769,
+            "name": "Bangkok Glass",
+            "logo": "https://media.api-sports.io/football/teams/2769.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 1,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 1,
+            "away": 1
+          },
+          "fulltime": {
+            "home": 1,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1219156,
@@ -1205,65 +1205,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1219227,
-          "date": "2025-02-23T12:00:00+00:00",
-          "venue": {
-            "id": 12709,
-            "name": "BG Stadium",
-            "city": "Pathum Thani"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 7
-          },
-          "timestamp": 1740312000
-        },
-        "league": {
-          "id": 296,
-          "name": "Thai League 1",
-          "logo": "https://media.api-sports.io/football/leagues/296.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2786,
-            "name": "Muangthong United",
-            "logo": "https://media.api-sports.io/football/teams/2786.png",
-            "winner": false
-          },
-          "away": {
-            "id": 2780,
-            "name": "Buriram United",
-            "logo": "https://media.api-sports.io/football/teams/2780.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 3
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 3
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1560,5 +1501,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:35:11.913Z"
+  "lastUpdated": "2025-04-12T18:29:58.560Z"
 }

@@ -191,65 +191,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1224231,
-          "date": "2025-04-12T13:30:00+00:00",
-          "venue": {
-            "id": 724,
-            "name": "PreZero Arena",
-            "city": "Sinsheim"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744464600
-        },
-        "league": {
-          "id": 78,
-          "name": "Bundesliga",
-          "logo": "https://media.api-sports.io/football/leagues/78.png"
-        },
-        "teams": {
-          "home": {
-            "id": 167,
-            "name": "1899 Hoffenheim",
-            "logo": "https://media.api-sports.io/football/teams/167.png",
-            "winner": null
-          },
-          "away": {
-            "id": 164,
-            "name": "FSV Mainz 05",
-            "logo": "https://media.api-sports.io/football/teams/164.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1224240,
           "date": "2025-04-19T13:30:00+00:00",
           "venue": {
@@ -545,6 +486,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1224231,
+          "date": "2025-04-12T13:30:00+00:00",
+          "venue": {
+            "id": 724,
+            "name": "PreZero Arena",
+            "city": "Sinsheim"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 7
+          },
+          "timestamp": 1744464600
+        },
+        "league": {
+          "id": 78,
+          "name": "Bundesliga",
+          "logo": "https://media.api-sports.io/football/leagues/78.png"
+        },
+        "teams": {
+          "home": {
+            "id": 167,
+            "name": "1899 Hoffenheim",
+            "logo": "https://media.api-sports.io/football/teams/167.png",
+            "winner": true
+          },
+          "away": {
+            "id": 164,
+            "name": "FSV Mainz 05",
+            "logo": "https://media.api-sports.io/football/teams/164.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 2,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 2,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 2,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1224218,
@@ -1075,65 +1075,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1299268,
-          "date": "2025-01-30T20:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Lotto Park",
-            "city": "Brussels"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 9
-          },
-          "timestamp": 1738267200
-        },
-        "league": {
-          "id": 3,
-          "name": "UEFA Europa League",
-          "logo": "https://media.api-sports.io/football/leagues/3.png"
-        },
-        "teams": {
-          "home": {
-            "id": 554,
-            "name": "Anderlecht",
-            "logo": "https://media.api-sports.io/football/teams/554.png",
-            "winner": false
-          },
-          "away": {
-            "id": 167,
-            "name": "1899 Hoffenheim",
-            "logo": "https://media.api-sports.io/football/teams/167.png",
-            "winner": true
-          }
-        },
-        "goals": {
-          "home": 3,
-          "away": 4
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 1
-          },
-          "fulltime": {
-            "home": 3,
-            "away": 4
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1430,5 +1371,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:29:40.684Z"
+  "lastUpdated": "2025-04-12T18:24:20.230Z"
 }

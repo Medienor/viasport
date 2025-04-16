@@ -184,65 +184,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1369489,
-          "date": "2025-04-12T12:00:00+00:00",
-          "venue": {
-            "id": null,
-            "name": "Stadion Kraljevica",
-            "city": "Zaječar"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744459200
-        },
-        "league": {
-          "id": 286,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/286.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2633,
-            "name": "OFK Beograd",
-            "logo": "https://media.api-sports.io/football/teams/2633.png",
-            "winner": null
-          },
-          "away": {
-            "id": 2644,
-            "name": "Radnicki 1923",
-            "logo": "https://media.api-sports.io/football/teams/2644.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1369493,
           "date": "2025-04-22T22:00:00+00:00",
           "venue": {
@@ -597,6 +538,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1369489,
+          "date": "2025-04-12T12:00:00+00:00",
+          "venue": {
+            "id": null,
+            "name": "Stadion Kraljevica",
+            "city": "Zaječar"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 4
+          },
+          "timestamp": 1744459200
+        },
+        "league": {
+          "id": 286,
+          "name": "Super Liga",
+          "logo": "https://media.api-sports.io/football/leagues/286.png"
+        },
+        "teams": {
+          "home": {
+            "id": 2633,
+            "name": "OFK Beograd",
+            "logo": "https://media.api-sports.io/football/teams/2633.png",
+            "winner": true
+          },
+          "away": {
+            "id": 2644,
+            "name": "Radnicki 1923",
+            "logo": "https://media.api-sports.io/football/teams/2644.png",
+            "winner": false
+          }
+        },
+        "goals": {
+          "home": 3,
+          "away": 0
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 3,
+            "away": 0
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1214788,
@@ -1127,65 +1127,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1214719,
-          "date": "2025-02-03T16:00:00+00:00",
-          "venue": {
-            "id": 1415,
-            "name": "Stadion Čika Dača",
-            "city": "Kragujevac"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 5
-          },
-          "timestamp": 1738598400
-        },
-        "league": {
-          "id": 286,
-          "name": "Super Liga",
-          "logo": "https://media.api-sports.io/football/leagues/286.png"
-        },
-        "teams": {
-          "home": {
-            "id": 2644,
-            "name": "Radnicki 1923",
-            "logo": "https://media.api-sports.io/football/teams/2644.png",
-            "winner": true
-          },
-          "away": {
-            "id": 2633,
-            "name": "OFK Beograd",
-            "logo": "https://media.api-sports.io/football/teams/2633.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 2,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 2,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1482,5 +1423,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:32:28.096Z"
+  "lastUpdated": "2025-04-12T18:27:09.669Z"
 }

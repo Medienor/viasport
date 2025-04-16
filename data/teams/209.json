@@ -228,65 +228,6 @@
     "upcoming": [
       {
         "fixture": {
-          "id": 1213694,
-          "date": "2025-04-12T14:30:00+00:00",
-          "venue": {
-            "id": 1129,
-            "name": "Fortuna Sittard Stadion",
-            "city": "Sittard"
-          },
-          "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
-          },
-          "timestamp": 1744468200
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 205,
-            "name": "Fortuna Sittard",
-            "logo": "https://media.api-sports.io/football/teams/205.png",
-            "winner": null
-          },
-          "away": {
-            "id": 209,
-            "name": "Feyenoord",
-            "logo": "https://media.api-sports.io/football/teams/209.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": null,
-          "away": null
-        },
-        "score": {
-          "halftime": {
-            "home": null,
-            "away": null
-          },
-          "fulltime": {
-            "home": null,
-            "away": null
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
-      },
-      {
-        "fixture": {
           "id": 1213707,
           "date": "2025-04-25T19:00:00+00:00",
           "venue": {
@@ -582,6 +523,65 @@
       }
     ],
     "past": [
+      {
+        "fixture": {
+          "id": 1213694,
+          "date": "2025-04-12T14:30:00+00:00",
+          "venue": {
+            "id": 1129,
+            "name": "Fortuna Sittard Stadion",
+            "city": "Sittard"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 3
+          },
+          "timestamp": 1744468200
+        },
+        "league": {
+          "id": 88,
+          "name": "Eredivisie",
+          "logo": "https://media.api-sports.io/football/leagues/88.png"
+        },
+        "teams": {
+          "home": {
+            "id": 205,
+            "name": "Fortuna Sittard",
+            "logo": "https://media.api-sports.io/football/teams/205.png",
+            "winner": false
+          },
+          "away": {
+            "id": 209,
+            "name": "Feyenoord",
+            "logo": "https://media.api-sports.io/football/teams/209.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
       {
         "fixture": {
           "id": 1213686,
@@ -1112,65 +1112,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1213644,
-          "date": "2025-02-15T17:45:00+00:00",
-          "venue": {
-            "id": 1139,
-            "name": "Rat Verlegh Stadion",
-            "city": "Breda"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 11
-          },
-          "timestamp": 1739641500
-        },
-        "league": {
-          "id": 88,
-          "name": "Eredivisie",
-          "logo": "https://media.api-sports.io/football/leagues/88.png"
-        },
-        "teams": {
-          "home": {
-            "id": 203,
-            "name": "NAC Breda",
-            "logo": "https://media.api-sports.io/football/teams/203.png",
-            "winner": null
-          },
-          "away": {
-            "id": 209,
-            "name": "Feyenoord",
-            "logo": "https://media.api-sports.io/football/teams/209.png",
-            "winner": null
-          }
-        },
-        "goals": {
-          "home": 0,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 0,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 0,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1467,5 +1408,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:30.373Z"
+  "lastUpdated": "2025-04-12T18:25:09.208Z"
 }

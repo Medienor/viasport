@@ -150,7 +150,8 @@
     2024
   ],
   "fixtures": {
-    "upcoming": [
+    "upcoming": [],
+    "past": [
       {
         "fixture": {
           "id": 1220306,
@@ -161,10 +162,10 @@
             "city": "Motherwell"
           },
           "status": {
-            "long": "Not Started",
-            "short": "NS",
-            "elapsed": null,
-            "extra": null
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90,
+            "extra": 8
           },
           "timestamp": 1744466400
         },
@@ -188,17 +189,17 @@
           }
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "score": {
           "halftime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "fulltime": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "extratime": {
             "home": null,
@@ -209,9 +210,7 @@
             "away": null
           }
         }
-      }
-    ],
-    "past": [
+      },
       {
         "fixture": {
           "id": 1220298,
@@ -742,65 +741,6 @@
             "away": null
           }
         }
-      },
-      {
-        "fixture": {
-          "id": 1318874,
-          "date": "2025-01-18T15:00:00+00:00",
-          "venue": {
-            "id": 1403,
-            "name": "McDiarmid Park",
-            "city": "Perth"
-          },
-          "status": {
-            "long": "Match Finished",
-            "short": "FT",
-            "elapsed": 90,
-            "extra": 6
-          },
-          "timestamp": 1737212400
-        },
-        "league": {
-          "id": 181,
-          "name": "FA Cup",
-          "logo": "https://media.api-sports.io/football/leagues/181.png"
-        },
-        "teams": {
-          "home": {
-            "id": 258,
-            "name": "ST Johnstone",
-            "logo": "https://media.api-sports.io/football/teams/258.png",
-            "winner": true
-          },
-          "away": {
-            "id": 256,
-            "name": "Motherwell",
-            "logo": "https://media.api-sports.io/football/teams/256.png",
-            "winner": false
-          }
-        },
-        "goals": {
-          "home": 1,
-          "away": 0
-        },
-        "score": {
-          "halftime": {
-            "home": 1,
-            "away": 0
-          },
-          "fulltime": {
-            "home": 1,
-            "away": 0
-          },
-          "extratime": {
-            "home": null,
-            "away": null
-          },
-          "penalty": {
-            "home": null,
-            "away": null
-          }
-        }
       }
     ]
   },
@@ -1097,5 +1037,5 @@
       }
     }
   },
-  "lastUpdated": "2025-04-12T08:30:58.303Z"
+  "lastUpdated": "2025-04-12T18:25:37.705Z"
 }
