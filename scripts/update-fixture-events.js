@@ -135,7 +135,7 @@ async function fetchFixtureEvents(fixtureId) {
 }
 
 /**
- * Updates a fixture in Supabase with event data.
+ * Updates a fixture in Supabase with event data using the correct column name.
  */
 async function updateFixtureEvents(fixtureId, events) {
   console.log(`Updating Supabase events for fixture ${fixtureId}...`);
@@ -144,7 +144,7 @@ async function updateFixtureEvents(fixtureId, events) {
       .from('fixtures')
       .update({
         event_data: events, // Store the fetched events (JSONB)
-        event_data_last_updated: new Date().toISOString(), // Add/update timestamp
+        event_last_updated: new Date().toISOString(),
       })
       .eq('id', fixtureId);
 
@@ -152,6 +152,7 @@ async function updateFixtureEvents(fixtureId, events) {
     console.log(`Successfully updated events for fixture ${fixtureId} in Supabase.`);
   } catch (error) {
     console.error(`Error updating Supabase events for fixture ${fixtureId}:`, error);
+    throw error;
   }
 }
 
@@ -198,11 +199,15 @@ async function runUpdate() {
     if (shouldFetch) {
       const events = await fetchFixtureEvents(id);
 
-      // Only update if fetch was successful (events is not null)
-      // We store empty arrays [] if the API returns no events for a fixture
       if (events !== null) {
-        await updateFixtureEvents(id, events);
-        updatedCount++;
+        try {
+          await updateFixtureEvents(id, events);
+          updatedCount++;
+        } catch (updateError) {
+          // Error is already logged in updateFixtureEvents
+          // We catch it here just to increment the error count
+          errorCount++;
+        }
       } else {
         // Fetch failed (e.g., rate limit or network error)
         errorCount++;
