@@ -69,15 +69,18 @@ export default function MatchTabs({ activeTab = 'facts', onTabChange, match, chi
     { id: 'head-to-head', label: 'Oppgjør' },
   ];
 
-  // Filter tabs based on match status AND data availability
-  const matchStatus = match?.status?.short; // Use optional chaining for safety
+  // Filter tabs based on data availability
   const hasLineups = match?.lineups && Array.isArray(match.lineups) && match.lineups.length > 0;
   const hasEventData = match?.event_data && Array.isArray(match.event_data) && match.event_data.length > 0;
+  // --- Add check for player_statistics ---
+  // Check if player_statistics exists, is an array, and has at least one team's stats.
+  // The structure is usually [{ team: {}, statistics: [] }, { team: {}, statistics: [] }]
+  const hasPlayerStats = match?.player_statistics && Array.isArray(match.player_statistics) && match.player_statistics.length > 0;
 
   const tabsToShow = allTabs.filter(tab => {
     // --- Updated Logic ---
-    // 1. Hide 'stats' if match hasn't started ('NS')
-    if (matchStatus === 'NS' && tab.id === 'stats') {
+    // 1. Hide 'stats' ONLY if there's no player_statistics data
+    if (tab.id === 'stats' && !hasPlayerStats) {
       return false;
     }
     // 2. Hide 'lineup' ONLY if there's no lineup data
@@ -162,19 +165,34 @@ export default function MatchTabs({ activeTab = 'facts', onTabChange, match, chi
           <div className="text-center py-6 text-gray-500">Kan ikke vise tabell (mangler ligainformasjon).</div>
         )
       ) : selectedTab === 'stats' ? (
-        <MatchStats match={match} teamColors={teamColors} />
+        // --- Conditionally render MatchStats based on data ---
+        hasPlayerStats ? (
+          <MatchStats match={match} teamColors={teamColors} />
+        ) : (
+          <div className="text-center py-6 text-gray-500">Ingen statistikk tilgjengelig for denne kampen ennå.</div>
+        )
       ) : selectedTab === 'lineup' ? (
-        <LineupComponent 
-          lineups={match.lineups} 
-          playerStats={match.player_statistics}
-          eventData={match.event_data}
-        />
+        // --- Conditionally render LineupComponent based on data ---
+        hasLineups ? (
+          <LineupComponent
+            lineups={match.lineups}
+            playerStats={match.player_statistics} // Pass stats even if tab logic changes
+            eventData={match.event_data}
+          />
+        ) : (
+           <div className="text-center py-6 text-gray-500">Ingen lagoppstilling tilgjengelig for denne kampen ennå.</div>
+        )
       ) : selectedTab === 'facts' ? (
         <>
           {children}
         </>
       ) : selectedTab === 'commentary' ? (
-        <MatchCommentary match={match} />
+         // --- Conditionally render MatchCommentary based on data ---
+         hasEventData ? (
+           <MatchCommentary match={match} />
+         ) : (
+           <div className="text-center py-6 text-gray-500">Ingen kommentarer tilgjengelig for denne kampen ennå.</div>
+         )
       ) : null}
     </>
   );
