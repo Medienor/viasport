@@ -31,7 +31,7 @@ jobs:
       - name: Run live fixture update script
         # Run the script using Node.js
         # Pass Supabase credentials as environment variables from GitHub Secrets
-        run: node update-live-fixtures.js
+        run: node scripts/update-live-fixtures.js
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }} # Ensure this secret name matches your repository settings
