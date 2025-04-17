@@ -72,7 +72,11 @@ export default function LineupComponent({ lineups, playerStats = [], eventData }
 
   // Calculate highest rating for each team safely
   const teamHighestRatings = lineups.reduce((acc: { [key: number]: number }, team: TeamLineup) => {
-    const allPlayers = [...team.startXI, ...team.substitutes];
+    // --- Add safety checks for startXI and substitutes ---
+    const startXI = Array.isArray(team.startXI) ? team.startXI : [];
+    const substitutes = Array.isArray(team.substitutes) ? team.substitutes : [];
+    // --- Use the safe arrays ---
+    const allPlayers = [...startXI, ...substitutes];
     const ratings = allPlayers.map(({ player }) => {
       // --- Safely find player stats ---
       const teamStats = playerStats?.find(ts => ts.team.id === team.team.id); // Check playerStats first
@@ -361,7 +365,11 @@ export default function LineupComponent({ lineups, playerStats = [], eventData }
 
   const renderTeamFormation = (team: TeamLineup, isHome: boolean) => {
     // Calculate team average rating
-    const allPlayers = [...team.startXI, ...team.substitutes];
+    // --- Add safety checks for startXI and substitutes ---
+    const startXI = Array.isArray(team.startXI) ? team.startXI : [];
+    const substitutes = Array.isArray(team.substitutes) ? team.substitutes : [];
+    // --- Use the safe arrays ---
+    const allPlayers = [...startXI, ...substitutes];
     const playerRatings = allPlayers
       .map(({ player }) => {
         // --- Safely find player stats with double optional chaining ---
@@ -439,12 +447,12 @@ export default function LineupComponent({ lineups, playerStats = [], eventData }
           </div>
 
           {/* Players with updated positioning */}
-          {team.startXI.map(({ player }) => {
+          {(Array.isArray(team.startXI) ? team.startXI : []).map(({ player }) => {
             const position = getGridPosition(player.grid || '', isHome, team.formation, team.startXI);
             const { subOut } = getPlayerSubstitutionTime(player.id);
             
             // Find substitute if this player was subbed out
-            const substitute = subOut && team.substitutes.find(({ player: sub }) => {
+            const substitute = subOut && (Array.isArray(team.substitutes) ? team.substitutes : []).find(({ player: sub }) => {
               const { subIn } = getPlayerSubstitutionTime(sub.id);
               return subIn === subOut;
             });
@@ -465,13 +473,16 @@ export default function LineupComponent({ lineups, playerStats = [], eventData }
   };
 
   const renderTeamList = (team: TeamLineup) => {
+    // --- Add safety check for substitutes ---
+    const substitutes = Array.isArray(team.substitutes) ? team.substitutes : [];
+    // --- Use the safe array ---
     // Separate players into substitutes (those who played) and benched (those who didn't)
-    const playedSubstitutes = team.substitutes.filter(({ player }) => {
+    const playedSubstitutes = substitutes.filter(({ player }) => {
       const { subIn } = getPlayerSubstitutionTime(player.id);
       return subIn !== undefined;
     });
 
-    const benchedPlayers = team.substitutes.filter(({ player }) => {
+    const benchedPlayers = substitutes.filter(({ player }) => {
       const { subIn } = getPlayerSubstitutionTime(player.id);
       return subIn === undefined;
     });

@@ -15,6 +15,7 @@ import TeamColorExtractor from '@/app/components/TeamColorExtractor';
 import MatchCountdown from '@/app/components/MatchCountdown';
 import FollowButton from '@/app/components/FollowButton';
 import TeamForm from '@/app/components/TeamForm';
+import LiveMatchTimer from '@/app/components/LiveMatchTimer';
 
 export const revalidate = 86400;
 
@@ -247,11 +248,9 @@ async function fetchTeamForm(teamId: number, limit: number = 5): Promise<FormFix
 }
 
 export default async function MatchPage({ params }: { params: { matchId: string } }) {
-  // Await the params
-  const resolvedParams = await params;
-  console.log('🔵 Rendering MatchPage with params:', resolvedParams);
-  
-  if (!resolvedParams?.matchId) {
+  const match = await fetchMatchById(params.matchId);
+
+  if (!match) {
     return (
       <div className="max-w-7xl mx-auto px-0 sm:px-0 lg:px-8 py-8">
         <div className="bg-white rounded-lg shadow-md p-6">
@@ -264,34 +263,35 @@ export default async function MatchPage({ params }: { params: { matchId: string 
     );
   }
 
-  try {
-    console.log('🔵 Fetching match data...');
-    const match = await fetchMatchById(resolvedParams.matchId);
-    console.log('✅ Match data received:', match);
-    
-    if (!match) {
-      throw new Error('Match not found');
-    }
+  // --- Determine match status ---
+  const matchDateString = match.fixture?.date || match.date;
+  const matchDate = matchDateString ? new Date(matchDateString) : null;
+  const now = new Date();
 
-    const isUpcoming = match.match_status === 'NS' || match.match_status === 'TBD';
-    const isLive = ['LIVE', '1H', '2H', 'HT'].includes(match.match_status);
-    const isFinished = ['FT', 'AET', 'PEN'].includes(match.match_status);
-    const matchStatus = match.match_status;
-    
-    // Fetch team colors
-    const teamColors = await fetchTeamColors(match.teams.home.id, match.teams.away.id);
-    
-    // Fetch Team Form Data only if match is upcoming and team IDs exist
-    let homeTeamForm: FormFixture[] = [];
-    let awayTeamForm: FormFixture[] = [];
-    if (isUpcoming && match.teams?.home?.id && match.teams?.away?.id) {
-      console.log(`Match is upcoming (NS). Fetching form for Home: ${match.teams.home.id} and Away: ${match.teams.away.id}`);
-      [homeTeamForm, awayTeamForm] = await Promise.all([
-        fetchTeamForm(match.teams.home.id),
-        fetchTeamForm(match.teams.away.id)
-      ]);
-       console.log("Fetched Home Form:", homeTeamForm);
-       console.log("Fetched Away Form:", awayTeamForm);
+  const isLive = ['1H', 'HT', '2H', 'ET', 'P', 'BT', 'LIVE', 'INT', 'SUSP'].includes(match.status?.short || '');
+  const isFinished = ['FT', 'AET', 'PEN', 'ABD', 'AWD', 'WO', 'CANC'].includes(match.status?.short || '');
+  const isUpcoming = !isLive && !isFinished && matchDate && matchDate > now;
+  const matchStatus = match.match_status;
+  
+  // Fetch team colors
+  const teamColors = await fetchTeamColors(match.teams.home.id, match.teams.away.id);
+  
+  // Fetch Team Form Data only if match is upcoming and team IDs exist
+  let homeTeamForm: FormFixture[] = [];
+  let awayTeamForm: FormFixture[] = [];
+  if (isUpcoming && match.teams?.home?.id && match.teams?.away?.id) {
+    console.log(`Match is upcoming (NS). Fetching form for Home: ${match.teams.home.id} and Away: ${match.teams.away.id}`);
+    [homeTeamForm, awayTeamForm] = await Promise.all([
+      fetchTeamForm(match.teams.home.id),
+      fetchTeamForm(match.teams.away.id)
+    ]);
+     console.log("Fetched Home Form:", homeTeamForm);
+     console.log("Fetched Away Form:", awayTeamForm);
+  }
+
+  try {
+    if (!matchDateString) {
+      console.error("Match date string is missing or invalid for match ID:", match.id);
     }
 
     return (
@@ -400,17 +400,25 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                   <div className="flex flex-col items-center text-center">
                     {isUpcoming ? (
                       <MatchCountdown matchDate={match.date} />
-                    ) : (
-                      <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">
-                        {match.goals.home ?? 0} - {match.goals.away ?? 0}
-                      </div>
+                    ) : isFinished ? ( // Show final score first if finished
+                       <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">
+                         {match.goals.home ?? 0} - {match.goals.away ?? 0}
+                       </div>
+                    ) : ( // Show score for live matches too
+                       <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">
+                         {match.goals.home ?? 0} - {match.goals.away ?? 0}
+                       </div>
                     )}
-                    {isLive && (
-                      <span className="bg-red-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full flex items-center justify-center whitespace-nowrap">
-                        <span className="inline-block w-1.5 h-1.5 bg-white bg-opacity-70 rounded-full animate-pulse mr-1.5"></span>
-                        {match.status?.elapsed || '0'}&apos;
-                      </span>
+
+                    {/* --- Live Timer --- */}
+                    {isLive && matchDateString && (
+                      <LiveMatchTimer
+                        matchStatusShort={match.status?.short}
+                        matchStartDate={matchDateString}
+                      />
                     )}
+                    {/* --- End Live Timer --- */}
+
                     {isFinished && (
                       <span className="text-gray-500 text-xs font-medium px-2 py-0.5 rounded-full uppercase">
                         Fulltid
@@ -887,7 +895,7 @@ export default async function MatchPage({ params }: { params: { matchId: string 
               isFinished={isFinished} // Pass the flag
             />
             {/* === End MatchHighlights component === */}
-            <MatchCalendar currentMatchId={resolvedParams.matchId} />
+            <MatchCalendar currentMatchId={params.matchId} />
           </div>
         </div>
         <TeamColorExtractor 
