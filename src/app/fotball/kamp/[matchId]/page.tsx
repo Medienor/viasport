@@ -406,7 +406,7 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                        </div>
                     ) : ( // Show score for live matches too
                        <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">
-                         {match.goals.home ?? 0} - {match.goals.away ?? 0}
+                         {match.goals?.home ?? 0} - {match.goals?.away ?? 0}
                        </div>
                     )}
 

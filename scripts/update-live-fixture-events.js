@@ -1,10 +1,9 @@
 import { createClient } from '@supabase/supabase-js';
-// Use node-fetch if needed (Node < 18)
-import fetch from 'node-fetch';
+import fetch from 'node-fetch'; // Use if needed (Node < 18)
 
-// --- Configuration (Get from Environment Variables) ---
+// --- Configuration ---
 const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY; // Use Service Role for updates
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const rapidApiKey = process.env.RAPIDAPI_KEY;
 const rapidApiHost = 'api-football-v1.p.rapidapi.com';
 
@@ -17,12 +16,14 @@ if (!supabaseUrl || !supabaseServiceKey || !rapidApiKey) {
 const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
 // --- Constants ---
-// Define statuses considered "live" for event fetching purposes
-// IMPORTANT: Exclude finished statuses like 'FT', 'AET', 'PEN'
-const LIVE_EVENT_STATUSES = ['1H', 'HT', '2H', 'ET', 'P', 'LIVE', 'INT', 'BREAK', 'BT']; // Add any other relevant live/paused statuses
+// Statuses considered "live" for fetching detailed updates
+const LIVE_DETAIL_STATUSES = ['1H', 'HT', '2H', 'ET', 'P', 'LIVE', 'INT', 'BREAK', 'BT', 'SUSP']; // Exclude finished/upcoming
 
-// API Call Delay (milliseconds) - adjust based on RapidAPI plan limits
-const API_DELAY_MS = 1100; // Slightly over 1 second to be safe
+// API Call Delay (milliseconds)
+const API_DELAY_MS = 1100; // Adjust based on RapidAPI plan
+
+// --- Flag to log only the first response ---
+let loggedFirstResponse = false;
 
 // --- Helper Functions ---
 
@@ -30,12 +31,12 @@ const API_DELAY_MS = 1100; // Slightly over 1 second to be safe
  * Fetches IDs of fixtures currently marked as live in Supabase.
  */
 async function fetchLiveFixtureIds() {
-  console.log(`Fetching live fixture IDs from Supabase (Statuses: ${LIVE_EVENT_STATUSES.join(', ')})...`);
+  console.log(`Fetching live fixture IDs from Supabase (Statuses: ${LIVE_DETAIL_STATUSES.join(', ')})...`);
   try {
     const { data, error } = await supabase
       .from('fixtures')
       .select('id') // Only fetch the ID
-      .in('match_status', LIVE_EVENT_STATUSES); // Filter by live statuses
+      .in('match_status', LIVE_DETAIL_STATUSES); // Filter by live statuses
 
     if (error) throw error;
 
@@ -49,96 +50,134 @@ async function fetchLiveFixtureIds() {
 }
 
 /**
- * Fetches event data for a specific fixture from RapidAPI.
- * (Identical to the one in your other script, kept here for clarity)
+ * Fetches full fixture details (including events, score, stats) for a specific fixture ID.
  */
-async function fetchFixtureEvents(fixtureId) {
-  const url = `https://${rapidApiHost}/v3/fixtures/events?fixture=${fixtureId}`;
-  console.log(`Fetching events for live fixture ${fixtureId} from RapidAPI...`);
+async function fetchFixtureDetails(fixtureId) {
+  // Use the /v3/fixtures?id= endpoint
+  const url = `https://${rapidApiHost}/v3/fixtures?id=${fixtureId}`;
+  const options = {
+    method: 'GET',
+    headers: {
+      'x-rapidapi-key': rapidApiKey,
+      'x-rapidapi-host': rapidApiHost
+    }
+  };
+
+  console.log(`Fetching details for fixture ${fixtureId} from ${url}`);
   try {
-    const response = await fetch(url, {
-      method: 'GET',
-      headers: {
-        'x-rapidapi-key': rapidApiKey,
-        'x-rapidapi-host': rapidApiHost,
-      },
-    });
-
-    if (!response.ok) {
-      if (response.status === 429) {
-         console.warn(`Rate limit hit for fixture events ${fixtureId}. Skipping this update cycle.`);
-         return null; // Indicate rate limit hit
-      }
-      console.error(`RapidAPI event request for fixture ${fixtureId} failed with status ${response.status}: ${await response.text()}`);
-      return null; // Indicate other fetch error
-    }
-
+    const response = await fetch(url, options);
     const data = await response.json();
-    const events = data?.response;
 
-    if (!events) {
-        console.log(`No event data structure returned for fixture ${fixtureId}.`);
-        return []; // Return empty array if response structure is missing but request was ok
+    // Handle API errors or rate limits
+    if (!response.ok || data.errors?.requests || data.errors?.rateLimit) {
+      console.error(`Error fetching details for fixture ${fixtureId}: Status ${response.status}, Message: ${data.message || JSON.stringify(data.errors)}`);
+      return null; // Indicate fetch failure
     }
-     if (Array.isArray(events)) {
-        console.log(`Successfully fetched ${events.length} events for fixture ${fixtureId}.`);
-     } else {
-         console.warn(`Unexpected event data format for fixture ${fixtureId}:`, events);
-         return []; // Return empty if format is wrong
-     }
-    return events;
+
+    // Check if the response array has data
+    if (!data.response || data.response.length === 0) {
+      console.warn(`No fixture data returned for ID ${fixtureId}.`);
+      return null;
+    }
+
+    // --- Log the first successful response ---
+    if (!loggedFirstResponse && data.response[0]) {
+      console.log(`--- RAW API Response Body for Fixture ${fixtureId} (First Found) ---`);
+      console.log(JSON.stringify(data.response[0], null, 2)); // Pretty print JSON
+      console.log(`--- End RAW API Response Body ---`);
+      loggedFirstResponse = true; // Set flag so we don't log again this run
+    }
+    // --- End Logging ---
+
+    // Return the first (and should be only) fixture object from the response array
+    return data.response[0];
+
   } catch (error) {
-    console.error(`Error fetching events for fixture ${fixtureId}:`, error);
-    return null; // Indicate fetch error
+    console.error(`Network or parsing error fetching details for fixture ${fixtureId}:`, error);
+    return null; // Indicate fetch failure
   }
 }
 
 /**
- * Updates a fixture in Supabase with event data.
- * (Identical to the one in your other script)
+ * Updates the fixture data in Supabase.
  */
-async function updateFixtureEvents(fixtureId, events) {
-  console.log(`Updating Supabase events for live fixture ${fixtureId}...`);
+async function updateFixtureData(fixtureId, fixtureData) {
+  // --- Construct the comprehensive update payload ---
+  const updatePayload = {
+    // Core fixture details
+    fixture: fixtureData.fixture, // Includes status object, date, venue, referee etc.
+    league: fixtureData.league,   // Update league info if needed
+    teams: fixtureData.teams,     // Update teams info (e.g., winner flag)
+
+    // Score and Goals (Crucial for live display)
+    goals: fixtureData.goals,     // e.g., { home: 1, away: 0 }
+    score: fixtureData.score,     // e.g., { halftime: {...}, fulltime: {...}, ... }
+
+    // Events (Replaces the old event-specific fetch)
+    event_data: fixtureData.events, // Array of event objects
+
+    // Statistics (Optional but useful)
+    fixture_statistics: fixtureData.statistics, // Array of team stats objects
+
+    // Player Stats (Optional - can be large, uncomment if needed)
+    // player_statistics: fixtureData.players,
+
+    // Derived/Simplified Status
+    match_status: fixtureData.fixture?.status?.short, // Keep the short status code updated
+
+    // Timestamp of the last successful update from this script
+    details_last_updated_at: new Date().toISOString(),
+  };
+
+  // Remove keys with undefined values if necessary (Supabase might handle this)
+  Object.keys(updatePayload).forEach(key => {
+    if (updatePayload[key] === undefined) {
+      delete updatePayload[key];
+    }
+  });
+
+  console.log(`Updating Supabase for fixture ${fixtureId} with new details...`);
   try {
-    const { data, error } = await supabase
+    const { error, count } = await supabase
       .from('fixtures')
-      .update({
-        event_data: events, // Overwrite with the latest events
-        event_last_updated: new Date().toISOString(), // Update timestamp
-      })
+      .update(updatePayload)
       .eq('id', fixtureId);
 
     if (error) throw error;
-    console.log(`Successfully updated events for fixture ${fixtureId} in Supabase.`);
-    return true;
+
+    console.log(`Supabase update for ${fixtureId} successful. Rows matched/updated: ${count ?? 'N/A'}`);
+    return true; // Indicate success
   } catch (error) {
-    console.error(`Error updating Supabase events for fixture ${fixtureId}:`, error);
-    return false;
+    console.error(`Error updating Supabase details for fixture ${fixtureId}:`, error);
+    return false; // Indicate failure
   }
 }
 
 // --- Main Execution Logic ---
 async function runLiveUpdate() {
-  console.log('Starting LIVE fixture event update process...');
+  console.log('Starting LIVE fixture detail update process...');
   const startTime = Date.now();
+
+  // Reset the log flag at the start of each run
+  loggedFirstResponse = false;
 
   const liveFixtureIds = await fetchLiveFixtureIds();
 
   if (liveFixtureIds.length === 0) {
-    console.log('No live fixtures found requiring event updates. Exiting.');
+    console.log('No live fixtures found requiring detail updates. Exiting.');
     return;
   }
 
   let updatedCount = 0;
   let errorCount = 0;
 
-  console.log(`Processing ${liveFixtureIds.length} live fixtures for event updates...`);
+  console.log(`Processing ${liveFixtureIds.length} live fixtures for detail updates...`);
 
   for (const fixtureId of liveFixtureIds) {
-    const events = await fetchFixtureEvents(fixtureId);
+    const fixtureDetails = await fetchFixtureDetails(fixtureId); // Fetch comprehensive details
 
-    if (events !== null) { // Check if fetch was successful (not rate limited or errored)
-      const success = await updateFixtureEvents(fixtureId, events);
+    if (fixtureDetails !== null) { // Check if fetch was successful
+      const success = await updateFixtureData(fixtureId, fixtureDetails); // Update with new data structure
       if (success) {
         updatedCount++;
       } else {
@@ -149,21 +188,21 @@ async function runLiveUpdate() {
       errorCount++; // Count as an error for this cycle
     }
 
-    // Delay between RapidAPI calls to avoid hitting rate limits too quickly
+    // Delay between RapidAPI calls
     if (liveFixtureIds.indexOf(fixtureId) < liveFixtureIds.length - 1) {
         await new Promise(resolve => setTimeout(resolve, API_DELAY_MS));
     }
   }
 
   const endTime = Date.now();
-  console.log('--- Live Event Update Summary ---');
+  console.log('--- Live Detail Update Summary ---');
   console.log(`Fixtures checked: ${liveFixtureIds.length}`);
   console.log(`Successfully Updated: ${updatedCount}`);
-  console.log(`Errors/Skipped: ${errorCount}`);
-  console.log(`Live event update process finished in ${(endTime - startTime) / 1000} seconds.`);
+  console.log(`Errors/Fetch Failed: ${errorCount}`);
+  console.log(`Live detail update process finished in ${(endTime - startTime) / 1000} seconds.`);
 }
 
 runLiveUpdate().catch(error => {
-  console.error("Unhandled error during live event update script execution:", error);
+  console.error("Unhandled error during live detail update script execution:", error);
   process.exit(1);
 });
