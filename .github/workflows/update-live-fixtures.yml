@@ -1,0 +1,37 @@
+name: Update Live Fixture Status
+
+on:
+  # Run every 2 minutes
+  schedule:
+    - cron: '*/2 * * * *'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-live-status:
+    runs-on: ubuntu-latest
+    # Prevent concurrent runs of the same workflow
+    concurrency:
+      group: ${{ github.workflow }}-live-status
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Or your preferred Node.js version
+          cache: 'npm' # Or 'yarn' if you use yarn
+
+      - name: Install dependencies
+        run: npm install # Or 'yarn install'
+
+      - name: Run live fixture update script
+        # Run the script using Node.js
+        # Pass Supabase credentials as environment variables from GitHub Secrets
+        run: node update-live-fixtures.js
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }} # Ensure this secret name matches your repository settings

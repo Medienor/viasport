@@ -9,8 +9,11 @@ interface MatchCountdownProps {
 
 export default function MatchCountdown({ matchDate }: MatchCountdownProps) {
   const [timeLeft, setTimeLeft] = useState<string>('');
+  const [isStarting, setIsStarting] = useState<boolean>(false);
 
   useEffect(() => {
+    let timer: NodeJS.Timeout | null = null;
+
     const calculateTimeLeft = () => {
       const now = new Date().getTime();
       const matchTime = new Date(matchDate).getTime();
@@ -18,8 +21,12 @@ export default function MatchCountdown({ matchDate }: MatchCountdownProps) {
 
       if (difference <= 0) {
         setTimeLeft('Starter nå');
+        setIsStarting(true);
+        if (timer) clearInterval(timer);
         return;
       }
+
+      setIsStarting(false);
 
       const hours = Math.floor(difference / (1000 * 60 * 60));
       const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
@@ -34,9 +41,11 @@ export default function MatchCountdown({ matchDate }: MatchCountdownProps) {
     };
 
     calculateTimeLeft();
-    const timer = setInterval(calculateTimeLeft, 1000);
+    timer = setInterval(calculateTimeLeft, 1000);
 
-    return () => clearInterval(timer);
+    return () => {
+      if (timer) clearInterval(timer);
+    };
   }, [matchDate]);
 
   return (
@@ -44,7 +53,15 @@ export default function MatchCountdown({ matchDate }: MatchCountdownProps) {
       <div className="text-xl md:text-2xl font-bold text-gray-700">
         {formatMatchDateTime(matchDate).time}
       </div>
-      <div className="text-sm text-gray-500 mt-1">
+      <div
+        className={`
+          text-sm mt-1 transition-colors duration-300
+          ${isStarting
+            ? 'text-red-600 font-semibold animate-pulse'
+            : 'text-gray-500'
+          }
+        `}
+      >
         {timeLeft}
       </div>
     </div>
