@@ -62,6 +62,8 @@ interface MatchCalendarProps {
 
 // --- Constants ---
 const REFRESH_INTERVAL_MS = 60000; // 1 minute for timer updates
+const MAX_FETCH_RETRIES = 3; // Number of times to retry fetching
+const RETRY_DELAY_MS = 1500; // Delay between retries in milliseconds
 
 // --- Helper Functions ---
 const formatMatchTime = (dateString: string | null): string => {
@@ -100,6 +102,9 @@ const getSupabaseClient = (): SupabaseClient | null => {
     }
 };
 
+// Simple delay function
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
 // --- Component ---
 export default function MatchCalendar({
     currentMatchId = "",
@@ -130,10 +135,14 @@ export default function MatchCalendar({
     }, []);
 
     // --- Fetch Initial Data ---
-    const fetchLeagueMatches = useCallback(async () => {
+    const fetchLeagueMatches = useCallback(async (attempt = 1) => { // Add attempt counter
         if (!supabaseRef.current || !leagueId) return;
-        setIsLoading(true);
-        setError(null);
+
+        // Set loading true only on the first attempt, keep it true during retries
+        if (attempt === 1) {
+            setIsLoading(true);
+            setError(null); // Clear previous errors on new fetch/retry sequence
+        }
 
         const now = new Date();
         const oneWeekAgo = subDays(now, 7);
@@ -141,6 +150,7 @@ export default function MatchCalendar({
         const oneWeekAgoISO = oneWeekAgo.toISOString();
 
         try {
+            console.log(`DEBUG: [MatchCalendar] Attempt ${attempt} to fetch matches for league ${leagueId}...`);
             const { data, error: dbError } = await supabaseRef.current
                 .from('fixtures')
                 .select(`
@@ -156,8 +166,9 @@ export default function MatchCalendar({
                 .gte('fixture->>date', oneWeekAgoISO) // Get matches from the last week onwards
                 .order('fixture->>date', { ascending: true }); // Order by date
 
-            if (dbError) throw dbError;
+            if (dbError) throw dbError; // Throw error to be caught by catch block
 
+            // --- Success Case ---
             const fetchedMatches: LeagueFixture[] = data || [];
             const past: LeagueFixture[] = [];
             const upcoming: LeagueFixture[] = [];
@@ -201,96 +212,158 @@ export default function MatchCalendar({
             setPastMatches(past);
             setUpcomingMatches(upcoming);
             setLiveUpdates(prev => ({ ...prev, ...initialLiveUpdates })); // Merge initial updates
+            setError(null); // Clear error on success
+            setIsLoading(false); // Set loading false on success
+            console.log(`✅ [MatchCalendar] Successfully fetched matches for league ${leagueId} on attempt ${attempt}.`);
+            // --- End Success Case ---
 
         } catch (err: any) {
-            console.error('🔴 Error fetching league matches:', err);
-            setError(`Failed to load matches: ${err.message}`);
-        } finally {
-            setIsLoading(false);
+            console.error(`🔴 Error fetching league matches (Attempt ${attempt}/${MAX_FETCH_RETRIES}):`, err);
+
+            // --- Retry Logic ---
+            if (attempt < MAX_FETCH_RETRIES) {
+                console.warn(`🟠 [MatchCalendar] Retrying fetch for league ${leagueId} in ${RETRY_DELAY_MS}ms...`);
+                await delay(RETRY_DELAY_MS); // Wait before retrying
+                fetchLeagueMatches(attempt + 1); // Call recursively for the next attempt
+            } else {
+                // --- Failure Case (Max retries reached) ---
+                console.error(`🔴 [MatchCalendar] Max fetch retries (${MAX_FETCH_RETRIES}) reached for league ${leagueId}. Setting error state.`);
+                setError(`Failed to load matches after ${MAX_FETCH_RETRIES} attempts. Please try again later.`);
+                setIsLoading(false); // Set loading false after final failure
+                // Clear data potentially loaded from previous attempts if needed
+                // setPastMatches([]);
+                // setUpcomingMatches([]);
+                // setLiveUpdates({});
+                // --- End Failure Case ---
+            }
+            // --- End Retry Logic ---
         }
-    }, [leagueId]);
+        // Note: 'finally' block removed as isLoading is now handled within try/catch/retry logic
+    }, [leagueId]); // Keep only leagueId as dependency for useCallback
 
     useEffect(() => {
         if (supabaseRef.current && leagueId) {
-            fetchLeagueMatches();
+            fetchLeagueMatches(); // Initial call (attempt 1)
         }
-    }, [leagueId, fetchLeagueMatches]); // Fetch when leagueId changes
+        // Cleanup function for fetchLeagueMatches is not strictly needed here
+        // as the component unmount/leagueId change will trigger new fetches/subscriptions.
+    }, [leagueId, fetchLeagueMatches]); // Fetch when leagueId changes or fetchLeagueMatches function reference changes (due to leagueId change)
 
     // --- Realtime Subscription ---
     useEffect(() => {
-        if (!supabaseRef.current || !leagueId || channelRef.current) return;
+        // Ensure Supabase client is initialized and leagueId is present
+        if (!supabaseRef.current || !leagueId) return;
 
-        const supabase = supabaseRef.current;
-        const channel = supabase.channel(`league-fixtures-${leagueId}`);
-        channelRef.current = channel;
+        // If a channel already exists for this leagueId (e.g., from a previous render),
+        // ensure it's properly cleaned up before creating a new one.
+        // This check might be redundant if the cleanup function works perfectly,
+        // but adds a layer of safety.
+        if (channelRef.current && channelRef.current.topic !== `realtime:public:fixtures:league_id=eq.${leagueId}`) {
+             console.log(`DEBUG: [MatchCalendar] Topic mismatch or existing channel found. Cleaning up before resubscribing.`);
+             supabaseRef.current.removeChannel(channelRef.current)
+                 .catch(error => console.error("🔴 [MatchCalendar] Error removing channel during mismatch check:", error));
+             channelRef.current = null;
+        }
 
-        console.log(`DEBUG: [MatchCalendar] Setting up subscription for league ${leagueId}`);
+        // Only proceed if there's no active channel for the current leagueId
+        if (!channelRef.current) {
+            const supabase = supabaseRef.current;
+            const channel = supabase.channel(`league-fixtures-${leagueId}`);
+            channelRef.current = channel;
 
-        channel
-            .on(
-                'postgres_changes',
-                {
-                    event: 'UPDATE',
-                    schema: 'public',
-                    table: 'fixtures',
-                    filter: `league_id=eq.${leagueId}`,
-                },
-                (payload) => {
-                    console.log('DEBUG: [MatchCalendar] Realtime UPDATE received:', payload);
-                    const updatedFixture = payload.new as LeagueFixture;
-                    const fixtureId = updatedFixture.id;
+            console.log(`DEBUG: [MatchCalendar] Setting up subscription for league ${leagueId}`);
 
-                    // Check if this fixture is relevant (in past/upcoming or could become live)
-                    // A simple check: update if it exists in our liveUpdates state
-                    if (liveUpdates.hasOwnProperty(fixtureId) || upcomingMatches.some(m => m.id === fixtureId)) {
-                         const newStatus = updatedFixture.status?.short ?? updatedFixture.fixture?.status?.short ?? null;
-                         const newElapsed = updatedFixture.status?.elapsed ?? updatedFixture.fixture?.status?.elapsed ?? null;
-                         const newGoalsHome = updatedFixture.goals?.home ?? null;
-                         const newGoalsAway = updatedFixture.goals?.away ?? null;
-                         const newLastUpdated = updatedFixture.details_last_updated_at
-                             ? parseISO(updatedFixture.details_last_updated_at).getTime()
-                             : null;
+            channel
+                .on(
+                    'postgres_changes',
+                    {
+                        event: 'UPDATE',
+                        schema: 'public',
+                        table: 'fixtures',
+                        filter: `league_id=eq.${leagueId}`,
+                    },
+                    (payload) => {
+                        console.log('DEBUG: [MatchCalendar] Realtime UPDATE received:', payload);
+                        const updatedFixture = payload.new as LeagueFixture;
+                        const fixtureId = updatedFixture.id;
 
-                         console.log(`DEBUG: [MatchCalendar] Updating live state for ${fixtureId}: S=${newStatus} E=${newElapsed} G=(${newGoalsHome}-${newGoalsAway}) U=${newLastUpdated}`);
+                        // Update live state directly using the fixtureId
+                        // No need to check against existing state keys here,
+                        // just update based on the incoming ID.
+                        const newStatus = updatedFixture.status?.short ?? updatedFixture.fixture?.status?.short ?? null;
+                        const newElapsed = updatedFixture.status?.elapsed ?? updatedFixture.fixture?.status?.elapsed ?? null;
+                        const newGoalsHome = updatedFixture.goals?.home ?? null;
+                        const newGoalsAway = updatedFixture.goals?.away ?? null;
+                        const newLastUpdated = updatedFixture.details_last_updated_at
+                            ? parseISO(updatedFixture.details_last_updated_at).getTime()
+                            : Date.now(); // Use current time if timestamp is missing
 
-                         setLiveUpdates(prev => ({
-                             ...prev,
-                             [fixtureId]: {
-                                 statusShort: newStatus,
-                                 elapsed: newElapsed,
-                                 goalsHome: newGoalsHome,
-                                 goalsAway: newGoalsAway,
-                                 lastUpdated: newLastUpdated,
-                             },
-                         }));
+                        console.log(`DEBUG: [MatchCalendar] Updating live state for ${fixtureId}: S=${newStatus} E=${newElapsed} G=(${newGoalsHome}-${newGoalsAway}) U=${newLastUpdated}`);
 
-                         // Potentially move match between upcoming/past if status changes to FT etc.
-                         // This logic can be added if needed, but might complicate things.
-                         // For now, rely on initial fetch + live updates for status/score.
+                        // Use functional update form for safety, though direct update might also work
+                        setLiveUpdates(prev => ({
+                            ...prev,
+                            [fixtureId]: {
+                                statusShort: newStatus,
+                                elapsed: newElapsed,
+                                goalsHome: newGoalsHome,
+                                goalsAway: newGoalsAway,
+                                lastUpdated: newLastUpdated,
+                            },
+                        }));
+
+                        // Note: Moving matches between upcoming/past based on realtime
+                        // status changes (e.g., NS -> 1H -> FT) is not implemented here
+                        // to keep the logic simpler. The initial fetch categorizes them.
                     }
-                }
-            )
-            .subscribe((status, err) => {
-                if (status === 'SUBSCRIBED') {
-                    console.log(`✅ [MatchCalendar] Subscribed successfully to league ${leagueId}`);
-                } else if (err) {
-                    console.error(`🔴 [MatchCalendar] Subscription error for league ${leagueId}:`, err);
-                    setError(`Realtime connection error: ${err.message}`);
-                } else {
-                    console.log(`ℹ️ [MatchCalendar] Channel status [league-${leagueId}]: ${status}`);
-                }
-            });
+                )
+                .subscribe((status, err) => {
+                    // Log different statuses for better debugging
+                    switch (status) {
+                        case 'SUBSCRIBED':
+                            console.log(`✅ [MatchCalendar] Subscribed successfully to league ${leagueId}`);
+                            break;
+                        case 'CHANNEL_ERROR':
+                            console.error(`🔴 [MatchCalendar] Channel error for league ${leagueId}:`, err);
+                            setError(`Realtime channel error: ${err?.message || 'Unknown error'}`);
+                            break;
+                        case 'TIMED_OUT':
+                            console.warn(`🟠 [MatchCalendar] Subscription timed out for league ${leagueId}. Retrying...`);
+                            // Supabase client attempts auto-reconnect
+                            break;
+                        case 'CLOSED':
+                            console.log(`ℹ️ [MatchCalendar] Channel closed for league ${leagueId}.`);
+                            // This might happen during cleanup or if connection is lost.
+                            break;
+                        default:
+                             console.log(`ℹ️ [MatchCalendar] Channel status [league-${leagueId}]: ${status}`);
+                    }
+                     // Log the specific error object if present
+                     if (err) {
+                         console.error(`🔴 [MatchCalendar] Subscription error details [league-${leagueId}]:`, err);
+                         // Set error state only for critical errors like initial connection failure
+                         if (status === 'CHANNEL_ERROR') {
+                            setError(`Realtime connection error: ${err.message}`);
+                         }
+                     }
+                });
+        }
 
-        // Cleanup
+        // Cleanup function: This runs when the component unmounts OR BEFORE the effect runs again due to dependency changes.
         return () => {
             if (channelRef.current) {
-                console.log(`DEBUG: [MatchCalendar] Unsubscribing from league ${leagueId}`);
-                supabase.removeChannel(channelRef.current)
+                console.log(`DEBUG: [MatchCalendar] Cleaning up subscription for league ${leagueId}`);
+                // Use a temporary variable to avoid race conditions if the ref changes quickly
+                const currentChannel = channelRef.current;
+                channelRef.current = null; // Clear the ref immediately
+                supabaseRef.current?.removeChannel(currentChannel)
+                    .then(status => console.log(`DEBUG: [MatchCalendar] Unsubscribe status for league ${leagueId}: ${status}`))
                     .catch(error => console.error("🔴 [MatchCalendar] Error during unsubscribe:", error));
-                channelRef.current = null;
             }
         };
-    }, [leagueId, liveUpdates, upcomingMatches]); // Depend on leagueId and potentially lists if moving matches between them
+    // IMPORTANT: Only depend on leagueId and the presence of the supabase client.
+    // Do NOT include liveUpdates or upcomingMatches here.
+    }, [leagueId, supabaseRef.current]); // Re-run only if leagueId changes or supabase client initializes
 
     // --- Live Timer Update Interval ---
      useEffect(() => {

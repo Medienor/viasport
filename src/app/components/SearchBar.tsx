@@ -257,7 +257,7 @@ const SearchBar = ({ onSearchResultClick, mobileMode = false }: { onSearchResult
         );
       case 'player':
         return (
-          <Link key={`player-${result.id}`} href={`/spiller/${createPlayerSlug(result.name || '')}-${result.id}`} {...linkProps}>
+          <Link key={`player-${result.id}`} href={`/spillerprofil/${createPlayerSlug(result.name || '')}-${result.id}`} {...linkProps}>
              <div className="flex items-center min-w-0 mr-2">
               <div className="flex-shrink-0 h-6 w-6 mr-3 relative rounded-full overflow-hidden">
                 <Image src={result.logo || '/placeholder-player.png'} alt={result.name || 'Player photo'} fill className="object-cover" onError={(e) => e.currentTarget.src = '/placeholder-player.png'} />

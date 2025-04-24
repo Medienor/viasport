@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-04-24T08:45:47.255Z
+// Last updated: 2025-04-24T15:12:51.173Z
 
 export const calendarData = {
   "2025-04-17": [
@@ -5089,7 +5089,7 @@ export const calendarData = {
         },
         "away": {
           "id": 111,
-          "name": "LE Havre",
+          "name": "Le Havre",
           "logo": "https://media.api-sports.io/football/teams/111.png",
           "winner": false
         }
@@ -18726,8 +18726,8 @@ export const calendarData = {
           "city": "Bergamo"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
+          "long": "Match Postponed",
+          "short": "PST",
           "elapsed": null,
           "extra": null
         }
@@ -22387,7 +22387,7 @@ export const calendarData = {
       "teams": {
         "home": {
           "id": 111,
-          "name": "LE Havre",
+          "name": "Le Havre",
           "logo": "https://media.api-sports.io/football/teams/111.png",
           "winner": null
         },
@@ -29302,8 +29302,8 @@ export const calendarData = {
           "city": "Stockholm"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
+          "long": "Match Postponed",
+          "short": "PST",
           "elapsed": null,
           "extra": null
         }

@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-04-24T08:46:09.598Z
+// Last updated: 2025-04-24T15:13:14.617Z
 
 export const topPlayersData = {
   "1": {
@@ -5071,7 +5071,7 @@ export const topPlayersData = {
             {
               "team": {
                 "id": 111,
-                "name": "LE Havre",
+                "name": "Le Havre",
                 "logo": "https://media.api-sports.io/football/teams/111.png"
               },
               "league": {
@@ -5166,7 +5166,7 @@ export const topPlayersData = {
             {
               "team": {
                 "id": 111,
-                "name": "LE Havre",
+                "name": "Le Havre",
                 "logo": "https://media.api-sports.io/football/teams/111.png"
               },
               "league": {
