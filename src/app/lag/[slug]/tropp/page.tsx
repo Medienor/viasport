@@ -90,7 +90,7 @@ export default async function TeamSquadPage({ params }: { params: { slug: string
                       <div className="flex items-center space-x-4">
                         <div className="relative h-16 w-16 flex-shrink-0">
                           <Image
-                            src={player.photo || '/images/player-placeholder.png'}
+                            src={player.photo ? player.photo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') : '/images/player-placeholder.png'}
                             alt={player.name}
                             fill
                             className="object-cover rounded-full bg-gray-100"
@@ -126,7 +126,7 @@ export default async function TeamSquadPage({ params }: { params: { slug: string
                        <div className="flex items-center space-x-4">
                         <div className="relative h-16 w-16 flex-shrink-0">
                           <Image
-                            src={player.photo || '/images/player-placeholder.png'}
+                            src={player.photo ? player.photo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') : '/images/player-placeholder.png'}
                             alt={player.name}
                             fill
                             className="object-cover rounded-full bg-gray-100"

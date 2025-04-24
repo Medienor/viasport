@@ -188,83 +188,50 @@ export default function MatchHighlights({
       setErrorMessage(null);
       setVideo(null);
 
+      // --- Minimal Logging Setup ---
+      console.log(`📺 MatchHighlights: Fetching highlights for ${homeTeamName} vs ${awayTeamName}...`);
+      // --- End Minimal Logging Setup ---
+
       const potentialChannelIds = getPotentialChannelIds(leagueId, homeTeamId, awayTeamId);
       const searchTerms = generateSearchTerms(homeTeamName, awayTeamName, leagueId);
       const matchDateObj = new Date(matchDate);
       const searchCutoffDate = new Date(matchDateObj);
-      searchCutoffDate.setDate(matchDateObj.getDate() + 3);
+      searchCutoffDate.setDate(matchDateObj.getDate() + 3); // Allow 3 days after match
 
       const normalizedHome = normalizeName(homeTeamName);
       const normalizedAway = normalizeName(awayTeamName);
 
-      // --- Get Mapped Channel IDs for Teams ---
-      const homeTeamChannelId = getChannelIdForTeam(homeTeamId);
-      const awayTeamChannelId = getChannelIdForTeam(awayTeamId);
+      // --- Get Mapped Channel IDs (optional logging if needed later) ---
+      // const homeTeamChannelId = getChannelIdForTeam(homeTeamId);
+      // const awayTeamChannelId = getChannelIdForTeam(awayTeamId);
+      // console.log(`   - Home Channel: ${homeTeamChannelId || 'N/A'}, Away Channel: ${awayTeamChannelId || 'N/A'}`);
+      // console.log(`   - Potential League/Broadcaster Channels:`, potentialChannelIds);
+      // console.log(`   - Search Terms:`, searchTerms);
+      // console.log(`   - Normalized Names: home='${normalizedHome}', away='${normalizedAway}'`);
+      // --- End Mapped Channel IDs ---
 
-      // --- Logging Setup ---
-      console.log(`\n📺 MatchHighlights Debug (${homeTeamName} vs ${awayTeamName})`);
-      console.log(`📅 Match Date: ${matchDateObj.toISOString()}`);
-      // --- NEW LOG: Team IDs and Mapped Channel IDs ---
-      console.log(`⭐ Current team fixture IDs and their Channel IDs: Home (${homeTeamId}): ${homeTeamChannelId || 'N/A'}, Away (${awayTeamId}): ${awayTeamChannelId || 'N/A'}`);
-      // --- End NEW LOG ---
-      console.log(`🎯 Target League/Broadcaster Channel IDs:`, potentialChannelIds); // Note: potentialChannelIds might include team channels too based on your function
-      console.log(`🔍 Search Terms:`, searchTerms);
-      console.log(`🏷 Normalized Names: home='${normalizedHome}', away='${normalizedAway}'`);
-      // --- End Logging Setup ---
 
       let allPotentialVideos: any[] = [];
-      // --- Flags to track if channels were found across ALL searches ---
-      let foundHomeOverall = false;
-      let foundAwayOverall = false;
-      // --- End Flags ---
 
       try {
         // --- Performing General Keyword Searches ---
-        console.log(`\n--- Performing General Keyword Searches (maxResults=50, order=relevance) ---`);
+        // console.log(`--- Performing General Keyword Searches ---`); // Optional: uncomment if needed
         for (const term of searchTerms) {
-          console.log(`➡️ Searching General Term: "${term}"`);
+          // console.log(`➡️ Searching General Term: "${term}"`); // Optional: uncomment if needed
           try {
-              const response = await fetch(`/api/youtube/search?q=${encodeURIComponent(term)}&maxResults=50&purpose=highlights`);
+              const response = await fetch(`/api/youtube/search?q=${encodeURIComponent(term)}&maxResults=50&purpose=highlights`); // Keep maxResults high initially
 
               if (!response.ok) {
                 console.warn(`⚠️ General search failed for term: "${term}" (Status: ${response.status})`);
                 continue;
               }
               const data = await response.json();
-              console.log(`📦 General Term "${term}" Raw Items Found: ${data.items?.length || 0}`);
+              // console.log(`📦 General Term "${term}" Raw Items Found: ${data.items?.length || 0}`); // Optional: uncomment if needed
 
-              // Log Channel IDs of First 10 Raw Results (Existing Log)
-              if (data.items && data.items.length > 0) {
-                  const topChannelIds = data.items.slice(0, 10).map((item: any) => item?.snippet?.channelId || 'N/A');
-                  console.log(`📊 Top 10 Raw Channel IDs for "${term}":`, topChannelIds);
-
-                  // --- Check if Home/Away Team Channel Found in Raw Results for THIS term ---
-                  let foundHomeInRawThisTerm = false; // Renamed for clarity
-                  let foundAwayInRawThisTerm = false; // Renamed for clarity
-
-                  for (const item of data.items) {
-                      const itemChannelId = item?.snippet?.channelId;
-                      if (!itemChannelId) continue;
-
-                      if (homeTeamChannelId && itemChannelId === homeTeamChannelId) {
-                          foundHomeInRawThisTerm = true;
-                          foundHomeOverall = true; // Update overall flag
-                      }
-                      if (awayTeamChannelId && itemChannelId === awayTeamChannelId) {
-                          foundAwayInRawThisTerm = true;
-                          foundAwayOverall = true; // Update overall flag
-                      }
-                      if (foundHomeInRawThisTerm && foundAwayInRawThisTerm) break; // Optimization for this term
-                  }
-                  // --- REMOVED the per-term log message ---
-
-              } else {
-                  console.log(`📊 No raw items found for "${term}" to log channel IDs.`);
-              }
-
+              // --- Removed detailed raw result logging ---
 
               if (data.items && data.items.length > 0) {
-                 // Process these results (unchanged)
+                 // Process these results
                  const processed = data.items.map((item: any) => ({
                     fullItem: item,
                     id: item.id?.videoId,
@@ -275,83 +242,56 @@ export default function MatchHighlights({
                     channelTitle: item.snippet?.channelTitle,
                     publishedAt: item.snippet?.publishedAt,
                     publishDate: item.snippet?.publishedAt ? new Date(item.snippet.publishedAt) : null,
-                 })).filter((item: any) => item.id && item.publishDate);
+                 })).filter((item: any) => item.id && item.publishDate); // Basic filter for valid items
 
                  allPotentialVideos.push(...processed);
               }
           } catch (generalErr) {
               console.error(`❌ Error searching general term "${term}":`, generalErr);
           }
-          // Optimization: If both channels found overall, maybe stop searching? (Optional)
-          // if (foundHomeOverall && foundAwayOverall) {
-          //    console.log("⚡️ Both team channels found, stopping further searches.");
-          //    break;
-          // }
         } // --- End of search term loop ---
-         console.log(`--- Finished General Searches ---`);
+         // console.log(`--- Finished General Searches ---`); // Optional: uncomment if needed
 
-        // --- SINGLE CONSOLIDATED LOG (after loop) ---
-        let finalFoundLogMessage = '';
-        if (foundHomeOverall && foundAwayOverall) {
-            finalFoundLogMessage = `⭐ Found Home Team (${homeTeamName}) [${homeTeamChannelId}] and Away Team (${awayTeamName}) [${awayTeamChannelId || 'N/A'}] in raw results across all searches.`;
-        } else if (foundHomeOverall) {
-            finalFoundLogMessage = `⭐ Found Home Team (${homeTeamName}) [${homeTeamChannelId}] in raw results across all searches.`;
-        } else if (foundAwayOverall) {
-            finalFoundLogMessage = `⭐ Found Away Team (${awayTeamName}) [${awayTeamChannelId || 'N/A'}] in raw results across all searches.`;
-        } else {
-            finalFoundLogMessage = `⭐ Did not find mapped Home (${homeTeamChannelId || 'N/A'}) or Away (${awayTeamChannelId || 'N/A'}) team channels in any raw search results.`;
-        }
-        console.log(finalFoundLogMessage);
-        // --- End SINGLE CONSOLIDATED LOG ---
+        // --- Removed consolidated found channel log ---
 
 
         // --- Combine, Filter, Deduplicate, Sort ---
-        console.log(`\n--- Processing All Collected Videos (${allPotentialVideos.length} before filtering) ---`);
+        // console.log(`\n--- Processing All Collected Videos (${allPotentialVideos.length} before filtering) ---`); // Optional: uncomment if needed
 
         // 1. Filter
         const filteredVideos = allPotentialVideos.filter((item: any) => {
             let passes = true;
-            let reason = '';
-            const videoTitle = item.title || 'N/A';
-            const videoChannelId = item.channelId || 'N/A'; // Get channel ID for logging
+            // const videoTitle = item.title || 'N/A'; // Keep for debugging specific filter issues if needed
+            // const videoChannelId = item.channelId || 'N/A';
 
             // Date check
             if (!item.publishDate || item.publishDate < matchDateObj || item.publishDate > searchCutoffDate) {
                 passes = false;
-                reason = `Date out of range (${item.publishDate?.toISOString()})`;
+                // reason = `Date out of range (${item.publishDate?.toISOString()})`; // Keep reasons if debugging filters
             }
             // Title check (normalized) - MUST contain both teams
             if (passes && (!item.titleNorm.includes(normalizedHome) || !item.titleNorm.includes(normalizedAway))) {
                 passes = false;
-                reason = `Missing team name (Home: ${item.titleNorm.includes(normalizedHome)}, Away: ${item.titleNorm.includes(normalizedAway)}) in title: "${item.titleNorm}"`; // Log normalized title too
+                // reason = `Missing team name (Home: ${item.titleNorm.includes(normalizedHome)}, Away: ${item.titleNorm.includes(normalizedAway)}) in title: "${item.titleNorm}"`;
             }
             // Keyword check
             const highlightKeyword = [103, 725].includes(leagueId) ? 'høydepunkter' : 'highlight';
             if (passes && !item.titleLower.includes(highlightKeyword)) {
                 passes = false;
-                reason = `Missing keyword '${highlightKeyword}'`;
+                // reason = `Missing keyword '${highlightKeyword}'`;
             }
 
-            // --- Add detailed logging for filtered out videos ---
-            if (!passes) {
-                 // Log details ONLY for videos from potentially official channels OR the one that got selected wrongly
-                 const isPotentiallyOfficial = (homeTeamChannelId && videoChannelId === homeTeamChannelId) ||
-                                              (awayTeamChannelId && videoChannelId === awayTeamChannelId) ||
-                                              (getChannelIdForLeague(leagueId) && videoChannelId === getChannelIdForLeague(leagueId));
-
-                 // Log if it's potentially official OR if it's the problematic Tunnel TV channel for debugging that case
-                 if (isPotentiallyOfficial || videoChannelId === 'UCDUnsT44JgL0ItDZrfe7dgQ') {
-                    console.log(`🚫 Filtering out: "${videoTitle}" (Channel: ${videoChannelId}) | Reason: ${reason}`);
-                 }
-            }
-            // --- End detailed logging ---
-
-            // Keep this minimal log for general debugging if needed
-            // else { console.log(`✅ Keeping: "${videoTitle}" (Channel: ${videoChannelId})`); }
+            // --- Removed detailed logging for filtered out videos ---
+            // if (!passes) {
+            //      const isPotentiallyOfficial = ...
+            //      if (isPotentiallyOfficial || videoChannelId === 'UCDUnsT44JgL0ItDZrfe7dgQ') {
+            //         console.log(`🚫 Filtering out: "${videoTitle}" (Channel: ${videoChannelId}) | Reason: ${reason}`);
+            //      }
+            // }
 
             return passes;
         });
-        console.log(`Filtered down to ${filteredVideos.length} videos.`);
+        // console.log(`Filtered down to ${filteredVideos.length} videos.`); // Optional: uncomment if needed
 
         // 2. Deduplicate
         const uniqueVideoMap = new Map<string, any>();
@@ -361,7 +301,7 @@ export default function MatchHighlights({
             }
         });
         const uniqueVideos = Array.from(uniqueVideoMap.values());
-        console.log(`Deduplicated down to ${uniqueVideos.length} videos.`);
+        // console.log(`Deduplicated down to ${uniqueVideos.length} videos.`); // Optional: uncomment if needed
 
 
         // 3. Sort by Priority and Date
@@ -372,31 +312,30 @@ export default function MatchHighlights({
             if (priorityA !== priorityB) {
                 return priorityA - priorityB;
             }
+            // Secondary sort by publish date (newest first)
             const dateA = a.publishDate?.getTime() || 0;
             const dateB = b.publishDate?.getTime() || 0;
-            return dateB - dateA;
+            return dateB - dateA; // Newest first
         });
 
-        // Log Sorted Results (Existing Log)
-        console.log(`\n📑 Sorted Unique Videos (Top 5):`);
-        uniqueVideos.slice(0, 5).forEach((v, index) => {
-            console.log(`  [${index + 1}] (Prio: ${getPriority(v.channelId, leagueId, homeTeamId, awayTeamId, winnerTeamId)}) Title: "${v.title}" | Channel: ${v.channelTitle} (${v.channelId}) | Published: ${v.publishedAt}`);
-        });
+        // --- Removed Sorted Unique Videos log ---
+        // console.log(`\n📑 Sorted Unique Videos (Top 5):`);
+        // uniqueVideos.slice(0, 5).forEach((v, index) => { ... });
 
 
         const finalVideo = uniqueVideos.length > 0 ? uniqueVideos[0] : null;
 
-        // Log Final Result (Existing Log)
+        // Log Final Result
         if (finalVideo) {
-            console.log(`\n🎉 Final Selected Video (Top Priority): "${finalVideo.title}"`, finalVideo.fullItem);
+            console.log(`✅ MatchHighlights: Found video "${finalVideo.title}" (Channel: ${finalVideo.channelTitle})`);
         } else {
-            console.log(`\n🤷 No suitable video found after checking all terms, filtering, and sorting.`);
+            console.log(`🤷 MatchHighlights: No suitable video found for ${homeTeamName} vs ${awayTeamName}.`);
         }
 
         setVideo(finalVideo ? finalVideo.fullItem : null);
 
       } catch (err) {
-        console.error('❌ Error fetching match highlights:', err);
+        console.error('❌ MatchHighlights: Error fetching highlights:', err);
         setErrorMessage(err instanceof Error ? err.message : 'An error occurred fetching highlights');
         setVideo(null);
       } finally {
@@ -406,12 +345,12 @@ export default function MatchHighlights({
 
     fetchHighlights();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [homeTeamName, awayTeamName, homeTeamId, awayTeamId, leagueId, matchDate, isFinished, winnerTeamId]);
+  }, [homeTeamName, awayTeamName, homeTeamId, awayTeamId, leagueId, matchDate, isFinished, winnerTeamId]); // Dependencies remain the same
 
   // Show loading state
   if (loading) {
     return (
-      <div className="bg-white rounded-lg p-4 animate-pulse border border-gray-200">
+      <div className="bg-white rounded-lg p-4 animate-pulse shadow">
         <div className="h-4 bg-gray-200 rounded w-3/4 mb-3"></div>
         <div className="aspect-video bg-gray-200 rounded-lg"></div>
       </div>
@@ -421,7 +360,7 @@ export default function MatchHighlights({
   // Show error message if one occurred during fetch
   if (errorMessage) {
       return (
-          <div className="bg-white rounded-lg p-4 border border-red-200 text-red-700">
+          <div className="bg-white rounded-lg p-4 shadow border border-red-200 text-red-700">
               <h2 className="text-lg font-semibold mb-2">Error Loading Highlights</h2>
               <p className="text-sm">{errorMessage}</p>
           </div>
@@ -430,20 +369,20 @@ export default function MatchHighlights({
 
   // Don't render if not finished or no video found
   if (!isFinished || !video) {
-    if (isFinished && !loading && !errorMessage) {
-        console.log("🤔 Component rendered null (Match finished, no error, but no video found/selected).");
-    }
+    // --- Removed the console log here ---
+    // if (isFinished && !loading && !errorMessage) {
+    //     console.log("🤔 Component rendered null (Match finished, no error, but no video found/selected).");
+    // }
     return null;
   }
 
   // Render the video link and thumbnail
-  // Access data from the 'video' state object (which is the processed object)
-  const videoData = video; // Get the original full item data for rendering
+  const videoData = video;
   const videoId = videoData?.id?.videoId;
   const videoTitle = videoData?.title;
 
   return (
-    <div className="bg-white rounded-lg p-4 border border-gray-200">
+    <div className="bg-white rounded-lg p-4 shadow">
       <h2 className="text-lg font-semibold mb-4">Offisielle høydepunkter</h2>
       <Link
         href={`https://www.youtube.com/watch?v=${videoId}`}
@@ -456,7 +395,7 @@ export default function MatchHighlights({
         <div className="relative aspect-video bg-gray-100">
           {videoData?.snippet?.thumbnails?.high?.url ? (
              <Image
-                src={videoData.snippet.thumbnails.high.url} // Use URL from fullItem
+                src={videoData.snippet.thumbnails.high.url}
                 alt=""
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -465,8 +404,8 @@ export default function MatchHighlights({
           ) : (
              <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-500">No Thumbnail</div>
           )}
-          {/* Play button overlay */}
-          <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors duration-200">
+          {/* Play button overlay - REMOVED bg-black/20 */}
+          <div className="absolute inset-0 flex items-center justify-center group-hover:bg-black/40 transition-colors duration-200">
             <svg className="w-12 h-12 text-white opacity-80 drop-shadow-lg" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
             </svg>

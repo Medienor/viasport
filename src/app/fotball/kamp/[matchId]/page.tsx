@@ -16,8 +16,13 @@ import MatchCountdown from '@/app/components/MatchCountdown';
 import FollowButton from '@/app/components/FollowButton';
 import TeamForm from '@/app/components/TeamForm';
 import LiveMatchTimer from '@/app/components/LiveMatchTimer';
+import LiveMatchEvents from '@/app/components/LiveMatchEvents';
+import TopScorersComparison from '@/app/components/TopScorersComparison';
+import MatchStatsSnippet from '@/app/components/MatchStatsSnippet';
+import HorizontalLineupComponent from '@/app/components/HorizontalLineupComponent';
 
-export const revalidate = 86400;
+export const dynamic = "force-dynamic";
+
 
 // Initialize Supabase client with the working configuration LOL FUCK YOU
 const supabase = createClient(
@@ -58,7 +63,10 @@ async function fetchMatchById(matchId: string): Promise<Fixture | null> {
         player_statistics,
         lineups,
         fixture,
-        commentary_path
+        commentary_path,
+        season_year,
+        details_last_updated_at,
+        ball_possession
       `)
       .eq('id', matchId)
       .single();
@@ -111,48 +119,56 @@ export async function generateStaticParams() {
 }
 
 function generateMatchSummary(match: any) {
-  const events = match.event_data;
-  const goals = events.filter(e => e.type === 'Goal');
-  const cards = events.filter(e => e.type === 'Card');
-  const redCards = cards.filter(e => e.detail === 'Red Card');
+  if (!match) return ''; // Add early return if match is undefined
+  
+  // Add null checks for events
+  const events = match.event_data || [];
+  const goals = (events || []).filter(e => e?.type === 'Goal') || [];
+  const cards = (events || []).filter(e => e?.type === 'Card') || [];
+  const redCards = (cards || []).filter(e => e?.detail === 'Red Card') || [];
   
   let summary = '';
   
-  // Basic result
-  summary = `${match.teams.home.name} vant ${match.goals.home}-${match.goals.away} mot ${match.teams.away.name}. `;
+  // Basic result - Add null checks for goals
+  const homeGoals = match.goals?.home ?? 0;
+  const awayGoals = match.goals?.away ?? 0;
   
-  if (match.goals.home === match.goals.away) {
-    summary = `${match.teams.home.name} og ${match.teams.away.name} spilte ${match.goals.home}-${match.goals.away}. `;
-  } else if (match.goals.home < match.goals.away) {
-    summary = `${match.teams.away.name} vant ${match.goals.away}-${match.goals.home} mot ${match.teams.home.name}. `;
+  if (homeGoals === awayGoals) {
+    summary = `${match.teams?.home?.name || 'Hjemmelag'} og ${match.teams?.away?.name || 'Bortelag'} spilte ${homeGoals}-${awayGoals}. `;
+  } else if (homeGoals > awayGoals) {
+    summary = `${match.teams?.home?.name || 'Hjemmelag'} vant ${homeGoals}-${awayGoals} mot ${match.teams?.away?.name || 'Bortelag'}. `;
+  } else {
+    summary = `${match.teams?.away?.name || 'Bortelag'} vant ${awayGoals}-${homeGoals} mot ${match.teams?.home?.name || 'Hjemmelag'}. `;
   }
 
-  // Goal scorers
-  if (goals.length > 0) {
-    const scorers = goals.map(g => g.player.name);
+  // Goal scorers - Add null checks
+  if (goals && goals.length > 0) {
+    const scorers = goals.map(g => g.player?.name || 'Ukjent spiller');
     if (goals.length === 1) {
       summary += `Kampens eneste scoring kom fra ${scorers[0]}`;
-      if (goals[0].time.elapsed) summary += ` etter ${goals[0].time.elapsed} minutter.`;
+      if (goals[0]?.time?.elapsed) summary += ` etter ${goals[0].time.elapsed} minutter.`;
     } else {
       const lastScorer = scorers.pop();
       summary += `Målscorere var ${scorers.join(', ')} og ${lastScorer}.`;
     }
   }
 
-  // Drama indicators
-  if (goals.some(g => g.time.elapsed >= 85)) {
+  // Drama indicators - Add null checks
+  if (goals?.some(g => g?.time?.elapsed >= 85)) {
     summary += ' Det ble drama på tampen med scoring i sluttminuttene!';
   }
 
-  if (redCards.length > 0) {
+  if (redCards?.length > 0) {
     summary += ` ${redCards.length === 1 ? 'Ett rødt kort' : `${redCards.length} røde kort`} ble vist i kampen.`;
   }
 
-  // Late goals
-  const lateGoals = goals.filter(g => g.time.elapsed >= 85);
+  // Late goals - Add null checks
+  const lateGoals = goals?.filter(g => g?.time?.elapsed >= 85) || [];
   if (lateGoals.length > 0) {
     const latestGoal = lateGoals[lateGoals.length - 1];
-    summary += ` ${latestGoal.player.name} satte inn kampens siste mål ${latestGoal.time.elapsed}. minutt.`;
+    if (latestGoal?.player?.name && latestGoal?.time?.elapsed) {
+      summary += ` ${latestGoal.player.name} satte inn kampens siste mål ${latestGoal.time.elapsed}. minutt.`;
+    }
   }
 
   return summary;
@@ -162,16 +178,19 @@ function generateMatchSummary(match: any) {
 const isMatchFinished = (status: string) => ['FT', 'AET', 'PEN'].includes(status);
 
 // Keep the helper function
-const getTopScorer = (events: any[]) => {
-  const scorers = events
-    .filter(e => e.type === 'Goal')
+const getTopScorer = (events: any[] = []) => {
+  const scorers = (events || [])
+    .filter(e => e?.type === 'Goal')
     .reduce((acc: any, goal: any) => {
-      acc[goal.player.name] = (acc[goal.player.name] || 0) + 1;
+      const playerName = goal?.player?.name || 'Unknown';
+      acc[playerName] = (acc[playerName] || 0) + 1;
       return acc;
     }, {});
   
-  return Object.entries(scorers)
-    .sort(([,a]: any, [,b]: any) => b - a)[0];
+  const entries = Object.entries(scorers);
+  return entries.length > 0 
+    ? entries.sort(([,a]: any, [,b]: any) => b - a)[0]
+    : ['No scorer', 0];
 };
 
 async function fetchTeamColors(homeTeamId: number, awayTeamId: number) {
@@ -209,6 +228,8 @@ interface FormFixture {
 
 // --- Function to fetch team form (last 5 finished matches) ---
 async function fetchTeamForm(teamId: number, limit: number = 5): Promise<FormFixture[]> {
+  if (!teamId) return []; // Add early return if teamId is invalid
+
   // Define finished statuses (adjust based on your actual data)
   const finishedStatuses = ['FT', 'AET', 'PEN'];
 
@@ -289,10 +310,58 @@ export default async function MatchPage({ params }: { params: { matchId: string 
      console.log("Fetched Away Form:", awayTeamForm);
   }
 
+  // --- Prepare props for TopScorersComparison ---
+  const homeTeamIdForScorers = match?.teams?.home?.id;
+  const awayTeamIdForScorers = match?.teams?.away?.id;
+  const seasonForScorers = match?.season_year;
+  const leagueNameForScorers = match?.league?.name;
+  const leagueIdForScorers = match?.league?.id;
+  const initialStatusShort = match?.status?.short ?? null;
+
+  // Add a more detailed log BEFORE the conditional rendering
+  console.log("DEBUG: [MatchPage] Data for Scorer Comp:", {
+      homeTeamId: homeTeamIdForScorers,
+      awayTeamId: awayTeamIdForScorers,
+      season: seasonForScorers,
+      leagueName: leagueNameForScorers,
+      leagueId: leagueIdForScorers,
+      leagueIdType: typeof leagueIdForScorers,
+      initialStatusShort: initialStatusShort
+  });
+
+  // Determine if we have enough data to render the component's core data
+  const canRenderScorers =
+    typeof homeTeamIdForScorers === 'number' &&
+    typeof awayTeamIdForScorers === 'number' &&
+    typeof seasonForScorers === 'number' &&
+    typeof leagueIdForScorers === 'number';
+
+  // --- Parse matchId (fixtureId) ---
+  const fixtureId = parseInt(params.matchId, 10); // Use this parsed ID
+
   try {
     if (!matchDateString) {
       console.error("Match date string is missing or invalid for match ID:", match.id);
     }
+
+    // Ensure team IDs exist before rendering
+    if (!match?.teams?.home?.id || !match?.teams?.away?.id) {
+       console.error("Missing team IDs in match data");
+       // Handle appropriately, maybe return an error or don't render LiveMatchEvents
+       return <div>Error: Missing team data for events.</div>;
+    }
+
+    // The console.log you added previously should now show season_year
+    console.log('DEBUG: TopScorers Props Check:', {
+      homeId: match?.teams?.home?.id,
+      awayId: match?.teams?.away?.id,
+      season: match?.season_year, // <-- Check this value in the console
+      shouldRender: !!(match?.teams?.home?.id && match?.teams?.away?.id && match?.season_year)
+    });
+
+    // --- Add this log ---
+    console.log('DEBUG: [MatchPage] Checking leagueId before passing to MatchCalendar:', match?.league?.id);
+    // --- End log ---
 
     return (
       <div className="max-w-7xl mx-auto px-0 sm:px-0 lg:px-8 py-8">
@@ -301,7 +370,7 @@ export default async function MatchPage({ params }: { params: { matchId: string 
           {/* Right column - Match details (now first on mobile) */}
           <div className="w-full md:w-3/4 order-first md:order-last space-y-6">
             {/* Match header - Now with navigation bar */}
-            <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+            <div className="bg-white rounded-lg overflow-hidden shadow">
               {/* Navigation bar */}
               <div className="relative flex items-center justify-between px-4 py-4 border-b border-gray-200">
                 <Link
@@ -411,10 +480,11 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                     )}
 
                     {/* --- Live Timer --- */}
-                    {isLive && matchDateString && (
+                    {isLive && match.status && match.details_last_updated_at && (
                       <LiveMatchTimer
-                        matchStatusShort={match.status?.short}
-                        matchStartDate={matchDateString}
+                        matchId={fixtureId}
+                        initialStatus={match.status}
+                        initialLastUpdatedAt={match.details_last_updated_at}
                       />
                     )}
                     {/* --- End Live Timer --- */}
@@ -455,29 +525,29 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                   </Link>
                 </div>
 
-                {/* Bottom section: Events (only for finished matches) */}
-                {isFinished && match.event_data && match.event_data.length > 0 && (
-                  <div className="grid grid-cols-[1fr_40px_1fr] items-start gap-4 text-xs md:text-sm text-gray-700 pt-4">
+                {/* --- Goal Events (Live & Finished) --- */}
+                {(isLive || isFinished) && match.event_data && match.event_data.some(event => event?.type === 'Goal') && (
+                  <div className="grid grid-cols-3 gap-4 w-full max-w-md mt-4 text-xs mx-auto">
                     {/* Home Team Events */}
                     <div className="space-y-2.5 text-right">
-                      {match.event_data
-                        .filter(event => 
-                          event.team.id === match.teams.home.id && 
-                          event.type === 'Goal'
+                      {(match.event_data || [])
+                        .filter(event =>
+                          event?.team?.id === match.teams?.home?.id &&
+                          event?.type === 'Goal'
                         )
-                        .sort((a, b) => (a.time.elapsed + (a.time.extra || 0)) - (b.time.elapsed + (b.time.extra || 0)))
+                        .sort((a, b) => ((a?.time?.elapsed || 0) + (a?.time?.extra || 0)) - ((b?.time?.elapsed || 0) + (b?.time?.extra || 0)))
                         .map((event, index) => (
                           <div key={`home-${index}`} className="flex items-center justify-end h-5">
-                            <span className="truncate">{event.player.name}</span>
+                            <span className="truncate">{event.player?.name}</span>
                             <span className="text-gray-700 font-semibold whitespace-nowrap ml-1">
-                              {event.time.elapsed}'
-                              {event.time.extra ? `+${event.time.extra}` : ''}
+                              {event.time?.elapsed}'
+                              {event.time?.extra && `+${event.time.extra}`}
                             </span>
                           </div>
                         ))}
                     </div>
 
-                    {/* Center Icons Column */}
+                    {/* Goal Icon Column */}
                     <div className="flex flex-col items-center">
                       {match.event_data.some(event => event.type === 'Goal') && (
                         <Image
@@ -492,33 +562,76 @@ export default async function MatchPage({ params }: { params: { matchId: string 
 
                     {/* Away Team Events */}
                     <div className="space-y-2.5 text-left">
-                      {match.event_data
-                        .filter(event => 
-                          event.team.id === match.teams.away.id && 
-                          event.type === 'Goal'
+                      {(match.event_data || [])
+                        .filter(event =>
+                          event?.team?.id === match.teams?.away?.id &&
+                          event?.type === 'Goal'
                         )
-                        .sort((a, b) => (a.time.elapsed + (a.time.extra || 0)) - (b.time.elapsed + (b.time.extra || 0)))
+                        .sort((a, b) => ((a?.time?.elapsed || 0) + (a?.time?.extra || 0)) - ((b?.time?.elapsed || 0) + (b?.time?.extra || 0)))
                         .map((event, index) => (
                           <div key={`away-${index}`} className="flex items-center h-5">
                             <span className="text-gray-700 font-semibold whitespace-nowrap mr-1">
-                              {event.time.elapsed}'
-                              {event.time.extra ? `+${event.time.extra}` : ''}
+                              {event.time?.elapsed}'
+                              {event.time?.extra && `+${event.time.extra}`}
                             </span>
-                            <span className="truncate">{event.player.name}</span>
+                            <span className="truncate">{event.player?.name}</span>
                           </div>
                         ))}
                     </div>
                   </div>
                 )}
+                {/* --- End Goal Events --- */}
               </div>
             </div>
             
+            {/* === Match Stats Snippet === */}
+            {/* Render only if match is NOT upcoming AND (stats OR ball possession data exists) */}
+            {!isUpcoming && (match.fixture_statistics != null || match.ball_possession != null) && (
+              <MatchStatsSnippet
+                matchId={fixtureId} // Pass ID
+                fixtureStatistics={match.fixture_statistics}
+                teamColors={teamColors}
+                initialEvents={match.event_data || []} // Pass events
+                matchStatusShort={match.status?.short} // Pass status
+                matchStartDate={match.date} // Pass date
+                lastUpdatedAt={match.details_last_updated_at} // Pass timestamp
+                // Pass ball possession data (handle potential null)
+                ballPossession={match.ball_possession ?? undefined}
+                // onShowAllStats={() => { /* Client-side scroll logic */ }}
+              />
+            )}
+            {/* ========================== */}
 
-            
-            
-            
+            {/* SEPARATE Live Match Events Card */}
+            {/* Conditionally render the entire events card */}
+            {(isLive || isFinished) && ( // Show if live or finished, even with 0 events initially
+              <div className="bg-white rounded-lg shadow p-4 md:p-6">
+                <LiveMatchEvents
+                  matchId={fixtureId}
+                  initialEvents={match.event_data || []} // Default to empty array
+                  homeTeamId={match.teams.home.id}
+                  awayTeamId={match.teams.away.id}
+                  isLive={!!isLive}
+                />
+              </div>
+            )}
+            {/* END SEPARATE Live Match Events Card */}
+
+            {/* === Horizontal Lineup Component === */}
+            {/* Render if lineups exist */}
+            {match.lineups && match.lineups.length > 0 && (
+              <div>
+                <HorizontalLineupComponent
+                  lineups={match.lineups}
+                  playerStats={match.player_statistics || []} // Pass player stats, default to empty array
+                  eventData={match.event_data || []} // Pass event data, default to empty array
+                />
+              </div>
+            )}
+            {/* ==================================== */}
+
             {/* Match details card with tabs */}
-            <div className="bg-white rounded-lg border border-gray-200 p-6">
+            <div className="bg-white rounded-lg shadow p-6">
               <MatchTabs 
                 match={match}
                 activeTab="facts"
@@ -560,7 +673,7 @@ export default async function MatchPage({ params }: { params: { matchId: string 
                     </p>
                     
                     {/* Match events section */}
-                    {match.event_data && match.event_data.length > 0 && (
+                    {match.event_data && Array.isArray(match.event_data) && match.event_data.length > 0 && (
                       <div className="mt-6">
                         <div className="relative">
                           {/* Timeline line */}
@@ -881,21 +994,57 @@ export default async function MatchPage({ params }: { params: { matchId: string 
 
           
           
-          {/* Left column - Calendar only (now second on mobile) */}
+          {/* Left column - Sidebar (now second on mobile) */}
           <div className="w-full md:w-1/4 order-last md:order-first space-y-6">
-            {/* === Add MatchHighlights component here === */}
-            {/* It will only render content if isFinished is true and a video is found */}
+
+            {/* === MatchHighlights component === */}
             <MatchHighlights
               homeTeamName={match.teams.home.name}
               awayTeamName={match.teams.away.name}
-              homeTeamId={match.teams.home.id} // Pass IDs for potential future use
+              homeTeamId={match.teams.home.id}
               awayTeamId={match.teams.away.id}
               leagueId={match.league.id}
-              matchDate={match.date} // Pass the ISO date string
-              isFinished={isFinished} // Pass the flag
+              matchDate={match.date}
+              isFinished={isFinished}
+              // Pass winnerTeamId if available and match is finished
+              winnerTeamId={isFinished ? (match.goals.home > match.goals.away ? match.teams.home.id : (match.goals.away > match.goals.home ? match.teams.away.id : 0)) : 0}
             />
             {/* === End MatchHighlights component === */}
-            <MatchCalendar currentMatchId={params.matchId} />
+
+            {/* === Top Scorers Component === */}
+            {canRenderScorers ? (
+              <div>
+                <TopScorersComparison
+                  homeTeamId={homeTeamIdForScorers}
+                  awayTeamId={awayTeamIdForScorers}
+                  season={seasonForScorers}
+                  leagueName={leagueNameForScorers}
+                  leagueId={leagueIdForScorers}
+                  initialFixtureStatusShort={initialStatusShort}
+                  isFinished={isFinished}
+                  matchId={fixtureId}
+                />
+              </div>
+            ) : (
+              () => {
+                console.log("DEBUG: [MatchPage] Skipping TopScorersComparison render because required data is missing or invalid.", {
+                  homeTeamIdForScorers, awayTeamIdForScorers, seasonForScorers, leagueIdForScorers
+                });
+                return null;
+              }
+            )()}
+            {/* ========================================== */}
+
+            {/* === LeagueChannels - Conditionally Rendered === */}
+            {/* Only show if the match is NOT finished */}
+            {!isFinished && <LeagueChannels leagueId={leagueIdForScorers} />}
+            {/* ============================================ */}
+
+            <MatchCalendar
+              currentMatchId={params.matchId}
+              leagueId={match.league.id}
+              leagueName={match.league.name}
+            />
           </div>
         </div>
         <TeamColorExtractor 

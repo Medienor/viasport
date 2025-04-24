@@ -234,7 +234,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                         </span>
                         {opponent.logo && (
                           <img
-                            src={opponent.logo}
+                            src={opponent.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
                             alt={opponent.name}
                             className="h-8 w-8 object-contain"
                           />
@@ -259,7 +259,11 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                      >
                        <span>{nextMatchFixture.league.name}</span>
                        {nextMatchFixture.league.logo && (
-                         <img src={nextMatchFixture.league.logo} alt="" className="h-4 w-4 object-contain"/>
+                         <img 
+                           src={nextMatchFixture.league.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
+                           alt="" 
+                           className="h-4 w-4 object-contain"
+                         />
                        )}
                      </Link>
                   )}
@@ -269,7 +273,11 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                    {/* Home Team */}
                    <div className="flex flex-col items-center space-y-1 w-[35%]">
                      {nextMatchFixture.teams.home.logo && (
-                       <img src={nextMatchFixture.teams.home.logo} alt="" className="h-8 w-8 object-contain mb-1"/>
+                       <img 
+                         src={nextMatchFixture.teams.home.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
+                         alt="" 
+                         className="h-8 w-8 object-contain mb-1"
+                       />
                      )}
                      <span className="text-xs font-medium text-gray-800 truncate w-full">{nextMatchFixture.teams.home.name}</span>
                    </div>
@@ -287,7 +295,11 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                    {/* Away Team */}
                    <div className="flex flex-col items-center space-y-1 w-[35%]">
                      {nextMatchFixture.teams.away.logo && (
-                       <img src={nextMatchFixture.teams.away.logo} alt="" className="h-8 w-8 object-contain mb-1"/>
+                       <img 
+                         src={nextMatchFixture.teams.away.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
+                         alt="" 
+                         className="h-8 w-8 object-contain mb-1"
+                       />
                      )}
                      <span className="text-xs font-medium text-gray-800 truncate w-full">{nextMatchFixture.teams.away.name}</span>
                    </div>
@@ -331,7 +343,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                           <div className="flex items-center space-x-3 w-2/5">
                             <div className="relative h-8 w-8 flex-shrink-0">
                               <Image
-                                src={fixture.teams.home.logo || '/images/team-placeholder.png'}
+                                src={fixture.teams.home.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') || '/images/team-placeholder.png'}
                                 alt={fixture.teams.home.name}
                                 fill
                                 className="object-contain"
@@ -365,7 +377,7 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                             </span>
                             <div className="relative h-8 w-8 flex-shrink-0">
                               <Image
-                                src={fixture.teams.away.logo || '/images/team-placeholder.png'}
+                                src={fixture.teams.away.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') || '/images/team-placeholder.png'}
                                 alt={fixture.teams.away.name}
                                 fill
                                 className="object-contain"
@@ -446,7 +458,11 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                         <div className="px-4 py-2 bg-gray-50 border-b border-gray-200 flex justify-between items-center">
                           <div className="flex items-center gap-2 text-xs text-gray-600">
                             {fixture.league.logo && (
-                              <img src={fixture.league.logo} alt="" className="h-4 w-4 object-contain"/>
+                              <img 
+                                src={fixture.league.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
+                                alt="" 
+                                className="h-4 w-4 object-contain"
+                              />
                             )}
                             <span className="font-medium truncate">{fixture.league.name}</span>
                           </div>
@@ -457,7 +473,11 @@ export default async function TeamPage({ params }: { params: { slug: string } })
                           <div className={`flex-1 flex items-center justify-end gap-2 sm:gap-3 ${fixture.teams.home.id === currentTeamId ? 'font-bold' : ''}`}>
                             <span className="text-xs sm:text-sm text-right truncate">{fixture.teams.home.name}</span>
                             {fixture.teams.home.logo && (
-                              <img src={fixture.teams.home.logo} alt="" className="h-5 w-5 sm:h-6 sm:w-6 object-contain flex-shrink-0"/>
+                              <img 
+                                src={fixture.teams.home.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
+                                alt="" 
+                                className="h-5 w-5 sm:h-6 sm:w-6 object-contain flex-shrink-0"
+                              />
                             )}
                           </div>
 
@@ -476,7 +496,11 @@ export default async function TeamPage({ params }: { params: { slug: string } })
 
                           <div className={`flex-1 flex items-center justify-start gap-2 sm:gap-3 ${fixture.teams.away.id === currentTeamId ? 'font-bold' : ''}`}>
                             {fixture.teams.away.logo && (
-                              <img src={fixture.teams.away.logo} alt="" className="h-5 w-5 sm:h-6 sm:w-6 object-contain flex-shrink-0"/>
+                              <img 
+                                src={fixture.teams.away.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
+                                alt="" 
+                                className="h-5 w-5 sm:h-6 sm:w-6 object-contain flex-shrink-0"
+                              />
                             )}
                             <span className="text-xs sm:text-sm text-left truncate">{fixture.teams.away.name}</span>
                           </div>

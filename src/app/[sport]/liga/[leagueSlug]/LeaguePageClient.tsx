@@ -193,7 +193,7 @@ export default function LeaguePageClient({
                 {leagueData.league?.logo && (
                   <div className="w-16 h-16 relative mr-4">
                     <Image 
-                      src={leagueData.league.logo}
+                      src={leagueData.league.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
                       alt={leagueData.league?.name || ''}
                       fill
                       className="object-contain"
@@ -376,7 +376,7 @@ export default function LeaguePageClient({
                               {team.team.logo && (
                                 <div className="flex-shrink-0 h-5 w-5 relative mr-2">
                                   <Image
-                                    src={team.team.logo}
+                                    src={team.team.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
                                     alt={team.team.name}
                                     fill
                                     className="object-contain"
@@ -591,7 +591,7 @@ export default function LeaguePageClient({
                                   {fixture.teams.home.logo && (
                                     <div className="flex-shrink-0 h-8 w-8 relative">
                                       <Image
-                                        src={fixture.teams.home.logo}
+                                        src={fixture.teams.home.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
                                         alt={fixture.teams.home.name}
                                         fill
                                         className="object-contain"
@@ -636,7 +636,7 @@ export default function LeaguePageClient({
                                   {fixture.teams.away.logo && (
                                     <div className="flex-shrink-0 h-8 w-8 relative">
                                       <Image
-                                        src={fixture.teams.away.logo}
+                                        src={fixture.teams.away.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
                                         alt={fixture.teams.away.name}
                                         fill
                                         className="object-contain"
@@ -707,7 +707,7 @@ export default function LeaguePageClient({
                               {scorer.player.photo && (
                                 <div className="flex-shrink-0 h-8 w-8 relative rounded-full overflow-hidden">
                                   <Image
-                                    src={scorer.player.photo}
+                                    src={scorer.player.photo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
                                     alt={scorer.player.name}
                                     fill
                                     className="object-cover"
@@ -729,7 +729,7 @@ export default function LeaguePageClient({
                               {scorer.statistics[0].team.logo && (
                                 <div className="flex-shrink-0 h-6 w-6 relative">
                                   <Image
-                                    src={scorer.statistics[0].team.logo}
+                                    src={scorer.statistics[0].team.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
                                     alt={scorer.statistics[0].team.name}
                                     fill
                                     className="object-contain"

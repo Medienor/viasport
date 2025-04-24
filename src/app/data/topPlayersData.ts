@@ -1,5 +1,5 @@
 // Auto-generated file - do not edit manually
-// Last updated: 2025-04-17T08:27:39.388Z
+// Last updated: 2025-04-24T08:46:09.598Z
 
 export const topPlayersData = {
   "1": {
@@ -3341,7 +3341,7 @@ export const topPlayersData = {
             "name": "W. Ben Yedder",
             "firstname": "Wissam",
             "lastname": "Ben Yedder",
-            "age": 34,
+            "age": 35,
             "birth": {
               "date": "1990-08-12",
               "place": "Sarcelles",
@@ -3717,6 +3717,101 @@ export const topPlayersData = {
         },
         {
           "player": {
+            "id": 180496,
+            "name": "G. Mikautadze",
+            "firstname": "Georges",
+            "lastname": "Mikautadze",
+            "age": 25,
+            "birth": {
+              "date": "2000-10-31",
+              "place": "Lyon",
+              "country": "France"
+            },
+            "nationality": "Georgia",
+            "height": "176 cm",
+            "weight": "71 kg",
+            "injured": false,
+            "photo": "https://media.api-sports.io/football/players/180496.png"
+          },
+          "statistics": [
+            {
+              "team": {
+                "id": 112,
+                "name": "Metz",
+                "logo": "https://media.api-sports.io/football/teams/112.png"
+              },
+              "league": {
+                "id": 61,
+                "name": "Ligue 1",
+                "country": "France",
+                "logo": "https://media.api-sports.io/football/leagues/61.png",
+                "flag": "https://media.api-sports.io/flags/fr.svg",
+                "season": 2023
+              },
+              "games": {
+                "appearences": 17,
+                "lineups": 17,
+                "minutes": 1495,
+                "number": null,
+                "position": "Attacker",
+                "rating": "7.213636",
+                "captain": false
+              },
+              "substitutes": {
+                "in": 0,
+                "out": 5,
+                "bench": 0
+              },
+              "shots": {
+                "total": 47,
+                "on": 29
+              },
+              "goals": {
+                "total": 11,
+                "conceded": 0,
+                "assists": 4,
+                "saves": null
+              },
+              "passes": {
+                "total": 442,
+                "key": 22,
+                "accuracy": null
+              },
+              "tackles": {
+                "total": 4,
+                "blocks": null,
+                "interceptions": 8
+              },
+              "duels": {
+                "total": 250,
+                "won": 93
+              },
+              "dribbles": {
+                "attempts": 103,
+                "success": 45,
+                "past": null
+              },
+              "fouls": {
+                "drawn": 28,
+                "committed": 14
+              },
+              "cards": {
+                "yellow": 1,
+                "yellowred": 0,
+                "red": 1
+              },
+              "penalty": {
+                "won": null,
+                "commited": null,
+                "scored": 4,
+                "missed": 0,
+                "saved": null
+              }
+            }
+          ]
+        },
+        {
+          "player": {
             "id": 147831,
             "name": "A. Kalimuendo",
             "firstname": "Arnaud",
@@ -3804,101 +3899,6 @@ export const topPlayersData = {
                 "won": null,
                 "commited": null,
                 "scored": 2,
-                "missed": 0,
-                "saved": null
-              }
-            }
-          ]
-        },
-        {
-          "player": {
-            "id": 1101,
-            "name": "T. Minamino",
-            "firstname": "Takumi",
-            "lastname": "Minamino",
-            "age": 30,
-            "birth": {
-              "date": "1995-01-16",
-              "place": "Osaka",
-              "country": "Japan"
-            },
-            "nationality": "Japan",
-            "height": "172 cm",
-            "weight": "68 kg",
-            "injured": false,
-            "photo": "https://media.api-sports.io/football/players/1101.png"
-          },
-          "statistics": [
-            {
-              "team": {
-                "id": 91,
-                "name": "Monaco",
-                "logo": "https://media.api-sports.io/football/teams/91.png"
-              },
-              "league": {
-                "id": 61,
-                "name": "Ligue 1",
-                "country": "France",
-                "logo": "https://media.api-sports.io/football/leagues/61.png",
-                "flag": "https://media.api-sports.io/flags/fr.svg",
-                "season": 2023
-              },
-              "games": {
-                "appearences": 30,
-                "lineups": 25,
-                "minutes": 2128,
-                "number": null,
-                "position": "Midfielder",
-                "rating": "7.243333",
-                "captain": false
-              },
-              "substitutes": {
-                "in": 5,
-                "out": 16,
-                "bench": 5
-              },
-              "shots": {
-                "total": 42,
-                "on": 28
-              },
-              "goals": {
-                "total": 9,
-                "conceded": 0,
-                "assists": 6,
-                "saves": null
-              },
-              "passes": {
-                "total": 833,
-                "key": 35,
-                "accuracy": null
-              },
-              "tackles": {
-                "total": 34,
-                "blocks": 1,
-                "interceptions": 11
-              },
-              "duels": {
-                "total": 213,
-                "won": 87
-              },
-              "dribbles": {
-                "attempts": 38,
-                "success": 15,
-                "past": null
-              },
-              "fouls": {
-                "drawn": 32,
-                "committed": 30
-              },
-              "cards": {
-                "yellow": 4,
-                "yellowred": 0,
-                "red": 0
-              },
-              "penalty": {
-                "won": null,
-                "commited": null,
-                "scored": 0,
                 "missed": 0,
                 "saved": null
               }

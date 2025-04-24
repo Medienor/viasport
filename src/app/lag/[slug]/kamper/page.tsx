@@ -77,7 +77,7 @@ export default async function TeamFixturesPage({ params }: { params: { slug: str
                       </span>
                       <div className="relative h-6 w-6 ml-2 flex-shrink-0">
                         <Image
-                          src={fixture.teams.home.logo}
+                          src={fixture.teams.home.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
                           alt={fixture.teams.home.name}
                           fill
                           className="object-contain"
@@ -94,7 +94,7 @@ export default async function TeamFixturesPage({ params }: { params: { slug: str
                     <div className="w-[180px] flex items-center">
                       <div className="relative h-6 w-6 mr-2 flex-shrink-0">
                         <Image
-                          src={fixture.teams.away.logo}
+                          src={fixture.teams.away.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
                           alt={fixture.teams.away.name}
                           fill
                           className="object-contain"
@@ -131,7 +131,7 @@ export default async function TeamFixturesPage({ params }: { params: { slug: str
                   <div className="flex items-center gap-3">
                     <div className="relative h-6 w-6 flex-shrink-0">
                       <Image
-                        src={fixture.teams.home.logo}
+                        src={fixture.teams.home.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
                         alt={fixture.teams.home.name}
                         fill
                         className="object-contain"
@@ -144,7 +144,7 @@ export default async function TeamFixturesPage({ params }: { params: { slug: str
                   <div className="flex items-center gap-3">
                     <div className="relative h-6 w-6 flex-shrink-0">
                       <Image
-                        src={fixture.teams.away.logo}
+                        src={fixture.teams.away.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
                         alt={fixture.teams.away.name}
                         fill
                         className="object-contain"

@@ -58,7 +58,7 @@ export default function Home() {
                     >
                       <div className="relative w-5 h-5 mr-3">
                         <Image 
-                          src={`https://media.api-sports.io/football/leagues/${league.id}.png`}
+                          src={`https://viasport.b-cdn.net/football/leagues/${league.id}.png`}
                           alt={league.name} 
                           fill
                           className="object-contain"

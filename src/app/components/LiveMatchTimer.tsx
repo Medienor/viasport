@@ -1,135 +1,274 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { createClient, SupabaseClient, RealtimeChannel } from '@supabase/supabase-js';
+
+// Interface for the status object within the fixture data
+interface MatchStatus {
+  long: string | null;
+  short: string | null;
+  elapsed: number | null;
+  extra: number | null;
+}
 
 interface LiveMatchTimerProps {
-  /** The short status code from Supabase (e.g., "1H", "HT", "2H", "FT") */
-  matchStatusShort: string | null | undefined;
-  /** The scheduled start date/time string of the match */
-  matchStartDate: string; // Use the scheduled start date string
+  /** The Supabase fixture ID */
+  matchId: number;
+  /** Initial status object */
+  initialStatus: MatchStatus | null;
+  /** Initial timestamp string (ISO format preferred) of the last update */
+  initialLastUpdatedAt: string | null; // e.g., "2023-10-27T10:30:00.123Z"
 }
 
 // Helper to format seconds into MM:SS
 const formatTime = (totalSeconds: number): string => {
   const minutes = Math.floor(totalSeconds / 60);
   const seconds = totalSeconds % 60;
-  // Ensure time doesn't go below 00:00
-  if (minutes < 0 || seconds < 0) {
-    return '00:00';
-  }
+  // Ensure time doesn't go below 00:00 or above reasonable limits (e.g., 120+)
+  if (minutes < 0 || seconds < 0) return '00:00';
+  // Cap display if needed, though calculation continues
+  // if (minutes > 120) return '120:00+';
   return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 };
 
-// Estimate halftime duration in milliseconds
-const ESTIMATED_HALFTIME_MS = 15 * 60 * 1000;
-
 export default function LiveMatchTimer({
-  matchStatusShort,
-  matchStartDate,
+  matchId,
+  initialStatus,
+  initialLastUpdatedAt,
 }: LiveMatchTimerProps) {
-  const [displayValue, setDisplayValue] = useState<number | string | null>(null); // Start as null
-
-  useEffect(() => {
-    const isLiveCountingStatus = ['1H', '2H', 'ET'].includes(matchStatusShort || '');
-    const isHalftime = matchStatusShort === 'HT';
-
-    if (!isLiveCountingStatus && !isHalftime) {
-      // If match is not live or HT (e.g., FT, NS), clear display or show final time?
-      // For now, let's clear it if not live. You might want different logic for FT.
-       setDisplayValue(null); // Or potentially show 'FT' or final score time if needed
-      return () => {}; // Return empty cleanup function
-    }
-
-    if (isHalftime) {
-      setDisplayValue('HT');
-      return () => {}; // No interval needed for HT
-    }
-
-    // --- Timer Logic based on matchStartDate ---
-    let startDateMs: number;
+  // State to hold the authoritative data from Supabase
+  const [status, setStatus] = useState<MatchStatus | null>(initialStatus);
+  const [lastUpdatedAt, setLastUpdatedAt] = useState<number | null>(() => {
     try {
-      startDateMs = new Date(matchStartDate).getTime();
-      if (isNaN(startDateMs)) {
-        throw new Error("Invalid date");
-      }
-    } catch (e) {
-      console.error("Error parsing matchStartDate:", e);
-      setDisplayValue("Error"); // Show error if date is invalid
-      return () => {};
+      return initialLastUpdatedAt ? new Date(initialLastUpdatedAt).getTime() : null;
+    } catch {
+      return null;
+    }
+  });
+
+  // State for the calculated display value (seconds or string like 'HT')
+  const [displaySeconds, setDisplaySeconds] = useState<number | string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  // Refs for Supabase client, channel, and interval
+  const supabaseRef = useRef<SupabaseClient | null>(null);
+  const channelRef = useRef<RealtimeChannel | null>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  // --- Initialize Supabase Client (only once) ---
+  useEffect(() => {
+    if (!supabaseRef.current) {
+        // Ensure environment variables are handled correctly in client components
+        const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+        const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+        if (supabaseUrl && supabaseAnonKey) {
+             supabaseRef.current = createClient(supabaseUrl, supabaseAnonKey);
+             console.log("DEBUG: [LiveTimer] Supabase client initialized.");
+        } else {
+            console.error("🔴 ERROR: Supabase URL or Anon Key is missing in environment variables.");
+            setError("Configuration error.");
+        }
+    }
+  }, []);
+
+
+  // --- Effect for Realtime Subscription ---
+  useEffect(() => {
+    if (!matchId || !supabaseRef.current || channelRef.current) {
+        if (channelRef.current) console.log("DEBUG: [LiveTimer] Subscription already active.");
+        else if (!supabaseRef.current) console.log("DEBUG: [LiveTimer] Supabase client not ready for subscription.");
+        else console.log("DEBUG: [LiveTimer] Match ID missing, cannot subscribe.");
+      return; // Don't subscribe if no ID, client not ready, or already subscribed
     }
 
-    const calculateElapsedTime = () => {
-      const nowMs = Date.now();
-      let elapsedMs = nowMs - startDateMs;
+    const supabase = supabaseRef.current;
+    console.log(`DEBUG: [LiveTimer] Setting up subscription for fixture ${matchId}`);
+    const channel = supabase.channel(`fixture-timer-${matchId}`); // Unique channel name
+    channelRef.current = channel;
 
-      // If match hasn't started yet according to clock, show 00:00
-      if (elapsedMs < 0) {
-        setDisplayValue(0); // Representing 0 seconds
-        return;
+    channel
+      .on(
+        'postgres_changes',
+        {
+          event: 'UPDATE',
+          schema: 'public',
+          table: 'fixtures',
+          filter: `id=eq.${matchId}`,
+        },
+        (payload) => {
+          console.log('DEBUG: [LiveTimer] Realtime UPDATE received:', payload);
+          if (payload.new) {
+            const newStatus = payload.new.status as MatchStatus | null;
+            const newLastUpdated = payload.new.details_last_updated_at as string | null;
+
+            // Validate received data
+            if (newStatus && typeof newStatus.elapsed === 'number' && newLastUpdated) {
+                 console.log(`DEBUG: [LiveTimer] Updating state: elapsed=${newStatus.elapsed}, lastUpdated=${newLastUpdated}`);
+                 setStatus(newStatus);
+                 try {
+                    const newTimestamp = new Date(newLastUpdated).getTime();
+                    if (!isNaN(newTimestamp)) {
+                        setLastUpdatedAt(newTimestamp);
+                        setError(null); // Clear previous errors on successful update
+                    } else {
+                         console.warn("DEBUG: [LiveTimer] Received invalid date format for last update:", newLastUpdated);
+                         setError("Invalid update time");
+                    }
+                 } catch (e) {
+                     console.error("DEBUG: [LiveTimer] Error parsing last update date:", e);
+                     setError("Date parse error");
+                 }
+
+            } else {
+                 console.warn("DEBUG: [LiveTimer] Realtime payload missing required fields (status.elapsed or details_last_updated_at). Payload:", payload.new);
+                 // Optionally set an error state here if needed
+                 // setError("Incomplete update data");
+            }
+          }
+        }
+      )
+      .subscribe((status, err) => {
+        if (status === 'SUBSCRIBED') {
+          console.log(`✅ [LiveTimer] Subscribed successfully to fixture ${matchId}`);
+          setError(null); // Clear error on successful subscription
+        } else if (status === 'TIMED_OUT') {
+          console.warn(`🟠 [LiveTimer] Subscription timed out for fixture ${matchId}`);
+          setError("Connection timeout");
+        } else if (status === 'CHANNEL_ERROR') {
+          console.error(`🔴 [LiveTimer] Channel error for fixture ${matchId}:`, err);
+          setError(`Connection error: ${err?.message || 'Unknown'}`);
+        } else {
+            console.log(`ℹ️ [LiveTimer] Channel status [fixture-${matchId}]: ${status}`);
+        }
+      });
+
+    // Cleanup function
+    return () => {
+      if (channelRef.current) {
+        console.log(`DEBUG: [LiveTimer] Unsubscribing from fixture ${matchId}`);
+        supabaseRef.current?.removeChannel(channelRef.current)
+          .then(status => console.log(`DEBUG: [LiveTimer] Unsubscribe status: ${status}`))
+          .catch(error => console.error("🔴 [LiveTimer] Error during unsubscribe:", error));
+        channelRef.current = null;
       }
-
-      // Subtract estimated halftime if in 2nd half or beyond
-      if (['2H', 'ET', 'P'].includes(matchStatusShort || '')) {
-         // Only subtract if elapsed time is greater than 45 mins + halftime
-         // This prevents subtracting halftime during the actual halftime break if status is slow
-         const firstHalfEndEstimate = 45 * 60 * 1000; // 45 mins in ms
-         if (elapsedMs > firstHalfEndEstimate) {
-            // More robust: Check if *actual* time is past estimated start + 45min + 15min break
-             const secondHalfStartEstimate = startDateMs + firstHalfEndEstimate + ESTIMATED_HALFTIME_MS;
-             if (nowMs >= secondHalfStartEstimate) {
-                 elapsedMs -= ESTIMATED_HALFTIME_MS;
-             }
-             // Simpler subtraction (might subtract too early if status lags):
-             // elapsedMs -= ESTIMATED_HALFTIME_MS;
-         }
-      }
-
-      // Convert final elapsed milliseconds to total seconds
-      const currentTotalSeconds = Math.floor(elapsedMs / 1000);
-
-      // Optional: Add caps (e.g., stop at 45:00 or 90:00 visually?)
-      // This logic might conflict with showing continuous time.
-      // if (matchStatusShort === '1H' && currentTotalSeconds > 45 * 60) {
-      //    currentTotalSeconds = 45 * 60;
-      // } else if (matchStatusShort === '2H' && currentTotalSeconds > 90 * 60) {
-      //    currentTotalSeconds = 90 * 60;
-      // }
-
-      setDisplayValue(currentTotalSeconds);
     };
+  }, [matchId]); // Run only when matchId changes (or on initial mount after client is ready)
 
-    // Calculate immediately on mount
-    calculateElapsedTime();
 
-    // Update every second
-    const intervalId = setInterval(calculateElapsedTime, 1000);
+  // --- Effect for Calculating Display Time ---
+  useEffect(() => {
+    // Clear previous interval if dependencies change
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
 
-    return () => clearInterval(intervalId);
+    const currentStatusShort = status?.short;
+    const officialElapsedMins = status?.elapsed;
+    const lastUpdateTimestamp = lastUpdatedAt;
 
-  }, [matchStatusShort, matchStartDate]); // Dependencies
+    // Conditions where the timer should run
+    const isLiveCountingStatus = ['1H', '2H', 'ET'].includes(currentStatusShort || '');
 
-  // Determine what to render
+    if (isLiveCountingStatus && typeof officialElapsedMins === 'number' && lastUpdateTimestamp) {
+      // Timer should be running
+      const calculateAndSetDisplay = () => {
+        const nowMs = Date.now();
+        const msSinceLastUpdate = Math.max(0, nowMs - lastUpdateTimestamp); // Ensure non-negative
+        const secondsSinceLastUpdate = Math.floor(msSinceLastUpdate / 1000);
+
+        const officialElapsedSeconds = officialElapsedMins * 60;
+        const currentTotalSeconds = officialElapsedSeconds + secondsSinceLastUpdate;
+
+        // --- Optional: Visual Caps based on status ---
+        // let cappedDisplaySeconds = currentTotalSeconds;
+        // const extraTime = status?.extra ?? 0;
+        // if (currentStatusShort === '1H' && currentTotalSeconds > (45 + extraTime) * 60) {
+        //     cappedDisplaySeconds = (45 + extraTime) * 60; // Stop visually at 45 + extra
+        // } else if (currentStatusShort === '2H' && currentTotalSeconds > (90 + extraTime) * 60) {
+        //     cappedDisplaySeconds = (90 + extraTime) * 60; // Stop visually at 90 + extra
+        // } // Add ET logic if needed
+
+        // setDisplaySeconds(cappedDisplaySeconds); // Use capped value for display
+         setDisplaySeconds(currentTotalSeconds); // Use raw calculated value
+      };
+
+      calculateAndSetDisplay(); // Run immediately
+      intervalRef.current = setInterval(calculateAndSetDisplay, 1000); // Update every second
+
+    } else if (currentStatusShort === 'HT') {
+      setDisplaySeconds('HT');
+    } else if (['FT', 'AET', 'PEN', 'PST', 'CANC', 'ABD', 'AWD', 'WO'].includes(currentStatusShort || '')) {
+      // Match finished or interrupted - show final official time or status
+       if (typeof officialElapsedMins === 'number') {
+           setDisplaySeconds(officialElapsedMins * 60); // Show final official seconds
+       } else {
+           setDisplaySeconds(currentStatusShort); // Fallback to showing status code
+       }
+    } else if (currentStatusShort === 'NS') {
+        setDisplaySeconds(0); // Not Started, show 00:00
+    } else {
+      // Loading, error, or unknown state
+      // Keep existing displaySeconds or set to null/loading indicator
+       if (!initialStatus && !error) { // Only show loading initially if no data provided
+           setDisplaySeconds('...'); // Loading indicator
+       } else if (error) {
+           setDisplaySeconds('Error');
+       } else if (status && typeof officialElapsedMins !== 'number') {
+           // We have status but no elapsed time? Show status code.
+           setDisplaySeconds(currentStatusShort);
+       }
+       // else: Keep the last valid displaySeconds if status becomes temporarily null
+    }
+
+    // Cleanup interval on unmount or when dependencies change
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
+  }, [status, lastUpdatedAt, error]); // Recalculate when status or last update time changes, or error occurs
+
+
+  // --- Rendering Logic ---
   let renderTime: string | null = null;
-  if (typeof displayValue === 'number') {
-    renderTime = formatTime(displayValue);
-  } else if (displayValue === 'HT') {
-    renderTime = 'HT';
-  } else if (displayValue === 'Error') {
-      renderTime = 'Error'; // Or handle error display differently
+  let extraTimeDisplay: string | null = null;
+
+  if (typeof displaySeconds === 'number') {
+    renderTime = formatTime(displaySeconds);
+    const extraTimeValue = status?.extra ?? 0;
+
+    // Display extra time indicator based on official elapsed time and status
+    const officialElapsedMins = status?.elapsed ?? 0; // Use official elapsed for "+X" logic
+
+    if (extraTimeValue > 0) {
+        if (status?.short === '1H' && officialElapsedMins >= 45) {
+             extraTimeDisplay = `+${extraTimeValue}`;
+        } else if (status?.short === '2H' && officialElapsedMins >= 90) {
+             extraTimeDisplay = `+${extraTimeValue}`;
+        } else if (status?.short === 'ET') {
+             // Basic ET extra time - assumes it applies after 90 or 105? API might not specify which half.
+             // Let's assume it applies if official time is >= 90 for simplicity here.
+             if (officialElapsedMins >= 90) { // Adjust if API provides more detail for ET halves
+                 extraTimeDisplay = `+${extraTimeValue}`;
+             }
+        }
+    }
+  } else if (typeof displaySeconds === 'string') {
+    renderTime = displaySeconds; // Handles 'HT', 'FT', 'Error', '...' etc.
   }
 
-
-  // Only render if there's something to show (live or HT)
-  // Note: displayValue could be 0 (seconds) which is falsy, so check explicitly
-   const showTimer = renderTime !== null;
-  if (!showTimer) {
-      return null;
+  // Don't render anything if time is null (e.g., initial state before first calculation)
+  if (renderTime === null) {
+    return null;
   }
-
 
   return (
     <span style={{ color: '#00985f' }} className="text-base font-medium whitespace-nowrap">
       {renderTime}
+      {extraTimeDisplay && <span className="ml-1 opacity-80">{extraTimeDisplay}</span>}
     </span>
   );
 }

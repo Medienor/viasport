@@ -61,7 +61,9 @@ export async function generateMetadata(
       openGraph: {
         title: `${league.league.name} ${seasonDisplay} på TV & Live stream i dag - Tid, kanal, tabell`,
         description: `Se alle kamper fra ${league.league.name} ${seasonDisplay} på TV og live stream. Finn kampprogram, tabell, toppscorere og statistikk.`,
-        images: [{ url: league.league.logo }]
+        images: [{ 
+          url: league.league.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')
+        }]
       },
       alternates: {
         canonical: `https://viasport.no/fotball/liga/${params.leagueSlug}`

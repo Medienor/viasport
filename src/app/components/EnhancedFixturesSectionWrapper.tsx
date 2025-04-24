@@ -131,18 +131,18 @@ async function fetchFixturesFromSupabase(date: Date) {
           id: fixture.league_id,
           name: fixture.league.name,
           country: fixture.league.country,
-          logo: `https://media.api-sports.io/football/leagues/${fixture.league_id}.png`
+          logo: `https://viasport.b-cdn.net/football/leagues/${fixture.league_id}.png`
         },
         teams: {
           home: {
             id: fixture.home_team_id,
             name: fixture.teams.home.name,
-            logo: `https://media.api-sports.io/football/teams/${fixture.home_team_id}.png`
+            logo: `https://viasport.b-cdn.net/football/teams/${fixture.home_team_id}.png`
           },
           away: {
             id: fixture.away_team_id,
             name: fixture.teams.away.name,
-            logo: `https://media.api-sports.io/football/teams/${fixture.away_team_id}.png`
+            logo: `https://viasport.b-cdn.net/football/teams/${fixture.away_team_id}.png`
           }
         },
         goals: fixture.goals || { home: null, away: null }, // Add goals data

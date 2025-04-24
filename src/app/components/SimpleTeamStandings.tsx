@@ -137,7 +137,7 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
         <div className="flex items-center">
           <div className="relative h-6 w-6">
             <Image
-              src={`https://media.api-sports.io/football/leagues/${leagueId}.png`}
+              src={`https://viasport.b-cdn.net/football/leagues/${leagueId}.png`}
               alt={leagueName}
               fill
               className="object-contain"
@@ -185,7 +185,7 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
                     {/* League Icon */}
                     <div className="relative h-6 w-6 flex-shrink-0">
                       <Image
-                        src={`https://media.api-sports.io/football/leagues/${league.id}.png`}
+                        src={`https://viasport.b-cdn.net/football/leagues/${league.id}.png`}
                         alt={league.name}
                         fill
                         className="object-contain"
@@ -242,7 +242,7 @@ export default function SimpleTeamStandings({ leagueId: initialLeagueId, season:
                 <span className="w-5 text-xs text-gray-600">{standing.rank}</span>
                 <div className="relative h-4 w-4">
                   <Image
-                    src={standing.team.logo}
+                    src={standing.team.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
                     alt={standing.team.name}
                     fill
                     className="object-contain"

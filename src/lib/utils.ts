@@ -135,19 +135,13 @@ export function getSlugFromTeamId(teamId: number, teamName: string): string {
  * @param id - Player ID
  * @returns URL-friendly slug
  */
-export function createPlayerSlug(name: string, id: number) {
-  if (!name) return `player-${id}`;
-  
-  // Convert to lowercase, replace spaces with hyphens, remove special characters
-  const nameSlug = name
+export function createPlayerSlug(name: string): string {
+  return name
     .toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace(/[^\w\-]+/g, '')
-    .replace(/\-\-+/g, '-')
-    .replace(/^-+/, '')
-    .replace(/-+$/, '');
-  
-  return `${nameSlug}-${id}`;
+    .replace(/[^a-z0-9\s-]/g, '') // Remove special characters except spaces and hyphens
+    .trim()
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .replace(/-+/g, '-'); // Replace multiple hyphens with single hyphen
 }
 
 export const createLeagueSlug = (name: string): string => {
@@ -156,3 +150,10 @@ export const createLeagueSlug = (name: string): string => {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
 }; 
+
+// Add this new function
+export const createMatchSlug = (homeTeam: string, awayTeam: string, id: number): string => {
+  const homeSlug = homeTeam.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  const awaySlug = awayTeam.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  return `${homeSlug}-vs-${awaySlug}-${id}`;
+};

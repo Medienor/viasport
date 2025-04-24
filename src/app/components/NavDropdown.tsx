@@ -33,7 +33,7 @@ const NavDropdown = ({ label, items }: NavDropdownProps) => {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center text-sm font-medium text-white hover:text-gray-200 focus:outline-none whitespace-nowrap"
+        className="flex items-center text-sm font-medium text-gray-700 hover:text-black focus:outline-none whitespace-nowrap"
       >
         {label}
         <svg 
@@ -52,12 +52,7 @@ const NavDropdown = ({ label, items }: NavDropdownProps) => {
       
       {isOpen && (
         <div 
-          className="fixed mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5" 
-          style={{ 
-            left: dropdownRef.current ? dropdownRef.current.getBoundingClientRect().left : 0,
-            top: dropdownRef.current ? dropdownRef.current.getBoundingClientRect().bottom + window.scrollY : 0,
-            zIndex: 9999 
-          }}
+          className="absolute mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50"
         >
           <div className="py-1">
             {items.map((item, index) => (

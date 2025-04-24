@@ -80,7 +80,7 @@ const TeamForm: React.FC<TeamFormProps> = ({ homeForm, awayForm, homeTeamId, awa
   );
 
   return (
-    <div className="mt-6 p-4 md:p-6 bg-white rounded-lg border border-gray-200">
+    <div className="mt-6 p-4 md:p-6 bg-white rounded-lg shadow">
       <h3 className="text-lg font-semibold mb-4 text-center">Lag form</h3>
       <div className="flex flex-col sm:flex-row gap-6 md:gap-10">
         {/* Home Team Form */}

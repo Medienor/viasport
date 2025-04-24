@@ -7,6 +7,8 @@ import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import Providers from './providers'
 import ScrollToTop from './components/ScrollToTop';
+import LoadingBar from './components/LoadingBar';
+import { Suspense } from 'react';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -75,6 +77,9 @@ export default function RootLayout({
             strategy="lazyOnload"
           />
 
+          <Suspense fallback={null}>
+            <LoadingBar />
+          </Suspense>
           <Providers>
             <ScrollToTop />
             <Navbar />

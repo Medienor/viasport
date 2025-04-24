@@ -455,7 +455,10 @@ export default function TeamStandings({
                      <div className="flex items-center">
                        <div className="relative h-8 w-8 mr-3">
                          <Image
-                           src={currentLeague.league.logo || '/images/league-placeholder.png'}
+                           src={currentLeague.league.logo ? 
+                             currentLeague.league.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') : 
+                             '/images/league-placeholder.png'
+                           }
                            alt={currentLeague.league.name || 'Ukjent Liga'}
                            fill
                            className="object-contain"
@@ -547,7 +550,10 @@ export default function TeamStandings({
                               <Link href={`/lag/${createTeamSlug(standing.team.name || `team-${standing.team.id}`, standing.team.id)}`} className="flex items-center hover:text-blue-600 group">
                                 <div className="flex-shrink-0 h-5 w-5 relative mr-2">
                                   <Image
-                                    src={standing.team.logo || '/images/team-placeholder.png'}
+                                    src={standing.team.logo ? 
+                                      standing.team.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') : 
+                                      '/images/team-placeholder.png'
+                                    }
                                     alt={standing.team.name || 'Ukjent Lag'}
                                     fill
                                     className="object-contain"

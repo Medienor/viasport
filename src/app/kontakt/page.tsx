@@ -3,9 +3,15 @@ import Image from 'next/image';
 import { EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import ContactForm from './ContactForm';
 import ClientHead from './ClientHead';
+import { Suspense } from 'react';
 
 // Set revalidation time
 export const revalidate = 86400; // Revalidate once per day (24 hours)
+
+// En enkel fallback-komponent
+function LoadingContactForm() {
+  return <div>Laster kontaktskjema...</div>;
+}
 
 export default function ContactPage() {
   return (
@@ -113,7 +119,9 @@ export default function ContactPage() {
             {/* Contact form - now a client component */}
             <div className="lg:col-span-2 bg-white shadow-lg rounded-lg overflow-hidden p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Send oss en melding</h2>
-              <ContactForm />
+              <Suspense fallback={<LoadingContactForm />}>
+                <ContactForm />
+              </Suspense>
             </div>
           </div>
         </div>
