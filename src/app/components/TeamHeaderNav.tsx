@@ -12,10 +12,11 @@ interface Tab {
 interface TeamHeaderNavProps {
   teamLogo: string | null;
   teamName: string;
+  teamCountry?: string;
   tabs: Tab[];
 }
 
-export default function TeamHeaderNav({ teamLogo, teamName, tabs }: TeamHeaderNavProps) {
+export default function TeamHeaderNav({ teamLogo, teamName, teamCountry, tabs }: TeamHeaderNavProps) {
   const [isStickyNavVisible, setIsStickyNavVisible] = useState(false);
   const originalNavRef = useRef<HTMLDivElement>(null);
 
@@ -67,19 +68,37 @@ export default function TeamHeaderNav({ teamLogo, teamName, tabs }: TeamHeaderNa
   return (
     <>
       {/* Original Header and TabNav Section */}
-      <div className="mb-8">
-        <div className="flex items-center gap-4 mb-6">
-          <div className="relative h-16 w-16">
-            <Image
-              src={teamLogo || '/images/team-placeholder.png'}
-              alt={teamName}
-              fill
-              className="object-contain"
-            />
+      {/* Apply card styling: white bg, rounded corners, border, adjusted padding, and bottom margin */}
+      {/* Removed bottom padding (pb-4/pb-6) so TabNav sits at the bottom edge */}
+      <div className="bg-white rounded-lg border border-gray-200 pt-4 sm:pt-6 px-4 sm:px-6 mb-6">
+        {/* Header Section: Logo, Name, Country */}
+        {/* Use flex, justify-between for potential right-side content later */}
+        {/* Keep bottom margin here for spacing between header and tabs */}
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="flex items-center gap-3"> {/* Gap between logo and text */}
+            <div className="relative h-10 w-10 flex-shrink-0"> {/* Adjusted logo size */}
+              <Image
+                src={teamLogo || '/images/team-placeholder.png'}
+                alt={teamName}
+                fill
+                className="object-contain"
+                priority // Prioritize loading the main team logo
+              />
+            </div>
+            <div className="flex flex-col">
+              <h1 className="text-xl font-bold leading-tight">{teamName}</h1> {/* Adjusted text size */}
+              {teamCountry && (
+                <span className="text-sm text-gray-500">{teamCountry}</span>
+              )}
+            </div>
           </div>
-          <h1 className="text-2xl font-bold">{teamName}</h1>
+          {/* Placeholder for potential right-side buttons like 'Follow' */}
+          {/* <div className="flex items-center gap-2"></div> */}
         </div>
-        {/* This div is observed */}
+
+        {/* Tab Navigation - Observed for sticky behavior */}
+        {/* Removed top margin (mt-6) as spacing is handled by header's bottom margin (mb-6) */}
+        {/* TabNav will now extend to the bottom padding edge of the parent */}
         <div ref={originalNavRef}>
           <TabNav tabs={tabs} />
         </div>

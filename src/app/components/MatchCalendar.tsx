@@ -324,27 +324,27 @@ export default function MatchCalendar({
                             console.log(`✅ [MatchCalendar] Subscribed successfully to league ${leagueId}`);
                             break;
                         case 'CHANNEL_ERROR':
-                            console.error(`🔴 [MatchCalendar] Channel error for league ${leagueId}:`, err);
+                            // Enhanced logging for CHANNEL_ERROR
+                            console.error(`🔴 [MatchCalendar] Channel error for league ${leagueId}. Status: ${status}`, err); // Log the full error object
                             setError(`Realtime channel error: ${err?.message || 'Unknown error'}`);
                             break;
                         case 'TIMED_OUT':
-                            console.warn(`🟠 [MatchCalendar] Subscription timed out for league ${leagueId}. Retrying...`);
+                            console.warn(`🟠 [MatchCalendar] Subscription timed out for league ${leagueId}. Status: ${status}`, err); // Log error on timeout too
                             // Supabase client attempts auto-reconnect
                             break;
                         case 'CLOSED':
-                            console.log(`ℹ️ [MatchCalendar] Channel closed for league ${leagueId}.`);
+                            console.log(`ℹ️ [MatchCalendar] Channel closed for league ${leagueId}. Status: ${status}`);
                             // This might happen during cleanup or if connection is lost.
                             break;
                         default:
                              console.log(`ℹ️ [MatchCalendar] Channel status [league-${leagueId}]: ${status}`);
                     }
-                     // Log the specific error object if present
+                     // Log the specific error object if present outside the switch too, just in case
                      if (err) {
                          console.error(`🔴 [MatchCalendar] Subscription error details [league-${leagueId}]:`, err);
                          // Set error state only for critical errors like initial connection failure
-                         if (status === 'CHANNEL_ERROR') {
-                            setError(`Realtime connection error: ${err.message}`);
-                         }
+                         // Note: We already set error for CHANNEL_ERROR inside the switch.
+                         // Avoid setting error for TIMED_OUT as Supabase handles retries.
                      }
                 });
         }
