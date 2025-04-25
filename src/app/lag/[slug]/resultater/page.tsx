@@ -1,203 +1,145 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getTeamData, extractTeamId } from '@/utils/api';
+import { extractTeamId } from '@/utils/helpers';
 import TabNav from '@/app/components/TabNav';
-import { format } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 import { nb } from 'date-fns/locale';
 import TeamHeaderNav from '@/app/components/TeamHeaderNav';
+import { supabase } from '@/lib/supabase';
 
-export const dynamic = 'force-static';
-export const revalidate = 86400; // 24 hours
+export const dynamic = 'force-dynamic';
+
+interface SupabaseFixture {
+  id: number;
+  date: string;
+  status: {
+    short?: string;
+    long?: string;
+    elapsed?: number | null;
+    [key: string]: any;
+  };
+  league_id: number;
+  home_team_id: number;
+  home_team: { team_id: number; name: string | null; logo: string | null } | null;
+  away_team_id: number;
+  away_team: { team_id: number; name: string | null; logo: string | null } | null;
+  score?: {
+    halftime?: { home: number | null; away: number | null };
+    fulltime?: { home: number | null; away: number | null };
+    extratime?: { home: number | null; away: number | null };
+    penalty?: { home: number | null; away: number | null };
+  } | null;
+  round: string | null;
+  venue: { id: number | null; name: string | null; city: string | null } | null;
+  league: { id: number | null; name: string | null; logo: string | null; country: string | null; flag: string | null } | null;
+}
+
+const finishedStatuses = ['FT', 'AET', 'PEN'];
+
+interface TeamDetails {
+  team_id: number;
+  name: string | null;
+  logo: string | null;
+}
 
 export default async function TeamResultsPage({ params }: { params: { slug: string } }) {
   const teamId = extractTeamId(params.slug);
   
   if (!teamId) {
+    console.error('[TeamResultsPage] No team ID found in slug:', params.slug);
     return notFound();
   }
 
-  const teamData = await getTeamData(teamId);
-  if (!teamData?.team) {
-    return notFound();
+  console.log(`[TeamResultsPage] Fetching data for team ID: ${teamId}`);
+
+  const { data: currentTeamData, error: currentTeamError } = await supabase
+    .from('fotball_teams')
+    .select('team_id, name, logo')
+    .eq('team_id', teamId)
+    .maybeSingle();
+
+  if (currentTeamError) {
+    console.error(`[TeamResultsPage] 🚨 Error fetching current team details for ID ${teamId}:`, currentTeamError);
+  }
+  if (!currentTeamData) {
+    console.warn(`[TeamResultsPage] ⚠️ Current team details not found for ID ${teamId}.`);
   }
 
-  // Add debug logs to see the data structure
-  console.log('Debug - Full Team Data:', JSON.stringify(teamData, null, 2));
-  console.log('Debug - Leagues:', JSON.stringify(teamData.leagues, null, 2));
+  console.log(`[TeamResultsPage] Querying Supabase for past fixtures for team ${teamId}`);
+  const { data: rawFixtureData, error: fixtureError } = await supabase
+    .from('fixtures')
+    .select('id, date, status, league_id, home_team_id, away_team_id, score, round, venue, league')
+    .or(`home_team_id.eq.${teamId},away_team_id.eq.${teamId}`)
+    .in('status->>short', finishedStatuses)
+    .order('date', { ascending: false })
+    .limit(50);
 
-  const fixtures = teamData.fixtures.past;
-  const teamName = teamData.team.team.name;
-  const leagues = teamData.leagues || [];
+  if (fixtureError) {
+    console.error('[TeamResultsPage] 🚨 Error fetching past fixture data from Supabase:', fixtureError);
+  }
 
-  // Get the last 10 matches for analysis
-  const recentMatches = fixtures.slice(0, 10).reverse();
-  
-  // Calculate recent form
-  const getMatchResult = (match: any) => {
-    const isHome = match.teams.home.id === teamId;
-    if (isHome) {
-      if (match.goals.home > match.goals.away) return 'seier';
-      if (match.goals.home < match.goals.away) return 'tap';
-      return 'uavgjort';
-    } else {
-      if (match.goals.away > match.goals.home) return 'seier';
-      if (match.goals.away < match.goals.home) return 'tap';
-      return 'uavgjort';
-    }
-  };
+  const fixturesData = rawFixtureData || [];
+  let teamDetailsMap = new Map<number, TeamDetails>();
 
-  const recentResults = recentMatches.map(match => ({
-    result: getMatchResult(match),
-    score: `${match.goals.home}-${match.goals.away}`,
-    opponent: match.teams.home.id === teamId ? match.teams.away.name : match.teams.home.name,
-    isHome: match.teams.home.id === teamId,
-    competition: match.league.name,
-    date: new Date(match.fixture.date)
-  }));
-
-  // Find the main league (Premier League in this case)
-  const mainLeague = teamData.leagues?.find(league => 
-    league.league.type === 'League'
-  );
-
-  console.log('Debug - Main League:', JSON.stringify(mainLeague, null, 2));
-
-  const generateStandingsText = () => {
-    if (!mainLeague) {
-      console.log('Debug - No main league found');
-      return null;
-    }
-    
-    if (!mainLeague.standings) {
-      console.log('Debug - No standings in main league');
-      return null;
-    }
-
-    const standings = Array.isArray(mainLeague.standings) 
-      ? mainLeague.standings[0] 
-      : mainLeague.standings;
-
-    console.log('Debug - Standings:', JSON.stringify(standings, null, 2));
-
-    if (!standings || !Array.isArray(standings)) {
-      console.log('Debug - Invalid standings format');
-      return null;
-    }
-
-    const currentStanding = standings.find((s: any) => s.team.id === teamId);
-    console.log('Debug - Current Standing:', JSON.stringify(currentStanding, null, 2));
-    
-    if (!currentStanding) {
-      console.log('Debug - Team not found in standings');
-      return null;
-    }
-
-    const position = currentStanding.rank;
-    const totalTeams = standings.length;
-    const currentDate = new Date().toLocaleDateString('no-NO', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
+  if (fixturesData.length > 0) {
+    const opponentTeamIds = new Set<number>();
+    fixturesData.forEach(f => {
+      if (f.home_team_id && f.home_team_id !== teamId) opponentTeamIds.add(f.home_team_id);
+      if (f.away_team_id && f.away_team_id !== teamId) opponentTeamIds.add(f.away_team_id);
     });
+    opponentTeamIds.add(teamId);
 
-    // Find teams directly above and below
-    const currentIndex = standings.findIndex((s: any) => s.team.id === teamId);
-    const teamAbove = currentIndex > 0 ? standings[currentIndex - 1] : null;
-    const teamBelow = currentIndex < standings.length - 1 ? standings[currentIndex + 1] : null;
+    if (opponentTeamIds.size > 0) {
+      console.log(`[TeamResultsPage] Fetching details for ${opponentTeamIds.size} teams from fotball_teams`);
+      const { data: teamsData, error: teamsError } = await supabase
+        .from('fotball_teams')
+        .select('team_id, name, logo')
+        .in('team_id', Array.from(opponentTeamIds));
 
-    let text = `${teamData.team.team.name} ligger på ${position}. plass i ${mainLeague.league.name} per ${currentDate}. `;
-
-    if (teamAbove) {
-      const pointsDiff = teamAbove.points - currentStanding.points;
-      text += `${teamAbove.team.name} ligger over med ${pointsDiff} ${pointsDiff === 1 ? 'poeng' : 'poeng'} `;
-    }
-
-    if (teamBelow) {
-      const pointsDiff = currentStanding.points - teamBelow.points;
-      text += `og ${teamBelow.team.name} ligger under med ${pointsDiff} ${pointsDiff === 1 ? 'poeng' : 'poeng'} `;
-    }
-
-    text += `(${currentStanding.points} poeng totalt).`;
-    return text;
-  };
-
-  // Generate analysis text
-  const generateAnalysisText = () => {
-    const wins = recentResults.filter(r => r.result === 'seier').length;
-    const losses = recentResults.filter(r => r.result === 'tap').length;
-    const draws = recentResults.filter(r => r.result === 'uavgjort').length;
-    
-    let text = '';
-
-    // League position analysis
-    if (mainLeague && mainLeague.standings?.[0]) {
-      const standings = mainLeague.standings[0];
-      const currentStanding = standings.find((s: any) => s.team.id === teamId);
-      if (currentStanding) {
-        const position = currentStanding.rank;
-        const totalTeams = standings.length;
-        const pointsFromTop = standings[0].points - currentStanding.points;
-        
-        if (position === 1) {
-          text += `${teamName} leder nå ${mainLeague.league.name} med ${currentStanding.points} poeng. `;
-        } else if (position <= 3) {
-          text += `${teamName} ligger på en sterk ${position}. plass i ${mainLeague.league.name}, ${pointsFromTop} poeng bak serieleder. `;
-        } else if (position <= totalTeams / 2) {
-          text += `${teamName} befinner seg på ${position}. plass i ${mainLeague.league.name}, ${pointsFromTop} poeng bak serieleder. `;
-        } else {
-          text += `${teamName} ligger på ${position}. plass i ${mainLeague.league.name} med ${currentStanding.points} poeng. `;
-        }
+      if (teamsError) {
+        console.error('[TeamResultsPage] 🚨 Error fetching opponent team details:', teamsError);
+      } else if (teamsData) {
+        teamsData.forEach((team: TeamDetails) => {
+          teamDetailsMap.set(team.team_id, team);
+        });
+        console.log(`[TeamResultsPage] ✅ Successfully fetched and mapped details for ${teamDetailsMap.size} teams.`);
       }
     }
+  } else {
+     console.log(`[TeamResultsPage] 🤔 No past fixtures found for team ${teamId}.`);
+  }
 
-    // Recent form analysis
-    text += `I de siste ti kampene har laget `;
+  const fixtures: SupabaseFixture[] = fixturesData.map((f): SupabaseFixture => {
+    const homeTeamDetails = teamDetailsMap.get(f.home_team_id) || null;
+    const awayTeamDetails = teamDetailsMap.get(f.away_team_id) || null;
+    const venueInfo = f.venue ? { id: f.venue.id || null, name: f.venue.name || null, city: f.venue.city || null } : null;
+    const leagueInfo = f.league ? { id: f.league.id || null, name: f.league.name || null, logo: f.league.logo || null, country: f.league.country || null, flag: f.league.flag || null } : null;
+    const scoreInfo = f.score ? {
+        halftime: f.score.halftime || null,
+        fulltime: f.score.fulltime || null,
+        extratime: f.score.extratime || null,
+        penalty: f.score.penalty || null,
+    } : null;
+    const statusInfo = f.status && typeof f.status === 'object' ? f.status : {};
 
-    // Overall form description
-    if (wins >= 7) {
-      text += `vist eksepsjonell form med ${wins} seire`;
-    } else if (wins >= 5) {
-      text += `vist solid form med ${wins} seire`;
-    } else if (losses >= 7) {
-      text += `hatt en meget vanskelig periode med ${losses} tap`;
-    } else if (losses >= 5) {
-      text += `slitt med ${losses} tap`;
-    } else {
-      text += `vist varierende form`;
-    }
+    return {
+      id: f.id,
+      date: f.date,
+      status: statusInfo,
+      league_id: f.league_id,
+      home_team_id: f.home_team_id,
+      home_team: homeTeamDetails ? { team_id: homeTeamDetails.team_id, name: homeTeamDetails.name, logo: homeTeamDetails.logo } : null,
+      away_team_id: f.away_team_id,
+      away_team: awayTeamDetails ? { team_id: awayTeamDetails.team_id, name: awayTeamDetails.name, logo: awayTeamDetails.logo } : null,
+      score: scoreInfo,
+      round: f.round || null,
+      venue: venueInfo,
+      league: leagueInfo,
+    };
+  });
 
-    text += `. Totalt har det blitt ${wins} ${wins === 1 ? 'seier' : 'seire'}`;
-    if (draws > 0) text += `, ${draws} uavgjort`;
-    if (losses > 0) text += ` og ${losses} tap`;
-    text += ' i denne perioden. ';
-
-    // Detailed match analysis
-    text += 'De siste kampene har gitt følgende resultater: ';
-    
-    recentResults.slice(-5).forEach((match, index) => {
-      if (index > 0) text += ', ';
-      text += `${match.result} ${match.score} ${match.isHome ? 'hjemme mot' : 'borte mot'} ${match.opponent} i ${match.competition}`;
-    });
-
-    // Goal analysis
-    const totalGoalsFor = recentMatches.reduce((sum, match) => {
-      const goals = match.teams.home.id === teamId ? match.goals.home : match.goals.away;
-      return sum + goals;
-    }, 0);
-
-    const totalGoalsAgainst = recentMatches.reduce((sum, match) => {
-      const goals = match.teams.home.id === teamId ? match.goals.away : match.goals.home;
-      return sum + goals;
-    }, 0);
-
-    text += `. I disse ti kampene har ${teamName} scoret ${totalGoalsFor} mål og sluppet inn ${totalGoalsAgainst} mål.`;
-
-    return text;
-  };
-
-  // Add debug log for the entire team data
-  console.log('Debug - Team Data:', teamData);
+  console.log(`[TeamResultsPage] Mapped ${fixtures.length} past fixtures.`);
 
   const tabs = [
     { name: 'Oversikt', href: `/lag/${params.slug}` },
@@ -207,140 +149,166 @@ export default async function TeamResultsPage({ params }: { params: { slug: stri
     { name: 'Tabell', href: `/lag/${params.slug}/tabell` },
   ];
 
+  const teamLogo = currentTeamData?.logo ?? '/images/team-placeholder.png';
+  const teamName = currentTeamData?.name ?? `Team ${teamId}`;
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {/* Use TeamHeaderNav component */}
       <TeamHeaderNav
-        teamLogo={teamData.team.team.logo}
-        teamName={`${teamData.team.team.name} - Resultater og kamphistorikk`}
+        teamLogo={teamLogo}
+        teamName={`${teamName} - Resultater`}
         tabs={tabs}
       />
 
-      {/* Results List */}
-      <div className="space-y-2">
-        {fixtures.map((fixture: any) => {
-          const matchDate = new Date(fixture.fixture.date);
-          // Ensure score is displayed horizontally
-          const score = `${fixture.goals.home} - ${fixture.goals.away}`;
-          
-          return (
-            <Link
-              key={fixture.fixture.id}
-              href={`/fotball/kamp/${fixture.fixture.id}`}
-              className="block bg-white rounded-lg shadow hover:shadow-md transition-shadow"
-            >
-              {/* Desktop View */}
-              <div className="hidden sm:grid grid-cols-[1fr_auto_1fr] gap-4 p-4">
-                {/* Left - Date and League */}
-                <div className="flex flex-col">
-                  <span className="text-sm font-medium text-gray-900">
-                    {format(matchDate, 'd. MMMM yyyy', { locale: nb })}
-                  </span>
-                  <span className="text-xs text-gray-500">
-                    {fixture.league.name}
-                  </span>
-                </div>
+      <div className="mt-8 space-y-3">
+        {fixtures.length === 0 ? (
+           <div className="text-center py-12">
+            <p className="text-gray-500">Ingen resultater funnet</p>
+          </div>
+        ) : (
+          fixtures.map((fixture: SupabaseFixture) => {
+            const matchDate = parseISO(fixture.date);
 
-                {/* Center - Match Result */}
-                <div className="flex items-center justify-center gap-8 w-[500px]">
-                  {/* Home Team */}
-                  <div className="w-[180px] flex items-center justify-end">
-                    <span className={`font-medium text-sm truncate ${fixture.teams.home.winner ? 'text-green-600' : ''}`}>
-                      {fixture.teams.home.name}
+            const homeScore = fixture.score?.fulltime?.home ?? fixture.score?.halftime?.home ?? '?';
+            const awayScore = fixture.score?.fulltime?.away ?? fixture.score?.halftime?.away ?? '?';
+            const score = `${homeScore} - ${awayScore}`;
+
+            let homeWinner = false;
+            let awayWinner = false;
+            if (typeof homeScore === 'number' && typeof awayScore === 'number') {
+                if (fixture.status?.short === 'PEN' && fixture.score?.penalty) {
+                    homeWinner = (fixture.score.penalty.home ?? 0) > (fixture.score.penalty.away ?? 0);
+                    awayWinner = (fixture.score.penalty.away ?? 0) > (fixture.score.penalty.home ?? 0);
+                } else {
+                    const finalHome = fixture.score?.extratime?.home ?? fixture.score?.fulltime?.home;
+                    const finalAway = fixture.score?.extratime?.away ?? fixture.score?.fulltime?.away;
+                     if (typeof finalHome === 'number' && typeof finalAway === 'number') {
+                        homeWinner = finalHome > finalAway;
+                        awayWinner = finalAway > finalHome;
+                     }
+                }
+            }
+
+            const homeTeamName = fixture.home_team?.name ?? `Team ${fixture.home_team_id}`;
+            const homeTeamLogo = fixture.home_team?.logo?.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') ?? '/images/team-placeholder.png';
+            const awayTeamName = fixture.away_team?.name ?? `Team ${fixture.away_team_id}`;
+            const awayTeamLogo = fixture.away_team?.logo?.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') ?? '/images/team-placeholder.png';
+
+            return (
+              <Link
+                key={fixture.id}
+                href={`/fotball/kamp/${fixture.id}`}
+                className="block bg-white rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors"
+              >
+                <div className="hidden sm:flex items-center justify-between p-4 gap-4">
+                  <div className="flex-shrink-0 w-40 text-xs">
+                    <span className="block font-medium text-gray-900">
+                      {format(matchDate, 'EEEE d. MMM yyyy', { locale: nb })}
                     </span>
-                    <div className="relative h-6 w-6 ml-2 flex-shrink-0">
-                      <Image
-                        src={fixture.teams.home.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
-                        alt={fixture.teams.home.name}
-                        fill
-                        className="object-contain"
-                      />
+                    <span className="block text-gray-500 truncate" title={fixture.league?.name ?? ''}>
+                      {fixture.league?.name ?? 'Ukjent liga'}
+                    </span>
+                     <span className="block text-gray-400 truncate" title={fixture.venue?.name ?? ''}>
+                      {fixture.venue?.name ?? 'Ukjent stadion'}
+                    </span>
+                  </div>
+
+                  <div className="flex-grow flex items-center justify-center gap-3 min-w-0">
+                    <div className="flex items-center justify-end gap-2 text-right flex-1 min-w-0">
+                      <span className={`font-medium text-sm truncate ${homeWinner ? 'font-bold' : ''}`} title={homeTeamName}>
+                        {homeTeamName}
+                      </span>
+                      <div className="relative h-6 w-6 flex-shrink-0">
+                        <Image
+                          src={homeTeamLogo}
+                          alt={homeTeamName}
+                          fill
+                          className="object-contain"
+                          sizes="24px"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="w-auto px-3 py-1 bg-gray-100 rounded text-sm font-semibold flex-shrink-0">
+                      {score}
+                      {fixture.status?.short === 'AET' && <span className="text-xs text-gray-500 ml-1">e.e.o.</span>}
+                      {fixture.status?.short === 'PEN' && <span className="text-xs text-gray-500 ml-1">str.</span>}
+                    </div>
+
+                    <div className="flex items-center gap-2 text-left flex-1 min-w-0">
+                      <div className="relative h-6 w-6 flex-shrink-0">
+                        <Image
+                          src={awayTeamLogo}
+                          alt={awayTeamName}
+                          fill
+                          className="object-contain"
+                          sizes="24px"
+                        />
+                      </div>
+                      <span className={`font-medium text-sm truncate ${awayWinner ? 'font-bold' : ''}`} title={awayTeamName}>
+                        {awayTeamName}
+                      </span>
                     </div>
                   </div>
 
-                  {/* Score - Desktop */}
-                  <div className="w-[60px] px-3 py-1 bg-gray-100 rounded font-medium text-center whitespace-nowrap">
-                    {score}
+                  <div className="flex-shrink-0 w-10 text-right text-gray-400">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 inline-block">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
                   </div>
+                </div>
 
-                  {/* Away Team */}
-                  <div className="w-[180px] flex items-center">
-                    <div className="relative h-6 w-6 mr-2 flex-shrink-0">
-                      <Image
-                        src={fixture.teams.away.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
-                        alt={fixture.teams.away.name}
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <span className={`font-medium text-sm truncate ${fixture.teams.away.winner ? 'text-green-600' : ''}`}>
-                      {fixture.teams.away.name}
+                <div className="sm:hidden p-4 space-y-3">
+                  <div className="flex justify-between items-center text-xs mb-2">
+                    <span className="text-gray-600">
+                      {format(matchDate, 'E d. MMM yyyy', { locale: nb })}
+                    </span>
+                    <span className="font-semibold bg-gray-100 px-2 py-0.5 rounded">
+                      {score}
+                      {fixture.status?.short === 'AET' && <span className="text-xs text-gray-500 ml-1">e.e.o.</span>}
+                      {fixture.status?.short === 'PEN' && <span className="text-xs text-gray-500 ml-1">str.</span>}
+                    </span>
+                    <span className="text-gray-500 truncate" title={fixture.league?.name ?? ''}>
+                      {fixture.league?.name ?? 'Ukjent liga'}
                     </span>
                   </div>
-                </div>
 
-                {/* Right - Round Info */}
-                <div className="text-right text-sm text-gray-500">
-                  Kampdag
-                </div>
-              </div>
-
-              {/* Mobile View */}
-              <div className="sm:hidden p-4 space-y-2">
-                {/* Date and Score */}
-                <div className="flex justify-between items-center">
-                  <div className="text-sm text-gray-900">
-                    {format(matchDate, 'd. MMMM yyyy', { locale: nb })}
+                  <div className="flex items-center gap-3">
+                    <div className="relative h-5 w-5 flex-shrink-0">
+                      <Image
+                        src={homeTeamLogo}
+                        alt={homeTeamName}
+                        fill
+                        className="object-contain"
+                        sizes="20px"
+                      />
+                    </div>
+                    <span className={`text-sm font-medium truncate ${homeWinner ? 'font-bold' : ''}`}>
+                      {homeTeamName}
+                    </span>
                   </div>
-                  <div className="text-sm font-medium bg-gray-100 px-2 py-1 rounded whitespace-nowrap">
-                    {score}
+                  <div className="flex items-center gap-3">
+                    <div className="relative h-5 w-5 flex-shrink-0">
+                      <Image
+                        src={awayTeamLogo}
+                        alt={awayTeamName}
+                        fill
+                        className="object-contain"
+                        sizes="20px"
+                      />
+                    </div>
+                    <span className={`text-sm font-medium truncate ${awayWinner ? 'font-bold' : ''}`}>
+                      {awayTeamName}
+                    </span>
                   </div>
+                   <div className="text-xs text-gray-400 pt-1 text-center truncate" title={fixture.venue?.name ?? ''}>
+                      {fixture.venue?.name ?? 'Ukjent stadion'}
+                   </div>
                 </div>
-                <div className="text-xs text-gray-500">
-                  {fixture.league.name}
-                </div>
-
-                {/* Teams */}
-                <div className="flex items-center gap-3">
-                  <div className="relative h-6 w-6 flex-shrink-0">
-                    <Image
-                      src={fixture.teams.home.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
-                      alt={fixture.teams.home.name}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <span className={`text-sm font-medium ${fixture.teams.home.winner ? 'text-green-600' : ''}`}>
-                    {fixture.teams.home.name}
-                  </span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="relative h-6 w-6 flex-shrink-0">
-                    <Image
-                      src={fixture.teams.away.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
-                      alt={fixture.teams.away.name}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <span className={`text-sm font-medium ${fixture.teams.away.winner ? 'text-green-600' : ''}`}>
-                    {fixture.teams.away.name}
-                  </span>
-                </div>
-              </div>
-            </Link>
-          );
-        })}
-      </div>
-
-      {/* Results Analysis Section */}
-      <div className="mt-12">
-        <h2 className="text-xl font-semibold mb-4">
-          Resultater og situasjon for {teamData.team.team.name}
-        </h2>
-        <div className="prose prose-lg max-w-none">
-          <p>{generateAnalysisText()}</p>
-        </div>
+              </Link>
+            );
+          })
+        )}
       </div>
     </div>
   );

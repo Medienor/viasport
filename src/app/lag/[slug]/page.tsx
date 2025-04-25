@@ -2,8 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import TeamStandings from '@/app/components/TeamStandings';
-import { readFile, readdir } from 'fs/promises';
 import path from 'path';
+import { readdir } from 'fs/promises';
 import TeamStats from '@/app/components/TeamStats';
 import TeamAnalysis from '@/app/components/TeamAnalysis';
 import { extractTeamId } from '@/utils/helpers';
@@ -14,6 +14,7 @@ import OtherTeamsInLeague from '@/app/components/OtherTeamsInLeague';
 import { format, parseISO } from 'date-fns';
 import { nb } from 'date-fns/locale';
 import TeamHeaderNav from '@/app/components/TeamHeaderNav';
+import { supabase } from '@/lib/supabase';
 
 // Define Season type if not already defined globally or imported
 interface Season {
@@ -54,7 +55,7 @@ const generateLeagueSlug = (name: string, id: number | string): string => {
 export async function generateStaticParams() {
   try {
     const files = await readdir(DATA_DIR);
-    const params = await Promise.all( // Use Promise.all to await all async maps
+    const params = await Promise.all(
       files
         .filter(file => file.endsWith('.json'))
         .map(async (file) => {
@@ -86,6 +87,44 @@ export async function generateStaticParams() {
 export const dynamic = 'force-static';
 export const revalidate = 86400; // 24 hours in seconds
 
+// Interface for team details fetched from fotball_teams
+interface TeamDetails {
+  team_id: number;
+  name: string | null;
+  logo: string | null;
+}
+
+// Update SupabaseFixture interface for the score structure
+interface SupabaseFixture {
+  id: number;
+  date: string;
+  // Make status more specific based on potential API response structure
+  status: {
+    short?: string;
+    long?: string;
+    elapsed?: number | null; // Add elapsed time
+    [key: string]: any; // Allow other properties
+  };
+  league_id: number;
+  home_team_id: number;
+  home_team: { name: string | null; logo: string | null } | null;
+  away_team_id: number;
+  away_team: { name: string | null; logo: string | null } | null;
+  // Update score structure
+  score?: {
+    halftime?: { home: number | null; away: number | null };
+    fulltime?: { home: number | null; away: number | null };
+    extratime?: { home: number | null; away: number | null };
+    penalty?: { home: number | null; away: number | null };
+  } | null; // Make the whole score object potentially null
+  round: string | null;
+  venue: { id: number | null; name: string | null; city: string | null } | null;
+  league: { id: number | null; name: string | null; logo: string | null; country: string | null; flag: string | null } | null;
+}
+
+// Define live statuses
+const liveStatuses = ['1H', 'HT', '2H', 'ET', 'BT', 'P', 'SUSP', 'INT', 'LIVE'];
+
 export default async function TeamPage({ params }: { params: { slug: string } }) {
   // Wait for params - no need to await here, params is directly available
   const slug = params.slug;
@@ -97,25 +136,146 @@ export default async function TeamPage({ params }: { params: { slug: string } })
   }
 
   console.log(`[TeamPage] Fetching data for team ID: ${teamId}`);
-  const data = await getTeamData(teamId);
+  const teamApiData = await getTeamData(teamId);
 
-  if (!data || !data.team?.team?.name) {
-    console.error(`[TeamPage] Invalid team data for ID: ${teamId}`, data);
-    return notFound();
+  const now = new Date().toISOString();
+
+  // Define statuses that indicate a match is finished or otherwise not upcoming/live
+  const terminalStatuses = ['FT', 'AET', 'PEN', 'PST', 'CANC', 'ABD', 'AWD', 'WO'];
+
+  // --- Fetch Upcoming & Live Fixtures ---
+  console.log(`[TeamPage] Querying Supabase for upcoming and live fixtures for team ${teamId}`);
+  const { data: upcomingFixtureData, error: upcomingFixtureError } = await supabase
+    .from('fixtures')
+    .select('id, date, status, league_id, home_team_id, away_team_id, score, round, venue, league')
+    .or(`home_team_id.eq.${teamId},away_team_id.eq.${teamId}`)
+    // Filter out matches with terminal statuses instead of filtering by date > now
+    .not('status->>short', 'in', `(${terminalStatuses.join(',')})`)
+    .order('date', { ascending: true }) // Keep ordering by date (live matches might appear first if their date is recent)
+    .limit(20);
+
+  // --- Fetch Past Fixtures ---
+  console.log(`[TeamPage] Querying Supabase for past fixtures for team ${teamId} before ${now}`);
+  const { data: pastFixtureData, error: pastFixtureError } = await supabase
+    .from('fixtures')
+    .select('id, date, status, league_id, home_team_id, away_team_id, score, round, venue, league')
+    .or(`home_team_id.eq.${teamId},away_team_id.eq.${teamId}`)
+    // Filter specifically for finished games using JSONB query
+    // Note: Adjust 'FT' if your status short code is different
+    .in('status->>short', ['FT', 'AET', 'PEN']) // Explicitly include all finished types
+    .order('date', { ascending: false }) // Order recent first
+    .limit(10); // Limit to last 10 finished games
+
+  // --- Handle Errors ---
+  if (upcomingFixtureError) {
+    console.error('[TeamPage] 🚨 Error fetching upcoming fixture data from Supabase:', upcomingFixtureError);
+    // Consider fallback or partial render
+  }
+  if (pastFixtureError) {
+    console.error('[TeamPage] 🚨 Error fetching past fixture data from Supabase:', pastFixtureError);
+    // Consider fallback or partial render
+  }
+
+  // Combine fixture data for team ID collection
+  const allFixtureData = [
+      ...(upcomingFixtureData || []),
+      ...(pastFixtureData || [])
+  ];
+
+  let teamDetailsMap = new Map<number, { name: string | null; logo: string | null }>();
+
+  // --- Fetch Team Details for ALL fixtures ---
+  if (allFixtureData.length > 0) {
+    const teamIds = new Set<number>();
+    allFixtureData.forEach(f => {
+      if (f.home_team_id) teamIds.add(f.home_team_id);
+      if (f.away_team_id) teamIds.add(f.away_team_id);
+    });
+
+    if (teamIds.size > 0) {
+      console.log(`[TeamPage] Fetching details for ${teamIds.size} unique teams from fotball_teams`);
+      const { data: teamsData, error: teamsError } = await supabase
+        .from('fotball_teams')
+        .select('team_id, name, logo')
+        .in('team_id', Array.from(teamIds));
+
+      if (teamsError) {
+        console.error('[TeamPage] 🚨 Error fetching team details from fotball_teams:', teamsError);
+      } else if (teamsData) {
+        teamsData.forEach((team: TeamDetails) => {
+          teamDetailsMap.set(team.team_id, { name: team.name, logo: team.logo });
+        });
+        console.log(`[TeamPage] ✅ Successfully fetched and mapped details for ${teamDetailsMap.size} teams.`);
+      }
+    }
+  }
+
+  // --- Helper function to map raw fixture data ---
+  const mapFixtureData = (f: any): SupabaseFixture => {
+    const homeTeamDetails = teamDetailsMap.get(f.home_team_id) || null;
+    const awayTeamDetails = teamDetailsMap.get(f.away_team_id) || null;
+    const venueInfo = f.venue ? { id: f.venue.id || null, name: f.venue.name || null, city: f.venue.city || null } : null;
+    const leagueInfo = f.league ? { id: f.league.id || null, name: f.league.name || null, logo: f.league.logo || null, country: f.league.country || null, flag: f.league.flag || null } : null;
+
+    // Extract score, ensuring fulltime exists or is null
+    const scoreInfo = f.score ? {
+        halftime: f.score.halftime || null,
+        fulltime: f.score.fulltime || null, // Ensure fulltime object is extracted
+        extratime: f.score.extratime || null,
+        penalty: f.score.penalty || null,
+    } : null;
+
+    // Ensure status is an object, even if null in DB
+    const statusInfo = f.status && typeof f.status === 'object' ? f.status : {};
+
+    return {
+      id: f.id,
+      date: f.date,
+      status: statusInfo, // Use the validated status object
+      league_id: f.league_id,
+      home_team_id: f.home_team_id,
+      home_team: homeTeamDetails,
+      away_team_id: f.away_team_id,
+      away_team: awayTeamDetails,
+      score: scoreInfo, // Assign the potentially nested score object
+      round: f.round || null,
+      venue: venueInfo,
+      league: leagueInfo,
+    };
+  };
+
+  // --- Map Upcoming Fixtures ---
+  const supabaseUpcomingFixtures: SupabaseFixture[] = (upcomingFixtureData || []).map(mapFixtureData);
+  console.log(`[TeamPage] Mapped ${supabaseUpcomingFixtures.length} upcoming/live fixtures with details`);
+
+  // --- Map Past Fixtures ---
+  const supabasePastFixtures: SupabaseFixture[] = (pastFixtureData || []).map(mapFixtureData);
+  console.log(`[TeamPage] Mapped ${supabasePastFixtures.length} past fixtures with details`);
+
+
+  // --- Fallback/Error handling for teamApiData ---
+  if (!teamApiData || !teamApiData.team?.team?.name) {
+    console.error(`[TeamPage] ⚠️ Invalid team API data for ID: ${teamId}`, teamApiData);
+    // Decide if page can render without API data but with Supabase data
+    if (supabaseUpcomingFixtures.length === 0 && supabasePastFixtures.length === 0) {
+       console.log(`[TeamPage] 🚫 No API data and no Supabase fixtures found for team ${teamId}. Rendering notFound.`);
+       return notFound();
+    }
+    // Potentially set team info from Supabase data if available
+     console.log(`[TeamPage] 🤔 Missing API data, but proceeding with Supabase data for team ${teamId}.`);
   }
 
   const {
-    team,
-    leagues = [], // Default to empty array
-    fixtures = { upcoming: [], past: [] },
-  } = data;
+    team, // Use team info primarily from API data if available
+    leagues = [],
+    // fixtures: apiFixtures = { upcoming: [], past: [] }, // No longer needed for past/upcoming
+  } = teamApiData || {}; // Still useful for league memberships, maybe team info fallback
 
-  // Calculate statistics from fixtures
-  const calculatedStats = calculateTeamStats(data);
+  const calculatedStats = teamApiData ? calculateTeamStats(teamApiData) : null;
 
   // Log the raw leagues data received from the API
   // Use console.log on the server-side; it will appear in your terminal
-  console.log(`[TeamPage] Raw leagues data for team ${teamId}:`, JSON.stringify(leagues, null, 2));
+  // console.log(`[TeamPage] Raw leagues data for team ${teamId}:`, JSON.stringify(leagues, null, 2)); // Less verbose logging
 
   // Robustly aggregate all unique season years from ALL leagues
   const allSeasonYears = leagues.reduce((acc: Set<number>, leagueData: LeagueData) => {
@@ -127,12 +287,12 @@ export default async function TeamPage({ params }: { params: { slug: string } })
           acc.add(season.year); // Use a Set to handle uniqueness automatically
         } else {
           // Log potential issues on the server
-           console.warn(`[TeamPage] Invalid season format in league ${leagueData?.league?.id} for team ${teamId}:`, season);
+           // console.warn(`[TeamPage] Invalid season format in league ${leagueData?.league?.id} for team ${teamId}:`, season);
         }
       });
     } else {
        // Log potential issues on the server
-       console.warn(`[TeamPage] Missing or invalid seasons array in league data for team ${teamId}:`, leagueData);
+       // console.warn(`[TeamPage] Missing or invalid seasons array in league data for team ${teamId}:`, leagueData);
     }
     return acc;
   }, new Set<number>()); // Initialize with an empty Set
@@ -141,21 +301,20 @@ export default async function TeamPage({ params }: { params: { slug: string } })
   const sortedSeasonYears = Array.from(allSeasonYears).sort((a, b) => b - a);
 
   // Log the calculated seasons on the server
-  console.log(`[TeamPage] Calculated seasonYears for team ${teamId}:`, sortedSeasonYears);
+  // console.log(`[TeamPage] Calculated seasonYears for team ${teamId}:`, sortedSeasonYears);
 
   // Handle case where no seasons are found at all - Fallback to current year
   const seasonYears = sortedSeasonYears.length > 0 ? sortedSeasonYears : [new Date().getFullYear()];
-  console.log(`[TeamPage] Final seasonYears prop being passed to TeamStandings for team ${teamId}:`, seasonYears);
-
+  // console.log(`[TeamPage] Final seasonYears prop being passed to TeamStandings for team ${teamId}:`, seasonYears);
 
   // More debug logging
-  console.log('[TeamPage] Extracted Data:', {
-    teamName: team.team.name,
+  console.log('[TeamPage] ✅ Render Data Summary:', {
+    teamName: team?.team?.name ?? 'N/A (API data missing)',
     hasLeagues: leagues.length > 0,
-    hasFixtures: fixtures.upcoming.length + fixtures.past.length,
+    upcomingCount: supabaseUpcomingFixtures.length,
+    pastCount: supabasePastFixtures.length,
     hasStats: !!calculatedStats
   });
-
 
   const tabs = [
     { name: 'Oversikt', href: `/lag/${slug}` },
@@ -165,80 +324,121 @@ export default async function TeamPage({ params }: { params: { slug: string } })
     { name: 'Tabell', href: `/lag/${slug}/tabell` },
   ];
 
-  const currentTeamId = data?.team?.team?.id;
-  const recentFixtures = data?.fixtures?.past
-      ?.filter((fixture: any) => fixture?.fixture?.status?.short === 'FT')
-      .slice(0, 10) // Keep the original slice for "Siste Kamper"
-      || [];
-  const upcomingFixtures = data?.fixtures?.upcoming || []; // Ensure upcoming fixtures is an array
+  const currentTeamId = team?.team?.id ?? teamId; // Use teamId as fallback if API data is missing
 
-  // Slice for Team Form (latest 5)
-  const formFixtures = recentFixtures.slice(0, 5);
-  const nextMatchFixture = upcomingFixtures[0]; // Get the very next match
+  // --- Calculate Form based on Supabase Past Fixtures ---
+  const formFixtures = supabasePastFixtures.slice(0, 5);
+
+  const nextMatchFixture = supabaseUpcomingFixtures[0];
+
+  // Helper function to format date (ensure it's defined or imported)
+  const formatMatchDate = (dateString: string): string => {
+    try {
+      return format(parseISO(dateString), "EEEE d. MMMM, HH:mm", { locale: nb });
+    } catch (e) {
+      console.error("🚨 Error formatting date:", e);
+      return dateString; // Fallback
+    }
+  };
 
   try {
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <TeamHeaderNav
-          teamLogo={team.team.logo}
-          teamName={`${team.team.name} på TV og Live Stream`}
-          tabs={tabs}
-        />
+        {/* Render TeamHeaderNav only if team data is available */}
+        {team && team.team && (
+          <TeamHeaderNav
+            teamLogo={team.team.logo}
+            teamName={`${team.team.name} på TV og Live Stream`}
+            tabs={tabs}
+          />
+        )}
 
         {/* Main Content - Two Column Layout */}
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Left Column - Standings, Form, Next Match (40%) */}
           <div className="lg:w-[40%] space-y-8">
-            <TeamStandings
-              teamId={team.team.id}
-              teamName={team.team.name}
-              seasons={seasonYears}
-              hideSeasonSelector={true}
-            />
+            {/* Render TeamStandings only if team data is available */}
+            {team && team.team && (
+              <TeamStandings
+                teamId={team.team.id}
+                teamName={team.team.name}
+                seasons={seasonYears}
+                hideSeasonSelector={true}
+              />
+            )}
 
             {/* --- NEW: Team Form Section --- */}
             {formFixtures.length > 0 && currentTeamId && (
               <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-sm font-semibold text-gray-700 mb-3">Lagform</h3>
+                <h3 className="text-sm font-semibold text-gray-700 mb-3">Lagform (Siste 5)</h3>
                 <div className="flex justify-around items-start space-x-1">
-                  {formFixtures.map((fixture: any) => {
-                    // Determine result and color
-                    let result: 'V' | 'U' | 'T' | null = null;
-                    let bgColor = 'bg-gray-400'; // Default gray for Draw/Unknown
-                    const homeId = fixture.teams.home.id;
-                    const awayId = fixture.teams.away.id;
-                    const homeWinner = fixture.teams.home.winner;
-                    const awayWinner = fixture.teams.away.winner;
+                  {formFixtures.map((fixture: SupabaseFixture) => { // Use SupabaseFixture type
+                    // --- Corrected Form Logic ---
+                    let result = 'U'; // Use 'U' for Undecided/Draw initially
+                    let bgColor = 'bg-gray-400';
+                    const homeScore = fixture.score?.fulltime?.home;
+                    const awayScore = fixture.score?.fulltime?.away;
 
-                    if (homeWinner === null && awayWinner === null) { result = 'U'; bgColor = 'bg-gray-400'; }
-                    else if ((homeId === currentTeamId && homeWinner) || (awayId === currentTeamId && awayWinner)) { result = 'V'; bgColor = 'bg-green-500'; } // Green for Win
-                    else if ((homeId === currentTeamId && !homeWinner) || (awayId === currentTeamId && !awayWinner)) { result = 'T'; bgColor = 'bg-red-500'; } // Red for Loss
+                    // Check if scores are valid numbers and we have the current team's ID
+                    if (typeof homeScore === 'number' && typeof awayScore === 'number' && currentTeamId) {
+                      if (fixture.home_team_id === currentTeamId) { // Current team is home
+                        if (homeScore > awayScore) { result = 'V'; bgColor = 'bg-green-500'; } // V for Vinn (Win)
+                        else if (homeScore < awayScore) { result = 'T'; bgColor = 'bg-red-500'; } // T for Tap (Loss)
+                        // If scores are equal, result remains 'U' (Uavgjort - Draw)
+                      } else if (fixture.away_team_id === currentTeamId) { // Current team is away
+                        if (awayScore > homeScore) { result = 'V'; bgColor = 'bg-green-500'; }
+                        else if (awayScore < homeScore) { result = 'T'; bgColor = 'bg-red-500'; }
+                        // If scores are equal, result remains 'U'
+                      } else {
+                        // Should not happen if fixtures are filtered correctly, but handle defensively
+                        console.warn(`[TeamPage] 🤔 Current team (${currentTeamId}) not found in past fixture ${fixture.id}`);
+                        result = '?'; // Indicate unknown result if current team wasn't involved
+                        bgColor = 'bg-yellow-400';
+                      }
+                    } else {
+                       // Handle cases with missing scores or missing currentTeamId
+                       console.warn(`[TeamPage] 🤔 Missing score or team ID for past fixture ${fixture.id}. Scores: H${homeScore}-A${awayScore}, CurrentTeam: ${currentTeamId}`);
+                       result = '?';
+                       bgColor = 'bg-yellow-400';
+                    }
+                    // --- End Corrected Form Logic ---
 
                     // Determine opponent
-                    const opponent = homeId === currentTeamId ? fixture.teams.away : fixture.teams.home;
-                    const score = `${fixture.goals.home ?? '?'} - ${fixture.goals.away ?? '?'}`;
+                    const opponent = fixture.home_team_id === currentTeamId ? fixture.away_team : fixture.home_team;
+                    const opponentName = opponent?.name ?? (fixture.home_team_id === currentTeamId ? `Team ${fixture.away_team_id}` : `Team ${fixture.home_team_id}`);
+                    const opponentLogo = opponent?.logo?.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net');
+                    const scoreDisplay = `${homeScore ?? '?'} - ${awayScore ?? '?'}`;
 
                     // --- CREATE TOOLTIP TEXT ---
-                    const tooltipText = `${fixture.teams.home.name} ${fixture.goals.home ?? '?'} - ${fixture.goals.away ?? '?'} ${fixture.teams.away.name}`;
+                    const tooltipText = `${fixture.home_team?.name ?? 'Ukjent'} ${scoreDisplay} ${fixture.away_team?.name ?? 'Ukjent'} (${format(parseISO(fixture.date), "d. MMM", { locale: nb })})`;
                     // --- END TOOLTIP TEXT ---
 
                     return (
                       <Link
-                        key={fixture.fixture.id}
-                        href={`/fotball/kamp/${fixture.fixture.id}`}
-                        className="flex flex-col items-center space-y-1.5 text-center hover:opacity-80 transition-opacity"
-                        title={tooltipText}
+                        key={fixture.id}
+                        href={`/fotball/kamp/${fixture.id}`}
+                        className="flex flex-col items-center space-y-1.5 text-center hover:opacity-80 transition-opacity group relative"
+                        title={tooltipText} // Use title for basic tooltip
                       >
-                        <span className={`px-2 py-0.5 rounded-md text-white text-sm font-semibold ${bgColor}`}>
-                          {score}
+                        {/* Result Badge */}
+                        <span className={`w-6 h-6 flex items-center justify-center rounded-full text-white text-xs font-bold ${bgColor}`}>
+                          {result}
                         </span>
-                        {opponent.logo && (
+                        {/* Opponent Logo */}
+                        {opponentLogo ? (
                           <img
-                            src={opponent.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
-                            alt={opponent.name}
-                            className="h-8 w-8 object-contain"
+                            src={opponentLogo}
+                            alt={opponentName}
+                            className="h-6 w-6 object-contain"
+                            loading="lazy"
                           />
+                        ) : (
+                          <div className="h-6 w-6 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 text-xs">?</div>
                         )}
+                        {/* Tooltip (alternative, more styled) - requires CSS for visibility on hover */}
+                        {/* <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-20">
+                          {tooltipText}
+                        </span> */}
                       </Link>
                     );
                   })}
@@ -247,63 +447,86 @@ export default async function TeamPage({ params }: { params: { slug: string } })
             )}
             {/* --- END: Team Form Section --- */}
 
-            {/* --- NEW: Next Match Section --- */}
+            {/* --- NEW: Next Match Section - Enhanced --- */}
             {nextMatchFixture && (
               <div className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
-                <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-sm font-semibold text-gray-700">Neste kamp</h3>
-                  {nextMatchFixture.league && (
-                     <Link
-                       href={generateLeagueSlug(nextMatchFixture.league.name, nextMatchFixture.league.id)}
-                       className="flex items-center gap-1.5 text-xs text-gray-500 hover:text-gray-700 transition-colors"
-                     >
-                       <span>{nextMatchFixture.league.name}</span>
-                       {nextMatchFixture.league.logo && (
-                         <img 
-                           src={nextMatchFixture.league.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
-                           alt="" 
-                           className="h-4 w-4 object-contain"
+                <h3 className="text-sm font-semibold text-gray-700 mb-3">Neste kamp</h3>
+                <Link href={`/fotball/kamp/${nextMatchFixture.id}`} className="block hover:bg-gray-50 rounded-md -m-2 p-2 transition-colors">
+                  <div className="flex items-center justify-between text-center mb-3">
+                     {/* Home Team */}
+                     <div className="flex flex-col items-center space-y-1 w-[35%]">
+                       {nextMatchFixture.home_team?.logo && (
+                         <img
+                           src={nextMatchFixture.home_team.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
+                           alt={nextMatchFixture.home_team.name || ''}
+                           className="h-8 w-8 object-contain"
+                           loading="lazy"
                          />
                        )}
-                     </Link>
-                  )}
-                </div>
+                       <span className="text-xs font-medium text-gray-800 truncate w-full">
+                         {nextMatchFixture.home_team?.name ?? `Team ${nextMatchFixture.home_team_id}`}
+                       </span>
+                     </div>
+                     {/* Time/Date or Live Status */}
+                     <div className="flex flex-col items-center w-[30%]">
+                       <span className="text-sm font-semibold text-gray-900">
+                         {(() => {
+                            const statusShort = nextMatchFixture.status?.short;
+                            const elapsed = nextMatchFixture.status?.elapsed;
+                            console.log(`[TeamPage] ⏱️ Next Match (ID: ${nextMatchFixture.id}) Status: ${statusShort}, Elapsed: ${elapsed}`); // Log status
 
-                <div className="flex items-center justify-between text-center">
-                   {/* Home Team */}
-                   <div className="flex flex-col items-center space-y-1 w-[35%]">
-                     {nextMatchFixture.teams.home.logo && (
-                       <img 
-                         src={nextMatchFixture.teams.home.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
-                         alt="" 
-                         className="h-8 w-8 object-contain mb-1"
-                       />
-                     )}
-                     <span className="text-xs font-medium text-gray-800 truncate w-full">{nextMatchFixture.teams.home.name}</span>
-                   </div>
-
-                   {/* Time and Date */}
-                   <div className="flex flex-col items-center space-y-0.5 w-[30%] flex-shrink-0">
-                     <span className="text-base font-bold text-gray-900">
-                       {format(parseISO(nextMatchFixture.fixture.date), 'HH:mm', { locale: nb })}
-                     </span>
-                     <span className="text-xs text-gray-500">
-                       {format(parseISO(nextMatchFixture.fixture.date), 'd. MMM', { locale: nb })}
-                     </span>
-                   </div>
-
-                   {/* Away Team */}
-                   <div className="flex flex-col items-center space-y-1 w-[35%]">
-                     {nextMatchFixture.teams.away.logo && (
-                       <img 
-                         src={nextMatchFixture.teams.away.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
-                         alt="" 
-                         className="h-8 w-8 object-contain mb-1"
-                       />
-                     )}
-                     <span className="text-xs font-medium text-gray-800 truncate w-full">{nextMatchFixture.teams.away.name}</span>
-                   </div>
-                </div>
+                            if (statusShort && liveStatuses.includes(statusShort)) {
+                               // Use the new green color for live indicators
+                               if (statusShort === 'HT') return <span className="text-[#00985f] animate-pulse">HT</span>;
+                               if (typeof elapsed === 'number') return <span className="text-[#00985f] animate-pulse">{elapsed}'</span>;
+                               return <span className="text-[#00985f] animate-pulse">Live</span>;
+                            }
+                            // Default to scheduled time if not live
+                            try {
+                               return format(parseISO(nextMatchFixture.date), "HH:mm", { locale: nb });
+                            } catch {
+                               return '--:--'; // Fallback for invalid date
+                            }
+                         })()}
+                       </span>
+                       <span className="text-xs text-gray-500">
+                         {format(parseISO(nextMatchFixture.date), "d. MMM", { locale: nb })}
+                       </span>
+                     </div>
+                     {/* Away Team */}
+                     <div className="flex flex-col items-center space-y-1 w-[35%]">
+                       {nextMatchFixture.away_team?.logo && (
+                         <img
+                           src={nextMatchFixture.away_team.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')}
+                           alt={nextMatchFixture.away_team.name || ''}
+                           className="h-8 w-8 object-contain"
+                           loading="lazy"
+                         />
+                       )}
+                       <span className="text-xs font-medium text-gray-800 truncate w-full">
+                         {nextMatchFixture.away_team?.name ?? `Team ${nextMatchFixture.away_team_id}`}
+                       </span>
+                     </div>
+                  </div>
+                  {/* League and Venue Info */}
+                  <div className="text-center text-xs text-gray-500 border-t border-gray-100 pt-2 mt-2 space-y-0.5">
+                    {nextMatchFixture.league && (
+                      <div className="flex items-center justify-center space-x-1.5">
+                        {nextMatchFixture.league.logo && (
+                          <img src={nextMatchFixture.league.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} alt={nextMatchFixture.league.name || ''} className="h-3 w-3 object-contain"/>
+                        )}
+                        <span>{nextMatchFixture.league.name}</span>
+                        {nextMatchFixture.round && <span className="text-gray-400">({nextMatchFixture.round.split(' - ')[1] || nextMatchFixture.round})</span>}
+                      </div>
+                    )}
+                    {nextMatchFixture.venue && (
+                      <div>
+                        <span>{nextMatchFixture.venue.name}</span>
+                        {nextMatchFixture.venue.city && <span className="text-gray-400">, {nextMatchFixture.venue.city}</span>}
+                      </div>
+                    )}
+                  </div>
+                </Link>
               </div>
             )}
             {/* --- END: Next Match Section --- */}
@@ -312,199 +535,173 @@ export default async function TeamPage({ params }: { params: { slug: string } })
 
           {/* Right Column - Main Content (60%) */}
           <div className="lg:w-[60%] space-y-8">
-            {/* Upcoming Matches */}
-            {upcomingFixtures.length > 0 && (
+            {/* Upcoming Matches - Enhanced */}
+            {supabaseUpcomingFixtures.length > 0 && (
               <div>
                 <h2 className="text-xl font-semibold mb-6">Kommende kamper</h2>
                 <div className="space-y-4">
-                  {upcomingFixtures.map((fixture: any) => (
-                    <div
-                      key={fixture.fixture.id}
-                      className="block hover:bg-gray-50 transition rounded-md border border-gray-200 overflow-hidden bg-white relative"
-                    >
-                      {/* Date Badge */}
-                      <div className="absolute top-0 left-0 bg-gray-100 px-3 py-1 text-xs text-gray-600 rounded-br">
-                        {new Date(fixture.fixture.date).toLocaleDateString('no-NO', {
-                          day: 'numeric',
-                          month: 'long',
-                          year: 'numeric'
-                        })} {new Date(fixture.fixture.date).toLocaleTimeString('no-NO', {
-                          hour: '2-digit',
-                          minute: '2-digit'
-                        })}
-                      </div>
+                  {supabaseUpcomingFixtures.map((fixture: SupabaseFixture) => {
+                    const isHomeTeamCurrent = fixture.home_team_id === currentTeamId;
+                    const isAwayTeamCurrent = fixture.away_team_id === currentTeamId;
+                    const statusShort = fixture.status?.short;
+                    const elapsed = fixture.status?.elapsed;
+                    const isLive = statusShort && liveStatuses.includes(statusShort);
 
-                      {/* Match Content */}
-                      <Link
-                        href={`/fotball/kamp/${fixture.fixture.id}`}
-                        className="block p-4 pt-8"
-                      >
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center space-x-3 w-2/5">
-                            <div className="relative h-8 w-8 flex-shrink-0">
-                              <Image
-                                src={fixture.teams.home.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') || '/images/team-placeholder.png'}
-                                alt={fixture.teams.home.name}
-                                fill
-                                className="object-contain"
-                              />
-                            </div>
-                            <span className={`font-medium truncate ${fixture.teams.home.id === teamId ? 'font-bold' : ''}`}>
-                              {fixture.teams.home.name}
-                            </span>
-                          </div>
-
-                          <div className="text-center w-1/5">
-                            <div className="font-bold">
-                              {fixture.fixture.status?.short === 'FT' ?
-                                `${fixture.goals.home} - ${fixture.goals.away}` :
-                                new Date(fixture.fixture.date).toLocaleTimeString('no-NO', {
-                                  hour: '2-digit',
-                                  minute: '2-digit'
-                                })
-                              }
-                            </div>
-                            {fixture.league && (
-                              <div className="text-xs text-gray-500 mt-1">
-                                {fixture.league.name}
-                              </div>
-                            )}
-                          </div>
-
-                          <div className="flex items-center justify-end space-x-3 w-2/5">
-                            <span className={`font-medium text-right truncate ${fixture.teams.away.id === teamId ? 'font-bold' : ''}`}>
-                              {fixture.teams.away.name}
-                            </span>
-                            <div className="relative h-8 w-8 flex-shrink-0">
-                              <Image
-                                src={fixture.teams.away.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') || '/images/team-placeholder.png'}
-                                alt={fixture.teams.away.name}
-                                fill
-                                className="object-contain"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Turneringer Section - REMOVED from here */}
-            {/*
-            {leagues.length > 0 && (
-              <div>
-                <h2 className="text-xl font-semibold mb-4">Turneringer</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                  {leagues.map((league: any) => (
-                    <Link
-                      key={league.league.id}
-                      href={generateLeagueSlug(league.league.name, league.league.id)}
-                      className="p-4 border rounded-lg hover:bg-gray-50 transition bg-white"
-                    >
-                      <div className="flex items-center">
-                        <div className="relative h-8 w-8 mr-3">
-                          <Image
-                            src={league.league.logo}
-                            alt={league.league.name}
-                            fill
-                            className="object-contain"
-                          />
-                        </div>
-                        <div>
-                          <h3 className="font-medium">{league.league.name}</h3>
-                          <p className="text-sm text-gray-500">{league.country.name}</p>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
-            */}
-
-            {/* Siste Kamper Section - Card Layout */}
-            {recentFixtures && recentFixtures.length > 0 && currentTeamId && (
-              <div className="mt-8">
-                <h2 className="text-lg font-semibold text-gray-900 mb-4 pr-4 sm:pr-6 lg:pr-8">
-                  Siste kamper
-                </h2>
-                <div>
-                  {recentFixtures.map((fixture: any, index: number) => {
-                    const matchDate = new Date(fixture.fixture.date);
-                    const formattedDate = matchDate.toLocaleDateString('no-NO', {
-                      day: 'numeric', month: 'short', year: 'numeric'
-                    });
-                    let result: 'V' | 'U' | 'T' | null = null;
-                    let resultBgColor = 'bg-gray-100';
-                    let resultTextColor = 'text-gray-800';
-                    if (fixture.fixture.status.short === 'FT') {
-                      const homeId = fixture.teams.home.id;
-                      const awayId = fixture.teams.away.id;
-                      const homeWinner = fixture.teams.home.winner;
-                      const awayWinner = fixture.teams.away.winner;
-                      if (homeWinner === null && awayWinner === null) { result = 'U'; resultBgColor = 'bg-gray-100'; resultTextColor = 'text-gray-800'; }
-                      else if ((homeId === currentTeamId && homeWinner) || (awayId === currentTeamId && awayWinner)) { result = 'V'; resultBgColor = 'bg-green-100'; resultTextColor = 'text-green-800'; }
-                      else if ((homeId === currentTeamId && !homeWinner) || (awayId === currentTeamId && !awayWinner)) { result = 'T'; resultBgColor = 'bg-red-100'; resultTextColor = 'text-red-800'; }
-                    }
+                    console.log(`[TeamPage] ⏱️ Upcoming Fixture List (ID: ${fixture.id}) Status: ${statusShort}, Elapsed: ${elapsed}, IsLive: ${isLive}`); // Log status
 
                     return (
-                      <div
-                        key={fixture.fixture.id}
-                        className={`bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden ${index > 0 ? 'mt-4' : ''}`}
-                      >
-                        <div className="px-4 py-2 bg-gray-50 border-b border-gray-200 flex justify-between items-center">
-                          <div className="flex items-center gap-2 text-xs text-gray-600">
-                            {fixture.league.logo && (
-                              <img 
-                                src={fixture.league.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
-                                alt="" 
-                                className="h-4 w-4 object-contain"
-                              />
-                            )}
-                            <span className="font-medium truncate">{fixture.league.name}</span>
-                          </div>
-                          <span className="text-xs text-gray-500">{formattedDate}</span>
+                      <div key={fixture.id} className="bg-white rounded-lg border border-gray-200 shadow-sm relative overflow-hidden">
+                        {/* Date Badge */}
+                        <div className="absolute top-2 left-2 bg-gray-100 text-gray-700 text-[10px] font-semibold px-1.5 py-0.5 rounded-full z-10">
+                          {format(parseISO(fixture.date), "d. MMM", { locale: nb })}
                         </div>
-
-                        <div className="p-3 sm:p-4 flex items-center">
-                          <div className={`flex-1 flex items-center justify-end gap-2 sm:gap-3 ${fixture.teams.home.id === currentTeamId ? 'font-bold' : ''}`}>
-                            <span className="text-xs sm:text-sm text-right truncate">{fixture.teams.home.name}</span>
-                            {fixture.teams.home.logo && (
-                              <img 
-                                src={fixture.teams.home.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
-                                alt="" 
-                                className="h-5 w-5 sm:h-6 sm:w-6 object-contain flex-shrink-0"
-                              />
-                            )}
-                          </div>
-
-                          <div className="mx-3 sm:mx-4 text-center flex-shrink-0">
-                            <div className="text-lg sm:text-xl font-bold text-gray-800">
-                              {fixture.goals.home ?? '-'} - {fixture.goals.away ?? '-'}
-                            </div>
-                            {result && (
-                              <div className="mt-1">
-                                <span className={`px-1.5 sm:px-2 py-0.5 inline-flex text-[11px] sm:text-xs leading-4 font-semibold rounded-full ${resultBgColor} ${resultTextColor}`}>
-                                  {result === 'V' ? 'Seier' : result === 'U' ? 'Uavgjort' : 'Tap'}
-                                </span>
+                        <Link href={`/fotball/kamp/${fixture.id}`} className="block p-4 pt-8 hover:bg-gray-50 transition-colors">
+                          <div className="flex items-center justify-between">
+                            {/* Home Team */}
+                            <div className="flex items-center space-x-3 w-2/5">
+                              <div className="relative h-8 w-8 flex-shrink-0">
+                                <Image
+                                  src={fixture.home_team?.logo?.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') || '/images/team-placeholder.png'} // Use nested logo
+                                  alt={fixture.home_team?.name || ''} // Use nested name
+                                  fill
+                                  className="object-contain"
+                                  loading="lazy"
+                                />
                               </div>
-                            )}
-                          </div>
+                              <span className={`font-medium truncate ${isHomeTeamCurrent ? 'font-bold' : ''}`}>
+                                {fixture.home_team?.name ?? `Team ${fixture.home_team_id}`} {/* Use nested name */}
+                              </span>
+                            </div>
 
-                          <div className={`flex-1 flex items-center justify-start gap-2 sm:gap-3 ${fixture.teams.away.id === currentTeamId ? 'font-bold' : ''}`}>
-                            {fixture.teams.away.logo && (
-                              <img 
-                                src={fixture.teams.away.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} 
-                                alt="" 
-                                className="h-5 w-5 sm:h-6 sm:w-6 object-contain flex-shrink-0"
-                              />
-                            )}
-                            <span className="text-xs sm:text-sm text-left truncate">{fixture.teams.away.name}</span>
+                            {/* Middle Section: Time/Live Status, League, Venue */}
+                            <div className="text-center w-1/5 flex flex-col items-center text-xs">
+                               {/* Use the new green color for live indicators */}
+                               <span className={`font-semibold text-sm mb-1 ${isLive ? 'text-[#00985f] animate-pulse' : 'text-gray-900'}`}>
+                                 {(() => {
+                                    if (isLive) {
+                                      if (statusShort === 'HT') return 'HT';
+                                      if (typeof elapsed === 'number') return `${elapsed}'`;
+                                      return 'Live';
+                                    }
+                                    // Default to scheduled time
+                                    try {
+                                      return format(parseISO(fixture.date), "HH:mm", { locale: nb });
+                                    } catch {
+                                      return '--:--';
+                                    }
+                                 })()}
+                               </span>
+                               {fixture.league && (
+                                 <div className="flex items-center justify-center space-x-1 text-gray-600 mb-0.5">
+                                   {fixture.league.logo && (
+                                     <img src={fixture.league.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} alt="" className="h-3 w-3 object-contain"/>
+                                   )}
+                                   <span className="truncate" title={fixture.league.name || ''}>{fixture.league.name}</span>
+                                 </div>
+                               )}
+                               {fixture.venue && (
+                                 <span className="text-gray-400 truncate" title={`${fixture.venue?.name ?? ''}, ${fixture.venue?.city ?? ''}`}>
+                                    {fixture.venue.name}
+                                 </span>
+                               )}
+                            </div>
+
+                            {/* Away Team */}
+                            <div className="flex items-center justify-end space-x-3 w-2/5">
+                              <span className={`font-medium text-right truncate ${isAwayTeamCurrent ? 'font-bold' : ''}`}>
+                                {fixture.away_team?.name ?? `Team ${fixture.away_team_id}`} {/* Use nested name */}
+                              </span>
+                              <div className="relative h-8 w-8 flex-shrink-0">
+                                <Image
+                                  src={fixture.away_team?.logo?.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') || '/images/team-placeholder.png'} // Use nested logo
+                                  alt={fixture.away_team?.name || ''} // Use nested name
+                                  fill
+                                  className="object-contain"
+                                  loading="lazy"
+                                />
+                              </div>
+                            </div>
                           </div>
+                        </Link>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Siste Kamper Section (uses Supabase past) */}
+            {supabasePastFixtures.length > 0 && (
+              <div>
+                <h2 className="text-xl font-semibold mb-6">Siste kamper</h2>
+                <div className="space-y-4">
+                  {supabasePastFixtures.map((fixture: SupabaseFixture) => {
+                    const isHomeTeamCurrent = fixture.home_team_id === currentTeamId;
+                    const isAwayTeamCurrent = fixture.away_team_id === currentTeamId;
+                    // Extract fulltime scores for display
+                    const homeScore = fixture.score?.fulltime?.home;
+                    const awayScore = fixture.score?.fulltime?.away;
+                    const statusShort = fixture.status?.short; // Get status short code
+
+                    return (
+                      <div key={fixture.id} className="bg-white rounded-lg border border-gray-200 shadow-sm relative overflow-hidden">
+                        {/* Date Badge */}
+                        <div className="absolute top-2 left-2 bg-gray-100 text-gray-700 text-[10px] font-semibold px-1.5 py-0.5 rounded-full z-10">
+                          {format(parseISO(fixture.date), "d. MMM yyyy", { locale: nb })}
                         </div>
+                        <Link href={`/fotball/kamp/${fixture.id}`} className="block p-4 pt-8 hover:bg-gray-50 transition-colors">
+                          <div className="flex items-center justify-between">
+                            {/* Home Team */}
+                            <div className="flex items-center space-x-3 w-2/5">
+                              <div className="relative h-8 w-8 flex-shrink-0">
+                                <Image
+                                  src={fixture.home_team?.logo?.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') || '/images/team-placeholder.png'}
+                                  alt={fixture.home_team?.name || ''}
+                                  fill className="object-contain"
+                                  loading="lazy"
+                                />
+                              </div>
+                              <span className={`font-medium truncate ${isHomeTeamCurrent ? 'font-bold' : ''}`}>
+                                {fixture.home_team?.name ?? `Team ${fixture.home_team_id}`}
+                              </span>
+                            </div>
+
+                            {/* Middle Section: Score, League */}
+                            <div className="text-center w-1/5 flex flex-col items-center text-xs">
+                               {/* Display fulltime score */}
+                               <span className="font-bold text-lg text-gray-900 mb-1">
+                                 {typeof homeScore === 'number' && typeof awayScore === 'number'
+                                   ? `${homeScore} - ${awayScore}`
+                                   : ['FT', 'AET', 'PEN'].includes(statusShort || '') ? '0 - 0' // Show 0-0 if finished but no score
+                                   : statusShort || 'vs' // Show status if available and not finished, else 'vs'
+                                 }
+                               </span>
+                               {fixture.league && (
+                                 <div className="flex items-center justify-center space-x-1 text-gray-600 mb-0.5">
+                                   {fixture.league.logo && (
+                                     <img src={fixture.league.logo.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net')} alt="" className="h-3 w-3 object-contain"/>
+                                   )}
+                                   <span className="truncate" title={fixture.league.name || ''}>{fixture.league.name}</span>
+                                 </div>
+                               )}
+                            </div>
+
+                            {/* Away Team */}
+                            <div className="flex items-center justify-end space-x-3 w-2/5">
+                              <span className={`font-medium text-right truncate ${isAwayTeamCurrent ? 'font-bold' : ''}`}>
+                                {fixture.away_team?.name ?? `Team ${fixture.away_team_id}`}
+                              </span>
+                              <div className="relative h-8 w-8 flex-shrink-0">
+                                <Image
+                                  src={fixture.away_team?.logo?.replace('https://media.api-sports.io', 'https://viasport.b-cdn.net') || '/images/team-placeholder.png'}
+                                  alt={fixture.away_team?.name || ''}
+                                  fill className="object-contain"
+                                  loading="lazy"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </Link>
                       </div>
                     );
                   })}
@@ -513,70 +710,78 @@ export default async function TeamPage({ params }: { params: { slug: string } })
             )}
 
             {/* Team Statistics */}
-            <TeamStats statistics={calculatedStats} />
+            {calculatedStats && <TeamStats statistics={calculatedStats} />}
 
             {/* Team Standing Analysis Section */}
-            {leagues.length > 0 && (
-              <TeamAnalysis 
-                team={team} 
-                leagues={leagues} 
-                fixtures={fixtures} 
+            {leagues.length > 0 && team && team.team && (
+              <TeamAnalysis
+                team={team}
+                leagues={leagues}
               />
             )}
 
-            {/* Next Match Information Section */}
-            {upcomingFixtures.length > 0 && (
+            {/* Next Match Information Section - Enhanced */}
+            {supabaseUpcomingFixtures.length > 0 && team && team.team && (
               <div className="mt-12">
                 <h2 className="text-xl font-semibold mb-4">
                   Når spiller {team.team.name} sin neste kamp?
                 </h2>
                 <div className="prose prose-lg max-w-none">
                   {(() => {
-                    const nextMatch = upcomingFixtures[0];
-                    const secondMatch = upcomingFixtures[1];
-                    const thirdMatch = upcomingFixtures[2];
-                    
-                    const formatMatchDate = (date: string) => {
-                      return new Date(date).toLocaleDateString('no-NO', {
-                        weekday: 'long',
-                        day: 'numeric',
-                        month: 'long',
-                        year: 'numeric',
-                        hour: '2-digit',
-                        minute: '2-digit'
-                      });
-                    };
+                    const nextMatch = supabaseUpcomingFixtures[0];
+                    const secondMatch = supabaseUpcomingFixtures[1];
+                    const thirdMatch = supabaseUpcomingFixtures[2];
 
                     let text = `${team.team.name} spiller sin neste kamp `;
-                    
+
                     if (nextMatch) {
-                      const isHome = nextMatch.teams.home.id === team.team.id;
-                      const opponent = isHome ? nextMatch.teams.away.name : nextMatch.teams.home.name;
+                      const isHome = nextMatch.home_team_id === teamId;
+                      const opponent = isHome ? nextMatch.away_team : nextMatch.home_team;
+                      const opponentName = opponent?.name ?? `Team ${isHome ? nextMatch.away_team_id : nextMatch.home_team_id}`;
                       const venue = isHome ? 'hjemme' : 'borte';
-                      
-                      text += `${venue} mot ${opponent} ${formatMatchDate(nextMatch.fixture.date)}`;
-                      
-                      if (nextMatch.league) {
-                        text += ` i ${nextMatch.league.name}`;
+                      const venueName = nextMatch.venue?.name ? ` på ${nextMatch.venue.name}` : '';
+                      const leagueName = nextMatch.league?.name ? ` i ${nextMatch.league.name}` : '';
+
+                      // --- Determine Time/Status String ---
+                      let timeStatusString = '';
+                      const statusShort = nextMatch.status?.short;
+                      const elapsed = nextMatch.status?.elapsed;
+                      const isLive = statusShort && liveStatuses.includes(statusShort);
+
+                      if (isLive) {
+                          if (statusShort === 'HT') timeStatusString = ' (Pause)';
+                          else if (typeof elapsed === 'number') timeStatusString = ` (Live ${elapsed}')`;
+                          else timeStatusString = ' (Live)';
                       }
-                      
+                      const formattedDate = formatMatchDate(nextMatch.date);
+                      // --- End Determine Time/Status String ---
+
+
+                      text += `${venue} mot ${opponentName}${venueName} ${formattedDate}${timeStatusString}${leagueName}`;
+
                       if (secondMatch) {
-                        const secondIsHome = secondMatch.teams.home.id === team.team.id;
-                        const secondOpponent = secondIsHome ? secondMatch.teams.away.name : secondMatch.teams.home.name;
-                        text += `. Deretter venter ${secondOpponent} ${formatMatchDate(secondMatch.fixture.date)}`;
-                        
+                        const secondIsHome = secondMatch.home_team_id === teamId;
+                        const secondOpponent = secondIsHome ? secondMatch.away_team : secondMatch.home_team;
+                        const secondOpponentName = secondOpponent?.name ?? `Team ${secondIsHome ? secondMatch.away_team_id : secondMatch.home_team_id}`;
+                        const secondVenueName = secondMatch.venue?.name ? ` på ${secondMatch.venue.name}` : '';
+                        const secondLeagueName = secondMatch.league?.name ? ` i ${secondMatch.league.name}` : '';
+                        const secondFormattedDate = formatMatchDate(secondMatch.date);
+                        text += `. Deretter venter ${secondOpponentName}${secondVenueName} ${secondFormattedDate}${secondLeagueName}`;
+
                         if (thirdMatch) {
-                          const thirdIsHome = thirdMatch.teams.home.id === team.team.id;
-                          const thirdOpponent = thirdIsHome ? thirdMatch.teams.away.name : thirdMatch.teams.home.name;
-                          text += `, før de møter ${thirdOpponent} ${formatMatchDate(thirdMatch.fixture.date)}`;
+                          const thirdIsHome = thirdMatch.home_team_id === teamId;
+                          const thirdOpponent = thirdIsHome ? thirdMatch.away_team : thirdMatch.home_team;
+                          const thirdOpponentName = thirdOpponent?.name ?? `Team ${thirdIsHome ? thirdMatch.away_team_id : thirdMatch.home_team_id}`;
+                          const thirdVenueName = thirdMatch.venue?.name ? ` på ${thirdMatch.venue.name}` : '';
+                          const thirdLeagueName = thirdMatch.league?.name ? ` i ${thirdMatch.league.name}` : '';
+                          const thirdFormattedDate = formatMatchDate(thirdMatch.date);
+                          text += `, før de møter ${thirdOpponentName}${thirdVenueName} ${thirdFormattedDate}${thirdLeagueName}`;
                         }
                       }
-                      
                       text += '.';
                     } else {
-                       text = `Ingen kommende kamper funnet for ${team.team.name}.`; // Handle no upcoming matches
+                       text = `Ingen kommende kamper funnet for ${team.team.name}.`;
                     }
-
                     return <p>{text}</p>;
                   })()}
                 </div>
@@ -584,20 +789,20 @@ export default async function TeamPage({ params }: { params: { slug: string } })
             )}
 
             {/* --- NEW: Turneringer List Section --- */}
-            {leagues.length > 0 && (
+            {leagues.length > 0 && team && team.team && (
               <div className="mt-12">
                 <h2 className="text-xl font-semibold mb-4">
                   Turneringer for {team.team.name}
                 </h2>
                 <div className="prose max-w-none">
                   <ul className="list-disc pl-5 space-y-1">
-                    {leagues.map((league: any) => (
-                      <li key={league.league.id}>
+                    {leagues.map((leagueData: LeagueData) => ( // Use LeagueData type
+                      <li key={leagueData.league.id}>
                         <Link
-                          href={generateLeagueSlug(league.league.name, league.league.id)}
+                          href={generateLeagueSlug(leagueData.league.name, leagueData.league.id)}
                           className="text-blue-600 hover:underline"
                         >
-                          {league.league.name} ({league.country.name})
+                          {leagueData.league.name} ({leagueData.country.name})
                         </Link>
                       </li>
                     ))}
@@ -614,7 +819,19 @@ export default async function TeamPage({ params }: { params: { slug: string } })
       </div>
     );
   } catch (error) {
-    console.error('[TeamPage] Error rendering page:', error);
-    return <div>Error loading team data.</div>;
+    console.error('[TeamPage] 🚨🚨🚨 CRITICAL ERROR rendering page:', error);
+    // Provide a user-friendly error message
+    return (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+            <h1 className="text-2xl font-bold text-red-600 mb-4">Oops! Noe gikk galt.</h1>
+            <p className="text-gray-700">Kunne ikke laste inn laginformasjonen. Vennligst prøv igjen senere.</p>
+            {/* Optionally show error details in development */}
+            {process.env.NODE_ENV === 'development' && (
+                <pre className="mt-4 text-left text-xs bg-gray-100 p-2 rounded overflow-auto">
+                    {error instanceof Error ? error.stack : String(error)}
+                </pre>
+            )}
+        </div>
+    );
   }
 } 

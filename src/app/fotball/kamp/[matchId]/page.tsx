@@ -23,7 +23,6 @@ import HorizontalLineupComponent from '@/app/components/HorizontalLineupComponen
 
 export const dynamic = "force-dynamic";
 
-
 // Initialize Supabase client with the working configuration LOL FUCK YOU
 const supabase = createClient(
   'https://cdynfbwdwdfsiwkgixua.supabase.co',
